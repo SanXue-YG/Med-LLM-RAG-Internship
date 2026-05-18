@@ -1,0 +1,459 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="review-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883266</article-id><article-id pub-id-type="doi">10.7759/cureus.101084</article-id><article-categories><subj-group subj-group-type="heading"><subject>Radiology</subject></subj-group><subj-group><subject>Medical Physics</subject></subj-group></article-categories><title-group><article-title>MRI Safety for Interventional Radiologists: A Narrative Review for MRI-Guided Interventions</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author" corresp="yes"><name><surname>Ng</surname><given-names>Pan Pan</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Yam</surname><given-names>Pak Ki</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Poon</surname><given-names>Wai Lun</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Department of Diagnostic and Interventional Radiology, Queen Elizabeth Hospital, Hong Kong, HKG </aff><author-notes><corresp id="cor1">
+Pan Pan Ng <email>pannap9219@gmail.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>8</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101084</elocation-id><history><date date-type="accepted"><day>30</day><month>12</month><year>2025</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Ng et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Ng et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/431342-mri-safety-for-interventional-radiologists-a-narrative-review-for-mri-guided-interventions">This article is available from https://cureus.com/articles/431342-mri-safety-for-interventional-radiologists-a-narrative-review-for-mri-guided-interventions</self-uri><abstract><p>Magnetic resonance imaging-guided (MRI-guided) intervention has emerged as a rapidly growing field in interventional radiology centers worldwide, owing to its superior tissue contrast and ability to provide real-time imaging guidance without ionizing radiation. With the increasing adoption of MRI-guided intervention, it is important for interventionalists to understand the safety considerations for both staff and patients in the complex MRI and interventional environment. This article aims to provide an overview of the safety principles of MRI-guided interventions with reference to international guidelines and our local experience.</p></abstract><kwd-group kwd-group-type="author"><kwd>interventional radiology</kwd><kwd>magnetic resonance imaging (mri)</kwd><kwd>mri-guided intervention</kwd><kwd>mri safety</kwd><kwd>tumor ablation</kwd></kwd-group></article-meta></front><body><sec sec-type="intro"><title>Introduction and background</title><p>MRI-guided intervention involves the use of real-time magnetic resonance imaging to target and monitor minimally invasive interventional procedures.&#x000a0;The application of MRI guidance in interventions provides excellent intrinsic soft-tissue contrast, enabling tumor localization and visualization of the ablation zone. It provides real-time imaging, which allows precise needle placement for both biopsy and ablation without exposing the patients to ionizing radiation. Since the first MRI-guided intervention in the 1990s, MRI systems have advanced continuously from low-field, open-bore systems to high-field, closed-bore systems with wide and short bore designs. Along with the increasing availability of MRI-compatible instruments, these advancements have enabled a wide range of interventions to be performed under MRI guidance.&#x000a0;Current routine applications&#x000a0;include breast [<xref rid="REF1" ref-type="bibr">1</xref>], prostate biopsies [<xref rid="REF2" ref-type="bibr">2</xref>], and ablation of renal [<xref rid="REF3" ref-type="bibr">3</xref>,<xref rid="REF4" ref-type="bibr">4</xref>], hepatic [<xref rid="REF5" ref-type="bibr">5</xref>], prostate, and soft-tissue tumors [<xref rid="REF6" ref-type="bibr">6</xref>,<xref rid="REF7" ref-type="bibr">7</xref>], which have demonstrated clinical benefit.</p><p>Unlike other imaging modalities, MRI carries unique potential hazards related to three magnetic fields, each creating distinct risks: the strong static magnetic field exerts powerful attractive forces on ferromagnetic objects (the projectile effect); the radiofrequency (RF) field can induce electrical currents in conductive materials, causing burns and device heating; and the time-varying gradient field may induce peripheral nerve stimulation and is associated with acoustic noise.&#x000a0;MRI-related safety incidents have been reported in approximately 0.05% of examinations, equating to one adverse event per 1,987 patients scanned [<xref rid="REF8" ref-type="bibr">8</xref>]. Performing interventions in the MRI suites increases vulnerability to safety risks due to the larger number of personnel involved, increased diversity of instruments utilized, and prolonged interventional procedural time compared with a standard diagnostic MRI setting. Furthermore, patients undergoing interventional procedures are often sedated or anesthetized, increasing their susceptibility to thermal hazards [<xref rid="REF9" ref-type="bibr">9</xref>]. These factors warrant additional safety precautions beyond those typically implemented in diagnostic MRI.</p><p>International MR safety guidelines have been established by multiple regulatory and professional organizations to guide safe MR practice. In recognition of the growing complexity of MR environments, specific recommendations addressing the safety of interventional MRI suites have been incorporated into the latest guidelines [<xref rid="REF10" ref-type="bibr">10</xref>-<xref rid="REF12" ref-type="bibr">12</xref>]. For example, the American College of Radiology (ACR) Manual on MR Safety advocates for augmented safety protocols with appropriate MR personnel training and zone-based access control for interventional MR suites [<xref rid="REF10" ref-type="bibr">10</xref>]. Similarly, the United Kingdom&#x02019;s Medicines and Healthcare Products Regulatory Agency (MHRA) Safety Guidelines for MRI Equipment in Clinical Use highlight the importance of MR safety risk reassessment for staff engaged in interventional work [<xref rid="REF11" ref-type="bibr">11</xref>]. This review aims to synthesize the key safety principles in the context of MRI-guided interventions,&#x000a0;focusing on projectile and RF-induced heating prevention, and the peri-procedural screening and monitoring, with reference to the international guidelines and insights from local experience.</p></sec><sec sec-type="review"><title>Review</title><p>Methods</p><p>This narrative review was conducted to synthesize current evidence on MRI safety considerations and preventive measures specific to MRI-guided interventions. A comprehensive literature search was performed using international databases, including PubMed, Embase, ScienceDirect, and Google Scholar, covering the period from&#x000a0;Jan 1995 to August 2025.&#x000a0;The search strategy combined keywords and Medical Subject Headings (MeSH) terms such as &#x0201c;MRI safety&#x0201d;, &#x0201c;MR guided interventional procedures&#x0201d;, &#x0201c;MRI safety&#x0201d; AND (&#x0201c;biopsy&#x0201d; OR &#x0201c;ablation&#x0201d;), &#x0201c;MRI&#x0201d; AND &#x0201c;thermal injury&#x0201d;, &#x0201c;MRI&#x0201d; AND &#x0201c;projectile injury&#x0201d;. Additional sources included manual reviews of reference lists from retrieved articles, international safety guidelines from the ACR, MHRA, and other relevant professional societies, as well as manufacturer technical documentation for interventional devices used in MRI-guided procedures. The inclusion and exclusion criteria were as follows.</p><p>Inclusion criteria: (1)&#x000a0;English-language publications; (2) studies, case reports, or technical reports addressing MRI safety in the context of MRI-guided interventional procedures; (3) professional society guidelines and consensus statements on MRI safety; and (4) publications describing MRI safety hazards or preventive measures.</p><p>Exclusion criteria: (1) conference abstracts without full-text availability and (2)&#x000a0;animal studies without clinical relevance.</p><p>Two authors&#x000a0;(PN and PY)&#x000a0;independently screened titles and abstracts for relevance, and full-text articles were subsequently retrieved. Discrepancies were resolved through discussion and consensus. No formal quality or risk-of-bias assessment tool was applied owing to the heterogeneity of study designs. The evidence was synthesized qualitatively and organized thematically according to the three primary MRI safety hazards and their associated preventive measures in the setting of MRI-guided interventions. Local experience, including institutional safety checklists and procedural workflows, was incorporated to provide practical context and implementation examples.</p><p>MRI safety hazards</p><p>Static Magnetic Field Hazards</p><p>Modern MRI scanners use superconducting magnets; the magnetic field is always &#x0201c;on&#x0201d; and extends beyond the scanner itself. The commonly used 1.5T (Tesla) MRI systems for interventional procedures generate fields approximately 30,000 times stronger than the Earth&#x02019;s magnetic field. Within such strong fields, ferromagnetic objects are subject to both translational and rotational forces. Translational force is maximal at the opening of the magnet bore due to the high fringe field spatial gradient.</p><p>Projectile incidents have been reported to account for 4.8%-9% of all MRI adverse events [<xref rid="REF8" ref-type="bibr">8</xref>,<xref rid="REF13" ref-type="bibr">13</xref>]. Patient transport and mobility equipment, such as wheelchairs and stretchers, are the most common projectile objects, involving 26% of the projectile events in the 10-year review by the US Food and Drug Administration (FDA) [<xref rid="REF13" ref-type="bibr">13</xref>]. Gas cylinders are also common projectile objects involved in reported incidents [<xref rid="REF13" ref-type="bibr">13</xref>,<xref rid="REF14" ref-type="bibr">14</xref>]; notably, a fatal incident in 2001, involving an oxygen cylinder that struck a pediatric patient, remains one of the most widely reported projectile-related deaths [<xref rid="REF15" ref-type="bibr">15</xref>]. Similarly, common surgical instruments such as forceps and needles can behave as missiles and boomerangs under the strong magnet.</p><p>In addition, medical implants and devices with ferromagnetic parts may displace or rotate, resulting in tissue injury or device malfunction and rendering patients unsuitable for MRI-guided interventions. Reported incidents include fatal cerebral aneurysm clip displacement [<xref rid="REF16" ref-type="bibr">16</xref>], pacemaker dysfunction and arrhythmia [<xref rid="REF17" ref-type="bibr">17</xref>-<xref rid="REF19" ref-type="bibr">19</xref>], and cochlear implant magnet migration [<xref rid="REF20" ref-type="bibr">20</xref>,<xref rid="REF21" ref-type="bibr">21</xref>].&#x000a0;A recent systematic review found magnetic dislodgement or migration was the most common MRI-related cochlear implant complication, accounting for 73% of the cases [<xref rid="REF20" ref-type="bibr">20</xref>].&#x000a0;</p><p>RF Heating and Burns</p><p>RF magnetic fields are responsible for the excitation of magnetic spins to generate MR signals for imaging. The B1 field can induce eddy currents in conductive materials (e.g., the&#x000a0;human body and metals) within the bore during MRI scanning&#x000a0;[<xref rid="REF22" ref-type="bibr">22</xref>,<xref rid="REF23" ref-type="bibr">23</xref>].&#x000a0;These currents may lead to heat generation and RF burns, particularly in areas of small skin contact where electrical resistance is the highest.</p><p>RF burns are the most frequently reported&#x000a0;MRI adverse events, accounting for 32% of cases&#x000a0;in a 10-year FDA review [<xref rid="REF13" ref-type="bibr">13</xref>]. A recent systematic review estimated that 97% of thermal injuries could be prevented through proper safety protocols [<xref rid="REF24" ref-type="bibr">24</xref>]. Common causes of RF burns include direct skin contact with the scanner, coil, or conductive material (most commonly ECG leads or wire loops), as well as direct skin-to-skin contact forming conductive loops. In recent years, novel fabric materials containing metallic microfibers (used in undershirts and sportswear) and face masks containing metal nose pieces or metallic antimicrobial coatings have been implicated in burn injuries following MRI examinations [<xref rid="REF25" ref-type="bibr">25</xref>-<xref rid="REF27" ref-type="bibr">27</xref>]. During the COVID-19 pandemic, incidents of facial burns from metal-containing face masks worn during MRI prompted the FDA to issue a safety communication regarding this RF hazard [<xref rid="REF28" ref-type="bibr">28</xref>].</p><p>RF energy deposition can lead to increased body temperature and systemic overheating, especially in vulnerable populations, including pediatric patients, febrile individuals, and those under sedation or general anesthesia [<xref rid="REF9" ref-type="bibr">9</xref>]. Energy deposition is quantified using the specific absorption rate (SAR). Factors contributing to high SAR include large body habitus and prolonged or repeated scanning with high SAR sequences&#x000a0;[<xref rid="REF29" ref-type="bibr">29</xref>].</p><p>Unlike diagnostic MRI examinations, in which only the patient is exposed to RF pulses, interventionalists may also face RF-related risks during MRI-guided procedures. For instance, during real-time imaging for needle insertion in an MRI-guided biopsy or ablation, the interventional radiologist&#x02019;s arm or upper torso may extend into the bore to access the body part of the patient at the isocenter of the magnetic field. Moreover, sequences frequently used for needle position confirmation in MRI-guided interventions (e.g., BLADE, periodically rotated overlapping parallel lines with enhanced reconstruction) are typically high SAR sequences; therefore, repeated scanning during complex procedures may result in SAR values exceeding safety thresholds, leading to patient overheating and device heating. An in vitro study on various MR-conditional needles used for MRI-guided interventions demonstrated needle heating beyond physiological temperatures during prolonged MRI scanning [<xref rid="REF30" ref-type="bibr">30</xref>].&#x000a0;</p><p>Time-Varying Gradient Field Effects</p><p>Time-varying gradients are the rapidly applied gradients during scanning for slice selection and spatial encoding. The rapid switching of gradients can induce electric currents in the body, leading to peripheral nerve stimulation (PNS), involuntary muscle contraction,&#x000a0;and pain.&#x000a0;PNS is infrequently reported,&#x000a0;and most patient experiences are mild&#x000a0;[<xref rid="REF31" ref-type="bibr">31</xref>].&#x000a0;This typically occurs in sequences with high amplitude, rapidly switching gradients, such as echo planar imaging, which includes&#x000a0;diffusion-weighted imaging&#x000a0;(DWI) used in MRI-guided prostate biopsy.&#x000a0;Addressing the safety issue of interventionalists working in close proximity to the MRI bore, the study demonstrated a substantially higher PNS threshold above patient safety limits in different arm positions using human models [<xref rid="REF32" ref-type="bibr">32</xref>].</p><p>The switching gradient coils also produce&#x000a0;vibration&#x000a0;against their mountings, generating the characteristic loud acoustic noise of MRI, which can result in temporary or permanent hearing damage [<xref rid="REF33" ref-type="bibr">33</xref>,<xref rid="REF34" ref-type="bibr">34</xref>] (Table <xref rid="TAB1" ref-type="table">1</xref>). The noise level can exceed the International Electrotechnical Commission (IEC) exposure limit of 99 dBA, necessitating hearing protection [<xref rid="REF35" ref-type="bibr">35</xref>,<xref rid="REF36" ref-type="bibr">36</xref>]. Effective hearing protection is critical for interventionalists who are frequently exposed to loud noise during real-time needle placement in MRI-guided interventions. Recent research has demonstrated the safety of cumulative noise exposure to participants undergoing multiple MRI studies, provided that adequate hearing protection was used [<xref rid="REF37" ref-type="bibr">37</xref>].</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Summary of reported MRI safety incidents and their causes</title></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Hazard category
+</td><td rowspan="1" colspan="1">
+Incidents description
+</td></tr><tr><td rowspan="2" colspan="1">
+Projectile hazards
+</td><td rowspan="1" colspan="1">
+Oxygen cylinder turned into missile resulting in fatal head injury of a paediatric patient [<xref rid="REF15" ref-type="bibr">15</xref>]
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Patient transported into scan room on ferromagnetic wheelchair and thrown into the magnet resulting in lower limb fractures [<xref rid="REF13" ref-type="bibr">13</xref>]
+</td></tr><tr><td rowspan="3" colspan="1">
+Implant malfunction
+</td><td rowspan="1" colspan="1">
+Ferromagnetic cerebral aneurysmal clip torqued in magnetic field resulting in fatal intracranial haemorrhage [<xref rid="REF16" ref-type="bibr">16</xref>]
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Pacemaker-dependent patient with pacemaker dysfunction after MR study requiring replacement of pacemaker generator [<xref rid="REF19" ref-type="bibr">19</xref>]
+</td></tr><tr><td rowspan="1" colspan="1">
+Cochlear implant magnet migration and dislocation associated with MRI [<xref rid="REF20" ref-type="bibr">20</xref>]
+</td></tr><tr style="background-color:#ccc"><td rowspan="4" colspan="1">
+RF heating
+</td><td rowspan="1" colspan="1">
+Third degree burns from ECG-leads in an anesthetized patient underwent MRI study [<xref rid="REF13" ref-type="bibr">13</xref>]
+</td></tr><tr><td rowspan="1" colspan="1">
+Second degree burns due to inadequate padding between coil cable and skin [<xref rid="REF13" ref-type="bibr">13</xref>]
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Patient suffered burn injury from jogging pants [<xref rid="REF25" ref-type="bibr">25</xref>]
+</td></tr><tr><td rowspan="1" colspan="1">
+Patient suffered permanent neurological damage due to RF heating associated with deep brain stimulation leads [<xref rid="REF38" ref-type="bibr">38</xref>]
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Acoustic noise
+</td><td rowspan="1" colspan="1">
+Young patient developed bilateral sensorineural hearing loss after 1.5T MRI scan without hearing protection [<xref rid="REF33" ref-type="bibr">33</xref>]
+</td></tr></tbody></table></table-wrap><p>Operational safety measures</p><p>Zone Access Control&#x000a0;</p><p>To mitigate hazards arising from the static magnetic field, the ACR recommends dividing MRI facilities into four conceptual&#x000a0;zones, with corresponding levels of access control (Table <xref rid="TAB2" ref-type="table">2</xref>) [<xref rid="REF10" ref-type="bibr">10</xref>]. All patients or non-MR personnel entering Zone III must undergo screening for ferromagnetic objects and implants, as the magnetic fringe field can be sufficient (i.e., the 9-gauss line) to pose hazardous effects on cardiac implantable electronic devices (CIEDs). Zone IV contains the MR projectile area where unscreened ferromagnetic objects can result in severe injuries (Figures <xref rid="FIG1" ref-type="fig">1</xref>-<xref rid="FIG2" ref-type="fig">2</xref>).</p><table-wrap position="float" id="TAB2"><label>Table 2</label><caption><title>MRI safety zones recommended by the ACR manual on MRI safety</title><p>ACR:&#x000a0;American College of Radiology</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Zones</td><td rowspan="1" colspan="1">Description of the zones</td></tr><tr><td rowspan="1" colspan="1">Zone I</td><td rowspan="1" colspan="1">Freely accessible to the general public.</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Zone II</td><td rowspan="1" colspan="1">Interface between the uncontrolled Zone I and the MR-controlled access area. Contains patient waiting and changing area, nursing area. Patient screening typically takes place in Zone II.</td></tr><tr><td rowspan="1" colspan="1">Zone III</td><td rowspan="1" colspan="1">Within the MR-controlled access area. Restricted access due to fringe field risk.</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Zone IV</td><td rowspan="1" colspan="1">Equivalent to the MR scanner room. Within the MR-controlled access area and containing the MR projectile area. Strict controlled access, doors remain closed, except for patient transfer.</td></tr></tbody></table></table-wrap><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>Floor plan of the interventional MRI suite in our center</title><p>Image created&#x000a0;by the authors using the tool PowerPoint. It illustrates&#x000a0;the zoning of the intervention MRI suite in our institute. The MRI projectile area (red dash line) is contained within Zone IV, while the 9-gauss line may extend beyond Zone IV into Zone III (yellow dash line). MR-compatible stretcher and trolleys for patient and instruments transfer into zone IV are parked in Zone III. The MR-unsafe ultrasound (USG) machine is parked in Zone III away from Zone IV. At the entrance of the restricted Zone III, line and warnings are demarcated on the floor to help access control (green dash line).</p></caption><graphic xlink:href="cureus-0018-00000101084-i01" position="float"/></fig><fig position="anchor" fig-type="figure" id="FIG2"><label>Figure 2</label><caption><title>Entrance to Zone IV (MR scanner room)</title><p>Photograph showing the warnings outside the MR scanner room, stating the presence of a strong magnetic field. The door of the scanner room should remain closed, except for patient care. Ferroguard, the ferromagnetic detection system, is installed at the entrance to serve as one of the MR safety measures.</p></caption><graphic xlink:href="cureus-0018-00000101084-i02" position="float"/></fig><p>In practice, the projectile risk zone of individual ferromagnetic objects varies. Field strength below 30 gauss generally poses little projectile risk for most ferromagnetic objects [<xref rid="REF12" ref-type="bibr">12</xref>].&#x000a0;Most MR-conditional equipment commonly used in Zone IV, including anesthetic machines and monitoring equipment, functions safely at maximum field strengths of 200-300 gauss [<xref rid="REF39" ref-type="bibr">39</xref>,<xref rid="REF40" ref-type="bibr">40</xref>]. Currently, there are no international recommendations mandating floor marking of iso-gauss lines;&#x000a0;however, it is considered a useful&#x000a0;practice for interventional suites to demarcate iso-gauss lines on the floor for ease of reference&#x000a0;[<xref rid="REF10" ref-type="bibr">10</xref>,<xref rid="REF12" ref-type="bibr">12</xref>,<xref rid="REF41" ref-type="bibr">41</xref>,<xref rid="REF42" ref-type="bibr">42</xref>].&#x000a0;The 9-, 30-, 200-, and 300-gauss lines are the common thresholds implemented.</p><p>Access control should be maintained at all times, including during emergency situations. To prevent MR hazards during crises, a designated resuscitation area should be established in a magnetically safe location, outside Zone IV and beyond the 9-gauss line, usually in Zone III or II. Routine MR safety labeling of equipment should be maintained [<xref rid="REF11" ref-type="bibr">11</xref>]. In the event of a medical emergency, the priority is to immediately transfer the patient with an MR conditional stretcher from Zone IV to the designated resuscitation area while initiating basic life support [<xref rid="REF10" ref-type="bibr">10</xref>]. Evacuation routes must remain unobstructed, and the scanner room door should be closed after patient extraction to prevent emergency responders from entering with ferromagnetic equipment. MRI personnel should serve as gatekeepers, communicating Zone IV hazards to emergency responders and non-MR personnel. Any emergency entry of unscreened personnel or unlabeled equipment to the scanner room should be prohibited. Multidisciplinary team training and regular evacuation drills are essential to ensure operational efficiency [<xref rid="REF43" ref-type="bibr">43</xref>].</p><p>MRI Safety of Interventional Devices&#x000a0;</p><p>Apart from the MR conditional physiological monitor, ECG electrodes, anesthetic machine,&#x000a0;and infusion pump, which are familiar in diagnostic studies, MRI-guided interventions typically require a wide range of devices that are uncommon for diagnostic MRI studies.&#x000a0;Many of the standard surgical or interventional instruments are not applicable to an MR environment,&#x000a0;and MR-compatible alternatives should be sourced. For example, ceramic or titanium alloy scalpels are the safe and functional alternatives to the strongly ferromagnetic martensitic stainless-steel scalpels (Figure <xref rid="FIG3" ref-type="fig">3</xref>).&#x000a0;Titanium, inconel, nitinol, and plastic polymers are common materials used in MR-compatible biopsy needles, co-axial and ablation needles, given their mechanical strength and MR visualization properties&#x000a0;[<xref rid="REF44" ref-type="bibr">44</xref>-<xref rid="REF46" ref-type="bibr">46</xref>].&#x000a0;Hypodermic needles used for the administration of local anesthesia are&#x000a0;made of austenitic stainless steel, which exhibits very low ferromagnetic properties in the 1.5T&#x000a0;system&#x000a0;[<xref rid="REF47" ref-type="bibr">47</xref>]. In our experience, standard hypodermic needles experienced a very weak attractive force when used near the bore. To minimize the projectile risk, the needles should be used at a distance away from the opening of the MRI bore.</p><fig position="anchor" fig-type="figure" id="FIG3"><label>Figure 3</label><caption><title>MR-conditional titanium scalpel (MRI Med, Petaluma, CA)</title></caption><graphic xlink:href="cureus-0018-00000101084-i03" position="float"/></fig><p>The American Society of Testing and Materials (ASTM) International Committee&#x000a0;established&#x000a0;a&#x000a0;labeling&#x000a0;system that categorizes device MRI safety into three types&#x000a0;(ASTM F2503)&#x000a0;[<xref rid="REF48" ref-type="bibr">48</xref>] (Table <xref rid="TAB3" ref-type="table">3</xref>). It is recommended that only MR safe or MR conditional devices be allowed in Zone IV. Prior to the MRI-guided procedures, careful planning is necessary to determine the safety of each procedural step with respect to both the location of intervention and the MRI compatibility of the instruments involved. For example, procedural steps requiring ultrasound (USG)&#x000a0;guidance should ideally be performed in Zone III prior to transferring&#x000a0;the&#x000a0;patient into Zone IV, as USG machines are considered MR unsafe. However, this may not always be practical. If portable metallic or partially metallic instruments that are MRI unsafe or lack MR safety labeling are deemed essential for patient care within Zone IV, their introduction and safe locations in Zone IV should be extensively tested by qualified experts using standard methodologies [<xref rid="REF49" ref-type="bibr">49</xref>-<xref rid="REF52" ref-type="bibr">52</xref>]. In addition, proper tethering should be employed to mitigate projectile risks [<xref rid="REF10" ref-type="bibr">10</xref>]. For portable metallic or partially metallic instruments that are designated as MR conditional, such as monitors and anesthetic machines, their functional locations within Zone IV should be clearly&#x000a0;defined based on specified maximum field strength limits, typically identified by iso-gauss lines or designated markings on the floor.&#x000a0;</p><table-wrap position="float" id="TAB3"><label>Table 3</label><caption><title>ASTM MRI safety labelling system</title><p>ASTM:&#x000a0;American Society of Testing and Materials</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Category</td><td rowspan="1" colspan="1">Description</td></tr><tr><td rowspan="1" colspan="1">MR safe</td><td rowspan="1" colspan="1">No known hazards in any MR environment. Non-magnetic, non-metallic, electrically non-conductive materials. Examples: plastics, ceramics, and glass.</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">MR conditional</td><td rowspan="1" colspan="1">Safe under the specified MR conditions. Specifications: static magnetic field strength, spatial field gradient, RF exposure, scanner type, orientation, and slew rate.</td></tr><tr><td rowspan="1" colspan="1">MR unsafe</td><td rowspan="1" colspan="1">Unacceptable risks in all MR environments.</td></tr></tbody></table></table-wrap><p>Pre-procedural Screening and Safety Check</p><p>Pre-procedural screening is one of the most important steps to ensure safety and&#x000a0;should occur on&#x000a0;multiple occasions and by qualified personnel. The ACR manual on MR safety suggests at least two separate screenings before access of any patients or non-MR personnel into the MRI scanner room [<xref rid="REF10" ref-type="bibr">10</xref>].</p><p>A first-level patient screening should be conducted when the examination or procedure is requested. In our institution, patients are interviewed by interventional radiologists in the clinic, who check for contraindications to MRI-guided interventions, including foreign bodies, implants, and claustrophobia. For active medical implants, such as CIEDs and programmable ventricular shunts, specific pre- and post-procedure interrogation and programming should be arranged in advance.</p><p>A second-level screening occurs when patients arrive at the MRI suite. Patient screening should be carried out in Zone II by MR personnel with the aid of standardized questionnaires, inspection, and ferromagnetic detection systems, similar to those of a diagnostic MRI examination.&#x000a0;The results of screening should be clearly documented in the hospital records (Table <xref rid="TAB4" ref-type="table">4</xref>).</p><table-wrap position="float" id="TAB4"><label>Table 4</label><caption><title>QEH MRI checklist</title><p>Local MRI safety screening checklist for inpatient and patient under general anaesthesia and MRI-guided procedures.</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Item
+</td><td rowspan="1" colspan="1">
+Yes
+</td><td rowspan="1" colspan="1">
+No
+</td></tr><tr><td rowspan="1" colspan="1">
+MRI non-compatible/unsafe oxylog/oximeter
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+MRI non-compatible/unsafe infusion device/syringe pump
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr><td rowspan="1" colspan="1">
+MRI non-compatible/unsafe oxygen cylinder
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Peep valve with metal parts
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr><td rowspan="1" colspan="1">
+Metallic mouth prop
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Oxygen mask with metal parts
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr><td rowspan="1" colspan="1">
+MRI non-compatible/unsafe ECG electrodes/leads/defibrillator pads
+&#x000a0;
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+MRI non-compatible/unsafe pressure bag
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr><td rowspan="1" colspan="1">
+MRI non-compatible/unsafe metallic neck collar/halo ring/splint/external fixator
+&#x000a0;
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Drains with metallic artery forceps
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr><td rowspan="1" colspan="1">
+Metallic hanger
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Medication patches
+</td><td rowspan="1" colspan="1">
+&#x02610; Remove &#x02610; Change to compatible
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td></tr><tr><td rowspan="1" colspan="1">
+Patient&#x02019;s card label
+</td><td colspan="2" rowspan="1">
+Remarks:
+Checked by: ________________ (DIR Nurse)
+Checked by: ______________ (Radiographer)
+Date: ___________________
+</td></tr></tbody></table></table-wrap><p>In addition to patient screening, staff, including interventionalists, scrub nurses, and anaesthetists, should be screened and checked for ferromagnetic objects or implants before being allowed to enter the MR environment. For interventionalists or nurses whose arms may be scanned and exposed to the RF energy in the MR bore, precautions should also be taken against RF-related hazards. Any clothing with metallic fibers or accessories should not be worn underneath the surgical gown, and personnel should preferably change into pocketless MR-safe gowns. Extensive tattoos on the arm may require prophylactic cold compresses.</p><p>For implants and interventional instruments, a systematic approach should be used to validate their MR safety status. The primary method of validation is to obtain information directly from the device manufacturer, including product labeling, instructions for use, ASTM classification on MR safety (MR safe, MR conditional, or MR unsafe), and any specified conditions for MR conditional devices. The specifications typically include the permitted static field strength, spatial field gradient, gradient slew rate, SAR limits, and any essential device setting or positioning [<xref rid="REF40" ref-type="bibr">40</xref>]. When manufacturer information is not available or ambiguous, validated MR safety databases can be useful in providing peer-reviewed safety testing data and scanning parameters for implants and devices, including reference manuals, <ext-link xlink:href="https://MRIsafety.com" ext-link-type="uri">MRIsafety.com</ext-link>, or institutional MR safety databases if available [<xref rid="REF53" ref-type="bibr">53</xref>,<xref rid="REF54" ref-type="bibr">54</xref>]. Institutional safety verification protocols should be established to designate MR personnel responsible for the verification, to define the acceptable sources of safety information, outline procedures for handling devices with unknown safety information, and document the verification process.</p><p>According to the latest ACR recommendation [<xref rid="REF10" ref-type="bibr">10</xref>], an additional augmented full stop and final check should be performed by a Level 2 MR technologist together with a second MR personnel, for the patient, supporting equipment, and staff, before entering Zone IV for complex MR environments, including MR interventions. This is particularly important for procedures that lead to changes in patient or equipment status in Zone III. An illustrative example is a combined USG- and MRI-guided tumor cryoablation, where we perform USG-guided cryoprobe placement in Zone III and transfer the patient into Zone IV for MR guidance. This leads to a change in patient status that differs from the initial screened status in Zone II. A final check before moving the patient into Zone IV is essential to ensure that any MR-unsafe needles or equipment utilized in Zone III are removed and not hidden within the surgical drapes or around the patient.</p><p>Intra-procedural Monitoring and Safety Measures</p><p>Before scanning begins, appropriate patient positioning should be established to prevent skin-to-skin contact and formation of conductive loops. Padding should be applied to avoid skin contact with the magnet&#x000a0;bore or cables, and between limbs to protect the&#x000a0;patient from RF burns. During the intervention, any changes in patient positioning or introduction of new cables (e.g., from ablation probes) should be properly arranged and padded against conductive loops and skin contact before resuming scanning (Figure <xref rid="FIG4" ref-type="fig">4</xref>).</p><fig position="anchor" fig-type="figure" id="FIG4"><label>Figure 4</label><caption><title>MR scanner room of the interventional MRI suite in our institution</title><p>Photograph showing the room layout during MRI-guided cryoablation of a renal tumor. The portable MR-compatible real-time image display monitor is placed near the scanner for optimal visualization by the interventionalists. The cryoablation system and procedural trolleys were in their designed positions to maximize workflow and safety. Continuous physiological monitor is available inside the scanner room allowing real-time assessment throughout the intervention. Special care is taken to arrange and pad the ablation probe cables, preventing direct contact with patient&#x02019;s and interventionalist&#x02019;s to minimise risk of thermal injury, as indicated by the asterisk*.</p></caption><graphic xlink:href="cureus-0018-00000101084-i04" position="float"/></fig><p>Continuous physiological monitoring of vital signs is essential during MRI-guided procedures. Attention should also be given to signs and symptoms of overheating, especially for vulnerable or sedated patients. To limit systemic heating, the International Electrotechnical Commission (IEC) standard restricts scanning for patients with compromised thermoregulation or patients unable to communicate pain to Normal Operating Mode, with a whole body SAR limit of 2.0W/kg and &#x02264;0.5&#x000b0;C core temperature rise [<xref rid="REF35" ref-type="bibr">35</xref>]. For device heating, interventional devices are tested according to ASTM F2182, with the majority of their labeling limited to Normal Operating Mode or with a specific B1+rms threshold (root-mean-square of B1+ field).&#x000a0;First-level Controlled Mode is generally contraindicated for interventional devices due to higher RF power.</p><p>MR technologists should monitor and minimize the RF exposure, as repeated or prolonged scanning may be needed during the intervention to confirm needle position and monitor the ablation zone. Pre-sequence prediction and real-time SAR and B1+rms are available from the scanner software (Figure <xref rid="FIG5" ref-type="fig">5</xref>). The operators will be alerted when&#x000a0;SAR approaches or exceeds&#x000a0;the limits for the corresponding mode of operation. Under these circumstances, MR technologists should modify the scan parameters,&#x000a0;for example, by reducing the flip angle and minimizing the number of slices while balancing image quality.&#x000a0;When necessary and appropriate,&#x000a0;cooling periods should be implemented to allow dissipation of RF energy. Other MR temperature monitoring techniques include fiber-optic-based temperature sensors used for ablation needles and catheters, and non-invasive MR thermometry that can provide real-time thermal mapping of tissue [<xref rid="REF55" ref-type="bibr">55</xref>,<xref rid="REF56" ref-type="bibr">56</xref>].&#x000a0;</p><fig position="anchor" fig-type="figure" id="FIG5"><label>Figure 5</label><caption><title>Specific absorption rate (SAR) monitoring during MRI-guided intervention</title><p>(A) Photograph showing the software interface of a Siemens Aera 1.5T MR scanner. The software displays the predicted SAR value for a planned sequence (arrow). Real-time whole body SAR values are also available for intra-procedural monitoring (dash arrow and asterisk*). (B) Photograph showing manufacturer-provided options for RF pulse modification, including a low SAR module (asterisk**), to reduce the SAR exposure when approaching operational limits.</p></caption><graphic xlink:href="cureus-0018-00000101084-i05" position="float"/></fig><p>Safety Policies and Staff&#x000a0;</p><p>In view of the complexities of interventional MRI facilities, a local MRI safety committee should be established to develop, implement, and review intervention-specific safety policies and standard operating procedures. The committee should include multidisciplinary experts with clearly defined roles and responsibilities to address different aspects of safety management. For instance, each MRI facility should be overseen by an MR Medical Director (MRMD), while safety measures should be implemented and enforced by the MR Safety Officer (MRSO). An MR Safety Expert (MRSE) should be available to provide advisory support [<xref rid="REF10" ref-type="bibr">10</xref>]. The committee is responsible for credentialing and training all personnel authorized to work in the MR environment and for maintaining corresponding documentation. Regular reviews and updates should be conducted, particularly when new procedures or interventional devices are introduced [<xref rid="REF28" ref-type="bibr">28</xref>]. All safety incidents and near-misses should be reported to and investigated by the committee to facilitate continuous improvement.&#x000a0;</p><p>Future directions</p><p>Current MR safety recommendations for MRI-guided interventions remain largely extrapolated from the well-established diagnostic MRI literature, with supplementary consideration of specific risk factors inherent to the interventional environment. Large-scale and prospective analyses specifically addressing safety in MR-guided interventions are lacking in the peer-reviewed literature. As the volume of MRI-guided interventions continues to expand, the development of dedicated safety registries and guidelines specific to MRI-guided interventions is necessary for data analysis and standardization of safe practice.</p><p>Emerging advancements of MRI robotic systems demonstrate potential to improve procedural efficiency and reduce patient and occupational MR exposure in MRI-guided interventions. Fully automated or assisted needle insertion systems can reduce procedural time through automated needle realignment guidance, thereby minimizing the need for needle repositioning and overall magnet time [<xref rid="REF57" ref-type="bibr">57</xref>,<xref rid="REF58" ref-type="bibr">58</xref>]. While initial data are promising, prospective comparative studies in clinical procedures remain limited at this early stage.</p><p>The Integration of artificial intelligence (AI) algorithms into MRI-guided intervention workflows offers multiple mechanisms to enhance patient safety. For example, AI-based systems have demonstrated high accuracy in implant detection from chest radiographs [<xref rid="REF59" ref-type="bibr">59</xref>]. AI algorithms can provide patient and treatment-specific SAR prediction and generate real-time SAR maps [<xref rid="REF60" ref-type="bibr">60</xref>]. Digital Twin models that mirror patient and device characteristics offer the potential to simulate device heating and artifacts before the actual procedure, which can be valuable for novel device testing and new procedures [<xref rid="REF61" ref-type="bibr">61</xref>]. Clinical implementation of these AI-based techniques requires further validation and maturation.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>MRI-guided interventions provide&#x000a0;superior, real-time image guidance while eliminating exposure to ionizing radiation for both the patients and staff. With continued advances in MRI technology and interventional techniques, the range of MRI-guided procedures will inevitably expand, accompanied by the increasing complexity of the MRI environment.</p><p>A comprehensive understanding of the fundamentals of MR safety hazards, proper device selection, meticulous screening and safety checks, comprehensive training, and application of standardized safety protocols form the cornerstones of safe and effective MR practice. Achieving excellence in MRI-guided interventions requires not only technical expertise in interventional procedures but also specialized knowledge of MR safety considerations, as well as the collective commitment of multidisciplinary personnel.</p></sec></body><back><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> All authors have declared that no financial support was received from any organization for the submitted work.</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Pan Pan Ng, Wai Lun Poon, Pak Ki Yam</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Pan Pan Ng, Wai Lun Poon, Pak Ki Yam</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Pan Pan Ng</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Pan Pan Ng, Wai Lun Poon, Pak Ki Yam</p><p><bold>Supervision:</bold>&#x000a0; Wai Lun Poon, Pak Ki Yam</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="journal"><article-title>MRI-guided breast biopsy: outcomes and effect on patient management</article-title><source>Clin Breast Cancer</source><person-group>
+<name><surname>Myers</surname><given-names>KS</given-names></name>
+<name><surname>Kamel</surname><given-names>IR</given-names></name>
+<name><surname>Macura</surname><given-names>KJ</given-names></name>
+</person-group><fpage>143</fpage><lpage>152</lpage><volume>15</volume><year>2015</year><pub-id pub-id-type="pmid">25499596</pub-id>
+</element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>Transperineal MR imaging-guided prostate biopsy: a prospective randomized controlled study on safety and effectiveness compared with transrectal biopsy</article-title><source>J Vasc Interv Radiol</source><person-group>
+<name><surname>Tricard</surname><given-names>T</given-names></name>
+<name><surname>Cazzato</surname><given-names>RL</given-names></name>
+<name><surname>Poussot</surname><given-names>B</given-names></name>
+<etal/>
+</person-group><fpage>1278</fpage><lpage>1284</lpage><volume>36</volume><year>2025</year><pub-id pub-id-type="pmid">40389061</pub-id>
+</element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="journal"><article-title>Magnetic resonance imaging-guided cryotherapy for precision tumour ablation</article-title><source>Hong Kong J Radiol</source><person-group>
+<name><surname>Chiang</surname><given-names>J</given-names></name>
+<name><surname>Poon</surname><given-names>W</given-names></name>
+<name><surname>Kwok</surname><given-names>P</given-names></name>
+<name><surname>Fung</surname><given-names>H</given-names></name>
+</person-group><fpage>168</fpage><lpage>173</lpage><volume>26</volume><year>2023</year></element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Real-time magnetic resonance imaging-guided cryoablation of small renal tumors at 1.5 T</article-title><source>Invest Radiol</source><person-group>
+<name><surname>Ahrar</surname><given-names>K</given-names></name>
+<name><surname>Ahrar</surname><given-names>JU</given-names></name>
+<name><surname>Javadi</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><fpage>437</fpage><lpage>444</lpage><volume>48</volume><year>2013</year><pub-id pub-id-type="pmid">23511191</pub-id>
+</element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>CT versus MR guidance for radiofrequency ablation in patients with colorectal liver metastases: a 10-year follow-up favors MR guidance</article-title><source>Eur Radiol</source><person-group>
+<name><surname>Pereira</surname><given-names>PL</given-names></name>
+<name><surname>Siemou</surname><given-names>P</given-names></name>
+<name><surname>Rempp</surname><given-names>HJ</given-names></name>
+<etal/>
+</person-group><fpage>4663</fpage><lpage>4671</lpage><volume>34</volume><year>2024</year><pub-id pub-id-type="pmid">38041717</pub-id>
+</element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Closed-bore interventional MRI: percutaneous biopsies and ablations</article-title><source>AJR Am J Roentgenol</source><person-group>
+<name><surname>Kaye</surname><given-names>EA</given-names></name>
+<name><surname>Granlund</surname><given-names>KL</given-names></name>
+<name><surname>Morris</surname><given-names>EA</given-names></name>
+<name><surname>Maybody</surname><given-names>M</given-names></name>
+<name><surname>Solomon</surname><given-names>SB</given-names></name>
+</person-group><fpage>0</fpage><lpage>10</lpage><volume>205</volume><year>2015</year></element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>CRYODESMO-O1: a prospective, open phase II study of cryoablation in desmoid tumour patients progressing after medical treatment</article-title><source>Eur J Cancer</source><person-group>
+<name><surname>Kurtz</surname><given-names>JE</given-names></name>
+<name><surname>Buy</surname><given-names>X</given-names></name>
+<name><surname>Deschamps</surname><given-names>F</given-names></name>
+<etal/>
+</person-group><fpage>78</fpage><lpage>87</lpage><volume>143</volume><year>2021</year><pub-id pub-id-type="pmid">33290994</pub-id>
+</element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>A 3-year review of MRI safety incidents within a UK independent sector provider of diagnostic services</article-title><source>BJR Open</source><person-group>
+<name><surname>Hudson</surname><given-names>D</given-names></name>
+<name><surname>Jones</surname><given-names>AP</given-names></name>
+</person-group><fpage>20180006</fpage><volume>1</volume><year>2019</year><pub-id pub-id-type="pmid">33178906</pub-id>
+</element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>ESR essentials: advanced MR safety in vulnerable patients&#x02014;practice recommendations by the European Society for Magnetic Resonance in Medicine and Biology</article-title><source>Eur Radiol</source><person-group>
+<name><surname>Santini</surname><given-names>F</given-names></name>
+<name><surname>Pansini</surname><given-names>M</given-names></name>
+<name><surname>Deligianni</surname><given-names>X</given-names></name>
+<name><surname>Caligiuri</surname><given-names>ME</given-names></name>
+<name><surname>Oei</surname><given-names>EH</given-names></name>
+</person-group><fpage>1785</fpage><lpage>1793</lpage><volume>35</volume><year>2025</year><pub-id pub-id-type="pmid">39240349</pub-id>
+</element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="book"><article-title>ACR Manual on MR Safety</article-title><source>Accessed</source><date-in-citation content-type="access-date">
+<month>6</month>
+<year>2024</year>
+</date-in-citation><person-group>
+<name><surname>Watson</surname><given-names>R</given-names></name>
+<name><surname>McKinney</surname><given-names>A</given-names></name>
+<name><surname>Stafford</surname><given-names>J</given-names></name>
+<etal/>
+</person-group><publisher-loc>Reston, VA</publisher-loc><publisher-name>American College of Radiology</publisher-name><year>2024</year><uri xlink:href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/Clinical/Radiology-Safety/Manual-on-MR-Safety.pdf">https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/Clinical/Radiology-Safety/Manual-on-MR-Safety.pdf</uri></element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="webpage"><article-title>Guidance: magnetic resonance imaging equipment in clinical use: safety guidelines</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><year>2022</year><uri xlink:href="https://www.gov.uk/government/publications/safety-guidelines-for-magnetic-resonance-imaging-equipment-in-clinical-use">https://www.gov.uk/government/publications/safety-guidelines-for-magnetic-resonance-imaging-equipment-in-clinical-use</uri></element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="webpage"><article-title>RANZCR MRI safety guidelines</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><year>2021</year><uri xlink:href="https://www.ranzcr.com/college/document-library/mri-safety-guidelines">https://www.ranzcr.com/college/document-library/mri-safety-guidelines</uri></element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>MRI-related FDA adverse event reports: a 10-yr review</article-title><source>Med Phys</source><person-group>
+<name><surname>Delfino</surname><given-names>JG</given-names></name>
+<name><surname>Krainak</surname><given-names>DM</given-names></name>
+<name><surname>Flesher</surname><given-names>SA</given-names></name>
+<name><surname>Miller</surname><given-names>DL</given-names></name>
+</person-group><fpage>5562</fpage><lpage>5571</lpage><volume>46</volume><year>2019</year><pub-id pub-id-type="pmid">31419320</pub-id>
+</element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Projectile cylinder accidents resulting from the presence of ferromagnetic nitrous oxide or oxygen tanks in the MR suite</article-title><source>AJR Am J Roentgenol</source><person-group>
+<name><surname>Chaljub</surname><given-names>G</given-names></name>
+<name><surname>Kramer</surname><given-names>LA</given-names></name>
+<name><surname>Johnson RF</surname><given-names>3rd</given-names></name>
+<name><surname>Johnson RF</surname><given-names>Jr</given-names></name>
+<name><surname>Singh</surname><given-names>H</given-names></name>
+<name><surname>Crow</surname><given-names>WN</given-names></name>
+</person-group><fpage>27</fpage><lpage>30</lpage><volume>177</volume><year>2001</year><pub-id pub-id-type="pmid">11418392</pub-id>
+</element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>Magnetic resonance imaging mishaps: a brief review</article-title><source>J Datta Meghe Inst Med Sci Univ</source><person-group>
+<name><surname>Khazi</surname><given-names>S</given-names></name>
+<name><surname>Shetty</surname><given-names>S</given-names></name>
+<name><surname>Reddy</surname><given-names>S</given-names></name>
+<name><surname>Vannala</surname><given-names>VR</given-names></name>
+<name><surname>Shetty</surname><given-names>RM</given-names></name>
+<name><surname>Shetty</surname><given-names>P</given-names></name>
+</person-group><fpage>160</fpage><lpage>161</lpage><volume>13</volume><year>2018</year><uri xlink:href="https://journals.lww.com/dmms/fulltext/2018/13030/magnetic_resonance_imaging_mishaps__a_brief_review.10.aspx">https://journals.lww.com/dmms/fulltext/2018/13030/magnetic_resonance_imaging_mishaps__a_brief_review.10.aspx</uri></element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>Placement of a ferromagnetic intracerebral aneurysm clip in a magnetic field with a fatal outcome</article-title><source>Radiology</source><person-group>
+<name><surname>Klucznik</surname><given-names>RP</given-names></name>
+<name><surname>Carrier</surname><given-names>DA</given-names></name>
+<name><surname>Pyka</surname><given-names>R</given-names></name>
+<name><surname>Haid</surname><given-names>RW</given-names></name>
+</person-group><fpage>855</fpage><lpage>856</lpage><volume>187</volume><year>1993</year><pub-id pub-id-type="pmid">8497645</pub-id>
+</element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>Magnetic resonance imaging safety in patients with cardiac implantable electronic devices</article-title><source>Trends Cardiovasc Med</source><person-group>
+<name><surname>Yang</surname><given-names>E</given-names></name>
+<name><surname>Suzuki</surname><given-names>M</given-names></name>
+<name><surname>Nazarian</surname><given-names>S</given-names></name>
+<name><surname>Halperin</surname><given-names>HR</given-names></name>
+</person-group><fpage>440</fpage><lpage>447</lpage><volume>32</volume><year>2022</year><pub-id pub-id-type="pmid">34384880</pub-id>
+</element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>Safety of magnetic resonance imaging in patients with cardiovascular devices: an American Heart Association scientific statement from the Committee on Diagnostic and Interventional Cardiac Catheterization, Council on Clinical Cardiology, and the Council on Cardiovascular Radiology and Intervention: endorsed by the American College of Cardiology Foundation, the North American Society for Cardiac Imaging, and the Society for Cardiovascular Magnetic Resonance</article-title><source>Circulation</source><person-group>
+<name><surname>Levine</surname><given-names>GN</given-names></name>
+<name><surname>Gomes</surname><given-names>AS</given-names></name>
+<name><surname>Arai</surname><given-names>AE</given-names></name>
+<etal/>
+</person-group><fpage>2878</fpage><lpage>2891</lpage><volume>116</volume><year>2007</year><pub-id pub-id-type="pmid">18025533</pub-id>
+</element-citation></ref><ref id="REF19"><label>19</label><element-citation publication-type="journal"><article-title>Malfunction of an MRI-conditional pacemaker following an MRI</article-title><source>HeartRhythm Case Rep</source><person-group>
+<name><surname>Krebsbach</surname><given-names>A</given-names></name>
+<name><surname>Dewland</surname><given-names>TA</given-names></name>
+<name><surname>Henrikson</surname><given-names>CA</given-names></name>
+</person-group><fpage>148</fpage><lpage>150</lpage><volume>3</volume><year>2017</year><pub-id pub-id-type="pmid">28491791</pub-id>
+</element-citation></ref><ref id="REF20"><label>20</label><element-citation publication-type="journal"><article-title>A comprehensive analysis of MRI-related cochlear implant adverse events reported by FDA&#x02019;s Manufacturer and User Facility Device Experience database</article-title><source>Laryngoscope Investig Otolaryngol</source><person-group>
+<name><surname>Lin</surname><given-names>A</given-names></name>
+<name><surname>Menta</surname><given-names>AK</given-names></name>
+<name><surname>Ahmad</surname><given-names>SA</given-names></name>
+<name><surname>Zhang</surname><given-names>A</given-names></name>
+<name><surname>Perdomo</surname><given-names>D</given-names></name>
+<name><surname>Reddy</surname><given-names>A</given-names></name>
+<name><surname>Ward</surname><given-names>BK</given-names></name>
+</person-group><fpage>0</fpage><volume>10</volume><year>2025</year></element-citation></ref><ref id="REF21"><label>21</label><element-citation publication-type="journal"><article-title>Complications of cochlear implants with MRI scans in different body regions: type, frequency and impact</article-title><source>Insights Imaging</source><person-group>
+<name><surname>Alberalar</surname><given-names>ND</given-names></name>
+<name><surname>Reis</surname><given-names>J</given-names></name>
+<name><surname>Piechotta</surname><given-names>PL</given-names></name>
+<etal/>
+</person-group><fpage>9</fpage><volume>14</volume><year>2023</year><pub-id pub-id-type="pmid">36645551</pub-id>
+</element-citation></ref><ref id="REF22"><label>22</label><element-citation publication-type="journal"><article-title>Progress in understanding radiofrequency heating and burn injuries for safer MR imaging</article-title><source>Magn Reson Med Sci</source><person-group>
+<name><surname>Tang</surname><given-names>M</given-names></name>
+<name><surname>Yamamoto</surname><given-names>T</given-names></name>
+</person-group><fpage>7</fpage><lpage>25</lpage><volume>22</volume><year>2023</year><pub-id pub-id-type="pmid">35228437</pub-id>
+</element-citation></ref><ref id="REF23"><label>23</label><element-citation publication-type="journal"><article-title>Radiofrequency energy-induced heating during MR procedures: a review</article-title><source>J Magn Reson Imaging</source><person-group>
+<name><surname>Shellock</surname><given-names>FG</given-names></name>
+</person-group><fpage>30</fpage><lpage>36</lpage><volume>12</volume><year>2000</year><pub-id pub-id-type="pmid">10931562</pub-id>
+</element-citation></ref><ref id="REF24"><label>24</label><element-citation publication-type="journal"><article-title>Systematic review of MRI safety literature in relation to radiofrequency thermal injury prevention</article-title><source>J Med Radiat Sci</source><person-group>
+<name><surname>Baker</surname><given-names>C</given-names></name>
+<name><surname>Nugent</surname><given-names>B</given-names></name>
+<name><surname>Grainger</surname><given-names>D</given-names></name>
+<name><surname>Hewis</surname><given-names>J</given-names></name>
+<name><surname>Malamateniou</surname><given-names>C</given-names></name>
+</person-group><fpage>445</fpage><lpage>460</lpage><volume>71</volume><year>2024</year><pub-id pub-id-type="pmid">38937923</pub-id>
+</element-citation></ref><ref id="REF25"><label>25</label><element-citation publication-type="journal"><article-title>Unexpected magnetic resonance imaging burn injuries from jogging pants</article-title><source>Radiol Case Rep</source><person-group>
+<name><surname>Tokue</surname><given-names>H</given-names></name>
+<name><surname>Tokue</surname><given-names>A</given-names></name>
+<name><surname>Tsushima</surname><given-names>Y</given-names></name>
+</person-group><fpage>1348</fpage><lpage>1351</lpage><volume>14</volume><year>2019</year><pub-id pub-id-type="pmid">31516650</pub-id>
+</element-citation></ref><ref id="REF26"><label>26</label><element-citation publication-type="journal"><article-title>Invisible metallic microfiber in clothing presents unrecognized MRI risk for cutaneous burn</article-title><source>AJNR Am J Neuroradiol</source><person-group>
+<name><surname>Pietryga</surname><given-names>JA</given-names></name>
+<name><surname>Fonder</surname><given-names>MA</given-names></name>
+<name><surname>Rogg</surname><given-names>JM</given-names></name>
+<name><surname>North</surname><given-names>DL</given-names></name>
+<name><surname>Bercovitch</surname><given-names>LG</given-names></name>
+</person-group><fpage>0</fpage><lpage>50</lpage><volume>34</volume><year>2013</year></element-citation></ref><ref id="REF27"><label>27</label><element-citation publication-type="journal"><article-title>The dangers of fabric in MRI</article-title><source>Curr Probl Diagn Radiol</source><person-group>
+<name><surname>Styan</surname><given-names>T</given-names></name>
+<name><surname>Hoff</surname><given-names>M</given-names></name>
+</person-group><fpage>6</fpage><lpage>9</lpage><volume>52</volume><year>2023</year><pub-id pub-id-type="pmid">36085099</pub-id>
+</element-citation></ref><ref id="REF28"><label>28</label><element-citation publication-type="webpage"><article-title>Wear face masks with no metal during MRI exams: FDA safety communication</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><year>2020</year><uri xlink:href="https://wayback.archive-it.org/7993/20201219235835/https://www.fda.gov/medical-devices/safety-communications/wear-face-masks-no-metal-during-mri-exams-fda-safety-communication">https://wayback.archive-it.org/7993/20201219235835/https://www.fda.gov/medical-devices/safety-communications/wear-face-masks-no-metal-during-mri-exams-fda-safety-communication</uri></element-citation></ref><ref id="REF29"><label>29</label><element-citation publication-type="journal"><article-title>What MRI sequences produce the highest specific absorption rate (SAR), and is there something we should be doing to reduce the SAR during standard examinations?</article-title><source>AJR Am J Roentgenol</source><person-group>
+<name><surname>Allison</surname><given-names>J</given-names></name>
+<name><surname>Yanasak</surname><given-names>N</given-names></name>
+</person-group><fpage>0</fpage><volume>205</volume><year>2015</year></element-citation></ref><ref id="REF30"><label>30</label><element-citation publication-type="journal"><article-title>Needle heating during interventional magnetic resonance imaging at 1.5- and 3.0-T field strengths</article-title><source>Invest Radiol</source><person-group>
+<name><surname>Khodarahmi</surname><given-names>I</given-names></name>
+<name><surname>Bonham</surname><given-names>LW</given-names></name>
+<name><surname>Weiss</surname><given-names>CR</given-names></name>
+<name><surname>Fritz</surname><given-names>J</given-names></name>
+</person-group><fpage>396</fpage><lpage>404</lpage><volume>55</volume><year>2020</year><pub-id pub-id-type="pmid">32369319</pub-id>
+</element-citation></ref><ref id="REF31"><label>31</label><element-citation publication-type="journal"><article-title>Review of patient safety in time-varying gradient fields</article-title><source>J Magn Reson Imaging</source><person-group>
+<name><surname>Schaefer</surname><given-names>DJ</given-names></name>
+<name><surname>Bourland</surname><given-names>JD</given-names></name>
+<name><surname>Nyenhuis</surname><given-names>JA</given-names></name>
+</person-group><fpage>20</fpage><lpage>29</lpage><volume>12</volume><year>2000</year><pub-id pub-id-type="pmid">10931561</pub-id>
+</element-citation></ref><ref id="REF32"><label>32</label><element-citation publication-type="journal"><article-title>Initial assessment of PNS safety for interventionalists during image-guided procedures</article-title><source>MAGMA</source><person-group>
+<name><surname>Jia</surname><given-names>F</given-names></name>
+<name><surname>Endt</surname><given-names>AV</given-names></name>
+<name><surname>Amrein</surname><given-names>P</given-names></name>
+<etal/>
+</person-group><fpage>239</fpage><lpage>251</lpage><volume>38</volume><year>2025</year><pub-id pub-id-type="pmid">39932656</pub-id>
+</element-citation></ref><ref id="REF33"><label>33</label><element-citation publication-type="journal"><article-title>Sensorineural hearing loss after magnetic resonance imaging</article-title><source>Case Rep Radiol</source><person-group>
+<name><surname>Mollasadeghi</surname><given-names>A</given-names></name>
+<name><surname>Mehrparvar</surname><given-names>AH</given-names></name>
+<name><surname>Atighechi</surname><given-names>S</given-names></name>
+<name><surname>Davari</surname><given-names>MH</given-names></name>
+<name><surname>Shokouh</surname><given-names>P</given-names></name>
+<name><surname>Mostaghaci</surname><given-names>M</given-names></name>
+<name><surname>Bahaloo</surname><given-names>M</given-names></name>
+</person-group><fpage>510258</fpage><volume>2013</volume><year>2013</year><pub-id pub-id-type="pmid">23844303</pub-id>
+</element-citation></ref><ref id="REF34"><label>34</label><element-citation publication-type="journal"><article-title>Hearing thresholds changes after MRI 1.5T of head and neck</article-title><source>Radiol Res Pract</source><person-group>
+<name><surname>Bahaloo</surname><given-names>M</given-names></name>
+<name><surname>Davari</surname><given-names>MH</given-names></name>
+<name><surname>Sobhan</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>8756579</fpage><volume>2019</volume><year>2019</year><pub-id pub-id-type="pmid">31316833</pub-id>
+</element-citation></ref><ref id="REF35"><label>35</label><element-citation publication-type="book"><article-title>International Electrotechnical Commission: Medical electrical equipment &#x02014; Part 2-33: Particular requirements for the safety of magnetic resonance equipment for medical diagnosis</article-title><source>Medical Electrical Equipment&#x02014;Part 2-33: Particular Requirements for the Safety of Magnetic Resonance Equipment for Medical Diagnosis, 4th Edition</source><date-in-citation content-type="access-date">
+<month>8</month>
+<year>2025</year>
+</date-in-citation><person-group>
+<name><surname>International Electrotechnical</surname><given-names>Commission</given-names></name>
+</person-group><fpage>2024</fpage><publisher-loc>Geneva, Switzerland</publisher-loc><publisher-name>International Electrotechnical Commission</publisher-name><volume>22</volume><year>2022</year><uri xlink:href="https://webstore.iec.ch/en/publication/67211">https://webstore.iec.ch/en/publication/67211</uri></element-citation></ref><ref id="REF36"><label>36</label><element-citation publication-type="journal"><article-title>Auditory noise associated with MR procedures: a review</article-title><source>J Magn Reson Imaging</source><person-group>
+<name><surname>McJury</surname><given-names>M</given-names></name>
+<name><surname>Shellock</surname><given-names>FG</given-names></name>
+</person-group><fpage>37</fpage><lpage>45</lpage><volume>12</volume><year>2000</year><pub-id pub-id-type="pmid">10931563</pub-id>
+</element-citation></ref><ref id="REF37"><label>37</label><element-citation publication-type="journal"><article-title>MRI noise and auditory health: can one hundred scans be linked to hearing loss? The case of the Courtois NeuroMod project</article-title><source>PLoS One</source><person-group>
+<name><surname>Fortier</surname><given-names>E</given-names></name>
+<name><surname>Bellec</surname><given-names>P</given-names></name>
+<name><surname>Boyle</surname><given-names>JA</given-names></name>
+<name><surname>Fuente</surname><given-names>A</given-names></name>
+</person-group><fpage>0</fpage><volume>20</volume><year>2025</year></element-citation></ref><ref id="REF38"><label>38</label><element-citation publication-type="journal"><article-title>Permanent neurological deficit related to magnetic resonance imaging in a patient with implanted deep brain stimulation electrodes for Parkinson's disease: case report</article-title><source>Neurosurgery</source><person-group>
+<name><surname>Henderson</surname><given-names>JM</given-names></name>
+<name><surname>Tkach</surname><given-names>J</given-names></name>
+<name><surname>Phillips</surname><given-names>M</given-names></name>
+<name><surname>Baker</surname><given-names>K</given-names></name>
+<name><surname>Shellock</surname><given-names>FG</given-names></name>
+<name><surname>Rezai</surname><given-names>AR</given-names></name>
+</person-group><fpage>0</fpage><volume>57</volume><year>2005</year></element-citation></ref><ref id="REF39"><label>39</label><element-citation publication-type="journal"><article-title>American College of Radiology manual on MR safety: 2024 update and revisions</article-title><source>Radiology</source><person-group>
+<name><surname>Pedrosa</surname><given-names>I</given-names></name>
+<name><surname>Altman</surname><given-names>DA</given-names></name>
+<name><surname>Dillman</surname><given-names>JR</given-names></name>
+<etal/>
+</person-group><fpage>0</fpage><volume>315</volume><year>2025</year></element-citation></ref><ref id="REF40"><label>40</label><element-citation publication-type="webpage"><article-title>Testing and labeling medical devices for safety in the magnetic resonance (MR) environment: guidance for industry and Food and Drug Administration staff</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><year>2023</year><uri xlink:href="https://www.fda.gov/media/74201/download">https://www.fda.gov/media/74201/download</uri></element-citation></ref><ref id="REF41"><label>41</label><element-citation publication-type="journal"><article-title>Practice advisory on anesthetic care for magnetic resonance imaging: an updated report by the American Society of Anesthesiologists task force on anesthetic care for magnetic resonance imaging</article-title><source>Anesthesiology</source><person-group>
+<name><surname>American Society of</surname><given-names>Anesthesiologists</given-names></name>
+</person-group><fpage>495</fpage><lpage>520</lpage><volume>122</volume><year>2015</year><pub-id pub-id-type="pmid">25383571</pub-id>
+</element-citation></ref><ref id="REF42"><label>42</label><element-citation publication-type="journal"><article-title>Intraoperative and interventional MRI: recommendations for a safe environment</article-title><source>Minim Invasive Ther Allied Technol</source><person-group>
+<name><surname>Kettenbach</surname><given-names>J</given-names></name>
+<name><surname>Kacher</surname><given-names>DF</given-names></name>
+<name><surname>Kanan</surname><given-names>AR</given-names></name>
+<etal/>
+</person-group><fpage>53</fpage><lpage>64</lpage><volume>15</volume><year>2006</year><pub-id pub-id-type="pmid">16754187</pub-id>
+</element-citation></ref><ref id="REF43"><label>43</label><element-citation publication-type="journal"><article-title>Magnetic resonance imaging-guided cardiac catheterization evacuation drills</article-title><source>Crit Care Nurse</source><person-group>
+<name><surname>Cronin</surname><given-names>IF</given-names></name>
+<name><surname>Kanter</surname><given-names>JP</given-names></name>
+<name><surname>Deutsch</surname><given-names>N</given-names></name>
+<name><surname>Hamann</surname><given-names>K</given-names></name>
+<name><surname>Olivieri</surname><given-names>L</given-names></name>
+<name><surname>Cross</surname><given-names>RR</given-names></name>
+</person-group><fpage>0</fpage><lpage>26</lpage><volume>41</volume><year>2021</year></element-citation></ref><ref id="REF44"><label>44</label><element-citation publication-type="journal"><article-title>How MRI compatible is "MRI compatible"? A systematic comparison of artifacts caused by biopsy needles at 3.0 and 1.5 T</article-title><source>Cardiovasc Intervent Radiol</source><person-group>
+<name><surname>Penzkofer</surname><given-names>T</given-names></name>
+<name><surname>Peykan</surname><given-names>N</given-names></name>
+<name><surname>Schmidt</surname><given-names>K</given-names></name>
+<name><surname>Krombach</surname><given-names>G</given-names></name>
+<name><surname>Kuhl</surname><given-names>CK</given-names></name>
+</person-group><fpage>1646</fpage><lpage>1657</lpage><volume>36</volume><year>2013</year><pub-id pub-id-type="pmid">23580119</pub-id>
+</element-citation></ref><ref id="REF45"><label>45</label><element-citation publication-type="journal"><article-title>Carbon fibre and nitinol needles for MRI-guided interventions: first in vitro and in vivo application</article-title><source>Eur J Radiol</source><person-group>
+<name><surname>Thomas</surname><given-names>C</given-names></name>
+<name><surname>Wojtczyk</surname><given-names>H</given-names></name>
+<name><surname>Rempp</surname><given-names>H</given-names></name>
+<etal/>
+</person-group><fpage>353</fpage><lpage>358</lpage><volume>79</volume><year>2011</year><pub-id pub-id-type="pmid">20688445</pub-id>
+</element-citation></ref><ref id="REF46"><label>46</label><element-citation publication-type="journal"><article-title>Enabling technology for MRI-guided intervention</article-title><source>Top Magn Reson Imaging</source><person-group>
+<name><surname>Sedaghat</surname><given-names>F</given-names></name>
+<name><surname>Tuncali</surname><given-names>K</given-names></name>
+</person-group><fpage>5</fpage><lpage>8</lpage><volume>27</volume><year>2018</year><pub-id pub-id-type="pmid">29406409</pub-id>
+</element-citation></ref><ref id="REF47"><label>47</label><element-citation publication-type="book"><article-title>MRI issues for implants and devices</article-title><source>MRI Bioeffects, Safety, and Patient Management, 2nd Edition</source><person-group>
+<name><surname>Shellock</surname><given-names>FG</given-names></name>
+</person-group><publisher-loc>Los Angeles, CA</publisher-loc><publisher-name>Biomedical Research Publishing Group</publisher-name><year>2022</year><uri xlink:href="https://www.mrisafetybook.com/">https://www.mrisafetybook.com/</uri></element-citation></ref><ref id="REF48"><label>48</label><element-citation publication-type="book"><article-title>Standard practice for marking medical devices and other items for safety in the magnetic resonance environment</article-title><source>Standard practice for marking medical devices and other items for safety in the magnetic resonance environment</source><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><person-group>
+<name><surname>American Society for Testing and Materials</surname><given-names>International</given-names></name>
+</person-group><fpage>2023</fpage><lpage>2024</lpage><publisher-loc>West Conshohocken (PA)</publisher-loc><publisher-name>ASTM International</publisher-name><volume>International;</volume><year>2023</year><uri xlink:href="https://store.astm.org/f2503-20.html">https://store.astm.org/f2503-20.html</uri></element-citation></ref><ref id="REF49"><label>49</label><element-citation publication-type="journal"><article-title>Safety protocols for interventional MRI</article-title><source>Acad Radiol</source><person-group>
+<name><surname>Hushek</surname><given-names>SG</given-names></name>
+<name><surname>Russell</surname><given-names>L</given-names></name>
+<name><surname>Moser</surname><given-names>RF</given-names></name>
+<name><surname>Hoerter</surname><given-names>NM</given-names></name>
+<name><surname>Moriarty</surname><given-names>TM</given-names></name>
+<name><surname>Shields</surname><given-names>CB</given-names></name>
+</person-group><fpage>1143</fpage><lpage>1148</lpage><volume>12</volume><year>2005</year><pub-id pub-id-type="pmid">16112514</pub-id>
+</element-citation></ref><ref id="REF50"><label>50</label><element-citation publication-type="book"><article-title>Standard test method for measurement of magnetically induced displacement force on medical devices in the magnetic resonance environment</article-title><source>Standard Test Method for Measurement of Magnetically Induced Displacement Force on Medical Devices in the Magnetic Resonance Environment</source><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><person-group>
+<name><surname>American Society for Testing and Materials</surname><given-names>International</given-names></name>
+</person-group><publisher-loc>West Conshohocken (PA)</publisher-loc><publisher-name>ASTM International</publisher-name><year>2022</year><uri xlink:href="https://store.astm.org/f2052-21.html">https://store.astm.org/f2052-21.html</uri></element-citation></ref><ref id="REF51"><label>51</label><element-citation publication-type="book"><article-title>Standard test method for measurement of magnetically induced torque on medical devices in the magnetic resonance environment</article-title><source>Test Method for Measurement of Magnetically Induced Torque on Medical Devices in the Magnetic Resonance Environment</source><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><person-group>
+<name><surname>American Society for Testing and Materials</surname><given-names>International</given-names></name>
+</person-group><publisher-loc>West Conshohocken (PA)</publisher-loc><publisher-name>ASTM International</publisher-name><year>2025</year><uri xlink:href="https://store.astm.org/f2213-17.html">https://store.astm.org/f2213-17.html</uri></element-citation></ref><ref id="REF52"><label>52</label><element-citation publication-type="webpage"><article-title>Standard test method for measurement of radio frequency induced heating on or near passive implants during magnetic resonance imaging</article-title><source>ASTM F2182-19e2: Test Method for Measurement of Radio Frequency Induced Heating On or Near Passive Implants During Magnetic Resonance Imaging</source><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><person-group>
+<name><surname>American Society for Testing and Materials</surname><given-names>International</given-names></name>
+</person-group><year>2020</year><uri xlink:href="https://store.astm.org/f2182-19e02.html">https://store.astm.org/f2182-19e02.html</uri></element-citation></ref><ref id="REF53"><label>53</label><element-citation publication-type="book"><article-title>Reference Manual for Magnetic Resonance Safety, Implants, and Devices: 2020 Edition</article-title><person-group>
+<name><surname>Shellock</surname><given-names>FG</given-names></name>
+</person-group><publisher-loc>Los Angeles, CA</publisher-loc><publisher-name>Biomedical Research Publishing Group</publisher-name><year>2020</year><uri xlink:href="https://www.amazon.com/Reference-Magnetic-Resonance-Implants-Devices/dp/098916327X">https://www.amazon.com/Reference-Magnetic-Resonance-Implants-Devices/dp/098916327X</uri></element-citation></ref><ref id="REF54"><label>54</label><element-citation publication-type="journal"><article-title>Development of a searchable system to confirm MR imaging safety information for implantable medical devices</article-title><source>Magn Reson Med Sci</source><person-group>
+<name><surname>Fujiwara</surname><given-names>Y</given-names></name>
+<name><surname>Fujioka</surname><given-names>H</given-names></name>
+<name><surname>Sekiguchi</surname><given-names>M</given-names></name>
+<name><surname>Tanaka</surname><given-names>H</given-names></name>
+<name><surname>Watanabe</surname><given-names>T</given-names></name>
+</person-group><fpage>286</fpage><lpage>292</lpage><volume>18</volume><year>2019</year><pub-id pub-id-type="pmid">30787251</pub-id>
+</element-citation></ref><ref id="REF55"><label>55</label><element-citation publication-type="journal"><article-title>MR thermometry for monitoring tumor ablation</article-title><source>Eur Radiol</source><person-group>
+<name><surname>de Senneville</surname><given-names>BD</given-names></name>
+<name><surname>Mougenot</surname><given-names>C</given-names></name>
+<name><surname>Quesson</surname><given-names>B</given-names></name>
+<name><surname>Dragonu</surname><given-names>I</given-names></name>
+<name><surname>Grenier</surname><given-names>N</given-names></name>
+<name><surname>Moonen</surname><given-names>CT</given-names></name>
+</person-group><fpage>2401</fpage><lpage>2410</lpage><volume>17</volume><year>2007</year><pub-id pub-id-type="pmid">17701184</pub-id>
+</element-citation></ref><ref id="REF56"><label>56</label><element-citation publication-type="journal"><article-title>Image-guided thermal ablation with MR-based thermometry</article-title><source>Quant Imaging Med Surg</source><person-group>
+<name><surname>Zhu</surname><given-names>M</given-names></name>
+<name><surname>Sun</surname><given-names>Z</given-names></name>
+<name><surname>Ng</surname><given-names>CK</given-names></name>
+</person-group><fpage>356</fpage><lpage>368</lpage><volume>7</volume><year>2017</year><pub-id pub-id-type="pmid">28812002</pub-id>
+</element-citation></ref><ref id="REF57"><label>57</label><element-citation publication-type="journal"><article-title>MRI-guided robot intervention&#x02014;current state-of-the-art and new challenges</article-title><source>Med-X</source><person-group>
+<name><surname>Huang</surname><given-names>S</given-names></name>
+<name><surname>Lou</surname><given-names>C</given-names></name>
+<name><surname>Zhou</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group><fpage>4</fpage><volume>1</volume><year>2023</year></element-citation></ref><ref id="REF58"><label>58</label><element-citation publication-type="journal"><article-title>MRI robots for needle-based interventions: systems and technology</article-title><source>Ann Biomed Eng</source><person-group>
+<name><surname>Monfaredi</surname><given-names>R</given-names></name>
+<name><surname>Cleary</surname><given-names>K</given-names></name>
+<name><surname>Sharma</surname><given-names>K</given-names></name>
+</person-group><fpage>1479</fpage><lpage>1497</lpage><volume>46</volume><year>2018</year><pub-id pub-id-type="pmid">29922958</pub-id>
+</element-citation></ref><ref id="REF59"><label>59</label><element-citation publication-type="journal"><article-title>Deep learning-based algorithm for the detection and characterization of MRI safety of cardiac implantable electronic devices on chest radiographs</article-title><source>Korean J Radiol</source><person-group>
+<name><surname>Kim</surname><given-names>UH</given-names></name>
+<name><surname>Kim</surname><given-names>MY</given-names></name>
+<name><surname>Park</surname><given-names>EA</given-names></name>
+<etal/>
+</person-group><fpage>1918</fpage><lpage>1928</lpage><volume>22</volume><year>2021</year><pub-id pub-id-type="pmid">34431249</pub-id>
+</element-citation></ref><ref id="REF60"><label>60</label><element-citation publication-type="journal"><article-title>MRSaiFE: an AI-based approach towards the real-time prediction of specific absorption rate</article-title><source>IEEE Access</source><person-group>
+<name><surname>Gokyar</surname><given-names>S</given-names></name>
+<name><surname>Robb</surname><given-names>FJ</given-names></name>
+<name><surname>Kainz</surname><given-names>W</given-names></name>
+<name><surname>Chaudhari</surname><given-names>A</given-names></name>
+<name><surname>Winkler</surname><given-names>SA</given-names></name>
+</person-group><fpage>140824</fpage><lpage>140834</lpage><volume>9</volume><year>2021</year><pub-id pub-id-type="pmid">34722096</pub-id>
+</element-citation></ref><ref id="REF61"><label>61</label><element-citation publication-type="journal"><article-title>An automated computational tool to study MRI safety of implanted passive cardiovascular medical devices</article-title><source>Eur Heart J</source><person-group>
+<name><surname>Baretta</surname><given-names>A</given-names></name>
+<name><surname>Bursi</surname><given-names>R</given-names></name>
+<name><surname>Palazzin</surname><given-names>A</given-names></name>
+<name><surname>Emili</surname><given-names>L</given-names></name>
+</person-group><fpage>0</fpage><volume>41</volume><year>2020</year></element-citation></ref></ref-list></back></article>

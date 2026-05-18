@@ -1,0 +1,43 @@
+基于RAG系统搭建医学专业知识生成LLM
+
+模型选择（Ollama / huggingface）
+
+deepseekR1 7/8B  Q4_K_M（8gb算力）
+或
+Qwen3-8B （16gb算力）
+
+根据实际算力情况选择Q4_K_M和Q5_K_M
+（如果本地设备算力不足可以考虑使用服务商的云算力：阿里，AWS）
+
+向量数据库选择：
+
+Chroma（首选）
+或
+LEANN
+
+框架选择：
+LangChain
+
+RAG系统知识数据来源选择（根据本地存储以及数据处理能力选择）：
+
+PubMed 
+
+源数据
+https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_bulk/
+（只使用oa_comm中的文献）
+
+
+配置相关环境：
+conda（虚拟）
+torch
+langchain
+chromadb
+Ollama（huggingface）
+pandas
+huggingface
+datasets
+
+模型选型（根据个人硬件决定）
+
+本次任务交付：
+验证验证本地语言模型运行情况并引入数据源（注意本次是准备工作，无需开始开发rag系统）

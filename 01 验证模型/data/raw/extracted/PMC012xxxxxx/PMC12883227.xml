@@ -1,0 +1,638 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883227</article-id><article-id pub-id-type="doi">10.7759/cureus.101149</article-id><article-categories><subj-group subj-group-type="heading"><subject>Pathology</subject></subj-group></article-categories><title-group><article-title>Serological and Clinical Evaluation of Incompatible Crossmatches Encountered in Pre-transfusion Testing</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author"><name><surname>Badoni</surname><given-names>Anisha</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Kusum</surname><given-names>Anuradha</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author" corresp="yes"><name><surname>Raturi</surname><given-names>Manish</given-names></name><xref rid="aff-2" ref-type="aff">2</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Department of Pathology, Himalayan Institute of Medical Sciences, Dehradun, IND </aff><aff id="aff-2">
+<label>2</label>
+Department of Immunohematology and Blood Transfusion, Himalayan Institute of Medical Sciences, Dehradun, IND </aff><author-notes><corresp id="cor1">
+Manish Raturi <email>manishnsr@gmail.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>9</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101149</elocation-id><history><date date-type="accepted"><day>8</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Badoni et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Badoni et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/449827-serological-and-clinical-evaluation-of-incompatible-crossmatches-encountered-in-pre-transfusion-testing">This article is available from https://cureus.com/articles/449827-serological-and-clinical-evaluation-of-incompatible-crossmatches-encountered-in-pre-transfusion-testing</self-uri><abstract><p>Background</p><p>Pre-transfusion testing is essential for preventing incompatible red cell transfusions and associated adverse reactions. Despite modern serological advancements, unexpected alloantibodies, autoantibodies, and monoclonal antibody interference continue to contribute to incompatible crossmatches. This study evaluates the serological patterns, clinical associations, and diagnostic considerations of incompatible crossmatches encountered in routine transfusion practice.</p><p>Methods</p><p>This cross-sectional study was conducted at a tertiary-care transfusion service of Swami Rama Himalayan University, Dehradun, India, over a duration of 18 months, from April 2023 to September 2024. Of 34,631 packed red blood cell (PRBC) crossmatches performed, 46 (0.13%) showing major incompatibility were included. Detailed clinical history, hematological parameters, and immunohematological testing, including Direct Coombs Test (DCT), Indirect Coombs Test (ICT), extended antibody panels, and daratumumab interference assessment, were performed. Associations between antibody category and clinical variables were analyzed using Chi-square/Fisher&#x02019;s exact tests, with p &#x0003c; 0.05 considered significant.</p><p>Results</p><p>Among 46 incompatible crossmatches, alloantibodies were the most frequent antibody type (24; 52.1%), followed by autoantibodies (16; 34.8%) and daratumumab interference (6; 13.0%). DCT status showed a significant association with antibody type (p = 0.001), with autoantibodies observed exclusively in DCT-positive cases (16/16; 100%), while daratumumab interference occurred only in DCT-negative cases (6/6; 100%). Significant associations were observed for age group (p = 0.012), clinical diagnosis (p = 0.001), previous transfusion history (p = 0.001), number of PRBC units transfused (p = 0.001), hepatomegaly (p = 0.009), and splenomegaly (p = 0.001). Younger patients predominantly exhibited alloantibodies, whereas patients older than 50 years showed contributions from all antibody categories. Autoantibodies predominated in benign hematological disorders (12; 75.0%), while daratumumab interference was confined to hematological malignancies (6; 100%). Gender (p = 0.463) and Rh typing (p = 0.076) were not significantly associated with antibody distribution. Logistic regression analysis did not identify reliable independent predictors due to wide confidence intervals and model instability.</p><p>Conclusion</p><p>Most incompatible crossmatches were caused by alloantibodies, though clinically significant contributions from autoantibodies and daratumumab interference were also observed. Strong associations with demographic and diagnostic variables highlight the importance of individualized immunohematological assessment. Routine use of structured diagnostic algorithms can enhance resolution of incompatible crossmatches and strengthen transfusion safety.</p></abstract><kwd-group kwd-group-type="author"><kwd>alloantibody</kwd><kwd>autoantibody</kwd><kwd>daratumumab interference</kwd><kwd>incompatible crossmatch</kwd><kwd>pre-transfusion testing</kwd></kwd-group></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p>The field of transfusion medicine has evolved from basic serological techniques to sophisticated molecular approaches, reflecting significant scientific progress and continuous innovation in healthcare, particularly in India [<xref rid="REF1" ref-type="bibr">1</xref>]. Historically, bloodletting or venesection was a dominant therapeutic practice from the era of Hippocrates (430 BC) until the nineteenth century. However, blood transfusion became widespread only in the past century due to earlier limitations in the understanding of blood physiology and circulation. Prior to the scientific developments of the mid-17th century, medical practice was shaped largely by Roman and Greek theories, which guided healthcare for nearly two millennia [<xref rid="REF2" ref-type="bibr">2</xref>].</p><p>Pretransfusion testing remains fundamental to safe transfusion practice [<xref rid="REF3" ref-type="bibr">3</xref>]. Its primary goal is to ensure compatibility between donor and recipient by preventing adverse reactions and optimizing the survival of transfused red blood cells (RBCs). This involves ABO and Rh blood grouping, screening for unexpected alloantibodies, antibody identification when screens are positive, careful selection of appropriate blood components, and compatibility testing through crossmatching [<xref rid="REF4" ref-type="bibr">4</xref>]. These steps collectively minimize risks and form the backbone of modern transfusion safety.</p><p>Despite its indispensable role, blood transfusion still carries risks, particularly adverse transfusion reactions (ATRs). Acute hemolytic transfusion reactions (AHTRs), often caused by ABO-incompatible (ABOi) transfusions, remain among the most severe [<xref rid="REF5" ref-type="bibr">5</xref>]. The true burden of ABOi transfusions may be underestimated due to inconsistent reporting practices. Current clinical estimates place their frequency between 1 in 10,000 and 1 in 4,667 units, though actual numbers may be higher. Accurate reporting and detailed analysis of ATRs are essential to understanding causative factors and strengthening preventive measures [<xref rid="REF5" ref-type="bibr">5</xref>].</p><p>Pretransfusion testing significantly reduces incompatibility-related events, yet it cannot entirely eliminate risk. Rare antibodies or low-frequency antigens may remain undetected, and transfusion of such units can lead to suboptimal RBC survival or unexpected reactions [<xref rid="REF6" ref-type="bibr">6</xref>]. Even when ABO and Rh compatibility is ensured, other clinically significant antigens can cause alloimmunization. For this reason, crossmatching remains essential, allowing direct assessment of donor RBC compatibility with the recipient&#x02019;s serum. In certain cases, even after exhaustive testing, fully compatible units may not be available, necessitating reliance on the "least incompatible" blood. Such decisions require coordinated judgment between clinicians and transfusion medicine specialists [<xref rid="REF7" ref-type="bibr">7</xref>].</p><p>The need for this study arises from the continuing challenges in ensuring uncompromised transfusion safety. Incompatible crossmatches result primarily from unexpected antibodies against less common antigens, which may not be detected by routine testing but can precipitate hemolytic reactions [<xref rid="REF8" ref-type="bibr">8</xref>]. A systematic evaluation of these incompatibilities will enhance understanding of antibody-antigen interactions and contribute to improved diagnostic accuracy [<xref rid="REF9" ref-type="bibr">9</xref>]. Furthermore, the substantial variability in antigen expression - both among individuals and under varying physiological conditions - can complicate crossmatching. Understanding these variations may guide the development of refined testing algorithms.</p><p>Current serological tools, though effective in most scenarios, face limitations in detecting multiple or low-frequency antibodies. Improved methods are especially important for chronically transfused patients, who are prone to developing alloantibodies that complicate future transfusions. By identifying the antibodies responsible for incompatible crossmatches, this research may support better patient management strategies and help reduce alloimmunization.</p><p>A deeper understanding of the mechanisms underlying incompatible crossmatches, coupled with advancements in serological testing, is vital for enhancing transfusion safety. The objectives of the study were to identify the serological causes of incompatible crossmatches, to evaluate the association of different antibody categories with clinical and transfusion-related variables, and to assess the diagnostic patterns used in resolving incompatible crossmatches.</p></sec><sec sec-type="materials|methods"><title>Materials and methods</title><p>Study setting and duration</p><p>This study was conducted in the Department of Pathology in collaboration with the Department of Immunohematology and Blood Transfusion at Swami Rama Himalayan University, Swami Ram Nagar, Dehradun. The study duration was 18 months, from April 2023 to September 2024. Ethical clearance was obtained from the institutional ethics committee, and informed written consent was taken from all participating patients. Samples were collected from blood units submitted to the blood center for crossmatching. Cases showing mixed-field agglutination reactions during conventional serologic crossmatching were selected for further analysis. Additional assessment of blood typing was performed to evaluate agglutination patterns reflecting membrane-bound agglutinogens. The study followed a cross-sectional design and employed consecutive purposive convenience sampling.</p><p>Sample size calculation</p><p>The minimum sample size was derived using the formula:</p><p><inline-formula><tex-math id="M1770576655329655">\begin{document} n = \frac{Z^{2}_{(1-\alpha/2)} \times P \times (1 - P)}{d^{2}} \end{document}</tex-math></inline-formula>,</p><p>where Z = 1.96 at a 95% confidence interval, P = prevalence of incompatible crossmatches (0.69%) as per Bhattacharya et al. [<xref rid="REF10" ref-type="bibr">10</xref>], and d = 2.5% allowable error. The calculated sample size was 42, and assuming a 10% dropout rate, a minimum of 46 patients was required.</p><p>Selection of participants</p><p>The study included all inpatients whose blood samples demonstrated major incompatible crossmatches during routine pre-transfusion testing, irrespective of the presence or absence of mixed-field agglutination. All included cases showed positive Indirect Coombs Test (ICT) results, which formed part of the serological profile of incompatible crossmatches evaluated in this study.</p><p>Study tools and materials</p><p>Data collection utilized a case recording form and requisition forms. Laboratory materials included gel cards for crossmatching, transfusion consent forms, blood grouping setups using the tube technique, and 2-3 mL properly labelled ethylenediaminetetraacetic acid (EDTA) and plain tube samples.</p><p>Study protocol</p><p>Baseline patient characteristics, including name, age, gender, weight, Unique Health Identification (UHID) number, contact details, blood group, and hemoglobin, were documented in a case recording form for patients requiring transfusion and meeting inclusion criteria. Written consent for transfusion was obtained. A detailed clinical history was taken, covering medication use, prior transfusions, pregnancy or abortion history in females, and any previous transfusion reactions. Each transfusion request was accompanied by 2-3 mL of correctly labelled EDTA and plain tube samples. Blood grouping was carried out using the conventional tube technique with monoclonal antisera, and reverse grouping was employed with in-house prepared pooled A, B, and O cells validated by saline control. Crossmatching and antibody screening were performed using column agglutination technology (CAT) gel cards, following the manufacturer&#x02019;s instructions. The platform utilized standardized incubation conditions, centrifugation parameters, and reagent volumes to ensure reproducibility of serological results. In brief, 10 &#x003bc;L of 4% donor RBC suspension, 40 &#x003bc;L patient serum, and 50 &#x003bc;L of bliss reagent were added, incubated at 37&#x000b0;C for 15 minutes, and centrifuged for 5 minutes. In cases of incompatible crossmatches, further immunohematology (IH) workup was performed using 3-cell and 11-cell extended antibody identification panels to determine the specific erythrocyte antibody present in the serum. Persistently incompatible crossmatches underwent a stepwise immunohematological evaluation, including DCT, ICT, extended antibody identification panels, and DTT treatment when indicated, following a standardized institutional algorithm.</p><p>Definitions</p><p>Anemia severity was classified based on hemoglobin levels as mild (10-10.9 g/dL), moderate (7-9.9 g/dL), and severe (&#x0003c;7 g/dL), in accordance with standard clinical practice. Hepatomegaly and splenomegaly were assessed based on clinical examination findings documented in patient records and corroborated by ultrasonography or other imaging modalities when available.</p><p>Data management and statistical analysis</p><p>Data entry was performed using Microsoft Excel (Microsoft Corporation, Redmond, WA), and statistical analysis was conducted using SPSS version 26 (IBM Corp., Armonk, NY). Categorical variables were summarized as frequencies and percentages, while quantitative variables were expressed as mean &#x000b1; standard deviation. Group comparisons were performed using a t-test for continuous variables and a chi-square or Fisher&#x02019;s exact test for categorical variables. Multivariable analysis was carried out using logistic regression models to evaluate predictors of antibody type and incompatible crossmatches. A p-value &#x0003c; 0.05 was considered statistically significant.</p></sec><sec sec-type="results"><title>Results</title><p>Out of 34,631 packed RBC (PRBC) crossmatches performed during the study period, 46 cases (0.13%) were found to be incompatible and included in the analysis. The mean age of the study population was 40.8 &#x000b1; 11.2 years, with a higher proportion of cases occurring at the extremes of age, particularly in patients older than 50 years (41.3%). Females accounted for 67.4% of incompatible crossmatches. Most patients had moderate (28.3%) to severe anemia (32.6%), with transfusion being more frequently required in these categories compared to mild anemia (2.2%). ICT was positive in all included cases (100%), reflecting the presence of unexpected antibodies in patients with incompatible crossmatches. The Direct Coombs Test (DCT) showed variable reactivity, being positive in 41.3% of patients. Detailed demographic characteristics, anemia severity, transfusion requirements, and Coombs test findings are presented in Table&#x000a0;<xref rid="TAB1" ref-type="table">1</xref>.</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Distribution of demographic, clinical, and serological parameters among patients with incompatible crossmatches.</title><p>DCT: Direct Coombs Test; ICT: Indirect Coombs Test; PRBC: packed red blood cells</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Parameter
+</td><td rowspan="1" colspan="1">
+Domain
+</td><td rowspan="1" colspan="1">
+N (%)
+</td></tr><tr><td rowspan="6" colspan="1">
+Age distribution
+</td><td rowspan="1" colspan="1">
+&#x0003c;10 years
+</td><td rowspan="1" colspan="1">
+9 (19.6%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+10-20 years
+</td><td rowspan="1" colspan="1">
+3 (6.5%)
+</td></tr><tr><td rowspan="1" colspan="1">
+21-30 years
+</td><td rowspan="1" colspan="1">
+6 (13.0%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+31-40 years
+</td><td rowspan="1" colspan="1">
+5 (10.9%)
+</td></tr><tr><td rowspan="1" colspan="1">
+41-50 years
+</td><td rowspan="1" colspan="1">
+4 (8.7%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x0003e;50 years
+</td><td rowspan="1" colspan="1">
+19 (41.3%)
+</td></tr><tr><td rowspan="2" colspan="1">
+Gender distribution
+</td><td rowspan="1" colspan="1">
+Male
+</td><td rowspan="1" colspan="1">
+15 (32.6%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Female
+</td><td rowspan="1" colspan="1">
+31 (67.4%)
+</td></tr><tr><td rowspan="6" colspan="1">
+Transfusion requirement by anemia severity
+</td><td rowspan="1" colspan="1">
+Mild anemia - required
+</td><td rowspan="1" colspan="1">
+1 (2.2%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Mild anemia - not required
+</td><td rowspan="1" colspan="1">
+3 (6.5%)
+</td></tr><tr><td rowspan="1" colspan="1">
+Moderate anemia - required
+</td><td rowspan="1" colspan="1">
+13 (28.3%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Moderate anemia - not required
+</td><td rowspan="1" colspan="1">
+9 (19.5%)
+</td></tr><tr><td rowspan="1" colspan="1">
+Severe anemia - required
+</td><td rowspan="1" colspan="1">
+15 (32.6%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Severe anemia - not required
+</td><td rowspan="1" colspan="1">
+5 (10.9%)
+</td></tr><tr><td rowspan="3" colspan="1">
+DCT results
+</td><td rowspan="1" colspan="1">
+Positive
+</td><td rowspan="1" colspan="1">
+19 (41.3%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Negative
+</td><td rowspan="1" colspan="1">
+11 (23.9%)
+</td></tr><tr><td rowspan="1" colspan="1">
+Not done
+</td><td rowspan="1" colspan="1">
+16 (34.8%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+ICT results
+</td><td rowspan="1" colspan="1">
+Positive
+</td><td rowspan="1" colspan="1">
+46 (100%)
+</td></tr></tbody></table></table-wrap><p>Among patients with incompatible crossmatches, alloantibodies were the most frequently identified antibody type, accounting for 52.1% of cases, followed by autoantibodies at 34.8%, while daratumumab-related interference constituted 13.0%. A statistically significant association was observed between antibody type and DCT status (p = 0.001). Autoantibodies were present exclusively among DCT-positive cases at 100%, whereas alloantibodies were more commonly identified in DCT-negative cases at 41.7% and in cases where DCT was not performed at 37.5% (Table&#x000a0;<xref rid="TAB2" ref-type="table">2</xref>).</p><table-wrap position="float" id="TAB2"><label>Table 2</label><caption><title>Distribution of alloantibody, autoantibody, and daratumumab influence across clinical and laboratory variables.</title><p>p-values were calculated using the chi-square test. A p-value &#x0003c; 0.05 was considered statistically significant.</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Variable
+</td><td rowspan="1" colspan="1">
+Category
+</td><td rowspan="1" colspan="1">
+Daratumumab (n = 6)
+</td><td rowspan="1" colspan="1">
+Alloantibody (n = 24)
+</td><td rowspan="1" colspan="1">
+Autoantibody (n = 16)
+</td><td rowspan="1" colspan="1">
+Chi-square Statistics
+</td><td rowspan="1" colspan="1">
+p-Value
+</td></tr><tr><td rowspan="3" colspan="1">
+DCT result
+</td><td rowspan="1" colspan="1">
+Not done
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+9 (37.5%)
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="3" colspan="1">
+37.81
+</td><td rowspan="3" colspan="1">
+0.001*
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Positive
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+5 (20.8%)
+</td><td rowspan="1" colspan="1">
+16 (100.0%)
+</td></tr><tr><td rowspan="1" colspan="1">
+Negative
+</td><td rowspan="1" colspan="1">
+6 (100.0%)
+</td><td rowspan="1" colspan="1">
+10 (41.7%)
+</td><td rowspan="1" colspan="1">
+0
+</td></tr><tr style="background-color:#ccc"><td rowspan="2" colspan="1">
+Gender
+</td><td rowspan="1" colspan="1">
+Male
+</td><td rowspan="1" colspan="1">
+2 (33.3%)
+</td><td rowspan="1" colspan="1">
+6 (25.0%)
+</td><td rowspan="1" colspan="1">
+7 (43.8%)
+</td><td rowspan="2" colspan="1">
+1.53
+</td><td rowspan="2" colspan="1">
+0.463
+</td></tr><tr><td rowspan="1" colspan="1">
+Female
+</td><td rowspan="1" colspan="1">
+4 (66.7%)
+</td><td rowspan="1" colspan="1">
+18 (75.0%)
+</td><td rowspan="1" colspan="1">
+9 (56.2%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="6" colspan="1">
+Age group
+</td><td rowspan="1" colspan="1">
+&#x0003c;10 years
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+5 (20.8%)
+</td><td rowspan="1" colspan="1">
+4 (25.0%)
+</td><td rowspan="6" colspan="1">
+22.51
+</td><td rowspan="6" colspan="1">
+0.012*
+</td></tr><tr><td rowspan="1" colspan="1">
+10-20
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+1 (4.2%)
+</td><td rowspan="1" colspan="1">
+2 (12.5%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+21-30
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+6 (25.0%)
+</td><td rowspan="1" colspan="1">
+0
+</td></tr><tr><td rowspan="1" colspan="1">
+31-40
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+5 (20.8%)
+</td><td rowspan="1" colspan="1">
+0
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+41-50
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+1 (4.2%)
+</td><td rowspan="1" colspan="1">
+3 (18.8%)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x0003e;50
+</td><td rowspan="1" colspan="1">
+6 (100.0%)
+</td><td rowspan="1" colspan="1">
+6 (25.0%)
+</td><td rowspan="1" colspan="1">
+7 (43.8%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="5" colspan="1">
+Clinical diagnosis
+</td><td rowspan="1" colspan="1">
+Acute febrile illness
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+10 (41.7%)
+</td><td rowspan="1" colspan="1">
+2 (12.5%)
+</td><td rowspan="5" colspan="1">
+37.64
+</td><td rowspan="5" colspan="1">
+0.001*
+</td></tr><tr><td rowspan="1" colspan="1">
+Antenatal anemia
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+3 (12.5%)
+</td><td rowspan="1" colspan="1">
+0
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Benign hematological disorder
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+4 (16.7%)
+</td><td rowspan="1" colspan="1">
+12 (75.0%)
+</td></tr><tr><td rowspan="1" colspan="1">
+Hematological malignancies
+</td><td rowspan="1" colspan="1">
+6 (100.0%)
+</td><td rowspan="1" colspan="1">
+4 (16.7%)
+</td><td rowspan="1" colspan="1">
+1 (6.2%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Trauma and hemorrhage
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+3 (12.5%)
+</td><td rowspan="1" colspan="1">
+1 (6.2%)
+</td></tr><tr><td rowspan="2" colspan="1">
+Previous transfusion
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+4 (66.7%)
+</td><td rowspan="1" colspan="1">
+5 (20.8%)
+</td><td rowspan="1" colspan="1">
+14 (87.5%)
+</td><td rowspan="2" colspan="1">
+17.83
+</td><td rowspan="2" colspan="1">
+0.001*
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Yes
+</td><td rowspan="1" colspan="1">
+2 (33.3%)
+</td><td rowspan="1" colspan="1">
+19 (79.2%)
+</td><td rowspan="1" colspan="1">
+2 (12.5%)
+</td></tr><tr><td rowspan="3" colspan="1">
+Number of PRBC units
+</td><td rowspan="1" colspan="1">
+None
+</td><td rowspan="1" colspan="1">
+4 (66.7%)
+</td><td rowspan="1" colspan="1">
+5 (20.8%)
+</td><td rowspan="1" colspan="1">
+14 (87.5%)
+</td><td rowspan="3" colspan="1">
+18.50
+</td><td rowspan="3" colspan="1">
+0.001*
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+1-3 units
+</td><td rowspan="1" colspan="1">
+2 (33.3%)
+</td><td rowspan="1" colspan="1">
+15 (62.5%)
+</td><td rowspan="1" colspan="1">
+2 (12.5%)
+</td></tr><tr><td rowspan="1" colspan="1">
+4-6 units
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+4 (16.7%)
+</td><td rowspan="1" colspan="1">
+0
+</td></tr><tr style="background-color:#ccc"><td rowspan="2" colspan="1">
+Rh typing
+</td><td rowspan="1" colspan="1">
+Rh negative
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+5 (20.8%)
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="2" colspan="1">
+5.14
+</td><td rowspan="2" colspan="1">
+0.076
+</td></tr><tr><td rowspan="1" colspan="1">
+Rh positive
+</td><td rowspan="1" colspan="1">
+6 (100.0%)
+</td><td rowspan="1" colspan="1">
+19 (79.2%)
+</td><td rowspan="1" colspan="1">
+16 (100.0%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="2" colspan="1">
+Hepatomegaly
+</td><td rowspan="1" colspan="1">
+Absent
+</td><td rowspan="1" colspan="1">
+6 (100.0%)
+</td><td rowspan="1" colspan="1">
+22 (91.7%)
+</td><td rowspan="1" colspan="1">
+9 (56.3%)
+</td><td rowspan="2" colspan="1">
+9.33
+</td><td rowspan="2" colspan="1">
+0.009*
+</td></tr><tr><td rowspan="1" colspan="1">
+Present
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+2 (8.3%)
+</td><td rowspan="1" colspan="1">
+7 (43.7%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="2" colspan="1">
+Splenomegaly
+</td><td rowspan="1" colspan="1">
+Absent
+</td><td rowspan="1" colspan="1">
+6 (100.0%)
+</td><td rowspan="1" colspan="1">
+23 (95.8%)
+</td><td rowspan="1" colspan="1">
+8 (50.0%)
+</td><td rowspan="2" colspan="1">
+14.49
+</td><td rowspan="2" colspan="1">
+0.001*
+</td></tr><tr><td rowspan="1" colspan="1">
+Present
+</td><td rowspan="1" colspan="1">
+0
+</td><td rowspan="1" colspan="1">
+1 (4.2%)
+</td><td rowspan="1" colspan="1">
+8 (50.0%)
+</td></tr></tbody></table></table-wrap><p>Gender distribution did not demonstrate a statistically significant association with antibody type (p = 0.463), despite females comprising 67.4% of the study population and exhibiting a higher proportion of alloantibodies at 75.0% compared to males, in whom autoantibodies were relatively more common at 43.8%. Antibody distribution differed significantly across age groups (p = 0.012). Patients younger than 40 years predominantly exhibited alloantibodies, accounting for approximately two-thirds of cases in these age groups, while patients older than 50 years showed contributions from all antibody categories, including daratumumab-related interference at 100% within that age group (Table&#x000a0;<xref rid="TAB2" ref-type="table">2</xref>).</p><p>Clinical diagnosis showed a strong and statistically significant association with antibody type (p = 0.001). Alloantibodies were most frequently observed in acute febrile illness at 41.7%, antenatal anemia at 12.5%, and trauma or hemorrhage at 12.5%. Autoantibodies predominated in benign hematological disorders at 75.0%, whereas daratumumab-related interference was confined to patients with hematological malignancies at 100%. A significant association was identified between prior transfusion history and antibody type (p = 0.001). Among previously transfused patients, alloantibodies were present in 79.2% of cases, while autoantibodies predominated among non-transfused patients at 87.5%. The number of PRBC units transfused also demonstrated a significant association (p = 0.001), with alloantibodies observed in 62.5% of patients receiving one to three units and 16.7% of those receiving four to six units (Table&#x000a0;<xref rid="TAB2" ref-type="table">2</xref>).</p><p>Rh blood group status did not show a statistically significant relationship with antibody distribution (p = 0.076), although all autoantibodies and daratumumab-related cases occurred in Rh-positive patients. Among clinical examination findings, hepatomegaly and splenomegaly demonstrated significant associations with antibody type. Autoantibodies were more frequently observed in patients with hepatomegaly at 43.7% and splenomegaly at 50.0%, whereas alloantibodies predominated in patients without hepatomegaly at 91.7% and without splenomegaly at 95.8% (Table&#x000a0;<xref rid="TAB2" ref-type="table">2</xref>).</p><p>Multivariable regression analysis assessing predictors of antibody type did not identify any statistically significant associations. All evaluated variables, including gender, age group, clinical diagnosis, and prior transfusion history, demonstrated non-significant relationships, characterized by very high p-values and extremely wide confidence intervals (Table&#x000a0;<xref rid="TAB3" ref-type="table">3</xref>). Although some predictors yielded large odds ratio estimates, these were accompanied by wide and imprecise confidence intervals, indicating substantial model instability rather than true clinical associations. Overall, the regression model failed to reliably explain variations in antibody type, and the findings should therefore be interpreted with caution (Table&#x000a0;<xref rid="TAB3" ref-type="table">3</xref>).</p><table-wrap position="float" id="TAB3"><label>Table 3</label><caption><title>Logistic regression analysis of predictors associated with antibody type (daratumumab influence, alloantibody, and autoantibody).</title></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Predictor
+</td><td rowspan="1" colspan="1">
+Estimate
+</td><td rowspan="1" colspan="1">
+SE
+</td><td rowspan="1" colspan="1">
+Z
+</td><td rowspan="1" colspan="1">
+p-Value
+</td><td rowspan="1" colspan="1">
+Odds Ratio
+</td><td rowspan="1" colspan="1">
+95% CI (Lower to Upper)
+</td></tr><tr><td rowspan="1" colspan="1">
+Intercept
+</td><td rowspan="1" colspan="1">
+-64.295
+</td><td rowspan="1" colspan="1">
+39421
+</td><td rowspan="1" colspan="1">
+-0.00
+</td><td rowspan="1" colspan="1">
+0.999
+</td><td rowspan="1" colspan="1">
+1.19
+</td><td rowspan="1" colspan="1">
+-77328 to 77199
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Gender (female vs. male)
+</td><td rowspan="1" colspan="1">
+21.053
+</td><td rowspan="1" colspan="1">
+15996
+</td><td rowspan="1" colspan="1">
+0.00
+</td><td rowspan="1" colspan="1">
+0.999
+</td><td rowspan="1" colspan="1">
+1.39
+</td><td rowspan="1" colspan="1">
+-31330 to 31372
+</td></tr><tr><td rowspan="1" colspan="1">
+Age (10-20 vs. &#x0003c;10)
+</td><td rowspan="1" colspan="1">
+0.712
+</td><td rowspan="1" colspan="1">
+68601
+</td><td rowspan="1" colspan="1">
+1.04
+</td><td rowspan="1" colspan="1">
+1.000
+</td><td rowspan="1" colspan="1">
+2.04
+</td><td rowspan="1" colspan="1">
+-134456 to 134457
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Age (21-30 vs. &#x0003c;10)
+</td><td rowspan="1" colspan="1">
+-22.045
+</td><td rowspan="1" colspan="1">
+25610
+</td><td rowspan="1" colspan="1">
+-8.61
+</td><td rowspan="1" colspan="1">
+0.999
+</td><td rowspan="1" colspan="1">
+2.67
+</td><td rowspan="1" colspan="1">
+-50217 to 50172
+</td></tr><tr><td rowspan="1" colspan="1">
+Age (31-40 vs. &#x0003c;10)
+</td><td rowspan="1" colspan="1">
+-21.533
+</td><td rowspan="1" colspan="1">
+27893
+</td><td rowspan="1" colspan="1">
+-7.72
+</td><td rowspan="1" colspan="1">
+0.999
+</td><td rowspan="1" colspan="1">
+4.45
+</td><td rowspan="1" colspan="1">
+-54691 to 54648
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Age (41-50 vs. &#x0003c;10)
+</td><td rowspan="1" colspan="1">
+21.765
+</td><td rowspan="1" colspan="1">
+90106
+</td><td rowspan="1" colspan="1">
+2.42
+</td><td rowspan="1" colspan="1">
+1.000
+</td><td rowspan="1" colspan="1">
+2.83
+</td><td rowspan="1" colspan="1">
+-176583 to 176627
+</td></tr><tr><td rowspan="1" colspan="1">
+Age (&#x0003e;50 vs. &#x0003c;10)
+</td><td rowspan="1" colspan="1">
+62.763
+</td><td rowspan="1" colspan="1">
+33091
+</td><td rowspan="1" colspan="1">
+0.00
+</td><td rowspan="1" colspan="1">
+0.998
+</td><td rowspan="1" colspan="1">
+1.81
+</td><td rowspan="1" colspan="1">
+-64794 to 64920
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Diagnosis (antenatal anemia vs. AFI)
+</td><td rowspan="1" colspan="1">
+66.095
+</td><td rowspan="1" colspan="1">
+28043
+</td><td rowspan="1" colspan="1">
+0.00
+</td><td rowspan="1" colspan="1">
+0.001
+</td><td rowspan="1" colspan="1">
+6.02
+</td><td rowspan="1" colspan="1">
+-94652 to 94785
+</td></tr><tr><td rowspan="1" colspan="1">
+Diagnosis (benign hematologic disorder vs. AFI)
+</td><td rowspan="1" colspan="1">
+43.241
+</td><td rowspan="1" colspan="1">
+38357
+</td><td rowspan="1" colspan="1">
+0.00
+</td><td rowspan="1" colspan="1">
+0.001
+</td><td rowspan="1" colspan="1">
+2.24
+</td><td rowspan="1" colspan="1">
+-54920 to 55007
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Diagnosis (hematologic malignancy vs. AFI)
+</td><td rowspan="1" colspan="1">
+65.279
+</td><td rowspan="1" colspan="1">
+124688
+</td><td rowspan="1" colspan="1">
+6.96
+</td><td rowspan="1" colspan="1">
+0.0017
+</td><td rowspan="1" colspan="1">
+4.74
+</td><td rowspan="1" colspan="1">
+-75113 to 75243
+</td></tr><tr><td rowspan="1" colspan="1">
+Diagnosis (trauma/hemorrhage vs. AFI)
+</td><td rowspan="1" colspan="1">
+86.752
+</td><td rowspan="1" colspan="1">
+88703
+</td><td rowspan="1" colspan="1">
+4.59
+</td><td rowspan="1" colspan="1">
+0.006
+</td><td rowspan="1" colspan="1">
+4.88
+</td><td rowspan="1" colspan="1">
+-244298 to 244471
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Previous transfusion (yes vs. no)
+</td><td rowspan="1" colspan="1">
+-41.709
+</td><td rowspan="1" colspan="1">
+28968
+</td><td rowspan="1" colspan="1">
+0.00
+</td><td rowspan="1" colspan="1">
+0.999
+</td><td rowspan="1" colspan="1">
+7.69
+</td><td rowspan="1" colspan="1">
+-56818 to 56735
+</td></tr></tbody></table></table-wrap><p>The logistic regression model using alloantibody as the reference outcome did not identify any meaningful or statistically significant predictors. Nearly all p-values approached 1, and estimated odds ratios for clinical variables, including splenomegaly, hepatomegaly, anemia severity, transfusion history, Rh typing, and number of transfused units, showed extreme variability with excessively wide confidence intervals, indicating poor model stability (Table&#x000a0;<xref rid="TAB4" ref-type="table">4</xref>). Although some variables demonstrated large odds ratio estimates, such as severe anemia compared to mild anemia and receipt of two units compared to no transfusion, these findings were accompanied by large standard errors and wide confidence intervals and therefore lacked statistical reliability. Overall, the analysis indicates that none of the evaluated clinical, laboratory, or transfusion-related variables independently predicted the development of specific antibody types (Table&#x000a0;<xref rid="TAB4" ref-type="table">4</xref>).</p><table-wrap position="float" id="TAB4"><label>Table 4</label><caption><title>Logistic regression model assessing clinical and laboratory predictors of outcome using alloantibody as reference.</title></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Predictor</td><td rowspan="1" colspan="1">Estimate</td><td rowspan="1" colspan="1">SE</td><td rowspan="1" colspan="1">Z</td><td rowspan="1" colspan="1">p-Value</td><td rowspan="1" colspan="1">Odds Ratio</td><td rowspan="1" colspan="1">95% CI (Lower to Upper)</td></tr><tr><td rowspan="1" colspan="1">Intercept</td><td rowspan="1" colspan="1">-127.093</td><td rowspan="1" colspan="1">23717.55</td><td rowspan="1" colspan="1">-0.00536</td><td rowspan="1" colspan="1">0.996</td><td rowspan="1" colspan="1">6.37</td><td rowspan="1" colspan="1">-46612.65 to 46358.46</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Rh typing (+ vs. -)</td><td rowspan="1" colspan="1">90.931</td><td rowspan="1" colspan="1">17200.73</td><td rowspan="1" colspan="1">0.00529</td><td rowspan="1" colspan="1">0.996</td><td rowspan="1" colspan="1">3.10</td><td rowspan="1" colspan="1">-33621.88 to 33803.74</td></tr><tr><td rowspan="1" colspan="1">Previous transfusion (yes vs. no)</td><td rowspan="1" colspan="1">-18.842</td><td rowspan="1" colspan="1">5555.72</td><td rowspan="1" colspan="1">-0.00339</td><td rowspan="1" colspan="1">0.997</td><td rowspan="1" colspan="1">6.56</td><td rowspan="1" colspan="1">-10907.86 to 10870.17</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">1 unit transfused vs. none</td><td rowspan="1" colspan="1">19.803</td><td rowspan="1" colspan="1">5555.72</td><td rowspan="1" colspan="1">0.00356</td><td rowspan="1" colspan="1">0.997</td><td rowspan="1" colspan="1">3.99</td><td rowspan="1" colspan="1">-10869.21 to 10908.82</td></tr><tr><td rowspan="1" colspan="1">2 units transfused vs. none</td><td rowspan="1" colspan="1">20.565</td><td rowspan="1" colspan="1">5555.72</td><td rowspan="1" colspan="1">0.00370</td><td rowspan="1" colspan="1">0.997</td><td rowspan="1" colspan="1">8.54</td><td rowspan="1" colspan="1">-10868.45 to 10909.58</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">3 units transfused vs. none</td><td rowspan="1" colspan="1">21.657</td><td rowspan="1" colspan="1">5555.72</td><td rowspan="1" colspan="1">0.00390</td><td rowspan="1" colspan="1">0.997</td><td rowspan="1" colspan="1">2.55</td><td rowspan="1" colspan="1">-10867.36 to 10910.67</td></tr><tr><td rowspan="1" colspan="1">4 units transfused vs. none</td><td rowspan="1" colspan="1">40.166</td><td rowspan="1" colspan="1">29755.70</td><td rowspan="1" colspan="1">0.00135</td><td rowspan="1" colspan="1">0.999</td><td rowspan="1" colspan="1">2.78</td><td rowspan="1" colspan="1">-58279.93 to 58360.26</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">6 units transfused vs. none</td><td rowspan="1" colspan="1">14.459</td><td rowspan="1" colspan="1">234872.66</td><td rowspan="1" colspan="1">6.16</td><td rowspan="1" colspan="1">1.000</td><td rowspan="1" colspan="1">1.90</td><td rowspan="1" colspan="1">-460327.49 to 460356.41</td></tr><tr><td rowspan="1" colspan="1">7 units transfused vs. none</td><td rowspan="1" colspan="1">40.166</td><td rowspan="1" colspan="1">29755.70</td><td rowspan="1" colspan="1">0.00135</td><td rowspan="1" colspan="1">0.999</td><td rowspan="1" colspan="1">2.78</td><td rowspan="1" colspan="1">-58279.93 to 58360.26</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Hepatomegaly (present vs. absent)</td><td rowspan="1" colspan="1">54.193</td><td rowspan="1" colspan="1">10809.36</td><td rowspan="1" colspan="1">0.00501</td><td rowspan="1" colspan="1">0.996</td><td rowspan="1" colspan="1">3.43</td><td rowspan="1" colspan="1">-21131.76 to 21240.15</td></tr><tr><td rowspan="1" colspan="1">Splenomegaly (present vs. absent)</td><td rowspan="1" colspan="1">-0.373</td><td rowspan="1" colspan="1">2.07</td><td rowspan="1" colspan="1">-0.17968</td><td rowspan="1" colspan="1">0.857</td><td rowspan="1" colspan="1">0.6888</td><td rowspan="1" colspan="1">-4.44 to 3.694</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">DCT positive vs. not done</td><td rowspan="1" colspan="1">0.666</td><td rowspan="1" colspan="1">1.57</td><td rowspan="1" colspan="1">0.42442</td><td rowspan="1" colspan="1">0.671</td><td rowspan="1" colspan="1">1.9473</td><td rowspan="1" colspan="1">-2.41 to 3.744</td></tr><tr><td rowspan="1" colspan="1">DCT negative vs. not done</td><td rowspan="1" colspan="1">-2.343</td><td rowspan="1" colspan="1">1.57</td><td rowspan="1" colspan="1">-1.49462</td><td rowspan="1" colspan="1">0.135</td><td rowspan="1" colspan="1">0.0961</td><td rowspan="1" colspan="1">-5.41 to 0.729</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Moderate vs. mild anemia</td><td rowspan="1" colspan="1">35.737</td><td rowspan="1" colspan="1">8265.72</td><td rowspan="1" colspan="1">0.00432</td><td rowspan="1" colspan="1">0.997</td><td rowspan="1" colspan="1">3.31</td><td rowspan="1" colspan="1">-16164.78 to 16236.25</td></tr><tr><td rowspan="1" colspan="1">Severe vs. mild anemia</td><td rowspan="1" colspan="1">34.31</td><td rowspan="1" colspan="1">8265.72</td><td rowspan="1" colspan="1">0.00415</td><td rowspan="1" colspan="1">0.997</td><td rowspan="1" colspan="1">7.95</td><td rowspan="1" colspan="1">-16166.21 to 16234.83</td></tr></tbody></table></table-wrap><p>A standardized algorithm was followed for resolving incompatible crossmatches in the blood center. Each patient sample underwent initial clerical and serological verification, including ABO and Rh typing with forward and reverse grouping. Samples deemed unacceptable were re-collected, while discrepancies triggered repeat testing and clinical history review. Crossmatching with group-specific donor units served as the primary compatibility check. Compatible units were issued immediately, whereas incompatible reactions prompted repeat crossmatching with additional donor units. Persistently incompatible cases underwent extended IH work-up, including direct antiglobulin test (DAT), ICT, antibody identification panels, and dithiothreitol (DTT) treatment when indicated. In life-threatening situations, the least incompatible unit was considered with the clinician's consent. All steps and outcomes were documented to ensure traceability and transfusion safety (Figure&#x000a0;<xref rid="FIG1" ref-type="fig">1</xref>).</p><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>Standardized workflow for resolving incompatible crossmatches in the transfusion service.</title></caption><graphic xlink:href="cureus-0018-00000101149-i01" position="float"/></fig></sec><sec sec-type="discussion"><title>Discussion</title><p>This study evaluated the prevalence and underlying causes of incompatible crossmatches in a tertiary care transfusion service. In our study, incompatible crossmatches represented a small proportion of routine pretransfusion testing, providing objective insight into the burden of serological discrepancies encountered in day-to-day transfusion practice. The study population included a broad age range, with a higher representation of older individuals, and females constituted a greater proportion of cases. This observation is consistent with previous reports suggesting that female patients, due to pregnancy-related antigen exposure, more frequently develop RBC antibodies [<xref rid="REF11" ref-type="bibr">11</xref>].</p><p>The overall antibody distribution demonstrated that alloantibodies were the most common cause of incompatibility, followed by autoantibodies, with daratumumab-related interference accounting for a smaller but clinically important proportion. This pattern is comparable to earlier studies reporting alloantibody predominance in incompatible crossmatches, with reported frequencies ranging from approximately 50 to 70% [<xref rid="REF10" ref-type="bibr">10</xref>,<xref rid="REF11" ref-type="bibr">11</xref>]. Daratumumab interference emerged as a notable contributor, particularly among patients with hematological malignancies, consistent with recent reports describing anti-CD38 therapeutic interference in serologic testing, where rates of panreactivity have been reported in up to 100% of treated patients [<xref rid="REF12" ref-type="bibr">12</xref>].</p><p>DCT results demonstrated distinct antibody profiles. Autoantibodies were exclusively associated with DCT positivity, whereas alloantibodies were more frequently observed among DCT-negative cases and in those where the test was not performed. Daratumumab-related interference was confined to DCT-negative cases. The statistically significant association between DCT status and antibody type highlights the diagnostic utility of this test in distinguishing alloimmune from autoimmune mechanisms of incompatibility. Similar observations were made by Vidushi et al. [<xref rid="REF11" ref-type="bibr">11</xref>] and Oberman et al. [<xref rid="REF13" ref-type="bibr">13</xref>], who emphasized the importance of structured immunohematological algorithms in resolving complex serologic patterns.</p><p>Gender did not demonstrate an independent statistically significant association with antibody distribution in the present analysis. Although previous studies, such as Bhattacharya et al. [<xref rid="REF10" ref-type="bibr">10</xref>], reported higher alloimmunization rates among females, attributing this to pregnancy-related antigen exposure, other studies have similarly failed to demonstrate a consistent gender effect after accounting for exposure-related variables. This suggests that observed gender differences may be influenced more by clinical context than by intrinsic biological susceptibility.</p><p>Age group showed a statistically significant association with antibody distribution. Prior studies have reported varying age-related trends, with Bhattacharya et al. [<xref rid="REF10" ref-type="bibr">10</xref>] describing higher incompatibility rates among younger adults, while Vidushi et al. [<xref rid="REF11" ref-type="bibr">11</xref>] observed increased complexity in older patients due to cumulative transfusion exposure. The findings of the present study align with this variability and underscore the influence of population-specific and disease-related factors on antibody formation.</p><p>Clinical diagnosis demonstrated a strong and statistically significant association with antibody type. Autoantibodies predominated in benign hematological disorders, a finding consistent with Shoganraj et al. [<xref rid="REF14" ref-type="bibr">14</xref>], who reported autoantibody frequencies exceeding 70% in immune-mediated hematological conditions. The restriction of daratumumab-related interference to patients with hematological malignancies is in agreement with published evidence linking monoclonal antibody therapy to predictable serologic interference patterns [<xref rid="REF12" ref-type="bibr">12</xref>].</p><p>Transfusion-related variables showed significant associations with antibody distribution. Previous studies have consistently demonstrated an increased risk of alloimmunization with prior transfusion exposure and higher cumulative RBC transfusion burden, with reported alloantibody rates increasing proportionally with transfusion frequency [<xref rid="REF11" ref-type="bibr">11</xref>,<xref rid="REF15" ref-type="bibr">15</xref>]. The present findings support these established mechanisms and reinforce the importance of judicious transfusion practices and extended antigen matching in selected patient populations.</p><p>Rh typing did not demonstrate a statistically significant association with antibody patterns in the present study. Although Bhattacharya et al. [<xref rid="REF10" ref-type="bibr">10</xref>] reported a higher prevalence of alloantibodies among Rh-negative individuals, other investigators have noted that Rh status alone does not independently predict antibody formation in the absence of repeated antigen exposure [<xref rid="REF11" ref-type="bibr">11</xref>].</p><p>Organomegaly demonstrated clinically relevant associations with antibody patterns. Prior studies have described an association between splenomegaly and autoimmune hemolytic anemia, with autoantibody-mediated hemolysis reported in up to 60% of patients with splenic enlargement [<xref rid="REF14" ref-type="bibr">14</xref>]. The findings of the present study are consistent with these observations and support the role of the spleen in immune-mediated red cell destruction. Hepatomegaly has similarly been described as a marker of underlying hematological or systemic disease rather than a direct cause of antibody formation [<xref rid="REF10" ref-type="bibr">10</xref>].</p><p>Overall, this study provides clinically relevant insights into the serologic characteristics of incompatible crossmatches encountered in routine transfusion practice. The significant associations observed with DCT status, age group, clinical diagnosis, transfusion-related variables, and organomegaly emphasize the importance of individualized immunohematological assessment. Conversely, the lack of significant association with gender and Rh typing highlights the multifactorial nature of antibody formation. These findings support the continued refinement of compatibility testing algorithms to enhance transfusion safety.</p><p>A key strength of this study is its conduct in a real-world tertiary care transfusion service, which reflects routine clinical workflows and operational challenges encountered during pre-transfusion testing. The use of a standardized, stepwise immunohematologic work-up, including direct and indirect Coombs testing, extended antibody identification panels, and assessment for daratumumab-related interference, strengthens the clinical relevance of the findings and supports their applicability to day-to-day transfusion decision-making.</p><p>The limitations of the study have been explicitly addressed and expanded in this revised Discussion. The relatively small sample size of incompatible crossmatches limited the statistical power of subgroup analyses and resulted in underpowered multivariable regression models with wide confidence intervals and unstable estimates. Consequently, the regression analysis could not reliably identify independent predictors and was interpreted descriptively rather than inferentially. In addition, antibody classification was based on available serologic techniques without routine molecular or confirmatory testing, introducing a potential risk of serologic misclassification, particularly in cases involving complex or low-frequency antibodies. Furthermore, as this was a single-center study with case selection restricted to patients undergoing crossmatch testing at one institution, the generalizability of the findings to other transfusion settings or populations may be limited.</p><p>Despite these limitations, the study offers valuable real-world insight into the serological patterns and clinical contexts of incompatible crossmatches and underscores the importance of structured diagnostic workflows in strengthening transfusion safety and guiding evidence-based transfusion practices.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>This study highlights the serological complexity underlying incompatible crossmatches and emphasizes the importance of detailed immunohematological evaluation in routine transfusion practice. Alloantibodies emerged as the most common cause of incompatibility, while autoantibodies and daratumumab-related interference contributed substantially in specific clinical settings. Significant associations with age, underlying clinical diagnosis, transfusion-related factors, and splenomegaly underscore the influence of patient and disease-related characteristics on antibody formation. Although multivariable logistic regression did not identify reliable independent predictors, the descriptive and univariable findings reinforce the need for a systematic, algorithm-based approach to resolving serological incompatibilities. Strengthening pretransfusion testing workflows and maintaining awareness of disease and therapy-related interference are essential to enhance transfusion safety and support evidence-based patient management.</p></sec></body><back><ack><p>The authors gratefully acknowledge the valuable support of Doc Navigator&#x000a9;, Chandigarh (www.docnavigator.co.in), for their meticulous proofreading and language-editing services, which substantially contributed to enhancing the clarity, coherence, and overall quality of this manuscript.</p></ack><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Human subjects:</bold> Informed consent for treatment and open access publication was obtained or waived by all participants in this study. Himalayan Institute of Medical Sciences issued approval SHRU/HIMS/ETHICS/2025/90.</p><p><bold>Animal subjects:</bold> All authors have confirmed that this study did not involve animal subjects or tissue.</p><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> All authors have declared that no financial support was received from any organization for the submitted work.</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Anisha Badoni, Anuradha Kusum, Manish Raturi</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Anisha Badoni, Anuradha Kusum, Manish Raturi</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Anisha Badoni, Anuradha Kusum, Manish Raturi</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Anisha Badoni, Anuradha Kusum, Manish Raturi</p><p><bold>Supervision:</bold>&#x000a0; Anuradha Kusum, Manish Raturi</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="journal"><article-title>The journey of blood</article-title><source>Transfus Clin Biol</source><person-group>
+<name><surname>Raturi</surname><given-names>M</given-names></name>
+</person-group><fpage>3</fpage><volume>27</volume><year>2020</year><pub-id pub-id-type="pmid">32005325</pub-id>
+</element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>The chronicles of blood banking in India</article-title><source>Transfus Clin Biol</source><person-group>
+<name><surname>Raturi</surname><given-names>M</given-names></name>
+<name><surname>Gupta</surname><given-names>D</given-names></name>
+</person-group><fpage>162</fpage><lpage>163</lpage><volume>27</volume><year>2020</year><pub-id pub-id-type="pmid">32561326</pub-id>
+</element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="journal"><article-title>Pre&#x02010;transfusion testing</article-title><source>ISBT Sci Ser</source><person-group>
+<name><surname>White</surname><given-names>J</given-names></name>
+</person-group><fpage>37</fpage><lpage>44</lpage><volume>4</volume><year>2009</year></element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Pretransfusion compatibility testing for red blood cell administration</article-title><source>Curr Opin Hematol</source><person-group>
+<name><surname>Shulman</surname><given-names>IA</given-names></name>
+<name><surname>Downes</surname><given-names>KA</given-names></name>
+<name><surname>Sazama</surname><given-names>K</given-names></name>
+<name><surname>Maffei</surname><given-names>LM</given-names></name>
+</person-group><fpage>397</fpage><lpage>404</lpage><volume>8</volume><year>2001</year><pub-id pub-id-type="pmid">11604582</pub-id>
+</element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>Blood transfusion reactions&#x02014;a comprehensive review of the literature including a Swiss perspective</article-title><source>J Clin Med</source><person-group>
+<name><surname>Ackfeld</surname><given-names>T</given-names></name>
+<name><surname>Schmutz</surname><given-names>T</given-names></name>
+<name><surname>Guechi</surname><given-names>Y</given-names></name>
+<name><surname>Le Terrier</surname><given-names>C</given-names></name>
+</person-group><fpage>9</fpage><volume>11</volume><year>2022</year></element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Transfusion risks and transfusion-related pro-inflammatory responses</article-title><source>Hematol Oncol Clin North Am</source><person-group>
+<name><surname>Despotis</surname><given-names>GJ</given-names></name>
+<name><surname>Zhang</surname><given-names>L</given-names></name>
+<name><surname>Lublin</surname><given-names>DM</given-names></name>
+</person-group><fpage>147</fpage><lpage>161</lpage><volume>21</volume><year>2007</year><pub-id pub-id-type="pmid">17258124</pub-id>
+</element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>Guidelines for pre-transfusion compatibility procedures in blood transfusion laboratories. British Committee for Standards in Haematology</article-title><source>Transfus Med</source><person-group>
+<name><surname>Milkins</surname><given-names>C</given-names></name>
+<name><surname>Berryman</surname><given-names>J</given-names></name>
+<name><surname>Cantwell</surname><given-names>C</given-names></name>
+<etal/>
+</person-group><fpage>3</fpage><lpage>35</lpage><volume>23</volume><year>2013</year><pub-id pub-id-type="pmid">23216974</pub-id>
+</element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>Assessment of unexpected (non-ABO) red blood cell antibodies and their associated clinical conditions among patients and blood donors attending University Teaching Hospital of Kigali (CHUK) and Rwanda Blood Transfusion Division</article-title><source>Adv Hematol</source><person-group>
+<name><surname>Niyibizi</surname><given-names>JB</given-names></name>
+<name><surname>Seifu</surname><given-names>D</given-names></name>
+<name><surname>Geurkink</surname><given-names>C</given-names></name>
+<etal/>
+</person-group><fpage>2</fpage><volume>2025</volume><year>2025</year></element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>Implementing type and screen method replacing conventional antiglobulin crossmatch procedure for compatibility testing in elective protocol in a tertiary care hospital</article-title><source>Asian J Transfus Sci</source><person-group>
+<name><surname>Kumar</surname><given-names>IS</given-names></name>
+<name><surname>Kulkarni</surname><given-names>RG</given-names></name>
+<name><surname>Sahoo</surname><given-names>D</given-names></name>
+<name><surname>Basavarajegowda</surname><given-names>A</given-names></name>
+</person-group><fpage>23</fpage><lpage>28</lpage><volume>19</volume><year>2025</year><pub-id pub-id-type="pmid">40838003</pub-id>
+</element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="journal"><article-title>An approach to incompatible cross-matched red cells: our experience in a major regional blood transfusion center at Kolkata, Eastern India</article-title><source>Asian J Transfus Sci</source><person-group>
+<name><surname>Bhattacharya</surname><given-names>P</given-names></name>
+<name><surname>Samanta</surname><given-names>E</given-names></name>
+<name><surname>Afroza</surname><given-names>N</given-names></name>
+<name><surname>Naik</surname><given-names>A</given-names></name>
+<name><surname>Biswas</surname><given-names>R</given-names></name>
+</person-group><fpage>51</fpage><lpage>56</lpage><volume>12</volume><year>2018</year><pub-id pub-id-type="pmid">29563676</pub-id>
+</element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="journal"><article-title>Evaluation of incompatible crossmatch</article-title><source>Glob J Transfus Med</source><person-group>
+<name><surname>Vidushi</surname><given-names>M</given-names></name>
+<name><surname>Sidhu</surname><given-names>M</given-names></name>
+<name><surname>Shah</surname><given-names>SN</given-names></name>
+</person-group><fpage>68</fpage><lpage>72</lpage><volume>5</volume><year>2020</year></element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="journal"><article-title>Principles of virtual crossmatch testing for kidney transplantation</article-title><source>Kidney Int Rep</source><person-group>
+<name><surname>Bhaskaran</surname><given-names>MC</given-names></name>
+<name><surname>Heidt</surname><given-names>S</given-names></name>
+<name><surname>Muthukumar</surname><given-names>T</given-names></name>
+</person-group><fpage>1179</fpage><lpage>1188</lpage><volume>7</volume><year>2022</year><pub-id pub-id-type="pmid">35685330</pub-id>
+</element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>Role of the crossmatch in testing for serologic incompatibility</article-title><source>Transfusion</source><person-group>
+<name><surname>Oberman</surname><given-names>HA</given-names></name>
+<name><surname>Barnes</surname><given-names>BA</given-names></name>
+<name><surname>Steiner</surname><given-names>EA</given-names></name>
+</person-group><fpage>12</fpage><lpage>16</lpage><volume>22</volume><year>1982</year><pub-id pub-id-type="pmid">6801826</pub-id>
+</element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Evaluation of incompatible crossmatches at a tertiary care hospital in Chennai: a prospective study</article-title><source>Asian J Pharm Clin Res</source><person-group>
+<name><surname>Shoganraj</surname><given-names>S</given-names></name>
+<name><surname>Sri Devi</surname><given-names>M</given-names></name>
+<name><surname>Sreedevi</surname><given-names>R</given-names></name>
+<name><surname>Chitra</surname><given-names>M</given-names></name>
+</person-group><fpage>153</fpage><lpage>155</lpage><volume>17</volume><year>2024</year></element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>Associations between alloantibodies and multiple red blood cell transfusions in patients with sickle cell anemia</article-title><source>J King Saud Univ Sci</source><person-group>
+<name><surname>Aldakheel</surname><given-names>FM</given-names></name>
+<name><surname>Alali</surname><given-names>BH</given-names></name>
+<name><surname>Alduraywish</surname><given-names>SA</given-names></name>
+<name><surname>Mateen</surname><given-names>A</given-names></name>
+<name><surname>Syed</surname><given-names>R</given-names></name>
+</person-group><fpage>6</fpage><volume>34</volume><year>2022</year></element-citation></ref></ref-list></back></article>

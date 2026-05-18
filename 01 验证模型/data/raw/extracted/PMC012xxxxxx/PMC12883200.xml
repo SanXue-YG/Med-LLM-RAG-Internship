@@ -1,0 +1,580 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" id="dmrr70135" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Diabetes Metab Res Rev</journal-id><journal-id journal-id-type="iso-abbrev">Diabetes Metab Res Rev</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)1520-7560</journal-id><journal-id journal-id-type="publisher-id">DMRR</journal-id><journal-title-group><journal-title>Diabetes/Metabolism Research and Reviews</journal-title></journal-title-group><issn pub-type="ppub">1520-7552</issn><issn pub-type="epub">1520-7560</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">41655239</article-id><article-id pub-id-type="pmc">PMC12883200</article-id><article-id pub-id-type="doi">10.1002/dmrr.70135</article-id><article-id pub-id-type="publisher-id">DMRR70135</article-id><article-categories><subj-group subj-group-type="overline"><subject>Research Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>Diabetic Neuropathy Is Associated With Lower Bone Mineral Density and Higher Fall Risk in Young Elderly Adults With Type 2 Diabetes</article-title></title-group><contrib-group><contrib id="dmrr70135-cr-0001" contrib-type="author"><name><surname>D'Onofrio</surname><given-names>Luca</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-3905-0139</contrib-id><xref rid="dmrr70135-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0002" contrib-type="author"><name><surname>Amendolara</surname><given-names>Rocco</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-8740-0549</contrib-id><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0003" contrib-type="author"><name><surname>Siena</surname><given-names>Antonio</given-names></name><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0004" contrib-type="author"><name><surname>Latino</surname><given-names>Alessandro</given-names></name><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0005" contrib-type="author"><name><surname>Risi</surname><given-names>Renata</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-2905-4398</contrib-id><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0006" contrib-type="author"><name><surname>Balena</surname><given-names>Angela</given-names></name><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0007" contrib-type="author"><name><surname>Zampetti</surname><given-names>Simona</given-names></name><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0008" contrib-type="author"><name><surname>Masi</surname><given-names>Davide</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-0820-633X</contrib-id><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0009" contrib-type="author"><name><surname>Alfonsi</surname><given-names>Marianna</given-names></name><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0010" contrib-type="author"><name><surname>La Scaleia</surname><given-names>Barbara</given-names></name><xref rid="dmrr70135-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0011" contrib-type="author"><name><surname>Watanabe</surname><given-names>Mikiko</given-names></name><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0012" contrib-type="author"><name><surname>Zago</surname><given-names>Myrka</given-names></name><xref rid="dmrr70135-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="dmrr70135-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0013" contrib-type="author"><name><surname>Lacquaniti</surname><given-names>Francesco</given-names></name><xref rid="dmrr70135-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="dmrr70135-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0014" contrib-type="author"><name><surname>Maddaloni</surname><given-names>Ernesto</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-3844-9463</contrib-id><xref rid="dmrr70135-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="dmrr70135-cr-0015" contrib-type="author" corresp="yes"><name><surname>Buzzetti</surname><given-names>Raffaella</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-1490-6041</contrib-id><xref rid="dmrr70135-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="dmrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>raffaella.buzzetti@uniroma1.it</email></address></contrib></contrib-group><aff id="dmrr70135-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Diabetology Unit</named-content>
+<institution>AOU Policlinico Umberto I</institution>
+<city>Rome</city>
+<country country="IT">Italy</country>
+</aff><aff id="dmrr70135-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Department of Experimental Medicine</named-content>
+<institution>Sapienza University</institution>
+<city>Rome</city>
+<country country="IT">Italy</country>
+</aff><aff id="dmrr70135-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Laboratory of Neuromotor Physiology</named-content>
+<institution>IRCCS Santa Lucia Foundation</institution>
+<city>Rome</city>
+<country country="IT">Italy</country>
+</aff><aff id="dmrr70135-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">Department of Systems Medicine and Centre of Space Bio&#x02010;medicine</named-content>
+<institution>University of Rome Tor Vergata</institution>
+<city>Rome</city>
+<country country="IT">Italy</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence:</bold> Raffaella Buzzetti<break/>
+(<email>raffaella.buzzetti@uniroma1.it</email>)<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>08</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="ppub"><month>2</month><year>2026</year></pub-date><volume>42</volume><issue seq="20">2</issue><issue-id pub-id-type="doi">10.1002/dmrr.v42.2</issue-id><elocation-id>e70135</elocation-id><history>
+<date date-type="rev-recd"><day>17</day><month>1</month><year>2026</year></date>
+<date date-type="received"><day>07</day><month>12</month><year>2025</year></date>
+<date date-type="accepted"><day>29</day><month>1</month><year>2026</year></date>
+</history><permissions><!--&#x000a9; 2026 John Wiley & Sons Ltd.--><copyright-statement content-type="article-copyright">&#x000a9; 2026 The Author(s). <italic toggle="yes">Diabetes/Metabolism Research and Reviews</italic> published by John Wiley &#x00026; Sons Ltd.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:DMRR-42-e70135.pdf"/><abstract><title>ABSTRACT</title><sec id="dmrr70135-sec-0001"><title>Background and Aim</title><p>Diabetic neuropathy (DN) is a recognised risk factor for fragility fractures. However, the mechanisms linking DN, bone health, and falling risk remain unclear. We aimed to assess bone health and risk of falls, with their contributing factors, in young elderly patients with type 2 diabetes (T2D) and mild&#x02010;to&#x02010;moderate DN.</p></sec><sec id="dmrr70135-sec-0002"><title>Methods</title><p>We enrolled 144 subjects with T2D, excluding those with severe DN (neuropathy disability score &#x02010;NDS&#x02010;&#x000a0;&#x02265;&#x000a0;9) or fracture history. Clinical and biochemical data were collected, including surrogate markers of insulin resistance, such as the triglycerides/HDL (TG/HDL) ratio and triglycerides/glucose (TyG) index. Bone mineral density (BMD) and trabecular bone score (TBS) were evaluated using DXA scans. Falls were self&#x02010;recorded prospectively over 4&#x000a0;years using diaries.</p></sec><sec id="dmrr70135-sec-0003"><title>Results</title><p>Subjects with DN (27%) had higher BMI (<italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.036), fasting blood glucose (<italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.04), serum triglycerides (<italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.016), TG/HDL ratio (<italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.012) and TyG index (<italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.003) compared with those without DN. After adjustment for gender, age, BMI, HbA1c, TyG index and TG/HDL ratio, subjects with DN showed significantly lower BMD at the femoral neck (0.702 [0.638&#x02013;0.850] g/cm<sup>2</sup> vs. 0.789 [0.717&#x02013;0.860] g/cm<sup>2</sup>, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.015) and total femur (0.890 [0.820&#x02013;1.055] g/cm<sup>2</sup> vs. 0.983 [0.889&#x02013;1.076] g/cm<sup>2</sup>, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.027). No differences were observed in spine BMD or TBS. However, TBS was negatively correlated with the TG/HDL ratio (<italic toggle="yes">r</italic>&#x000a0;=&#x000a0;&#x02212;0.215, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.013) and visceral adipose tissue (<italic toggle="yes">r</italic>&#x000a0;=&#x000a0;&#x02212;0.310, <italic toggle="yes">p</italic>&#x000a0;&#x0003c;&#x000a0;0.001). After 4&#x000a0;years of follow&#x02010;up, subjects with painful neuropathy at baseline had a higher rate of falls (<italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.011).</p></sec><sec id="dmrr70135-sec-0004"><title>Conclusion</title><p>DN is associated with decreased BMD and increased risk of falls. Among factors associated with DN, insulin resistance was also associated with decreased bone quality.</p></sec></abstract><kwd-group><kwd id="dmrr70135-kwd-0001">bone health</kwd><kwd id="dmrr70135-kwd-0002">diabetic neuropathy</kwd><kwd id="dmrr70135-kwd-0003">falls</kwd><kwd id="dmrr70135-kwd-0004">insulin resistance</kwd><kwd id="dmrr70135-kwd-0005">type 2 diabetes</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>
+<institution-wrap><institution>Ministry of Health Ricerca Finalizzata</institution><institution-id institution-id-type="doi">10.13039/501100003196</institution-id></institution-wrap>
+</funding-source><award-id>RF&#x02010;2018&#x02010;12365985</award-id></award-group><award-group id="funding-0002"><funding-source>
+<institution-wrap><institution>Italian Space Agency</institution></institution-wrap>
+</funding-source><award-id>I/006/06/0</award-id></award-group><award-group id="funding-0003"><funding-source>
+<institution-wrap><institution>INAIL</institution></institution-wrap>
+</funding-source><award-id>BRIC 2022 LABORIUS</award-id></award-group><award-group id="funding-0004"><funding-source>
+<institution-wrap><institution>National Recovery and Resilience Plan NRRP, Project</institution></institution-wrap>
+</funding-source><award-id>MNESYS PE0000006</award-id></award-group><award-group id="funding-0005"><funding-source>
+<institution-wrap><institution>Italian Space Agency and the Ministry of University and Research</institution></institution-wrap>
+</funding-source><award-id>I53D24000060005</award-id></award-group></funding-group><counts><fig-count count="2"/><table-count count="1"/><page-count count="7"/><word-count count="4702"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>February 2026</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.8 mode:remove_FC converted:08.02.2026</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="self-citation" id="dmrr70135-cit-0036">
+<string-name>
+<surname>D'Onofrio</surname>, <given-names>Luca</given-names>
+</string-name>, <string-name>
+<given-names>Rocco</given-names>
+<surname>Amendolara</surname>
+</string-name>, <string-name>
+<given-names>Antonio</given-names>
+<surname>Siena</surname>
+</string-name>, et al. <year>2026</year>. &#x0201c;<article-title>Diabetic Neuropathy Is Associated With Lower Bone Mineral Density and Higher Fall Risk in Young Elderly Adults With Type 2 Diabetes</article-title>,&#x0201d; <source>Diabetes/Metabolism Research and Reviews</source>: <elocation-id>e70135</elocation-id>. <pub-id pub-id-type="doi">10.1002/dmrr.70135</pub-id>.</mixed-citation>
+</p></notes></front><body id="dmrr70135-body-0001"><sec id="dmrr70135-sec-0010"><label>1</label><title>Introduction</title><p>Type 2 diabetes (T2D) is one of the most prevalent chronic diseases around the world, affecting more than half a billion people worldwide, with a prevalence that has increased exponentially over the last years [<xref rid="dmrr70135-bib-0001" ref-type="bibr">1</xref>].</p><p>Alongside the well&#x02010;known micro&#x02010; and macrovascular complications of diabetes, diabetic bone fragility is a newly established chronic complication of diabetes, characterised by impairment in bone quality and increased risk of bone fractures [<xref rid="dmrr70135-bib-0002" ref-type="bibr">2</xref>].</p><p>Factors underlying the development of diabetic osteopathy remain unclear, although several contributors have been hypothesised. In this regard, experimental and clinical studies suggest a bi&#x02010;directional relationship between classical diabetic vascular complications and increased bone fragility [<xref rid="dmrr70135-bib-0003" ref-type="bibr">3</xref>]. Among the chronic complications of diabetes, diabetic neuropathy could play a major role in fragility fractures by causing impaired postural stability and increasing the risk of falls [<xref rid="dmrr70135-bib-0003" ref-type="bibr">3</xref>].</p><p>Furthermore, hyperglycaemia exerts direct detrimental effects on osteoblastogenesis and osteoblast function, leading to reduced bone turnover [<xref rid="dmrr70135-bib-0002" ref-type="bibr">2</xref>, <xref rid="dmrr70135-bib-0004" ref-type="bibr">4</xref>]. Contrasting data have been collected on the role of insulin resistance, as animal studies suggest an impairment in bone metabolism due to insulin resistance [<xref rid="dmrr70135-bib-0005" ref-type="bibr">5</xref>]; otherwise, clinical studies highlight contrasting and non&#x02010;conclusive results [<xref rid="dmrr70135-bib-0002" ref-type="bibr">2</xref>, <xref rid="dmrr70135-bib-0006" ref-type="bibr">6</xref>].</p><p>Therefore, in this post hoc analysis, we aimed to investigate the impact of diabetic neuropathy and related risk factors on bone health and falls, the two main determinants of bone fractures. To this aim, we assessed the association between diabetic neuropathy and bone mass and quality in subjects with T2D, and we further longitudinally evaluated their risk of falls by the presence of diabetic neuropathy.</p></sec><sec id="dmrr70135-sec-0020"><label>2</label><title>Materials and Methods</title><sec id="dmrr70135-sec-0030"><label>2.1</label><title>Study Design</title><p>This is a post hoc analysis of data collected within the SynErg (synergies anchoring to gravity) study, a cross&#x02010;sectional study designed to evaluate postural instability and falls in young elderly affected by T2D, as previously described [<xref rid="dmrr70135-bib-0007" ref-type="bibr">7</xref>]. Briefly, in the study, community&#x02010;dwelling individuals, aged between 65 and 75&#x000a0;years (young elderly), with a diagnosis of T2D based on the criteria of the American Diabetes Association [<xref rid="dmrr70135-bib-0008" ref-type="bibr">8</xref>], referring to the outpatient clinic of the Diabetology Unit of AOU (Azienda Ospedaliera Universitaria) Policlinico Umberto I, Sapienza University of Rome, were consecutively enrolled.</p><p>Subjects who could not perform the postural tests of the SynErg study, had foot ulcers or amputations, bone fractures, heart failure (NYHA 2&#x02013;4), active cancer or a diagnosis of cancer within 5&#x000a0;years from enrolment, prior stroke, blindness, severe neuropathy (defined as a Neuropathy Disability Score&#x02014;NDS&#x000a0;&#x02265;&#x000a0;9), a history of severe hypoglycaemia, central nervous system disorders, dementia, dizziness, vertigo, spontaneous or positionally induced nystagmus, or vestibular migraine were excluded from enrolment.</p></sec><sec id="dmrr70135-sec-0040"><label>2.2</label><title>Data Collection</title><p>Clinical (age, gender, disease duration, hypoglycaemic therapy, smoking status, blood pressure), biochemical (HbA1c, fasting blood glucose, lipid profile, triglycerides, creatinine) and anthropometric (weight, body mass index&#x02014;BMI) data were collected for all participants. LDL cholesterol concentrations were estimated with the Friedewald formula: total cholesterol&#x02014;[HDL&#x000a0;+&#x000a0;(triglycerides/5)] [<xref rid="dmrr70135-bib-0009" ref-type="bibr">9</xref>]. The estimated glomerular filtration rate (eGFR) was estimated according to the methods proposed by Levey and colleagues [<xref rid="dmrr70135-bib-0010" ref-type="bibr">10</xref>]. Further, information about treatment with anti&#x02010;diabetic agents (metformin, dipeptidyl peptidase&#x02010;4 inhibitors&#x02014;DPP4&#x02010;i, glucagon&#x02010;like peptide&#x02010;1 receptor agonists&#x02014;GLP1&#x02010;ra, sodium&#x02010;glucose co&#x02010;transporter inhibitors&#x02014;SGLT2&#x02010;i, basal or rapid insulin) was also collected.</p><p>Dual&#x02010;energy X&#x02010;ray absorptiometry (DEXA&#x02014;Hologic A Inc., Bedford, MA, USA, QDR 4500&#x000a0;W) was used to evaluate both BMD and trabecular bone score (TBS). After calibration of the DEXA scan according to standard procedures, subjects were placed in the lying position and, according to the manufacturer's instructions, a single experienced technician performed the examination. Bone mass density (BMD) assessment of the lumbar spine (L1&#x02013;L4 anteroposterior), total femur and femoral neck (non&#x02010;dominant limb) was performed and BMD was recorded in terms of the absolute mineral content (in g/cm<sup>2</sup>) at various sites.</p><p>The integrated software TBS iNsight, version 2.1.2.0, was used for the site&#x02010;matched spine scans for the evaluation of TBS, a novel tool that estimated the microarchitecture and bone quality [<xref rid="dmrr70135-bib-0011" ref-type="bibr">11</xref>]. TBS values&#x000a0;&#x0003e;&#x000a0;1.350 were considered normal, values below 1.350 indicated a reduced bone quality [<xref rid="dmrr70135-bib-0011" ref-type="bibr">11</xref>].</p><p>Whole&#x02010;body fat mass (fat mass, %) and abdominal visceral adipose tissue (VAT, g) were also evaluated with DEXA scans, QDR2000 Product Software, version 13.5.3 A (Hologic, Middlesex County, MA, USA).</p><p>Neuropathy disability score (NDS) was used to evaluate and stratify the presence of DN. In particular, pain sensitivity was assessed with pinprick perception (0&#x000a0;=&#x000a0;normal, 1&#x000a0;=&#x000a0;altered), thermal sensitivity was evaluated with temperature sensation (0&#x000a0;=&#x000a0;normal, 1&#x000a0;=&#x000a0;altered), vibratory sensitivity (0&#x000a0;=&#x000a0;normal, 1&#x000a0;=&#x000a0;altered), and the presence of Achilles reflexes (0&#x000a0;=&#x000a0;normal, 1&#x000a0;=&#x000a0;present with reinforcement, 2&#x000a0;=&#x000a0;altered) was evaluated in both limbs. Hence, we could establish the absence of DN (&#x02264;&#x000a0;2) and the presence of DN as mild (3&#x02013;5), moderate (6&#x02013;8) or severe (&#x02265;&#x000a0;9) [<xref rid="dmrr70135-bib-0012" ref-type="bibr">12</xref>].</p><p>DN4 (Douleur Neuropathique 4) was used to identify neuropathic pain. It consists of 10 items, including 7 patient&#x02010;reported symptoms (such as burning, electric shocks, tingling, pins and needles, numbness, itching, and paraesthesia) and 3 clinical signs (hypoesthesia to touch and pinprick, and allodynia to light touch) assessed by the clinician. A score of four or more out of 10 was used to evaluate the presence of neuropathic pain [<xref rid="dmrr70135-bib-0013" ref-type="bibr">13</xref>].</p><p>The following surrogate markers of insulin resistance were assessed: the triglycerides glucose (TyG) index was evaluated using the formula proposed by Guerrero&#x02010;Romero and colleagues (Ln[fasting triglycerides (mg/dL)&#x000a0;&#x000d7;&#x000a0;fasting glucose (mg/dL)]/2) [<xref rid="dmrr70135-bib-0014" ref-type="bibr">14</xref>]; Triglycerides/HDL (TG/HDL) ratio was evaluated as previously published [<xref rid="dmrr70135-bib-0015" ref-type="bibr">15</xref>].</p><p>The enrolled subjects were followed for 4&#x000a0;years to assess the number of occurring falls, which were self&#x02010;recorded in a written diary and subsequently reviewed by the study investigators through in&#x02010;person visits or telephone calls. At the baseline visit, the subjects were instructed to recognise a fall according to the definition of World Health Organisation: &#x02018;a fall is an event which results in a person coming to rest inadvertently on the ground or floor or other lower level&#x02019; [<xref rid="dmrr70135-bib-0016" ref-type="bibr">16</xref>] to avoid the reporting of near&#x02010;fall defined as a stumble or loss of balance leading to a potential fall, prevented only by recovery actions.</p></sec><sec id="dmrr70135-sec-0050"><label>2.3</label><title>Statistical Analysis and Ethics</title><p>Data were expressed as frequencies, means and standard deviations or medians and interquartile ranges. The Shapiro&#x02010;Wilk test was used to assess the normal distribution of the variables. Student's <italic toggle="yes">t</italic>&#x02010;tests or the Mann&#x02010;Whitney, based on the normal or non&#x02010;normal distribution of the variables, were used to assess differences between the two groups. The frequencies of the variables were compared using the <italic toggle="yes">&#x003c7;</italic>
+<sup>2</sup> test or Fisher's exact test. Pearson's or Spearman's coefficient was used to test for correlations between biochemical parameters and NDS score, TG/HDL ratio and TyG index. Finally, linear regression analysis (univariate and multivariate) was conducted to test the influence of clinical variables on neuropathy and bone parameters. In particular, gender, age, BMI, HbA1c, TyG index, TG/HDL ratio and treatment with GLP1&#x02010;ra were selected to evaluate the possible impact of gender and age, obesity, glucose metabolism and insulin resistance on the relationship between bone metabolism and neuropathy. In the linear regression model used, we added one variable at a time to evaluate how they affect the analysis and separately tested the TyG index and TG/HDL ratio to avoid collinearity.</p><p>The threshold value of statistical significance was reached for values of <italic toggle="yes">p</italic>&#x000a0;&#x02264;&#x000a0;0.05. Statistical analysis was performed with IBM SPSS Statistics software (version 21). Graphs were created using Prism 9.0 for Windows (GraphPad Software, La Jolla, CA, USA).</p><p>This study was performed in accordance with the tenets of the Declaration of Helsinki and was approved by the Ethical Committee of AOU Policlinico Umberto 1 (prot. 111/20, <italic toggle="yes">n</italic>. 5635). Each participant enrolled in the study provided informed consent before starting the study procedures.</p></sec></sec><sec id="dmrr70135-sec-0060"><label>3</label><title>Results</title><p>This study population consisted of 144 subjects affected by T2D (<italic toggle="yes">n</italic>&#x000a0;=&#x000a0;72% male) with a median [25th&#x02013;75th percentile] age of 69 [66&#x02013;72] years, disease duration of 8.5 [4.3&#x02013;13] years, BMI of 28.3 [25.6&#x02013;31.3] kg/m<sup>2</sup> and HbA1c of 6.5 [6.0&#x02013;7.2]%. Thirty&#x02010;nine (27%) had a NDS&#x000a0;&#x02265;&#x000a0;3, allowing a diagnosis of DN.</p><p>Clinical features of subjects with and without DN are reported in Table&#x000a0;<xref rid="dmrr70135-tbl-0001" ref-type="table">1</xref>. Subjects with DN showed higher BMI (29.7 [26.7&#x02013;33.2] kg/m<sup>2</sup> vs. 27.7 [25.5&#x02013;30.8] kg/m<sup>2</sup>, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.036), fasting blood glucose (127 [112&#x02013;153] mg/dL vs. 119 [103&#x02013;136] mg/dL, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.04), serum triglycerides (136 [97&#x02013;178] mg/dL vs. 105 [80&#x02013;153] mg/dL, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.016), TG/HDL ratio (3.3 [1.9&#x02013;4.1] vs. 2.4 [1.5&#x02013;3.5], <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.012) and TyG index (4.9&#x000a0;&#x000b1;&#x000a0;0.3&#x000a0;vs. 4.7&#x000a0;&#x000b1;&#x000a0;0.3, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.003) compared to subjects without DN.</p><table-wrap position="float" id="dmrr70135-tbl-0001" content-type="TABLE"><label>TABLE 1</label><caption><p>Anthropometric, clinical and biochemical data in subjects with and without DN.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><thead valign="bottom"><tr><th rowspan="2" style="border-bottom:solid 1px #000000" align="left" valign="bottom" colspan="1"/><th align="center" valign="bottom" rowspan="1" colspan="1">No DN</th><th align="center" valign="bottom" rowspan="1" colspan="1">Yes DN</th><th rowspan="2" style="border-bottom:solid 1px #000000" align="center" valign="bottom" colspan="1">
+<italic toggle="yes">p</italic> value<xref rid="dmrr70135-note-0001" ref-type="table-fn">*</xref>
+</th></tr><tr style="border-bottom:solid 1px #000000"><th align="center" valign="bottom" rowspan="1" colspan="1">
+<italic toggle="yes">n</italic>&#x000a0;=&#x000a0;105</th><th align="center" valign="bottom" rowspan="1" colspan="1">
+<italic toggle="yes">n</italic>&#x000a0;=&#x000a0;39</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">Gender, male % (<italic toggle="yes">n</italic>)</td><td align="center" valign="top" rowspan="1" colspan="1">73 (77)</td><td align="center" valign="top" rowspan="1" colspan="1">69 (27)</td><td align="center" valign="top" rowspan="1" colspan="1">0.625</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Smoker, yes % (<italic toggle="yes">n</italic>)</td><td align="center" valign="top" rowspan="1" colspan="1">12 (13)</td><td align="center" valign="top" rowspan="1" colspan="1">10 (4)</td><td align="center" valign="top" rowspan="1" colspan="1">0.726</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Age, years</td><td align="center" valign="top" rowspan="1" colspan="1">69 [66&#x02013;72]</td><td align="center" valign="top" rowspan="1" colspan="1">69 [66&#x02013;71]</td><td align="center" valign="top" rowspan="1" colspan="1">0.901</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Disease duration, years</td><td align="center" valign="top" rowspan="1" colspan="1">8 [4&#x02013;12.5]</td><td align="center" valign="top" rowspan="1" colspan="1">9 [5&#x02013;13]</td><td align="center" valign="top" rowspan="1" colspan="1">0.465</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Weight, kg</td><td align="center" valign="top" rowspan="1" colspan="1">82&#x000a0;&#x000b1;&#x000a0;14</td><td align="center" valign="top" rowspan="1" colspan="1">86&#x000a0;&#x000b1;&#x000a0;17</td><td align="center" valign="top" rowspan="1" colspan="1">0.234</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">BMI, kg/m<sup>2</sup>
+</td><td align="center" valign="top" rowspan="1" colspan="1">27.7 [25.5&#x02013;30.8]</td><td align="center" valign="top" rowspan="1" colspan="1">29.7 [26.7&#x02013;33.2]</td><td align="center" valign="top" rowspan="1" colspan="1">
+<bold>0.036</bold>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Systolic blood pressure, mmHg</td><td align="center" valign="top" rowspan="1" colspan="1">130 [120&#x02013;135]</td><td align="center" valign="top" rowspan="1" colspan="1">130 [120&#x02013;140]</td><td align="center" valign="top" rowspan="1" colspan="1">0.260</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Diastolic blood pressure, mmHg</td><td align="center" valign="top" rowspan="1" colspan="1">80 [70&#x02013;80]</td><td align="center" valign="top" rowspan="1" colspan="1">80 [70&#x02013;80]</td><td align="center" valign="top" rowspan="1" colspan="1">0.253</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Fasting blood glucose, mg/dL</td><td align="center" valign="top" rowspan="1" colspan="1">119 [103&#x02013;136]</td><td align="center" valign="top" rowspan="1" colspan="1">127 [112&#x02013;153]</td><td align="center" valign="top" rowspan="1" colspan="1">
+<bold>0.040</bold>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">HbA1c, %</td><td align="center" valign="top" rowspan="1" colspan="1">6.4 [6.0&#x02013;7.1]</td><td align="center" valign="top" rowspan="1" colspan="1">6.6 [6.0&#x02013;7.5]</td><td align="center" valign="top" rowspan="1" colspan="1">0.202</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Total cholesterol, mg/dL</td><td align="center" valign="top" rowspan="1" colspan="1">156&#x000a0;&#x000b1;&#x000a0;38</td><td align="center" valign="top" rowspan="1" colspan="1">159&#x000a0;&#x000b1;&#x000a0;47</td><td align="center" valign="top" rowspan="1" colspan="1">0.738</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">HDL cholesterol, mg/dL</td><td align="center" valign="top" rowspan="1" colspan="1">47 [40&#x02013;55]</td><td align="center" valign="top" rowspan="1" colspan="1">46 [39&#x02013;53]</td><td align="center" valign="top" rowspan="1" colspan="1">0.455</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">LDL cholesterol, mg/dL</td><td align="center" valign="top" rowspan="1" colspan="1">83&#x000a0;&#x000b1;&#x000a0;22</td><td align="center" valign="top" rowspan="1" colspan="1">84&#x000a0;&#x000b1;&#x000a0;38</td><td align="center" valign="top" rowspan="1" colspan="1">0.765</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Triglycerides, mg/dL</td><td align="center" valign="top" rowspan="1" colspan="1">105 [80&#x02013;153]</td><td align="center" valign="top" rowspan="1" colspan="1">136 [97&#x02013;178]</td><td align="center" valign="top" rowspan="1" colspan="1">
+<bold>0.016</bold>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Creatinine, mg/dL</td><td align="center" valign="top" rowspan="1" colspan="1">0.9 [0.8&#x02013;1.0]</td><td align="center" valign="top" rowspan="1" colspan="1">0.9 [0.8&#x02013;1.2]</td><td align="center" valign="top" rowspan="1" colspan="1">0.863</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">eGFR</td><td align="center" valign="top" rowspan="1" colspan="1">83.5&#x000a0;&#x000b1;&#x000a0;22.4</td><td align="center" valign="top" rowspan="1" colspan="1">81.2&#x000a0;&#x000b1;&#x000a0;24.6</td><td align="center" valign="top" rowspan="1" colspan="1">0.634</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Total fat, %</td><td align="center" valign="top" rowspan="1" colspan="1">26.0 [23.3&#x02013;31.0]</td><td align="center" valign="top" rowspan="1" colspan="1">26.5 [22.8&#x02013;34.6]</td><td align="center" valign="top" rowspan="1" colspan="1">0.436</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">VAT mass, g</td><td align="center" valign="top" rowspan="1" colspan="1">809&#x000a0;&#x000b1;&#x000a0;267</td><td align="center" valign="top" rowspan="1" colspan="1">870&#x000a0;&#x000b1;&#x000a0;251</td><td align="center" valign="top" rowspan="1" colspan="1">0.220</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Tg/HDL ratio</td><td align="center" valign="top" rowspan="1" colspan="1">2.4 [1.5&#x02013;3.5]</td><td align="center" valign="top" rowspan="1" colspan="1">3.3 [1.9&#x02013;4.1]</td><td align="center" valign="top" rowspan="1" colspan="1">
+<bold>0.012</bold>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">TyG index</td><td align="center" valign="top" rowspan="1" colspan="1">4.7&#x000a0;&#x000b1;&#x000a0;0.3</td><td align="center" valign="top" rowspan="1" colspan="1">4.9&#x000a0;&#x000b1;&#x000a0;0.3</td><td align="center" valign="top" rowspan="1" colspan="1">
+<bold>0.003</bold>
+</td></tr></tbody></table><table-wrap-foot id="dmrr70135-ntgp-0001"><fn id="dmrr70135-note-0001"><label>
+<sup>*</sup>
+</label><p>
+<italic toggle="yes">p</italic>&#x02010;value in bold are for significant findings, <italic toggle="yes">p</italic> &#x0003c; 0.05.</p></fn></table-wrap-foot></table-wrap><p>No differences were reported in terms of gender, smoking habits, age, disease duration, weight, systolic blood pressure (PAS), diastolic blood pressure (PAD), HbA1c, lipid profile, creatinine, and eGFR. Anti&#x02010;diabetes treatment also did not differ between subjects with and without DN (Table&#x000a0;<xref rid="dmrr70135-sup-0001" ref-type="supplementary-material">S1</xref>). Total fat mass and VAT mass were similar between subjects with and without DN (Table&#x000a0;<xref rid="dmrr70135-tbl-0001" ref-type="table">1</xref>).</p><p>After multivariate correction (gender, age, BMI, HbA1c, TyG index and TG/HDL ratio), DN was associated with reduced total femur BMD (0.890 [0.820&#x02013;1.055] g/cm<sup>2</sup> vs. 0.983 [0.889&#x02013;1.076]g/cm<sup>2</sup>, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.027, Figure&#x000a0;<xref rid="dmrr70135-fig-0001" ref-type="fig">1A</xref>) and lower femoral neck BMD (0.702 [0.638&#x02013;0.850] g/cm<sup>2</sup> vs. 0.789 [0.717&#x02013;0.860] g/cm<sup>2</sup>, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.015, Figure&#x000a0;<xref rid="dmrr70135-fig-0001" ref-type="fig">1B</xref>), compared to subjects without DN.</p><fig position="float" fig-type="FIGURE" id="dmrr70135-fig-0001"><label>FIGURE 1</label><caption><p>Differences in femur BMD (A), femoral neck BMD (B), spine BMD (C)&#x000a0;and TBS (D)&#x000a0;in subjects with (red) and without (blue) DN. * after adjustment for gender, age, BMI, HbA1c, TyG index and TG/HDL ratio.</p></caption><graphic xlink:href="DMRR-42-e70135-g001" position="anchor" id="jats-graphic-1"/></fig><p>No significant differences were found in the total spine BMD (Figure&#x000a0;<xref rid="dmrr70135-fig-0001" ref-type="fig">1C</xref>), as well as in the TBS values between subjects with and without DN (Figure&#x000a0;<xref rid="dmrr70135-fig-0001" ref-type="fig">1D</xref>).</p><p>Subjects treated with GLP1&#x02010;ra showed higher values of total femur BMD compared with subjects not using GLP1&#x02010;ra (0.990 [0.898&#x02013;1.094] vs.. 0.930 [0.830&#x02013;1.058], <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.023). The association between DN and reduced total femur BMD remained significant when controlling for GLP1&#x02010;ra treatment in the multivariate model. Other anti&#x02010;diabetes drugs were not significantly associated with femur BMD.</p><p>An inverse relationship between the TG/HDL ratio and TBS was also found (<italic toggle="yes">r</italic>&#x000a0;=&#x000a0;&#x02212;0.215, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.024&#x02014;Figure&#x000a0;<xref rid="dmrr70135-fig-0002" ref-type="fig">2A</xref>). As expected, the TG/HDL ratio was directly related to BMI (<italic toggle="yes">r</italic>&#x000a0;=&#x000a0;0.253, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.002) and VAT (<italic toggle="yes">r</italic>&#x000a0;=&#x000a0;0.240, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.004).</p><fig position="float" fig-type="FIGURE" id="dmrr70135-fig-0002"><label>FIGURE 2</label><caption><p>Correlation between TBS with TG/HDL ratio (A)&#x000a0;and VAT mass (B).</p></caption><graphic xlink:href="DMRR-42-e70135-g002" position="anchor" id="jats-graphic-3"/></fig><p>Finally, an inverse correlation was found between VAT and TBS (<italic toggle="yes">r</italic>&#x000a0;=&#x000a0;&#x02212;0.310, <italic toggle="yes">p</italic>&#x000a0;&#x0003c;&#x000a0;0.001&#x02014;Figure&#x000a0;<xref rid="dmrr70135-fig-0002" ref-type="fig">2B</xref>).</p><sec id="dmrr70135-sec-0070"><label>3.1</label><title>Fall Risk</title><p>After four years of follow&#x02010;up, 140 subjects completed the falls diary, and data for only four subjects were not retrieved due to the patient's death. Hence, 24 subjects reported at least one fall, and 16 of them reported more than one fall.</p><p>Participants with painful neuropathy at baseline had a higher fall rate than those without (71.4% vs. 26.5%, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.011). No differences were observed by diabetic neuropathy assessed with NDS at baseline (<italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.438). Women experienced significantly more falls during the follow&#x02010;up period compared with men (28.6% vs. 23.5%, <italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.030). No significant differences were found in subgroups by obesity status (<italic toggle="yes">p</italic>&#x000a0;=&#x000a0;0.778). Patients who experienced falls also had a longer disease duration compared to those who did not fall (median 10 [5&#x02013;17] vs. 8 [3&#x02013;11] years, <italic toggle="yes">p</italic> 0.02).</p><p>The use of anti&#x02010;diabetes treatments (use of metformin, DPP4&#x02010;i, GLP1&#x02010;ra, SGLT2&#x02010;i, basal or rapid insulin) did not significantly differ between fallers and non&#x02010;fallers.</p></sec></sec><sec id="dmrr70135-sec-0080"><label>4</label><title>Discussion</title><p>In our study involving young&#x02010;elderly subjects with T2D, those with DN exhibited significantly reduced BMD at both the femoral neck and the total femur. Furthermore, the detrimental impact of insulin resistance on bone quality was supported by the negative association between surrogate markers of insulin resistance and VAT with TBS, a radiological marker of bone quality.</p><p>It is well&#x02010;established that diabetic osteopathy is a chronic complication of diabetes [<xref rid="dmrr70135-bib-0002" ref-type="bibr">2</xref>, <xref rid="dmrr70135-bib-0005" ref-type="bibr">5</xref>]. Although both type 1 diabetes (T1D) and T2D are associated with an increased risk of fracture [<xref rid="dmrr70135-bib-0017" ref-type="bibr">17</xref>, <xref rid="dmrr70135-bib-0018" ref-type="bibr">18</xref>], some studies have reported normal or even increased BMD in subjects with T2D despite impaired bone quality [<xref rid="dmrr70135-bib-0019" ref-type="bibr">19</xref>]. Several mechanisms have been postulated to explain the detrimental effect of diabetes on bone, including chronic hyperglycaemia and vascular complications. While an association between DN and bone fragility has been consistently shown in people with T1D [<xref rid="dmrr70135-bib-0020" ref-type="bibr">20</xref>, <xref rid="dmrr70135-bib-0021" ref-type="bibr">21</xref>], findings in T2D remain heterogeneous. In this regard, a meta&#x02010;analysis published in 2021 did not confirm a clear effect of DN on bone density or turnover in diabetes. However, the same authors emphasised that the limited number of available studies prevented strong conclusions and highlighted the need for additional evidence [<xref rid="dmrr70135-bib-0022" ref-type="bibr">22</xref>]. In the following years, limited new data have been generated. Specifically, no association was found in Asian subjects between the presence of DN and bone turnover markers [<xref rid="dmrr70135-bib-0023" ref-type="bibr">23</xref>].</p><p>Differently, an analysis of the &#x02018;Fenofibrate Intervention and Event Lowering in Diabetes&#x02019; (FIELD) trial revealed that DN was independently associated with fragility fractures in women [<xref rid="dmrr70135-bib-0024" ref-type="bibr">24</xref>]. More recently, a post hoc analysis of the Exenatide Study of Cardiovascular Event Lowering (EXSCEL) similarly reported an increased risk of fractures in people with T2D affected by DN [<xref rid="dmrr70135-bib-0025" ref-type="bibr">25</xref>]. A retrospective study in Chinese subjects found a higher prevalence of DN among subjects with osteoporosis, although the association was lost after correction for confounders [<xref rid="dmrr70135-bib-0026" ref-type="bibr">26</xref>].</p><p>Finally, nerve conduction velocity was positively associated with BD in men, but not in women, with T2D [<xref rid="dmrr70135-bib-0027" ref-type="bibr">27</xref>].</p><p>Considering this conflicting evidence, we aimed to evaluate BMD and TBS in young&#x02010;elderly people with and without mild&#x02010;to&#x02010;moderate DN. Our results revealed a significant reduction in bone mass among those with DN regardless of gender, BMI, and HbA1c levels, highlighting the need for further confirmatory research.</p><p>We also found that painful neuropathy was correlated with an increased risk of falls. This suggests that different types of neuropathies may have different impacts on fall risk. Painful neuropathy may increase fall risk due to multifactorial contributors, including impaired balance, muscle weakness, reduced postural control and psychological consequences such as fear of falling or loss of confidence in daily activities. This highlights the importance of differentiating painful neuropathy from other neuropathic conditions when assessing fall risk, and planning targeted interventions.</p><p>It is well known the impact of hypoglycaemic treatment on bone metabolism [<xref rid="dmrr70135-bib-0028" ref-type="bibr">28</xref>], and in our cohort we confirm a positive impact of GLP1&#x02010;ra on total femoral BMD; however, this finding has no effect on the association between DN and femoral BMD.</p><p>Our findings also confirm that women and subjects with longer diabetes duration experienced more falls, as previously reported in other studies [<xref rid="dmrr70135-bib-0029" ref-type="bibr">29</xref>, <xref rid="dmrr70135-bib-0030" ref-type="bibr">30</xref>].</p><p>Amongst the well&#x02010;known risk factors for neuropathy, we also confirm the detrimental role of triglycerides, as previously demonstrated in people with diabetes and severe hypertriglyceridemia [<xref rid="dmrr70135-bib-0031" ref-type="bibr">31</xref>, <xref rid="dmrr70135-bib-0032" ref-type="bibr">32</xref>].</p><p>The TG/HDL ratio, a commonly used clinical marker of insulin resistance, was found to correlate with TBS. suggesting that higher levels of insulin resistance may negatively impact bone quality in T2D. Indeed, insulin resistance, through an impairment in insulin signalling in osteoblasts, could reduce osteoblast function, affecting bone metabolism [<xref rid="dmrr70135-bib-0033" ref-type="bibr">33</xref>]. Moreover, in a small sample of people, TBS was negatively associated with insulin resistance and visceral adipose tissue, supporting our findings [<xref rid="dmrr70135-bib-0034" ref-type="bibr">34</xref>]. Further, the negative association between VAT, one of the key contributors to insulin resistance [<xref rid="dmrr70135-bib-0035" ref-type="bibr">35</xref>], and TBS strengthens these findings. The relevance of TBS in subjects with obesity and diabetes, especially in T2D [<xref rid="dmrr70135-bib-0005" ref-type="bibr">5</xref>], is well known as a marker of bone impairment.</p><p>Taking into consideration all this evidence, on the other side, it is also important to consider the hypothesis that bone mass and bone quality could be affected differently by DN and insulin resistance, and longitudinal studies are needed to better elucidate this hypothesis.</p><p>This study has several limitations but some important strengths. The cross&#x02010;sectional design prevents causal inference regarding the impact of DN bone impairment. Generalisability is limited due to the specific characteristics of the SynErg cohort, which included young elderly people aged 65&#x02013;75&#x000a0;years, without severe neuropathy, foot ulceration, amputation, previously fragility fractures, and with the ability to perform postural assessments. This may introduce selection bias. Moreover, the post hoc analysis design highlights the need for dedicated studies assessing the longitudinal effects of DN on both BMD and TBS. Nonetheless, the narrow age range and the exclusion of advanced neuropathy reduce confounding by age and severe diabetic foot complications. The extensive phenotyping of participants, including TBS and body composition by DEXA, further strengthens our findings.</p><p>In conclusion, this post hoc analysis demonstrated an association between DN and reduced bone mass in young elderly subjects with T2D and identified painful neuropathy as a contributor to fall. Insulin resistance significantly differed between people with and without DN and was associated with markers of bone quality in T2D. Prospective and mechanistic studies are needed to clarify whether DN and diabetic osteopathy share common insulin resistance&#x02010;mediated pathological pathways and to determine whether interventions targeting insulin resistance may improve both DN and bone health outcomes.</p></sec><sec id="dmrr70135-sec-0090"><title>Author Contributions</title><p>L.D.O. designed the study, enrolled subjects, data analysis and wrote the manuscript. A.S. and M.A. enrolment of subjects and data collection. A.L., R.R., A.B., D.M., B.L.S. and M.W. performed DEXA examination, neuropathy evaluation and data collection. R.A. and S.Z. performed laboratory analysis, reviewed/edited the manuscript. M.Z. and F.L. revised the manuscript, E.M. data analysis and wrote the manuscript. R.B. contributed to discussion and revised the manuscript.</p></sec><sec sec-type="COI-statement" id="dmrr70135-sec-0110"><title>Conflicts of Interest</title><p>The authors declare no conflicts of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="dmrr70135-sup-0001" position="float" content-type="local-data"><caption><p>
+<bold>Table S1:</bold> Hypoglycemic treatment in subjects with and without DN.</p></caption><media xlink:href="DMRR-42-e70135-s001.docx"/></supplementary-material></sec></body><back><ack id="dmrr70135-sec-0100"><title>Acknowledgements</title><p>This study was supported by grants from the Italian Ministry of Health (Ricerca Finalizzata RF&#x02010;2018&#x02013;12365985), Italian Space Agency (I/006/06/0), INAIL (BRIC 2022 LABORIUS), Italian University Ministry (#NEXTGENERATIONEU NGEU National Recovery and Resilience Plan NRRP, project MNESYS PE0000006&#x02014;A multiscale integrated approach to the study of the nervous system in health and disease DN. 1553 11.10.2022), and Space It Up project funded by the Italian Space Agency and the Ministry of University and Research&#x02014;Contract No. 2024&#x02010;5&#x02010;E.0&#x02014;CUP No. I53D24000060005.</p></ack><sec sec-type="data-availability" id="dmrr70135-sec-0130"><title>Data Availability Statement</title><p>The data that support the findings of this study are available upon request from the corresponding author. The data are not publicly available due to privacy or ethical restrictions.</p></sec><ref-list content-type="cited-references" id="dmrr70135-bibl-0001"><title>References</title><ref id="dmrr70135-bib-0001"><label>1</label><mixed-citation publication-type="miscellaneous" id="dmrr70135-cit-0001">
+<collab collab-type="authors">IDF</collab>
+, <article-title>IDF Diabetes Atlas</article-title>, <edition>10th ed.</edition>, (<year>2021</year>).</mixed-citation></ref><ref id="dmrr70135-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0002">
+<string-name>
+<given-names>A.</given-names>
+<surname>Palermo</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>D&#x02019;Onofrio</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Buzzetti</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Manfrini</surname>
+</string-name>, and <string-name>
+<given-names>N.</given-names>
+<surname>Napoli</surname>
+</string-name>, &#x0201c;<article-title>Pathophysiology of Bone Fragility in Patients With Diabetes</article-title>,&#x0201d; <source>Calcified Tissue International</source>
+<volume>100</volume>, no. <issue>2</issue> (<year>2017</year>): <fpage>122</fpage>&#x02013;<lpage>132</lpage>, <pub-id pub-id-type="doi">10.1007/s00223-016-0226-3</pub-id>.<pub-id pub-id-type="pmid">28180919</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0003">
+<string-name>
+<given-names>T. S.</given-names>
+<surname>Khan</surname>
+</string-name> and <string-name>
+<given-names>L.&#x02010;A.</given-names>
+<surname>Fraser</surname>
+</string-name>, &#x0201c;<article-title>Type 1 Diabetes and Osteoporosis: From Molecular Pathways to Bone Phenotype</article-title>,&#x0201d; <source>Journal of Osteoporosis</source>
+<volume>2015</volume> (<year>2015</year>): <fpage>174186</fpage>&#x02013;<lpage>174188</lpage>, <pub-id pub-id-type="doi">10.1155/2015/174186</pub-id>.<pub-id pub-id-type="pmid">25874154</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0004">
+<string-name>
+<given-names>N.</given-names>
+<surname>Napoli</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Chandran</surname>
+</string-name>, <string-name>
+<given-names>D. D.</given-names>
+<surname>Pierroz</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Abrahamsen</surname>
+</string-name>, <string-name>
+<given-names>A. V.</given-names>
+<surname>Schwartz</surname>
+</string-name>, and <string-name>
+<given-names>S. L.</given-names>
+<surname>Ferrari</surname>
+</string-name>, &#x0201c;<article-title>Mechanisms of Diabetes Mellitus&#x02010;Induced Bone Fragility</article-title>,&#x0201d; <source>Nature Reviews Endocrinology</source>
+<volume>13</volume>, no. <issue>4</issue> (<year>2017</year>): <fpage>208</fpage>&#x02013;<lpage>219</lpage>, <pub-id pub-id-type="doi">10.1038/nrendo.2016.153</pub-id>.</mixed-citation></ref><ref id="dmrr70135-bib-0005"><label>5</label><mixed-citation publication-type="book" id="dmrr70135-cit-0005">
+<string-name>
+<given-names>L.</given-names>
+<surname>D&#x02019;Onofrio</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Palermo</surname>
+</string-name>, and <string-name>
+<given-names>N.</given-names>
+<surname>Napoli</surname>
+</string-name>, &#x0201c;<part-title>Diabetes, Diabetic Medications, and Risk of Fracture</part-title>,&#x0201d; in <source>Marcus and Feldman&#x02019;s Osteoporosis</source> (<publisher-name>Elsevier</publisher-name>, <year>2021</year>), <fpage>1239</fpage>&#x02013;<lpage>1259</lpage>.</mixed-citation></ref><ref id="dmrr70135-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0006">
+<string-name>
+<given-names>C.</given-names>
+<surname>Conte</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Epstein</surname>
+</string-name>, and <string-name>
+<given-names>N.</given-names>
+<surname>Napoli</surname>
+</string-name>, &#x0201c;<article-title>Insulin Resistance and Bone: A Biological Partnership</article-title>,&#x0201d; <source>Acta Diabetologica</source>
+<volume>55</volume>, no. <issue>4</issue> (<year>2018</year>): <fpage>305</fpage>&#x02013;<lpage>314</lpage>, <pub-id pub-id-type="doi">10.1007/s00592-018-1101-7</pub-id>.<pub-id pub-id-type="pmid">29333578</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0007">
+<string-name>
+<given-names>B.</given-names>
+<surname>La Scaleia</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Siena</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>D&#x02019;Onofrio</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Deterioration of Vestibular Motion Perception: A Risk Factor for Postural Instability and Falls in Elderly With Type 2 Diabetes</article-title>,&#x0201d; <source>Diabetes/Metabolism Research and Reviews</source>
+<volume>40</volume>, no. <issue>7</issue> (<year>2024</year>): <elocation-id>e3845</elocation-id>, <pub-id pub-id-type="doi">10.1002/dmrr.3845</pub-id>.<pub-id pub-id-type="pmid">39356275</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0008">
+<collab collab-type="authors">Diabetes Care</collab>
+, &#x0201c;<article-title>Diagnosis and Classification of Diabetes: Standards of Care in Diabetes&#x02010;2024</article-title>,&#x0201d; supplement, <source>Diabetes Care</source>
+<volume>47</volume> (<year>2024</year>): <fpage>S20</fpage>&#x02013;<lpage>S42</lpage>, <pub-id pub-id-type="doi">10.2337/dc24-S002</pub-id>.<pub-id pub-id-type="pmid">38078589</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0009">
+<string-name>
+<given-names>W. T.</given-names>
+<surname>Friedewald</surname>
+</string-name>, <string-name>
+<given-names>R. I.</given-names>
+<surname>Levy</surname>
+</string-name>, and <string-name>
+<given-names>D. S.</given-names>
+<surname>Fredrickson</surname>
+</string-name>, &#x0201c;<article-title>Estimation of the Concentration of Low&#x02010;Density Lipoprotein Cholesterol in Plasma, Without Use of the Preparative Ultracentrifuge</article-title>,&#x0201d; <source>Clinical Chemistry</source>
+<volume>18</volume>, no. <issue>6</issue> (<year>1972</year>): <fpage>499</fpage>&#x02013;<lpage>502</lpage>, <pub-id pub-id-type="doi">10.1093/clinchem/18.6.499</pub-id>.<pub-id pub-id-type="pmid">4337382</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0010">
+<string-name>
+<given-names>A. S.</given-names>
+<surname>Levey</surname>
+</string-name>, <string-name>
+<given-names>L. A.</given-names>
+<surname>Stevens</surname>
+</string-name>, <string-name>
+<given-names>C. H.</given-names>
+<surname>Schmid</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>A New Equation to Estimate Glomerular Filtration Rate</article-title>,&#x0201d; <source>Annals of Internal Medicine</source>
+<volume>150</volume>, no. <issue>9</issue> (<year>2009</year>): <fpage>604</fpage>&#x02013;<lpage>612</lpage>, <pub-id pub-id-type="doi">10.7326/0003-4819-150-9-200905050-00006</pub-id>.<pub-id pub-id-type="pmid">19414839</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0011">
+<string-name>
+<given-names>B. C.</given-names>
+<surname>Silva</surname>
+</string-name>, <string-name>
+<given-names>W. D.</given-names>
+<surname>Leslie</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Resch</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Trabecular Bone Score: A Noninvasive Analytical Method Based Upon the DXA Image</article-title>,&#x0201d; <source>Journal of Bone and Mineral Research</source>
+<volume>29</volume>, no. <issue>3</issue> (<year>2014</year>): <fpage>518</fpage>&#x02013;<lpage>530</lpage>, <pub-id pub-id-type="doi">10.1002/jbmr.2176</pub-id>.<pub-id pub-id-type="pmid">24443324</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0012">
+<string-name>
+<given-names>M. J.</given-names>
+<surname>Young</surname>
+</string-name>, <string-name>
+<given-names>A. J. M.</given-names>
+<surname>Boulton</surname>
+</string-name>, <string-name>
+<given-names>A. F.</given-names>
+<surname>Macleod</surname>
+</string-name>, <string-name>
+<given-names>D. R. R.</given-names>
+<surname>Williams</surname>
+</string-name>, and <string-name>
+<given-names>P. H.</given-names>
+<surname>Sonksen</surname>
+</string-name>, &#x0201c;<article-title>A Multicentre Study of the Prevalence of Diabetic Peripheral Neuropathy in the United Kingdom Hospital Clinic Population</article-title>,&#x0201d; <source>Diabetologia</source>
+<volume>36</volume>, no. <issue>2</issue> (<year>1993</year>): <fpage>150</fpage>&#x02013;<lpage>154</lpage>, <pub-id pub-id-type="doi">10.1007/bf00400697</pub-id>.<pub-id pub-id-type="pmid">8458529</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0013">
+<string-name>
+<given-names>V.</given-names>
+<surname>Spallone</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Morganti</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>D&#x02019;Amato</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Greco</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Cacciotti</surname>
+</string-name>, and <string-name>
+<given-names>G. A.</given-names>
+<surname>Marfia</surname>
+</string-name>, &#x0201c;<article-title>Validation of DN4 as a Screening Tool for Neuropathic Pain in Painful Diabetic Polyneuropathy</article-title>,&#x0201d; <source>Diabetic Medicine</source>
+<volume>29</volume>, no. <issue>5</issue> (<year>2012</year>): <fpage>578</fpage>&#x02013;<lpage>585</lpage>, <pub-id pub-id-type="doi">10.1111/j.1464-5491.2011.03500.x</pub-id>.<pub-id pub-id-type="pmid">22023377</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0014">
+<string-name>
+<given-names>F.</given-names>
+<surname>Guerrero&#x02010;Romero</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Villalobos&#x02010;Molina</surname>
+</string-name>, <string-name>
+<given-names>J. R.</given-names>
+<surname>Jim&#x000e9;nez&#x02010;Flores</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Fasting Triglycerides and Glucose Index as a Diagnostic Test for Insulin Resistance in Young Adults</article-title>,&#x0201d; <source>Archives of Medical Research</source>
+<volume>47</volume>, no. <issue>5</issue> (<year>2016</year>): <fpage>382</fpage>&#x02013;<lpage>387</lpage>, <pub-id pub-id-type="doi">10.1016/j.arcmed.2016.08.012</pub-id>.<pub-id pub-id-type="pmid">27751372</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0015">
+<string-name>
+<given-names>M. R.</given-names>
+<surname>Salazar</surname>
+</string-name>, <string-name>
+<given-names>H. A.</given-names>
+<surname>Carbajal</surname>
+</string-name>, <string-name>
+<given-names>W. G.</given-names>
+<surname>Espeche</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Relation Among the Plasma Triglyceride/High&#x02010;Density Lipoprotein Cholesterol Concentration Ratio, Insulin Resistance, and Associated Cardio&#x02010;Metabolic Risk Factors in Men and Women</article-title>,&#x0201d; <source>American Journal of Cardiology</source>
+<volume>109</volume>, no. <issue>12</issue> (<year>2012</year>): <fpage>1749</fpage>&#x02013;<lpage>1753</lpage>, <pub-id pub-id-type="doi">10.1016/j.amjcard.2012.02.016</pub-id>.<pub-id pub-id-type="pmid">22449634</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0016">
+<string-name>
+<given-names>M.</given-names>
+<surname>Montero&#x02010;Odasso</surname>
+</string-name>, <string-name>
+<given-names>N.</given-names>
+<surname>van der Velde</surname>
+</string-name>, <string-name>
+<given-names>F. C.</given-names>
+<surname>Martin</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>World Guidelines for Falls Prevention and Management for Older Adults: A Global Initiative</article-title>,&#x0201d; <source>Age and Ageing</source>
+<volume>51</volume>, no. <issue>9</issue> (<year>2022</year>): <elocation-id>afac205</elocation-id>, <pub-id pub-id-type="doi">10.1093/ageing/afac205</pub-id>.<pub-id pub-id-type="pmid">36178003</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0017">
+<string-name>
+<given-names>P.</given-names>
+<surname>Vestergaard</surname>
+</string-name>, &#x0201c;<article-title>Discrepancies in Bone Mineral Density and Fracture Risk in Patients With Type 1 and Type 2 Diabetes&#x02014;A Meta&#x02010;Analysis</article-title>,&#x0201d; <source>Osteoporosis International</source>
+<volume>18</volume>, no. <issue>4</issue> (<year>2007</year>): <fpage>427</fpage>&#x02013;<lpage>444</lpage>, <pub-id pub-id-type="doi">10.1007/s00198-006-0253-4</pub-id>.<pub-id pub-id-type="pmid">17068657</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0018">
+<string-name>
+<given-names>M.</given-names>
+<surname>Janghorbani</surname>
+</string-name>, <string-name>
+<given-names>R. M.</given-names>
+<surname>Van Dam</surname>
+</string-name>, <string-name>
+<given-names>W. C.</given-names>
+<surname>Willett</surname>
+</string-name>, and <string-name>
+<given-names>F. B.</given-names>
+<surname>Hu</surname>
+</string-name>, &#x0201c;<article-title>Systematic Review of Type 1 and Type 2 Diabetes Mellitus and Risk of Fracture</article-title>,&#x0201d; <source>American Journal of Epidemiology</source>
+<volume>166</volume>, no. <issue>5</issue> (<year>2007</year>): <fpage>495</fpage>&#x02013;<lpage>505</lpage>, <pub-id pub-id-type="doi">10.1093/aje/kwm106</pub-id>.<pub-id pub-id-type="pmid">17575306</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0019">
+<string-name>
+<given-names>W. D.</given-names>
+<surname>Leslie</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Aubry&#x02010;Rozier</surname>
+</string-name>, <string-name>
+<given-names>O.</given-names>
+<surname>Lamy</surname>
+</string-name>, and <string-name>
+<given-names>D.</given-names>
+<surname>Hans</surname>
+</string-name>, and <collab collab-type="authors">Manitoba Bone Density Program</collab>
+, &#x0201c;<article-title>TBS (Trabecular Bone Score) and Diabetes&#x02010;Related Fracture Risk</article-title>,&#x0201d; <source>Journal of Clinical Endocrinology and Metabolism</source>
+<volume>98</volume>, no. <issue>2</issue> (<year>2013</year>): <fpage>602</fpage>&#x02013;<lpage>609</lpage>, <pub-id pub-id-type="doi">10.1210/jc.2012-3118</pub-id>.<pub-id pub-id-type="pmid">23341489</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0020">
+<string-name>
+<given-names>F.</given-names>
+<surname>Johannesdottir</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Tedtsen</surname>
+</string-name>, <string-name>
+<given-names>L. M.</given-names>
+<surname>Cooke</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Microvascular Disease and Early Diabetes Onset Are Associated With Deficits in Femoral Neck Bone Density and Structure Among Older Adults With Longstanding Type 1 Diabetes</article-title>,&#x0201d; <source>Journal of Bone and Mineral Research</source>
+<volume>39</volume>, no. <issue>10</issue> (<year>2024</year>): <fpage>1454</fpage>&#x02013;<lpage>1463</lpage>: published online Aug 16, <pub-id pub-id-type="doi">10.1093/jbmr/zjae134</pub-id>.<pub-id pub-id-type="pmid">39151032</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0021">
+<string-name>
+<given-names>G.</given-names>
+<surname>Leanza</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Maddaloni</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Pitocco</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Risk Factors for Fragility Fractures in Type 1 Diabetes</article-title>,&#x0201d; <source>Bone</source>
+<volume>125</volume> (<year>2019</year>): <fpage>194</fpage>&#x02013;<lpage>199</lpage>, <pub-id pub-id-type="doi">10.1016/j.bone.2019.04.017</pub-id>.<pub-id pub-id-type="pmid">31059862</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0022">
+<string-name>
+<given-names>M.</given-names>
+<surname>Mohseni</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Hosseinzadeh</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Civitelli</surname>
+</string-name>, and <string-name>
+<given-names>S.</given-names>
+<surname>Eisen</surname>
+</string-name>, &#x0201c;<article-title>Effect of Peripheral Neuropathy on Bone Mineral Density in Adults With Diabetes: A Systematic Review of the Literature and Meta&#x02010;Analysis</article-title>,&#x0201d; <source>Bone</source>
+<volume>147</volume> (<year>2021</year>): <elocation-id>115932</elocation-id>, <pub-id pub-id-type="doi">10.1016/j.bone.2021.115932</pub-id>.<pub-id pub-id-type="pmid">33757900</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0023">
+<string-name>
+<given-names>Y.</given-names>
+<surname>Hou</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Hou</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Nie</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Association of Bone Turnover Markers With Type 2 Diabetes Mellitus and Microvascular Complications: A Matched Case&#x02010;Control Study</article-title>,&#x0201d; <source>Diabetes, Metabolic Syndrome and Obesity</source>
+<volume>16</volume> (<year>2023</year>): <fpage>1177</fpage>&#x02013;<lpage>1192</lpage>, <pub-id pub-id-type="doi">10.2147/dmso.s400285</pub-id>.</mixed-citation></ref><ref id="dmrr70135-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0024">
+<string-name>
+<given-names>A.</given-names>
+<surname>Sheu</surname>
+</string-name>, <string-name>
+<given-names>R. L.</given-names>
+<surname>O&#x02019;Connell</surname>
+</string-name>, <string-name>
+<given-names>A. J.</given-names>
+<surname>Jenkins</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Factors Associated With Fragility Fractures in Type 2 Diabetes: An Analysis of the Randomised Controlled Fenofibrate Intervention and Event Lowering in Diabetes (FIELD) Study</article-title>,&#x0201d; <source>Diabetes/Metabolism Research and Reviews</source>
+<volume>39</volume>, no. <issue>5</issue> (<year>2023</year>): <elocation-id>e3631</elocation-id>, <pub-id pub-id-type="doi">10.1002/dmrr.3631</pub-id>.<pub-id pub-id-type="pmid">36893361</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0025">
+<string-name>
+<given-names>E.</given-names>
+<surname>Maddaloni</surname>
+</string-name>, <string-name>
+<given-names>R. L.</given-names>
+<surname>Coleman</surname>
+</string-name>, and <string-name>
+<given-names>R. R.</given-names>
+<surname>Holman</surname>
+</string-name>, &#x0201c;<article-title>Risk Factors for Bone Fractures in Type 2 Diabetes and the Impact of Once&#x02010;Weekly Exenatide: Insights From an EXSCEL Post&#x02010;Hoc Analysis</article-title>,&#x0201d; <source>Diabetes Research and Clinical Practice</source>
+<volume>223</volume> (<year>2025</year>): <elocation-id>112125</elocation-id>, <pub-id pub-id-type="doi">10.1016/j.diabres.2025.112125</pub-id>.<pub-id pub-id-type="pmid">40154887</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0026">
+<string-name>
+<given-names>T.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>X.&#x02010;L.</given-names>
+<surname>Yin</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Zou</surname>
+</string-name>, <string-name>
+<given-names>H.&#x02010;Y.</given-names>
+<surname>Fu</surname>
+</string-name>, and <string-name>
+<given-names>H.&#x02010;L.</given-names>
+<surname>Li</surname>
+</string-name>, &#x0201c;<article-title>Prevalence and Risk Factors of Osteoporosis in Patients With Type 2 Diabetes Mellitus in Nanchang (China): A Retrospective Cohort Study</article-title>,&#x0201d; <source>Diabetes, Metabolic Syndrome and Obesity</source>
+<volume>15</volume> (<year>2022</year>): <fpage>3039</fpage>&#x02013;<lpage>3048</lpage>, <pub-id pub-id-type="doi">10.2147/dmso.s372348</pub-id>.</mixed-citation></ref><ref id="dmrr70135-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0027">
+<string-name>
+<given-names>X.&#x02010;J.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>X.&#x02010;F.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>Z.&#x02010;C.</given-names>
+<surname>Pan</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Nerve Conduction Velocity Is Independently Associated With Bone Mineral Density in Type 2 Diabetes Mellitus</article-title>,&#x0201d; <source>Frontiers in Endocrinology</source>
+<volume>14</volume> (<year>2023</year>): <elocation-id>1109322</elocation-id>, <pub-id pub-id-type="doi">10.3389/fendo.2023.1109322</pub-id>.<pub-id pub-id-type="pmid">36891057</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0028">
+<string-name>
+<given-names>A.</given-names>
+<surname>Palermo</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>D&#x02019;Onofrio</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Eastell</surname>
+</string-name>, <string-name>
+<given-names>A. V.</given-names>
+<surname>Schwartz</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Pozzilli</surname>
+</string-name>, and <string-name>
+<given-names>N.</given-names>
+<surname>Napoli</surname>
+</string-name>, &#x0201c;<article-title>Oral Anti&#x02010;Diabetic Drugs and Fracture Risk, Cut to the Bone: Safe or Dangerous? A Narrative Review</article-title>,&#x0201d; <source>Osteoporosis International</source>
+<volume>26</volume>, no. <issue>8</issue> (<year>2015</year>): <fpage>2073</fpage>&#x02013;<lpage>2089</lpage>, <pub-id pub-id-type="doi">10.1007/s00198-015-3123-0</pub-id>.<pub-id pub-id-type="pmid">25910746</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0029">
+<string-name>
+<given-names>A. V.</given-names>
+<surname>Schwartz</surname>
+</string-name>, <string-name>
+<given-names>T. A.</given-names>
+<surname>Hillier</surname>
+</string-name>, <string-name>
+<given-names>D. E.</given-names>
+<surname>Sellmeyer</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Older Women With Diabetes Have a Higher Risk of Falls: A Prospective Study</article-title>,&#x0201d; <source>Diabetes Care</source>
+<volume>25</volume>, no. <issue>10</issue> (<year>2002</year>): <fpage>1749</fpage>&#x02013;<lpage>1754</lpage>, <pub-id pub-id-type="doi">10.2337/diacare.25.10.1749</pub-id>.<pub-id pub-id-type="pmid">12351472</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0030">
+<string-name>
+<given-names>L. B.</given-names>
+<surname>Freire</surname>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Brasil&#x02010;Neto</surname>
+</string-name>, <string-name>
+<given-names>M. L.</given-names>
+<surname>da Silva</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Risk Factors for Falls in Older Adults With Diabetes Mellitus: Systematic Review and meta&#x02010;analysis</article-title>,&#x0201d; <source>BMC Geriatrics</source>
+<volume>24</volume>, no. <issue>1</issue> (<year>2024</year>): <elocation-id>201</elocation-id>, <pub-id pub-id-type="doi">10.1186/s12877-024-04668-0</pub-id>.<pub-id pub-id-type="pmid">38413865</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0031">
+<string-name>
+<given-names>L.</given-names>
+<surname>D&#x02019;Onofrio</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Ferdousi</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Kalteniece</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Corneal Confocal Microscopy Identifies Small Nerve Fibre Damage in Patients With Hypertriglyceridemia</article-title>,&#x0201d; <source>Journal of Clinical Lipidology</source>
+<volume>16</volume>, no. <issue>4</issue> (<year>2022</year>): <fpage>463</fpage>&#x02013;<lpage>471</lpage>, <pub-id pub-id-type="doi">10.1016/j.jacl.2022.04.006</pub-id>.<pub-id pub-id-type="pmid">35562280</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0032">
+<string-name>
+<given-names>S.</given-names>
+<surname>Tesfaye</surname>
+</string-name>, <string-name>
+<given-names>N.</given-names>
+<surname>Chaturvedi</surname>
+</string-name>, <string-name>
+<given-names>S. E. M.</given-names>
+<surname>Eaton</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Vascular Risk Factors and Diabetic Neuropathy</article-title>,&#x0201d; <source>New England Journal of Medicine</source>
+<volume>352</volume>, no. <issue>4</issue> (<year>2005</year>): <fpage>341</fpage>&#x02013;<lpage>350</lpage>, <pub-id pub-id-type="doi">10.1056/nejmoa032782</pub-id>.<pub-id pub-id-type="pmid">15673800</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0033">
+<string-name>
+<given-names>S.</given-names>
+<surname>Zhu</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Masson</surname>
+</string-name>, and <string-name>
+<given-names>Y.&#x02010;P.</given-names>
+<surname>Li</surname>
+</string-name>, &#x0201c;<article-title>Cell Signaling and Transcriptional Regulation of Osteoblast Lineage Commitment, Differentiation, Bone Formation, and Homeostasis</article-title>,&#x0201d; <source>Cell Discov</source>
+<volume>10</volume>, no. <issue>1</issue> (<year>2024</year>): <elocation-id>71</elocation-id>, <pub-id pub-id-type="doi">10.1038/s41421-024-00689-6</pub-id>.<pub-id pub-id-type="pmid">38956429</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0034">
+<string-name>
+<given-names>I. M.</given-names>
+<surname>de Ara&#x000fa;jo</surname>
+</string-name>, <string-name>
+<given-names>L. T.</given-names>
+<surname>Parreiras&#x02010;E&#x02010;Silva</surname>
+</string-name>, <string-name>
+<given-names>A. L.</given-names>
+<surname>Carvalho</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Elias</surname>
+</string-name>, <string-name>
+<given-names>C. E. G.</given-names>
+<surname>Salmon</surname>
+</string-name>, and <string-name>
+<given-names>F. J. A.</given-names>
+<surname>de Paula</surname>
+</string-name>, &#x0201c;<article-title>Insulin Resistance Negatively Affects Bone Quality Not Quantity: The Relationship Between Bone and Adipose Tissue</article-title>,&#x0201d; <source>Osteoporosis International</source>
+<volume>31</volume> (<year>2020</year>): <fpage>1125</fpage>&#x02013;<lpage>1133</lpage>, <pub-id pub-id-type="doi">10.1007/s00198-020-05365-5</pub-id>.<pub-id pub-id-type="pmid">32108240</pub-id>
+</mixed-citation></ref><ref id="dmrr70135-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="dmrr70135-cit-0035">
+<string-name>
+<given-names>R.</given-names>
+<surname>Risi</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Vidal&#x02010;Puig</surname>
+</string-name>, and <string-name>
+<given-names>G.</given-names>
+<surname>Bidault</surname>
+</string-name>, &#x0201c;<article-title>An Adipocentric Perspective of Pancreatic Lipotoxicity in Diabetes Pathogenesis</article-title>,&#x0201d; <source>Journal of Endocrinology</source>
+<volume>262</volume>, no. <issue>1</issue> (<year>2024</year>), <pub-id pub-id-type="doi">10.1530/JOE-23-0313</pub-id>.</mixed-citation></ref></ref-list></back></article>

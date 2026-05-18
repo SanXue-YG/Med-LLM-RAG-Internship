@@ -1,0 +1,759 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" id="cssc70438" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">ChemSusChem</journal-id><journal-id journal-id-type="iso-abbrev">ChemSusChem</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)1864-564X</journal-id><journal-id journal-id-type="publisher-id">CSSC</journal-id><journal-title-group><journal-title>Chemsuschem</journal-title></journal-title-group><issn pub-type="ppub">1864-5631</issn><issn pub-type="epub">1864-564X</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">41655068</article-id><article-id pub-id-type="pmc">PMC12883095</article-id><article-id pub-id-type="doi">10.1002/cssc.202501310</article-id><article-id pub-id-type="publisher-id">CSSC70438</article-id><article-categories><subj-group subj-group-type="overline"><subject>Research Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>Modeling Zero&#x02010;Gap Saltwater Electrolysis With Advective Flow Through a Thin&#x02010;Film Composite Membrane</article-title></title-group><contrib-group><contrib id="cssc70438-cr-0001" contrib-type="author"><name><surname>Taylor</surname><given-names>Rachel F.</given-names></name><xref rid="cssc70438-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cssc70438-cr-0002" contrib-type="author"><name><surname>Xie</surname><given-names>Chenghan</given-names></name><xref rid="cssc70438-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="cssc70438-cr-0003" contrib-type="author"><name><surname>Bian</surname><given-names>Bin</given-names></name><xref rid="cssc70438-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="cssc70438-cr-0004" contrib-type="author"><name><surname>Akbari</surname><given-names>Amir</given-names></name><xref rid="cssc70438-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cssc70438-cr-0005" contrib-type="author" corresp="yes"><name><surname>Logan</surname><given-names>Bruce E.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-7478-8070</contrib-id><xref rid="cssc70438-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>bel3@psu.edu</email></address></contrib></contrib-group><aff id="cssc70438-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Department of Chemical Engineering</named-content>
+<institution>Pennsylvania State University</institution>
+<city>University Park</city>
+<named-content content-type="country-part">Pennsylvania</named-content>
+<country country="US">USA</country>
+</aff><aff id="cssc70438-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Department of Civil and Environmental Engineering</named-content>
+<institution>Pennsylvania State University</institution>
+<city>University Park</city>
+<named-content content-type="country-part">Pennsylvania</named-content>
+<country country="US">USA</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>Bruce E. Logan (<email>bel3@psu.edu</email>)</corresp></author-notes><pub-date pub-type="epub"><day>08</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="ppub"><day>12</day><month>2</month><year>2026</year></pub-date><volume>19</volume><issue seq="220">3</issue><issue-id pub-id-type="doi">10.1002/cssc.v19.3</issue-id><elocation-id>e202501310</elocation-id><history>
+<date date-type="rev-recd"><day>16</day><month>12</month><year>2025</year></date>
+<date date-type="received"><day>22</day><month>6</month><year>2025</year></date>
+<date date-type="accepted"><day>23</day><month>12</month><year>2025</year></date>
+</history><permissions><!--&#x000a9; 2026 Wiley&#x02010;VCH GmbH--><copyright-statement content-type="article-copyright">&#x000a9; 2026 The Author(s). ChemSusChem published by Wiley&#x02010;VCH GmbH</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:CSSC-19-e202501310.pdf"/><abstract><p>In zero&#x02010;gap saltwater electrolysis, ion transport is influenced by convective forces, but their effects have not been examined when using thin&#x02010;film composite (TFC) membranes with advective flow through the membrane. In this study, we adapted a one&#x02010;dimensional solution&#x02010;friction transport model for a zero&#x02010;gap electrolyzer to incorporate measured water flux across a TFC membrane. Open&#x02010;circuit or electrolysis (20 mA cm<sup>&#x02013;2</sup>) experiments quantified ion transport with and without electrochemical reactions. Water velocity, estimated from volume changes in the anolyte and the catholyte, was used to infer convective contributions to ion transport. Ion&#x02010;specific friction coefficients were determined using open&#x02010;circuit data. Using the fitted friction factors and incorporating water flux, the modeled ion crossover concentration showed good agreement with electrolysis data, including changes caused by reversing the membrane orientation. Removing the convective flux from the model showed up to a 740% change in predicted ion crossover and worsened agreement with experimental data. The strong correlation between the fraction of charge carried by major salt ions and the measured water flux suggests that electroosmotic drag could be one of the main mechanisms responsible for the observed water flux. These results highlight the importance of incorporating solution convection when modeling ion behavior in zero&#x02010;gap systems using TFC membranes.</p></abstract><abstract abstract-type="graphical"><p>During saltwater electrolysis with a thin&#x02010;film composite membrane, ion and water transport are coupled. The direction of water flux follows that of the dominant salt ion carrying charge. When Na<sup>+</sup> transport from the anode to the cathode is dominant, fluid flow occurs in the same direction. Reversing the membrane orientation shifts NO<sub>3</sub>&#x02013; to be the major salt charge carrier from the cathode to the anode, with fluid flow in the same direction.<boxed-text position="anchor" content-type="graphic"><graphic xlink:href="CSSC-19-e202501310-g001.jpg" position="anchor" id="jats-graphic-1"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="cssc70438-kwd-0001">convective flow</kwd><kwd id="cssc70438-kwd-0002">green hydrogen production</kwd><kwd id="cssc70438-kwd-0003">saltwater electrolysis</kwd><kwd id="cssc70438-kwd-0004">thin&#x02010;film composite membranes</kwd><kwd id="cssc70438-kwd-0005">zero&#x02010;gap flow cell</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>
+<institution-wrap><institution>National Science Foundation</institution><institution-id institution-id-type="doi">10.13039/100000001</institution-id></institution-wrap>
+</funding-source><award-id>CBET&#x02010;2027552</award-id></award-group><award-group id="funding-0002"><funding-source>
+<institution-wrap><institution>Penn State University</institution><institution-id institution-id-type="doi">10.13039/100008321</institution-id></institution-wrap>
+</funding-source><award-id>96840</award-id></award-group></funding-group><counts><fig-count count="8"/><table-count count="1"/><equation-count count="0"/><ref-count count="43"/><page-count count="12"/><word-count count="8809"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>12 February 2026</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.8 mode:remove_FC converted:08.02.2026</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="cssc70438-self">
+<string-name>
+<given-names>Rachel F.</given-names>
+<surname>Taylor</surname>
+</string-name> , <string-name>
+<given-names>Chenghan</given-names>
+<surname>Xie</surname>
+</string-name> , <string-name>
+<given-names>Bin</given-names>
+<surname>Bian</surname>
+</string-name> , <string-name>
+<given-names>Amir</given-names>
+<surname>Akbari</surname>
+</string-name> , <string-name>
+<given-names>Bruce E.</given-names>
+<surname>Logan</surname>
+</string-name>, <source>ChemSusChem</source>
+<year>2026</year>, <volume>19</volume>, <elocation-id>e202501310</elocation-id>. <pub-id pub-id-type="doi">10.1002/cssc.202501310</pub-id>
+</mixed-citation>
+</p></notes></front><body><sec id="cssc70438-sec-0001"><label>1</label><title>Introduction</title><p>Hydrogen production predominantly relies on fossil fuels, and in 2023 alone, it resulted in the release of 920 million tons of carbon dioxide into the atmosphere, emphasizing the urgent need for efficient, cost&#x02010;effective, and carbon&#x02010;neutral electrolysis technologies that enable green hydrogen production&#x000a0;[<xref rid="cssc70438-bib-0001" ref-type="bibr">1</xref>]. Conventional water electrolysis methods, including polymer exchange membrane (PEM) electrolysis and alkaline water electrolysis (AWE), suffer from high capital costs or low efficiencies, an issue highlighted across multiple studies&#x000a0;[<xref rid="cssc70438-bib-0002" ref-type="bibr">2</xref>, <xref rid="cssc70438-bib-0003" ref-type="bibr">3</xref>, <xref rid="cssc70438-bib-0004" ref-type="bibr">4</xref>]. In addition, their reliance on ultrapure water, which can add complexity to water electrolyzer process trains and be costly to produce, is another challenge for widespread use of these technologies&#x000a0;[<xref rid="cssc70438-bib-0005" ref-type="bibr">5</xref>]. To minimize the capital and operational costs associated with water purification, direct electrolysis of saltwater is being researched as an alternative to ultrapure water&#x000a0;[<xref rid="cssc70438-bib-0006" ref-type="bibr">6</xref>,&#x000a0;<xref rid="cssc70438-bib-0007" ref-type="bibr">7</xref>].</p><p>Directly electrolyzing saltwater faces several challenges. In unbuffered saltwater (pH&#x02009;&#x0223c;&#x02009;8), salt ions compete with water ions to carry charge, causing large pH gradients across the separator or membrane&#x000a0;[<xref rid="cssc70438-bib-0006" ref-type="bibr">6</xref>,&#x000a0;<xref rid="cssc70438-bib-0008" ref-type="bibr">8</xref>]. Additionally, chloride ions (Cl<sup>&#x02013;</sup>) in saltwater can oxidize at the anode to form chlorine gas and other oxidized chlorine species (e.g., HClO<sup>&#x02013;</sup>), which can damage electrolyzer components and shorten the system lifespan&#x000a0;[<xref rid="cssc70438-bib-0009" ref-type="bibr">9</xref>,&#x000a0;<xref rid="cssc70438-bib-0010" ref-type="bibr">10</xref>]. To mitigate Cl<sup>&#x02013;</sup> oxidation at the anode, thin&#x02010;film composite (TFC) membranes have been proposed to separate a saltwater catholyte from an anolyte composed of a fully oxidized salt solution (e.g., NaClO<sub>4</sub>), which prevents Cl<sup>&#x02013;</sup> oxidation while maintaining a high electrolyte conductivity&#x000a0;[<xref rid="cssc70438-bib-0008" ref-type="bibr">8</xref>,&#x000a0;<xref rid="cssc70438-bib-0011" ref-type="bibr">11</xref>].</p><p>TFC membranes that were primarily developed for reverse osmosis (RO) desalination of salty water&#x000a0;[<xref rid="cssc70438-bib-0012" ref-type="bibr">12</xref>,&#x000a0;<xref rid="cssc70438-bib-0013" ref-type="bibr">13</xref>] have only recently been studied for electrochemical applications&#x000a0;[<xref rid="cssc70438-bib-0008" ref-type="bibr">8</xref>,&#x000a0;<xref rid="cssc70438-bib-0014" ref-type="bibr">14</xref>]. Compared to conventional PEMs, TFC membranes are an affordable (&#x0223c;$10/m<sup>2</sup>) and relatively sustainable alternative to membranes using fluorinated compounds&#x000a0;[<xref rid="cssc70438-bib-0008" ref-type="bibr">8</xref>,&#x000a0;<xref rid="cssc70438-bib-0015" ref-type="bibr">15</xref>]. TFC membranes can have comparable resistances to PEMs (6.1 &#x000b1; 0.1&#x02009;&#x003a9; cm<sup>2</sup> for a brackish water RO membrane vs. 7.2 &#x000b1; 0.8&#x02009;&#x003a9; cm<sup>2</sup> for Nafion 117) and similar required electrolysis potentials in saltwater systems (3.5 V for a TFC membrane and Nafion during electrolysis at 40 mA cm<sup>&#x02013;2</sup>)&#x000a0;[<xref rid="cssc70438-bib-0008" ref-type="bibr">8</xref>,&#x000a0;<xref rid="cssc70438-bib-0011" ref-type="bibr">11</xref>]. Removing the polyester web support layer on typical TFC membranes helps to reduce resistance, and selective coatings can even further reduce chloride ion transport through the membrane to the anode&#x000a0;[<xref rid="cssc70438-bib-0016" ref-type="bibr">16</xref>,&#x000a0;<xref rid="cssc70438-bib-0017" ref-type="bibr">17</xref>].</p><p>To better understand ion transport in different systems using TFC membranes, researchers have used solution&#x02010;friction transport modeling to predict salt and water ion transport across these membranes&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>,&#x000a0;<xref rid="cssc70438-bib-0019" ref-type="bibr">19</xref>]. Modeling enables quantification of the location of the water association reaction within the TFC membrane and provides insights into factors controlling competitive ion transport&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>,&#x000a0;<xref rid="cssc70438-bib-0019" ref-type="bibr">19</xref>]. Initial modeling efforts focused on bench&#x02010;scale electrolysis cells with large electrolyte volumes separating the electrodes from the membrane, and did not incorporate convective flow effects&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>,&#x000a0;<xref rid="cssc70438-bib-0019" ref-type="bibr">19</xref>]. However, in zero&#x02010;gap electrolysis systems used industrially, additional transport phenomena&#x02014;such as electroosmotic flow&#x02014;can drive water movement between electrolyte compartments&#x000a0;[<xref rid="cssc70438-bib-0020" ref-type="bibr">20</xref>,&#x000a0;<xref rid="cssc70438-bib-0021" ref-type="bibr">21</xref>]. In a recent study, significant water transport was observed from the anolyte to the catholyte when using TFC membranes with an alkaline anolyte and saltwater catholyte in a zero&#x02010;gap configuration&#x000a0;[<xref rid="cssc70438-bib-0014" ref-type="bibr">14</xref>]. The impact of convective electrolyte flow on ion transport or system performance in that study was not further examined.</p><p>In this study, we used solution&#x02010;friction modeling for the zero&#x02010;gap flow cell geometry rather than widely spaced electrodes and modified it to investigate how convective flow through the membrane impacted salt and water ion transport. To examine the utility of the model for electrolyzers, we measured ion crossover concentrations over 6&#x02009;h under both open&#x02010;circuit and electrolysis (20 mA cm<sup>&#x02013;2</sup>) conditions. Open&#x02010;circuit data were used to fit ion&#x02010;specific friction factors in the solution&#x02010;friction model, while average water velocity across the membrane was estimated from measured volume changes in each compartment and incorporated into the model. We then examined how membrane orientation, with the active layer of the TFC membrane facing the anode or cathode, influenced water transport. With this model, we calculated the fraction of ion transport attributable to convection. Both nitrate (NO<sub>3</sub>
+<sup>&#x02013;</sup>) and chloride (Cl<sup>&#x02013;</sup>) were studied in 0.6 M KNO<sub>3</sub> and 0.6 M KCl electrolytes to compare their transport behavior and infer the extent of chloride oxidation at the anode under the different experimental conditions.</p></sec><sec id="cssc70438-sec-0002"><label>2</label><title>Experimental Materials and Methods</title><sec id="cssc70438-sec-0003"><label>2.1</label><title>Materials</title><p>ACS&#x02010;grade sodium perchlorate (NaClO<sub>4</sub>) (anhydrous, 98%&#x02212;102%, Thermo Scientific), sodium nitrate (NaNO<sub>3</sub>) (&#x02265;99.0%, Sigma Aldrich), sodium chloride (NaCl) (&#x02265;99.0%, Sigma Aldrich), potassium nitrate (KNO<sub>3</sub>) (&#x02265;99.0%, Sigma Aldrich), and potassium chloride (KCl) (99.0%&#x02212;100.5%, VWR Chemicals) were used to prepare the electrolytes for the flow cell experiments. All solutions were made using deionized (DI) water (&#x0003e;18.2 m&#x003a9; cm) made with a Milli&#x02010;Q ultrapure water purification system (Synergy).</p><p>Flat&#x02010;sheet SW30XLE TFC membranes (DOW chemical) were used in all experiments. Prior to use, the membranes were cut into 3&#x02009;cm&#x02009;&#x000d7;&#x02009;3&#x02009;cm pieces and hydrated in a 25% (v/v) isopropanol solution for 30&#x02009;min to remove any trapped air bubbles. They were then rinsed with DI water thoroughly and stored in DI water at 4&#x000b0;C.</p><p>Carbon cloth (2&#x02009;cm&#x02009;&#x000d7;&#x02009;2&#x02009;cm) served as the electrode backbone. To enhance hydrophilicity, the cloth was heated at 450&#x000b0;C for 24&#x02009;h before being coated with the catalyst. The resulting carbon cloth had increased wettability without any mechanical degradation. A slurry of carbon&#x02010;supported platinum (Pt) catalyst was prepared and painted onto the carbon cloth with a brush. Each electrode slurry contained 33 &#x000b5;L DI water, 133 &#x000b5;L isopropanol, 267 &#x000b5;L 5% Nafion solution (Ion Power, Pennsylvania), and 40&#x02009;mg of 10% Pt/C powder, resulting in 1 mg/cm<sup>2</sup> of Pt on each electrode. The slurry was stirred for 1&#x02009;h before being applied to the carbon cloth. The coated electrodes were air&#x02010;dried overnight before use in the flow experiments.</p></sec><sec id="cssc70438-sec-0004"><label>2.2</label><title>Zero&#x02010;Gap Flow Cell Experiments</title><p>Ion transport across the TFC membrane was studied in a zero&#x02010;gap flow cell (Scribner, North Carolina). The electrolyzer was assembled with a graphite cathodic current collector and a titanium anodic current collector with serpentine flow fields (Figure S1). The anode and cathode were placed adjacent to the flow field, with the catalyst facing the membrane, secured in place by plastic spacers (237 &#x000b5;m). A hydrated TFC membrane was sandwiched between the electrodes, with the active&#x02010;layer orientation (facing the anode or cathode) varied depending on the experiment (Figure&#x000a0;<xref rid="cssc70438-fig-0001" ref-type="fig">1a</xref>). The stack was secured with bolts that were tightened to 9 N m using a torque wrench. Electrolytes (100&#x02009;mL) were recirculated at 25&#x02009;mL min<sup>&#x02013;1</sup> using a peristaltic pump for 6&#x02009;h. Samples (1&#x02009;mL) were collected from the anolyte and catholyte at the start and every hour after. At the end of all experiments, the volumes in the anolyte and catholyte were measured.</p><fig position="float" fig-type="FIGURE" id="cssc70438-fig-0001"><label>FIGURE 1</label><caption><p>(a) Depiction of a small cross&#x02010;section of zero&#x02010;gap electrolyzer stack used for saltwater electrolysis with a thin&#x02010;film composite membrane. (b) Schematic of the 1&#x02010;D model geometry used to simulate the zero&#x02010;gap saltwater electrolysis.</p></caption><graphic xlink:href="CSSC-19-e202501310-g008" position="anchor" id="jats-graphic-3"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>In saltwater, Cl<sup>&#x02013;</sup> is the dominant anion, but modeling its transport during electrolysis is challenging due to potential Cl<sup>&#x02013;</sup> oxidation at the anode in the experiments and the resulting mass balance discrepancies. Nitrate (NO<sub>3</sub>
+<sup>&#x02013;</sup>) has previously been used as a nonreactive surrogate for Cl<sup>&#x02013;</sup> in modeling studies to avoid these issues&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>]. However, NO<sub>3</sub>
+<sup>&#x02013;</sup> has been shown to permeate TFC membranes more readily than Cl<sup>&#x02013;</sup> under desalination conditions, due to hydration energy, diffusivity, and partitioning effects&#x000a0;[<xref rid="cssc70438-bib-0022" ref-type="bibr">22</xref>,&#x000a0;<xref rid="cssc70438-bib-0023" ref-type="bibr">23</xref>]. Therefore, transport comparisons between NO<sub>3</sub>
+<sup>&#x02013;</sup> and Cl<sup>&#x02013;</sup> are qualitative. In this study, both anions are used: NO<sub>3</sub>
+<sup>&#x02013;</sup> enables reliable model validation and mass balance closure, while Cl<sup>&#x02013;</sup> provides a more realistic representation of anion transport during saltwater electrolysis.</p><p>Ion diffusion across the membrane and electrodes was first studied without applied current (open&#x02010;circuit mode). To isolate the transport behavior of individual ions, either the cation or anion was held constant while the counter&#x02010;ion was varied between the anolyte and catholyte. For anion transport experiments, Na<sup>+</sup> was used as the common cation in both compartments. Using NaNO<sub>3</sub> in the catholyte and NaClO<sub>4</sub> in the anolyte enabled comparison of NO<sub>3</sub>
+<sup>&#x02013;</sup> and ClO<sub>4</sub>
+<sup>&#x02013;</sup> transport. Using NaCl in the catholyte and NaClO<sub>4</sub> in the anolyte enabled comparison of Cl<sup>&#x02013;</sup> and ClO<sub>4</sub>
+<sup>&#x02013;</sup> transport. To compare cation transport, NO<sub>3</sub>
+<sup>&#x02013;</sup> was used as the common anion, with Na<sup>+</sup> in the anolyte and K<sup>+</sup> in the catholyte. The concentration of all solutions was set to 0.6 M to mimic the concentration of seawater. The active layer orientation was set to face the catholyte in all open&#x02010;circuit experiments, consistent with the orientation used in previous saltwater electrolysis experimentation and modeling&#x000a0;[<xref rid="cssc70438-bib-0016" ref-type="bibr">16</xref>,&#x000a0;<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>].</p><p>To examine ion transport during electrolysis, a current density of 20 mA cm<sup>&#x02013;2</sup> was applied using a potentiostat (VMP3, Biologic). Before each experiment, a 30&#x02010;min equilibration period was used to circulate electrolyte through the system, ensuring the membrane and electrodes were fully hydrated with their respective solutions. The anolyte composition was held constant at 0.6 M NaClO<sub>4</sub>, while the catholyte was varied between 0.6 M KNO<sub>3</sub>, KCl, NaNO<sub>3</sub>, or NaCl. Using K<sup>+</sup> in the catholyte allowed for precise measurement of Na<sup>+</sup> transport from the anolyte to the catholyte in the direction of the electric field. When Na<sup>+</sup> was used in both compartments, we could compare how cation identity (either Na<sup>+</sup> or K<sup>+</sup>) affected anion transport from the catholyte to the anolyte. After each experiment, pH measurements were taken and ion concentrations were measured using ion chromatography (Dionex, Thermo Fisher, Massachusetts). The orientation of the active layer was studied facing both the anolyte and the catholyte to determine whether the intrinsic membrane parameters fit are orientation specific or active layer specific.</p></sec><sec id="cssc70438-sec-0005"><label>2.3</label><title>Calculation of the Percent of Charge Carried (PCC) by Salt Ions</title><p>The PCC by all salt ions, as well as by individual anions, was calculated based on measured ion concentrations and a constant applied current density. A current density of <italic toggle="yes">I</italic>
+<sub>a</sub>&#x02009;=&#x02009;20 mA cm<sup>&#x02013;2</sup> was applied across the flow cell, requiring a constant charge flux across the membrane calculated by: <mml:math id="jats-math-1" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mi mathvariant="normal">c</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>I</mml:mi><mml:mi mathvariant="normal">a</mml:mi></mml:msub><mml:mo>/</mml:mo><mml:mi>F</mml:mi></mml:mrow></mml:mrow></mml:math>, where <italic toggle="yes">F</italic> is Faraday's constant. Ions moving in the direction of the electric field carry the applied current across the membrane. Using the case where the catholyte is KCl as an example, the total charge flux across the membrane can be expressed as:<disp-formula id="cssc70438-disp-0001">
+<label>(1)</label>
+<mml:math id="jats-math-2" display="block"><mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mi mathvariant="normal">c</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>Na</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>Cl</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi mathvariant="normal">H</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>OH</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>&#x02212;</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi mathvariant="normal">K</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>&#x02010;</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:msub><mml:mi>ClO</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced></mml:mrow></mml:mrow></mml:math>
+</disp-formula>where <italic toggle="yes">J</italic>
+<sub>i</sub> is the flux of ion i. This equation accounts for ions such as K<sup>+</sup> and ClO<sub>4</sub>
+<sup>&#x02013;</sup>, which migrate in the direction opposite to the potential gradient; therefore, their crossover reduces the net charge carried in the desired direction and must be subtracted from the total. To express the previous equation in terms of total required charge, it can be rearranged as:</p><p>
+<disp-formula id="cssc70438-disp-0002">
+<label>(2)</label>
+<mml:math id="jats-math-3" display="block"><mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mi mathvariant="normal">c</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi mathvariant="normal">K</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:msub><mml:mi>ClO</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>=</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>Na</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>Cl</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi mathvariant="normal">H</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>OH</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>The percentage of charge carried (PCC) by salt ions was calculated using:</p><p>
+<disp-formula id="cssc70438-disp-0003">
+<label>(3)</label>
+<mml:math id="jats-math-4" display="block"><mml:mrow><mml:mrow><mml:msub><mml:mi>PCC</mml:mi><mml:mi>salt</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>Na</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>Cl</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced></mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mi mathvariant="normal">c</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi mathvariant="normal">K</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:msub><mml:mi>ClO</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced></mml:mrow></mml:mfrac><mml:mo>&#x000d7;</mml:mo><mml:mn>100</mml:mn><mml:mi mathvariant="bold">%</mml:mi></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>The percentage of charge carried by an individual ion, such as Cl<sup>&#x02013;</sup>, was calculated as:</p><p>
+<disp-formula id="cssc70438-disp-0004">
+<label>(4)</label>
+<mml:math id="jats-math-5" display="block"><mml:mrow><mml:mrow><mml:msub><mml:mi>PCC</mml:mi><mml:msup><mml:mi>Cl</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>Cl</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mi mathvariant="normal">c</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi mathvariant="normal">K</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|"><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:msub><mml:mi>ClO</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mfenced></mml:mrow></mml:mfrac><mml:mo>&#x000d7;</mml:mo><mml:mn>100</mml:mn><mml:mi mathvariant="bold">%</mml:mi></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>When KNO<sub>3</sub> was used as the catholyte, <mml:math id="jats-math-6" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:mi>Cl</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mrow></mml:mrow></mml:math> was replaced in Equations&#x000a0;(<xref rid="cssc70438-disp-0001" ref-type="disp-formula">1</xref>)&#x02013;(<xref rid="cssc70438-disp-0004" ref-type="disp-formula">4</xref>) with <mml:math id="jats-math-7" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:msup><mml:msub><mml:mi>NO</mml:mi><mml:mn>3</mml:mn></mml:msub><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mrow></mml:mrow></mml:math>. The fluxes of salt ions were calculated at each time point using the measured ion crossover concentrations as follows:</p><p>
+<disp-formula id="cssc70438-disp-0005">
+<label>(5)</label>
+<mml:math id="jats-math-8" display="block"><mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>c</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:mi>V</mml:mi></mml:mrow><mml:mrow><mml:mi>A</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>The electrolyte volume (<italic toggle="yes">V</italic>) at time (<italic toggle="yes">t</italic>) was multiplied by the concentration <italic toggle="yes">c</italic>
+<sub>i</sub> of ion <italic toggle="yes">i</italic> to calculate the moles of ion in solution, which were then divided by the electrode area (<italic toggle="yes">A</italic>) and the time data point was collected. Equations&#x000a0;(<xref rid="cssc70438-disp-0001" ref-type="disp-formula">1</xref>)&#x02013;(<xref rid="cssc70438-disp-0004" ref-type="disp-formula">4</xref>) assume 100% Faradaic efficiency. Although some non&#x02010;Faradaic pathways may occur, previous studies show that the dominant fraction of current in saltwater electrolysis with TFC membranes arises from the intended electrochemical reactions&#x000a0;[<xref rid="cssc70438-bib-0008" ref-type="bibr">8</xref>]. Accordingly, this simplified calculation of PCC remains a useful tool for analyzing ion transport.</p></sec></sec><sec id="cssc70438-sec-0006"><label>3</label><title>Solution&#x02010;Friction Modeling</title><sec id="cssc70438-sec-0007"><label>3.1</label><title>Modeling Approach</title><p>Previous work validated a solution&#x02010;friction model for ion transport across TFC membranes during electrolysis, but neglected convective effects&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>]. Some membrane parameters validated previously are retained here, while parameters specific to the zero&#x02010;gap electrolyzer&#x02014;such as the effective diffusion through the electrodes&#x02014;are fitted, as well as ion&#x02010;specific friction factors.</p><p>Ion transport was modeled using the Nernst&#x02010;Planck equation, incorporating diffusion, electromigration, and convection&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>,&#x000a0;<xref rid="cssc70438-bib-0024" ref-type="bibr">24</xref>]. Simulations were conducted with COMSOL Multiphysics 6.2 using the Tertiary Current Distribution electroneutrality physics to predict ion flux across the TFC membrane and carbon cloth electrodes. Ion concentrations and potentials were calculated across four unique domains (&#x003a9;). A TFC membrane is sandwiched between two carbon cloth electrodes, with the membrane support layer &#x003a9;<sub>s</sub> shown facing the anode &#x003a9;<sub>a</sub> and the membrane active layer &#x003a9;<sub>m</sub> facing the cathode &#x003a9;<sub>c</sub> (Figure&#x000a0;<xref rid="cssc70438-fig-0001" ref-type="fig">1b</xref>)&#x000a0;[<xref rid="cssc70438-bib-0025" ref-type="bibr">25</xref>]. Electrode thicknesses (<italic toggle="yes">L</italic>
+<sub>a</sub> for the anode and <italic toggle="yes">L</italic>
+<sub>c</sub> for the cathode) were assumed to match the spacer thickness (237 &#x000b5;m) due to the porous nature of the electrodes and compression during assembly&#x000a0;[<xref rid="cssc70438-bib-0026" ref-type="bibr">26</xref>,&#x000a0;<xref rid="cssc70438-bib-0027" ref-type="bibr">27</xref>]. To account for the deformation of the electrodes due to compression, an effectiveness factor used to hinder diffusion through the electrodes was fit using open&#x02010;circuit diffusion data. Given that the PA active&#x02010;layer thickness (<italic toggle="yes">L</italic>
+<sub>m</sub>) is several orders of magnitude thinner than the membrane support layer, the total membrane thickness was assumed to be equal to the support layer thickness (<italic toggle="yes">L</italic>
+<sub>s</sub>&#x02009;=&#x02009;145 &#x000b5;m)&#x000a0;[<xref rid="cssc70438-bib-0025" ref-type="bibr">25</xref>]. The membrane and spacer thickness were measured using an outside micrometer (Mitutoyo). The active&#x02010;layer orientation relative to the electrode varied by experiment.</p><p>To minimize unknown parameters associated with the Pt/C&#x02010;coated carbon cloth electrodes, the electrodes were modeled as homogenous electrolyte domains with a single fitted diffusion factor (<italic toggle="yes">&#x003b5;</italic>
+<sub>e</sub>) to mimic hindered diffusion due to the tortuous structure. Because the catalyst layer is thinly coated on the electrode surface, electrochemical reactions were assumed to occur only at the electrode interface facing the membrane&#x000a0;[<xref rid="cssc70438-bib-0028" ref-type="bibr">28</xref>,&#x000a0;<xref rid="cssc70438-bib-0029" ref-type="bibr">29</xref>].</p></sec><sec id="cssc70438-sec-0008"><label>3.2</label><title>Governing Equations</title><p>The time&#x02010;dependent concentration of species <italic toggle="yes">i</italic> ,<italic toggle="yes">c</italic>
+<sub>i</sub>, with charge <italic toggle="yes">z</italic>
+<sub>i</sub> was modeled using:</p><p>
+<disp-formula id="cssc70438-disp-0006">
+<label>(6)</label>
+<mml:math id="jats-math-9" display="block"><mml:mrow><mml:mrow><mml:mfrac><mml:mrow><mml:mi>&#x02202;</mml:mi><mml:msub><mml:mi>c</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mi>&#x02202;</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:msub><mml:mi>K</mml:mi><mml:mi mathvariant="normal">f</mml:mi></mml:msub><mml:msub><mml:mi>v</mml:mi><mml:mi mathvariant="normal">f</mml:mi></mml:msub><mml:mfrac><mml:mrow><mml:mi>d</mml:mi><mml:msub><mml:mi>c</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:mfrac><mml:mo>&#x02212;</mml:mo><mml:mi>&#x003b5;</mml:mi><mml:msub><mml:mi>K</mml:mi><mml:mi mathvariant="normal">f</mml:mi></mml:msub><mml:msub><mml:mi>D</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:mfrac><mml:mi>d</mml:mi><mml:mrow><mml:mi>d</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:mfrac><mml:mfenced open="(" close=")"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>d</mml:mi><mml:msub><mml:mi>c</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:mfrac><mml:mo>+</mml:mo><mml:msub><mml:mi>z</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:msub><mml:mi>c</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:mfrac><mml:mrow><mml:mi>d</mml:mi><mml:mi mathvariant="normal">&#x003c6;</mml:mi></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:mfenced><mml:mo>+</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math>
+</disp-formula>where &#x003c6; is the dimensionless electric potential, <italic toggle="yes">D</italic>
+<sub>i</sub> is the ion diffusion coefficient (taken from literature at 25&#x000b0;C), <italic toggle="yes">&#x003b5;</italic> is the effective diffusion factor, and <italic toggle="yes">K</italic>
+<sub>f</sub> is a frictional hinderance factor, <mml:math id="jats-math-10" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>v</mml:mi><mml:mi mathvariant="normal">f</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> is fluid velocity, and <italic toggle="yes">r</italic>
+<sub>i</sub> is a reaction term. The effective diffusion coefficients were set to <italic toggle="yes">&#x003b5;</italic> = 0.015 in the support layer, &#x003a9;<sub>s</sub>, and <italic toggle="yes">&#x003b5;</italic> = 0.005 in the active layer, &#x003a9;<sub>m</sub>&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>,&#x000a0;<xref rid="cssc70438-bib-0030" ref-type="bibr">30</xref>]. In the electrode regions, &#x003a9;<sub>a</sub> and &#x003a9;<sub>c</sub>, the diffusion factor <italic toggle="yes">&#x003b5;</italic> was fit using the open&#x02010;circuit data. The friction factor <italic toggle="yes">K</italic>
+<sub>f</sub> represents hindered transport due to ion&#x02013;ion, ion&#x02013;water, or ion&#x02010;structure interactions. In the dense, membrane active layer, &#x003a9;<sub>m</sub>, unique friction factors <italic toggle="yes">K</italic>
+<sub>f</sub> were fit for each ion using the open&#x02010;circuit data to isolate diffusional transport properties without the presence of a strong potential gradient and bubble generation. In the porous support layer &#x003a9;<sub>s</sub> and electrode layers &#x003a9;<sub>a</sub> and &#x003a9;<sub>c</sub>, <italic toggle="yes">K</italic>
+<sub>f</sub>&#x02009;=&#x02009;1.</p><p>Volume changes in the anolyte and catholyte after 6&#x02009;h were measured to estimate an average water velocity across the electrolyzer stack. The change in electrolyte volume <mml:math id="jats-math-11" display="inline"><mml:mrow><mml:mrow><mml:mtext>&#x00394;</mml:mtext><mml:mi>V</mml:mi></mml:mrow></mml:mrow></mml:math> was used to calculate the volumetric flowrate <mml:math id="jats-math-12" display="inline"><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mi>Q</mml:mi><mml:mo>)</mml:mo><mml:mo>,</mml:mo><mml:mtext>using&#x02009;</mml:mtext><mml:mi>Q</mml:mi><mml:mo>=</mml:mo><mml:mtext>&#x00394;</mml:mtext><mml:mi>V</mml:mi><mml:mo>/</mml:mo><mml:mi>t</mml:mi><mml:mo>.</mml:mo></mml:mrow></mml:mrow></mml:math> The time (<italic toggle="yes">t</italic>) was 6&#x02009;h for all experiments. An average fluid velocity <mml:math id="jats-math-13" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>v</mml:mi><mml:mi mathvariant="normal">f</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> was estimated from the volumetric flow rate <mml:math id="jats-math-14" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>v</mml:mi><mml:mi mathvariant="normal">f</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mi>Q</mml:mi><mml:mi>A</mml:mi></mml:mfrac></mml:mrow></mml:mrow></mml:math>, where <italic toggle="yes">A</italic>&#x02009;=&#x02009;4&#x02009;cm<sup>2</sup> is the electrode area.</p><p>Water reactions (<italic toggle="yes">r</italic>
+<sub>i</sub>) were included for H<sup>+</sup> and OH<sup>&#x02013;</sup> using:</p><p>
+<disp-formula id="cssc70438-disp-0007">
+<label>(7)</label>
+<mml:math id="jats-math-15" display="block"><mml:mrow><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:msup><mml:mi mathvariant="normal">H</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:msup><mml:mi>OH</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>k</mml:mi><mml:mi mathvariant="normal">w</mml:mi></mml:msub><mml:mo/><mml:mfenced open="(" close=")"><mml:mrow><mml:mn>1</mml:mn><mml:mo>&#x02212;</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>c</mml:mi><mml:msup><mml:mi mathvariant="normal">H</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:msub><mml:msub><mml:mi>c</mml:mi><mml:msup><mml:mi>OH</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:msub></mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi mathvariant="normal">w</mml:mi></mml:msub></mml:mfrac></mml:mrow></mml:mfenced></mml:mrow></mml:mrow></mml:math>
+</disp-formula>where <italic toggle="yes">k</italic>
+<sub>w</sub> is a rate coefficient (set large enough to maintain equilibrium), and <italic toggle="yes">K</italic>
+<sub>w</sub> is the water equilibrium constant. All other species had <italic toggle="yes">r</italic>
+<sub>i</sub>&#x02009;=&#x02009;0.</p></sec><sec id="cssc70438-sec-0009"><label>3.3</label><title>Electroneutrality and Partitioning</title><p>The electroneutrality assumption was used to maintain charge balance across the stack according to:</p><p>
+<disp-formula id="cssc70438-disp-0008">
+<label>(8)</label>
+<mml:math id="jats-math-16" display="block"><mml:mrow><mml:mrow><mml:mstyle displaystyle="false"><mml:munder><mml:mo>&#x02211;</mml:mo><mml:mrow><mml:mi mathvariant="normal">i</mml:mi><mml:mo/></mml:mrow></mml:munder></mml:mstyle><mml:msub><mml:mi>z</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:msub><mml:mi>c</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>In the membrane active layer &#x003a9;<sub>m</sub>, the membrane charge density <italic toggle="yes">X</italic> with charge <italic toggle="yes">z</italic>
+<sub>m</sub> was included:</p><p>
+<disp-formula id="cssc70438-disp-0009">
+<label>(9)</label>
+<mml:math id="jats-math-17" display="block"><mml:mrow><mml:mrow><mml:mstyle displaystyle="false"><mml:munder><mml:mo>&#x02211;</mml:mo><mml:mi mathvariant="normal">i</mml:mi></mml:munder></mml:mstyle><mml:msub><mml:mi>z</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:msub><mml:mi>c</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>z</mml:mi><mml:mi mathvariant="normal">m</mml:mi></mml:msub><mml:mi>X</mml:mi><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>Membrane charge density was set to be &#x02013;400&#x02009;mM when facing the catholyte solution with a pH of 13, and 10&#x02009;mM when facing the anolyte solution with pH of 1&#x000a0;[<xref rid="cssc70438-bib-0031" ref-type="bibr">31</xref>,&#x000a0;<xref rid="cssc70438-bib-0032" ref-type="bibr">32</xref>]. These values were selected based on previous work done measuring the fixed&#x02010;charge concentrations in polyamide TFC membranes similar to those used here&#x000a0;[<xref rid="cssc70438-bib-0032" ref-type="bibr">32</xref>]. Previous modeling studies have shown that ion&#x02010;transport predictions in saltwater electrolysis are only weakly sensitive to reasonable variations in fixed&#x02010;charge density&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>]. Because the local pH at the membrane surface adjusts much faster than the 6&#x02010;hour duration of our experiments, we assume the active&#x02010;layer charge rapidly reaches its steady&#x02010;state value. Ion partitioning into the active layer was implemented as internal boundary conditions. Donnan, steric, and dielectric partitioning controls ion transport into &#x003a9;<sub>m</sub> and cause discontinuities in concentration and potential at the AL as follows:</p><p>
+<disp-formula id="cssc70438-disp-0010">
+<label>(10)</label>
+<mml:math id="jats-math-18" display="block"><mml:mrow><mml:mrow><mml:msub><mml:mi>c</mml:mi><mml:mrow><mml:mi mathvariant="normal">m</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>c</mml:mi><mml:mrow><mml:mi mathvariant="normal">w</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">i</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mi mathvariant="normal">&#x003a6;</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:msub><mml:mi mathvariant="normal">&#x003a6;</mml:mi><mml:mi mathvariant="normal">D</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math>
+</disp-formula>where <mml:math id="jats-math-19" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi mathvariant="normal">&#x003a6;</mml:mi><mml:mrow><mml:mi mathvariant="normal">D</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>exp</mml:mi><mml:mo/><mml:mfenced open="(" close=")"><mml:mrow><mml:mo>&#x02212;</mml:mo><mml:msub><mml:mi>z</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:mtext>&#x00394;</mml:mtext><mml:mi mathvariant="normal">&#x003c6;</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:mrow></mml:math> is used to calculate Donnan partitioning due to membrane charge, and <mml:math id="jats-math-20" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi mathvariant="normal">&#x003a6;</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>25</mml:mn></mml:mrow></mml:mrow></mml:math>, based on prior fitting, captures steric, dielectric, and all other partitioning of ions&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>].</p></sec><sec id="cssc70438-sec-0010"><label>3.4</label><title>Electrochemical Reactions and Boundary Conditions</title><p>Electrochemical species generation was modeled by imposing constant inward fluxes of H<sup>+</sup> at the anode interface <mml:math id="jats-math-21" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mrow><mml:mi mathvariant="normal">a</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> and OH<sup>&#x02013;</sup> at the cathode interface <mml:math id="jats-math-22" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mrow><mml:mi mathvariant="normal">c</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> based on the applied current density:</p><p>
+<disp-formula id="cssc70438-disp-0011">
+<label>(11)</label>
+<mml:math id="jats-math-23" display="block"><mml:mrow><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mrow><mml:mi mathvariant="normal">a</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi mathvariant="normal">H</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>J</mml:mi><mml:mrow><mml:mi mathvariant="normal">c</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>OH</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:msub><mml:mi>i</mml:mi><mml:mi mathvariant="normal">a</mml:mi></mml:msub><mml:mi>F</mml:mi></mml:mfrac></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>A constant current density <italic toggle="yes">i</italic>
+<sub>a</sub> was set between the electrodes. A potential equal to 0 V was set at the cathode interface facing the electrolyte flow field as a reference point.</p><p>Boundary conditions for salt and water ions at the electrode interfaces adjacent to the flow fields were defined as ion fluxes, assuming well&#x02010;mixed 100&#x02009;mL bulk electrolyte reservoirs:</p><p>
+<disp-formula id="cssc70438-disp-0012">
+<label>(12)</label>
+<mml:math id="jats-math-24" display="block"><mml:mrow><mml:mrow><mml:mfrac><mml:mrow><mml:mi>d</mml:mi><mml:msub><mml:mi>c</mml:mi><mml:mrow><mml:mi mathvariant="normal">a</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">i</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mfrac><mml:mi>A</mml:mi><mml:mi>V</mml:mi></mml:mfrac><mml:mfenced open="(" close=")"><mml:mrow><mml:mo>&#x02212;</mml:mo><mml:msub><mml:mi>J</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub></mml:mrow></mml:mfenced><mml:mo>+</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mspace width="1em"/><mml:mfrac><mml:mrow><mml:mi>d</mml:mi><mml:msub><mml:mi>c</mml:mi><mml:mrow><mml:mi mathvariant="normal">c</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">i</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mfrac><mml:mi>A</mml:mi><mml:mi>V</mml:mi></mml:mfrac><mml:mfenced open="(" close=")"><mml:msub><mml:mi>J</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub></mml:mfenced><mml:mo>+</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:mi mathvariant="normal">i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math>
+</disp-formula>where <italic toggle="yes">A</italic> is the electrode area (4&#x02009;cm<sup>2</sup>) and <italic toggle="yes">V</italic> is the electrolyte volume (100&#x02009;mL). The high electrolyte recirculation rate (25 mL/min) was assumed to minimize concentration gradients along the serpentine channels. Only protons and hydroxide ions participated in the water association reaction (<italic toggle="yes">r</italic>
+<sub>H+</sub> and <italic toggle="yes">r</italic>
+<sub>OH</sub>&#x02013;), and the reaction term for all other ions was zero.</p><p>The electrolyte volume in the model was held constant at 100&#x02009;mL, and measured ion transport concentrations were recalculated to represent concentrations in a 100&#x02009;mL electrolyte for model fitting and validation. The experimental electrolyte volume was assumed to change linearly over time.</p></sec><sec id="cssc70438-sec-0011"><label>3.5</label><title>Initial Conditions</title><p>For the zero&#x02010;current case (<italic toggle="yes">i</italic>
+<sub>a</sub>&#x02009;=&#x02009;0), the anolyte was 0.6 M NaClO<sub>4</sub>, and the catholyte was 0.6 M NaNO<sub>3</sub> or NaCl when comparing anion transport. When comparing cation transport, the anolyte was 0.6 M NaNO<sub>3</sub>, while the catholyte was 0.6 M KNO<sub>3</sub>. For the 20 mA cm<sup>&#x02013;2</sup> case, the anolyte remained 0.6 M NaClO<sub>4</sub>, while the catholyte was 0.6 M KNO<sub>3</sub>, KCl, NaNO<sub>3</sub>, or NaCl. The initial pH of all solutions was set to 5.7 to reflect CO<sub>2</sub> absorption from air exposure. For simulations with applied current density, a 30&#x02009;min zero&#x02010;current simulation was computed, and the solution from this simulation was used as the initial conditions for electrolysis experiments, mimicking the 30&#x02009;min of equilibration prior to electrolysis done experimentally.</p></sec><sec id="cssc70438-sec-0012"><label>3.6</label><title>Model Fitting</title><p>Open&#x02010;circuit data were used to fit ion&#x02010;specific friction factors (<italic toggle="yes">K</italic>
+<sub>D</sub>) across the active layer, isolating transport behavior without the influence of gas evolution or applied potential gradients. Because multiple electrolyte compositions were studied, unique friction factors were fit for each ion rather than assigning the same value to all ions, as was done in previous solution&#x02010;friction modeling of TFC membranes during electrolysis. The open&#x02010;circuit data allowed for direct comparison of ion permeability across the membrane without the influence of an applied potential or chloride oxidation at the anode. Incorporating these differences into the model enabled isolation of convective effects on ion transport for each specific electrolyte composition and membrane configuration. The three electrolyte configurations used in the open&#x02010;circuit experiments each isolated the transport of two specific ions, allowing for iterative fitting of ion&#x02010;specific parameters across all data sets. Any observed water transport between compartments under open&#x02010;circuit conditions was incorporated into the model to ensure that the fitted parameters reflected intrinsic membrane properties rather than compensating for convective flow. Additionally, the effective diffusivity across the electrode layers (<italic toggle="yes">&#x003b5;</italic>
+<sub>e</sub>) was fit using the same dataset. All model parameters are in Table S1.</p></sec></sec><sec id="cssc70438-sec-0013"><label>4</label><title>Results and Discussion</title><sec id="cssc70438-sec-0014"><label>4.1</label><title>Open&#x02010;Circuit Ion and Water Transport</title><p>Membrane&#x02010;specific friction factors were fit for each salt ion with continuity across all three experimental conditions using the open&#x02010;circuit results (Table&#x000a0;<xref rid="cssc70438-tbl-0001" ref-type="table">1</xref> and Figure&#x000a0;<xref rid="cssc70438-fig-0002" ref-type="fig">2</xref>). The fitted friction factor for ClO<sub>4</sub>
+<sup>&#x02013;</sup> remained constant regardless of the catholyte used (NaNO<sub>3</sub> or NaCl), suggesting its friction factor reflected intrinsic membrane properties rather than condition&#x02010;dependent effects. Similarly, the friction factors for NO<sub>3</sub>
+<sup>&#x02013;</sup> and Na<sup>+</sup> were consistent across all conditions and matched those previously validated in a system with large electrolyte chambers&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>], further supporting that these values are membrane&#x02010;specific. The electrode effectiveness factor was fit using NaClO<sub>4</sub> in the anolyte and NaNO<sub>3</sub> in the catholyte, and the value was set constant for the other two conditions (Table&#x000a0;<xref rid="cssc70438-tbl-0001" ref-type="table">1</xref>).</p><table-wrap position="float" id="cssc70438-tbl-0001" content-type="TABLE"><label>TABLE 1</label><caption><p>Fitted ion&#x02010;specific friction factors and electrode diffusion effectiveness factor.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="left" span="1"/><col align="center" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1">Parameter</th><th align="left" rowspan="1" colspan="1">Description</th><th align="center" rowspan="1" colspan="1">Value</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<mml:math id="jats-math-25" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mrow><mml:mi mathvariant="normal">D</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>Na</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>
+</td><td align="left" rowspan="1" colspan="1">Na<sup>+</sup> friction factor</td><td align="center" rowspan="1" colspan="1">0.2</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<mml:math id="jats-math-26" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mrow><mml:mi mathvariant="normal">D</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi mathvariant="normal">K</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>
+</td><td align="left" rowspan="1" colspan="1">K<sup>+</sup> friction factor</td><td align="center" rowspan="1" colspan="1">0.01</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<mml:math id="jats-math-27" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mrow><mml:mi mathvariant="normal">D</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>Cl</mml:mi><mml:mo>&#x02212;</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>
+</td><td align="left" rowspan="1" colspan="1">Cl<sup>&#x02013;</sup> friction factor</td><td align="center" rowspan="1" colspan="1">0.08</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<mml:math id="jats-math-28" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mrow><mml:mi mathvariant="normal">D</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:msub><mml:mi>NO</mml:mi><mml:mn>3</mml:mn></mml:msub><mml:mo>&#x02212;</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>
+</td><td align="left" rowspan="1" colspan="1">NO<sub>3</sub>
+<sup>&#x02013;</sup> friction factor</td><td align="center" rowspan="1" colspan="1">0.2</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<mml:math id="jats-math-29" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mrow><mml:mi mathvariant="normal">D</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:msub><mml:mi>ClO</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:mo>&#x02212;</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>
+</td><td align="left" rowspan="1" colspan="1">ClO<sub>4</sub>
+<sup>&#x02013;</sup> friction factor</td><td align="center" rowspan="1" colspan="1">0.011</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<mml:math id="jats-math-30" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>&#x003b5;</mml:mi><mml:mi mathvariant="normal">e</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math>
+</td><td align="left" rowspan="1" colspan="1">Electrode diffusion effectiveness factor</td><td align="center" rowspan="1" colspan="1">0.4</td></tr></tbody></table><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></table-wrap><fig position="float" fig-type="FIGURE" id="cssc70438-fig-0002"><label>FIGURE 2</label><caption><p>Results of ion transport across TFC membrane after 6&#x02009;h of electrolyte flow through zero&#x02010;gap flow cell with no applied current density for (a) ClO<sub>4</sub>
+<sup>&#x02013;</sup> and NO<sub>3</sub>
+<sup>&#x02013;</sup> when a 0.6 M NaClO<sub>4</sub> anolyte and 0.6 M NaNO<sub>3</sub> catholyte were used, (b) ClO<sub>4</sub>
+<sup>&#x02013;</sup> and Cl<sup>&#x02013;</sup> when a 0.6 M NaClO<sub>4</sub> anolyte and 0.6 M NaCl catholyte were used, and (c) Na<sup>+</sup> and K<sup>+</sup> when a 0.6 M NaNO<sub>3</sub> anolyte and 0.6 M KNO<sub>3</sub> catholyte were use.</p></caption><graphic xlink:href="CSSC-19-e202501310-g006" position="anchor" id="jats-graphic-5"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>When the anolyte contained 0.6 M NaNO<sub>3</sub>, NO<sub>3</sub>
+<sup>&#x02013;</sup> crossed the membrane at more than twice the rate of ClO<sub>4</sub>
+<sup>&#x02013;</sup> (Figure&#x000a0;<xref rid="cssc70438-fig-0002" ref-type="fig">2a</xref>), reaching a final concentration of 9.1 &#x000b1; 0.1&#x02009;mM compared to 3.8 &#x000b1; 0.6&#x02009;mM for ClO<sub>4</sub>
+<sup>&#x02013;</sup>. In the second condition, where Cl<sup>&#x02013;</sup> replaced NO<sub>3</sub>
+<sup>&#x02013;</sup> in the catholyte, both Cl<sup>&#x02013;</sup> and ClO<sub>4</sub>
+<sup>&#x02013;</sup> had nearly equal transport, with final concentrations of 5.5 &#x000b1; 0.1&#x02009;mM for Cl<sup>&#x02013;</sup> and 5.5 &#x000b1; 0.4&#x02009;mM for ClO<sub>4</sub>
+<sup>&#x02013;</sup> (Figure&#x000a0;<xref rid="cssc70438-fig-0002" ref-type="fig">2b</xref>). In the third condition, where NO<sub>3</sub>
+<sup>&#x02013;</sup> was used in both chambers and the cation was varied (Na<sup>+</sup> in the anolyte and K<sup>+</sup> in the catholyte), K<sup>+</sup> transport exceeded Na<sup>+</sup> by &#x02248;70%. The final K<sup>+</sup> concentration in the anolyte was 10.2 &#x000b1; 1.4&#x02009;mM, while Na<sup>+</sup> reached 5.9 &#x000b1; 0&#x02009;mM in the catholyte (Figure&#x000a0;<xref rid="cssc70438-fig-0002" ref-type="fig">2c</xref>).</p><p>The observed ion transport differences between NO<sub>3</sub>
+<sup>&#x02013;</sup> and Cl<sup>&#x02013;</sup> ions are consistent with their known ion properties and previous studies&#x000a0;[<xref rid="cssc70438-bib-0022" ref-type="bibr">22</xref>,&#x000a0;<xref rid="cssc70438-bib-0023" ref-type="bibr">23</xref>]. NO<sub>3</sub>
+<sup>&#x02013;</sup> permeates TFC membranes more readily than Cl<sup>&#x02013;</sup> due to its lower charge density and hydration energy, which reduces membrane partitioning and facilitates dehydration at the membrane interface, as demonstrated by several previous studies&#x000a0;[<xref rid="cssc70438-bib-0033" ref-type="bibr">33</xref>, <xref rid="cssc70438-bib-0034" ref-type="bibr">34</xref>, <xref rid="cssc70438-bib-0035" ref-type="bibr">35</xref>]. Similarly, previous work has shown that monovalent cations with larger ionic radii, such as K<sup>+</sup>, tend to permeate TFC membranes more easily than smaller ions like Na<sup>+</sup>&#x000a0;[<xref rid="cssc70438-bib-0036" ref-type="bibr">36</xref>]. For example, KCl has a higher measured salt permeability than NaCl across TFC membranes&#x000a0;[<xref rid="cssc70438-bib-0036" ref-type="bibr">36</xref>]. This counterintuitive trend based on ion size has been attributed to the higher charge density of smaller cations and resulting stronger interactions with water molecules, which leads to larger hydrated radii and slower membrane transport&#x000a0;[<xref rid="cssc70438-bib-0036" ref-type="bibr">36</xref>]. Consistent with these findings, the open&#x02010;circuit results presented here show greater membrane permeation for NO<sub>3</sub>
+<sup>&#x02013;</sup> compared to Cl<sup>&#x02013;</sup> and K<sup>+</sup> compared to Na<sup>+</sup>.</p><p>All open&#x02010;circuit experiments had measurable volume changes between compartments due to water flux through the membrane (Figure S2), despite using monovalent ions and starting with identical 0.6 M electrolyte concentrations. The driving force for osmotic gradients may have arisen from slight differences in activity coefficients or from concentration gradients formed at the charged membrane interface. Although the exact mechanism of water transport remains unclear, the observed volume changes were incorporated into the model as a water velocity term (<italic toggle="yes">v</italic>
+<sub>f</sub>). Including this transport allowed for accurate fitting of ion&#x02010;specific friction factors, as demonstrated by their consistency across all experimental conditions despite the presence of water movement.</p></sec><sec id="cssc70438-sec-0015"><label>4.2</label><title>Ion Transport During Electrolysis</title><p>Using the ion&#x02010;specific friction coefficients obtained from the open&#x02010;circuit experiments and incorporating the measured volume changes between electrolyte compartments, the model reasonably predicted the observed rates and extent of ion transport during water electrolysis for most ions (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3</xref>). The <italic toggle="yes">R</italic>
+<sup>2</sup> and <italic toggle="yes">p</italic>&#x02010;values for each major ion in all conditions are reported in the supporting information (Table S2). When the active layer of the membrane was oriented toward the cathode and KNO<sub>3</sub> was used as the catholyte, Na<sup>+</sup> transport across the membrane exceeded that of NO<sub>3</sub>
+<sup>&#x02013;</sup>, with the final concentrations of 67 &#x000b1; 1&#x02009;mM for Na<sup>+</sup> and 41 &#x000b1; 4&#x02009;mM for NO<sub>3</sub>
+<sup>&#x02013;</sup> (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3a</xref>). Substituting the catholyte cation from K<sup>+</sup> to Na<sup>+</sup>&#x02014;to match the open&#x02010;circuit experiments&#x02014;had no effect on the measured NO<sub>3</sub>
+<sup>&#x02013;</sup> transport, indicating that NO<sub>3</sub>
+<sup>&#x02013;</sup> transport was independent of the accompanying cation (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3b</xref>). When using a NaNO<sub>3</sub> catholyte, the final NO<sub>3</sub>
+<sup>&#x02013;</sup> concentration was 42 &#x000b1; 6&#x02009;mM. Reorienting the membrane to have the active layer face the anode resulted in NO<sub>3</sub>
+<sup>&#x02013;</sup> being the dominant salt charge carrier across the membrane, while Na<sup>+</sup> transport became minimal (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3c</xref>). NO<sub>3</sub>
+<sup>&#x02013;</sup> transport increased more than 2.5&#x000d7;, with a final concentration of 104 &#x000b1; 5&#x02009;mM, and Na<sup>+</sup> transport decreased 7&#x000d7;, with a final concentration of 10 &#x000b1; 2&#x02009;mM. In all three experimental configurations involving NO<sub>3</sub>
+<sup>&#x02013;</sup>, the model successfully predicted both major salt ion transport (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3a&#x02013;c</xref>) and water ion transport (Figure S3a,b). These results indicate that the fitted friction factors are consistent across membrane orientations and experimental conditions, supporting their interpretation as intrinsic, membrane&#x02010;specific properties.</p><fig position="float" fig-type="FIGURE" id="cssc70438-fig-0003"><label>FIGURE 3</label><caption><p>Experimental and modeled Ion transport results for (a) KNO<sub>3</sub> in the catholyte with the active layer facing the cathode, (b) KNO<sub>3</sub> in the catholyte with the active layer facing the anode, (c) NO<sub>3</sub>
+<sup>&#x02013;</sup> transport to the anolyte comparison when KNO<sub>3</sub> versus NaNO<sub>3</sub> was the catholyte, (d) KCl in the catholyte with the active layer facing the cathode, (e) KCl in the catholyte with the active layer facing the anode, and (f) Cl<sup>&#x02013;</sup> transport to the anolyte when KCl vs. NaCl was used as the catholyte.</p></caption><graphic xlink:href="CSSC-19-e202501310-g007" position="anchor" id="jats-graphic-7"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>The model captured the overall transport trends when replacing NO<sub>3</sub>
+<sup>&#x02013;</sup> with Cl<sup>&#x02013;</sup>, although there were some discrepancies between the model and experimental data. This suggests that the friction factors fit using the open&#x02010;circuit data adequately represent ion transport trends using Cl<sup>&#x02013;</sup> during electrolysis, despite the potential influence of Cl<sup>&#x02013;</sup> oxidation. With the active layer facing the cathode, Na<sup>+</sup> transport across the membrane significantly exceeded that of Cl<sup>&#x02013;</sup>, with the final concentrations of 90 &#x000b1; 4&#x02009;mM for Na<sup>+</sup> and 11 &#x000b1; 2&#x02009;mM for Cl<sup>&#x02013;</sup> (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3d</xref>). Changing the catholyte cation from K<sup>+</sup> to Na<sup>+</sup> resulted in a 38% decrease in Cl<sup>&#x02013;</sup> transport, with 7 &#x000b1; 1&#x02009;mM Cl<sup>&#x02013;</sup> observed to cross the membrane when Na<sup>+</sup> was used (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3e</xref>). In open&#x02010;circuit experiments, K<sup>+</sup> had higher mobility across the membrane than Na<sup>+</sup>, so pairing Cl<sup>&#x02013;</sup> with a more mobile cation, K<sup>+</sup>, might have caused more transport of Cl<sup>&#x02013;</sup> across the membrane. With the membrane active layer facing the anode, Cl<sup>&#x02013;</sup> transport was doubled and Na<sup>+</sup> transport was reduced in half, with a final Cl<sup>&#x02013;</sup> concentration of 31 &#x000b1; 2&#x02009;mM and Na<sup>+</sup> concentration of 62 &#x000b1; 2 (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3f</xref>). When the active layer was oriented to face the anode, the model predicted nearly 70% more Cl<sup>&#x02013;</sup> transport across the membrane than was measured experimentally. In contrast, Na<sup>+</sup> transport was accurately predicted, suggesting that either Cl<sup>&#x02013;</sup> oxidation occurred, or the model did not fully capture Cl<sup>&#x02013;</sup> transport under the changed membrane orientation.</p><p>The model accurately predicted water ion transport for all conditions, as demonstrated by the close agreement between measured and predicted pH values in both the anolyte and catholyte (Figure S3). The large applied potential gradient drives ion in its direction to cross the membrane at rates several orders of magnitude higher than ions moving against it. As a result, accurately modeling the transport of major ions was prioritized over minor ions (K<sup>+</sup> and ClO<sub>4</sub>
+<sup>&#x02013;</sup>). The concentrations of these minor ions were extremely low due to limited crossover and a 6x dilution prior to ion chromatography measurements, making precise quantification unreliable. The measured values of these minor ions are reported in the Supporting Information (Figure S4).</p><p>Orienting the AL toward the anode significantly reduced Na<sup>+</sup> transport while increasing anion transport for all catholytes. This trend might be due to changes in membrane charge density due to the local pH. When facing the acidic anolyte, the polyamide AL develops a slight positive charge density (10&#x02009;mM), whereas facing the cathode results in a more strongly negative membrane charge density (&#x02212;400&#x02013;600&#x02009;mM)&#x000a0;[<xref rid="cssc70438-bib-0031" ref-type="bibr">31</xref>,&#x000a0;<xref rid="cssc70438-bib-0032" ref-type="bibr">32</xref>]. The positive charge on the AL reduces Donnan exclusion of anions, allowing greater anion permeability when the AL faces the anode. This reduced Donnan rejection might explain the observed increase in anion transport under these conditions. Across all conditions, NO<sub>3</sub>
+<sup>&#x02013;</sup> transport was greater than that of Cl<sup>&#x02013;</sup> under otherwise identical conditions. NO<sub>3</sub>
+<sup>&#x02013;</sup> transport was &#x02248;6&#x000d7; greater than Cl<sup>&#x02013;</sup> when the active layer was facing the cathode and 3&#x000d7; times greater when the active layer faced the anode, owing to the higher mobility of NO<sub>3</sub>
+<sup>&#x02013;</sup> across the active layer due to lower charge density and lower hydration energy.</p><p>Analyzing the PCC by salt and water ions during electrolysis provides insight into the discrepancy between model predictions and the experimental data when the membrane active layer faced the anode using a KCl catholyte. In experiments using NO<sub>3</sub>
+<sup>&#x02013;</sup> as the anion in the catholyte, the PCC by salt ions decreased over time as H<sup>+</sup> and OH<sup>&#x02013;</sup> concentrations increased, allowing faster&#x02010;diffusing water ions to dominate charge transport (Figure&#x000a0;<xref rid="cssc70438-fig-0004" ref-type="fig">4a,b</xref>). This trend is consistent with previous studies and reflects the preferential use of water ions as charge carriers as their concentration builds during electrolysis&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>,&#x000a0;<xref rid="cssc70438-bib-0019" ref-type="bibr">19</xref>].</p><fig position="float" fig-type="FIGURE" id="cssc70438-fig-0004"><label>FIGURE 4</label><caption><p>Percent of charge carried by major salt ions when using KNO<sub>3</sub> or KCl as the catholyte with the active layer facing the (a) cathode and (b) anode. Percent of charge carried by (c) NO<sub>3</sub>
+<sup>&#x02013;</sup> with the active layer facing the cathode and anode, and (d) Cl<sup>&#x02013;</sup> with the active layer facing the cathode and anode. Lines are guides for the eye and do not represent a model or interpolation result.</p></caption><graphic xlink:href="CSSC-19-e202501310-g002" position="anchor" id="jats-graphic-9"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>The PCC by salt ions was higher when using KNO<sub>3</sub> compared to KCl in both AL orientations (Figure&#x000a0;<xref rid="cssc70438-fig-0004" ref-type="fig">4a,b</xref>). When the AL faced the cathode, the difference between the two electrolytes was minimal, with salt ions carrying only 2&#x02013;6% less charge when using KCl (Figure&#x000a0;<xref rid="cssc70438-fig-0004" ref-type="fig">4a</xref>). When the AL faced the anode, the difference became more significant, with up to a 21% reduction in the PCC by salt ions when using KCl (Figure&#x000a0;<xref rid="cssc70438-fig-0004" ref-type="fig">4b</xref>). This greater discrepancy may be explained by Cl<sup>&#x02013;</sup> oxidation at the anode, which would reduce the measured Cl<sup>&#x02013;</sup> concentration in the anolyte and lead to an underestimation of its PCC. The larger difference observed when the AL was oriented toward the anode could reflect increased Cl<sup>&#x02013;</sup> oxidation due to more Cl<sup>&#x02013;</sup> crossover in this configuration.</p><p>A distinct trend emerged when KCl was used with the membrane facing the anode (Figure&#x000a0;<xref rid="cssc70438-fig-0004" ref-type="fig">4d</xref>). In this case, the PCC by Cl<sup>&#x02013;</sup> increased over time, opposite to the trend observed for other salt ions. This anomalous behavior may be explained by Cl<sup>&#x02013;</sup> oxidation at the anode. The observed increase in Cl<sup>&#x02013;</sup> PCC suggests that the rate of Cl<sup>&#x02013;</sup> entering the bulk electrolyte is rising over time; however, the Cl<sup>&#x02013;</sup> flux was expected to decrease over time due to declining electromigration and diffusion as water ion flux increases, consistent with the observed NO<sub>3</sub>
+<sup>&#x02013;</sup> PCC and previous studies&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>,&#x000a0;<xref rid="cssc70438-bib-0019" ref-type="bibr">19</xref>]. One possible explanation for this rising PCC is a decreasing Cl<sup>&#x02013;</sup> oxidation rate at the anode, which would reduce the extent of Cl<sup>&#x02013;</sup> underestimation in measurements. Cl<sup>&#x02013;</sup> oxidation on platinum catalyst is known to cause catalyst degradation and surface site blockage due to Cl<sup>&#x02013;</sup> adsorption&#x000a0;[<xref rid="cssc70438-bib-0037" ref-type="bibr">37</xref>], although the cause of the changing Cl<sup>&#x02013;</sup> oxidation selectivity in this case is unknown, and further electrochemical testing in future studies could clarify this.</p><p>This same trend of Cl<sup>&#x02013;</sup> increasing over time was not observed when the membrane active layer faced the cathode. Orienting the active layer toward the cathode preferentially caused the cation, Na<sup>+</sup>, to be the major salt ion carrier (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3a,d</xref>), while orienting the active layer toward the anode caused the opposite, with NO<sub>3</sub>
+<sup>&#x02013;</sup> becoming the major salt charge carrier and Cl<sup>&#x02013;</sup> transport increasing almost threefold (Figure&#x000a0;<xref rid="cssc70438-fig-0003" ref-type="fig">3c,f</xref>). For this reason, Cl<sup>&#x02013;</sup> oxidation may have been more prevalent in the case when the active layer faced the anode. Cl<sup>&#x02013;</sup> oxidation has been well&#x02010;documented in literature as difficult to avoid during electrolysis with saltwater, even when adopting chloride oxidation prevention strategies&#x000a0;[<xref rid="cssc70438-bib-0038" ref-type="bibr">38</xref>]. Additionally, Pt catalyst can be more selective toward Cl<sup>&#x02013;</sup> oxidation over OH<sup>&#x02013;</sup> oxidation at low overpotentials, potentially contributing further to Cl<sup>&#x02013;</sup> oxidation in this case&#x000a0;[<xref rid="cssc70438-bib-0037" ref-type="bibr">37</xref>].</p><p>Previous studies demonstrate that salt ions carry a relatively stable percent of charge depending on the water ion availability, supporting the hypothesis that Cl<sup>&#x02013;</sup> oxidation is responsible for the differences between the PCC carried by salt ions when using KNO<sub>3</sub> or KCl. In one experimental study, researchers modified a TFC membrane with additional size&#x02010;selective and charged layers to reduce Cl<sup>&#x02013;</sup> crossover by enhancing water ion transport&#x000a0;[<xref rid="cssc70438-bib-0017" ref-type="bibr">17</xref>]. However, every reduction in Cl<sup>&#x02013;</sup> transport was accompanied by a proportional increase in Na<sup>+</sup> transport, suggesting that salt and water ion transport are initially decoupled due to the low concentration of water ions at early time points&#x000a0;[<xref rid="cssc70438-bib-0017" ref-type="bibr">17</xref>]. This trend was reinforced by a modeling study, which showed that salt ion transport across the membrane could be reduced by increasing the concentration of water ions in solution&#x000a0;[<xref rid="cssc70438-bib-0019" ref-type="bibr">19</xref>]. When starting from near neutral pH conditions, the water ion concentration remained too low to carry a substantial portion of charge in the initial 2 h of electrolysis, necessitating greater salt ion transport&#x000a0;[<xref rid="cssc70438-bib-0019" ref-type="bibr">19</xref>].</p><p>By assuming that the difference between the PCC by salt ions between KNO<sub>3</sub> and KCl conditions arises from Cl<sup>&#x02013;</sup> oxidation, we can estimate the concentration of Cl<sup>&#x02013;</sup> that may have crossed the membrane without undergoing oxidation. When the membrane active layer faced the anode, the total moles of charge carried by salt ions were 110.1 &#x000b1; 3.3&#x02009;mM with KNO<sub>3</sub> and 91.3&#x02009;+&#x02009;0.0&#x02009;mM with KCl, yielding a difference of 18.9&#x02009;mM (Figure&#x000a0;<xref rid="cssc70438-fig-0005" ref-type="fig">5a</xref>). By calculating this difference at each time point and adding it to the measured Cl<sup>&#x02013;</sup> concentration, we estimated that the Cl<sup>&#x02013;</sup> transport assuming salt ions carry a relatively constant percent of charge based on the water ion concentration (Figure&#x000a0;<xref rid="cssc70438-fig-0005" ref-type="fig">5b</xref>). This adjusted Cl<sup>&#x02013;</sup> profile closely aligned with model predictions, with an <italic toggle="yes">R</italic>
+<sup>2</sup> value of 0.98 and <italic toggle="yes">p</italic>&#x02010;value of 0.92. This improved fitting with the model suggests that salt and water ion transport are initially treated as decoupled processes by the model, with water ion transport limited by its concentration in solution.</p><fig position="float" fig-type="FIGURE" id="cssc70438-fig-0005"><label>FIGURE 5</label><caption><p>(a) Total concentration of charge carried by salt ions after 6&#x02009;h of electrolysis with the AL facing the anode, using either KNO<sub>3</sub> or KCl as the catholyte. Green shading indicates the measured salt ion transport in the direction of the potential gradient for each condition. The gray shaded area represents the difference between KNO<sub>3</sub> and KCl cases and is used to estimate the amount of Cl<sup>&#x02013;</sup> oxidized during electrolysis. (b) Cl<sup>&#x02013;</sup> concentration in the anolyte over time: experimental measurements (square markers), model prediction (solid line), and Cl<sup>&#x02013;</sup> concentrations estimated in the absence of oxidation (triangle markers and dashed lines). The Cl<sup>&#x02013;</sup> oxidation estimate is calculated by adding the concentration difference in salt ion transport (from panel (a), gray area) calculated at each time point to the measured Cl<sup>&#x02013;</sup> values.</p></caption><graphic xlink:href="CSSC-19-e202501310-g003" position="anchor" id="jats-graphic-11"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig></sec><sec id="cssc70438-sec-0016"><label>4.3</label><title>Water Transport During Electrolysis</title><p>Significant differences in both the magnitude and direction of water transport were observed during electrolysis, depending on the catholyte composition (KNO<sub>3</sub> vs. KCl) and membrane orientation (Figure&#x000a0;<xref rid="cssc70438-fig-0006" ref-type="fig">6</xref>). With KNO<sub>3</sub> as the catholyte and the membrane AL facing the cathode, 2.1 &#x000b1; 0.2&#x02009;mL of water flowed from the anolyte to the catholyte (Figure&#x000a0;<xref rid="cssc70438-fig-0006" ref-type="fig">6a</xref>). Reversing the membrane orientation (AL facing the anode) reversed the direction of water flow, with 9.5 &#x000b1; 0&#x02009;mL of water moving from the catholyte to the anolyte. Switching the catholyte to KCl also influenced water transport (Figure&#x000a0;<xref rid="cssc70438-fig-0006" ref-type="fig">6b</xref>). With the AL facing the cathode, 6.8 &#x000b1; 0.7&#x02009;mL of water was transported from the anolyte to the catholyte. When the AL was oriented toward the anode, water transport decreased to 1.5 &#x000b1; 0.7&#x02009;mL, though the direction remained the same. Measured water transport during electrolysis was greater than that observed under open&#x02010;circuit conditions. Because sampling and evaporation occurred at comparable rates in both sets of experiments, these processes cannot account for the increased water loss during electrolysis. Additionally, the amount of water consumed by the electrochemical reactions&#x02014;&#x02248;0.16&#x02009;mL at the anode and 0.32&#x02009;mL at the cathode over 6&#x02009;h&#x02014;is too small to explain the measured flux. Thus, the observed water transport must arise primarily from membrane&#x02010;mediated mechanisms.</p><fig position="float" fig-type="FIGURE" id="cssc70438-fig-0006"><label>FIGURE 6</label><caption><p>(a) Net water flow from the anolyte to the catholyte after 6&#x02009;h of electrolysis with a KNO<sub>3</sub> catholyte, comparing membrane AL orientation facing the cathode versus the anode. (b) Percent of total salt ion transport carried by Na<sup>+</sup> and NO<sub>3</sub>
+<sup>&#x02013;</sup> under the same KNO<sub>3</sub> catholyte conditions and AL orientations. (c) Net water flow from the anolyte to the catholyte with a KCl catholyte, comparing AL facing the cathode versus the anode. (d) Percent of total salt ion transport carried by Na<sup>+</sup> or Cl<sup>&#x02013;</sup> with a KCl catholyte under both AL orientations. Negative values in panels (a) and (c) indicate water movement from the catholyte to the anolyte.</p></caption><graphic xlink:href="CSSC-19-e202501310-g005" position="anchor" id="jats-graphic-13"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>To investigate the relationship between water and salt ion transport, we compared the total concentration of the major salt ions that crossed over the membrane to the direction and magnitude of fluid flow. With KNO<sub>3</sub> as the catholyte and the AL facing the cathode, Na<sup>+</sup> (from the anolyte) crossed over the membrane more so than NO<sub>3</sub>
+<sup>&#x02013;</sup>, accounting for&#x02009;&#x0223c;60% of salt ion transport, and water migrated in the same direction as Na<sup>+</sup> (Figure&#x000a0;<xref rid="cssc70438-fig-0006" ref-type="fig">6c</xref>). When the membrane orientation was reversed, NO<sub>3</sub>
+<sup>&#x02013;</sup> became the dominant salt ion, crossing over the membrane 10x more than Na<sup>+</sup> from the catholyte to the anolyte (Figure&#x000a0;<xref rid="cssc70438-fig-0006" ref-type="fig">6c</xref>). This switch in major ion transport corresponded with the observed reversal in water flow, suggesting a relationship between the dominant salt charge carrier and water movement. Similar trends were observed when using KCl as the catholyte (Figure&#x000a0;<xref rid="cssc70438-fig-0006" ref-type="fig">6d</xref>). Regardless of membrane orientation, Na<sup>+</sup> consistently transported across the membrane more than Cl<sup>&#x02013;</sup>, and water flowed in the same direction as Na<sup>+</sup> in both conditions. However, when the AL faced the anode, the total Na<sup>+</sup> crossover decreased while Cl<sup>&#x02013;</sup> crossover increased, and a corresponding reduction in the magnitude of water transport toward the anode was observed (Figure&#x000a0;<xref rid="cssc70438-fig-0006" ref-type="fig">6d</xref>). These results support the observation that water transport is correlated to the direction and magnitude of the dominant salt ion flux, suggesting electroosmotic drag may be one of the mechanisms responsible for the observed water transport. Other mechanisms contributing to the water flux across the membrane could include bubble generation, imbalances in activity coefficients between the anolyte and catholyte, or slight pressure differences across the membranes.</p><p>To evaluate the role of convective water flow on ion transport, we set the fluid velocity term <italic toggle="yes">v</italic>
+<sub>f</sub> to zero in the model. By modeling ion transport with and without convection, we could assess how neglecting convection impacts model agreement with data under the different electrolyte and membrane orientation conditions. When using KNO<sub>3</sub> as the catholyte with the AL facing the cathode, neglecting convection resulted in a 14% overprediction of NO<sub>3</sub>
+<sup>&#x02013;</sup> transport and a 18% underprediction of Na<sup>+</sup> transport (Figure&#x000a0;<xref rid="cssc70438-fig-0007" ref-type="fig">7a</xref>). Reversing the membrane orientation to face the anode in the absence of water flow led to even greater discrepancies, with the model predicting 30% less NO<sub>3</sub>
+<sup>&#x02013;</sup> transport and 740% more Na<sup>+</sup> transport (Figure&#x000a0;<xref rid="cssc70438-fig-0007" ref-type="fig">7b</xref>). Without convection, the model predicted 42&#x02009;mM of transport, while it predicted 5&#x02009;mM of transport with convection, closer to the true value of 10&#x02009;mM (Figure&#x000a0;<xref rid="cssc70438-fig-0007" ref-type="fig">7b</xref>). For experiments using KCl as the catholyte, the effect of convection was more pronounced when the AL faced the cathode (Figure&#x000a0;<xref rid="cssc70438-fig-0007" ref-type="fig">7c</xref>). In this case, neglecting convection led to a 71% increase in predicted Cl<sup>&#x02013;</sup> transport and a 45% decrease in predicted Na<sup>+</sup> transport. When the AL was oriented toward the anode, the model predicted 23% more Cl<sup>&#x02013;</sup> transport and 23% less Na<sup>+</sup>, resulting in a final concentration of 65&#x02009;mM for Cl<sup>&#x02013;</sup> and 43&#x02009;mM for Na<sup>+</sup> (Figure&#x000a0;<xref rid="cssc70438-fig-0007" ref-type="fig">7d</xref>).</p><fig position="float" fig-type="FIGURE" id="cssc70438-fig-0007"><label>FIGURE 7</label><caption><p>Comparison of measured and modeled total major salt ion transport (Na<sup>+</sup>, NO<sub>3</sub>
+<sup>&#x02013;</sup>, or Cl<sup>&#x02013;</sup>) with or without convection. (a) 0.6 M NaNO<sub>3</sub> catholyte, membrane AL facing the cathode; (b) 0.6 M NaNO<sub>3</sub> catholyte, AL facing the anode; (c) 0.6 M NaCl catholyte, AL facing the anode; (d) 0.6 M NaCl catholyte, AL facing the cathode. Model predictions are shown for both the case where <italic toggle="yes">v</italic>
+<sub>f</sub> is set to the experimentally determined value and where <italic toggle="yes">v</italic>
+<sub>f</sub> is set to zero.</p></caption><graphic xlink:href="CSSC-19-e202501310-g004" position="anchor" id="jats-graphic-15"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>When salt ions were transported at a more similar rate, rather than one salt ion dominating charge transport, water movement across the membrane was reduced, and convection had a smaller impact on the model's salt ion transport predictions. In contrast, when a single salt ion carried most of the charge, large volume changes were measured in the electrolytes due to water flux, making convection's influence on ion transport more pronounced. These results highlight the interconnected nature of ion and water transport in a zero&#x02010;gap flow cell during saltwater electrolysis with a TFC membrane.</p></sec></sec><sec id="cssc70438-sec-0017"><label>5</label><title>Conclusions</title><p>By fitting unique ion friction coefficients and incorporating measured water transport into a solution&#x02010;friction transport model, we isolated the contribution of convection on ion transport during saltwater electrolysis in a zero&#x02010;gap flow cell. The different electrolyte compositions studied exhibited distinct transport behaviors across the membrane, with NO<sub>3</sub>
+<sup>&#x02013;</sup> permeating more readily than Cl<sup>&#x02013;</sup> in both open&#x02010;circuit and electrolysis conditions. Membrane orientation also played a critical role in determining which salt ion&#x02014;cation (Na<sup>+</sup>) or anion (NO<sub>3</sub>
+<sup>&#x02013;</sup> or Cl<sup>&#x02013;</sup>)&#x02014;dominated transport across the membrane. The direction and magnitude of salt ion transport were strongly correlated with the direction and extent of water transport, highlighting the interconnected nature of water and ion transport during zero&#x02010;gap electrolysis. The results have important implications for reducing Cl<sup>&#x02013;</sup> crossover to the anode, where it can oxidize to form chlorine or other reactive chlorine species that damage electrolyzer components. Orienting the membrane with its active layer facing the cathode was found to be the most effective in reducing chloride transport, most likely due to the larger Donnan partitioning from the negatively charged active layer. In this configuration, water moved from the anolyte to the catholyte, which may further suppress Cl<sup>&#x02013;</sup> transport. However, the loss of water from the anolyte is not desirable as this would require makeup water to replace both that lost to water oxidation as well as flow into the catholyte. Limiting water transport from the catholyte to the anolyte by osmotically balancing the electrolyte solutions can help reduce Cl<sup>&#x02013;</sup> crossover driven by electroosmotic drag. Moreover, decreasing the osmotic pressure in the anolyte might enable water flow from the catholyte into the anolyte, but this might enhance Cl<sup>&#x02013;</sup> transport. Additional research should focus on addressing water flow and ion transport through osmotic balancing of the separate electrolytes.</p><p>In typical RO and NF systems, water transport across the membrane is small enough that convection is not one of the main mechanisms driving ion transport across the membrane. Instead, diffusion drives ion transport according to the solution&#x02010;diffusion mechanisms&#x000a0;[<xref rid="cssc70438-bib-0024" ref-type="bibr">24</xref>]. In typical water electrolysis systems, water transport occurs more readily across the membrane due to electroosmotic drag, bubble generation, and other mechanisms, causing convection to play a larger role in ion transport&#x000a0;[<xref rid="cssc70438-bib-0020" ref-type="bibr">20</xref>]. For saltwater electrolysis with TFC membranes, further experiments are required to fully understand the mechanistic reason behind water flux across the membrane. Adapting techniques for measuring electroosmotic drag coefficients to TFC membranes could also help in the future to mechanistically validate the source of water flux across the membrane.</p></sec><sec id="cssc70438-sec-0018"><title>Supporting Information</title><p>Additional supporting information can be found online in the Supporting Information section. The authors have cited additional references within the Supporting Information&#x000a0;[<xref rid="cssc70438-bib-0018" ref-type="bibr">18</xref>,&#x000a0;<xref rid="cssc70438-bib-0019" ref-type="bibr">19</xref>,&#x000a0;<xref rid="cssc70438-bib-0025" ref-type="bibr">25</xref>,&#x000a0;<xref rid="cssc70438-bib-0030" ref-type="bibr">30</xref>,&#x000a0;<xref rid="cssc70438-bib-0032" ref-type="bibr">32</xref>,&#x000a0;<xref rid="cssc70438-bib-0039" ref-type="bibr">39</xref>, <xref rid="cssc70438-bib-0040" ref-type="bibr">40</xref>, <xref rid="cssc70438-bib-0041" ref-type="bibr">41</xref>, <xref rid="cssc70438-bib-0042" ref-type="bibr">42</xref>, <xref rid="cssc70438-bib-0043" ref-type="bibr">43</xref>]. <bold>Supporting</bold>
+<bold>Fig. S1</bold>
+<bold>:</bold> (a) Picture of zero&#x02010;gap flow cell set up with peristaltic pump and electrolyte reservoirs. (b) picture of the serpentine flow channels on the graphite (left) and titanium (right) current collectors. <bold>Supporting</bold>
+<bold>Fig. S2</bold>
+<bold>:</bold> Flow from anolyte to catholyte during open&#x02010;circuit experiments. <bold>Supporting</bold>
+<bold>Fig. S3</bold>
+<bold>:</bold> Minor ion transport across the membrane during electrolysis with (a) KNO<sub>3</sub> catholyte and the AL facing the cathode, (b) KNO<sub>3</sub> catholyte and AL facing the anode, (c) KCl catholyte and the AL facing the cathode, and (d) KCl catholyte and the AL facing the anode. <bold>Supporting</bold>
+<bold>Fig. S4</bold>
+<bold>:</bold> Measured and predicted pH values in the anolyte and catholyte for (a) a KNO<sub>3</sub> catholyte with the AL facing the cathode, (b) a KNO<sub>3</sub> catholyte with the active layer facing the anode, (c) a KCl catholyte with the active layer facing the cathode, (d) a KCl catholyte with the active layer facing the anode. The anolyte was NaClO<sub>4</sub> for all the four cases. <bold>Supporting</bold>
+<bold>Table S1:</bold> Parameters used in solution friction model. <bold>Supporting</bold>
+<bold>Table S2:</bold>
+<italic toggle="yes">R</italic>
+<sup>2</sup> and <italic toggle="yes">p</italic>&#x02010;values for experimental data and model predictions for major ions.</p></sec><sec id="cssc70438-sec-0020"><title>Funding</title><p>This research was funded by National Science Foundation grant CBET&#x02010;2027552 and Penn State University through the Stan and Flora Kappe endowment (96840).</p></sec><sec sec-type="COI-statement" id="cssc70438-sec-0021"><title>Conflicts of Interest</title><p>The authors declare no conflicts of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material position="float" content-type="local-data"><caption><p>Supplementary Material</p></caption><media xlink:href="CSSC-19-e202501310-s001.pdf"/></supplementary-material></sec></body><back><ack id="cssc70438-sec-0019"><title>Acknowledgments</title><p>This research was funded by National Science Foundation grant CBET&#x02010;2027552 and Penn State University through the Stan and Flora Kappe endowment.</p></ack><ref-list id="cssc70438-bibl-0001" content-type="cited-references"><title>References</title><ref id="cssc70438-bib-0001"><label>1</label><mixed-citation publication-type="book" id="cssc70438-cit-0001">
+<collab collab-type="authors">IEA</collab>
+, <source>Global Hydrogen Review 2024</source>, (<publisher-name>IEA</publisher-name>, <year>2024</year>), <ext-link xlink:href="https://www.iea.org/reports/global-hydrogen-review-2024" ext-link-type="uri">https://www.iea.org/reports/global&#x02010;hydrogen&#x02010;review&#x02010;2024</ext-link>.</mixed-citation></ref><ref id="cssc70438-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="cssc70438-cit-0002">
+<string-name>
+<given-names>S.</given-names>
+<surname>Shiva Kumar</surname>
+</string-name> and <string-name>
+<given-names>H.</given-names>
+<surname>Lim</surname>
+</string-name>, &#x0201c;<article-title>An Overview of Water Electrolysis Technologies for Green Hydrogen Production</article-title>,&#x0201d; <source>Energy Reports</source>
+<volume>8</volume> (<year>2022</year>): <fpage>13793</fpage>&#x02013;<lpage>13813</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="cssc70438-cit-0003">
+<string-name>
+<given-names>M.</given-names>
+<surname>David</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Ocampo&#x02010;Mart&#x000ed;nez</surname>
+</string-name>, and <string-name>
+<given-names>R.</given-names>
+<surname>S&#x000e1;nchez&#x02010;Pe&#x000f1;a</surname>
+</string-name>, &#x0201c;<article-title>Advances in Alkaline Water Electrolyzers: A Review</article-title>,&#x0201d; <source>Journal of Energy Storage</source>
+<volume>23</volume> (<year>2019</year>): <fpage>392</fpage>&#x02013;<lpage>403</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="cssc70438-cit-0004">
+<string-name>
+<given-names>M.</given-names>
+<surname>Carmo</surname>
+</string-name>, <string-name>
+<given-names>D. L.</given-names>
+<surname>Fritz</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Merge</surname>
+</string-name>, and <string-name>
+<given-names>D.</given-names>
+<surname>Stolten</surname>
+</string-name>, &#x0201c;<article-title>A Comprehensive Review on PEM Water Electrolysis</article-title>,&#x0201d; <source>International Journal of Hydrogen Energy</source>
+<volume>38</volume> (<year>2013</year>): <fpage>4901</fpage>&#x02013;<lpage>4934</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="cssc70438-cit-0005">
+<string-name>
+<given-names>J.</given-names>
+<surname>Chang</surname>
+</string-name> and <string-name>
+<given-names>Y.</given-names>
+<surname>Yang</surname>
+</string-name>, &#x0201c;<article-title>Advancements in Seawater Electrolysis: Progressing From Fundamental Research to Applied Electrolyzer Application</article-title>,&#x0201d; <source>Renewables</source>
+<volume>1</volume> (<year>2023</year>): <fpage>415</fpage>&#x02013;<lpage>454</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="cssc70438-cit-0006">
+<string-name>
+<given-names>S.</given-names>
+<surname>Dresp</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Dionigi</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Klingenhof</surname>
+</string-name>, and <string-name>
+<given-names>P.</given-names>
+<surname>Strasser</surname>
+</string-name>, &#x0201c;<article-title>Direct Electrolytic Splitting of Seawater: Opportunities and Challenges</article-title>,&#x0201d; <source>ACS Energy Letters</source>
+<volume>4</volume> (<year>2019</year>): <fpage>933</fpage>&#x02013;<lpage>942</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="cssc70438-cit-0007">
+<string-name>
+<given-names>F. Y.</given-names>
+<surname>Gao</surname>
+</string-name>, <string-name>
+<given-names>P. C.</given-names>
+<surname>Yu</surname>
+</string-name>, and <string-name>
+<given-names>M. R.</given-names>
+<surname>Gao</surname>
+</string-name>, &#x0201c;<article-title>Seawater Electrolysis Technologies for Green Hydrogen Production: Challenges and Opportunities</article-title>,&#x0201d; <source>Current Opinion in Chemical Engineering</source>
+<volume>36</volume> (<year>2022</year>): <fpage>100827</fpage>.</mixed-citation></ref><ref id="cssc70438-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="cssc70438-cit-0008">
+<string-name>
+<given-names>L.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Rossi</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Son</surname>
+</string-name>, et al., &#x0201c;<article-title>Using Reverse Osmosis Membranes to Control Ion Transport During Water Electrolysis</article-title>,&#x0201d; <source>Energy &#x00026; Environmental Science</source>
+<volume>13</volume> (<year>2020</year>): <fpage>3138</fpage>&#x02013;<lpage>3148</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="cssc70438-cit-0009">
+<string-name>
+<given-names>S.</given-names>
+<surname>Dresp</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Dionigi</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Loos</surname>
+</string-name>, et al., &#x0201c;<article-title>Direct Electrolytic Splitting of Seawater: Activity, Selectivity, Degradation, and Recovery Studied From the Molecular Catalyst Structure to the Electrolyzer Cell Level</article-title>,&#x0201d; <source>Advanced Energy Materials</source>
+<volume>8</volume> (<year>2018</year>): <fpage>1800338</fpage>.</mixed-citation></ref><ref id="cssc70438-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="cssc70438-cit-0010">
+<string-name>
+<given-names>E.</given-names>
+<surname>Asghari</surname>
+</string-name>, <string-name>
+<given-names>M. I.</given-names>
+<surname>Abdullah</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Foroughi</surname>
+</string-name>, <string-name>
+<given-names>J. J.</given-names>
+<surname>Lamb</surname>
+</string-name>, and <string-name>
+<given-names>B. G.</given-names>
+<surname>Pollet</surname>
+</string-name>, &#x0201c;<article-title>Advances, Opportunities, and Challenges of Hydrogen and Oxygen Production From Seawater Electrolysis: An Electrocatalysis Perspective</article-title>,&#x0201d; <source>Current Opinion in Electrochemistry</source>
+<volume>31</volume>, (<year>2022</year>): <fpage>100879</fpage>.</mixed-citation></ref><ref id="cssc70438-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="cssc70438-cit-0011">
+<string-name>
+<given-names>R.</given-names>
+<surname>Taylor</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Rossi</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Picioreanu</surname>
+</string-name>, and <string-name>
+<given-names>B. E.</given-names>
+<surname>Logan</surname>
+</string-name>, &#x0201c;<article-title>Electrochemical and Hydraulic Analysis of Thin&#x02010;Film Composite and Cellulose Triacetate Membranes for Seawater Electrolysis Applications</article-title>,&#x0201d; <source>The Journal of Membrane Science</source>
+<volume>679</volume> (<year>2023</year>): <fpage>121692</fpage>.</mixed-citation></ref><ref id="cssc70438-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="cssc70438-cit-0012">
+<string-name>
+<given-names>R. J.</given-names>
+<surname>Petersen</surname>
+</string-name>, &#x0201c;<article-title>Composite Reverse&#x02010;Osmosis and Nanofiltration Membranes</article-title>,&#x0201d; <source>The Journal of Membrane Science</source>
+<volume>83</volume> (<year>1993</year>): <fpage>81</fpage>&#x02013;<lpage>150</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="cssc70438-cit-0013">
+<string-name>
+<given-names>Z.</given-names>
+<surname>Yang</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Feng</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Rui</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Zhang</surname>
+</string-name>, and <string-name>
+<given-names>Z.</given-names>
+<surname>Zhang</surname>
+</string-name>, &#x0201c;<article-title>A Review on Reverse Osmosis and Nanofiltration Membranes for Water Purification</article-title>,&#x0201d; <source>Polymers</source>
+<volume>11</volume>, (<year>2019</year>): <fpage>1252</fpage>.<pub-id pub-id-type="pmid">31362430</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="cssc70438-cit-0014">
+<string-name>
+<given-names>L.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name>
+<given-names>R. F.</given-names>
+<surname>Taylor</surname>
+</string-name>, et al., &#x0201c;<article-title>Thin&#x02010;Film Composite Membranes for Hydrogen Evolution With a Saline Catholyte Water Feed</article-title>,&#x0201d; <source>Environmental Science &#x00026; Technology</source>
+<volume>58</volume> (<year>2024</year>): <fpage>1131</fpage>&#x02013;<lpage>1141</lpage>.<pub-id pub-id-type="pmid">38169368</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="cssc70438-cit-0015">
+<string-name>
+<given-names>D. V.</given-names>
+<surname>Esposito</surname>
+</string-name>, &#x0201c;<article-title>Membraneless Electrolyzers for Low&#x02010;Cost Hydrogen Production in a Renewable Energy Future</article-title>,&#x0201d; <source>Joule</source>
+<volume>1</volume> (<year>2017</year>): <fpage>651</fpage>&#x02013;<lpage>658</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="cssc70438-cit-0016">
+<string-name>
+<given-names>X.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name>
+<given-names>R. F.</given-names>
+<surname>Taylor</surname>
+</string-name>, et al., &#x0201c;<article-title>Relative Insignificance of Polyamide Layer Selectivity for Seawater Electrolysis Applications</article-title>,&#x0201d; <source>Environmental Science &#x00026; Technology</source>
+<volume>57</volume> (<year>2023</year>): <fpage>14569</fpage>&#x02013;<lpage>14578</lpage>.<pub-id pub-id-type="pmid">37722004</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="cssc70438-cit-0017">
+<string-name>
+<given-names>X.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name>
+<given-names>R. F.</given-names>
+<surname>Taylor</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Xie</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Bian</surname>
+</string-name>, and <string-name>
+<given-names>B. E.</given-names>
+<surname>Logan</surname>
+</string-name>, &#x0201c;<article-title>Reducing Chloride Ion Permeation During Seawater Electrolysis Using Double&#x02010;Polyamide Thin&#x02010;Film Composite Membranes</article-title>,&#x0201d; <source>Environmental Science &#x00026; Technology</source>
+<volume>58</volume> (<year>2024</year>): <fpage>391</fpage>&#x02013;<lpage>399</lpage>.<pub-id pub-id-type="pmid">38147515</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="cssc70438-cit-0018">
+<string-name>
+<given-names>R. F.</given-names>
+<surname>Taylor</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Xie</surname>
+</string-name>, et al., &#x0201c;<article-title>Modeling Ion Transport across Thin&#x02010;Film Composite Membranes During Saltwater Electrolysis</article-title>,&#x0201d; <source>Environmental Science &#x00026; Technology</source>
+<volume>58</volume> (<year>2024</year>): <fpage>10969</fpage>&#x02013;<lpage>10978</lpage>.<pub-id pub-id-type="pmid">38860863</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="cssc70438-cit-0019">
+<string-name>
+<given-names>R. F.</given-names>
+<surname>Taylor</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Martinez&#x02010;Jimenez</surname>
+</string-name>, and <string-name>
+<given-names>B. E.</given-names>
+<surname>Logan</surname>
+</string-name>, &#x0201c;<article-title>Tuning Initial pH to Decrease Salt Ion Transport in Saltwater Electrolysis</article-title>,&#x0201d; <source>Electrochemistry Communications</source>
+<volume>171</volume> (<year>2025</year>): <fpage>107858</fpage>.</mixed-citation></ref><ref id="cssc70438-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="cssc70438-cit-0020">
+<string-name>
+<given-names>A.</given-names>
+<surname>Alizadeh</surname>
+</string-name>, <string-name>
+<given-names>W.&#x02010;L.</given-names>
+<surname>Hsu</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Wang</surname>
+</string-name>, and <string-name>
+<given-names>H.</given-names>
+<surname>Daiguji</surname>
+</string-name>, &#x0201c;<article-title>Electroosmotic Flow: From Microfluidics to Nanofluidics</article-title>,&#x0201d; <source>Electrophoresis</source>
+<volume>42</volume> (<year>2021</year>): <fpage>834</fpage>&#x02013;<lpage>868</lpage>.<pub-id pub-id-type="pmid">33382088</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0021"><label>21</label><mixed-citation publication-type="book" id="cssc70438-cit-0021">
+<string-name>
+<given-names>D.</given-names>
+<surname>Erickson</surname>
+</string-name>, <source>Encyclopedia of Microfluidics and Nanofluidics</source>, ed. <person-group person-group-type="editor">
+<string-name>
+<given-names>D.</given-names>
+<surname>Li</surname>
+</string-name>
+</person-group> (<publisher-name>Springe</publisher-name>, <year>2008</year>, pp. <fpage>560</fpage>&#x02013;<lpage>567</lpage>), <ext-link xlink:href="https://10.1007/978-0-387-48998-8_446" ext-link-type="uri">https://10.1007/978&#x02010;0&#x02010;387&#x02010;48998&#x02010;8_446</ext-link>.</mixed-citation></ref><ref id="cssc70438-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="cssc70438-cit-0022">
+<string-name>
+<given-names>R.</given-names>
+<surname>Epsztein</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Shaulsky</surname>
+</string-name>, <string-name>
+<given-names>N.</given-names>
+<surname>Dizge</surname>
+</string-name>, <string-name>
+<given-names>D. M.</given-names>
+<surname>Warsinger</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Elimelech</surname>
+</string-name>, &#x0201c;<article-title>Role of Ionic Charge Density in Donnan Exclusion of Monovalent Anions by Nanofiltration</article-title>,&#x0201d; <source>Environmental Science &#x00026; Technology</source>
+<volume>52</volume> (<year>2018</year>): <fpage>4108</fpage>&#x02013;<lpage>4116</lpage>.<pub-id pub-id-type="pmid">29510032</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="cssc70438-cit-0023">
+<string-name>
+<given-names>R.</given-names>
+<surname>Epsztein</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Cheng</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Shaulsky</surname>
+</string-name>, <string-name>
+<given-names>N.</given-names>
+<surname>Dizge</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Elimelech</surname>
+</string-name>, &#x0201c;<article-title>Elucidating the Mechanisms Underlying the Difference Between Chloride and Nitrate Rejection in Nanofiltration</article-title>,&#x0201d; <source>The Journal of Membrane Science</source>
+<volume>548</volume> (<year>2018</year>): <fpage>694</fpage>&#x02013;<lpage>701</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="cssc70438-cit-0024">
+<string-name>
+<given-names>L.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>T. C.</given-names>
+<surname>Cao</surname>
+</string-name>, <string-name>
+<given-names>J. E.</given-names>
+<surname>Dykstra</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Porada</surname>
+</string-name>, <string-name>
+<given-names>P. M.</given-names>
+<surname>Biesheuvel</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Elimelech</surname>
+</string-name>, &#x0201c;<article-title>Salt and Water Transport in Reverse Osmosis Membranes: Beyond the Solution&#x02010;Diffusion Model</article-title>,&#x0201d; <source>Environmental Science &#x00026; Technology</source>
+<volume>55</volume> (<year>2021</year>): <fpage>16665</fpage>&#x02013;<lpage>16675</lpage>.<pub-id pub-id-type="pmid">34879196</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="cssc70438-cit-0025">
+<string-name>
+<given-names>K. H.</given-names>
+<surname>Chu</surname>
+</string-name>, <string-name>
+<given-names>J. S.</given-names>
+<surname>Mang</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Lim</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Hong</surname>
+</string-name>, and <string-name>
+<given-names>M.&#x02010;H.</given-names>
+<surname>Hwang</surname>
+</string-name>, &#x0201c;<article-title>Variation of Free Volume and Thickness by High Pressure Applied on Thin Film Composite Reverse Osmosis Membrane</article-title>,&#x0201d; <source>Desalination</source>
+<volume>520</volume> (<year>2021</year>): <fpage>115365</fpage>.</mixed-citation></ref><ref id="cssc70438-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="cssc70438-cit-0026">
+<string-name>
+<given-names>Q.</given-names>
+<surname>Jia</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Wang</surname>
+</string-name>, and <string-name>
+<given-names>G.</given-names>
+<surname>Yang</surname>
+</string-name>, &#x0201c;<article-title>Structural Parameters on the Effective Transport Properties of Carbon Cloth Gas Diffusion Layers: Random Walk Simulations</article-title>,&#x0201d; <source>Nanomaterials</source>
+<volume>15</volume>, (<year>2025</year>): <fpage>259</fpage>.<pub-id pub-id-type="pmid">39997822</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="cssc70438-cit-0027">
+<string-name>
+<given-names>G. E.&#x02010;E.</given-names>
+<surname>Aquah</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Niblett</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Shokri</surname>
+</string-name>, and <string-name>
+<given-names>V.</given-names>
+<surname>Niasar</surname>
+</string-name>, &#x0201c;<article-title>Characterisation of Hydraulic Properties of Commercial Gas Diffusion Layers: Toray, SGL, MGL, Woven Carbon Cloth</article-title>,&#x0201d; <source>Scientific Reports</source>
+<volume>14</volume> (<year>2024</year>): <fpage>18812</fpage>.<pub-id pub-id-type="pmid">39138249</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="cssc70438-cit-0028">
+<string-name>
+<given-names>M.</given-names>
+<surname>&#x0010e;urovi&#x0010d;</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Hn&#x000e1;t</surname>
+</string-name>, and <string-name>
+<given-names>K.</given-names>
+<surname>Bouzek</surname>
+</string-name>, &#x0201c;<article-title>Electrocatalysts for the Hydrogen Evolution Reaction in Alkaline and Neutral Media. A Comparative Review</article-title>,&#x0201d; <source>Journal of Power Sources</source>
+<volume>493</volume> (<year>2021</year>): <fpage>229708</fpage>.</mixed-citation></ref><ref id="cssc70438-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="cssc70438-cit-0029">
+<string-name>
+<given-names>S.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Lu</surname>
+</string-name>, and <string-name>
+<given-names>C.&#x02010;J.</given-names>
+<surname>Zhong</surname>
+</string-name>, &#x0201c;<article-title>Hydrogen Production From Water Electrolysis: Role of Catalysts</article-title>,&#x0201d; <source>Nano Convergence</source>
+<volume>8</volume> (<year>2021</year>): <fpage>4</fpage>.<pub-id pub-id-type="pmid">33575919</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="cssc70438-cit-0030">
+<string-name>
+<given-names>T. E.</given-names>
+<surname>Culp</surname>
+</string-name>, <string-name>
+<given-names>Y. X.</given-names>
+<surname>Shen</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Geitner</surname>
+</string-name>, et al., &#x0201c;<article-title>Electron Tomography Reveals Details of the Internal Microstructure of Desalination Membranes</article-title>,&#x0201d; <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+<volume>115</volume> (<year>2018</year>): <fpage>8694</fpage>&#x02013;<lpage>8699</lpage>.<pub-id pub-id-type="pmid">30104388</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="cssc70438-cit-0031">
+<string-name>
+<given-names>M.</given-names>
+<surname>Stolov</surname>
+</string-name> and <string-name>
+<given-names>V.</given-names>
+<surname>Freger</surname>
+</string-name>, &#x0201c;<article-title>Membrane Charge Weakly Affects Ion Transport in Reverse Osmosis</article-title>,&#x0201d; <source>Environmental Science &#x00026; Technology Letters</source>
+<volume>7</volume> (<year>2020</year>): <fpage>440</fpage>&#x02013;<lpage>445</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="cssc70438-cit-0032">
+<string-name>
+<given-names>O.</given-names>
+<surname>Coronell</surname>
+</string-name>, <string-name>
+<given-names>M. I.</given-names>
+<surname>Gonz&#x000e1;lez</surname>
+</string-name>, <string-name>
+<given-names>B. J.</given-names>
+<surname>Mari&#x000f1;as</surname>
+</string-name>, and <string-name>
+<given-names>D. G.</given-names>
+<surname>Cahill</surname>
+</string-name>, &#x0201c;<article-title>Ionization Behavior, Stoichiometry of Association, and Accessibility of Functional Groups in the Active Layers of Reverse Osmosis and Nanofiltration Membranes</article-title>,&#x0201d; <source>Environmental Science &#x00026; Technology</source>
+<volume>44</volume> (<year>2010</year>): <fpage>6808</fpage>&#x02013;<lpage>6814</lpage>.<pub-id pub-id-type="pmid">20701293</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="cssc70438-cit-0033">
+<string-name>
+<given-names>M. J.</given-names>
+<surname>Ariza</surname>
+</string-name> and <string-name>
+<given-names>T. F.</given-names>
+<surname>Otero</surname>
+</string-name>, &#x0201c;<article-title>Nitrate and Chloride Transport Through a Smart Membrane</article-title>,&#x0201d; <source>The Journal of Membrane Science</source>
+<volume>290</volume> (<year>2007</year>): <fpage>241</fpage>&#x02013;<lpage>249</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="cssc70438-cit-0034">
+<string-name>
+<given-names>M.</given-names>
+<surname>Reig</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Licon</surname>
+</string-name>, <string-name>
+<given-names>O.</given-names>
+<surname>Gibert</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Yaroshchuk</surname>
+</string-name>, and <string-name>
+<given-names>J. L.</given-names>
+<surname>Cortina</surname>
+</string-name>, &#x0201c;<article-title>Rejection of Ammonium and Nitrate From Sodium Chloride Solutions by Nanofiltration: Effect of Dominant&#x02010;Salt Concentration on the Trace&#x02010;Ion Rejection</article-title>,&#x0201d; <source>Chemical Engineering Journal</source>
+<volume>303</volume> (<year>2016</year>): <fpage>401</fpage>&#x02013;<lpage>408</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="cssc70438-cit-0035">
+<string-name>
+<given-names>L.</given-names>
+<surname>Paugam</surname>
+</string-name>, <string-name>
+<given-names>C. K.</given-names>
+<surname>Diawara</surname>
+</string-name>, <string-name>
+<given-names>J. P.</given-names>
+<surname>Schlumpf</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Jaouen</surname>
+</string-name>, and <string-name>
+<given-names>F.</given-names>
+<surname>Qu&#x000e9;m&#x000e9;neur</surname>
+</string-name>, &#x0201c;<article-title>Transfer of Monovalent Anions and Nitrates Especially Through Nanofiltration Membranes in Brackish Water Conditions</article-title>,&#x0201d; <source>Separation and Purification Technology</source>
+<volume>40</volume> (<year>2004</year>): <fpage>237</fpage>&#x02013;<lpage>242</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="cssc70438-cit-0036">
+<string-name>
+<given-names>S. M. S.</given-names>
+<surname>Ghiu</surname>
+</string-name>, <string-name>
+<given-names>R. P.</given-names>
+<surname>Carnahan</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Barger</surname>
+</string-name>, &#x0201c;<article-title>Mass Transfer in RO TFC Membranes&#x02010;Dependence on the Salt Physical and Thermodynamic Parameters</article-title>,&#x0201d; <source>Desalination</source>
+<volume>157</volume> (<year>2003</year>): <fpage>385</fpage>&#x02013;<lpage>393</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="cssc70438-cit-0037">
+<string-name>
+<given-names>A.</given-names>
+<surname>Lam</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Zhang</surname>
+</string-name>, et al., &#x0201c;<article-title>Ex Situ Study of Chloride Contamination on Carbon Supported Pt Catalyst</article-title>,&#x0201d; <source>Journal of Power Sources</source>
+<volume>205</volume> (<year>2012</year>): <fpage>235</fpage>&#x02013;<lpage>238</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="cssc70438-cit-0038">
+<string-name>
+<given-names>N.</given-names>
+<surname>Raza</surname>
+</string-name>, &#x0201c;<article-title>Challenges and Solutions in Suppressing Chlorine Evolution Reaction in Seawater Electrolysis</article-title>,&#x0201d; <source>Journal of Power Sources</source>
+<volume>659</volume> (<year>2025</year>): <fpage>238331</fpage>.</mixed-citation></ref><ref id="cssc70438-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="cssc70438-cit-0039">
+<string-name>
+<given-names>E.</given-names>
+<surname>Samson</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Marchand</surname>
+</string-name>, and <string-name>
+<given-names>K. A.</given-names>
+<surname>Snyder</surname>
+</string-name>, &#x0201c;<article-title>Calculation of Ionic Diffusion Coefficients on the Basis of Migration Test Results</article-title>,&#x0201d; <source>Materials and Structures</source>
+<volume>36</volume> (<year>2003</year>): <fpage>156</fpage>&#x02013;<lpage>165</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="cssc70438-cit-0040">
+<string-name>
+<given-names>J. U.</given-names>
+<surname>Kreft</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Picioreanu</surname>
+</string-name>, <string-name>
+<given-names>J. W.</given-names>
+<surname>Wimpenny</surname>
+</string-name>, and <string-name>
+<given-names>M. C.</given-names>
+<surname>van Loosdrecht</surname>
+</string-name>, &#x0201c;<article-title>Individual&#x02010;Based Modelling of Biofilms</article-title>,&#x0201d; <source>Microbiology</source>
+<volume>147</volume> (<year>2001</year>): <fpage>2897</fpage>&#x02013;<lpage>2912</lpage>.<pub-id pub-id-type="pmid">11700341</pub-id>
+</mixed-citation></ref><ref id="cssc70438-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="cssc70438-cit-0041">
+<string-name>
+<given-names>S.</given-names>
+<surname>Heil</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Holz</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Kastner</surname>
+</string-name>, and <string-name>
+<given-names>H.</given-names>
+<surname>Weing&#x000e4;rtner</surname>
+</string-name>, &#x0201c;<article-title>Self&#x02010;Diffusion of the Perchlorate Ion in Aqueous Electrolyte Solutions Measured by 35&#x02010;Cl NMR Spin&#x02010;Echo Experiments</article-title>,&#x0201d; <source>Journal of the Chemical Society, Faraday Transactions</source>
+<volume>91</volume> (<year>1995</year>): <fpage>1877</fpage>&#x02013;<lpage>1880</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="cssc70438-cit-0042">
+<string-name>
+<given-names>N.</given-names>
+<surname>Agmon</surname>
+</string-name>, &#x0201c;<article-title>The Grotthuss Mechanism</article-title>,&#x0201d; <source>Chemical Physics Letters</source>
+<volume>244</volume> (<year>1995</year>): <fpage>456</fpage>&#x02013;<lpage>462</lpage>.</mixed-citation></ref><ref id="cssc70438-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="cssc70438-cit-0043">
+<string-name>
+<given-names>L.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>H. V. M.</given-names>
+<surname>Hamelers</surname>
+</string-name>, and <string-name>
+<given-names>P. M.</given-names>
+<surname>Biesheuvel</surname>
+</string-name>, &#x0201c;<article-title>Modeling Permeate pH in RO Membranes by the Extended Donnan Steric Model</article-title>,&#x0201d; <source>The Journal of Membrane Science</source>
+<volume>613</volume>, (<year>2020</year>): <fpage>118511</fpage>.</mixed-citation></ref></ref-list></back></article>

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 环境与密钥（勿提交）
+.env
+.env.*
+*.pem
+secrets/
+
+# 本地大缓存 / 模型 / 向量库（体积大、可重建）
+**/caches/
+**/chroma_db/
+**/chroma.sqlite3
+**/ollama_models/
+**/*.bin
+**/data_level0.bin
+
+# macOS
+.DS_Store
+
+# IDE（按需取消注释）
+# .vscode/
+# .idea/

@@ -1,0 +1,650 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="review-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Life (Basel)</journal-id><journal-id journal-id-type="iso-abbrev">Life (Basel)</journal-id><journal-id journal-id-type="publisher-id">life</journal-id><journal-title-group><journal-title>Life</journal-title></journal-title-group><issn pub-type="epub">2075-1729</issn><publisher><publisher-name>MDPI</publisher-name></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">36836710</article-id><article-id pub-id-type="pmc">PMC9962823</article-id>
+<article-id pub-id-type="doi">10.3390/life13020354</article-id><article-id pub-id-type="publisher-id">life-13-00354</article-id><article-categories><subj-group subj-group-type="heading"><subject>Review</subject></subj-group></article-categories><title-group><article-title>Robotic Bronchoscopy: Review of Three Systems</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Diddams</surname><given-names>Maxwell J.</given-names></name><xref rid="af1-life-13-00354" ref-type="aff">1</xref><xref rid="c1-life-13-00354" ref-type="corresp">*</xref></contrib><contrib contrib-type="author"><name><surname>Lee</surname><given-names>Hans J.</given-names></name><xref rid="af2-life-13-00354" ref-type="aff">2</xref></contrib></contrib-group><contrib-group><contrib contrib-type="editor"><name><surname>Cheng</surname><given-names>George Z.</given-names></name><role>Academic Editor</role></contrib><contrib contrib-type="editor"><name><surname>Miller</surname><given-names>Russell</given-names></name><role>Academic Editor</role></contrib></contrib-group><aff id="af1-life-13-00354"><label>1</label>Division of Pulmonary and Critical Care, University of North Carolina at Chapel Hill, Chapel Hill, NC 27514, USA</aff><aff id="af2-life-13-00354"><label>2</label>Division of Pulmonary and Critical Care, School of Medicine, Johns Hopkins University, Baltimore, MD 21287, USA; <email>hlee171@jhmi.edu</email></aff><author-notes><corresp id="c1-life-13-00354"><label>*</label>Correspondence: <email>maxwell.diddams@unchealth.unc.edu</email></corresp></author-notes><pub-date pub-type="epub"><day>28</day><month>1</month><year>2023</year></pub-date><pub-date pub-type="collection"><month>2</month><year>2023</year></pub-date><volume>13</volume><issue>2</issue><elocation-id>354</elocation-id><history><date date-type="received"><day>04</day><month>1</month><year>2023</year></date><date date-type="rev-recd"><day>19</day><month>1</month><year>2023</year></date><date date-type="accepted"><day>20</day><month>1</month><year>2023</year></date></history><permissions><copyright-statement>&#x000a9; 2023 by the authors.</copyright-statement><copyright-year>2023</copyright-year><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p></license></permissions><abstract><p>Robotic bronchoscopy (RB) has been shown to improve access to smaller and more peripheral lung lesions, while simultaneously staging the mediastinum. Pre-clinical studies demonstrated extremely high diagnostic yields, but real-world RB yields have yet to fully matched up in prospective studies. Despite this, RB technology has rapidly evolved and has great potential for lung-cancer diagnosis and even treatment. In this article, we review the historical and present challenges with RB in order to compare three RB systems.</p></abstract><kwd-group><kwd>bronchoscopy</kwd><kwd>interventional pulmonology</kwd><kwd>robotic bronchoscopy</kwd><kwd>robotics</kwd><kwd>lung cancer</kwd><kwd>navigational bronchoscopy</kwd><kwd>pulmonary nodule</kwd></kwd-group><funding-group><funding-statement>This research received no external funding.</funding-statement></funding-group></article-meta></front><body><sec sec-type="intro" id="sec1-life-13-00354"><title>1. Introduction</title><p>Robotic bronchoscopy (RB) for the diagnosis and treatment of peripheral pulmonary lesions has become a topic of intense focus since the first robotic bronchoscopy platform was FDA-approved in 2018. Early clinical pilot studies suggested that RB would be a highly accurate platform for pulmonary nodule management [<xref rid="B1-life-13-00354" ref-type="bibr">1</xref>,<xref rid="B2-life-13-00354" ref-type="bibr">2</xref>,<xref rid="B3-life-13-00354" ref-type="bibr">3</xref>], thanks to machine-controlled stability and integrated navigation for the precise evaluation of even sub-centimeter nodules. Further research has called into question the extremes of these claims [<xref rid="B4-life-13-00354" ref-type="bibr">4</xref>,<xref rid="B5-life-13-00354" ref-type="bibr">5</xref>], but it has not dampened the enthusiasm for robotic-assisted intervention into the bronchoscopy suite. In this article, we review the development of RB, the current three systems in the US, the advantages and disadvantages, and the future directions for RB, through a PubMed search of all articles with the terms &#x0201c;robotic&#x0201d; and &#x0201c;bronchoscopy&#x0201d;.</p></sec><sec id="sec2-life-13-00354"><title>2. The Dilemma of Pulmonary Nodules and Early-Stage Lung Cancer</title><p>Lung cancer is the number one cause of cancer deaths worldwide, causing 25% of all cancer-related deaths [<xref rid="B6-life-13-00354" ref-type="bibr">6</xref>]. Despite increased screening, 66% of lung cancers are still diagnosed at a late stage [<xref rid="B7-life-13-00354" ref-type="bibr">7</xref>]. Small pulmonary nodules (SPN) are increasing in incidence on computed tomography (CT) [<xref rid="B8-life-13-00354" ref-type="bibr">8</xref>]. These nodules are increasingly detected on incidental scans, as well as via lung cancer screening, and the risk these nodules present for patients has been challenging to quantify [<xref rid="B8-life-13-00354" ref-type="bibr">8</xref>,<xref rid="B9-life-13-00354" ref-type="bibr">9</xref>]. Many risk-stratification algorithms have been designed, based on nodule and patient characteristics [<xref rid="B10-life-13-00354" ref-type="bibr">10</xref>]. These prediction models derive from specific patient populations and, when applied appropriately, they can reliably predict the likelihood of nodule malignancy. If a nodule is high-risk, then intervention without a biopsy is appropriate; if it is sufficiently low-risk, then observation is advised [<xref rid="B11-life-13-00354" ref-type="bibr">11</xref>]. Many nodules will fall into an intermediate category, where biopsy is often necessary, but even in high-risk patients, most of these nodules will be benign. For example, in the National Lung Cancer Screening Trial (NLST), 96% of positive scans were false positives [<xref rid="B12-life-13-00354" ref-type="bibr">12</xref>]. Furthermore, results from the Checkmate 816 trial have shown significant increases in event-free survival for resectable stage-Ib-IIIa lung cancers treated with checkpoint inhibitors and chemotherapy prior to surgery, so accurate pre-surgical sampling is critical for improved patient outcomes.</p><p>Non-surgical lung biopsies for SPNs have largely taken two forms&#x02014;transthoracic needle aspiration (TTNA) and bronchoscopic. TTNA biopsy with fluoroscopic guidance was first described in 1965 [<xref rid="B13-life-13-00354" ref-type="bibr">13</xref>]; it has undergone significant developments with CT, ultrasound, and electromagnetic guidance. Recent retrospective reviews of CT-guided TTNA biopsies indicate a diagnostic accuracy of approximately 67&#x02013;97%, even for ground-glass nodules less than 2 cm in size [<xref rid="B14-life-13-00354" ref-type="bibr">14</xref>]. Only moderate or local sedation is usually needed, sparing the patient the risk of general anesthesia. The most common complications are pneumothorax and hemorrhage, which occur in approximately 20% and 3% of cases, respectively. One-third of patients with pneumothorax have been reported to need chest-tube placement [<xref rid="B14-life-13-00354" ref-type="bibr">14</xref>]. While TTNA provides a highly accurate sampling method, its pneumothorax rate, its inability to stage the mediastinum, and its limitation to the outer region of the lung are its major drawbacks.</p><p>The use of flexible fiberoptic bronchoscopy for the biopsy of SPNs has been largely limited to central, larger lesions. Lesions less than 2 cm in size, in particular, have had diagnostic yields as low as 14% when located in the peripheral third of the lung and 31% when located in the inner two-thirds [<xref rid="B15-life-13-00354" ref-type="bibr">15</xref>]. Flexible bronchoscopy is usually performed under moderate sedation with airway topicalization, and major complications are rare. The most common complications, such as mild, transient hypotension or hypoxemia, are usually associated with moderate sedation. Respiratory depression, bleeding, arrythmia, pneumothorax, and cardiorespiratory arrest occur in less than 1% of cases, and transbronchial biopsy increases these risks, including bleeding and pneumothorax, to approximately 2&#x02013;4% [<xref rid="B16-life-13-00354" ref-type="bibr">16</xref>]. Mortality is exceptionally rare&#x02014;as low as 0.013% in one retrospective study of 23,862 patients [<xref rid="B17-life-13-00354" ref-type="bibr">17</xref>].</p><p>While bronchoscopy is clearly safe, its diagnostic limitations led to the development of navigational bronchoscopy. For years, navigation could be carried out with painstaking review of CT images and in-suite fluoroscopy, but in 1996, radial endobronchial ultrasound (rEBUS) became commercially available for the ultrasonographic evaluation of peripheral nodules [<xref rid="B18-life-13-00354" ref-type="bibr">18</xref>]. The rEBUS probe could be inserted through the working channel of the bronchoscope and target lesions could be visualized by their relatively hypoechoic and heterogenous appearance, compared to that of the normal aerated lung. While rEBUS was useful in confirming the localization of the target lesion prior to biopsy, navigating to the correct airway was still a significant challenge.</p><p>An initial foray into direct navigational guidance was virtual bronchoscopy [<xref rid="B19-life-13-00354" ref-type="bibr">19</xref>]. CT images were synthesized into on-screen images of the airways to assist the bronchoscopist in navigating the correct airways to the target lesion. Initially, these images were static images on an adjacent screen, which the bronchoscopist could manually advance along a pre-specified pathway in parallel to their visualized airways [<xref rid="B20-life-13-00354" ref-type="bibr">20</xref>]. In 2004, the SuperDimension electromagnetic navigation bronchoscopy (ENB) platform was released. It used an electromagnetic field generator to track the movement of the bronchoscope throughout the airways. Once a same-day CT scan was registered, the ENB system not only provided active guidance through the airways, but also a virtual simulation of the nodule&#x02019;s location relative to the tip of the bronchoscope [<xref rid="B21-life-13-00354" ref-type="bibr">21</xref>]. This active tool-tracking and live-updating navigation, akin to the GPS in a car, largely marked the advent of true navigational bronchoscopy.</p><p>Compared to flexible bronchoscopy, navigational bronchoscopy was able to achieve a much higher diagnostic yield. Initial prospective studies of the SuperDimension system reported an 80% diagnostic yield in 75% peripheral SPNs, 57% of which were less than 2 cm. The pneumothorax rate was 3.5% [<xref rid="B21-life-13-00354" ref-type="bibr">21</xref>]. In the 2018 multi-center prospective NAVIGATE trial, the diagnostic yield for malignancy using an ENB system, with or without rEBUS or fluoroscopy, was 72.9%, although the definition of diagnostic yield has come into question, as indeterminate pathology results were included in the true negative group at 12 months of follow-up. That said, more than half of these SPNs were less than 2 cm in size, in the upper lobes, and in the outer third of the lung. Despite a quarter of these lesions lying on the visceral pleura, the pneumothorax rate was 4.3% overall, with only 2.9% requiring hospitalization or intervention [<xref rid="B22-life-13-00354" ref-type="bibr">22</xref>]. Similar success was reported for other ENB systems, as well as for fluoroscopic and cone-beam guided navigational bronchoscopy systems [<xref rid="B23-life-13-00354" ref-type="bibr">23</xref>,<xref rid="B24-life-13-00354" ref-type="bibr">24</xref>].</p><p>Unfortunately, follow-up studies on EMN were not as forgiving. While the positive predictive value in the NAVIGATE trial was 100%, the negative predictive value was 47&#x02013;64%, similar to that of rEBUS alone [<xref rid="B22-life-13-00354" ref-type="bibr">22</xref>]. Registries of diagnostic yield in real-world practice, outside of single-center exemplars and large, high-volume centers, began to show significant heterogeneity. For example, the AQuIRE registry showed a diagnostic yield of traditional bronchoscopy, rEBUS, and EMN of 63.7%, 57%, and 38.5%, respectively, suggesting that the success of EMN in the community was likely overreported by publication bias [<xref rid="B25-life-13-00354" ref-type="bibr">25</xref>]. Diagnostic yield across these studies was not uniformly defined, leading to variable reporting. In addition to these technical challenges, navigational bronchoscopy required the bronchoscopist to maintain millimeter-level stability for prolonged periods. Given the high risk of patient harm from a false-negative biopsy, the stage was set for RB platforms.</p></sec><sec id="sec3-life-13-00354"><title>3. Robotic Bronchoscopy</title><p>The path to RB parallels the development of robotic surgery. In thoracic surgery, open thoracotomy has been associated with significant morbidity, especially for older, frailer patients [<xref rid="B26-life-13-00354" ref-type="bibr">26</xref>,<xref rid="B27-life-13-00354" ref-type="bibr">27</xref>]. Studies on thoracotomy in the elderly in the 1980s showed an in-hospital mortality of 4&#x02013;17%. Complications, including air leaks, arrhythmia, and secretions, were seen in 37% of patients, and 5-year survival following lung cancer resection was 27% overall [<xref rid="B28-life-13-00354" ref-type="bibr">28</xref>]. Other studies of elective thoracotomy in octogenarians correlated mortality with comorbidities, suggesting that outcomes are likely limited by heavy selection bias [<xref rid="B29-life-13-00354" ref-type="bibr">29</xref>]. Video-assisted thoracoscopic surgery (VATS) significantly reduced lengths of stay, arrhythmias, days with chest tubes, transfusions, kidney injuries, pneumonia, and prolonged air leaks, compared to open thoracotomy for lobectomy [<xref rid="B30-life-13-00354" ref-type="bibr">30</xref>,<xref rid="B31-life-13-00354" ref-type="bibr">31</xref>]. Robotic-assisted thoracoscopic surgery (RATS) is associated with similar outcomes to those of VATS, but it has improved confined space movement, tremor suppression, 3D optics, and ergonomics [<xref rid="B32-life-13-00354" ref-type="bibr">32</xref>]. RATS is associated with significantly higher costs than VATS, especially in the initial investment [<xref rid="B32-life-13-00354" ref-type="bibr">32</xref>]. While these benefits are now apparent, the proof and acceptance of RATS has required decades of careful research.</p><p>With the release of the Monarch&#x02122; platform (Auris Health, Inc., Redwood City, CA, USA) in 2018, bronchoscopy began along a similar path. Each of the RB platforms to date use a proprietary omnidirectional bronchoscope mounted on a robotic arm and navigate via a pre-procedure CT scan that is registered to the bronchoscope&#x02019;s location at the beginning of the procedure. The cost is still significant for all the systems, including initial purchase, maintenance, and processing fees. Similar to robotic surgery, RB was no longer dependent on the physician&#x02019;s hands, and pre-clinical cadaveric studies with the Monarch system demonstrated 100% navigational success [<xref rid="B1-life-13-00354" ref-type="bibr">1</xref>], access to twice as many bronchial divisions than that of standard flexible bronchoscopy of equal outer diameter (8 vs. 4) [<xref rid="B33-life-13-00354" ref-type="bibr">33</xref>], and a 97% diagnostic yield [<xref rid="B34-life-13-00354" ref-type="bibr">34</xref>]. Shortly thereafter in 2019, the Ion&#x02122; endoluminal RB platform (Intuitive Surgical&#x000a9;, Sunnyvale, CA, USA) received FDA clearance, distinguishing itself with a shape-sensing bronchoscope. In contrast to the Monarch system, which used an electromagnetic field to maintain orientation in space, the Ion system uses fiberoptic bend sensors within the catheter itself to maintain orientation. Four years later, the Galaxy System&#x02122; (Noah Medical, San Carlos, CA, USA), which is expected to have FDA clearance in 2023, provides EMN and digital tomosynthesis guidance on top of a disposable bronchoscope. A summary of the comparative technical specifications are provided in <xref rid="life-13-00354-t001" ref-type="table">Table 1</xref>.</p><sec id="sec3dot1-life-13-00354"><title>3.1. Monarch&#x02122; Platform (Auris Health, Inc., Redwood City, CA, USA)</title><p>The Monarch&#x02122; RB platform (<xref rid="life-13-00354-f001" ref-type="fig">Figure 1</xref>) uses an articulating bronchoscope within an articulating sheath, each of which is controlled by independent robotic arms mounted on the RB cart. A separate tower with a monitor screen and a controller connect to the RB cart. The outer sheath has a 6.0 mm outer diameter (OD), while the scope itself has a 4.4 mm OD, a 2.1 mm diameter working channel (WC), and an integrated camera. The outer sheath can articulate up to 130 degrees in any direction, and the inner sheath can be individually advanced and articulated up to 180 degrees in any direction. The system is fundamentally an electromagnetic navigation system referenced against sensors applied to the patient&#x02019;s chest, and the bronchoscopy cart has a small enough footprint to allow for a C-arm or Cone-beam CT (CBCT). The system monitor can integrate vision, navigation, rEBUS, and CT overlay, and it is controlled with a video-game-style controller with two thumb-sticks.</p></sec><sec id="sec3dot2-life-13-00354"><title>3.2. Ion&#x02122; Endoluminal RB Platform (Intuitive Surgical&#x000a9;, Sunnyvale, CA, USA)</title><p>The Ion&#x02122; RB system (<xref rid="life-13-00354-f002" ref-type="fig">Figure 2</xref>) uses a single ultrathin bronchoscope with integrated, proprietary shape-sensing technology to localize and maintain scope position within the airway. The bronchoscope as a 3.5 mm OD with a 2 mm WC, but the vision probe must be removed from the working channel to insert other tools. The catheter can articulate up to 180 degrees in any direction and is controlled by a ball mouse and scroll wheel. The robotic arm controlling the scope and the system monitor are both mounted on the same bronchoscopy cart, and the monitor can simultaneously show navigation, fluoroscopy, virtual overlay, and either vision or rEBUS. The system footprint is small enough to work with fluoroscopy and CBCT, and the lack of EMN obviates interference concerns.</p></sec><sec id="sec3dot3-life-13-00354"><title>3.3. Galaxy System&#x02122; (Noah Medical, San Carlos, CA, USA)</title><p>The Galaxy System&#x02122; (<xref rid="life-13-00354-f003" ref-type="fig">Figure 3</xref>) does not have FDA approval at the time of writing, but it is being evaluated. Billing itself as a more cost-competitive RB platform, the system promises an EMN-guided single-use bronchoscope with 4.0 mm OD, 2.1 mm WC, and integrated vision. To overcome the localization limitations of EMN, the system uses EMN to navigate to within 2 cm of the target lesion, then uses proprietary digital tomosynthesis (TiLT+ Technology&#x02122;) via any standard fluoroscopy C-arm to confirm tool-in-lesion. Digital tomosynthesis is an imaging technique similar to CT scanning, where a series of X-ray images are taken from different angles to reconstruct a 3D image. Unlike CT scans, digital tomosynthesis takes fewer images from a relatively narrower angle (15&#x02013;60 degrees, compared to 180 degrees for CT) [<xref rid="B35-life-13-00354" ref-type="bibr">35</xref>], but as a result it can be performed with a standard C-arm rather than a dedicated CT scanner. If there is divergence between the simulated target and the fluoroscopically observed target lesion, the operator can readjust, and in the case of fluoroscopically invisible lesions an augmented fluoroscopy mode can be used to overlay a simulated lesion on the fluoroscopy screen. The cart combines a monitor and a non-proprietary robotic arm for the smallest cart size of the systems, and it is controlled by a video-game-style controller. Cost is a major focus of the system, with off-the-shelf robotic arm components, no reprocessing for the disposable scope, and native fluoroscopy/CBCT integration advertised to provide consumer savings. The first human trial with the system is currently underway in Australia.</p></sec></sec><sec id="sec4-life-13-00354"><title>4. Advantages of Robotic Bronchoscopy</title><p>The main benefit of an RB system has been replacing human hands, which are subject to fatigue, with finely controlled computerized systems to achieve more accurate navigation and tool delivery. The first single center feasibility study of the Monarch&#x02122; system showed a 93% localization rate in 15 patients [<xref rid="B36-life-13-00354" ref-type="bibr">36</xref>], and in a follow-up 5-center observational trial of 55 patients, this localization rate was borne out at 96% [<xref rid="B37-life-13-00354" ref-type="bibr">37</xref>]. Initial pilot studies of the Ion&#x02122; system reported similar localization rates of 85&#x02013;96.6% [<xref rid="B38-life-13-00354" ref-type="bibr">38</xref>,<xref rid="B39-life-13-00354" ref-type="bibr">39</xref>], and both studies reported low rates of pneumothorax, at 0&#x02013;5.8%, with roughly half of those patients requiring chest tube placement [<xref rid="B36-life-13-00354" ref-type="bibr">36</xref>,<xref rid="B38-life-13-00354" ref-type="bibr">38</xref>,<xref rid="B39-life-13-00354" ref-type="bibr">39</xref>,<xref rid="B40-life-13-00354" ref-type="bibr">40</xref>]. Bleeding rates in these studies were low, at 2.4&#x02013;3.2% [<xref rid="B4-life-13-00354" ref-type="bibr">4</xref>,<xref rid="B5-life-13-00354" ref-type="bibr">5</xref>,<xref rid="B41-life-13-00354" ref-type="bibr">41</xref>]. Fluoroscopy and rEBUS were used in most of these cases, and CBCT was used in a smaller subset.</p><p>An underappreciated feature of RB systems has been their navigation software. Navigation pathway generation software with the Ion&#x02122; system has been shown to be superior to EMN in both the distance from the terminal end of the navigation pathway to target lesions (9.4 mm for robotic bronchoscopy vs. 14.2 mm for tip-tracked electromagnetic navigation vs. 17.2 mm for catheter-based electromagnetic navigation) and the generation of complete distal airway maps [<xref rid="B42-life-13-00354" ref-type="bibr">42</xref>]. With RB, proximity to the target lesion has been shown to be the strongest predictor of a central hit on the lesion, independent of the presence of a bronchus sign, divergence, or concentric rEBUS view [<xref rid="B43-life-13-00354" ref-type="bibr">43</xref>].</p><p>With this excellent localization and complication rate, a similarly improved diagnostic yield would be expected, but results have been mixed. Feasibility studies for both systems have shown a diagnostic yield of 69&#x02013;79% [<xref rid="B4-life-13-00354" ref-type="bibr">4</xref>,<xref rid="B39-life-13-00354" ref-type="bibr">39</xref>], and only small, single-center reports were able to post diagnostic yields in the 96% range [<xref rid="B3-life-13-00354" ref-type="bibr">3</xref>]. Noting the comparable diagnostic yield of 72.9% reported from the prospective-multicenter pre-RB NAVIGATE trial, many investigators appropriately asked if anything had changed with the addition of these costly systems [<xref rid="B44-life-13-00354" ref-type="bibr">44</xref>]. The response, in the EMN era, has been the integration of additional imaging modalities to provide tool-in-lesion confirmation. CBCT and various advanced fluoroscopy systems have been trialed, and these have shown increased diagnostic yields in the 86&#x02013;94% range, though without direct comparison to other non-RB modalities [<xref rid="B38-life-13-00354" ref-type="bibr">38</xref>,<xref rid="B40-life-13-00354" ref-type="bibr">40</xref>,<xref rid="B45-life-13-00354" ref-type="bibr">45</xref>]. Wile the numerical trends are encouraging, there is significant variation in the definitions of diagnostic yield, and only one head-to-head trial has compared the effect of these modalities. Low et al. (2022) published the only comparison to date of EMN with digital tomosynthesis versus shape-sensing bronchoscopy alone, which showed equivalent diagnostic yields of 80% and 77%, respectively [<xref rid="B46-life-13-00354" ref-type="bibr">46</xref>].</p><p>Of note, RB has been compared to TTNA for diagnostic yield. A retrospective multicenter review of 225 patients in the Mayo Clinic Health System, equally split between TTNA and RB, showed overall diagnostic yields of 87.6% for RB and 88.4% for TTNA. Complication rates were significantly higher for TTNA than for RB (17% vs. 4.4%) [<xref rid="B47-life-13-00354" ref-type="bibr">47</xref>]. The average cost for an admission for primary spontaneous pneumothorax has been retrospectively estimated at $13,961 &#x000b1; $15,789, with total costs of $52,118 &#x000b1; $69,490 [<xref rid="B48-life-13-00354" ref-type="bibr">48</xref>], and this does not include the cost of the staging bronchoscopy that is required for positive lesions. Future prospective studies will likely be able to demonstrate cost benefit over, or at least cost parity with, TTNA at the system level.</p></sec><sec id="sec5-life-13-00354"><title>5. Limitations</title><p>A key technical issue that has not been definitively solved is that of CT-to-body divergence. RB has definitively improved the bronchoscopists ability to navigate to the target lesion, as defined by the navigation software, but when tested by rEBUS, fluoroscopy, or CBCT, there is a margin of error between the simulated target and the end of the bronchoscope [<xref rid="B49-life-13-00354" ref-type="bibr">49</xref>]. This difference between the static pre-procedural CT image and the changing, mobile lung during the procedure is termed CT-to-body divergence [<xref rid="B50-life-13-00354" ref-type="bibr">50</xref>]. For example, Benn et al. demonstrated a diagnostic yield of 86% with RB and CBCT, but had to reposition their bronchoscope under CBCT guidance 15% of the time to ensure that the biopsy tool was in the lesion [<xref rid="B38-life-13-00354" ref-type="bibr">38</xref>]. When rEBUS shows no lesion at the supposed target, diagnostic yield drops from 84&#x02013;85% to 38% [<xref rid="B5-life-13-00354" ref-type="bibr">5</xref>]. While opportunities for improved navigational planning likely exist, the discrepancy between the virtual targets generated and the actual lesion location likely relate to anatomical changes in the lung from atelectasis and movement. The time from intubation to significant atelectasis in the prospective I-LOCATE trial was 30 min, which was well within the timeframe of an RB procedure with a preceding endobronchial ultrasound transbronchial needle aspiration [<xref rid="B51-life-13-00354" ref-type="bibr">51</xref>]. Mucous plugging or pleural effusions can cause transient atelectasis, and differences in patient positioning between CT and OR can contribute to divergence as well [<xref rid="B50-life-13-00354" ref-type="bibr">50</xref>].</p><p>Several potential solutions have been proposed to improve CT discordance, including increasing positive end-expiratory pressure during bronchoscopy to 10&#x02013;12, increasing tidal volumes to 10&#x02013;12 mL per kg of ideal body weight, expeditious intubation, use of paralytics, using a low fraction of inspired oxygen to reduce absorptive atelectasis, avoidance of excess suction, breath holds for CBCT spins, and minimizing procedure times to less than 30 min [<xref rid="B52-life-13-00354" ref-type="bibr">52</xref>,<xref rid="B53-life-13-00354" ref-type="bibr">53</xref>]. Controversially, some authors have advocated starting with navigational bronchoscopy first, rather than mediastinal staging as recommended by current guidelines, as a possible solution [<xref rid="B54-life-13-00354" ref-type="bibr">54</xref>]. Prospective studies are needed to evaluate these solutions, as well as to establish best practices.</p><p>Minimum procedure requirements and formal skill certification may be necessary. For example, consider VATS lobectomy. Compared to open thoracotomy, VATS lobectomy has a significantly different surgical approach and technique. The learning curve for each individual surgeon varies, and many thoracic surgeons were initially concerned that VATS resulted in a sub-optimal cancer staging procedure [<xref rid="B55-life-13-00354" ref-type="bibr">55</xref>]. Ultimately, VATS has been proven to have fewer complications and shorter lengths of stay, particularly in elderly patients [<xref rid="B55-life-13-00354" ref-type="bibr">55</xref>,<xref rid="B56-life-13-00354" ref-type="bibr">56</xref>]. Many surgeons report needing more than 50 VATS lobectomies to become comfortable with the procedure, and some authors have recommended that a VATS lobectomy program should include performing more than 25 lobectomies a year [<xref rid="B55-life-13-00354" ref-type="bibr">55</xref>]. In one center, the rate of conversion from VATS to open thoracotomy decreased from 28% to 11% over a 3-year period, as VATS cases significantly increased [<xref rid="B57-life-13-00354" ref-type="bibr">57</xref>]. Similarly, surgeons who had already performed at least 20 robotic mitral valve repairs required an average of 250 operations before their complication rates dropped from 25% to 10%, and 75&#x02013;125 operations just to overcome their learning curve [<xref rid="B58-life-13-00354" ref-type="bibr">58</xref>]. RB combines many technologies that are familiar to bronchoscopists, but they still have a significant learning curve to achieve competency. RB appears to be less mentally demanding than ENB in cognitive-load studies of bronchoscopists experienced with EMN [<xref rid="B59-life-13-00354" ref-type="bibr">59</xref>], but there is likely a wide variation in time-to-competency. In EMN, this has been shown for fellows and experienced bronchoscopists [<xref rid="B60-life-13-00354" ref-type="bibr">60</xref>,<xref rid="B61-life-13-00354" ref-type="bibr">61</xref>], and this variability in skill-acquisition needs to be described for RB moving forward.</p><p>RB companies provide significant teaching support, but it is unclear when a proceduralist should be considered competent or how best to assess skill acquisition. From a consumer safety perspective, there is no standardized summative assessment to ensure competency, and as diagnostic yield comes further into focus it is important to note that competency needs to include mastery of the imaging tools necessary to maintain excellent diagnostic accuracy, not just competency in driving the bronchoscope. Although it may be a barrier to RB platform sales, a standardized summative assessment of RB competency would be in patients&#x02019; best interests.</p><p>Unfortunately, robotic systems are expensive, and no open publications on initial cost, maintenance, and processing are currently available for comparison. Proprietary tools are often required, and no analysis has been published on factors such as tool use and type per case, OR time, or even general cost efficacy. Such information will be critical to the appropriate uptake or concentration of RB, as well for as its generalizability to low- and middle-income settings.</p></sec><sec sec-type="discussion" id="sec6-life-13-00354"><title>6. Discussion</title><p>The rapid development of RB has outpaced the ability of high-quality studies to describe procedural characteristics and outcomes. Decreased diagnostic yields from CT-to-body divergence exemplify this issue, as publications on its remedy with CBCT were published before actual full-sized prospective cohort studies on RB itself [<xref rid="B37-life-13-00354" ref-type="bibr">37</xref>]. The concept of visualized tool-in-lesion as equivalent to diagnostic yield has proven to be fraught, with one prospective study by Benn et al., with 100% of cases demonstrating tool-in-lesion, only producing an 86% diagnostic yield [<xref rid="B38-life-13-00354" ref-type="bibr">38</xref>]. Since CBCT and advanced fluoroscopy systems make up a significant cost that is additional to the already expensive RB systems, it is critical to accurately demonstrate the utility of these systems. In the interim, improvements in biopsy tool design and pathology evaluation techniques may resolve the remaining gap in diagnosis.</p><p>Fundamental to the question of how to improve diagnostic yield and accuracy is the question of how to define these terms. Diagnostic yield is the likelihood that a test will establish a diagnosis (number of biopsies with a specific diagnosis divided by total biopsies), while diagnostic accuracy is the number of biopsies with the correct final diagnosis. While histopathology demonstrating malignancy or characteristic benign pathology proves a clear hit on the target lesion, labeling findings, such as non-specific inflammation, non-diagnostic atypia, or normal lung, as diagnostic for benign disease can artificially inflate diagnostic yield. Differences in definitions may contribute to apparent marginal gains of RB diagnostic yield, and uniform definitions are necessary for accurate comparisons moving forward [<xref rid="B46-life-13-00354" ref-type="bibr">46</xref>,<xref rid="B62-life-13-00354" ref-type="bibr">62</xref>,<xref rid="B63-life-13-00354" ref-type="bibr">63</xref>].</p><p>Given that 60% of NSCLC are adenocarcinomas requiring next-generation sequencing, measuring the diagnostic yield of RB for molecular diagnosis rather than just for malignant/non-malignant disease will also be critical. The adequacy for NGS with radial EBUS trans-bronchial biopsy for peripheral lesions was 97.9% in one prospective study [<xref rid="B64-life-13-00354" ref-type="bibr">64</xref>], and EBUS TBNA was similarly high at 77&#x02013;95%, depending on the number of passes [<xref rid="B65-life-13-00354" ref-type="bibr">65</xref>,<xref rid="B66-life-13-00354" ref-type="bibr">66</xref>]. Peripheral biopsy of metastatic lesions was reported to have a molecular diagnostic yield of 98% for those patients tested in one prospective observational study of EMN for peripheral nodules [<xref rid="B67-life-13-00354" ref-type="bibr">67</xref>]. Similarly, adequacy for molecular analysis was 100% in another prospective observational study, but the diagnostic yield was 48&#x02013;63% [<xref rid="B68-life-13-00354" ref-type="bibr">68</xref>]. Studies comparing the molecular yield of RB systems will be critical and dependent on definitions of diagnostic yield.</p><p>With these limitations in mind, comparisons of RB systems are limited, but generate optimism. Shape-sensing RB appeared to have a similar diagnostic yield to that of digital tomosynthesis-assisted EMN in the one prospective comparative study that was carried out [<xref rid="B46-life-13-00354" ref-type="bibr">46</xref>]; however, whether the addition of CBCT or other advanced imaging to shape-sensing bronchoscopy would change this comparison is unknown. Direct pricing comparisons are not possible based on public data that are currently available, but competitively priced RB platforms are likely to be of interest in the absence of clear comparative performance data. Integration with existing OR space and radiology equipment is likely to be a key driver of choice.</p></sec><sec id="sec7-life-13-00354"><title>7. Future Directions</title><p>Overcoming divergence is a critical next step in RB. Augmented imaging such as cone-beam and advanced fluoroscopy may be key to resolving this problem, and multiple studies are underway. Endobronchial microscopy techniques, such as confocal laser microscopy, may improve localization [<xref rid="B69-life-13-00354" ref-type="bibr">69</xref>,<xref rid="B70-life-13-00354" ref-type="bibr">70</xref>]. New biopsy techniques are likely needed, given previous reports of sub-perfect diagnostic yield, despite 100% tool-in-lesion confirmation. Research in steerable needles [<xref rid="B71-life-13-00354" ref-type="bibr">71</xref>], RB mounted cryobiopsy probes for peripheral biopsy [<xref rid="B72-life-13-00354" ref-type="bibr">72</xref>], and the application of next-generation sequencing to small tissue biopsies [<xref rid="B73-life-13-00354" ref-type="bibr">73</xref>] may ultimately help close the diagnostic gap.</p><p>Cost and reimbursement developments are desperately needed. Despite lung cancer being the number one cause of cancer deaths, most community hospitals may struggle to justify the high costs of both a new bronchoscopy platform and its corequisite advanced imaging system. This is due in part to direct purchase and maintenance costs, but also largely due in part to low current reimbursement for bronchoscopic procedures. For example, in 2022, Medicare did not have a dedicated CPT code for RB, but only the 31,627 add-on code for EMN [<xref rid="B74-life-13-00354" ref-type="bibr">74</xref>]. Outside of wealthier countries, these upfront costs will likely remain a large barrier to the widespread adoption of RB for years to come. Within the US, advocacy for bronchoscopic payment reform is needed to help fund lung cancer centers of excellence.</p><p>With the tool stability of RB, there is intense interest in therapeutic bronchoscopy [<xref rid="B75-life-13-00354" ref-type="bibr">75</xref>]. Multiple human trials for the endobronchial ablation of lung cancers are currently enrolling on clinicaltrials.gov, with a variety of microwave, radiofrequency, thermal, laser, and CryoSpray ablation techniques. Efforts have also focused on direct intratumoral injection of chemotherapy and other agents to directly enhance immunotherapy in the local tumor microenvironment [<xref rid="B76-life-13-00354" ref-type="bibr">76</xref>]. RB may have an important role in peri-operative nodule marking for minimally invasive thoracic surgery [<xref rid="B77-life-13-00354" ref-type="bibr">77</xref>]. More revolutionarily, with the results of JCOG 0802 showing the benefit of segmentectomy over lobectomy for stage IA non-small-cell lung cancer [<xref rid="B78-life-13-00354" ref-type="bibr">78</xref>], RB may be poised to finally facilitate a single-procedure diagnosis, stage, and cure for early-stage lung cancer. While the advantage of RB therapeutics will not be certain for many years, what is certain is that RB developments will continue to outstrip the research describing them.</p></sec><sec sec-type="conclusions" id="sec8-life-13-00354"><title>8. Conclusions</title><p>RB is still following the path of robotic surgery in the early phase of proof-of-benefit, without robust studies. The performance characteristics and complication rates of the two RB systems on the market, appear to be similar, and RB seems to be able to achieve high levels of diagnostic yield in specialized, high-volume centers with a high prevalence of malignancy. Moving forward, large, multicenter, prospective trials are needed to accurately quantify the diagnostic yield and procedural characteristics of RB, RB systems, and their adjunct tools. At this time, the racing pace of innovation makes that quantification challenging.</p></sec></body><back><fn-group><fn><p><bold>Disclaimer/Publisher&#x02019;s Note:</bold> The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</p></fn></fn-group><notes><title>Author Contributions</title><p>Conceptualization, M.J.D. and H.J.L.; writing&#x02014;original draft preparation, M.J.D.; writing&#x02014;review and editing, H.J.L.; All authors have read and agreed to the published version of the manuscript.</p></notes><notes><title>Institutional Review Board Statement</title><p>Not applicable for studies not involving humans or animals.</p></notes><notes><title>Informed Consent Statement</title><p>Not applicable.</p></notes><notes notes-type="data-availability"><title>Data Availability Statement</title><p>Data sharing not applicable.</p></notes><notes notes-type="COI-statement"><title>Conflicts of Interest</title><p>Diddams has no conflict of interest to declare. Lee has consulted for Intuitive Surgical, Inc., and Olympus Medical Systems Corp.</p></notes><notes><title>Correction Statement</title><p>This article has been republished with a minor correction to resolve spelling and grammatical errors. This change does not affect the scientific content of the article.</p></notes><ref-list><title>References</title><ref id="B1-life-13-00354"><label>1.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yarmus</surname><given-names>L.</given-names></name>
+<name><surname>Akulian</surname><given-names>J.</given-names></name>
+<name><surname>Wahidi</surname><given-names>M.</given-names></name>
+<name><surname>Chen</surname><given-names>A.</given-names></name>
+<name><surname>Steltz</surname><given-names>J.P.</given-names></name>
+<name><surname>Solomon</surname><given-names>S.L.</given-names></name>
+<name><surname>Yu</surname><given-names>D.</given-names></name>
+<name><surname>Maldonado</surname><given-names>F.</given-names></name>
+<name><surname>Cardenas-Garcia</surname><given-names>J.</given-names></name>
+<name><surname>Molena</surname><given-names>D.</given-names></name>
+<etal/>
+</person-group><article-title>A Prospective Randomized Comparative Study of Three Guided Bronchoscopic Approaches for Investigating Pulmonary Nodules</article-title><source>Chest</source><year>2020</year><volume>157</volume><fpage>694</fpage><lpage>701</lpage><pub-id pub-id-type="doi">10.1016/j.chest.2019.10.016</pub-id><pub-id pub-id-type="pmid">31678307</pub-id>
+</element-citation></ref><ref id="B2-life-13-00354"><label>2.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Agrawal</surname><given-names>A.</given-names></name>
+<name><surname>Hogarth</surname><given-names>D.K.</given-names></name>
+<name><surname>Murgu</surname><given-names>S.</given-names></name>
+</person-group><article-title>Robotic bronchoscopy for pulmonary lesions: A review of existing technologies and clinical data</article-title><source>J. Thorac. Dis.</source><year>2020</year><volume>12</volume><fpage>3279</fpage><lpage>3286</lpage><pub-id pub-id-type="doi">10.21037/jtd.2020.03.35</pub-id><pub-id pub-id-type="pmid">32642251</pub-id>
+</element-citation></ref><ref id="B3-life-13-00354"><label>3.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ekeke</surname><given-names>C.N.</given-names></name>
+<name><surname>Vercauteren</surname><given-names>M.</given-names></name>
+<name><surname>Istvaniczdravkovic</surname><given-names>S.</given-names></name>
+<name><surname>Semaan</surname><given-names>R.</given-names></name>
+<name><surname>Dhupar</surname><given-names>R.</given-names></name>
+</person-group><article-title>Lung Nodule Evaluation Using Robotic-Assisted Bronchoscopy at a Veteran&#x02019;s Affairs Hospital</article-title><source>J. Clin. Med.</source><year>2021</year><volume>10</volume><elocation-id>3671</elocation-id><pub-id pub-id-type="doi">10.3390/jcm10163671</pub-id><pub-id pub-id-type="pmid">34441966</pub-id>
+</element-citation></ref><ref id="B4-life-13-00354"><label>4.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chaddha</surname><given-names>U.</given-names></name>
+<name><surname>Kovacs</surname><given-names>S.P.</given-names></name>
+<name><surname>Manley</surname><given-names>C.</given-names></name>
+<name><surname>Hogarth</surname><given-names>D.K.</given-names></name>
+<name><surname>Cumbo-Nacheli</surname><given-names>G.</given-names></name>
+<name><surname>Bhavani</surname><given-names>S.V.</given-names></name>
+<name><surname>Kumar</surname><given-names>R.</given-names></name>
+<name><surname>Shende</surname><given-names>M.</given-names></name>
+<name><surname>Egan</surname><given-names>J.P.</given-names></name>
+<name><surname>Murgu</surname><given-names>S.</given-names></name>
+</person-group><article-title>Robot-assisted bronchoscopy for pulmonary lesion diagnosis: Results from the initial multicenter experience</article-title><source>BMC Pulm. Med.</source><year>2019</year><volume>19</volume><elocation-id>243</elocation-id><pub-id pub-id-type="doi">10.1186/s12890-019-1010-8</pub-id><pub-id pub-id-type="pmid">31829148</pub-id>
+</element-citation></ref><ref id="B5-life-13-00354"><label>5.</label><element-citation publication-type="other"><person-group person-group-type="author">
+<name><surname>Agrawal</surname><given-names>A.</given-names></name>
+<name><surname>Ho</surname><given-names>E.</given-names></name>
+<name><surname>Chaddha</surname><given-names>U.</given-names></name>
+<name><surname>Demirkol</surname><given-names>B.</given-names></name>
+<name><surname>Bhavani</surname><given-names>S.V.</given-names></name>
+<name><surname>Hogarth</surname><given-names>D.K.</given-names></name>
+<name><surname>Murgu</surname><given-names>S.</given-names></name>
+</person-group><article-title>Factors Associated with Diagnostic Accuracy of Robotic Bronchoscopy with 12-Month Follow-up</article-title><source>Ann. Thorac. Surg.</source><year>2022</year><comment>
+<italic toggle="yes">Epub ahead of print</italic>
+</comment><pub-id pub-id-type="doi">10.1016/j.athoracsur.2021.12.041</pub-id></element-citation></ref><ref id="B6-life-13-00354"><label>6.</label><element-citation publication-type="webpage"><person-group person-group-type="author">
+<collab>American Cancer Society</collab>
+</person-group><article-title>Key Statistics for Lung Cancer</article-title><comment>Available online: <ext-link xlink:href="https://www.cancer.org/cancer/lung-cancer/about/key-statistics.html" ext-link-type="uri">https://www.cancer.org/cancer/lung-cancer/about/key-statistics.html</ext-link></comment><date-in-citation content-type="access-date" iso-8601-date="2022-11-16">(accessed on 16 November 2022)</date-in-citation></element-citation></ref><ref id="B7-life-13-00354"><label>7.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Flores</surname><given-names>R.</given-names></name>
+<name><surname>Patel</surname><given-names>P.</given-names></name>
+<name><surname>Alpert</surname><given-names>N.</given-names></name>
+<name><surname>Pyenson</surname><given-names>B.</given-names></name>
+<name><surname>Taioli</surname><given-names>E.</given-names></name>
+</person-group><article-title>Association of Stage Shift and Population Mortality Among Patients with Non-Small Cell Lung Cancer</article-title><source>JAMA Netw. Open</source><year>2021</year><volume>4</volume><fpage>e2137508</fpage><pub-id pub-id-type="doi">10.1001/jamanetworkopen.2021.37508</pub-id><pub-id pub-id-type="pmid">34919136</pub-id>
+</element-citation></ref><ref id="B8-life-13-00354"><label>8.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gould</surname><given-names>M.K.</given-names></name>
+<name><surname>Tang</surname><given-names>T.</given-names></name>
+<name><surname>Liu</surname><given-names>I.-L.A.</given-names></name>
+<name><surname>Lee</surname><given-names>J.</given-names></name>
+<name><surname>Zheng</surname><given-names>C.</given-names></name>
+<name><surname>Danforth</surname><given-names>K.N.</given-names></name>
+<name><surname>Kosco</surname><given-names>A.E.</given-names></name>
+<name><surname>Di Fiore</surname><given-names>J.L.</given-names></name>
+<name><surname>Suh</surname><given-names>D.E.</given-names></name>
+</person-group><article-title>Recent Trends in the Identification of Incidental Pulmonary Nodules</article-title><source>Am. J. Respir. Crit. Care Med.</source><year>2015</year><volume>192</volume><fpage>1208</fpage><lpage>1214</lpage><pub-id pub-id-type="doi">10.1164/rccm.201505-0990OC</pub-id><pub-id pub-id-type="pmid">26214244</pub-id>
+</element-citation></ref><ref id="B9-life-13-00354"><label>9.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Okereke</surname><given-names>I.C.</given-names></name>
+<name><surname>Nishi</surname><given-names>S.</given-names></name>
+<name><surname>Zhou</surname><given-names>J.</given-names></name>
+<name><surname>Goodwin</surname><given-names>J.S.</given-names></name>
+</person-group><article-title>Trends in lung cancer screening in the United States, 2016&#x02013;2017</article-title><source>J. Thorac. Dis.</source><year>2019</year><volume>11</volume><fpage>873</fpage><lpage>881</lpage><pub-id pub-id-type="doi">10.21037/jtd.2019.01.105</pub-id><pub-id pub-id-type="pmid">31019776</pub-id>
+</element-citation></ref><ref id="B10-life-13-00354"><label>10.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Choi</surname><given-names>H.K.</given-names></name>
+<name><surname>Ghobrial</surname><given-names>M.</given-names></name>
+<name><surname>Mazzone</surname><given-names>P.J.</given-names></name>
+</person-group><article-title>Models to Estimate the Probability of Malignancy in Patients with Pulmonary Nodules</article-title><source>Ann. Am. Thorac. Soc.</source><year>2018</year><volume>15</volume><fpage>1117</fpage><lpage>1126</lpage><pub-id pub-id-type="doi">10.1513/AnnalsATS.201803-173CME</pub-id><pub-id pub-id-type="pmid">30272500</pub-id>
+</element-citation></ref><ref id="B11-life-13-00354"><label>11.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gould</surname><given-names>M.K.</given-names></name>
+<name><surname>Donington</surname><given-names>J.</given-names></name>
+<name><surname>Lynch</surname><given-names>W.R.</given-names></name>
+<name><surname>Mazzone</surname><given-names>P.J.</given-names></name>
+<name><surname>Midthun</surname><given-names>D.E.</given-names></name>
+<name><surname>Naidich</surname><given-names>D.P.</given-names></name>
+<name><surname>Wiener</surname><given-names>R.S.</given-names></name>
+</person-group><article-title>Evaluation of individuals with pulmonary nodules: When is it lung cancer? Diagnosis and management of lung cancer: American College of Chest Physicians evidence-based clinical practice guidelines</article-title><source>Chest</source><year>2013</year><volume>143</volume><fpage>e93S</fpage><lpage>e120S</lpage><pub-id pub-id-type="doi">10.1378/chest.12-2351</pub-id><pub-id pub-id-type="pmid">23649456</pub-id>
+</element-citation></ref><ref id="B12-life-13-00354"><label>12.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<collab>National Lung Screening Trial Research Team</collab>
+<name><surname>Aberle</surname><given-names>D.R.</given-names></name>
+<name><surname>Adams</surname><given-names>A.M.</given-names></name>
+<name><surname>Berg</surname><given-names>C.D.</given-names></name>
+<name><surname>Black</surname><given-names>W.C.</given-names></name>
+<name><surname>Clapp</surname><given-names>J.D.</given-names></name>
+<name><surname>Fagerstrom</surname><given-names>R.M.</given-names></name>
+<name><surname>Gareen</surname><given-names>I.F.</given-names></name>
+<name><surname>Gatsonis</surname><given-names>C.</given-names></name>
+<name><surname>Marcus</surname><given-names>P.M.</given-names></name>
+<etal/>
+</person-group><article-title>Reduced Lung-Cancer Mortality with Low-Dose Computed Tomographic Screening</article-title><source>N. Engl. J. Med.</source><year>2011</year><volume>365</volume><fpage>395</fpage><lpage>409</lpage><pub-id pub-id-type="doi">10.1056/nejmoa1102873</pub-id><pub-id pub-id-type="pmid">21714641</pub-id>
+</element-citation></ref><ref id="B13-life-13-00354"><label>13.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nordenstr&#x000f6;m</surname><given-names>B.</given-names></name>
+</person-group><article-title>A New Technique for Transthoracic Biopsy of Lung Changes</article-title><source>Br. J. Radiol.</source><year>1965</year><volume>38</volume><fpage>550</fpage><lpage>553</lpage><pub-id pub-id-type="doi">10.1259/0007-1285-38-451-550</pub-id></element-citation></ref><ref id="B14-life-13-00354"><label>14.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>DiBardino</surname><given-names>D.M.</given-names></name>
+<name><surname>Yarmus</surname><given-names>L.B.</given-names></name>
+<name><surname>Semaan</surname><given-names>R.W.</given-names></name>
+</person-group><article-title>Transthoracic needle biopsy of the lung</article-title><source>J. Thorac. Dis.</source><year>2015</year><volume>7</volume><fpage>S304</fpage><lpage>S316</lpage><pub-id pub-id-type="doi">10.3978/j.issn.2072-1439.2015.12.16</pub-id><pub-id pub-id-type="pmid">26807279</pub-id>
+</element-citation></ref><ref id="B15-life-13-00354"><label>15.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Baaklini</surname><given-names>W.A.</given-names></name>
+<name><surname>Reinoso</surname><given-names>M.A.</given-names></name>
+<name><surname>Gorin</surname><given-names>A.B.</given-names></name>
+<name><surname>Sharafkaneh</surname><given-names>A.</given-names></name>
+<name><surname>Manian</surname><given-names>P.</given-names></name>
+</person-group><article-title>Diagnostic Yield of Fiberoptic Bronchoscopy in Evaluating Solitary Pulmonary Nodules</article-title><source>Chest</source><year>2000</year><volume>117</volume><fpage>1049</fpage><lpage>1054</lpage><pub-id pub-id-type="doi">10.1378/chest.117.4.1049</pub-id><pub-id pub-id-type="pmid">10767238</pub-id>
+</element-citation></ref><ref id="B16-life-13-00354"><label>16.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pue</surname><given-names>C.A.</given-names></name>
+<name><surname>Pacht</surname><given-names>E.R.</given-names></name>
+</person-group><article-title>Complications of Fiberoptic Bronchoscopy at a University Hospital</article-title><source>Chest</source><year>1995</year><volume>107</volume><fpage>430</fpage><lpage>432</lpage><pub-id pub-id-type="doi">10.1378/chest.107.2.430</pub-id><pub-id pub-id-type="pmid">7842773</pub-id>
+</element-citation></ref><ref id="B17-life-13-00354"><label>17.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Jin</surname><given-names>F.</given-names></name>
+<name><surname>Mu</surname><given-names>D.</given-names></name>
+<name><surname>Chu</surname><given-names>D.</given-names></name>
+<name><surname>Fu</surname><given-names>E.</given-names></name>
+<name><surname>Xie</surname><given-names>Y.</given-names></name>
+<name><surname>Liu</surname><given-names>T.</given-names></name>
+</person-group><article-title>Severe Complications of Bronchoscopy</article-title><source>Respiration</source><year>2008</year><volume>76</volume><fpage>429</fpage><lpage>433</lpage><pub-id pub-id-type="doi">10.1159/000151656</pub-id><pub-id pub-id-type="pmid">18716395</pub-id>
+</element-citation></ref><ref id="B18-life-13-00354"><label>18.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Becker</surname><given-names>H.D.</given-names></name>
+</person-group><article-title>Short History of the Development of Endobronchial Ultrasound&#x02014;A Story of Success</article-title><source>Clin. Chest Ultrasound</source><year>2009</year><volume>37</volume><fpage>128</fpage><lpage>139</lpage><pub-id pub-id-type="doi">10.1159/000210417</pub-id></element-citation></ref><ref id="B19-life-13-00354"><label>19.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Vining</surname><given-names>D.J.</given-names></name>
+<name><surname>Liu</surname><given-names>K.</given-names></name>
+<name><surname>Choplin</surname><given-names>R.H.</given-names></name>
+<name><surname>Haponik</surname><given-names>E.F.</given-names></name>
+</person-group><article-title>Virtual Bronchoscopy: Relationships of virtual reality endobronchial simulations to actual bronchoscopic findings</article-title><source>Chest</source><year>1996</year><volume>109</volume><fpage>549</fpage><lpage>553</lpage><pub-id pub-id-type="doi">10.1378/chest.109.2.549</pub-id><pub-id pub-id-type="pmid">8620734</pub-id>
+</element-citation></ref><ref id="B20-life-13-00354"><label>20.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cicenia</surname><given-names>J.</given-names></name>
+<name><surname>Avasarala</surname><given-names>S.K.</given-names></name>
+<name><surname>Gildea</surname><given-names>T.R.</given-names></name>
+</person-group><article-title>Navigational bronchoscopy: A guide through history, current use, and developing technology</article-title><source>J. Thorac. Dis.</source><year>2020</year><volume>12</volume><fpage>3263</fpage><lpage>3271</lpage><pub-id pub-id-type="doi">10.21037/jtd-2019-ndt-11</pub-id><pub-id pub-id-type="pmid">32642249</pub-id>
+</element-citation></ref><ref id="B21-life-13-00354"><label>21.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gildea</surname><given-names>T.R.</given-names></name>
+<name><surname>Mazzone</surname><given-names>P.J.</given-names></name>
+<name><surname>Karnak</surname><given-names>D.</given-names></name>
+<name><surname>Meziane</surname><given-names>M.</given-names></name>
+<name><surname>Mehta</surname><given-names>A.C.</given-names></name>
+</person-group><article-title>Electromagnetic Navigation Diagnostic Bronchoscopy</article-title><source>Am. J. Respir. Crit. Care Med.</source><year>2006</year><volume>174</volume><fpage>982</fpage><lpage>989</lpage><pub-id pub-id-type="doi">10.1164/rccm.200603-344OC</pub-id><pub-id pub-id-type="pmid">16873767</pub-id>
+</element-citation></ref><ref id="B22-life-13-00354"><label>22.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Folch</surname><given-names>E.E.</given-names></name>
+<name><surname>Pritchett</surname><given-names>M.A.</given-names></name>
+<name><surname>Nead</surname><given-names>M.A.</given-names></name>
+<name><surname>Bowling</surname><given-names>M.R.</given-names></name>
+<name><surname>Murgu</surname><given-names>S.D.</given-names></name>
+<name><surname>Krimsky</surname><given-names>W.S.</given-names></name>
+<name><surname>Murillo</surname><given-names>B.A.</given-names></name>
+<name><surname>LeMense</surname><given-names>G.P.</given-names></name>
+<name><surname>Minnich</surname><given-names>D.J.</given-names></name>
+<name><surname>Bansal</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group><article-title>Electromagnetic Navigation Bronchoscopy for Peripheral Pulmonary Lesions: One-Year Results of the Prospective, Multicenter NAVIGATE Study</article-title><source>J. Thorac. Oncol.</source><year>2018</year><volume>14</volume><fpage>445</fpage><lpage>458</lpage><pub-id pub-id-type="doi">10.1016/j.jtho.2018.11.013</pub-id><pub-id pub-id-type="pmid">30476574</pub-id>
+</element-citation></ref><ref id="B23-life-13-00354"><label>23.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>A Raval</surname><given-names>A.</given-names></name>
+<name><surname>Amir</surname><given-names>L.</given-names></name>
+</person-group><article-title>Community hospital experience using electromagnetic navigation bronchoscopy system integrating tidal volume computed tomography mapping</article-title><source>Lung Cancer Manag.</source><year>2016</year><volume>5</volume><fpage>9</fpage><lpage>19</lpage><pub-id pub-id-type="doi">10.2217/lmt-2015-0007</pub-id><pub-id pub-id-type="pmid">30643545</pub-id>
+</element-citation></ref><ref id="B24-life-13-00354"><label>24.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pertzov</surname><given-names>B.</given-names></name>
+<name><surname>Gershman</surname><given-names>E.</given-names></name>
+<name><surname>Izhakian</surname><given-names>S.</given-names></name>
+<name><surname>Heching</surname><given-names>M.</given-names></name>
+<name><surname>Amor</surname><given-names>S.M.</given-names></name>
+<name><surname>Rosengarten</surname><given-names>D.</given-names></name>
+<name><surname>Kramer</surname><given-names>M.R.</given-names></name>
+</person-group><article-title>The LungVision navigational platform for peripheral lung nodule biopsy and the added value of cryobiopsy</article-title><source>Thorac. Cancer</source><year>2021</year><volume>12</volume><fpage>2007</fpage><lpage>2012</lpage><pub-id pub-id-type="doi">10.1111/1759-7714.14003</pub-id><pub-id pub-id-type="pmid">34096182</pub-id>
+</element-citation></ref><ref id="B25-life-13-00354"><label>25.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ost</surname><given-names>D.E.</given-names></name>
+<name><surname>Ernst</surname><given-names>A.</given-names></name>
+<name><surname>Lei</surname><given-names>X.</given-names></name>
+<name><surname>Kovitz</surname><given-names>K.L.</given-names></name>
+<name><surname>Benzaquen</surname><given-names>S.</given-names></name>
+<name><surname>Diaz-Mendoza</surname><given-names>J.</given-names></name>
+<name><surname>Greenhill</surname><given-names>S.</given-names></name>
+<name><surname>Toth</surname><given-names>J.</given-names></name>
+<name><surname>Feller-Kopman</surname><given-names>D.</given-names></name>
+<name><surname>Puchalski</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group><article-title>Diagnostic Yield and Complications of Bronchoscopy for Peripheral Lung Lesions. Results of the AQuIRE Registry</article-title><source>Am. J. Respir. Crit. Care Med.</source><year>2016</year><volume>193</volume><fpage>68</fpage><lpage>77</lpage><pub-id pub-id-type="doi">10.1164/rccm.201507-1332OC</pub-id><pub-id pub-id-type="pmid">26367186</pub-id>
+</element-citation></ref><ref id="B26-life-13-00354"><label>26.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Veluswamy</surname><given-names>R.R.</given-names></name>
+<name><surname>Brown</surname><given-names>S.-A.W.</given-names></name>
+<name><surname>Mhango</surname><given-names>G.</given-names></name>
+<name><surname>Sigel</surname><given-names>K.</given-names></name>
+<name><surname>Nicastri</surname><given-names>D.G.</given-names></name>
+<name><surname>Smith</surname><given-names>C.B.</given-names></name>
+<name><surname>Bonomi</surname><given-names>M.</given-names></name>
+<name><surname>Galsky</surname><given-names>M.D.</given-names></name>
+<name><surname>Taioli</surname><given-names>E.</given-names></name>
+<name><surname>Neugut</surname><given-names>A.I.</given-names></name>
+<etal/>
+</person-group><article-title>Comparative Effectiveness of Robotic-Assisted Surgery for Resectable Lung Cancer in Older Patients</article-title><source>Chest</source><year>2019</year><volume>157</volume><fpage>1313</fpage><lpage>1321</lpage><pub-id pub-id-type="doi">10.1016/j.chest.2019.09.017</pub-id><pub-id pub-id-type="pmid">31589843</pub-id>
+</element-citation></ref><ref id="B27-life-13-00354"><label>27.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kass</surname><given-names>K.S.</given-names></name>
+<name><surname>Velez-Cubian</surname><given-names>F.O.</given-names></name>
+<name><surname>Zhang</surname><given-names>W.W.</given-names></name>
+<name><surname>Toosi</surname><given-names>K.</given-names></name>
+<name><surname>Tanvetyanon</surname><given-names>T.</given-names></name>
+<name><surname>Rodriguez</surname><given-names>K.L.</given-names></name>
+<name><surname>Thau</surname><given-names>M.R.</given-names></name>
+<name><surname>Garrett</surname><given-names>J.R.</given-names></name>
+<name><surname>Moodie</surname><given-names>C.C.</given-names></name>
+<name><surname>Fontaine</surname><given-names>J.P.</given-names></name>
+<etal/>
+</person-group><article-title>Effect of advanced age on peri-operative outcomes after robotic-assisted pulmonary lobectomy: Retrospective analysis of 287 consecutive cases</article-title><source>J. Geriatr. Oncol.</source><year>2016</year><volume>8</volume><fpage>102</fpage><lpage>107</lpage><pub-id pub-id-type="doi">10.1016/j.jgo.2016.11.003</pub-id><pub-id pub-id-type="pmid">28041970</pub-id>
+</element-citation></ref><ref id="B28-life-13-00354"><label>28.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Breyer</surname><given-names>R.H.</given-names></name>
+<name><surname>Zippe</surname><given-names>C.</given-names></name>
+<name><surname>Pharr</surname><given-names>W.F.</given-names></name>
+<name><surname>Jensik</surname><given-names>R.J.</given-names></name>
+<name><surname>Kittle</surname><given-names>C.F.</given-names></name>
+<name><surname>Faber</surname><given-names>L.P.</given-names></name>
+</person-group><article-title>Thoracotomy in patients over age seventy years: Ten-year experience</article-title><source>J. Thorac. Cardiovasc. Surg.</source><year>1981</year><volume>81</volume><fpage>187</fpage><lpage>193</lpage><pub-id pub-id-type="doi">10.1016/S0022-5223(19)37625-1</pub-id><pub-id pub-id-type="pmid">7453228</pub-id>
+</element-citation></ref><ref id="B29-life-13-00354"><label>29.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Guerra</surname><given-names>M.</given-names></name>
+<name><surname>Neves</surname><given-names>P.</given-names></name>
+<name><surname>Miranda</surname><given-names>J.</given-names></name>
+</person-group><article-title>Surgical treatment of non-small-cell lung cancer in octogenarians</article-title><source>Interact. Cardiovasc. Thorac. Surg.</source><year>2013</year><volume>16</volume><fpage>673</fpage><lpage>680</lpage><pub-id pub-id-type="doi">10.1093/icvts/ivt020</pub-id><pub-id pub-id-type="pmid">23396622</pub-id>
+</element-citation></ref><ref id="B30-life-13-00354"><label>30.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Villamizar</surname><given-names>N.R.</given-names></name>
+<name><surname>Darrabie</surname><given-names>M.D.</given-names></name>
+<name><surname>Burfeind</surname><given-names>W.R.</given-names></name>
+<name><surname>Petersen</surname><given-names>R.P.</given-names></name>
+<name><surname>Onaitis</surname><given-names>M.W.</given-names></name>
+<name><surname>Toloza</surname><given-names>E.</given-names></name>
+<name><surname>Harpole</surname><given-names>D.H.</given-names></name>
+<name><surname>D&#x02019;Amico</surname><given-names>T.A.</given-names></name>
+</person-group><article-title>Thoracoscopic lobectomy is associated with lower morbidity compared with thoracotomy</article-title><source>J. Thorac. Cardiovasc. Surg.</source><year>2009</year><volume>138</volume><fpage>419</fpage><lpage>425</lpage><pub-id pub-id-type="doi">10.1016/j.jtcvs.2009.04.026</pub-id><pub-id pub-id-type="pmid">19619789</pub-id>
+</element-citation></ref><ref id="B31-life-13-00354"><label>31.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Paul</surname><given-names>S.</given-names></name>
+<name><surname>Altorki</surname><given-names>N.K.</given-names></name>
+<name><surname>Sheng</surname><given-names>S.</given-names></name>
+<name><surname>Lee</surname><given-names>P.C.</given-names></name>
+<name><surname>Harpole</surname><given-names>D.H.</given-names></name>
+<name><surname>Onaitis</surname><given-names>M.W.</given-names></name>
+<name><surname>Stiles</surname><given-names>B.M.</given-names></name>
+<name><surname>Port</surname><given-names>J.L.</given-names></name>
+<name><surname>D&#x02019;Amico</surname><given-names>T.A.</given-names></name>
+</person-group><article-title>Thoracoscopic lobectomy is associated with lower morbidity than open lobectomy: A propensity-matched analysis from the STS database</article-title><source>J. Thorac. Cardiovasc. Surg.</source><year>2010</year><volume>139</volume><fpage>366</fpage><lpage>378</lpage><pub-id pub-id-type="doi">10.1016/j.jtcvs.2009.08.026</pub-id><pub-id pub-id-type="pmid">20106398</pub-id>
+</element-citation></ref><ref id="B32-life-13-00354"><label>32.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Agzarian</surname><given-names>J.</given-names></name>
+<name><surname>Fahim</surname><given-names>C.</given-names></name>
+<name><surname>Shargall</surname><given-names>Y.</given-names></name>
+<name><surname>Yasufuku</surname><given-names>K.</given-names></name>
+<name><surname>Waddell</surname><given-names>T.K.</given-names></name>
+<name><surname>Hanna</surname><given-names>W.C.</given-names></name>
+</person-group><article-title>The Use of Robotic-Assisted Thoracic Surgery for Lung Resection: A Comprehensive Systematic Review</article-title><source>Semin. Thorac. Cardiovasc. Surg.</source><year>2016</year><volume>28</volume><fpage>182</fpage><lpage>192</lpage><pub-id pub-id-type="doi">10.1053/j.semtcvs.2016.01.004</pub-id><pub-id pub-id-type="pmid">27568159</pub-id>
+</element-citation></ref><ref id="B33-life-13-00354"><label>33.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>A.C.</given-names></name>
+<name><surname>Gillespie</surname><given-names>C.T.</given-names></name>
+</person-group><article-title>Robotic Endoscopic Airway Challenge: REACH Assessment</article-title><source>Ann. Thorac. Surg.</source><year>2018</year><volume>106</volume><fpage>293</fpage><lpage>297</lpage><pub-id pub-id-type="doi">10.1016/j.athoracsur.2018.01.051</pub-id><pub-id pub-id-type="pmid">29486178</pub-id>
+</element-citation></ref><ref id="B34-life-13-00354"><label>34.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>A.C.</given-names></name>
+<name><surname>Pastis</surname><given-names>N.J.</given-names></name>
+<name><surname>Machuzak</surname><given-names>M.S.</given-names></name>
+<name><surname>Gildea</surname><given-names>T.R.</given-names></name>
+<name><surname>Simoff</surname><given-names>M.J.</given-names></name>
+<name><surname>Gillespie</surname><given-names>C.T.</given-names></name>
+<name><surname>Mahajan</surname><given-names>A.K.</given-names></name>
+<name><surname>Oh</surname><given-names>S.S.</given-names></name>
+<name><surname>Silvestri</surname><given-names>G.A.</given-names></name>
+</person-group><article-title>Accuracy of a Robotic Endoscopic System in Cadaver Models with Simulated Tumor Targets: ACCESS Study</article-title><source>Respiration</source><year>2019</year><volume>99</volume><fpage>56</fpage><lpage>61</lpage><pub-id pub-id-type="doi">10.1159/000504181</pub-id><pub-id pub-id-type="pmid">31805570</pub-id>
+</element-citation></ref><ref id="B35-life-13-00354"><label>35.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ha</surname><given-names>A.S.</given-names></name>
+<name><surname>Lee</surname><given-names>A.Y.</given-names></name>
+<name><surname>Hippe</surname><given-names>D.S.</given-names></name>
+<name><surname>Chou</surname><given-names>S.-H.S.</given-names></name>
+<name><surname>Chew</surname><given-names>F.S.</given-names></name>
+</person-group><article-title>Digital Tomosynthesis to Evaluate Fracture Healing: Prospective Comparison with Radiography and CT</article-title><source>Am. J. Roentgenol.</source><year>2015</year><volume>205</volume><fpage>136</fpage><lpage>141</lpage><pub-id pub-id-type="doi">10.2214/AJR.14.13833</pub-id><pub-id pub-id-type="pmid">26102392</pub-id>
+</element-citation></ref><ref id="B36-life-13-00354"><label>36.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Rojas-Solano</surname><given-names>J.R.</given-names></name>
+<name><surname>Ugalde-Gamboa</surname><given-names>L.</given-names></name>
+<name><surname>Machuzak</surname><given-names>M.</given-names></name>
+</person-group><article-title>Robotic Bronchoscopy for Diagnosis of Suspected Lung Cancer</article-title><source>J. Bronchol. Interv. Pulmonol.</source><year>2018</year><volume>25</volume><fpage>168</fpage><lpage>175</lpage><pub-id pub-id-type="doi">10.1097/LBR.0000000000000499</pub-id><pub-id pub-id-type="pmid">29762461</pub-id>
+</element-citation></ref><ref id="B37-life-13-00354"><label>37.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>A.C.</given-names></name>
+<name><surname>Pastis</surname><given-names>N.J.</given-names></name>
+<name><surname>Mahajan</surname><given-names>A.K.</given-names></name>
+<name><surname>Khandhar</surname><given-names>S.J.</given-names></name>
+<name><surname>Simoff</surname><given-names>M.J.</given-names></name>
+<name><surname>Machuzak</surname><given-names>M.S.</given-names></name>
+<name><surname>Cicenia</surname><given-names>J.</given-names></name>
+<name><surname>Gildea</surname><given-names>T.R.</given-names></name>
+<name><surname>Silvestri</surname><given-names>G.A.</given-names></name>
+</person-group><article-title>Robotic Bronchoscopy for Peripheral Pulmonary Lesions: A multicenter pilot and feasibility study (BENEFIT)</article-title><source>Chest</source><year>2020</year><volume>159</volume><fpage>845</fpage><lpage>852</lpage><pub-id pub-id-type="doi">10.1016/j.chest.2020.08.2047</pub-id><pub-id pub-id-type="pmid">32822675</pub-id>
+</element-citation></ref><ref id="B38-life-13-00354"><label>38.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Benn</surname><given-names>B.S.</given-names></name>
+<name><surname>Romero</surname><given-names>A.O.</given-names></name>
+<name><surname>Lum</surname><given-names>M.</given-names></name>
+<name><surname>Krishna</surname><given-names>G.</given-names></name>
+</person-group><article-title>Robotic-Assisted Navigation Bronchoscopy as a Paradigm Shift in Peripheral Lung Access</article-title><source>Lung</source><year>2021</year><volume>199</volume><fpage>177</fpage><lpage>186</lpage><pub-id pub-id-type="doi">10.1007/s00408-021-00421-1</pub-id><pub-id pub-id-type="pmid">33547938</pub-id>
+</element-citation></ref><ref id="B39-life-13-00354"><label>39.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fielding</surname><given-names>D.I.</given-names></name>
+<name><surname>Bashirzadeh</surname><given-names>F.</given-names></name>
+<name><surname>Son</surname><given-names>J.H.</given-names></name>
+<name><surname>Todman</surname><given-names>M.</given-names></name>
+<name><surname>Chin</surname><given-names>A.</given-names></name>
+<name><surname>Tan</surname><given-names>L.</given-names></name>
+<name><surname>Steinke</surname><given-names>K.</given-names></name>
+<name><surname>Windsor</surname><given-names>M.N.</given-names></name>
+<name><surname>Sung</surname><given-names>A.W.</given-names></name>
+</person-group><article-title>First Human Use of a New Robotic-Assisted Fiber Optic Sensing Navigation System for Small Peripheral Pulmonary Nodules</article-title><source>Respiration</source><year>2019</year><volume>98</volume><fpage>142</fpage><lpage>150</lpage><pub-id pub-id-type="doi">10.1159/000498951</pub-id><pub-id pub-id-type="pmid">31352444</pub-id>
+</element-citation></ref><ref id="B40-life-13-00354"><label>40.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Simoff</surname><given-names>M.J.</given-names></name>
+<name><surname>Pritchett</surname><given-names>M.A.</given-names></name>
+<name><surname>Reisenauer</surname><given-names>J.S.</given-names></name>
+<name><surname>Ost</surname><given-names>D.E.</given-names></name>
+<name><surname>Majid</surname><given-names>A.</given-names></name>
+<name><surname>Keyes</surname><given-names>C.</given-names></name>
+<name><surname>Casal</surname><given-names>R.F.</given-names></name>
+<name><surname>Parikh</surname><given-names>M.S.</given-names></name>
+<name><surname>Diaz-Mendoza</surname><given-names>J.</given-names></name>
+<name><surname>Fernandez-Bussy</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group><article-title>Shape-sensing robotic-assisted bronchoscopy for pulmonary nodules: Initial multicenter experience using the Ion&#x02122; Endoluminal System</article-title><source>BMC Pulm. Med.</source><year>2021</year><volume>21</volume><elocation-id>322</elocation-id><pub-id pub-id-type="doi">10.1186/s12890-021-01693-2</pub-id><pub-id pub-id-type="pmid">34656103</pub-id>
+</element-citation></ref><ref id="B41-life-13-00354"><label>41.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Duke</surname><given-names>J.D.</given-names></name>
+<name><surname>Reisenauer</surname><given-names>J.</given-names></name>
+</person-group><article-title>Review: Technology and Techniques for Robotic-assisted Bronchoscopy</article-title><source>J. Lung Health Dis.</source><year>2022</year><volume>6</volume><fpage>1</fpage><lpage>5</lpage><pub-id pub-id-type="doi">10.29245/2689-999X/2022/1.1179</pub-id></element-citation></ref><ref id="B42-life-13-00354"><label>42.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Akulian</surname><given-names>J.A.</given-names></name>
+<name><surname>Molena</surname><given-names>D.</given-names></name>
+<name><surname>Wahidi</surname><given-names>M.M.</given-names></name>
+<name><surname>Chen</surname><given-names>A.</given-names></name>
+<name><surname>Yu</surname><given-names>D.</given-names></name>
+<name><surname>Maldonado</surname><given-names>F.</given-names></name>
+<name><surname>Lee</surname><given-names>H.</given-names></name>
+<name><surname>Vachani</surname><given-names>A.</given-names></name>
+<name><surname>Yarmus</surname><given-names>L.</given-names></name>
+<collab>on behalf of the Interventional Pulmonary Outcomes Group (IPOG)</collab>
+</person-group><article-title>A Direct Comparative Study of Bronchoscopic Navigation Planning Platforms for Peripheral Lung Navigation</article-title><source>J. Bronchol. Interv. Pulmonol.</source><year>2021</year><volume>29</volume><fpage>171</fpage><lpage>178</lpage><pub-id pub-id-type="doi">10.1097/LBR.0000000000000806</pub-id></element-citation></ref><ref id="B43-life-13-00354"><label>43.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Thiboutot</surname><given-names>J.</given-names></name>
+<name><surname>Argento</surname><given-names>A.C.</given-names></name>
+<name><surname>Akulian</surname><given-names>J.</given-names></name>
+<name><surname>Lee</surname><given-names>H.J.</given-names></name>
+<name><surname>DeMaio</surname><given-names>A.</given-names></name>
+<name><surname>Kapp</surname><given-names>C.M.</given-names></name>
+<name><surname>Wahidi</surname><given-names>M.M.</given-names></name>
+<name><surname>Yarmus</surname><given-names>L.</given-names></name>
+</person-group><article-title>Accuracy of Pulmonary Nodule Sampling Using Robotic Assisted Bronchoscopy with Shape Sensing, Fluoroscopy, and Radial Endobronchial Ultrasound (The ACCURACY Study)</article-title><source>Respiration</source><year>2022</year><volume>101</volume><fpage>485</fpage><lpage>493</lpage><pub-id pub-id-type="doi">10.1159/000522514</pub-id><pub-id pub-id-type="pmid">35344969</pub-id>
+</element-citation></ref><ref id="B44-life-13-00354"><label>44.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wagh</surname><given-names>A.</given-names></name>
+<name><surname>Ho</surname><given-names>E.</given-names></name>
+<name><surname>Murgu</surname><given-names>S.</given-names></name>
+<name><surname>Hogarth</surname><given-names>D.K.</given-names></name>
+</person-group><article-title>Improving diagnostic yield of navigational bronchoscopy for peripheral pulmonary lesions: A review of advancing technology</article-title><source>J. Thorac. Dis.</source><year>2020</year><volume>12</volume><fpage>7683</fpage><lpage>7690</lpage><pub-id pub-id-type="doi">10.21037/jtd-2020-abpd-003</pub-id><pub-id pub-id-type="pmid">33447461</pub-id>
+</element-citation></ref><ref id="B45-life-13-00354"><label>45.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kalchiem-Dekel</surname><given-names>O.</given-names></name>
+<name><surname>Fuentes</surname><given-names>P.</given-names></name>
+<name><surname>Bott</surname><given-names>M.J.</given-names></name>
+<name><surname>Beattie</surname><given-names>J.A.</given-names></name>
+<name><surname>Lee</surname><given-names>R.P.</given-names></name>
+<name><surname>Chawla</surname><given-names>M.</given-names></name>
+<name><surname>Husta</surname><given-names>B.C.</given-names></name>
+</person-group><article-title>Multiplanar 3D fluoroscopy redefines tool-lesion relationship during robotic-assisted bronchoscopy</article-title><source>Respirology</source><year>2020</year><volume>26</volume><fpage>120</fpage><lpage>123</lpage><pub-id pub-id-type="doi">10.1111/resp.13966</pub-id><pub-id pub-id-type="pmid">33140495</pub-id>
+</element-citation></ref><ref id="B46-life-13-00354"><label>46.</label><element-citation publication-type="other"><person-group person-group-type="author">
+<name><surname>Low</surname><given-names>S.-W.</given-names></name>
+<name><surname>Lentz</surname><given-names>R.J.</given-names></name>
+<name><surname>Chen</surname><given-names>H.</given-names></name>
+<name><surname>Katsis</surname><given-names>J.</given-names></name>
+<name><surname>Aboudara</surname><given-names>M.C.</given-names></name>
+<name><surname>Whatley</surname><given-names>S.</given-names></name>
+<name><surname>Paez</surname><given-names>R.</given-names></name>
+<name><surname>Rickman</surname><given-names>O.B.</given-names></name>
+<name><surname>Maldonado</surname><given-names>F.</given-names></name>
+</person-group><article-title>Shape-Sensing Robotic-Assisted Bronchoscopy vs. Digital Tomosynthesis-Corrected Electromagnetic Navigation Bronchoscopy: A Comparative Cohort Study of Diagnostic Performance</article-title><source>Chest</source><year>2022</year><comment>
+<italic toggle="yes">Epub ahead of print</italic>
+</comment><pub-id pub-id-type="doi">10.1016/j.chest.2022.10.019</pub-id></element-citation></ref><ref id="B47-life-13-00354"><label>47.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lee-Mateus</surname><given-names>A.Y.</given-names></name>
+<name><surname>Reisenauer</surname><given-names>J.</given-names></name>
+<name><surname>Garcia-Saucedo</surname><given-names>J.C.</given-names></name>
+<name><surname>Abia-Trujillo</surname><given-names>D.</given-names></name>
+<name><surname>Buckarma</surname><given-names>E.H.</given-names></name>
+<name><surname>Edell</surname><given-names>E.S.</given-names></name>
+<name><surname>Grage</surname><given-names>R.A.</given-names></name>
+<name><surname>Bowman</surname><given-names>A.W.</given-names></name>
+<name><surname>Labarca</surname><given-names>G.</given-names></name>
+<name><surname>Johnson</surname><given-names>M.M.</given-names></name>
+<etal/>
+</person-group><article-title>Robotic-assisted bronchoscopy versus CT-guided transthoracic biopsy for diagnosis of pulmonary nodules</article-title><source>Respirology</source><year>2022</year><volume>28</volume><fpage>66</fpage><lpage>73</lpage><pub-id pub-id-type="doi">10.1111/resp.14368</pub-id><pub-id pub-id-type="pmid">36104312</pub-id>
+</element-citation></ref><ref id="B48-life-13-00354"><label>48.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Mukhtar</surname><given-names>O.</given-names></name>
+<name><surname>Shrestha</surname><given-names>B.</given-names></name>
+<name><surname>Khalid</surname><given-names>M.</given-names></name>
+<name><surname>Alhafdh</surname><given-names>O.</given-names></name>
+<name><surname>Datar</surname><given-names>P.</given-names></name>
+<name><surname>Bhattarai</surname><given-names>B.</given-names></name>
+<name><surname>Bakhiet</surname><given-names>M.</given-names></name>
+<name><surname>Gayam</surname><given-names>V.</given-names></name>
+<name><surname>Khalid</surname><given-names>M.</given-names></name>
+<name><surname>Quist</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group><article-title>Characteristics of 30-day readmission in spontaneous pneumothorax in the United States: A nationwide retrospective study</article-title><source>J. Community Hosp. Intern. Med. Perspect.</source><year>2019</year><volume>9</volume><fpage>215</fpage><lpage>220</lpage><pub-id pub-id-type="doi">10.1080/20009666.2019.1618135</pub-id><pub-id pub-id-type="pmid">31258860</pub-id>
+</element-citation></ref><ref id="B49-life-13-00354"><label>49.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pritchett</surname><given-names>M.A.</given-names></name>
+<name><surname>Bhadra</surname><given-names>K.</given-names></name>
+<name><surname>Mattingley</surname><given-names>J.S.</given-names></name>
+</person-group><article-title>Electromagnetic Navigation Bronchoscopy with Tomosynthesis-based Visualization and Positional Correction: Three-dimensional Accuracy as Confirmed by Cone-Beam Computed Tomography</article-title><source>J. Bronchol. Interv. Pulmonol.</source><year>2020</year><volume>28</volume><fpage>10</fpage><lpage>20</lpage><pub-id pub-id-type="doi">10.1097/LBR.0000000000000687</pub-id></element-citation></ref><ref id="B50-life-13-00354"><label>50.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pritchett</surname><given-names>M.A.</given-names></name>
+<name><surname>Bhadra</surname><given-names>K.</given-names></name>
+<name><surname>Calcutt</surname><given-names>M.</given-names></name>
+<name><surname>Folch</surname><given-names>E.</given-names></name>
+</person-group><article-title>Virtual or reality: Divergence between preprocedural computed tomography scans and lung anatomy during guided bronchoscopy</article-title><source>J. Thorac. Dis.</source><year>2020</year><volume>12</volume><fpage>1595</fpage><lpage>1611</lpage><pub-id pub-id-type="doi">10.21037/jtd.2020.01.35</pub-id><pub-id pub-id-type="pmid">32395297</pub-id>
+</element-citation></ref><ref id="B51-life-13-00354"><label>51.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sagar</surname><given-names>A.-E.S.</given-names></name>
+<name><surname>Sabath</surname><given-names>B.F.</given-names></name>
+<name><surname>Eapen</surname><given-names>G.A.</given-names></name>
+<name><surname>Song</surname><given-names>J.</given-names></name>
+<name><surname>Marcoux</surname><given-names>M.</given-names></name>
+<name><surname>Sarkiss</surname><given-names>M.</given-names></name>
+<name><surname>Arain</surname><given-names>M.H.</given-names></name>
+<name><surname>Grosu</surname><given-names>H.B.</given-names></name>
+<name><surname>Ost</surname><given-names>D.E.</given-names></name>
+<name><surname>Jimenez</surname><given-names>C.A.</given-names></name>
+<etal/>
+</person-group><article-title>Incidence and Location of Atelectasis Developed During Bronchoscopy Under General Anesthesia: The I-LOCATE Trial</article-title><source>Chest</source><year>2020</year><volume>158</volume><fpage>2658</fpage><lpage>2666</lpage><pub-id pub-id-type="doi">10.1016/j.chest.2020.05.565</pub-id><pub-id pub-id-type="pmid">32561439</pub-id>
+</element-citation></ref><ref id="B52-life-13-00354"><label>52.</label><element-citation publication-type="gov"><person-group person-group-type="author">
+<name><surname>Lentini</surname><given-names>C.</given-names></name>
+<name><surname>Granlund</surname><given-names>B.</given-names></name>
+</person-group><article-title>Anesthetic Considerations for Bronchoscopic Procedures</article-title><comment>Available online: <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/books/NBK572074/" ext-link-type="uri">http://www.ncbi.nlm.nih.gov/books/NBK572074/</ext-link></comment><date-in-citation content-type="access-date" iso-8601-date="2022-10-28">(accessed on 28 October 2022)</date-in-citation></element-citation></ref><ref id="B53-life-13-00354"><label>53.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pritchett</surname><given-names>M.A.</given-names></name>
+<name><surname>Lau</surname><given-names>K.</given-names></name>
+<name><surname>Skibo</surname><given-names>S.</given-names></name>
+<name><surname>Phillips</surname><given-names>K.A.</given-names></name>
+<name><surname>Bhadra</surname><given-names>K.</given-names></name>
+</person-group><article-title>Anesthesia considerations to reduce motion and atelectasis during advanced guided bronchoscopy</article-title><source>BMC Pulm. Med.</source><year>2021</year><volume>21</volume><elocation-id>240</elocation-id><pub-id pub-id-type="doi">10.1186/s12890-021-01584-6</pub-id><pub-id pub-id-type="pmid">34273966</pub-id>
+</element-citation></ref><ref id="B54-life-13-00354"><label>54.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kammer</surname><given-names>M.N.</given-names></name>
+<name><surname>Heideman</surname><given-names>B.E.</given-names></name>
+<name><surname>Maldonado</surname><given-names>F.</given-names></name>
+</person-group><article-title>Should We Start with Navigation or Endobronchial Ultrasound Bronchoscopy? Insights From Monte Carlo Simulations</article-title><source>Chest</source><year>2022</year><volume>162</volume><fpage>265</fpage><lpage>268</lpage><pub-id pub-id-type="doi">10.1016/j.chest.2022.02.040</pub-id><pub-id pub-id-type="pmid">35248550</pub-id>
+</element-citation></ref><ref id="B55-life-13-00354"><label>55.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>McKenna</surname><given-names>R.J.</given-names></name>
+</person-group><article-title>Complications and Learning Curves for Video-Assisted Thoracic Surgery Lobectomy</article-title><source>Thorac. Surg. Clin.</source><year>2008</year><volume>18</volume><fpage>275</fpage><lpage>280</lpage><pub-id pub-id-type="doi">10.1016/j.thorsurg.2008.04.004</pub-id><pub-id pub-id-type="pmid">18831503</pub-id>
+</element-citation></ref><ref id="B56-life-13-00354"><label>56.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cattaneo</surname><given-names>S.M.</given-names></name>
+<name><surname>Park</surname><given-names>B.J.</given-names></name>
+<name><surname>Wilton</surname><given-names>A.S.</given-names></name>
+<name><surname>Seshan</surname><given-names>V.E.</given-names></name>
+<name><surname>Bains</surname><given-names>M.S.</given-names></name>
+<name><surname>Downey</surname><given-names>R.J.</given-names></name>
+<name><surname>Flores</surname><given-names>R.M.</given-names></name>
+<name><surname>Rizk</surname><given-names>N.</given-names></name>
+<name><surname>Rusch</surname><given-names>V.W.</given-names></name>
+</person-group><article-title>Use of Video-Assisted Thoracic Surgery for Lobectomy in the Elderly Results in Fewer Complications</article-title><source>Ann. Thorac. Surg.</source><year>2008</year><volume>85</volume><fpage>231</fpage><lpage>236</lpage><pub-id pub-id-type="doi">10.1016/j.athoracsur.2007.07.080</pub-id><pub-id pub-id-type="pmid">18154816</pub-id>
+</element-citation></ref><ref id="B57-life-13-00354"><label>57.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Puri</surname><given-names>V.</given-names></name>
+<name><surname>Patel</surname><given-names>A.</given-names></name>
+<name><surname>Majumder</surname><given-names>K.</given-names></name>
+<name><surname>Bell</surname><given-names>J.M.</given-names></name>
+<name><surname>Crabtree</surname><given-names>T.D.</given-names></name>
+<name><surname>Krupnick</surname><given-names>A.S.</given-names></name>
+<name><surname>Kreisel</surname><given-names>D.</given-names></name>
+<name><surname>Broderick</surname><given-names>S.R.</given-names></name>
+<name><surname>Patterson</surname><given-names>G.A.</given-names></name>
+<name><surname>Meyers</surname><given-names>B.F.</given-names></name>
+</person-group><article-title>Intraoperative conversion from video-assisted thoracoscopic surgery lobectomy to open thoracotomy: A study of causes and implications</article-title><source>J. Thorac. Cardiovasc. Surg.</source><year>2015</year><volume>149</volume><fpage>55</fpage><lpage>62.e1</lpage><pub-id pub-id-type="doi">10.1016/j.jtcvs.2014.08.074</pub-id><pub-id pub-id-type="pmid">25439768</pub-id>
+</element-citation></ref><ref id="B58-life-13-00354"><label>58.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Holzhey</surname><given-names>D.M.</given-names></name>
+<name><surname>Seeburger</surname><given-names>J.</given-names></name>
+<name><surname>Misfeld</surname><given-names>M.</given-names></name>
+<name><surname>Borger</surname><given-names>M.A.</given-names></name>
+<name><surname>Mohr</surname><given-names>F.W.</given-names></name>
+</person-group><article-title>Learning minimally invasive mitral valve surgery: A cumulative sum sequential probability analysis of 3895 operations from a single high-volume center</article-title><source>Circulation</source><year>2013</year><volume>128</volume><fpage>483</fpage><lpage>491</lpage><pub-id pub-id-type="doi">10.1161/CIRCULATIONAHA.112.001402</pub-id><pub-id pub-id-type="pmid">23804253</pub-id>
+</element-citation></ref><ref id="B59-life-13-00354"><label>59.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kapp</surname><given-names>C.M.</given-names></name>
+<name><surname>Akulian</surname><given-names>J.A.</given-names></name>
+<name><surname>Yu</surname><given-names>D.H.</given-names></name>
+<name><surname>Chen</surname><given-names>A.</given-names></name>
+<name><surname>C&#x000e1;rdenas-Garc&#x000ed;a</surname><given-names>J.</given-names></name>
+<name><surname>Molena</surname><given-names>D.</given-names></name>
+<name><surname>Vachani</surname><given-names>A.</given-names></name>
+<name><surname>Wahidi</surname><given-names>M.M.</given-names></name>
+<name><surname>Maldonado</surname><given-names>F.</given-names></name>
+<name><surname>Fielding</surname><given-names>D.</given-names></name>
+<etal/>
+</person-group><article-title>Cognitive Load in Electromagnetic Navigational and Robotic Bronchoscopy for Pulmonary Nodules</article-title><source>ATS Sch.</source><year>2021</year><volume>2</volume><fpage>97</fpage><lpage>107</lpage><pub-id pub-id-type="doi">10.34197/ats-scholar.2020-0033OC</pub-id><pub-id pub-id-type="pmid">33870326</pub-id>
+</element-citation></ref><ref id="B60-life-13-00354"><label>60.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>H.J.</given-names></name>
+<name><surname>Argento</surname><given-names>A.C.</given-names></name>
+<name><surname>Batra</surname><given-names>H.</given-names></name>
+<name><surname>Benzaquen</surname><given-names>S.</given-names></name>
+<name><surname>Bramley</surname><given-names>K.</given-names></name>
+<name><surname>Chambers</surname><given-names>D.</given-names></name>
+<name><surname>Desai</surname><given-names>N.</given-names></name>
+<name><surname>Dincer</surname><given-names>H.E.</given-names></name>
+<name><surname>Ferguson</surname><given-names>J.S.</given-names></name>
+<name><surname>Kalanjeri</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group><article-title>A Multicenter Study Assessing Interventional Pulmonary Fellow Competency in Electromagnetic Navigation Bronchoscopy</article-title><source>ATS Sch.</source><year>2022</year><volume>3</volume><fpage>220</fpage><lpage>228</lpage><pub-id pub-id-type="doi">10.34197/ats-scholar.2021-0121OC</pub-id><pub-id pub-id-type="pmid">35924198</pub-id>
+</element-citation></ref><ref id="B61-life-13-00354"><label>61.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Toennesen</surname><given-names>L.L.M.</given-names></name>
+<name><surname>Vindum</surname><given-names>H.H.</given-names></name>
+<name><surname>Risom</surname><given-names>E.</given-names></name>
+<name><surname>Pulga</surname><given-names>A.</given-names></name>
+<name><surname>Nessar</surname><given-names>R.M.</given-names></name>
+<name><surname>Arshad</surname><given-names>A.</given-names></name>
+<name><surname>Christophersen</surname><given-names>A.</given-names></name>
+<name><surname>Konge</surname><given-names>L.P.</given-names></name>
+<name><surname>Clementsen</surname><given-names>P.F.P.</given-names></name>
+</person-group><article-title>Learning Curves for Electromagnetic Navigation Bronchoscopy Using CUSUM Analysis</article-title><source>J. Bronchol. Interv. Pulmonol.</source><year>2021</year><volume>29</volume><fpage>164</fpage><lpage>170</lpage><pub-id pub-id-type="doi">10.1097/LBR.0000000000000815</pub-id></element-citation></ref><ref id="B62-life-13-00354"><label>62.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Leonard</surname><given-names>K.</given-names></name>
+<name><surname>Low</surname><given-names>S.-W.</given-names></name>
+<name><surname>Swanner</surname><given-names>B.</given-names></name>
+<name><surname>E Johnson</surname><given-names>J.</given-names></name>
+<name><surname>Rickman</surname><given-names>O.B.</given-names></name>
+<name><surname>Maldonado</surname><given-names>F.</given-names></name>
+<name><surname>Lentz</surname><given-names>R.J.</given-names></name>
+</person-group><article-title>Diagnostic Yield vs. Diagnostic Accuracy for Lung Nodule Biopsy Evaluation: Evidence Supporting a Pragmatic end Point for Future Studies</article-title><source>Chest</source><year>2022</year><volume>162</volume><fpage>A2087</fpage><lpage>A2088</lpage><pub-id pub-id-type="doi">10.1016/j.chest.2022.08.1724</pub-id></element-citation></ref><ref id="B63-life-13-00354"><label>63.</label><element-citation publication-type="confproc"><person-group person-group-type="author">
+<name><surname>Maldonado</surname><given-names>F.</given-names></name>
+</person-group><article-title>Building Scientific Rigor in IP</article-title><source>Proceedings of the American Association of Bronchology and Interventional Pulmonology 5th Annual Conference</source><conf-loc>Nashville, TN, USA</conf-loc><conf-date>11&#x02013;13 August 2022</conf-date></element-citation></ref><ref id="B64-life-13-00354"><label>64.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Furuya</surname><given-names>N.</given-names></name>
+<name><surname>Matsumoto</surname><given-names>S.</given-names></name>
+<name><surname>Kakinuma</surname><given-names>K.</given-names></name>
+<name><surname>Morikawa</surname><given-names>K.</given-names></name>
+<name><surname>Inoue</surname><given-names>T.</given-names></name>
+<name><surname>Saji</surname><given-names>H.</given-names></name>
+<name><surname>Goto</surname><given-names>K.</given-names></name>
+<name><surname>Mineshita</surname><given-names>M.</given-names></name>
+</person-group><article-title>Suitability of transbronchial brushing cytology specimens for next-generation sequencing in peripheral lung cancer</article-title><source>Cancer Sci.</source><year>2020</year><volume>112</volume><fpage>380</fpage><lpage>387</lpage><pub-id pub-id-type="doi">10.1111/cas.14714</pub-id><pub-id pub-id-type="pmid">33124129</pub-id>
+</element-citation></ref><ref id="B65-life-13-00354"><label>65.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhao</surname><given-names>J.J.</given-names></name>
+<name><surname>Chan</surname><given-names>H.P.</given-names></name>
+<name><surname>Soon</surname><given-names>Y.Y.</given-names></name>
+<name><surname>Huang</surname><given-names>Y.</given-names></name>
+<name><surname>A Soo</surname><given-names>R.</given-names></name>
+<name><surname>Kee</surname><given-names>A.C.L.</given-names></name>
+</person-group><article-title>A systematic review and meta-analysis of the adequacy of endobronchial ultrasound transbronchial needle aspiration for next-generation sequencing in patients with non-small cell lung cancer</article-title><source>Lung Cancer</source><year>2022</year><volume>166</volume><fpage>17</fpage><lpage>26</lpage><pub-id pub-id-type="doi">10.1016/j.lungcan.2022.01.018</pub-id><pub-id pub-id-type="pmid">35151114</pub-id>
+</element-citation></ref><ref id="B66-life-13-00354"><label>66.</label><element-citation publication-type="other"><person-group person-group-type="author">
+<name><surname>Rai</surname><given-names>H.M.</given-names></name>
+<name><surname>Graham</surname><given-names>E.M.</given-names></name>
+<name><surname>Ghoshal</surname><given-names>A.M.</given-names></name>
+<name><surname>McDill</surname><given-names>H.M.</given-names></name>
+<name><surname>Hassan</surname><given-names>M.P.</given-names></name>
+<name><surname>Nicholson</surname><given-names>T.M.</given-names></name>
+<name><surname>Taylor</surname><given-names>L.M.</given-names></name>
+<name><surname>Corcoran</surname><given-names>J.D.</given-names></name>
+<name><surname>Howell</surname><given-names>T.M.</given-names></name>
+<name><surname>Daneshvar</surname><given-names>C.M.</given-names></name>
+</person-group><article-title>Endobronchial Ultrasound-Guided Sampling of Centrally Located Intrapulmonary Tumors Provides Suitable Material for Diagnostic and Molecular Testing</article-title><source>J. Bronchol. Interv. Pulmonol.</source><year>2022</year><comment>
+<italic toggle="yes">Epub ahead of print</italic>
+</comment><pub-id pub-id-type="doi">10.1097/lbr.0000000000000895</pub-id></element-citation></ref><ref id="B67-life-13-00354"><label>67.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Livi</surname><given-names>V.</given-names></name>
+<name><surname>Paioli</surname><given-names>D.</given-names></name>
+<name><surname>Cancellieri</surname><given-names>A.</given-names></name>
+<name><surname>Betti</surname><given-names>S.</given-names></name>
+<name><surname>Natali</surname><given-names>F.</given-names></name>
+<name><surname>Ferrari</surname><given-names>M.</given-names></name>
+<name><surname>Fiorentino</surname><given-names>M.</given-names></name>
+<name><surname>Trisolini</surname><given-names>R.</given-names></name>
+</person-group><article-title>Diagnosis and Molecular Profiling of Lung Cancer by Percutaneous Ultrasound-Guided Biopsy of Superficial Metastatic Sites Is Safe and Highly Effective</article-title><source>Respiration</source><year>2021</year><volume>100</volume><fpage>515</fpage><lpage>522</lpage><pub-id pub-id-type="doi">10.1159/000514316</pub-id><pub-id pub-id-type="pmid">33827098</pub-id>
+</element-citation></ref><ref id="B68-life-13-00354"><label>68.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Orr</surname><given-names>L.</given-names></name>
+<name><surname>Krochmal</surname><given-names>R.</given-names></name>
+<name><surname>Sonti</surname><given-names>R.</given-names></name>
+<name><surname>DeBrito</surname><given-names>P.</given-names></name>
+<name><surname>Anderson</surname><given-names>E.D.</given-names></name>
+</person-group><article-title>Comparison of the GenCut Core Biopsy System to Transbronchial Biopsy Forceps for Flexible Bronchoscopic Lung Biopsy</article-title><source>J. Bronchol. Interv. Pulmonol.</source><year>2022</year><volume>29</volume><fpage>140</fpage><lpage>145</lpage><pub-id pub-id-type="doi">10.1097/LBR.0000000000000803</pub-id></element-citation></ref><ref id="B69-life-13-00354"><label>69.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wijmans</surname><given-names>L.</given-names></name>
+<name><surname>Yared</surname><given-names>J.</given-names></name>
+<name><surname>De Bruin</surname><given-names>D.M.</given-names></name>
+<name><surname>Meijer</surname><given-names>S.</given-names></name>
+<name><surname>Baas</surname><given-names>P.</given-names></name>
+<name><surname>Bonta</surname><given-names>P.I.</given-names></name>
+<name><surname>Annema</surname><given-names>J.T.</given-names></name>
+</person-group><article-title>Needle-based confocal laser endomicroscopy for real-time diagnosing and staging of lung cancer</article-title><source>Eur. Respir. J.</source><year>2019</year><volume>53</volume><fpage>1801520</fpage><pub-id pub-id-type="doi">10.1183/13993003.01520-2018</pub-id><pub-id pub-id-type="pmid">31023849</pub-id>
+</element-citation></ref><ref id="B70-life-13-00354"><label>70.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Manley</surname><given-names>C.</given-names></name>
+<name><surname>Kramer</surname><given-names>T.</given-names></name>
+<name><surname>Kumar</surname><given-names>R.</given-names></name>
+<name><surname>Gong</surname><given-names>Y.</given-names></name>
+<name><surname>Ehya</surname><given-names>H.</given-names></name>
+<name><surname>Bonta</surname><given-names>P.I.</given-names></name>
+<name><surname>Annema</surname><given-names>J.</given-names></name>
+</person-group><article-title>Robotic Navigational Bronchoscopy Combined with Needle-Based Confocal Laser Endomicroscopy: Case Report of a Novel Approach to Diagnose Small Lung Nodules</article-title><source>Respiration</source><year>2022</year><volume>101</volume><fpage>494</fpage><lpage>499</lpage><pub-id pub-id-type="doi">10.1159/000522515</pub-id><pub-id pub-id-type="pmid">35350030</pub-id>
+</element-citation></ref><ref id="B71-life-13-00354"><label>71.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Swaney</surname><given-names>P.J.</given-names></name>
+<name><surname>Mahoney</surname><given-names>A.W.</given-names></name>
+<name><surname>Hartley</surname><given-names>B.I.</given-names></name>
+<name><surname>Remirez</surname><given-names>A.A.</given-names></name>
+<name><surname>Lamers</surname><given-names>E.</given-names></name>
+<name><surname>Feins</surname><given-names>R.H.</given-names></name>
+<name><surname>Alterovitz</surname><given-names>R.</given-names></name>
+<name><surname>Webster</surname><given-names>I.R.J.</given-names></name>
+</person-group><article-title>Toward Transoral Peripheral Lung Access: Combining Continuum Robots and Steerable Needles</article-title><source>J. Med. Robot. Res.</source><year>2017</year><volume>2</volume><fpage>1750001</fpage><pub-id pub-id-type="doi">10.1142/S2424905X17500015</pub-id><pub-id pub-id-type="pmid">28480335</pub-id>
+</element-citation></ref><ref id="B72-life-13-00354"><label>72.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Oberg</surname><given-names>C.L.</given-names></name>
+<name><surname>Lau</surname><given-names>R.P.</given-names></name>
+<name><surname>Folch</surname><given-names>E.E.</given-names></name>
+<name><surname>He</surname><given-names>T.</given-names></name>
+<name><surname>Ronaghi</surname><given-names>R.</given-names></name>
+<name><surname>Susanto</surname><given-names>I.</given-names></name>
+<name><surname>Channick</surname><given-names>C.</given-names></name>
+<name><surname>Tome</surname><given-names>R.G.</given-names></name>
+<name><surname>Oh</surname><given-names>S.</given-names></name>
+</person-group><article-title>Novel Robotic-Assisted Cryobiopsy for Peripheral Pulmonary Lesions</article-title><source>Lung</source><year>2022</year><volume>200</volume><fpage>737</fpage><lpage>745</lpage><pub-id pub-id-type="doi">10.1007/s00408-022-00578-3</pub-id><pub-id pub-id-type="pmid">36216921</pub-id>
+</element-citation></ref><ref id="B73-life-13-00354"><label>73.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ben</surname><given-names>X.</given-names></name>
+<name><surname>Tian</surname><given-names>D.</given-names></name>
+<name><surname>Zhuang</surname><given-names>W.</given-names></name>
+<name><surname>Chen</surname><given-names>R.</given-names></name>
+<name><surname>Wang</surname><given-names>S.</given-names></name>
+<name><surname>Zhou</surname><given-names>Z.</given-names></name>
+<name><surname>Deng</surname><given-names>C.</given-names></name>
+<name><surname>Shi</surname><given-names>R.</given-names></name>
+<name><surname>Liu</surname><given-names>S.</given-names></name>
+<name><surname>Zhang</surname><given-names>D.</given-names></name>
+<etal/>
+</person-group><article-title>Accuracy of next-generation sequencing for molecular profiling of small specimen of lung cancer: A prospective pilot study of side-by-side comparison</article-title><source>Diagn. Pathol.</source><year>2022</year><volume>17</volume><fpage>78</fpage><pub-id pub-id-type="doi">10.1186/s13000-022-01255-y</pub-id><pub-id pub-id-type="pmid">36224661</pub-id>
+</element-citation></ref><ref id="B74-life-13-00354"><label>74.</label><element-citation publication-type="gov"><person-group person-group-type="author">
+<collab>CMS</collab>
+</person-group><article-title>RVU22A</article-title><comment>Available online: <ext-link xlink:href="https://www.cms.gov/medicaremedicare-fee-service-paymentphysicianfeeschedpfs-relative-value-files/rvu22a" ext-link-type="uri">https://www.cms.gov/medicaremedicare-fee-service-paymentphysicianfeeschedpfs-relative-value-files/rvu22a</ext-link></comment><date-in-citation content-type="access-date" iso-8601-date="2022-12-06">(accessed on 6 December 2022)</date-in-citation></element-citation></ref><ref id="B75-life-13-00354"><label>75.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sabath</surname><given-names>B.F.</given-names></name>
+<name><surname>Casal</surname><given-names>R.F.</given-names></name>
+</person-group><article-title>Bronchoscopic ablation of peripheral lung tumors</article-title><source>J. Thorac. Dis.</source><year>2019</year><volume>11</volume><fpage>2628</fpage><lpage>2638</lpage><pub-id pub-id-type="doi">10.21037/jtd.2019.01.65</pub-id><pub-id pub-id-type="pmid">31372299</pub-id>
+</element-citation></ref><ref id="B76-life-13-00354"><label>76.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>DeMaio</surname><given-names>A.</given-names></name>
+<name><surname>Sterman</surname><given-names>D.</given-names></name>
+</person-group><article-title>Bronchoscopic intratumoural therapies for non-small cell lung cancer</article-title><source>Eur. Respir. Rev.</source><year>2020</year><volume>29</volume><fpage>200028</fpage><pub-id pub-id-type="doi">10.1183/16000617.0028-2020</pub-id><pub-id pub-id-type="pmid">32554757</pub-id>
+</element-citation></ref><ref id="B77-life-13-00354"><label>77.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chan</surname><given-names>J.W.Y.</given-names></name>
+<name><surname>Chang</surname><given-names>A.T.C.</given-names></name>
+<name><surname>Yu</surname><given-names>P.S.Y.</given-names></name>
+<name><surname>Lau</surname><given-names>R.W.H.</given-names></name>
+<name><surname>Ng</surname><given-names>C.S.H.</given-names></name>
+</person-group><article-title>Robotic Assisted-Bronchoscopy with Cone-Beam CT ICG Dye Marking for Lung Nodule Localization: Experience Beyond USA</article-title><source>Front. Surg.</source><year>2022</year><volume>9</volume><fpage>943531</fpage><pub-id pub-id-type="doi">10.3389/fsurg.2022.943531</pub-id><pub-id pub-id-type="pmid">35836599</pub-id>
+</element-citation></ref><ref id="B78-life-13-00354"><label>78.</label><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Saji</surname><given-names>H.</given-names></name>
+<name><surname>Okada</surname><given-names>M.</given-names></name>
+<name><surname>Tsuboi</surname><given-names>M.</given-names></name>
+<name><surname>Nakajima</surname><given-names>R.</given-names></name>
+<name><surname>Suzuki</surname><given-names>K.</given-names></name>
+<name><surname>Aokage</surname><given-names>K.</given-names></name>
+<name><surname>Aoki</surname><given-names>T.</given-names></name>
+<name><surname>Okami</surname><given-names>J.</given-names></name>
+<name><surname>Yoshino</surname><given-names>I.</given-names></name>
+<name><surname>Ito</surname><given-names>H.</given-names></name>
+<etal/>
+</person-group><article-title>Segmentectomy versus lobectomy in small-sized peripheral non-small-cell lung cancer (JCOG0802/WJOG4607L): A multicentre, open-label, phase 3, randomised, controlled, non-inferiority trial</article-title><source>Lancet</source><year>2022</year><volume>399</volume><fpage>1607</fpage><lpage>1617</lpage><pub-id pub-id-type="doi">10.1016/S0140-6736(21)02333-3</pub-id><pub-id pub-id-type="pmid">35461558</pub-id>
+</element-citation></ref></ref-list></back><floats-group><fig position="float" id="life-13-00354-f001"><label>Figure 1</label><caption><p>Monarch&#x02122; platform (Images courtesy of Auris Health, Inc., Redwood City, CA, USA).</p></caption><graphic xlink:href="life-13-00354-g001" position="float"/></fig><fig position="float" id="life-13-00354-f002"><label>Figure 2</label><caption><p>Ion Robotic Bronchoscopy System (Images courtesy of Intuitive Surgical&#x000a9;, Sunnyvale, CA, USA).</p></caption><graphic xlink:href="life-13-00354-g002" position="float"/></fig><fig position="float" id="life-13-00354-f003"><label>Figure 3</label><caption><p>Galaxy System&#x02122; (Images courtesy of Noah Medical, San Carlos, CA, USA).</p></caption><graphic xlink:href="life-13-00354-g003" position="float"/></fig><table-wrap position="float" id="life-13-00354-t001"><object-id pub-id-type="pii">life-13-00354-t001_Table 1</object-id><label>Table 1</label><caption><p>Technical Differences in Robotic Bronchoscopy Platforms.</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+</th><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Monarch Robotic Bronchoscopy System (Auris Health, Inc., Redwood City, CA, USA)</th><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Ion Robotic Bronchoscopy System (Intuitive Surgical&#x000a9;, Sunnyvale, CA, USA)</th><th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">The Galaxy System (Noah Medical, San Carlos, CA, USA)</th></tr></thead><tbody><tr><td align="center" valign="middle" rowspan="1" colspan="1">Navigation Technology</td><td align="center" valign="middle" rowspan="1" colspan="1">Electromagnetic Navigation</td><td align="center" valign="middle" rowspan="1" colspan="1">Shape Sensing</td><td align="center" valign="middle" rowspan="1" colspan="1">Electromagnetic with digital tomosynthesis TiLT+ Technology&#x02122;</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">Catheter Outer Diameter</td><td align="center" valign="middle" rowspan="1" colspan="1">Outer Sheath: 6 mm<break/>Inner Scope: 4.2 mm</td><td align="center" valign="middle" rowspan="1" colspan="1">3.5 mm</td><td align="center" valign="middle" rowspan="1" colspan="1">4.0 mm</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">Working Channel Diameter</td><td align="center" valign="middle" rowspan="1" colspan="1">2.1 mm</td><td align="center" valign="middle" rowspan="1" colspan="1">2 mm</td><td align="center" valign="middle" rowspan="1" colspan="1">2.1 mm</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">Vision during Biopsy</td><td align="center" valign="middle" rowspan="1" colspan="1">Yes</td><td align="center" valign="middle" rowspan="1" colspan="1">No</td><td align="center" valign="middle" rowspan="1" colspan="1">Yes</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">Scope Reprocessing</td><td align="center" valign="middle" rowspan="1" colspan="1">Yes</td><td align="center" valign="middle" rowspan="1" colspan="1">Yes</td><td align="center" valign="middle" rowspan="1" colspan="1">No, disposable</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">Compatibility with Cone Beam or Advanced Fluoroscopy</td><td align="center" valign="middle" rowspan="1" colspan="1">Yes</td><td align="center" valign="middle" rowspan="1" colspan="1">Yes</td><td align="center" valign="middle" rowspan="1" colspan="1">Yes</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">Therapeutic tools</td><td align="center" valign="middle" rowspan="1" colspan="1">Under Investigation</td><td align="center" valign="middle" rowspan="1" colspan="1">Under Investigation</td><td align="center" valign="middle" rowspan="1" colspan="1">Unclear</td></tr><tr><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">FDA Approval</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Yes</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Yes</td><td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Pending</td></tr></tbody></table></table-wrap></floats-group></article>

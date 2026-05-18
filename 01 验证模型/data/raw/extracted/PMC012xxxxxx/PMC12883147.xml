@@ -1,0 +1,949 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" id="cssc70432" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">ChemSusChem</journal-id><journal-id journal-id-type="iso-abbrev">ChemSusChem</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)1864-564X</journal-id><journal-id journal-id-type="publisher-id">CSSC</journal-id><journal-title-group><journal-title>Chemsuschem</journal-title></journal-title-group><issn pub-type="ppub">1864-5631</issn><issn pub-type="epub">1864-564X</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">41655078</article-id><article-id pub-id-type="pmc">PMC12883147</article-id><article-id pub-id-type="doi">10.1002/cssc.202500643</article-id><article-id pub-id-type="publisher-id">CSSC70432</article-id><article-categories><subj-group subj-group-type="overline"><subject>Research Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>Depolymerisation of <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone Organosolv Lignins with Unsupported Molybdenum&#x02010;Based Catalysts</article-title></title-group><contrib-group><contrib id="cssc70432-cr-0001" contrib-type="author"><name><surname>K&#x000e4;ns&#x000e4;koski</surname><given-names>Silja</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0000-5551-5181</contrib-id><xref rid="cssc70432-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cssc70432-cr-0002" contrib-type="author"><name><surname>Kasipandi</surname><given-names>Saravanan</given-names></name><xref rid="cssc70432-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="cssc70432-note-0001" ref-type="author-notes">
+<sup>[Link]</sup>
+</xref></contrib><contrib id="cssc70432-cr-0003" contrib-type="author"><name><surname>Ohra&#x02010;aho</surname><given-names>Taina</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-7924-0335</contrib-id><xref rid="cssc70432-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cssc70432-cr-0004" contrib-type="author"><name><surname>Wirtanen</surname><given-names>Tom</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-0810-2971</contrib-id><xref rid="cssc70432-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cssc70432-cr-0005" contrib-type="author"><name><surname>Lehtonen</surname><given-names>Juha</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-6200-3213</contrib-id><xref rid="cssc70432-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cssc70432-cr-0006" contrib-type="author"><name><surname>Alonso</surname><given-names>David Martin</given-names></name><xref rid="cssc70432-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="cssc70432-cr-0007" contrib-type="author"><name><surname>Vila</surname><given-names>Francisco</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-4143-7052</contrib-id><xref rid="cssc70432-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="cssc70432-cr-0008" contrib-type="author" corresp="yes"><name><surname>Rautiainen</surname><given-names>Sari</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-6958-576X</contrib-id><xref rid="cssc70432-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><address><email>sari.rautiainen@vtt.fi</email></address></contrib></contrib-group><aff id="cssc70432-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<institution>VTT Technical Research Centre of Finland Ltd.</institution>
+<city>Espoo</city>
+<country country="FI">Finland</country>
+</aff><aff id="cssc70432-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">EQS Group (Sustainable Energy and Chemistry Group)</named-content>
+<institution>Institute of Catalysis and Petrochemistry (CSIC)</institution>
+<city>Madrid</city>
+<country country="ES">Spain</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>Sari Rautiainen (<email>sari.rautiainen@vtt.fi</email>)</corresp><fn id="cssc70432-note-0001"><p>&#x02020; Deceased April 2024.</p></fn></author-notes><pub-date pub-type="epub"><day>08</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="ppub"><day>12</day><month>2</month><year>2026</year></pub-date><volume>19</volume><issue seq="400">3</issue><issue-id pub-id-type="doi">10.1002/cssc.v19.3</issue-id><elocation-id>e202500643</elocation-id><history>
+<date date-type="rev-recd"><day>22</day><month>12</month><year>2025</year></date>
+<date date-type="received"><day>28</day><month>3</month><year>2025</year></date>
+<date date-type="accepted"><day>22</day><month>12</month><year>2025</year></date>
+</history><permissions><!--&#x000a9; 2026 Wiley&#x02010;VCH GmbH--><copyright-statement content-type="article-copyright">&#x000a9; 2026 The Author(s). ChemSusChem published by Wiley&#x02010;VCH GmbH</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:CSSC-19-e202500643.pdf"/><abstract><p>Lignin is an attractive feedstock for a wide variety of applications ranging from aromatic chemicals and transportation fuels to resins and coatings. Emerging biorefinery concepts, like the organosolv process, enable the separation of all the lignocellulose components, and moreover, produce lignins of high quality and purity susceptible to valorisation by depolymerisation. In this work, we focus on the depolymerisation of lignins obtained by <italic toggle="yes">&#x003b3;</italic>&#x02010;valerolactone (GVL) organosolv fractionation of four biomass feedstocks, eucalyptus, white birch, sugarcane bagasse and Scots pine. We demonstrate that lignins extracted with the GVL process are depolymerised using unsupported molybdenum&#x02010;based catalysts under reductive conditions in supercritical ethanol. As a result, over 90% yields of low&#x02010;molecular&#x02010;weight lignin oils are obtained with minimal char formation, yields of the aromatic monomers being 7&#x02013;16 wt%. Furthermore, the design of experiments method is used to analyse the effect of depolymerisation conditions, catalyst, hydrogen loading and temperature, on the yields and properties of the product fractions. Notably, we show that the properties of the lignin oils and monoaromatics can be tuned towards the targeted application by modifying the depolymerisation conditions.</p></abstract><abstract abstract-type="graphical"><p>Lignins from <italic toggle="yes">&#x003b3;</italic>&#x02010;valerolactone organosolv fractionation were depolymerised in ethanol using unsupported molybdenum catalysts. Over 90% yields of low&#x02010;molecular&#x02010;weight lignin oil were obtained with minimal char formation, yields of the aromatic monomers being 7&#x02013;16 wt%. Furthermore, we show how the product properties, like molecular weight and hydroxyl content, can be tuned by modifying the depolymerisation conditions.<boxed-text position="anchor" content-type="graphic"><graphic xlink:href="CSSC-19-e202500643-g004.jpg" position="anchor" id="jats-graphic-1"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="cssc70432-kwd-0001">depolymerisation</kwd><kwd id="cssc70432-kwd-0002">heterogenous catalysis</kwd><kwd id="cssc70432-kwd-0005">hydrogenolysis</kwd><kwd id="cssc70432-kwd-0003">lignin</kwd><kwd id="cssc70432-kwd-0004">molybdenum</kwd></kwd-group><counts><fig-count count="8"/><table-count count="2"/><equation-count count="0"/><ref-count count="62"/><page-count count="13"/><word-count count="10402"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>12 February 2026</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.8 mode:remove_FC converted:08.02.2026</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="cssc70432-cit-0063">
+<string-name>
+<given-names>Silja</given-names>
+<surname>K&#x000e4;ns&#x000e4;koski</surname>
+</string-name>, <string-name>
+<given-names>Saravanan</given-names>
+<surname>Kasipandi</surname>
+</string-name>, <string-name>
+<given-names>Taina</given-names>
+<surname>Ohra&#x02010;aho</surname>
+</string-name>, <string-name>
+<given-names>Tom</given-names>
+<surname>Wirtanen</surname>
+</string-name>, <string-name>
+<given-names>Juha</given-names>
+<surname>Lehtonen</surname>
+</string-name>, <string-name>
+<given-names>David Martin</given-names>
+<surname>Alonso</surname>
+</string-name>, <string-name>
+<given-names>Francisco</given-names>
+<surname>Vila</surname>
+</string-name>, <string-name>
+<given-names>Sari</given-names>
+<surname>Rautiainen</surname>
+</string-name>, <source>ChemSusChem</source>
+<year>2026</year>, <volume>19</volume>, <elocation-id>e202500643</elocation-id>. <pub-id pub-id-type="doi">10.1002/cssc.202500643</pub-id>
+</mixed-citation>
+</p></notes></front><body><sec id="cssc70432-sec-0001"><label>1</label><title>Introduction</title><p>New renewable alternatives for fuels, chemicals and materials are required to decrease the stress and reliance society has on fossil resources. Biomass, lignocellulosic biomass in particular, is an attractive and accessible renewable carbon feedstock for value&#x02010;added products like chemicals and fuels&#x000a0;[<xref rid="cssc70432-bib-0001" ref-type="bibr">1</xref>, <xref rid="cssc70432-bib-0002" ref-type="bibr">2</xref>, <xref rid="cssc70432-bib-0003" ref-type="bibr">3</xref>]. Lignocellulosic biomass is made up of cellulose (35%&#x02013;50%), hemicellulose (25%&#x02013;30%), and lignin (15%&#x02013;30%)&#x000a0;[<xref rid="cssc70432-bib-0004" ref-type="bibr">4</xref>]. Of these, lignin is the only one with an aromatic skeleton, making it a noteworthy and underutilised source for aromatic chemicals and materials&#x000a0;[<xref rid="cssc70432-bib-0005" ref-type="bibr">5</xref>]. Although lignin is an attractive feedstock, its depolymerisation into monomers has challenged researchers for decades due to its complex and heterogeneous structure in addition to its tendency to condensate to new oligomeric and polymeric structures upon processing&#x000a0;[<xref rid="cssc70432-bib-0006" ref-type="bibr">6</xref>].</p><p>Lignin is a complex natural polymer that is mainly formed of three phenolic monomers: <italic toggle="yes">p</italic>&#x02010;coumaryl alcohol (H&#x02010;unit), coniferyl alcohol (G&#x02010;unit) and sinapyl alcohol (S&#x02010;unit) (Figure&#x000a0;<xref rid="cssc70432-fig-0001" ref-type="fig">1</xref>). The relative amount of these monolignols varies greatly depending on the biomass source. The lignin biomass sources can be divided into three categories: softwood, hardwood, and herbaceous (e.g. agricultural crops) lignin&#x000a0;[<xref rid="cssc70432-bib-0007" ref-type="bibr">7</xref>]. Softwood lignin is mainly comprised of G units, whereas hardwood lignin is composed of G and S units. Herbaceous lignin contains all H, G and S units&#x000a0;[<xref rid="cssc70432-bib-0008" ref-type="bibr">8</xref>]. The monolignols are connected to each other through various interunit linkages, some of the most abundant being <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4, <italic toggle="yes">&#x003b1;</italic>&#x02010;O&#x02010;4, <italic toggle="yes">&#x003b2;</italic>&#x02010;<italic toggle="yes">&#x003b2;</italic>, 4&#x02010;O&#x02010;5, <italic toggle="yes">&#x003b2;</italic>&#x02010;1 and 5&#x02010;5 (Figure&#x000a0;<xref rid="cssc70432-fig-0002" ref-type="fig">2</xref>). In general, C&#x02014;C bonds in the interunit linkages are harder to break compared to C&#x02014;O bonds. Lignin feedstocks containing low C&#x02014;C bond content and high amounts of <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 linkages are considered ideal for lignin depolymerisation&#x000a0;[<xref rid="cssc70432-bib-0009" ref-type="bibr">9</xref>]. Therefore, the structure of the lignin has a crucial role in the outcome of the depolymerisation.</p><fig position="float" fig-type="FIGURE" id="cssc70432-fig-0001"><label>FIGURE 1</label><caption><p>Monolignol structures.</p></caption><graphic xlink:href="CSSC-19-e202500643-g003" position="anchor" id="jats-graphic-3"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><fig position="float" fig-type="FIGURE" id="cssc70432-fig-0002"><label>FIGURE 2</label><caption><p>Interunit linkages, (A) <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4, (B) <italic toggle="yes">&#x003b2;</italic>&#x02010;<italic toggle="yes">&#x003b2;</italic>, (C) <italic toggle="yes">&#x003b2;</italic>&#x02010;5.</p></caption><graphic xlink:href="CSSC-19-e202500643-g007" position="anchor" id="jats-graphic-5"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>In conventional pulping processes, like Kraft, sulphite and soda pulping, lignin is often seen as a hindrance for the valorisation of cellulose, and consequently, the goal of these processes is the removal of lignin from biomass to create a processable cellulose fraction with no consideration for the properties of the lignin&#x000a0;[<xref rid="cssc70432-bib-0010" ref-type="bibr">10</xref>]. Of these fractionation methods, Kraft pulping is the dominant technique, accounting for approximately 80% of chemical pulping processes&#x000a0;[<xref rid="cssc70432-bib-0011" ref-type="bibr">11</xref>]. Considerable degradation of lignin takes place during the harsh Kraft pulping process, resulting in low content of <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 linkages and a high degree of condensation, making Kraft lignin a poor candidate for further depolymerisation into monoaromatic chemicals. Furthermore, the lignin is present in black liquor in the Kraft process, being part of the chemical circulation of a pulp mill and to obtain pure Kraft lignin, a dedicated separation process, such a LignoBoost, is required&#x000a0;[<xref rid="cssc70432-bib-0009" ref-type="bibr">9</xref>,&#x000a0;<xref rid="cssc70432-bib-0012" ref-type="bibr">12</xref>].</p><p>Alternative fractionation processes have been developed to enable valorisation of all the lignocellulose fractions and to account for the poor&#x02010;quality lignin. A promising process is the organosolv process, in which lignocellulose is treated in an organic solvent, causing the lignin and hemicellulose to be solubilised&#x000a0;[<xref rid="cssc70432-bib-0009" ref-type="bibr">9</xref>]. Many solvents can be used for this, including methanol, ethanol, glycerol, organic acids, ketones, ethers and esters (e.g. <italic toggle="yes">&#x003b3;</italic>&#x02010;valerolactone)&#x000a0;[<xref rid="cssc70432-bib-0013" ref-type="bibr">13</xref>]. The extraction using an organic solvent primarily breaks <italic toggle="yes">&#x003b1;</italic>&#x02010;aryl ether bonds, whereas lower amounts of <italic toggle="yes">&#x003b2;</italic>&#x02010;aryl ether linkages are cleaved, resulting in a lignin rich in <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 bonds&#x000a0;[<xref rid="cssc70432-bib-0014" ref-type="bibr">14</xref>]. A major advantage of the organosolv pretreatment method is that it enables further valorisation of all lignocellulosic components as it forms three product streams: cellulose&#x02010;rich pulp, solubilised hemicellulose and precipitated lignin&#x000a0;[<xref rid="cssc70432-bib-0009" ref-type="bibr">9</xref>].</p><p>Of the many solvents that can be used in organosolv pretreatment, <italic toggle="yes">&#x003b3;</italic>&#x02010;valerolactone (GVL) has shown promise as a renewable solvent with high lignin solubility, producing high&#x02010;quality lignin abundant in <italic toggle="yes">&#x003b2;</italic>&#x02010;ether linkages&#x000a0;[<xref rid="cssc70432-bib-0015" ref-type="bibr">15</xref>]. GVL is a non&#x02010;toxic, green, and non&#x02010;volatile solvent that is stable at ambient conditions, making it safe for large&#x02010;scale storing and transportation&#x000a0;[<xref rid="cssc70432-bib-0016" ref-type="bibr">16</xref>]. Fang and Sixta showed fractionation of lignocellulose using GVL/water mixtures; about 40% of the lignin was recovered using microwave heating for 2 h at 170&#x000b0;C&#x000a0;[<xref rid="cssc70432-bib-0017" ref-type="bibr">17</xref>]. The addition of sulfuric acid decreased the temperature and time needed; however, the lignin yield was not markedly improved. Dumesic's group developed a process concept for GVL fractionation enabling high biomass loading (20 wt%); over 70% of lignin was isolated after fractionation with 0.1 M sulfuric acid at 125&#x000b0;C during 3 h&#x000a0;[<xref rid="cssc70432-bib-0018" ref-type="bibr">18</xref>]. The fractionation process has been successfully applied for various biomass sources, including eucalyptus, maple, poplar, corn, and bamboo&#x000a0;[<xref rid="cssc70432-bib-0019" ref-type="bibr">19</xref>, <xref rid="cssc70432-bib-0020" ref-type="bibr">20</xref>, <xref rid="cssc70432-bib-0021" ref-type="bibr">21</xref>, <xref rid="cssc70432-bib-0022" ref-type="bibr">22</xref>]. The cellulose fraction can be used as feedstock for glucose&#x02010;derived chemicals or dissolving pulp, and the hemicellulose can be converted into furfural, a key biomass&#x02010;derived building block&#x000a0;[<xref rid="cssc70432-bib-0018" ref-type="bibr">18</xref>]. The valorisation of the lignin fraction would provide a base case for a biorefinery concept where all three main fractions of lignocellulosic biomass are converted into high&#x02010;value products.</p><p>Valorisation of lignin as monomeric or oligomeric products requires depolymerisation or fractionation of the lignin. Many different catalytic techniques have been employed in the depolymerisation of lignin into lower molecular weight products, such as oxidative, reductive, and acid catalysed processes&#x000a0;[<xref rid="cssc70432-bib-0023" ref-type="bibr">23</xref>]. Reductive catalytic depolymerisation (RCD) is considered a highly promising method because the presence of hydrogen aids in controlling the recondensation of reactive intermediate species by saturating reactive double bonds. The source of hydrogen can be gaseous H<sub>2</sub>, or a hydrogen donating solvent (isopropanol, methanol, ethanol, formic acid) can also provide active hydrogen species&#x000a0;[<xref rid="cssc70432-bib-0024" ref-type="bibr">24</xref>]. Low&#x02010;carbon&#x02010;number alcohols such as ethanol, isopropanol, and n&#x02010;butanol can be produced from the fermentation of lignocellulosic wastes, which could improve the sustainability and profitability of biorefineries&#x000a0;[<xref rid="cssc70432-bib-0025" ref-type="bibr">25</xref>]. Using both hydrogen&#x02010;donating solvents and H<sub>2</sub> for lignin depolymerisation can reduce char formation and give high monomer yields&#x000a0;[<xref rid="cssc70432-bib-0025" ref-type="bibr">25</xref>]. Supercritical ethanol has been found to produce high monomer yields with no char formation, making it an attractive solvent for producing aromatics or monophenols&#x000a0;[<xref rid="cssc70432-bib-0026" ref-type="bibr">26</xref>].</p><p>Catalysts are often employed to improve lignin oil and monomer yields and to decrease char formation. Non&#x02010;precious metal catalysts are usually cheaper options than precious metal catalysts, hence more feasible to scale up for industrial applications. Molybdenum&#x02010;based catalysts are attractive for aromatics production as they have been found to cleave the ether bond rather than hydrogenate aromatic rings&#x000a0;[<xref rid="cssc70432-bib-0027" ref-type="bibr">27</xref>]. Ma et al. studied the depolymerisation of Kraft lignin in supercritical ethanol over supported Mo&#x02010;based catalysts at 280&#x000b0;C&#x000a0;[<xref rid="cssc70432-bib-0028" ref-type="bibr">28</xref>,&#x000a0;<xref rid="cssc70432-bib-0029" ref-type="bibr">29</xref>]. In a typical experiment, 1 g of kraft lignin, 0.5 g of catalyst and 100&#x02009;mL ethanol were loaded into the reactor, which was pressurised to the desired pressure with H<sub>2</sub> and heated to 280&#x000b0;C, holding this temperature for 6&#x02009;h. The molybdenum carbide catalyst had the highest yields of 1.64 g/g of C6&#x02010;C10 chemicals, including esters, phenols, aliphatic alcohols, benzyl alcohols and arenes, part of which originated from the condensation of ethanol. Metallic molybdenum and molybdenum nitride showed great activity as well. Overall, molybdenum carbide catalysts show promise as a low&#x02010;cost substitute to noble metal catalysts thanks to the unique D&#x02010;band electron properties that resemble those of noble metals&#x000a0;[<xref rid="cssc70432-bib-0030" ref-type="bibr">30</xref>]. Molybdenum phosphides have not been examined as rigorously as molybdenum carbides. Chowdari et al. used a molybdenum phosphide on activated carbon in the hydrotreatment of Kraft lignin&#x000a0;[<xref rid="cssc70432-bib-0031" ref-type="bibr">31</xref>]. In their procedure, 15 g Kraft lignin and 0.75 g catalyst were loaded into the reactor, which was pressurised to 100&#x02009;bar with H<sub>2</sub> and heated to the desired temperature (400&#x02013;500&#x000b0;C). This catalyst produced 61.2% of lignin oil and 38.7 wt% of monomers. Chen et al. synthesised phosphided Mo/sepiolite catalysts that were used to depolymerise Kraft lignin in ethanol&#x000a0;[<xref rid="cssc70432-bib-0032" ref-type="bibr">32</xref>]. Typically, 1&#x02009;g Kraft lignin, 0.5 g catalyst and 40&#x02009;mL ethanol were loaded into the reactor and heated to 290&#x000b0;C. The highest yield of phenolics was 33.4% which was produced using the 5P&#x02010;Mo/SEP catalyst.</p><p>A limited number of studies can be found on the catalytic depolymerisation of GVL lignins. Song et al. performed oxidative conversion of maple GVL lignin using 500&#x02009;mg lignin and 200&#x02009;mg of catalyst (Au nanoparticles supported on a basic Li&#x02013;Al layered double hydroxide) in 10&#x02009;mL dimethylformamide with oxygen flow at 120&#x000b0;C for 24&#x02009;h&#x000a0;[<xref rid="cssc70432-bib-0033" ref-type="bibr">33</xref>]. Monomer yields of up to 40% were reached in these experiments. Karunasinghe et al. performed oxidative depolymerisation on maple wood GVL lignin, using a AuPd bimetallic catalyst supported on a Li&#x02010;Al layered double hydroxide support under oxidative conditions at 120&#x000b0;C&#x000a0;[<xref rid="cssc70432-bib-0034" ref-type="bibr">34</xref>]. For the experiments, 250&#x02009;mg lignin, 100&#x02009;mg catalyst and 15&#x02009;mL dimethylformamide were added to a batch reactor. The best catalyst yielded 27% of aromatic monomers. McClelland et al. studied maple wood lignin extracted with GVL in supercritical methanol, using porous copper metal oxide catalyst&#x000a0;[<xref rid="cssc70432-bib-0035" ref-type="bibr">35</xref>]. In their typical set&#x02010;up, 100&#x02009;mg catalyst, 100&#x02009;mg lignin, and 2.4 g methanol were placed in a batch reactor and heated to 300&#x000b0;C with a reaction time of 15&#x02009;min to 4 h. Lignin monomer yields of 20% were recovered at a 4 h reaction time. To our knowledge, only one previous study reports the hydrogenolysis of GVL lignins; the hydrogenolysis of corn stover GVL lignin was studied in a two&#x02010;step process using a Ru/C catalyst by Luterbacher et al.&#x000a0;[<xref rid="cssc70432-bib-0036" ref-type="bibr">36</xref>]. In the first step, the lignin was dissolved to form a mixture of lignin (10%), THF (80%), H<sub>3</sub>PO<sub>4</sub> (8.5%) and H<sub>2</sub>O (1.5%), which was treated at 150&#x000b0;C under hydrogen. The THF was evaporated and replaced with heptane. This mixture was then treated in the second step at 250&#x000b0;C in the presence of Ru/C and H<sub>2</sub>. This two&#x02010;step depolymerisation process of GVL lignin produced up to 38 wt% of different types of monomers.</p><p>Lignin depolymerisation, regardless of the method applied, produces a complex mixture of products, the separation of which requires tedious multi&#x02010;step processes and results in low yields of the purified single product. Various strategies have been developed for the downstream processing of the product mixtures, such as chemocatalytic or biological funnelling of the mixture to reduce the complexity&#x000a0;[<xref rid="cssc70432-bib-0037" ref-type="bibr">37</xref>]. The characteristics and valorisation of the oligomeric fractions present in the lignin oils have received much less attention, even though these fractions could be upgraded in existing industrial processes or used in various applications like resins, polymers and adhesives&#x000a0;[<xref rid="cssc70432-bib-0038" ref-type="bibr">38</xref>]. Despite the growing understanding of the effect of the depolymerisation process on the monomeric products, the effect on the oligomeric products is far less established.</p><p>Herein, we present the isolation, characterisation and reductive depolymerisation of GVL lignins from various lignocellulosic feedstocks into low&#x02010;molecular&#x02010;weight lignin oils. The depolymerisation is carried out by ethanolysis and combined ethanolysis/hydrogenolysis in batch reactors using unsupported molybdenum carbides and phosphides as catalysts. To our knowledge, this is the first report showing the RCD of GVL lignins with non&#x02010;precious metal catalysts. We demonstrate that lignin extracted with GVL organosolv fractionation can be depolymerised into high yields of oligomeric lignin oils with minimal char formation using unsupported molybdenum&#x02010;based catalysts. Furthermore, based on a design of experiments study, we show that the properties of the lignin oils can be tuned by modifying the depolymerisation conditions to match the desired application.</p></sec><sec id="cssc70432-sec-0002"><label>2</label><title>Experimental Section</title><p>This section provides an overview of the materials and methods used. Please refer to the Supporting Information for detailed experimental descriptions.</p><sec id="cssc70432-sec-0003"><label>2.1</label><title>Materials</title><p>Biomass samples were received from Stora Enso. Reagents were commercially purchased and used as such without further purification. Ethanol (Altia, &#x02265;99.5%), tetrahydrofuran (VWR chemicals, &#x02265;99% stabilised ACS), ammonium heptamolybdatet etrahydrate (NH<sub>4</sub>)<sub>6</sub>Mo<sub>7</sub>O<sub>24</sub>&#x000b7;4 H<sub>2</sub>O (VWR chemicals, 81.0&#x02013;83.0%), diammonium hydrogen phosphate (NH<sub>4</sub>)<sub>2</sub>HPO<sub>4</sub> (Merck, &#x02265;99% ACS reagent grade), citric acid monohydrate (VWR chemicals, &#x02265;99% ACS), 1&#x02010;cyanoguanidine (Sigma&#x02013;Aldrich, &#x02265;98.0%), 2,4,6&#x02010;triamino&#x02010;1,3,5&#x02010;triazine (Sigma&#x02013;Aldrich, 98.5%&#x02013;101.5%), cyanuric acid (Sigma&#x02013;Aldrich, &#x02265;98.0%), phenol (Sigma&#x02013;Aldrich, 99%), o&#x02010;cresol (Sigma&#x02013;Aldrich, 99.5%), m&#x02010;cresol (VWR chemicals, 99%), 4&#x02010;ethylphenol (Sigma&#x02013;Aldrich, 99%), 4&#x02010;propylphenol (Aldrich Chemistry, 99%), 2&#x02010;propylphenol (Aldrich, 98%), guaiacol (Sigma&#x02013;Aldrich, 99%), 4&#x02010;methylguaiacol (Sigma&#x02013;Aldrich, 99%),4&#x02010;ethylguaiacol (SAFC, 98%), 4&#x02010;propylguaiacol (Sigma&#x02013;Aldrich, 99%), eugenol, (Sigma&#x02013;Aldrich, 99%), isoeugenol (Sigma&#x02013;Aldrich, 98%), vanillin (Fluka AG, 99%), syringol (Thermo Fisher Scientific, 99%), 4&#x02010;methylsyringol (Sigma&#x02013;Aldrich, 97%), N<sub>2</sub> (Woikoski, 99.999%), H<sub>2</sub> (Woikoski, 99.999%), 1&#x02010;butanol (Sigma&#x02013;Aldrich, 99.8%). EtOH organosolv lignin was obtained from Fraunhofer, prepared by an ethanol&#x02010;water organosolv process.</p></sec><sec id="cssc70432-sec-0004"><label>2.2</label><title>Lignocellulose Fractionation</title><p>GVL lignin samples were produced from 4 different feedstocks, two hardwoods (white birch and eucalyptus globulus), one softwood (pinus sylvestris) and one agricultural residue sugarcane bagasse (SCB). In a typical fractionation experiment, biomass and liquid solution of GVL/water and 0.1 M sulfuric acid were added to a 1&#x02009;L reactor and heated to the reaction temperature (125&#x000b0;C or 130&#x000b0;C) for 60&#x02013;90&#x02009;min. At the end of the reaction, the liquid was separated from the solid using vacuum filtration. The cellulose was analysed to determine the amount of hemicellulose and lignin extracted into the liquid phase. Cellulose yield is calculated based on the original weight of dry wood, while hemicellulose and lignin extraction yields are calculated based on their content in the feedstock. For the scale&#x02010;up reactions, we used a 20&#x02009;L recirculation reactor built by EDIBON.</p><p>To precipitate the lignin from the liquid fraction, water was added to a ratio of water/GVL&#x02009;=&#x02009;8, and the solution was centrifuged. The lignin was washed with hot water until the GVL and carbohydrate content were &#x0003c;0.5 wt% and air dried. After lignin precipitation, the aqueous solution was concentrated, and the C5 sugars were converted using a continuous flow reactor at 225&#x000b0;C to furfural and solid residue containing humins&#x000a0;[<xref rid="cssc70432-bib-0039" ref-type="bibr">39</xref>].</p></sec><sec id="cssc70432-sec-0005"><label>2.3</label><title>Lignin Analysis</title><p>The lignins were analysed for molecular weights, H/G/S&#x02010;ratio, interunit linkages and methoxy group content (Se). Size exclusion chromatography (SEC) in alkali solution was used to analyse the molecular weight of the lignin. For the analysis of lignin H/G/S&#x02010;ratio, thermochemolysis with tetramethyl ammonium hydroxide (TMAH) was performed. Amounts of aryl ether (<italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4), phenyl coumaran (<italic toggle="yes">&#x003b2;</italic>&#x02010;5), and resinol (<italic toggle="yes">&#x003b2;</italic>&#x02010;<italic toggle="yes">&#x003b2;</italic>) type interunit linkages were quantified from the lignin samples using <sup>1</sup>H&#x02010;<sup>13</sup>C HSQC NMR spectroscopy based on the literature assignments&#x000a0;[<xref rid="cssc70432-bib-0040" ref-type="bibr">40</xref>]. The methoxy group content was determined by a headspace GC equipped with an electron capture detector (HS&#x02010;GC/ECD) following the method by Baker with some modifications&#x000a0;[<xref rid="cssc70432-bib-0041" ref-type="bibr">41</xref>].</p></sec><sec id="cssc70432-sec-0006"><label>2.4</label><title>Catalyst Preparation</title><p>A total of five unsupported molybdenum&#x02010;based catalysts were prepared, three carbides and two phosphides. Two of the molybdenum carbides, MoC&#x02010;1 and MoC&#x02010;2, were prepared by following the method reported by Tang et al., using ammonium heptamolybdate, cyanuric acid and melamine as the precursors, followed by pyrolysis at 750&#x000b0;C and 650&#x000b0;C, respectively&#x000a0;[<xref rid="cssc70432-bib-0042" ref-type="bibr">42</xref>]. The third molybdenum carbide, MoC&#x02010;3, followed the preparation method reported by Ma et al. in which dicyanamide and ammonium heptamolybdate precursors were pyrolysed at 750&#x000b0;C&#x000a0;[<xref rid="cssc70432-bib-0043" ref-type="bibr">43</xref>].</p><p>For the first molybdenum phosphide, MoP&#x02010;1, ammonium heptamolybdate and diammonium hydrogen phosphate were used as precursors&#x000a0;[<xref rid="cssc70432-bib-0044" ref-type="bibr">44</xref>]. The second molybdenum phosphide catalyst, MoP&#x02010;2, was prepared by following the method reported by Cheng et al.&#x000a0;[<xref rid="cssc70432-bib-0045" ref-type="bibr">45</xref>], which was the same as the previous method with the addition of citric acid. Both catalysts were first calcined at 500&#x000b0;C followed by reduction in a fixed&#x02010;bed reactor under H<sub>2</sub> flow at 650&#x000b0;C.</p></sec><sec id="cssc70432-sec-0007"><label>2.5</label><title>Catalyst Characterisation</title><p>Nitrogen physisorption using a Micromeritics 3Flex system was used to determine the brunauer&#x02010;emmett&#x02010;teller (BET) surface area of the catalysts. X&#x02010;ray diffraction (XRD) analysis was performed using PANalytical X&#x02019;Pert Pro MPD with CuK<italic toggle="yes">&#x003b1;</italic> (1.5419&#x02009;&#x000c5;) radiation and focusing optics with programmable divergence and antiscatter slits set to 10&#x02009;mm irradiated length. Scanning electron microscopy (SEM) was performed using a Carl Zeiss Merlin electron microscope to analyse the microscopic structure and morphology. Transmission electron microscopy (TEM) was done using ThermoFisher Scientific Talos F200X G2 STEM operated at 200&#x02009;kV and equipped with the four SDD Super&#x02010;X energy dispersive spectrometer (EDS) detectors. The morphology and crystallinity of catalysts were investigated with S/TEM images and selected area electron diffraction.</p></sec><sec id="cssc70432-sec-0008"><label>2.6</label><title>Depolymerisation Experiments</title><p>The batch experiments were performed in a 200&#x02009;mL B&#x000fc;chi high&#x02010;pressure autoclave reactor (Hastelloy) and in a 1 L Autoclave Engineers autoclave equipped with an inner tube (stainless steel 316). In a typical run, the reactor was charged with lignin (2&#x02013;4&#x02009;g), catalyst (0&#x02013;20 wt%), and ethanol (80&#x02013;160&#x02009;mL). The air in the reactor was purged three times with nitrogen, then pressure tested. The reactor was purged another three times with hydrogen and pressurised to the desired pressure with hydrogen (0&#x02013;40&#x02009;bar H<sub>2</sub>) at ambient temperature. The mixture was heated to the required temperature (280&#x000b0;C, 315&#x000b0;C, 350&#x000b0;C). After reacting for 4&#x02009;h with 600&#x02009;RPM stirring, the reactor was cooled to room temperature. The reaction mixture was collected and filtered, and ethanol was evaporated from the filtrate, producing the ethanol&#x02010;soluble lignin oil containing monomers and low molecular weight oligomers. The remaining ethanol&#x02010;insoluble fraction after filtration was dissolved in THF, filtered and evaporated to isolate the residual lignin containing heavy molecular weight products. The remaining solid consisted of catalyst and char, and the bio&#x02010;char yield was calculated by subtracting catalyst mass from the total solids. Figure S7 in the Supporting Information displays the process flow for the sample treatment.</p></sec><sec id="cssc70432-sec-0009"><label>2.7</label><title>Product Analysis</title><p>Yields of the product fractions, lignin oil, residual lignin and char, were calculated according to Equation&#x000a0;(<xref rid="cssc70432-disp-0001" ref-type="disp-formula">1</xref>), relative to the initial lignin mass:</p><p>
+<disp-formula id="cssc70432-disp-0001">
+<label>(1)</label>
+<mml:math id="jats-math-1" display="block"><mml:mrow><mml:mrow><mml:mi>product</mml:mi><mml:mo>&#x02009;</mml:mo><mml:mi>yield</mml:mi><mml:mo>&#x02009;</mml:mo><mml:mo>(</mml:mo><mml:mi>wt</mml:mi><mml:mo>%</mml:mo><mml:mo>)</mml:mo><mml:mo/><mml:mo>=</mml:mo><mml:mo/><mml:msub><mml:mi>m</mml:mi><mml:mrow><mml:mi>produc</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>/</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mi>lignin</mml:mi></mml:msub><mml:mo/><mml:mo>&#x000d7;</mml:mo><mml:mo/><mml:mn>100</mml:mn></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>The monomer yields were measured directly from the ethanol filtrate using a gas chromatograph equipped with a mass selective detector. SEC was performed on both the lignin oil and residual lignin fractions to determine the molar weights. To determine the reduction in Mw during depolymerisation, the Mw of lignin feedstock before (Mw<sub>feedstock</sub>) and the Mw of the product lignin oil (Mw<sub>lignin oil</sub>) were used to calculate the change:</p><p>
+<disp-formula id="cssc70432-disp-0002">
+<label>(2)</label>
+<mml:math id="jats-math-2" display="block"><mml:mrow><mml:mrow><mml:mo>%</mml:mo><mml:mi>reduction</mml:mi><mml:mo>&#x02009;</mml:mo><mml:mi>in</mml:mi><mml:mo>&#x02009;</mml:mo><mml:mi>Mw</mml:mi><mml:mo/><mml:mo>=</mml:mo><mml:mo/><mml:mo>(</mml:mo><mml:msub><mml:mi>Mw</mml:mi><mml:mi>feedstock</mml:mi></mml:msub><mml:mo/><mml:mo>&#x02212;</mml:mo><mml:mo/><mml:msub><mml:mi>Mw</mml:mi><mml:mrow><mml:mi>lignin</mml:mi><mml:mo>&#x02009;</mml:mo><mml:mo>&#x02009;</mml:mo><mml:mi>oil</mml:mi></mml:mrow></mml:msub><mml:mo>)</mml:mo><mml:mo>/</mml:mo><mml:mo/><mml:msub><mml:mi>Mw</mml:mi><mml:mi>feedstock</mml:mi></mml:msub><mml:mo/><mml:mo>&#x000d7;</mml:mo><mml:mo/><mml:mn>100</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>The hydroxyl contents were determined from select samples using <sup>31</sup>P NMR measurements with 2&#x02010;chloro&#x02010;4,4,5,5&#x02010;tetramethyl&#x02010;1,3,2&#x02010;dioxaphopholane as the phosphitylation reagent. The ESI provides more details on the <sup>31</sup>P&#x02010;NMR analyses, and Table S9 displays the results and chemical shift ranges according to Granata et al.&#x000a0;[<xref rid="cssc70432-bib-0046" ref-type="bibr">46</xref>].</p></sec></sec><sec id="cssc70432-sec-0010"><label>3</label><title>Results and Discussion</title><sec id="cssc70432-sec-0011"><label>3.1</label><title>GVL Fractionation</title><p>Organosolv fractionation of eucalyptus, white birch, Scots pine and SCB was performed in 70/30 GVL/water as solvent. Sulfuric acid was used at 0.1 M concentration to facilitate the hydrolysis and solubilisation of hemicellulose while maintaining mild temperatures, 125&#x000b0;C&#x02013;130&#x000b0;C, and short reaction times, 60&#x02013;90&#x02009;min. The reaction conditions were optimised to maximise the yield and purity of all three main fractions of lignocellulosic biomass (cellulose, hemicellulose, and lignin) while working at high biomass loading (20 wt%) to improve the economics of the process. The high biomass loading results in sulfuric acid use of less than 4 wt% of the biomass (39&#x02009;kg of sulfuric acid per 1000&#x02009;kg of biomass).</p><p>Prior to the fractionation, the feedstocks were analysed for their composition (Table S2). GVL extraction of eucalyptus resulted in&#x02009;&#x0003e;95% of the hemicellulose and&#x02009;&#x0003e;90% of the lignin present in the feedstock being extracted into the liquid phase. The remaining solid cellulose fraction amounted to 46.8 wt% of the biomass with&#x02009;&#x0003e;90% purity (Table&#x000a0;<xref rid="cssc70432-tbl-0001" ref-type="table">1</xref>, GVL Eucalyptus). Similar results were obtained for white birch; &#x0003e;92.5% of hemicellulose and&#x02009;&#x0003e;96.5% of lignin were extracted into the liquid phase, yielding 43.7 wt% as cellulose fraction with 92.9% purity (GVL White birch 1). In the case of SCB at 20 wt% biomass loading, 83.8% of the hemicellulose and 92% of the lignin were extracted, yielding 47.6 wt% of the feedstock as cellulose fraction with 82% purity (GVL SCB 1). Slightly higher lignin extraction and cellulose yields were obtained at 125&#x000b0;C in 90&#x02009;min reaction time (SCB 2). For Scots pine, the lignin yield was considerably lower, only 48.6%, while hemicellulose extraction was similar to the other feedstocks, 87.6% (GVL Scots pine). The cellulose yield for pine was 57.7% with a purity of only 68.4%. Higher lignin extraction (81%) and cellulose purity (86%) could be achieved by increasing the reaction time to 120&#x02009;min, GVL/water ratio to 80/20 and acid loading to 0.125 M; however, this caused the degradation of the hemicellulose sugars and the cellulose, increasing the unwanted formation of humins.</p><table-wrap position="float" id="cssc70432-tbl-0001" content-type="TABLE"><label>TABLE 1</label><caption><p>Lignocellulose fractionation conditions and yields of different fractions.<xref rid="cssc70432-note-0002" ref-type="table-fn">a</xref>
+</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1">Feedstock</th><th align="center" rowspan="1" colspan="1">Temp, &#x000b0;C</th><th align="center" rowspan="1" colspan="1">Reaction time, min</th><th align="center" rowspan="1" colspan="1">Lignin extracted (wt% of theor.)</th><th align="center" rowspan="1" colspan="1">Klason lignin yield (wt% of theor.)</th><th align="center" rowspan="1" colspan="1">
+Cellulose yield (wt% of dry biomass)</th><th align="center" rowspan="1" colspan="1">Cellulose purity (wt% C6 sugars)</th><th align="center" rowspan="1" colspan="1">Hemicellulose yield (wt% of theor.)</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">GVL eucalyptus</td><td align="center" rowspan="1" colspan="1">130</td><td align="center" rowspan="1" colspan="1">60</td><td align="center" rowspan="1" colspan="1">90.8</td><td align="center" rowspan="1" colspan="1">84.8</td><td align="center" rowspan="1" colspan="1">46.8</td><td align="center" rowspan="1" colspan="1">90.1</td><td align="center" rowspan="1" colspan="1">95.0</td></tr><tr><td align="left" rowspan="1" colspan="1">GVL white birch 1</td><td align="center" rowspan="1" colspan="1">130</td><td align="center" rowspan="1" colspan="1">60</td><td align="center" rowspan="1" colspan="1">96.5</td><td align="center" rowspan="1" colspan="1">82.8</td><td align="center" rowspan="1" colspan="1">43.7</td><td align="center" rowspan="1" colspan="1">92.9</td><td align="center" rowspan="1" colspan="1">92.5</td></tr><tr><td align="left" rowspan="1" colspan="1">GVL white birch 2<xref rid="cssc70432-note-0003" ref-type="table-fn">b</xref>
+</td><td align="center" rowspan="1" colspan="1">125</td><td align="center" rowspan="1" colspan="1">90</td><td align="center" rowspan="1" colspan="1">87.7</td><td align="center" rowspan="1" colspan="1">80.5</td><td align="center" rowspan="1" colspan="1">46.4</td><td align="center" rowspan="1" colspan="1">91.8</td><td align="center" rowspan="1" colspan="1">91.6</td></tr><tr><td align="left" rowspan="1" colspan="1">GVL SCB 1</td><td align="center" rowspan="1" colspan="1">130</td><td align="center" rowspan="1" colspan="1">60</td><td align="center" rowspan="1" colspan="1">92.0</td><td align="center" rowspan="1" colspan="1">81.5</td><td align="center" rowspan="1" colspan="1">47.6</td><td align="center" rowspan="1" colspan="1">82.0</td><td align="center" rowspan="1" colspan="1">83.8</td></tr><tr><td align="left" rowspan="1" colspan="1">GVL SCB 2</td><td align="center" rowspan="1" colspan="1">125</td><td align="center" rowspan="1" colspan="1">90</td><td align="center" rowspan="1" colspan="1">88.8</td><td align="center" rowspan="1" colspan="1">86.6</td><td align="center" rowspan="1" colspan="1">51.5</td><td align="center" rowspan="1" colspan="1">86.0</td><td align="center" rowspan="1" colspan="1">81.6</td></tr><tr><td align="left" rowspan="1" colspan="1">GVL Scots pine</td><td align="center" rowspan="1" colspan="1">130</td><td align="center" rowspan="1" colspan="1">60</td><td align="center" rowspan="1" colspan="1">48.6</td><td align="center" rowspan="1" colspan="1">48.5</td><td align="center" rowspan="1" colspan="1">57.7</td><td align="center" rowspan="1" colspan="1">68.4</td><td align="center" rowspan="1" colspan="1">87.6</td></tr></tbody></table><table-wrap-foot><fn id="cssc70432-note-0002"><label>a</label><p>
+Reaction conditions: solvent GVL/water&#x02009;=&#x02009;70/30, sulfuric acid concentration&#x02009;=&#x02009;0.1 M, 20 wt% biomass loading. Lignin and hemicellulose yields are calculated based on their content in the given feedstock (Table S2), and cellulose yield is given as wt% of dry biomass.</p></fn><fn id="cssc70432-note-0003"><label>b</label><p>
+Performed in a 20 L reactor.</p></fn></table-wrap-foot><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></table-wrap><p>To precipitate the lignin from the solution, water was added to achieve a ratio of water/GVL&#x02009;=&#x02009;8&#x000a0;[<xref rid="cssc70432-bib-0018" ref-type="bibr">18</xref>]. After recovering the lignin by centrifugation, it was washed with hot water to recover the GVL retained by the lignin. Similar lignin yields (&#x0003e;80%) were obtained for the hardwoods and the SCB, while a lower yield was obtained for pine (48.6 wt%) because of the poor extraction achieved during the fractionation. In all cases, the purity of the lignin was high with less than 0.5 wt% of sugars present and less than 0.2 wt% of ashes (Table S3).</p><p>Valorisation of all the lignocellulose fractions is key to a feasible fractionation process. The high purity of the cellulose fractions, especially with the hardwoods white birch and eucalyptus, indicates that the pulp could be used as raw material to produce dissolving pulp. The viscosity of GVL white birch 1 pulp fraction was measured at 450 ml/g (CED viscosity SCAN&#x02010;CM 15:99). The promising result prompted us to further scale up the fractionation process of white birch in a 20 L reactor equipped with liquid recirculation. To reduce the degradation of the cellulose and improve its quality as feedstock for dissolving pulp, the fractionation temperature was reduced to 125&#x000b0;C, and the reaction time increased to 90&#x02009;min (GVL White birch 2). This decreased the hemicellulose slightly (91.6%) and lignin extraction yields (87.7%) but increased the pulp viscosity to&#x02009;&#x0003e;700 ml/g.</p><p>In the case of SCB and pine, the degradation of the pulp led us to explore its valorisation as feedstock to produce levulinic acid, a key biomass&#x02010;derived chemical building block&#x000a0;[<xref rid="cssc70432-bib-0018" ref-type="bibr">18</xref>]. To minimise the use of additional solvents, the cellulose was converted into levulinic acid using the same solvent used for washing of the pulp, demonstrating the versatility of the GVL as a solvent. Up to 50 mol% levulinic acid was produced using sulfuric acid as an acid catalyst at 15 wt% biomass loading, and the yield increased to 70 mol% by reducing the solid concentration (see Supporting Information for details). Valorisation of the hemicellulose fraction was studied by the production of furfural directly from the aqueous hemicellulose solution after lignin precipitation. Using the sulfuric acid originating from the fractionation, the solution was rapidly heated to 225&#x000b0;C, resulting in over 75 mol% furfural yields based on the xylose content (Figure S6). In the case of white birch, which is rich in xylose, the yield corresponds to 13 wt% of white birch (Figure&#x000a0;<xref rid="cssc70432-fig-0003" ref-type="fig">3</xref>). As a side product, about 12 wt% solid residue containing humins and precipitated lignin was obtained. Detailed composition of the streams is given in Figure S5. These results indicate that the hemicellulose fraction can easily be valorised directly from the extraction liquor without additional catalyst or separation of the sugars. Figure&#x000a0;<xref rid="cssc70432-fig-0003" ref-type="fig">3</xref> depicts the lignocellulose components, their separation and the overall product yields in the GVL fractionation of white birch.</p><fig position="float" fig-type="FIGURE" id="cssc70432-fig-0003"><label>FIGURE 3</label><caption><p>Mass balances in the GVL fractionation of white birch components into lignin, furfural and cellulose pulp.</p></caption><graphic xlink:href="CSSC-19-e202500643-g006" position="anchor" id="jats-graphic-7"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig></sec><sec id="cssc70432-sec-0012"><label>3.2</label><title>Lignin Characterisation</title><p>Before starting to investigate the depolymerisation of the lignins obtained from the GVL fractionation, the lignins were characterised to determine the molecular weight, interunit linkages and monolignol content. A eucalyptus organosolv lignin (EtOH eucalyptus), obtained from the Fraunhofer pilot plant using an ethanol&#x02010;water organosolv fractionation with added sulfuric acid, was used as a reference and characterised along with the GVL lignins.</p><p>The lignin molecular weights ranged from 2100 up to 4600&#x02009;Da (Table&#x000a0;<xref rid="cssc70432-tbl-0002" ref-type="table">2</xref>). The GVL SCB 2 lignin exhibited the lowest molecular weight, while the GVL Scots pine had the highest. The molecular weight of isolated lignins depends on wood species, extraction method and extraction condition intensity, meaning they can vary greatly&#x000a0;[<xref rid="cssc70432-bib-0047" ref-type="bibr">47</xref>]. According to literature, GVL lignin molecular weights commonly range between 1900 and 5000&#x02009;Da&#x000a0;[<xref rid="cssc70432-bib-0015" ref-type="bibr">15</xref>,&#x000a0;<xref rid="cssc70432-bib-0048" ref-type="bibr">48</xref>,&#x000a0;<xref rid="cssc70432-bib-0049" ref-type="bibr">49</xref>]. Due to the SEC column being changed, all molecular weights in this work cannot be directly compared; however, the molecular weight of the starting lignin and its resulting lignin oil were always measured with the same column.</p><table-wrap position="float" id="cssc70432-tbl-0002" content-type="TABLE"><label>TABLE 2</label><caption><p>Results of the lignin characterisation: Mw, H/G/S ratio, interunit linkages, and methoxy content of different lignins.<xref rid="cssc70432-note-0004" ref-type="table-fn">a</xref>
+</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="2" colspan="1">Entry</th><th align="center" rowspan="2" colspan="1">Lignin</th><th align="center" rowspan="2" colspan="1">Mw, Daltons</th><th align="center" colspan="3" rowspan="1">Monolignol%</th><th align="center" colspan="3" rowspan="1">Interunit linkage (% from aromatic units)</th><th align="center" rowspan="2" colspan="1">OCH<sub>3</sub>, mmol/g</th></tr><tr style="border-bottom:solid 1px #000000"><th align="center" rowspan="1" colspan="1">H%</th><th align="center" rowspan="1" colspan="1">G%</th><th align="center" rowspan="1" colspan="1">S%</th><th align="center" rowspan="1" colspan="1">
+<italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4</th><th align="center" rowspan="1" colspan="1">
+<italic toggle="yes">&#x003b2;</italic>&#x02010;<italic toggle="yes">&#x003b2;</italic>
+</th><th align="center" rowspan="1" colspan="1">
+<italic toggle="yes">&#x003b2;</italic>&#x02010;5</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">1</td><td align="center" rowspan="1" colspan="1">GVL Eucalyptus</td><td align="center" rowspan="1" colspan="1">3018</td><td align="center" rowspan="1" colspan="1">3.6</td><td align="center" rowspan="1" colspan="1">42.7</td><td align="center" rowspan="1" colspan="1">53.5</td><td align="center" rowspan="1" colspan="1">11.3</td><td align="center" rowspan="1" colspan="1">4.4</td><td align="center" rowspan="1" colspan="1">2.3</td><td align="center" rowspan="1" colspan="1">6.7</td></tr><tr><td align="left" rowspan="1" colspan="1">2</td><td align="center" rowspan="1" colspan="1">GVL White birch 1</td><td align="center" rowspan="1" colspan="1">3619</td><td align="center" rowspan="1" colspan="1">3.9</td><td align="center" rowspan="1" colspan="1">42.7</td><td align="center" rowspan="1" colspan="1">53.5</td><td align="center" rowspan="1" colspan="1">11.5</td><td align="center" rowspan="1" colspan="1">4.2</td><td align="center" rowspan="1" colspan="1">2.8</td><td align="center" rowspan="1" colspan="1">6.3</td></tr><tr><td align="left" rowspan="1" colspan="1">3</td><td align="center" rowspan="1" colspan="1">GVL White birch 2</td><td align="center" rowspan="1" colspan="1">2807<xref rid="cssc70432-note-0004" ref-type="table-fn">a</xref>
+</td><td align="center" rowspan="1" colspan="1">2.0</td><td align="center" rowspan="1" colspan="1">36.7</td><td align="center" rowspan="1" colspan="1">61.2</td><td align="center" rowspan="1" colspan="1">13.8</td><td align="center" rowspan="1" colspan="1">4.7</td><td align="center" rowspan="1" colspan="1">3.1</td><td align="center" rowspan="1" colspan="1">6.8</td></tr><tr><td align="left" rowspan="1" colspan="1">4</td><td align="center" rowspan="1" colspan="1">GVL SCB 1</td><td align="center" rowspan="1" colspan="1">2956</td><td align="center" rowspan="1" colspan="1">3.6</td><td align="center" rowspan="1" colspan="1">42.1</td><td align="center" rowspan="1" colspan="1">54.3</td><td align="center" rowspan="1" colspan="1">25.3</td><td align="center" rowspan="1" colspan="1">1.5</td><td align="center" rowspan="1" colspan="1">5.0</td><td align="center" rowspan="1" colspan="1">4.9</td></tr><tr><td align="left" rowspan="1" colspan="1">5</td><td align="center" rowspan="1" colspan="1">GVL SCB 2</td><td align="center" rowspan="1" colspan="1">2147<xref rid="cssc70432-note-0004" ref-type="table-fn">a</xref>
+</td><td align="center" rowspan="1" colspan="1">6.7</td><td align="center" rowspan="1" colspan="1">39.6</td><td align="center" rowspan="1" colspan="1">57.3</td><td align="center" rowspan="1" colspan="1">21.5</td><td align="center" rowspan="1" colspan="1">1.5</td><td align="center" rowspan="1" colspan="1">5.3</td><td align="center" rowspan="1" colspan="1">4.7</td></tr><tr><td align="left" rowspan="1" colspan="1">6</td><td align="center" rowspan="1" colspan="1">GVL Scots pine</td><td align="center" rowspan="1" colspan="1">4646</td><td align="center" rowspan="1" colspan="1">4.3</td><td align="center" rowspan="1" colspan="1">95.0</td><td align="center" rowspan="1" colspan="1">0.7</td><td align="center" rowspan="1" colspan="1">12.5</td><td align="center" rowspan="1" colspan="1">2.4</td><td align="center" rowspan="1" colspan="1">9.5</td><td align="center" rowspan="1" colspan="1">3.9</td></tr><tr><td align="left" rowspan="1" colspan="1">7</td><td align="center" rowspan="1" colspan="1">EtOH Eucalyptus</td><td align="center" rowspan="1" colspan="1">2466</td><td align="center" rowspan="1" colspan="1">1.4</td><td align="center" rowspan="1" colspan="1">33.2</td><td align="center" rowspan="1" colspan="1">65.3</td><td align="center" rowspan="1" colspan="1">5.6</td><td align="center" rowspan="1" colspan="1">3.2</td><td align="center" rowspan="1" colspan="1">2.4</td><td align="center" rowspan="1" colspan="1">7.0</td></tr></tbody></table><table-wrap-foot><fn id="cssc70432-note-0004"><label>a</label><p>
+SEC column changed; results not directly comparable.</p></fn></table-wrap-foot><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></table-wrap><p>The thermochemolysis revealed that white birch, eucalyptus and SCB lignins had predominantly syringyl type units present at&#x02009;&#x0003e;50%. Guaiacyl type units were the next most common (33.2%&#x02013;42.7%) with only minor amounts of <italic toggle="yes">p</italic>&#x02010;hydroxyphenyl units present. The GVL Scots pine presented mainly guaiacyl type units (95%) with small amounts of syringyl (0.7%) and <italic toggle="yes">p</italic>&#x02010;hydroxyphenyl (4.3%) units. The results are well in line with the literature; softwood lignins are composed almost exclusively of guaiacyl units, while hardwood lignins contain higher quantities of syringyl type units&#x000a0;[<xref rid="cssc70432-bib-0050" ref-type="bibr">50</xref>]. It is possible that lignin with high G content is more poorly extracted than lignin with high S content, supporting the findings during lignin extraction, where the GVL pine (high G content, softwood) had the lowest lignin yields compared to the hardwoods with high S content.</p><p>2D&#x02010;HSQC NMR was used to measure the interunit linkages in the lignin samples. The linkage amount is presented as % of aromatic units. <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 linkages were the predominant linkage found in all lignin samples. The <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 content can be used to calculate the maximum theoretical monomer yield; the square of the fraction of <italic toggle="yes">&#x003b2;</italic>&#x02010;ether bonds indicates the theoretical maximum monomer yield, assuming that only the <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 linkages are cleaved during the depolymerisation&#x000a0;[<xref rid="cssc70432-bib-0051" ref-type="bibr">51</xref>]. According to this, the SCB with the highest <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 content would produce the highest monomer yield of these lignin samples. However, the theoretical maximum monomer yield for all lignin samples remains low (0.3%&#x02013;6%).</p><p>The methoxy content is expressed in mmol/g of lignin and ranged between 4&#x02013;7&#x02009;mmol/g, with the GVL Scots pine having the least and the EtOH eucalyptus the most. Coumaric alcohol (H unit) has no methoxy groups, coniferyl alcohol (G unit) has one methoxy group, whereas the sinapyl alcohol (S unit) has two. Softwoods such as pine generally only present 5%&#x02013;10% S units, whereas hardwoods have around 50% S&#x02010;units&#x000a0;[<xref rid="cssc70432-bib-0052" ref-type="bibr">52</xref>]. As the S&#x02010;units have more methoxy groups, the lignins with more S&#x02010;units will also have higher methoxy content. The GVL Scots pine has only 0.7% S units and 95% G&#x02010;units, explaining the lower methoxy content.</p><p>The lignin samples were mixed with ethanol to investigate their solubility in ethanol at room temperature and to analyse how many monomers were released. After mixing overnight in ethanol, about 40 wt% of the GVL lignins and 79 wt% of the EtOH organosolv lignin were solubilised in ethanol, and less than 1 wt% of monomers were found in these dissolution experiments in all lignins (Table S4).</p></sec><sec id="cssc70432-sec-0013"><label>3.3</label><title>Catalyst Synthesis and Characterisation</title><p>Molybdenum&#x02010;based catalysts have gained attention in biomass valorisation as alternatives to noble&#x02010;metal catalysts. In most cases, supported molybdenum&#x02010;catalysts have been used&#x000a0;[<xref rid="cssc70432-bib-0028" ref-type="bibr">28</xref>, <xref rid="cssc70432-bib-0029" ref-type="bibr">29</xref>, <xref rid="cssc70432-bib-0030" ref-type="bibr">30</xref>, <xref rid="cssc70432-bib-0031" ref-type="bibr">31</xref>]. In this work, we chose to study unsupported molybdenum catalysts, as they are an attractive alternative to supported catalysts for processing challenging feedstocks in a slurry reactor&#x000a0;[<xref rid="cssc70432-bib-0053" ref-type="bibr">53</xref>]. Molybdenum carbides were chosen due to their good performance in several depolymerisation studies. As an alternative depolymerisation catalyst, we selected molybdenum phosphide, which has been studied only in a handful of reports. Three unsupported molybdenum carbides and two phosphides were prepared according to methods reported by Tang et al.&#x000a0;[<xref rid="cssc70432-bib-0042" ref-type="bibr">42</xref>] (MoC&#x02010;1, MoC&#x02010;2), Ma et al.&#x000a0;[<xref rid="cssc70432-bib-0043" ref-type="bibr">43</xref>] (MoC&#x02010;3), Stinner and Prins&#x000a0;[<xref rid="cssc70432-bib-0044" ref-type="bibr">44</xref>] (MoP&#x02010;1) and Cheng et al.&#x000a0;[<xref rid="cssc70432-bib-0045" ref-type="bibr">45</xref>] (MoP&#x02010;2) (see Supporting Information for detailed information).</p><p>Physisorption analysis revealed that all catalysts exhibited rather low surface areas (See Table S1). The carbides had a BET between 13&#x02013;20&#x02009;m<sup>2</sup>/g, and the phosphides even lower at 2&#x02013;4&#x02009;m<sup>2</sup>/g. XRD was used to identify the different crystalline phases in the catalysts. The MoC&#x02010;1 displayed mainly peaks corresponding to the cubic <italic toggle="yes">&#x003b1;</italic>&#x02010;MoC<sub>1&#x02212;<italic toggle="yes">x</italic>
+</sub> phase (JCPDS no. 89&#x02013;2868, Figure S1a)&#x000a0;[<xref rid="cssc70432-bib-0042" ref-type="bibr">42</xref>]. The MoC&#x02010;2 catalyst showed a more crystalline structure with peaks corresponding to both <italic toggle="yes">&#x003b1;</italic>&#x02010;MoC<sub>1&#x02212;<italic toggle="yes">x</italic>
+</sub> and hexagonal <italic toggle="yes">&#x003b2;</italic>&#x02010;Mo<sub>2</sub>C (JCPDS no. 35&#x02013;0787, Figure S1b). The wide peaks of the MoC&#x02010;3 indicated the presence of small MoC<sub>
+<italic toggle="yes">x</italic>
+</sub>, crystallites which is consistent with the results reported by Ma et al. (Figure S1c)&#x000a0;[<xref rid="cssc70432-bib-0043" ref-type="bibr">43</xref>]. The MoP&#x02010;2 and MoP&#x02010;1 catalysts displayed mainly hexagonal MoP phase (JCPDS 24&#x02013;0771, Figure S1d,e)&#x000a0;[<xref rid="cssc70432-bib-0044" ref-type="bibr">44</xref>]. In addition, MoP&#x02010;2 contained small amounts of MoOPO<sub>4</sub> (JCPDS 34&#x02013;1276), whereas the MoP&#x02010;1 catalyst showed the presence of MoO<sub>2</sub> (JCPDS 32&#x02013;0671)&#x000a0;[<xref rid="cssc70432-bib-0054" ref-type="bibr">54</xref>].</p><p>SEM images of the MoP&#x02010;1 and MoP&#x02010;2 showed agglomerated structures, which correspond with the bigger crystallite size observed in XRD, as well as the low surface area of the catalysts (Figure S2). The MoC&#x02010;1 catalyst showed a nanosheet morphology consistent with the report by Tang et al. (Figure S3)&#x000a0;[<xref rid="cssc70432-bib-0042" ref-type="bibr">42</xref>]. The morphology of MoC&#x02010;3 showed clustering of the nanosized particles into bigger agglomerates. Further analysis of MoC&#x02010;1 by transmission electron microscope (TEM) confirmed the nanosheet&#x02010;like structure (Figure S4). Moreover, the images showed the existence of partly amorphous regions with bent layers among the crystalline phase.</p></sec><sec id="cssc70432-sec-0014"><label>3.4</label><title>Catalyst Screening</title><p>To test the performance of the prepared catalysts, a series of depolymerisation experiments was conducted using the EtOH eucalyptus lignin at 280&#x000b0;C. For each catalyst, experiments with and without the addition of hydrogen gas (20&#x02009;bar at RT) were carried out. Low catalyst loading of 5 wt% was chosen to highlight the differences and because many examples in the literature used high loading of catalyst (typically 50 wt% of lignin)&#x000a0;[<xref rid="cssc70432-bib-0032" ref-type="bibr">32</xref>,&#x000a0;<xref rid="cssc70432-bib-0055" ref-type="bibr">55</xref>, <xref rid="cssc70432-bib-0056" ref-type="bibr">56</xref>, <xref rid="cssc70432-bib-0057" ref-type="bibr">57</xref>]. Low catalyst loading is a more viable option for potential industrial purposes. In addition, two experiments without a catalyst were done as a reference. The length of the experiments remained constant at 4&#x02009;h. After the experiments, the cooled reaction mixture was collected and filtered. The filtrate was sampled for GC&#x02013;MS analysis and evaporated using a rotary evaporator, forming the low&#x02010;molecular&#x02010;weight lignin oil, which contained monomeric and oligomeric products. The solids from filtration were dissolved in THF to separate high molecular weight residual lignin from the solids. Molecular weights of the lignin oil and residual lignin were determined by SEC. However, some of the residual lignin samples were insoluble in NaOH for the SEC analysis. This was attributed to high Mw and heavily condensed structures. The remaining solids, consisting of the catalyst and char, were weighed to determine the extent of char formation. Mass balances for all experiments were mostly above 80%, which is a good level for small&#x02010;scale experimental work. Loss of different fractions could have occurred at the many stages of the sample workup when transferring between vessels. One main cause for loss could be the sample caught on the reactor vessels walls and the crevices on the reactor lid. Detailed numerical results from all the experiments are presented in Supporting Information (Table S5).</p><p>In the catalyst screening experiments with no added hydrogen, the lignin oil yields were moderate (46&#x02013;64 wt%), and char was formed at rather high yields of 35&#x02013;40 wt% (Figure&#x000a0;<xref rid="cssc70432-fig-0004" ref-type="fig">4</xref>). Lower char yield (18 wt%) was obtained only with the MoC&#x02010;2 catalyst. The reactions with 20&#x02009;bar H<sub>2</sub> loading gave considerably higher lignin oil yields of 60&#x02013;88 wt% and lower char yields (9&#x02013;20 wt%). The highest lignin oil yield (88.6 wt%) and no char formation was obtained with 20&#x02009;bar H<sub>2</sub> loading using the MoC&#x02010;2 catalyst, consisting of both <italic toggle="yes">&#x003b1;</italic>&#x02010;MoC<sub>1&#x02212;<italic toggle="yes">x</italic>
+</sub> and hexagonal <italic toggle="yes">&#x003b2;</italic>&#x02010;Mo<sub>2</sub>C phases. The residual lignin yields did not show clear trends with catalyst or hydrogen loading. Monomer yields were moderate with all catalysts, with the highest yields (22.8 wt%) obtained with the MoC&#x02010;3 catalyst without initial hydrogen pressure. Interestingly, around 20 wt% monoaromatics were obtained even without a catalyst, indicating that at these temperatures, thermal reactions also play a role in the depolymerisation. With all catalysts, monomer yields decreased slightly when hydrogen gas was loaded, compared to reactions with no hydrogen. Similar results were observed, i.e. additional H<sub>2</sub> pressure was disadvantageous to monomer yields, by Ma et al. while studying molybdenum carbide catalysts in the depolymerisation of Kraft lignin&#x000a0;[<xref rid="cssc70432-bib-0028" ref-type="bibr">28</xref>]. In another study where nickel catalysts were applied, it was also noted that additional H<sub>2</sub> did not affect monomer yields and that the alcohol solvent provided the necessary active hydrogen species&#x000a0;[<xref rid="cssc70432-bib-0058" ref-type="bibr">58</xref>]. The hydrogen gas may also suppress chemisorption of the ethanol over the surface of the catalyst. The effect of the H<sub>2</sub> is contradictory; on the one hand, lignin oil yield is greatly improved, and char formation is minimised, while slightly smaller monomer yields are observed.</p><fig position="float" fig-type="FIGURE" id="cssc70432-fig-0004"><label>FIGURE 4</label><caption><p>
+Comparison of catalysts at 5 wt% on depolymerisation of EtOH eucalyptus lignin (Conditions: 2 g lignin, 0.1 g catalyst, 80&#x02009;ml EtOH, 280&#x000b0;C).</p></caption><graphic xlink:href="CSSC-19-e202500643-g001" position="anchor" id="jats-graphic-9"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>To investigate the extent of the depolymerisation, the reduction of the lignin oil Mw was calculated by comparing to the Mw of the substrate lignin (2466&#x02009;Da) as described in Equation&#x000a0;(<xref rid="cssc70432-disp-0002" ref-type="disp-formula">2</xref>), which follows the approach of De Saegher et al.&#x000a0;[<xref rid="cssc70432-bib-0059" ref-type="bibr">59</xref>]. All lignin oils showed a reduction of Mw between 12 and 52% compared to the substrate. The largest reduction was obtained with the MoC&#x02010;1 catalyst; 47% and 52% with and without hydrogen gas, respectively. HSQC NMR analysis of the lignin oil produced with MoC&#x02010;1 in the presence of hydrogen showed the absence of <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4, <italic toggle="yes">&#x003b2;</italic>&#x02010;<italic toggle="yes">&#x003b2;</italic>, and <italic toggle="yes">&#x003b2;</italic>&#x02010;5 linkages, which were clearly visible in the EtOH eucalyptus lignin (Figure S8).</p><p>The monoaromatic products were quantified and identified by GC&#x02013;MS analysis (Table S6). Due to the large number of products, the compounds were grouped in two ways: (i) based on the H/G/S&#x02010;structure and (ii) based on the side chain structure (saturated, unsaturated and oxygenated). Compared to the substrate lignin, the monoaromatics contained more syringyl&#x02010;units (up to 88% vs. 65% of the EtOH eucalyptus lignin) (Figure S9a). Furthermore, the selectivity to S&#x02010;type products was increased by the use of a catalyst and the addition of H<sub>2</sub>. The enrichment of S&#x02010;type monoaromatics is expected because easily cleavable <italic toggle="yes">&#x003b2;</italic>&#x02010;ether linkages are more prevalent among syringyl than guaiacyl type substructures&#x000a0;[<xref rid="cssc70432-bib-0060" ref-type="bibr">60</xref>].</p><p>For elucidation of the side chains, the structures present in H, G, and S lignin monomers were grouped into saturated, unsaturated and oxygenated side chains. Similar side chains were detected after all thermal and catalytic treatments with and without H<sub>2</sub> loading; most of the side chains were saturated alkyls or ketones (Figure S9b,c). Minor amounts of unsaturated hydrocarbons were also detected in all experiments. Under these conditions, the catalyst and hydrogen addition had relatively little effect on the product distribution; selectivity to deoxygenated side chains was mostly between 55 and 62 wt%. The highest selectivity to products with deoxygenated side chains was observed with MoC&#x02010;1, up to 68 wt%.</p><p>Based on the catalyst screening experiments, high lignin oil yields were obtained with both MoC and MoP catalysts, especially in the presence of hydrogen. Of the studied carbides, MoC&#x02010;1 showed the best performance in terms of low char yield, high degree of depolymerisation and high deoxygenation activity of the side chains. Moreover, we were interested in further investigating the catalyst consisting of purely <italic toggle="yes">&#x003b1;</italic>&#x02010;MoC<sub>1&#x02212;<italic toggle="yes">x</italic>
+</sub> phase in the depolymerisation. Although the phosphide catalysts gave slightly lower lignin oil yields and lower reduction of Mw compared to carbides, we were intrigued to study the best performing phosphide, MoP&#x02010;2, further, due to the low number of studies on phosphides in lignin depolymerisation.</p><p>A further depolymerisation experiment was carried out using MoP&#x02010;2 at 315&#x000b0;C with 20&#x02009;bar H<sub>2</sub> loading, which resulted in 44 wt% lignin oil, 10.5 wt% monomers and a high char yield of 35 wt% (Table S5, entry 12). Interestingly, the reduction of molecular weight was 67%, and furthermore, the selectivity to products with deoxygenated side chains increased to 75 wt% (Figure S9b&#x02013;c), indicating that the reaction temperature plays a significant role in the lignin depolymerisation. To prepare for scaling up the depolymerisations from the 200&#x02009;ml reactor to a 1 L reactor, we performed an experiment in the same reaction conditions (315&#x000b0;C, 20&#x02009;bar H<sub>2</sub> loading and 5 wt% MoP&#x02010;2) with double the amount of lignin and ethanol (4 g and 160&#x02009;ml, respectively). Notably, the lignin oil yield nearly doubled from 44 wt% to 79 wt%, and the char formation reduced from 35 wt% to only 3 wt%, when moving from the 200&#x02009;mL reactor to the 1 L reactor (Table S5, entry 13). Molecular weight of the lignin oil reduced 48% in comparison to the substrate, which is less than in the smaller reactor, but much higher than observed at 280&#x000b0;C. Additionally, higher monomer yields (14 wt%) were observed in the larger reactor, and over 80 wt% of the monoaromatics contained deoxygenated side chains. The main difference between the two setups is the relative volume of the headspace, which results in a higher amount of H<sub>2</sub> in the bigger reactor; using the ideal gas law, it was determined that the H<sub>2</sub> amount was over 3 times more per gram of lignin in the 1 L reactor. The results are well in line with our previous observation on the effect of hydrogen on increasing the lignin oil and reducing char yields, and furthermore, they underline the importance of reaction temperature on the depolymerisation.</p></sec><sec id="cssc70432-sec-0015"><label>3.5</label><title>Depolymerisation of GVL Lignins</title><p>Encouraged by the high lignin oil yield and high extent of depolymerisation in the 1 L reactor, we used the same conditions (5 wt% MoP&#x02010;2 catalyst, 315&#x000b0;C and 20&#x02009;bar H<sub>2</sub>) to compare the lignins obtained by GVL fractionation from different biomasses: eucalyptus, SCB, white birch and Scots pine. Depolymerisation of the GVL eucalyptus and GVL SCB lignins gave very similar results compared to the EtOH eucalyptus; about 75 wt% yield of lignin oil with minimal char formation (Figure&#x000a0;<xref rid="cssc70432-fig-0005" ref-type="fig">5</xref>). The reduction of Mw was at 58% in both experiments, which is slightly higher than the 48% obtained with the EtOH eucalyptus. The yield of monoaromatics was 16 wt%, which is similar to the previous experiments. Interestingly, the monomer yield is unaffected by the <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 content of the lignins, which ranged from 6% in the EtOH eucalyptus to 25% in the SCB lignin. The observed monomer yields are significantly greater than the theoretical monomer yields calculated based on the <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 content, which suggests that linkages other than the <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 have also been cleaved in the depolymerisation. Depolymerisation of the GVL white birch produced 65 wt% lignin oil with 71% reduction of the Mw and 13 wt% of monoaromatics. The highest lignin oil yield was achieved with GVL Scots pine lignin, 86 wt%. Despite the relatively low monomer yield (7 wt%), Scots pine exhibited the greatest reduction in Mw (85%) compared to the other feedstocks. Overall, in comparison with the EtOH eucalyptus lignin, the GVL lignins yielded higher amounts of lignin oil and exhibited greater reduction in Mw under the same reaction conditions. This could be explained by the higher <italic toggle="yes">&#x003b2;</italic>&#x02010;O&#x02010;4 content of the GVL lignins (11%&#x02013;25%) compared to the EtOH eucalyptus (6%), showing that the GVL fractionation produces lignins which are well&#x02010;suited for depolymerisation.</p><fig position="float" fig-type="FIGURE" id="cssc70432-fig-0005"><label>FIGURE 5</label><caption><p>Comparison of different lignin feeds using MoP&#x02010;2 (1 L reactor: 4 g lignin, 160&#x02009;ml EtOH, 5 wt% catalyst, 315&#x000b0;C, 20&#x02009;bar H<sub>2</sub>).</p></caption><graphic xlink:href="CSSC-19-e202500643-g008" position="anchor" id="jats-graphic-11"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>According to the GC&#x02013;MS analysis, the produced monoaromatics reflected the H/G/S ratios of the original lignin (Figure&#x000a0;<xref rid="cssc70432-fig-0006" ref-type="fig">6a</xref> and Table S7). The eucalyptus, SCB and white birch GVL lignins consisted primarily of S&#x02010;type units, which is also seen in the product distribution. Interestingly, the bagasse lignin also produced H&#x02010;type monomers with 15% selectivity, despite the H&#x02010;unit content being similar to the other lignins. The GVL Scots pine lignin consisted mainly of G&#x02010;type units, which are also the main units present in the lignin oil. Similarly to the catalyst screening experiments, syringyl units were more prevalent in the lignin oils compared to their content in the substrate lignins.</p><fig position="float" fig-type="FIGURE" id="cssc70432-fig-0006"><label>FIGURE 6</label><caption><p>Monoaromatics selectivity to (a) H/G/S&#x02010;units and (b) different side chains in the depolymerisation of lignins in ethanol with 5 wt% MoP&#x02010;2, 20&#x02009;bar H<sub>2</sub> at 315&#x000b0;C.</p></caption><graphic xlink:href="CSSC-19-e202500643-g002" position="anchor" id="jats-graphic-13"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>Analysis of the side chain structures revealed that the monoaromatics contained predominantly deoxygenated side chains with about 75&#x02013;85 wt% selectivity (Figure S10, Table S7). The experiments performed in the 1 L reactor had considerably less oxygenated side chains on the monoaromatics compared to the experiments in the smaller reactor, which is mostly attributed to the higher reaction temperature. However, comparing the depolymerisation of EtOH eucalyptus lignin in the two reactors at 315&#x000b0;C also shows a difference; the selectivity to deoxygenated side chains increased from 75% to 81% in the 1 L reactor, which can be explained by the increased availability of H<sub>2</sub> aiding hydrodeoxygenation of the oxygenated structures. When taking a closer look at the identity of the side chain structures, it is seen that the propyl side chain is more abundant in the GVL lignin oils compared to the EtOH eucalyptus (Figure&#x000a0;<xref rid="cssc70432-fig-0006" ref-type="fig">6b</xref>). The GVL eucalyptus, SCB and white birch lignins show 22%&#x02013;27% selectivity to 4&#x02010;propylsyringol, and in the case of Scots pine, 4&#x02010;propylguaiacol is produced with 49% selectivity.</p></sec><sec id="cssc70432-sec-0016"><label>3.6</label><title>Effect of Depolymerisation Conditions</title><p>The previous experiments indicated that the catalyst, hydrogen loading and reaction temperature all have a significant effect on depolymerisation. To systematically study the effect of the depolymerisation conditions, both on the product yields and properties, a design of experiments study was conducted using a full factorial design with 11 experiments, including three repetitions. For the catalyst, we chose MoC&#x02010;1, consisting of <italic toggle="yes">&#x003b1;</italic>&#x02010;MoC<sub>1&#x02212;<italic toggle="yes">x</italic>
+</sub>, which gave the highest molecular weight reduction along with good lignin oil yields in the catalyst screening tests. In the previous experiments with MoP&#x02010;2, increasing the depolymerisation temperature resulted in lower Mw of the lignin oil, and therefore the studied temperature range was expanded from 280&#x000b0;C up to 350&#x000b0;C. Similarly, the range of hydrogen loading (0&#x02013;40&#x02009;bar at RT) and catalyst amount (0&#x02013;20 wt%) was increased from the previously used. The responses analysed were the yields of monomers, lignin oil and char. In addition to the yields, reduction of the lignin oil Mw and selectivity to deoxygenated side chains in the monomers were analysed. Furthermore, the amount of aliphatic hydroxyl groups, determined by <sup>31</sup>P&#x02010;NMR, was selected for the analysis. Out of the different feedstocks studied in the GVL fractionation process, white birch was selected as the most promising based on the high&#x02010;quality pulp fraction. Scaling up the fractionation yielded GVL white birch lignin 2, which was used as feedstock for the DoE experiments. The experiments were performed in the 200&#x02009;ml autoclave to minimise the quantities of lignin and catalyst needed. The results were fitted using MODDE software version 13.0.2 using multiple linear regression (MLR) (Figures S11 and S12). Response surfaces based on the statistical models are shown in Figures&#x000a0;<xref rid="cssc70432-fig-0007" ref-type="fig">7</xref> and S13.</p><fig position="float" fig-type="FIGURE" id="cssc70432-fig-0007"><label>FIGURE 7</label><caption><p>Response surfaces for (a) lignin oil yield and (b) reduction of lignin oil molecular weight based on the statistical analysis.</p></caption><graphic xlink:href="CSSC-19-e202500643-g005" position="anchor" id="jats-graphic-15"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>The yields of lignin oil and char varied between 35&#x02013;92 wt% and 0&#x02013;43 wt%, respectively, which are in a similar range as in the previous experiments (Table S8). Based on the statistical analysis, the use of a catalyst and hydrogen gas had a positive effect on the lignin oil yield and a negative effect on the bio&#x02010;char yield (Figure&#x000a0;<xref rid="cssc70432-fig-0007" ref-type="fig">7a</xref> and Figure S13). Moreover, increasing the temperature increased the char formation, especially in the absence of a catalyst and hydrogen. Monomer yields of 7&#x02013;12 wt% were observed, the yields being slightly lower than with the eucalyptus lignin. Such a small variation did not enable a reliable statistical analysis of the parameters affecting the monomer yields. However, the selectivity towards deoxygenated side chains was clearly affected by the catalyst and conditions; the selectivity increased from 61 to 99.9 mol% by increasing the temperature and by using hydrogen gas and a catalyst. While temperature had the strongest positive effect, it is evident that the monomer selectivity can be tuned by the catalyst and reaction conditions. The lignin oil properties were also heavily affected by the reaction parameters. Based on SEC analysis, the reduction of the lignin oil molecular weight was in the range 24%&#x02013;64% compared to the starting GVL white birch 2 at 2800&#x02009;Da. It should be noted that these samples were measured after a change of the SEC column, so the Mw values are not directly comparable to the previous lignin oil samples (Table S5). Temperature had the strongest decreasing effect on the Mw (Figure&#x000a0;<xref rid="cssc70432-fig-0007" ref-type="fig">7b</xref>). Very interestingly, we also observed that the depolymerisation conditions had a clear effect on the amount of aliphatic hydroxyl groups in the produced lignin oils. At high temperature, hydrogen pressure and catalyst loading, the aliphatic hydroxyls amounted to 1&#x02009;mmol/g, whereas without hydrogen, the value decreased to less than 0.3&#x02009;mmol/g from the feedstock value of 2&#x02009;mmol/g (Table S9). These findings indicate that hydrogen is essential to depolymerise lignin efficiently to lignin oil and monomers, supporting that H<sub>2</sub> stabilises reactive intermediates, thus avoiding repolymerisation&#x000a0;[<xref rid="cssc70432-bib-0025" ref-type="bibr">25</xref>]. Moreover, the catalyst has a crucial role in increasing the lignin oil yield and suppressing char formation, which both underline the importance of the catalyst in stabilising the reactive fragments released during the depolymerisation (Figure S12). Activity of the catalyst is further underlined by its positive effect on the side chain deoxygenation and reduction of Mw. In summary, these results show how to optimise the depolymerisation conditions, not only to maximise the lignin oil yield but also how to tune the properties of the resulting products to meet specific application needs.</p><p>To see how the DoE results from white birch depolymerisation compare to another feedstock, two of the most promising reaction conditions were chosen to test on SCB lignin. In two experiments, GVL SCB 2 was depolymerised in the presence of 20 wt% MoC&#x02010;1 and 40&#x02009;bar H<sub>2</sub> at 280&#x000b0;C and at 350&#x000b0;C. At 280&#x000b0;C, 76 wt% of lignin oil was formed with 8.7 wt% of monomers, and the reduction of Mw was at 38% (Figure S15a). The experiment at 350&#x000b0;C gave a better lignin oil yield (93 wt%) and monomer yield (11.6 wt%) compared to the lower temperature. Additionally, the lignin oil Mw was reduced to 55%. Even though temperature had a more pronounced effect on the lignin oil yield in the case of SCB lignin compared to white birch, the results were well in line with the DoE study, and high yields of lignin oil with minimal char production were obtained. In a further experiment, the lignin to ethanol ratio could be doubled without negatively affecting the product yields, which is promising for future upscaling of the process (Figure S15b).</p></sec></sec><sec id="cssc70432-sec-0017"><label>4</label><title>Conclusions</title><p>This work establishes <italic toggle="yes">&#x003b3;</italic>&#x02010;valerolactone (GVL) organosolv fractionation as an efficient route for producing high&#x02010;quality lignins from diverse biomass sources, enabling their subsequent catalytic depolymerisation into monophenolics and low&#x02010;molecular&#x02010;weight lignin oils. The fractionation produced over 90% yields of high&#x02010;purity lignin fractions, particularly from hardwoods and herbaceous biomass, with molecular weights ranging from 2100 to 4600&#x02009;Da. The GVL lignins were depolymerised using unsupported molybdenum&#x02010;based catalysts under reductive conditions in ethanol; to our knowledge, this is the first study reporting non&#x02010;noble metal catalysed depolymerisation of GVL lignins. High yields of low&#x02010;molecular&#x02010;weight lignin oil (up to 92 wt%) were obtained both with molybdenum carbide and molybdenum phosphide catalysts. The aromatic monomer yields ranged from 7 to 16 wt%. Importantly, the depolymerisation conditions, catalyst, hydrogen loading, and temperature, were shown to be critical both for maximising the yield of the lignin oil and for modifying the properties of the produced lignin oil and monoaromatics. This opens up the possibility to tune the catalytic depolymerisation process towards the targeted application. Our findings demonstrate that GVL lignins are versatile feedstocks for sustainable chemical and material production, supporting the development of integrated biorefinery concepts where all major lignocellulosic fractions are valorised.</p></sec><sec id="cssc70432-sec-0018"><title>Supporting Information</title><p>Additional supporting information can be found online in the Supporting Information section. The authors have cited additional references within the Supporting Information&#x000a0;[<xref rid="cssc70432-bib-0061" ref-type="bibr">61</xref>,&#x000a0;<xref rid="cssc70432-bib-0062" ref-type="bibr">62</xref>]. <bold>Supporting</bold>
+<bold>Fig.</bold> S<bold>1:</bold> XRD diffractogram a) MoC&#x02010;1, b) MoC&#x02010;2, c) MoC&#x02010;3, d) MoP&#x02010;1 and e) MoP&#x02010;2. <bold>Supporting Fig. S2</bold>
+<bold>:</bold> SEM image of a) MoP&#x02010;1 and b) MoP&#x02010;2 catalyst with 8 kV acceleration voltage at 1000 x magnification. <bold>Supporting Fig. S3</bold>
+<bold>:</bold> SEM images of MoC&#x02010;1 catalyst with 2 kV acceleration voltage at a) 1000 x and b) 10 000 x magnification and c) MoC&#x02010;3 at 1000 x magnification. <bold>Supporting Fig. S4</bold>
+<bold>:</bold> TEM images of MoC&#x02010;1. <bold>Supporting Fig. S5</bold>
+<bold>:</bold> Mass flows of the GVL fractionation of white birch. <bold>Supporting Fig. S6</bold>
+<bold>:</bold> Maximum furfural yield achieved. <bold>Supporting Fig. S7</bold>
+<bold>:</bold> Process flow of sample treatment. <bold>Supporting Fig. S8</bold>
+<bold>:</bold> HSQC NMR spectra of EtOH eucalyptus lignin and the depolymerised lignin oil formed under conditions of 280&#x000b0;C, 20 bar H<sub>2</sub>, 5 wt% MoC&#x02010;1 catalyst. <bold>Supporting Fig. S9</bold>
+<bold>:</bold> GC&#x02010;MS results of monomers in the catalyst screening experiments. Reaction conditions: 2 g EtOH eucalyptus lignin, 80 mEtOH, 280&#x000b0;C, 5 wt% catalyst. a) H/G/S ratio of monomers. b) Side chain groups on monomers, saturated, unsaturated and oxygen in the side chain. c) Type of side chain on monomers. <bold>Supporting Fig. S10:</bold> GC&#x02010;MS results of monomers in different feedstock experiments. Reaction conditions 315&#x000b0;C, 5 wt% MoP&#x02010;2 catalyst, 20 bar H<sub>2</sub>. Side chain groups on monomers, saturated, unsaturated and oxygen in the side chain. <bold>Supporting Fig. S11:</bold> Observed vs. predicted values for a) yield of monomers, lignin oil and char and b) aliphatic hydroxyls, selectivity to deoxygenated side chains and reduction of Mw. <bold>Supporting Fig. S12:</bold> Coefficients for a) yield of monomers, lignin oil and char and b) aliphatic hydroxyls, selectivity to deoxygenated side chains and reduction of Mw. <bold>Supporting Fig. S13:</bold> Response surfaces for the yield of a) monomers and b) char. <bold>Supporting Fig. S14:</bold> Response surfaces for a) selectivity to deoxygenated side chains and b) amount of aliphatic hydroxyls. <bold>Supporting Fig. S15:</bold> Depolymerisation of GVL lignins. a) SCB depolymerisations using 2 g lignin, 80 ml EtOH, 20 wt% MoC&#x02010;1and 40 bar H2. b) Depolymerisation of GVL white birch 2 with higher lignin concentration. Reaction conditions: 4 g lignin, 80 ml EtOH, 10 wt% MoC&#x02010;1, 40 bar H<sub>2</sub>. <bold>Supporting Table S</bold>
+<bold>1:</bold> BET surfaces areas of prepared catalysts. <bold>Supporting</bold>
+<bold>Table</bold>
+<bold>S2:</bold> Composition of biomass feedstocks used in GVL fractionation. <bold>Supporting</bold>
+<bold>Table</bold>
+<bold>S3:</bold> Composition of GVL lignins. <bold>Supporting</bold>
+<bold>Table</bold>
+<bold>S4:</bold> Lignin dissolution, 1 g lignin, 40 ml EtOH, room temperature, overnight. <bold>Supporting</bold>
+<bold>Table</bold>
+<bold>S5:</bold> Reaction conditions, yields of lignin oil, residual lignin, biochar and monoaromatics. Molecular weights of EtOH and THF soluble fractions. <bold>Supporting</bold>
+<bold>Table</bold>
+<bold>S6:</bold> Monoaromatics (wt%) of depolymerisation of EtOH eucalyptus lignin in ethanol (2 g lignin, 5 wt% catalyst, 80 ml EtOH). <bold>Supporting</bold>
+<bold>Table</bold>
+<bold>S7:</bold> Monoaromatics (wt%) of depolymerised GVL lignin. <bold>Supporting</bold>
+<bold>Table</bold>
+<bold>S8:</bold> Experimental data for DoE experiments. <bold>Supporting</bold>
+<bold>Table</bold>
+<bold>S9:</bold>
+<sup>31</sup>P&#x02010;NMR results for DoE experiments of white birch depolymerisation. Results are given as mmol/g.</p></sec><sec sec-type="COI-statement" id="cssc70432-sec-0021"><title>Conflicts of Interest</title><p>The authors declare no conflicts of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material position="float" content-type="local-data"><caption><p>Supplementary Material</p></caption><media xlink:href="CSSC-19-e202500643-s001.pdf"/></supplementary-material></sec></body><back><ack id="cssc70432-sec-0020"><title>Acknowledgments</title><p>The authors wish to express respect and gratitude to dear colleague Dr. Saravanan Kasipandi (deceased) for his invaluable contribution to the research. His insights and dedication were instrumental for this work. Stora Enso is gratefully acknowledged for providing the biomass samples and for performing the analysis of biomass composition. Dr. Marlen Verges and Fraunhofer CBP are gratefully acknowledged for providing EtOH organosolv lignin for this work. Dr. Yanling Ge is gratefully acknowledged for the TEM analysis, and Mikko Heikkil&#x000e4; from the University of Helsinki is acknowledged for the XRD analysis. The authors kindly acknowledge research funding from the Bio&#x02010;Based Industries Joint Undertaking (JU) under the European Union's Horizon 2020 research and innovation programme under grant agreement No 101023202.</p><p>Open access publishing facilitated by Teknologian tutkimuskeskus VTT Oy, as part of the Wiley &#x02010; FinELib agreement.</p></ack><sec sec-type="data-availability" id="cssc70432-sec-0023"><title>Data Availability Statement</title><p>The data that support the findings of this study are available in the supplementary material of this article.</p></sec><ref-list id="cssc70432-bibl-0001" content-type="cited-references"><title>References</title><ref id="cssc70432-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="cssc70432-cit-0001">
+<string-name>
+<given-names>C.</given-names>
+<surname>Xu</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Arneil</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Arancon</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Labidi</surname>
+</string-name>, and <string-name>
+<given-names>R.</given-names>
+<surname>Luque</surname>
+</string-name>, &#x0201c;<article-title>Lignin Depolymerisation Strategies: Towards Valuable Chemicals and Fuels</article-title>,&#x0201d; <source>Chemical Society Reviews</source>
+<volume>43</volume> (<year>2014</year>): <fpage>7485</fpage>.<pub-id pub-id-type="pmid">25287249</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="cssc70432-cit-0002">
+<string-name>
+<given-names>B. M.</given-names>
+<surname>Upton</surname>
+</string-name> and <string-name>
+<given-names>A. M.</given-names>
+<surname>Kasko</surname>
+</string-name>, &#x0201c;<article-title>Strategies for the Conversion of Lignin to High&#x02010;value Polymeric Materials: Review and Perspective</article-title>,&#x0201d; <source>Chemical Reviews</source>
+<volume>116</volume> (<year>2016</year>): <fpage>2275</fpage>&#x02013;<lpage>2306</lpage>.<pub-id pub-id-type="pmid">26654678</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="cssc70432-cit-0003">
+<string-name>
+<given-names>W.</given-names>
+<surname>Guan</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>C. W.</given-names>
+<surname>Tsang</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Hu</surname>
+</string-name>, and <string-name>
+<given-names>C.</given-names>
+<surname>Liang</surname>
+</string-name>, &#x0201c;<article-title>Highly Dispersed Rh/NbOxInvoking High Catalytic Performances for the Valorization of Lignin Monophenols and Lignin Oil into Aromatics,</article-title>&#x0201d; <source>ACS Sustainable Chemistry &#x00026; Engineering</source>
+<volume>9</volume> (<year>2021</year>): <fpage>3529</fpage>&#x02013;<lpage>3541</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="cssc70432-cit-0004">
+<string-name>
+<given-names>Z.</given-names>
+<surname>Wu</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Zhao</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Zhang</surname>
+</string-name>, and <string-name>
+<given-names>F.</given-names>
+<surname>Wang</surname>
+</string-name>, &#x0201c;<article-title>Ethanol/1,4&#x02010;dioxane/formic Acid as Synergistic Solvents for the Conversion of Lignin into High&#x02010;value Added Phenolic Monomers Conversion of Lignin into Value&#x02010;Added Phenolic Monomers in a Mixture Solvent of 1,4&#x02010;dioxane/ethanol/formic Acid,</article-title>&#x0201d; <source>Bioresource Technology</source>
+<volume>278</volume> (<year>2019</year>): <fpage>187</fpage>&#x02013;<lpage>194</lpage>.<pub-id pub-id-type="pmid">30703636</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="cssc70432-cit-0005">
+<string-name>
+<given-names>D.</given-names>
+<surname>Bourbiaux</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Pu</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Rataboul</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Djakovitch</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Geantet</surname>
+</string-name>, and <string-name>
+<given-names>D.</given-names>
+<surname>Laurenti</surname>
+</string-name>, &#x0201c;<article-title>Reductive or Oxidative Catalytic Lignin Depolymerization: An Overview of Recent Advances,</article-title>&#x0201d; <source>Catalysis Today</source>
+<volume>373</volume> (<year>2021</year>): <fpage>24</fpage>&#x02013;<lpage>37</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="cssc70432-cit-0006">
+<string-name>
+<given-names>H.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Pu</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Ragauskas</surname>
+</string-name>, and <string-name>
+<given-names>B.</given-names>
+<surname>Yang</surname>
+</string-name>, &#x0201c;<article-title>From Lignin to Valuable Products&#x02014;Strategies, Challenges, and Prospects,</article-title>&#x0201d; <source>Bioresource Technology</source>
+<volume>271</volume> (<year>2019</year>): <fpage>449</fpage>&#x02013;<lpage>461</lpage>.<pub-id pub-id-type="pmid">30266464</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0007"><label>7</label><mixed-citation publication-type="book" id="cssc70432-cit-0007">
+<string-name>
+<given-names>R.</given-names>
+<surname>Katahira</surname>
+</string-name>, <string-name>
+<given-names>T. J.</given-names>
+<surname>Elder</surname>
+</string-name>, and <string-name>
+<given-names>G. T.</given-names>
+<surname>Beckham</surname>
+</string-name>, in <source>Lignin Valorization: Emerging Approaches</source>, ed. <person-group person-group-type="editor">
+<string-name>
+<given-names>G. T.</given-names>
+<surname>Beckham</surname>
+</string-name>
+</person-group>, (<publisher-name>The Royal Society of Chemistry</publisher-name>, <year>2018)</year>, ch. 1, pp. <fpage>1</fpage>&#x02013;<lpage>20</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="cssc70432-cit-0008">
+<string-name>
+<given-names>X.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name>
+<given-names>F. P.</given-names>
+<surname>Bouxin</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Fan</surname>
+</string-name>, <string-name>
+<given-names>V. L.</given-names>
+<surname>Budarin</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Hu</surname>
+</string-name>, and <string-name>
+<given-names>J. H.</given-names>
+<surname>Clark</surname>
+</string-name>, &#x0201c;<article-title>Recent Advances in the Catalytic Depolymerization of Lignin towards Phenolic Chemicals: A Review,</article-title>&#x0201d; <source>ChemSusChem</source>
+<volume>13</volume> (<year>2020</year>): <fpage>4296</fpage>&#x02013;<lpage>4317</lpage>.<pub-id pub-id-type="pmid">32662564</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="cssc70432-cit-0009">
+<string-name>
+<given-names>F.</given-names>
+<surname>Brienza</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Cannella</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Montesdeoca</surname>
+</string-name>, <string-name>
+<given-names>I.</given-names>
+<surname>Cybulska</surname>
+</string-name>, and <string-name>
+<given-names>D. P.</given-names>
+<surname>Debecker</surname>
+</string-name>, &#x0201c;<article-title>A Guide to Lignin Valorization in Biorefineries: Traditional, Recent, and Forthcoming Approaches to Convert Raw Lignocellulose into Valuable Materials and Chemicals,</article-title>&#x0201d; <source>RSC Sustainability</source>
+<volume>2</volume> (<year>2024</year>): <fpage>37</fpage>&#x02013;<lpage>90</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="cssc70432-cit-0010">
+<string-name>
+<given-names>M. V.</given-names>
+<surname>Galkin</surname>
+</string-name> and <string-name>
+<given-names>J. S. M.</given-names>
+<surname>Samec</surname>
+</string-name>, &#x0201c;<article-title>Lignin Valorization through Catalytic Lignocellulose Fractionation: A Fundamental Platform for the Future Biorefinery,</article-title>&#x0201d; <source>ChemSusChem</source>
+<volume>9</volume> (<year>2016</year>): <fpage>1544</fpage>&#x02013;<lpage>1558</lpage>.<pub-id pub-id-type="pmid">27273230</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="cssc70432-cit-0011">
+<string-name>
+<given-names>N.</given-names>
+<surname>Mahmood</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Yuan</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Schmidt</surname>
+</string-name>, and <string-name>
+<given-names>C.</given-names>
+<surname>Xu</surname>
+</string-name>, &#x0201c;<article-title>Production of Polyols via Direct Hydrolysis of Kraft Lignin: Effect of Process Parameters,</article-title>&#x0201d; <source>Bioresource Technology</source>
+<volume>139</volume> (<year>2013</year>): <fpage>13</fpage>&#x02013;<lpage>20</lpage>.<pub-id pub-id-type="pmid">23644065</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="cssc70432-cit-0012">
+<string-name>
+<given-names>D. D. S.</given-names>
+<surname>Argyropoulos</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Crestini</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Dahlstrand</surname>
+</string-name>, et al., &#x0201c;<article-title>Kraft Lignin: A Valuable, Sustainable Resource, Opportunities and Challenges,</article-title>&#x0201d; <source>ChemSusChem</source>
+<volume>16</volume> (<year>2023</year>): <fpage>e202300492</fpage>.<pub-id pub-id-type="pmid">37493340</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="cssc70432-cit-0013">
+<string-name>
+<given-names>N.</given-names>
+<surname>Brosse</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Hussin</surname>
+</string-name>, and <string-name>
+<given-names>A. A.</given-names>
+<surname>Rahim</surname>
+</string-name>, &#x0201c;<article-title>Organosolv Processes,</article-title>&#x0201d; <source>Advances in Biochemical Engineering/Biotechnology</source>
+<volume>166</volume> (<year>2019</year>): <fpage>153</fpage>&#x02013;<lpage>176</lpage>.<pub-id pub-id-type="pmid">28280848</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="cssc70432-cit-0014">
+<string-name>
+<given-names>I.</given-names>
+<surname>Haq</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Mazumder</surname>
+</string-name>, and <string-name>
+<given-names>A. S.</given-names>
+<surname>Kalamdhad</surname>
+</string-name>, &#x0201c;<article-title>Recent Advances in Removal of Lignin from Paper Industry Wastewater and Its Industrial Applications &#x02013; A Review,</article-title>&#x0201d; <source>Bioresource Technology</source>
+<volume>312</volume> (<year>2020</year>): <fpage>123636</fpage>.<pub-id pub-id-type="pmid">32527619</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="cssc70432-cit-0015">
+<string-name>
+<given-names>F.</given-names>
+<surname>Cheng</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name>
+<given-names>S. D.</given-names>
+<surname>Karlen</surname>
+</string-name>, et al., &#x0201c;<article-title>Poplar Lignin Structural Changes during Extraction in <italic toggle="yes">&#x003b3;</italic>&#x02010;valerolactone (GVL),</article-title>&#x0201d; <source>Green Chemistry</source>
+<volume>25</volume> (<year>2023</year>): <fpage>336</fpage>&#x02013;<lpage>347</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="cssc70432-cit-0016">
+<string-name>
+<given-names>H. Q.</given-names>
+<surname>L&#x000ea;</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Ma</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Borrega</surname>
+</string-name>, and <string-name>
+<given-names>H.</given-names>
+<surname>Sixta</surname>
+</string-name>, &#x0201c;<article-title>Wood Biorefinery based on <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone/water Fractionation,</article-title>&#x0201d; <source>Green Chemistry</source>
+<volume>18</volume> (<year>2016</year>): <fpage>5466</fpage>&#x02013;<lpage>5476</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="cssc70432-cit-0017">
+<string-name>
+<given-names>W.</given-names>
+<surname>Fang</surname>
+</string-name> and <string-name>
+<given-names>H.</given-names>
+<surname>Sixta</surname>
+</string-name>, &#x0201c;<article-title>Advanced Biorefinery Based on the Fractionation of Biomass in <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone and Water,</article-title>&#x0201d; <source>ChemSusChem</source>
+<volume>8</volume> (<year>2015</year>): <fpage>73</fpage>&#x02013;<lpage>76</lpage>.<pub-id pub-id-type="pmid">25370304</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="cssc70432-cit-0018">
+<string-name>
+<given-names>D. M.</given-names>
+<surname>Alonso</surname>
+</string-name>, <string-name>
+<given-names>S. H.</given-names>
+<surname>Hakim</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Zhou</surname>
+</string-name>, et al., &#x0201c;<article-title>Increasing the Revenue from Lignocellulosic Biomass: Maximizing Feedstock Utilization,</article-title>&#x0201d; <source>Science Advances</source>
+<volume>3</volume> (<year>2017</year>): <fpage>1603301</fpage>.</mixed-citation></ref><ref id="cssc70432-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="cssc70432-cit-0019">
+<string-name>
+<given-names>L.</given-names>
+<surname>Shuai</surname>
+</string-name>, <string-name>
+<given-names>Y. M.</given-names>
+<surname>Questell&#x02010;Santiago</surname>
+</string-name>, and <string-name>
+<given-names>J. S.</given-names>
+<surname>Luterbacher</surname>
+</string-name>, &#x0201c;<article-title>A Mild Biomass Pretreatment Using <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone for Concentrated Sugar Production,</article-title>&#x0201d; <source>Green Chemistry</source>
+<volume>18</volume> (<year>2016</year>): <fpage>937</fpage>&#x02013;<lpage>943</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="cssc70432-cit-0020">
+<string-name>
+<given-names>S. X.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>M. F.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Yu</surname>
+</string-name>, <string-name>
+<given-names>Y. M.</given-names>
+<surname>Fan</surname>
+</string-name>, <string-name>
+<given-names>J. N.</given-names>
+<surname>Shou</surname>
+</string-name>, and <string-name>
+<given-names>R. C.</given-names>
+<surname>Sun</surname>
+</string-name>, &#x0201c;<article-title>Valorization of Bamboo by <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone/Acid/Water to Produce Digestible Cellulose, Degraded Sugars, and Lignin,</article-title>&#x0201d; <source>Bioresource Technology</source>
+<volume>230</volume> (<year>2017</year>): <fpage>90</fpage>&#x02013;<lpage>96</lpage>.<pub-id pub-id-type="pmid">28161625</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="cssc70432-cit-0021">
+<string-name>
+<given-names>Y.&#x02010;J.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>H.&#x02010;Y.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>X.&#x02010;F.</given-names>
+<surname>Cao</surname>
+</string-name>, <string-name>
+<given-names>S.&#x02010;N.</given-names>
+<surname>Sun</surname>
+</string-name>, and <string-name>
+<given-names>R.&#x02010;C.</given-names>
+<surname>Sun</surname>
+</string-name>, &#x0201c;<article-title>Understanding the Distribution and Structural Feature of Eucalyptus Lignin Isolated by <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone/Water/Acid System,</article-title>&#x0201d; <source>ACS Sustainable Chemistry &#x00026; Engineering</source>
+<volume>6</volume> (<year>2018</year>): <fpage>12124</fpage>&#x02013;<lpage>12131</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="cssc70432-cit-0022">
+<string-name>
+<given-names>R. M.</given-names>
+<surname>Trevorah</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Huynh</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Brklja&#x0010d;a</surname>
+</string-name>, and <string-name>
+<given-names>M. Z.</given-names>
+<surname>Othman</surname>
+</string-name>, &#x0201c;<article-title>Structural and Morphological Analysis of Cellulose Pulp Produced from the Fractionation of Eucalyptus Obliqua Sawdust Using <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone,</article-title>&#x0201d; <source>ACS Omega</source>
+<volume>6</volume> (<year>2021</year>): <fpage>4126</fpage>&#x02013;<lpage>4136</lpage>.<pub-id pub-id-type="pmid">33644535</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="cssc70432-cit-0023">
+<string-name>
+<given-names>Z.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Fridrich</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>De Santi</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Elangovan</surname>
+</string-name>, and <string-name>
+<given-names>K.</given-names>
+<surname>Barta</surname>
+</string-name>, &#x0201c;<article-title>Bright Side of Lignin Depolymerization: Toward New Platform Chemicals,</article-title>&#x0201d; <source>Chemical Reviews</source>
+<volume>118</volume> (<year>2018</year>): <fpage>614</fpage>&#x02013;<lpage>678</lpage>.<pub-id pub-id-type="pmid">29337543</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="cssc70432-cit-0024">
+<string-name>
+<given-names>D.</given-names>
+<surname>Raikwar</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Van Aelst</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Vangeel</surname>
+</string-name>, et al., &#x0201c;<article-title>Elucidating the Effect of the Physicochemical Properties of Organosolv Lignins on its Solubility and Reductive Catalytic Depolymerization,</article-title>&#x0201d; <source>Chemical Engineering Journal</source>
+<volume>461</volume> (<year>2023</year>): <fpage>1385</fpage>&#x02013;<lpage>8947</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="cssc70432-cit-0025">
+<string-name>
+<given-names>Y.</given-names>
+<surname>Sang</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Khalifeh</surname>
+</string-name>, and <string-name>
+<given-names>Y.</given-names>
+<surname>Li</surname>
+</string-name>, &#x0201c;<article-title>Catalysis and Chemistry of Lignin Depolymerization in Alcohol Solvents &#x02010; A Review,</article-title>&#x0201d; <source>Catalysis Today</source>
+<volume>408</volume> (<year>2023</year>): <fpage>168</fpage>&#x02013;<lpage>181</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="cssc70432-cit-0026">
+<string-name>
+<given-names>X.</given-names>
+<surname>Huang</surname>
+</string-name>, <string-name>
+<given-names>T. I.</given-names>
+<surname>Kor&#x000e1;nyi</surname>
+</string-name>, <string-name>
+<given-names>M. D.</given-names>
+<surname>Boot</surname>
+</string-name>, and <string-name>
+<given-names>E. J. M.</given-names>
+<surname>Hensen</surname>
+</string-name>, &#x0201c;<article-title>Catalytic Depolymerization of Lignin in Supercritical Ethanol,</article-title>&#x0201d; <source>ChemSusChem</source>
+<volume>7</volume> (<year>2014</year>): <fpage>2276</fpage>&#x02013;<lpage>2288</lpage>.<pub-id pub-id-type="pmid">24867490</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="cssc70432-cit-0027">
+<string-name>
+<given-names>C.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Lu</surname>
+</string-name>, et al.,&#x0201c;<article-title>Promoting Lignin Depolymerization and Restraining the Condensation via an Oxidation&#x02013;Hydrogenation Strategy,</article-title>&#x0201d; <source>ACS Catalysis</source>
+<volume>7</volume> (<year>2017</year>): <fpage>3419</fpage>&#x02013;<lpage>3429</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="cssc70432-cit-0028">
+<string-name>
+<given-names>R.</given-names>
+<surname>Ma</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Hao</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Ma</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Tian</surname>
+</string-name>, and <string-name>
+<given-names>Y.</given-names>
+<surname>Li</surname>
+</string-name>, &#x0201c;<article-title>Catalytic Ethanolysis of Kraft Lignin into High&#x02010;Value Small&#x02010;Molecular Chemicals over a Nanostructured &#x003b1;&#x02010;Molybdenum Carbide Catalyst,</article-title>&#x0201d; <source>Angewandte Chemie International Edition</source>
+<volume>53</volume> (<year>2014</year>): <fpage>7310</fpage>&#x02013;<lpage>7315</lpage>.<pub-id pub-id-type="pmid">24891069</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="cssc70432-cit-0029">
+<string-name>
+<given-names>X.</given-names>
+<surname>Ma</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Ma</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Hao</surname>
+</string-name>, et al., &#x0201c;<article-title>Common Pathways in Ethanolysis of Kraft Lignin to Platform Chemicals over Molybdenum&#x02010;Based Catalysts,</article-title>&#x0201d; <source>ACS Catalysis</source>
+<volume>5</volume> (<year>2015</year>): <fpage>4803</fpage>&#x02013;<lpage>4813</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="cssc70432-cit-0030">
+<string-name>
+<given-names>H.</given-names>
+<surname>Guo</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yang</surname>
+</string-name>, et al., &#x0201c;<article-title>Harvesting Alkyl Phenols from Lignin Monomers via Selective Hydrodeoxygenation under Ambient Pressure on Pd/&#x003b1;&#x02010;MoC Catalysts,</article-title>&#x0201d; <source>Molecular Catalysis</source>
+<volume>540</volume> (<year>2023</year>): <fpage>113041</fpage>.</mixed-citation></ref><ref id="cssc70432-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="cssc70432-cit-0031">
+<string-name>
+<given-names>R. K.</given-names>
+<surname>Chowdari</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Agarwal</surname>
+</string-name>, and <string-name>
+<given-names>H. J.</given-names>
+<surname>Heeres</surname>
+</string-name>, &#x0201c;<article-title>Hydrotreatment of Kraft Lignin to Alkylphenolics and Aromatics Using Ni, Mo, and W Phosphides Supported on Activated Carbon,</article-title>&#x0201d; <source>ACS Sustainable Chemistry &#x00026; Engineering</source>
+<volume>7</volume> (<year>2019</year>): <fpage>2044</fpage>&#x02013;<lpage>2055</lpage>.<pub-id pub-id-type="pmid">30775190</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="cssc70432-cit-0032">
+<string-name>
+<given-names>M.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Tang</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Wang</surname>
+</string-name>, et al., &#x0201c;<article-title>Catalytic Depolymerization of Kraft Lignin to Liquid Fuels and Guaiacol over Phosphorus&#x02010;Modified Mo/Sepiolite Catalyst,</article-title>&#x0201d; <source>Chemical Engineering Journal</source>
+<volume>427</volume> (<year>2022</year>): <fpage>131761</fpage>.</mixed-citation></ref><ref id="cssc70432-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="cssc70432-cit-0033">
+<string-name>
+<given-names>Y.</given-names>
+<surname>Song</surname>
+</string-name>, <string-name>
+<given-names>J. K.</given-names>
+<surname>Mobley</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Hussain Motagamwala</surname>
+</string-name>, et al., &#x0201c;<article-title>Gold&#x02010;Catalyzed Conversion of Lignin to Low Molecular Weight Aromatics,</article-title>&#x0201d; <source>Chemical Science</source>
+<volume>9</volume> (<year>2018</year>): <fpage>8127</fpage>&#x02013;<lpage>8133</lpage>.<pub-id pub-id-type="pmid">30542563</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="cssc70432-cit-0034">
+<string-name>
+<given-names>G.</given-names>
+<surname>Karunasinghe</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Qian</surname>
+</string-name>, <string-name>
+<given-names>M. S.</given-names>
+<surname>Meier</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Crocker</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Martinelli</surname>
+</string-name>, &#x0201c;<article-title>Development of an Effective Au:Pd Bimetallic Heterogeneous Catalyst for Oxidative Lignin Depolymerization to Low Molecular Weight Aromatics,</article-title>&#x0201d; <source>ChemistrySelect</source>
+<volume>9</volume> (<year>2024</year>): <fpage>e202401532</fpage>.</mixed-citation></ref><ref id="cssc70432-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="cssc70432-cit-0035">
+<string-name>
+<given-names>D. J.</given-names>
+<surname>Mcclelland</surname>
+</string-name>, <string-name>
+<given-names>P. H.</given-names>
+<surname>Galebach</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Hussain Motagamwala</surname>
+</string-name>, et al., &#x0201c;<article-title>Supercritical Methanol Depolymerization and Hydrodeoxygenation of Lignin and Biomass over Reduced Copper Porous Metal Oxides,</article-title>&#x0201d; <source>Green Chemistry</source>
+<volume>21</volume> (<year>2019</year>): <fpage>2988</fpage>&#x02013;<lpage>3005</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="cssc70432-cit-0036">
+<string-name>
+<given-names>J. S.</given-names>
+<surname>Luterbacher</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Azarpira</surname>
+</string-name>, <string-name>
+<given-names>A. H.</given-names>
+<surname>Motagamwala</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Ralph</surname>
+</string-name>, and <string-name>
+<given-names>J. A.</given-names>
+<surname>Dumesic</surname>
+</string-name>, &#x0201c;<article-title>Lignin Monomer Production Integrated into the <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone Sugar Platform,</article-title>&#x0201d; <source>Energy &#x00026; Environmental Science</source>
+<volume>8</volume> (<year>2015</year>): <fpage>2657</fpage>&#x02013;<lpage>2663</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="cssc70432-cit-0037">
+<string-name>
+<given-names>X.</given-names>
+<surname>Wu</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>De bruyn</surname>
+</string-name>, and <string-name>
+<given-names>K.</given-names>
+<surname>Barta</surname>
+</string-name>, &#x0201c;<article-title>Deriving High&#x02010;Value Products from Depolymerized Lignin Oil, Aided by (Bio)Catalytic Funneling Strategies,</article-title>&#x0201d; <source>ChemComm</source>
+<volume>59</volume> (<year>2023</year>): <fpage>9929</fpage>&#x02013;<lpage>9951</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="cssc70432-cit-0038">
+<string-name>
+<given-names>A.</given-names>
+<surname>Slabon</surname>
+</string-name> and <string-name>
+<given-names>B. V. M.</given-names>
+<surname>Rodrigues</surname>
+</string-name>, &#x0201c;<article-title>To Break, or Not to Break: Is Selective Depolymerization of Lignin a Riemann Hypothesis Rather Than a Solution?</article-title>&#x0201d; <source>Green Chemistry</source>
+<volume>27</volume> (<year>2025</year>): <fpage>2178</fpage>&#x02013;<lpage>2183</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="cssc70432-cit-0039">
+<string-name>
+<given-names>C.</given-names>
+<surname>Sener</surname>
+</string-name>, <string-name>
+<given-names>A. H.</given-names>
+<surname>Motagamwala</surname>
+</string-name>, <string-name>
+<given-names>D. M.</given-names>
+<surname>Alonso</surname>
+</string-name>, and <string-name>
+<given-names>J. A.</given-names>
+<surname>Dumesic</surname>
+</string-name>, &#x0201c;<article-title>Enhanced Furfural Yields from Xylose Dehydration in the <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone/Water Solvent System at Elevated Temperatures,</article-title>&#x0201d; <source>ChemSusChem</source>
+<volume>11</volume> (<year>2018</year>): <fpage>2321</fpage>&#x02013;<lpage>2331</lpage>.<pub-id pub-id-type="pmid">29776010</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="cssc70432-cit-0040">
+<string-name>
+<given-names>J. C.</given-names>
+<surname>Del R&#x000ed;o</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Rencoret</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Prinsen</surname>
+</string-name>, <string-name>
+<given-names>&#x000c1;. T.</given-names>
+<surname>Mart&#x000ed;nez</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Ralph</surname>
+</string-name>, and <string-name>
+<given-names>A.</given-names>
+<surname>Guti&#x000e9;rrez</surname>
+</string-name>, &#x0201c;<article-title>Structural Characterization of Wheat Straw Lignin as Revealed by Analytical Pyrolysis, 2D&#x02010;NMR, and Reductive Cleavage Methods,</article-title>&#x0201d; <source>Journal of Agricultural and Food Chemistry</source>
+<volume>60</volume> (<year>2012</year>): <fpage>5922</fpage>&#x02013;<lpage>5935</lpage>.<pub-id pub-id-type="pmid">22607527</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="cssc70432-cit-0041">
+<string-name>
+<given-names>M.</given-names>
+<surname>BakerS</surname>
+</string-name>, &#x0201c;<article-title>Rapid Methoxyl Analysis of Lignins Using Gas Chromatography,</article-title>&#x0201d; <source>Holzforschung</source>
+<volume>50</volume> (<year>1996</year>): <fpage>573</fpage>&#x02013;<lpage>574</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="cssc70432-cit-0042">
+<string-name>
+<given-names>C.</given-names>
+<surname>Tang</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Xu</surname>
+</string-name>, et al.,&#x0201c;<article-title>Unconventional Molybdenum Carbide Phases with High Electrocatalytic Activity for the Hydrogen Evolution Reaction,</article-title>&#x0201d; <source>Journal of Materials Chemistry. A</source>
+<volume>7</volume> (<year>2019</year>): <fpage>18030</fpage>&#x02013;<lpage>18038</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="cssc70432-cit-0043">
+<string-name>
+<given-names>R.</given-names>
+<surname>Ma</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Liu</surname>
+</string-name>, and <string-name>
+<given-names>J.</given-names>
+<surname>Wang</surname>
+</string-name>, &#x0201c;<article-title>Ultrafine Molybdenum Carbide Nanoparticles Composited with Carbon as a Highly Active Hydrogen&#x02010;Evolution Electrocatalyst,</article-title>&#x0201d; <source>Angewandte Chemie International Edition</source>
+<volume>54</volume> (<year>2015</year>): <fpage>14723</fpage>&#x02013;<lpage>14727</lpage>.<pub-id pub-id-type="pmid">26474079</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="cssc70432-cit-0044">
+<string-name>
+<given-names>C.</given-names>
+<surname>Stinner</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Prins</surname>
+</string-name>, and <string-name>
+<given-names>T.</given-names>
+<surname>Weber</surname>
+</string-name>, &#x0201c;<article-title>Formation, Structure, and HDN Activity of Unsupported Molybdenum Phosphide,</article-title>&#x0201d; <source>Journal of Catalysis</source>
+<volume>191</volume> (<year>2000</year>): <fpage>438</fpage>&#x02013;<lpage>444</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="cssc70432-cit-0045">
+<string-name>
+<given-names>R.</given-names>
+<surname>Cheng</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Shu</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Li</surname>
+</string-name>, et al., &#x0201c;<article-title>Synthesis and Characterization of High Surface Area Molybdenum Phosphide,</article-title>&#x0201d; <source>Applied Catalysis A: General</source>
+<volume>316</volume> (<year>2007</year>): <fpage>160</fpage>&#x02013;<lpage>168</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="cssc70432-cit-0046">
+<string-name>
+<given-names>A.</given-names>
+<surname>Granata</surname>
+</string-name> and <string-name>
+<given-names>D. S.</given-names>
+<surname>Argyropoulos</surname>
+</string-name>, &#x0201c;<article-title>2&#x02010;Chloro&#x02010;4,4,5,5&#x02010;tetramethyl&#x02010;1,3,2&#x02010;dioxaphospholane, a Reagent for the Accurate Determination of the Uncondensed and Condensed Phenolic Moieties in Lignins,</article-title>&#x0201d; <source>Journal of Agricultural and Food Chemistry</source>
+<volume>43</volume> (<year>1995</year>): <fpage>1538</fpage>&#x02013;<lpage>1544</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="cssc70432-cit-0047">
+<string-name>
+<given-names>H.</given-names>
+<surname>Sadeghifar</surname>
+</string-name> and <string-name>
+<given-names>A.</given-names>
+<surname>Ragauskas</surname>
+</string-name>, &#x0201c;<article-title>Perspective on Technical Lignin Fractionation,</article-title>&#x0201d; <source>ACS Sustainable Chemistry &#x00026; Engineering</source>
+<volume>8</volume> (<year>2020</year>): <fpage>8086</fpage>&#x02013;<lpage>8101</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="cssc70432-cit-0048">
+<string-name>
+<given-names>X.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Xia</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Wang</surname>
+</string-name>, et al., &#x0201c;<article-title>Holistic Investigation of Structural Evolution in Corn Stover Lignin under Pretreatment with Varying <italic toggle="yes">&#x003b3;</italic>&#x02010;valerolactone Concentrations,</article-title>&#x0201d; <source>Biomass &#x00026; Bioenergy</source>
+<volume>183</volume> (<year>2024</year>): <fpage>107155</fpage>.</mixed-citation></ref><ref id="cssc70432-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="cssc70432-cit-0049">
+<string-name>
+<given-names>L.</given-names>
+<surname>Liang</surname>
+</string-name>, <string-name>
+<given-names>Y.&#x02010;Y.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Bhagia</surname>
+</string-name>, et al.,&#x0201c;<article-title>Chemical and Morphological Structure of Transgenic Switchgrass Organosolv Lignin Extracted by Ethanol, Tetrahydrofuran, and <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone Pretreatments,</article-title>&#x0201d; <source>ACS Sustainable Chemistry &#x00026; Engineering</source>
+<volume>10</volume> (<year>2022</year>): <fpage>9041</fpage>&#x02013;<lpage>9052</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0050"><label>50</label><mixed-citation publication-type="book" id="cssc70432-cit-0050">
+<string-name>
+<given-names>M.</given-names>
+<surname>Poletto</surname>
+</string-name>, <source>Lignin: Trends and Applications</source> (<publisher-name>InTech</publisher-name>, <year>2018</year>).</mixed-citation></ref><ref id="cssc70432-bib-0051"><label>51</label><mixed-citation publication-type="journal" id="cssc70432-cit-0051">
+<string-name>
+<given-names>D.</given-names>
+<surname>Dolan</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Brucato</surname>
+</string-name>, <string-name>
+<given-names>C. W.</given-names>
+<surname>Reid</surname>
+</string-name>, <string-name>
+<given-names>A. F.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Wilson</surname>
+</string-name>, and <string-name>
+<given-names>A. M.</given-names>
+<surname>Voutchkova&#x02010;Kostal</surname>
+</string-name>, &#x0201c;<article-title>Selective Lignin Depolymerization via Transfer Hydrogenolysis Using Pd/Hydrotalcite Catalysts: Model Compounds to Whole Biomass,</article-title>&#x0201d; <source>Chemical Science</source>. <volume>15</volume> (<year>2024</year>): <fpage>20223</fpage>&#x02013;<lpage>20239</lpage>.<pub-id pub-id-type="pmid">39600500</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0052"><label>52</label><mixed-citation publication-type="journal" id="cssc70432-cit-0052">
+<string-name>
+<given-names>V. K.</given-names>
+<surname>Ponnusamy</surname>
+</string-name>, <string-name>
+<given-names>D. D.</given-names>
+<surname>Nguyen</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Dharmaraja</surname>
+</string-name>, et al., &#x0201c;<article-title>A Review on Lignin Structure, Pretreatments, Fermentation Reactions, and Biorefinery Potential,</article-title>&#x0201d; <source>Bioresource Technology</source>
+<volume>271</volume> (<year>2019</year>): <fpage>462</fpage>&#x02013;<lpage>472</lpage>.<pub-id pub-id-type="pmid">30270050</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0053"><label>53</label><mixed-citation publication-type="journal" id="cssc70432-cit-0053">
+<string-name>
+<given-names>Y. W.</given-names>
+<surname>Cheah</surname>
+</string-name>, <string-name>
+<given-names>M. A.</given-names>
+<surname>Salam</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Sebastian</surname>
+</string-name>, et al., &#x0201c;<article-title>Thermal Annealing Effects on Hydrothermally Synthesized Unsupported MoS2 for Enhanced Deoxygenation of Propylguaiacol and Kraft Lignin,</article-title>&#x0201d; <source>Sustainable Energy &#x00026; Fuels</source>
+<volume>5</volume> (<year>2021</year>): <fpage>5270</fpage>&#x02013;<lpage>5286</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0054"><label>54</label><mixed-citation publication-type="journal" id="cssc70432-cit-0054">
+<string-name>
+<given-names>Z. W.</given-names>
+<surname>Yao</surname>
+</string-name>, &#x0201c;<article-title>Exploration on the Synthesis of Activated Carbon&#x02013;Supported Molybdenum Carbide, Nitride, and Phosphide via a Carbothermal Reduction Route,</article-title>&#x0201d; <source>Journal of Alloys and Compounds</source>
+<volume>475</volume> (<year>2009</year>): <fpage>L38</fpage>&#x02013;<lpage>L41</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0055"><label>55</label><mixed-citation publication-type="journal" id="cssc70432-cit-0055">
+<string-name>
+<given-names>Y.</given-names>
+<surname>Ma</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Sang</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Wu</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Chen</surname>
+</string-name>, and <string-name>
+<given-names>Y.</given-names>
+<surname>Li</surname>
+</string-name>, &#x0201c;<article-title>Selective Production of 2&#x02010;(tert&#x02010;butyl)&#x02010;3&#x02010;methylphenol from Depolymerization of Enzymatic Hydrolysis Lignin with MoS2 Catalyst,</article-title>&#x0201d; <source>Catalysis Today</source>
+<volume>408</volume> (<year>2023</year>): <fpage>194</fpage>&#x02013;<lpage>203</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0056"><label>56</label><mixed-citation publication-type="journal" id="cssc70432-cit-0056">
+<string-name>
+<given-names>F.</given-names>
+<surname>Yan</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Ma</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Ma</surname>
+</string-name>, et al., &#x0201c;<article-title>Ethanolysis of Kraft Lignin to Platform Chemicals on a MoC1&#x02212;<italic toggle="yes">x</italic>/Cu&#x02010;MgAlOz catalyst,</article-title>&#x0201d; <source>Applied Catalysis. B, Environmental</source>
+<volume>202</volume> (<year>2017</year>): <fpage>305</fpage>&#x02013;<lpage>313</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0057"><label>57</label><mixed-citation publication-type="journal" id="cssc70432-cit-0057">
+<string-name>
+<given-names>M.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Wang</surname>
+</string-name>, et al., &#x0201c;<article-title>Effect of Reduction Treatments of Mo/Sepiolite Catalyst on Lignin Depolymerization under Supercritical Ethanol,</article-title>&#x0201d; <source>Energy and Fuels</source>
+<volume>34</volume> (<year>2020</year>): <fpage>3394</fpage>&#x02013;<lpage>3405</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0058"><label>58</label><mixed-citation publication-type="journal" id="cssc70432-cit-0058">
+<string-name>
+<given-names>Q.</given-names>
+<surname>Song</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Cai</surname>
+</string-name>, et al., &#x0201c;<article-title>Lignin Depolymerization (LDP) in Alcohol over Nickel&#x02010;Based Catalysts via a Fragmentation&#x02013;Hydrogenolysis Process,</article-title>&#x0201d; <source>Energy &#x00026; Environmental Science</source>
+<volume>6</volume> (<year>2013</year>): <fpage>994</fpage>&#x02013;<lpage>1007</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0059"><label>59</label><mixed-citation publication-type="journal" id="cssc70432-cit-0059">
+<string-name>
+<given-names>T.</given-names>
+<surname>De Saegher</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Elmroth Nordlander</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Hallb&#x000f6;&#x000f6;k</surname>
+</string-name>, et al., &#x0201c;<article-title>Heterogeneously Catalyzed Lignin Depolymerisation in Continuous Flow: Assessing Feedstock Pretreatment and Catalyst Deactivation,</article-title>&#x0201d; <source>Chemical Engineering Journal</source>
+<volume>503</volume> (<year>2025</year>): <fpage>158216</fpage>.</mixed-citation></ref><ref id="cssc70432-bib-0060"><label>60</label><mixed-citation publication-type="journal" id="cssc70432-cit-0060">
+<string-name>
+<given-names>T.</given-names>
+<surname>Kotake</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Kawamoto</surname>
+</string-name>, and <string-name>
+<given-names>S.</given-names>
+<surname>Saka</surname>
+</string-name>, &#x0201c;<article-title>Pyrolytic Formation of Monomers from Hardwood Lignin as Studied from the Reactivities of the Primary Products,</article-title>&#x0201d; <source>Journal of Analytical and Applied Pyrolysis</source>
+<volume>113</volume> (<year>2015</year>): <fpage>57</fpage>&#x02013;<lpage>64</lpage>.</mixed-citation></ref><ref id="cssc70432-bib-0061"><label>61</label><mixed-citation publication-type="journal" id="cssc70432-cit-0061">
+<string-name>
+<given-names>T.</given-names>
+<surname>Ohra&#x02010;Aho</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Niemi</surname>
+</string-name>, <string-name>
+<given-names>A.&#x02010;M.</given-names>
+<surname>Aura</surname>
+</string-name>, et al.,&#x0201c;<article-title>Structure of Brewer's Spent Grain Lignin and Its Interactions with Gut Microbiota In Vitro,</article-title>&#x0201d; <source>Journal of Agricultural and Food Chemistry</source>
+<volume>64</volume> (<year>2016</year>): <fpage>812</fpage>&#x02013;<lpage>820</lpage>.<pub-id pub-id-type="pmid">26751846</pub-id>
+</mixed-citation></ref><ref id="cssc70432-bib-0062"><label>62</label><mixed-citation publication-type="journal" id="cssc70432-cit-0062">
+<string-name>
+<given-names>A. S.</given-names>
+<surname>J&#x000e4;&#x000e4;skel&#x000e4;inen</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Liiti&#x000e4;</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Mikkelson</surname>
+</string-name>, and <string-name>
+<given-names>T.</given-names>
+<surname>Tamminen</surname>
+</string-name>, &#x0201c;<article-title>Aqueous Organic Solvent Fractionation as a Means to Improve Lignin Homogeneity and Purity,</article-title>&#x0201d; <source>Industrial Crops and Products</source>
+<volume>103</volume> (<year>2017</year>): <fpage>51</fpage>&#x02013;<lpage>58</lpage>.</mixed-citation></ref></ref-list></back></article>

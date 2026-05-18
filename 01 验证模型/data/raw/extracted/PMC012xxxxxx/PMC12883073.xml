@@ -1,0 +1,427 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883073</article-id><article-id pub-id-type="doi">10.7759/cureus.101153</article-id><article-categories><subj-group subj-group-type="heading"><subject>Other</subject></subj-group><subj-group><subject>Environmental Health</subject></subj-group><subj-group><subject>Genetics</subject></subj-group></article-categories><title-group><article-title>Streptomyces spp. in Arid and Savannah Ecosystems: Effects on the Inhibition of Actinomycetoma Pathogens</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author" corresp="yes"><name><surname>Hamid</surname><given-names>Mohamed E</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Joseph</surname><given-names>Martin R</given-names></name><xref rid="aff-2" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><name><surname>Abd Alla</surname><given-names>Ahmed B</given-names></name><xref rid="aff-3" ref-type="aff">3</xref></contrib><contrib contrib-type="author"><name><surname>El Hassan</surname><given-names>Mogahid M</given-names></name><xref rid="aff-4" ref-type="aff">4</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Department of Clinical Microbiology and Parasitology, College of Medicine, King Khalid University, Abha, SAU </aff><aff id="aff-2">
+<label>2</label>
+Department of Clinical Microbiology and Parasitology, King Khalid University, Abha, SAU </aff><aff id="aff-3">
+<label>3</label>
+Department of Parasitology and Medical Entomology, College of Medical Laboratory Science, Sudan University of Science and Technology, Khartoum, SDN </aff><aff id="aff-4">
+<label>4</label>
+College of Medical Laboratory Science, Sudan University of Science and Technology, Khartoum, SDN </aff><author-notes><corresp id="cor1">
+Mohamed E. Hamid <email>mehamid3@gmail.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>9</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101153</elocation-id><history><date date-type="accepted"><day>8</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Hamid et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Hamid et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/445452-streptomyces-spp-in-arid-and-savannah-ecosystems-effects-on-the-inhibition-of-actinomycetoma-pathogens">This article is available from https://cureus.com/articles/445452-streptomyces-spp-in-arid-and-savannah-ecosystems-effects-on-the-inhibition-of-actinomycetoma-pathogens</self-uri><abstract><p>Background</p><p>Knowledge of the ecological and soil differences between arid and savannah ecosystems is essential for assessing their biodiversity and potential for agricultural and disease-controlling applications. Arid zones are characterized by extreme temperatures and limited rainfall, supporting unique soil types that influence microbial communities. This study examined soil <italic>Streptomyces</italic> spp., known for their antibiotic properties, focusing on their inhibitory effects against <italic>Streptomyces sudanensis</italic>, a pathogen associated with actinomycetoma.</p><p>Methodology</p><p>Soil samples (n = 7) were collected, and physicochemical parameters, along with enzyme activities, were analyzed. <italic>Streptomyces</italic> spp. were isolated, characterized morphologically and phenotypically, and identified molecularly via 16S rRNA gene sequencing. Their inhibitory effects against <italic>S. sudanensis</italic> were evaluated using agar-based bioassays.</p><p>Results</p><p><italic>Streptomyces </italic>spp. (n = 64), including <italic>Streptomyces griseostramineus</italic>, were identified. The results indicated significant ecological differences: arid sites had high temperatures (29.7&#x000b0;C) and low rainfall (70 mm) with nutrient-poor Yermosols, whereas savannah sites had higher rainfall (501 mm) and nutrient-rich Arenosols and Vertisols. Inhibition zones varied significantly, with arid ecosystem isolates showing a higher mean inhibition value (2.8411) compared to savannah isolates (1.7139). Statistical analysis verified a significant difference in mean inhibition (t = 2.589, p = 0.0126), suggesting distinct inhibitory capacities linked to the ecosystem.</p><p>Conclusions</p><p>This study emphasizes the significant ecological and soil differences between the ecosystems and proves that soil <italic>Streptomyces</italic> spp. in arid regions possess distinctly higher inhibition potential against <italic>S. sudanensis</italic>, suggesting their potential as biological agents in these environments.</p></abstract><kwd-group kwd-group-type="author"><kwd>16s rrna gene bioassays</kwd><kwd>actinomycetoma</kwd><kwd>biodiversity</kwd><kwd>ecosystems</kwd><kwd>inhibitory effects</kwd><kwd>soil properties</kwd><kwd>s. sudanensis</kwd><kwd>streptomyces spp</kwd></kwd-group></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p><italic>Streptomycetes </italic>are high-G&#x02009;+&#x02009;C Gram-positive, spore-forming bacteria belonging to the <italic>Streptomycetaceae </italic>(order <italic>Actinomycetales</italic>), which includes more than 500 species&#x000a0;[<xref rid="REF1" ref-type="bibr">1</xref>]. These bacteria are generally distributed in soil and are more abundant than other soil bacterial genera. Soils are considered reservoirs for streptomycetes, including the few pathogenic species, and their propagules, with transmission to humans often occurring through contact with the sharp thorns of <italic>Acacia</italic> trees, which can carry streptomycete spores&#x000a0;[<xref rid="REF2" ref-type="bibr">2</xref>].</p><p><italic>Streptomyces</italic> spp. are well known for their diverse metabolic capabilities, particularly their production of secondary metabolites with antimicrobial properties. They are widely distributed in soil ecosystems and play a crucial role in nutrient cycling and organic matter decomposition [<xref rid="REF3" ref-type="bibr">3</xref>,<xref rid="REF4" ref-type="bibr">4</xref>]. Soil characteristics, such as nutrient composition, moisture, and pH, significantly influence microbial community structure and function. Understanding these relationships is critical for harnessing the potential of <italic>Streptomyces</italic> as biocontrol agents. Actinomycetoma is a chronic granulomatous disease primarily caused by various microorganisms, with <italic>Streptomyces somaliensis</italic> and <italic>Streptomyces sudanensis</italic> being the most significant pathogens [<xref rid="REF5" ref-type="bibr">5</xref>]. This condition affects the skin, subcutaneous tissues, and, in some cases, the bones, leading to the formation of tumor-like lesions. If left untreated, actinomycetoma can result in severe morbidity, including significant deformities and disability [<xref rid="REF6" ref-type="bibr">6</xref>]. The prevalence of actinomycetoma in this region, mainly Central Sudan, particularly in Gezira State, Sennar, and the White Nile, has reported cases, especially in rural areas such as Sennar, North Kordofan, and the White Nile. Environmental conditions in these regions promote fungal growth and transmission, particularly linked to agricultural activities and walking barefoot, drawing attention to the need for effective management strategies. Recent studies suggest that exploring natural antagonistic agents present in the environment may provide new avenues for treatment and disease control [<xref rid="REF7" ref-type="bibr">7</xref>].</p><p>Current research has focused heavily on the ecological roles of <italic>Streptomyces</italic>, but a critical knowledge gap exists concerning how soil properties influence their pathogenicity, especially in relation to actinomycetoma. Our research explores the link between soil properties and <italic>Streptomyces</italic> spp. distribution in arid and savannah ecosystems. We aim to assess their diversity, evaluate their inhibitory activity against <italic>S. sudanensis</italic> (an actinomycetoma pathogen), and compare isolates to known mycetoma strains. This work seeks to highlight <italic>Streptomyces </italic>spp. as promising biological agents for soil health and pathogen control.</p></sec><sec sec-type="materials|methods"><title>Materials and methods</title><p>Soil sampling</p><p>Soil samples were collected from multiple sites within arid and savannah ecosystems during the dry season. This timing was important as it reflected the natural (hot and dry, Figure&#x000a0;<xref rid="FIG1" ref-type="fig">1</xref>) conditions under which <italic>Streptomyces</italic> spp. survive. Soil samples (merging four subsamples from each site) were collected at a consistent depth of ~5 cm to ensure comparability, specifically targeting the surface microbiome, such as <italic>Streptomyces</italic>. This depth was chosen because the surface habitat is influenced by the ecosystem and can affect hosts, including humans, animals, and plants.</p><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>Map of African savanna grassland geography, highlighting the study area within the geographical borders of Sudan.</title><p>Originally sourced from <ext-link xlink:href="https://imgbin.com" ext-link-type="uri">imgbin.com</ext-link>.</p></caption><graphic xlink:href="cureus-0018-00000101153-i01" position="float"/></fig><p>Soil physicochemical parameters and enzyme assays were conducted, as described before [<xref rid="REF7" ref-type="bibr">7</xref>]. Soil samples were analyzed for soil type, average annual temperature (&#x000b0;C), average annual rainfall (mm), phosphorus (P) (mg/100 g), potassium (K) (mg/100 g), soil pH, and enzyme activities (N-acetylglucosaminidase, glucosidase, cellulase, phosphatase, xylanase in nmol/g soil). Moisture content was determined by drying and weighing, while enzyme activities were assessed using soil extracts and spectrophotometric techniques, expressed as activity per gram of soil to evaluate soil health and microbial activity [<xref rid="REF8" ref-type="bibr">8</xref>].</p><p>Isolation of <italic>Streptomyces </italic>spp.</p><p><italic>Streptomyces</italic> were isolated using high nitrogen content (HNC) medium (6% yeast extract, 0.05% SDS, 0.05% CaCl<sub>2</sub>, pH 7.0). Soil (0.5 g dry weight) was added to the HNC medium and incubated at 120 rpm and 42&#x000b0;C for one hour. The suspension was allowed to settle, and dilutions (1:5, 1:10, 1:30) were spread onto ISP2 and humic acid agar plates, with ISP2 supplemented with antibiotics to prevent contamination. Plates were incubated at 27&#x000b0;C for up to three weeks. Colonies with typical morphology were streaked on ISP2 for purification and stored at &#x02212;20&#x000b0;C in 20% glycerol soil, as described previously&#x000a0;[<xref rid="REF7" ref-type="bibr">7</xref>].</p><p>Morphological examination</p><p>The morphological characteristics of the isolates were examined using light microscopy to assess colony morphology, spore formation, and other distinguishing features, as detailed previously [<xref rid="REF1" ref-type="bibr">1</xref>]. This analysis involved assessing various features, including colony morphology, cellular shapes, and arrangements. Strains that exhibited similar characteristics were clustered together, resulting in the formation of preliminary <italic>Streptomyces </italic>color categories. These groupings will provide a foundation for more thorough investigations, enabling researchers to delve deeper into the diversity and potential applications of these isolates.</p><p>Molecular identification of soil isolates</p><p>The 16S rRNA gene was amplified using universal primers 27F and 1492R, following Rainey et al.&#x02019;s method [<xref rid="REF9" ref-type="bibr">9</xref>]. Amplification (20 &#x003bc;L) was performed with Promega Green Mix, and products were analyzed via 1% agarose gel electrophoresis on a Bio-Rad MyCycler.</p><p>For sequencing, chromosomal DNA was isolated from a seven-day culture using PEG 200. The same primers were used for amplification and sequencing, analyzed with the ABI 370XL DNA analyzer and SeqMan software.</p><p>DNA sequences were corrected with Chromas and aligned with 16S rRNA sequences in the EZbioCloud database to evaluate phylogenetic relationships. A phylogenetic tree was constructed using the MEGA X program with the Neighbor-Joining method and 100 bootstrap replications.</p><p>Inhibitory effects against <italic>Streptomyces sudanensis</italic>
+</p><p>The inhibition of <italic>S. sudanensis</italic> was evaluated using an agar-based bioassay, as described previously [<xref rid="REF7" ref-type="bibr">7</xref>]. Fresh suspensions (0.1 mL) of <italic>Streptomyces</italic> isolates were placed on ISP2 agar plates previously streaked with <italic>S. sudanensis</italic> (DSM 41923). Multiple <italic>Streptomyces</italic> isolates were cultured per plate. The inhibition activities were calculated as the ratio between the inhibition zone (mm) against <italic>S. sudanensis</italic> and the colony size (mm) of soil streptomycetes. Inhibition zone/colony diameter (mm) provides a standardized measure of antimicrobial activity independent of the isolate&#x02019;s colony size.</p><p>Statistical analysis</p><p>Data were analyzed using paired samples tests in PAST (Version 5.0.2; Hammer &#x000d8;, Harper DAT, &#x00026; Ryan PD, Natural History Museum, University of Oslo, 1999-2024) to compare mean inhibition values between the arid and savannah ecosystems, calculating the mean difference and 95% confidence intervals. A t-test assessed the significance of the mean differences.</p></sec><sec sec-type="results"><title>Results</title><p>Table <xref rid="TAB1" ref-type="table">1</xref> presents an overview of soil factors and environmental conditions across various sites in arid and savannah ecosystems. The data includes site names, coordinates, ecoregions, and soil types, alongside key environmental metrics such as average annual temperature and rainfall.</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Soil factors and environmental conditions in arid and savannah ecosystems.</title><p>NAG =&#x000a0;N-acetylglucosaminidase; GLU =&#x000a0;&#x003b2;-glucosidase; CEL = cellulase; PHO = phosphatase;&#x000a0;XYL = &#x003b2;-xylosidase</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Site code
+</td><td rowspan="1" colspan="1">
+Site name (coordinates)
+</td><td rowspan="1" colspan="1">
+Ecoregion
+</td><td rowspan="1" colspan="1">
+Soil type (common description)
+</td><td rowspan="1" colspan="1">
+Average annual temperature (&#x000b0;C)
+</td><td rowspan="1" colspan="1">
+Average annual rain (mm)
+</td><td rowspan="1" colspan="1">
+P (mg/100&#x02009;g)
+</td><td rowspan="1" colspan="1">
+K (mg/100&#x02009;g)
+</td><td rowspan="1" colspan="1">
+Soil pH
+</td><td rowspan="1" colspan="1">
+NAG activity (nmol/ hour.&#x02212;1 g soil<sup>&#x02212;&#x02009;1</sup>)
+</td><td rowspan="1" colspan="1">
+GLU activity (nmol/ hour.&#x02212;&#x02009;1 g soil<sup>&#x02212;&#x02009;1</sup>)
+</td><td rowspan="1" colspan="1">
+CEL activity (nmol/ hour.&#x02212;&#x02009;1 g soil<sup>&#x02212;&#x02009;1</sup>)
+</td><td rowspan="1" colspan="1">
+PHO activity (nmol/ hour.&#x02212;&#x02009;1 g soil<sup>&#x02212;&#x02009;1</sup>)
+</td><td rowspan="1" colspan="1">
+XYL activity (nmol/ hour.&#x02212;&#x02009;1 g soil<sup>&#x02212;&#x02009;1</sup>)
+</td></tr><tr><td rowspan="1" colspan="1">
+7
+</td><td rowspan="1" colspan="1">
+Hussein Narti-1 (18.0299&#x000b0; N, 31.4301&#x000b0; E)
+</td><td rowspan="1" colspan="1">
+Arid
+</td><td rowspan="1" colspan="1">
+Yermosol (Desert sand)
+</td><td rowspan="1" colspan="1">
+29.7
+</td><td rowspan="1" colspan="1">
+70
+</td><td rowspan="1" colspan="1">
+4.6
+</td><td rowspan="1" colspan="1">
+32.6
+</td><td rowspan="1" colspan="1">
+8
+</td><td rowspan="1" colspan="1">
+2.2
+</td><td rowspan="1" colspan="1">
+4.1
+</td><td rowspan="1" colspan="1">
+-
+</td><td rowspan="1" colspan="1">
+1.9
+</td><td rowspan="1" colspan="1">
+0.2
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+19
+</td><td rowspan="1" colspan="1">
+Hussein Narti -2 (17.7861&#x000b0; N, 31.3137&#x000b0; E)
+</td><td rowspan="1" colspan="1">
+Arid
+</td><td rowspan="1" colspan="1">
+Yermosols (desert sand)
+</td><td rowspan="1" colspan="1">
+29.7
+</td><td rowspan="1" colspan="1">
+70
+</td><td rowspan="1" colspan="1">
+5.3
+</td><td rowspan="1" colspan="1">
+38.3
+</td><td rowspan="1" colspan="1">
+8
+</td><td rowspan="1" colspan="1">
+2.4
+</td><td rowspan="1" colspan="1">
+4.9
+</td><td rowspan="1" colspan="1">
+-
+</td><td rowspan="1" colspan="1">
+-
+</td><td rowspan="1" colspan="1">
+0.2
+</td></tr><tr><td rowspan="1" colspan="1">
+8
+</td><td rowspan="1" colspan="1">
+El Muglad (11.0347&#x000b0; N; 27.7491&#x000b0; E)
+</td><td rowspan="1" colspan="1">
+Savanna
+</td><td rowspan="1" colspan="1">
+Arenosols (stabilized sand dunes with silt or clay)
+</td><td rowspan="1" colspan="1">
+28.5
+</td><td rowspan="1" colspan="1">
+501
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+28.2
+</td><td rowspan="1" colspan="1">
+6.4
+</td><td rowspan="1" colspan="1">
+25.8
+</td><td rowspan="1" colspan="1">
+54.3
+</td><td rowspan="1" colspan="1">
+5
+</td><td rowspan="1" colspan="1">
+85
+</td><td rowspan="1" colspan="1">
+8.4
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+10
+</td><td rowspan="1" colspan="1">
+Nyala (12.0518&#x000b0; N 24.8805&#x000b0; E)
+</td><td rowspan="1" colspan="1">
+Savanna
+</td><td rowspan="1" colspan="1">
+Arenosols (stabilized sand dunes with silt or clay)
+</td><td rowspan="1" colspan="1">
+27.2
+</td><td rowspan="1" colspan="1">
+398
+</td><td rowspan="1" colspan="1">
+1.5
+</td><td rowspan="1" colspan="1">
+19.2
+</td><td rowspan="1" colspan="1">
+7.1
+</td><td rowspan="1" colspan="1">
+9.5
+</td><td rowspan="1" colspan="1">
+19.3
+</td><td rowspan="1" colspan="1">
+-
+</td><td rowspan="1" colspan="1">
+27
+</td><td rowspan="1" colspan="1">
+1.9
+</td></tr><tr><td rowspan="1" colspan="1">
+14
+</td><td rowspan="1" colspan="1">
+Umm Ruwaba (12.9028&#x000b0; N; 31.2283&#x000b0; E)
+</td><td rowspan="1" colspan="1">
+Savanna
+</td><td rowspan="1" colspan="1">
+Arenosols (stabilized sand dunes with silt or clay)
+</td><td rowspan="1" colspan="1">
+27
+</td><td rowspan="1" colspan="1">
+375
+</td><td rowspan="1" colspan="1">
+6.7
+</td><td rowspan="1" colspan="1">
+22.2
+</td><td rowspan="1" colspan="1">
+6.8
+</td><td rowspan="1" colspan="1">
+0.7
+</td><td rowspan="1" colspan="1">
+9.9
+</td><td rowspan="1" colspan="1">
+-
+</td><td rowspan="1" colspan="1">
+24
+</td><td rowspan="1" colspan="1">
+0.2
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+23
+</td><td rowspan="1" colspan="1">
+Al Fashir (13.6198&#x000b0; N; 25.3549&#x000b0; E)
+</td><td rowspan="1" colspan="1">
+Savanna
+</td><td rowspan="1" colspan="1">
+Arenosols (stabilized sand dunes with silt or clay)
+</td><td rowspan="1" colspan="1">
+26
+</td><td rowspan="1" colspan="1">
+213
+</td><td rowspan="1" colspan="1">
+28.6
+</td><td rowspan="1" colspan="1">
+60
+</td><td rowspan="1" colspan="1">
+7.7
+</td><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+12.1
+</td><td rowspan="1" colspan="1">
+0.5
+</td><td rowspan="1" colspan="1">
+13.6
+</td><td rowspan="1" colspan="1">
+1.2
+</td></tr><tr><td rowspan="1" colspan="1">
+29
+</td><td rowspan="1" colspan="1">
+Ad Damazin (11.7855&#x000b0; N; 34.3421&#x000b0; E)
+</td><td rowspan="1" colspan="1">
+Savanna
+</td><td rowspan="1" colspan="1">
+Vertisols (black clay)
+</td><td rowspan="1" colspan="1">
+28.3
+</td><td rowspan="1" colspan="1">
+713
+</td><td rowspan="1" colspan="1">
+16.5
+</td><td rowspan="1" colspan="1">
+49.1
+</td><td rowspan="1" colspan="1">
+7.3
+</td><td rowspan="1" colspan="1">
+18.9
+</td><td rowspan="1" colspan="1">
+87.2
+</td><td rowspan="1" colspan="1">
+3.4
+</td><td rowspan="1" colspan="1">
+80.5
+</td><td rowspan="1" colspan="1">
+8.7
+</td></tr></tbody></table></table-wrap><p>Arid sites (Hussein Narti-1 and Hussein Narti-2) exhibit high temperatures (29.7&#x000b0;C) and low rainfall (70 mm), with Yermosol soil types showing limited nutrient availability and low enzyme activity. In contrast, savannah sites, such as El Muglad and Nyala, demonstrate greater rainfall (up to 501 mm), slightly lower temperatures, and a variety of Arenosols and Vertisols. These savannah soils exhibit higher nutrient concentrations and enzyme activities, indicating a more dynamic and fertile environment compared to the arid regions. Overall, the results highlight significant differences in soil characteristics and environmental conditions between arid and savannah ecosystems.</p><p>A total of 64 strains were identified, predominantly belonging to the genus <italic>Streptomyces</italic>. Notable species among these include <italic>Streptomyces griseostramineus</italic>, <italic>Streptomyces albogriseolus</italic>, and <italic>Streptomyces werraensis</italic>. The isolation was achieved using humic acid and ISP2 media. Figure <xref rid="FIG2" ref-type="fig">2</xref> illustrates the phenotype selection process, purification, and microscopic analysis. A remarkable variety of phenotypic variations is presented, along with microscopic images of their distinctive filamentous structures.</p><fig position="anchor" fig-type="figure" id="FIG2"><label>Figure 2</label><caption><title>Isolation, selection of unique phenotypes, and microscopic analysis of Streptomyces species recovered from soil samples.</title></caption><graphic xlink:href="cureus-0018-00000101153-i02" position="float"/></fig><p>Table <xref rid="TAB2" ref-type="table">2</xref> summarizes the identification of various soil <italic>Streptomyces</italic> strains from arid and savannah ecosystems, detailing their similarity percentages to closely related species and corresponding GenBank accession numbers. This overview is based on 16S rRNA sequencing and provides insights into each strain&#x02019;s closest species and the percentage of nucleotide relatedness. The inclusion of GenBank accession numbers facilitates further research and verification of the sequences.</p><table-wrap position="float" id="TAB2"><label>Table 2</label><caption><title>Summary of soil Streptomyces spp., their identification to the closest species based on 16S rRNA sequences, their GenBank accession numbers, and average inhibition values against Streptomyces sudanensis.</title><p>*: Inhibition zone/colony diameter (mm) provides a standardized measure of antimicrobial activity independent of the isolate&#x02019;s colony size; **: NA, not available, has been excluded due to incomplete sequence length and poor quality.</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Strain code</td><td rowspan="1" colspan="1">Identification</td><td rowspan="1" colspan="1">Identification and % nucleotide relatedness</td><td rowspan="1" colspan="1">Gb_ Accession</td><td rowspan="1" colspan="1">Inhibition zone (inhibition/biomass diameter, mm)*</td></tr><tr><td rowspan="1" colspan="1">7A</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">97.00% with <italic>S. griseostramineus</italic>
+</td><td rowspan="1" colspan="1">MF356350</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">7B</td><td rowspan="1" colspan="1">Streptomyces griseostramineus</td><td rowspan="1" colspan="1">99.89% with <italic>S. griseostramineus</italic>, 99.89% with <italic>S. griseomycini</italic>, and 99.89% with <italic>Streptomyces</italic> spp. SD528 (EU544233)</td><td rowspan="1" colspan="1">MF353983</td><td rowspan="1" colspan="1">4</td></tr><tr><td rowspan="1" colspan="1">7C</td><td rowspan="1" colspan="1">
+<italic>Streptomyces</italic> spp.</td><td rowspan="1" colspan="1">97.63% with <italic>S. chromofuscus</italic>
+</td><td rowspan="1" colspan="1">MF356351</td><td rowspan="1" colspan="1">2.33</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">7D</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">99.33% with <italic>S. levis</italic>
+</td><td rowspan="1" colspan="1">MF356352</td><td rowspan="1" colspan="1">6.25</td></tr><tr><td rowspan="1" colspan="1">7E</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">98.80% with <italic>S. albaduncus</italic>
+</td><td rowspan="1" colspan="1">MF356353</td><td rowspan="1" colspan="1">5.3</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">7F</td><td rowspan="1" colspan="1">Streptomyces prasinosporus</td><td rowspan="1" colspan="1">99.90% with <italic>S. prasinosporus</italic>
+</td><td rowspan="1" colspan="1">MF353984</td><td rowspan="1" colspan="1">3.5</td></tr><tr><td rowspan="1" colspan="1">7G</td><td rowspan="1" colspan="1">
+<italic>Streptomyces</italic> spp.</td><td rowspan="1" colspan="1">98.76% with <italic>S. minutiscleroticus</italic>
+</td><td rowspan="1" colspan="1">MF356354</td><td rowspan="1" colspan="1">3</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">7H</td><td rowspan="1" colspan="1">Streptomyces leeuwenhoekii</td><td rowspan="1" colspan="1">99.77% with <italic>S. leeuwenhoekii</italic>
+</td><td rowspan="1" colspan="1">MF353985</td><td rowspan="1" colspan="1">2.5</td></tr><tr><td rowspan="1" colspan="1">7I</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">99.08% with <italic>S. albaduncus</italic>
+</td><td rowspan="1" colspan="1">MF356355</td><td rowspan="1" colspan="1">2.5</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">7J</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">97.74% with <italic>S. vinaceusdrappus</italic>
+</td><td rowspan="1" colspan="1">MF356356</td><td rowspan="1" colspan="1">2.5</td></tr><tr><td rowspan="1" colspan="1">7K</td><td rowspan="1" colspan="1">Streptomyces enissocaesilis</td><td rowspan="1" colspan="1">100% with <italic>S. enissocaesilis </italic>and 100% with <italic>S. rochei</italic>
+</td><td rowspan="1" colspan="1">MF353986</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">7L</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA**</td><td rowspan="1" colspan="1">2.5</td></tr><tr><td rowspan="1" colspan="1">7M</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">97.32% with <italic>S. niveoruber</italic>
+</td><td rowspan="1" colspan="1">MF356357</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">7N</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">99.18% with <italic>S. chromofuscus</italic>
+</td><td rowspan="1" colspan="1">MF356358</td><td rowspan="1" colspan="1">5</td></tr><tr><td rowspan="1" colspan="1">7O</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">99.52% with <italic>S. werraensis</italic>
+</td><td rowspan="1" colspan="1">MF356359</td><td rowspan="1" colspan="1">6</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">8A</td><td rowspan="1" colspan="1">Streptomyces albogriseolus</td><td rowspan="1" colspan="1">99.79% with <italic>S. albogriseolus</italic>
+</td><td rowspan="1" colspan="1">MF353987</td><td rowspan="1" colspan="1">3</td></tr><tr><td rowspan="1" colspan="1">8B</td><td rowspan="1" colspan="1">Streptomyces albogriseolus</td><td rowspan="1" colspan="1">100% with <italic>S. albogriseolus</italic>
+</td><td rowspan="1" colspan="1">MF353988</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">8C</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">97.94% with <italic>S. kebangsaanensis</italic>
+</td><td rowspan="1" colspan="1">MF356360</td><td rowspan="1" colspan="1">4</td></tr><tr><td rowspan="1" colspan="1">8D</td><td rowspan="1" colspan="1">Streptomyces variabilis</td><td rowspan="1" colspan="1">99.90% with <italic>S. variabilis</italic>
+</td><td rowspan="1" colspan="1">MF353989</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">8E</td><td rowspan="1" colspan="1">Streptomyces werraensis</td><td rowspan="1" colspan="1">99.70% with <italic>S. werraensis</italic>
+</td><td rowspan="1" colspan="1">MF353990</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">8F</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">99.13% with <italic>S.&#x000a0; albogriseolus</italic>
+</td><td rowspan="1" colspan="1">MF356361</td><td rowspan="1" colspan="1">1.33</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">8G</td><td rowspan="1" colspan="1">
+<italic>Streptomyces</italic> spp.</td><td rowspan="1" colspan="1">99.51% with <italic>S. pomoeae</italic>
+</td><td rowspan="1" colspan="1">MF356362</td><td rowspan="1" colspan="1">2.33</td></tr><tr><td rowspan="1" colspan="1">8H</td><td rowspan="1" colspan="1">Streptomyces albogriseolus</td><td rowspan="1" colspan="1">99.77% with <italic>S. albogriseolus</italic>
+</td><td rowspan="1" colspan="1">MF353991</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">8I</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">8J</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">1.67</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">8K</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">2.29</td></tr><tr><td rowspan="1" colspan="1">8L</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">98.32% with <italic>S. misionensis</italic>
+</td><td rowspan="1" colspan="1">MF356363</td><td rowspan="1" colspan="1">3.33</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">8M</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">2.22</td></tr><tr><td rowspan="1" colspan="1">8N</td><td rowspan="1" colspan="1">
+<italic>Streptomyces</italic> spp.</td><td rowspan="1" colspan="1">99.37% with <italic>S. lomondensis</italic> and 99.12% with <italic>S. luteogriseus</italic>
+</td><td rowspan="1" colspan="1">MF356364</td><td rowspan="1" colspan="1">1.33</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">8O</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">4</td></tr><tr><td rowspan="1" colspan="1">8R</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">97.29% with <italic>S. fumigatiscleroticus</italic>
+</td><td rowspan="1" colspan="1">MF356365</td><td rowspan="1" colspan="1">4.17</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">10A</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">10B</td><td rowspan="1" colspan="1">Streptomyces enissocaesilis</td><td rowspan="1" colspan="1">99.30% with <italic>S. enissocaesilis </italic>and 99.30 with <italic>S. rochei</italic>
+</td><td rowspan="1" colspan="1">MF353938</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">10C</td><td rowspan="1" colspan="1">Streptomyces werraensis</td><td rowspan="1" colspan="1">100% with <italic>S. werraensis</italic>
+</td><td rowspan="1" colspan="1">MF353939</td><td rowspan="1" colspan="1">1.2</td></tr><tr><td rowspan="1" colspan="1">10D</td><td rowspan="1" colspan="1">Streptomyces enissocaesilis</td><td rowspan="1" colspan="1">99.41% with <italic>S. enissocaesilis </italic>and 99.41% with <italic>S. rochei</italic>
+</td><td rowspan="1" colspan="1">MF353940</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">14A</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">2</td></tr><tr><td rowspan="1" colspan="1">14B</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">97.80% with <italic>S. fragilis</italic>
+</td><td rowspan="1" colspan="1">MF356324</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">14C</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">96.83% with <italic>S. leeuwenhoekii</italic>
+</td><td rowspan="1" colspan="1">MF356325</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">14D</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">96. 32% with <italic>S. leeuwenhoekii</italic>
+</td><td rowspan="1" colspan="1">MF356326</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">14E</td><td rowspan="1" colspan="1">Streptomyces djakartensis</td><td rowspan="1" colspan="1">100% with <italic>S. djakartensis</italic>
+</td><td rowspan="1" colspan="1">MF353947</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">14F</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">14G</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">96.52% with <italic>S. hawaiiensis</italic>
+</td><td rowspan="1" colspan="1">MF356327</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">14H</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">98.88% with <italic>S. minutiscleroticus</italic>
+</td><td rowspan="1" colspan="1">MF356328</td><td rowspan="1" colspan="1">3</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">14I</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">96.30% with <italic>S. aurantiogriseus</italic>
+</td><td rowspan="1" colspan="1">MF356329</td><td rowspan="1" colspan="1">2.5</td></tr><tr><td rowspan="1" colspan="1">14J</td><td rowspan="1" colspan="1">Streptomyces djakartensis</td><td rowspan="1" colspan="1">100% with <italic>S. djakartensis</italic>
+</td><td rowspan="1" colspan="1">MF353948</td><td rowspan="1" colspan="1">3</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">14K</td><td rowspan="1" colspan="1">Streptomyces djakartensis</td><td rowspan="1" colspan="1">100% with <italic>S. djakartensis</italic>
+</td><td rowspan="1" colspan="1">MF353949</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">19A</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">94.79% with <italic>S. malachitofuscus</italic>
+</td><td rowspan="1" colspan="1">MF356331</td><td rowspan="1" colspan="1">2.5</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">19B</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">98.54% with <italic>S. minutiscleroticus</italic>
+</td><td rowspan="1" colspan="1">MF353953</td><td rowspan="1" colspan="1">1.3</td></tr><tr><td rowspan="1" colspan="1">19C</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">19D</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">99.55% with <italic>S. werraensis</italic>
+</td><td rowspan="1" colspan="1">MF356332</td><td rowspan="1" colspan="1">1.25</td></tr><tr><td rowspan="1" colspan="1">19E</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">94.91% with <italic>S. werraensis</italic>
+</td><td rowspan="1" colspan="1">MF356333</td><td rowspan="1" colspan="1">2</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">19F</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">19G</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">2.75</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">19H</td><td rowspan="1" colspan="1">Streptomyces griseostramineus</td><td rowspan="1" colspan="1">99.77% with <italic>S. griseostramineus</italic>, 99.77% with <italic>Streptomyces&#x000a0;</italic>spp. SD528 (EU544233)</td><td rowspan="1" colspan="1">MF353954</td><td rowspan="1" colspan="1">6</td></tr><tr><td rowspan="1" colspan="1">19I</td><td rowspan="1" colspan="1">Streptomyces werraensis</td><td rowspan="1" colspan="1">100% with <italic>S. werraensis</italic>
+</td><td rowspan="1" colspan="1">MF353955</td><td rowspan="1" colspan="1">6.67</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">19J</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">99.33% with <italic>S. werraensis</italic>
+</td><td rowspan="1" colspan="1">MF356334</td><td rowspan="1" colspan="1">3</td></tr><tr><td rowspan="1" colspan="1">19K</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">95.56% with <italic>S. thermocarboxydovorans</italic>
+</td><td rowspan="1" colspan="1">MF356335</td><td rowspan="1" colspan="1">3.5</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">19L</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">1.67</td></tr><tr><td rowspan="1" colspan="1">23A</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">3.33</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">23B</td><td rowspan="1" colspan="1">Streptomyces fragilis</td><td rowspan="1" colspan="1">99.68% with <italic>S. fragilis</italic>
+</td><td rowspan="1" colspan="1">MF353961</td><td rowspan="1" colspan="1">1.6</td></tr><tr><td rowspan="1" colspan="1">29A</td><td rowspan="1" colspan="1">
+<italic>Streptomyces </italic>spp.</td><td rowspan="1" colspan="1">-</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">2</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">29B</td><td rowspan="1" colspan="1">Streptomyces werraensis</td><td rowspan="1" colspan="1">99.88% with <italic>S. werraensis</italic>
+</td><td rowspan="1" colspan="1">MF353967</td><td rowspan="1" colspan="1">2.29</td></tr><tr><td rowspan="1" colspan="1">29C</td><td rowspan="1" colspan="1">Streptomyces cinnabarinus</td><td rowspan="1" colspan="1">98.48% with <italic>S. cinnabarinus</italic>
+</td><td rowspan="1" colspan="1">MF353968</td><td rowspan="1" colspan="1">2.75</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">29D</td><td rowspan="1" colspan="1">Streptomyces werraensis</td><td rowspan="1" colspan="1">99.55% with <italic>S. werraensis</italic>
+</td><td rowspan="1" colspan="1">MF353969</td><td rowspan="1" colspan="1">0</td></tr></tbody></table></table-wrap><p>The inhibition zones for the identified soil <italic>Streptomyces</italic> strains varied significantly, with several strains demonstrating notable activity (Table <xref rid="TAB1" ref-type="table">1</xref>, Figure <xref rid="FIG3" ref-type="fig">3</xref>). For instance, strain 7B showed an inhibition zone of 4 mm, while strains 7D and 7O exhibited larger zones of 6.25 mm and 6 mm, respectively. Strain 19H also demonstrated substantial inhibition with a zone of 6 mm. Several strains, including 7A, 7K, and 8B, showed no inhibition activity at all. Overall, these results highlight the diverse inhibitory capacities of the identified <italic>Streptomyces</italic> strains against the target organism.</p><fig position="anchor" fig-type="figure" id="FIG3"><label>Figure 3</label><caption><title>Box plot comparing inhibition values of soil Streptomyces spp. against Streptomyces sudanensis in arid (blue) and savannah (green) ecosystems.</title><p>The arid ecosystem had a mean inhibition value of 2.8411 (N = 28) with a variance of 3.7218, while the savannah had a mean of 1.7139 (N = 49) and a variance of 2.7753. The difference in means was 1.1272, with a t-value of 2.6954 (p = 0.0086728) indicating statistical significance. Whiskers show the data range, and individual points indicate outliers. The inhibition value is the ratio of the inhibition zone (in mm) against <italic>Streptomyces sudanensis</italic> to the colony size of soil streptomycetes.</p></caption><graphic xlink:href="cureus-0018-00000101153-i03" position="float"/></fig><p>Analysis of soil samples from arid and savannah ecosystems revealed significant differences in mean values through t-tests (Figure <xref rid="FIG3" ref-type="fig">3</xref>). The arid ecosystem had a mean of 2.8411 (N = 28) and a variance of 3.7218, while the savannah ecosystem had a mean of 1.7139 (N = 49) with a variance of 2.7753. The difference in means was 1.1272, with 95% confidence intervals indicating a statistically significant distinction. The t-test yielded a t-value of 2.6954 and a p-value of 0.0086728, providing strong evidence against the null hypothesis of equal means. With unequal variances, the t-value was 2.589 (p = 0.012585).</p></sec><sec sec-type="discussion"><title>Discussion</title><p>The diversity of actinomycetes, such as <italic>Streptomyces</italic> spp., is significantly influenced by a range of biotic and abiotic factors, including vegetation, soil type, and climate. Identification of how these factors shape microbial communities is essential for harnessing their ecological roles in agriculture and disease management, given their known pharmaceutical and biotechnological potential [<xref rid="REF10" ref-type="bibr">10</xref>,<xref rid="REF11" ref-type="bibr">11</xref>].</p><p>Our study successfully isolated <italic>Streptomyces</italic> using humic acid and ISP2 media, revealing notable phenotypic diversity. Microscopic images emphasize their characteristic filamentous structures, indicating broad functional capabilities [<xref rid="REF12" ref-type="bibr">12</xref>]. Notably, Das et al. [<xref rid="REF13" ref-type="bibr">13</xref>] have highlighted the underexplored potential of soil habitats in Northeast India for producing novel antimicrobial metabolites, addressing the challenge of antibiotic resistance.</p><p>The relationship between nutrient availability and microbial diversity is critical in savannah ecosystems, which exhibited lower inhibition values for <italic>Streptomyces</italic> [<xref rid="REF14" ref-type="bibr">14</xref>]. Variations in grazing pressure can influence microbial populations and enzyme activities [<xref rid="REF15" ref-type="bibr">15</xref>]. <italic>Streptomyces</italic> species adapt to nutrient-poor environments, enabling them to exert antagonistic effects against pathogens such as <italic>S. sudanensis</italic>. For example, the antimicrobial activity of <italic>Streptomyces huasconensis</italic> is linked to its production of diverse secondary metabolites [<xref rid="REF16" ref-type="bibr">16</xref>].</p><p>Comparative analysis of inhibition values reveals significant ecological differences between arid and savannah ecosystems. In arid regions, higher average inhibition values (2.55 to 3.03) stem from high pH and low nutrient availability. In contrast, lower inhibition values in savannah ecosystems suggest a less specialized microbial community. Key statistical findings reinforce the conclusion that arid ecosystems harbor more effective <italic>Streptomyces</italic> strains for biological control. For instance, L&#x000f3;pez-Reyes et al. [<xref rid="REF17" ref-type="bibr">17</xref>] showed that <italic>Streptomyces</italic> sp. PR69 inhibited various plant pathogens, promoting plant growth.</p><p>Savannah ecosystems foster greater microbial growth due to favorable conditions, indicated by lower inhibition values. Enhanced nutrient availability and moisture lead to a more balanced microbial community, potentially reducing the dominance of <italic>Streptomyces</italic>. Furthermore, diverse plant species in these ecosystems can influence microbial interactions, affecting the ecological roles and antibiotic production of <italic>Streptomyces</italic> [<xref rid="REF18" ref-type="bibr">18</xref>].</p><p>The genetic and morphological similarities between soil isolates and those linked to mycetoma cases underscore the ecological significance of certain <italic>Streptomyces</italic> strains in actinomycetoma epidemiology. While this study offers valuable insights, it has limitations. Conducted in specific regions of Sudan, findings may not be widely generalizable. A larger sample size could enhance statistical power, and focusing on additional environmental factors, such as microbial interactions and seasonal variations, is crucial. Isolation methods may not fully capture the diversity of <italic>Streptomyces</italic> strains, suggesting advanced techniques for future research. Lastly, while we primarily assessed antimicrobial properties against <italic>S. sudanensis</italic>, broader evaluations against other pathogens are needed to fully explore the biocontrol potential of <italic>Streptomyces</italic> spp.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>This study emphasizes the importance of soil properties in influencing the diversity and inhibitory potential of <italic>Streptomyces</italic> spp. against <italic>S. sudanensis</italic>. Our findings reveal the ecological significance of specific <italic>Streptomyces</italic> strains in actinomycetoma epidemiology and emphasize the need for further research on their genetic and morphological traits. Improving our understanding of these microbial communities may lead to novel biocontrol strategies for actinomycetoma and other soil-borne diseases, while also enhancing soil health in sub-Saharan Africa to boost agricultural productivity and ecosystem resilience.</p></sec></body><back><ack><p>This work was supported by a fellowship from the Alexander von Humboldt Foundation, Bonn, Germany (MEH; 3.4-SUD/1009961 STP). The authors wish to extend their gratitude to the staff at UFZ, Halle, particularly Dr. Mika Tarkka, Dr. Thomas Reitz, Ms. Kerstin Hommel, and Prof. Fran&#x000e7;ois Buscot, for their invaluable assistance during the initial phases of the research.</p></ack><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Human subjects:</bold> All authors have confirmed that this study did not involve human participants or tissue.</p><p><bold>Animal subjects:</bold> All authors have confirmed that this study did not involve animal subjects or tissue.</p><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> All authors have declared that no financial support was received from any organization for the submitted work.</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Mohamed E. Hamid, Martin R. Joseph, Ahmed B. Abd Alla, Mogahid M. El Hassan</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Mohamed E. Hamid, Martin R. Joseph, Ahmed B. Abd Alla, Mogahid M. El Hassan</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Mohamed E. Hamid</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Martin R. Joseph, Ahmed B. Abd Alla, Mogahid M. El Hassan</p><p><bold>Supervision:</bold>&#x000a0; Ahmed B. Abd Alla</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="book"><article-title>The family streptomycetaceae, part I: taxonomy</article-title><source>The Prokaryotes: A Handbook on the Biology of Bacteria</source><person-group>
+<name><surname>K&#x000e4;mpfer</surname><given-names>P</given-names></name>
+</person-group><fpage>538</fpage><lpage>604</lpage><publisher-loc>Berlin</publisher-loc><publisher-name>Springer</publisher-name><volume>3</volume><year>2006</year></element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>Streptomyces as symbionts: an emerging and widespread theme?</article-title><source>FEMS Microbiol Rev</source><person-group>
+<name><surname>Seipke</surname><given-names>RF</given-names></name>
+<name><surname>Kaltenpoth</surname><given-names>M</given-names></name>
+<name><surname>Hutchings</surname><given-names>MI</given-names></name>
+</person-group><fpage>862</fpage><lpage>876</lpage><volume>36</volume><year>2012</year><pub-id pub-id-type="pmid">22091965</pub-id>
+</element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="journal"><article-title>Actinobacteria from desert: diversity and biotechnological applications</article-title><source>Front Microbiol</source><person-group>
+<name><surname>Xie</surname><given-names>F</given-names></name>
+<name><surname>Pathom-Aree</surname><given-names>W</given-names></name>
+</person-group><fpage>765531</fpage><volume>12</volume><year>2021</year><pub-id pub-id-type="pmid">34956128</pub-id>
+</element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Mycetoma : a review</article-title><source>Am J Clin Dermatol</source><person-group>
+<name><surname>Lichon</surname><given-names>V</given-names></name>
+<name><surname>Khachemoune</surname><given-names>A</given-names></name>
+</person-group><fpage>315</fpage><lpage>321</lpage><volume>7</volume><year>2006</year><pub-id pub-id-type="pmid">17007542</pub-id>
+</element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>Clinical features of mycetoma and the appropriate treatment options</article-title><source>Res Rep Trop Med</source><person-group>
+<name><surname>Agarwal</surname><given-names>P</given-names></name>
+<name><surname>Jagati</surname><given-names>A</given-names></name>
+<name><surname>Rathod</surname><given-names>SP</given-names></name>
+<name><surname>Kalra</surname><given-names>K</given-names></name>
+<name><surname>Patel</surname><given-names>S</given-names></name>
+<name><surname>Chaudhari</surname><given-names>M</given-names></name>
+</person-group><fpage>173</fpage><lpage>179</lpage><volume>12</volume><year>2021</year><pub-id pub-id-type="pmid">34267575</pub-id>
+</element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Optimization of hydrolytic and oxidative enzyme methods for ecosystem studies</article-title><source>Soil Biol Biochem</source><person-group>
+<name><surname>German</surname><given-names>DP</given-names></name>
+<name><surname>Weintraub</surname><given-names>MN</given-names></name>
+<name><surname>Grandy</surname><given-names>AS</given-names></name>
+<name><surname>Lauber</surname><given-names>CL</given-names></name>
+<name><surname>Rinkes</surname><given-names>ZL</given-names></name>
+<name><surname>Allison</surname><given-names>SD</given-names></name>
+</person-group><fpage>1387</fpage><lpage>1397</lpage><volume>43</volume><year>2011</year></element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>Diversity and geographic distribution of soil streptomycetes with antagonistic potential against actinomycetoma-causing Streptomyces sudanensis in Sudan and South Sudan</article-title><source>BMC Microbiol</source><person-group>
+<name><surname>Hamid</surname><given-names>ME</given-names></name>
+<name><surname>Reitz</surname><given-names>T</given-names></name>
+<name><surname>Joseph</surname><given-names>MR</given-names></name>
+<etal/>
+</person-group><fpage>33</fpage><volume>20</volume><year>2020</year><pub-id pub-id-type="pmid">32050891</pub-id>
+</element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>The genus Nocardiopsis represents a phylogenetically coherent taxon and a distinct actinomycete lineage: proposal of Nocardiopsaceae fam. nov</article-title><source>Int J Syst Bacteriol</source><person-group>
+<name><surname>Rainey</surname><given-names>FA</given-names></name>
+<name><surname>Ward-Rainey</surname><given-names>N</given-names></name>
+<name><surname>Kroppenstedt</surname><given-names>RM</given-names></name>
+<name><surname>Stackebrandt</surname><given-names>E</given-names></name>
+</person-group><fpage>1088</fpage><lpage>1092</lpage><volume>46</volume><year>1996</year><uri xlink:href="https://pubmed.ncbi.nlm.nih.gov/8863440/">https://pubmed.ncbi.nlm.nih.gov/8863440/</uri><pub-id pub-id-type="pmid">8863440</pub-id>
+</element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>Soil microbial population and enzyme activity related to grazing pressure in alpine meadows of Nanda Devi Biosphere Reserve</article-title><source>J Environ Biol</source><person-group>
+<name><surname>Singh</surname><given-names>SK</given-names></name>
+<name><surname>Rai</surname><given-names>JP</given-names></name>
+</person-group><fpage>103</fpage><lpage>107</lpage><volume>25</volume><year>2004</year><uri xlink:href="https://pubmed.ncbi.nlm.nih.gov/15303712/">https://pubmed.ncbi.nlm.nih.gov/15303712/</uri><pub-id pub-id-type="pmid">15303712</pub-id>
+</element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="journal"><article-title>Streptomyces as a promising biological control agents for plant pathogens</article-title><source>Front Microbiol</source><person-group>
+<name><surname>Khan</surname><given-names>S</given-names></name>
+<name><surname>Srivastava</surname><given-names>S</given-names></name>
+<name><surname>Karnwal</surname><given-names>A</given-names></name>
+<name><surname>Malik</surname><given-names>T</given-names></name>
+</person-group><fpage>1285543</fpage><volume>14</volume><year>2023</year><pub-id pub-id-type="pmid">38033592</pub-id>
+</element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="journal"><article-title>Diversity, mechanisms and beneficial features of phosphate-solubilizing Streptomyces in sustainable agriculture: a review</article-title><source>Front Plant Sci</source><person-group>
+<name><surname>Chouyia</surname><given-names>FE</given-names></name>
+<name><surname>Ventorino</surname><given-names>V</given-names></name>
+<name><surname>Pepe</surname><given-names>O</given-names></name>
+</person-group><fpage>1035358</fpage><volume>13</volume><year>2022</year><uri xlink:href="https://pubmed.ncbi.nlm.nih.gov/36561447/">https://pubmed.ncbi.nlm.nih.gov/36561447/</uri><pub-id pub-id-type="pmid">36561447</pub-id>
+</element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="journal"><article-title>Streptomyces and their specialised metabolites for phytopathogen control - comparative in vitro and in planta metabolic approaches</article-title><source>Front Plant Sci</source><person-group>
+<name><surname>Dow</surname><given-names>L</given-names></name>
+<name><surname>Gallart</surname><given-names>M</given-names></name>
+<name><surname>Ramarajan</surname><given-names>M</given-names></name>
+<name><surname>Law</surname><given-names>SR</given-names></name>
+<name><surname>Thatcher</surname><given-names>LF</given-names></name>
+</person-group><fpage>1151912</fpage><volume>14</volume><year>2023</year><pub-id pub-id-type="pmid">37389291</pub-id>
+</element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>Antimicrobial potentiality of actinobacteria isolated from two microbiologically unexplored forest ecosystems of Northeast India</article-title><source>BMC Microbiol</source><person-group>
+<name><surname>Das</surname><given-names>R</given-names></name>
+<name><surname>Romi</surname><given-names>W</given-names></name>
+<name><surname>Das</surname><given-names>R</given-names></name>
+<name><surname>Sharma</surname><given-names>HK</given-names></name>
+<name><surname>Thakur</surname><given-names>D</given-names></name>
+</person-group><fpage>71</fpage><volume>18</volume><year>2018</year><pub-id pub-id-type="pmid">29996765</pub-id>
+</element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Grazing effects on vegetation dynamics in the savannah ecosystems of the Sahel</article-title><source>Ecol Process</source><person-group>
+<name><surname>Gebremedhn</surname><given-names>HH</given-names></name>
+<name><surname>Ndiaye</surname><given-names>O</given-names></name>
+<name><surname>Mensah</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><fpage>54</fpage><volume>12</volume><year>2023</year></element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>Genomic investigation of desert Streptomyces huasconensis D23 reveals its environmental adaptability and antimicrobial activity</article-title><source>Microorganisms</source><person-group>
+<name><surname>Wen</surname><given-names>Y</given-names></name>
+<name><surname>Zhang</surname><given-names>G</given-names></name>
+<name><surname>Bahadur</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><fpage>2408</fpage><volume>10</volume><year>2022</year><pub-id pub-id-type="pmid">36557661</pub-id>
+</element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>Antimicrobial biosynthetic potential and diversity of culturable soil actinobacteria from forest ecosystems of Northeast India</article-title><source>Sci Rep</source><person-group>
+<name><surname>Sharma</surname><given-names>P</given-names></name>
+<name><surname>Thakur</surname><given-names>D</given-names></name>
+</person-group><fpage>4104</fpage><volume>10</volume><year>2020</year><pub-id pub-id-type="pmid">32139731</pub-id>
+</element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>Biological control of Streptomyces sp. PR69 against Phytophthora capsici and its growth-promoting effects on plants</article-title><source>Horticulturae</source><person-group>
+<name><surname>L&#x000f3;pez-Reyes</surname><given-names>PK</given-names></name>
+<name><surname>De la Torre-Zavala</surname><given-names>S</given-names></name>
+<name><surname>Cort&#x000e9;s-Gonz&#x000e1;lez</surname><given-names>MM</given-names></name>
+<name><surname>Gal&#x000e1;n-Wong</surname><given-names>LJ</given-names></name>
+<name><surname>Avil&#x000e9;s-Arnaut</surname><given-names>H</given-names></name>
+</person-group><fpage>1365</fpage><volume>10</volume><year>2024</year></element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>Taxonomy, physiology, and natural products of actinobacteria</article-title><source>Microbiol Mol Biol Rev</source><person-group>
+<name><surname>Barka</surname><given-names>EA</given-names></name>
+<name><surname>Vatsa</surname><given-names>P</given-names></name>
+<name><surname>Sanchez</surname><given-names>L</given-names></name>
+<etal/>
+</person-group><fpage>1</fpage><lpage>43</lpage><volume>80</volume><year>2016</year><pub-id pub-id-type="pmid">26609051</pub-id>
+</element-citation></ref></ref-list></back></article>

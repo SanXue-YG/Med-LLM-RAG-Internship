@@ -1,0 +1,747 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="review-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883238</article-id><article-id pub-id-type="doi">10.7759/cureus.101180</article-id><article-categories><subj-group subj-group-type="heading"><subject>Pathology</subject></subj-group><subj-group><subject>Internal Medicine</subject></subj-group><subj-group><subject>Gastroenterology</subject></subj-group></article-categories><title-group><article-title>Gastrointestinal Stromal Tumors: Histopathological Spectrum, Molecular Subtypes, and Implications for Targeted Therapy</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author"><name><surname>Qasim</surname><given-names>Hussein</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Abu Shugaer</surname><given-names>Mohammad</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Awawdeh</surname><given-names>Ahmad N</given-names></name><xref rid="aff-2" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><name><surname>Dawaymeh</surname><given-names>Tamara</given-names></name><xref rid="aff-3" ref-type="aff">3</xref></contrib><contrib contrib-type="author" corresp="yes"><name><surname>Khattab</surname><given-names>Karis</given-names></name><xref rid="aff-4" ref-type="aff">4</xref></contrib><contrib contrib-type="author"><name><surname>Al-oweiwi</surname><given-names>Musallam</given-names></name><xref rid="aff-5" ref-type="aff">5</xref></contrib><contrib contrib-type="author"><name><surname>Leoni</surname><given-names>Matteo Luigi Giuseppe</given-names></name><xref rid="aff-6" ref-type="aff">6</xref></contrib><contrib contrib-type="author"><name><surname>Varrassi</surname><given-names>Giustino</given-names></name><xref rid="aff-7" ref-type="aff">7</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Pathology and Laboratory Medicine, Jordan University of Science and Technology, Irbid, JOR </aff><aff id="aff-2">
+<label>2</label>
+Family Medicine, Jordan University of Science and Technology, Irbid, JOR </aff><aff id="aff-3">
+<label>3</label>
+Pathology and Laboratory Medicine, King Abdullah University Hospital, Irbid, JOR </aff><aff id="aff-4">
+<label>4</label>
+Faculty of Medicine, Jordan University of Science and Technology, Irbid, JOR </aff><aff id="aff-5">
+<label>5</label>
+Emergency Medicine, Marka Specialty Hospital, Amman, JOR </aff><aff id="aff-6">
+<label>6</label>
+Medical and Surgical Sciences and Translational Medicine, Sapienza University, Rome, ITA </aff><aff id="aff-7">
+<label>7</label>
+Pain Medicine, Fondazione Paolo Procacci, Rome, ITA </aff><author-notes><corresp id="cor1">
+Karis Khattab <email>kariskhattab@gmail.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>9</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101180</elocation-id><history><date date-type="received"><day>8</day><month>12</month><year>2025</year></date><date date-type="accepted"><day>9</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Qasim et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Qasim et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/449100-gastrointestinal-stromal-tumors-histopathological-spectrum-molecular-subtypes-and-implications-for-targeted-therapy">This article is available from https://cureus.com/articles/449100-gastrointestinal-stromal-tumors-histopathological-spectrum-molecular-subtypes-and-implications-for-targeted-therapy</self-uri><abstract><p>Gastrointestinal stromal tumors (GISTs) are the most common mesenchymal neoplasms of the gastrointestinal tract and represent a paradigm of precision oncology in which histopathology and molecular profiling directly inform diagnosis, prognosis, and therapeutic strategy. Arising from the interstitial cells of Cajal or their precursors, GISTs display a wide morphological spectrum, including spindle cell, epithelioid, mixed, and rare histologic variants, often requiring immunohistochemical confirmation with KIT (CD117), DOG1, and CD34. Molecular characterization reveals a limited but clinically decisive range of driver mutations, most commonly in KIT and PDGFRA, with additional subsets involving SDH deficiency, NF1 alterations, and rare mutations such as BRAF, KRAS, or NTRK fusions. These molecular signatures underpin distinct biological behaviors, prognostic categories, and therapeutic sensitivities. Risk stratification incorporates tumor size, mitotic rate, anatomical location, and tumor rupture to predict recurrence and guide adjuvant therapy decisions. Targeted tyrosine kinase inhibitors (TKIs) have transformed GIST management, with imatinib as the foundational first-line therapy and subsequent agents, sunitinib, regorafenib, avapritinib, and ripretinib, addressing primary or secondary resistance driven by diverse mutational patterns. Nevertheless, challenges persist, including imatinib-resistant PDGFRA D842V mutations, SDH-deficient tumors lacking actionable kinase alterations, and the emergence of polyclonal secondary resistance due to heterogeneous KIT adenosine triphosphate (ATP)-binding pocket or activation loop mutations. Emerging therapeutic directions include next-generation kinase inhibitors, heat shock protein inhibitors, immunotherapy, metabolic and epigenetic targeting, and biomarker-driven individualized treatment strategies. This review synthesizes contemporary advances in the histopathological, molecular, and therapeutic landscape of GISTs, emphasizing an integrated diagnostic approach and highlighting ongoing efforts to overcome therapeutic resistance and optimize personalized care.</p></abstract><kwd-group kwd-group-type="author"><kwd>gastrointestinal stromal tumor (gist)</kwd><kwd>kit mutation</kwd><kwd>pdgfra mutation</kwd><kwd>sdh-deficient gist</kwd><kwd>tyrosine kinase inhibitors (tkis) therapy</kwd></kwd-group></article-meta></front><body><sec sec-type="intro"><title>Introduction and background</title><p>Gastrointestinal stromal tumors (GISTs) represent the most common mesenchymal neoplasms of the gastrointestinal&#x000a0;tract and constitute a biologically and clinically distinctive group of tumors arising predominantly from the interstitial cells of Cajal or their precursors [<xref rid="REF1" ref-type="bibr">1</xref>]. First recognized as a separate entity in the late 20th century with the advent of immunohistochemistry and molecular diagnostics, GISTs have since become a model disease in modern oncology, illustrating how precise histopathological characterization and molecular profiling can transform therapeutic outcomes [<xref rid="REF2" ref-type="bibr">2</xref>]. Although relatively uncommon, with an estimated incidence of 10-15 cases per million population annually, GISTs account for most mesenchymal tumors in the gastrointestinal&#x000a0;tract and present across a wide age range, with peak incidence in the sixth to seventh decades of life [<xref rid="REF2" ref-type="bibr">2</xref>]. Most GISTs occur in the stomach (60-70%) and small intestine (20-30%), but they may arise anywhere along the gastrointestinal&#x000a0;tract, including the esophagus, colon, rectum, and, less commonly, in extra-gastrointestinal locations such as the mesentery or omentum [<xref rid="REF3" ref-type="bibr">3</xref>]. Clinically, their presentation varies widely depending on tumor size, location, and growth pattern [<xref rid="REF4" ref-type="bibr">4</xref>]. Patients may be asymptomatic or present with nonspecific manifestations such as abdominal pain, early satiety, gastrointestinal bleeding, anemia, or an incidentally discovered mass [<xref rid="REF5" ref-type="bibr">5</xref>]. Because of this heterogeneity, accurate diagnosis relies heavily on histopathological evaluation supplemented by immunohistochemistry and molecular assays [<xref rid="REF6" ref-type="bibr">6</xref>]. The histopathological spectrum of GISTs is broad, encompassing spindle cell, epithelioid, and mixed morphologies, each of which may pose diagnostic challenges and overlap with other mesenchymal neoplasms [<xref rid="REF7" ref-type="bibr">7</xref>]. Immunohistochemical expression of KIT (CD117) and DOG1 revolutionized diagnostic accuracy, yet a subset of GISTs remains negative for these markers, underscoring the importance of molecular testing [<xref rid="REF7" ref-type="bibr">7</xref>]. Advances in genomic medicine have revealed that GISTs are driven by a relatively small number of recurrent mutations, most commonly in KIT and PDGFRA, but also in succinate dehydrogenase (SDH) complex genes, NF1, and, less frequently, BRAF, NTRK, or KRAS [<xref rid="REF8" ref-type="bibr">8</xref>].&#x000a0;</p><p>A key milestone in the management of GISTs was the introduction of tyrosine kinase inhibitors (TKIs), particularly imatinib, which dramatically improved outcomes in advanced disease and ushered in an era of precision oncology [<xref rid="REF9" ref-type="bibr">9</xref>]. The clinical efficacy of TKIs is closely tied to the tumor&#x02019;s mutational profile, with certain mutations predicting favorable responses while others, such as PDGFRA D842V or SDH deficiency, confer intrinsic resistance [<xref rid="REF10" ref-type="bibr">10</xref>]. Subsequent development of second-, third-, and fourth-line agents, including sunitinib, regorafenib, avapritinib, and ripretinib, has expanded therapeutic options for patients with resistant or recurrent disease [<xref rid="REF11" ref-type="bibr">11</xref>]. Despite these advances, significant challenges persist. Primary and secondary resistance to targeted therapy remains a major clinical obstacle, and rare molecular subtypes often lack effective treatment options [<xref rid="REF12" ref-type="bibr">12</xref>]. Furthermore, evolving insights into the tumor microenvironment, epigenetic regulation, and metabolic reprogramming suggest that additional layers of complexity influence disease behavior and therapeutic response [<xref rid="REF13" ref-type="bibr">13</xref>]. Accordingly, this review first outlines the histopathological spectrum of GISTs, then examines their molecular subtypes and prognostic stratification, and finally discusses the implications of these features for targeted therapy, resistance mechanisms, and emerging treatment strategies.</p></sec><sec sec-type="review"><title>Review</title><p>Methods</p><p>This narrative review was developed to synthesize current evidence on the histopathology, molecular characteristics, prognostic determinants, mechanisms of therapeutic resistance, and evolving treatment strategies in GISTs. A comprehensive literature search was conducted across PubMed, MEDLINE, Scopus, and Google Scholar, covering publications from 1995 to 2025. Search terms included &#x0201c;gastrointestinal stromal tumor&#x0201d;, &#x0201c;GIST&#x0201d;, &#x0201c;KIT mutation&#x0201d;, &#x0201c;PDGFRA mutation&#x0201d;, &#x0201c;SDH-deficient GIST&#x0201d;, &#x0201c;tyrosine kinase inhibitors&#x0201d;, &#x0201c;imatinib resistance&#x0201d;, &#x0201c;molecular subtypes&#x0201d;, and &#x0201c;targeted therapy&#x0201d;, combined using Boolean operators to broaden and refine the search strategy. Articles were selected for inclusion if they addressed key aspects relevant to this review, including histopathological patterns, molecular drivers, risk stratification systems, therapeutic responses, and mechanisms of resistance. Original research articles, clinical trials, expert guidelines, and high-quality review papers were prioritized, while non-English publications, abstracts without full text, and studies lacking relevance to the central themes were excluded. Reference lists of included studies were further screened to identify additional pertinent literature. Extracted information was synthesized qualitatively and organized into thematic domains reflecting the major components of GIST diagnosis and management: histopathological classification, molecular subtyping, prognostic modeling, targeted therapy, and emerging therapeutic approaches. Because this study relied exclusively on previously published literature and did not involve human subjects or patient data, institutional review board (IRB) approval was not required.</p><p>This article was conducted as a narrative review rather than a systematic review; therefore, Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines were not applied, and no formal study quality assessment or quantitative synthesis was performed.</p><p>Histopathological spectrum of GIST</p><p>GISTs&#x000a0;demonstrate a broad range of gross pathological appearances that correlate with their site of origin, growth behavior, and underlying molecular subtype [<xref rid="REF14" ref-type="bibr">14</xref>]. Tumor size varies from small incidental nodules to massive lesions exceeding 30 cm, although most symptomatic tumors measure between 5 cm and 15 cm at discovery [<xref rid="REF15" ref-type="bibr">15</xref>]. Gastric GISTs often appear as well-circumscribed, lobulated masses arising from the muscularis propria, typically expanding outward in an exophytic fashion [<xref rid="REF16" ref-type="bibr">16</xref>]. In contrast, small intestinal GISTs may exhibit a more infiltrative pattern with a higher likelihood of mucosal ulceration [<xref rid="REF17" ref-type="bibr">17</xref>]. On cut surface, these tumors usually display a firm, fleshy, tan-white appearance with a whorled or trabeculated architecture [<xref rid="REF18" ref-type="bibr">18</xref>]. Larger tumors commonly show areas of necrosis, hemorrhage, or cystic degeneration, findings that reflect rapid growth or impaired vascular supply [<xref rid="REF19" ref-type="bibr">19</xref>]. Hemorrhage may be extensive, and cystic areas often develop as a result of tumor necrosis or myxoid change [<xref rid="REF20" ref-type="bibr">20</xref>]. Tumor rupture, whether spontaneous or during surgical manipulation, is an important gross feature due to its strong association with increased recurrence risk [<xref rid="REF21" ref-type="bibr">21</xref>]. Although most GISTs arise in the stomach or small intestine, occasional lesions occur in the colon, rectum, esophagus, or even in extra-gastrointestinal locations such as the mesentery and retroperitoneum, where they share similar gross characteristics [<xref rid="REF21" ref-type="bibr">21</xref>,<xref rid="REF22" ref-type="bibr">22</xref>].</p><p>Microscopically, GISTs encompass a spectrum of morphologies [<xref rid="REF23" ref-type="bibr">23</xref>]. The spindle cell type, which constitutes approximately 70% of cases, is composed of uniform elongated cells arranged in interlacing fascicles or whorled bundles [<xref rid="REF24" ref-type="bibr">24</xref>]. These cells have pale eosinophilic cytoplasm, tapered nuclei with fine chromatin, and may exhibit the classic perinuclear vacuolization seen particularly in gastric tumors [<xref rid="REF24" ref-type="bibr">24</xref>]. Some spindle cell tumors also contain eosinophilic collagen globules known as skeinoid fibers, which are more frequently encountered in small bowel GISTs [<xref rid="REF24" ref-type="bibr">24</xref>]. The epithelioid subtype, accounting for roughly 20-25% of cases, is characterized by round to polygonal cells with abundant eosinophilic or clear cytoplasm, arranged in nests, sheets, or syncytial aggregates [<xref rid="REF25" ref-type="bibr">25</xref>]. Intracytoplasmic vacuoles and perinuclear clearing tend to be more prominent in this subtype, which is strongly associated with PDGFRA mutations, particularly the D842V variant [<xref rid="REF26" ref-type="bibr">26</xref>]. Mixed-type GISTs display both spindle and epithelioid components, either in distinct regions or in a gradual transitional pattern, reflecting histologic and molecular heterogeneity [<xref rid="REF27" ref-type="bibr">27</xref>]. Additionally, several uncommon variants enrich the morphological diversity of GISTs [<xref rid="REF28" ref-type="bibr">28</xref>]. Sclerosing tumors exhibit dense hyalinized collagen, whereas palisaded tumors show nuclear palisading reminiscent of schwannomas despite retaining the immunophenotype of GIST [<xref rid="REF29" ref-type="bibr">29</xref>]. Myxoid GISTs contain abundant mucoid stroma and are frequently linked to PDGFRA mutations [<xref rid="REF30" ref-type="bibr">30</xref>]. Rarely, sarcomatoid transformation may occur, either de novo or as an acquired phenotype following prolonged TKI therapy, characterized by marked pleomorphism, high mitotic activity, and sometimes diminished KIT expression [<xref rid="REF31" ref-type="bibr">31</xref>].</p><p>Immunohistochemistry plays a central role in the diagnosis of GISTs. KIT (CD117) remains the cornerstone marker, detected in approximately 95% of cases and showing strong cytoplasmic or membranous staining [<xref rid="REF32" ref-type="bibr">32</xref>]. DOG1 has emerged as an equally essential marker due to its high sensitivity and specificity, particularly in KIT-negative tumors [<xref rid="REF33" ref-type="bibr">33</xref>]. CD34 is positive in roughly 70-80% of GISTs, especially those of gastric origin [<xref rid="REF34" ref-type="bibr">34</xref>]. Smooth muscle actin (SMA) may be expressed variably, more often in small intestinal tumors, while S100 is infrequently positive and may complicate differentiation from schwannomas [<xref rid="REF35" ref-type="bibr">35</xref>]. Desmin is rarely expressed in GISTs, and its presence favors a true smooth muscle neoplasm over GIST [<xref rid="REF36" ref-type="bibr">36</xref>]. In diagnostically challenging cases, particularly KIT-negative tumors that often harbor PDGFRA mutations, the combination of DOG1 positivity, CD34 expression, and supportive morphological findings helps confirm the diagnosis [<xref rid="REF37" ref-type="bibr">37</xref>]. Molecular testing becomes especially important in these circumstances, as immunohistochemistry alone may be insufficient [<xref rid="REF38" ref-type="bibr">38</xref>].</p><p>The differential diagnosis of GISTs includes several mesenchymal tumors with overlapping histologic features [<xref rid="REF39" ref-type="bibr">39</xref>]. Leiomyomas and leiomyosarcomas may resemble spindle cell GISTs but typically demonstrate strong desmin and SMA reactivity and lack KIT and DOG1 expression [<xref rid="REF2" ref-type="bibr">2</xref>]. Schwannomas may also mimic the spindle cell morphology of GISTs; however, they characteristically exhibit diffuse S100 positivity and a distinct peripheral lymphoid cuff, while being negative for KIT and DOG1 [<xref rid="REF40" ref-type="bibr">40</xref>]. Inflammatory fibroid tumors can enter the differential diagnosis, particularly in cases with epithelioid morphology or PDGFRA mutations, but they show a prominent eosinophil-rich inflammatory infiltrate and remain negative for KIT and DOG1 [<xref rid="REF41" ref-type="bibr">41</xref>]. Other smooth muscle tumors, such as myofibromas or fibromatoses, lack KIT/DOG1 expression and demonstrate distinct immunophenotypic patterns, including nuclear &#x003b2;-catenin staining in desmoid-type fibromatosis [<xref rid="REF42" ref-type="bibr">42</xref>]. Careful correlation of morphology, immunohistochemistry, and molecular findings is therefore essential to distinguish GISTs from these entities and establish an accurate diagnosis.</p><p>Molecular subtypes of GIST</p><p>GISTs are defined by a relatively narrow but clinically significant spectrum of molecular alterations, the most common of which occur in the KIT gene [<xref rid="REF43" ref-type="bibr">43</xref>]. Approximately 70-80% of GISTs harbor activating mutations in KIT, with exon 11 mutations being the most prevalent [<xref rid="REF44" ref-type="bibr">44</xref>]. These mutations typically affect the juxtamembrane domain, leading to constitutive ligand-independent activation of the KIT receptor and downstream signaling pathways [<xref rid="REF45" ref-type="bibr">45</xref>]. Exon 11 mutations are generally associated with favorable responses to imatinib therapy, although certain deletion mutations may predict more aggressive behavior [<xref rid="REF46" ref-type="bibr">46</xref>]. Exon 9 mutations, more frequently identified in small bowel GISTs, affect the extracellular domain and are often associated with a more aggressive clinical course; they may require higher doses of imatinib to achieve optimal therapeutic responses [<xref rid="REF47" ref-type="bibr">47</xref>]. Less commonly, mutations arise in exons 13 and 17, which involve the kinase domains and are typically associated with secondary resistance to TKIs&#x000a0;[<xref rid="REF48" ref-type="bibr">48</xref>]. The clinical significance of these mutations lies not only in their prognostic implications but also in their direct influence on therapeutic decision-making, as specific exon mutations predict varying degrees of sensitivity or resistance to available targeted agents [<xref rid="REF49" ref-type="bibr">49</xref>].</p><p>PDGFRA-mutated GISTs constitute the second major molecular subgroup, accounting for approximately 10-15% of cases [<xref rid="REF50" ref-type="bibr">50</xref>]. These tumors arise most commonly in the stomach and frequently exhibit epithelioid or mixed morphology [<xref rid="REF50" ref-type="bibr">50</xref>,<xref rid="REF51" ref-type="bibr">51</xref>]. Mutations occur predominantly in exons 12, 14, and 18, with exon 18 being the most frequent [<xref rid="REF43" ref-type="bibr">43</xref>]. The D842V substitution in exon 18 is particularly noteworthy, as it confers strong resistance to imatinib and most conventional TKIs [<xref rid="REF52" ref-type="bibr">52</xref>]. Tumors harboring this mutation often demonstrate bland epithelioid cytology, a myxoid stroma, and relatively indolent growth despite their inherent therapeutic resistance [<xref rid="REF53" ref-type="bibr">53</xref>]. The advent of avapritinib has significantly improved treatment options for these patients, as it selectively targets PDGFRA D842V with high efficacy [<xref rid="REF54" ref-type="bibr">54</xref>]. Other PDGFRA mutations, such as those in exon 12 or 14, are generally sensitive to imatinib, though the intensity of response varies [<xref rid="REF55" ref-type="bibr">55</xref>]. Collectively, PDGFRA-mutant GISTs illustrate the importance of integrating molecular and morphologic features to guide diagnosis and management [<xref rid="REF55" ref-type="bibr">55</xref>].</p><p>A distinct subgroup of GISTs is characterized by a deficiency in SDH, comprising approximately 5-7% of cases [<xref rid="REF56" ref-type="bibr">56</xref>]. SDH-deficient GISTs typically arise in children, adolescents, and young adults, and they demonstrate unique clinical and pathological features [<xref rid="REF57" ref-type="bibr">57</xref>]. These tumors are often multifocal, occur predominantly in the stomach, and display epithelioid cytology with a tendency toward a multinodular growth pattern [<xref rid="REF58" ref-type="bibr">58</xref>]. SDH deficiency may occur in the context of the Carney triad, a nonhereditary disorder involving GISTs, pulmonary chondromas, and extra-adrenal paragangliomas, or Carney-Stratakis syndrome, an inherited condition defined by paraganglioma and GIST and associated with germline mutations in SDH subunits [<xref rid="REF59" ref-type="bibr">59</xref>]. A hallmark diagnostic feature is the loss of SDHB immunostaining on immunohistochemistry, which indicates functional impairment of the SDH complex regardless of which subunit is mutated [<xref rid="REF59" ref-type="bibr">59</xref>]. SDH-deficient GISTs are generally resistant to standard TKIs, emphasizing the need for alternative therapeutic strategies and highlighting a unique metabolic vulnerability as a potential target for future therapies [<xref rid="REF59" ref-type="bibr">59</xref>].</p><p>Neurofibromatosis type 1 (NF1)-associated GISTs form another important molecular subgroup [<xref rid="REF60" ref-type="bibr">60</xref>]. These tumors arise in patients with germline NF1 mutations and typically emerge in the context of other syndromic features such as caf&#x000e9;-au-lait macules, neurofibromas, or optic gliomas [<xref rid="REF61" ref-type="bibr">61</xref>]. NF1-related GISTs usually originate in the small intestine and often present as multiple synchronous lesions [<xref rid="REF62" ref-type="bibr">62</xref>]. Morphologically, they frequently manifest as spindle cell tumors with low mitotic activity [<xref rid="REF63" ref-type="bibr">63</xref>]. Unlike KIT- or PDGFRA-mutated GISTs, NF1-associated tumors lack mutations in these genes and instead reflect activation of the RAS/MAPK pathway inherent to NF1 loss [<xref rid="REF64" ref-type="bibr">64</xref>]. Although they may respond to TKIs in selected cases, these tumors generally show limited sensitivity to imatinib, necessitating alternative approaches to management [<xref rid="REF48" ref-type="bibr">48</xref>].</p><p>In addition to these major groups, several rare molecular subtypes have been identified. BRAF-mutant GISTs, most commonly involving the V600E mutation, account for a very small subset of cases and typically arise in the small intestine [<xref rid="REF65" ref-type="bibr">65</xref>]. These tumors do not harbor KIT or PDGFRA mutations but demonstrate activation of the MAPK pathway, raising the potential role of BRAF inhibitors in management [<xref rid="REF65" ref-type="bibr">65</xref>]. KRAS mutations have also been reported, though they are exceedingly rare and often associated with resistance to imatinib [<xref rid="REF65" ref-type="bibr">65</xref>]. Even more uncommon are GISTs with gene fusions involving NTRK or FGFR, which represent emerging molecular subsets of therapeutic interest, as TRK inhibitors or FGFR-targeted agents may be effective in these tumors [<xref rid="REF66" ref-type="bibr">66</xref>]. Wild-type GISTs, defined as tumors lacking mutations in KIT, PDGFRA, SDH, NF1, and other canonical genes, constitute a heterogeneous group with evolving molecular classifications, including alterations in genes regulating chromatin remodeling, mitochondrial function, or cellular metabolism [<xref rid="REF67" ref-type="bibr">67</xref>].</p><p>Given the profound therapeutic and prognostic implications of molecular classification, appropriate testing strategies are central to the management of GISTs [<xref rid="REF68" ref-type="bibr">68</xref>]. Molecular testing is indicated at diagnosis for all newly resected or advanced tumors and is essential before initiating targeted therapy, as specific mutation types determine sensitivity to agents such as imatinib, sunitinib, regorafenib, avapritinib, or ripretinib [<xref rid="REF69" ref-type="bibr">69</xref>]. Standard testing methods include targeted PCR-based assays for common KIT and PDGFRA exons, although next-generation sequencing (NGS) is increasingly preferred due to its broader coverage and ability to detect rare or complex mutations [<xref rid="REF8" ref-type="bibr">8</xref>]. Immunohistochemical surrogates, such as SDHB staining for SDH-deficiency, help refine classification when sequencing results are absent or inconclusive [<xref rid="REF56" ref-type="bibr">56</xref>]. Ultimately, integration of molecular data with histopathologic and clinical findings ensures accurate diagnosis and optimal individualized therapy. Figure <xref rid="FIG1" ref-type="fig">1</xref> shows a summary of molecular subtypes of GIST.</p><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>Summary of molecular subtypes of GIST.</title><p>The figure&#x000a0;is created by author Karis Khattab.</p><p>GIST, gastrointestinal stromal tumor; NF1, neurofibromatosis type 1; SDH, succinate dehydrogenase</p></caption><graphic xlink:href="cureus-0018-00000101180-i01" position="float"/></fig><p>Risk stratification and prognostic indicators</p><p>Accurate risk stratification is central to the management of GISTs, guiding decisions regarding surveillance, adjuvant therapy, and long-term follow-up [<xref rid="REF70" ref-type="bibr">70</xref>]. The biological behavior of GISTs is heterogeneous, ranging from indolent, incidentally detected nodules to highly aggressive tumors with early metastatic potential [<xref rid="REF71" ref-type="bibr">71</xref>]. Several established systems have been developed to predict recurrence risk, with the NIH/Fletcher and AFIP/Miettinen classifications being the most widely utilized [<xref rid="REF71" ref-type="bibr">71</xref>]. The NIH/Fletcher criteria, introduced in 2002, categorize tumors into very low, low, intermediate, or high risk based on size and mitotic rate [<xref rid="REF72" ref-type="bibr">72</xref>]. This model demonstrated the importance of tumor proliferative activity in forecasting recurrence but did not account for tumor location, which later emerged as an important determinant of outcome [<xref rid="REF52" ref-type="bibr">52</xref>,<xref rid="REF72" ref-type="bibr">72</xref>]. The AFIP/Miettinen criteria expanded upon this model by incorporating anatomical site, recognizing that gastric GISTs generally exhibit more favorable behavior than small intestinal counterparts of similar size and mitotic rate [<xref rid="REF14" ref-type="bibr">14</xref>]. This refinement significantly improved risk stratification accuracy, particularly for intermediate-risk tumors [<xref rid="REF14" ref-type="bibr">14</xref>]. More recent models have also incorporated additional parameters such as tumor rupture, either spontaneous or iatrogenic, which is now recognized as an independent and powerful predictor of peritoneal dissemination and recurrence, elevating such tumors to the highest risk category regardless of other features [<xref rid="REF73" ref-type="bibr">73</xref>]. Collectively, these classification systems form the foundation of contemporary clinical decision-making.</p><p>Beyond traditional clinicopathologic indicators, molecular features have emerged as key prognostic determinants in GIST [<xref rid="REF74" ref-type="bibr">74</xref>]. Mutation type strongly influences tumor behavior, response to therapy, and overall outcome [<xref rid="REF75" ref-type="bibr">75</xref>]. KIT exon 11 mutations, particularly deletions involving codons 557-558, are associated with a higher risk of recurrence and metastasis compared with other mutation types, though they retain good responsiveness to imatinib [<xref rid="REF76" ref-type="bibr">76</xref>]. Exon 9 mutations, more typical of small bowel tumors, portend a more aggressive clinical course and are less sensitive to standard-dose imatinib, often necessitating higher dosing strategies [<xref rid="REF77" ref-type="bibr">77</xref>]. PDGFRA-mutant tumors, particularly those harboring the D842V mutation, display relative indolence but are inherently resistant to imatinib, making them poor candidates for conventional adjuvant therapy and more appropriate for targeted agents such as avapritinib [<xref rid="REF78" ref-type="bibr">78</xref>]. Conversely, patients with exon 11 KIT mutations derive the greatest benefit from adjuvant imatinib, and current guidelines recommend three years of therapy for high-risk tumors based on robust data demonstrating improvements in recurrence-free and overall survival [<xref rid="REF79" ref-type="bibr">79</xref>]. Thus, molecular profiling not only refines prognostication but also determines eligibility for adjuvant treatment and individualized therapy planning.</p><p>In parallel with advances in genomic characterization, growing attention has been directed toward the tumor microenvironment and emerging biomarkers that may further refine prognostication [<xref rid="REF80" ref-type="bibr">80</xref>]. Immune infiltration patterns, including the presence of tumor-associated macrophages, T-cell subsets, and PD-L1 expression, have been linked to variable clinical outcomes, suggesting that GISTs may exhibit distinct immunologic phenotypes that influence response to therapy [<xref rid="REF81" ref-type="bibr">81</xref>]. Epigenetic mechanisms, including promoter methylation signatures and chromatin remodeling, have been increasingly implicated in GIST biology, particularly in SDH-deficient tumors, where global DNA hypermethylation constitutes a defining feature [<xref rid="REF82" ref-type="bibr">82</xref>]. These epigenetic alterations may contribute to tumorigenesis, metabolic dysregulation, and resistance to targeted therapies [<xref rid="REF83" ref-type="bibr">83</xref>]. Additional biomarkers under investigation include circulating tumor DNA (ctDNA) for monitoring minimal residual disease, expression patterns of heat shock proteins (HSPs), and metabolic signatures that correlate with therapeutic response [<xref rid="REF84" ref-type="bibr">84</xref>]. Although these markers remain primarily investigational, they hold considerable promise for improving individualized risk prediction and identifying patients who may benefit from emerging or combination therapeutic strategies.</p><p>Targeted therapy for GIST: current status</p><p>The advent of targeted TKIs&#x000a0;has fundamentally transformed the management of GISTs, turning what was once a highly lethal disease into one of the most successful examples of precision oncology [<xref rid="REF9" ref-type="bibr">9</xref>]. Therapeutic decisions are now closely aligned with the tumor's molecular profile, as specific mutations determine sensitivity or resistance to available agents [<xref rid="REF12" ref-type="bibr">12</xref>]. First-line therapy is dominated by imatinib, while subsequent lines include sunitinib, regorafenib, avapritinib, and ripretinib, each addressing distinct mechanisms of primary or secondary resistance [<xref rid="REF85" ref-type="bibr">85</xref>]. Despite major advancements, certain molecular subsets, particularly SDH-deficient and wild-type GISTs, continue to pose significant therapeutic challenges [<xref rid="REF69" ref-type="bibr">69</xref>].</p><p>Imatinib remains the cornerstone of first-line therapy for advanced, metastatic, or unresectable GIST [<xref rid="REF86" ref-type="bibr">86</xref>]. Its mechanism of action involves competitive inhibition of the adenosine triphosphate (ATP)-binding pocket of KIT and PDGFRA, effectively blocking downstream oncogenic signaling [<xref rid="REF85" ref-type="bibr">85</xref>]. Clinical response to imatinib is highly mutation-dependent [<xref rid="REF85" ref-type="bibr">85</xref>]. Tumors harboring KIT exon 11 mutations demonstrate the most favorable response rates and longest progression-free survival, whereas those with exon 9 mutations are less sensitive and may require higher dosing [<xref rid="REF87" ref-type="bibr">87</xref>]. PDGFRA-mutated tumors, with the exception of non-D842V variants, typically respond well, while tumors carrying the PDGFRA D842V mutation exhibit marked resistance [<xref rid="REF26" ref-type="bibr">26</xref>]. The mutation-specific effects of imatinib underscore the need for molecular testing in all newly diagnosed patients, as therapeutic outcomes cannot be reliably predicted based on morphology alone [<xref rid="REF88" ref-type="bibr">88</xref>].</p><p>Sunitinib is the standard second-line therapy for patients who exhibit intolerance to or disease progression on imatinib. It targets a broader range of kinases, including KIT, PDGFRs, and VEGFRs, allowing it to overcome some mechanisms of imatinib resistance [<xref rid="REF89" ref-type="bibr">89</xref>]. Secondary resistance often results from the emergence of additional KIT mutations in exons 13, 14, 17, or 18, which alter the kinase conformation and interfere with imatinib binding [<xref rid="REF90" ref-type="bibr">90</xref>]. Sunitinib demonstrates activity against many of these ATP-binding pocket mutations, although its efficacy varies depending on the mutational pattern [<xref rid="REF91" ref-type="bibr">91</xref>]. Clinical responses are commonly characterized by disease stabilization rather than dramatic tumor shrinkage, reflecting its role in managing disease heterogeneity and suppressing selectively resistant clones [<xref rid="REF92" ref-type="bibr">92</xref>].</p><p>For patients who progress on sunitinib, regorafenib serves as the established third-line therapy [<xref rid="REF93" ref-type="bibr">93</xref>]. Regorafenib inhibits multiple kinases implicated in GIST progression, including KIT, PDGFRA, FGFR, and angiogenic pathways [<xref rid="REF94" ref-type="bibr">94</xref>]. Clinical trials have demonstrated meaningful progression-free survival benefits in heavily pretreated patients, emphasizing its utility even in tumors harboring diverse or complex resistance mutations [<xref rid="REF95" ref-type="bibr">95</xref>]. Although objective response rates are modest, regorafenib provides durable disease control and is generally well tolerated with appropriate dose adjustments [<xref rid="REF96" ref-type="bibr">96</xref>]. Its multitargeted mechanisms of action allow it to address multiple resistance pathways simultaneously, providing an important bridge toward newer therapeutic strategies [<xref rid="REF49" ref-type="bibr">49</xref>].</p><p>Avapritinib represents a major advancement for patients with PDGFRA D842V-mutated GIST, a subgroup historically resistant to all conventional TKIs [<xref rid="REF97" ref-type="bibr">97</xref>]. As a highly potent inhibitor that specifically targets the activation loop of PDGFRA, avapritinib achieves response rates far exceeding those of earlier agents [<xref rid="REF98" ref-type="bibr">98</xref>]. It is now recognized as the standard of care for these tumors and has also demonstrated efficacy in some KIT-mutated GISTs, particularly those with activation loop mutations (exon 17) [<xref rid="REF99" ref-type="bibr">99</xref>]. Avapritinib&#x02019;s activity in advanced disease has reshaped treatment paradigms for this previously untreatable population, although careful monitoring is required due to neurocognitive adverse effects [<xref rid="REF100" ref-type="bibr">100</xref>].</p><p>Ripretinib is a broad-spectrum switch-control TKI designed to inhibit a wide range of KIT and PDGFRA mutations, including both primary and secondary resistance mutations [<xref rid="REF101" ref-type="bibr">101</xref>]. Its unique mechanism stabilizes the kinase in an inactive conformation, thereby preventing activation through multiple distinct mutational pathways [<xref rid="REF102" ref-type="bibr">102</xref>]. Ripretinib is approved as fourth-line therapy and has demonstrated significant improvements in progression-free and overall survival compared with placebo [<xref rid="REF103" ref-type="bibr">103</xref>]. Its ability to inhibit heterogeneous mutational subclones makes it particularly effective in later-line settings where resistance is multifaceted and evolving [<xref rid="REF103" ref-type="bibr">103</xref>].</p><p>Therapeutic approaches to SDH-deficient and wild-type GISTs remain challenging, as these tumors typically lack actionable KIT or PDGFRA mutations and therefore show limited response to imatinib and other conventional TKIs [<xref rid="REF104" ref-type="bibr">104</xref>]. SDH-deficient tumors, in particular, demonstrate global epigenetic dysregulation, metabolic rewiring, and unique transcriptional profiles that render kinase inhibition largely ineffective [<xref rid="REF105" ref-type="bibr">105</xref>]. Investigational strategies for these molecular subsets include agents such as temozolomide, which may be effective due to hypermethylation-associated vulnerabilities, and inhibitors targeting IGF1R, which is frequently overexpressed in SDH-deficient GISTs [<xref rid="REF106" ref-type="bibr">106</xref>]. Additional research is exploring the role of metabolic inhibitors, epigenetic therapies, and immunotherapy, although these remain in early developmental stages [<xref rid="REF107" ref-type="bibr">107</xref>]. For now, management continues to rely on surgical intervention when feasible and participation in clinical trials for advanced disease. Table <xref rid="TAB1" ref-type="table">1</xref> presents a summary of medications used in the management of GISTs.</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Summary of used medications in the management of GISTs.</title><p>GIST, gastrointestinal stromal tumor; ATP, adenosine triphosphate; SDH, succinate dehydrogenase; PFS, progression-free survival; OS, overall survival</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Drug</td><td rowspan="1" colspan="1">Line of Therapy</td><td rowspan="1" colspan="1">Key Mechanism / Target</td><td rowspan="1" colspan="1">Mutation Sensitivity</td><td rowspan="1" colspan="1">Clinical Notes</td></tr><tr><td rowspan="1" colspan="1">Imatinib [<xref rid="REF108" ref-type="bibr">108</xref>]</td><td rowspan="1" colspan="1">First-line [<xref rid="REF108" ref-type="bibr">108</xref>]</td><td rowspan="1" colspan="1">Inhibits KIT and PDGFRA ATP-binding site [<xref rid="REF108" ref-type="bibr">108</xref>]</td><td rowspan="1" colspan="1">Best response in KIT exon 11; reduced sensitivity in exon 9; no activity in PDGFRA D842V [<xref rid="REF108" ref-type="bibr">108</xref>]</td><td rowspan="1" colspan="1">Dramatically improves survival; dose escalation for exon 9 tumors [<xref rid="REF108" ref-type="bibr">108</xref>]</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Sunitinib [<xref rid="REF109" ref-type="bibr">109</xref>]</td><td rowspan="1" colspan="1">Second-line [<xref rid="REF109" ref-type="bibr">109</xref>]</td><td rowspan="1" colspan="1">Inhibits KIT, PDGFRs, VEGFRs [<xref rid="REF109" ref-type="bibr">109</xref>]</td><td rowspan="1" colspan="1">Effective in many secondary ATP-binding pocket mutations (exons 13/14) [<xref rid="REF109" ref-type="bibr">109</xref>]</td><td rowspan="1" colspan="1">Useful after imatinib failure; stabilizes disease more than shrinking tumors [<xref rid="REF109" ref-type="bibr">109</xref>]</td></tr><tr><td rowspan="1" colspan="1">Regorafenib [<xref rid="REF110" ref-type="bibr">110</xref>]</td><td rowspan="1" colspan="1">Third-line [<xref rid="REF110" ref-type="bibr">110</xref>]</td><td rowspan="1" colspan="1">Multikinase inhibitor (KIT, PDGFRA, FGFR, angiogenic pathways) [<xref rid="REF110" ref-type="bibr">110</xref>]</td><td rowspan="1" colspan="1">Active against complex or mixed resistance profiles [<xref rid="REF110" ref-type="bibr">110</xref>]</td><td rowspan="1" colspan="1">Improves PFS in heavily pretreated patients [<xref rid="REF110" ref-type="bibr">110</xref>]</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Avapritinib [<xref rid="REF111" ref-type="bibr">111</xref>]</td><td rowspan="1" colspan="1">Special indication / first-line for PDGFRA D842V [<xref rid="REF111" ref-type="bibr">111</xref>]</td><td rowspan="1" colspan="1">Potent inhibitor of PDGFRA activation loop [<xref rid="REF111" ref-type="bibr">111</xref>]</td><td rowspan="1" colspan="1">Highly effective in PDGFRA D842V; also active in some exon 17 KIT mutations [<xref rid="REF111" ref-type="bibr">111</xref>]</td><td rowspan="1" colspan="1">Breakthrough therapy for previously resistant subtype [<xref rid="REF111" ref-type="bibr">111</xref>]</td></tr><tr><td rowspan="1" colspan="1">Ripretinib [<xref rid="REF101" ref-type="bibr">101</xref>]</td><td rowspan="1" colspan="1">Fourth-line [<xref rid="REF101" ref-type="bibr">101</xref>]</td><td rowspan="1" colspan="1">Switch-control inhibitor stabilizing inactive KIT/PDGFRA [<xref rid="REF101" ref-type="bibr">101</xref>]</td><td rowspan="1" colspan="1">Broad activity against primary and secondary resistance mutations [<xref rid="REF101" ref-type="bibr">101</xref>]</td><td rowspan="1" colspan="1">Improves OS/PFS; effective in mutationally heterogeneous disease [<xref rid="REF101" ref-type="bibr">101</xref>]</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Investigational agents (temozolomide, IGF1R inhibitors) [<xref rid="REF106" ref-type="bibr">106</xref>]</td><td rowspan="1" colspan="1">Emerging therapies for SDH-deficient and wild-type GIST [<xref rid="REF106" ref-type="bibr">106</xref>]</td><td rowspan="1" colspan="1">Target epigenetic, metabolic, or IGF1R pathways [<xref rid="REF106" ref-type="bibr">106</xref>]</td><td rowspan="1" colspan="1">Useful in SDH-deficient tumors lacking KIT/PDGFRA mutations [<xref rid="REF106" ref-type="bibr">106</xref>]</td><td rowspan="1" colspan="1">Consider for clinical trial enrollment [<xref rid="REF106" ref-type="bibr">106</xref>]</td></tr></tbody></table></table-wrap><p>Mechanisms of resistance to targeted therapy</p><p>Despite the transformative impact of TKIs&#x000a0;on the management of GISTs, resistance to therapy remains a major clinical challenge [<xref rid="REF10" ref-type="bibr">10</xref>]. Resistance may be present at the onset of treatment, known as primary resistance, or may develop after an initial period of disease control, termed secondary or acquired resistance [<xref rid="REF112" ref-type="bibr">112</xref>]. These mechanisms are tightly linked to the underlying molecular profile of the tumor and significantly influence therapeutic outcomes, progression patterns, and survival [<xref rid="REF113" ref-type="bibr">113</xref>]. Understanding the complex biology of resistance is essential for optimizing treatment strategies and guiding the development of next-generation targeted agents.</p><p>Primary resistance is defined as the failure to achieve a meaningful clinical response within the first six months of TKI therapy [<xref rid="REF113" ref-type="bibr">113</xref>]. One of the most well-characterized causes of primary resistance is the PDGFRA D842V mutation, which occurs in the activation loop of the receptor and induces a conformation that prevents effective binding of imatinib and most other conventional TKIs [<xref rid="REF50" ref-type="bibr">50</xref>]. Tumors harboring this mutation exhibit poor response rates despite often possessing relatively indolent histologic features [<xref rid="REF50" ref-type="bibr">50</xref>]. The introduction of avapritinib, a highly selective inhibitor targeting this mutation, has significantly improved outcomes but does not entirely eliminate the challenge of resistance [<xref rid="REF114" ref-type="bibr">114</xref>]. Another prominent cause of primary resistance occurs in SDH-deficient GISTs, which lack activating mutations in KIT or PDGFRA and instead display profound metabolic and epigenetic dysregulation [<xref rid="REF115" ref-type="bibr">115</xref>]. Their oncogenic signaling is not driven by tyrosine kinase activation, rendering TKIs largely ineffective [<xref rid="REF115" ref-type="bibr">115</xref>]. These tumors frequently arise in younger patients and may display slow-growing but relentlessly persistent disease, emphasizing the need for alternative therapeutic approaches beyond kinase inhibition [<xref rid="REF115" ref-type="bibr">115</xref>].</p><p>Secondary resistance emerges after a period of initial clinical benefit and represents the most common mechanism of disease progression in metastatic GIST [<xref rid="REF12" ref-type="bibr">12</xref>]. This resistance arises from the development of additional mutations in the KIT gene, often in different tumor subclones, creating what is referred to as polyclonal resistance [<xref rid="REF12" ref-type="bibr">12</xref>]. These mutations typically occur in exons encoding the ATP-binding pocket (exons 13 and 14) or the activation loop (exons 17 and 18) [<xref rid="REF12" ref-type="bibr">12</xref>]. Mutations in the ATP-binding pocket reduce the affinity of imatinib for KIT, while activation loop mutations stabilize the kinase in an active conformation that is resistant to drug inhibition [<xref rid="REF116" ref-type="bibr">116</xref>]. The coexistence of multiple resistant subclones within the same tumor or across metastatic deposits is a hallmark of secondary resistance and contributes to the highly heterogeneous clinical responses observed with second- and third-line therapy [<xref rid="REF117" ref-type="bibr">117</xref>]. Structural changes in the kinase domain further compound resistance by altering the three-dimensional configuration of the drug-binding site, thereby preventing effective inhibition even when TKIs are present at therapeutic levels [<xref rid="REF117" ref-type="bibr">117</xref>].</p><p>Tumor heterogeneity plays a central role in shaping resistance patterns and is a critical driver of treatment failure in advanced GIST [<xref rid="REF118" ref-type="bibr">118</xref>]. As selective pressure from TKIs preferentially suppresses sensitive clones, resistant clones accumulate and expand [<xref rid="REF119" ref-type="bibr">119</xref>]. This evolutionary process leads to a mosaic of subpopulations with distinct mutational profiles, each with varying degrees of sensitivity to different TKIs [<xref rid="REF120" ref-type="bibr">120</xref>]. This heterogeneity explains why sequential therapy often yields diminishing returns and why later-line agents, such as ripretinib, are designed with broad-spectrum inhibitory activity to simultaneously target multiple resistant clones [<xref rid="REF121" ref-type="bibr">121</xref>]. Figure <xref rid="FIG2" ref-type="fig">2</xref> shows a summary of mechanisms of resistance in GIST.</p><fig position="anchor" fig-type="figure" id="FIG2"><label>Figure 2</label><caption><title>Summary of mechanisms of resistance in GIST.</title><p>The figure&#x000a0;is created by author Karis Khattab.</p><p>GIST, gastrointestinal stromal tumor</p></caption><graphic xlink:href="cureus-0018-00000101180-i02" position="float"/></fig><p>Emerging therapies and future directions</p><p>As insights into the molecular and cellular biology of GISTs continue to evolve, several emerging therapeutic strategies show promise for improving outcomes beyond current TKIs [<xref rid="REF99" ref-type="bibr">99</xref>]. Novel kinase inhibitors are being developed to overcome resistant KIT and PDGFRA mutations, with next-generation agents designed to more effectively target activation loop mutations or bypass common resistance pathways [<xref rid="REF10" ref-type="bibr">10</xref>]. HSP&#x000a0;inhibitors represent another promising class, as they disrupt chaperone-mediated stabilization of mutant KIT, leading to degradation of the oncogenic protein [<xref rid="REF122" ref-type="bibr">122</xref>]. Early studies have demonstrated potential synergy when HSP inhibitors are combined with TKIs, suggesting a role in mitigating resistance [<xref rid="REF123" ref-type="bibr">123</xref>]. Immunotherapy is also being explored, particularly agents targeting the PD-1/PD-L1 axis, which may enhance antitumor immune responses in selected molecular subtypes [<xref rid="REF124" ref-type="bibr">124</xref>]. Vaccine-based strategies and adoptive cell therapies remain in early experimental stages but highlight growing interest in leveraging immune modulation in GIST [<xref rid="REF125" ref-type="bibr">125</xref>]. Combination therapy approaches, involving TKIs with metabolic inhibitors, epigenetic agents, or immune modulators, are under investigation to address tumor heterogeneity and prevent clonal escape [<xref rid="REF126" ref-type="bibr">126</xref>]. Finally, advances in personalized and precision medicine, including the use of ctDNA, comprehensive genomic profiling, and adaptive treatment algorithms, are paving the way for more individualized therapeutic plans [<xref rid="REF127" ref-type="bibr">127</xref>]. Collectively, these emerging strategies hold promise for improving disease control, overcoming resistance, and expanding treatment options for patients with challenging or refractory GIST subtypes.</p><p>Clinical implications and practical approach</p><p>The management of GISTs increasingly relies on the integration of histopathological assessment and molecular testing to achieve accurate diagnosis and guide clinical decision-making [<xref rid="REF128" ref-type="bibr">128</xref>]. Histologic evaluation provides essential information regarding tumor morphology, mitotic activity, and risk stratification, while immunohistochemical markers such as KIT and DOG1 confirm the diagnosis in most cases [<xref rid="REF7" ref-type="bibr">7</xref>]. However, molecular testing has become indispensable, as the specific mutation profile directly informs prognosis and predicts therapeutic response [<xref rid="REF129" ref-type="bibr">129</xref>]. Tailoring therapy to mutation type is now a cornerstone of modern GIST management, with imatinib serving as first-line treatment for most KIT- and non-D842V PDGFRA-mutated tumors, while alternative agents such as avapritinib are required for PDGFRA D842V disease [<xref rid="REF52" ref-type="bibr">52</xref>]. Similarly, the choice of second- or third-line therapy depends on the pattern of secondary resistance mutations that emerge during treatment, emphasizing the need for ongoing molecular evaluation when feasible [<xref rid="REF130" ref-type="bibr">130</xref>]. Effective care for patients with GIST also requires a coordinated multidisciplinary approach [<xref rid="REF70" ref-type="bibr">70</xref>]. Pathologists ensure accurate morphologic and molecular classification, surgeons guide decisions regarding resection or cytoreductive strategies, and medical oncologists determine appropriate systemic therapy and surveillance plans [<xref rid="REF131" ref-type="bibr">131</xref>]. Collaboration across these specialties is essential for optimizing outcomes, especially in complex cases such as SDH-deficient tumors, recurrent disease, or tumors requiring neoadjuvant therapy [<xref rid="REF131" ref-type="bibr">131</xref>].</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>GISTs represent a paradigm of modern precision oncology, where the integration of histopathology and molecular profiling has dramatically advanced diagnostic accuracy and therapeutic outcomes. Key insights from decades of research have established the central role of KIT and PDGFRA mutations in driving tumor behavior and predicting response to targeted therapy, while also highlighting the unique biology of SDH-deficient, NF1-associated, and other rare molecular subtypes. Despite these advances, significant challenges persist, including primary and secondary resistance to TKIs, limited treatment options for wild-type and SDH-deficient tumors, and the complexity introduced by tumor heterogeneity and clonal evolution. As the field moves forward, continued innovations in molecular diagnostics, immunotherapy, next-generation kinase inhibition, and biomarker-driven precision medicine are expected to refine risk stratification and expand therapeutic options. The future of GIST management lies in increasingly individualized treatment strategies that leverage emerging technologies and multidisciplinary collaboration to overcome resistance, enhance disease control, and ultimately improve patient outcomes.</p></sec></body><back><ack><p>The authors acknowledge the use of ChatGPT (OpenAI, San Francisco, CA, USA) to assist with language editing, grammar refinement, and improving the clarity of the manuscript. All content, analyses, interpretations, and conclusions were generated and verified by the authors. The authors retain full responsibility for the integrity and accuracy of the work.</p></ack><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> All authors have declared that no financial support was received from any organization for the submitted work.</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Karis Khattab, Hussein Qasim, Mohammad Abu Shugaer, Ahmad N. Awawdeh, Tamara Dawaymeh, Musallam Al-oweiwi, Giustino Varrassi</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Karis Khattab, Hussein Qasim, Mohammad Abu Shugaer, Ahmad N. Awawdeh, Tamara Dawaymeh, Musallam Al-oweiwi, Giustino Varrassi, Matteo Luigi Giuseppe Leoni</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Karis Khattab, Hussein Qasim, Mohammad Abu Shugaer, Ahmad N. Awawdeh, Tamara Dawaymeh, Musallam Al-oweiwi, Giustino Varrassi</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Karis Khattab, Hussein Qasim, Mohammad Abu Shugaer, Ahmad N. Awawdeh, Tamara Dawaymeh, Musallam Al-oweiwi, Giustino Varrassi, Matteo Luigi Giuseppe Leoni</p><p><bold>Supervision:</bold>&#x000a0; Hussein Qasim, Giustino Varrassi, Matteo Luigi Giuseppe Leoni</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="journal"><article-title>A gist of gastrointestinal stromal tumors: a review</article-title><source>World J Gastrointest Oncol</source><person-group>
+<name><surname>Rammohan</surname><given-names>A</given-names></name>
+<name><surname>Sathyanesan</surname><given-names>J</given-names></name>
+<name><surname>Rajendran</surname><given-names>K</given-names></name>
+<etal/>
+</person-group><fpage>102</fpage><lpage>112</lpage><volume>5</volume><year>2013</year><pub-id pub-id-type="pmid">23847717</pub-id>
+</element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumor</article-title><source>J Gastrointest Oncol</source><person-group>
+<name><surname>Zhao</surname><given-names>X</given-names></name>
+<name><surname>Yue</surname><given-names>C</given-names></name>
+</person-group><fpage>189</fpage><lpage>208</lpage><volume>3</volume><year>2012</year><pub-id pub-id-type="pmid">22943011</pub-id>
+</element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors with atypical features and presentations: a case series</article-title><source>Int J Surg Case Rep</source><person-group>
+<name><surname>Aregawi</surname><given-names>AB</given-names></name>
+<name><surname>Fenta</surname><given-names>BD</given-names></name>
+<name><surname>Worku</surname><given-names>MA</given-names></name>
+<name><surname>Geremew</surname><given-names>TT</given-names></name>
+</person-group><volume>133</volume><year>2025</year></element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Clinical presentation, management and outcomes of gastrointestinal stromal tumors</article-title><source>Int J Surg</source><person-group>
+<name><surname>Al-Thani</surname><given-names>H</given-names></name>
+<name><surname>El-Menyar</surname><given-names>A</given-names></name>
+<name><surname>Rasul</surname><given-names>KI</given-names></name>
+<etal/>
+</person-group><fpage>1127</fpage><lpage>1133</lpage><volume>12</volume><year>2014</year><uri xlink:href="https://doi.org/10.1016/j.ijsu.2014.08.351">https://doi.org/10.1016/j.ijsu.2014.08.351</uri><pub-id pub-id-type="pmid">25152441</pub-id>
+</element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumor: an uncommon but serious cause of gastrointestinal bleeding</article-title><source>J Med Cases</source><person-group>
+<name><surname>Alawawdeh</surname><given-names>F</given-names></name>
+<name><surname>Al-Tkrit</surname><given-names>A</given-names></name>
+<name><surname>Aneeb</surname><given-names>M</given-names></name>
+<name><surname>Mekaiel</surname><given-names>A</given-names></name>
+<name><surname>Mehta</surname><given-names>A</given-names></name>
+</person-group><fpage>74</fpage><lpage>78</lpage><volume>12</volume><year>2021</year><pub-id pub-id-type="pmid">34434434</pub-id>
+</element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Artificial intelligence-assisted prostate cancer diagnosis for reduced use of immunohistochemistry</article-title><source>Commun Med (Lond)</source><person-group>
+<name><surname>Blilie</surname><given-names>A</given-names></name>
+<name><surname>Mulliqi</surname><given-names>N</given-names></name>
+<name><surname>Ji</surname><given-names>X</given-names></name>
+<etal/>
+</person-group><fpage>425</fpage><volume>5</volume><year>2025</year><pub-id pub-id-type="pmid">41094148</pub-id>
+</element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>Histopathology of gastrointestinal stromal tumor</article-title><source>J Surg Oncol</source><person-group>
+<name><surname>Miettinen</surname><given-names>M</given-names></name>
+<name><surname>Lasota</surname><given-names>J</given-names></name>
+</person-group><fpage>865</fpage><lpage>873</lpage><volume>104</volume><year>2011</year><pub-id pub-id-type="pmid">22069171</pub-id>
+</element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>Utility of clinical next generation sequencing tests in KIT/PDGFRA/SDH wild-type gastrointestinal stromal tumors</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>Denu</surname><given-names>RA</given-names></name>
+<name><surname>Joseph</surname><given-names>CP</given-names></name>
+<name><surname>Urquiola</surname><given-names>ES</given-names></name>
+<etal/>
+</person-group><volume>16</volume><year>2024</year></element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>Tyrosine kinase inhibitors significantly improved survival outcomes in patients with metastatic gastrointestinal stromal tumour: a multi-institutional cohort study</article-title><source>Curr Oncol</source><person-group>
+<name><surname>Tan</surname><given-names>AD</given-names></name>
+<name><surname>Willemsma</surname><given-names>K</given-names></name>
+<name><surname>MacNeill</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><fpage>276</fpage><lpage>282</lpage><volume>27</volume><year>2020</year></element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="journal"><article-title>Tyrosine kinase inhibitors for gastrointestinal stromal tumor after imatinib resistance</article-title><source>Pharmaceutics</source><person-group>
+<name><surname>Xiao</surname><given-names>XH</given-names></name>
+<name><surname>Zhang</surname><given-names>QS</given-names></name>
+<name><surname>Hu</surname><given-names>JY</given-names></name>
+<name><surname>Zhang</surname><given-names>YX</given-names></name>
+<name><surname>Song</surname><given-names>H</given-names></name>
+</person-group><volume>17</volume><year>2025</year></element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="journal"><article-title>Evaluation of systemic treatment options for gastrointestinal stromal tumours</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>Gol&#x0010d;i&#x00107;</surname><given-names>M</given-names></name>
+<name><surname>Jones</surname><given-names>RL</given-names></name>
+<name><surname>Huang</surname><given-names>P</given-names></name>
+<name><surname>Napolitano</surname><given-names>A</given-names></name>
+</person-group><volume>15</volume><year>2023</year></element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="journal"><article-title>Current drug resistance mechanisms and treatment options in gastrointestinal stromal tumors: summary and update</article-title><source>Curr Treat Options Oncol</source><person-group>
+<name><surname>He</surname><given-names>C</given-names></name>
+<name><surname>Wang</surname><given-names>Z</given-names></name>
+<name><surname>Yu</surname><given-names>J</given-names></name>
+<name><surname>Mao</surname><given-names>S</given-names></name>
+<name><surname>Xiang</surname><given-names>X</given-names></name>
+</person-group><fpage>1390</fpage><lpage>1405</lpage><volume>25</volume><year>2024</year><pub-id pub-id-type="pmid">39441520</pub-id>
+</element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>Insights into metabolic reprogramming in tumor evolution and therapy</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>Chiu</surname><given-names>CF</given-names></name>
+<name><surname>Guerrero</surname><given-names>JJ</given-names></name>
+<name><surname>Regalado</surname><given-names>RR</given-names></name>
+<etal/>
+</person-group><volume>16</volume><year>2024</year></element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors: pathology and prognosis at different sites</article-title><source>Semin Diagn Pathol</source><person-group>
+<name><surname>Miettinen</surname><given-names>M</given-names></name>
+<name><surname>Lasota</surname><given-names>J</given-names></name>
+</person-group><fpage>70</fpage><lpage>83</lpage><volume>23</volume><year>2006</year><pub-id pub-id-type="pmid">17193820</pub-id>
+</element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors: a comprehensive review</article-title><source>J Gastrointest Oncol</source><person-group>
+<name><surname>Parab</surname><given-names>TM</given-names></name>
+<name><surname>DeRogatis</surname><given-names>MJ</given-names></name>
+<name><surname>Boaz</surname><given-names>AM</given-names></name>
+<etal/>
+</person-group><fpage>144</fpage><lpage>154</lpage><volume>10</volume><year>2019</year><pub-id pub-id-type="pmid">30788170</pub-id>
+</element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>Distinguishing gastrointestinal stromal tumors from their mimics: an update</article-title><source>Adv Anat Pathol</source><person-group>
+<name><surname>Abraham</surname><given-names>SC</given-names></name>
+</person-group><fpage>178</fpage><lpage>188</lpage><volume>14</volume><year>2007</year><pub-id pub-id-type="pmid">17452814</pub-id>
+</element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>Small bowel ulcers and bleeding: an overlooked yet critical clinical challenge</article-title><source>World J Clin Cases</source><person-group>
+<name><surname>Barbosa</surname><given-names>OA</given-names></name>
+</person-group><volume>13</volume><year>2025</year></element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>Mesenchymal tumors of the liver: an update review</article-title><source>Biomedicines</source><person-group>
+<name><surname>Choi</surname><given-names>JH</given-names></name>
+<name><surname>Thung</surname><given-names>SN</given-names></name>
+</person-group><volume>13</volume><year>2025</year></element-citation></ref><ref id="REF19"><label>19</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors (GISTs) with remarkable cystic change: a specific subtype of GISTs with relatively indolent behaviors and favorable prognoses</article-title><source>J Cancer Res Clin Oncol</source><person-group>
+<name><surname>Xue</surname><given-names>A</given-names></name>
+<name><surname>Yuan</surname><given-names>W</given-names></name>
+<name><surname>Gao</surname><given-names>X</given-names></name>
+<etal/>
+</person-group><fpage>1559</fpage><lpage>1568</lpage><volume>145</volume><year>2019</year><pub-id pub-id-type="pmid">30923944</pub-id>
+</element-citation></ref><ref id="REF20"><label>20</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors (GIST) related emergencies</article-title><source>Int J Surg</source><person-group>
+<name><surname>Sorour</surname><given-names>MA</given-names></name>
+<name><surname>Kassem</surname><given-names>MI</given-names></name>
+<name><surname>Ghazal</surname><given-names>Ael-H</given-names></name>
+<name><surname>El-Riwini</surname><given-names>MT</given-names></name>
+<name><surname>Abu Nasr</surname><given-names>A</given-names></name>
+</person-group><fpage>269</fpage><lpage>280</lpage><volume>12</volume><year>2014</year><uri xlink:href="https://doi.org/10.1016/j.ijsu.2014.02.004">https://doi.org/10.1016/j.ijsu.2014.02.004</uri><pub-id pub-id-type="pmid">24530605</pub-id>
+</element-citation></ref><ref id="REF21"><label>21</label><element-citation publication-type="journal"><article-title>Defining tumor rupture in gastrointestinal stromal tumor</article-title><source>Ann Surg Oncol</source><person-group>
+<name><surname>Nishida</surname><given-names>T</given-names></name>
+<name><surname>H&#x000f8;lmebakk</surname><given-names>T</given-names></name>
+<name><surname>Raut</surname><given-names>CP</given-names></name>
+<name><surname>Rutkowski</surname><given-names>P</given-names></name>
+</person-group><fpage>1669</fpage><lpage>1675</lpage><volume>26</volume><year>2019</year><pub-id pub-id-type="pmid">30868512</pub-id>
+</element-citation></ref><ref id="REF22"><label>22</label><element-citation publication-type="journal"><article-title>Pathologic diagnosis and molecular features of gastrointestinal stromal tumors: a mini-review</article-title><source>Front Oncol</source><person-group>
+<name><surname>Kim</surname><given-names>Y</given-names></name>
+<name><surname>Lee</surname><given-names>SH</given-names></name>
+</person-group><volume>14</volume><year>2024</year></element-citation></ref><ref id="REF23"><label>23</label><element-citation publication-type="journal"><article-title>Understanding gastric GIST: from pathophysiology to personalized treatment</article-title><source>J Clin Med</source><person-group>
+<name><surname>Moga</surname><given-names>DF</given-names></name>
+<name><surname>Vl&#x00103;doiu</surname><given-names>G</given-names></name>
+<name><surname>Fr&#x00103;&#x0021b;il&#x00103;</surname><given-names>AM</given-names></name>
+<name><surname>Dan</surname><given-names>AA</given-names></name>
+<name><surname>Popa</surname><given-names>D</given-names></name>
+<name><surname>Oprea</surname><given-names>V</given-names></name>
+</person-group><volume>13</volume><year>2024</year></element-citation></ref><ref id="REF24"><label>24</label><element-citation publication-type="journal"><article-title>Beyond the GIST: mesenchymal tumors of the stomach</article-title><source>Radiographics</source><person-group>
+<name><surname>Kang</surname><given-names>HC</given-names></name>
+<name><surname>Menias</surname><given-names>CO</given-names></name>
+<name><surname>Gaballah</surname><given-names>AH</given-names></name>
+<name><surname>Shroff</surname><given-names>S</given-names></name>
+<name><surname>Taggart</surname><given-names>MW</given-names></name>
+<name><surname>Garg</surname><given-names>N</given-names></name>
+<name><surname>Elsayes</surname><given-names>KM</given-names></name>
+</person-group><fpage>1673</fpage><lpage>1690</lpage><volume>33</volume><year>2013</year><pub-id pub-id-type="pmid">24108557</pub-id>
+</element-citation></ref><ref id="REF25"><label>25</label><element-citation publication-type="journal"><article-title>Epithelioid subtype gastrointestinal stromal tumors of stomach in an endoscopic biopsy: a potential diagnostic pitfall</article-title><source>Onco Targets Ther</source><person-group>
+<name><surname>Xu</surname><given-names>W</given-names></name>
+<name><surname>Tang</surname><given-names>H</given-names></name>
+<name><surname>Chen</surname><given-names>Y</given-names></name>
+<name><surname>Wang</surname><given-names>J</given-names></name>
+<name><surname>Chen</surname><given-names>Z</given-names></name>
+<name><surname>Xu</surname><given-names>Y</given-names></name>
+<name><surname>Guo</surname><given-names>D</given-names></name>
+</person-group><fpage>1043</fpage><lpage>1049</lpage><volume>16</volume><year>2023</year><pub-id pub-id-type="pmid">38107763</pub-id>
+</element-citation></ref><ref id="REF26"><label>26</label><element-citation publication-type="journal"><article-title>The identity of PDGFRA D842V-mutant gastrointestinal stromal tumors (GIST)</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>Rizzo</surname><given-names>A</given-names></name>
+<name><surname>Pantaleo</surname><given-names>MA</given-names></name>
+<name><surname>Astolfi</surname><given-names>A</given-names></name>
+<name><surname>Indio</surname><given-names>V</given-names></name>
+<name><surname>Nannini</surname><given-names>M</given-names></name>
+</person-group><volume>13</volume><year>2021</year></element-citation></ref><ref id="REF27"><label>27</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors and the general surgeon</article-title><source>Surg Clin North Am</source><person-group>
+<name><surname>Caturegli</surname><given-names>I</given-names></name>
+<name><surname>Raut</surname><given-names>CP</given-names></name>
+</person-group><fpage>625</fpage><lpage>636</lpage><volume>102</volume><year>2022</year><pub-id pub-id-type="pmid">35952692</pub-id>
+</element-citation></ref><ref id="REF28"><label>28</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors: variants and some pitfalls that they create</article-title><source>Adv Anat Pathol</source><person-group>
+<name><surname>Ibrahim</surname><given-names>A</given-names></name>
+<name><surname>Montgomery</surname><given-names>EA</given-names></name>
+</person-group><fpage>354</fpage><lpage>363</lpage><volume>31</volume><year>2024</year><pub-id pub-id-type="pmid">39466697</pub-id>
+</element-citation></ref><ref id="REF29"><label>29</label><element-citation publication-type="journal"><article-title>Peripheral nerve sheath tumors of the gastrointestinal tract: a multicenter study of 58 patients including NF1-associated gastric schwannoma and unusual morphologic variants</article-title><source>Virchows Arch</source><person-group>
+<name><surname>Agaimy</surname><given-names>A</given-names></name>
+<name><surname>M&#x000e4;rkl</surname><given-names>B</given-names></name>
+<name><surname>Kitz</surname><given-names>J</given-names></name>
+<etal/>
+</person-group><fpage>411</fpage><lpage>422</lpage><volume>456</volume><year>2010</year><pub-id pub-id-type="pmid">20155280</pub-id>
+</element-citation></ref><ref id="REF30"><label>30</label><element-citation publication-type="journal"><article-title>Myxoid epithelioid gastrointestinal stromal tumor harboring an unreported PDGFRA mutation: report of a case and review of the literature</article-title><source>Int J Clin Exp Pathol</source><person-group>
+<name><surname>Tajima</surname><given-names>S</given-names></name>
+<name><surname>Ohata</surname><given-names>A</given-names></name>
+<name><surname>Koda</surname><given-names>K</given-names></name>
+<name><surname>Maruyama</surname><given-names>Y</given-names></name>
+</person-group><fpage>5821</fpage><lpage>5829</lpage><volume>8</volume><year>2015</year><uri xlink:href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4503175/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4503175/</uri><pub-id pub-id-type="pmid">26191304</pub-id>
+</element-citation></ref><ref id="REF31"><label>31</label><element-citation publication-type="journal"><article-title>Advances in sarcoma genomics and new therapeutic targets</article-title><source>Nat Rev Cancer</source><person-group>
+<name><surname>Taylor</surname><given-names>BS</given-names></name>
+<name><surname>Barretina</surname><given-names>J</given-names></name>
+<name><surname>Maki</surname><given-names>RG</given-names></name>
+<name><surname>Antonescu</surname><given-names>CR</given-names></name>
+<name><surname>Singer</surname><given-names>S</given-names></name>
+<name><surname>Ladanyi</surname><given-names>M</given-names></name>
+</person-group><fpage>541</fpage><lpage>557</lpage><volume>11</volume><year>2011</year><pub-id pub-id-type="pmid">21753790</pub-id>
+</element-citation></ref><ref id="REF32"><label>32</label><element-citation publication-type="journal"><article-title>Clinical diagnosis of gastrointestinal stromal tumor (GIST): from the molecular genetic point of view</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>Wu</surname><given-names>CE</given-names></name>
+<name><surname>Tzen</surname><given-names>CY</given-names></name>
+<name><surname>Wang</surname><given-names>SY</given-names></name>
+<name><surname>Yeh</surname><given-names>CN</given-names></name>
+</person-group><volume>11</volume><year>2019</year></element-citation></ref><ref id="REF33"><label>33</label><element-citation publication-type="journal"><article-title>DOG1 antibody is a highly sensitive and specific marker for gastrointestinal stromal tumors in cytology cell blocks</article-title><source>Am J Clin Pathol</source><person-group>
+<name><surname>Hwang</surname><given-names>DG</given-names></name>
+<name><surname>Qian</surname><given-names>X</given-names></name>
+<name><surname>Hornick</surname><given-names>JL</given-names></name>
+</person-group><fpage>448</fpage><lpage>453</lpage><volume>135</volume><year>2011</year><pub-id pub-id-type="pmid">21350101</pub-id>
+</element-citation></ref><ref id="REF34"><label>34</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors - value of CD34 antigen in their identification and separation from true leiomyomas and schwannomas</article-title><source>Am J Surg Pathol</source><person-group>
+<name><surname>Miettinen</surname><given-names>M</given-names></name>
+<name><surname>Virolainen</surname><given-names>M</given-names></name>
+<name><surname>Maarit-Sarlomo-Rikala</surname><given-names>Maarit-Sarlomo-Rikala</given-names></name>
+</person-group><fpage>207</fpage><lpage>216</lpage><volume>19</volume><year>1995</year><pub-id pub-id-type="pmid">7530409</pub-id>
+</element-citation></ref><ref id="REF35"><label>35</label><element-citation publication-type="journal"><article-title>Immunohistochemistry of soft tissue tumours - review with emphasis on 10 markers</article-title><source>Histopathology</source><person-group>
+<name><surname>Miettinen</surname><given-names>M</given-names></name>
+</person-group><fpage>101</fpage><lpage>118</lpage><volume>64</volume><year>2014</year><pub-id pub-id-type="pmid">24111893</pub-id>
+</element-citation></ref><ref id="REF36"><label>36</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors</article-title><source>Gastroenterol Clin North Am</source><person-group>
+<name><surname>Miettinen</surname><given-names>M</given-names></name>
+<name><surname>Lasota</surname><given-names>J</given-names></name>
+</person-group><fpage>399</fpage><lpage>415</lpage><volume>42</volume><year>2013</year><pub-id pub-id-type="pmid">23639648</pub-id>
+</element-citation></ref><ref id="REF37"><label>37</label><element-citation publication-type="journal"><article-title>DOG1 is useful for diagnosis of KIT-negative gastrointestinal stromal tumor of stomach</article-title><source>World J Gastroenterol</source><person-group>
+<name><surname>Wada</surname><given-names>T</given-names></name>
+<name><surname>Tanabe</surname><given-names>S</given-names></name>
+<name><surname>Ishido</surname><given-names>K</given-names></name>
+<etal/>
+</person-group><fpage>9133</fpage><lpage>9136</lpage><volume>19</volume><year>2013</year><pub-id pub-id-type="pmid">24379641</pub-id>
+</element-citation></ref><ref id="REF38"><label>38</label><element-citation publication-type="journal"><article-title>The standard diagnosis, treatment, and follow-up of gastrointestinal stromal tumors based on guidelines</article-title><source>Gastric Cancer</source><person-group>
+<name><surname>Nishida</surname><given-names>T</given-names></name>
+<name><surname>Blay</surname><given-names>JY</given-names></name>
+<name><surname>Hirota</surname><given-names>S</given-names></name>
+<name><surname>Kitagawa</surname><given-names>Y</given-names></name>
+<name><surname>Kang</surname><given-names>YK</given-names></name>
+</person-group><fpage>3</fpage><lpage>14</lpage><volume>19</volume><year>2016</year><pub-id pub-id-type="pmid">26276366</pub-id>
+</element-citation></ref><ref id="REF39"><label>39</label><element-citation publication-type="journal"><article-title>Differential diagnosis of gastrointestinal stromal tumor by histopathology and immunohistochemistry</article-title><source>Transl Gastroenterol Hepatol</source><person-group>
+<name><surname>Hirota</surname><given-names>S</given-names></name>
+</person-group><fpage>27</fpage><volume>3</volume><year>2018</year><pub-id pub-id-type="pmid">29971258</pub-id>
+</element-citation></ref><ref id="REF40"><label>40</label><element-citation publication-type="journal"><article-title>Gastric schwannoma: a benign tumour often mistaken clinically, radiologically and histopathologically for a gastrointestinal stromal tumour - a case series</article-title><source>Ann R Coll Surg Engl</source><person-group>
+<name><surname>Williamson</surname><given-names>JM</given-names></name>
+<name><surname>Wadley</surname><given-names>MS</given-names></name>
+<name><surname>Shepherd</surname><given-names>NA</given-names></name>
+<name><surname>Dwerryhouse</surname><given-names>S</given-names></name>
+</person-group><fpage>245</fpage><lpage>249</lpage><volume>94</volume><year>2012</year><pub-id pub-id-type="pmid">22613302</pub-id>
+</element-citation></ref><ref id="REF41"><label>41</label><element-citation publication-type="journal"><article-title>Inflammatory fibroid polyp (Vanek&#x02019;s tumor): a retrospective multicentric analysis of 67 cases</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>S&#x000e1;nchez</surname><given-names>MM</given-names></name>
+<name><surname>Dom&#x000ed;nguez-Prieto</surname><given-names>V</given-names></name>
+<name><surname>Qian Zhang</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><volume>17</volume><year>2025</year></element-citation></ref><ref id="REF42"><label>42</label><element-citation publication-type="journal"><article-title>The novel marker, DOG1, is expressed ubiquitously in gastrointestinal stromal tumors irrespective of KIT or PDGFRA mutation status</article-title><source>Am J Pathol</source><person-group>
+<name><surname>West</surname><given-names>RB</given-names></name>
+<name><surname>Corless</surname><given-names>CL</given-names></name>
+<name><surname>Chen</surname><given-names>X</given-names></name>
+<etal/>
+</person-group><fpage>107</fpage><lpage>113</lpage><volume>165</volume><year>2004</year><pub-id pub-id-type="pmid">15215166</pub-id>
+</element-citation></ref><ref id="REF43"><label>43</label><element-citation publication-type="journal"><article-title>Gene mutations in gastrointestinal stromal tumors: advances in treatment and mechanism research</article-title><source>Glob Med Genet</source><person-group>
+<name><surname>Cao</surname><given-names>L</given-names></name>
+<name><surname>Tian</surname><given-names>W</given-names></name>
+<name><surname>Zhao</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group><fpage>251</fpage><lpage>262</lpage><volume>11</volume><year>2024</year><pub-id pub-id-type="pmid">39176108</pub-id>
+</element-citation></ref><ref id="REF44"><label>44</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors (GISTs): point mutations matter in management, a review</article-title><source>J Gastrointest Oncol</source><person-group>
+<name><surname>Oppelt</surname><given-names>PJ</given-names></name>
+<name><surname>Hirbe</surname><given-names>AC</given-names></name>
+<name><surname>Van Tine</surname><given-names>BA</given-names></name>
+</person-group><fpage>466</fpage><lpage>473</lpage><volume>8</volume><year>2017</year><pub-id pub-id-type="pmid">28736634</pub-id>
+</element-citation></ref><ref id="REF45"><label>45</label><element-citation publication-type="journal"><article-title>Targeted mutations of the juxtamembrane tyrosines in the KIT receptor tyrosine kinase selectively affect multiple cell lineages</article-title><source>Proc Natl Acad Sci U S A</source><person-group>
+<name><surname>Kimura</surname><given-names>Y</given-names></name>
+<name><surname>Jones</surname><given-names>N</given-names></name>
+<name><surname>Kl&#x000fc;ppel</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>6015</fpage><lpage>6020</lpage><volume>101</volume><year>2004</year><pub-id pub-id-type="pmid">15067126</pub-id>
+</element-citation></ref><ref id="REF46"><label>46</label><element-citation publication-type="journal"><article-title>Imatinib treatment for gastrointestinal stromal tumour (GIST)</article-title><source>J Cell Mol Med</source><person-group>
+<name><surname>Lopes</surname><given-names>LF</given-names></name>
+<name><surname>Bacchi</surname><given-names>CE</given-names></name>
+</person-group><fpage>42</fpage><lpage>50</lpage><volume>14</volume><year>2010</year><pub-id pub-id-type="pmid">19968734</pub-id>
+</element-citation></ref><ref id="REF47"><label>47</label><element-citation publication-type="journal"><article-title>The GIST paradigm: lessons for other kinase-driven cancers</article-title><source>J Pathol</source><person-group>
+<name><surname>Antonescu</surname><given-names>CR</given-names></name>
+</person-group><fpage>251</fpage><lpage>261</lpage><volume>223</volume><year>2011</year><pub-id pub-id-type="pmid">21125679</pub-id>
+</element-citation></ref><ref id="REF48"><label>48</label><element-citation publication-type="journal"><article-title>Mechanisms of resistance to tyrosine kinase inhibitor-targeted therapy and overcoming strategies</article-title><source>MedComm (2020)</source><person-group>
+<name><surname>Ou</surname><given-names>X</given-names></name>
+<name><surname>Gao</surname><given-names>G</given-names></name>
+<name><surname>Habaz</surname><given-names>IA</given-names></name>
+<name><surname>Wang</surname><given-names>Y</given-names></name>
+</person-group><volume>5</volume><year>2024</year></element-citation></ref><ref id="REF49"><label>49</label><element-citation publication-type="journal"><article-title>Understanding and targeting resistance mechanisms in cancer</article-title><source>MedComm (2020)</source><person-group>
+<name><surname>Lei</surname><given-names>ZN</given-names></name>
+<name><surname>Tian</surname><given-names>Q</given-names></name>
+<name><surname>Teng</surname><given-names>QX</given-names></name>
+<name><surname>Wurpel</surname><given-names>JN</given-names></name>
+<name><surname>Zeng</surname><given-names>L</given-names></name>
+<name><surname>Pan</surname><given-names>Y</given-names></name>
+<name><surname>Chen</surname><given-names>ZS</given-names></name>
+</person-group><volume>4</volume><year>2023</year></element-citation></ref><ref id="REF50"><label>50</label><element-citation publication-type="journal"><article-title>An overview of agents and treatments for PDGFRA-mutated gastrointestinal stromal tumors</article-title><source>Front Oncol</source><person-group>
+<name><surname>Sun</surname><given-names>Y</given-names></name>
+<name><surname>Yue</surname><given-names>L</given-names></name>
+<name><surname>Xu</surname><given-names>P</given-names></name>
+<name><surname>Hu</surname><given-names>W</given-names></name>
+</person-group><volume>12</volume><year>2022</year></element-citation></ref><ref id="REF51"><label>51</label><element-citation publication-type="journal"><article-title>An update on gastrointestinal stromal tumors (GISTs) with a focus on extragastrointestinal stromal tumors (EGISTs)</article-title><source>Gastroenterol Rep (Oxf)</source><person-group>
+<name><surname>Usama</surname><given-names>F</given-names></name>
+<name><surname>Rasikh</surname><given-names>R</given-names></name>
+<name><surname>Hassam</surname><given-names>K</given-names></name>
+<name><surname>Rahman</surname><given-names>M</given-names></name>
+<name><surname>Khalil Ur Rehman</surname><given-names>F</given-names></name>
+<name><surname>Khan</surname><given-names>IW</given-names></name>
+<name><surname>Lau</surname><given-names>DT</given-names></name>
+</person-group><volume>13</volume><year>2025</year></element-citation></ref><ref id="REF52"><label>52</label><element-citation publication-type="journal"><article-title>The GIST of advances in treatment of advanced gastrointestinal stromal tumor</article-title><source>Am Soc Clin Oncol Educ Book</source><person-group>
+<name><surname>Schaefer</surname><given-names>I</given-names></name>
+<name><surname>DeMatteo</surname><given-names>RP</given-names></name>
+<name><surname>Serrano</surname><given-names>C</given-names></name>
+</person-group><fpage>885</fpage><lpage>889</lpage><volume>42</volume><year>2022</year></element-citation></ref><ref id="REF53"><label>53</label><element-citation publication-type="journal"><article-title>Seven shades of triple negativity: a review unveiling the low-grade spectrum of breast cancer</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>Georgescu</surname><given-names>TA</given-names></name>
+<name><surname>Georgescu</surname><given-names>AC</given-names></name>
+<name><surname>Iacoban</surname><given-names>SR</given-names></name>
+<name><surname>Cre&#x0021b;oiu</surname><given-names>D</given-names></name>
+<name><surname>Copca</surname><given-names>N</given-names></name>
+<name><surname>Olinca</surname><given-names>MV</given-names></name>
+</person-group><volume>17</volume><year>2025</year></element-citation></ref><ref id="REF54"><label>54</label><element-citation publication-type="journal"><article-title>Efficacy and safety of avapritinib in treating unresectable or metastatic gastrointestinal stromal tumors: a phase I/II, open-label, multicenter study</article-title><source>Oncologist</source><person-group>
+<name><surname>Li</surname><given-names>J</given-names></name>
+<name><surname>Zhang</surname><given-names>X</given-names></name>
+<name><surname>Deng</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group><volume>28</volume><year>2023</year></element-citation></ref><ref id="REF55"><label>55</label><element-citation publication-type="journal"><article-title>A novel PDGFRA mutation in gastrointestinal stromal tumours, L839P, is sensitive to imatinib in vitro</article-title><source>Oncol Lett</source><person-group>
+<name><surname>Bai</surname><given-names>C</given-names></name>
+<name><surname>Liu</surname><given-names>X</given-names></name>
+<name><surname>Zheng</surname><given-names>JM</given-names></name>
+<etal/>
+</person-group><fpage>1139</fpage><lpage>1143</lpage><volume>3</volume><year>2012</year><pub-id pub-id-type="pmid">22783407</pub-id>
+</element-citation></ref><ref id="REF56"><label>56</label><element-citation publication-type="journal"><article-title>Succinate dehydrogenase-deficient gastrointestinal stromal tumors</article-title><source>World J Gastroenterol</source><person-group>
+<name><surname>Wang</surname><given-names>YM</given-names></name>
+<name><surname>Gu</surname><given-names>ML</given-names></name>
+<name><surname>Ji</surname><given-names>F</given-names></name>
+</person-group><fpage>2303</fpage><lpage>2314</lpage><volume>21</volume><year>2015</year><pub-id pub-id-type="pmid">25741136</pub-id>
+</element-citation></ref><ref id="REF57"><label>57</label><element-citation publication-type="journal"><article-title>Succinate dehydrogenase deficiency in pediatric and adult gastrointestinal stromal tumors</article-title><source>Front Oncol</source><person-group>
+<name><surname>Belinsky</surname><given-names>MG</given-names></name>
+<name><surname>Rink</surname><given-names>L</given-names></name>
+<name><surname>von Mehren</surname><given-names>M</given-names></name>
+</person-group><fpage>117</fpage><volume>3</volume><year>2013</year><pub-id pub-id-type="pmid">23730622</pub-id>
+</element-citation></ref><ref id="REF58"><label>58</label><element-citation publication-type="journal"><article-title>Multifocal gastric gastrointestinal stromal tumors (GISTs) with lymph node metastases in children and young adults: a comparative clinical and histomorphological study of three cases including a new case of Carney triad</article-title><source>Diagn Pathol</source><person-group>
+<name><surname>Otto</surname><given-names>C</given-names></name>
+<name><surname>Agaimy</surname><given-names>A</given-names></name>
+<name><surname>Braun</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><fpage>52</fpage><volume>6</volume><year>2011</year><pub-id pub-id-type="pmid">21663639</pub-id>
+</element-citation></ref><ref id="REF59"><label>59</label><element-citation publication-type="journal"><article-title>Succinate dehydrogenase-deficient GISTs: a clinicopathologic, immunohistochemical, and molecular genetic study of 66 gastric GISTs with predilection to young age</article-title><source>Am J Surg Pathol</source><person-group>
+<name><surname>Miettinen</surname><given-names>M</given-names></name>
+<name><surname>Wang</surname><given-names>ZF</given-names></name>
+<name><surname>Sarlomo-Rikala</surname><given-names>M</given-names></name>
+<name><surname>Osuch</surname><given-names>C</given-names></name>
+<name><surname>Rutkowski</surname><given-names>P</given-names></name>
+<name><surname>Lasota</surname><given-names>J</given-names></name>
+</person-group><fpage>1712</fpage><lpage>1721</lpage><volume>35</volume><year>2011</year><pub-id pub-id-type="pmid">21997692</pub-id>
+</element-citation></ref><ref id="REF60"><label>60</label><element-citation publication-type="journal"><article-title>Clinical description and development of a prognostic score for neurofibromatosis type 1 (NF1)-associated GISTs: a retrospective study from the NETSARC</article-title><source>ESMO Open</source><person-group>
+<name><surname>Cuvelier</surname><given-names>C</given-names></name>
+<name><surname>Brahmi</surname><given-names>M</given-names></name>
+<name><surname>Sobhani</surname><given-names>I</given-names></name>
+<etal/>
+</person-group><volume>10</volume><year>2025</year></element-citation></ref><ref id="REF61"><label>61</label><element-citation publication-type="journal"><article-title>Clinical and genetic aspects of neurofibromatosis 1</article-title><source>Genet Med</source><person-group>
+<name><surname>Jett</surname><given-names>K</given-names></name>
+<name><surname>Friedman</surname><given-names>JM</given-names></name>
+</person-group><fpage>1</fpage><lpage>11</lpage><volume>12</volume><year>2010</year><uri xlink:href="https://doi.org/10.1097/GIM.0b013e3181bf15e3">https://doi.org/10.1097/GIM.0b013e3181bf15e3</uri><pub-id pub-id-type="pmid">20027112</pub-id>
+</element-citation></ref><ref id="REF62"><label>62</label><element-citation publication-type="journal"><article-title>Neurofibromatosis type 1 with three synchronous tumors</article-title><source>J Rare Dis</source><person-group>
+<name><surname>Kakkat</surname><given-names>S</given-names></name>
+<name><surname>Zacharia</surname><given-names>GS</given-names></name>
+<name><surname>Ravindran</surname><given-names>R</given-names></name>
+<name><surname>Poovan</surname><given-names>C</given-names></name>
+<name><surname>Jacob</surname><given-names>A</given-names></name>
+</person-group><fpage>6</fpage><volume>3</volume><year>2024</year></element-citation></ref><ref id="REF63"><label>63</label><element-citation publication-type="journal"><article-title>Neurofibromatosis type 1 with multiple gastrointestinal stromal tumors: a case report</article-title><source>World J Clin Cases</source><person-group>
+<name><surname>Yao</surname><given-names>MQ</given-names></name>
+<name><surname>Jiang</surname><given-names>YP</given-names></name>
+<name><surname>Yi</surname><given-names>BH</given-names></name>
+<name><surname>Yang</surname><given-names>Y</given-names></name>
+<name><surname>Sun</surname><given-names>DZ</given-names></name>
+<name><surname>Fan</surname><given-names>JX</given-names></name>
+</person-group><fpage>2336</fpage><lpage>2342</lpage><volume>11</volume><year>2023</year><pub-id pub-id-type="pmid">37122520</pub-id>
+</element-citation></ref><ref id="REF64"><label>64</label><element-citation publication-type="journal"><article-title>Neurofibromatosis type 1-related gastrointestinal stromal tumors: a special reference to loss of heterozygosity at 14q and 22q</article-title><source>J Cancer Res Clin Oncol</source><person-group>
+<name><surname>Yamamoto</surname><given-names>H</given-names></name>
+<name><surname>Tobo</surname><given-names>T</given-names></name>
+<name><surname>Nakamori</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>791</fpage><lpage>798</lpage><volume>135</volume><year>2009</year><pub-id pub-id-type="pmid">19020900</pub-id>
+</element-citation></ref><ref id="REF65"><label>65</label><element-citation publication-type="journal"><article-title>Treatment of BRAF V600E mutant gastrointestinal stromal tumor with dabrafenib: a case report</article-title><source>J Gastrointest Oncol</source><person-group>
+<name><surname>Gowda</surname><given-names>S</given-names></name>
+<name><surname>Sandow</surname><given-names>L</given-names></name>
+<name><surname>Heinrich</surname><given-names>MC</given-names></name>
+</person-group><fpage>788</fpage><lpage>793</lpage><volume>15</volume><year>2024</year><pub-id pub-id-type="pmid">38756640</pub-id>
+</element-citation></ref><ref id="REF66"><label>66</label><element-citation publication-type="journal"><article-title>NTRK fusion-positive cancers and TRK inhibitor therapy</article-title><source>Nat Rev Clin Oncol</source><person-group>
+<name><surname>Cocco</surname><given-names>E</given-names></name>
+<name><surname>Scaltriti</surname><given-names>M</given-names></name>
+<name><surname>Drilon</surname><given-names>A</given-names></name>
+</person-group><fpage>731</fpage><lpage>747</lpage><volume>15</volume><year>2018</year><pub-id pub-id-type="pmid">30333516</pub-id>
+</element-citation></ref><ref id="REF67"><label>67</label><element-citation publication-type="journal"><article-title>Molecular subtypes of KIT/PDGFRA wild-type gastrointestinal stromal tumors: a report from the National Institutes of Health Gastrointestinal Stromal Tumor Clinic</article-title><source>JAMA Oncol</source><person-group>
+<name><surname>Boikos</surname><given-names>SA</given-names></name>
+<name><surname>Pappo</surname><given-names>AS</given-names></name>
+<name><surname>Killian</surname><given-names>JK</given-names></name>
+<etal/>
+</person-group><fpage>922</fpage><lpage>928</lpage><volume>2</volume><year>2016</year><pub-id pub-id-type="pmid">27011036</pub-id>
+</element-citation></ref><ref id="REF68"><label>68</label><element-citation publication-type="journal"><article-title>Current molecular profile of gastrointestinal stromal tumors and systemic therapeutic implications</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>Mathias-Machado</surname><given-names>MC</given-names></name>
+<name><surname>de Jesus</surname><given-names>VH</given-names></name>
+<name><surname>de Carvalho Oliveira</surname><given-names>LJ</given-names></name>
+<name><surname>Neumann</surname><given-names>M</given-names></name>
+<name><surname>Peixoto</surname><given-names>RD</given-names></name>
+</person-group><volume>14</volume><year>2022</year></element-citation></ref><ref id="REF69"><label>69</label><element-citation publication-type="journal"><article-title>New treatment strategies for advanced-stage gastrointestinal stromal tumours</article-title><source>Nat Rev Clin Oncol</source><person-group>
+<name><surname>Klug</surname><given-names>LR</given-names></name>
+<name><surname>Khosroyani</surname><given-names>HM</given-names></name>
+<name><surname>Kent</surname><given-names>JD</given-names></name>
+<name><surname>Heinrich</surname><given-names>MC</given-names></name>
+</person-group><fpage>328</fpage><lpage>341</lpage><volume>19</volume><year>2022</year><pub-id pub-id-type="pmid">35217782</pub-id>
+</element-citation></ref><ref id="REF70"><label>70</label><element-citation publication-type="journal"><article-title>Clinical practice guideline for accurate diagnosis and effective treatment of gastrointestinal stromal tumor in Korea</article-title><source>J Korean Med Sci</source><person-group>
+<name><surname>Kang</surname><given-names>YK</given-names></name>
+<name><surname>Kim</surname><given-names>KM</given-names></name>
+<name><surname>Sohn</surname><given-names>T</given-names></name>
+<etal/>
+</person-group><fpage>1543</fpage><lpage>1552</lpage><volume>25</volume><year>2010</year><pub-id pub-id-type="pmid">21060741</pub-id>
+</element-citation></ref><ref id="REF71"><label>71</label><element-citation publication-type="journal"><article-title>Molecular mechanisms of gastrointestinal stromal tumors and their impact on systemic therapy decision</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>Unk</surname><given-names>M</given-names></name>
+<name><surname>Jezer&#x00161;ek Novakovi&#x00107;</surname><given-names>B</given-names></name>
+<name><surname>Novakovi&#x00107;</surname><given-names>S</given-names></name>
+</person-group><volume>15</volume><year>2023</year></element-citation></ref><ref id="REF72"><label>72</label><element-citation publication-type="journal"><article-title>GIST: correlation of risk classifications and outcome</article-title><source>J Med Life</source><person-group>
+<name><surname>Kersting</surname><given-names>S</given-names></name>
+<name><surname>Janot-Matuschek</surname><given-names>MS</given-names></name>
+<name><surname>Schnitzler</surname><given-names>C</given-names></name>
+<name><surname>Chourio Barboza</surname><given-names>DE</given-names></name>
+<name><surname>Uhl</surname><given-names>W</given-names></name>
+<name><surname>Mittelk&#x000f6;tter</surname><given-names>U</given-names></name>
+</person-group><fpage>932</fpage><lpage>943</lpage><volume>15</volume><year>2022</year><pub-id pub-id-type="pmid">36188659</pub-id>
+</element-citation></ref><ref id="REF73"><label>73</label><element-citation publication-type="journal"><article-title>Peritoneal and serum tumor markers predict recurrence and survival of patients with resectable gastric cancer</article-title><source>Gastric Cancer</source><person-group>
+<name><surname>Bold</surname><given-names>RJ</given-names></name>
+<name><surname>Ota</surname><given-names>DM</given-names></name>
+<name><surname>Ajani</surname><given-names>JA</given-names></name>
+<name><surname>Mansfield</surname><given-names>PF</given-names></name>
+</person-group><fpage>1</fpage><lpage>7</lpage><volume>2</volume><year>1999</year><pub-id pub-id-type="pmid">11957063</pub-id>
+</element-citation></ref><ref id="REF74"><label>74</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumors (GISTs): focus on histopathological diagnosis and biomolecular features</article-title><source>Ann Oncol</source><person-group>
+<name><surname>Badalamenti</surname><given-names>G</given-names></name>
+<name><surname>Rodolico</surname><given-names>V</given-names></name>
+<name><surname>Fulfaro</surname><given-names>F</given-names></name>
+<etal/>
+</person-group><fpage>136</fpage><lpage>140</lpage><volume>18</volume><year>2007</year><pub-id pub-id-type="pmid">17071931</pub-id>
+</element-citation></ref><ref id="REF75"><label>75</label><element-citation publication-type="journal"><article-title>Clinical implications of mutational analysis in gastrointestinal stromal tumours</article-title><source>Br J Cancer</source><person-group>
+<name><surname>Hoeben</surname><given-names>A</given-names></name>
+<name><surname>Sch&#x000f6;ffski</surname><given-names>P</given-names></name>
+<name><surname>Debiec-Rychter</surname><given-names>M</given-names></name>
+</person-group><fpage>684</fpage><lpage>688</lpage><volume>98</volume><year>2008</year><pub-id pub-id-type="pmid">18253129</pub-id>
+</element-citation></ref><ref id="REF76"><label>76</label><element-citation publication-type="journal"><article-title>KIT exon 11 codon 557/558 deletion/insertion mutations define a subset of gastrointestinal stromal tumors with malignant potential</article-title><source>World J Gastroenterol</source><person-group>
+<name><surname>Kontogianni-Katsarou</surname><given-names>K</given-names></name>
+<name><surname>Dimitriadis</surname><given-names>E</given-names></name>
+<name><surname>Lariou</surname><given-names>C</given-names></name>
+<name><surname>Kairi-Vassilatou</surname><given-names>E</given-names></name>
+<name><surname>Pandis</surname><given-names>N</given-names></name>
+<name><surname>Kondi-Paphiti</surname><given-names>A</given-names></name>
+</person-group><fpage>1891</fpage><lpage>1897</lpage><volume>14</volume><year>2008</year><pub-id pub-id-type="pmid">18350628</pub-id>
+</element-citation></ref><ref id="REF77"><label>77</label><element-citation publication-type="journal"><article-title>Extended adjuvant therapy with imatinib in patients with gastrointestinal stromal tumors: recommendations for patient selection, risk assessment, and molecular response monitoring</article-title><source>Mol Diagn Ther</source><person-group>
+<name><surname>Rutkowski</surname><given-names>P</given-names></name>
+<name><surname>Przyby&#x00142;</surname><given-names>J</given-names></name>
+<name><surname>Zdzienicki</surname><given-names>M</given-names></name>
+</person-group><fpage>9</fpage><lpage>19</lpage><volume>17</volume><year>2013</year><pub-id pub-id-type="pmid">23355099</pub-id>
+</element-citation></ref><ref id="REF78"><label>78</label><element-citation publication-type="journal"><article-title>Resistance to avapritinib in PDGFRA-driven gist is caused by secondary mutations in the PDGFRA kinase domain</article-title><source>Cancer Discov</source><person-group>
+<name><surname>Grunewald</surname><given-names>S</given-names></name>
+<name><surname>Klug</surname><given-names>LR</given-names></name>
+<name><surname>M&#x000fc;hlenberg</surname><given-names>T</given-names></name>
+<etal/>
+</person-group><fpage>108</fpage><lpage>125</lpage><volume>11</volume><year>2021</year><pub-id pub-id-type="pmid">32972961</pub-id>
+</element-citation></ref><ref id="REF79"><label>79</label><element-citation publication-type="journal"><article-title>KIT and PDGFRA variants and the survival of patients with gastrointestinal stromal tumor treated with adjuvant imatinib</article-title><source>Cancers (Basel)</source><person-group>
+<name><surname>Joensuu</surname><given-names>H</given-names></name>
+</person-group><volume>15</volume><year>2023</year></element-citation></ref><ref id="REF80"><label>80</label><element-citation publication-type="journal"><article-title>Cancer biomarkers: emerging trends and clinical implications for personalized treatment</article-title><source>Cell</source><person-group>
+<name><surname>Passaro</surname><given-names>A</given-names></name>
+<name><surname>Al Bakir</surname><given-names>M</given-names></name>
+<name><surname>Hamilton</surname><given-names>EG</given-names></name>
+<etal/>
+</person-group><fpage>1617</fpage><lpage>1635</lpage><volume>187</volume><year>2024</year><pub-id pub-id-type="pmid">38552610</pub-id>
+</element-citation></ref><ref id="REF81"><label>81</label><element-citation publication-type="journal"><article-title>Differential immune profiles distinguish the mutational subtypes of gastrointestinal stromal tumor</article-title><source>J Clin Invest</source><person-group>
+<name><surname>Vitiello</surname><given-names>GA</given-names></name>
+<name><surname>Bowler</surname><given-names>TG</given-names></name>
+<name><surname>Liu</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>1863</fpage><lpage>1877</lpage><volume>129</volume><year>2019</year><pub-id pub-id-type="pmid">30762585</pub-id>
+</element-citation></ref><ref id="REF82"><label>82</label><element-citation publication-type="journal"><article-title>Succinate dehydrogenase mutation underlies global epigenomic divergence in gastrointestinal stromal tumor</article-title><source>Cancer Discov</source><person-group>
+<name><surname>Killian</surname><given-names>JK</given-names></name>
+<name><surname>Kim</surname><given-names>SY</given-names></name>
+<name><surname>Miettinen</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>648</fpage><lpage>657</lpage><volume>3</volume><year>2013</year><pub-id pub-id-type="pmid">23550148</pub-id>
+</element-citation></ref><ref id="REF83"><label>83</label><element-citation publication-type="journal"><article-title>Epigenetic alterations and mechanisms that drive resistance to targeted cancer therapies</article-title><source>Cancer Res</source><person-group>
+<name><surname>Wajapeyee</surname><given-names>N</given-names></name>
+<name><surname>Gupta</surname><given-names>R</given-names></name>
+</person-group><fpage>5589</fpage><lpage>5595</lpage><volume>81</volume><year>2021</year><pub-id pub-id-type="pmid">34531319</pub-id>
+</element-citation></ref><ref id="REF84"><label>84</label><element-citation publication-type="journal"><article-title>Circulating tumor DNA and minimal residual disease (MRD) in solid tumors: current horizons and future perspectives</article-title><source>Front Oncol</source><person-group>
+<name><surname>Peng</surname><given-names>Y</given-names></name>
+<name><surname>Mei</surname><given-names>W</given-names></name>
+<name><surname>Ma</surname><given-names>K</given-names></name>
+<name><surname>Zeng</surname><given-names>C</given-names></name>
+</person-group><volume>11</volume><year>2021</year></element-citation></ref><ref id="REF85"><label>85</label><element-citation publication-type="journal"><article-title>The mechanisms of imatinib resistance in gastrointestinal stromal tumours: theoretical basis and therapeutic aspect</article-title><source>J Cell Mol Med</source><person-group>
+<name><surname>Abudurexiti</surname><given-names>N</given-names></name>
+<name><surname>Lou</surname><given-names>Y</given-names></name>
+<name><surname>Wu</surname><given-names>M</given-names></name>
+<name><surname>Huang</surname><given-names>Y</given-names></name>
+<name><surname>Huang</surname><given-names>S</given-names></name>
+<name><surname>Guo</surname><given-names>K</given-names></name>
+<name><surname>Zheng</surname><given-names>S</given-names></name>
+</person-group><volume>29</volume><year>2025</year></element-citation></ref><ref id="REF86"><label>86</label><element-citation publication-type="journal"><article-title>Primary management of localized gastrointestinal stromal tumors with imatinib monotherapy: an alternative to resection of patients precluded from surgery</article-title><source>Clin Med Insights Oncol</source><person-group>
+<name><surname>Wang</surname><given-names>JS</given-names></name>
+<name><surname>Ellsworth</surname><given-names>BL</given-names></name>
+<name><surname>Al-Marayaty</surname><given-names>R</given-names></name>
+<etal/>
+</person-group><volume>19</volume><year>2025</year></element-citation></ref><ref id="REF87"><label>87</label><element-citation publication-type="journal"><article-title>Effect of KIT and PDGFRA mutations on survival in patients with gastrointestinal stromal tumors treated with adjuvant imatinib: an exploratory analysis of a randomized clinical trial</article-title><source>JAMA Oncol</source><person-group>
+<name><surname>Joensuu</surname><given-names>H</given-names></name>
+<name><surname>Wardelmann</surname><given-names>E</given-names></name>
+<name><surname>Sihto</surname><given-names>H</given-names></name>
+<etal/>
+</person-group><fpage>602</fpage><lpage>609</lpage><volume>3</volume><year>2017</year><pub-id pub-id-type="pmid">28334365</pub-id>
+</element-citation></ref><ref id="REF88"><label>88</label><element-citation publication-type="journal"><article-title>European LeukemiaNet recommendations for the management of chronic myeloid leukemia: 2013</article-title><source>Blood</source><person-group>
+<name><surname>Baccarani</surname><given-names>M</given-names></name>
+<name><surname>Deininger</surname><given-names>MW</given-names></name>
+<name><surname>Rosti</surname><given-names>G</given-names></name>
+<etal/>
+</person-group><fpage>872</fpage><lpage>884</lpage><volume>122</volume><year>2013</year><pub-id pub-id-type="pmid">23803709</pub-id>
+</element-citation></ref><ref id="REF89"><label>89</label><element-citation publication-type="journal"><article-title>Sunitinib malate for gastrointestinal stromal tumour in imatinib mesylate-resistant patients: recommendations and evidence</article-title><source>Curr Oncol</source><person-group>
+<name><surname>Younus</surname><given-names>J</given-names></name>
+<name><surname>Verma</surname><given-names>S</given-names></name>
+<name><surname>Franek</surname><given-names>J</given-names></name>
+<name><surname>Coakley</surname><given-names>N</given-names></name>
+</person-group><fpage>4</fpage><lpage>10</lpage><volume>17</volume><year>2010</year></element-citation></ref><ref id="REF90"><label>90</label><element-citation publication-type="journal"><article-title>CCR 20th anniversary commentary: a genetic mechanism of imatinib resistance in gastrointestinal stromal tumor-where are we a decade later?</article-title><source>Clin Cancer Res</source><person-group>
+<name><surname>Antonescu</surname><given-names>CR</given-names></name>
+<name><surname>DeMatteo</surname><given-names>RP</given-names></name>
+</person-group><fpage>3363</fpage><lpage>3365</lpage><volume>21</volume><year>2015</year><pub-id pub-id-type="pmid">26240289</pub-id>
+</element-citation></ref><ref id="REF91"><label>91</label><element-citation publication-type="journal"><article-title>KIT kinase mutants show unique mechanisms of drug resistance to imatinib and sunitinib in gastrointestinal stromal tumor patients</article-title><source>Proc Natl Acad Sci USA</source><person-group>
+<name><surname>Gajiwala</surname><given-names>KS</given-names></name>
+<name><surname>Wu</surname><given-names>JC</given-names></name>
+<name><surname>Christensen</surname><given-names>J</given-names></name>
+<etal/>
+</person-group><fpage>1542</fpage><lpage>1547</lpage><volume>106</volume><year>2009</year><pub-id pub-id-type="pmid">19164557</pub-id>
+</element-citation></ref><ref id="REF92"><label>92</label><element-citation publication-type="journal"><article-title>Drug rechallenge and treatment beyond progression - implications for drug resistance</article-title><source>Nat Rev Clin Oncol</source><person-group>
+<name><surname>Kuczynski</surname><given-names>EA</given-names></name>
+<name><surname>Sargent</surname><given-names>DJ</given-names></name>
+<name><surname>Grothey</surname><given-names>A</given-names></name>
+<name><surname>Kerbel</surname><given-names>RS</given-names></name>
+</person-group><fpage>571</fpage><lpage>587</lpage><volume>10</volume><year>2013</year><pub-id pub-id-type="pmid">23999218</pub-id>
+</element-citation></ref><ref id="REF93"><label>93</label><element-citation publication-type="journal"><article-title>Efficacy and safety of regorafenib in patients with metastatic and/or unresectable GI stromal tumor after failure of imatinib and sunitinib: a multicenter phase II trial</article-title><source>J Clin Oncol</source><person-group>
+<name><surname>George</surname><given-names>S</given-names></name>
+<name><surname>Wang</surname><given-names>Q</given-names></name>
+<name><surname>Heinrich</surname><given-names>MC</given-names></name>
+<etal/>
+</person-group><fpage>2401</fpage><lpage>2407</lpage><volume>30</volume><year>2012</year><pub-id pub-id-type="pmid">22614970</pub-id>
+</element-citation></ref><ref id="REF94"><label>94</label><element-citation publication-type="journal"><article-title>Long-term follow-up results of the multicenter phase II trial of regorafenib in patients with metastatic and/or unresectable GI stromal tumor after failure of standard tyrosine kinase inhibitor therapy</article-title><source>Ann Oncol</source><person-group>
+<name><surname>Ben-Ami</surname><given-names>E</given-names></name>
+<name><surname>Barysauskas</surname><given-names>CM</given-names></name>
+<name><surname>von Mehren</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>1794</fpage><lpage>1799</lpage><volume>27</volume><year>2016</year><pub-id pub-id-type="pmid">27371698</pub-id>
+</element-citation></ref><ref id="REF95"><label>95</label><element-citation publication-type="journal"><article-title>Genomically matched therapy in advanced solid tumors: the randomized phase 2 ROME trial</article-title><source>Nat Med</source><person-group>
+<name><surname>Marchetti</surname><given-names>P</given-names></name>
+<name><surname>Curigliano</surname><given-names>G</given-names></name>
+<name><surname>Biffoni</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>3514</fpage><lpage>3523</lpage><volume>31</volume><year>2025</year><pub-id pub-id-type="pmid">41023484</pub-id>
+</element-citation></ref><ref id="REF96"><label>96</label><element-citation publication-type="journal"><article-title>Efficacy and safety of regorafenib for the treatment of metastatic colorectal cancer in routine clinical practice: results from a Spanish hospital</article-title><source>Front Oncol</source><person-group>
+<name><surname>Sotoca Rubio</surname><given-names>P</given-names></name>
+<name><surname>Barrill Corpa</surname><given-names>AM</given-names></name>
+<name><surname>Alia Navarro</surname><given-names>V</given-names></name>
+<etal/>
+</person-group><volume>14</volume><year>2024</year></element-citation></ref><ref id="REF97"><label>97</label><element-citation publication-type="journal"><article-title>Avapritinib in advanced PDGFRA D842V-mutant gastrointestinal stromal tumour (NAVIGATOR): a multicentre, open-label, phase 1 trial</article-title><source>Lancet Oncol</source><person-group>
+<name><surname>Heinrich</surname><given-names>MC</given-names></name>
+<name><surname>Jones</surname><given-names>RL</given-names></name>
+<name><surname>von Mehren</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>935</fpage><lpage>946</lpage><volume>21</volume><year>2020</year><pub-id pub-id-type="pmid">32615108</pub-id>
+</element-citation></ref><ref id="REF98"><label>98</label><element-citation publication-type="journal"><article-title>Robust activity of avapritinib, potent and highly selective inhibitor of mutated kit, in patient-derived xenograft models of gastrointestinal stromal tumors</article-title><source>Clin Cancer Res</source><person-group>
+<name><surname>Gebreyohannes</surname><given-names>YK</given-names></name>
+<name><surname>Wozniak</surname><given-names>A</given-names></name>
+<name><surname>Zhai</surname><given-names>ME</given-names></name>
+<etal/>
+</person-group><fpage>609</fpage><lpage>618</lpage><volume>25</volume><year>2019</year><pub-id pub-id-type="pmid">30274985</pub-id>
+</element-citation></ref><ref id="REF99"><label>99</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumor: current approaches and future directions in the treatment of advanced disease</article-title><source>Hematol Oncol Clin North Am</source><person-group>
+<name><surname>Cicala</surname><given-names>CM</given-names></name>
+<name><surname>Bauer</surname><given-names>S</given-names></name>
+<name><surname>Heinrich</surname><given-names>MC</given-names></name>
+<name><surname>Serrano</surname><given-names>C</given-names></name>
+</person-group><fpage>773</fpage><lpage>784</lpage><volume>39</volume><year>2025</year><pub-id pub-id-type="pmid">40368739</pub-id>
+</element-citation></ref><ref id="REF100"><label>100</label><element-citation publication-type="journal"><article-title>Efficacy and safety of avapritinib in previously treated patients with advanced systemic mastocytosis</article-title><source>Blood Adv</source><person-group>
+<name><surname>Reiter</surname><given-names>A</given-names></name>
+<name><surname>Schwaab</surname><given-names>J</given-names></name>
+<name><surname>DeAngelo</surname><given-names>DJ</given-names></name>
+<etal/>
+</person-group><fpage>5750</fpage><lpage>5762</lpage><volume>6</volume><year>2022</year><pub-id pub-id-type="pmid">35640224</pub-id>
+</element-citation></ref><ref id="REF101"><label>101</label><element-citation publication-type="journal"><article-title>Switch control inhibition of KIT and PDGFRA in patients with advanced gastrointestinal stromal tumor: a phase I study of ripretinib</article-title><source>J Clin Oncol</source><person-group>
+<name><surname>Janku</surname><given-names>F</given-names></name>
+<name><surname>Abdul Razak</surname><given-names>AR</given-names></name>
+<name><surname>Chi</surname><given-names>P</given-names></name>
+<etal/>
+</person-group><fpage>3294</fpage><lpage>3303</lpage><volume>38</volume><year>2020</year><pub-id pub-id-type="pmid">32804590</pub-id>
+</element-citation></ref><ref id="REF102"><label>102</label><element-citation publication-type="journal"><article-title>Ripretinib (DCC-2618) is a switch control kinase inhibitor of a broad spectrum of oncogenic and drug-resistant KIT and PDGFRA variants</article-title><source>Cancer Cell</source><person-group>
+<name><surname>Smith</surname><given-names>BD</given-names></name>
+<name><surname>Kaufman</surname><given-names>MD</given-names></name>
+<name><surname>Lu</surname><given-names>WP</given-names></name>
+<etal/>
+</person-group><fpage>738</fpage><lpage>751</lpage><volume>35</volume><year>2019</year><pub-id pub-id-type="pmid">31085175</pub-id>
+</element-citation></ref><ref id="REF103"><label>103</label><element-citation publication-type="journal"><article-title>FDA approval summary: ripretinib for advanced gastrointestinal stromal tumor</article-title><source>Clin Cancer Res</source><person-group>
+<name><surname>Kumar</surname><given-names>V</given-names></name>
+<name><surname>Doros</surname><given-names>L</given-names></name>
+<name><surname>Thompson</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>2020</fpage><lpage>2024</lpage><volume>29</volume><year>2023</year><pub-id pub-id-type="pmid">36485007</pub-id>
+</element-citation></ref><ref id="REF104"><label>104</label><element-citation publication-type="journal"><article-title>Navigating ongoing challenges in GI stromal tumors</article-title><source>Am Soc Clin Oncol Educ Book</source><person-group>
+<name><surname>Joensuu</surname><given-names>H</given-names></name>
+<name><surname>Miyashita</surname><given-names>H</given-names></name>
+<name><surname>George</surname><given-names>S</given-names></name>
+<name><surname>Sicklick</surname><given-names>J</given-names></name>
+</person-group><volume>45</volume><year>2025</year></element-citation></ref><ref id="REF105"><label>105</label><element-citation publication-type="journal"><article-title>Succinate dehydrogenase deficiency is associated with decreased 5-hydroxymethylcytosine production in gastrointestinal stromal tumors: implications for mechanisms of tumorigenesis</article-title><source>Mod Pathol</source><person-group>
+<name><surname>Mason</surname><given-names>EF</given-names></name>
+<name><surname>Hornick</surname><given-names>JL</given-names></name>
+</person-group><fpage>1492</fpage><lpage>1497</lpage><volume>26</volume><year>2013</year><pub-id pub-id-type="pmid">23743927</pub-id>
+</element-citation></ref><ref id="REF106"><label>106</label><element-citation publication-type="journal"><article-title>Targeted therapy in SDH-deficient GIST</article-title><source>Ther Adv Med Oncol</source><person-group>
+<name><surname>Nannini</surname><given-names>M</given-names></name>
+<name><surname>Rizzo</surname><given-names>A</given-names></name>
+<name><surname>Indio</surname><given-names>V</given-names></name>
+<name><surname>Schipani</surname><given-names>A</given-names></name>
+<name><surname>Astolfi</surname><given-names>A</given-names></name>
+<name><surname>Pantaleo</surname><given-names>MA</given-names></name>
+</person-group><volume>13</volume><year>2021</year></element-citation></ref><ref id="REF107"><label>107</label><element-citation publication-type="journal"><article-title>Epi-immunotherapy in cancer treatment: mechanisms, clinical progress, and future directions</article-title><source>Cancer Innov</source><person-group>
+<name><surname>Lu</surname><given-names>N</given-names></name>
+<name><surname>Rong</surname><given-names>G</given-names></name>
+<name><surname>Han</surname><given-names>W</given-names></name>
+</person-group><volume>4</volume><year>2025</year></element-citation></ref><ref id="REF108"><label>108</label><element-citation publication-type="journal"><article-title>Molecular advances in the treatment of advanced gastrointestinal stromal tumor</article-title><source>Oncologist</source><person-group>
+<name><surname>Venkataraman</surname><given-names>V</given-names></name>
+<name><surname>George</surname><given-names>S</given-names></name>
+<name><surname>Cote</surname><given-names>GM</given-names></name>
+</person-group><fpage>671</fpage><lpage>681</lpage><volume>28</volume><year>2023</year><pub-id pub-id-type="pmid">37315115</pub-id>
+</element-citation></ref><ref id="REF109"><label>109</label><element-citation publication-type="journal"><article-title>Relationship between efficacy of sunitinib and KIT mutation of patients with advanced gastrointestinal stromal tumors after failure of imatinib: a systematic review</article-title><source>Medicine (Baltimore)</source><person-group>
+<name><surname>Xie</surname><given-names>F</given-names></name>
+<name><surname>Xiao</surname><given-names>W</given-names></name>
+<name><surname>Jiang</surname><given-names>Y</given-names></name>
+<name><surname>Xia</surname><given-names>X</given-names></name>
+<name><surname>Wang</surname><given-names>Y</given-names></name>
+</person-group><volume>98</volume><year>2019</year></element-citation></ref><ref id="REF110"><label>110</label><element-citation publication-type="journal"><article-title>Evolving role of regorafenib for the treatment of advanced cancers</article-title><source>Cancer Treat Rev</source><person-group>
+<name><surname>Grothey</surname><given-names>A</given-names></name>
+<name><surname>Blay</surname><given-names>JY</given-names></name>
+<name><surname>Pavlakis</surname><given-names>N</given-names></name>
+<name><surname>Yoshino</surname><given-names>T</given-names></name>
+<name><surname>Bruix</surname><given-names>J</given-names></name>
+</person-group><volume>86</volume><year>2020</year><uri xlink:href="https://doi.org/10.1016/j.ctrv.2020.101993">https://doi.org/10.1016/j.ctrv.2020.101993</uri></element-citation></ref><ref id="REF111"><label>111</label><element-citation publication-type="journal"><article-title>Avapritinib in advanced gastrointestinal stromal tumor: case series and review of&#x000a0;the&#x000a0;literature from a tertiary care center in India</article-title><source>Future Sci OA</source><person-group>
+<name><surname>Verma</surname><given-names>S</given-names></name>
+<name><surname>Reddy</surname><given-names>R</given-names></name>
+<name><surname>Chandrashekhara</surname><given-names>SH</given-names></name>
+<name><surname>Shamim</surname><given-names>SA</given-names></name>
+<name><surname>Tripathy</surname><given-names>S</given-names></name>
+<name><surname>Rastogi</surname><given-names>S</given-names></name>
+</person-group><volume>7</volume><year>2021</year></element-citation></ref><ref id="REF112"><label>112</label><element-citation publication-type="journal"><article-title>Acquired resistance to immune checkpoint inhibitors</article-title><source>Cancer Cell</source><person-group>
+<name><surname>Schoenfeld</surname><given-names>AJ</given-names></name>
+<name><surname>Hellmann</surname><given-names>MD</given-names></name>
+</person-group><fpage>443</fpage><lpage>455</lpage><volume>37</volume><year>2020</year><pub-id pub-id-type="pmid">32289269</pub-id>
+</element-citation></ref><ref id="REF113"><label>113</label><element-citation publication-type="journal"><article-title>Molecular mechanisms of tumor progression and new therapeutic strategies for urological cancers</article-title><source>Int J Mol Sci</source><person-group>
+<name><surname>Ruiz de Porras</surname><given-names>V</given-names></name>
+<name><surname>Font</surname><given-names>A</given-names></name>
+</person-group><volume>24</volume><year>2023</year></element-citation></ref><ref id="REF114"><label>114</label><element-citation publication-type="journal"><article-title>Avapritinib: a selective inhibitor of KIT and PDGRA&#x003b1; that reverses ABCB1 and ABCG2-mediated multidrug resistance in cancer cell lines</article-title><source>Mol Pharm</source><person-group>
+<name><surname>Wu</surname><given-names>CP</given-names></name>
+<name><surname>Lusvarghi</surname><given-names>S</given-names></name>
+<name><surname>Wang</surname><given-names>JC</given-names></name>
+<name><surname>Hsiao</surname><given-names>SH</given-names></name>
+<name><surname>Huang</surname><given-names>YH</given-names></name>
+<name><surname>Hung</surname><given-names>TH</given-names></name>
+<name><surname>Ambudkar</surname><given-names>SV</given-names></name>
+</person-group><fpage>3040</fpage><lpage>3052</lpage><volume>16</volume><year>2019</year><pub-id pub-id-type="pmid">31117741</pub-id>
+</element-citation></ref><ref id="REF115"><label>115</label><element-citation publication-type="journal"><article-title>Advances in the research of the mechanism of secondary resistance to imatinib in gastrointestinal stromal tumors</article-title><source>Front Oncol</source><person-group>
+<name><surname>Hu</surname><given-names>X</given-names></name>
+<name><surname>Wang</surname><given-names>Z</given-names></name>
+<name><surname>Su</surname><given-names>P</given-names></name>
+<name><surname>Zhang</surname><given-names>Q</given-names></name>
+<name><surname>Kou</surname><given-names>Y</given-names></name>
+</person-group><volume>12</volume><year>2022</year></element-citation></ref><ref id="REF116"><label>116</label><element-citation publication-type="journal"><article-title>KIT ATP-binding pocket/activation loop mutations in GI stromal tumor: emerging mechanisms of kinase inhibitor escape</article-title><source>J Clin Oncol</source><person-group>
+<name><surname>M&#x000fc;hlenberg</surname><given-names>T</given-names></name>
+<name><surname>Falkenhorst</surname><given-names>J</given-names></name>
+<name><surname>Schulz</surname><given-names>T</given-names></name>
+<etal/>
+</person-group><fpage>1439</fpage><lpage>1449</lpage><volume>42</volume><year>2024</year><pub-id pub-id-type="pmid">38408285</pub-id>
+</element-citation></ref><ref id="REF117"><label>117</label><element-citation publication-type="journal"><article-title>Advances in tumor subclone formation and mechanisms of growth and invasion</article-title><source>J Transl Med</source><person-group>
+<name><surname>Zhang</surname><given-names>Y</given-names></name>
+<name><surname>Wang</surname><given-names>W</given-names></name>
+</person-group><fpage>461</fpage><volume>23</volume><year>2025</year><pub-id pub-id-type="pmid">40259385</pub-id>
+</element-citation></ref><ref id="REF118"><label>118</label><element-citation publication-type="journal"><article-title>Tumour heterogeneity and the evolution of polyclonal drug resistance</article-title><source>Mol Oncol</source><person-group>
+<name><surname>Burrell</surname><given-names>RA</given-names></name>
+<name><surname>Swanton</surname><given-names>C</given-names></name>
+</person-group><fpage>1095</fpage><lpage>1111</lpage><volume>8</volume><year>2014</year><pub-id pub-id-type="pmid">25087573</pub-id>
+</element-citation></ref><ref id="REF119"><label>119</label><element-citation publication-type="journal"><article-title>Acquired resistance to molecularly targeted therapies for cancer</article-title><source>Cancer Drug Resist</source><person-group>
+<name><surname>Stubbs</surname><given-names>NM</given-names></name>
+<name><surname>Roady</surname><given-names>TJ</given-names></name>
+<name><surname>Schwermann</surname><given-names>MP</given-names></name>
+<etal/>
+</person-group><fpage>27</fpage><volume>8</volume><year>2025</year><pub-id pub-id-type="pmid">40510029</pub-id>
+</element-citation></ref><ref id="REF120"><label>120</label><element-citation publication-type="journal"><article-title>Clonal evolution in hematological malignancies and therapeutic implications</article-title><source>Leukemia</source><person-group>
+<name><surname>Landau</surname><given-names>DA</given-names></name>
+<name><surname>Carter</surname><given-names>SL</given-names></name>
+<name><surname>Getz</surname><given-names>G</given-names></name>
+<name><surname>Wu</surname><given-names>CJ</given-names></name>
+</person-group><fpage>34</fpage><lpage>43</lpage><volume>28</volume><year>2014</year><pub-id pub-id-type="pmid">23979521</pub-id>
+</element-citation></ref><ref id="REF121"><label>121</label><element-citation publication-type="journal"><article-title>Ripretinib: a review in gastrointestinal stromal tumours as fourth-or later-line of therapy</article-title><source>Drugs</source><person-group>
+<name><surname>Fung</surname><given-names>S</given-names></name>
+<name><surname>Shirley</surname><given-names>M</given-names></name>
+</person-group><fpage>1541</fpage><lpage>1548</lpage><volume>82</volume><year>2022</year><pub-id pub-id-type="pmid">36282417</pub-id>
+</element-citation></ref><ref id="REF122"><label>122</label><element-citation publication-type="journal"><article-title>Combined inhibition of heat shock proteins 90 and 70 leads to simultaneous degradation of the oncogenic signaling proteins involved in muscle invasive bladder cancer</article-title><source>Oncotarget</source><person-group>
+<name><surname>Cavanaugh</surname><given-names>A</given-names></name>
+<name><surname>Juengst</surname><given-names>B</given-names></name>
+<name><surname>Sheridan</surname><given-names>K</given-names></name>
+<name><surname>Danella</surname><given-names>JF</given-names></name>
+<name><surname>Williams</surname><given-names>H</given-names></name>
+</person-group><fpage>39821</fpage><lpage>39838</lpage><volume>6</volume><year>2015</year><uri xlink:href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4741863/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4741863/</uri><pub-id pub-id-type="pmid">26556859</pub-id>
+</element-citation></ref><ref id="REF123"><label>123</label><element-citation publication-type="journal"><article-title>Combination strategies with HSP90 inhibitors in cancer therapy: mechanisms, challenges, and future perspectives</article-title><source>Pharmaceuticals (Basel)</source><person-group>
+<name><surname>Kim</surname><given-names>Y</given-names></name>
+<name><surname>Lim</surname><given-names>SY</given-names></name>
+<name><surname>Kim</surname><given-names>HO</given-names></name>
+<etal/>
+</person-group><volume>18</volume><year>2025</year></element-citation></ref><ref id="REF124"><label>124</label><element-citation publication-type="journal"><article-title>The role of PD-1/PD-L1 and application of immune-checkpoint inhibitors in human cancers</article-title><source>Front Immunol</source><person-group>
+<name><surname>Tang</surname><given-names>Q</given-names></name>
+<name><surname>Chen</surname><given-names>Y</given-names></name>
+<name><surname>Li</surname><given-names>X</given-names></name>
+<etal/>
+</person-group><volume>13</volume><year>2022</year></element-citation></ref><ref id="REF125"><label>125</label><element-citation publication-type="journal"><article-title>Advances and strategies in enhancing mRNA cancer vaccines</article-title><source>Adv Mater</source><person-group>
+<name><surname>Zhang</surname><given-names>M</given-names></name>
+<name><surname>Chen</surname><given-names>S</given-names></name>
+<name><surname>Hu</surname><given-names>H</given-names></name>
+<name><surname>Ong</surname><given-names>Y</given-names></name>
+<name><surname>Ni</surname><given-names>Q</given-names></name>
+</person-group><volume>37</volume><year>2025</year></element-citation></ref><ref id="REF126"><label>126</label><element-citation publication-type="journal"><article-title>Epigenetic drugs in cancer therapy: mechanisms, immune modulation, and therapeutic applications</article-title><source>Mol Biomed</source><person-group>
+<name><surname>Ma</surname><given-names>C</given-names></name>
+<name><surname>Cheng</surname><given-names>J</given-names></name>
+<name><surname>Gu</surname><given-names>J</given-names></name>
+<name><surname>Wang</surname><given-names>Q</given-names></name>
+</person-group><fpage>132</fpage><volume>6</volume><year>2025</year><pub-id pub-id-type="pmid">41335282</pub-id>
+</element-citation></ref><ref id="REF127"><label>127</label><element-citation publication-type="journal"><article-title>Advances in personalized medicine: translating genomic insights into targeted therapies for cancer treatment</article-title><source>Ann Transl Med</source><person-group>
+<name><surname>Jamalinia</surname><given-names>M</given-names></name>
+<name><surname>Weiskirchen</surname><given-names>R</given-names></name>
+</person-group><fpage>18</fpage><volume>13</volume><year>2025</year><pub-id pub-id-type="pmid">40438512</pub-id>
+</element-citation></ref><ref id="REF128"><label>128</label><element-citation publication-type="journal"><article-title>Gastrointestinal stromal tumours: ESMO-EURACAN-GENTURIS Clinical Practice Guidelines for diagnosis, treatment and follow-up</article-title><source>Ann Oncol</source><person-group>
+<name><surname>Casali</surname><given-names>PG</given-names></name>
+<name><surname>Blay</surname><given-names>JY</given-names></name>
+<name><surname>Abecassis</surname><given-names>N</given-names></name>
+<etal/>
+</person-group><fpage>20</fpage><lpage>33</lpage><volume>33</volume><year>2022</year><uri xlink:href="https://doi.org/10.1016/j.annonc.2021.09.005">https://doi.org/10.1016/j.annonc.2021.09.005</uri><pub-id pub-id-type="pmid">34560242</pub-id>
+</element-citation></ref><ref id="REF129"><label>129</label><element-citation publication-type="journal"><article-title>Deep learning predicts patients outcome and mutations from digitized histology slides in gastrointestinal stromal tumor</article-title><source>NPJ Precis Oncol</source><person-group>
+<name><surname>Fu</surname><given-names>Y</given-names></name>
+<name><surname>Karanian</surname><given-names>M</given-names></name>
+<name><surname>Perret</surname><given-names>R</given-names></name>
+<etal/>
+</person-group><fpage>71</fpage><volume>7</volume><year>2023</year><pub-id pub-id-type="pmid">37488222</pub-id>
+</element-citation></ref><ref id="REF130"><label>130</label><element-citation publication-type="journal"><article-title>Secondary mutations as mediators of resistance to targeted therapy in leukemia</article-title><source>Blood</source><person-group>
+<name><surname>Daver</surname><given-names>N</given-names></name>
+<name><surname>Cortes</surname><given-names>J</given-names></name>
+<name><surname>Ravandi</surname><given-names>F</given-names></name>
+<name><surname>Patel</surname><given-names>KP</given-names></name>
+<name><surname>Burger</surname><given-names>JA</given-names></name>
+<name><surname>Konopleva</surname><given-names>M</given-names></name>
+<name><surname>Kantarjian</surname><given-names>H</given-names></name>
+</person-group><fpage>3236</fpage><lpage>3245</lpage><volume>125</volume><year>2015</year><pub-id pub-id-type="pmid">25795921</pub-id>
+</element-citation></ref><ref id="REF131"><label>131</label><element-citation publication-type="journal"><article-title>The convergent frontier: integrating molecular, computational, and surgical sciences in oncology</article-title><source>Biomedicines</source><person-group>
+<name><surname>Alshammari</surname><given-names>AH</given-names></name>
+<name><surname>Hirotsu</surname><given-names>T</given-names></name>
+<name><surname>Hatakeyama</surname><given-names>H</given-names></name>
+<name><surname>di Luccio</surname><given-names>E</given-names></name>
+</person-group><volume>13</volume><year>2025</year></element-citation></ref></ref-list></back></article>

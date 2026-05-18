@@ -1,0 +1,1378 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="review-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Front Genet</journal-id><journal-id journal-id-type="iso-abbrev">Front Genet</journal-id><journal-id journal-id-type="publisher-id">Front. Genet.</journal-id><journal-title-group><journal-title>Frontiers in Genetics</journal-title></journal-title-group><issn pub-type="epub">1664-8021</issn><publisher><publisher-name>Frontiers Media S.A.</publisher-name></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883251</article-id><article-id pub-id-type="publisher-id">1734673</article-id><article-id pub-id-type="doi">10.3389/fgene.2026.1734673</article-id><article-version article-version-type="Version of Record" vocab="NISO-RP-8-2008"/><article-categories><subj-group subj-group-type="heading"><subject>Review</subject></subj-group></article-categories><title-group><article-title>The mechanism and clinical significance of FKBP5 gene DNA methylation in various psychiatric, metabolic and tumor-related diseases</article-title><alt-title alt-title-type="left-running-head">Wang and Xia</alt-title><alt-title alt-title-type="right-running-head">
+<ext-link xlink:href="https://doi.org/10.3389/fgene.2026.1734673" ext-link-type="uri">10.3389/fgene.2026.1734673</ext-link>
+</alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Wang</surname><given-names>Changliang</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x02013; original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role></contrib><contrib contrib-type="author" corresp="yes" equal-contrib="yes"><name><surname>Xia</surname><given-names>Zhixiu</given-names></name><xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="c001" ref-type="corresp">*</xref><xref rid="fn001" ref-type="author-notes">
+<sup>&#x02020;</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/3259776"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &#x00026; editing/">Writing &#x02013; review and editing</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project administration</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Validation" vocab-term-identifier="https://credit.niso.org/contributor-roles/validation/">Validation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal Analysis</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x02013; original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Resources" vocab-term-identifier="https://credit.niso.org/contributor-roles/resources/">Resources</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<institution>Judicial Authentication Center, The People&#x02019;s Procuratorate of Liaoning Province, Collaborative Laboratory of Intelligentized Forensic Science (CLIFS)</institution>, <city>Shenyang</city>, <country country="CN">China</country>
+</aff><aff id="aff2">
+<label>2</label>
+<institution>Department of General Surgery, Shengjing Hospital of China Medical University</institution>, <city>Shenyang</city>, <country country="CN">China</country>
+</aff><author-notes><corresp id="c001">
+<label>*</label>Correspondence: Zhixiu Xia, <email xlink:href="mailto:18940258100@163.com">18940258100@163.com</email>
+</corresp><fn fn-type="equal" id="fn001"><label>&#x02020;</label><p>ORCID: Zhixiu Xia, <ext-link xlink:href="https://orcid.org/0000-0001-6921-7257" ext-link-type="uri">orcid.org/0000-0001-6921-7257</ext-link>
+</p></fn></author-notes><pub-date publication-format="electronic" date-type="pub" iso-8601-date="2026-01-26"><day>26</day><month>1</month><year>2026</year></pub-date><pub-date publication-format="electronic" date-type="collection"><year>2026</year></pub-date><volume>17</volume><elocation-id>1734673</elocation-id><history><date date-type="received"><day>29</day><month>10</month><year>2025</year></date><date date-type="rev-recd"><day>01</day><month>1</month><year>2026</year></date><date date-type="accepted"><day>07</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026 Wang and Xia.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Wang and Xia</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense" start_date="2026-01-26">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License (CC BY)</ext-link>. The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p></license></permissions><abstract><p>The FK506 Binding Protein 5 (FKBP5) gene encodes a protein that binds to the immunosuppressive agent FK506. FKBP5 expression is regulated by genetic variation and epigenetic mechanisms, including DNA methylation (DNAm). This gene regulates the glucocorticoid receptor (GR), and aberrant FKBP5 methylation is associated with psychiatric and metabolic disorders. Recent evidence also indicates that FKBP5 methylation significantly influences malignant tumors. The methylation status of FKBP5 not only modulates its own expression but also contributes to disease pathogenesis by regulating downstream signaling pathways. Despite extensive research on FKBP5 in individual disease contexts, a critical gap remains in understanding how its DNAm serves as a unifying epigenetic mechanism across psychiatric, metabolic, and neoplastic disorders. Existing reviews often focus on single disease domains or on genetic and protein-level regulation, lacking a systematic, horizontal integration analysis centered on DNAm&#x02014;a dynamic and reversible modification. This review aims to fill this gap by proposing a coherent &#x0201c;epigenetic regulatory framework&#x0201d; that elucidates how tissue-and site-specific FKBP5 DNAm patterns, through modulating glucocorticoid (GC) signaling, stress responses, and inflammatory pathways (e.g., NF-&#x003ba;B), contribute to divergent pathological outcomes. By integrating evidence from disparate fields, this review summarizes the role of FKBP5 DNAm in disease biology, its functions across various disorders, and its potential as a biomarker and therapeutic target, aiming to provide a theoretical foundation and strategic insights for disease diagnosis and treatment.</p></abstract><kwd-group><kwd>biomarker</kwd><kwd>DNA methylation</kwd><kwd>epigenetics</kwd><kwd>FKBP5</kwd><kwd>targeted therapy</kwd></kwd-group><funding-group><funding-statement>The author(s) declared that financial support was not received for this work and/or its publication.</funding-statement></funding-group><counts><fig-count count="3"/><table-count count="1"/><equation-count count="0"/><ref-count count="125"/><page-count count="13"/></counts><custom-meta-group><custom-meta><meta-name>section-at-acceptance</meta-name><meta-value>Applied Genetic Epidemiology</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro" id="s1"><label>1</label><title>Introduction</title><p>Epigenetics encompasses heritable changes in gene expression that occur without alterations to the DNA sequence itself (<xref rid="B67" ref-type="bibr">Ma et al., 2025</xref>; <xref rid="B2" ref-type="bibr">Akano et al., 2025</xref>). These changes, which include DNAm, can be stably maintained through cell divisions and are crucial for regulating normal development and cellular responses. DNAm involves the addition of a methyl group to cytosine bases within CpG dinucleotides, leading to modulation of transcriptional activity and chromatin architecture. Beyond its physiological roles, dysregulated DNAm is increasingly implicated in the pathogenesis of numerous diseases (<xref rid="B10" ref-type="bibr">Aslam and Ageed, 2024</xref>; <xref rid="B6" ref-type="bibr">Antrobus et al., 2025</xref>; <xref rid="B105" ref-type="bibr">van Vliet et al., 2024</xref>; <xref rid="B101" ref-type="bibr">Tan et al., 2024</xref>), with alterations exhibiting both tissue specificity and dynamic regulation over time (<xref rid="B30" ref-type="bibr">Dabin et al., 2020</xref>). This positions epigenetic mechanisms, particularly DNAm, as central players in precision medicine, offering novel avenues for diagnosis and therapy (<xref rid="B84" ref-type="bibr">Pinho and Maga, 2021</xref>; <xref rid="B125" ref-type="bibr">Zima et al., 2022</xref>).</p><p>Environmental exposures, such as tobacco smoke and alcohol, are potent modifiers of the epigenome through gene-environment interactions (<xref rid="B3" ref-type="bibr">Akhabir et al., 2022</xref>; <xref rid="B33" ref-type="bibr">Dragic et al., 2022</xref>; <xref rid="B97" ref-type="bibr">Stols-Gon&#x000e7;alves et al., 2024</xref>; <xref rid="B113" ref-type="bibr">White et al., 2024</xref>; <xref rid="B37" ref-type="bibr">Fadadu et al., 2025</xref>). For instance, studies using epigenome-wide approaches have consistently identified demethylation at specific CpG sites within the FKBP5 gene in peripheral blood mononuclear (PBM) cells following such exposures (<xref rid="B32" ref-type="bibr">Dogan et al., 2016</xref>). FKBP5, a critical regulator of the hypothalamic-pituitary-adrenal (HPA) axis stress response, itself undergoes environmentally driven DNAm changes and appears to facilitate broader epigenetic reprogramming. Notably, stress-related methylation abnormalities in FKBP5 have been observed in brain regions like the prefrontal cortex (PFC) and hippocampus, contributing to the pathophysiology of neuropsychiatric conditions such as alcohol use disorder (<xref rid="B42" ref-type="bibr">Gatta et al., 2021</xref>). Similarly, environmental factors can drive tissue-specific methylation changes in oncogenes, highlighting a pervasive role for epigenetics in disease (<xref rid="B91" ref-type="bibr">Saville et al., 2025</xref>).</p><p>Altered FKBP5 DNA methylation (FKBP5-DNAm) is associated with a spectrum of disorders, including stress-related psychiatric conditions, metabolic diseases, and various cancers (<xref rid="B54" ref-type="bibr">Klengel et al., 2013</xref>; <xref rid="B90" ref-type="bibr">Rysz et al., 2022</xref>). These findings position FKBP5 as a promising biomarker and a novel therapeutic target, offering new avenues for disease prevention and treatment. However, while substantial research has been conducted on FKBP5 in isolated disease contexts, previous studies have predominantly focused on single disease domains-such as depression, post-traumatic stress disorder (PTSD), diabetes, or specific cancers-or have emphasized genetic variants and protein-level interactions. There remains a lack of literature that systematically positions &#x0201c;FKBP5-DNAm&#x0201d; as a central and reversible epigenetic modifier and comparatively examines its roles across psychiatric, metabolic, and oncological settings. The potential of FKBP5-DNAm to serve as a cross-disease node linking psychological stress, physiological homeostasis, and malignant transformation remains underexplored. This review aims to establish a unified &#x0201c;epigenetic regulatory framework&#x0201d; centered on FKBP5-DNAm (<xref rid="F1" ref-type="fig">Figure 1</xref>). It delineates both conserved and disease-specific methylation patterns across regulatory regions-such as promoters and intronic enhancers-and examines their downstream effects on GR signaling, cellular stress, and inflammatory pathways including NF-&#x003ba;B. Beyond synthesizing mechanistic insights, we also evaluate the translational potential of FKBP5-DNAm as a biomarker and explore intervention strategies-ranging from behavioral and environmental approaches to advanced epigenetic editing-highlighting both opportunities and challenges in clinical application. By integrating evidence from psychiatry, metabolism, and oncology, this review seeks to elucidate how FKBP5-DNAm functions as a molecular link between environmental exposure, physiological dysfunction, and disease pathogenesis, thereby fostering interdisciplinary dialogue and advancing FKBP5 research from bench to clinical application.</p><fig position="float" id="F1"><label>FIGURE 1</label><caption><p>Schematic diagram of the scientific hypothesis of epigenetic regulation of FKBP5 DNA methylation.</p></caption><graphic xlink:href="fgene-17-1734673-g001" position="float"><alt-text content-type="machine-generated">Diagram illustrating the epigenetic regulation of FKBP5 DNA methylation. A DNA strand in a nucleus undergoes methylation, leading to altered FKBP5 expression. This alteration is linked to psychiatric disorders (brain image), cancer (cells), metabolic and endocrine diseases (overweight figure), and inflammation and autoimmune diseases (syringe and vial).</alt-text></graphic></fig></sec><sec id="s2"><label>2</label><title>Content</title><sec id="s2-1"><label>2.1</label><title>Overview of FKBP5 gene and its biological functions</title><sec id="s2-1-1"><label>2.1.1</label><title>FKBP5 gene structure and expression regulation</title><p>FKBP5, a gene originally cloned from a HeLa cancer cell cDNA library, is located in the 6p21.31 region of human chromosome 6, spanning approximately 156&#x000a0;kb (<xref rid="B98" ref-type="bibr">Storer et al., 2011</xref>; <xref rid="B46" ref-type="bibr">H&#x000e4;hle et al., 2019</xref>). The gene&#x02019;s complex structure is regulated by multiple factors, including its own sequence variation and epigenetic modifications&#x02014;notably, DNAm at multiple promoter regions. The FKBP5 gene encodes FKBP5 protein, and its key functional domains define its activity. The N-terminus contains two FK506-binding domains (FKBD1 and FKBD2), which confer peptidyl-prolyl cis-trans isomerase activity and mediate interaction with immunosuppressants. Central to its cochaperone function is a tetratricopeptide repeat (TPR) domain, essential for binding heat shock protein 90 (Hsp90) and incorporation into the GR molecular chaperone complex. While the TPR domain also mediates interactions with proteins such as WD-repeat protein interacting with phosphoinositides (WIPI), linking FKBP5 to autophagic pathways, this represents a secondary function relative to its primary role in GR regulation. A C-terminal domain contributes to protein stability and subcellular localization (<xref rid="B13" ref-type="bibr">Balsevich et al., 2017</xref>; <xref rid="B121" ref-type="bibr">Zannas et al., 2019</xref>; <xref rid="B36" ref-type="bibr">Engelhardt et al., 2021</xref>; <xref rid="B87" ref-type="bibr">Qiu et al., 2022</xref>).</p><p>The transcriptional activation of FKBP5 is mediated by the direct binding of the ligand-activated GR to multiple enhancer-like glucocorticoid response elements (GREs) distributed across its gene locus, most notably within introns 2, 5, and 7. GR binding to this cluster of GREs initiates robust, dose- and time-dependent transcription of FKBP5 mRNA upon GC exposure or psychological stress. This multi-GRE architecture facilitates sensitive and strong upregulation of FKBP5, which then functions as a critical intracellular feedback regulator of the GC receptor signaling pathway (<xref rid="B54" ref-type="bibr">Klengel et al., 2013</xref>; <xref rid="B5" ref-type="bibr">Anti et al., 2025</xref>; <xref rid="B53" ref-type="bibr">Kim et al., 2025</xref>). Clinical studies involving prenatal intervention indicate that dexamethasone (DEX) treatment crosses the placental barrier and activates GRs in the developing fetal brain (<xref rid="B106" ref-type="bibr">Van&#x02019;t Westeinde et al., 2020</xref>). This exposure can disrupt key neurodevelopmental processes, ultimately influencing long-term brain structure. Research consistently identifies FKBP5 as a central and highly responsive component of the GC signaling pathway. <italic toggle="yes">In vitro</italic> models of neural differentiation confirm that acute DEX stimulation potently upregulates FKBP5 expression in a dose- and time-dependent manner, underscoring its role as a core stress-responsive gene (<xref rid="B11" ref-type="bibr">Babaniyi et al., 2023</xref>). The regulation of FKBP5 involves a well-characterized epigenetic mechanism. DNAm levels within the FKBP5 gene typically show a negative correlation with its expression; lower methylation is associated with higher FKBP5 mRNA and protein levels (<xref rid="B71" ref-type="bibr">Mendon&#x000e7;a et al., 2021</xref>; <xref rid="B23" ref-type="bibr">Choi et al., 2021</xref>; <xref rid="B25" ref-type="bibr">Cox et al., 2021</xref>). This epigenetic state is clinically significant, as it is linked to an increased susceptibility to stress-related psychiatric disorders. In metabolic disorders such as obesity and insulin resistance, epigenetic analyses of patient blood samples have identified reduced DNAm at specific regulatory regions of the FKBP5 gene (<xref rid="B50" ref-type="bibr">Kang et al., 2020</xref>; <xref rid="B115" ref-type="bibr">Willmer et al., 2022</xref>). This hypomethylation is associated with increased FKBP5 expression, which impairs GR feedback and dysregulates the HPA axis. The resulting aberrant GC signaling enhances processes like hepatic gluconeogenesis and lipolysis, thereby exacerbating metabolic dysfunction. A similar mechanism linking early-life stress, FKBP5 hypomethylation, and subsequent disease risk is observed in psychiatric disorders (<xref rid="B51" ref-type="bibr">Karlbauer et al., 2024</xref>).</p><p>The functional single-nucleotide polymorphism (SNP) rs1360780 is located within intron two of the FKBP5 gene, approximately 50&#x000a0;kb downstream of the transcriptional start site (TSS). Its minor (T) allele resides in an enhancer region that harbors GREs (<xref rid="B99" ref-type="bibr">Stramecki et al., 2021</xref>; <xref rid="B88" ref-type="bibr">Rao et al., 2016</xref>; <xref rid="B8" ref-type="bibr">Arancibia et al., 2025</xref>). The presence of the T allele is associated with critical chromatin structural modifications that potentiate transcription. Firstly, the risk allele facilitates the recruitment of the TATA-box binding protein, promoting direct chromatin looping between intron two and the gene promoter. Secondly, upon exposure to childhood adversity, T-allele carriers exhibit significant DNA demethylation at these intronic GREs. These two mechanisms act synergistically to robustly enhance the functional communication between the enhancer and the promoter, leading to markedly increased FKBP5 mRNA expression following GR activation. This sustained overexpression is mechanistically linked to impaired GR signaling and reduced hormone sensitivity (<xref rid="B16" ref-type="bibr">Binder et al., 2004</xref>; <xref rid="B81" ref-type="bibr">Paakinaho et al., 2010</xref>; <xref rid="B54" ref-type="bibr">Klengel et al., 2013</xref>). Beyond DNAm, FKBP5 expression is modulated by non-coding RNAs, adding another layer of regulatory complexity. For example, miR-365-3p can repress FKBP5 by binding to its 3&#x02032;untranslated region (UTR), influencing cellular metabolism (<xref rid="B20" ref-type="bibr">Chen H. et al., 2024</xref>). Conversely, circular RNA circ-FKBP5 can promote osteogenic differentiation by sequestering miR-205-5p (<xref rid="B93" ref-type="bibr">Shen et al., 2023</xref>). These findings illustrate the multi-level regulation of FKBP5 across different biological contexts. FKBP5 expression is also regulated at the level of chromatin structure and histone modifications, showed that GC signaling induces rapid chromatin remodeling and histone acetylation at the FKBP5 locus to facilitate its transcriptional activation (<xref rid="B81" ref-type="bibr">Paakinaho et al., 2010</xref>).</p><p>In summary, FKBP5 expression is governed by a multifaceted regulatory network involving genetic variation, DNAm, and SNP, etc. This review focuses on DNAm as a central epigenetic mechanism regulating FKBP5, underscoring its importance in understanding disease mechanisms and identifying potential therapeutic targets.</p></sec><sec id="s2-1-2"><label>2.1.2</label><title>Function of FKBP5 protein and its role in cellular signaling pathways</title><p>The FKBP5 protein, encoded by the FKBP5 gene, has a molecular weight of 51&#x000a0;kDa and is also referred to as FKBP51 protein. This protein participates in regulating key cellular signaling pathways. The GR is constitutively sequestered in a multi-chaperone complex, primarily comprising Hsp90, Hsp70, and immunophilins such as FKBP5 protein (<xref rid="B86" ref-type="bibr">Pratt and Toft, 1997</xref>; <xref rid="B15" ref-type="bibr">Binder, 2009</xref>). In its unliganded state, this complex maintains the GR in a high-affinity conformation, poised for hormone binding while preventing its nuclear translocation. Upon passive diffusion across the plasma membrane, GCs bind to the GR, inducing a conformational change that triggers its dissociation from the chaperone complex and subsequent translocation into the nucleus, where it acts as a transcription factor. By integrating into this complex, FKBP5 protein reduces the GR&#x02019;s affinity for cortisol, impedes its nuclear translocation, and thereby attenuates further GC signaling. This establishes an ultra-short negative feedback loop that restrains excessive activation of the stress response. Dysregulation of this feedback mechanism-often driven by epigenetic alterations such as FKBP5 hypomethylation and consequent overexpression-constitutes a critical factor in the development of GC resistance and increased susceptibility to stress-related pathologies (<xref rid="B54" ref-type="bibr">Klengel et al., 2013</xref>). This epigenetic modulation of FKBP5 significantly influences GC signaling, thereby affecting stress response and endocrine homeostasis, particularly within the central nervous system (<xref rid="B63" ref-type="bibr">Liu et al., 2025</xref>).</p><p>Beyond its canonical role in the GR pathway, FKBP5 protein exhibits pleiotropic functions influencing processes ranging from cell differentiation and apoptosis to metabolism and psychiatric disorders. Mitochondria, central to energy homeostasis, stress response, cell cycle regulation, and redox balance, represent a key site for FKBP5 protein action. A studies using pancreatic beta-cell models demonstrate that elevated FKBP5 protein expression promotes cellular apoptosis under inflammatory conditions. Conversely, inhibiting FKBP5 protein enhances beta-cell viability through the AKT/FOXO1 signaling pathway, identifying FKBP5 protein as a contributor to diabetic pathophysiology and a potential therapeutic target (<xref rid="B62" ref-type="bibr">Liu et al., 2023</xref>). FKBP5 protein modulates transcription by competing with CDK9, thereby inhibiting the positive transcription elongation factor b complex and reducing RNA polymerase II phosphorylation. This leads to global impairment of transcriptional elongation and suppression of proliferation-related genes, suggesting a role in stress-induced transcriptional reprogramming (<xref rid="B68" ref-type="bibr">Mall et al., 2022</xref>). FKBP5 protein also regulates autophagy through direct interaction with WIPI protein via its TPR domain, influencing autophagosome formation and flux progression (<xref rid="B12" ref-type="bibr">Bajaj et al., 2022</xref>). In immune regulation, FKBP5 protein inhibits virus-induced interferon production by modulating transcription factors IRF3 and IRF7. Studies in zebrafish demonstrate that FKBP5 protein promotes degradation of these factors via selective autophagy, highlighting its role as a negative regulator of antiviral responses (<xref rid="B112" ref-type="bibr">Wang Y. et al., 2025</xref>). Additionally, in metabolic contexts, FKBP5 protein overexpression drives abnormal adipocyte proliferation through activation of the mTORC1 pathway. This is supported by single-cell RNA sequencing of patient-derived cells, where mTORC1 inhibition alleviated disease phenotypes (<xref rid="B21" ref-type="bibr">Chen M. et al., 2024</xref>). These findings collectively position FKBP5 protein as a multifunctional regulator influencing transcription, autophagy, immunity, and metabolism across various physiological and pathological contexts. The protein localizes to mitochondria through its TPR domain, where it exerts an anti-apoptotic effect. Notably, FKBP5 protein exhibits dynamic subcellular redistribution: upon cellular differentiation or stress onset, it translocates from mitochondria to the nucleus. Nuclear FKBP5 protein enhances telomerase enzymatic activity. This mitochondrial-nuclear shuttling is reversible, allowing FKBP5 protein to re-accumulate in mitochondria under specific conditions, facilitating a functional switch that contributes to cellular adaptation (<xref rid="B123" ref-type="bibr">Zgajnar et al., 2024</xref>).</p><p>FKBP5 protein augments inflammatory responses and modulates apoptosis through activation of the NF-&#x003ba;B signaling pathway in diverse pathological contexts. In kidney stone formation, FKBP5 protein promotes crystal adhesion, apoptosis, and pro-inflammatory M1 macrophage polarization via NF-&#x003ba;B (p65) activation, accelerating renal lithogenesis (<xref rid="B96" ref-type="bibr">Song et al., 2023</xref>). Similarly, in neuropathic pain, peripheral nerve injury induces FKBP5 protein upregulation and NF-&#x003ba;B activation in the spinal dorsal horn. FKBP5 protein and NF-&#x003ba;B form a positive feedback loop that amplifies pro-inflammatory cytokine production, sustaining chronic pain states (<xref rid="B111" ref-type="bibr">Wang X. et al., 2025</xref>). Detecting FKBP5 protein expression may thus help predict susceptibility to chronic pain and guide early intervention. FKBP5 also mediates neuroinflammation by modulating microglial activation. In experimental models, FKBP5 deficiency attenuates microglial activation and reduces pro-inflammatory gene expression following immune challenge, indicating its role in facilitating neuroinflammation through NF-&#x003ba;B (<xref rid="B41" ref-type="bibr">Gan et al., 2024</xref>). Collectively, these studies identify FKBP5 protein as a key amplifier of NF-&#x003ba;B-driven inflammation across renal, pain, and neuroimmune disorders, highlighting its potential as a therapeutic target for suppressing maladaptive inflammation.</p><p>In summary, FKBP5 protein functions as a signaling regulator and molecular scaffold that not only modulates GR activity but also broadly influences stress response, immune function, autophagy, and inflammatory signaling. Its multifunctional roles involve key pathways such as AKT, NF-&#x003ba;B, and AMPK/mTOR, contributing to the pathogenesis of diverse diseases and underscoring its biological significance and clinical potential.</p></sec></sec><sec id="s2-2"><label>2.2</label><title>The regulatory mechanism of DNAm in FKBP5 gene</title><sec id="s2-2-1"><label>2.2.1</label><title>The basic principles of DNAm and its impact on gene expression</title><p>DNAm is an epigenetic modification involving the addition of a methyl group to the 5-carbon position of cytosine residues in DNA, forming 5-methylcytosine. This process predominantly occurs in CpG islands&#x02014;genomic regions enriched in cytosine&#x02013;guanine dinucleotide sequences&#x02014;often located near gene promoters. DNAm regulates gene expression by modulating transcription factor binding and chromatin structure, thereby exerting profound effects on transcriptional activity (<xref rid="B31" ref-type="bibr">Dhar et al., 2021</xref>; <xref rid="B24" ref-type="bibr">Cort&#x000e9;s-Mancera et al., 2022</xref>). Methylation status critically determines gene activity. High promoter methylation generally correlates with transcriptional silencing, as it impedes transcription factor binding and recruits methyl-CpG-binding proteins such as MeCP2 and associated repressor complexes. These interactions promote a condensed heterochromatin state that restricts transcriptional access (<xref rid="B66" ref-type="bibr">Ma et al., 2020</xref>). In contrast, low promoter methylation typically supports active gene expression (<xref rid="B64" ref-type="bibr">Liu T. et al., 2024</xref>). An exploratory study using Illumina Infinium MethylationEPIC BeadChip technology reveals that postmortem brain tissue from individuals who died by suicide shows high methylation in promoter or enhancer regions, correlating with transcriptional repression. Expression levels of 135 genes, including FKBP5, are significantly negatively correlated with their DNAm levels (<xref rid="B17" ref-type="bibr">Cabrera-Mendoza et al., 2020</xref>). Both global hypomethylation of CpG islands in FKBP5 and demethylation at specific CpG sites activate its transcription (<xref rid="B85" ref-type="bibr">Piyasena et al., 2016</xref>; <xref rid="B75" ref-type="bibr">Misiak et al., 2020</xref>). Additionally, gene body methylation contributes to transcriptional stability and regulates RNA splicing (<xref rid="B48" ref-type="bibr">Jia et al., 2025</xref>). FKBP5-DNAm exhibits notable tissue specificity. Animal models reveal distinct DNAm profiles across brain regions&#x02014;such as the PFC and hippocampus&#x02014;and peripheral blood, which may reflect tissue-specific responses to HPA axis activation under stress (<xref rid="B120" ref-type="bibr">Yusupov et al., 2024</xref>).</p><p>Abnormal FKBP5-DNAm leads to its dysregulated expression, representing a core epigenetic mechanism influencing susceptibility to mental illness. Supporting this, a multimodal study combining methylation analysis and neuroimaging in adults demonstrated that lower FKBP5-DNAm in a stress-sensitive intronic region correlates with enhanced connectivity in brain networks involved in self-referential and emotional processing (<xref rid="B55" ref-type="bibr">Kremer et al., 2024</xref>). Early-life environmental insults can induce persistent epigenetic alterations. In a mouse model, alcohol exposure during a critical developmental period caused promoter hypomethylation and increased FKBP5 protein expression in the adult PFC, which was associated with heightened anxiety-like behavior (<xref rid="B34" ref-type="bibr">Dursun et al., 2025</xref>). Similarly, in humans, children of depressed mothers exhibited reduced FKBP5-DNAm and corresponding gene upregulation, which predicted HPA axis hypersensitivity and increased depression risk, suggesting a transgenerational transmission of vulnerability via epigenetic mechanisms (<xref rid="B72" ref-type="bibr">Mendon&#x000e7;a et al., 2023</xref>). This link extends beyond psychiatric disorders. A systematic review synthesized that childhood trauma induces long-term FKBP5 hypomethylation, which epigenetically embeds early adversity into biological systems. This programming elevates the risk not only for mental illness but also for cardiometabolic disorders, indicating FKBP5&#x02019;s role as a molecular nexus connecting psychological stress with systemic physiological dysregulation (<xref rid="B116" ref-type="bibr">Womersley et al., 2022</xref>).</p><p>In summary, interactions between genetic polymorphisms and environmental stress shape FKBP5-DNAm patterns, driving dysregulated gene expression and elevating susceptibility to psychiatric disorders such as depression and PTSD.</p></sec><sec id="s2-2-2"><label>2.2.2</label><title>Progress in FKBP5-DNAm detection technology</title><p>The detection of FKBP5-DNAm gene employs several techniques, including methylation-specific PCR (MSP), bisulfite sequencing PCR (BSP), pyrosequencing (which utilizes bisulfite-converted, PCR-amplified DNA), high-throughput methylation arrays, and emerging single-cell methylation sequencing. These methods characterize key functional regions and dynamic changes in FKBP5-DNAm.</p><p>MSP determines the methylation status of specific CpG sites using primers designed for methylated and unmethylated sequences after bisulfite conversion of DNA. This technique offers high sensitivity but lacks quantitative capability, making it suitable for monitoring methylation in regulatory elements such as intron 7, which is associated with mental disorders (<xref rid="B14" ref-type="bibr">Beach et al., 2022</xref>; <xref rid="B92" ref-type="bibr">Seo et al., 2023</xref>). BSP converts unmethylated cytosine (C) to uracil (U) while retaining methylated cytosine unchanged. When combined with high-throughput sequencing, BSP provides single-nucleotide resolution methylation analysis with high accuracy and quantitative capacity, enabling detailed mapping of CpG methylation patterns across the FKBP5 gene. High-precision targeted BSP methods, such as HAM-TBS, have been used in FKBP5 research to compare methylation patterns across tissues (e.g., blood and brain regions) in both mouse models and humans, and to assess responses to stress (<xref rid="B119" ref-type="bibr">Yusupov et al., 2023</xref>). Pyrosequencing involves amplifying a single-stranded DNA template, hybridizing it with primers, and sequentially adding deoxyribonucleotides. Complementary base incorporation releases pyrophosphate (PPi), which generates a detectable light signal. This method enables real-time, high-resolution sequencing with rapid turnaround and high-throughput quantitative capability, allowing base-by-base DNA analysis (<xref rid="B47" ref-type="bibr">Higashimoto et al., 2023</xref>; <xref rid="B77" ref-type="bibr">Muehlhan et al., 2020</xref>). High-throughput methylation arrays, such as Illumina&#x02019;s 450K and EPIC 850K chips, simultaneously assess methylation at hundreds of thousands to millions of CpG sites genome-wide. These tools are widely used in large-scale epigenomic studies to identify differential methylation sites in FKBP5 under various disease conditions&#x02014;including cancer and psychiatric disorders&#x02014;thus aiding in elucidating disease mechanisms and discovering potential biomarkers (<xref rid="B103" ref-type="bibr">Titanji et al., 2022</xref>; <xref rid="B28" ref-type="bibr">Cugliari et al., 2021</xref>). Recently, single-cell BSP has enabled DNAm analysis at single-cell resolution, revealing cellular heterogeneity and enhancing understanding of spatiotemporal dynamics in epigenetic regulation (<xref rid="B108" ref-type="bibr">Wang and Li, 2024</xref>). This technique shows great promise for examining FKBP5-DNAm in neurological and other diseases and may provide valuable insights into tumor heterogeneity and immune microenvironment regulation.</p><p>In summary, FKBP5-DNAm detection has evolved from traditional qualitative PCR to high-throughput quantitative arrays and sequencing technologies. These advances provide robust tools for probing the epigenetic regulation of FKBP5 in cancer and other diseases.</p></sec><sec id="s2-2-3"><label>2.2.3</label><title>FKBP5 gene specific methylation sites and their regulatory characteristics</title><p>At the regulatory level, FKBP5-DNAm occurs primarily within functional elements such as promoters, enhancers, and CTCF-binding sites, where it modulates chromatin structure and transcription factor accessibility (<xref rid="B110" ref-type="bibr">Wang et al., 2023</xref>). In disease contexts, promoter hypomethylation is frequently associated with transcriptional upregulation. For example, in dilated cardiomyopathy, reduced methylation in the FKBP5 promoter correlates with elevated mRNA levels and inflammatory cardiac remodeling (<xref rid="B107" ref-type="bibr">Wada et al., 2021</xref>). Similarly, in adrenal insufficiency, average methylation across 54 promoter CpGs inversely correlates with GC replacement dose, reflecting endocrine-dependent regulation (<xref rid="B22" ref-type="bibr">Chifu et al., 2025</xref>). Specific CpG sites, such as cg22363520 and cg00862770 in intron 7, show methylation changes linked to psychiatric and metabolic disorders. Exercise can modulate methylation at these sites, with distinct patterns observed between diabetic and non-diabetic individuals (<xref rid="B118" ref-type="bibr">Yang et al., 2025</xref>). Moreover, the SNP rs1360780 interacts with early trauma to demethylate intron 7 CpGs, increasing FKBP5 expression and contributing to HPA axis dysregulation in psychiatric conditions (<xref rid="B73" ref-type="bibr">Mihaljevic et al., 2021</xref>). Clinically, methylation at site cg07485685 has been identified as a predictor of PTSD symptom severity and resilience capacity (<xref rid="B74" ref-type="bibr">Miller et al., 2020</xref>). Collectively, these findings underscore that FKBP5-DNAm at specific regulatory CpGs serves as a dynamic interface between genetic variation, environmental exposure, and disease susceptibility across psychiatric, metabolic, and stress-related disorders.</p><p>In summary, FKBP5-DNAm occurs predominantly in promoter and intronic regions and generally correlates negatively with gene expression. This methylation exhibits high site- and tissue-specificity and is influenced by genetic SNP and environmental factors such as childhood trauma, alcohol use, and exercise, reflecting a complex epigenetic regulatory landscape. Investigating these key methylation sites not only elucidates FKBP5-related disease mechanisms but also supports the development of methylation-based predictive and therapeutic strategies.</p></sec><sec id="s2-2-4"><label>2.2.4</label><title>The influence of environmental factors on FKBP5-DNAm</title><p>DNAm status of the FKBP5 gene is regulated by various environmental factors, including lifestyle elements such as stress, smoking, alcohol consumption, and medication use, as well as socioeconomic status. These external factors influence FKBP5 expression by altering its DNAm levels, forming a critical link in the pathogenesis of multiple diseases.</p><p>Emerging research utilizing integrated epigenetic, neuroimaging, and behavioral methods demonstrates that FKBP5-DNAm is linked to functional variations in prefrontal-limbic brain circuits and modulates individual differences in emotional reactivity to daily stressors in humans (<xref rid="B124" ref-type="bibr">Zhen-Duan et al., 2025</xref>). Beyond human studies, evidence from free-living animal models confirms that social experiences directly shape epigenetic states. Exposure to aggressive social signals rapidly induces dynamic methylation changes in FKBP5 homologs, establishing a direct causal pathway from social stress to epigenetic alteration in wild species (<xref rid="B70" ref-type="bibr">McNew et al., 2024</xref>). Furthermore, early life adversity exerts intergenerational effects through epigenetic synchronization. In mother-infant pairs, maternal early adversity shapes both maternal and offspring methylation profiles at birth. Continued cohabitation further synchronizes their epigenomes, increasing offspring disease susceptibility and revealing epigenetic similarity as a mechanism for the intergenerational transmission of environmental effects (<xref rid="B57" ref-type="bibr">Labaut et al., 2024</xref>). Maternal psychological trauma during pregnancy can become biologically embedded in offspring through epigenetic mechanisms. A prospective cohort study demonstrated that prenatal post-traumatic stress symptoms are associated with reduced FKBP5-DNAm. This hypomethylation leads to increased FKBP5 protein expression, impaired GC signaling, and HPA axis dysfunction, providing a molecular basis for the intergenerational transmission of trauma and health disparities (<xref rid="B100" ref-type="bibr">Stroud et al., 2024</xref>). Furthermore, prenatal psychological distress&#x02014;including anxiety, depression, and stress&#x02014;alters the placental methylation landscape of GC pathway genes, with FKBP5 being a key target. These epigenetic modifications correlate with measurable neonatal growth outcomes, such as birth weight and length, establishing a clear pathway from &#x0201c;maternal psychological state-placental epigenetic programming -offspring developmental outcomes.&#x0201d; These findings offer precise molecular targets for early intervention strategies aimed at breaking the cycle of intergenerational trauma (<xref rid="B18" ref-type="bibr">Castro-Quintas et al., 2024</xref>).</p><p>In summary, environmental factors contribute to disease by modulating FKBP5-DNAm, thereby influencing its expression and function. The plasticity of FKBP5-DNAm reflects dynamic gene&#x02013;environment interactions and opens new avenues for epigenetics-based disease prevention and intervention. Future research should combine large-scale longitudinal and transgenerational studies with precise environmental exposure assessments to further elucidate mechanisms and clinical implications of environmental effects on FKBP5-DNAm.</p></sec></sec><sec id="s2-3"><label>2.3</label><title>Study on the association between FKBP5-DNAm and mental disorders</title><sec id="s2-3-1"><label>2.3.1</label><title>Changes in FKBP5-DNAm in depression and anxiety disorders</title><p>Early research established FKBP5&#x02019;s role in psychiatric and neurological disorders through its interaction with the GR and HPA axis (<xref rid="F2" ref-type="fig">Figure 2</xref>). In alcohol use disorder, the rs1360780 SNP (T allele) in FKBP5 correlates with higher psychological resilience, suggesting genetic influences on stress adaptation (<xref rid="B83" ref-type="bibr">Park et al., 2021</xref>). Clinical studies consistently report altered FKBP5 promoter DNAm in psychiatric disorders, though the direction of change shows variability. Research in adults with HIV&#x02014;a population facing significant psychosocial stress&#x02014;demonstrates that high FKBP5-DNAm suppresses its expression and enhances GR signaling, promoting HPA axis recovery. Conversely, low methylation correlates with more severe clinical symptoms. Trauma exposure associates with distinct methylation patterns, while positive coping strategies may buffer these epigenetic alterations, supporting a biopsychosocial model of stress regulation (<xref rid="B104" ref-type="bibr">Tomlinson et al., 2025</xref>). Notably, a large study of healthy women found no significant association between stressors and DNAm in HPA axis-related genes after multiple testing correction, suggesting that methylation patterns are influenced by experiences across the lifespan rather than early exposures alone (<xref rid="B94" ref-type="bibr">Shields et al., 2021</xref>). FKBP5-DNAm shows clinical relevance as a potential biomarker. In depression and anxiety, lower methylation often associates with more severe symptoms yet may predict better response to certain antidepressants, indicating utility for treatment personalization (<xref rid="B4" ref-type="bibr">Alahmad et al., 2025</xref>). Objective measures of HPA axis function, such as the dexamethasone suppression test, correlate with methylation changes in stress-related genes including FKBP5 and NR3C1. These epigenetic alterations are enriched in pathways involving nervous system development and cell signaling, ultimately influencing emotional regulation and cognitive function (<xref rid="B19" ref-type="bibr">Chatzittofis et al., 2021</xref>). The connection between early trauma and psychopathology is further elucidated through epigenetic mechanisms. In borderline personality disorder, severe childhood abuse associates with reduced FKBP5-DNAm in intron 7, enhancing FKBP5 expression and impairing HPA axis negative feedback. These methylation changes partially mediate the relationship between early abuse and clinical symptoms, contributing to the disorder&#x02019;s etiology (<xref rid="B39" ref-type="bibr">Flasbeck and Br&#x000fc;ne, 2021</xref>).</p><fig position="float" id="F2"><label>FIGURE 2</label><caption><p>FKBP5 methylation and its relevance in psychiatric disorders.</p></caption><graphic xlink:href="fgene-17-1734673-g002" position="float"><alt-text content-type="machine-generated">Flowchart illustrating the pathway from childhood abuse, stress, and genetics to increased risk of neurological, psychiatric disorders, and metabolic syndrome. It details how FKBP5 DNA hypomethylation leads to inflammation, cortisol signaling disorders, and cognitive rigidity, contributing to chronic inflammation and increased disease susceptibility.</alt-text></graphic></fig><p>Overall, altered FKBP5-DNAm plays a significant role in the pathogenesis of mental disorders such as depression and anxiety. Further investigation into its epigenetic regulatory mechanisms may clarify disease progression and support the development of personalized treatment strategies.</p></sec><sec id="s2-3-2"><label>2.3.2</label><title>Epigenetic regulation in PTSD</title><p>Aberrant FKBP5-DNAm is a key epigenetic mechanism in PTSD, influencing disease risk, symptom severity, and treatment response. Research utilizing genetic models demonstrates that the high-risk T allele at SNP rs1360780 is associated with reduced FKBP5-DNAm, increased chromatin accessibility, and subsequent gene upregulation upon stress exposure. This impairs GR feedback and HPA axis regulation, explaining the heightened vulnerability of risk allele carriers to PTSD (<xref rid="B79" ref-type="bibr">Nold et al., 2021</xref>; <xref rid="B8" ref-type="bibr">Arancibia et al., 2025</xref>). Critically, FKBP5-DNAm patterns are shaped by gene-environment interactions, particularly with childhood trauma. Individuals carrying the risk genotype who experience early-life adversity exhibit significant demethylation in regulatory regions like intron 7, leading to FKBP5 overexpression and more severe PTSD symptoms after adult trauma. This underscores the biological embedding of trauma and provides mechanistic insight relevant to clinical and forensic assessments (<xref rid="B8" ref-type="bibr">Arancibia et al., 2025</xref>; <xref rid="B80" ref-type="bibr">N&#x000f6;thling et al., 2025</xref>). The field is rapidly evolving from basic discovery toward translational research, with FKBP5-DNAm recognized as a current focal point (<xref rid="B78" ref-type="bibr">Nie et al., 2022</xref>). Systematic reviews consolidate that low FKBP5-DNAm enhances GR inhibition and elevates PTSD risk, noting these epigenetic marks are dynamic rather than fixed (<xref rid="B52" ref-type="bibr">Khan et al., 2025</xref>). Furthermore, methylation shows significant heterogeneity across individuals, influenced by trauma type, genetic background, sex, and treatment (<xref rid="B7" ref-type="bibr">Appleton, 2025</xref>). Maternal childhood adversity, especially when coupled with PTSD, is associated with distinct FKBP5-DNAm patterns in both mothers and their newborns, indicating that epigenetic mechanisms may transmit vulnerability across generations (<xref rid="B43" ref-type="bibr">Grasso et al., 2020</xref>).</p><p>In summary, FKBP5-DNAm contributes to elucidating PTSD pathogenesis and holds clinical promise as a diagnostic and prognostic biomarker. Future studies should validate its stability and specificity across diverse populations and explore its potential for individualized treatment strategies.</p></sec></sec><sec id="s2-4"><label>2.4</label><title>The role of FKBP5-DNAm in malignant tumors and other diseases</title><sec id="s2-4-1"><label>2.4.1</label><title>Abnormal methylation of FKBP5 in malignant tumors and its mechanism</title><p>Emerging evidence implicates FKBP5 as a significant player in tumorigenesis, progression, and prognosis across various malignancies, though its precise mechanisms and clinical utility remain areas of active investigation. In colorectal cancer (CRC), FKBP5 exerts an oncogenic role by activating the NF-&#x003ba;B signaling pathway, promoting tumor cell proliferation, migration, and invasion. The immunosuppressant FK506 demonstrates therapeutic efficacy in preclinical models, positioning FKBP5 as both a prognostic marker and a potential therapeutic target (<xref rid="B65" ref-type="bibr">Liu W. et al., 2024</xref>). Epigenetic regulation of FKBP5 significantly influences cancer outcomes (<xref rid="F3" ref-type="fig">Figure 3</xref>). In malignant pleural mesothelioma, low methylation at a specific CpG site in the 5&#x02032;UTR upregulates FKBP5 protein expression and predicts reduced patient survival more effectively than conventional inflammatory markers (<xref rid="B27" ref-type="bibr">Cugliari et al., 2020</xref>). Similarly, in metastatic castration-resistant prostate cancer, FKBP5 expression is governed by super enhancer elements. Inhibition of this transcriptional activity effectively suppresses tumor growth, revealing a promising therapeutic avenue (<xref rid="B122" ref-type="bibr">Zeng et al., 2023</xref>). Beyond direct oncogenic effects, FKBP5-DNAm status modulates tumor-immune interactions. In early-stage lung adenocarcinoma, FKBP5 has been incorporated into integrated prognostic models that combine methylation and immune signatures. Aberrant FKBP5-DNAm correlates with altered CD8<sup>+</sup> T-cell infiltration and immune escape mechanisms, highlighting its role in shaping the tumor immune microenvironment (<xref rid="B89" ref-type="bibr">Ren et al., 2021</xref>). These collective findings underscore FKBP5&#x02019;s dual significance as both a methylation-driven regulator of tumor biology and a promising target for therapeutic intervention across multiple cancer types.</p><fig position="float" id="F3"><label>FIGURE 3</label><caption><p>Schematic diagram of the mechanism of FKBP5 DNA methylation abnormalities in different cancers.</p></caption><graphic xlink:href="fgene-17-1734673-g003" position="float"><alt-text content-type="machine-generated">Diagram illustrating FKBP5 gene regulation and its impact on tumor progression. DNA methylation is reduced, leading to transcription and increased FKBP5 protein production. This process potentially contributes to tumor progression.</alt-text></graphic></fig><p>Overall, dysregulated FKBP5 DNAm directly influences its transcriptional activity and contributes to tumorigenesis through signaling pathway alteration and modulation of the tumor microenvironment (<xref rid="T1" ref-type="table">Table 1</xref>). As a molecular phenotype, FKBP5-DNAm status holds promise for clinical diagnosis and prognosis, offering novel targets and strategies for precision oncology.</p><table-wrap position="float" id="T1"><label>TABLE 1</label><caption><p>Cross-cancer comparison of FKBP5 methylation patterns and clinical translation strategies.</p></caption><table frame="hsides" rules="groups"><thead valign="top"><tr><th align="left" rowspan="1" colspan="1">Cancer type</th><th align="left" rowspan="1" colspan="1">FKBP5 protein expression</th><th align="left" rowspan="1" colspan="1">Methylation status</th><th align="left" rowspan="1" colspan="1">Key regulatory mechanism</th><th align="left" rowspan="1" colspan="1">Clinical translation strategy</th></tr></thead><tbody valign="top"><tr><td align="left" rowspan="1" colspan="1">Malignant pleural mesothelioma</td><td align="left" rowspan="1" colspan="1">Upregulated</td><td align="left" rowspan="1" colspan="1">Hypomethylation at specific 5&#x02032;UTR sites</td><td align="left" rowspan="1" colspan="1">Interaction with inflammatoryfactors</td><td align="left" rowspan="1" colspan="1">Prognostic biomarker superior to CRP</td></tr><tr><td align="left" rowspan="1" colspan="1">Prostate cancer</td><td align="left" rowspan="1" colspan="1">Upregulated</td><td align="left" rowspan="1" colspan="1">Super-enhancer driven</td><td align="left" rowspan="1" colspan="1">Activation of androgen signaling pathway</td><td align="left" rowspan="1" colspan="1">Potential strategy: targeting SE-associated elements</td></tr><tr><td align="left" rowspan="1" colspan="1">Lung adenocarcinoma</td><td align="left" rowspan="1" colspan="1">Variable</td><td align="left" rowspan="1" colspan="1">Region-specific differential methylation</td><td align="left" rowspan="1" colspan="1">Modulation of immune infiltration (CD8+ T cells)</td><td align="left" rowspan="1" colspan="1">Combined immunoscore modeling for clinical stratification</td></tr></tbody></table></table-wrap></sec><sec id="s2-4-2"><label>2.4.2</label><title>Epigenetic regulation in metabolic and endocrine diseases</title><p>FKBP5-DNAm plays a significant role in metabolic diseases such as type 2 diabetes and obesity, though its regulation and functional impact differ notably from its role in psychiatric or oncological contexts. In diabetes and obesity, key CpG sites including cg22363520 and cg00862770 show elevated methylation. Exercise exerts site-specific demethylation effects: at cg22363520 in non-diabetic individuals and at cg00862770 in diabetic patients, thereby improving insulin sensitivity and metabolic function (<xref rid="B118" ref-type="bibr">Yang et al., 2025</xref>). A distinct methylation profile is observed in obesity, where increased methylation at specific FKBP5 CpGs in adipose tissue correlates with higher BMI, insulin resistance, and systemic inflammation. Notably, methylation in gluteal adipose tissue corresponds to reduced FKBP5 mRNA, suggesting a tissue-specific regulatory mechanism (<xref rid="B114" ref-type="bibr">Willmer et al., 2020</xref>). FKBP5-DNAm is also implicated in diabetic complications. In end-stage kidney disease secondary to type 1 diabetes, differential methylation is detected at FKBP5-related CpG sites, highlighting its involvement in renal pathology through pathways such as TGF signaling and Th17 differentiation (<xref rid="B95" ref-type="bibr">Smyth et al., 2021</xref>). Similarly, in endocrine disorders, patients with Cushing&#x02019;s syndrome exhibit significant FKBP5 hypomethylation in blood cells, reflecting GC excess (<xref rid="B9" ref-type="bibr">Armignacco et al., 2022</xref>). These findings underscore that FKBP5-DNAm is not only a biomarker of metabolic dysfunction but also a dynamic and reversible regulatory mechanism, offering potential targets for therapeutic interventions in metabolic and endocrine diseases.</p><p>In summary, future research should continue to investigate epigenetic mechanisms, integrating genetic and environmental factors to advance precision medicine in metabolic and endocrine diseases.</p></sec><sec id="s2-4-3"><label>2.4.3</label><title>FKBP5-DNAm in inflammatory and autoimmune diseases</title><p>FKBP5 plays a pivotal role in inflammatory diseases and immune regulation, where its aberrant DNAm serves as a key pathogenic mechanism. In ulcerative colitis (UC), elevated FKBP5 expression links chronic inflammation to subsequent oncogenic risk in the colon (<xref rid="B117" ref-type="bibr">Xia et al., 2021</xref>). Similarly, in dilated cardiomyopathy (DCM), hypomethylation of the FKBP5 promoter in peripheral blood leukocytes correlates with increased FKBP5 and IL-1&#x003b2; expression, driving inflammatory cardiac remodeling (<xref rid="B107" ref-type="bibr">Wada et al., 2021</xref>). Chronic stress induces systemic epigenetic reprogramming that bridges neuroendocrine and immune dysfunction. In middle-aged women under prolonged stress, FKBP5 hypomethylation occurs alongside HPA axis dysregulation, suggesting an integrated mechanism for heightened disease vulnerability (<xref rid="B82" ref-type="bibr">Palma-Gudiel et al., 2020</xref>). Exposure to synthetic GC during pregnancy also reduces FKBP5-DNAm in placental enhancer regions, elevating expression of inflammatory gene modules associated with preeclampsia and potentially affecting fetal immune development (<xref rid="B29" ref-type="bibr">Czamara et al., 2021</xref>). In specific immune-mediated diseases, FKBP5-DNAm is altered by environmental exposures. Smoking-associated methylation changes in FKBP5 contribute to increased Crohn&#x02019;s disease risk (<xref rid="B109" ref-type="bibr">Wang et al., 2022</xref>). In alcohol-related liver disease (ALD), ethanol induces FKBP5 promoter hypomethylation, leading to upregulated FKBP5 protein expression. This activates the Hippo pathway, resulting in YAP/TEAD1-driven transcription of pro-inflammatory chemokines like CXCL1 and promoting hepatic inflammation. Notably, FKBP5 deletion attenuates ALD, highlighting its therapeutic potential (<xref rid="B56" ref-type="bibr">Kusumanchi et al., 2021</xref>). These findings are consistent with broader epigenetic dysregulation, including DNAm and chromatin remodeling, observed in inflammatory conditions (<xref rid="B45" ref-type="bibr">Habash et al., 2022</xref>).</p><p>In summary, aberrant DNAm of FKBP5 regulates its expression, modulates immune cell function, amplifies inflammatory responses, and contributes to the pathology of various inflammatory and autoimmune diseases. Future studies should further clarify the specific regulatory roles of FKBP5-DNAm in different inflammatory contexts and evaluate its clinical applicability. The accumulated evidence demonstrates the significant potential of FKBP5-DNAm status in early diagnosis and prognostic assessment across psychiatric, malignant, endocrine, and immune-related disorders.</p></sec></sec><sec id="s2-5"><label>2.5</label><title>The clinical application potential and therapeutic target value of FKBP5-DNAm</title><p>FKBP5-DNAm is increasingly recognized as a promising biomarker for early diagnosis, prognostic assessment, and monitoring therapeutic response across neuropsychiatric disorders. In adolescents, positive environmental interventions-such as family support and psychotherapy-an reverse adverse FKBP5-DNAm patterns linked to genetic risk and early trauma, improving emotional outcomes and offering optimism for personalized depression treatment (<xref rid="B44" ref-type="bibr">Guo et al., 2021</xref>). Notably, methylation patterns in key regulatory regions of FKBP5, particularly in intron 7, show high consistency between peripheral blood and brain tissues (e.g., PFC and hippocampus). This cross-tissue correlation supports the use of blood-based FKBP5-DNAm as a reliable and accessible biomarker for molecular subtyping and diagnostic support in clinical cohorts (<xref rid="B120" ref-type="bibr">Yusupov et al., 2024</xref>). In PTSD, altered HPA axis function-including enhanced negative feedback and reduced cortisol levels-represents a core feature. Genetic and epigenetic variations in FKBP5 and NR3C1 correlate with hypocortisolism, and epigenetic changes parallel symptom improvement during trauma-focused psychotherapy (<xref rid="B38" ref-type="bibr">Fischer et al., 2021</xref>). Further reinforcing this, an 8-week mindfulness-based intervention in veterans with PTSD induced dynamic changes in FKBP5 intron 7 methylation. These changes correlated positively with symptom reduction, highlighting the gene-epigenetic-environment interplay in response to non-pharmacological therapy (<xref rid="B58" ref-type="bibr">Lee et al., 2024</xref>). Collectively, these findings underscore the translational value of FKBP5-DNAm as a dynamic biomarker that reflects both disease vulnerability and therapeutic response, paving the way for epigenetically-informed clinical strategies.</p><p>FKBP5 inhibitors are widely regarded as a promising therapeutic strategy for depression, PTSD, and type 2 diabetes, with several candidate compounds showing positive results in preclinical studies (<xref rid="B1" ref-type="bibr">Agam et al., 2024</xref>). The immunosuppressant FK506 (tacrolimus), which targets FKBP5 protein, is widely used in clinical therapy. It demonstrates efficacy in treating hormone-refractory or fulminant UC. As a known precursor to CRC, UC responds well to FK506, supporting further investigation into inflammation&#x02013;cancer transition mechanisms (<xref rid="B40" ref-type="bibr">Fuentes-Valenzuela et al., 2025</xref>). It remains unclear whether FK506 can partially reverse DNAm at specific sites or modulate methylation levels across CpG islands by inhibiting FKBP5 expression. However, this direction holds significant research potential. A significant advancement in the targeted pharmacology of FKBP5 protein, distinct from epigenetic modulators, is the development of SAFit2 (Selective Antagonist of FKBP5 by induced fit, second generation). SAFit2 is a highly specific and potent small-molecule inhibitor rationally designed to occupy the FKBD1. This binding inhibits its peptidyl-prolyl isomerase activity and disrupts its critical interaction with the GR chaperone complex. The therapeutic relevance of SAFit2 is particularly pronounced in the context of methylation-associated pathophysiology. By directly antagonizing the overexpressed FKBP5 protein, SAFit2 can potentially break the vicious cycle driven by FKBP5 hypomethylation and alleviate the downstream pathological consequences of this aberrant epigenetic state (<xref rid="B26" ref-type="bibr">Cruz et al., 2023</xref>; <xref rid="B102" ref-type="bibr">Tian et al., 2024</xref>; <xref rid="B35" ref-type="bibr">Ejiohuo et al., 2025</xref>). In obesity, integrated bioinformatic analyses of public datasets reveal elevated FKBP5 expression alongside reduced levels of CD8<sup>+</sup> T and natural killer cells. This immune-epigenetic signature helps identify potential therapeutic compounds, including atorvastatin, for repurposing in obesity management (<xref rid="B61" ref-type="bibr">Liu et al., 2021</xref>). Pharmacological modulation of DNAm offers a novel approach to alter disease trajectories, with FKBP5 representing a key candidate for such interventions (<xref rid="B95" ref-type="bibr">Smyth et al., 2021</xref>).</p><p>In addition to drug therapy, there are also gene editing strategies. The strategy utilizes a catalytically dead Cas9 (dCas9) protein fused to effector domains of DNA-modifying enzymes, such as the ten-eleven translocation dioxygenase for targeted demethylation or DNA methyltransferase (DNMT) for targeted methylation. Guided by sequence-specific single-guide RNAs (sgRNAs), these dCas9-effector constructs can be directed to specific CpG sites within regulatory regions to actively rewrite the local DNAm landscape (<xref rid="B60" ref-type="bibr">Liu et al., 2018</xref>; <xref rid="B69" ref-type="bibr">Marx et al., 2018</xref>; <xref rid="B59" ref-type="bibr">Liu et al., 2016</xref>). In a parallel and complementary therapeutic direction, conventional CRISPR/Cas9-mediated gene disruption (complete knockout) has been employed as a robust tool for functional validation. For instance, FKBP5 knockout via CRISPR/Cas9 in isolated human primary preadipocytes has been used to elucidate its role in adipogenesis and to investigate GC effects in human adipocytes, with the methodological feasibility concurrently validated using other genes (<xref rid="B49" ref-type="bibr">Kamble et al., 2020</xref>). Beyond above, emerging epigenetic editing technologies represent a precise strategy for targeting disease-associated DNAm patterns. Beyond above, locus-specific epigenetic editing tools are being developed to directly target FKBP5 regulation. Single-stranded methylated DNA probes designed for FKBP5 regulatory regions induce sustained, dose-dependent hypermethylation in human and mouse&#x000a0;cell models. This targeted methylation attenuates GC-induced FKBP5 upregulation, providing a simple and safe alternative to CRISPR-based epigenome editing for potential treatment of stress-related psychiatric disorders (<xref rid="B76" ref-type="bibr">Modi et al., 2025</xref>). These approaches demonstrate the therapeutic potential of targeting FKBP5-DNAm, either through pharmacological modulation or direct epigenetic editing, opening new avenues for personalized medicine in metabolic and psychiatric conditions.</p><p>Given the multifaceted role of FKBP5 across disorders and its complex epigenetic regulation, current research increasingly focuses on combining epigenetic drugs with other therapies to achieve synergistic outcomes. However, not all interventions fully reverse established methylation patterns, as such plasticity operates within specific biological and contextual constraints. Moreover, clinical trials investigating FKBP5 methylation-targeted therapies remain limited, underscoring the need for more high-quality randomized controlled trials to evaluate their efficacy and safety.</p></sec></sec><sec sec-type="conclusion" id="s3"><label>3</label><title>Conclusion</title><p>DNAm of the FKBP5 gene plays a critical role in regulating its expression and function, attracting widespread attention in medical research. Studies demonstrate that aberrant FKBP5-DNAm is closely associated with psychiatric conditions such as depression and anxiety, as well as with cancers and metabolic diseases, underscoring the significance of epigenetic regulation in complex disorders. This perspective enhances understanding of disease etiology. Factors such as environmental stress, life events, and drug exposure influence FKBP5-DNAm status and expression levels, thereby affecting stress response pathways and disease vulnerability. However, discrepancies exist among studies regarding FKBP5-DNAm patterns and clinical relevance, likely due to variations in sample characteristics and detection methodologies. Future research should integrate multi-omics data across larger, multicenter cohorts to clarify these relationships. In precision medicine, FKBP5-DNAm testing enables early screening, risk stratification, and personalized treatment planning. In psychiatry, monitoring FKBP5-DNAm helps predict antidepressant response and guides personalized pharmacotherapy. In oncology, drug development targeting the FKBP5 pathway holds promise for improved treatment outcomes, enabling more accurate therapeutic matching while avoiding ineffective interventions.</p><p>In conclusion, the accumulating evidence solidifies the central role of dynamic FKBP5-DNAm as a key interface through which genetic predisposition and environmental exposures converge to influence disease risk and progression across psychiatric, metabolic, and neoplastic disorders. Its reversible nature further underscores its therapeutic potential. Future research should prioritize large-scale longitudinal studies to validate the temporal dynamics of FKBP5-DNAm in response to environmental and therapeutic interventions. The translation of these epigenetic insights into clinical practice holds promise for advancing personalized medicine, enabling more precise diagnostic stratification, prognostic evaluation, and targeted epigenetic therapies for a range of complex diseases.</p></sec></body><back><fn-group><fn fn-type="edited-by"><p>
+<bold>Edited by:</bold>
+<ext-link xlink:href="https://loop.frontiersin.org/people/32678/overview" ext-link-type="uri">Paul Higgins</ext-link>, Atlantic Technological University, Ireland</p></fn><fn fn-type="reviewed-by"><p>
+<bold>Reviewed by:</bold>
+<ext-link xlink:href="https://loop.frontiersin.org/people/183630/overview" ext-link-type="uri">Richard S. Lee</ext-link>, Johns Hopkins University, United States</p><p>
+<ext-link xlink:href="https://loop.frontiersin.org/people/1509970/overview" ext-link-type="uri">Mahdi Malekpour</ext-link>, Shiraz University of Medical Sciences, Iran</p></fn></fn-group><sec sec-type="author-contributions" id="s4"><title>Author contributions</title><p>CW: Methodology, Writing &#x02013; original draft, Investigation. ZX: Visualization, Data curation, Writing &#x02013; review and editing, Supervision, Project administration, Validation, Formal Analysis, Methodology, Writing &#x02013; original draft, Investigation, Conceptualization, Software, Resources, Funding acquisition.</p></sec><sec sec-type="COI-statement" id="s6"><title>Conflict of interest</title><p>The author(s) declared that this work was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></sec><sec sec-type="ai-statement" id="s7"><title>Generative AI statement</title><p>The author(s) declared that generative AI was not used in the creation of this manuscript.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></sec><sec sec-type="disclaimer" id="s8"><title>Publisher&#x02019;s note</title><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></sec><ref-list><title>References</title><ref id="B1"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Agam</surname><given-names>G.</given-names></name>
+<name><surname>Atawna</surname><given-names>B.</given-names></name>
+<name><surname>Damri</surname><given-names>O.</given-names></name>
+<name><surname>Azab</surname><given-names>A. N.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>The role of FKBPs in complex disorders: neuropsychiatric diseases, cancer, and type 2 diabetes mellitus</article-title>. <source>Cells</source>
+<volume>13</volume>, <fpage>10</fpage>. <pub-id pub-id-type="doi">10.3390/cells13100801</pub-id>
+<pub-id pub-id-type="pmid">38786025</pub-id>
+</mixed-citation></ref><ref id="B2"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Akano</surname><given-names>O. P.</given-names></name>
+<name><surname>Amos</surname><given-names>V. O.</given-names></name>
+<name><surname>Fawole</surname><given-names>I. O.</given-names></name>
+<name><surname>Oyindamola</surname><given-names>A. C.</given-names></name>
+<name><surname>Ajayi</surname><given-names>A. F.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Epigenetics&#x02019; responsibility in endometriosis: a comprehensive assessment</article-title>. <source>J. Steroid Biochem. Mol. Biol.</source>
+<volume>253</volume>, <fpage>106814</fpage>. <pub-id pub-id-type="doi">10.1016/j.jsbmb.2025.106814</pub-id>
+<pub-id pub-id-type="pmid">40513963</pub-id>
+</mixed-citation></ref><ref id="B3"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Akhabir</surname><given-names>L.</given-names></name>
+<name><surname>Stringer</surname><given-names>R.</given-names></name>
+<name><surname>Desai</surname><given-names>D.</given-names></name>
+<name><surname>Mandhane</surname><given-names>P. J.</given-names></name>
+<name><surname>Azad</surname><given-names>M. B.</given-names></name>
+<name><surname>Moraes</surname><given-names>T. J.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>DNA methylation changes in cord blood and the developmental origins of health and disease - a systematic review and replication study</article-title>. <source>BMC Genomics</source>
+<volume>23</volume>, <fpage>221</fpage>. <pub-id pub-id-type="doi">10.1186/s12864-022-08451-6</pub-id>
+<pub-id pub-id-type="pmid">35305575</pub-id>
+</mixed-citation></ref><ref id="B4"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Alahmad</surname><given-names>R.</given-names></name>
+<name><surname>Hinchey</surname><given-names>L. M.</given-names></name>
+<name><surname>Shaikh</surname><given-names>M.</given-names></name>
+<name><surname>Amirsadri</surname><given-names>A.</given-names></name>
+<name><surname>Javanbakht</surname><given-names>A.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Gene expression and epigenetic changes in post-traumatic stress disorder, depression, and anxiety in first responders: a systematic review</article-title>. <source>J. Psychiatr. Res.</source>
+<volume>182</volume>, <fpage>438</fpage>&#x02013;<lpage>451</lpage>. <pub-id pub-id-type="doi">10.1016/j.jpsychires.2025.01.032</pub-id>
+<pub-id pub-id-type="pmid">39892213</pub-id>
+</mixed-citation></ref><ref id="B5"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Anti</surname><given-names>N. A. O.</given-names></name>
+<name><surname>Deming</surname><given-names>D. D.</given-names></name>
+<name><surname>Gheorghe</surname><given-names>C. P.</given-names></name>
+<name><surname>Smith</surname><given-names>J. R.</given-names></name>
+<name><surname>Brown</surname><given-names>L. M.</given-names></name>
+<name><surname>Lee</surname><given-names>K. Y.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Decreased glucocorticoid receptor expression and function in cord blood immune cells from preterm neonates with morbidity</article-title>. <source>Int. J. Mol. Sci.</source>
+<volume>26</volume>, <fpage>10686</fpage>. <pub-id pub-id-type="doi">10.3390/ijms262110686</pub-id>
+<pub-id pub-id-type="pmid">41226721</pub-id>
+</mixed-citation></ref><ref id="B6"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Antrobus</surname><given-names>M. R.</given-names></name>
+<name><surname>Desai</surname><given-names>T.</given-names></name>
+<name><surname>Young</surname><given-names>D.</given-names></name>
+<name><surname>Machado</surname><given-names>L.</given-names></name>
+<name><surname>Ribbans</surname><given-names>W. J.</given-names></name>
+<name><surname>El Khoury</surname><given-names>L. Y.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Epigenetics of concussion: a systematic review</article-title>. <source>Gene</source>
+<volume>935</volume>, <fpage>149046</fpage>. <pub-id pub-id-type="doi">10.1016/j.gene.2024.149046</pub-id>
+<pub-id pub-id-type="pmid">39490707</pub-id>
+</mixed-citation></ref><ref id="B7"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Appleton</surname><given-names>A. A.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>A polyepigenetic glucocorticoid exposure score and HPA axis-related DNA methylation are associated with gestational epigenetic aging</article-title>. <source>Epigenetics</source>
+<volume>20</volume>, <fpage>2471129</fpage>. <pub-id pub-id-type="doi">10.1080/15592294.2025.2471129</pub-id>
+<pub-id pub-id-type="pmid">40007075</pub-id>
+</mixed-citation></ref><ref id="B8"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Arancibia</surname><given-names>M.</given-names></name>
+<name><surname>Manterola</surname><given-names>M.</given-names></name>
+<name><surname>R&#x000ed;os</surname><given-names>U.</given-names></name>
+<name><surname>Moya</surname><given-names>P. R.</given-names></name>
+<name><surname>Moran-Kneer</surname><given-names>J.</given-names></name>
+<name><surname>Bustamante</surname><given-names>M. L.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>The rs1360780 variant of FKBP5: genetic variation, epigenetic regulation, and behavioral phenotypes</article-title>. <source>Genes. (Basel)</source>
+<volume>16</volume>, <fpage>325</fpage>. <pub-id pub-id-type="doi">10.3390/genes16030325</pub-id>
+<pub-id pub-id-type="pmid">40149476</pub-id>
+</mixed-citation></ref><ref id="B9"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Armignacco</surname><given-names>R.</given-names></name>
+<name><surname>Jouinot</surname><given-names>A.</given-names></name>
+<name><surname>Bouys</surname><given-names>L.</given-names></name>
+<name><surname>Septier</surname><given-names>A.</given-names></name>
+<name><surname>Lartigue</surname><given-names>T.</given-names></name>
+<name><surname>Neou</surname><given-names>M.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Identification of glucocorticoid-related molecular signature by whole blood methylome analysis</article-title>. <source>Eur. J. Endocrinol.</source>
+<volume>186</volume>, <fpage>297</fpage>&#x02013;<lpage>308</lpage>. <pub-id pub-id-type="doi">10.1530/EJE-21-097</pub-id>
+<pub-id pub-id-type="pmid">34914631</pub-id>
+</mixed-citation></ref><ref id="B10"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Aslam</surname><given-names>M. D.</given-names></name>
+<name><surname>Ageed</surname><given-names>A.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>Epigenetics and asthma: a systematic review</article-title>. <source>Cureus</source>
+<volume>16</volume>, <fpage>e71052</fpage>. <pub-id pub-id-type="doi">10.7759/cureus.71052</pub-id>
+<pub-id pub-id-type="pmid">39512954</pub-id>
+</mixed-citation></ref><ref id="B11"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Babaniyi</surname><given-names>O.</given-names></name>
+<name><surname>Lalande</surname><given-names>M.</given-names></name>
+<name><surname>Covault</surname><given-names>J.</given-names></name>
+</person-group> (<year>2023</year>). <article-title>Modelling acute glucocorticoid transcriptome response in human embryonic stem cell derived neural cultures</article-title>. <source>Stem Cell. Res.</source>
+<volume>69</volume>, <fpage>103086</fpage>. <pub-id pub-id-type="doi">10.1016/j.scr.2023.103086</pub-id>
+<pub-id pub-id-type="pmid">37004447</pub-id>
+</mixed-citation></ref><ref id="B12"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Bajaj</surname><given-names>T.</given-names></name>
+<name><surname>H&#x000e4;usl</surname><given-names>A. S.</given-names></name>
+<name><surname>Schmidt</surname><given-names>M. V.</given-names></name>
+<name><surname>Gassen</surname><given-names>N. C.</given-names></name>
+</person-group> (<year>2022</year>). <article-title>FKBP5/FKBP51 on weight watch: central FKBP5 links regulatory WIPI protein networks to autophagy and metabolic control</article-title>. <source>Autophagy</source>
+<volume>18</volume>, <fpage>2756</fpage>&#x02013;<lpage>2758</lpage>. <pub-id pub-id-type="doi">10.1080/15592394.2022.2123457</pub-id>
+<pub-id pub-id-type="pmid">35438043</pub-id>
+</mixed-citation></ref><ref id="B13"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Balsevich</surname><given-names>G.</given-names></name>
+<name><surname>H&#x000e4;usl</surname><given-names>A. S.</given-names></name>
+<name><surname>Meyer</surname><given-names>C. W.</given-names></name>
+<name><surname>Karamihalev</surname><given-names>S.</given-names></name>
+<name><surname>Feng</surname><given-names>X.</given-names></name>
+<name><surname>P&#x000f6;hlmann</surname><given-names>M. L.</given-names></name>
+<etal/>
+</person-group> (<year>2017</year>). <article-title>Stress-responsive FKBP51 regulates AKT2-AS160 signaling and metabolic function</article-title>. <source>Nat. Commun.</source>
+<volume>8</volume>, <fpage>1725</fpage>. <pub-id pub-id-type="doi">10.1038/s41467-017-01783-y</pub-id>
+<pub-id pub-id-type="pmid">29170369</pub-id>
+</mixed-citation></ref><ref id="B14"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Beach</surname><given-names>S. R. H.</given-names></name>
+<name><surname>Ong</surname><given-names>M. L.</given-names></name>
+<name><surname>Lei</surname><given-names>M. K.</given-names></name>
+<name><surname>Carter</surname><given-names>S. E.</given-names></name>
+<name><surname>Simons</surname><given-names>R. L.</given-names></name>
+<name><surname>Gibbons</surname><given-names>F. X.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Methylation of FKBP5 is associated with accelerated DNA methylation ageing and cardiometabolic risk: replication in young-adult and middle-aged black Americans</article-title>. <source>Epigenetics</source>
+<volume>17</volume>, <fpage>982</fpage>&#x02013;<lpage>1002</lpage>. <pub-id pub-id-type="doi">10.1080/15592294.2021.1980688</pub-id>
+<pub-id pub-id-type="pmid">34533092</pub-id>
+</mixed-citation></ref><ref id="B15"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Binder</surname><given-names>E. B.</given-names></name>
+</person-group> (<year>2009</year>). <article-title>The role of FKBP5, a co-chaperone of the glucocorticoid receptor in the pathogenesis and therapy of affective and anxiety disorders</article-title>. <source>Psychoneuroendocrinology</source>
+<volume>34</volume> (<issue>Suppl. 1</issue>), <fpage>S186</fpage>&#x02013;<lpage>S195</lpage>. <pub-id pub-id-type="doi">10.1016/j.psyneuen.2009.05.021</pub-id>
+<pub-id pub-id-type="pmid">19560279</pub-id>
+</mixed-citation></ref><ref id="B16"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Binder</surname><given-names>E. B.</given-names></name>
+<name><surname>Salyakina</surname><given-names>D.</given-names></name>
+<name><surname>Lichtner</surname><given-names>P.</given-names></name>
+<name><surname>Wochnik</surname><given-names>G. M.</given-names></name>
+<name><surname>Ising</surname><given-names>M.</given-names></name>
+<name><surname>Lucae</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2004</year>). <article-title>Polymorphisms in FKBP5 are associated with increased recurrence of depressive episodes and rapid response to antidepressant treatment</article-title>. <source>Nat. Genet.</source>
+<volume>36</volume>, <fpage>1319</fpage>&#x02013;<lpage>1325</lpage>. <pub-id pub-id-type="doi">10.1038/ng1479</pub-id>
+<pub-id pub-id-type="pmid">15565110</pub-id>
+</mixed-citation></ref><ref id="B17"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Cabrera-Mendoza</surname><given-names>B.</given-names></name>
+<name><surname>Mart&#x000ed;nez-Maga&#x000f1;a</surname><given-names>J. J.</given-names></name>
+<name><surname>Genis-Mendoza</surname><given-names>A. D.</given-names></name>
+<name><surname>Monroy-Jaramillo</surname><given-names>N.</given-names></name>
+<name><surname>Walss-Bass</surname><given-names>C.</given-names></name>
+<name><surname>Fries</surname><given-names>G. R.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Brain gene Expression-DNA methylation correlation in suicide completers: preliminary results</article-title>. <source>Rev. Invest. Clin.</source>
+<volume>72</volume>, <fpage>283</fpage>&#x02013;<lpage>292</lpage>. <pub-id pub-id-type="doi">10.24875/RIC.19003250</pub-id>
+<pub-id pub-id-type="pmid">32488228</pub-id>
+</mixed-citation></ref><ref id="B18"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Castro-Quintas</surname><given-names>A.</given-names></name>
+<name><surname>Palma-Gudiel</surname><given-names>H.</given-names></name>
+<name><surname>Eixarch</surname><given-names>E.</given-names></name>
+<name><surname>San Mart&#x000ed;n Gonz&#x000e1;lez</surname><given-names>N.</given-names></name>
+<name><surname>R&#x000f6;h</surname><given-names>S.</given-names></name>
+<name><surname>Sauer</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Placental epigenetic signatures of maternal distress in glucocorticoid-related genes and newborn outcomes: a study of Spanish primiparous women</article-title>. <source>Eur. Neuropsychopharmacol.</source>
+<volume>90</volume>, <fpage>36</fpage>&#x02013;<lpage>47</lpage>. <pub-id pub-id-type="doi">10.1016/j.euroneuro.2024.10.001</pub-id>
+<pub-id pub-id-type="pmid">39504602</pub-id>
+</mixed-citation></ref><ref id="B19"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chatzittofis</surname><given-names>A.</given-names></name>
+<name><surname>Bostr&#x000f6;m</surname><given-names>A. D. E.</given-names></name>
+<name><surname>Ciuculete</surname><given-names>D. M.</given-names></name>
+<name><surname>&#x000d6;berg</surname><given-names>K. G.</given-names></name>
+<name><surname>Arver</surname><given-names>S.</given-names></name>
+<name><surname>Schi&#x000f6;th</surname><given-names>H. B.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>HPA axis dysregulation is associated with differential methylation of CpG-sites in related genes</article-title>. <source>Sci. Rep.</source>
+<volume>11</volume>, <fpage>20134</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-021-99714-x</pub-id>
+<pub-id pub-id-type="pmid">34635736</pub-id>
+</mixed-citation></ref><ref id="B20"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>H.</given-names></name>
+<name><surname>Sun</surname><given-names>B.</given-names></name>
+<name><surname>Chang</surname><given-names>S. J.</given-names></name>
+<name><surname>Yu</surname><given-names>Z.</given-names></name>
+<name><surname>Qiu</surname><given-names>Y.</given-names></name>
+<name><surname>Hua</surname><given-names>C.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Single-cell sequencing of facial adipose tissue unveils FKBP5 as a therapeutic target for facial infiltrating lipomatosis</article-title>. <source>Stem Cell. Res. Ther.</source>
+<volume>15</volume>, <fpage>209</fpage>. <pub-id pub-id-type="doi">10.1186/s13287-024-03835-9</pub-id>
+<pub-id pub-id-type="pmid">39020442</pub-id>
+</mixed-citation></ref><ref id="B21"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>M.</given-names></name>
+<name><surname>Zhang</surname><given-names>C.</given-names></name>
+<name><surname>Wu</surname><given-names>Z.</given-names></name>
+<name><surname>Guo</surname><given-names>S.</given-names></name>
+<name><surname>Lv</surname><given-names>W.</given-names></name>
+<name><surname>Song</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Bta-miR-365-3p-targeted FK506-binding protein 5 participates in the AMPK/mTOR signaling pathway in the regulation of preadipocyte differentiation in cattle</article-title>. <source>Anim. Biosci.</source>
+<volume>37</volume>, <fpage>1156</fpage>&#x02013;<lpage>1167</lpage>. <pub-id pub-id-type="doi">10.5713/ab.23.0328</pub-id>
+<pub-id pub-id-type="pmid">38665092</pub-id>
+</mixed-citation></ref><ref id="B22"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chifu</surname><given-names>I.</given-names></name>
+<name><surname>Richter</surname><given-names>A. L.</given-names></name>
+<name><surname>Lippert</surname><given-names>J.</given-names></name>
+<name><surname>Detomas</surname><given-names>M.</given-names></name>
+<name><surname>Scheuermann</surname><given-names>C.</given-names></name>
+<name><surname>Herterich</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>FKBP5 methylation in adrenal insufficiency: new insights into assessing the quality of glucocorticoid replacement</article-title>. <source>J. Clin. Endocrinol. Metab.</source>
+<volume>2025</volume>, <fpage>dgaf383</fpage>. <comment>Published online Jul 3</comment>. <pub-id pub-id-type="doi">10.1210/clinem/dgaf383</pub-id>
+<pub-id pub-id-type="pmid">40608904</pub-id>
+</mixed-citation></ref><ref id="B23"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Choi</surname><given-names>K.</given-names></name>
+<name><surname>Lee</surname><given-names>J.</given-names></name>
+<name><surname>Kang</surname><given-names>H. J.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Myelination defects in the medial prefrontal cortex of Fkbp5 knockout mice</article-title>. <source>FASEB J.</source>
+<volume>35</volume>, <fpage>e21297</fpage>. <pub-id pub-id-type="doi">10.1096/fj.202001883R</pub-id>
+<pub-id pub-id-type="pmid">33410216</pub-id>
+</mixed-citation></ref><ref id="B24"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Cort&#x000e9;s-Mancera</surname><given-names>F. M.</given-names></name>
+<name><surname>Sarno</surname><given-names>F.</given-names></name>
+<name><surname>Goubert</surname><given-names>D.</given-names></name>
+<name><surname>Rots</surname><given-names>M. G.</given-names></name>
+</person-group> (<year>2022</year>). <article-title>Gene-targeted DNA methylation: towards long-lasting reprogramming of gene expression?</article-title>
+<source>Adv. Exp. Med. Biol.</source>
+<volume>1389</volume>, <fpage>515</fpage>&#x02013;<lpage>533</lpage>. <pub-id pub-id-type="doi">10.1007/978-3-031-11454-0_18</pub-id>
+<pub-id pub-id-type="pmid">36350521</pub-id>
+</mixed-citation></ref><ref id="B25"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Cox</surname><given-names>O. H.</given-names></name>
+<name><surname>Song</surname><given-names>H. Y.</given-names></name>
+<name><surname>Garrison-Desany</surname><given-names>H. M.</given-names></name>
+<name><surname>Gadiwalla</surname><given-names>N.</given-names></name>
+<name><surname>Carey</surname><given-names>J. L.</given-names></name>
+<name><surname>Menzies</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Characterization of glucocorticoid-induced loss of DNA methylation of the stress-response gene Fkbp5 in neuronal cells</article-title>. <source>Epigenetics</source>
+<volume>16</volume>, <fpage>1377</fpage>&#x02013;<lpage>1397</lpage>. <pub-id pub-id-type="doi">10.1080/15592294.2020.1864169</pub-id>
+<pub-id pub-id-type="pmid">33319620</pub-id>
+</mixed-citation></ref><ref id="B26"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Cruz</surname><given-names>B.</given-names></name>
+<name><surname>Vozella</surname><given-names>V.</given-names></name>
+<name><surname>Carper</surname><given-names>B. A.</given-names></name>
+<name><surname>Giordano</surname><given-names>J.</given-names></name>
+<name><surname>Kharazia</surname><given-names>V.</given-names></name>
+<name><surname>Roberto</surname><given-names>M.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>FKBP5 inhibitors modulate alcohol drinking and trauma-related behaviors in a modelof comorbid post-traumatic stress and alcohol use disorder</article-title>. <source>Neuropsychopharmacology</source>
+<volume>48</volume>, <fpage>1144</fpage>&#x02013;<lpage>1154</lpage>. <pub-id pub-id-type="doi">10.1038/s41386-022-01497-w</pub-id>
+<pub-id pub-id-type="pmid">36396784</pub-id>
+</mixed-citation></ref><ref id="B27"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Cugliari</surname><given-names>G.</given-names></name>
+<name><surname>Catalano</surname><given-names>C.</given-names></name>
+<name><surname>Guarrera</surname><given-names>S.</given-names></name>
+<name><surname>Allione</surname><given-names>A.</given-names></name>
+<name><surname>Casalone</surname><given-names>E.</given-names></name>
+<name><surname>Russo</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>DNA methylation of FKBP5 as predictor of overall survival in malignant pleural mesothelioma</article-title>. <source>Cancers (Basel)</source>
+<volume>12</volume>, <fpage>3470</fpage>. <pub-id pub-id-type="doi">10.3390/cancers12113470</pub-id>
+<pub-id pub-id-type="pmid">33233407</pub-id>
+</mixed-citation></ref><ref id="B28"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Cugliari</surname><given-names>G.</given-names></name>
+<name><surname>Allione</surname><given-names>A.</given-names></name>
+<name><surname>Russo</surname><given-names>A.</given-names></name>
+<name><surname>Catalano</surname><given-names>C.</given-names></name>
+<name><surname>Casalone</surname><given-names>E.</given-names></name>
+<name><surname>Guarrera</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>New DNA methylation signals for malignant pleural mesothelioma risk assessment</article-title>. <source>Cancers (Basel)</source>
+<volume>13</volume>, <fpage>2636</fpage>. <pub-id pub-id-type="doi">10.3390/cancers13112636</pub-id>
+<pub-id pub-id-type="pmid">34071989</pub-id>
+</mixed-citation></ref><ref id="B29"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Czamara</surname><given-names>D.</given-names></name>
+<name><surname>Dieckmann</surname><given-names>L.</given-names></name>
+<name><surname>R&#x000f6;h</surname><given-names>S.</given-names></name>
+<name><surname>Kraemer</surname><given-names>S.</given-names></name>
+<name><surname>Rancourt</surname><given-names>R. C.</given-names></name>
+<name><surname>Sammallahti</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Betamethasone administration during pregnancy is associated with placental epigenetic changes with implications for inflammation</article-title>. <source>Clin. Epigenetics</source>
+<volume>13</volume>, <fpage>165</fpage>. <pub-id pub-id-type="doi">10.1186/s13148-021-01153-y</pub-id>
+<pub-id pub-id-type="pmid">34446099</pub-id>
+</mixed-citation></ref><ref id="B30"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Dabin</surname><given-names>L. C.</given-names></name>
+<name><surname>Guntoro</surname><given-names>F.</given-names></name>
+<name><surname>Campbell</surname><given-names>T.</given-names></name>
+<name><surname>B&#x000e9;licard</surname><given-names>T.</given-names></name>
+<name><surname>Smith</surname><given-names>A. R.</given-names></name>
+<name><surname>Smith</surname><given-names>R. G.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Altered DNA methylation profiles in blood from patients with sporadic Creutzfeldt-Jakob disease</article-title>. <source>Acta Neuropathol.</source>
+<volume>140</volume>, <fpage>863</fpage>&#x02013;<lpage>879</lpage>. <pub-id pub-id-type="doi">10.1007/s00401-020-02224-9</pub-id>
+<pub-id pub-id-type="pmid">32918118</pub-id>
+</mixed-citation></ref><ref id="B31"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Dhar</surname><given-names>G. A.</given-names></name>
+<name><surname>Saha</surname><given-names>S.</given-names></name>
+<name><surname>Mitra</surname><given-names>P.</given-names></name>
+<name><surname>Nag Chaudhuri</surname><given-names>R.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>DNA methylation and regulation of gene expression: guardian of our health</article-title>. <source>Nucl. (Calcutta)</source>
+<volume>64</volume>, <fpage>259</fpage>&#x02013;<lpage>270</lpage>. <pub-id pub-id-type="doi">10.1007/s13237-021-00367-y</pub-id>
+<pub-id pub-id-type="pmid">34421129</pub-id>
+</mixed-citation></ref><ref id="B32"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Dogan</surname><given-names>M. V.</given-names></name>
+<name><surname>Lei</surname><given-names>M. K.</given-names></name>
+<name><surname>Beach</surname><given-names>S. R.</given-names></name>
+<name><surname>Brody</surname><given-names>G. H.</given-names></name>
+<name><surname>Philibert</surname><given-names>R. A.</given-names></name>
+</person-group> (<year>2016</year>). <article-title>Alcohol and tobacco consumption alter hypothalamic pituitary adrenal axis DNA methylation</article-title>. <source>Psychoneuroendocrinology</source>
+<volume>66</volume>, <fpage>176</fpage>&#x02013;<lpage>184</lpage>. <pub-id pub-id-type="doi">10.1016/j.psyneuen.2016.01.018</pub-id>
+<pub-id pub-id-type="pmid">26821212</pub-id>
+</mixed-citation></ref><ref id="B33"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Dragic</surname><given-names>D.</given-names></name>
+<name><surname>Chang</surname><given-names>S. L.</given-names></name>
+<name><surname>Ennour-Idrissi</surname><given-names>K.</given-names></name>
+<name><surname>Durocher</surname><given-names>F.</given-names></name>
+<name><surname>Severi</surname><given-names>G.</given-names></name>
+<name><surname>Diorio</surname><given-names>C.</given-names></name>
+</person-group> (<year>2022</year>). <article-title>Association between alcohol consumption and DNA methylation in blood: a systematic review of observational studies</article-title>. <source>Epigenomics</source>
+<volume>14</volume>, <fpage>793</fpage>&#x02013;<lpage>810</lpage>. <pub-id pub-id-type="doi">10.2217/epi-2022-0055</pub-id>
+<pub-id pub-id-type="pmid">35762294</pub-id>
+</mixed-citation></ref><ref id="B34"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Dursun</surname><given-names>I.</given-names></name>
+<name><surname>Korkmaz</surname><given-names>N. D.</given-names></name>
+<name><surname>Firtina</surname><given-names>S.</given-names></name>
+<name><surname>Erkoyuncu</surname><given-names>M. S.</given-names></name>
+<name><surname>Akbas</surname><given-names>F.</given-names></name>
+<name><surname>Elibol</surname><given-names>B.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Exploring epigenetic modification of the stress-related FKBP5 gene in mice exposed to alcohol during early postnatal development</article-title>. <source>Alcohol</source>
+<volume>123</volume>, <fpage>11</fpage>&#x02013;<lpage>17</lpage>. <pub-id pub-id-type="doi">10.1016/j.alcohol.2024.09.002</pub-id>
+<pub-id pub-id-type="pmid">39245355</pub-id>
+</mixed-citation></ref><ref id="B35"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Ejiohuo</surname><given-names>O.</given-names></name>
+<name><surname>Bajia</surname><given-names>D.</given-names></name>
+<name><surname>Pawlak</surname><given-names>J.</given-names></name>
+<name><surname>Szczepankiewicz</surname><given-names>A.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>
+<italic toggle="yes">In silico</italic> identification of novel ligands targeting stress-related humanFKBP5 protein in mental disorders</article-title>. <source>PLoSOne</source>
+<volume>20</volume>, <fpage>e0320017</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0320017</pub-id>
+<pub-id pub-id-type="pmid">40096182</pub-id>
+</mixed-citation></ref><ref id="B36"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Engelhardt</surname><given-names>C.</given-names></name>
+<name><surname>Tang</surname><given-names>F.</given-names></name>
+<name><surname>Elkhateib</surname><given-names>R.</given-names></name>
+<name><surname>Bordes</surname><given-names>J.</given-names></name>
+<name><surname>Brix</surname><given-names>L. M.</given-names></name>
+<name><surname>van Doeselaar</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>FKBP51 in the oval bed nucleus of the stria terminalis regulates anxiety-like behavior</article-title>. <source>eNeuro</source>
+<volume>8</volume>. <pub-id pub-id-type="doi">10.1523/ENEURO.0425-21.2021</pub-id>
+<pub-id pub-id-type="pmid">34872938</pub-id>
+</mixed-citation></ref><ref id="B37"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Fadadu</surname><given-names>R. P.</given-names></name>
+<name><surname>Bozack</surname><given-names>A. K.</given-names></name>
+<name><surname>Cardenas</surname><given-names>A.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Chemical and climatic environmental exposures and epigenetic aging: a systematic review</article-title>. <source>Environ. Res.</source>
+<volume>274</volume>, <fpage>121347</fpage>. <pub-id pub-id-type="doi">10.1016/j.envres.2025.121347</pub-id>
+<pub-id pub-id-type="pmid">40058550</pub-id>
+</mixed-citation></ref><ref id="B38"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Fischer</surname><given-names>S.</given-names></name>
+<name><surname>Schumacher</surname><given-names>T.</given-names></name>
+<name><surname>Knaevelsrud</surname><given-names>C.</given-names></name>
+<name><surname>Ehlert</surname><given-names>U.</given-names></name>
+<name><surname>Schumacher</surname><given-names>S.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Genes and hormones of the hypothalamic-pituitary-adrenal axis in post-traumatic stress disorder. What is their role in symptom expression and treatment response?</article-title>
+<source>J. Neural Transm. (Vienna)</source>
+<volume>128</volume>, <fpage>1279</fpage>&#x02013;<lpage>1286</lpage>. <pub-id pub-id-type="doi">10.1007/s00702-021-02330-2</pub-id>
+<pub-id pub-id-type="pmid">33825945</pub-id>
+</mixed-citation></ref><ref id="B39"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Flasbeck</surname><given-names>V.</given-names></name>
+<name><surname>Br&#x000fc;ne</surname><given-names>M.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Association between childhood maltreatment, psychopathology and DNA methylation of genes involved in stress regulation: evidence from a study in borderline personality disorder</article-title>. <source>PLoS One</source>
+<volume>16</volume>, <fpage>e0248514</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0248514</pub-id>
+<pub-id pub-id-type="pmid">33705478</pub-id>
+</mixed-citation></ref><ref id="B40"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Fuentes-Valenzuela</surname><given-names>E.</given-names></name>
+<name><surname>Bast&#x000f3;n-Rey</surname><given-names>I.</given-names></name>
+<name><surname>Garc&#x000ed;a-Alonso</surname><given-names>F. J.</given-names></name>
+<name><surname>Elosua</surname><given-names>A.</given-names></name>
+<name><surname>Zabalza San Mart&#x000ed;n</surname><given-names>L.</given-names></name>
+<name><surname>Leo Carnerero</surname><given-names>E.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Effectiveness and safety of rectal tacrolimus in patients with ulcerative colitis. TACRO-TOPIC study of GETECCU</article-title>. <source>J. Crohns Colitis</source>
+<volume>19</volume> (<issue>5</issue>), <fpage>jjaf058</fpage>. <pub-id pub-id-type="doi">10.1093/ecco-jcc/jjaf058</pub-id>
+<pub-id pub-id-type="pmid">40205922</pub-id>
+</mixed-citation></ref><ref id="B41"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Gan</surname><given-names>Y. L.</given-names></name>
+<name><surname>Lin</surname><given-names>W. J.</given-names></name>
+<name><surname>Fang</surname><given-names>Y. C.</given-names></name>
+<name><surname>Tang</surname><given-names>C. Y.</given-names></name>
+<name><surname>Lee</surname><given-names>Y. H.</given-names></name>
+<name><surname>Jeng</surname><given-names>C. J.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>FKBP51 is involved in LPS-Induced microglial activation <italic toggle="yes">via</italic> NF-&#x003ba;B signaling to mediate neuroinflammation</article-title>. <source>Life Sci.</source>
+<volume>351</volume>, <fpage>122867</fpage>. <pub-id pub-id-type="doi">10.1016/j.lfs.2024.122867</pub-id>
+<pub-id pub-id-type="pmid">38914303</pub-id>
+</mixed-citation></ref><ref id="B42"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Gatta</surname><given-names>E.</given-names></name>
+<name><surname>Grayson</surname><given-names>D. R.</given-names></name>
+<name><surname>Auta</surname><given-names>J.</given-names></name>
+<name><surname>Saudagar</surname><given-names>V.</given-names></name>
+<name><surname>Dong</surname><given-names>E.</given-names></name>
+<name><surname>Chen</surname><given-names>Y.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Genome-wide methylation in alcohol use disorder subjects: implications for an epigenetic regulation of the cortico-limbic glucocorticoid receptors (NR3C1)</article-title>. <source>Mol. Psychiatry</source>
+<volume>26</volume>, <fpage>1029</fpage>&#x02013;<lpage>1041</lpage>. <pub-id pub-id-type="doi">10.1038/s41380-019-0449-6</pub-id>
+<pub-id pub-id-type="pmid">31239533</pub-id>
+</mixed-citation></ref><ref id="B43"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Grasso</surname><given-names>D. J.</given-names></name>
+<name><surname>Drury</surname><given-names>S.</given-names></name>
+<name><surname>Briggs-Gowan</surname><given-names>M.</given-names></name>
+<name><surname>Johnson</surname><given-names>A.</given-names></name>
+<name><surname>Ford</surname><given-names>J.</given-names></name>
+<name><surname>Lapidus</surname><given-names>G.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Adverse childhood experiences, posttraumatic stress, and FKBP5 methylation patterns in postpartum women and their newborn infants</article-title>. <source>Psychoneuroendocrinology</source>
+<volume>114</volume>, <fpage>104604</fpage>. <pub-id pub-id-type="doi">10.1016/j.psyneuen.2020.104604</pub-id>
+<pub-id pub-id-type="pmid">32109789</pub-id>
+</mixed-citation></ref><ref id="B44"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Guo</surname><given-names>L.</given-names></name>
+<name><surname>Wang</surname><given-names>W.</given-names></name>
+<name><surname>Guo</surname><given-names>Y.</given-names></name>
+<name><surname>Du</surname><given-names>X.</given-names></name>
+<name><surname>Shi</surname><given-names>G.</given-names></name>
+<name><surname>Lu</surname><given-names>C.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Associations of FKBP5 polymorphisms and methylation and parenting style with depressive symptoms among Chinese adolescents</article-title>. <source>BMC Psychiatry</source>
+<volume>21</volume>, <fpage>552</fpage>. <pub-id pub-id-type="doi">10.1186/s12888-021-03576-6</pub-id>
+<pub-id pub-id-type="pmid">34753443</pub-id>
+</mixed-citation></ref><ref id="B45"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Habash</surname><given-names>N. W.</given-names></name>
+<name><surname>Sehrawat</surname><given-names>T. S.</given-names></name>
+<name><surname>Shah</surname><given-names>V. H.</given-names></name>
+<name><surname>Cao</surname><given-names>S.</given-names></name>
+</person-group> (<year>2022</year>). <article-title>Epigenetics of alcohol-related liver diseases</article-title>. <source>JHEP Rep.</source>
+<volume>4</volume>, <fpage>100466</fpage>. <pub-id pub-id-type="doi">10.1016/j.jhepr.2022.100466</pub-id>
+<pub-id pub-id-type="pmid">35462859</pub-id>
+</mixed-citation></ref><ref id="B46"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>H&#x000e4;hle</surname><given-names>A.</given-names></name>
+<name><surname>Merz</surname><given-names>S.</given-names></name>
+<name><surname>Meyners</surname><given-names>C.</given-names></name>
+<name><surname>Hausch</surname><given-names>F.</given-names></name>
+</person-group> (<year>2019</year>). <article-title>The many faces of FKBP51</article-title>. <source>Biomolecules</source>
+<volume>9</volume>, <fpage>1</fpage>&#x02013;<lpage>35</lpage>. <pub-id pub-id-type="doi">10.3390/biom9010035</pub-id>
+<pub-id pub-id-type="pmid">30669684</pub-id>
+</mixed-citation></ref><ref id="B47"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Higashimoto</surname><given-names>K.</given-names></name>
+<name><surname>Hara</surname><given-names>S.</given-names></name>
+<name><surname>Soejima</surname><given-names>H.</given-names></name>
+</person-group> (<year>2023</year>). <article-title>DNA methylation analysis using bisulfite pyrosequencing</article-title>. <source>Methods Mol. Biol.</source>
+<volume>2577</volume>, <fpage>3</fpage>&#x02013;<lpage>20</lpage>. <pub-id pub-id-type="doi">10.1007/978-1-0716-2724-2_1</pub-id>
+<pub-id pub-id-type="pmid">36173562</pub-id>
+</mixed-citation></ref><ref id="B48"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Jia</surname><given-names>Y.</given-names></name>
+<name><surname>Xie</surname><given-names>H.</given-names></name>
+<name><surname>Wu</surname><given-names>S.</given-names></name>
+<name><surname>Dong</surname><given-names>J.</given-names></name>
+<name><surname>Ying</surname><given-names>H.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Induction of FAM46C expression mediated by DNMT3A downregulation is involved in early-onset preeclampsia through gene body methylation</article-title>. <source>Cell. Signal</source>
+<volume>125</volume>, <fpage>111506</fpage>. <pub-id pub-id-type="doi">10.1016/j.cellsig.2024.111506</pub-id>
+<pub-id pub-id-type="pmid">39532219</pub-id>
+</mixed-citation></ref><ref id="B49"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kamble</surname><given-names>P. G.</given-names></name>
+<name><surname>Hetty</surname><given-names>S.</given-names></name>
+<name><surname>Vranic</surname><given-names>M.</given-names></name>
+<name><surname>Raji</surname><given-names>H.</given-names></name>
+<name><surname>Naylor</surname><given-names>C.</given-names></name>
+<name><surname>Lalic</surname><given-names>N. M.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Proof-of-concept for CRISPR/Cas9 gene editing in human preadipocytes: deletionof FKBP5 and PPARG and effects on adipocyte differentiation and metabolism</article-title>. <source>Sci. Rep.</source>
+<volume>10</volume>, <fpage>10565</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-020-67293-y</pub-id>
+<pub-id pub-id-type="pmid">32601291</pub-id>
+</mixed-citation></ref><ref id="B50"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kang</surname><given-names>H. J.</given-names></name>
+<name><surname>Yoon</surname><given-names>S.</given-names></name>
+<name><surname>Lee</surname><given-names>S.</given-names></name>
+<name><surname>Choi</surname><given-names>K.</given-names></name>
+<name><surname>Seol</surname><given-names>S.</given-names></name>
+<name><surname>Park</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>FKBP5-associated miRNA signature as a putative biomarker for PTSD in recently traumatized individuals</article-title>. <source>Sci. Rep.</source>
+<volume>10</volume>, <fpage>3353</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-020-60334-6</pub-id>
+<pub-id pub-id-type="pmid">32098997</pub-id>
+</mixed-citation></ref><ref id="B51"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Karlbauer</surname><given-names>V. N.</given-names></name>
+<name><surname>Martins</surname><given-names>J.</given-names></name>
+<name><surname>Rex-Haffner</surname><given-names>M.</given-names></name>
+<name><surname>Sauer</surname><given-names>S.</given-names></name>
+<name><surname>Roeh</surname><given-names>S.</given-names></name>
+<name><surname>Dittrich</surname><given-names>K.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Prenatal exposures and cell type proportions are main drivers of FKBP5 DNA methylation in maltreated and non-maltreated children</article-title>. <source>Neurobiol. Stress</source>
+<volume>33</volume>, <fpage>100687</fpage>. <pub-id pub-id-type="doi">10.1016/j.ynstr.2024.100687</pub-id>
+<pub-id pub-id-type="pmid">39640002</pub-id>
+</mixed-citation></ref><ref id="B52"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Khan</surname><given-names>Z.</given-names></name>
+<name><surname>Messiri</surname><given-names>N. E.</given-names></name>
+<name><surname>Iqbal</surname><given-names>E.</given-names></name>
+<name><surname>Hassan</surname><given-names>H.</given-names></name>
+<name><surname>Tanweer</surname><given-names>M. S.</given-names></name>
+<name><surname>Sadia</surname><given-names>S. R.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>On the role of epigenetic modifications of HPA axis in posttraumatic stress disorder and resilience</article-title>. <source>J. Neurophysiol.</source>
+<volume>133</volume>, <fpage>742</fpage>&#x02013;<lpage>759</lpage>. <pub-id pub-id-type="doi">10.1152/jn.00345.2024</pub-id>
+<pub-id pub-id-type="pmid">39842807</pub-id>
+</mixed-citation></ref><ref id="B53"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kim</surname><given-names>M.</given-names></name>
+<name><surname>Lee</surname><given-names>H.</given-names></name>
+<name><surname>Lee</surname><given-names>C.</given-names></name>
+<name><surname>Cho</surname><given-names>S.</given-names></name>
+<name><surname>Um</surname><given-names>M. Y.</given-names></name>
+<name><surname>Park</surname><given-names>J. H.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Standardized rice bran supplement ameliorates depressive behaviors <italic toggle="yes">via</italic> FKBP5 mediated glucocorticoid receptor signaling</article-title>. <source>NPJ Sci. Food</source>
+<volume>9</volume>, <fpage>238</fpage>. <pub-id pub-id-type="doi">10.1038/s41538-025-00602-9</pub-id>
+<pub-id pub-id-type="pmid">41253845</pub-id>
+</mixed-citation></ref><ref id="B54"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Klengel</surname><given-names>T.</given-names></name>
+<name><surname>Mehta</surname><given-names>D.</given-names></name>
+<name><surname>Anacker</surname><given-names>C.</given-names></name>
+<name><surname>Rex-Haffner</surname><given-names>M.</given-names></name>
+<name><surname>Pruessner</surname><given-names>J. C.</given-names></name>
+<name><surname>Pariante</surname><given-names>C. M.</given-names></name>
+<etal/>
+</person-group> (<year>2013</year>). <article-title>Allele-specific FKBP5 DNA demethylation mediates gene-childhood trauma interactions</article-title>. <source>Nat. Neurosci.</source>
+<volume>16</volume>, <fpage>33</fpage>&#x02013;<lpage>41</lpage>. <pub-id pub-id-type="doi">10.1038/nn.3275</pub-id>
+<pub-id pub-id-type="pmid">23201972</pub-id>
+</mixed-citation></ref><ref id="B55"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kremer</surname><given-names>T. L.</given-names></name>
+<name><surname>Chen</surname><given-names>J.</given-names></name>
+<name><surname>Buhl</surname><given-names>A.</given-names></name>
+<name><surname>Berhe</surname><given-names>O.</given-names></name>
+<name><surname>Bilek</surname><given-names>E.</given-names></name>
+<name><surname>Geiger</surname><given-names>L. S.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Multimodal associations of FKBP5 methylation with emotion-regulatory brain circuits</article-title>. <source>Biol. Psychiatry</source>
+<volume>96</volume> (<issue>11</issue>), <fpage>858</fpage>&#x02013;<lpage>867</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2024.03.003</pub-id>
+<pub-id pub-id-type="pmid">38460581</pub-id>
+</mixed-citation></ref><ref id="B56"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kusumanchi</surname><given-names>P.</given-names></name>
+<name><surname>Liang</surname><given-names>T.</given-names></name>
+<name><surname>Zhang</surname><given-names>T.</given-names></name>
+<name><surname>Ross</surname><given-names>R. A.</given-names></name>
+<name><surname>Han</surname><given-names>S.</given-names></name>
+<name><surname>Chandler</surname><given-names>K.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Stress-responsive gene FK506-binding protein 51 mediates alcohol-induced liver injury through the hippo pathway and chemokine (C-X-C motif) ligand 1 signaling</article-title>. <source>Hepatology</source>
+<volume>74</volume>, <fpage>1234</fpage>&#x02013;<lpage>1250</lpage>. <pub-id pub-id-type="doi">10.1002/hep.31800</pub-id>
+<pub-id pub-id-type="pmid">33710653</pub-id>
+</mixed-citation></ref><ref id="B57"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Labaut</surname><given-names>L.</given-names></name>
+<name><surname>Lage-Castellanos</surname><given-names>A.</given-names></name>
+<name><surname>Rodrigo</surname><given-names>M. J.</given-names></name>
+<name><surname>Herrero-Rold&#x000e1;n</surname><given-names>S.</given-names></name>
+<name><surname>Mitchell</surname><given-names>C.</given-names></name>
+<name><surname>Fisher</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Mother adversity and co-residence time impact mother-child similarity in genome-wide and gene-specific methylation profiles</article-title>. <source>Clin. Epigenetics</source>
+<volume>16</volume> (<issue>1</issue>), <fpage>44</fpage>. <pub-id pub-id-type="doi">10.1186/s13148-024-01655-5</pub-id>
+<pub-id pub-id-type="pmid">38509601</pub-id>
+</mixed-citation></ref><ref id="B58"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>A.</given-names></name>
+<name><surname>Thuras</surname><given-names>P.</given-names></name>
+<name><surname>Baller</surname><given-names>J.</given-names></name>
+<name><surname>Jiao</surname><given-names>C.</given-names></name>
+<name><surname>Guo</surname><given-names>B.</given-names></name>
+<name><surname>Erbes</surname><given-names>C. R.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Serotonin transporter (SLC6A4) and FK506-binding protein 5 (FKBP5) genotype and methylation relationships with response to meditation in veterans with PTSD</article-title>. <source>Mol. Neurobiol.</source>
+<volume>61</volume>, <fpage>9608</fpage>&#x02013;<lpage>9622</lpage>. <pub-id pub-id-type="doi">10.1007/s12035-024-04096-6</pub-id>
+<pub-id pub-id-type="pmid">38671329</pub-id>
+</mixed-citation></ref><ref id="B59"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>X. S.</given-names></name>
+<name><surname>Wu</surname><given-names>H.</given-names></name>
+<name><surname>Ji</surname><given-names>X.</given-names></name>
+<name><surname>Stelzer</surname><given-names>Y.</given-names></name>
+<name><surname>Wu</surname><given-names>X.</given-names></name>
+<name><surname>Czauderna</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2016</year>). <article-title>Editing DNA methylation in the mammalian genome</article-title>. <source>Cell.</source>
+<volume>167</volume>, <fpage>233</fpage>&#x02013;<lpage>247.e17</lpage>. <pub-id pub-id-type="doi">10.1016/j.cell.2016.08.056</pub-id>
+<pub-id pub-id-type="pmid">27662091</pub-id>
+</mixed-citation></ref><ref id="B60"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>X. S.</given-names></name>
+<name><surname>Wu</surname><given-names>H.</given-names></name>
+<name><surname>Krzisch</surname><given-names>M.</given-names></name>
+<name><surname>Wu</surname><given-names>X.</given-names></name>
+<name><surname>Graef</surname><given-names>J.</given-names></name>
+<name><surname>Muffat</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2018</year>). <article-title>Rescue of fragile X syndrome neurons by DNA methylation editing of the FMR1 gene</article-title>. <source>Cell.</source>
+<volume>172</volume>, <fpage>979</fpage>&#x02013;<lpage>992.e6</lpage>. <pub-id pub-id-type="doi">10.1016/j.cell.2018.01.012</pub-id>
+<pub-id pub-id-type="pmid">29456084</pub-id>
+</mixed-citation></ref><ref id="B61"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>J. C.</given-names></name>
+<name><surname>Liu</surname><given-names>S. H.</given-names></name>
+<name><surname>Fu</surname><given-names>G.</given-names></name>
+<name><surname>Qiu</surname><given-names>X. R.</given-names></name>
+<name><surname>Jiang</surname><given-names>R. D.</given-names></name>
+<name><surname>Huang</surname><given-names>S. Y.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Blood immune cell composition associated with obesity and drug repositioning revealed by epigenetic and transcriptomic conjoint analysis</article-title>. <source>Front. Pharmacol.</source>
+<volume>12</volume>, <fpage>714643</fpage>. <pub-id pub-id-type="doi">10.3389/fphar.2021.714643</pub-id>
+<pub-id pub-id-type="pmid">34712134</pub-id>
+</mixed-citation></ref><ref id="B62"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>N.</given-names></name>
+<name><surname>Li</surname><given-names>R.</given-names></name>
+<name><surname>Cao</surname><given-names>J.</given-names></name>
+<name><surname>Song</surname><given-names>X.</given-names></name>
+<name><surname>Ma</surname><given-names>W.</given-names></name>
+<name><surname>Liu</surname><given-names>T.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>The inhibition of FKBP5 protects &#x003b2;-cell survival under inflammation stress <italic toggle="yes">via</italic> AKT/FOXO1 signaling</article-title>. <source>Cell. Death Discov.</source>
+<volume>9</volume>, <fpage>247</fpage>. <pub-id pub-id-type="doi">10.1038/s41420-023-01506-x</pub-id>
+<pub-id pub-id-type="pmid">37452039</pub-id>
+</mixed-citation></ref><ref id="B63"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>Y.</given-names></name>
+<name><surname>Lian</surname><given-names>J.</given-names></name>
+<name><surname>Fu</surname><given-names>Y.</given-names></name>
+<name><surname>Wang</surname><given-names>S.</given-names></name>
+<name><surname>Liu</surname><given-names>Y.</given-names></name>
+<name><surname>Zhang</surname><given-names>R.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>FKBP5/FKBP51-mediated signaling pathways in neuropsychiatric diseases: insights for biomarker development and targeted therapies</article-title>. <source>Neurobiol. Stress</source>
+<volume>39</volume>, <fpage>100762</fpage>. <pub-id pub-id-type="doi">10.1016/j.ynstr.2025.100762</pub-id>
+<pub-id pub-id-type="pmid">41050105</pub-id>
+</mixed-citation></ref><ref id="B64"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>T.</given-names></name>
+<name><surname>Wang</surname><given-names>C.</given-names></name>
+<name><surname>Xia</surname><given-names>Z.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>Overexpressed FKBP5 mediates colorectal cancer progression and sensitivity to FK506 treatment <italic toggle="yes">via</italic> the NF-&#x003ba;B signaling pathway</article-title>. <source>FEBS J.</source>
+<volume>291</volume>, <fpage>3128</fpage>&#x02013;<lpage>3146</lpage>. <pub-id pub-id-type="doi">10.1111/febs.17126</pub-id>
+<pub-id pub-id-type="pmid">38602236</pub-id>
+</mixed-citation></ref><ref id="B65"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>W.</given-names></name>
+<name><surname>Kuai</surname><given-names>Y.</given-names></name>
+<name><surname>Wang</surname><given-names>D.</given-names></name>
+<name><surname>Chen</surname><given-names>J.</given-names></name>
+<name><surname>Xiong</surname><given-names>F.</given-names></name>
+<name><surname>Wu</surname><given-names>G.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>PPM1G inhibits epithelial-mesenchymal transition in cholangiocarcinoma by catalyzing TET1 dephosphorylation for destabilization to impair its targeted demethylation of the CLDN3 promoter</article-title>. <source>Adv. Sci. (Weinh)</source>
+<volume>11</volume>, <fpage>e2407323</fpage>. <pub-id pub-id-type="doi">10.1002/advs.202407323</pub-id>
+<pub-id pub-id-type="pmid">39477806</pub-id>
+</mixed-citation></ref><ref id="B66"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Ma</surname><given-names>M.</given-names></name>
+<name><surname>Chen</surname><given-names>X.</given-names></name>
+<name><surname>Yin</surname><given-names>Y.</given-names></name>
+<name><surname>Fan</surname><given-names>R.</given-names></name>
+<name><surname>Li</surname><given-names>B.</given-names></name>
+<name><surname>Zhan</surname><given-names>Y.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>DNA methylation silences exogenous gene expression in transgenic birch progeny</article-title>. <source>Front. Plant Sci.</source>
+<volume>11</volume>, <fpage>523748</fpage>. <pub-id pub-id-type="doi">10.3389/fpls.2020.523748</pub-id>
+<pub-id pub-id-type="pmid">33414793</pub-id>
+</mixed-citation></ref><ref id="B67"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Ma</surname><given-names>X.</given-names></name>
+<name><surname>Fan</surname><given-names>W.</given-names></name>
+<name><surname>Zhang</surname><given-names>T.</given-names></name>
+<name><surname>Luo</surname><given-names>L.</given-names></name>
+<name><surname>Wang</surname><given-names>K.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>The interplay between oxidative stress and epigenetic reprogramming in cancer</article-title>. <source>Int. J. Cancer</source>
+<volume>157</volume>, <fpage>2004</fpage>&#x02013;<lpage>2018</lpage>. <pub-id pub-id-type="doi">10.1002/ijc.70058</pub-id>
+<pub-id pub-id-type="pmid">40699200</pub-id>
+</mixed-citation></ref><ref id="B68"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Mall</surname><given-names>D. P.</given-names></name>
+<name><surname>Basu</surname><given-names>S.</given-names></name>
+<name><surname>Ghosh</surname><given-names>K.</given-names></name>
+<name><surname>Kumari</surname><given-names>N.</given-names></name>
+<name><surname>Lahiri</surname><given-names>A.</given-names></name>
+<name><surname>Paul</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Human FKBP5 negatively regulates transcription through inhibition of P-TEFb complex formation</article-title>. <source>Mol. Cell. Biol.</source>
+<volume>42</volume>, <fpage>e0034421</fpage>. <pub-id pub-id-type="doi">10.1128/MCB.00344-21</pub-id>
+<pub-id pub-id-type="pmid">34780285</pub-id>
+</mixed-citation></ref><ref id="B69"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Marx</surname><given-names>N.</given-names></name>
+<name><surname>Gr&#x000fc;nwald-Gruber</surname><given-names>C.</given-names></name>
+<name><surname>Bydlinski</surname><given-names>N.</given-names></name>
+<name><surname>Dhiman</surname><given-names>H.</given-names></name>
+<name><surname>Ngoc</surname><given-names>N. T.</given-names></name>
+<name><surname>Borth</surname><given-names>N.</given-names></name>
+<etal/>
+</person-group> (<year>2018</year>). <article-title>CRISPR-Based targeted epigenetic editing enables gene expression modulation of the silenced beta-galactoside alpha-2,6-sialyltransferase 1 in CHO cells</article-title>. <source>Biotechnol. J.</source>
+<volume>13</volume>, <fpage>e1700217</fpage>. <pub-id pub-id-type="doi">10.1002/biot.201700217</pub-id>
+<pub-id pub-id-type="pmid">29802757</pub-id>
+</mixed-citation></ref><ref id="B70"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>McNew</surname><given-names>S. M.</given-names></name>
+<name><surname>Taff</surname><given-names>C. C.</given-names></name>
+<name><surname>Vitousek</surname><given-names>M. N.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>Manipulation of a social signal affects DNA methylation of a stress-related gene in a free-living bird</article-title>. <source>J. Exp. Biol.</source>
+<volume>227</volume> (<issue>15</issue>), <fpage>jeb246819</fpage>. <pub-id pub-id-type="doi">10.1242/jeb.246819</pub-id>
+<pub-id pub-id-type="pmid">39022893</pub-id>
+</mixed-citation></ref><ref id="B71"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Mendon&#x000e7;a</surname><given-names>M. S.</given-names></name>
+<name><surname>Mangiavacchi</surname><given-names>P. M.</given-names></name>
+<name><surname>Rios</surname><given-names>&#x000c1;. F. L.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Regulatory functions of FKBP5 intronic regions associated with psychiatric disorders</article-title>. <source>J. Psychiatr. Res.</source>
+<volume>143</volume>, <fpage>1</fpage>&#x02013;<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1016/j.jpsychires.2021.08.014</pub-id>
+<pub-id pub-id-type="pmid">34433110</pub-id>
+</mixed-citation></ref><ref id="B72"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Mendon&#x000e7;a</surname><given-names>M. S.</given-names></name>
+<name><surname>Mangiavacchi</surname><given-names>P. M.</given-names></name>
+<name><surname>Mendes</surname><given-names>A. V.</given-names></name>
+<name><surname>Loureiro</surname><given-names>S. R.</given-names></name>
+<name><surname>Mart&#x000ed;n-Santos</surname><given-names>R.</given-names></name>
+<name><surname>Gl&#x000f3;ria</surname><given-names>L. S.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>DNA methylation in regulatory elements of the FKBP5 and NR3C1 gene in mother-child binomials with depression</article-title>. <source>J. Affect Disord.</source>
+<volume>331</volume>, <fpage>287</fpage>&#x02013;<lpage>299</lpage>. <pub-id pub-id-type="doi">10.1016/j.jad.2023.03.031</pub-id>
+<pub-id pub-id-type="pmid">36933666</pub-id>
+</mixed-citation></ref><ref id="B73"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Mihaljevic</surname><given-names>M.</given-names></name>
+<name><surname>Franic</surname><given-names>D.</given-names></name>
+<name><surname>Soldatovic</surname><given-names>I.</given-names></name>
+<name><surname>Lukic</surname><given-names>I.</given-names></name>
+<name><surname>Petrovic</surname><given-names>S. A.</given-names></name>
+<name><surname>Mirjanic</surname><given-names>T.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>The FKBP5 genotype and childhood trauma effects on FKBP5 DNA methylation in patients with psychosis, their unaffected siblings, and healthy controls</article-title>. <source>Psychoneuroendocrinology</source>
+<volume>128</volume>, <fpage>105205</fpage>. <pub-id pub-id-type="doi">10.1016/j.psyneuen.2021.105205</pub-id>
+<pub-id pub-id-type="pmid">33933892</pub-id>
+</mixed-citation></ref><ref id="B74"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Miller</surname><given-names>O.</given-names></name>
+<name><surname>Shakespeare-Finch</surname><given-names>J.</given-names></name>
+<name><surname>Bruenig</surname><given-names>D.</given-names></name>
+<name><surname>Mehta</surname><given-names>D.</given-names></name>
+</person-group> (<year>2020</year>). <article-title>DNA methylation of NR3C1 and FKBP5 is associated with posttraumatic stress disorder, posttraumatic growth, and resilience</article-title>. <source>Psychol. Trauma</source>
+<volume>12</volume> (<issue>7</issue>), <fpage>750</fpage>&#x02013;<lpage>755</lpage>. <pub-id pub-id-type="doi">10.1037/tra0000574</pub-id>
+<pub-id pub-id-type="pmid">32212777</pub-id>
+</mixed-citation></ref><ref id="B75"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Misiak</surname><given-names>B.</given-names></name>
+<name><surname>Karpi&#x00144;ski</surname><given-names>P.</given-names></name>
+<name><surname>Szmida</surname><given-names>E.</given-names></name>
+<name><surname>Gr&#x00105;&#x0017a;lewski</surname><given-names>T.</given-names></name>
+<name><surname>Jab&#x00142;o&#x00144;ski</surname><given-names>M.</given-names></name>
+<name><surname>Cyranka</surname><given-names>K.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Adverse childhood experiences and methylation of the FKBP5 gene in patients with psychotic disorders</article-title>. <source>J. Clin. Med.</source>
+<volume>9</volume>, <fpage>3792</fpage>. <pub-id pub-id-type="doi">10.3390/jcm9123792</pub-id>
+<pub-id pub-id-type="pmid">33255215</pub-id>
+</mixed-citation></ref><ref id="B76"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Modi</surname><given-names>N.</given-names></name>
+<name><surname>Guo</surname><given-names>J.</given-names></name>
+<name><surname>Lee</surname><given-names>R. A.</given-names></name>
+<name><surname>Greenstein</surname><given-names>A.</given-names></name>
+<name><surname>Lee</surname><given-names>R. S.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Targeted DNA methylation using modified DNA probes: a potential therapeutic tool for depression and stress-related disorders</article-title>. <source>Int. J. Mol. Sci.</source>
+<volume>26</volume>, <fpage>12</fpage>. <pub-id pub-id-type="doi">10.3390/ijms26125643</pub-id>
+<pub-id pub-id-type="pmid">40565107</pub-id>
+</mixed-citation></ref><ref id="B77"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Muehlhan</surname><given-names>M.</given-names></name>
+<name><surname>Miller</surname><given-names>R.</given-names></name>
+<name><surname>Strehle</surname><given-names>J.</given-names></name>
+<name><surname>Smolka</surname><given-names>M. N.</given-names></name>
+<name><surname>Alexander</surname><given-names>N.</given-names></name>
+</person-group> (<year>2020</year>). <article-title>FKBP5 methylation predicts functional network architecture of the rostral anterior cingulate cortex</article-title>. <source>Brain Struct. Funct.</source>
+<volume>225</volume>, <fpage>33</fpage>&#x02013;<lpage>43</lpage>. <pub-id pub-id-type="doi">10.1007/s00429-019-01980-z</pub-id>
+<pub-id pub-id-type="pmid">31728624</pub-id>
+</mixed-citation></ref><ref id="B78"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Nie</surname><given-names>Y.</given-names></name>
+<name><surname>Wen</surname><given-names>L.</given-names></name>
+<name><surname>Song</surname><given-names>J.</given-names></name>
+<name><surname>Wang</surname><given-names>N.</given-names></name>
+<name><surname>Huang</surname><given-names>L.</given-names></name>
+<name><surname>Gao</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Emerging trends in epigenetic and childhood trauma: bibliometrics and visual analysis</article-title>. <source>Front. Psychiatry</source>
+<volume>13</volume>, <fpage>925273</fpage>. <pub-id pub-id-type="doi">10.3389/fpsyt.2022.925273</pub-id>
+<pub-id pub-id-type="pmid">36458128</pub-id>
+</mixed-citation></ref><ref id="B79"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Nold</surname><given-names>V.</given-names></name>
+<name><surname>Richter</surname><given-names>N.</given-names></name>
+<name><surname>Hengerer</surname><given-names>B.</given-names></name>
+<name><surname>Kolassa</surname><given-names>I. T.</given-names></name>
+<name><surname>Allers</surname><given-names>K. A.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>FKBP5 polymorphisms induce differential glucocorticoid responsiveness in primary CNS cells - first insights from novel humanized mice</article-title>. <source>Eur. J. Neurosci.</source>
+<volume>53</volume>, <fpage>402</fpage>&#x02013;<lpage>415</lpage>. <pub-id pub-id-type="doi">10.1111/ejn.14999</pub-id>
+<pub-id pub-id-type="pmid">33030232</pub-id>
+</mixed-citation></ref><ref id="B80"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>N&#x000f6;thling</surname><given-names>J.</given-names></name>
+<name><surname>Womersley</surname><given-names>J. S.</given-names></name>
+<name><surname>Mhlongo</surname><given-names>S.</given-names></name>
+<name><surname>Lombard</surname><given-names>C.</given-names></name>
+<name><surname>Abrahams</surname><given-names>N.</given-names></name>
+<name><surname>Seedat</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>The relationship between childhood trauma, rs1360780 genotypes, FKBP5 intron 7 methylation and posttraumatic stress disorder in women who have experienced rape</article-title>. <source>Eur. J. Psychotraumatol</source>
+<volume>16</volume>, <fpage>2485707</fpage>. <pub-id pub-id-type="doi">10.1080/20008066.2025.2485707</pub-id>
+<pub-id pub-id-type="pmid">40242984</pub-id>
+</mixed-citation></ref><ref id="B81"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Paakinaho</surname><given-names>V.</given-names></name>
+<name><surname>Makkonen</surname><given-names>H.</given-names></name>
+<name><surname>J&#x000e4;&#x000e4;skel&#x000e4;inen</surname><given-names>T.</given-names></name>
+<name><surname>Palvimo</surname><given-names>J. J.</given-names></name>
+</person-group> (<year>2010</year>). <article-title>Glucocorticoid receptor activates poised FKBP51 locus through long-distance interactions</article-title>. <source>Mol. Endocrinol.</source>
+<volume>24</volume>, <fpage>511</fpage>&#x02013;<lpage>525</lpage>. <pub-id pub-id-type="doi">10.1210/me.2009-0443</pub-id>
+<pub-id pub-id-type="pmid">20093418</pub-id>
+</mixed-citation></ref><ref id="B82"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Palma-Gudiel</surname><given-names>H.</given-names></name>
+<name><surname>Prather</surname><given-names>A. A.</given-names></name>
+<name><surname>Lin</surname><given-names>J.</given-names></name>
+<name><surname>Oxendine</surname><given-names>J. D.</given-names></name>
+<name><surname>Guintivano</surname><given-names>J.</given-names></name>
+<name><surname>Xia</surname><given-names>K.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>HPA axis regulation and epigenetic programming of immune-related genes in chronically stressed and non-stressed mid-life women</article-title>. <source>Brain Behav. Immun.</source>
+<volume>92</volume>, <fpage>49</fpage>&#x02013;<lpage>56</lpage>. <pub-id pub-id-type="doi">10.1016/j.bbi.2020.11.027</pub-id>
+<pub-id pub-id-type="pmid">33221485</pub-id>
+</mixed-citation></ref><ref id="B83"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Park</surname><given-names>C. I.</given-names></name>
+<name><surname>Kim</surname><given-names>H. W.</given-names></name>
+<name><surname>Hwang</surname><given-names>S. S.</given-names></name>
+<name><surname>Kang</surname><given-names>J. I.</given-names></name>
+<name><surname>Kim</surname><given-names>S. J.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Genetic association of FKBP5 with trait resilience in Korean male patients with alcohol use disorder</article-title>. <source>Sci. Rep.</source>
+<volume>11</volume>, <fpage>18454</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-021-98032-6</pub-id>
+<pub-id pub-id-type="pmid">34531492</pub-id>
+</mixed-citation></ref><ref id="B84"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Pinho</surname><given-names>R. M.</given-names></name>
+<name><surname>Maga</surname><given-names>E. A.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>DNA methylation as a regulator of intestinal gene expression</article-title>. <source>Br. J. Nutr.</source>
+<volume>126</volume>, <fpage>1611</fpage>&#x02013;<lpage>1625</lpage>. <pub-id pub-id-type="doi">10.1017/S0007114521000556</pub-id>
+<pub-id pub-id-type="pmid">33583435</pub-id>
+</mixed-citation></ref><ref id="B85"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Piyasena</surname><given-names>C.</given-names></name>
+<name><surname>Cartier</surname><given-names>J.</given-names></name>
+<name><surname>Proven&#x000e7;al</surname><given-names>N.</given-names></name>
+<name><surname>Wiechmann</surname><given-names>T.</given-names></name>
+<name><surname>Khulan</surname><given-names>B.</given-names></name>
+<name><surname>Sunderesan</surname><given-names>R.</given-names></name>
+<etal/>
+</person-group> (<year>2016</year>). <article-title>Dynamic changes in DNA methylation occur during the first year of life in preterm infants</article-title>. <source>Front. Endocrinol. (Lausanne)</source>
+<volume>7</volume>, <fpage>158</fpage>. <pub-id pub-id-type="doi">10.3389/fendo.2016.00158</pub-id>
+<pub-id pub-id-type="pmid">28018293</pub-id>
+</mixed-citation></ref><ref id="B86"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Pratt</surname><given-names>W. B.</given-names></name>
+<name><surname>Toft</surname><given-names>D. O.</given-names></name>
+</person-group> (<year>1997</year>). <article-title>Steroid receptor interactions with heat shock protein and immunophilin chaperones</article-title>. <source>Endocr. Rev.</source>
+<volume>18</volume>, <fpage>306</fpage>&#x02013;<lpage>360</lpage>. <pub-id pub-id-type="doi">10.1210/edrv.18.3.0303</pub-id>
+<pub-id pub-id-type="pmid">9183567</pub-id>
+</mixed-citation></ref><ref id="B87"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Qiu</surname><given-names>B.</given-names></name>
+<name><surname>Zhong</surname><given-names>Z.</given-names></name>
+<name><surname>Righter</surname><given-names>S.</given-names></name>
+<name><surname>Xu</surname><given-names>Y.</given-names></name>
+<name><surname>Wang</surname><given-names>J.</given-names></name>
+<name><surname>Deng</surname><given-names>R.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>FKBP51 modulates hippocampal size and function in post-translational regulation of Parkin</article-title>. <source>Cell. Mol. Life Sci.</source>
+<volume>79</volume>, <fpage>175</fpage>. <pub-id pub-id-type="doi">10.1007/s00018-022-04167-8</pub-id>
+<pub-id pub-id-type="pmid">35244772</pub-id>
+</mixed-citation></ref><ref id="B88"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Rao</surname><given-names>S.</given-names></name>
+<name><surname>Yao</surname><given-names>Y.</given-names></name>
+<name><surname>Ryan</surname><given-names>J.</given-names></name>
+<name><surname>Xu</surname><given-names>Z.</given-names></name>
+<name><surname>Guo</surname><given-names>L.</given-names></name>
+<name><surname>Li</surname><given-names>T.</given-names></name>
+<etal/>
+</person-group> (<year>2016</year>). <article-title>Common variants in FKBP5 gene and major depressive disorder (MDD) susceptibility: a comprehensive meta-analysis</article-title>. <source>Sci. Rep.</source>
+<volume>6</volume>, <fpage>32687</fpage>. <pub-id pub-id-type="doi">10.1038/srep32687</pub-id>
+<pub-id pub-id-type="pmid">27601205</pub-id>
+</mixed-citation></ref><ref id="B89"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Ren</surname><given-names>J.</given-names></name>
+<name><surname>Yang</surname><given-names>Y.</given-names></name>
+<name><surname>Li</surname><given-names>C.</given-names></name>
+<name><surname>Xie</surname><given-names>L.</given-names></name>
+<name><surname>Hu</surname><given-names>R.</given-names></name>
+<name><surname>Qin</surname><given-names>X.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>A novel prognostic model of early-stage lung adenocarcinoma integrating methylation and immune biomarkers</article-title>. <source>Front. Genet.</source>
+<volume>11</volume>, <fpage>634634</fpage>. <pub-id pub-id-type="doi">10.3389/fgene.2020.634634</pub-id>
+<pub-id pub-id-type="pmid">33552145</pub-id>
+</mixed-citation></ref><ref id="B90"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Rysz</surname><given-names>J.</given-names></name>
+<name><surname>Franczyk</surname><given-names>B.</given-names></name>
+<name><surname>Rysz-G&#x000f3;rzy&#x00144;ska</surname><given-names>M.</given-names></name>
+<name><surname>Gluba-Brz&#x000f3;zka</surname><given-names>A.</given-names></name>
+</person-group> (<year>2022</year>). <article-title>Are alterations in DNA methylation related to CKD development?</article-title>
+<source>Int. J. Mol. Sci.</source>
+<volume>23</volume>, <fpage>131708</fpage>. <pub-id pub-id-type="doi">10.3390/ijms23137108</pub-id>
+<pub-id pub-id-type="pmid">35806113</pub-id>
+</mixed-citation></ref><ref id="B91"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Saville</surname><given-names>J. R.</given-names></name>
+<name><surname>Russell</surname><given-names>L. J.</given-names></name>
+<name><surname>Padget</surname><given-names>K.</given-names></name>
+<name><surname>Ghantous</surname><given-names>A.</given-names></name>
+<name><surname>Nordlund</surname><given-names>J.</given-names></name>
+<name><surname>McKay</surname><given-names>J. A.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>The potential role of environmentally associated DNA methylation in childhood acute lymphoblastic leukaemia subtypes</article-title>. <source>Int. J. Cancer</source>
+<volume>157</volume>, <fpage>1600</fpage>&#x02013;<lpage>1612</lpage>. <pub-id pub-id-type="doi">10.1002/ijc.35506</pub-id>
+<pub-id pub-id-type="pmid">40490854</pub-id>
+</mixed-citation></ref><ref id="B92"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Seo</surname><given-names>J. H.</given-names></name>
+<name><surname>Kim</surname><given-names>S. T.</given-names></name>
+<name><surname>Jeon</surname><given-names>S.</given-names></name>
+<name><surname>Kang</surname><given-names>J. I.</given-names></name>
+<name><surname>Kim</surname><given-names>S. J.</given-names></name>
+</person-group> (<year>2023</year>). <article-title>Sex-dependent association of DNA methylation of HPA axis-related gene FKBP5 with obsessive-compulsive disorder</article-title>. <source>Psychoneuroendocrinology</source>
+<volume>158</volume>, <fpage>106404</fpage>. <pub-id pub-id-type="doi">10.1016/j.psyneuen.2023.106404</pub-id>
+<pub-id pub-id-type="pmid">37769537</pub-id>
+</mixed-citation></ref><ref id="B93"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Shen</surname><given-names>Y.</given-names></name>
+<name><surname>Jiang</surname><given-names>B.</given-names></name>
+<name><surname>Luo</surname><given-names>B.</given-names></name>
+<name><surname>Jiang</surname><given-names>X.</given-names></name>
+<name><surname>Zhang</surname><given-names>Y.</given-names></name>
+<name><surname>Wang</surname><given-names>Q.</given-names></name>
+</person-group> (<year>2023</year>). <article-title>Circular RNA-FK506 binding protein 51 boosts bone marrow mesenchymal stem cell proliferation and osteogenic differentiation <italic toggle="yes">via</italic> modulating microRNA-205-5p/Runt-associated transcription factor 2 axis</article-title>. <source>J. Orthop. Surg. Res.</source>
+<volume>18</volume>, <fpage>782</fpage>. <pub-id pub-id-type="doi">10.1186/s13018-023-04242-1</pub-id>
+<pub-id pub-id-type="pmid">37853466</pub-id>
+</mixed-citation></ref><ref id="B94"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Shields</surname><given-names>A. E.</given-names></name>
+<name><surname>Zhang</surname><given-names>Y.</given-names></name>
+<name><surname>Argentieri</surname><given-names>M. A.</given-names></name>
+<name><surname>Warner</surname><given-names>E. T.</given-names></name>
+<name><surname>Cozier</surname><given-names>Y. C.</given-names></name>
+<name><surname>Liu</surname><given-names>C.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Stress and spirituality in relation to HPA axis gene methylation among US black women: results from the black Women&#x02019;s health study and the study on stress, spirituality and health</article-title>. <source>Epigenomics</source>
+<volume>13</volume>, <fpage>1711</fpage>&#x02013;<lpage>1734</lpage>. <pub-id pub-id-type="doi">10.2217/epi-2021-0275</pub-id>
+<pub-id pub-id-type="pmid">34726080</pub-id>
+</mixed-citation></ref><ref id="B95"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Smyth</surname><given-names>L. J.</given-names></name>
+<name><surname>Kilner</surname><given-names>J.</given-names></name>
+<name><surname>Nair</surname><given-names>V.</given-names></name>
+<name><surname>Liu</surname><given-names>H.</given-names></name>
+<name><surname>Brennan</surname><given-names>E.</given-names></name>
+<name><surname>Kerr</surname><given-names>K.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Assessment of differentially methylated loci in individuals with end-stage kidney disease attributed to diabetic kidney disease: an exploratory study</article-title>. <source>Clin. Epigenetics</source>
+<volume>13</volume>, <fpage>99</fpage>. <pub-id pub-id-type="doi">10.1186/s13148-021-01081-x</pub-id>
+<pub-id pub-id-type="pmid">33933144</pub-id>
+</mixed-citation></ref><ref id="B96"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Song</surname><given-names>Q.</given-names></name>
+<name><surname>Song</surname><given-names>C.</given-names></name>
+<name><surname>Chen</surname><given-names>X.</given-names></name>
+<name><surname>Xiong</surname><given-names>Y.</given-names></name>
+<name><surname>Li</surname><given-names>L.</given-names></name>
+<name><surname>Liao</surname><given-names>W.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>FKBP5 deficiency attenuates calcium oxalate kidney stone formation by suppressing cell-crystal adhesion, apoptosis and macrophage M1 polarization <italic toggle="yes">via</italic> inhibition of NF-&#x003ba;B signaling</article-title>. <source>Cell. Mol. Life Sci.</source>
+<volume>80</volume>, <fpage>301</fpage>. <pub-id pub-id-type="doi">10.1007/s00018-023-04958-7</pub-id>
+<pub-id pub-id-type="pmid">37740796</pub-id>
+</mixed-citation></ref><ref id="B97"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Stols-Gon&#x000e7;alves</surname><given-names>D.</given-names></name>
+<name><surname>Meijnikman</surname><given-names>A. S.</given-names></name>
+<name><surname>Trist&#x000e3;o</surname><given-names>L. S.</given-names></name>
+<name><surname>Santos</surname><given-names>C. L. D.</given-names></name>
+<name><surname>Denswil</surname><given-names>N. P.</given-names></name>
+<name><surname>Verheij</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Metabolic dysfunction-associated steatotic liver disease and alcohol-associated liver disease: liver DNA methylation analysis - a systematic review</article-title>. <source>Cells</source>
+<volume>13</volume>, <fpage>1893</fpage>. <pub-id pub-id-type="doi">10.3390/cells13221893</pub-id>
+<pub-id pub-id-type="pmid">39594641</pub-id>
+</mixed-citation></ref><ref id="B98"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Storer</surname><given-names>C. L.</given-names></name>
+<name><surname>Dickey</surname><given-names>C. A.</given-names></name>
+<name><surname>Galigniana</surname><given-names>M. D.</given-names></name>
+<name><surname>Rein</surname><given-names>T.</given-names></name>
+<name><surname>Cox</surname><given-names>M. B.</given-names></name>
+</person-group> (<year>2011</year>). <article-title>FKBP51 and FKBP52 in signaling and disease</article-title>. <source>Trends Endocrinol. Metab.</source>
+<volume>22</volume> (<issue>12</issue>), <fpage>481</fpage>&#x02013;<lpage>490</lpage>. <pub-id pub-id-type="doi">10.1016/j.tem.2011.08.001</pub-id>
+<pub-id pub-id-type="pmid">21889356</pub-id>
+</mixed-citation></ref><ref id="B99"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Stramecki</surname><given-names>F.</given-names></name>
+<name><surname>Frydecka</surname><given-names>D.</given-names></name>
+<name><surname>Gaw&#x00119;da</surname><given-names>&#x00141;.</given-names></name>
+<name><surname>Prochwicz</surname><given-names>K.</given-names></name>
+<name><surname>Misiak</surname><given-names>B.</given-names></name>
+<name><surname>Szeliga</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>The impact of the FKBP5 gene polymorphisms on the relationship between traumatic life events and psychotic-like experiences in non-clinical adults</article-title>. <source>Brain Sci.</source>
+<volume>11</volume>, <fpage>561</fpage>. <pub-id pub-id-type="doi">10.3390/brainsci11050561</pub-id>
+<pub-id pub-id-type="pmid">33925151</pub-id>
+</mixed-citation></ref><ref id="B100"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Stroud</surname><given-names>L. R.</given-names></name>
+<name><surname>Jao</surname><given-names>N. C.</given-names></name>
+<name><surname>Ward</surname><given-names>L. G.</given-names></name>
+<name><surname>Lee</surname><given-names>S. Y.</given-names></name>
+<name><surname>Marsit</surname><given-names>C. J.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>Differential impact of prenatal PTSD symptoms and preconception trauma exposure on placental NR3C1 and FKBP5 methylation</article-title>. <source>Stress</source>
+<volume>27</volume> (<issue>1</issue>), <fpage>2321595</fpage>. <pub-id pub-id-type="doi">10.1080/10253890.2024.2321595</pub-id>
+<pub-id pub-id-type="pmid">38676353</pub-id>
+</mixed-citation></ref><ref id="B101"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Tan</surname><given-names>R. Z.</given-names></name>
+<name><surname>Jia</surname><given-names>J.</given-names></name>
+<name><surname>Li</surname><given-names>T.</given-names></name>
+<name><surname>Wang</surname><given-names>L.</given-names></name>
+<name><surname>Kantawong</surname><given-names>F.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>A systematic review of epigenetic interplay in kidney diseases: crosstalk between long noncoding RNAs and methylation, acetylation of chromatin and histone</article-title>. <source>Biomed. Pharmacother.</source>
+<volume>176</volume>, <fpage>116922</fpage>. <pub-id pub-id-type="doi">10.1016/j.biopha.2024.116922</pub-id>
+<pub-id pub-id-type="pmid">38870627</pub-id>
+</mixed-citation></ref><ref id="B102"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Tian</surname><given-names>X. Y.</given-names></name>
+<name><surname>Zhu</surname><given-names>B.</given-names></name>
+<name><surname>Fang</surname><given-names>W. C.</given-names></name>
+<name><surname>Zhang</surname><given-names>L. J.</given-names></name>
+<name><surname>Chen</surname><given-names>Y. Q.</given-names></name>
+<name><surname>Liu</surname><given-names>M. H.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>FKBP5regulates the osteogenesis of human adipose-derived mesenchymal stem cells</article-title>. <source>Curr. Med. Sci.</source>
+<volume>44</volume>, <fpage>1270</fpage>&#x02013;<lpage>1279</lpage>. <pub-id pub-id-type="doi">10.1007/s11596-024-2941-8</pub-id>
+<pub-id pub-id-type="pmid">39586968</pub-id>
+</mixed-citation></ref><ref id="B103"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Titanji</surname><given-names>B. K.</given-names></name>
+<name><surname>Lee</surname><given-names>M.</given-names></name>
+<name><surname>Wang</surname><given-names>Z.</given-names></name>
+<name><surname>Chen</surname><given-names>J.</given-names></name>
+<name><surname>Hui</surname><given-names>Q.</given-names></name>
+<name><surname>Lo Re Iii</surname><given-names>V.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Epigenome-wide association study of biomarkers of liver function identifies albumin-associated DNA methylation sites among male veterans with HIV</article-title>. <source>Front. Genet.</source>
+<volume>13</volume>, <fpage>1020871</fpage>. <pub-id pub-id-type="doi">10.3389/fgene.2022.1020871</pub-id>
+<pub-id pub-id-type="pmid">36303554</pub-id>
+</mixed-citation></ref><ref id="B104"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Tomlinson</surname><given-names>C. J.</given-names></name>
+<name><surname>Ryniker</surname><given-names>L.</given-names></name>
+<name><surname>Cook</surname><given-names>H. M.</given-names></name>
+<name><surname>Schwartz</surname><given-names>R. M.</given-names></name>
+<name><surname>Non</surname><given-names>A. L.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Epigenetics in persons living with HIV: trauma, coping, and FKBP5 and SLC6A4 methylation</article-title>. <source>Epigenomics</source>
+<volume>17</volume>, <fpage>297</fpage>&#x02013;<lpage>307</lpage>. <pub-id pub-id-type="doi">10.1080/17501911.2025.2476389</pub-id>
+<pub-id pub-id-type="pmid">40069093</pub-id>
+</mixed-citation></ref><ref id="B105"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>van Vliet</surname><given-names>M. M.</given-names></name>
+<name><surname>Schoenmakers</surname><given-names>S.</given-names></name>
+<name><surname>Gribnau</surname><given-names>J.</given-names></name>
+<name><surname>Steegers-Theunissen</surname><given-names>R. P. M.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>The one-carbon metabolism as an underlying pathway for placental DNA methylation - a systematic review</article-title>. <source>Epigenetics</source>
+<volume>19</volume>, <fpage>2318516</fpage>. <pub-id pub-id-type="doi">10.1080/15592294.2024.2318516</pub-id>
+<pub-id pub-id-type="pmid">38484284</pub-id>
+</mixed-citation></ref><ref id="B106"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Van't Westeinde</surname><given-names>A.</given-names></name>
+<name><surname>Karlsson</surname><given-names>L.</given-names></name>
+<name><surname>Nordenstr&#x000f6;m</surname><given-names>A.</given-names></name>
+<name><surname>Padilla</surname><given-names>N.</given-names></name>
+<name><surname>Lajic</surname><given-names>S.</given-names></name>
+</person-group> (<year>2020</year>). <article-title>First-trimester prenatal dexamethasone treatment is associated with alterations in brain structure at adult age</article-title>. <source>J. Clin. Endocrinol. Metab.</source>
+<volume>105</volume> (<issue>8</issue>), <fpage>2575</fpage>&#x02013;<lpage>2586</lpage>. <pub-id pub-id-type="doi">10.1210/clinem/dgaa340</pub-id>
+<pub-id pub-id-type="pmid">32497228</pub-id>
+</mixed-citation></ref><ref id="B107"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Wada</surname><given-names>K.</given-names></name>
+<name><surname>Misaka</surname><given-names>T.</given-names></name>
+<name><surname>Yokokawa</surname><given-names>T.</given-names></name>
+<name><surname>Kimishima</surname><given-names>Y.</given-names></name>
+<name><surname>Kaneshiro</surname><given-names>T.</given-names></name>
+<name><surname>Oikawa</surname><given-names>M.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Blood-based epigenetic markers of FKBP5 gene methylation in patients with dilated cardiomyopathy</article-title>. <source>J. Am. Heart Assoc.</source>
+<volume>10</volume> (<issue>21</issue>), <fpage>e021101</fpage>. <pub-id pub-id-type="doi">10.1161/JAHA.121.021101</pub-id>
+<pub-id pub-id-type="pmid">34713710</pub-id>
+</mixed-citation></ref><ref id="B108"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>Y. N.</given-names></name>
+<name><surname>Li</surname><given-names>J.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>Processing pipelines and analytical methods for single-cell DNA methylation sequencing data</article-title>. <source>Yi Chuan</source>
+<volume>46</volume>, <fpage>807</fpage>&#x02013;<lpage>819</lpage>. <pub-id pub-id-type="doi">10.16288/j.yczz.24-154</pub-id>
+<pub-id pub-id-type="pmid">39443310</pub-id>
+</mixed-citation></ref><ref id="B109"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>T.</given-names></name>
+<name><surname>Xia</surname><given-names>P.</given-names></name>
+<name><surname>Su</surname><given-names>P.</given-names></name>
+</person-group> (<year>2022</year>). <article-title>High-dimensional DNA methylation mediates the effect of smoking on Crohn's disease</article-title>. <source>Front. Genet.</source>
+<volume>13</volume>, <fpage>831885</fpage>. <pub-id pub-id-type="doi">10.3389/fgene.2022.831885</pub-id>
+<pub-id pub-id-type="pmid">35450213</pub-id>
+</mixed-citation></ref><ref id="B110"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>C.</given-names></name>
+<name><surname>Manders</surname><given-names>F.</given-names></name>
+<name><surname>Groh</surname><given-names>L.</given-names></name>
+<name><surname>Oldenkamp</surname><given-names>R.</given-names></name>
+<name><surname>Logie</surname><given-names>C.</given-names></name>
+</person-group> (<year>2023</year>). <article-title>Corticosteroid-induced chromatin loop dynamics at the FKBP5 gene</article-title>. <source>Ann. N. Y. Acad. Sci.</source>
+<volume>1529</volume>, <fpage>109</fpage>&#x02013;<lpage>119</lpage>. <pub-id pub-id-type="doi">10.1111/nyas.15064</pub-id>
+<pub-id pub-id-type="pmid">37796452</pub-id>
+</mixed-citation></ref><ref id="B111"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>X.</given-names></name>
+<name><surname>Gao</surname><given-names>Y.</given-names></name>
+<name><surname>Qiao</surname><given-names>Y.</given-names></name>
+<name><surname>Yv</surname><given-names>L.</given-names></name>
+<name><surname>Li</surname><given-names>L.</given-names></name>
+<name><surname>Xu</surname><given-names>J. T.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Peripheral nerve injury-induced upregulation of FKBP5 in the spinal dorsal horn <italic toggle="yes">via</italic> activating NF-&#x003ba;B pathway aggravates neuropathic pain in rats</article-title>. <source>Int. Immunopharmacol.</source>
+<volume>162</volume>, <fpage>115124</fpage>. <pub-id pub-id-type="doi">10.1016/j.intimp.2025.115124</pub-id>
+<pub-id pub-id-type="pmid">40544667</pub-id>
+</mixed-citation></ref><ref id="B112"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>Y.</given-names></name>
+<name><surname>Li</surname><given-names>Z.</given-names></name>
+<name><surname>Li</surname><given-names>Z.</given-names></name>
+<name><surname>Song</surname><given-names>Y.</given-names></name>
+<name><surname>Li</surname><given-names>J.</given-names></name>
+<name><surname>Yuan</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Zebrafish fkbp5 attenuates antiviral innate immunity by autophagic degradation of transcription factor irf7</article-title>. <source>J. Immunol.</source>
+<volume>214</volume>, <fpage>1773</fpage>&#x02013;<lpage>1788</lpage>. <pub-id pub-id-type="doi">10.1093/jimmun/vkaf089</pub-id>
+<pub-id pub-id-type="pmid">40391431</pub-id>
+</mixed-citation></ref><ref id="B113"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>White</surname><given-names>J. D.</given-names></name>
+<name><surname>Minto</surname><given-names>M. S.</given-names></name>
+<name><surname>Willis</surname><given-names>C.</given-names></name>
+<name><surname>Quach</surname><given-names>B. C.</given-names></name>
+<name><surname>Han</surname><given-names>S.</given-names></name>
+<name><surname>Tao</surname><given-names>R.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Alcohol use disorder-associated DNA methylation in the nucleus accumbens and dorsolateral prefrontal cortex</article-title>. <source>Biol. Psychiatry Glob. Open Sci.</source>
+<volume>4</volume> (<issue>6</issue>), <fpage>100375</fpage>. <comment>PMID: 39399155; PMCID: PMC11470413</comment>. <pub-id pub-id-type="doi">10.1016/j.bpsgos.2024.100375</pub-id>
+<pub-id pub-id-type="pmid">39399155</pub-id>
+</mixed-citation></ref><ref id="B114"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Willmer</surname><given-names>T.</given-names></name>
+<name><surname>Goedecke</surname><given-names>J. H.</given-names></name>
+<name><surname>Dias</surname><given-names>S.</given-names></name>
+<name><surname>Louw</surname><given-names>J.</given-names></name>
+<name><surname>Pheiffer</surname><given-names>C.</given-names></name>
+</person-group> (<year>2020</year>). <article-title>DNA methylation of FKBP5 in South African women: associations with obesity and insulin resistance</article-title>. <source>Clin. Epigenetics</source>
+<volume>12</volume>, <fpage>141</fpage>. <pub-id pub-id-type="doi">10.1186/s13148-020-00932-3</pub-id>
+<pub-id pub-id-type="pmid">32958048</pub-id>
+</mixed-citation></ref><ref id="B115"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Willmer</surname><given-names>T.</given-names></name>
+<name><surname>Oosthuizen</surname><given-names>A.</given-names></name>
+<name><surname>Dias</surname><given-names>S.</given-names></name>
+<name><surname>Mendham</surname><given-names>A. E.</given-names></name>
+<name><surname>Goedecke</surname><given-names>J. H.</given-names></name>
+<name><surname>Pheiffer</surname><given-names>C.</given-names></name>
+</person-group> (<year>2022</year>). <article-title>A pilot investigation of genetic and epigenetic variation of FKBP5 and response to exercise intervention in African women with obesity</article-title>. <source>Sci. Rep.</source>
+<volume>12</volume>, <fpage>11771</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-022-15678-6</pub-id>
+<pub-id pub-id-type="pmid">35817784</pub-id>
+</mixed-citation></ref><ref id="B116"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Womersley</surname><given-names>J. S.</given-names></name>
+<name><surname>Nothling</surname><given-names>J.</given-names></name>
+<name><surname>Toikumo</surname><given-names>S.</given-names></name>
+<name><surname>Malan-M&#x000fc;ller</surname><given-names>S.</given-names></name>
+<name><surname>van den Heuvel</surname><given-names>L. L.</given-names></name>
+<name><surname>McGregor</surname><given-names>N. W.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Childhood trauma, the stress response and metabolic syndrome: a focus on DNA methylation</article-title>. <source>Eur. J. Neurosci.</source>
+<volume>55</volume>, <fpage>2253</fpage>&#x02013;<lpage>2296</lpage>. <pub-id pub-id-type="doi">10.1111/ejn.15370</pub-id>
+<pub-id pub-id-type="pmid">34169602</pub-id>
+</mixed-citation></ref><ref id="B117"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Xia</surname><given-names>Z.</given-names></name>
+<name><surname>Zhang</surname><given-names>G.</given-names></name>
+<name><surname>Wang</surname><given-names>C.</given-names></name>
+<name><surname>Feng</surname><given-names>Y.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>The role of FKBP51 in the prognosis of ulcerative colitis-associated colorectal cancer</article-title>. <source>Adv. Med. Sci.</source>
+<volume>66</volume>, <fpage>89</fpage>&#x02013;<lpage>97</lpage>. <pub-id pub-id-type="doi">10.1016/j.advms.2021.01.003</pub-id>
+<pub-id pub-id-type="pmid">33461100</pub-id>
+</mixed-citation></ref><ref id="B118"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Yang</surname><given-names>T. C.</given-names></name>
+<name><surname>Tsai</surname><given-names>J. P.</given-names></name>
+<name><surname>Hsu</surname><given-names>H.</given-names></name>
+<name><surname>Chen</surname><given-names>Y. C.</given-names></name>
+<name><surname>Liaw</surname><given-names>Y. C.</given-names></name>
+<name><surname>Hsu</surname><given-names>S. Y.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Delving into the interaction between exercise and diabetes on methylation of the FKBP5 gene</article-title>. <source>J. Diabetes Res.</source>
+<volume>2025</volume>, <fpage>1162708</fpage>. <pub-id pub-id-type="doi">10.1155/jdr/1162708</pub-id>
+<pub-id pub-id-type="pmid">40017583</pub-id>
+</mixed-citation></ref><ref id="B119"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Yusupov</surname><given-names>N.</given-names></name>
+<name><surname>van Doeselaar</surname><given-names>L.</given-names></name>
+<name><surname>R&#x000f6;h</surname><given-names>S.</given-names></name>
+<name><surname>Wiechmann</surname><given-names>T.</given-names></name>
+<name><surname>K&#x000f6;del</surname><given-names>M.</given-names></name>
+<name><surname>Sauer</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>Extensive evaluation of DNA methylation of functional elements in the murine Fkbp5 locus using high-accuracy DNA methylation measurement <italic toggle="yes">via</italic> targeted bisulfite sequencing</article-title>. <source>Eur. J. Neurosci.</source>
+<volume>58</volume>, <fpage>2662</fpage>&#x02013;<lpage>2676</lpage>. <pub-id pub-id-type="doi">10.1111/ejn.16078</pub-id>
+<pub-id pub-id-type="pmid">37414581</pub-id>
+</mixed-citation></ref><ref id="B120"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Yusupov</surname><given-names>N.</given-names></name>
+<name><surname>Roeh</surname><given-names>S.</given-names></name>
+<name><surname>Sotillos Elliott</surname><given-names>L.</given-names></name>
+<name><surname>Chang</surname><given-names>S.</given-names></name>
+<name><surname>Loganathan</surname><given-names>S.</given-names></name>
+<name><surname>Urbina-Trevi&#x000f1;o</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>DNA methylation patterns of FKBP5 regulatory regions in brain and blood of humanized mice and humans</article-title>. <source>Mol. Psychiatry</source>
+<volume>29</volume>, <fpage>1510</fpage>&#x02013;<lpage>1520</lpage>. <pub-id pub-id-type="doi">10.1038/s41380-024-02430-x</pub-id>
+<pub-id pub-id-type="pmid">38317011</pub-id>
+</mixed-citation></ref><ref id="B121"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Zannas</surname><given-names>A. S.</given-names></name>
+<name><surname>Jia</surname><given-names>M.</given-names></name>
+<name><surname>Hafner</surname><given-names>K.</given-names></name>
+<name><surname>Baumert</surname><given-names>J.</given-names></name>
+<name><surname>Wiechmann</surname><given-names>T.</given-names></name>
+<name><surname>Pape</surname><given-names>J. C.</given-names></name>
+<etal/>
+</person-group> (<year>2019</year>). <article-title>Epigenetic upregulation of FKBP5by aging and stress contributes to NF-&#x003ba;B-driven inflammation and cardiovascular risk</article-title>. <source>ProcNatl Acad. Sci. U. S. A.</source>
+<volume>116</volume> (<issue>23</issue>), <fpage>11370</fpage>&#x02013;<lpage>11379</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1816847116</pub-id>
+<pub-id pub-id-type="pmid">31113877</pub-id>
+</mixed-citation></ref><ref id="B122"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Zeng</surname><given-names>J.</given-names></name>
+<name><surname>Chen</surname><given-names>J.</given-names></name>
+<name><surname>Li</surname><given-names>M.</given-names></name>
+<name><surname>Zhong</surname><given-names>C.</given-names></name>
+<name><surname>Liu</surname><given-names>Z.</given-names></name>
+<name><surname>Wang</surname><given-names>Y.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>Integrated high-throughput analysis identifies super enhancers in metastatic castration-resistant prostate cancer</article-title>. <source>Front. Pharmacol.</source>
+<volume>14</volume>, <fpage>1191129</fpage>. <pub-id pub-id-type="doi">10.3389/fphar.2023.1191129</pub-id>
+<pub-id pub-id-type="pmid">37292153</pub-id>
+</mixed-citation></ref><ref id="B123"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Zgajnar</surname><given-names>N.</given-names></name>
+<name><surname>Lagadari</surname><given-names>M.</given-names></name>
+<name><surname>Gallo</surname><given-names>L. I.</given-names></name>
+<name><surname>Piwien-Pilipuk</surname><given-names>G.</given-names></name>
+<name><surname>Galigniana</surname><given-names>M. D.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>Mitochondrial-nuclear communication by FKBP51 shuttling</article-title>. <source>J. Cell. Biochem</source>
+<volume>125</volume>, <fpage>e30386</fpage>. <pub-id pub-id-type="doi">10.1002/jcb.30386</pub-id>
+<pub-id pub-id-type="pmid">36815347</pub-id>
+</mixed-citation></ref><ref id="B124"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Zhen-Duan</surname><given-names>J.</given-names></name>
+<name><surname>Canenguez</surname><given-names>K. M.</given-names></name>
+<name><surname>Wilson</surname><given-names>A. E.</given-names></name>
+<name><surname>Gu</surname><given-names>Y.</given-names></name>
+<name><surname>Valluri</surname><given-names>H. G.</given-names></name>
+<name><surname>Chavez</surname><given-names>A. D.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Religion, spirituality, and DNA methylation in HPA-axis genes among Hispanic/Latino adults</article-title>. <source>Epigenomics</source>
+<volume>17</volume>, <fpage>155</fpage>&#x02013;<lpage>166</lpage>. <pub-id pub-id-type="doi">10.1080/17501911.2024.2442293</pub-id>
+<pub-id pub-id-type="pmid">39707707</pub-id>
+</mixed-citation></ref><ref id="B125"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Zima</surname><given-names>L.</given-names></name>
+<name><surname>West</surname><given-names>R.</given-names></name>
+<name><surname>Smolen</surname><given-names>P.</given-names></name>
+<name><surname>Kobori</surname><given-names>N.</given-names></name>
+<name><surname>Hergenroeder</surname><given-names>G.</given-names></name>
+<name><surname>Choi</surname><given-names>H. A.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Epigenetic modifications and their potential contribution to traumatic brain injury pathobiology and outcome</article-title>. <source>J. Neurotrauma</source>
+<volume>39</volume>, <fpage>1279</fpage>&#x02013;<lpage>1288</lpage>. <pub-id pub-id-type="doi">10.1089/neu.2022.0128</pub-id>
+<pub-id pub-id-type="pmid">35481812</pub-id>
+</mixed-citation></ref></ref-list></back></article>

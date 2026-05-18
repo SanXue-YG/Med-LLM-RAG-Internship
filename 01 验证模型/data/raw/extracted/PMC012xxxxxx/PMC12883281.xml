@@ -1,0 +1,519 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Bone Jt Open</journal-id><journal-id journal-id-type="iso-abbrev">Bone Jt Open</journal-id><journal-id journal-id-type="publisher-id">BJO</journal-id><journal-title-group><journal-title>Bone &#x00026; Joint Open</journal-title></journal-title-group><issn pub-type="epub">2633-1462</issn><publisher><publisher-name>The British Editorial Society of Bone &#x00026; Joint Surgery</publisher-name><publisher-loc>London</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883281</article-id><article-id pub-id-type="doi">10.1302/2633-1462.72.BJO-2025-0288.R1</article-id><article-id pub-id-type="publisher-id">BJO-2025-0288.R1</article-id><article-categories><subj-group subj-group-type="heading"><subject>Hip</subject></subj-group><subj-group subj-group-type="search-keyword"><subject>Hip</subject><subject>Arthroplasty</subject><subject>Reverse Hybrid</subject></subj-group><subj-group subj-group-type="specialities"><compound-subject><compound-subject-part content-type="label">Hip</compound-subject-part><compound-subject-part content-type="code">hip</compound-subject-part></compound-subject></subj-group><subj-group subj-group-type="allpubtopics"><compound-subject><compound-subject-part content-type="code">bj11386</compound-subject-part><compound-subject-part content-type="label">Orthopaedic devices</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj731</compound-subject-part><compound-subject-part content-type="label">Anatomy</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj6858</compound-subject-part><compound-subject-part content-type="label">Hip</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj11416</compound-subject-part><compound-subject-part content-type="label">Orthopaedic treatments</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj1268</compound-subject-part><compound-subject-part content-type="label">Arthroplasty</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj11388</compound-subject-part><compound-subject-part content-type="label">Orthopaedic diseases</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj4445</compound-subject-part><compound-subject-part content-type="label">Diagnostic and analytical techniques in orthopaedics</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj17256</compound-subject-part><compound-subject-part content-type="label">Total hip arthroplasty</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj14243</compound-subject-part><compound-subject-part content-type="label">Robotic arm</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj12931</compound-subject-part><compound-subject-part content-type="label">Postoperative instability</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj13953</compound-subject-part><compound-subject-part content-type="label">Retrospective cohort study</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj5597</compound-subject-part><compound-subject-part content-type="label">Femoral components</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj8920</compound-subject-part><compound-subject-part content-type="label">Limb-length discrepancy</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj132</compound-subject-part><compound-subject-part content-type="label">Acetabular defects</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj9477</compound-subject-part><compound-subject-part content-type="label">Mann Whitney U test</compound-subject-part></compound-subject><compound-subject><compound-subject-part content-type="code">bj5886</compound-subject-part><compound-subject-part content-type="label">Fischer's exact test</compound-subject-part></compound-subject></subj-group></article-categories><title-group><article-title>Comparing the express and enhanced workflows for restoration of hip length and combined offset using the Mako robotic arm-assisted total hip arthroplasty</article-title></title-group><contrib-group><contrib id="author-5059807" contrib-type="author"><name><surname>Cheok</surname><given-names>Tim</given-names></name><degrees>BClinSc, MD, MS (Tr, Orth), GDipBiostat, GStat</degrees><role>Clinical Associate Lecturer, PhD Candidate, Principal House Officer</role><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="author-8931662" contrib-type="author"><name><surname>Pajnic</surname><given-names>Veronica</given-names></name><degrees>BEng, MD</degrees><role>Principal House Officer</role><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="author-8931671" contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-2931-6629</contrib-id><name><surname>Vermeir</surname><given-names>Julie F.</given-names></name><degrees>BInfo&#x00026;Comm, GradDipPsych, BBehavSC (Hons), PhD</degrees><role>Post-Doctoral Researcher, Clinical Research Coordinator, Clinical Research Coordinator</role><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref><xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref></contrib><contrib id="author-8931676" contrib-type="author"><name><surname>Toh</surname><given-names>Yvana</given-names></name><degrees>MBBS</degrees><role>Resident</role><xref rid="aff6" ref-type="aff">
+<sup>6</sup>
+</xref></contrib><contrib id="author-8931682" contrib-type="author"><name><surname>Donnelly</surname><given-names>William J.</given-names></name><degrees>MBBS, BMedSci, FRACS (Orth)</degrees><role>Orthopaedic Surgeon, Orthopaedic Surgeon</role><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="author-8931689" contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-3026-116X</contrib-id><name><surname>Silva</surname><given-names>Anthony M.</given-names></name><degrees>MBBS, BSc (Hons), MSc, FRACS (Orth)</degrees><role>Director of Orthopaedic Surgery, Senior Lecturer, Orthopaedic Surgeon</role><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="aff7" ref-type="aff">
+<sup>7</sup>
+</xref><xref rid="c1" ref-type="corresp"/><email>Anthony.Silva@health.qld.gov.au</email></contrib><aff id="aff1">
+<label>1</label>
+<institution content-type="org-division">Department of Orthopaedic Surgery</institution>, <institution content-type="org-division">The Prince Charles Hospital</institution>, <addr-line>Brisbane</addr-line>, <country>Australia</country></aff><aff id="aff2">
+<label>2</label>
+<institution content-type="org-division">College of Medicine and Public Health, Flinders University</institution>, <addr-line>Bedford</addr-line>, <country>Australia</country></aff><aff id="aff3">
+<label>3</label>
+<institution content-type="org-division">Graduate School of Medical Sciences, University of Groningen</institution>, <addr-line>Groningen</addr-line>, <country>Netherlands</country></aff><aff id="aff4">
+<label>4</label>
+<institution content-type="org-division">Department of Orthopaedic Surgery</institution>, <institution content-type="org-division">St Vincent&#x02019;s Private Hospital Northside</institution>, <addr-line>Brisbane</addr-line>, <country>Australia</country></aff><aff id="aff5">
+<label>5</label>
+<institution content-type="org-division">University of Queensland Centre for Clinical Research, Faculty of Medicine, The University of Queensland</institution>, <addr-line>Brisbane</addr-line>, <country>Australia</country></aff><aff id="aff6">
+<label>6</label>
+<institution content-type="org-division">STARS Education and Research Alliance, Surgical Treatment and Rehabilitation Service (STARS), The University of Queensland and Metro North Health</institution>, <addr-line>Brisbane</addr-line>, <country>Australia</country></aff><aff id="aff7">
+<label>7</label>
+<institution content-type="org-division">Faculty of Medicine</institution>, <institution content-type="org-division">The University of Queensland</institution>, <addr-line>Herston</addr-line>, <country>Australia</country></aff></contrib-group><author-notes><corresp id="c1">Correspondence should be sent to Anthony M. Silva. E-mail: <email xlink:href="mailto:Anthony.Silva@health.qld.gov.au">Anthony.Silva@health.qld.gov.au</email></corresp><fn fn-type="COI-statement"><p>W. J. Donnelly reports consulting fees and patents, and support for attending a Mako development meeting from Stryker, as well as being on their advisory board. A. M. Silva discloses consulting fees and being on the Hip advisory board for Stryker, and support for attending meetings and/or travel from Stryker, Johnson &#x00026; Johnson, and Zimmer Biomet. J. F. Vermeir declares holding a position funded by Stryker through an independent third-party arrangement.</p></fn></author-notes><pub-date pub-type="epub"><day>9</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="collection"><month>2</month><year>2026</year></pub-date><volume>7</volume><issue>2</issue><fpage>185</fpage><lpage>194</lpage><permissions><copyright-statement>&#x000a9; 2026 Cheok et al.</copyright-statement><copyright-year>2026</copyright-year><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="text-data-mining">https://online.boneandjoint.org.uk/TDM</ali:license_ref><license-p>This article is distributed under the terms of the Creative Commons Attributions (CC BY 4.0) licence (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium or format, provided the original author and source are credited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="2633-1462.72.BJO-2025-0288.R1.pdf"/><abstract><sec><title>Aims</title><p>The Mako system is one of the most widely used systems for robotic arm-assisted total hip arthroplasty (THA). Two workflows for femoral preparation exists for this system &#x02013; the enhanced and the express workflow.</p></sec><sec><title>Methods</title><p>We performed a retrospective cohort study comparing the accuracy of each workflow in restoring the patient&#x02019;s combined offset and correcting the hip length discrepancy. The Mako derived values were compared against measured values and assessed with Bland-Altman plots and Theil&#x02019;s median slope. Secondary outcomes of interest included comparison of the measured combined offset and hip length discrepancy, surgical time, incidence of postoperative instability/dislocation, as well as pin-site related complications between the two groups.</p></sec><sec><title>Results</title><p>A total of 81 patients were identified from our database: 61 in the enhanced group and 20 in the express workflow group. Bland-Altman plots demonstrated agreement between the measurements for both hip length discrepancy and combined offset. There was no significant difference in the measurement of hip length discrepancy or combined offset difference between the two groups; however, the magnitude of the latter was better in the enhanced (median 1.50 mm) compared with the express workflow group (median 3.13 mm). There was no significant difference in measured combined offset (p = 0.254), hip length discrepancy (p = 0.425), or surgical time (p = 0.548). Lastly, there were no patients with postoperative instability/dislocation nor pin-site related complications in either group.</p></sec><sec><title>Conclusion</title><p>Both techniques provide excellent outcomes with minimal risk of complications when performing a Mako robotic arm-assisted THA.</p><p>Cite this article: <italic toggle="yes">Bone Jt Open</italic>&#x000a0;2026;7(2):185&#x02013;194.</p></sec></abstract><kwd-group><kwd>Robotic</kwd><kwd>Mako</kwd><kwd>Hip</kwd><kwd>Enhanced</kwd><kwd>Express</kwd><kwd>total hip arthroplasty (THA)</kwd><kwd>Robotic arm</kwd><kwd>postoperative instability</kwd><kwd>retrospective cohort study</kwd><kwd>femoral components</kwd><kwd>limb length discrepancies</kwd><kwd>acetabular defects</kwd><kwd>Mann-Whitney U test</kwd><kwd>Fisher&#x02019;s exact test</kwd></kwd-group><custom-meta-group><custom-meta><meta-name>odf2nlm-version</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>price</meta-name><meta-value>$2.00</meta-value></custom-meta><custom-meta><meta-name>principal-institution</meta-name><meta-value>The Prince Charles Hospital, Brisbane, Australia</meta-value></custom-meta><custom-meta><meta-name>article-type</meta-name><meta-value>Hip</meta-value></custom-meta><custom-meta><meta-name>coi-statement</meta-name><meta-value>W. J. Donnelly reports consulting fees and patents, and support for attending a Mako development meeting from Stryker, as well as being on their advisory board. A. M. Silva discloses consulting fees and being on the Hip advisory board for Stryker, and support for attending meetings and/or travel from Stryker, Johnson &#x00026; Johnson, and Zimmer Biomet. J. F. Vermeir declares holding a position funded by Stryker through an independent third-party arrangement.</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro" id="s1"><title>Introduction</title><p>In patients with moderate to severe osteoarthritis of the hip, total hip arthroplasty (THA) has been proven to be an effective treatment strategy, not only for providing pain relief but also for restoring function.<sup><xref rid="b1" ref-type="bibr">1</xref></sup> The demand for THA is projected to increase globally,<sup><xref rid="b2" ref-type="bibr">2</xref></sup> with a recent forecast predicting a 37% increase in the UK by 2060.<sup><xref rid="b3" ref-type="bibr">3</xref></sup> Technical objectives in a THA include minimizing limb length discrepancies and restoration of the combined offset.<sup><xref rid="b4" ref-type="bibr">4</xref></sup> Robotic arm-assisted THA has been thought to be a useful adjunct for surgeons to achieve these technical objectives.</p><p>The Mako robotic arm-assisted THA (Stryker, USA) was first introduced in 2011 and is one of the most widely used systems globally.<sup><xref rid="b5" ref-type="bibr">5</xref></sup> It is a semi-active system with haptic feedback, which allows for accurate bony resection while preserving the soft-tissue envelope.<sup><xref rid="b6" ref-type="bibr">6</xref></sup> Several previous studies have found that the Mako system improved acetabular component placement within the Lewinnek and Callanan safe zones.<sup><xref rid="b7" ref-type="bibr">7</xref>-<xref rid="b9" ref-type="bibr">9</xref></sup> In terms of femoral preparation, the Mako robotic system provides two different workflows, which can be used based on surgeon preference. The enhanced workflow requires complete mapping of the proximal femur and acetabulum in comparison to the 3D plan. In the enhanced workflow, femoral resection and broaching are performed and verified with Mako assistance, allowing for adjustment of cup and femoral component placement to achieve an appropriate combined anteversion. This has previously been shown to further minimize the risk of impingement.<sup><xref rid="b10" ref-type="bibr">10</xref></sup> Sugano et al<sup><xref rid="b11" ref-type="bibr">11</xref></sup> have demonstrated a high degree of precision of femoral component anteversion when inserted under Mako assistance. Interestingly, in their series, the clinical accuracy of the cemented Exeter femoral components was better than the uncemented Accolade II femoral components. In contrast, the express workflow uses the robotic arm for acetabular preparation only, but allows the surgeon to assess for hip length discrepancies and the combined offset intraoperatively.<sup><xref rid="b12" ref-type="bibr">12</xref></sup></p><p>A previous study by Kayani et al<sup><xref rid="b13" ref-type="bibr">13</xref></sup> found that the Mako robotic arm-assisted THA preserved the patient&#x02019;s native offset using the express workflow, as compared to conventional THA; however, there was no difference between the two groups in achieving planned limb length corrections. Further, a cadaveric study by Nawabi et al<sup><xref rid="b14" ref-type="bibr">14</xref></sup> demonstrated that the Mako enhanced workflow improved the limb length correction and femoral offset when compared to conventional THA. As far as we are aware, there are no previous published studies comparing the outcomes following femoral preparation of the enhanced with express workflow, which is crucial to further advance our knowledge in this emerging field.<sup><xref rid="b15" ref-type="bibr">15</xref></sup> Thus, the primary objective of this study was to assess the accuracy of each workflow in estimating hip length discrepancy and combined offset, following their application for femoral canal preparation when performing a Mako robotic arm-assisted THA. Secondary outcomes of interest included comparison of the measured combined offset and hip length discrepancy, surgical time, and incidence of postoperative instability/dislocation, as well as pin-site related complications between the two groups.</p></sec><sec sec-type="methods" id="s2"><title>Methods</title><p>This is a retrospective cohort study reported in accordance with the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) guidelines.<sup><xref rid="b16" ref-type="bibr">16</xref></sup> Human research ethics committee approval was sought and obtained prior to the commencement of this study (approval no. HREC/2024/MNHB/112604). Consecutive patients who underwent an elective unilateral Mako robotic arm-assisted THA via the posterior approach at our institution between January 2019 and July 2024 were included in the study. All included patients received a combination of Accolade II and Trident implants (Stryker), under the supervision of a fellowship-trained consultant orthopaedic surgeon (AMS, WJD), who routinely recorded their final measurments on the Mako system. We excluded those who received cemented implants,<sup><xref rid="b1" ref-type="bibr">1</xref></sup> as the combined offset and hip length correction may be altered during the cementing process;<sup><xref rid="b2" ref-type="bibr">2</xref></sup> those where the final combined offset and hip length discrepancy were not recorded in the Mako system or where poor-quality postoperative imaging precluded accurate estimation of these measures;<sup><xref rid="b3" ref-type="bibr">3</xref></sup> those with contralateral or bilateral simultaneous THA;<sup><xref rid="b4" ref-type="bibr">4</xref></sup> those with previous contralateral hip surgery or significant acetabular deformity (Paprosky type 2A and above); and those performed using the anterior approach.<sup><xref rid="b5" ref-type="bibr">5</xref></sup> Preoperative CT scan was obtained, and templating was performed using the Mako software to ensure optimal cup and stem placement (<xref rid="F1" ref-type="fig">Figure 1</xref>). The decision to proceed with either enhanced or express workflow was left to the discretion of the operating surgeon. In this study, all surgeons were proficient in, and routinely used both workflows, depending on the surgical goals. They have all surpassed the learning curve for robotic arm-assisted THA. Postoperatively, all patients were allowed to fully weightbear with no hip precautions. Only a single perioperative dose of intravenous antibiotics was administered prior to skin incision. Routine postoperative roentgenograms were obtained for all patients, who were followed up for a minimum of 12 months. The Mako software used in this study was version 3.5.</p><fig position="float" fig-type="figure" id="F1"><label>Fig. 1</label><caption><p>Example of prosthesis templating, with expected correction in hip length and combined offset displayed using the Mako system.</p></caption><graphic xlink:href="BJO-2025-0288.R1-galleyfig1" position="float"><alt-text>Example of prosthesis templating, with expected correction in hip length and combined offset displayed using the Mako system.</alt-text><long-desc>The image is an anteroposterior pelvic X&#x02011;ray showing both hips. Several straight coloured measurement lines and markers overlay the image, indicating reference points across the pelvis and both femurs. A vertical measurement lines and markers overlay the image, indicating reference points across the pelvis and both femurs. A vertical colured line runs down the centre of the pelvis, and horizontal lines extend across the hip joints for comparison. In the lower right corner, a boxed panel labelled &#x0201c;Planned&#x0201d; displays numeric values for hip length difference and combined offset measurements relative to the opposite hip and the preoperative hip.</long-desc></graphic></fig><sec id="s2-1"><title>Patient characteristics</title><p>A total of 81 patients were identified using our inclusion and exclusion criteria. Of these patients, 61 received femoral sided preparation using the enhanced workflow, while 20 received femoral sided preparation using the express workflow. There was no significant difference between the two groups in terms of baseline demographic characteristics, underlying pathology, degree of osteoarthritis, or severity of acetabular defects (<xref rid="T1" ref-type="table">Table I</xref>).</p><table-wrap position="float" id="T1"><label>Table I.</label><caption><p>Baseline demographic information and surgical factors.</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" valign="bottom" rowspan="1" colspan="1">Variable</th><th align="left" valign="bottom" rowspan="1" colspan="1">Enhanced workflow (n = 61)</th><th align="left" valign="bottom" rowspan="1" colspan="1">Express workflow (n = 20)</th><th align="left" valign="bottom" rowspan="1" colspan="1">p-value<xref rid="T1_FN1" ref-type="table-fn">*</xref></th></tr></thead><tbody><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Mean age at surgery, yrs (range)</td><td align="left" valign="bottom" rowspan="1" colspan="1">56 (47 to 63)</td><td align="left" valign="bottom" rowspan="1" colspan="1">54 (46 to 59)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.428</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">
+<bold>Sex, n (%)</bold>
+</td><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1">0.448</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Male</td><td align="left" valign="bottom" rowspan="1" colspan="1">30 (49.18)</td><td align="left" valign="bottom" rowspan="1" colspan="1">12 (60.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Female</td><td align="left" valign="bottom" rowspan="1" colspan="1">31 (50.82)</td><td align="left" valign="bottom" rowspan="1" colspan="1">8 (40.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Mean BMI, kg/m<sup>2</sup> (range)</td><td align="left" valign="bottom" rowspan="1" colspan="1">29.33 (25.97 to 33.16)</td><td align="left" valign="bottom" rowspan="1" colspan="1">29.75 (26.88 to 37.31)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.256</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">
+<bold>ASA grade, n (%)</bold>
+</td><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1">0.669</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">1</td><td align="left" valign="bottom" rowspan="1" colspan="1">8 (13.11)</td><td align="left" valign="bottom" rowspan="1" colspan="1">2 (10.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">2</td><td align="left" valign="bottom" rowspan="1" colspan="1">39 (63.93)</td><td align="left" valign="bottom" rowspan="1" colspan="1">11 (55.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">3</td><td align="left" valign="bottom" rowspan="1" colspan="1">13 (21.31)</td><td align="left" valign="bottom" rowspan="1" colspan="1">7 (35.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">4</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (1.64)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">
+<bold>Comorbidities, n (%)</bold>
+</td><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Hypertension</td><td align="left" valign="bottom" rowspan="1" colspan="1">22 (36.07)</td><td align="left" valign="bottom" rowspan="1" colspan="1">4 (20.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.270</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Cardiac arrhythmia/ischaemic heart disease</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (1.64)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1.000</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Cardiac failure</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (1.64)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1.000</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Severe respiratory disease</td><td align="left" valign="bottom" rowspan="1" colspan="1">3 (4.92)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.571</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Chronic liver disease</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (1.64)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (5.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.435</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Chronic kidney disease</td><td align="left" valign="bottom" rowspan="1" colspan="1">3 (4.92)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.571</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Cerebrovascular disease</td><td align="left" valign="bottom" rowspan="1" colspan="1">3 (4.92)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.571</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Diabetes</td><td align="left" valign="bottom" rowspan="1" colspan="1">5 (8.20)</td><td align="left" valign="bottom" rowspan="1" colspan="1">4 (20.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.475</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Seizure disorder</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1.000</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Smoker</td><td align="left" valign="bottom" rowspan="1" colspan="1">14 (22.95)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (5.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.109</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">
+<bold>Underlying diagnosis, n (%)</bold>
+</td><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1">0.646</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Osteoarthritis</td><td align="left" valign="bottom" rowspan="1" colspan="1">57 (93.44)</td><td align="left" valign="bottom" rowspan="1" colspan="1">18 (90.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Developmental hip dysplasia</td><td align="left" valign="bottom" rowspan="1" colspan="1">2 (3.28)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (5.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Perthes&#x02019; disease</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (1.64)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Slipped capital femoral epiphysis</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (5.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Post-traumatic arthritis</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (1.64)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">
+<bold>Paprosky&#x02019;s classification, n (%)</bold>
+<xref rid="T1_FN2" ref-type="table-fn">&#x02020;</xref>
+</td><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1">0.136</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">1</td><td align="left" valign="bottom" rowspan="1" colspan="1">10 (16.39)</td><td align="left" valign="bottom" rowspan="1" colspan="1">4 (20.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">2A</td><td align="left" valign="bottom" rowspan="1" colspan="1">5 (8.20)</td><td align="left" valign="bottom" rowspan="1" colspan="1">5 (25.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">2B</td><td align="left" valign="bottom" rowspan="1" colspan="1">35 (57.38)</td><td align="left" valign="bottom" rowspan="1" colspan="1">7 (35.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">2C</td><td align="left" valign="bottom" rowspan="1" colspan="1">5 (8.20)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (5.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">3A</td><td align="left" valign="bottom" rowspan="1" colspan="1">6 (9.84)</td><td align="left" valign="bottom" rowspan="1" colspan="1">2 (10.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">3B</td><td align="left" valign="bottom" rowspan="1" colspan="1">0 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1 (5.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">
+<bold>T&#x000f6;nnis classification, n (%)</bold>
+<xref rid="T1_FN3" ref-type="table-fn">&#x02021;</xref>
+</td><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1"/><td align="left" valign="bottom" rowspan="1" colspan="1">0.125</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">1</td><td align="left" valign="bottom" rowspan="1" colspan="1">9 (14.75)</td><td align="left" valign="bottom" rowspan="1" colspan="1">4 (20.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">2</td><td align="left" valign="bottom" rowspan="1" colspan="1">20 (32.79)</td><td align="left" valign="bottom" rowspan="1" colspan="1">2 (10.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">3</td><td align="left" valign="bottom" rowspan="1" colspan="1">32 (52.46)</td><td align="left" valign="bottom" rowspan="1" colspan="1">14 (70.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1"/></tr></tbody></table><table-wrap-foot><fn id="T1_FN1"><label>*</label><p>Continuous variables were displayed as median (IQR) and compared using the Mann-Whitney U test, whereas discrete variables were displayed as count (percentage) and compared using Fisher&#x02019;s exact test.</p></fn><fn id="T1_FN2"><label>&#x02020;</label><p>Classification of acetabular defects.</p></fn><fn id="T1_FN3"><label>&#x02021;</label><p>Classification of hip osteoarthritis.</p></fn><fn id="T1_FN4"><p>ASA, American Society of Anesthesiologists.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s2-2"><title>Enhanced workflow</title><p>The enhanced workflow involves acetabular and femoral registration. After adequate positioning and skin preparation, three bone pins were inserted over the lateral aspect of the iliac crest via stab incisions for attachment of the pelvic array. Following this, two bone pins were inserted in the distal femur for attachment of the femoral array. The approach was then made, and checkpoints were placed on the lateral aspect of the greater trochanter (femoral checkpoint) and upper edge of the acetabulum (pelvic checkpoint). Safe surgical dislocation of the hip was performed, and the femur was registered onto the robotic system. Femoral neck osteotomy and sequential femoral broaching was then performed under robotic guidance. The planned femoral component anteversion, hip length correction, and combined offset can be checked throughout this process. After that, we proceeded to register the acetabulum. The acetabular preparation, trial, and definitive component insertion is performed by the robotic arm to facilitate optimal acetabular component positioning. Finally, the femoral component is inserted, and the hip length correction and combined offset is checked and recorded.</p></sec><sec id="s2-3"><title>Express workflow</title><p>The express workflow involves only acetabular registration. An electrocardiogram tab was placed on the centre of the patella and secured with Tegaderm dressing prior to skin preparation. A stockinette was then used in the draping process, secured with sterile crepe, while ensuring that the tab remained palpable. Pelvic pins, as well as pelvic and femoral checkpoints, were placed using the technique described in the enhanced workflow. Safe surgical dislocation and femoral neck osteotomy were then performed. The remaining steps of acetabular registration, preparation, trial, and definitive component insertion were performed similarly to that of the enhanced workflow. Following this, the femur was broached, trialled, and definitive components were inserted freehand by the surgeon. The surgeon was able to measure the change in leg length and combined offset at any time during the procedure with either the trial or definitive components in situ by reducing the hip and registering with the pointer the palpable tab on the patellar tendon (for limb position) and divot on the femoral checkpoint from which the software calculates leg length and combined offset values.</p></sec><sec id="s2-4"><title>Statistical analysis</title><p>Basic demographic data, underlying diagnosis, degree of hip degeneration classified using the T&#x000f6;nnis classification,<sup><xref rid="b17" ref-type="bibr">17</xref></sup> and degree of acetabular defect using the Paprosky classification<sup><xref rid="b18" ref-type="bibr">18</xref></sup> were collected. None of our included patients had femoral-sided defects. The primary outcome of interest was to assess the accuracy of each workflow in estimating hip length discrepancy and combined offset. We compared the registered final combined offset and hip length discrepancy with preoperative and immediate postoperative radiographs, using the following indices: hip length discrepancy as compared to the contralateral side and combined offset as compared with the contralateral side. For the measurement of hip length discrepancy and combined offset, postoperative roentgenograms were first calibrated using the femoral head as a guide. Subsequent measurements were then made based on the technique described by Laggner et al.<sup><xref rid="b19" ref-type="bibr">19</xref></sup> Secondary outcomes of interest included comparison of the measured combined offset and hip length discrepancy, surgical time, incidence of postoperative instability/dislocation, as well as pin-site related complications between the two groups. All measurements were performed by a speciality registrar (VP) and verified by a fellowship-trained consultant orthopaedic surgeon (AS).</p><p>The agreement between the registered final combined offset and hip length discrepancy on the Mako robotic system (<xref rid="F2" ref-type="fig">Figure 2</xref>) as compared with preoperative and postoperative radiographs were illustrated using Bland-Altman&#x02019;s plot and assessed visually. Theil&#x02019;s median slope, a generalization of the Hodges-Lehmann median difference to the case of a non-binary variable, is used to quantify the magnitude of this difference. The robust 95% CIs of the median difference was then computed using the technique described by Newson.<sup><xref rid="b20" ref-type="bibr">20</xref>-<xref rid="b22" ref-type="bibr">22</xref></sup> Continuous variables were displayed as median (IQR) and compared using the Mann-Whitney U test, whereas discrete variables were displayed as count (percentage) and compared using Fisher&#x02019;s exact test. All analyses were performed using Stata v. 18.0 (StataCorp, USA). The threshold for statistical significance was set at p &#x0003c; 0.05.</p><fig position="float" fig-type="figure" id="F2"><label>Fig. 2</label><caption><p>Example of Mako derived values for hip length discrepancy and combined offset following reduction of prosthesis.</p></caption><graphic xlink:href="BJO-2025-0288.R1-galleyfig2" position="float"><alt-text>Example of Mako derived values for hip length discrepancy and combined offset following reduction of prosthesis.</alt-text><long-desc>The image shows a 3D-style rendering of a pelvis with both femurs, viewed from the front. Several coloured measurement lines overlay the pelvis and hips horizontally and vertically. On the right side of the image, panels display numeric values for &#x0201c;actual&#x0201d; and &#x0201c;planned&#x0201d; angles, including cup inclination and cup version, as well as combined version and broach version. A lower panel also lists hip length and combined offset differences compared with the opposite hip and with the preoperative hip.</long-desc></graphic></fig></sec></sec><sec sec-type="results" id="s3"><title>Results</title><sec id="s3-1"><title>Primary outcomes</title><p>The Bland-Altman plots showed reasonable agreement between the Mako derived hip length discrepancy values and those measured on postoperative imaging for both the enhanced (<xref rid="F3" ref-type="fig">Figure 3</xref>) and express (<xref rid="F4" ref-type="fig">Figure 4</xref>) workflow. The Mako derived hip length discrepancy values were not significantly different from that measured on postoperative imaging for both the enhanced (median 0.30 mm; 95% CI -3.18 to 1.37) and express workflow (median 0.73 mm; 95% CI -2.18 to 3.60).</p><fig position="float" fig-type="figure" id="F3"><label>Fig. 3</label><caption><p>Bland-Altman plot showing agreement between Mako derived hip length discrepancy (HLD) and HLD measured in postoperative imaging for the enhanced workflow group.</p></caption><graphic xlink:href="BJO-2025-0288.R1-galleyfig3" position="float"><alt-text>Bland-Altman plot showing agreement between Mako derived hip length discrepancy (HLD) and HLD measured in postoperative imaging for the enhanced workflow group.</alt-text><long-desc>The image is a Bland-Altman plot comparing Mako derived hip length discrepancy (HLD) values with measured HLD values in postoperative imaging for the enhanced workflow group. Each data point appears as a small open circle plotted against the mean of the two measurements on the horizontal axis and their difference on the vertical axis. A solid horizontal line at zero marks no difference. A dashed line slightly above zero represents the mean bias. Two faint solid horizontal lines near the top and bottom of the graph indicate the 95% limits of agreement. The data points are scattered above and below the mean line, with some clustering near the center and several points farther from the limits. Axis labels describe the mean on the x&#x02011;axis and the difference on the y&#x02011;axis, and a legend on the right identifies the mean bias and the limits of agreement.</long-desc></graphic></fig><fig position="float" fig-type="figure" id="F4"><label>Fig. 4</label><caption><p>Bland-Altman plot showing agreement between Mako derived hip length discrepancy (HLD) and HLD measured in postoperative imaging for the express workflow group.</p></caption><graphic xlink:href="BJO-2025-0288.R1-galleyfig4" position="float"><alt-text>Bland-Altman plot showing agreement between Mako derived hip length discrepancy (HLD) and HLD measured in postoperative imaging in the express workflow group.</alt-text><long-desc>The image is a Bland-Altman plot comparing Mako derived hip length discrepancy (HLD) values with measured HLD values in the express workflow group. Each data point is shown as a small open circle, plotted according to the mean of the two measurements on the horizontal axis and their difference on the vertical axis. A solid horizontal line at zero indicates no difference. A dashed horizontal line just below zero represents the mean bias. Two faint solid horizontal lines near the upper and lower portions of the graph mark the 95% limits of agreement. Data points are scattered above and below the mean line, with a few outliers positioned farther away. The x&#x02011;axis is labelled with the mean of the two HLD measurements, and the y&#x02011;axis is labeled with their difference. A legend on the right identifies the mean bias and the limits of agreement.</long-desc></graphic></fig><p>Similarly, for the measurement of combined offset compared to that on the contralateral side, the Bland-Altman plots also showed reasonable agreement between Mako derived values and those measured on radiographs for both the enhanced (<xref rid="F5" ref-type="fig">Figure 5</xref>) and express (<xref rid="F6" ref-type="fig">Figure 6</xref>) workflows. The Mako derived combined offset difference with the contralateral side were not significantly different to that measured on postoperative imaging for both the enhanced (median 1.50 mm; 95% CI -0.25 to 3.00) and the express workflows (median 3.13 mm; 95% CI -0.75 to 5.33). These findings are summarized in <xref rid="T2" ref-type="table">Table II</xref>.</p><fig position="float" fig-type="figure" id="F5"><label>Fig. 5</label><caption><p>Bland-Altman plot showing agreement between Mako derived combined offset (CO) and CO measured in postoperative imaging, as compared to the contralateral side, for the enhanced workflow group.</p></caption><graphic xlink:href="BJO-2025-0288.R1-galleyfig5" position="float"><alt-text>Bland-Altman plot showing agreement between Mako derived combined offset (CO) and CO measured in postoperative imaging, as compared to the contralateral side, for the enhanced workflow group.</alt-text><long-desc>The image is a Bland-Altman plot comparing Mako derived combined offset (CO) values with measured CO values for the enhanced workflow group. Small open circles represent individual data points, plotted according to the mean of the two CO measurements on the horizontal axis and their difference on the vertical axis. A solid horizontal line at zero marks no difference between methods. A dashed line slightly below zero indicates the mean bias. Two faint solid horizontal lines near the upper and lower portions of the graph show the 95% limits of agreement. The data points are spread above and below the mean line, with several points positioned farther from the limits. The x&#x02011;axis is labeled with the mean of Mako&#x02011;derived and measured CO, and the y&#x02011;axis is labelled with the difference between the two. A legend on the right identifies the mean bias and the limits of agreement.</long-desc></graphic></fig><fig position="float" fig-type="figure" id="F6"><label>Fig. 6</label><caption><p>Bland-Altman plot showing agreement between Mako derived combined offset (CO) and CO measured in postoperative imaging, as compared to the contralateral side, for the express workflow group.</p></caption><graphic xlink:href="BJO-2025-0288.R1-galleyfig6" position="float"><alt-text>Bland-Altman plot showing agreement between Mako derived combined offset (CO) and CO measured in postoperative imaging, as compared to the contralateral side, for the express workflow group.</alt-text><long-desc>The image is a Bland-Altman plot comparing Mako derived combined offset (CO) values with measured CO values for the express workflow group. Individual data points, shown as small open circles, are plotted according to the mean of the two measurements on the horizontal axis and the difference between them on the vertical axis. A solid horizontal line at zero represents no difference. A dashed horizontal line slightly below zero shows the mean bias. Two faint solid horizontal lines near the top and bottom of the plot indicate the 95% limits of agreement. The data points are scattered above and below the zero line, with some clustering near the center and a few points farther from the limits. The axes are labelled with the mean CO on the x&#x02011;axis and the measurement difference on the y&#x02011;axis, and a legend on the right identifies the mean bias and limits of agreement.</long-desc></graphic></fig><table-wrap position="float" id="T2"><label>Table II.</label><caption><p>Result summary of primary outcomes.</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" valign="bottom" rowspan="1" colspan="1"/><th align="left" colspan="2" valign="bottom" rowspan="1">Enhanced workflow</th><th align="left" colspan="2" valign="bottom" rowspan="1">Express workflow</th></tr><tr><th align="left" valign="bottom" rowspan="1" colspan="1">Outcome</th><th align="left" valign="bottom" rowspan="1" colspan="1">Median</th><th align="left" valign="bottom" rowspan="1" colspan="1">95% CI</th><th align="left" valign="bottom" rowspan="1" colspan="1">Median</th><th align="left" valign="bottom" rowspan="1" colspan="1">95% CI</th></tr></thead><tbody><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Difference between Mako derived and actual hip length discrepancy, mm</td><td align="left" valign="bottom" rowspan="1" colspan="1">-0.30</td><td align="left" valign="bottom" rowspan="1" colspan="1">-3.18 to 1.37</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.73</td><td align="left" valign="bottom" rowspan="1" colspan="1">-2.18 to 3.60</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Difference between Mako derived and actual combined offset as compared to contralateral values, mm</td><td align="left" valign="bottom" rowspan="1" colspan="1">1.50</td><td align="left" valign="bottom" rowspan="1" colspan="1">-0.25 to 3.00</td><td align="left" valign="bottom" rowspan="1" colspan="1">3.13</td><td align="left" valign="bottom" rowspan="1" colspan="1">-0.75 to 5.33</td></tr></tbody></table></table-wrap></sec><sec id="s3-2"><title>Secondary outcomes</title><p>There were no significant differences in the measured hip length discrepancy (p = 0.254), combined offset difference when compared to the contralateral values (p = 0.425), or in surgical time (p = 0.548) between the two workflows. Additionally, there were no dislocations/instability or pin-site related complications between the two cohorts. There was one complication of note. This patient, in the express group, sustained an intraoperative acetabular fracture during cup impaction necessitating reduction in weightbearing status postoperatively. Our secondary outcomes are summarized in <xref rid="T3" ref-type="table">Table III</xref>.</p><table-wrap position="float" id="T3"><label>Table III.</label><caption><p>Result summary of secondary outcomes.</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" valign="bottom" rowspan="1" colspan="1">Outcome</th><th align="left" valign="bottom" rowspan="1" colspan="1">Enhanced workflow</th><th align="left" valign="bottom" rowspan="1" colspan="1">Express workflow</th><th align="left" valign="bottom" rowspan="1" colspan="1">p-value<xref rid="T3_FN1" ref-type="table-fn">*</xref></th></tr></thead><tbody><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Median measured hip length discrepancy, mm (IQR)</td><td align="left" valign="bottom" rowspan="1" colspan="1">-0.62 (-3.22 to 3.98)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1.11 (-2.02 to 5.21)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.254</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Median measured difference in combined offset as compared with contralateral value, mm (IQR)</td><td align="left" valign="bottom" rowspan="1" colspan="1">3.53 (-0.39 to 6.67)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1.93 (0.58 to 5.18)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.425</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Median surgical time, mins (IQR)</td><td align="left" valign="bottom" rowspan="1" colspan="1">99 (92.00 to 116.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1">101.50 (94.00 to 118.00)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0.548</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Instability/dislocation in the follow-up period, n (%)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0/74 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0/26 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1.000</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Pin-site related complications in the follow-up period, n (%)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0/74 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">0/26 (0)</td><td align="left" valign="bottom" rowspan="1" colspan="1">1.000</td></tr></tbody></table><table-wrap-foot><fn id="T3_FN1"><label>*</label><p>Continuous variables were displayed as median (IQR) and compared using the Mann-Whitney U test, whereas discrete variables were displayed as count (percentage) and compared using Fisher&#x02019;s exact test.</p></fn></table-wrap-foot></table-wrap></sec></sec><sec sec-type="discussion" id="s4"><title>Discussion</title><p>Restoration of native combined offset and avoiding limb length discrepancies are crucial technical objectives of the THA. The results of our analysis demonstrated that the Mako robotic arm-assisted THA had reasonable agreement with measured values of hip length discrepancy and combined offset. A substantial proportion of our included patients had a degree of acetabular defects, with the most common being Paprosky type 2B. Both workflows accurately estimated hip length discrepancies and combined offset when compared to contralateral values in patients with single-sided THA. Crucially, none of our included patients had a pin-site related complication or prosthetic hip dislocation/instability.</p><p>The standard position for insertion for the femoral tracker is via a pin into the greater trochanteric region of the proximal femur.<sup><xref rid="b12" ref-type="bibr">12</xref></sup> Due to the location of this tracker, a number of complications had been experienced by our surgeons, including limited tracker visibility, the requirement for a larger skin incision, and loosening of the tracker fixation due to poor cancellous bone quality. As such, an alternative technique of pin placement has been adopted at our institution over the past few years as it is thought to be less invasive and to have fewer complications. For the execution of this technique, the femoral pins are inserted more distally on the femur, that is, in the lateral epicondylar region of the knee. We advocate for this to be strongly considered by robotic surgeons using the Mako system, particularly in the case of severe osteoporosis. Additionally, with the expansion of the Mako robotic system capabilities to include revision arthroplasty, this may also represent an exciting avenue for further development. In our series, the described technique demonstrated reliability comparable to that of the express workflow. We have illustrated our technique in <xref rid="F7" ref-type="fig">Figure 7</xref>.</p><fig position="float" fig-type="figure" id="F7"><label>Fig. 7</label><caption><p>Intraoperative photograph demonstrating distal pin placement technique.</p></caption><graphic xlink:href="BJO-2025-0288.R1-galleyfig7" position="float"><alt-text>Image showing an intraoperative photograph demonstrating distal pin placement technique in a patient, positioned for surgery in an operating room.</alt-text><long-desc>The image shows an intraoperative photograph, with the patient positioned for surgery in an operating room. Several metal tracking arrays with circular reflective markers are attached to the leg using small fixation posts. The surrounding area includes sterile drapes, surgical instruments, plastic sheeting, and equipment stands.</long-desc></graphic></fig><p>According to the most recent Australian Orthopaedic Association National Joint Replacement Registry report,<sup><xref rid="b23" ref-type="bibr">23</xref></sup> revision for dislocation, limb length discrepancy, and implant malposition cumulatively accounted for almost a quarter of revisions. In our series, although both the enhanced and express workflows accurately estimated the combined offset when compared to the contralateral hip, the enhanced workflow trended toward greater accuracy (median 1.50 mm vs 3.13 mm). An increase in femoral offset can lead to trochanteric pain due to irritation of the soft tissues and acceleration of polyethylene liner wear, while a decrease in femoral offset can lead to impingement and instability.<sup><xref rid="b24" ref-type="bibr">24</xref></sup> Additionally, several studies have shown that limb length discrepancies greater than 5 mm to 10 mm may be perceived by patients, particularly if the operated leg is lengthened, which can negatively affect patient-reported outcome measures and function.<sup><xref rid="b25" ref-type="bibr">25</xref>-<xref rid="b27" ref-type="bibr">27</xref></sup> Both the enhanced and express protocols reliably allowed for restoration of hip length when compared to the contralateral side. The number of outliers (greater than 95% limits of agreement) for estimation of hip length discrepancy was 2/61 (3.28%) and 1/20 (5.00%), whereas the number of outliers for estimation of combined offset was 2/61 (3.28%) and 2/20 (10.00%).</p><p>Given the projected rise in robotic arm-assisted THA,<sup><xref rid="b28" ref-type="bibr">28</xref>,<xref rid="b29" ref-type="bibr">29</xref></sup> this research is timely to better inform surgeons on the anticipated benefits and potential risks in adopting either workflow options in clinical practice. Nevertheless, our study has several limitations that need to be addressed. First, this study did not include a control group with patients undergoing conventional THA. Thus, we are unable to assess whether robotic arm-assisted THA was superior to conventional THA in restoring native hip joint biomechanics. Second, the postoperative measurements for combined offset and hip length discrepancy were measured using calibrated roentgenograms. Ideally, CT-based measurements alongside assessment of acetabular component positioning and combined anteversion are required to provide a more holistic and accurate overview of this subject.<sup><xref rid="b30" ref-type="bibr">30</xref></sup> Third, we were unable to comment whether there is a subset of patient with specific pattern of acetabular defects or underlying pathology who may benefit from one workflow over another. Fourth, we only included patients who had a normal native hip on the contralateral side, limiting the generalizability of this study. The rationale for this is to prevent skewed results due to contralateral hip pathology or unsatisfactory prosthetic hip arthroplasty. Furthermore, our small and unequal sample size is also a major limitation. To provide a genuine comparison between the two groups, we have only included surgeons who routinely used both workflows and recorded their final implant position on the Mako system. Additionally, a useful metric for future studies is to compare planned with achieved femoral length and offset. In this study, we were unable to collect information on preoperative planning. Lastly, our results are only applicable to users of the Mako robotic system who received uncemented implants via a posterior approach, further limiting its generalizability.</p><p>In conclusion, both the enhanced and express workflows when performing a Mako robotic arm-assisted THA provided excellent clinical results with minimal risk of complications. Good agreement was visualized on the Bland-Altman plots between the Mako derived measurements of hip length discrepancies and combined offset, with very few outliers. Both workflows accurately estimated hip length and combined offset, although the enhanced workflow may provide a better estimation of combined offset. Surgeons should therefore choose the technique which best adapts to their practice. Further research incorporating other approaches and robotic designs are required to improve the generalizability of these findings.</p><p>
+<bold>Take home message</bold>
+</p><p>- Both the express and enhanced workflow for the Mako robotic-assisted total hip arthroplasty system provided accurate measurements of hip length and combined offset with no difference in surgical time or complication rate.</p></sec></body><back><fn-group content-type="bjo-author-contribs"><fn><p>
+<bold>Author contributions</bold>
+</p><p>T. Cheok: Conceptualization, Formal analysis, Investigation, Methodology, Software, Validation, Visualization, Writing &#x02013; original draft</p><p>V. Pajnic: Conceptualization, Data curation, Investigation, Methodology, Project administration, Writing &#x02013; original draft</p><p>J. F. Vermeir: Conceptualization, Data curation, Investigation, Methodology, Project administration, Writing &#x02013; review &#x00026; editing</p><p>Y. Toh: Data curation, Investigation, Methodology, Project administration, Validation</p><p>W. J. Donnelly: Conceptualization, Investigation, Methodology, Supervision, Writing &#x02013; review &#x00026; editing</p><p>A. M. Silva: Conceptualization, Investigation, Methodology, Project administration, Supervision, Writing &#x02013; review &#x00026; editing</p></fn></fn-group><fn-group content-type="funding-group"><fn><p>
+<bold>Funding statement</bold>
+</p><p>The author(s) received no financial or material support for the research, authorship, and/or publication of this article.</p><p>
+<bold>ICMJE COI statement</bold>
+</p><p>W. J. Donnelly reports consulting fees and patents, and support for attending a Mako development meeting from Stryker, as well as being on their advisory board. A. M. Silva discloses consulting fees and being on the Hip advisory board for Stryker, and support for attending meetings and/or travel from Stryker, Johnson &#x00026; Johnson, and Zimmer Biomet. J. F. Vermeir declares holding a position funded by Stryker through an independent third-party arrangement.</p><p>
+<bold>Data sharing</bold>
+</p><p>The data that support the findings for this study are available to other researchers from the corresponding author upon reasonable request, subject to ethical approval and institutional requirements.</p><p>
+<bold>Acknowledgements</bold>
+</p><p>We would like to acknowledge the hard work and generosity of our orthopaedic surgeon colleagues, fellows, and registrars, who have helped complete this project.</p><p>
+<bold>Ethical review statement</bold>
+</p><p>Ethical approval was sought and obtained prior to the commencement of this study from the Metro North Human Research Ethics Committee (Approval No.: HREC/2024/MNHB/112604).</p><p>
+<bold>Open access funding</bold>
+</p><p>The open acess fee was self-funded.</p><p>
+<bold>&#x000a9; 2026 Cheok et al.</bold> This article is distributed under the terms of the Creative Commons Attributions (CC BY 4.0) licence (<ext-link xlink:href="https://creativecommons.org/licenses/by/4.0/" ext-link-type="uri">https://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium or format, provided the original author and source are credited.</p></fn></fn-group><ref-list><title>References</title><ref id="b1"><label>1.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Learmonth</surname><given-names>ID</given-names></name>
+<name><surname>Young</surname><given-names>C</given-names></name>
+<name><surname>Rorabeck</surname><given-names>C</given-names></name>
+</person-group>
+<article-title>The operation of the century: total hip replacement</article-title>
+<source>Lancet</source>
+<year>2007</year>
+<volume>370</volume>
+<issue>9597</issue>
+<fpage>1508</fpage>
+<lpage>1519</lpage>
+<pub-id pub-id-type="doi">10.1016/S0140-6736(07)60457-7</pub-id>
+<pub-id pub-id-type="pmid">17964352</pub-id>
+</mixed-citation></ref><ref id="b2"><label>2.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Pabinger</surname><given-names>C</given-names></name>
+<name><surname>Lothaller</surname><given-names>H</given-names></name>
+<name><surname>Portner</surname><given-names>N</given-names></name>
+<name><surname>Geissler</surname><given-names>A</given-names></name>
+</person-group>
+<article-title>Projections of hip arthroplasty in OECD countries up to 2050</article-title>
+<source>Hip Int</source>
+<year>2018</year>
+<volume>28</volume>
+<issue>5</issue>
+<fpage>498</fpage>
+<lpage>506</lpage>
+<pub-id pub-id-type="doi">10.1177/1120700018757940</pub-id>
+<pub-id pub-id-type="pmid">29783896</pub-id>
+</mixed-citation></ref><ref id="b3"><label>3.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Matharu</surname><given-names>GS</given-names></name>
+<name><surname>Culliford</surname><given-names>DJ</given-names></name>
+<name><surname>Blom</surname><given-names>AW</given-names></name>
+<name><surname>Judge</surname><given-names>A</given-names></name>
+</person-group>
+<article-title>Projections for primary hip and knee replacement surgery up to the year 2060: an analysis based on data from The National Joint Registry for England, Wales, Northern Ireland and the Isle of Man</article-title>
+<source>Ann R Coll Surg Engl</source>
+<year>2022</year>
+<volume>104</volume>
+<issue>6</issue>
+<fpage>443</fpage>
+<lpage>448</lpage>
+<pub-id pub-id-type="doi">10.1308/rcsann.2021.0206</pub-id>
+<pub-id pub-id-type="pmid">34939832</pub-id>
+</mixed-citation></ref><ref id="b4"><label>4.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Johnston</surname><given-names>RC</given-names></name>
+<name><surname>Brand</surname><given-names>RA</given-names></name>
+<name><surname>Crowninshield</surname><given-names>RD</given-names></name>
+</person-group>
+<article-title>Reconstruction of the hip. A mathematical approach to determine optimum geometric relationships</article-title>
+<source>J Bone Joint Surg Am</source>
+<year>1979</year>
+<volume>61</volume>
+<issue>5</issue>
+<fpage>639</fpage>
+<lpage>652</lpage>
+<pub-id pub-id-type="pmid">457709</pub-id>
+</mixed-citation></ref><ref id="b5"><label>5.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Bullock</surname><given-names>EKC</given-names></name>
+<name><surname>Brown</surname><given-names>MJ</given-names></name>
+<name><surname>Clark</surname><given-names>G</given-names></name>
+<name><surname>Plant</surname><given-names>JGA</given-names></name>
+<name><surname>Blakeney</surname><given-names>WG</given-names></name>
+</person-group>
+<article-title>Robotics in total hip arthroplasty: current concepts</article-title>
+<source>J Clin Med</source>
+<year>2022</year>
+<volume>11</volume>
+<issue>22</issue>
+<elocation-id>6674</elocation-id>
+<pub-id pub-id-type="doi">10.3390/jcm11226674</pub-id>
+<pub-id pub-id-type="pmid">36431151</pub-id>
+</mixed-citation></ref><ref id="b6"><label>6.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>St Mart</surname><given-names>J-P</given-names></name>
+<name><surname>Goh</surname><given-names>EL</given-names></name>
+<name><surname>Shah</surname><given-names>Z</given-names></name>
+</person-group>
+<article-title>Robotics in total hip arthroplasty: a review of the evolution, application and evidence base</article-title>
+<source>EFORT Open Rev</source>
+<year>2020</year>
+<volume>5</volume>
+<issue>12</issue>
+<fpage>866</fpage>
+<lpage>873</lpage>
+<pub-id pub-id-type="doi">10.1302/2058-5241.5.200037</pub-id>
+<pub-id pub-id-type="pmid">33425375</pub-id>
+</mixed-citation></ref><ref id="b7"><label>7.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kamara</surname><given-names>E</given-names></name>
+<name><surname>Robinson</surname><given-names>J</given-names></name>
+<name><surname>Bas</surname><given-names>MA</given-names></name>
+<name><surname>Rodriguez</surname><given-names>JA</given-names></name>
+<name><surname>Hepinstall</surname><given-names>MS</given-names></name>
+</person-group>
+<article-title>Adoption of robotic vs fluoroscopic guidance in total hip arthroplasty: is acetabular positioning improved in the learning curve?</article-title>
+<source>J Arthroplasty</source>
+<year>2017</year>
+<volume>32</volume>
+<issue>1</issue>
+<fpage>125</fpage>
+<lpage>130</lpage>
+<pub-id pub-id-type="doi">10.1016/j.arth.2016.06.039</pub-id>
+<pub-id pub-id-type="pmid">27499519</pub-id>
+</mixed-citation></ref><ref id="b8"><label>8.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kong</surname><given-names>X</given-names></name>
+<name><surname>Yang</surname><given-names>M</given-names></name>
+<name><surname>Jerabek</surname><given-names>S</given-names></name>
+<name><surname>Zhang</surname><given-names>G</given-names></name>
+<name><surname>Chen</surname><given-names>J</given-names></name>
+<name><surname>Chai</surname><given-names>W</given-names></name>
+</person-group>
+<article-title>A retrospective study comparing a single surgeon&#x02019;s experience on manual versus robot-assisted total hip arthroplasty after the learning curve of the latter procedure - A cohort study</article-title>
+<source>Int J Surg</source>
+<year>2020</year>
+<volume>77</volume>
+<fpage>174</fpage>
+<lpage>180</lpage>
+<pub-id pub-id-type="doi">10.1016/j.ijsu.2020.03.067</pub-id>
+<pub-id pub-id-type="pmid">32259592</pub-id>
+</mixed-citation></ref><ref id="b9"><label>9.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Domb</surname><given-names>BG</given-names></name>
+<name><surname>El Bitar</surname><given-names>YF</given-names></name>
+<name><surname>Sadik</surname><given-names>AY</given-names></name>
+<name><surname>Stake</surname><given-names>CE</given-names></name>
+<name><surname>Botser</surname><given-names>IB</given-names></name>
+</person-group>
+<article-title>Comparison of robotic-assisted and conventional acetabular cup placement in THA: a matched-pair controlled study</article-title>
+<source>Clin Orthop Relat Res</source>
+<year>2014</year>
+<volume>472</volume>
+<issue>1</issue>
+<fpage>329</fpage>
+<lpage>336</lpage>
+<pub-id pub-id-type="doi">10.1007/s11999-013-3253-7</pub-id>
+<pub-id pub-id-type="pmid">23990446</pub-id>
+</mixed-citation></ref><ref id="b10"><label>10.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>O&#x02019;Connor</surname><given-names>PB</given-names></name>
+<name><surname>Thompson</surname><given-names>MT</given-names></name>
+<name><surname>Esposito</surname><given-names>CI</given-names></name>
+<etal>et al.</etal>
+</person-group>
+<article-title>The impact of functional combined anteversion on hip range of motion: a new optimal zone to reduce risk of impingement in total hip arthroplasty</article-title>
+<source>Bone Jt Open</source>
+<year>2021</year>
+<volume>2</volume>
+<issue>10</issue>
+<fpage>834</fpage>
+<lpage>841</lpage>
+<pub-id pub-id-type="doi">10.1302/2633-1462.210.BJO-2021-0117.R1</pub-id>
+<pub-id pub-id-type="pmid">34633223</pub-id>
+</mixed-citation></ref><ref id="b11"><label>11.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Sugano</surname><given-names>N</given-names></name>
+<name><surname>Maeda</surname><given-names>Y</given-names></name>
+<name><surname>Fuji</surname><given-names>H</given-names></name>
+<etal>et al.</etal>
+</person-group>
+<article-title>Accuracy of femoral component anteversion in robotic total hip arthroplasty</article-title>
+<source>Bone Joint J</source>
+<year>2024</year>
+<volume>106-B</volume>
+<issue>3 Supple A</issue>
+<fpage>104</fpage>
+<lpage>109</lpage>
+<pub-id pub-id-type="doi">10.1302/0301-620X.106B3.BJJ-2023-0840.R1</pub-id>
+<pub-id pub-id-type="pmid">38425294</pub-id>
+</mixed-citation></ref><ref id="b12"><label>12.</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<collab>MAKO THA Surgical Guide</collab>
+</person-group>
+<publisher-name>Stryker</publisher-name>
+<year>2015</year>
+<ext-link xlink:href="https://www.strykermeded.com/media/2042/mako-tha-surgical-technique.pdf" ext-link-type="uri">https://www.strykermeded.com/media/2042/mako-tha-surgical-technique.pdf</ext-link>
+<comment>date last</comment>
+<comment>accessed</comment>
+<date-in-citation>28 January 2026</date-in-citation>
+</mixed-citation></ref><ref id="b13"><label>13.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kayani</surname><given-names>B</given-names></name>
+<name><surname>Konan</surname><given-names>S</given-names></name>
+<name><surname>Thakrar</surname><given-names>RR</given-names></name>
+<name><surname>Huq</surname><given-names>SS</given-names></name>
+<name><surname>Haddad</surname><given-names>FS</given-names></name>
+</person-group>
+<article-title>Assuring the long-term total joint arthroplasty</article-title>
+<source>Bone Joint J</source>
+<year>2019</year>
+<volume>101-B</volume>
+<issue>1_Supple_A</issue>
+<fpage>11</fpage>
+<lpage>18</lpage>
+<pub-id pub-id-type="doi">10.1302/0301-620X.101B1.BJJ-2018-0377.R1</pub-id>
+<pub-id pub-id-type="pmid">30648491</pub-id>
+</mixed-citation></ref><ref id="b14"><label>14.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Nawabi</surname><given-names>DH</given-names></name>
+<name><surname>Conditt</surname><given-names>MA</given-names></name>
+<name><surname>Ranawat</surname><given-names>AS</given-names></name>
+<etal>et al.</etal>
+</person-group>
+<article-title>Haptically guided robotic technology in total hip arthroplasty: a cadaveric investigation</article-title>
+<source>Proc Inst Mech Eng H</source>
+<year>2013</year>
+<volume>227</volume>
+<issue>3</issue>
+<fpage>302</fpage>
+<lpage>309</lpage>
+<pub-id pub-id-type="doi">10.1177/0954411912468540</pub-id>
+<pub-id pub-id-type="pmid">23662346</pub-id>
+</mixed-citation></ref><ref id="b15"><label>15.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Khatri</surname><given-names>C</given-names></name>
+<name><surname>Metcalfe</surname><given-names>A</given-names></name>
+<name><surname>Wall</surname><given-names>P</given-names></name>
+<name><surname>Underwood</surname><given-names>M</given-names></name>
+<name><surname>Haddad</surname><given-names>FS</given-names></name>
+<name><surname>Davis</surname><given-names>ET</given-names></name>
+</person-group>
+<article-title>Robotic trials in arthroplasty surgery</article-title>
+<source>Bone Joint J</source>
+<year>2024</year>
+<volume>106-B</volume>
+<issue>2</issue>
+<fpage>114</fpage>
+<lpage>120</lpage>
+<pub-id pub-id-type="doi">10.1302/0301-620X.106B2.BJJ-2023-0711.R1</pub-id>
+<pub-id pub-id-type="pmid">38295854</pub-id>
+</mixed-citation></ref><ref id="b16"><label>16.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>von Elm</surname><given-names>E</given-names></name>
+<name><surname>Altman</surname><given-names>DG</given-names></name>
+<name><surname>Egger</surname><given-names>M</given-names></name>
+<etal>et al.</etal>
+</person-group>
+<article-title>The strengthening the reporting of observational studies in epidemiology (STROBE) statement: guidelines for reporting observational studies</article-title>
+<source>Ann Intern Med</source>
+<year>2007</year>
+<volume>147</volume>
+<issue>8</issue>
+<fpage>573</fpage>
+<lpage>577</lpage>
+<pub-id pub-id-type="doi">10.7326/0003-4819-147-8-200710160-00010</pub-id>
+<pub-id pub-id-type="pmid">17938396</pub-id>
+</mixed-citation></ref><ref id="b17"><label>17.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Busse</surname><given-names>J</given-names></name>
+<name><surname>Gasteiger</surname><given-names>W</given-names></name>
+<name><surname>T&#x000f6;nnis</surname><given-names>D</given-names></name>
+</person-group>
+<article-title>Eine neue Methode zur r&#x000f6;ntgenologischen Beurteilung eines H&#x000fc;ftgelenkes &#x02014; Der H&#x000fc;ftwert</article-title>
+<source>Arch orthop Unfall-Chir</source>
+<year>1972</year>
+<volume>72</volume>
+<issue>1</issue>
+<fpage>1</fpage>
+<lpage>9</lpage>
+<pub-id pub-id-type="doi">10.1007/BF00415854</pub-id>
+</mixed-citation></ref><ref id="b18"><label>18.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Telleria</surname><given-names>JJM</given-names></name>
+<name><surname>Gee</surname><given-names>AO</given-names></name>
+</person-group>
+<article-title>Classifications in brief: Paprosky classification of acetabular bone loss</article-title>
+<source>Clin Orthop Relat Res</source>
+<year>2013</year>
+<volume>471</volume>
+<issue>11</issue>
+<fpage>3725</fpage>
+<lpage>3730</lpage>
+<pub-id pub-id-type="doi">10.1007/s11999-013-3264-4</pub-id>
+<pub-id pub-id-type="pmid">23996098</pub-id>
+</mixed-citation></ref><ref id="b19"><label>19.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Laggner</surname><given-names>R</given-names></name>
+<name><surname>Oktarina</surname><given-names>A</given-names></name>
+<name><surname>Windhager</surname><given-names>R</given-names></name>
+<name><surname>Bostrom</surname><given-names>MPG</given-names></name>
+</person-group>
+<article-title>Changes in leg length and hip offset in navigated imageless vs. conventional total hip arthroplasty</article-title>
+<source>Sci Rep</source>
+<year>2023</year>
+<volume>13</volume>
+<issue>1</issue>
+<elocation-id>17161</elocation-id>
+<pub-id pub-id-type="doi">10.1038/s41598-023-44009-6</pub-id>
+<pub-id pub-id-type="pmid">37821499</pub-id>
+</mixed-citation></ref><ref id="b20"><label>20.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Newson</surname><given-names>R</given-names></name>
+</person-group>
+<article-title>Confidence intervals for rank statistics: percentile slopes, differences, and ratios</article-title>
+<source>Stata J</source>
+<year>2006</year>
+<volume>6</volume>
+<issue>4</issue>
+<fpage>497</fpage>
+<lpage>520</lpage>
+<pub-id pub-id-type="doi">10.1177/1536867X0600600404</pub-id>
+</mixed-citation></ref><ref id="b21"><label>21.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Newson</surname><given-names>R</given-names></name>
+</person-group>
+<article-title>Parameters behind &#x0201c;Nonparametric&#x0201d; Statistics: Kendall&#x02019;s tau, Somers&#x02019; D and median differences</article-title>
+<source>Stata J</source>
+<year>2002</year>
+<volume>2</volume>
+<issue>1</issue>
+<fpage>45</fpage>
+<lpage>64</lpage>
+<pub-id pub-id-type="doi">10.1177/1536867X0200200103</pub-id>
+</mixed-citation></ref><ref id="b22"><label>22.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Theil</surname><given-names>H</given-names></name>
+</person-group>
+<article-title>A rank-invariant method of linear and polynomial regression analysis</article-title>
+<source>Indagationes mathematicae</source>
+<year>1950</year>
+<volume>12</volume>
+<issue>85</issue>
+<elocation-id>173</elocation-id>
+</mixed-citation></ref><ref id="b23"><label>23.</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>Lewis</surname><given-names>PG</given-names></name>
+<name><surname>McAuliffe</surname><given-names>MJ</given-names></name>
+<name><surname>Stoney</surname><given-names>JD</given-names></name>
+</person-group>
+<article-title>Knee and Shoulder Arthroplasty: 2025 annual report</article-title>
+<publisher-loc>Adelaide, South Australia</publisher-loc>
+<publisher-name>Australian Orthopaedic Association National Joint Replacement Registry</publisher-name>
+<year>2025</year>
+<ext-link xlink:href="https://aoanjrr.sahmri.com/annual-reports-2025" ext-link-type="uri">https://aoanjrr.sahmri.com/annual-reports-2025</ext-link>
+<comment>date last</comment>
+<comment>accessed</comment>
+<date-in-citation>28 January 2026</date-in-citation>
+</mixed-citation></ref><ref id="b24"><label>24.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Shapira</surname><given-names>J</given-names></name>
+<name><surname>Chen</surname><given-names>SL</given-names></name>
+<name><surname>Rosinsky</surname><given-names>PJ</given-names></name>
+<etal>et al.</etal>
+</person-group>
+<article-title>The effect of postoperative femoral offset on outcomes after hip arthroplasty: a systematic review</article-title>
+<source>J Orthop</source>
+<year>2020</year>
+<volume>22</volume>
+<fpage>5</fpage>
+<lpage>11</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jor.2020.03.034</pub-id>
+<pub-id pub-id-type="pmid">32273666</pub-id>
+</mixed-citation></ref><ref id="b25"><label>25.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>Y</given-names></name>
+<name><surname>He</surname><given-names>W</given-names></name>
+<name><surname>Cheng</surname><given-names>T</given-names></name>
+<name><surname>Zhang</surname><given-names>X</given-names></name>
+</person-group>
+<article-title>Total hip arthroplasty: leg length discrepancy affects functional outcomes and patient&#x02019;s gait</article-title>
+<source>Cell Biochem Biophys</source>
+<year>2015</year>
+<volume>72</volume>
+<issue>1</issue>
+<fpage>215</fpage>
+<lpage>219</lpage>
+<pub-id pub-id-type="doi">10.1007/s12013-014-0440-4</pub-id>
+<pub-id pub-id-type="pmid">25516289</pub-id>
+</mixed-citation></ref><ref id="b26"><label>26.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Konyves</surname><given-names>A</given-names></name>
+<name><surname>Bannister</surname><given-names>GC</given-names></name>
+</person-group>
+<article-title>The importance of leg length discrepancy after total hip arthroplasty</article-title>
+<source>J Bone Joint Surg Br</source>
+<year>2005</year>
+<volume>87-B</volume>
+<issue>2</issue>
+<fpage>155</fpage>
+<lpage>157</lpage>
+<pub-id pub-id-type="doi">10.1302/0301-620x.87b2.14878</pub-id>
+<pub-id pub-id-type="pmid">15736733</pub-id>
+</mixed-citation></ref><ref id="b27"><label>27.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Ker&#x00161;i&#x0010d;</surname><given-names>M</given-names></name>
+<name><surname>Dolinar</surname><given-names>D</given-names></name>
+<name><surname>Antoli&#x0010d;</surname><given-names>V</given-names></name>
+<name><surname>Mav&#x0010d;i&#x0010d;</surname><given-names>B</given-names></name>
+</person-group>
+<article-title>The impact of leg length discrepancy on clinical outcome of total hip arthroplasty: comparison of four measurement methods</article-title>
+<source>J Arthroplasty</source>
+<year>2014</year>
+<volume>29</volume>
+<issue>1</issue>
+<fpage>137</fpage>
+<lpage>141</lpage>
+<pub-id pub-id-type="doi">10.1016/j.arth.2013.04.004</pub-id>
+<pub-id pub-id-type="pmid">23680505</pub-id>
+</mixed-citation></ref><ref id="b28"><label>28.</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>Lewis</surname><given-names>P</given-names></name>
+<name><surname>Gill</surname><given-names>D</given-names></name>
+<name><surname>McAuliffe</surname><given-names>M</given-names></name>
+<name><surname>McDougall</surname><given-names>C</given-names></name>
+<name><surname>Stoney</surname><given-names>J</given-names></name>
+<name><surname>Vertullo</surname><given-names>C</given-names></name>
+<etal>et al.</etal>
+</person-group>
+<article-title>Hip, Knee and Shoulder Arthroplasty: 2024 Annual Report</article-title>
+<publisher-loc>South Australia</publisher-loc>
+<publisher-name>Australian Orthopaedic Association National Joint Replacement Registry</publisher-name>
+<year>2024</year>
+</mixed-citation></ref><ref id="b29"><label>29.</label><mixed-citation publication-type="report">
+<person-group person-group-type="author">
+<collab>The Eleventh Annual Report of the AJRR on Hip and Knee Arthroplasty</collab>
+</person-group>
+<article-title>American Academy of Orthopaedic Surgeons: American Joint Replacement Registry</article-title>
+<year>2024</year>
+<ext-link xlink:href="https://connect.registryapps.net/hubfs/AJRR/AJRR%202024%20Annual%20Report.pdf?utm_medium=email&#x00026;utm_source=transaction" ext-link-type="uri">https://connect.registryapps.net/hubfs/AJRR/AJRR%202024%20Annual%20Report.pdf?utm_medium=email&#x00026;utm_source=transaction</ext-link>
+<comment>date last</comment>
+<comment>accessed</comment>
+<date-in-citation>28 January 2026</date-in-citation>
+</mixed-citation></ref><ref id="b30"><label>30.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Hardwick-Morris</surname><given-names>M</given-names></name>
+<name><surname>Wigmore</surname><given-names>E</given-names></name>
+<name><surname>Twiggs</surname><given-names>J</given-names></name>
+<name><surname>Miles</surname><given-names>B</given-names></name>
+<name><surname>Jones</surname><given-names>CW</given-names></name>
+<name><surname>Yates</surname><given-names>PJ</given-names></name>
+</person-group>
+<article-title>Leg length discrepancy assessment in total hip arthroplasty: is a pelvic radiograph sufficient?</article-title>
+<source>Bone Jt Open</source>
+<year>2022</year>
+<volume>3</volume>
+<issue>12</issue>
+<fpage>960</fpage>
+<lpage>968</lpage>
+<pub-id pub-id-type="doi">10.1302/2633-1462.312.BJO-2022-0146.R1</pub-id>
+<pub-id pub-id-type="pmid">36510730</pub-id>
+</mixed-citation></ref></ref-list><sec sec-type="data-availability"><title>Data Availability</title><p>The data that support the findings for this study are available to other researchers from the corresponding author upon reasonable request, subject to ethical approval and institutional requirements.</p></sec></back></article>

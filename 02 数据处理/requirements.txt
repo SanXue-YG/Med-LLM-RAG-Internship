@@ -1,0 +1,28 @@
+# 02 数据处理 — Python 依赖（在 01 环境上增补）
+#
+# 推荐安装顺序：
+#   conda activate med-rag-verify
+#   pip install -r "../01 验证模型/requirements.txt"
+#   pip install -r requirements.txt
+#
+# 说明：
+#   - 01 requirements.txt 为完整锁定列表（Jupyter、pandas、datasets、lxml 等）
+#   - 本文件仅列出 02 阶段新增或强依赖的分析包
+#   - 02 不跑 Ollama / Chroma；共用内核名仍为 med-rag-verify
+
+# --- 02 数据构建（parse_pmc / build_jsonl）---
+# lxml、tqdm 通常已在 01 环境中；若从零极简安装可取消下行注释
+# lxml>=6.1.0
+# tqdm>=4.67.0
+
+# --- 02 分析 notebook（§4 领域理解、§5 token 分布、§6 分割策略）---
+matplotlib>=3.8.0
+seaborn>=0.13.0
+sentence-transformers>=2.7.0
+transformers>=4.40.0
+
+# sentence-transformers 会拉取 all-MiniLM-L6-v2 等模型权重（首次需网络）
+# 仅做 tokenizer 长度统计时不会 bulk embedding 入库
+
+# --- VS Code / Jupyter 内核（若 01 环境已装可跳过）---
+# ipykernel>=6.29.0

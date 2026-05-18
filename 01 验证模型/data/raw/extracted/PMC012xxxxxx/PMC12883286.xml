@@ -1,0 +1,628 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883286</article-id><article-id pub-id-type="doi">10.7759/cureus.101189</article-id><article-categories><subj-group subj-group-type="heading"><subject>Neurology</subject></subj-group><subj-group><subject>Sports Medicine</subject></subj-group><subj-group><subject>Pediatrics</subject></subj-group></article-categories><title-group><article-title>Effect of 12 Sessions of Short-Duration High-Intensity Interval Training on Executive Function and Inhibitory Control in Healthy Adolescents: A Cluster Randomized Clinical Trial</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author" corresp="yes"><name><surname>Alexandrino</surname><given-names>Eduardo Gauze</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Oleiro</surname><given-names>Vith&#x000f3;ria</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Rodrigues</surname><given-names>Yuri da Gama</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Silva</surname><given-names>Michael Pereira</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Del Vecchio</surname><given-names>Fabricio Boscolo</given-names></name><xref rid="aff-2" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><name><surname>Dumith</surname><given-names>Samuel Carvalho</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Epidemiology and Public Health, Faculty of Medicine, Postgraduate Program in Health Sciences, Federal University of Rio Grande, Rio Grande, BRA </aff><aff id="aff-2">
+<label>2</label>
+Epidemiology and Public Health, Superior School of Physical Education, Federal University of Pelotas, Pelotas, BRA </aff><author-notes><corresp id="cor1">
+Eduardo Gauze Alexandrino <email>eduardogauze@hotmail.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>9</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101189</elocation-id><history><date date-type="accepted"><day>8</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Alexandrino et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Alexandrino et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/449676-effect-of-12-sessions-of-short-duration-high-intensity-interval-training-on-executive-function-and-inhibitory-control-in-healthy-adolescents-a-cluster-randomized-clinical-trial">This article is available from https://cureus.com/articles/449676-effect-of-12-sessions-of-short-duration-high-intensity-interval-training-on-executive-function-and-inhibitory-control-in-healthy-adolescents-a-cluster-randomized-clinical-trial</self-uri><abstract><p>There is a gap in the evidence regarding the effects of short-duration high-intensity interval training (short-HIIT) on executive and inhibitory functions in adolescents, particularly when using protocols adapted to the school setting and available infrastructure. Therefore, the aim of this study was to investigate the effects of a short-HIIT program on executive function and inhibitory control in Brazilian school adolescents. This was a randomized, single-center clinical trial with intervention and control groups. Adolescents aged 15-17 years participated in a short-HIIT protocol for six weeks. Primary outcomes were executive function and inhibitory control, assessed using the Trail Making Test (TMT) Parts A and B and the Stroop Color Test, respectively. Data were analyzed per protocol and by intention-to-treat. Intervention effects were examined using generalized estimating equations with linear and Poisson models, incorporating time, group, an interaction term, and adjustment covariates. The significance level for two-tailed tests was set at 5%. The sample included 161 students (46 in the short-HIIT group and 115 in the control group). The main results showed absolute reductions in completion times for both the Stroop and TMTs in both groups, consistent with a potential practice effect, with no statistically significant differences between the intervention and control groups at baseline or post-intervention. After 12 sessions, no statistically significant differences were observed between the intervention and control groups for any of the assessed outcomes, in either crude models or models adjusted for confounding variables (sex, age, asset index, baseline physical activity level, time spent on social media, and BMI). In conclusion, twelve 10-minute sessions of short-HIIT performed at the beginning of physical education classes over six weeks did not alter executive function or inhibitory control in adolescents from southern Brazil. Moreover, the adopted HIIT protocol was safe and was not associated with acute injuries.</p></abstract><kwd-group kwd-group-type="author"><kwd>child and adolescent</kwd><kwd>cognitive performance</kwd><kwd>executive function</kwd><kwd>high-intensity interval training (hiit)</kwd><kwd>psychological inhibition</kwd><kwd>school-based physical activity</kwd></kwd-group><funding-group><funding-statement>This study received financial support from the Research Support Foundation of the State of Rio Grande do Sul (FAPERGS), Brazil, under Grant Agreement No. 21/2551-0002003-3 (FAPERGS Researcher Program Call 07/2021).</funding-statement></funding-group></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p>Adolescence is a period of intense development in frontoparietal brain regions involved in executive functions, including inhibitory control, cognitive flexibility, and attention [<xref rid="REF1" ref-type="bibr">1</xref>]. The development of these functions during this stage is critical for academic success and socioemotional regulation, as it enables impulse control, sustained focus, and more deliberate decision-making during a key phase of prefrontal cortex maturation [<xref rid="REF2" ref-type="bibr">2</xref>]. Physical activity (PA) is widely recognized as a strategy to improve overall adolescent health. However, national and international surveys indicate low levels of PA, which may contribute to various physical and mental health disorders [<xref rid="REF3" ref-type="bibr">3</xref>-<xref rid="REF5" ref-type="bibr">5</xref>]. Consequently, the school environment, particularly physical education classes, represents an important strategic setting for large-scale, long-term interventions [<xref rid="REF6" ref-type="bibr">6</xref>].</p><p>Among different exercise modalities, high-intensity interval training (HIIT) has gained attention for delivering health benefits with low time requirements and minimal, low-cost equipment. The short, intense nature of HIIT sessions appears to influence both cognitive capacity and participant adherence [<xref rid="REF7" ref-type="bibr">7</xref>]. In adolescents, HIIT has been associated with improvements in cardiorespiratory fitness and body composition [<xref rid="REF8" ref-type="bibr">8</xref>-<xref rid="REF12" ref-type="bibr">12</xref>], as well as potential neuromuscular benefits [<xref rid="REF13" ref-type="bibr">13</xref>]. Regarding cognition and mental health outcomes, including depression and anxiety, reviews have identified beneficial effects in youth, although findings are heterogeneous [<xref rid="REF14" ref-type="bibr">14</xref>-<xref rid="REF17" ref-type="bibr">17</xref>].</p><p>Within the executive domain, the Stroop test (assessing inhibitory control and selective attention) and the Trail Making Test (TMT Parts A and B, assessing processing speed and attentional flexibility) are widely used assessment tools. Recent evidence indicates that HIIT can improve inhibitory control following acute vigorous or intermittent exercise sessions [<xref rid="REF18" ref-type="bibr">18</xref>-<xref rid="REF20" ref-type="bibr">20</xref>], whereas acute effects on TMT performance have been less consistent [<xref rid="REF19" ref-type="bibr">19</xref>]. Interventions lasting four to eight weeks may produce cognitive benefits; however, the magnitude and consistency of these effects depend on exercise dose, study design, and assessment instruments, with frequent heterogeneity observed across intervention protocols [<xref rid="REF2" ref-type="bibr">2</xref>,<xref rid="REF21" ref-type="bibr">21</xref>,<xref rid="REF22" ref-type="bibr">22</xref>]. In school-based HIIT programs, improvements in health-related outcomes have been reported, but evidence for cognitive outcomes remains mixed, highlighting the need for clear, comparable protocols [<xref rid="REF16" ref-type="bibr">16</xref>,<xref rid="REF23" ref-type="bibr">23</xref>] and, above all, progressive and reproducible stimuli [<xref rid="REF24" ref-type="bibr">24</xref>].</p><p>In Brazil, studies in adolescents have demonstrated cardiometabolic benefits of HIIT in individuals with obesity [<xref rid="REF25" ref-type="bibr">25</xref>,<xref rid="REF26" ref-type="bibr">26</xref>], supporting the feasibility of implementing this model within the national context, including public health and school settings. Despite the premise that HIIT provides comprehensive health benefits [<xref rid="REF9" ref-type="bibr">9</xref>], cognitive outcomes assessed by the Stroop and TMT remain underexplored in structured, school-based interventions. Improvements in executive function and inhibitory control contribute to better quality of life; nevertheless, a gap exists in the literature regarding the effects of HIIT on these outcomes in adolescents, using protocols feasible for the Brazilian school environment. Therefore, this study aimed to investigate the effects of a HIIT program on executive function and inhibitory control in school adolescents from southern Brazil.</p></sec><sec sec-type="materials|methods"><title>Materials and methods</title><p>Experimental design&#x000a0;</p><p>This phase II, single-center, cluster randomized clinical trial was conducted in Rio Grande, Rio Grande do Sul, Brazil, from early June to August 2024. The study was approved by the Research Ethics Committee of the Federal University of Rio Grande (FURG) (approval number 5.846.123; CAAE: 65508322.8.0000.5324). The research adhered to CONSORT (2009) recommendations and was registered in the Brazilian Registry of Clinical Trials (ReBEC: RBR-733y6zq).</p><p>The total study duration was 10 weeks, divided into two standardized assessment periods: Weeks 1-2 (baseline, prior to the six-week short-HIIT intervention) and Weeks 9-10 (post-intervention). Outcomes included executive function, cardiorespiratory capacity, and anthropometric measures. Outcome assessment was blinded: evaluators responsible for data collection and those performing data analyses were unaware of group allocation. Blinding of participants and the researchers delivering the intervention was not feasible. The control group did not receive any intervention from the research team and continued scheduled physical education activities, which were identical to those of the intervention group.</p><p>Participants, sample, and eligibility criteria&#x000a0;</p><p>The study was conducted at the Federal Institute of Education, Science, and Technology of Rio Grande (IFRS) - Campus Rio Grande, Brazil, involving students enrolled in integrated high school programs. Due to logistical and institutional constraints, the sample comprised six second-year classes of both sexes, with a mean age of 16 &#x000b1; 0.5 years, whose students agreed to participate.</p><p>The six classes were randomized in a 1:2 ratio (intervention:control) to maximize statistical power and include all students from the same grade. Student distribution was proportional across classes, and all classes followed the same physical education curriculum. Classes were randomly allocated by a simple draw of sealed envelopes into two groups: the short-HIIT group (n = 2 classes) and the control group (n = 4 classes).</p><p>All students regularly attending physical education classes and deemed fit for PA were eligible, except those with medical limitations or previously documented physical disabilities. Students aged 18 years or older or requiring adaptations participated in the intervention but were excluded from statistical analyses.</p><p>All participants and their legal guardians were adequately informed about study procedures, and written informed consent was obtained. The total number of students initially selected was 200. Sample size calculation accounted for the cluster design (classes), with a 1:2 allocation ratio, an average class size of 35 students, a two-tailed &#x003b1; of 0.05, 80% power, and an intraclass correlation coefficient (ICC) of 0.02. The ICC was based on prior school-based trials, in which cognitive and psychosocial outcomes typically present low ICCs (~0.01-0.05) [<xref rid="REF26" ref-type="bibr">26</xref>]. With two classes in the intervention group and four in the control group, the estimated minimum detectable effect size was d = 0.53. Variability in cognitive outcomes was estimated using data from a Brazilian study applying the Stroop test in adolescents with pre- and post-intervention measures following vigorous exercise [<xref rid="REF27" ref-type="bibr">27</xref>]. Accordingly, the study was powered to detect moderate-to-large effects in the primary outcomes (Stroop interference time and TMT performance).</p><p>Study variables&#x000a0;</p><p>The independent variable was the short-duration high-intensity interval training (short-HIIT) program. Cognitive outcomes were assessed by a trained team of researchers and psychologists before and after the six-week intervention. Inhibitory control, measured as execution time for each card (seconds), total execution time (seconds), number of errors, and Stroop effect, was evaluated using the Stroop Color Test (Victoria version) [<xref rid="REF28" ref-type="bibr">28</xref>]. Executive function, measured as execution time for each task and total time, was assessed using the TMT (Parts A and B) [<xref rid="REF29" ref-type="bibr">29</xref>]. The Brazilian Federal Council of Psychology permits the use of non-standardized tests in the Brazilian population for research purposes (CFP Resolution No. 001/2003, Article 16).</p><p>To control for potential confounders, the following variables were included in the analyses: self-reported sex (male/female); age (in complete years); asset index divided into quartiles (constructed from household assets, including air conditioning, car, motorcycle, computer, dryer, freezer, number of bathrooms, and presence of a cleaning professional; each variable had a coefficient &#x0003e;0.25 in the covariance matrix, and the first component was extracted, explaining 33.6% of total variability, Eigenvalue = 2.7); baseline PA level measured using an adapted version of the National School Health Survey (PeNSE) questionnaire [<xref rid="REF4" ref-type="bibr">4</xref>], with participants considered physically active if reporting &#x02265;300 minutes/week of PA; body weight (kg); self-reported daily time spent on social media, categorized as &#x02264;2 hours/day, 2-4 hours/day, and &#x0003e;4 hours/day; and cardiorespiratory fitness, estimated by VO&#x02082;max calculated from maximal aerobic running speed (km/h) obtained from the 20-m shuttle run test and adjusted for age [<xref rid="REF30" ref-type="bibr">30</xref>].</p><p>Short-HIIT protocol</p><p>The intervention group participated in 12 sessions of short-HIIT, conducted twice weekly over six weeks. Each session lasted 10 minutes and took place at the beginning of physical education classes in a sports gymnasium (40 &#x000d7; 20 m) with adequate infrastructure for physical exercise.</p><p>The protocol followed principles of progressive intensity based on maximal aerobic speed (MAS), previously estimated using the 20-m shuttle run test. Exercise intensity reached at least 80% of maximal heart rate (HRmax), with a 48-hour interval between sessions. Short-HIIT sessions consisted of repeated running bouts in which participants, divided into three groups according to their MAS, were required to reach a marker (cone) at each auditory signal. Heart rate monitors (Polar, model H10<sup>&#x000ae;</sup>, Kempele, Finland) were worn by all participants and monitored in real time to ensure target intensity. At the end of each session, rating of perceived exertion was assessed using the Rating of Perceived Exertion Scale [<xref rid="REF30" ref-type="bibr">30</xref>]. A detailed description of intensity progression and rest intervals for each session has been reported previously [<xref rid="REF23" ref-type="bibr">23</xref>].</p><p>The control group continued their regular physical education classes, following activities planned by the teachers, without any intervention from the research team. These activities focused on bodyweight exercises and general physical conditioning and were also implemented with the intervention group after the short-HIIT sessions. Participants who did not achieve a minimum attendance of 66% across the 12 sessions were excluded from the analyses.</p><p>Statistical analysis</p><p>Study data were collected and managed using REDCap<sup>&#x000ae;</sup> electronic data capture tools hosted at the FURG server by closed-ended questionnaires administered on tablets. REDCap (Research Electronic Data Capture) is a secure, web-based software platform designed to support data capture for research studies [<xref rid="REF31" ref-type="bibr">31</xref>]. The database, containing self-reported questionnaires, cognitive test results, and cardiometabolic data from each session, was exported to Excel (Microsoft Corporation, Redmond, WA, USA) for organization. Statistical analyses were performed using Stata version 18.0 (StataCorp LLC, College Station, TX, USA).</p><p>Continuous variables were presented as means and SDs, and categorical variables as absolute and relative frequencies. Data were analyzed both per protocol and by intention-to-treat. Intervention effects were evaluated using Generalized Estimating Equations, applying linear and Poisson models, incorporating time, group, the interaction term (time &#x000d7; group), and adjustment covariates (sex, age, asset index, baseline PA level, time spent on social media, and BMI).</p><p>Mean differences between the intervention and control groups were calculated with corresponding 95% CI, and effect sizes (Cohen&#x02019;s d) were reported to assess the magnitude and precision of the estimated effects. Statistical significance was set at a two-tailed &#x003b1; level of 0.05.</p></sec><sec sec-type="results"><title>Results</title><p>The initial study sample included 200 students, of whom eight were aged 18 years or older and were excluded from the analyses, resulting in a total of 192 adolescents (132 in the control group and 60 in the intervention group). After further exclusions of participants aged 18 years or older and accounting for losses to follow-up (16.1%), the final analytical sample comprised 161 adolescents aged 15-17 years, with 71.4% allocated to the control group (n = 115) and 28.6% to the intervention group (n = 46) (Figure <xref rid="FIG1" ref-type="fig">1</xref>).</p><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>Flowchart of participant enrollment, allocation, and inclusion in analyses</title><p>HIIT, high-intensity interval training; short-HIIT, short-duration high-intensity interval training; TMT, Trail Making Test</p></caption><graphic xlink:href="cureus-0018-00000101189-i01" position="float"/></fig><p>Table <xref rid="TAB1" ref-type="table">1</xref> presents the sociodemographic profile of the participants, of whom 52.5% were female, with a mean age of 16.1 &#x000b1; 0.5 years. Only 13.7% were physically active (&#x02265;300 min/week), 28% reported using social media for more than 4 hours per day, and the mean VO&#x02082;max was 35.4 &#x000b1; 4.9 mL&#x000b7;kg&#x0207b;&#x000b9;&#x000b7;min&#x0207b;&#x000b9;. When comparing groups, the intervention group had a higher proportion of males (60.9% vs. 42.1%; p = 0.04) and a slightly higher mean age (16.3 &#x000b1; 0.4 vs. 16.1 &#x000b1; 0.5 years; p = 0.02), both statistically significant. No significant differences were observed between groups for the remaining variables, and adherence to the HIIT protocol was 66.5% (&#x02265;8 sessions completed).</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Sociodemographic, behavioral, and physical fitness characteristics of school adolescents from southern Brazil at baseline in 2024 (n = 161)</title><p><sup>*</sup> Fisher&#x02019;s exact test was used for proportions, and t-test for means.</p><p>VO&#x02082;max is expressed in mL&#x000b7;kg&#x0207b;&#x000b9;&#x000b7;min&#x0207b;&#x000b9;. BMI is expressed in kg/m&#x000b2;.</p><p>PA, physical activity</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="2" colspan="1">
+Variable
+</td><td rowspan="1" colspan="1">
+All (n = 161)
+</td><td rowspan="1" colspan="1">
+Control group (n = 115)
+</td><td rowspan="1" colspan="1">
+Intervention group (n = 46)
+</td><td rowspan="2" colspan="1">
+p-Value<sup>*</sup>
+</td></tr><tr><td rowspan="1" colspan="1">
+N (%)
+</td><td rowspan="1" colspan="1">
+N (%)
+</td><td rowspan="1" colspan="1">
+N (%)
+</td></tr><tr style="background-color:#ccc"><td colspan="5" rowspan="1">
+Sex
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Male
+</td><td rowspan="1" colspan="1">
+76 (47.5)
+</td><td rowspan="1" colspan="1">
+48 (42.1)
+</td><td rowspan="1" colspan="1">
+28 (60.9)
+</td><td rowspan="2" colspan="1">
+0.04
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Female
+</td><td rowspan="1" colspan="1">
+84 (52.5)
+</td><td rowspan="1" colspan="1">
+66 (57.9)
+</td><td rowspan="1" colspan="1">
+18 (39.1)
+</td></tr><tr><td rowspan="1" colspan="1">
+Age, years (mean &#x000b1; SD)
+</td><td rowspan="1" colspan="1">
+16.1 (0.5)
+</td><td rowspan="1" colspan="1">
+16.1 (0.5)
+</td><td rowspan="1" colspan="1">
+16.3 (0.4)
+</td><td rowspan="1" colspan="1">
+0.02
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Asset index z-score (mean &#x000b1; SD)
+</td><td rowspan="1" colspan="1">
+0.05 (1.7)
+</td><td rowspan="1" colspan="1">
+0.08 (1.8)
+</td><td rowspan="1" colspan="1">
+-0.02 (1.5)
+</td><td rowspan="1" colspan="1">
+0.74
+</td></tr><tr><td colspan="5" rowspan="1">
+PA
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Inactive (0 min/week)
+</td><td rowspan="1" colspan="1">
+56 (34.8)
+</td><td rowspan="1" colspan="1">
+43 (37.4)
+</td><td rowspan="1" colspan="1">
+13 (28.3)
+</td><td rowspan="3" colspan="1">
+0.48
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Insufficiently active (1-299 min/week)
+</td><td rowspan="1" colspan="1">
+83 (51.5)
+</td><td rowspan="1" colspan="1">
+56 (48.7)
+</td><td rowspan="1" colspan="1">
+27 (58.7)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Active (&#x02265;300 min/week)
+</td><td rowspan="1" colspan="1">
+22 (13.7)
+</td><td rowspan="1" colspan="1">
+16 (13.9)
+</td><td rowspan="1" colspan="1">
+6 (13.0)
+</td></tr><tr><td colspan="5" rowspan="1">
+Screen time (social media use)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Up to 2 hours/day
+</td><td rowspan="1" colspan="1">
+74 (46.0)
+</td><td rowspan="1" colspan="1">
+49 (42.6)
+</td><td rowspan="1" colspan="1">
+25 (54.4)
+</td><td rowspan="3" colspan="1">
+0.42
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; 2-4 hours/day
+</td><td rowspan="1" colspan="1">
+42 (26.0)
+</td><td rowspan="1" colspan="1">
+32 (27.8)
+</td><td rowspan="1" colspan="1">
+10 (21.7)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; More than 4 hours/day
+</td><td rowspan="1" colspan="1">
+45 (28.0)
+</td><td rowspan="1" colspan="1">
+34 (29.6)
+</td><td rowspan="1" colspan="1">
+11 (23.9)
+</td></tr><tr><td rowspan="1" colspan="1">
+VO&#x02082;max (mean &#x000b1; SD)
+</td><td rowspan="1" colspan="1">
+35.4 (4.9)
+</td><td rowspan="1" colspan="1">
+35.3 (5.0)
+</td><td rowspan="1" colspan="1">
+35.6 (4.7)
+</td><td rowspan="1" colspan="1">
+0.7
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+BMI (mean &#x000b1; SD)
+</td><td rowspan="1" colspan="1">
+23.7 (5.5)
+</td><td rowspan="1" colspan="1">
+23.5 (5.5)
+</td><td rowspan="1" colspan="1">
+24.3 (5.2)
+</td><td rowspan="1" colspan="1">
+0.45
+</td></tr></tbody></table></table-wrap><p>Table <xref rid="TAB2" ref-type="table">2</xref> presents execution times (mean &#x000b1; SD) for each phase of the TMT (A/B) and the Stroop Test at baseline and after the short-duration HIIT intervention. Between-group analyses revealed no statistically significant differences in execution times for either the TMT A/B or the Stroop Test, both at baseline and after the intervention. At baseline, both groups showed similar mean values for the TMT (total execution time, p = 0.28), Stroop Effect 1 (p = 0.42), Stroop Effect 2 (p = 0.40), total execution time (p = 0.18), and total errors (p = 0.24). After the intervention, the pattern remained the same, with no differences between groups.</p><table-wrap position="float" id="TAB2"><label>Table 2</label><caption><title>Comparison of executive function and inhibitory control before and after the intervention in school adolescents from southern Brazil, 2024 (n = 161)</title><p><sup>*</sup> Independent samples t-test was used for between-group comparisons</p><p>All times are reported in seconds. TMT (total time): execution time of the three sheets; TMT effect (B-A): execution time of sheet 3 (B) minus the sum of sheets 1 and 2 (A); TMT A: execution time of sheets 1 and 2; Stroop Effect 1: card 3 execution time minus card 1 execution time; Stroop Effect 2: card 3 execution time minus card 2 execution time.</p><p>short-HIIT, short-duration high-intensity interval training; TMT, Trail Making Test</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="2" colspan="1">
+Cognitive test
+</td><td colspan="2" rowspan="1">
+Before short-HIIT (mean &#x000b1; SD)
+</td><td rowspan="2" colspan="1">
+p-Value<sup>*</sup>
+</td><td colspan="2" rowspan="1">
+After short-HIIT (mean &#x000b1; SD)
+</td><td rowspan="2" colspan="1">
+p-Value<sup>*</sup>
+</td></tr><tr><td rowspan="1" colspan="1">
+Control
+</td><td rowspan="1" colspan="1">
+Intervention
+</td><td rowspan="1" colspan="1">
+Control
+</td><td rowspan="1" colspan="1">
+Intervention
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Trails (total time)
+</td><td rowspan="1" colspan="1">
+121.8 (53.5)
+</td><td rowspan="1" colspan="1">
+112.1 (44.4)
+</td><td rowspan="1" colspan="1">
+0.28
+</td><td rowspan="1" colspan="1">
+91.6 (35.1)
+</td><td rowspan="1" colspan="1">
+84.5 (29.0)
+</td><td rowspan="1" colspan="1">
+0.23
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Trails effect (B-A)
+</td><td rowspan="1" colspan="1">
+16.4 (29.4)
+</td><td rowspan="1" colspan="1">
+18.2 (29.2)
+</td><td rowspan="1" colspan="1">
+0.72
+</td><td rowspan="1" colspan="1">
+21.2 (12.1)
+</td><td rowspan="1" colspan="1">
+19.1 (11.7)
+</td><td rowspan="1" colspan="1">
+0.3
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Trails B (sheet 3)
+</td><td rowspan="1" colspan="1">
+69.1 (28.5)
+</td><td rowspan="1" colspan="1">
+65.2 (30.9)
+</td><td rowspan="1" colspan="1">
+0.45
+</td><td rowspan="1" colspan="1">
+56.4 (19.9)
+</td><td rowspan="1" colspan="1">
+53.0 (16.3)
+</td><td rowspan="1" colspan="1">
+0.32
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Trails A (sheet 1 + sheet 2)
+</td><td rowspan="1" colspan="1">
+52.7 (32.4)
+</td><td rowspan="1" colspan="1">
+47.0 (21.5)
+</td><td rowspan="1" colspan="1">
+0.27
+</td><td rowspan="1" colspan="1">
+35.2 (17.2)
+</td><td rowspan="1" colspan="1">
+33.8 (12.7)
+</td><td rowspan="1" colspan="1">
+0.62
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Trails (sheet 1)
+</td><td rowspan="1" colspan="1">
+33.9 (26.8)
+</td><td rowspan="1" colspan="1">
+28.4 (15.6)
+</td><td rowspan="1" colspan="1">
+0.19
+</td><td rowspan="1" colspan="1">
+20.3 (11.0)
+</td><td rowspan="1" colspan="1">
+19.6 (7.7)
+</td><td rowspan="1" colspan="1">
+0.69
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Trails (sheet 2)
+</td><td rowspan="1" colspan="1">
+18.8 (8.4)
+</td><td rowspan="1" colspan="1">
+18.6 (10.1)
+</td><td rowspan="1" colspan="1">
+0.9
+</td><td rowspan="1" colspan="1">
+14.9 (7.0)
+</td><td rowspan="1" colspan="1">
+14.2 (6.1)
+</td><td rowspan="1" colspan="1">
+0.56
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Stroop (total time)
+</td><td rowspan="1" colspan="1">
+59.2 (13.0)
+</td><td rowspan="1" colspan="1">
+56.2 (11.2)
+</td><td rowspan="1" colspan="1">
+0.18
+</td><td rowspan="1" colspan="1">
+53.0 (10.9)
+</td><td rowspan="1" colspan="1">
+50.6 (10.7)
+</td><td rowspan="1" colspan="1">
+0.21
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Stroop (total errors)
+</td><td rowspan="1" colspan="1">
+1.4 (1.7)
+</td><td rowspan="1" colspan="1">
+1.8 (2.3)
+</td><td rowspan="1" colspan="1">
+0.24
+</td><td rowspan="1" colspan="1">
+1.0 (1.3)
+</td><td rowspan="1" colspan="1">
+1.2 (1.5)
+</td><td rowspan="1" colspan="1">
+0.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Stroop effect 1
+</td><td rowspan="1" colspan="1">
+6.8 (6.2)
+</td><td rowspan="1" colspan="1">
+5.9 (6.2)
+</td><td rowspan="1" colspan="1">
+0.42
+</td><td rowspan="1" colspan="1">
+6.8 (4.8)
+</td><td rowspan="1" colspan="1">
+6.5 (3.8)
+</td><td rowspan="1" colspan="1">
+0.69
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Stroop effect 2
+</td><td rowspan="1" colspan="1">
+6.5 (4.4)
+</td><td rowspan="1" colspan="1">
+5.9 (4.3)
+</td><td rowspan="1" colspan="1">
+0.4
+</td><td rowspan="1" colspan="1">
+6.1 (4.0)
+</td><td rowspan="1" colspan="1">
+5.3 (3.3)
+</td><td rowspan="1" colspan="1">
+0.24
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Stroop time - card 1
+</td><td rowspan="1" colspan="1">
+17.4 (4.7)
+</td><td rowspan="1" colspan="1">
+16.8 (5.4)
+</td><td rowspan="1" colspan="1">
+0.49
+</td><td rowspan="1" colspan="1">
+15.2 (3.8)
+</td><td rowspan="1" colspan="1">
+14.3 (3.6)
+</td><td rowspan="1" colspan="1">
+0.2
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Stroop time - card 2
+</td><td rowspan="1" colspan="1">
+17.6 (4.3)
+</td><td rowspan="1" colspan="1">
+16.8 (4.4)
+</td><td rowspan="1" colspan="1">
+0.27
+</td><td rowspan="1" colspan="1">
+15.9 (3.1)
+</td><td rowspan="1" colspan="1">
+15.5 (3.3)
+</td><td rowspan="1" colspan="1">
+0.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Stroop time - card 3
+</td><td rowspan="1" colspan="1">
+24.1 (6.3)
+</td><td rowspan="1" colspan="1">
+22.7 (5.0)
+</td><td rowspan="1" colspan="1">
+0.16
+</td><td rowspan="1" colspan="1">
+22.0 (5.6)
+</td><td rowspan="1" colspan="1">
+20.8 (5.0)
+</td><td rowspan="1" colspan="1">
+0.22
+</td></tr></tbody></table></table-wrap><p>For the TMT (total time), execution times decreased in both groups (84.5 &#x000b1; 29.0 vs. 91.6 &#x000b1; 35.1), but the difference was not statistically significant (p = 0.23). Similarly, no significant differences were observed after short-duration HIIT for Stroop Effect 1 (6.5 &#x000b1; 3.8 vs. 6.8 &#x000b1; 4.8; p = 0.69), Stroop Effect 2 (5.3 &#x000b1; 3.3 vs. 6.1 &#x000b1; 4.0; p = 0.24), total execution time (50.6 &#x000b1; 10.7 vs. 53.0 &#x000b1; 10.9; p = 0.21), or total errors (1.2 &#x000b1; 1.5 vs. 1.0 &#x000b1; 1.3; p = 0.50). Even after adjustment, both groups exhibited an absolute reduction in execution times, consistent with a practice effect; however, no statistically significant differences were found between the intervention and control groups at baseline or after the intervention.</p><p>Table <xref rid="TAB3" ref-type="table">3</xref> shows that six weeks of short-HIIT (12 sessions) did not produce statistically significant effects between the intervention and control groups for any of the assessed outcomes (executive function and inhibitory control), in both crude models and models adjusted for potential confounders (sex, age, asset index, baseline PA, time spent on social media, and BMI).</p><table-wrap position="float" id="TAB3"><label>Table 3</label><caption><title>Effect of six weeks of short-HIIT on executive function and inhibitory control in school adolescents from southern Brazil, 2024 (n = 161)</title><p><sup>*</sup> Independent samples t-test for between-group comparisons.</p><p><sup>**</sup> Multiple linear regression adjusted for sex, age, asset index, baseline PA level (inactive, insufficiently active, active), social media use (&#x02264;2 h/day, 2-4 h/day, &#x0003e;4 h/day), and BMI.</p><p><sup>***</sup> Execution time and post-pre short-HIIT time difference, expressed in seconds</p><p>TMT (total time): execution time of the three sheets; TMT effect (B-A): execution time of sheet 3 (B) minus the sum of sheets 1 and 2 (A); TMT A: execution time of sheets 1 and 2; Stroop Effect 1: card 3 execution time minus card 1 execution time; Stroop Effect 2: card 3 execution time minus card 2 execution time.</p><p>PA, physical activity; short-HIIT, short-duration high-intensity interval training; TMT, Trail Making Test</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="2" colspan="1">
+Cognitive test
+</td><td rowspan="1" colspan="1">
+Control (mean &#x000b1; SD)
+</td><td rowspan="1" colspan="1">
+Intervention (mean &#x000b1; SD)
+</td><td rowspan="2" colspan="1">
+p-Value<sup>*</sup>
+</td><td rowspan="2" colspan="1">
+Adjusted p-Value<sup>**</sup>
+</td></tr><tr><td rowspan="1" colspan="1">
+Difference (post-pre)<sup>***</sup>
+</td><td rowspan="1" colspan="1">
+Difference (post-pre)<sup>***</sup>
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Trails (total time in seconds)
+</td><td rowspan="1" colspan="1">
+-30.2 (40.2)
+</td><td rowspan="1" colspan="1">
+-27.6 (33.8)
+</td><td rowspan="1" colspan="1">
+0.71
+</td><td rowspan="1" colspan="1">
+0.94
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Trails A (sheet 1 + sheet 2)
+</td><td rowspan="1" colspan="1">
+-17.5 (25.4)
+</td><td rowspan="1" colspan="1">
+-13.2 (17.1)
+</td><td rowspan="1" colspan="1">
+0.29
+</td><td rowspan="1" colspan="1">
+0.54
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Trails B (sheet 3)
+</td><td rowspan="1" colspan="1">
+-12.7 (22.9)
+</td><td rowspan="1" colspan="1">
+-11.7 (23.9)
+</td><td rowspan="1" colspan="1">
+0.81
+</td><td rowspan="1" colspan="1">
+0.85
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Trails B-A
+</td><td rowspan="1" colspan="1">
+4.9 (27.0)
+</td><td rowspan="1" colspan="1">
+0.6 (28.7)
+</td><td rowspan="1" colspan="1">
+0.38
+</td><td rowspan="1" colspan="1">
+0.62
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Stroop (total time in seconds)
+</td><td rowspan="1" colspan="1">
+-6.2 (9.7)
+</td><td rowspan="1" colspan="1">
+-5.6 (7.9)
+</td><td rowspan="1" colspan="1">
+0.74
+</td><td rowspan="1" colspan="1">
+0.84
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Stroop (total errors)
+</td><td rowspan="1" colspan="1">
+-0.4 (1.9)
+</td><td rowspan="1" colspan="1">
+-0.6 (2.6)
+</td><td rowspan="1" colspan="1">
+0.53
+</td><td rowspan="1" colspan="1">
+0.53
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Stroop effect 1
+</td><td rowspan="1" colspan="1">
+0.0 (6.0)
+</td><td rowspan="1" colspan="1">
+0.6 (6.5)
+</td><td rowspan="1" colspan="1">
+0.6
+</td><td rowspan="1" colspan="1">
+0.35
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Stroop effect 2
+</td><td rowspan="1" colspan="1">
+-0.4 (4.8)
+</td><td rowspan="1" colspan="1">
+-0.5 (5.5)
+</td><td rowspan="1" colspan="1">
+0.86
+</td><td rowspan="1" colspan="1">
+0.88
+</td></tr></tbody></table></table-wrap><p>For the TMT (total execution time), both groups showed similar absolute reductions (intervention: -27.6 &#x000b1; 33.8; control: -30.2 &#x000b1; 40.2), with no statistically significant between-group difference (p = 0.71). In the Stroop Test, Stroop Effect 1 showed a mean change of 0.6 &#x000b1; 6.5 in the intervention group and 0.0 &#x000b1; 6.0 in the control group (p = 0.60). For Stroop Effect 2, the corresponding changes were -0.5 &#x000b1; 5.5 and -0.4 &#x000b1; 4.8, respectively (p = 0.86). Total execution time decreased in both groups (intervention: -5.6 &#x000b1; 7.9; control: -6.2 &#x000b1; 9.7), but the difference was not statistically significant (p = 0.74). Regarding total errors, reductions of -0.6 &#x000b1; 2.6 in the intervention group and -0.4 &#x000b1; 1.9 in the control group were observed (p = 0.53).</p><p>Notably, in the per-protocol analysis, between-group differences increased slightly; however, they remained statistically nonsignificant.</p><p>Table <xref rid="TAB4" ref-type="table">4</xref> shows minimal differences between groups, with small effect sizes (Cohen&#x02019;s d ranging from 0.03 to 0.19) for executive function and inhibitory control. The lack of statistical significance appears to reflect either the absence of an intervention effect or limitations in the sensitivity of the instruments used to assess cognitive outcomes, rather than insufficient statistical power.</p><table-wrap position="float" id="TAB4"><label>Table 4</label><caption><title>Magnitude of the effects of short-HIIT on executive function and inhibitory control in school adolescents from southern Brazil, 2024 (n = 161)</title><p><sup>*</sup> Between-group differences were calculated based on post-pre changes, expressed as mean differences with 95% CIs.</p><p><sup>**</sup> Effect sizes were estimated using Cohen&#x02019;s d.</p><p>short-HIIT, short-duration high-intensity interval training</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="2" colspan="1">Cognitive test</td><td rowspan="1" colspan="1">Intervention-control difference<sup>*</sup></td><td rowspan="2" colspan="1">Cohen&#x02019;s d<sup>**</sup>
+</td></tr><tr><td rowspan="1" colspan="1">Mean (95% CI)</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Trails (total time)</td><td rowspan="1" colspan="1">2.6 (-10.7; 15.8)</td><td rowspan="1" colspan="1">0.07</td></tr><tr><td rowspan="1" colspan="1">Trails A (sheet 1 + sheet 2)</td><td rowspan="1" colspan="1">4.4 (-3.7; 14.4)</td><td rowspan="1" colspan="1">0.19</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Trails B (sheet 3)</td><td rowspan="1" colspan="1">1.0 (-7.1; 9.1)</td><td rowspan="1" colspan="1">0.04</td></tr><tr><td rowspan="1" colspan="1">Trails B-A</td><td rowspan="1" colspan="1">-4.3 (-13.9; 5.4)</td><td rowspan="1" colspan="1">0.16</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Stroop (total time)</td><td rowspan="1" colspan="1">0.5 (-2.7; 3.7)</td><td rowspan="1" colspan="1">0.06</td></tr><tr><td rowspan="1" colspan="1">Stroop (total errors)</td><td rowspan="1" colspan="1">-0.2 (-1.0; 0.5)</td><td rowspan="1" colspan="1">0.11</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Stroop effect 1</td><td rowspan="1" colspan="1">0.6 (-1.6; 2.7)</td><td rowspan="1" colspan="1">0.09</td></tr><tr><td rowspan="1" colspan="1">Stroop effect 2</td><td rowspan="1" colspan="1">-0.2 (-1.9; 1.6)</td><td rowspan="1" colspan="1">0.03</td></tr></tbody></table></table-wrap></sec><sec sec-type="discussion"><title>Discussion</title><p>This randomized clinical trial evaluated the effects of twelve sessions (six weeks) of short-HIIT on executive function and inhibitory control in 161 school adolescents from southern Brazil. The main findings showed that, despite good adherence (75.5%) and methodological rigor, no statistically significant differences were observed between the control group and the short-HIIT group for the assessed cognitive outcomes.</p><p>The findings of the present study are consistent with previous investigations that also failed to demonstrate statistically significant effects of several weeks of HIIT on cognitive outcomes in youth. In the analysis of pre- and post-intervention differences (Table <xref rid="TAB3" ref-type="table">3</xref>), reductions of 27.6 seconds in the intervention group and 30.2 seconds in the control group were observed for the TMT (total execution time), with no significant between-group difference (p = 0.71). Similar results were reported by Costigan et al., who evaluated 149 adolescents after eight weeks of school-based HIIT and observed significant improvements in cardiorespiratory fitness, but not in TMT-B performance (mean reduction of 20 seconds) [<xref rid="REF22" ref-type="bibr">22</xref>]. Duncombe et al. (2022) analyzed 19 trials involving 1,247 participants and reported that HIIT produced robust physical gains but inconsistent effects on cognitive domains related to attention and processing speed [<xref rid="REF11" ref-type="bibr">11</xref>]. A meta-analysis of 11 studies including 707 adolescent participants found that, compared with other exercise modalities, HIIT promoted greater neuromuscular and anaerobic performance gains but had no impact on simple executive tasks [<xref rid="REF12" ref-type="bibr">12</xref>]. The absolute reductions in execution times observed for the Stroop and TMTs in the present study, without statistical significance, may reflect a practice or familiarization effect rather than training-induced cognitive improvement, as reported in previous studies [<xref rid="REF11" ref-type="bibr">11</xref>,<xref rid="REF12" ref-type="bibr">12</xref>,<xref rid="REF22" ref-type="bibr">22</xref>].</p><p>Conversely, other studies have demonstrated that a single session of intense exercise may influence inhibitory control and cognitive flexibility. Cooper et al. [<xref rid="REF18" ref-type="bibr">18</xref>] evaluated 56 adolescents exposed to an acute session of high-intensity intermittent games (~85-90% HRmax) and observed acute improvements in Stroop performance immediately after and 45 minutes following the stimulus, particularly among participants with higher cardiorespiratory fitness, indicating a positive acute effect of HIIT on inhibitory control. Hatch et al. [<xref rid="REF19" ref-type="bibr">19</xref>] assessed 52 adolescents to compare the acute effects of 30 and 60 minutes of HIIT and reported mean Stroop times of 47 &#x000b1; 9 seconds and 46 &#x000b1; 8 seconds, respectively, with no differences between groups, values comparable to those observed in the present study (50.6 &#x000b1; 10.7 seconds in the intervention group and 53.0 &#x000b1; 10.9 seconds in the control group). The authors concluded that 30 minutes of HIIT was more favorable for adolescent cognition immediately after and 45 minutes post-exercise compared with 60 minutes. A clinical trial [<xref rid="REF13" ref-type="bibr">13</xref>] involving 305 schoolchildren aged 7-13 years in New Zealand evaluated an eight-week HIIT protocol and observed a mean reduction of seven seconds in Stroop performance, suggesting that longer high-intensity protocols may be required to achieve measurable effects. However, the effect magnitude varied according to fitness level, with less physically fit participants experiencing greater benefits in inhibitory control, in addition to improvements in working memory. In a meta-analysis including 21 studies with more than 1,000 adolescents, small effects on executive functions (d = 0.25) were observed, dependent on longer intervention duration and higher training frequency [<xref rid="REF6" ref-type="bibr">6</xref>].</p><p>Systematic reviews reinforce that exposure time to HIIT is a key determinant of cognitive outcomes [<xref rid="REF2" ref-type="bibr">2</xref>]. The meta-analysis by Reyes-Amigo et al. [<xref rid="REF6" ref-type="bibr">6</xref>] reported that most protocols showing significant effects on cognitive variables had durations of at least eight weeks and frequencies of three or more sessions per week. Another meta-analysis of 33 randomized controlled trials in youth identified significant cognitive improvements only in programs lasting longer than eight weeks or with weekly frequencies greater than three sessions for executive function [<xref rid="REF1" ref-type="bibr">1</xref>]. Other evidence supports that HIIT may generate acute and short-term cognitive benefits; however, these effects tend to be modest and depend on training frequency, duration, and the type of cognitive task employed [<xref rid="REF1" ref-type="bibr">1</xref>,<xref rid="REF20" ref-type="bibr">20</xref>]. Regarding the relationship between physical performance and executive function, HIIT has been shown to improve anaerobic performance and motor coordination, but not TMT-A/B execution times, suggesting neuromuscular adaptation specificity rather than cognitive adaptation [<xref rid="REF12" ref-type="bibr">12</xref>]. Taken together, evidence from previous studies suggests that the total stimulus volume used in the present study (two weekly sessions of 10 minutes, totaling 12 sessions over six weeks) may not have been sufficient to induce cognitive adaptations (executive function and inhibitory control) detectable by psychometric instruments such as the Stroop and TMT.</p><p>Despite the absence of statistically significant effects on execution times and cognitive variables, it is important to highlight that implementation of this protocol may confer other health-related benefits in adolescents. Short-HIIT appears to have the potential to promote parallel benefits in physical and mental health, given the integrated nature of exercise-induced adaptations. A clinical trial involving 54 participants reported an 11% increase in VO&#x02082;max after 12 weeks of HIIT [<xref rid="REF7" ref-type="bibr">7</xref>]. A meta-analysis of 23 randomized controlled trials in adolescents reported mean gains of +3.5 mL&#x000b7;kg&#x0207b;&#x000b9;&#x000b7;min&#x0207b;&#x000b9; in cardiorespiratory fitness [<xref rid="REF8" ref-type="bibr">8</xref>]. In similar populations, reductions in body fat and improvements in metabolic parameters have also been reported [<xref rid="REF9" ref-type="bibr">9</xref>,<xref rid="REF10" ref-type="bibr">10</xref>]. Recent studies have further demonstrated positive effects of HIIT on depressive and anxiety symptoms, with a mean reduction of -3.2 points in depression scores [<xref rid="REF14" ref-type="bibr">14</xref>]. Ribeiro et al., in an analysis of 1,086 youth, observed a 21% reduction in the relative risk of depression following regular HIIT programs [<xref rid="REF16" ref-type="bibr">16</xref>]. These findings support the hypothesis that HIIT, even when delivered in short protocols, may generate global health benefits and indirectly influence cognitive and emotional processes. Thus, even in the absence of statistically significant effects on executive function and inhibitory control over six weeks, the present study reinforces the potential of short-HIIT as a strategic, sustainable, low-cost, and high-adherence school-based intervention aimed at promoting overall health and well-being among students [<xref rid="REF5" ref-type="bibr">5</xref>,<xref rid="REF23" ref-type="bibr">23</xref>].</p><p>Among the strengths of this study are the robustness of the previously published methodological design and the high adherence of participants to the exercise protocol [<xref rid="REF23" ref-type="bibr">23</xref>]. Second, this study helps address gaps in the scientific literature regarding the effects of six weeks of HIIT in adolescent school populations, as most consistent evidence focuses on acute effects or interventions lasting eight weeks or longer, thereby contributing to future systematic reviews and meta-analyses. Third, the short-duration, low-cost model structured around MAS proved feasible for school implementation without compromising the curriculum, with the objective of promoting overall student health and potential applicability to younger age groups. Fourth, to our knowledge, this is the first Brazilian randomized clinical trial to evaluate the effects of short-HIIT on executive function and inhibitory control in adolescents. Limitations include the single-center design, which limits the generalizability of the findings, and the restricted age range (adolescents only). Additionally, several factors may have limited the emergence and detection of cognitive effects, including the absence of direct neurophysiological measures, the relatively short intervention duration (six weeks, two sessions per week), the brief session length (10 minutes), and the lack of assessment of immediate acute effects of training sessions, which have been evaluated in many acute HIIT studies.</p><p>Although statistical significance was not observed, the effects of six weeks of short-HIIT showed small magnitudes (d = 0.03-0.19), suggesting potential clinical relevance. In exercise-based randomized controlled trials, particularly those involving short interventions, the absence of statistical significance does not necessarily imply the absence of a measurable physiological or cognitive effect but may instead reflect the need for a greater exposure dose (total protocol duration) or more sensitive measurement instruments. Thus, the adopted short-HIIT protocol appears promising for promoting parallel improvements in cardiorespiratory fitness, anthropometry, and other cognitive-related variables, although its cognitive benefits may require longer duration, sessions exceeding 10 minutes, and/or higher weekly frequency to become detectable, as indicated by recent meta-analyses.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>Twelve 10-minute sessions of short-HIIT, performed at the beginning of physical education classes over six weeks, did not produce statistically significant effects on executive function (TMT A/B) or inhibitory control (Stroop test) in high school students. However, both groups showed an overall reduction in test execution times, possibly reflecting a practice or familiarization effect with the assessments.</p><p>Therefore, future studies are encouraged to adopt the short-HIIT protocol used in the present study, characterized by 10-minute sessions with progressive weekly increases in intensity conducted at the beginning of physical education classes. This intervention structure proved to be feasible, well accepted by students, and easily reproducible in school settings, allowing the evaluation of different intervention durations (eight to 12 weeks) and weekly frequencies (two to three sessions). In addition, the adopted HIIT protocol was safe and was not associated with acute injuries. Finally, the application of this standardized model may help address gaps in the literature by enabling comparisons across studies, facilitating the investigation of acute and chronic cognitive effects, and strengthening the evidence base for incorporating HIIT programs as a school-based strategy for short- and long-term health promotion.</p></sec></body><back><ack><p>EG Alexandrino, V Oleiro, and YG Rodrigues are scholarship holders supported by the Coordination for the Improvement of Higher Education Personnel (CAPES), Brazil. SC Dumith is a research productivity fellow of the National Council for Scientific and Technological Development (CNPq), Brazil.</p></ack><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Human subjects:</bold> Informed consent for treatment and open access publication was obtained or waived by all participants in this study. Research Ethics Committee (CEP) of the Federal University of Rio Grande issued approval 5.846.123. I hereby declare that the data presented in this article submitted to the Cureus Journal originate from the research project entitled &#x0201c;Effectiveness of High-Intensity Interval Training (HIIT) in Physical Education Classes on Physical Fitness, Mental Health, and Cognitive Performance of High School Students in Rio Grande, RS: A Randomized Clinical Trial.&#x0201d; This project was duly approved by the Research Ethics Committee of the Federal University of Rio Grande (FURG), Brazil, under approval number 5.846.123 and CAAE 65508322.8.0000.5324.</p><p><bold>Animal subjects:</bold> All authors have confirmed that this study did not involve animal subjects or tissue.</p><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> This study received financial support from the Research Support Foundation of the State of Rio Grande do Sul (FAPERGS), Brazil, under Grant Agreement No. 21/2551-0002003-3 (FAPERGS Researcher Program Call 07/2021).</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Eduardo Gauze Alexandrino, Samuel Carvalho Dumith, Vith&#x000f3;ria Oleiro, Michael Pereira Silva, Fabricio Boscolo Del Vecchio</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Eduardo Gauze Alexandrino, Samuel Carvalho Dumith, Vith&#x000f3;ria Oleiro, Yuri da Gama Rodrigues</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Eduardo Gauze Alexandrino, Samuel Carvalho Dumith, Michael Pereira Silva</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Eduardo Gauze Alexandrino, Samuel Carvalho Dumith, Vith&#x000f3;ria Oleiro, Yuri da Gama Rodrigues, Fabricio Boscolo Del Vecchio</p><p><bold>Supervision:</bold>&#x000a0; Eduardo Gauze Alexandrino, Samuel Carvalho Dumith, Vith&#x000f3;ria Oleiro, Michael Pereira Silva, Fabricio Boscolo Del Vecchio</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="journal"><article-title>The effects of high-intensity interval training on cognitive performance: a systematic review and meta-analysis</article-title><source>Sci Rep</source><person-group>
+<name><surname>Liu</surname><given-names>K</given-names></name>
+<name><surname>Zhao</surname><given-names>W</given-names></name>
+<name><surname>Li</surname><given-names>C</given-names></name>
+<etal/>
+</person-group><fpage>32082</fpage><volume>14</volume><year>2024</year><pub-id pub-id-type="pmid">39738783</pub-id>
+</element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>Systematic review of the acute and chronic effects of high-intensity interval training on executive function across the lifespan</article-title><source>J Sports Sci</source><person-group>
+<name><surname>Hsieh</surname><given-names>SS</given-names></name>
+<name><surname>Chueh</surname><given-names>TY</given-names></name>
+<name><surname>Huang</surname><given-names>CJ</given-names></name>
+<name><surname>Kao</surname><given-names>SC</given-names></name>
+<name><surname>Hillman</surname><given-names>CH</given-names></name>
+<name><surname>Chang</surname><given-names>YK</given-names></name>
+<name><surname>Hung</surname><given-names>TM</given-names></name>
+</person-group><fpage>10</fpage><lpage>22</lpage><volume>39</volume><year>2021</year><pub-id pub-id-type="pmid">32780634</pub-id>
+</element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="journal"><article-title>The study of cardiovascular risk in adolescents - ERICA: rationale, design and sample characteristics of a national survey examining cardiovascular risk factor profile in Brazilian adolescents</article-title><source>BMC Public Health</source><person-group>
+<name><surname>Bloch</surname><given-names>KV</given-names></name>
+<name><surname>Szklo</surname><given-names>M</given-names></name>
+<name><surname>Kuschnir</surname><given-names>MC</given-names></name>
+<etal/>
+</person-group><fpage>94</fpage><volume>15</volume><year>2015</year><pub-id pub-id-type="pmid">25880653</pub-id>
+</element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>National School Health Survey: Analysis of Comparable Indicators of 9th-Grade Elementary School Students</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><fpage>2021</fpage><lpage>2023</lpage><volume>e</volume><year>2023</year><uri xlink:href="https://biblioteca.ibge.gov.br/visualizacao/livros/liv101955.pdf">https://biblioteca.ibge.gov.br/visualizacao/livros/liv101955.pdf</uri></element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>School-based physical activity interventions in children and adolescents: a systematic review</article-title><source>Int J Environ Res Public Health</source><person-group>
+<name><surname>Vaquero-Sol&#x000ed;s</surname><given-names>M</given-names></name>
+<name><surname>Gallego</surname><given-names>DI</given-names></name>
+<name><surname>Tapia-Serrano</surname><given-names>M&#x000c1;</given-names></name>
+<name><surname>Pulido</surname><given-names>JJ</given-names></name>
+<name><surname>S&#x000e1;nchez-Miguel</surname><given-names>PA</given-names></name>
+</person-group><fpage>999</fpage><volume>17</volume><year>2020</year><pub-id pub-id-type="pmid">32033392</pub-id>
+</element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Effects of high-intensity interval training on executive functions in children and adolescents: a systematic review and meta-analysis</article-title><source>Phys Act Rev</source><person-group>
+<name><surname>Reyes-Amigo</surname><given-names>T</given-names></name>
+<name><surname>Bezerra</surname><given-names>A</given-names></name>
+<name><surname>Gomez-Mazorra</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><volume>10</volume><year>2022</year><uri xlink:href="https://www.researchgate.net/publication/360111995_Effects_of_high-intensity_interval_training_on_executive_functions_in_children_and_adolescents_A_Systematic_Review_and_Meta-analysis">https://www.researchgate.net/publication/360111995_Effects_of_high-intensity_interval_training_on_executive_functions_in_children_and_adolescents_A_Systematic_Review_and_Meta-analysis</uri></element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>Impact of a HIIT protocol on body composition and VO2max in adolescents</article-title><source>Sci Sports</source><person-group>
+<name><surname>Alonso-Fern&#x000e1;ndez</surname><given-names>D</given-names></name>
+<name><surname>Fern&#x000e1;ndez-Rodr&#x000ed;guez</surname><given-names>R</given-names></name>
+<name><surname>Taboada-Iglesias</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group><fpage>341</fpage><lpage>347</lpage><volume>34</volume><year>2019</year></element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>Effects of high-intensity interval training and moderate-intensity continuous training on cardiometabolic risk factors in overweight and obesity children and adolescents: a meta-analysis of randomized controlled trials</article-title><source>Int J Environ Res Public Health</source><person-group>
+<name><surname>Cao</surname><given-names>M</given-names></name>
+<name><surname>Tang</surname><given-names>Y</given-names></name>
+<name><surname>Li</surname><given-names>S</given-names></name>
+<name><surname>Zou</surname><given-names>Y</given-names></name>
+</person-group><fpage>11905</fpage><volume>18</volume><year>2021</year><pub-id pub-id-type="pmid">34831659</pub-id>
+</element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>Effect of HIIT versus MICT on body composition and energy intake in dietary restrained and unrestrained adolescents with obesity</article-title><source>Appl Physiol Nutr Metab</source><person-group>
+<name><surname>Miguet</surname><given-names>M</given-names></name>
+<name><surname>Fearnbach</surname><given-names>NS</given-names></name>
+<name><surname>Metz</surname><given-names>L</given-names></name>
+<etal/>
+</person-group><fpage>437</fpage><lpage>445</lpage><volume>45</volume><year>2020</year><pub-id pub-id-type="pmid">31505120</pub-id>
+</element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="journal"><article-title>The effect and safety of high-intensity interval training in the treatment of adolescent obesity: a meta-analysis</article-title><source>Ann Palliat Med</source><person-group>
+<name><surname>Zhu</surname><given-names>Y</given-names></name>
+<name><surname>Nan</surname><given-names>N</given-names></name>
+<name><surname>Wei</surname><given-names>L</given-names></name>
+<name><surname>Li</surname><given-names>T</given-names></name>
+<name><surname>Gao</surname><given-names>X</given-names></name>
+<name><surname>Lu</surname><given-names>D</given-names></name>
+</person-group><fpage>8596</fpage><lpage>8606</lpage><volume>10</volume><year>2021</year><pub-id pub-id-type="pmid">34328013</pub-id>
+</element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="journal"><article-title>School-based high-intensity interval training programs in children and adolescents: a systematic review and meta-analysis</article-title><source>PLoS ONE</source><person-group>
+<name><surname>Duncombe</surname><given-names>SL</given-names></name>
+<name><surname>Barker</surname><given-names>AR</given-names></name>
+<name><surname>Bond</surname><given-names>B</given-names></name>
+<etal/>
+</person-group><fpage>0</fpage><volume>17</volume><year>2022</year></element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="journal"><article-title>Effects of high-intensity interval training in school on the physical performance and health of children and adolescents: a systematic review with meta-analysis</article-title><source>Sports Med Open</source><person-group>
+<name><surname>Bauer</surname><given-names>N</given-names></name>
+<name><surname>Sperlich</surname><given-names>B</given-names></name>
+<name><surname>Holmberg</surname><given-names>HC</given-names></name>
+<name><surname>Engel</surname><given-names>FA</given-names></name>
+</person-group><fpage>50</fpage><volume>8</volume><year>2022</year><pub-id pub-id-type="pmid">35403996</pub-id>
+</element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>High-intensity training enhances executive function in children in a randomized, placebo-controlled trial</article-title><source>Elife</source><person-group>
+<name><surname>Moreau</surname><given-names>D</given-names></name>
+<name><surname>Kirk</surname><given-names>IJ</given-names></name>
+<name><surname>Waldie</surname><given-names>KE</given-names></name>
+</person-group><volume>6</volume><year>2017</year></element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Can high-intensity interval training improve mental health outcomes in the general population and those with physical illnesses? A systematic review and meta-analysis</article-title><source>Br J Sports Med</source><person-group>
+<name><surname>Martland</surname><given-names>R</given-names></name>
+<name><surname>Korman</surname><given-names>N</given-names></name>
+<name><surname>Firth</surname><given-names>J</given-names></name>
+<name><surname>Vancampfort</surname><given-names>D</given-names></name>
+<name><surname>Thompson</surname><given-names>T</given-names></name>
+<name><surname>Stubbs</surname><given-names>B</given-names></name>
+</person-group><fpage>279</fpage><lpage>291</lpage><volume>56</volume><year>2022</year><pub-id pub-id-type="pmid">34531186</pub-id>
+</element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>High-intensity interval training upon cognitive and psychological outcomes in youth: a systematic review</article-title><source>Int J Environ Res Public Health</source><person-group>
+<name><surname>Alves</surname><given-names>AR</given-names></name>
+<name><surname>Dias</surname><given-names>R</given-names></name>
+<name><surname>Neiva</surname><given-names>HP</given-names></name>
+<etal/>
+</person-group><fpage>5344</fpage><volume>18</volume><year>2021</year><pub-id pub-id-type="pmid">34067861</pub-id>
+</element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>A rapid review of randomized trials assessing the effects of high-intensity interval training on depressive symptoms in people with mental illness</article-title><source>Int J Environ Res Public Health</source><person-group>
+<name><surname>Ribeiro</surname><given-names>JA</given-names></name>
+<name><surname>Schuch</surname><given-names>FB</given-names></name>
+<name><surname>Vargas</surname><given-names>KF</given-names></name>
+<name><surname>M&#x000fc;ller</surname><given-names>PT</given-names></name>
+<name><surname>Boullosa</surname><given-names>D</given-names></name>
+</person-group><fpage>10581</fpage><volume>19</volume><year>2022</year><pub-id pub-id-type="pmid">36078299</pub-id>
+</element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>The acute effects of exercise intensity on inhibitory cognitive control in adolescents</article-title><source>Front Psychol</source><person-group>
+<name><surname>Peruyero</surname><given-names>F</given-names></name>
+<name><surname>Zapata</surname><given-names>J</given-names></name>
+<name><surname>Pastor</surname><given-names>D</given-names></name>
+<name><surname>Cervell&#x000f3;</surname><given-names>E</given-names></name>
+</person-group><fpage>921</fpage><volume>8</volume><year>2017</year><pub-id pub-id-type="pmid">28620337</pub-id>
+</element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>High intensity intermittent games-based activity and adolescents' cognition: moderating effect of physical fitness</article-title><source>BMC Public Health</source><person-group>
+<name><surname>Cooper</surname><given-names>SB</given-names></name>
+<name><surname>Dring</surname><given-names>KJ</given-names></name>
+<name><surname>Morris</surname><given-names>JG</given-names></name>
+<name><surname>Sunderland</surname><given-names>C</given-names></name>
+<name><surname>Bandelow</surname><given-names>S</given-names></name>
+<name><surname>Nevill</surname><given-names>ME</given-names></name>
+</person-group><fpage>603</fpage><volume>18</volume><year>2018</year><pub-id pub-id-type="pmid">29739386</pub-id>
+</element-citation></ref><ref id="REF19"><label>19</label><element-citation publication-type="journal"><article-title>Effect of differing durations of high-intensity intermittent activity on cognitive function in adolescents</article-title><source>Int J Environ Res Public Health</source><person-group>
+<name><surname>Hatch</surname><given-names>LM</given-names></name>
+<name><surname>Dring</surname><given-names>KJ</given-names></name>
+<name><surname>Williams</surname><given-names>RA</given-names></name>
+<name><surname>Sunderland</surname><given-names>C</given-names></name>
+<name><surname>Nevill</surname><given-names>ME</given-names></name>
+<name><surname>Cooper</surname><given-names>SB</given-names></name>
+</person-group><fpage>11594</fpage><volume>18</volume><year>2021</year><pub-id pub-id-type="pmid">34770104</pub-id>
+</element-citation></ref><ref id="REF20"><label>20</label><element-citation publication-type="journal"><article-title>Effects of physical activity on executive functions, attention and academic performance in preadolescent children: a meta-analysis</article-title><source>J Sci Med Sport</source><person-group>
+<name><surname>de Greeff</surname><given-names>JW</given-names></name>
+<name><surname>Bosker</surname><given-names>RJ</given-names></name>
+<name><surname>Oosterlaan</surname><given-names>J</given-names></name>
+<name><surname>Visscher</surname><given-names>C</given-names></name>
+<name><surname>Hartman</surname><given-names>E</given-names></name>
+</person-group><fpage>501</fpage><lpage>507</lpage><volume>21</volume><year>2018</year><pub-id pub-id-type="pmid">29054748</pub-id>
+</element-citation></ref><ref id="REF21"><label>21</label><element-citation publication-type="journal"><article-title>High-intensity interval training: methodological considerations for interpreting results and conducting research</article-title><source>Trends Endocrinol Metab</source><person-group>
+<name><surname>Andreato</surname><given-names>LV</given-names></name>
+</person-group><fpage>812</fpage><lpage>817</lpage><volume>31</volume><year>2020</year><pub-id pub-id-type="pmid">32967776</pub-id>
+</element-citation></ref><ref id="REF22"><label>22</label><element-citation publication-type="journal"><article-title>High-intensity interval training for improving health-related fitness in adolescents: a systematic review and meta-analysis</article-title><source>Br J Sports Med</source><person-group>
+<name><surname>Costigan</surname><given-names>SA</given-names></name>
+<name><surname>Eather</surname><given-names>N</given-names></name>
+<name><surname>Plotnikoff</surname><given-names>RC</given-names></name>
+<name><surname>Taaffe</surname><given-names>DR</given-names></name>
+<name><surname>Lubans</surname><given-names>DR</given-names></name>
+</person-group><fpage>1253</fpage><lpage>1261</lpage><volume>49</volume><year>2015</year><pub-id pub-id-type="pmid">26089322</pub-id>
+</element-citation></ref><ref id="REF23"><label>23</label><element-citation publication-type="journal"><article-title>Effects of high-intensity interval training on multiple health outcomes in secondary school students in southern Brazil: protocol for a cluster-randomized trial [Article in Portuguese]</article-title><source>Rev Bras Ativ F&#x000ed;s Sa&#x000fa;de</source><person-group>
+<name><surname>Oleiro</surname><given-names>V</given-names></name>
+<name><surname>Alexandrino</surname><given-names>EG</given-names></name>
+<name><surname>Rodrigues</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group><fpage>1</fpage><lpage>12</lpage><volume>30</volume><year>2025</year></element-citation></ref><ref id="REF24"><label>24</label><element-citation publication-type="journal"><article-title>Does exercise intensity affect blood pressure and heart rate in obese adolescents? A 6-month multidisciplinary randomized intervention study</article-title><source>Pediatr Obes</source><person-group>
+<name><surname>Farah</surname><given-names>BQ</given-names></name>
+<name><surname>Ritti-Dias</surname><given-names>RM</given-names></name>
+<name><surname>Balagopal</surname><given-names>PB</given-names></name>
+<name><surname>Hill</surname><given-names>JO</given-names></name>
+<name><surname>Prado</surname><given-names>WL</given-names></name>
+</person-group><fpage>111</fpage><lpage>120</lpage><volume>9</volume><year>2014</year><pub-id pub-id-type="pmid">23447453</pub-id>
+</element-citation></ref><ref id="REF25"><label>25</label><element-citation publication-type="journal"><article-title>Reduction in butyrylcholinesterase activity and cardiovascular risk factors in obese adolescents after 12-weeks of high-intensity interval training</article-title><source>J Exerc Physiol Online</source><person-group>
+<name><surname>Pizzi</surname><given-names>J</given-names></name>
+<name><surname>Furtado-Alle</surname><given-names>L</given-names></name>
+<name><surname>Schiavoni</surname><given-names>D</given-names></name>
+<etal/>
+</person-group><fpage>110</fpage><lpage>120</lpage><volume>20</volume><year>2017</year><uri xlink:href="https://www.researchgate.net/publication/319353711_Reduction_in_Butyrylcholinesterase_Activity_and_Cardiovascular_Risk_Factors_in_Obese_Adolescents_after_12-Weeks_of_High-Intensity_Interval_Training">https://www.researchgate.net/publication/319353711_Reduction_in_Butyrylcholinesterase_Activity_and_Cardiovascular_Risk_Factors_in_Obese_Adolescents_after_12-Weeks_of_High-Intensity_Interval_Training</uri></element-citation></ref><ref id="REF26"><label>26</label><element-citation publication-type="journal"><article-title>Intracluster correlation coefficients from school-based cluster randomized trials of interventions for improving health outcomes in pupils</article-title><source>J Clin Epidemiol</source><person-group>
+<name><surname>Parker</surname><given-names>K</given-names></name>
+<name><surname>Nunns</surname><given-names>M</given-names></name>
+<name><surname>Xiao</surname><given-names>Z</given-names></name>
+<name><surname>Ford</surname><given-names>T</given-names></name>
+<name><surname>Ukoumunne</surname><given-names>OC</given-names></name>
+</person-group><fpage>18</fpage><lpage>26</lpage><volume>158</volume><year>2023</year><pub-id pub-id-type="pmid">36997102</pub-id>
+</element-citation></ref><ref id="REF27"><label>27</label><element-citation publication-type="journal"><article-title>Acute effect of vigorous aerobic exercise on the inhibitory control in adolescents [Article in Portuguese]</article-title><source>Rev Paul Pediatr</source><person-group>
+<name><surname>Browne</surname><given-names>RA</given-names></name>
+<name><surname>Costa</surname><given-names>EC</given-names></name>
+<name><surname>Sales</surname><given-names>MM</given-names></name>
+<name><surname>Fonteles</surname><given-names>AI</given-names></name>
+<name><surname>Moraes</surname><given-names>JF</given-names></name>
+<name><surname>Barros Jde</surname><given-names>F</given-names></name>
+</person-group><fpage>154</fpage><lpage>161</lpage><volume>34</volume><year>2016</year><pub-id pub-id-type="pmid">26564328</pub-id>
+</element-citation></ref><ref id="REF28"><label>28</label><element-citation publication-type="journal"><article-title>Performance of an adult brazilian sample on the trail making test and stroop test</article-title><source>Dement Neuropsychol</source><person-group>
+<name><surname>Campanholo</surname><given-names>KR</given-names></name>
+<name><surname>Rom&#x000e3;o</surname><given-names>MA</given-names></name>
+<name><surname>Machado</surname><given-names>MA</given-names></name>
+<etal/>
+</person-group><fpage>26</fpage><lpage>31</lpage><volume>8</volume><year>2014</year><pub-id pub-id-type="pmid">29213876</pub-id>
+</element-citation></ref><ref id="REF29"><label>29</label><element-citation publication-type="journal"><article-title>Trail making test - parts A and B [in Portuguese]</article-title><source>Neuropsychological Cognitive Assessment: Attention and Executive Functions</source><person-group>
+<name><surname>Montiel</surname><given-names>JM</given-names></name>
+<name><surname>Seabra</surname><given-names>AG</given-names></name>
+</person-group><fpage>79</fpage><lpage>85</lpage><volume>1</volume><year>2012</year></element-citation></ref><ref id="REF30"><label>30</label><element-citation publication-type="journal"><article-title>A new approach to monitoring exercise training</article-title><source>J Strength Cond Res</source><person-group>
+<name><surname>Foster</surname><given-names>C</given-names></name>
+<name><surname>Florhaug</surname><given-names>JA</given-names></name>
+<name><surname>Franklin</surname><given-names>J</given-names></name>
+<etal/>
+</person-group><fpage>109</fpage><lpage>115</lpage><volume>15</volume><year>2001</year><uri xlink:href="https://pubmed.ncbi.nlm.nih.gov/11708692/">https://pubmed.ncbi.nlm.nih.gov/11708692/</uri><pub-id pub-id-type="pmid">11708692</pub-id>
+</element-citation></ref><ref id="REF31"><label>31</label><element-citation publication-type="journal"><article-title>Research electronic data capture (REDCap)--a metadata-driven methodology and workflow process for providing translational research informatics support</article-title><source>J Biomed Inform</source><person-group>
+<name><surname>Harris</surname><given-names>PA</given-names></name>
+<name><surname>Taylor</surname><given-names>R</given-names></name>
+<name><surname>Thielke</surname><given-names>R</given-names></name>
+<name><surname>Payne</surname><given-names>J</given-names></name>
+<name><surname>Gonzalez</surname><given-names>N</given-names></name>
+<name><surname>Conde</surname><given-names>JG</given-names></name>
+</person-group><fpage>377</fpage><lpage>381</lpage><volume>42</volume><year>2009</year><pub-id pub-id-type="pmid">18929686</pub-id>
+</element-citation></ref></ref-list></back></article>

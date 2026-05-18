@@ -1,0 +1,894 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Front Immunol</journal-id><journal-id journal-id-type="iso-abbrev">Front Immunol</journal-id><journal-id journal-id-type="publisher-id">Front. Immunol.</journal-id><journal-title-group><journal-title>Frontiers in Immunology</journal-title></journal-title-group><issn pub-type="epub">1664-3224</issn><publisher><publisher-name>Frontiers Media S.A.</publisher-name></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">41567201</article-id><article-id pub-id-type="pmc">PMC12815873</article-id>
+<article-id pub-id-type="doi">10.3389/fimmu.2025.1687068</article-id><article-version article-version-type="Corrected Version of Record" vocab="NISO-RP-8-2008"/><article-categories><subj-group subj-group-type="heading"><subject>Original Research</subject></subj-group></article-categories><title-group><article-title>Host-membrane lipid composition controls <italic toggle="yes">Cryptococcus neoformans</italic> cellular targets</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Ramesh</surname><given-names>Aswathi I.</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x02013; original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Hegde</surname><given-names>Sumukha</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x02013; original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Dabhi</surname><given-names>Aarsh Mahendra</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/3233776/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Krishnamurthy</surname><given-names>Sriram</given-names></name><xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x02013; original draft</role></contrib><contrib contrib-type="author"><name><surname>Chandran</surname><given-names>Divya</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/3313243/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Reddy</surname><given-names>Shivakumar K.</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Yegneswaran</surname><given-names>Prakash Peralam</given-names></name><xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/309443/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Saravu</surname><given-names>Kavitha</given-names></name><xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Mallikarjuna</surname><given-names>P.V.</given-names></name><xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/2845160/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Shettigar</surname><given-names>Kavitha S.</given-names></name><xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/2823611/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Bhat</surname><given-names>Pritesh</given-names></name><xref rid="aff6" ref-type="aff">
+<sup>6</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Bhat</surname><given-names>Varadaraj</given-names></name><xref rid="aff7" ref-type="aff">
+<sup>7</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/139567/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Sabitha</surname><given-names>K.R.</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/3112068/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Mariappan</surname><given-names>Indumathi</given-names></name><xref rid="aff8" ref-type="aff">
+<sup>8</sup>
+</xref><xref rid="aff9" ref-type="aff">
+<sup>9</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/2220328/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Aimanianda</surname><given-names>Vishukumar</given-names></name><xref rid="aff10" ref-type="aff">
+<sup>10</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/3236530/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author"><name><surname>Shetty</surname><given-names>Ashok K.</given-names></name><xref rid="aff11" ref-type="aff">
+<sup>11</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/6135/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role></contrib><contrib contrib-type="author" corresp="yes"><name><surname>Upadhya</surname><given-names>Dinesh</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref><uri xlink:href="https://loop.frontiersin.org/people/378670/overview"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; review &#x00026; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x02013; review &#x00026; editing</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x02013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x02013; original draft</role></contrib></contrib-group><aff id="aff1"><label>1</label><institution>Centre for Molecular Neurosciences, Kasturba Medical College Manipal, Manipal Academy of Higher Education</institution>, <city>Manipal</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff2"><label>2</label><institution>Schrodinger India Private Limited</institution>, <city>Hyderabad</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff3"><label>3</label><institution>Department of Microbiology, Kasturba Medical College, Manipal Academy of Higher Education</institution>, <city>Manipal</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff4"><label>4</label><institution>Department of Infectious Diseases, Kasturba Medical College Manipal, Manipal Academy of Higher Education</institution>, <city>Manipal</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff5"><label>5</label><institution>Department of Medical Laboratory Technology, Manipal College of Health Professions, Manipal Academy of Higher Education</institution>, <city>Manipal</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff6"><label>6</label><institution>Schrodinger India Private Limited</institution>, <city>Bengaluru</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff7"><label>7</label><institution>Department of Pharmaceutical Chemistry, Manipal College of Pharmaceutical Sciences, Manipal Academy of Higher Education</institution>, <city>Manipal</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff8"><label>8</label><institution>Center for Ocular Regeneration (CORE), Prof. Brien Holden Eye Research Center (BHERC), L.V. Prasad Eye Institute</institution>, <city>Hyderabad</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff9"><label>9</label><institution>BRIC- inStem</institution>, <city>Bangalore</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff10"><label>10</label><institution>Department of Biochemistry, Kasturba Medical College Manipal, Manipal Academy of Higher Education</institution>, <city>Manipal</city>,&#x000a0;<country country="in">India</country></aff><aff id="aff11"><label>11</label><institution>Institute for Regenerative Medicine, Department of Cell Biology and Genetics, Naresh Vashisht College of Medicine, Texas A&#x00026;M University Health Science Center</institution>, <city>College Station</city>, <state>TX</state>,&#x000a0;<country country="us">United States</country></aff><author-notes><corresp id="c001"><label>*</label>Correspondence: Dinesh Upadhya, <email xlink:href="mailto:dinesh.upadhya@manipal.edu">dinesh.upadhya@manipal.edu</email></corresp></author-notes><pub-date publication-format="electronic" date-type="pub" iso-8601-date="2026-01-06"><day>06</day><month>1</month><year>2026</year></pub-date><pub-date publication-format="electronic" date-type="corrected" iso-8601-date="2026-01-27"><day>27</day><month>1</month><year>2026</year></pub-date><pub-date publication-format="electronic" date-type="collection"><year>2025</year></pub-date><volume>16</volume><elocation-id>1687068</elocation-id><history><date date-type="received"><day>16</day><month>8</month><year>2025</year></date><date date-type="accepted"><day>08</day><month>12</month><year>2025</year></date><date date-type="rev-recd"><day>07</day><month>12</month><year>2025</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026 Ramesh, Hegde, Dabhi, Krishnamurthy, Chandran, Reddy, Yegneswaran, Saravu, Mallikarjuna, Shettigar, Bhat, Bhat, Sabitha, Mariappan, Aimanianda, Shetty and Upadhya.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Ramesh, Hegde, Dabhi, Krishnamurthy, Chandran, Reddy, Yegneswaran, Saravu, Mallikarjuna, Shettigar, Bhat, Bhat, Sabitha, Mariappan, Aimanianda, Shetty and Upadhya</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense" start_date="2026-01-06">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License (CC BY)</ext-link>. The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p></license></permissions><abstract><sec><title>Background</title><p><italic toggle="yes">Cryptococcus neoformans</italic> causes lethal meningoencephalitis and long-term neurological deficits, particularly in immunocompromised hosts of any age group. After penetrating the airway and crossing the blood-tissue barriers, <italic toggle="yes">C. neoformans</italic> rapidly enters the brain, where it extensively releases the capsular polysaccharide glucuronoxylomannan (GXM), a major virulence factor.</p></sec><sec><title>Methods</title><p><italic toggle="yes">Cryptococcus neoformans (</italic>ATCC 32045) was used to isolate and purify GXM. This study utilized human-induced pluripotent stem cell-derived 2D cultured neural stem cells, neurons, and microglia-deficient cerebral organoids to identify GXM-induced pathogenesis. Cryosectioning of frozen tissues, immunostaining, western blot analysis and untargeted lipidomics were employed to identify the GXM-induced impact on cellular proliferation and cell death, as well as possible cellular and molecular targets. The study utilized the first-ever atomistic models of neuronal and neural stem cells (NSC) membranes, built using a proportion of the original lipid compositions using the Materials Science Suite to identify subtle interactions between the membranes and GXM.</p></sec><sec><title>Results</title><p>GXM exposure induced subtle cell death, but progenitor cell proliferation was unaffected. Interestingly, GXM preferentially targeted neurons irrespective of the abundance of NSCs and astrocytes. Synaptophysin, an integral component of neuronal synaptic vesicles, was significantly reduced following GXM exposure. The untargeted lipidomics analysis revealed higher phosphatidylcholine levels and reduced phosphatidylethanolamine levels in human neurons compared to other cell types. The atomistic models revealed a significant attractive interaction energy between GXM and neuronal membranes, with phosphatidylcholine being primarily responsible.</p></sec><sec><title>Conclusion</title><p>This study provides novel evidence that lipid membranes containing higher phosphatidylcholine are a primary target of GXM of <italic toggle="yes">C. neoformans</italic> and could be the possible reason for the preferential targeting of GXM to neurons. Additionally, GXM induced synaptic deficits in neurons, which could be a significant factor contributing to the neurological dysfunctions observed in this fungal infection. This study opens the mechanism of pathogenesis and targeting opportunities for treating <italic toggle="yes">C. neoformans-</italic>induced meningoencephalitis.</p></sec></abstract><kwd-group><kwd>cerebral organoids</kwd><kwd><italic toggle="yes">Cryptococcus neoformans</italic></kwd><kwd>meningoencephalitis</kwd><kwd>pluripotent stem cells</kwd><kwd>human neurons</kwd><kwd>membrane lipids</kwd><kwd>neural stem cells</kwd><kwd>lipidomics</kwd></kwd-group><funding-group><award-group id="gs1"><funding-source id="sp1">
+<institution-wrap><institution>Manipal Academy of Higher Education</institution><institution-id institution-id-type="doi" vocab="open-funder-registry" vocab-identifier="10.13039/open_funder_registry">10.13039/100019305</institution-id></institution-wrap>
+</funding-source></award-group><funding-statement>The author(s) declared that financial support was received for this work and/or its publication. This work is supported by grants from MAHE (KMC-Mpl/201908017 to DU) and ICMR (2023-19843/F1 to DU).</funding-statement></funding-group><counts><fig-count count="9"/><table-count count="0"/><equation-count count="0"/><ref-count count="82"/><page-count count="18"/><word-count count="8336"/></counts><custom-meta-group><custom-meta><meta-name>section-at-acceptance</meta-name><meta-value>Microbial Immunology</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro" id="s1"><title>Introduction</title><p><italic toggle="yes">Cryptococcus</italic> genus consists of two major pathogenic species of encapsulated yeast, <italic toggle="yes">C. neoformans</italic> and <italic toggle="yes">C. gatti</italic>, which are known to cause life-threatening meningoencephalitis in humans, particularly in immunocompromised hosts of any age group (<xref rid="B1" ref-type="bibr">1</xref>&#x02013;<xref rid="B5" ref-type="bibr">5</xref>). According to the Fungal Priority Pathogen List (FPPL) published by the World Health Organization (WHO), <italic toggle="yes">C. neoformans</italic> is one of the critically risky pathogens, while <italic toggle="yes">C</italic>. <italic toggle="yes">gattii</italic> is a medium-priority pathogen (<xref rid="B6" ref-type="bibr">6</xref>). Globally, the incidence of cryptococcal meningitis accounts for nearly 152,000 cases each year, with around 112,000 deaths (<xref rid="B7" ref-type="bibr">7</xref>). Focal neurological symptoms are a significant predictor of mortality at 2 and 10 weeks post-infection (<xref rid="B8" ref-type="bibr">8</xref>). Alarmingly, 20-70% of survivors of <italic toggle="yes">C. neoformans</italic> infection worldwide have long-term neurological deficits at one year (<xref rid="B9" ref-type="bibr">9</xref>).</p><p><italic toggle="yes">C. neoformans</italic> is an airborne pathogen. Under immunocompromised conditions, it can invade tissues quickly and manifest pathogenesis; in immunocompetent conditions, it can stay dormant, dramatically escaping the host immune cell vigilance for years before manifesting the symptoms under favorable conditions (<xref rid="B10" ref-type="bibr">10</xref>). Upon revival and&#x000a0;pathogenesis, the most severe illness is caused by the migration of this pathogen to the central nervous system. After breaching the airway and blood tissue barriers, <italic toggle="yes">C. neoformans</italic> rapidly invades the brain, where it is engulfed by microglia (<xref rid="B11" ref-type="bibr">11</xref>). Studies demonstrate that microglia are nonprotective and act as reservoirs for <italic toggle="yes">C. neoformans</italic> (<xref rid="B12" ref-type="bibr">12</xref>). <italic toggle="yes">C. neoformans</italic> infection is also shown to cause morphological changes in host microglia, leading to their dysfunction (<xref rid="B13" ref-type="bibr">13</xref>).</p><p>During pathogenesis, <italic toggle="yes">C. neoformans</italic> extensively releases glucuronoxylomannan (GXM), its capsular polysaccharide and a major virulent factor that facilitates host cellular entry of this pathogen (<xref rid="B14" ref-type="bibr">14</xref>, <xref rid="B15" ref-type="bibr">15</xref>). GXM is known to cross the blood-brain barrier and accumulate throughout the parenchyma in areas surrounding the infected tissues (<xref rid="B15" ref-type="bibr">15</xref>&#x02013;<xref rid="B21" ref-type="bibr">21</xref>). Cryptococcal polysaccharide is present persistently in tissues at low quantities months after administration in immunodeficient animals (<xref rid="B22" ref-type="bibr">22</xref>), and continued presence in the brain at low quantities even after antifungal therapy could be a reason for the long-term complications of cryptococcal infection (<xref rid="B23" ref-type="bibr">23</xref>, <xref rid="B24" ref-type="bibr">24</xref>). The presence of GXM in the brain further enhances the invasion of <italic toggle="yes">C. neoformans</italic> into the brain, leading to defective immunity and microglial dysregulation (<xref rid="B13" ref-type="bibr">13</xref>, <xref rid="B21" ref-type="bibr">21</xref>). Meanwhile, microglia migrate away from the sites of GXM accumulation (<xref rid="B13" ref-type="bibr">13</xref>).</p><p>The question is then, how does GXM affect other brain cells&#x000a0;and&#x000a0;cause long-lasting pathologies associated with <italic toggle="yes">C.&#x000a0;neoformans</italic> meningoencephalitis?</p><p>To fully understand host-pathogen interactions, several researchers have utilized cerebral organoid models (<xref rid="B25" ref-type="bibr">25</xref>&#x02013;<xref rid="B29" ref-type="bibr">29</xref>). With undirected differentiation, cerebral organoids contain neural stem cells, neurons, and astroglia cells, while microglia are mostly lacking (<xref rid="B30" ref-type="bibr">30</xref>). The modified protocols could generate organoids with innate microglia (<xref rid="B31" ref-type="bibr">31</xref>). The study utilized up to day-60 organoids as they provide an ideal opportunity to study the targets of GXM action in the presence of abundant neurons, astroglia, and neural stem cells in a unique environment without microglia. In this study, 2D cultured human neural stem cells, neurons, and cerebral organoids were utilized to decipher their interaction with GXM. Moreover, the study utilized the first-ever atomistic models of neuronal and NSC membranes, built using a proportion of the original lipid compositions for identifying subtle interactions between the neuronal membranes and GXM.</p></sec><sec sec-type="materials|methods" id="s2"><title>Materials and methods</title><p>Details of the chemicals used, antibody sources, and fungal strains used are provided in <xref rid="SM1" ref-type="supplementary-material"><bold>Supplementary Table S1</bold></xref>.</p><sec id="s2_1"><title>Fungal strain</title><p><italic toggle="yes">Cryptococcus neoformans</italic> ATCC 32045, grown in Yeast Peptone Dextrose medium at a pH of 6.5 at 30&#x000b0;C at 150 rpm, was used in this study.</p></sec><sec id="s2_2"><title>Glucuronoxylomannan isolation and purification</title><p>GXM isolation was carried out using methods previously described (<xref rid="B32" ref-type="bibr">32</xref>, <xref rid="B33" ref-type="bibr">33</xref>). <italic toggle="yes">C. neoformans</italic> were cultured in 200 ml of capsule induction media containing a 1:10 dilution of Yeast Peptone Dextrose and phosphate-buffered saline (PBS)) for 5 days at 30&#x000b0;C with continuous shaking at 150 rpm. After 5 days of culture, the supernatant was retrieved by centrifugation at 10,000 rpm for 1 hour at room temperature. The supernatant was adjusted to 10% sodium acetate, and pH was maintained at 7.0 by adding acetic acid. Three volumes of ethanol were added to the supernatant to precipitate the capsular polysaccharide (PS) and incubated at 4&#x000b0;C overnight. PS collected after centrifugation was air-dried, and the total mass was estimated. To separate GXM from PS, the pellet was dissolved in 0.2M sodium chloride (NaCl, 10 mg/ml) overnight at 4&#x000b0;C, and Cetyl-trimethyl ammonium bromide (CTAB); 3 mg/mg of PS, was added slowly with continuous stirring at room temperature; 0.05% CTAB was added drop by drop to precipitate the CTAB-GXM complex. The solution was then centrifuged, and the precipitate was dissolved in NaCl (1M) overnight at 4&#x000b0;C. To precipitate GXM, 3 volumes of ethanol were added to the solution, and the precipitated GXM was recovered by centrifugation, air-dried at room temperature, dissolved in 2 M NaCl, and dialyzed against 1 M NaCl for 1 day and then against distilled water for 6 days. The dialysate was passed through a 0.22 &#x000b5;m filter, lyophilized, and stored. This prepared GXM was confirmed to be endotoxin-free using an endotoxin detection kit gel clot (Himedia, with a sensitivity of 0.03 EU/mL). Details of the resources are provided in <xref rid="SM1" ref-type="supplementary-material"><bold>Supplementary Table S1</bold></xref>.</p></sec><sec id="s2_3"><title>Cerebral organoid culture</title><p>The cerebral organoid culture was performed according to the Lancaster and Knoblich (<xref rid="B30" ref-type="bibr">30</xref>) protocol. Briefly, human induced pluripotent stem cells (hiPSCs) (ND1.4, RRID: CVCL_1E77) were grown in StemFlex medium (Gibco Cat. no A3349401) and lifted off when 60-70% confluent to develop embryoid bodies (EBs). When EB&#x02019;s have smooth edges with the formation of neuroepithelial cells, usually after 7 days of neural induction, they were embedded in a matrigel droplet and provided with cerebral organoid differentiation media containing 50% Dulbecco&#x02019;s Modified Eagle Medium/F12 (DMEM/F12), 50% Neurobasal Media, 0.5% N2 supplement, 0.5% Non-Essential Amino Acid (NEAA), 1% Pencillin-streptomycin, 1% B27 without retinoic acid, 1% Glutamax supplement, 0.025% Insulin, and 0.035% &#x003b2; mercaptoethanol (1:100 dilutions of 2-Mercaptoethanol in DMEM-F12). The static culture was maintained for 4 days to facilitate the development of neuroepithelial buds, and thereafter, the cells were subjected to continuous orbital shaking for up to 30 days and 60 days to promote the growth of cerebral organoids. The cerebral organoid differentiation media contained 1% B27 with retinoic acid. These cerebral organoids were randomly divided into control and treatment groups with 6&#x02013;7 organoids in each group (n=3). GXM (50 &#x000b5;g/ml) was dissolved in cerebral organoid differentiation media and added to the treatment group; only media was added to the control group. The organoids were returned to the shaker in the incubator for 48 hours at 37&#x000b0;C and 5% CO<sub>2.</sub></p><p>After 48 hours of GXM treatment, cerebral organoids from both the control and treatment groups were washed with 1X PBS and fixed in 4% paraformaldehyde (PFA) for 15 minutes. Following the removal of PFA, the organoids were washed with 1X PBS for 30 minutes and then incubated in a 30% sucrose solution overnight at 4&#x000b0;C. The next day, cerebral organoids were placed in a mold containing gelatin (7.5%)&#x02013;sucrose (10%) solution in 1X PBS and snap-frozen by adding dry ice in isopentane solution by bringing the temperature to -30&#x000b0;C to -50&#x000b0;C. Frozen blocks were stored at -80&#x000b0;C until they were cryosectioned. Ten- micrometer cryosections were taken using an Epredia Microm HM525 NX Cryostat, and the sections were placed on gelatin-coated slides. These cryosections were stored at -20&#x000b0;C until staining for immunofluorescence studies.</p></sec><sec id="s2_4"><title>Neural stem cells culture</title><p>The hiPSCs were passed on Matrigel-coated 12-well plates in StemFlex medium (Gibco Cat. A3349401). When the cells reached 15-20% confluence, they were supplemented with Gibco PSC Neural Induction Media, which contains neurobasal medium and neural induction supplement (Cat. no. A1647801). On day 7 of neural induction, NSCs (P0) were ready for further expansion. These NSCs were dissociated, passaged to a new matrigel-coated well, and supplemented with Neural Expansion media (50% Neurobasal medium, 50% DMEM/F12, 2% Neural Induction supplement). Media changes were performed every other day until the NSCs were confluent. These NSCs were cultured on a coverslip coated with Matrigel to study cell proliferation. After 48 hours of seeding, three different concentrations of GXM (50-100 &#x000b5;g/ml) were dissolved in the neural expansion media and supplemented to the cells. A well without GXM treatment was taken as standard control. After 48 hours of GXM treatment, immunostaining was performed using the Ki67 antibody. Images were taken at 40x magnification in different fields from each group. Ki-67-positive cells and DAPI-positive cells in each image from 20 different fields were counted manually, and the percentage of cell proliferation was calculated.</p></sec><sec id="s2_5"><title>Differentiation of expanded NSCs to neuronal culture</title><p>For neuronal culture, NSCs were dissociated and plated on a Poly-L-Ornithine (overnight)/Laminin (1 hour) coated well and supplemented with Neural differentiation medium (Neurobasal medium, 1% N2, 2% B27 with retinoid acid, Brain-derived neurotrophic factor (BDNF) (2.5 ng/ml), Glial cell line-derived neurotrophic factor (GDNF) (1 ng/ml) as described earlier (<xref rid="B34" ref-type="bibr">34</xref>). The media was changed every other day, and the neuronal cells were grown for up to 21 days, confirmed by the cell-specific marker TUJ1. To examine the expression of synaptophysin, the neurons were treated with 50 &#x000b5;g/ml of GXM. Three different concentrations of GXM (50-100 &#x000b5;g/ml) were used to study cellular apoptosis. GXM treatment was administered for 48 hours, after which the neuronal cells were dissociated and subjected to western blot analysis.</p></sec><sec id="s2_6"><title>TUNEL assay</title><p>Terminal deoxynucleotidyl transferase-mediated dUTP nick end labeling (TUNEL) assays were done using TAKARA <italic toggle="yes">in situ</italic> Apoptosis Detection Kits (TAKARA Cat. no MK 500), according to the manufacturer&#x02019;s instructions as described earlier (<xref rid="B35" ref-type="bibr">35</xref>). Briefly, cerebral organoid sections were treated with a permeabilization buffer for 5 minutes and sequentially incubated with a mixture of labelling-safe buffer and TdT enzyme for 90 minutes at 37&#x000b0;C. After 90 min, the sections were washed using 1X PBS and counterstained with DAPI (1:300).</p></sec><sec id="s2_7"><title>Immunofluorescence</title><p>For immunofluorescence staining, slides with sections bordered using a PAP pen were fixed in 4% PFA for 15 minutes. After fixation, the sections were washed using 1X PBS for 15 min. Permeabilization and nonspecific blocking were done using a solution containing 1X PBS, 0.2% Triton X-100, and 10% Donkey serum for 1 hour at room temperature. Primary antibodies such as NESTIN, SOX2, &#x003b2;III tubulin, GFAP, Ki67, Synaptophysin, anti-GXM antibody were diluted in 1X PBS along with 0.2% Triton X-100 (v/v) and 5% Donkey serum and kept overnight at 4&#x000b0;C.</p><p>Excess primary antibodies were washed using 1X PBS. Then sections were incubated with specific secondary antibodies such as Alexa Flour 488 donkey anti-rabbit (1:500), Alexa Flour 594 donkey anti-mouse (1:500), Alexa Flour 488 donkey anti-mouse (1:500) Alexa Flour 568 donkey anti-rabbit (1:500) diluted in 1 X PBS along with 0.2% Triton X-100 (v/v) and 5% donkey serum for 1 hour at room temperature. Later, the secondary antibody was removed, and the sample was washed with 1X PBS. DAPI (1:300) was added, incubated for 10 minutes, and washed with 1X PBS for nuclear staining. The slides were then mounted and observed under a fluorescent microscope. Images were taken using the Cell Sens software at different magnifications. For counting Ki-67 and TUNEL-positive cells, 15 images from different areas in each group, taken at 40X magnification, were manually selected and counted. Cerebral organoid sections were imaged as Z stacks using a Leica Stellaris 5 confocal microscope using a 63x objective.</p></sec><sec id="s2_8"><title>Western blot analysis</title><p>Neurons were dissociated 48 hours post-GXM treatment and lysed using a radioimmunoprecipitation assay (RIPA) mixture supplemented with a protease inhibitor. The total protein concentration in each group was estimated using the Bicinchoninic acid assay (BCA) protein assay kit. Using sodium dodecyl sulfate-polyacrylamide gel electrophoresis, an equal amount of protein was separated from the control and GXM-treated group and transferred to a polyvinylidene difluoride membrane (PVDF). Anti-synaptophysin (1:5000) and beta-actin (1:5000) primary antibodies were used. Following imaging, the chemiluminescence method and band intensity were analyzed using ImageJ software.</p></sec><sec id="s2_9"><title>Isolation of lipids from neural stem cells and neurons</title><p>Lipids were extracted using a slightly modified Bligh &#x00026; Dyer protocol (<xref rid="B36" ref-type="bibr">36</xref>) and described in detail in our earlier paper (<xref rid="B37" ref-type="bibr">37</xref>). NSCs and isolated neurons were reconstituted in 500 &#x000b5;l of 1x PBS + 1% protease inhibitors, and a small 50 &#x000b5;l aliquot was used for total protein quantification by the BCA method. Briefly, 450 &#x000b5;L of samples were added to 1.875 mL of a 1:2 (v/v) chloroform: methanol mixture, vortexed, and then sonicated for 1 minute. The mixture was then added to chloroform and distilled water, vortexed for 30 minutes, and centrifuged at 5000 rpm at 4&#x000b0;C for 15 minutes to facilitate phase separation. The aqueous phase and protein interphase were discarded, and the organic (lipids) phase was transferred to a new vial. The organic phase was washed again with a chloroform: methanol: water mixture, as described in the protocol. The final organic phase was then air-dried under a nitrogen stream, and subsequently, the lipids were dissolved in 100 &#x000b5;L of a 2:1 (v/v) chloroform: methanol solution in a glass vial.</p></sec><sec id="s2_10"><title>LC-MS/MS untargeted method</title><p>Samples were analyzed using Thermo Q-Exactive coupled to a Dionex UPLC chromatographic system of the LC-MS model. All the samples were analyzed in triplicate in both positive and negative modes. A total of 5 &#x000b5;l was injected into the Acclaim C30 column at a flow rate of 300 &#x000b5;l/min. The chromatographic separation was performed using ammonium formate with formic acid in a gradient of acetonitrile and water/water and ammonium formate with formic acid in a gradient of isopropanol and acetonitrile. Lipids were detected by an Orbitrap mass spectrometer operated in MS mode, with a scan range (m/z) 200-1200, and a maximum injection time of 50 ms. The higher&#x02013;energy collisional dissociation, which facilitated high collision energy ion fragmentation, was employed as a detector for MS/MS. The MS/MS scan range (m/z) was 50&#x02013;1200 with a fragmentation energy of 25-40.</p></sec><sec id="s2_11"><title>Lipidomic data processing</title><p>The data were analyzed using LipidSearch software v 4.2 (Thermo, CA). Initially, automated processing of acquired mass spectra, retention time correction, peak alignment, and identification were carried out. MS/MS-based match was used for lipid identification. The mass tolerance was set at 5 ppm for both the precursor and the fragment. Lipid-dependent analysis was used to eliminate false positives.</p></sec><sec id="s2_12"><title>Atomistic models of membrane construction and system equilibration</title><p>The lipid bilayer composition was elucidated to consist of phosphatidylcholine (PC), phosphatidylethanolamine (PE), phosphatidylglycerol (PG), phosphatidylinositol (PI), and phosphatidylserine (PS), with varying quantities of each, in the membranes of neural and NSCs. For accurate simulation, the small-scale representative version of the membrane was modelled using Materials Science Suite, maintaining the lipid proportions. An appropriate number of lipids were randomly chosen from each class while maintaining the concentration gradients and diversity. The study aimed to elucidate the role of diverse membrane components in maintaining their innate stability and functionality upon interaction with another ligand.</p><p>Membranes were constructed using the specified lipid composition with the Structured Liquid Builder module. Ten thousand water molecules were added to each side of the membrane, ensuring the absence of undesired artifacts such as ring spears during system setup. The OPLS4 force field (<xref rid="B38" ref-type="bibr">38</xref>), as incorporated in Desmond (<xref rid="B39" ref-type="bibr">39</xref>), was used for parameterizing the system. The system was subsequently subjected to a multi-step relaxation protocol as outlined below:</p><p>Brownian Minimization (500 ps): The system underwent 500 ps of Brownian dynamics at 10 K; NVT Equilibration (2 ns): A relaxation step was performed in the NVT ensemble, maintaining a temperature of 100 K and utilizing a timestep of 1 fs; Gradual Heating in the NPT Ensemble: The system was progressively heated from 100 K to 300 K in three sequential steps under the NPT ensemble with a timestep of 1 fs and pressure of 1.013 bar; Equilibration (100 ns): The system was equilibrated for 100 ns in the NPT ensemble at 310 K and 1.013 bar, employing semi-isotropic pressure coupling and a 1 fs timestep.</p></sec><sec id="s2_13"><title>Identifying GXM interaction with membrane lipids</title><p>The equilibration of the membrane was verified by calculating the area per lipid, which was determined using the atomic coordinates of the lipid head groups. Once equilibration was confirmed, 1 GXM (Serotype D, <xref rid="B40" ref-type="bibr">40</xref>) molecule was incorporated into the system using the Disordered System Builder module of the suite. A subsequent production run was carried out for 200 ns under NPT conditions at 310 K and 1.013 bar, maintaining semi-isotropic pressure coupling. All analyses were performed using the tools provided within the Materials Science Suite.</p></sec><sec id="s2_14"><title>Statistical analysis</title><p>GraphPad Prism software was used to analyze the data statistically. One-way ANOVA was used to compare data from three or more groups. An unpaired t-test was used to determine the significance between groups in studies involving cell proliferation, cell death, western blot, and lipidomics data. P values &#x0003c; 0.05 were considered significant.</p></sec></sec><sec sec-type="results" id="s3"><title>Results</title><sec id="s3_1"><title>Capsular GXM does not alter NSC proliferation but induces cell death</title><p><italic toggle="yes">C. neoformans</italic> were grown in the YPD medium (<xref rid="f1" ref-type="fig"><bold>Figure&#x000a0;1A</bold></xref>), from which GXM was extracted following the protocol described. Human neural stem cells (NSCs) were derived from induced pluripotent stem cells (iPSCs). The identity of cultured NSCs was confirmed through SOX2-NESTIN dual immunostaining (<xref rid="f1" ref-type="fig"><bold>Figure&#x000a0;1B</bold></xref>). Evaluation of the viability of NSCs at 48 h following GXM treatment (50-100 &#x003bc;g/ml) by MTT assay revealed a significant reduction in viability at 50 &#x003bc;g/ml of GXM compared to the control group (n=3/group). Additionally, increasing the dose of GXM to 75 &#x003bc;g/ml and 100 &#x003bc;g/ml demonstrated a nonsignificant reduction in viability. However, a dose-dependent reduction in viability was not observed between 75 &#x003bc;g/ml and 100 &#x003bc;g/ml of GXM (<xref rid="f1" ref-type="fig"><bold>Figure&#x000a0;1C</bold></xref>), possibly due to a saturation in the inhibitory activity of this polysaccharide. Further, NSCs were evaluated for the direct impact of varying doses of GXM on their proliferation. Cells were treated with 50, 75, and 100 &#x003bc;g/ml of GXM for 48 hours and then immunostained with Ki67, the cell proliferation marker (<xref rid="f1" ref-type="fig"><bold>Figure&#x000a0;1D</bold></xref>). Quantitation of Ki67-positive cells in DAPI counterstained slides identified no significant reduction in the proliferation of NSCs at the studied doses (<xref rid="f1" ref-type="fig"><bold>Figure&#x000a0;1E</bold></xref>). Among the assessed doses of GXM, since 50 &#x003bc;g/ml induced no alteration in NSC proliferation but significantly reduced their viability, this concentration of GXM was selected for further studies with organoids.</p><fig position="float" id="f1"><label>Figure&#x000a0;1</label><caption><p>The impact of GXM isolated from <italic toggle="yes">Cryptococcus neoformans</italic> on the viability and proliferation of neural stem cells. <bold>(A)</bold><italic toggle="yes">C. neoformans</italic> (ATCC 32045) was grown in Yeast Peptone Dextrose medium, stained with mucicarmine to observe its capsular structure. <bold>(B)</bold> NSCs were generated from human-induced pluripotent stem cells; identity of the generated NSCs was confirmed by dual immunostaining with markers SOX2 (red), NESTIN (green), and DAPI (blue). The merged image demonstrates cells positive for SOX2, NESTIN, and DAPI (pink). <bold>(C)</bold> NSCs were exposed to different concentrations of GXM (50-100 &#x003bc;g/ml) for 48 hours and their viability was assessed by MTT assay, which was significantly reduced upon GXM treatment, compared to controls. However, a dose-dependent reduction in viability was not observed above 75 &#x003bc;g/ml of GXM, possibly due to its activity saturation. As a positive control, 1% DMSO was used. <bold>(D)</bold> To check the direct impact of GXM on NSCs proliferation, 2D cultured NSCs were treated with varying concentrations of GXM (50 &#x003bc;g/ml, 75 &#x003bc;g/ml, and 100 &#x003bc;g/ml) for 48 hours. The left panel images show Ki67-positive cells. The middle panel displays DAPI-positive cells, and the right panel shows merged images of both Ki67- and DAPI-positive cells. <bold>(E)</bold> To quantify the percentage of proliferation, the number of Ki67-positive cells was counted in relation to DAPI-positive cells, and the graph shows no significant reduction in the proliferation of NSCs at the studied doses. *p&#x0003c;0.05; ***p&#x0003c;0.001. ns= non significant.</p></caption><graphic xlink:href="fimmu-16-1687068-g001" position="float"><alt-text content-type="machine-generated">Panel A shows microscopic images of cells with varying densities. Panel B features immunofluorescent staining of SOX 2, NESTIN, DAPI, and their merged image. Panel C presents a bar graph comparing the viability of NSCs in different GXM concentrations, showing significant differences marked by asterisks. Panel D displays cell images stained with Ki67, DAPI, and their combination under different GXM concentrations. Panel E contains a bar graph indicating cell proliferation percentages across GXM concentrations, with non-significant differences noted.</alt-text></graphic></fig></sec><sec id="s3_2"><title>Cell organoids lacking microglia were used to mimic microglial dysfunction</title><p>Earlier studies demonstrated that (i) microglia are nonprotective against <italic toggle="yes">C. neoformans</italic> infection, and (ii) GXM in the brain further enhances the <italic toggle="yes">C. neoformans</italic> invasion into the brain and causes defective immunity with microglial dysregulation. To understand the cellular pathogenesis of <italic toggle="yes">C. neoformans</italic> under microglia non-functional conditions, we utilized the bona fide protocol of Lancaster and Knoblich (<xref rid="B30" ref-type="bibr">30</xref>) to generate cerebral organoids, which lack cells of mesodermal origin due to the early embedding of embryoid bodies in matrigel. We used 60-day-old organoids, as they provide an ideal opportunity to study the interaction of GXM with abundant neurons, astroglia, and neural stem cells, without the presence of microglia.</p><p>Cerebral organoids were generated using iPSCs (<xref rid="f2" ref-type="fig"><bold>Figure&#x000a0;2A</bold></xref>), which displayed self-organizing internal structures with fluid-filled cavities. They were characterized for the presence of neural stem cells, neurons, and glia at days 30 and 60. On days 30 and 60, organoids were largely positive for Tuj1. Radial glial cells surrounding the fluid-filled cavities were positive for SOX2. The extensive presence of GFAP-positive astrocytes was seen in the day-60 organoids. Day-60 organoids also demonstrated the presence of Tuj1-positive cells interspersed with GFAP-positive cells. Additionally, many Ki-67+ proliferating cells remained within the organoids, along with Tuj1-positive neurons, at day 60. Markers positive for microglial cells (IBA1) and oligodendrocytes (SOX10) were undetected in day 30 and day 60 organoids, and the data are not presented here.</p><fig position="float" id="f2"><label>Figure&#x000a0;2</label><caption><p>Impact of GXM on cell proliferation in cerebral organoids. <bold>(A)</bold> Generation of cerebral organoids from human-induced pluripotent stem cells. The Day 7 image shows an embryoid body generated from hiPSCs. The embryoid body was then embedded into a Matrigel droplet, and the day 10 image shows the growth of a neuroepithelial bud surrounding fluid-filled cavities. The cerebral organoids were grown for up to 2 months. <bold>(B)</bold> To evaluate the cell proliferation in cerebral organoids post-GXM exposure, day 30 and day 60 cerebral organoids were treated with 50&#x003bc;g/ml of GXM for 48 hours. Cryosections were taken and immunostained with Ki-67 (green) and DAPI (blue) in both the treated and untreated groups (n = 6/group). Merged images demonstrate cells positive for both Ki67 and DAPI. The right panel graph depicts the percentage of proliferation in the control and GXM-exposed group. The Ki-67-Positive cells were counted in relation to DAPI-positive cells in both groups. There was no significant difference in the proliferating cell population upon GXM treatment compared to controls, as observed in day 30 and day 60 organoids (n = 6 organoids/group/time point). ns= non significant.</p></caption><graphic xlink:href="fimmu-16-1687068-g002" position="float"><alt-text content-type="machine-generated">Section A displays four images showing cell development over 60 days, with notable changes in texture and size. Section B includes immunofluorescence images with Ki67 and DAPI staining, illustrating cell proliferation on day 30 and day 60 for control and GXM-treated samples. Adjacent bar graphs compare the percentage of Ki67 positive cells, with no significant differences (ns) noted between control and GXM groups on both days.</alt-text></graphic></fig><p>Following treatment with GXM, to track its localization inside the cerebral organoids, a monoclonal antibody was used to label GXM. The Alexa Fluor 488-labelled GXM was detected in both superficial layers and deep within the organoids, as identified through green fluorescence (<xref rid="SM1" ref-type="supplementary-material"><bold>Supplementary Figure S1</bold></xref>). First, to evaluate the direct impact of GXM on proliferating neural stem cells within cerebral organoids, day-30 and day-60 organoids were exposed to 50 &#x003bc;g/ml of GXM for 48 hours. Following fixation and cryosectioning, the organoids were immunostained for Ki-67, and the number of positive cells was counted in relation to DAPI-positive cells. The percentage of proliferation was then assessed. Similar to the results of the 2D culture, no significant difference in proliferating cell population was observed upon GXM treatment (50&#x000b5;g/ml) compared to the control group on day-30 and day-60 organoids (n=6 organoids/group/time point) (<xref rid="f2" ref-type="fig"><bold>Figure&#x000a0;2B</bold></xref>). Fluorescence images and data analysis from 2D cultures and the cerebral organoids confirmed the minimal impact of GXM on neural stem cell proliferation.</p><p>As GXM reduced cell viability in 2D cultures, to identify the direct impact of GXM in the cerebral organoids, day-30 and day-60 organoids were exposed to 50&#x003bc;g/ml of GXM for 48 hours. Following fixation and cryo-sectioning, a TUNEL assay was performed in the organoids to detect the amount of GXM-induced cell death (<xref rid="f3" ref-type="fig"><bold>Figure&#x000a0;3</bold></xref>). Green fluorescent images represent TUNEL-positive cells and blue fluorescent images represent DAPI-positive nuclei while the merged image illustrates co-labeling of TUNEL and DAPI. Quantitation of TUNEL-positive cells against DAPI-positive cells indicated a moderate but significant increase in cell death upon GXM treatment (50&#x000b5;g/ml) compared to controls on day-30 and day-60 cerebral organoids (n=6 organoids/group/time point) (<xref rid="f3" ref-type="fig"><bold>Figure&#x000a0;3</bold></xref>). Results from 2D NSC culture viability studies and TUNEL assay studies with cerebral organoids at days 30 and day-60 confirmed that GXM induces cell death.</p><fig position="float" id="f3"><label>Figure&#x000a0;3</label><caption><p>Impact of GXM on cell death in cerebral organoids. To identify the cell death in cerebral organoids post-GXM exposure, day 30 and day 60 cerebral organoids were exposed to 50&#x003bc;g/ml of GXM for 48 hours, and cell death was analyzed using the TUNEL assay in both the control and GXM exposure groups. Fluorescent images represent TUNEL-positive (green) cells and DAPI-positive nuclei (blue), and the merged image illustrates TUNEL- and DAPI-co-stained positive cells. The right panel graph depicts the percentage of cell death at both time points. There was a moderate but significant increase in cell death upon GXM treatment compared to controls on days 30 and 60, as observed in cerebral organoids (n = 6 organoids/group/time point). *p&#x0003c;0.05.</p></caption><graphic xlink:href="fimmu-16-1687068-g003" position="float"><alt-text content-type="machine-generated">Fluorescent microscopy images and bar graphs depict TUNEL and DAPI staining over two days (30 and 60), comparing control and GXM-treated samples. TUNEL, DAPI, and combined images show increased cell apoptosis in GXM samples, indicated by more green fluorescence. Bar graphs illustrate higher percentages of TUNEL-positive cells in GXM compared to control on both days. Statistical significance is marked with an asterisk.</alt-text></graphic></fig></sec><sec id="s3_3"><title>GXM does not target proliferating cells or astrocytes in cerebral organoids</title><p>Following treatment with GXM, the study tried to identify the targets of GXM among different cell types in the cerebral organoids. To understand cell types prone to GXM, day-60 cerebral organoids were exposed to 50 &#x000b5;g/ml GXM, for 48 hours. GXM treated and untreated cerebral organoids (n=6/group) were immunostained with anti GXM antibody along with Ki-67, that labels the proliferating cells in the organoids. Green fluorescent labelled GXM was identified throughout the day-60 cerebral organoid <xref rid="f4" ref-type="fig"><bold>Figure&#x000a0;4</bold></xref>). Red fluorescent labelled Ki-67 positive cells were seen abundantly in the organoids (<xref rid="f4" ref-type="fig"><bold>Figure&#x000a0;4</bold></xref>). Merged images represent co-labeling of GXM with Ki-67. Although GXM was observed within the vicinity of Ki67-positive cells, no or minimal colocalization of Ki67 with GXM was observed in all the organoids (<xref rid="f4" ref-type="fig"><bold>Figure&#x000a0;4</bold></xref>). This indicated that GXM do not target the proliferating cells in the cerebral organoids.</p><fig position="float" id="f4"><label>Figure&#x000a0;4</label><caption><p>Localization of GXM with different cell types in cerebral organoids. Day 60 cerebral organoids were exposed to 50 &#x000b5;g/ml GXM for 48 hours. Dual immunostaining was performed using Ki67 (red) and an anti-GXM antibody (green) in both treated and untreated cerebral organoids (n = 6/group). The merged image demonstrates no or minimal co-localization of Ki67 (red) with GXM (green). The lower panel represents the selected fields from the merged image, highlighting the GXM and proliferating cells.</p></caption><graphic xlink:href="fimmu-16-1687068-g004" position="float"><alt-text content-type="machine-generated">Fluorescent microscopy images showing cell staining in two rows and one enlarged section. The top row demonstrates control samples with GXM in green, Ki67 in red, and DAPI in blue. The fourth panel combines these. The second row shows samples treated with 50 micrograms per milliliter of GXM, exhibiting increased green fluorescence with similar stains for Ki67 and DAPI. The combined panel highlights increased fluorescence intensity. The enlarged sections in the bottom row depict the detailed distribution of GXM, Ki67, and DAPI in mixed colors, primarily green, red, and blue.</alt-text></graphic></fig><p>GXM treated (50 &#x000b5;g/ml) and untreated cerebral organoids (n=6/group) were immunostained with anti GXM antibody along with antibody for the astrocyte marker GFAP. Green fluorescent labelled GXM was identified throughout the day-60 cerebral organoid (<xref rid="f5" ref-type="fig"><bold>Figure&#x000a0;5</bold></xref>). Red fluorescent labelled GFAP positive cells were seen abundantly in the organoids (<xref rid="f5" ref-type="fig"><bold>Figure&#x000a0;5</bold></xref>). Merged images represent co-labeling of GXM with GFAP. Again, GXM was observed within the locality of GFAP positive cells. However, minimal colocalization of GFAP with GXM was observed in all the organoids (<xref rid="f5" ref-type="fig"><bold>Figure&#x000a0;5</bold></xref>). This indicated that GXM do not target the astrocytes in the cerebral organoids.</p><fig position="float" id="f5"><label>Figure&#x000a0;5</label><caption><p>Localization of GXM with different cell types in cerebral organoids. Day 60 cerebral organoids were exposed to 50 &#x000b5;g/ml GXM for 48 hours. Dual immunostaining was performed using an antibody for astrocytes (GFAP, red), an anti-GXM antibody (green), and DAPI (blue) in both the treated and untreated groups (n = 6/group). The merged image shows no co-localization of GFAP (red) with GXM (green). The lower panel represents the selected fields from the merged image, highlighting that the GXM has not co-localized with GFAP-positive astrocytes.</p></caption><graphic xlink:href="fimmu-16-1687068-g005" position="float"><alt-text content-type="machine-generated">Microscopic images show immunofluorescence staining in brain tissue samples. Top row: control group, displaying GXM (green), DAPI (blue), GFAP (red), and combined images. Bottom row: treatment with GXM at fifty micrograms per milliliter shows increased green fluorescence, indicating GXM presence, along with blue DAPI and red GFAP staining. The overlay highlights cellular interactions. Lower close-ups emphasize detailed staining patterns.</alt-text></graphic></fig></sec><sec id="s3_4"><title>GXM showed affinity toward neurons in 3D cerebral organoids</title><p>Since GXM didn&#x02019;t show much affinity to proliferating cells and astrocytes, we further tested its impact on neurons. Day 60 cerebral organoids were dual immunostained with anti GXM antibody along with antibody for the neuronal marker Tuj1 at 48 hours of GXM treatment (50 &#x000b5;g/ml) and compared with controls (n=6/group). Green fluorescent labelled GXM was identified throughout the day-60 cerebral organoid (<xref rid="f6" ref-type="fig"><bold>Figure&#x000a0;6</bold></xref>). Red fluorescent labelled Tuj1 positive cells were seen abundantly in the organoids (<xref rid="f6" ref-type="fig"><bold>Figure&#x000a0;6</bold></xref>). Tuj1 colocalized with GXM in several places (<xref rid="f6" ref-type="fig"><bold>Figure&#x000a0;6</bold></xref>) but was primarily seen on the membranes and not inside the cytoplasm or nucleus (<xref rid="f6" ref-type="fig"><bold>Figure&#x000a0;6</bold></xref>, inserts). While GXM is primarily targeted to neurons, not all neurons were targeted by GXM. Also, GXM is sometimes associated with other cell types, such as astrocytes and proliferating cells. Together, these data demonstrate that GXM preferentially targets neurons within organoids, while neural stem cells or astrocytes are minimally targeted (<xref rid="f6" ref-type="fig"><bold>Figure&#x000a0;6</bold></xref>).</p><fig position="float" id="f6"><label>Figure&#x000a0;6</label><caption><p>Co-localization of GXM with neurons. Dual immunostaining was performed on day 60 cerebral organoids with TUJ1 antibody (red) for neurons with anti-GXM antibody (green) at 48 hours following GXM exposure (50&#x000b5;g/ml) and compared with controls (n=6/group). Merged images demonstrate the co-localization of GXM with TUJ1-positive cells (orange). Lower panels show selected fields highlighting the association of GXM with neurons.</p></caption><graphic xlink:href="fimmu-16-1687068-g006" position="float"><alt-text content-type="machine-generated">Microscopic images show four different stainings: GXM in green, Tuj1 in red, and DAPI in blue. Top row represents control samples; bottom row shows GXM-treated samples. Final columns display combined stainings, highlighting structural changes and colocalization in treated samples.</alt-text></graphic></fig></sec><sec id="s3_5"><title>GXM affects synaptic vesicle protein levels in neurons</title><p>Mouse models of cryptococcal meningoencephalitis demonstrated severe synaptic deficits (<xref rid="B41" ref-type="bibr">41</xref>). Since GXM is the&#x000a0;major virulent factor, this study assessed whether GXM&#x000a0;targeting to neurons leads to neuronal dysfunction. Synaptophysin was considered, which is abundantly present in the integral membrane of the neuronal synaptic vesicles required for neuronal activity.&#x000a0;Neurons were cultured for 21 days in a 12-well dish. GXM (50 &#x000b5;g/ml) was added to the cell culture media and incubated for 48 hours. Immunostaining with synaptophysin antibody demonstrated green fluorescence for synaptophysin and blue fluorescence for DAPI. In the neurons treated with GXM, visibly reduced synaptophysin levels were observed compared to controls (<xref rid="f7" ref-type="fig"><bold>Figure&#x000a0;7A</bold></xref>). To confirm that GXM interaction reduces synaptophysin, synaptophysin levels were measured in the day-60 cerebral organoids treated with GXM. Similar to 2D neurons, a reduced synaptophysin expression was observed in the organoids treated with GXM compared to untreated neurons (<xref rid="f7" ref-type="fig"><bold>Figure&#x000a0;7B</bold></xref>). This data was further assessed by analyzing the level of synaptophysin using western blotting in 2D cultured neurons (<xref rid="f7" ref-type="fig"><bold>Figure&#x000a0;7C</bold></xref>) and its quantification using Image J, which confirmed that synaptophysin levels are significantly reduced (<xref rid="f7" ref-type="fig"><bold>Figure&#x000a0;7D</bold></xref>, p=0.0086) following GXM exposure. Overall, these results demonstrates that GXM treatment reduces synaptophysin levels in neurons.</p><fig position="float" id="f7"><label>Figure&#x000a0;7</label><caption><p>GXM affects the levels of synaptic vesicle proteins in neurons. <bold>(A)</bold> The level of synaptophysin was assessed on day 21 neurons generated from induced pluripotent stem cells. Neurons were exposed to 50 &#x000b5;g/ml GXM for 48 hours compared with controls. Fluorescent images showed synaptophysin (1:200) (green) positive neurons and DAPI (blue). Merged images demonstrate both synaptophysin and DAPI-positive cells. <bold>(B)</bold> Fluorescent images of synaptophysin in cerebral organoids post-GXM exposure. The upper panel shows the control group, and the lower panel represents day 60 cerebral organoids exposed to 50 &#x000b5;g/ml GXM for 48 hours. The merged image demonstrates both synaptophysin and DAPI. <bold>(C)</bold> The neuronal level of synaptophysin was quantified using western blot after 48 hours of GXM (50&#x000b5;g/ml) exposure. <bold>(D)</bold> The values in the bar charts, represented as mean &#x000b1; S.E.M for triplicate experiments, show a significant reduction in the level of synaptophysin in the GXM exposure group compared to the control group (p = 0.0086). **p&#x0003c;0.01.</p></caption><graphic xlink:href="fimmu-16-1687068-g007" position="float"><alt-text content-type="machine-generated">Panel A shows fluorescent images of 2D cultured neurons stained with synaptophysin (green) and DAPI (blue), comparing control and GXM-treated samples. Panel B presents similar images for cerebral organoids. Panel C displays a Western blot analysis of synaptophysin and beta-actin, comparing control and GXM-treated samples. Panel D is a bar graph showing relative intensity, with a notable decrease in synaptophysin levels in GXM-treated samples marked with double asterisks.</alt-text></graphic></fig></sec><sec id="s3_6"><title>Reversal of the key components between NSCs and neurons and lipid selection for membrane building</title><p>As consistent cell receptors for GXM are not detected, to identify the rationale of GXM affinity towards neurons rather than other cell types, we considered the membrane composition of neural stem cells and neurons as key players. Untargeted lipidomics was performed for iPSC-derived neural stem cells and neurons. The study analyzed neutral lipids and phospholipids, as neutral lipids are generally present in intracellular compartments as lipid droplets (<xref rid="B42" ref-type="bibr">42</xref>, <xref rid="B43" ref-type="bibr">43</xref>), whereas phospholipids are the major constituents of membranes. The difference between the two groups identified was a ~2.4-fold higher abundance of phosphatidylcholine (PC) in neurons than NSCs (p&#x0003c;0.01), whereas phosphatidylethanolamine (PE) levels were ~1.8-fold lower in neurons compared to NSCs (p&#x0003c;0.01) (<xref rid="f8" ref-type="fig"><bold>Figure&#x000a0;8A</bold></xref>). Apart from the total abundance, PC was higher, and PE was lower in neurons than in NSCs (<xref rid="f8" ref-type="fig"><bold>Figure&#x000a0;8B</bold></xref>). Further analysis revealed that among the PCs, neurons have a significantly higher number of very long-chain fatty acids compared to NSCs (p&#x0003c;0.05). In contrast, the levels of medium- and long-chain fatty acids remained unchanged between groups. Moreover, among the PEs, medium-chain fatty acids were significantly lower in neurons than in NSCs (p&#x0003c;0.05). The abundance and fatty-acid chain lengths of phosphatidylglycerol (PG), phosphatidylinositol (PI), and phosphatidylserine (PS) remained unchanged between neurons and NSCs (<xref rid="f8" ref-type="fig"><bold>Figures&#x000a0;8A, B</bold></xref>).</p><fig position="float" id="f8"><label>Figure&#x000a0;8</label><caption><p>Untargeted lipidomics of NSCs and neurons. <bold>(A)</bold> Untargeted lipidomics of NSCs and neurons identified a 2.4-fold higher abundance of phosphatidylcholine (PC) in neurons than in NSCs. At the same time, phosphatidylethanolamine (PE) levels were ~1.8-fold lower in neurons compared to NSCs. The abundance of phosphatidylglycerol (PG), phosphatidylinositol (PI), and phosphatidylserine (PS) remains unchanged between the groups. <bold>(B)</bold> Apart from total abundance, the number of PC species is also higher, and PE species are lower in neurons than in NSCs. The number of PG, PI, and PS remains unchanged between the groups **p&#x0003c;0.01. <bold>(C)</bold> Neuronal and <bold>(D)</bold> NSCs membrane composition used for membrane construction based on lipids from each class while maintaining the proportional concentration and diversity, based on the untargeted lipidomics.</p></caption><graphic xlink:href="fimmu-16-1687068-g008" position="float"><alt-text content-type="machine-generated">Bar charts and tables comparing phospholipids in NSCs and neurons. Panel A shows phospholipid abundance in PC, PE, PS, PI, PG categories, with PC being most abundant. Panel B displays phospholipid species number with similar trends. Panels C and D show detailed lipid data for NSC and neuron membranes, listing lipid molecules, formulas, calculated mass, and counts.</alt-text></graphic></fig><p>To identify the impact of lipid composition on GXM interaction, the study planned to build a lipid membranes based on proportional lipid compositions determined through untargeted lipidomics data. The lipid composition elucidated consists of PCs, PEs, PGs, PIs, and PS, varying quantities of each, in human neurons and NSCs (<xref rid="f8" ref-type="fig"><bold>Figures&#x000a0;8C, D</bold></xref>).</p></sec><sec id="s3_7"><title>First-ever atomistic models of NSC and neuronal membranes demonstrate the strong binding energy of GXM with phosphatidylcholine-rich neuronal membranes</title><p>In a novel approach, this study presents the first-ever atomistic models of neuronal and NSC membranes and their interaction with GXM. Both the neuron and NSC membrane models were built using the Structured Liquid Builder (<xref rid="B44" ref-type="bibr">44</xref>) in the Materials Science Suite (<xref rid="B45" ref-type="bibr">45</xref>) based on the original untargeted lipidomics data. This model preserved the proportional number of lipids from each class while maintaining the concentration gradients and diversity as discussed earlier.</p><p>Both membranes (<xref rid="f9" ref-type="fig"><bold>Figures&#x000a0;9A, B</bold></xref>) were subjected to a similar equilibration protocol (see Methods). Equilibration of the membranes was confirmed by monitoring the area per lipid (APL), calculated using the lipid head groups. The neuronal membrane exhibited a higher APL compared to the NSC membrane, indicating that NSC membranes are more densely packed (<xref rid="f9" ref-type="fig"><bold>Figure&#x000a0;9C</bold></xref>). This is possibly due to the presence of more unsaturated and very long-chain fatty acids in neurons than in NSCs (p &#x0003c; 0.05). At equilibrium, the density profile showed that PC and PE had higher densities than PG, PS, and PI across both membrane types, with an inverse relationship to water, suggesting a hydrophobic core (<xref rid="f9" ref-type="fig"><bold>Figures&#x000a0;9D, E</bold></xref>). The neuron membrane possessed a higher quantity of PC than the rest, as depicted by twin peaks in the graph. In comparison, the NSC membrane possessed PE in greater quantity (<xref rid="f9" ref-type="fig"><bold>Figures&#x000a0;9D, E</bold></xref>).</p><fig position="float" id="f9"><label>Figure&#x000a0;9</label><caption><p>Construction of neuronal and neural stem cells membranes and their interaction with GXM. <bold>(A, B)</bold> Constructed NSC and neuronal membranes, respectively. <bold>(C)</bold> Area per lipid (APL) was determined as a function of the simulation time using the atomic coordinates of the lipid head groups. <bold>(D, E)</bold> Density profile for NSCs and neuronal membranes to verify equilibration of the membranes. <bold>(F)</bold> A single molecule of GXM was incorporated into the equilibrated membrane system using the Disordered System Builder in the MS Maestro suite. Subsequently, a production run of 200 ns with both membranes was performed for further analysis. <bold>(G)</bold> Interaction energy of GXM with NSCs. <bold>(H)</bold> Interaction energy of GXM with neurons. <bold>(I)</bold> A comparison of interaction energy between the neuronal membrane and GXM versus NSCs identified a strong attractive interaction energy for GXM with the neuronal membrane compared to NSCs. ****p&#x0003c;0.0001.</p></caption><graphic xlink:href="fimmu-16-1687068-g009" position="float"><alt-text content-type="machine-generated">Simulation images and graphs depicting lipid bilayer interactions. Panels A and B show molecular structures of the NSCs and Neuron membranes. Panel C is a graph of area per lipid over time for NSC and Neuron membranes. Panels D and E display lipid density distributions. Panel F shows equilibrated membrane structures after 100 nanoseconds, and GXM interaction at 200 nanoseconds. Panels G and H show energy plots over time for multiple systems. Panel I depicts interaction energy between GXM with NSCs and Neurons.</alt-text></graphic></fig><p>A single molecule of GXM was incorporated above the membrane surface using the Disordered System Builder module of the suite following equilibration (<xref rid="f9" ref-type="fig"><bold>Figure&#x000a0;9F</bold></xref>). Three different initial configurations for GXM relative to the membrane were chosen for each system. Subsequently, a production run of 200 ns with both membranes was performed for further analysis. <xref rid="f9" ref-type="fig"><bold>Figures&#x000a0;9G, H</bold></xref> present the interaction energy (van der Waals and electrostatic) for each system across three replicates as a function of simulation time. Observed variation in the evolution of interaction energies among different configurations highlights a degree of configuration dependence. However, averaging across replicates mitigates these differences, providing a more robust representation of the system behavior. A comparison identified a strong attractive interaction energy (p&#x0003c;0.0001) for GXM with&#x000a0;neuronal membrane compared to NSCs (<xref rid="f9" ref-type="fig"><bold>Figure&#x000a0;9I</bold></xref>). This&#x000a0;identifies that lipid membrane components decide the GXM&#x000a0;interaction. Furthermore, the interaction energy of GXM with PC alone accounted for approximately 30-35% of the total interaction energy, indicating that higher PC levels are primarily responsible for GXM interaction and its higher affinity to neuronal membranes.</p></sec></sec><sec sec-type="discussion" id="s4"><title>Discussion</title><p>GXM is a high molecular mass capsular polysaccharide and a major virulent factor of <italic toggle="yes">C. neoformans.</italic> Its presence in the brain is reported to enhance the <italic toggle="yes">C. neoformans</italic> invasion into the brain and cause defective immunity, accompanied by microglial dysregulation (<xref rid="B13" ref-type="bibr">13</xref>, <xref rid="B21" ref-type="bibr">21</xref>). However, microglia have been shown to migrate away from GXM accumulation sites (<xref rid="B13" ref-type="bibr">13</xref>), and they are unable to remove accumulated GXM. In this study, using a cerebral organoid model devoid of microglia and 2D-cultured NSCs and neurons, we demonstrate that GXM exposure induces subtle cell death, but progenitor cell proliferation remains unaffected. Interestingly, GXM preferentially targets neurons irrespective of the presence/abundance of NSCs and astrocytes. Synaptophysin, an integral component of neuronal synaptic vesicles, was significantly reduced upon GXM exposure. Furthermore, a comparative membrane composition analysis by untargeted lipidomics revealed higher phosphatidylcholine and lower phosphatidylethanolamine levels in neurons compared to NSCs. The study utilized the first-ever atomistic models of neuronal and NSC membranes built using a proportion of the original lipid compositions, to identify the interactions between GXM and the membranes using the Materials Science Suite. GXM exhibited a strong attractive interaction energy with neuronal membranes, with phosphatidylcholine identified as the primary contributor to this interaction. This study provides primary evidence that lipid membranes containing higher phosphatidylcholine are a novel target of GXM in the pathogenesis of <italic toggle="yes">C. neoformans.</italic> Together, this study identifies two essential phenomena during <italic toggle="yes">C. neoformans</italic> pathogenesis: (i) specific targeting of GXM that affects synaptic deficit in neurons, a major reason for the neurological dysfunctions visible in <italic toggle="yes">C. neoformans-induced</italic> meningoencephalitis, and (ii) primary evidence of lipid membrane rich in phosphatidylcholine as a novel target of GXM for pathogenesis.</p><p>The impact of GXM on the survival and proliferation of target cells depends on multiple factors. For example, following infection, GXM accumulates in several tissues for a long time and is cleared by resident macrophages, which also act as its reservoir, leading to their apoptosis through caspase-dependent and independent pathways (<xref rid="B22" ref-type="bibr">22</xref>, <xref rid="B46" ref-type="bibr">46</xref>&#x02013;<xref rid="B49" ref-type="bibr">49</xref>). Additionally, GXM is known to alter the physiological state of target cells, such as lung epithelial cells (<xref rid="B50" ref-type="bibr">50</xref>). GXM can be internalized by macrophages (<xref rid="B51" ref-type="bibr">51</xref>), and suppresses the host cell proliferation in a mechanism that includes apoptosis (<xref rid="B49" ref-type="bibr">49</xref>). Also, distinct cells behave differently to GXM exposure. For example, monocytes were utilized as reservoirs of GXM, but GXM can be quickly ingested, degraded, or expelled by neutrophils (<xref rid="B52" ref-type="bibr">52</xref>). While capsule components are used to evade recognition by hosts (<xref rid="B53" ref-type="bibr">53</xref>) they are also among the first components to interact with the host immune system (<xref rid="B54" ref-type="bibr">54</xref>). Capsular GXM is recognized by TLR2, CD14, and TLR-associated adaptor protein MyD88 (<xref rid="B55" ref-type="bibr">55</xref>, <xref rid="B56" ref-type="bibr">56</xref>). <italic toggle="yes">In vitro</italic> cell line studies demonstrated an interaction between <italic toggle="yes">C. neoformans</italic> and astrocytes (<xref rid="B57" ref-type="bibr">57</xref>), while immunocompetent rats have shown glia-mediated inflammation (<xref rid="B58" ref-type="bibr">58</xref>). However, this capsular polysaccharide shows minimal interaction with astrocytes in postmortem brain samples of cryptococcal meningoencephalitis (<xref rid="B16" ref-type="bibr">16</xref>). While the interaction of GXM was primarily with neurons, a minimal but significant apoptosis was observed in the organoids exposed to GXM, while proliferating cells remained unaffected, likely due to dose and interaction-related reasons.</p><p>Neurocognitive impairments are well associated with CNS infections. Patients with cryptococcal meningitis have been known to show neurocognitive impairment and neuropsychological deficits depending on the severity of infection, despite the complete eradication of fungal cells from the brain with a standard cryptococcal treatment regimen (<xref rid="B59" ref-type="bibr">59</xref>&#x02013;<xref rid="B63" ref-type="bibr">63</xref>). Since earlier mouse models demonstrated severe synaptic deficits during cryptococcal meningoencephalitis (<xref rid="B41" ref-type="bibr">41</xref>), the expression of synaptophysin, a major synaptic vesicle protein in neurons, was evaluated. Interestingly, post-GXM exposure showed a marked reduction in the protein in neurons, indicating that GXM alone can cause neuronal dysfunction. Synaptophysin is a calcium-binding glycoprotein, an integral membrane component of the neuronal synaptic vesicles, and a modulator of endocytosis. This is an important finding; synaptophysin is critically required for neurotransmission and cognitive functions and its levels can be improved by various nonpharmacological (<xref rid="B64" ref-type="bibr">64</xref>, <xref rid="B65" ref-type="bibr">65</xref>) and pharmacological interventions (<xref rid="B66" ref-type="bibr">66</xref>&#x02013;<xref rid="B69" ref-type="bibr">69</xref>), if required for preventing <italic toggle="yes">C. neoformans</italic> pathogenesis. The targeting synaptophysin approach requires significant attention and studies in this aspect.</p><p>As a major membrane component, lipids play a crucial role in the interaction between pathogens (<xref rid="B70" ref-type="bibr">70</xref>). Previous studies demonstrated that immunocompromised hosts with low CD4 lymphocyte counts show higher phosphatidylcholine in their subcortical brain regions (containing neuronal cell bodies and dendrites) and are highly penetrated by <italic toggle="yes">C. neoformans</italic> (<xref rid="B71" ref-type="bibr">71</xref>&#x02013;<xref rid="B73" ref-type="bibr">73</xref>). Furthermore, based on the observation that GXM specifically targets neuronal membranes, it was hypothesized that identifying lipid composition in different cell&#x000a0;types could give an idea of the impact of membrane composition on GXM affinity to neurons. Earlier reports in mice have identified relatively elevated phosphatidylcholine levels and&#x000a0;reduced phosphatidylethanolamine levels in neurons compared to astrocytes, microglia, and oligodendrocytes (<xref rid="B74" ref-type="bibr">74</xref>). Also, phosphatidylcholine level was higher in rat neurons while phosphatidylethanolamine level was lower than in astrocytes (<xref rid="B75" ref-type="bibr">75</xref>). Since the culture contained proliferating cells that GXM does not target, untargeted lipidomics analysis of neural stem cells and neurons was performed to identify the possible impact of lipids, rather than repeating lipid analysis in astrocytes. The study revealed a significant reversal in the abundance of phosphatidylcholine and phosphatidylethanolamines between neural stem cells and neurons, while most other lipids remained unchanged. This suggests that higher levels of phosphatidylcholine in the neuronal membrane could be a possible reason for GXM targeting neurons. It was demonstrated that, in neurons, local synthesis produces half of the phosphatidylcholine that accumulates in distal axons. The other half is transported from neuronal soma and proximal axons (<xref rid="B76" ref-type="bibr">76</xref>). While the fat-binding capacity of polysaccharides, including phosphatidylcholine, is well established, earlier studies demonstrated phospholipids as a trigger for <italic toggle="yes">C. neoformans</italic> exopolysaccharide production and present as a danger signal for this fungal infection that triggers capsular enlargement to prevent entry (<xref rid="B77" ref-type="bibr">77</xref>). In this study, a comparison of the direct interaction between the neuronal membrane and GXM versus NSCs and GXM identified a strong interaction energy for GXM with the neuronal membrane, compared to NSCs, suggesting that lipid membrane components may determine the GXM interaction. The present data&#x000a0;demonstrate that GXM of <italic toggle="yes">C. neoformans</italic> interacts strongly with neuronal membranes enriched with phosphatidylcholine. However, in meningoencephalitis, whether GXM targeting of phosphatidylcholine is used as a protective measure for the survival and propagation of the fungus requires further study. Additionally, further studies in animal models of <italic toggle="yes">C. neoformans</italic> infection are required to identify the fundamental relationship between the abundance of phosphatidylcholine, reduced levels of synaptophysin and cognitive dysfunction. As neuronal membranes of the brain can directly integrate dietary fatty acids transported through fatty acid transporters, further studies on phosphatidylcholine enhancements/depletion, and direct interactions at different degrees may identify therapeutic opportunities with phosphatidylcholine-mediated inhibition of the pathogenesis of <italic toggle="yes">C. neoformans</italic>.</p><p>Overall, this study provides novel evidence that lipid membranes containing higher levels of phosphatidylcholine are a primary target of GXM from <italic toggle="yes">C. neoformans</italic>, which could be the possible reason for the preferential targeting of GXM to neurons. Additionally, GXM induced synaptic deficits in neurons, which could be a significant factor contributing to the neurological dysfunctions observed in this fungal infection. One limitation of the study is that it used organoids without microglia, rather than using dysfunctional microglia. Animal models of <italic toggle="yes">C. neoformans</italic> infections have demonstrated dysfunctional microglia in the brain; however, microglia are not lacking. Since it is not easy to demonstrate an organoid model with reduced microglia, we considered using organoids without microglia as a model to represent a condition of dysfunctional microglia. Further, the present study used the ATCC 32045 C<italic toggle="yes">. neoformans</italic> strain, as it is a well-characterized reference strain, widely used in studies investigating virulence factors and host-pathogen interactions in Cryptococcus species. The hybrid nature of this strain presents an opportunity to study strain variability and its impact on neuronal cytotoxicity&#x02014;an aspect that has not been extensively reported in previous studies. The structure and physiological properties of GXM exhibit remarkable heterogeneity. There are considerable variations between serotypes and among strains within a single serotype. These differences can affect its interactions within the host environment (<xref rid="B17" ref-type="bibr">17</xref>, <xref rid="B78" ref-type="bibr">78</xref>&#x02013;<xref rid="B80" ref-type="bibr">80</xref>). The serotypes A/D are relatively less common compared to pure serotype A but are still clinically relevant (<xref rid="B81" ref-type="bibr">81</xref>, <xref rid="B82" ref-type="bibr">82</xref>). Therefore, the strain used can be considered a strain seen in both clinical and environmental settings. However, the fungal strain may influence the extent of observed neuronal cell death. Comparative studies involving serotype A (H99), and clinical isolates could identify the strain-specific differences in GXM-mediated neuronal response. Also, GXM from the multiple strains of Cryptococcus <italic toggle="yes">neoformans</italic> and Cryptococcus <italic toggle="yes">gatti</italic>, can be considered to better elucidate species-specific differences in the outcome.</p></sec></body><back><fn-group><fn id="n1" fn-type="edited-by"><p>Edited by: <ext-link xlink:href="https://loop.frontiersin.org/people/41765" ext-link-type="uri">Hector Mora Montes</ext-link>, University of Guanajuato, Mexico</p></fn><fn id="n2" fn-type="reviewed-by"><p>Reviewed by: <ext-link xlink:href="https://loop.frontiersin.org/people/41884" ext-link-type="uri">Luis R. Martinez</ext-link>, University of Florida, United States</p><p><ext-link xlink:href="https://loop.frontiersin.org/people/3175095" ext-link-type="uri">Marta Reguera-Gomez</ext-link>, University of Florida, United States</p></fn></fn-group><sec sec-type="data-availability" id="s5"><title>Data availability statement</title><p>The original contributions presented in the study are included in the article/<xref rid="SM1" ref-type="supplementary-material"><bold>Supplementary Material</bold></xref>. Further inquiries can be directed to the corresponding author.</p></sec><sec sec-type="ethics-statement" id="s6"><title>Ethics statement</title><p>Ethical approval was not required for the studies because only commercially available established cell lines were used.</p></sec><sec sec-type="author-contributions" id="s7"><title>Author contributions</title><p>AIR: Writing &#x02013; original draft, Writing &#x02013; review &#x00026; editing. SH: Writing &#x02013; original draft, Writing &#x02013; review &#x00026; editing. AMD: Writing &#x02013; review &#x00026; editing. SK: Writing &#x02013; original draft. DC: Writing &#x02013; review &#x00026; editing. SKR: Writing &#x02013; review &#x00026; editing. PPY: Writing &#x02013; review &#x00026; editing. KS: Writing &#x02013; review &#x00026; editing. PVM: Writing &#x02013; review &#x00026; editing. KSS: Writing &#x02013; review &#x00026; editing. PB: Writing &#x02013; review &#x00026; editing. VB: Writing &#x02013; review &#x00026; editing. KRS: Writing &#x02013; review &#x00026; editing. IM: Writing &#x02013; review &#x00026; editing. VA: Writing &#x02013; review &#x00026; editing. AKS: Writing &#x02013; review &#x00026; editing. DU: Writing &#x02013; review &#x00026; editing, Writing &#x02013; original draft.</p></sec><sec sec-type="COI-statement" id="s9"><title>Conflict of interest</title><p>Authors SK and PB were employed by company Schrodinger India Private Limited.</p><p>The remaining author(s) declared that this work was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p><p>The authors DU, AKS, IM, SKR declared that they were an editorial board member of Frontiers at the time of submission. This had no impact on the peer review process and the final decision.</p></sec><sec sec-type="correction-statement" id="s10"><title>Correction note</title><p>This article has been corrected with minor changes. These changes do not impact the scientific content of the article.</p></sec><sec sec-type="ai-statement" id="s11"><title>Generative AI statement</title><p>The author(s) declared that generative AI was not used in the creation of this manuscript.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></sec><sec sec-type="disclaimer" id="s12"><title>Publisher&#x02019;s note</title><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></sec><sec sec-type="supplementary-material" id="s13"><title>Supplementary material</title><p>The Supplementary Material for this article can be found online at: <ext-link xlink:href="https://www.frontiersin.org/articles/10.3389/fimmu.2025.1687068/full#supplementary-material" ext-link-type="uri">https://www.frontiersin.org/articles/10.3389/fimmu.2025.1687068/full#supplementary-material</ext-link></p><supplementary-material id="SM1" position="float" content-type="local-data"><media xlink:href="Presentation1.pptx"/></supplementary-material><supplementary-material id="ST1" position="float" content-type="local-data"><media xlink:href="Table1.docx"/></supplementary-material></sec><ref-list><title>References</title><ref id="B1"><label>1</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Hurtado</surname><given-names>JC</given-names></name>
+<name><surname>Castillo</surname><given-names>P</given-names></name>
+<name><surname>Fernandes</surname><given-names>F</given-names></name>
+<name><surname>Navarro</surname><given-names>M</given-names></name>
+<name><surname>Lovane</surname><given-names>L</given-names></name>
+<name><surname>Casas</surname><given-names>I</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Mortality due to Cryptococcus neoformans and Cryptococcus gattii in low-income settings: an autopsy study</article-title>. <source>Sci Rep</source>. (<year>2019</year>) <volume>9</volume>:<fpage>7493</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1038/s41598-019-43941-w</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">31097746</pub-id>
+</mixed-citation></ref><ref id="B2"><label>2</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Siqueira</surname><given-names>LPM</given-names></name>
+<name><surname>Gimenes</surname><given-names>VMF</given-names></name>
+<name><surname>de Freitas</surname><given-names>RS</given-names></name>
+<name><surname>Melhem</surname><given-names>MSC</given-names></name>
+<name><surname>Bonfietti</surname><given-names>LX</given-names></name>
+<name><surname>da Silva</surname><given-names>AR</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Evaluation of Vitek MS for Differentiation of <italic toggle="yes">Cryptococcus neoformans</italic> and <italic toggle="yes">Cryptococcus gattii</italic> Genotypes</article-title>. <source>J Clin Microbiol</source>. (<year>2019</year>) <volume>57</volume>:<page-range>e01282&#x02013;18</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/JCM.01282-18</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30429250</pub-id>
+</mixed-citation></ref><ref id="B3"><label>3</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Yu</surname><given-names>CH</given-names></name>
+<name><surname>Sephton-Clark</surname><given-names>P</given-names></name>
+<name><surname>Tenor</surname><given-names>JL</given-names></name>
+<name><surname>Toffaletti</surname><given-names>DL</given-names></name>
+<name><surname>Giamberardino</surname><given-names>C</given-names></name>
+<name><surname>Haverkamp</surname><given-names>M</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Gene expression of diverse cryptococcus isolates during infection of the human central nervous system</article-title>. <source>mBio</source>. (<year>2021</year>) <volume>12</volume>:<fpage>e0231321</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/mBio.02313-21</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">34724829</pub-id>
+</mixed-citation></ref><ref id="B4"><label>4</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Coussement</surname><given-names>J</given-names></name>
+<name><surname>Heath</surname><given-names>CH</given-names></name>
+<name><surname>Roberts</surname><given-names>MB</given-names></name>
+<name><surname>Lane</surname><given-names>RJ</given-names></name>
+<name><surname>Spelman</surname><given-names>T</given-names></name>
+<name><surname>Smibert</surname><given-names>OC</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Current epidemiology and clinical features of cryptococcus infection in patients without human immunodeficiency virus: A multicenter study in 46 hospitals in Australia and New Zealand</article-title>. <source>Clin Infect Dis: an Off Publ Infect Dis Soc America</source>. (<year>2023</year>) <volume>77</volume>:<page-range>976&#x02013;86</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1093/cid/ciad321</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">37235212</pub-id>
+</mixed-citation></ref><ref id="B5"><label>5</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Venkatareddy</surname><given-names>MP</given-names></name>
+<name><surname>Upadhya</surname><given-names>D</given-names></name>
+<name><surname>Yegneswaran</surname><given-names>PP</given-names></name>
+<name><surname>Varghese</surname><given-names>A</given-names></name>
+<name><surname>Pahadasingh</surname><given-names>S</given-names></name>
+<name><surname>Prabhu</surname><given-names>AN</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Molecular diagnostic methods for rapid diagnosis of central nervous system infections</article-title>. <source>Front Med Technol</source>. (<year>2025</year>) <volume>7</volume>:<elocation-id>1497512</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.3389/fmedt.2025.1497512</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">40400662</pub-id>
+</mixed-citation></ref><ref id="B6"><label>6</label><mixed-citation publication-type="book">
+<person-group person-group-type="author"><collab>World Health Organization</collab>
+</person-group>. <source>WHO fungal priority pathogens list to guide research, development and public health action</source> (<year>2022</year>). 
+<publisher-name>WHO</publisher-name>. Available online at: <uri xlink:href="https://www.who.int/publications/i/item/9789240060241">https://www.who.int/publications/i/item/9789240060241</uri> (Accessed July 10, 2025).
+</mixed-citation></ref><ref id="B7"><label>7</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Rajasingham</surname><given-names>R</given-names></name>
+<name><surname>Govender</surname><given-names>NP</given-names></name>
+<name><surname>Jordan</surname><given-names>A</given-names></name>
+<name><surname>Loyse</surname><given-names>A</given-names></name>
+<name><surname>Shroufi</surname><given-names>A</given-names></name>
+<name><surname>Denning</surname><given-names>DW</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>The global burden of HIV-associated cryptococcal infection in adults in 2020: a modelling analysis</article-title>. <source>Lancet Infect Dis</source>. (<year>2022</year>) <volume>22</volume>:<page-range>1748&#x02013;55</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/S1473-3099(22)00499-6</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">36049486</pub-id>
+</mixed-citation></ref><ref id="B8"><label>8</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Muzazu</surname><given-names>SGY</given-names></name>
+<name><surname>Assefa</surname><given-names>DG</given-names></name>
+<name><surname>Phiri</surname><given-names>C</given-names></name>
+<name><surname>Getinet</surname><given-names>T</given-names></name>
+<name><surname>Solomon</surname><given-names>S</given-names></name>
+<name><surname>Yismaw</surname><given-names>G</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Prevalence of cryptococcal meningitis among people living with human immunodeficiency virus and predictors of mortality in adults on induction therapy in Africa: A systematic review and meta-analysis</article-title>. <source>Front Med</source>. (<year>2022</year>) <volume>9</volume>:<elocation-id>989265</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.3389/fmed.2022.989265</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">36160163</pub-id>
+</mixed-citation></ref><ref id="B9"><label>9</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Pasquier</surname><given-names>E</given-names></name>
+<name><surname>Kunda</surname><given-names>J</given-names></name>
+<name><surname>De Beaudrap</surname><given-names>P</given-names></name>
+<name><surname>Loyse</surname><given-names>A</given-names></name>
+<name><surname>Temfack</surname><given-names>E</given-names></name>
+<name><surname>Molloy</surname><given-names>SF</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Long-term mortality and disability in cryptococcal meningitis: A systematic literature review</article-title>. <source>Clin Infect Dis: an Off Publ Infect Dis Soc America</source>. (<year>2018</year>) <volume>66</volume>:<page-range>1122&#x02013;32</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1093/cid/cix870</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">29028957</pub-id>
+</mixed-citation></ref><ref id="B10"><label>10</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Alanio</surname><given-names>A</given-names></name>
+</person-group>. 
+<article-title>Dormancy in Cryptococcus neoformans: 60 years of accumulating evidence</article-title>. <source>J Clin Invest</source>. (<year>2020</year>) <volume>130</volume>:<page-range>3353&#x02013;60</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1172/JCI136223</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32484459</pub-id>
+</mixed-citation></ref><ref id="B11"><label>11</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Francis</surname><given-names>VI</given-names></name>
+<name><surname>Liddle</surname><given-names>C</given-names></name>
+<name><surname>Camacho</surname><given-names>E</given-names></name>
+<name><surname>Kulkarni</surname><given-names>M</given-names></name>
+<name><surname>Junior</surname><given-names>SRS</given-names></name>
+<name><surname>Harvey</surname><given-names>JA</given-names></name>
+<etal/>
+</person-group>. 
+<article-title><italic toggle="yes">Cryptococcus neoforman</italic>s rapidly invades the murine brain by sequential breaching of airway and endothelial tissues barriers, followed by engulfment by microglia</article-title>. <source>mBio</source>. (<year>2024</year>) <volume>15</volume>:<fpage>e0307823</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/mbio.03078-23</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">38511961</pub-id>
+</mixed-citation></ref><ref id="B12"><label>12</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Mohamed</surname><given-names>SH</given-names></name>
+<name><surname>Fu</surname><given-names>MS</given-names></name>
+<name><surname>Hain</surname><given-names>S</given-names></name>
+<name><surname>Alselami</surname><given-names>A</given-names></name>
+<name><surname>Vanhoffelen</surname><given-names>E</given-names></name>
+<name><surname>Li</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Microglia are not protective against cryptococcal meningitis</article-title>. <source>Nat Commun</source>. (<year>2023</year>) <volume>14</volume>:<fpage>7202</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1038/s41467-023-43061-0</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">37938547</pub-id>
+</mixed-citation></ref><ref id="B13"><label>13</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Enriquez</surname><given-names>V</given-names></name>
+<name><surname>Munzen</surname><given-names>ME</given-names></name>
+<name><surname>Porras</surname><given-names>LM</given-names></name>
+<name><surname>Charles-Ni&#x000f1;o</surname><given-names>CL</given-names></name>
+<name><surname>Yu</surname><given-names>F</given-names></name>
+<name><surname>Alvi&#x000f1;a</surname><given-names>K</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Active Cryptococcus neoformans glucuronoxylomannan production prevents elimination of cryptococcal CNS infection in <italic toggle="yes">vivo</italic></article-title>. <source>J Neuroinflamm</source>. (<year>2025</year>) <volume>22</volume>:<fpage>61</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1186/s12974-025-03384-9</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">40038673</pub-id>
+</mixed-citation></ref><ref id="B14"><label>14</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Barbosa</surname><given-names>FM</given-names></name>
+<name><surname>Fonseca</surname><given-names>FL</given-names></name>
+<name><surname>Holandino</surname><given-names>C</given-names></name>
+<name><surname>Alviano</surname><given-names>CS</given-names></name>
+<name><surname>Nimrichter</surname><given-names>L</given-names></name>
+<name><surname>Rodrigues</surname><given-names>ML</given-names></name>
+</person-group>. 
+<article-title>Glucuronoxylomannan-mediated interaction of Cryptococcus neoformans with human alveolar cells results in fungal internalization and host cell damage</article-title>. <source>Microbes Infect</source>. (<year>2006</year>) <volume>8</volume>:<fpage>493</fpage>&#x02013;<lpage>502</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.micinf.2005.07.027</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">16293436</pub-id>
+</mixed-citation></ref><ref id="B15"><label>15</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>McFadden</surname><given-names>D</given-names></name>
+<name><surname>Zaragoza</surname><given-names>O</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+</person-group>. 
+<article-title>The capsular dynamics of Cryptococcus neoformans</article-title>. <source>Trends Microbiol</source>. (<year>2006</year>) <volume>14</volume>:<fpage>497</fpage>&#x02013;<lpage>505</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.tim.2006.09.003</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">16996739</pub-id>
+</mixed-citation></ref><ref id="B16"><label>16</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>SC</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+<name><surname>Dickson</surname><given-names>DW</given-names></name>
+</person-group>. 
+<article-title>Immunohistochemical localization of capsular polysaccharide antigen in the central nervous system cells in cryptococcal meningoencephalitis</article-title>. <source>Am J Pathol</source>. (<year>1996</year>) <volume>148</volume>:<page-range>1267&#x02013;74</page-range>., PMID: 
+<pub-id pub-id-type="pmid">8644867</pub-id>
+</mixed-citation></ref><ref id="B17"><label>17</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Zaragoza</surname><given-names>O</given-names></name>
+<name><surname>Rodrigues</surname><given-names>ML</given-names></name>
+<name><surname>De Jesus</surname><given-names>M</given-names></name>
+<name><surname>Frases</surname><given-names>S</given-names></name>
+<name><surname>Dadachova</surname><given-names>E</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+</person-group>. 
+<article-title>The capsule of the fungal pathogen Cryptococcus neoformans</article-title>. <source>Adv Appl Microbiol</source>. (<year>2009</year>) <volume>68</volume>:<fpage>133</fpage>&#x02013;<lpage>216</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/S0065-2164(09)01204-0</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">19426855</pub-id>
+</mixed-citation></ref><ref id="B18"><label>18</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Vecchiarelli</surname><given-names>A</given-names></name>
+<name><surname>Pericolini</surname><given-names>E</given-names></name>
+<name><surname>Gabrielli</surname><given-names>E</given-names></name>
+<name><surname>Kenno</surname><given-names>S</given-names></name>
+<name><surname>Perito</surname><given-names>S</given-names></name>
+<name><surname>Cenci</surname><given-names>E</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Elucidating the immunological function of the Cryptococcus neoformans capsule</article-title>. <source>Future Microbiol</source>. (<year>2013</year>) <volume>8</volume>:<page-range>1107&#x02013;16</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.2217/fmb.13.84</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">24020739</pub-id>
+</mixed-citation></ref><ref id="B19"><label>19</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Colombo</surname><given-names>AC</given-names></name>
+<name><surname>Rella</surname><given-names>A</given-names></name>
+<name><surname>Normile</surname><given-names>T</given-names></name>
+<name><surname>Joffe</surname><given-names>LS</given-names></name>
+<name><surname>Tavares</surname><given-names>PM</given-names></name>
+<name><surname>de S Ara&#x000fa;jo</surname><given-names>GR</given-names></name>
+<etal/>
+</person-group>. 
+<article-title><italic toggle="yes">Cryptococcus neoformans</italic> glucuronoxylomannan and sterylglucoside are required for host protection in an animal vaccination model</article-title>. <source>mBio</source>. (<year>2019</year>) <volume>10</volume>:<page-range>e02909&#x02013;18</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/mBio.02909-18</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30940711</pub-id>
+</mixed-citation></ref><ref id="B20"><label>20</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Hamed</surname><given-names>MF</given-names></name>
+<name><surname>Enriquez</surname><given-names>V</given-names></name>
+<name><surname>Munzen</surname><given-names>ME</given-names></name>
+<name><surname>Charles-Ni&#x000f1;o</surname><given-names>CL</given-names></name>
+<name><surname>Mihu</surname><given-names>MR</given-names></name>
+<name><surname>Khoshbouei</surname><given-names>H</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Clinical and pathological characterization of Central Nervous System cryptococcosis in an experimental mouse model of stereotaxic intracerebral infection</article-title>. <source>PloS Negl Trop Dis</source>. (<year>2023</year>) <volume>17</volume>:<fpage>e0011068</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1371/journal.pntd.0011068</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">36656900</pub-id>
+</mixed-citation></ref><ref id="B21"><label>21</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>HH</given-names></name>
+<name><surname>Carmichael</surname><given-names>DJ</given-names></name>
+<name><surname>R&#x000ed;beiro</surname><given-names>V</given-names></name>
+<name><surname>Parisi</surname><given-names>DN</given-names></name>
+<name><surname>Munzen</surname><given-names>ME</given-names></name>
+<name><surname>Charles-Ni&#x000f1;o</surname><given-names>CL</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Glucuronoxylomannan intranasal challenge prior to Cryptococcus neoformans pulmonary infection enhances cerebral cryptococcosis in rodents</article-title>. <source>PloS Pathog</source>. (<year>2023</year>) <volume>19</volume>:<fpage>e1010941</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1371/journal.ppat.1010941</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">37115795</pub-id>
+</mixed-citation></ref><ref id="B22"><label>22</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Muchmore</surname><given-names>HG</given-names></name>
+<name><surname>Scott</surname><given-names>EN</given-names></name>
+<name><surname>Felton</surname><given-names>FG</given-names></name>
+<name><surname>Fromtling</surname><given-names>RA</given-names></name>
+</person-group>. 
+<article-title>Cryptococcal capsular polysaccharide clearance in nonimmune mice</article-title>. <source>Mycopathologia</source>. (<year>1982</year>) <volume>78</volume>:<page-range>41&#x02013;5</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1007/BF00436580</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">7048100</pub-id>
+</mixed-citation></ref><ref id="B23"><label>23</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lu</surname><given-names>H</given-names></name>
+<name><surname>Zhou</surname><given-names>Y</given-names></name>
+<name><surname>Yin</surname><given-names>Y</given-names></name>
+<name><surname>Pan</surname><given-names>X</given-names></name>
+<name><surname>Weng</surname><given-names>X</given-names></name>
+</person-group>. 
+<article-title>Cryptococcal antigen test revisited: significance for cryptococcal meningitis therapy monitoring in a tertiary chinese hospital</article-title>. <source>J Clin Microbiol</source>. (<year>2005</year>) <volume>43</volume>:<page-range>2989&#x02013;90</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/JCM.43.6.2989-2990.2005</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">15956440</pub-id>
+</mixed-citation></ref><ref id="B24"><label>24</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Bennett</surname><given-names>JE</given-names></name>
+<name><surname>Williamson</surname><given-names>PR</given-names></name>
+</person-group>. 
+<article-title>Antigen titers in cryptococcal meningitis: what determines how fast they fall</article-title>? <source>J Infect Dis</source>. (<year>2024</year>) <volume>230</volume>:<page-range>1291&#x02013;6</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1093/infdis/jiae354</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">38986025</pub-id>
+</mixed-citation></ref><ref id="B25"><label>25</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Qian</surname><given-names>X</given-names></name>
+<name><surname>Nguyen</surname><given-names>HN</given-names></name>
+<name><surname>Song</surname><given-names>MM</given-names></name>
+<name><surname>Hadiono</surname><given-names>C</given-names></name>
+<name><surname>Ogden</surname><given-names>SC</given-names></name>
+<name><surname>Hammack</surname><given-names>C</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Brain-region-specific organoids using mini-bioreactors for modeling ZIKV exposure</article-title>. <source>Cell</source>. (<year>2016</year>) <volume>165</volume>:<page-range>1238&#x02013;54</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.cell.2016.04.032</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">27118425</pub-id>
+</mixed-citation></ref><ref id="B26"><label>26</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Gabriel</surname><given-names>E</given-names></name>
+<name><surname>Ramani</surname><given-names>A</given-names></name>
+<name><surname>Karow</surname><given-names>U</given-names></name>
+<name><surname>Gottardo</surname><given-names>M</given-names></name>
+<name><surname>Natarajan</surname><given-names>K</given-names></name>
+<name><surname>Gooi</surname><given-names>LM</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Recent zika virus isolates induce premature differentiation of neural progenitors in human brain organoids</article-title>. <source>Cell Stem Cell</source>. (<year>2017</year>) <volume>20</volume>:<fpage>397</fpage>&#x02013;<lpage>406.e5</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.stem.2016.12.005</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">28132835</pub-id>
+</mixed-citation></ref><ref id="B27"><label>27</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>D&#x02019;Aiuto</surname><given-names>L</given-names></name>
+<name><surname>Bloom</surname><given-names>DC</given-names></name>
+<name><surname>Naciri</surname><given-names>JN</given-names></name>
+<name><surname>Smith</surname><given-names>A</given-names></name>
+<name><surname>Edwards</surname><given-names>TG</given-names></name>
+<name><surname>McClain</surname><given-names>L</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Modeling herpes simplex virus 1 infections in human central nervous system neuronal cells using two- and three-dimensional cultures derived from induced pluripotent stem cells</article-title>. <source>J Virol</source>. (<year>2019</year>) <volume>93</volume>:<page-range>e00111&#x02013;19</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/JVI.00111-19</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30787148</pub-id>
+</mixed-citation></ref><ref id="B28"><label>28</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Dos Reis</surname><given-names>RS</given-names></name>
+<name><surname>Sant</surname><given-names>S</given-names></name>
+<name><surname>Keeney</surname><given-names>H</given-names></name>
+<name><surname>Wagner</surname><given-names>MCE</given-names></name>
+<name><surname>Ayyavoo</surname><given-names>V</given-names></name>
+</person-group>. 
+<article-title>Modeling HIV-1 neuropathogenesis using three-dimensional human brain organoids (hBORGs) with HIV-1 infected microglia</article-title>. <source>Sci Rep</source>. (<year>2020</year>) <volume>10</volume>:<fpage>15209</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1038/s41598-020-72214-0</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32938988</pub-id>
+</mixed-citation></ref><ref id="B29"><label>29</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Sun</surname><given-names>G</given-names></name>
+<name><surname>Chiuppesi</surname><given-names>F</given-names></name>
+<name><surname>Chen</surname><given-names>X</given-names></name>
+<name><surname>Wang</surname><given-names>C</given-names></name>
+<name><surname>Tian</surname><given-names>E</given-names></name>
+<name><surname>Nguyen</surname><given-names>J</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Modeling human cytomegalovirus-induced microcephaly in human iPSC-derived brain organoids</article-title>. <source>Cell Rep Med</source>. (<year>2020</year>) <volume>1</volume>:<elocation-id>100002</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.xcrm.2020.100002</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">33205055</pub-id>
+</mixed-citation></ref><ref id="B30"><label>30</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lancaster</surname><given-names>MA</given-names></name>
+<name><surname>Knoblich</surname><given-names>JA</given-names></name>
+</person-group>. 
+<article-title>Generation of cerebral organoids from human pluripotent stem cells</article-title>. <source>Nat Protoc</source>. (<year>2014</year>) <volume>9</volume>:<page-range>2329&#x02013;40</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1038/nprot.2014.158</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">25188634</pub-id>
+</mixed-citation></ref><ref id="B31"><label>31</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Ormel</surname><given-names>PR</given-names></name>
+<name><surname>Vieira de S&#x000e1;</surname><given-names>R</given-names></name>
+<name><surname>van Bodegraven</surname><given-names>EJ</given-names></name>
+<name><surname>Karst</surname><given-names>H</given-names></name>
+<name><surname>Harschnitz</surname><given-names>O</given-names></name>
+<name><surname>Sneeboer</surname><given-names>MAM</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Microglia innately develop within cerebral organoids</article-title>. <source>Nat Commun</source>. (<year>2018</year>) <volume>9</volume>:<fpage>4167</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1038/s41467-018-06684-2</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30301888</pub-id>
+</mixed-citation></ref><ref id="B32"><label>32</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Cherniak</surname><given-names>R</given-names></name>
+<name><surname>Morris</surname><given-names>LC</given-names></name>
+<name><surname>Anderson</surname><given-names>BC</given-names></name>
+<name><surname>Meyer</surname><given-names>SA</given-names></name>
+</person-group>. 
+<article-title>Facilitated isolation, purification, and analysis of glucuronoxylomannan of Cryptococcus neoformans</article-title>. <source>Infect Immun</source>. (<year>1991</year>) <volume>59</volume>:<fpage>59</fpage>&#x02013;<lpage>64</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/iai.59.1.59-64.1991</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">1987064</pub-id>
+</mixed-citation></ref><ref id="B33"><label>33</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Wozniak</surname><given-names>KL</given-names></name>
+<name><surname>Levitz</surname><given-names>SM</given-names></name>
+</person-group>. 
+<article-title>Isolation and purification of antigenic components of Cryptococcus</article-title>. <source>Methods Mol Biol (Clifton NJ)</source>. (<year>2009</year>) <volume>470</volume>:<fpage>71</fpage>&#x02013;<lpage>83</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1007/978-1-59745-204-5_7</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">19089377</pub-id>
+</mixed-citation></ref><ref id="B34"><label>34</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Ballal</surname><given-names>AR</given-names></name>
+<name><surname>Reddy</surname><given-names>SK</given-names></name>
+<name><surname>Chandran</surname><given-names>D</given-names></name>
+<name><surname>Hegde</surname><given-names>S</given-names></name>
+<name><surname>Upadhya</surname><given-names>R</given-names></name>
+<name><surname>Se</surname><given-names>PK</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Cell-specific extracellular vesicle-encapsulated exogenous GABA controls seizures in epilepsy</article-title>. <source>Stem Cell Res Therapy</source>. (<year>2024</year>) <volume>15</volume>:<fpage>108</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1186/s13287-024-03721-4</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">38637847</pub-id>
+</mixed-citation></ref><ref id="B35"><label>35</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Reddy</surname><given-names>SK</given-names></name>
+<name><surname>Ballal</surname><given-names>AR</given-names></name>
+<name><surname>Shailaja</surname><given-names>S</given-names></name>
+<name><surname>Seetharam</surname><given-names>RN</given-names></name>
+<name><surname>Raghu</surname><given-names>CH</given-names></name>
+<name><surname>Sankhe</surname><given-names>R</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Small extracellular vesicle-loaded bevacizumab reduces the frequency of intravitreal injection required for diabetic retinopathy</article-title>. <source>Theranostics</source>. (<year>2023</year>) <volume>13</volume>:<page-range>2241&#x02013;55</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.7150/thno.78426</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">37153730</pub-id>
+</mixed-citation></ref><ref id="B36"><label>36</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Bligh</surname><given-names>EG</given-names></name>
+<name><surname>Dyer</surname><given-names>WJ</given-names></name>
+</person-group>. 
+<article-title>A rapid method of total lipid extraction and purification</article-title>. <source>Can J Biochem Physiol</source>. (<year>1959</year>) <volume>37</volume>:<page-range>911&#x02013;7</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1139/o59-099</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">13671378</pub-id>
+</mixed-citation></ref><ref id="B37"><label>37</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chakraborty</surname><given-names>A</given-names></name>
+<name><surname>Hegde</surname><given-names>S</given-names></name>
+<name><surname>Praharaj</surname><given-names>SK</given-names></name>
+<name><surname>Prabhu</surname><given-names>K</given-names></name>
+<name><surname>Patole</surname><given-names>C</given-names></name>
+<name><surname>Shetty</surname><given-names>AK</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Age related prevalence of mild cognitive impairment in type 2 diabetes mellitus patients in the Indian population and association of serum lipids with cognitive dysfunction</article-title>. <source>Front Endocrinol (Lausanne</source>. (<year>2021</year>) <volume>12</volume>:<elocation-id>798652</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.3389/fendo.2021.798652</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">35035379</pub-id>
+</mixed-citation></ref><ref id="B38"><label>38</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lu</surname><given-names>C</given-names></name>
+<name><surname>Wu</surname><given-names>C</given-names></name>
+<name><surname>Ghoreishi</surname><given-names>D</given-names></name>
+<name><surname>Chen</surname><given-names>W</given-names></name>
+<name><surname>Wang</surname><given-names>L</given-names></name>
+<name><surname>Damm</surname><given-names>W</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>OPLS4: improving force field accuracy on challenging regimes of chemical space</article-title>. <source>J Chem Theory Comput</source>. (<year>2021</year>) <volume>17</volume>:<page-range>4291&#x02013;300</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1021/acs.jctc.1c00302</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">34096718</pub-id>
+</mixed-citation></ref><ref id="B39"><label>39</label><mixed-citation publication-type="confproc">
+<person-group person-group-type="author">
+<name><surname>Bowers</surname><given-names>KJ</given-names></name>
+<name><surname>Chow</surname><given-names>DE</given-names></name>
+<name><surname>Xu</surname><given-names>H</given-names></name>
+<name><surname>Dror</surname><given-names>RO</given-names></name>
+<name><surname>Eastwood</surname><given-names>MP</given-names></name>
+<name><surname>Gregersen</surname><given-names>BA</given-names></name>
+</person-group>. (<year>2006</year>). 
+<article-title>Scalable algorithms for molecular dynamics simulations on commodity clusters</article-title>, in: <conf-name>SC &#x02018;06: Proceedings of the 2006 ACM/IEEE Conference on Supercomputing</conf-name>, <conf-loc>Tampa, FL, USA</conf-loc>, Vol. <volume>2006</volume>. pp. <page-range>43&#x02013;3</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1109/SC.2006.54</pub-id>
+</mixed-citation></ref><ref id="B40"><label>40</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kuttel</surname><given-names>MM</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+<name><surname>Oscarson</surname><given-names>S</given-names></name>
+</person-group>. 
+<article-title><italic toggle="yes">Cryptococcus neoformans</italic> capsular GXM conformation and epitope presentation: A molecular modelling study</article-title>. <source>Mol (Basel Switzerland)</source>. (<year>2020</year>) <volume>25</volume>:<elocation-id>2651</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.3390/molecules25112651</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32517333</pub-id>
+</mixed-citation></ref><ref id="B41"><label>41</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Xu</surname><given-names>J</given-names></name>
+<name><surname>Ganguly</surname><given-names>A</given-names></name>
+<name><surname>Zhao</surname><given-names>J</given-names></name>
+<name><surname>Ivey</surname><given-names>M</given-names></name>
+<name><surname>Lopez</surname><given-names>R</given-names></name>
+<name><surname>Osterholzer</surname><given-names>JJ</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>CCR2 signaling promotes brain infiltration of inflammatory monocytes and contributes to neuropathology during cryptococcal meningoencephalitis</article-title>. <source>mBio</source>. (<year>2021</year>) <volume>12</volume>:<fpage>e0107621</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/mBio.01076-21</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">34311579</pub-id>
+</mixed-citation></ref><ref id="B42"><label>42</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Gasparovic</surname><given-names>C</given-names></name>
+<name><surname>Rosenberg</surname><given-names>GA</given-names></name>
+<name><surname>Wallace</surname><given-names>JA</given-names></name>
+<name><surname>Estrada</surname><given-names>EY</given-names></name>
+<name><surname>Roberts</surname><given-names>K</given-names></name>
+<name><surname>Pastuszyn</surname><given-names>A</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Magnetic resonance lipid signals in rat brain after experimental stroke correlate with neutral lipid accumulation</article-title>. <source>Neurosci Lett</source>. (<year>2001</year>) <volume>301</volume>:<fpage>87</fpage>&#x02013;<lpage>90</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/s0304-3940(01)01616-0</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">11248429</pub-id>
+</mixed-citation></ref><ref id="B43"><label>43</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Listenberger</surname><given-names>LL</given-names></name>
+<name><surname>Han</surname><given-names>X</given-names></name>
+<name><surname>Lewis</surname><given-names>SE</given-names></name>
+<name><surname>Cases</surname><given-names>S</given-names></name>
+<name><surname>Farese</surname><given-names>RV</given-names></name>
+<name><surname>Ory</surname><given-names>DS</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Triglyceride accumulation protects against fatty acid-induced lipotoxicity</article-title>. <source>Proc Natl Acad Sci United States America</source>. (<year>2003</year>) <volume>100</volume>:<page-range>3077&#x02013;82</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1073/pnas.0630588100</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">12629214</pub-id>
+</mixed-citation></ref><ref id="B44"><label>44</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Mart&#x000ed;nez</surname><given-names>L</given-names></name>
+<name><surname>Andrade</surname><given-names>R</given-names></name>
+<name><surname>Birgin</surname><given-names>EG</given-names></name>
+<name><surname>Mart&#x000ed;nez</surname><given-names>JM</given-names></name>
+</person-group>. 
+<article-title>PACKMOL: a package for building initial configurations for molecular dynamics simulations</article-title>. <source>J Comput Chem</source>. (<year>2009</year>) <volume>30</volume>:<page-range>2157&#x02013;64</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1002/jcc.21224</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">19229944</pub-id>
+</mixed-citation></ref><ref id="B45"><label>45</label><mixed-citation publication-type="book">
+<person-group person-group-type="author"><collab>Schr&#x000f6;dinger</collab>
+</person-group>. <source>Materials science suite. Schr&#x000f6;dinger Release 2024-4</source>. (<year>2024</year>) Available online at: <uri xlink:href="https://www.schrodinger.com/life-science/download/release-notes/release-2024-4/">https://www.schrodinger.com/life-science/download/release-notes/release-2024-4/</uri> (Accessed July 10, 2025).
+</mixed-citation></ref><ref id="B46"><label>46</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lendvai</surname><given-names>N</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+<name><surname>Liang</surname><given-names>Z</given-names></name>
+<name><surname>Goldman</surname><given-names>DL</given-names></name>
+<name><surname>Mukherjee</surname><given-names>J</given-names></name>
+<name><surname>Zuckier</surname><given-names>L</given-names></name>
+</person-group>. 
+<article-title>Effect of immune mechanisms on the pharmacokinetics and organ distribution of cryptococcal polysaccharide</article-title>. <source>J Infect Dis</source>. (<year>1998</year>) <volume>177</volume>:<page-range>1647&#x02013;59</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1086/515329</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">9607845</pub-id>
+</mixed-citation></ref><ref id="B47"><label>47</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Grinsell</surname><given-names>M</given-names></name>
+<name><surname>Weinhold</surname><given-names>LC</given-names></name>
+<name><surname>Cutler</surname><given-names>JE</given-names></name>
+<name><surname>Han</surname><given-names>Y</given-names></name>
+<name><surname>Kozel</surname><given-names>TR</given-names></name>
+</person-group>. 
+<article-title><italic toggle="yes">In vivo</italic> clearance of glucuronoxylomannan, the major capsular polysaccharide of Cryptococcus neoformans: a critical role for tissue macrophages</article-title>. <source>J Infect Dis</source>. (<year>2001</year>) <volume>184</volume>:<page-range>479&#x02013;87</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1086/322787</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">11471106</pub-id>
+</mixed-citation></ref><ref id="B48"><label>48</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chiapello</surname><given-names>LS</given-names></name>
+<name><surname>Baronetti</surname><given-names>JL</given-names></name>
+<name><surname>Garro</surname><given-names>AP</given-names></name>
+<name><surname>Spesso</surname><given-names>MF</given-names></name>
+<name><surname>Masih</surname><given-names>DT</given-names></name>
+</person-group>. 
+<article-title>Cryptococcus neoformans glucuronoxylomannan induces macrophage apoptosis mediated by nitric oxide in a caspase-independent pathway</article-title>. <source>Int Immunol</source>. (<year>2008</year>) <volume>20</volume>:<page-range>1527&#x02013;41</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1093/intimm/dxn112</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">18927317</pub-id>
+</mixed-citation></ref><ref id="B49"><label>49</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Villena</surname><given-names>SN</given-names></name>
+<name><surname>Pinheiro</surname><given-names>RO</given-names></name>
+<name><surname>Pinheiro</surname><given-names>CS</given-names></name>
+<name><surname>Nunes</surname><given-names>MP</given-names></name>
+<name><surname>Takiya</surname><given-names>CM</given-names></name>
+<name><surname>DosReis</surname><given-names>GA</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Capsular polysaccharides galactoxylomannan and glucuronoxylomannan from Cryptococcus neoformans induce macrophage apoptosis mediated by Fas ligand</article-title>. <source>Cell Microbiol</source>. (<year>2008</year>) <volume>10</volume>:<page-range>1274&#x02013;85</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1111/j.1462-5822.2008.01125.x</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">18284419</pub-id>
+</mixed-citation></ref><ref id="B50"><label>50</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Rodrigues</surname><given-names>ML</given-names></name>
+<name><surname>Fonseca</surname><given-names>FL</given-names></name>
+<name><surname>Frases</surname><given-names>S</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+<name><surname>Nimrichter</surname><given-names>L</given-names></name>
+</person-group>. 
+<article-title>The still obscure attributes of cryptococcal glucuronoxylomannan</article-title>. <source>Med Mycol</source>. (<year>2009</year>) <volume>47</volume>:<page-range>783&#x02013;8</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.3109/13693780902788621</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">19343609</pub-id>
+</mixed-citation></ref><ref id="B51"><label>51</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chang</surname><given-names>ZL</given-names></name>
+<name><surname>Netski</surname><given-names>D</given-names></name>
+<name><surname>Thorkildson</surname><given-names>P</given-names></name>
+<name><surname>Kozel</surname><given-names>TR</given-names></name>
+</person-group>. 
+<article-title>Binding and internalization of glucuronoxylomannan, the major capsular polysaccharide of Cryptococcus neoformans, by murine peritoneal macrophages</article-title>. <source>Infect Immun</source>. (<year>2006</year>) <volume>74</volume>:<page-range>144&#x02013;51</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/IAI.74.1.144-151.2006</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">16368967</pub-id>
+</mixed-citation></ref><ref id="B52"><label>52</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Monari</surname><given-names>C</given-names></name>
+<name><surname>Retini</surname><given-names>C</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+<name><surname>Netski</surname><given-names>D</given-names></name>
+<name><surname>Bistoni</surname><given-names>F</given-names></name>
+<name><surname>Kozel</surname><given-names>TR</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Differences in outcome of the interaction between Cryptococcus neoformans glucuronoxylomannan and human monocytes and neutrophils</article-title>. <source>Eur J Immunol</source>. (<year>2003</year>) <volume>33</volume>:<page-range>1041&#x02013;51</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1002/eji.200323388</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">12672070</pub-id>
+</mixed-citation></ref><ref id="B53"><label>53</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Hern&#x000e1;ndez-Ch&#x000e1;vez</surname><given-names>MJ</given-names></name>
+<name><surname>P&#x000e9;rez-Garc&#x000ed;a</surname><given-names>LA</given-names></name>
+<name><surname>Ni&#x000f1;o-Vega</surname><given-names>GA</given-names></name>
+<name><surname>Mora-Montes</surname><given-names>HM</given-names></name>
+</person-group>. 
+<article-title>Fungal strategies to evade the host immune recognition</article-title>. <source>J Fungi</source>. (<year>2017</year>) <volume>3</volume>:<elocation-id>51</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.3390/jof3040051</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">29371567</pub-id>
+</mixed-citation></ref><ref id="B54"><label>54</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>Garc&#x000ed;a-Carnero</surname><given-names>LC</given-names></name>
+<name><surname>G&#x000f3;mez-Gaviria</surname><given-names>M</given-names></name>
+<name><surname>Tamez-Castrell&#x000f3;n</surname><given-names>AK</given-names></name>
+<name><surname>Mora-Montes</surname><given-names>HM</given-names></name>
+</person-group>. 
+<article-title>Host immune responses to fungal infection</article-title>. In: <source>Molecular Medical Microbiology (Third Edition)</source>. 
+<publisher-name>Academic press</publisher-name>. (<year>2024</year>). p. <page-range>2823&#x02013;46</page-range>.
+</mixed-citation></ref><ref id="B55"><label>55</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Yauch</surname><given-names>LE</given-names></name>
+<name><surname>Mansour</surname><given-names>MK</given-names></name>
+<name><surname>Shoham</surname><given-names>S</given-names></name>
+<name><surname>Rottman</surname><given-names>JB</given-names></name>
+<name><surname>Levitz</surname><given-names>SM</given-names></name>
+</person-group>. 
+<article-title>Involvement of CD14, toll-like receptors 2 and 4, and MyD88 in the host response to the fungal pathogen Cryptococcus neoformans in <italic toggle="yes">vivo</italic></article-title>. <source>Infect Immun</source>. (<year>2004</year>) <volume>72</volume>:<page-range>5373&#x02013;82</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/IAI.72.9.5373-5382.2004</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">15322035</pub-id>
+</mixed-citation></ref><ref id="B56"><label>56</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Biondo</surname><given-names>C</given-names></name>
+<name><surname>Midiri</surname><given-names>A</given-names></name>
+<name><surname>Messina</surname><given-names>L</given-names></name>
+<name><surname>Tomasello</surname><given-names>F</given-names></name>
+<name><surname>Garufi</surname><given-names>G</given-names></name>
+<name><surname>Catania</surname><given-names>MR</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>MyD88 and TLR2, but not TLR4, are required for host defense against Cryptococcus neoformans</article-title>. <source>Eur J Immunol</source>. (<year>2005</year>) <volume>35</volume>:<page-range>870&#x02013;8</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1002/eji.200425799</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">15714580</pub-id>
+</mixed-citation></ref><ref id="B57"><label>57</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Olave</surname><given-names>MC</given-names></name>
+<name><surname>Vargas-Zambrano</surname><given-names>JC</given-names></name>
+<name><surname>Celis</surname><given-names>AM</given-names></name>
+<name><surname>Casta&#x000f1;eda</surname><given-names>E</given-names></name>
+<name><surname>Gonz&#x000e1;lez</surname><given-names>JM</given-names></name>
+</person-group>. 
+<article-title>Infective capacity of Cryptococcus neoformans and Cryptococcus gattii in a human astrocytoma cell line</article-title>. <source>Mycoses</source>. (<year>2017</year>) <volume>60</volume>:<page-range>447&#x02013;53</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1111/myc.12619</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">28338245</pub-id>
+</mixed-citation></ref><ref id="B58"><label>58</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Goldman</surname><given-names>DL</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+<name><surname>Cho</surname><given-names>Y</given-names></name>
+<name><surname>Lee</surname><given-names>SC</given-names></name>
+</person-group>. 
+<article-title>Cryptococcus neoformans meningitis in the rat</article-title>. <source>Lab Invest J Tech Methods Pathol</source>. (<year>1996</year>) <volume>75</volume>:<page-range>759&#x02013;70</page-range>.
+</mixed-citation></ref><ref id="B59"><label>59</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Traino</surname><given-names>K</given-names></name>
+<name><surname>Snow</surname><given-names>J</given-names></name>
+<name><surname>Ham</surname><given-names>L</given-names></name>
+<name><surname>Summers</surname><given-names>A</given-names></name>
+<name><surname>Segal&#x000e0;</surname><given-names>L</given-names></name>
+<name><surname>Shirazi</surname><given-names>T</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>HIV-negative cryptococcal meningoencephalitis results in a persistent frontal-subcortical syndrome</article-title>. <source>Sci Rep</source>. (<year>2019</year>) <volume>9</volume>:<fpage>18442</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1038/s41598-019-54876-7</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">31804566</pub-id>
+</mixed-citation></ref><ref id="B60"><label>60</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>Y</given-names></name>
+<name><surname>Fan</surname><given-names>L</given-names></name>
+<name><surname>Jiang</surname><given-names>X</given-names></name>
+<name><surname>Lu</surname><given-names>Y</given-names></name>
+<name><surname>Li</surname><given-names>Y</given-names></name>
+</person-group>. 
+<article-title>A case study of repetitive transcranial magnetic stimulation for cryptococcal meningitis combined with cognitive impairment</article-title>. <source>Front Hum Neurosci</source>. (<year>2022</year>) <volume>16</volume>:<elocation-id>1061916</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.3389/fnhum.2022.1061916</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">36590060</pub-id>
+</mixed-citation></ref><ref id="B61"><label>61</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>SC</given-names></name>
+<name><surname>Slavin</surname><given-names>MA</given-names></name>
+<name><surname>Heath</surname><given-names>CH</given-names></name>
+<name><surname>Playford</surname><given-names>EG</given-names></name>
+<name><surname>Byth</surname><given-names>K</given-names></name>
+<name><surname>Marriott</surname><given-names>D</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Clinical manifestations of Cryptococcus gattii infection: determinants of neurological sequelae and death</article-title>. <source>Clin Infect Dis: an Off Publ Infect Dis Soc America</source>. (<year>2012</year>) <volume>55</volume>:<page-range>789&#x02013;98</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1093/cid/cis529</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">22670042</pub-id>
+</mixed-citation></ref><ref id="B62"><label>62</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lu</surname><given-names>CH</given-names></name>
+<name><surname>Chen</surname><given-names>HL</given-names></name>
+<name><surname>Chang</surname><given-names>WN</given-names></name>
+<name><surname>Tsai</surname><given-names>NW</given-names></name>
+<name><surname>Wang</surname><given-names>HC</given-names></name>
+<name><surname>Yang</surname><given-names>TM</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Assessing the chronic neuropsychologic sequelae of human immunodeficiency virus-negative cryptococcal meningitis by using diffusion tensor imaging</article-title>. <source>AJNR Am J Neuroradiol</source>. (<year>2011</year>) <volume>32</volume>:<page-range>1333&#x02013;9</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.3174/ajnr.A2489</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">21596808</pub-id>
+</mixed-citation></ref><ref id="B63"><label>63</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>MH</given-names></name>
+<name><surname>Lu</surname><given-names>CH</given-names></name>
+<name><surname>Wang</surname><given-names>HC</given-names></name>
+<name><surname>Chen</surname><given-names>HL</given-names></name>
+<name><surname>Tsai</surname><given-names>NW</given-names></name>
+<name><surname>Li</surname><given-names>SH</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Long-term neuropsychological sequelae in HIV-seronegative cryptococcal meningoencephalitis patients with and without ventriculoperitoneal shunts: a cine MRI study</article-title>. <source>Behav Neurol</source>. (<year>2015</year>) <volume>2015</volume>:<elocation-id>356476</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1155/2015/356476</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">25948879</pub-id>
+</mixed-citation></ref><ref id="B64"><label>64</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Frick</surname><given-names>KM</given-names></name>
+<name><surname>Fernandez</surname><given-names>SM</given-names></name>
+</person-group>. 
+<article-title>Enrichment enhances spatial memory and increases synaptophysin levels in aged female mice</article-title>. <source>Neurobiol Aging</source>. (<year>2003</year>) <volume>24</volume>:<page-range>615&#x02013;26</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/s0197-4580(02)00138-0</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">12714119</pub-id>
+</mixed-citation></ref><ref id="B65"><label>65</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Birch</surname><given-names>AM</given-names></name>
+<name><surname>McGarry</surname><given-names>NB</given-names></name>
+<name><surname>Kelly</surname><given-names>AM</given-names></name>
+</person-group>. 
+<article-title>Short-term environmental enrichment, in the absence of exercise, improves memory, and increases NGF concentration, early neuronal survival, and synaptogenesis in the dentate gyrus in a time-dependent manner</article-title>. <source>Hippocampus</source>. (<year>2013</year>) <volume>23</volume>:<page-range>437&#x02013;50</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1002/hipo.22103</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">23460346</pub-id>
+</mixed-citation></ref><ref id="B66"><label>66</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lahiri</surname><given-names>DK</given-names></name>
+<name><surname>Ge</surname><given-names>YW</given-names></name>
+<name><surname>Farlow</surname><given-names>MR</given-names></name>
+</person-group>. 
+<article-title>Effect of a memory-enhancing drug, AIT-082, on the level of synaptophysin</article-title>. <source>Ann New York Acad Sci</source>. (<year>2000</year>) <volume>903</volume>:<page-range>387&#x02013;93</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1111/j.1749-6632.2000.tb06390.x</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">10818529</pub-id>
+</mixed-citation></ref><ref id="B67"><label>67</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Park</surname><given-names>SW</given-names></name>
+<name><surname>Lee</surname><given-names>CH</given-names></name>
+<name><surname>Cho</surname><given-names>HY</given-names></name>
+<name><surname>Seo</surname><given-names>MK</given-names></name>
+<name><surname>Lee</surname><given-names>JG</given-names></name>
+<name><surname>Lee</surname><given-names>BJ</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Effects of antipsychotic drugs on the expression of synaptic proteins and dendritic outgrowth in hippocampal neuronal cultures</article-title>. <source>Synapse (New York NY)</source>. (<year>2013</year>) <volume>67</volume>:<page-range>224&#x02013;34</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1002/syn.21634</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">23335099</pub-id>
+</mixed-citation></ref><ref id="B68"><label>68</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Seo</surname><given-names>MK</given-names></name>
+<name><surname>Lee</surname><given-names>CH</given-names></name>
+<name><surname>Cho</surname><given-names>HY</given-names></name>
+<name><surname>Lee</surname><given-names>JG</given-names></name>
+<name><surname>Lee</surname><given-names>BJ</given-names></name>
+<name><surname>Kim</surname><given-names>JE</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Effects of antidepressant drugs on synaptic protein levels and dendritic outgrowth in hippocampal neuronal cultures</article-title>. <source>Neuropharmacology</source>. (<year>2014</year>) <volume>79</volume>:<page-range>222&#x02013;33</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.neuropharm.2013.11.019</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">24296153</pub-id>
+</mixed-citation></ref><ref id="B69"><label>69</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Seo</surname><given-names>MK</given-names></name>
+<name><surname>Lee</surname><given-names>CH</given-names></name>
+<name><surname>Cho</surname><given-names>HY</given-names></name>
+<name><surname>You</surname><given-names>YS</given-names></name>
+<name><surname>Lee</surname><given-names>BJ</given-names></name>
+<name><surname>Lee</surname><given-names>JG</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Effects of antipsychotic drugs on the expression of synapse-associated proteins in the frontal cortex of rats subjected to immobilization stress</article-title>. <source>Psychiatry Res</source>. (<year>2015</year>) <volume>229</volume>:<page-range>968&#x02013;74</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.psychres.2015.05.098</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">26254796</pub-id>
+</mixed-citation></ref><ref id="B70"><label>70</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>van der Meer-Janssen</surname><given-names>YP</given-names></name>
+<name><surname>van Galen</surname><given-names>J</given-names></name>
+<name><surname>Batenburg</surname><given-names>JJ</given-names></name>
+<name><surname>Helms</surname><given-names>JB</given-names></name>
+</person-group>. 
+<article-title>Lipids in host-pathogen interactions: pathogens exploit the complexity of the host cell lipidome</article-title>. <source>Prog Lipid Res</source>. (<year>2010</year>) <volume>49</volume>:<fpage>1</fpage>&#x02013;<lpage>26</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.plipres.2009.07.003</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">19638285</pub-id>
+</mixed-citation></ref><ref id="B71"><label>71</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>WJ</given-names></name>
+<name><surname>Ryu</surname><given-names>YJ</given-names></name>
+<name><surname>Moon</surname><given-names>J</given-names></name>
+<name><surname>Lee</surname><given-names>ST</given-names></name>
+<name><surname>Jung</surname><given-names>KH</given-names></name>
+<name><surname>Park</surname><given-names>KI</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Enlarged periventricular space and periventricular lesion extension on baseline brain MRI predicts poor neurological outcomes in cryptococcus meningoencephalitis</article-title>. <source>Sci Rep</source>. (<year>2021</year>) <volume>11</volume>:<fpage>6446</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1038/s41598-021-85998-6</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">33742090</pub-id>
+</mixed-citation></ref><ref id="B72"><label>72</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Meyerhoff</surname><given-names>DJ</given-names></name>
+<name><surname>Bloomer</surname><given-names>C</given-names></name>
+<name><surname>Cardenas</surname><given-names>V</given-names></name>
+<name><surname>Norman</surname><given-names>D</given-names></name>
+<name><surname>Weiner</surname><given-names>MW</given-names></name>
+<name><surname>Fein</surname><given-names>G</given-names></name>
+</person-group>. 
+<article-title>Elevated subcortical choline metabolites in cognitively and clinically asymptomatic HIV+ patients</article-title>. <source>Neurology</source>. (<year>1999</year>) <volume>52</volume>:<fpage>995</fpage>&#x02013;<lpage>1003</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1212/wnl.52.5.995</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">10102419</pub-id>
+</mixed-citation></ref><ref id="B73"><label>73</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Tracey</surname><given-names>I</given-names></name>
+<name><surname>Carr</surname><given-names>CA</given-names></name>
+<name><surname>Guimaraes</surname><given-names>AR</given-names></name>
+<name><surname>Worth</surname><given-names>JL</given-names></name>
+<name><surname>Navia</surname><given-names>BA</given-names></name>
+<name><surname>Gonz&#x000e1;lez</surname><given-names>RG</given-names></name>
+</person-group>. 
+<article-title>Brain choline-containing compounds are elevated in HIV-positive patients before the onset of AIDS dementia complex: A proton magnetic resonance spectroscopic study</article-title>. <source>Neurology</source>. (<year>1996</year>) <volume>46</volume>:<page-range>783&#x02013;8</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1212/wnl.46.3.783</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">8618683</pub-id>
+</mixed-citation></ref><ref id="B74"><label>74</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Fitzner</surname><given-names>D</given-names></name>
+<name><surname>Bader</surname><given-names>JM</given-names></name>
+<name><surname>Penkert</surname><given-names>H</given-names></name>
+<name><surname>Bergner</surname><given-names>CG</given-names></name>
+<name><surname>Su</surname><given-names>M</given-names></name>
+<name><surname>Weil</surname><given-names>MT</given-names></name>
+<etal/>
+</person-group>. 
+<article-title>Cell-type- and brain-region-resolved mouse brain lipidome</article-title>. <source>Cell Rep</source>. (<year>2020</year>) <volume>32</volume>:<elocation-id>108132</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.celrep.2020.108132</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">32937123</pub-id>
+</mixed-citation></ref><ref id="B75"><label>75</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Neumann</surname><given-names>EK</given-names></name>
+<name><surname>Comi</surname><given-names>TJ</given-names></name>
+<name><surname>Rubakhin</surname><given-names>SS</given-names></name>
+<name><surname>Sweedler</surname><given-names>JV</given-names></name>
+</person-group>. 
+<article-title>Lipid heterogeneity between astrocytes and neurons revealed by single-cell MALDI-MS combined with immunocytochemical classification</article-title>. <source>Angewandte Chemie (International Ed English)</source>. (<year>2019</year>) <volume>58</volume>:<page-range>5910&#x02013;4</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1002/anie.201812892</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">30811763</pub-id>
+</mixed-citation></ref><ref id="B76"><label>76</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Roy</surname><given-names>P</given-names></name>
+<name><surname>Tomassoni</surname><given-names>D</given-names></name>
+<name><surname>Nittari</surname><given-names>G</given-names></name>
+<name><surname>Traini</surname><given-names>E</given-names></name>
+<name><surname>Amenta</surname><given-names>F</given-names></name>
+</person-group>. 
+<article-title>Effects of choline containing phospholipids on the neurovascular unit: A review</article-title>. <source>Front Cell Neurosci</source>. (<year>2022</year>) <volume>16</volume>:<elocation-id>988759</elocation-id>. doi:&#x000a0;<pub-id pub-id-type="doi">10.3389/fncel.2022.988759</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">36212684</pub-id>
+</mixed-citation></ref><ref id="B77"><label>77</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chrisman</surname><given-names>CJ</given-names></name>
+<name><surname>Albuquerque</surname><given-names>P</given-names></name>
+<name><surname>Guimaraes</surname><given-names>AJ</given-names></name>
+<name><surname>Nieves</surname><given-names>E</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+</person-group>. 
+<article-title>Phospholipids trigger Cryptococcus neoformans capsular enlargement during interactions with amoebae and macrophages</article-title>. <source>PloS Pathog</source>. (<year>2011</year>) <volume>7</volume>:<fpage>e1002047</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1371/journal.ppat.1002047</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">21637814</pub-id>
+</mixed-citation></ref><ref id="B78"><label>78</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Cherniak</surname><given-names>R</given-names></name>
+<name><surname>Sundstrom</surname><given-names>JB</given-names></name>
+</person-group>. 
+<article-title>Polysaccharide antigens of the capsule of Cryptococcus neoformans</article-title>. <source>Infect Immun</source>. (<year>1994</year>) <volume>62</volume>:<page-range>1507&#x02013;12</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/iai.62.5.1507-1512.1994</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">8168912</pub-id>
+</mixed-citation></ref><ref id="B79"><label>79</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Frases</surname><given-names>S</given-names></name>
+<name><surname>Nimrichter</surname><given-names>L</given-names></name>
+<name><surname>Viana</surname><given-names>NB</given-names></name>
+<name><surname>Nakouzi</surname><given-names>A</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+</person-group>. 
+<article-title><italic toggle="yes">Cryptococcus neoformans</italic> capsular polysaccharide and exopolysaccharide fractions manifest physical, chemical, and antigenic differences</article-title>. <source>Eukaryotic Cell</source>. (<year>2008</year>) <volume>7</volume>:<page-range>319&#x02013;27</page-range>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/EC.00378-07</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">18156290</pub-id>
+</mixed-citation></ref><ref id="B80"><label>80</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Fonseca</surname><given-names>FL</given-names></name>
+<name><surname>Frases</surname><given-names>S</given-names></name>
+<name><surname>Casadevall</surname><given-names>A</given-names></name>
+<name><surname>Fischman-Gompertz</surname><given-names>O</given-names></name>
+<name><surname>Nimrichter</surname><given-names>L</given-names></name>
+<name><surname>Rodrigues</surname><given-names>ML</given-names></name>
+</person-group>. 
+<article-title>Structural and functional properties of the <italic toggle="yes">Trichosporon asahii</italic> glucuronoxylomannan</article-title>. <source>Fungal Genet Biol: FG B</source>. (<year>2009</year>) <volume>46</volume>:<fpage>496</fpage>&#x02013;<lpage>505</lpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1016/j.fgb.2009.03.003</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">19285564</pub-id>
+</mixed-citation></ref><ref id="B81"><label>81</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Litvintseva</surname><given-names>AP</given-names></name>
+<name><surname>Lin</surname><given-names>X</given-names></name>
+<name><surname>Templeton</surname><given-names>I</given-names></name>
+<name><surname>Heitman</surname><given-names>J</given-names></name>
+<name><surname>Mitchell</surname><given-names>TG</given-names></name>
+</person-group>. 
+<article-title>Many globally isolated AD hybrid strains of Cryptococcus neoformans originated in Africa</article-title>. <source>PloS Pathog</source>. (<year>2007</year>) <volume>3</volume>:<fpage>e114</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1371/journal.ppat.0030114</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">17708680</pub-id>
+</mixed-citation></ref><ref id="B82"><label>82</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Desnos-Ollivier</surname><given-names>M</given-names></name>
+<name><surname>Patel</surname><given-names>S</given-names></name>
+<name><surname>Raoux-Barbot</surname><given-names>D</given-names></name>
+<name><surname>Heitman</surname><given-names>J</given-names></name>
+<name><surname>Dromer</surname><given-names>F</given-names></name><collab>French Cryptococcosis Study Group</collab>
+</person-group>. 
+<article-title>Cryptococcosis serotypes impact outcome and provide evidence of cryptococcus neoformans speciation</article-title>. <source>mBio</source>. (<year>2015</year>) <volume>6</volume>:<fpage>e00311</fpage>. doi:&#x000a0;<pub-id pub-id-type="doi">10.1128/mBio.00311-15</pub-id>, PMID: 
+<pub-id pub-id-type="pmid">26060271</pub-id>
+</mixed-citation></ref></ref-list></back></article>

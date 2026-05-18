@@ -1,0 +1,511 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883217</article-id><article-id pub-id-type="doi">10.7759/cureus.101042</article-id><article-categories><subj-group subj-group-type="heading"><subject>Pharmacology</subject></subj-group><subj-group><subject>Medical Education</subject></subj-group><subj-group><subject>Public Health</subject></subj-group></article-categories><title-group><article-title>Study of Adverse Events Associated With the Use of Medical Devices Reported Under the Materiovigilance Programme of India in a Tertiary Care Teaching Hospital</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author" corresp="yes"><name><surname>Chandra</surname><given-names>Shruti</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Farooque Shaikh</surname><given-names>Umar</given-names></name><xref rid="aff-2" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><name><surname>Bhosle</surname><given-names>Deepak</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Clinical Pharmacology and Therapeutics, MGM Medical College and Hospital, Chhatrapati Sambhajinagar, MGM Institute of Health Sciences, Navi Mumbai, IND </aff><aff id="aff-2">
+<label>2</label>
+Clinical Research, MGM Medical College and Hospital, Chhatrapati Sambhajinagar, MGM Institute of Health Sciences, Navi Mumbai, IND </aff><author-notes><corresp id="cor1">
+Shruti Chandra <email>dr.shruti1204@gmail.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>7</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101042</elocation-id><history><date date-type="accepted"><day>6</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Chandra et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Chandra et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/446337-study-of-adverse-events-associated-with-the-use-of-medical-devices-reported-under-the-materiovigilance-programme-of-india-in-a-tertiary-care-teaching-hospital">This article is available from https://cureus.com/articles/446337-study-of-adverse-events-associated-with-the-use-of-medical-devices-reported-under-the-materiovigilance-programme-of-india-in-a-tertiary-care-teaching-hospital</self-uri><abstract><p>Background</p><p>Medical device adverse events (MDAEs) are critical incidents in healthcare systems that can lead to patient harm, necessitating thorough investigation and management. This study aims to comprehensively analyse MDAE reports collected over six months at a Medical Device Management Centre (MDMC). The investigation focuses on various aspects, including gender distribution, age demographics, types of medical devices implicated, department-wise distribution within hospitals, risk classification according to regulatory standards, and subsequent corrective and preventive actions undertaken.</p><p>Methods</p><p>The study collected and analysed 80 spontaneous MDAE reports from the MDMC database. Data were meticulously extracted, categorised, and quantified to facilitate detailed analysis. Mean and standard deviation were calculated for quantitative variables, and proportions were calculated for categorical variables to elucidate patterns and trends in MDAE occurrences.</p><p>Results</p><p>Analysis revealed a gender disparity, with a higher proportion of MDAEs occurring in males (62%) compared to females (38%). Middle-aged individuals (41-50 years) constituted the largest age group affected by MDAEs, comprising 36.25% of reported cases. Patient monitors, IV catheters, and syringes emerged as the most frequently implicated medical devices, with patient monitors alone accounting for 18.75% of reported events. The Medicine ICU and Dialysis Unit reported the highest number of MDAEs, with 12.5% and 10% of total cases, respectively. Risk classification based on regulatory standards categorised the majority of events as Class B (51.25%), indicating low to moderate risk, while a notable proportion were classified as Class C (32.5%), signifying moderate to high risk. Additionally, in our study, most corrective actions after an MDAE involved repairing and returning the device for hospital use (94.59%). Two cases (5.41%) were sent to the manufacturer for replacement. Additionally, 43 out of 80 adverse events involved discarding single-use devices in hospital facilities. Preventive measures, such as staff training programs, were proposed to mitigate future risks.</p><p>Conclusion</p><p>This study highlights important patterns in patient safety risks. Risk classification demonstrated that most events fell within Class B and Class C categories. Overall, this study emphasises the importance of systematic reporting, analysis, and management of MDAEs to reduce patient harm. Strengthening preventive measures, enhancing staff awareness, and ensuring robust regulatory compliance are essential steps toward improving medical device safety in hospital settings.</p></abstract><kwd-group kwd-group-type="author"><kwd>materiovigilance</kwd><kwd>mdae</kwd><kwd>medical device adverse events</kwd><kwd>medical device risk classification 2017</kwd><kwd>mvpi</kwd><kwd>patient safety</kwd></kwd-group></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p>As per the World Health Organisation (WHO), a medical device encompasses any tool, equipment, device, apparatus, implant, substance for in vitro utilisation, software, substance, or any other analogous or linked item intended by the manufacturer for utilisation, either independently or together, for medical objectives [<xref rid="REF1" ref-type="bibr">1</xref>].</p><p>Medical devices are integral to the healthcare delivery system and contribute significantly to patient care. Medical devices can diagnose, treat, and prevent numerous diseases. They differ from simple lifesaving devices, such as thermometers or tongue depressors, to complicated implants, such as heart valves or cardiovascular stents [<xref rid="REF2" ref-type="bibr">2</xref>].</p><p>As per the regulations outlined in the Indian Medical Device Rule (MDR) 2017, medical devices refer to instruments designed for use either internally or externally to diagnose, treat, alleviate, or prevent diseases or disorders in humans or animals that are periodically notified under the Drug and Cosmetics Act (DCA), including mechanical contraceptives (intrauterine devices, condoms, tubal rings), disinfectants, and insecticides notified by the government under the DCA, surgical devices, and other items [<xref rid="REF3" ref-type="bibr">3</xref>].</p><p>A medical device adverse event (MDAE) is an unpredicted or unsuitable medical event, accidental illness, injury, or discomfort in participants [<xref rid="REF4" ref-type="bibr">4</xref>].</p><p>The Materiovigilance Programme has been approved by the Ministry of Health and Family Welfare (MoHFW), Government of India, and the Drug Controller General of India (DCGI) on July 6, 2015, at the Indian Pharmacopoeia Commission (IPC) in Ghaziabad to address the potential adverse events associated with medical devices. Materiovigilance can be defined as the vigilant surveillance of any adverse occurrences arising from the use of medical devices, facilitated by a comprehensive system encompassing identification, collection, reporting, evaluation of adverse events, and subsequent implementation of safety measures or corrective actions during the post-marketing phase [<xref rid="REF1" ref-type="bibr">1</xref>]. From the start of the Materiovigilance Programme from July 2015 to October 2019, the IPC received and analysed more than 1931 MDAEs, 1277 (66.1%) of which were serious [<xref rid="REF4" ref-type="bibr">4</xref>]. In 2016, the global market for medical devices was predicted to be worth 380 billion United States dollars (USD), up from 260 billion USD in 2006. India is one of the top 20 medical device businesses in the world, contributing $3 billion in USD to the industry. However, there is no appropriate mechanism in India for recording MDAEs or maintaining medical device safety records [<xref rid="REF5" ref-type="bibr">5</xref>].</p><p>Before the MDR 2017, all medical devices were regulated by the DCA of 1940. In the MDR 2017, medical devices and drugs were separated for regulatory purposes. The MDRs of 2017 classify medical devices based on their risk level. Class A devices are low risk, such as thermometers, surgical dressings, and swabs. Class B devices are low to moderate risk, including hypodermic needles and suction equipment. Class C devices are moderate to high risk, such as ventilators, intraocular lenses, and bone fixation plates. Class D devices are high risk, including cochlear implants, implantable defibrillators, and cardiac stents.</p><p>The Materiovigilance Programme of India (MvPI) aims to collect data on medical device-related adverse events systematically and scientifically analyse them to aid in regulatory decisions and recommendations on the safe use of medical devices being made using data generated from India [<xref rid="REF6" ref-type="bibr">6</xref>]. Also, monitor MDAE, create awareness among healthcare professionals about the importance of MDAE reporting in India, and monitor the benefit-risk profile of medical devices [<xref rid="REF7" ref-type="bibr">7</xref>]. The Mission of MvPI is to safeguard the health of the Indian population by ensuring that the benefit of the use of Medical Devices outweighs the risk associated with its use [<xref rid="REF8" ref-type="bibr">8</xref>]. The Vision of MvPI is to improve patient safety and welfare by monitoring adverse events related to medical devices, thereby reducing the risk associated with the use of medical devices [<xref rid="REF9" ref-type="bibr">9</xref>].</p><p>Therefore, we planned this study as MDAEs often go unrecognised and underreported by healthcare professionals and the public. The present study aims to increase awareness about the importance of reporting adverse events by providing information on Materiovigilance.</p></sec><sec sec-type="materials|methods"><title>Materials and methods</title><p>The observational study is a part of the MvPI. It presents the data collected from the Medical Device Adverse Event Monitoring Centre (MDMC) under MvPI at MGM Medical College and Hospital, Aurangabad. The study commenced after the Ethics Committee approved it for six months (EC Approval Number: MGM-ECRHS/2023/104). The MDAE reporting form, recommended by the IPC Ghaziabad, has been used as a data collection tool [<xref rid="REF10" ref-type="bibr">10</xref>]. We employed active and passive surveillance for data collection. In the Active Surveillance Study, data were collected by visiting various medical and surgical departments. We went to various departments to collect the MDAE actively. The collection and reporting of MDAEs were performed in accordance with the relevant guidelines and regulations given by the MvPI. In passive surveillance, we conducted a targeted awareness program for healthcare professionals on MvPI and how to report MDAEs in a prescribed form.</p><p>Statistical analysis</p><p>Data was entered in Microsoft Excel 2021 (Microsoft Corp., Redmond, WA) and analysed. Mean and standard deviation were calculated for quantitative variables, and proportions were calculated for categorical variables. Data were represented in the form of visual impressions like bar diagrams, graphs, and tables.</p></sec><sec sec-type="results"><title>Results</title><p>During a span of six months at the MDMC, a total of 80 spontaneous MDAE reports were collected and analysed. Among these reports, MDAE occurrences were more dominant in males, accounting for 50 cases (62%), while in females, the occurrences were 30 cases (38%), totalling 80 patients, as shown in Figure&#x000a0;<xref rid="FIG1" ref-type="fig">1</xref>. Data collected by using the MDAE reporting form [<xref rid="REF10" ref-type="bibr">10</xref>].</p><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>Pie diagram to show sex-wise distribution of MDAE in patients</title><p>MDAE, medical device adverse event</p></caption><graphic xlink:href="cureus-0018-00000101042-i01" position="float"/></fig><p>Figure&#x000a0;<xref rid="FIG2" ref-type="fig">2</xref>&#x000a0;shows data distribution based on age collected by using the MDAE reporting form [<xref rid="REF10" ref-type="bibr">10</xref>]. In the respective age groups, there were seven patients between 10 and 20 years old, accounting for 8.75% of the total. In the age group from 21 to 30 years old, there are eight patients, accounting for 10.00%. In the age group from 30- to 40-year-old group, there are 12 patients, accounting for 15.00%. The age group from 41 to 50 has 29 patients, accounting for 17. 50%. In the age group from 51 to 60, there are 14 patients, accounting for 17. 50% of the total number of patients. In the age group 61-70, there are six patients, accounting for 7.50%. Finally, the age group 71-80 has three patients, accounting for 5.00%. The mean age is 43.87, and the standard deviation is &#x000b1;14.19.</p><fig position="anchor" fig-type="figure" id="FIG2"><label>Figure 2</label><caption><title>Data distribution based on age</title></caption><graphic xlink:href="cureus-0018-00000101042-i02" position="float"/></fig><p>The data represented in Table&#x000a0;<xref rid="TAB1" ref-type="table">1</xref>&#x000a0;were derived from the MDAE reporting form [<xref rid="REF10" ref-type="bibr">10</xref>]. In six month study period, we received 15 MDAE of BP monitor (18.75%), eight MDAEs of IV set (10%), four MDAE associated with syringes (5.00%), four MDAE related to a syringe pump (5%), three MDAE due to defibrillators, glucose monitors, haemodialysis machines, nebulizers and respiratory humidifiers, and digital thermometers (3.75%), two MDAEs caused by dialyser, electrocardiographs, surgical tape, nebulizer masks, and surgical dressing kits (2.50%), one (1.25%) MDAE related to arterial blood pressure (ABP), blood collection needles, binocular microscopes, dressing gauze, biopsy guns, skin markers, central venous catheters, Foley balloon catheters, high-concentration oxygen masks, infant feeding tubing, IV cannula fixators, nasal cannulas, orthopedic heating bags, pressure monitoring lines, spirometers, suction catheters, bandages, ventilators, and ventilator circuit plans.</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Medical device-wise total numbers of reported ADRs</title><p>ADR, adverse drug reaction</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Medical Device Name
+</td><td rowspan="1" colspan="1">
+Total Number&#x000a0;of Reported ADRs
+</td><td rowspan="1" colspan="1">
+Percentage
+</td></tr><tr><td rowspan="1" colspan="1">
+Patient Monitor
+</td><td rowspan="1" colspan="1">
+15
+</td><td rowspan="1" colspan="1">
+18.75
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+IV Catheter
+</td><td rowspan="1" colspan="1">
+8
+</td><td rowspan="1" colspan="1">
+10
+</td></tr><tr><td rowspan="1" colspan="1">
+Syringe
+</td><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Syringe Pump
+</td><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+5
+</td></tr><tr><td rowspan="1" colspan="1">
+Defibrillator
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Glucose Monitor
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr><td rowspan="1" colspan="1">
+Haemodialysis Machine
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Nebulizer
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr><td rowspan="1" colspan="1">
+Respiratory Humidifier
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Digital Thermometer
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr><td rowspan="1" colspan="1">
+Electrocardiograph
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Surgical Tape
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr><td rowspan="1" colspan="1">
+Nebulizer Mask
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Surgical Dressing Kit
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr><td rowspan="1" colspan="1">
+Nasal Cannula
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+ABPM
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Blood Collection Needle
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Binocular Microscope
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Dressing Gauze
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Biopsy Gun
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Skin Marker
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Dialyzer
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Central Venous Catheter
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Foley Balloon Catheter
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+High-Concentration Oxygen Mask
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Infant Feeding Tubing
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr></tbody></table></table-wrap><p>Table <xref rid="TAB2" ref-type="table">2</xref> depicts that the Medicine ICU reported 10 cases (12.5%), followed by the dialysis unit with eight cases (10%). The emergency ICU, medicine ward, and surgical ICU each reported six cases (7.5%), while the pulmonary ward reported four cases (5%). Additionally, the cardiac ICU, Medical Centre and Research Institute (MCRI) ICU, nephrology ward, and psychiatric ward each reported three cases (3.75%). The ENT ward, Isolation ICU, Kidney Transplant ICU, Medicine OPD, Obstetrics and Gynaecology ICU, Orthopaedic Ward, Paediatric ICU, Paediatric Ward, and Super Deluxe Ward each reported two cases (2.5%). Finally, one case (1.25%) of MDAE was reported from the Blood Collection OPD, Central Pathology Laboratory, Deluxe Ward, Dermatology OPD, Ophthalmology Ward, Surgery OPD, Surgery Ward, Surgical OPD, Surgical Operation Theatre, and Urology Ward. These data were collected by using the MDAE reporting form [<xref rid="REF10" ref-type="bibr">10</xref>].</p><table-wrap position="float" id="TAB2"><label>Table 2</label><caption><title>MDAEs reported from different departments of hospitals</title><p>MDAE, medical device adverse event</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Name of Department
+</td><td rowspan="1" colspan="1">
+Total Number of MDAE Reported
+</td><td rowspan="1" colspan="1">
+Percentage
+</td></tr><tr><td rowspan="1" colspan="1">
+Medicine ICU
+</td><td rowspan="1" colspan="1">
+10
+</td><td rowspan="1" colspan="1">
+12.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Dialysis Unit
+</td><td rowspan="1" colspan="1">
+8
+</td><td rowspan="1" colspan="1">
+10
+</td></tr><tr><td rowspan="1" colspan="1">
+Emergency ICU
+</td><td rowspan="1" colspan="1">
+6
+</td><td rowspan="1" colspan="1">
+7.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Medicine ward
+</td><td rowspan="1" colspan="1">
+6
+</td><td rowspan="1" colspan="1">
+7.5
+</td></tr><tr><td rowspan="1" colspan="1">
+Surgical ICU
+</td><td rowspan="1" colspan="1">
+6
+</td><td rowspan="1" colspan="1">
+7.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Pulmonary Ward
+</td><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+5
+</td></tr><tr><td rowspan="1" colspan="1">
+Cardiac ICU
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+MCRI ICU
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr><td rowspan="1" colspan="1">
+Nephrology Ward
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Psychiatric Ward
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr><td rowspan="1" colspan="1">
+ENT Ward
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Isolation ICU
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr><td rowspan="1" colspan="1">
+Kidney Transplant ICU
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Medicine OPD
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr><td rowspan="1" colspan="1">
+Obstetrics and Gynaecology ICU
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Orthopaedic Ward
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr><td rowspan="1" colspan="1">
+Paediatric ICU
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Paediatric Ward
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr><td rowspan="1" colspan="1">
+Super Deluxe Ward
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+2.5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Blood Collection OPD
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Central Pathology Laboratory
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Deluxe Ward
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Dermatology OPD
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Ophthalmology Ward
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Surgery OPD
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Surgery Ward
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Surgical OPD
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Surgical Operation Theatre
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Urology Ward
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Total
+</td><td rowspan="1" colspan="1">
+80
+</td><td rowspan="1" colspan="1">
+100
+</td></tr></tbody></table></table-wrap><p>In total, we analysed 80 adverse events associated with medical devices in our study. According to the guidelines outlined in the MDR of 2019 [<xref rid="REF4" ref-type="bibr">4</xref>], our study investigated device risk classification depicted by Figure&#x000a0;<xref rid="FIG3" ref-type="fig">3</xref>. We identified eight cases, constituting 10% of the total, classified as Class A, denoting low risk. The most prevalent were Class B events, categorised as Low Moderate Risk, accounting for 51.27% of the total with 41 cases. Class C events, indicating Moderate-High Risk, were observed in 26 cases, representing 32.5% of the total. Finally, there were three cases, making up 3.75% of the total, classified as Class D, signifying High Risk. Data was collected by using the MDAE reporting form, which indicates risk classification [<xref rid="REF10" ref-type="bibr">10</xref>].</p><fig position="anchor" fig-type="figure" id="FIG3"><label>Figure 3</label><caption><title>Device risk classification as per Medical Device Rule 2017</title><p>Reference: [<xref rid="REF4" ref-type="bibr">4</xref>]</p></caption><graphic xlink:href="cureus-0018-00000101042-i03" position="float"/></fig><p>Figure&#x000a0;<xref rid="FIG4" ref-type="fig">4</xref>&#x000a0;shows a list of corrective actions after MDAE occurrences. For example, a total of 37 were sent to the Maintenance Department, out of which 35 (43.7%) underwent repair in the Maintenance Department and were sent back to hospital use, while two (2.5%) instruments were sent back to the manufacturer for replacement. Forty-three (53.7%) were single-use devices, discarded in a hospital facility.</p><fig position="anchor" fig-type="figure" id="FIG4"><label>Figure 4</label><caption><title>List of corrective actions</title></caption><graphic xlink:href="cureus-0018-00000101042-i04" position="float"/></fig><p>Table&#x000a0;<xref rid="TAB3" ref-type="table">3</xref>&#x000a0;showed that, in our study, we diligently reported a total of 80 MDAEs to the National Coordination Centre-Materiovigilance Programme of India (NCC-MvPI) and the IPC using the MDAE reporting form [<xref rid="REF10" ref-type="bibr">10</xref>]. From these reports, we received acknowledgements detailing various issues. Device malfunction was identified as the cause in 41 cases (51.25%) of MDAEs, while poor quality was cited in 29 cases (36.25%). Additionally, blockage was reported in four cases (5.00%), reading errors in three cases (3.75%), and itching, leakage, and redness each in one case (1.25%). This comprehensive reporting underscores our commitment to ensuring the safety and efficacy of medical devices used in healthcare settings.</p><table-wrap position="float" id="TAB3"><label>Table 3</label><caption><title>Adverse event acknowledged by NCC-MvPi, IPC after reporting MDAEs</title><p>MDAE, medical device adverse event; NCC-MvPi, National Coordination Centre-Materiovigilance Programme of India</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Adverse Event Acknowledged by NCC-MvPi, IPC, by Type
+</td><td rowspan="1" colspan="1">
+Total Number
+</td><td rowspan="1" colspan="1">
+Total Percentage
+</td></tr><tr><td rowspan="1" colspan="1">
+Device Malfunction
+</td><td rowspan="1" colspan="1">
+41
+</td><td rowspan="1" colspan="1">
+51.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Poor Quality
+</td><td rowspan="1" colspan="1">
+29
+</td><td rowspan="1" colspan="1">
+36.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Blockage
+</td><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+5
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Reading Error
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+3.75
+</td></tr><tr><td rowspan="1" colspan="1">
+Itching
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Leakage
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr><td rowspan="1" colspan="1">
+Redness
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+1.25
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Total
+</td><td rowspan="1" colspan="1">
+80
+</td><td rowspan="1" colspan="1">
+100
+</td></tr></tbody></table></table-wrap></sec><sec sec-type="discussion"><title>Discussion</title><p>Medical devices have been crucial in diagnosing and treating a range of illnesses [<xref rid="REF11" ref-type="bibr">11</xref>]. With the progress that has been made in technology and the increasing popularity of high-quality health care around the world, the medical devices sector is estimated to generate more than USD 350 billion in annual revenue. In the healthcare sector, India saw a growth rate of 20%. These devices have also created substantial risks to patients with high-profile recalls [<xref rid="REF12" ref-type="bibr">12</xref>]. US FDA Defined MDAE is an adverse event that can refer to any unfavourable occurrence involving medical devices in the market that resulted in or contributed to a fatality or severe harm, or experienced a malfunction that has the potential to result in or contribute to a fatality or severe injury if the malfunction were to happen again [<xref rid="REF13" ref-type="bibr">13</xref>].</p><p>In 2003, there were 366 reports of adverse reactions to medical devices, increasing to 6,101 in 2006, 12,374 in 2007, 40,940 in 2008, and 53,304 in 2009. In 2012, more than 180,000 suspicious MDAEs were reported, of which 13% resulted in serious injury and 0.06% led to death. Most (71%) of the MDAEs cases were reported by medical institutions, while 22% were reported by distributors, 3% were reported by manufacturers, and 5% were reported by individuals [<xref rid="REF14" ref-type="bibr">14</xref>]. Therefore, the Materiovigilance Programme was started with the intention to collect safety information systematically, to monitor adverse drug reactions associated with medical devices, to raise awareness among healthcare professionals about the importance of reporting adverse drug reactions in India, and to monitor the benefit-risk profile of medical devices. Based on these reports, a decision will be taken on whether any change is required in the labelling of the devices, or whether a recall or a ban [<xref rid="REF15" ref-type="bibr">15</xref>] is required.</p><p>The current study aimed to investigate adverse events associated with the use of medical devices reported under the Materiovigilance Programme of India in a tertiary care hospital over six months. In our study, patient monitors accounted for the highest number of reported MDAEs, with 15 cases (18.75%) experiencing adverse events associated with device malfunction. This was followed by IV catheters, with eight cases (10%) reporting adverse events related to poor quality. Additionally, syringes were associated with four cases (5%) of reported MDAEs, with adverse events also attributed to poor quality. These findings align with those of a study conducted by Najmi et al. in 2022 [<xref rid="REF16" ref-type="bibr">16</xref>], which reported similar frequencies of adverse events based on medical devices, with BP instruments accounting for 16 cases (5%). Our investigation observed the incidence of MDAEs across various departments. The Medicine ICU recorded 10 cases (12.5%), followed by the dialysis unit with eight cases (10%). Similarly, the emergency ICU, medicine ward, and surgical ICU each reported six cases (7.5%), while the pulmonary ward documented four cases (5%). Additionally, the cardiac ICU, MCRI ICU, nephrology ward, and psychiatric ward individually reported three cases (3.75%). The ENT ward, Isolation ICU, Kidney Transplant ICU, Medicine OPD, Obstetrics and Gynaecology ICU, Orthopaedic Ward, Paediatric ICU, Paediatric Ward, and Super Deluxe Ward each registered two cases (2.5%). Singular cases (1.25%) of MDAE were reported from the Blood Collection OPD, Central Pathology Laboratory, Deluxe Ward, Dermatology OPD, Ophthalmology Ward, Surgery OPD, Surgery Ward, Surgical OPD, Surgical Operation Theatre, and Urology Ward. A similar trend was noted in the study by Samal et al. in 2022 [<xref rid="REF17" ref-type="bibr">17</xref>], conducted over 15 months, where 56 MDAEs were reported from different hospital departments. Medicine reported 16 cases (28.6%), OPD recorded nine cases (16.1%), outside data had eight cases (14.3%), the laboratory reported five cases (8.9%), and surgery documented four cases (7.1%). Moreover, ophthalmology and outside hospitals each reported three cases (5.4%), while casualty and dental departments each recorded two cases (3.6%). Obstetrics and Gynaecology, ICU, and Paediatrics each reported one case (1.8%).</p><p>In our study, we found that the majority of corrective actions taken after an MDAE involved repairing the device in the maintenance department and returning it for hospital use. This accounted for 35 cases (94.59%). Additionally, the maintenance department sent two cases (5.41%) to the manufacturer for replacement. Another significant corrective action, numbered two, was the discarding of single-use devices in a hospital facility, which occurred in 43 out of 80 MDAEs.</p><p>In our investigation, the class-wise distribution of MDAEs was as follows: Class A (low risk), 10 (12.5%); Class B (low to moderate risk), 41 (51.25%); Class C (moderate to high risk), 26 (32.5%); and Class D (high risk), three (3.75%).</p><p>In contrast to our study, PK et al. [<xref rid="REF18" ref-type="bibr">18</xref>] conducted a three-year study and reported the following class-wise distribution of MDAEs: Class A (low risk), five (2%); Class B (low to moderate risk), 161 (66%); Class C (moderate to high risk), 59 (24%); and Class D (high risk), 20 (8%), for a total of 224 MDAEs.</p><p>In a study done in San Francisco, over 35 months, the result of the study was that out of 517 sudden deaths observed, 22 individuals (4.3%) had cardiac implantable electronic devices (CIEDs) [<xref rid="REF19" ref-type="bibr">19</xref>]. A study conducted by Machado-Alba et al., a three-year retrospective study, reported that the most frequently reported adverse events belonged to the vascular access category, accounting for 738 (45.2%) cases, followed by surgical equipment with 330 (20.2%), airway devices with 242 (14.8%), biosafety equipment with 96 (5.9%), urinary or digestive catheters with 60 (3.7%), vital signs monitoring equipment with 56 (3.4%), healing materials with 39 (2.4%), and drainage bags with 38 (2.3%) [<xref rid="REF20" ref-type="bibr">20</xref>].</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>This study offers only a glimpse into the broader landscape of reporting trends for such incidents in tertiary care hospitals, indicating that it represents merely a fraction of the overall picture. Disparities exist in reporting among healthcare professionals of varying grades and across different departments, underscoring the importance of regularly conducting awareness initiatives, training sessions, and workshops. Through consistent and comprehensive reporting, decisions can be made regarding the necessity for changes in device labelling or the possibility of recalling or banning specific products. Therefore, there is a critical need to prioritise the safety of medical devices and enhance reporting mechanisms through further research and attention.</p></sec></body><back><ack><p>The authors extend their gratitude to the Indian Pharmacopoeia Commission, Ghaziabad, National Coordinating Center, and Materiovigilance Programme of India for their support of medical device adverse event monitoring activities. Additionally, the authors acknowledge the active support of the nursing staff, consultants, and physicians of MGM Medical College and Hospital, Chhatrapati Sambhajinagar, in reporting medical device-related adverse events.</p></ack><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Human subjects:</bold> Informed consent for treatment and open access publication was obtained or waived by all participants in this study.</p><p><bold>Animal subjects:</bold> All authors have confirmed that this study did not involve animal subjects or tissue.</p><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> All authors have declared that no financial support was received from any organization for the submitted work.</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Shruti Chandra, Deepak Bhosle, Umar Farooque Shaikh</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Shruti Chandra, Deepak Bhosle, Umar Farooque Shaikh</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Shruti Chandra, Deepak Bhosle, Umar Farooque Shaikh</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Shruti Chandra, Deepak Bhosle, Umar Farooque Shaikh</p><p><bold>Supervision:</bold>&#x000a0; Shruti Chandra, Deepak Bhosle, Umar Farooque Shaikh</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="webpage"><article-title>A Guidance Document for Medical Devices</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><year>2023</year><uri xlink:href="https://ipc.gov.in/images/mvpi/Guidance_Document.pdf">https://ipc.gov.in/images/mvpi/Guidance_Document.pdf</uri></element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>An updated review on Materiovigilance for safe use of medical devices</article-title><source>Int J Drug Reg Affairs</source><person-group>
+<name><surname>Deshwal</surname><given-names>M</given-names></name>
+<name><surname>Nagpal</surname><given-names>M</given-names></name>
+<name><surname>Dhingra</surname><given-names>GA</given-names></name>
+<name><surname>Aggarwal</surname><given-names>G</given-names></name>
+</person-group><fpage>5</fpage><lpage>13</lpage><volume>8</volume><year>2020</year><uri xlink:href="http://ijdra.com/index.php/journal/article/view/428">http://ijdra.com/index.php/journal/article/view/428</uri></element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="webpage"><article-title>Medical Device Rules, 2017</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><year>2017</year><uri xlink:href="https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/m_device/Medical%20Devices%20Rules,%202017.pdf">https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/m_device/Medical%20Devices%20Rules,%202017.pdf</uri></element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Implementation of adverse event reporting for medical devices, India</article-title><source>Bull World Health Organ</source><person-group>
+<name><surname>Shukla</surname><given-names>S</given-names></name>
+<name><surname>Gupta</surname><given-names>M</given-names></name>
+<name><surname>Pandit</surname><given-names>S</given-names></name>
+<name><surname>Thomson</surname><given-names>M</given-names></name>
+<name><surname>Shivhare</surname><given-names>A</given-names></name>
+<name><surname>Kalaiselvan</surname><given-names>V</given-names></name>
+<name><surname>Singh</surname><given-names>GN</given-names></name>
+</person-group><fpage>206</fpage><lpage>211</lpage><volume>98</volume><year>2020</year><pub-id pub-id-type="pmid">32132755</pub-id>
+</element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>Materiovigilance : an emerging discipline</article-title><source>Indian J Appl Res</source><person-group>
+<name><surname>Rani</surname><given-names>S</given-names></name>
+<name><surname>Singh</surname><given-names>K</given-names></name>
+</person-group><fpage>15</fpage><lpage>16</lpage><volume>7</volume><year>2018</year><uri xlink:href="https://www.worldwidejournals.com/international-journal-of-scientific-research-(IJSR)/article/materiovigilance-an-emerging-discipline/MTU1ODY=/?is=1">https://www.worldwidejournals.com/international-journal-of-scientific-research-(IJSR)/article/materiovigilance-an-emerging-discipline/MTU1ODY=/?is=1</uri></element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Materiovigilance: an Indian perspective</article-title><source>Perspect Clin Res</source><person-group>
+<name><surname>Meher</surname><given-names>BR</given-names></name>
+</person-group><fpage>175</fpage><lpage>178</lpage><volume>9</volume><year>2018</year><pub-id pub-id-type="pmid">30319948</pub-id>
+</element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>Materiovigilance: concept, structure and emerging perspective for patient&#x02019;s safety in India</article-title><source>Drug Res (Stuttg)</source><person-group>
+<name><surname>Hoda</surname><given-names>F</given-names></name>
+<name><surname>Verma</surname><given-names>R</given-names></name>
+<name><surname>Arshad</surname><given-names>M</given-names></name>
+<name><surname>Siddiqui</surname><given-names>AN</given-names></name>
+<name><surname>Khan</surname><given-names>MA</given-names></name>
+<name><surname>Akhtar</surname><given-names>M</given-names></name>
+<name><surname>Najmi</surname><given-names>AK</given-names></name>
+</person-group><fpage>429</fpage><lpage>436</lpage><volume>70</volume><year>2020</year><pub-id pub-id-type="pmid">32746478</pub-id>
+</element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="webpage"><article-title>Indian Medical Association</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><year>2023</year><uri xlink:href="https://www.ima-india.org/ima/archive-page-details.php">https://www.ima-india.org/ima/archive-page-details.php</uri></element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="webpage"><article-title>Materiovigilance Programme of India (MvPI)</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><person-group>
+<name><surname>Views</surname><given-names>N</given-names></name>
+<name><surname>Solanki</surname><given-names>M</given-names></name>
+<name><surname>Kapadia</surname><given-names>J</given-names></name>
+<name><surname>Modi</surname><given-names>J</given-names></name>
+<name><surname>Shah</surname><given-names>S</given-names></name>
+<name><surname>Kalaiselvan</surname><given-names>V</given-names></name>
+</person-group><year>2020</year><uri xlink:href="http://www.bjmcabd.edu.in/UploadedDocs/News/Issue%208.%20final.pdf">http://www.bjmcabd.edu.in/UploadedDocs/News/Issue%208.%20final.pdf</uri></element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="webpage"><article-title>Medical Device Adverse Event Reporting Form</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><year>2018</year><uri xlink:href="https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2018/UploadNewsFiles/MDAEform.pdf">https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2018/UploadNewsFiles/MDAEform.pdf</uri></element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="book"><article-title>Basics and essentials of medical devices safety surveillance</article-title><source>New Insights into the Future of Pharmacoepidemiology and Drug Safety</source><person-group>
+<name><surname>Kalaiselven</surname><given-names>V</given-names></name>
+<name><surname>Shukla</surname><given-names>S</given-names></name>
+<name><surname>Mishra</surname><given-names>N</given-names></name>
+<name><surname>Kumar</surname><given-names>P</given-names></name>
+</person-group><publisher-loc>London, England</publisher-loc><publisher-name>IntechOpen</publisher-name><year>2021</year></element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="journal"><article-title>Medical Device Recalls and Early Alerts</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><fpage>2023</fpage><volume>FDA;</volume><year>2025</year><uri xlink:href="https://www.fda.gov/medical-devices/medical-device-safety/medical-device-recalls-and-early-alerts">https://www.fda.gov/medical-devices/medical-device-safety/medical-device-recalls-and-early-alerts</uri></element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="webpage"><article-title>US FDA electronic medical device report (eMDR) adverse event reporting for medical device companies</article-title><date-in-citation content-type="access-date">
+<month>12</month>
+<year>2025</year>
+</date-in-citation><year>2023</year><uri xlink:href="https://www.emergobyul.com/services/us-fda-electronic-medical-device-report-emdr-adverse-event-reporting-medical-device">https://www.emergobyul.com/services/us-fda-electronic-medical-device-report-emdr-adverse-event-reporting-medical-device</uri></element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Ensuring medical device effectiveness and safety: a cross--national comparison of approaches to regulation</article-title><source>Food Drug Law J</source><person-group>
+<name><surname>Kramer</surname><given-names>DB</given-names></name>
+<name><surname>Tan</surname><given-names>YT</given-names></name>
+<name><surname>Sato</surname><given-names>C</given-names></name>
+<name><surname>Kesselheim</surname><given-names>AS</given-names></name>
+</person-group><fpage>1</fpage><lpage>23</lpage><volume>69</volume><year>2014</year><uri xlink:href="https://pubmed.ncbi.nlm.nih.gov/24772683/">https://pubmed.ncbi.nlm.nih.gov/24772683/</uri><pub-id pub-id-type="pmid">24772683</pub-id>
+</element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>Materiovigilance Programme of India (MvPI): a step towards patient safety for medical devices</article-title><source>Eur J Biomed Pharm Sci</source><person-group>
+<name><surname>Thota</surname><given-names>P</given-names></name>
+<name><surname>Kalaiselvan</surname><given-names>V</given-names></name>
+</person-group><fpage>497</fpage><lpage>501</lpage><volume>3</volume><year>2016</year><uri xlink:href="https://www.researchgate.net/publication/338065787_MATERIOVIGILANCE_PROGRAMME_OF_INDIA_MvPI_A_STEP_TOWARDS_PATIENT_SAFETY_FOR_MEDICAL_DEVICES">https://www.researchgate.net/publication/338065787_MATERIOVIGILANCE_PROGRAMME_OF_INDIA_MvPI_A_STEP_TOWARDS_PATIENT_SAFETY_FOR_MEDICAL_DEVICES</uri></element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>Pattern and occurrence of medical device adverse events at a medical device monitoring centre in Central India: a three-year surveillance study</article-title><source>J Pharmacovigil Drug Saf</source><person-group>
+<name><surname>Najmi</surname><given-names>A</given-names></name>
+<name><surname>Kaore</surname><given-names>S</given-names></name>
+<name><surname>Balakrishnan</surname><given-names>S</given-names></name>
+<name><surname>Khan</surname><given-names>MF</given-names></name>
+</person-group><fpage>6</fpage><volume>19</volume><year>2022</year><uri xlink:href="https://www.journalofsopi.com/index.php/sopi/article/download/89/76">https://www.journalofsopi.com/index.php/sopi/article/download/89/76</uri></element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>Medical devices associated adverse events under Materiovigilance Programme of India in a Tertiary Care Hospital of Tribal District of Odisha&#x0000d;
+</article-title><source>Natl J Physiol Pharm Pharmacol&#x0000d;
+</source><person-group>
+<name><surname>Samal</surname><given-names>S</given-names></name>
+<name><surname>Naik</surname><given-names>M</given-names></name>
+<name><surname>Behera</surname><given-names>S</given-names></name>
+</person-group><fpage>1047</fpage><lpage>1051</lpage><volume>12</volume><year>2022</year></element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>Pattern of medical device adverse events in a tertiary level hospital in northern India: an ambispective study</article-title><source>J Assoc Physicians India </source><person-group>
+<name><surname>PK</surname><given-names>S</given-names></name>
+<name><surname>Prakash</surname><given-names>A</given-names></name>
+<name><surname>Samujh</surname><given-names>R</given-names></name>
+</person-group><fpage>62</fpage><lpage>68</lpage><volume>72</volume><year>2024</year><uri xlink:href="https://www.japi.org/article/japi-72-6-62">https://www.japi.org/article/japi-72-6-62</uri><pub-id pub-id-type="pmid">38881137</pub-id>
+</element-citation></ref><ref id="REF19"><label>19</label><element-citation publication-type="journal"><article-title>Sudden death in patients with cardiac implantable electronic devices</article-title><source>JAMA Intern Med</source><person-group>
+<name><surname>Tseng</surname><given-names>ZH</given-names></name>
+<name><surname>Hayward</surname><given-names>RM</given-names></name>
+<name><surname>Clark</surname><given-names>NM</given-names></name>
+<etal/>
+</person-group><fpage>1342</fpage><lpage>1350</lpage><volume>175</volume><year>2015</year><pub-id pub-id-type="pmid">26098676</pub-id>
+</element-citation></ref><ref id="REF20"><label>20</label><element-citation publication-type="journal"><article-title>Adverse events associated with medical devices in patients at different clinics and hospitals in Colombia</article-title><source>J Patient Saf Risk Manag</source><person-group>
+<name><surname>Machado-Alba</surname><given-names>JE</given-names></name>
+<name><surname>Cardona-Trejos</surname><given-names>EA</given-names></name>
+<name><surname>Delgado-Pascuaza</surname><given-names>YL</given-names></name>
+<name><surname>Torres-Bahamon</surname><given-names>DR</given-names></name>
+<name><surname>Portilla</surname><given-names>A</given-names></name>
+</person-group><fpage>245</fpage><lpage>250</lpage><volume>24</volume><year>2019</year></element-citation></ref></ref-list></back></article>

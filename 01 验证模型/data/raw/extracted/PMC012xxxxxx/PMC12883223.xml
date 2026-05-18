@@ -1,0 +1,477 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="review-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883223</article-id><article-id pub-id-type="doi">10.7759/cureus.101094</article-id><article-categories><subj-group subj-group-type="heading"><subject>Trauma</subject></subj-group><subj-group><subject>Orthopedics</subject></subj-group></article-categories><title-group><article-title>Carbon Fiber-Reinforced Polyetheretherketone (PEEK) vs. Titanium Plates for Upper Limb Fractures: A Systematic Review</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author"><name><surname>Hamsho</surname><given-names>Ward</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author" corresp="yes"><name><surname>Raufi</surname><given-names>Muhammad Y</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Alnajjar</surname><given-names>Mohammad</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Rhodes</surname><given-names>Mahmoud</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Hafeez</surname><given-names>Usman</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Aurangzeb</surname><given-names>Rafya</given-names></name><xref rid="aff-2" ref-type="aff">2</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Trauma and Orthopaedics, Leeds Teaching Hospitals NHS Trust, Leeds, GBR </aff><aff id="aff-2">
+<label>2</label>
+Medicine, LAK Locums, Leeds, GBR </aff><author-notes><corresp id="cor1">
+Muhammad Y. Raufi <email>m.raufi@nhs.net</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>8</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101094</elocation-id><history><date date-type="accepted"><day>8</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Hamsho et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Hamsho et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/429211-carbon-fiber-reinforced-polyetheretherketone-peek-vs-titanium-plates-for-upper-limb-fractures-a-systematic-review">This article is available from https://cureus.com/articles/429211-carbon-fiber-reinforced-polyetheretherketone-peek-vs-titanium-plates-for-upper-limb-fractures-a-systematic-review</self-uri><abstract><p>Carbon fiber-reinforced polyetheretherketone (CFR-PEEK) plates have emerged as alternatives to titanium locking plates for fixation of upper-limb fractures. Advantages may include an elastic modulus closer to bone, fewer imaging artefacts, and reduced stress shielding. This systematic review synthesizes comparative clinical evidence. We analyzed data from five comparative studies (n = 210 patients; CFR-PEEK = 108, titanium = 102) provided in the dataset. Searches of PubMed and the Cochrane Library identified relevant trials. Data were extracted for demographics, interventions, functional outcomes, complications, and imaging findings, following PRISMA-style methodology. Five studies (three proximal humerus, two distal radius) were included. Overall complication rates were lower with CFR-PEEK compared to titanium. Functional outcomes were generally comparable, though one study showed improved Constant and OSS scores for CFR-PEEK. Imaging clarity was consistently superior with CFR-PEEK. CFR-PEEK plates demonstrate similar or superior clinical outcomes compared with titanium plates in upper limb fractures, with fewer complications and superior radiographic visibility. Evidence remains limited, requiring larger RCTs.</p></abstract><kwd-group kwd-group-type="author"><kwd>carbon-fiber&#x02013;reinforced polyetheretherketone (cfr-peek)</kwd><kwd>distal end radius fracture</kwd><kwd>proximal humeral fracture</kwd><kwd>titanium plates</kwd><kwd>upper limb fractures</kwd></kwd-group></article-meta></front><body><sec sec-type="intro"><title>Introduction and background</title><p>Upper limb fractures, particularly proximal humerus and distal radius fractures (DRFs), are common injuries that can lead to substantial functional impairment if not appropriately managed [<xref rid="REF1" ref-type="bibr">1</xref>]. Stable fixation with plates remains the cornerstone of surgical treatment [<xref rid="REF2" ref-type="bibr">2</xref>]. Although titanium locking plates are widely used and generally associated with satisfactory outcomes, their use is not without limitations. Reported complication rates for proximal humerus fractures (PHFs) treated with titanium plates can be as high as 30%, encompassing problems such as secondary screw perforation, loss of reduction, and implant-related irritation [<xref rid="REF3" ref-type="bibr">3</xref>-<xref rid="REF6" ref-type="bibr">6</xref>].</p><p>A key factor underlying these complications is the high rigidity of titanium implants, which may contribute to stress shielding and failure at the bone-screw interface, particularly in osteoporotic bone [<xref rid="REF7" ref-type="bibr">7</xref>]. In addition, the metallic nature of titanium plates produces radiological artifacts, hindering the accurate assessment of fracture healing and complicating the early detection of postoperative issues [<xref rid="REF5" ref-type="bibr">5</xref>].</p><p>Carbon fiber-reinforced polyetheretherketone (CFR-PEEK) plates have emerged as a potential alternative, offering several theoretical advantages. Their radiolucency allows for improved visualization of fracture alignment and healing on plain radiographs, while also minimizing artifact on MRI, thereby facilitating better assessment of surrounding soft tissues. Biomechanically, their bone-like elasticity reduces the risk of stress shielding and bone loss, and their material properties prevent cold welding between plates and screws, simplifying implant removal. Furthermore, CFR-PEEK is highly biocompatible, avoids metal hypersensitivity, and may even demonstrate osteoinductive potential [<xref rid="REF8" ref-type="bibr">8</xref>,<xref rid="REF9" ref-type="bibr">9</xref>].</p><p>Nevertheless, drawbacks remain. The higher cost and lack of intraoperative contouring currently limit the widespread adoption of CFR-PEEK plates in clinical practice [<xref rid="REF10" ref-type="bibr">10</xref>]. The central question, therefore, is whether the theoretical and biomechanical advantages of CFR-PEEK implants translate into superior clinical outcomes compared with titanium plates.</p><p>Although early biomechanical and clinical studies have evaluated CFR-PEEK plates, a comprehensive synthesis of the available evidence is still lacking. To address this gap, the present systematic review aims to critically evaluate and compare the clinical efficacy, safety, and functional outcomes of CFR-PEEK vs. titanium plates in the surgical fixation of distal radius and PHFs. This review seeks to provide orthopedic surgeons with evidence-based insights to guide implant selection and optimize patient outcomes.</p></sec><sec sec-type="review"><title>Review</title><p>Review and methods</p><p>This systematic review was conducted in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines [<xref rid="REF11" ref-type="bibr">11</xref>]. The review protocol was established as a priority to ensure methodological rigor and transparency.</p><p>Search Strategy</p><p>A comprehensive literature search was conducted on MEDLINE, Embase, CINAHL, PubMed, Google Scholar, and CENTRAL as of 14 September 2025. The search strategy included terms and keywords related to the fracture types, implant materials, and surgical interventions. The exact search query used was: ("proximal humerus" OR "distal radius") AND ("CFR-PEEK" OR "Carbon-Peek " OR "carbon fiber reinforced polyetheretherketone") AND ("titanium" OR "metal" OR "locking" OR "plate" OR "proximal humerus internal locking" OR "non-contact bridging") The search was not restricted by publication date or language.</p><p>Eligibility Criteria</p><p>Inclusion criteria:&#x000a0;The inclusion criteria are the following: studies comparing CFR-PEEK plates with titanium plates for the fixation of distal radius or PHFs; studies reporting clinical outcomes (e.g., functional scores), radiographic outcomes (e.g., union rates, malunion), or complication rates (e.g., screw perforation, infection, hardware removal); and prospective or retrospective cohort studies, randomized controlled trials (RCTs), and comparative case series. Studies involving adult human participants.</p><p>Exclusion criteria: The exclusion criteria are the following: in vitro studies, biomechanical studies without clinical data, animal studies, cadaveric studies, and expert opinions; case reports, review articles, editorials, and conference abstracts without full-text availability; and studies not providing comparative data between CFR-PEEK and titanium plates.</p><p>Study Selection</p><p>Following the database searches, all identified records were imported. Duplicate records were removed. Two independent reviewers screened the titles and abstracts of the remaining records against the predefined eligibility criteria. Full-text articles of potentially relevant studies were then retrieved and independently assessed for eligibility. Any discrepancies during the screening and full-text review process were resolved through discussion.</p><p>The PRISMA flow chart (Figure&#x000a0;<xref rid="FIG1" ref-type="fig">1</xref>) illustrates the study selection process.</p><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) flow chart </title></caption><graphic xlink:href="cureus-0018-00000101094-i01" position="float"/></fig><p>Data Extraction</p><p>Data from the included studies were extracted into a pre-designed Excel spreadsheet. The extracted data included the following: study characteristics - author, publication year, country, study design (e.g., RCT, cohort); patient demographics - number of patients in each group (CFR-PEEK and titanium), mean age, percentage of female participants; intervention details: fracture type (proximal humerus or distal radius), follow-up duration; outcomes - functional scores (e.g., Constant-Murley Score (CMS), Oxford Shoulder Score (OSS), Simple Shoulder Test (SST), Disability of Arm, Shoulder, and Hand (DASH), Mayo Wrist Score, Visual Analog Scale (VAS) for pain), union rates, non-union, malunion, infection rates, implant failure, hardware removal rates, and operative time; and complications: total complications, specific complications such as screw perforation, varus displacement, and avascular necrosis.</p><p>Risk of Bias Assessment</p><p>The methodological quality and risk of bias of the included studies were independently assessed by two reviewers using appropriate tools. For cohort studies, the Newcastle-Ottawa Scale (NOS) was utilized (Table&#x000a0;<xref rid="TAB1" ref-type="table">1</xref>), evaluating studies based on three broad perspectives: selection of the study groups, comparability of the groups, and ascertainment of either the exposure or outcome of interest [<xref rid="REF12" ref-type="bibr">12</xref>]. For case series, the Joanna Briggs Institute (JBI) Critical Appraisal Checklist for Case Series was employed (Table&#x000a0;<xref rid="TAB2" ref-type="table">2</xref>) [<xref rid="REF13" ref-type="bibr">13</xref>]. For RCTs, the Cochrane Collaboration's Tool for Assessing Risk of Bias in Randomized Trials was used (Table&#x000a0;<xref rid="TAB3" ref-type="table">3</xref>) [<xref rid="REF14" ref-type="bibr">14</xref>]. Studies were categorized as having low, moderate, or high risk of bias based on the assessment. The risk of bias assessment results is summarized in the provided tables.</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Newcastle-Ottawa score for observational studies </title></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Study
+</td><td rowspan="1" colspan="1">
+Selection (max 4)
+</td><td rowspan="1" colspan="1">
+Comparability (max 2)
+</td><td rowspan="1" colspan="1">
+Outcome (max 3)
+</td><td rowspan="1" colspan="1">
+Total (max 9)
+</td><td rowspan="1" colspan="1">
+Risk of bias
+</td></tr><tr><td rowspan="1" colspan="1">
+Schliemann et al. 2015 - proximal humerus [<xref rid="REF15" ref-type="bibr">15</xref>]
+</td><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+8/9
+</td><td rowspan="1" colspan="1">
+Low-moderate
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Katthagen et al. 2017 - proximal humerus [<xref rid="REF16" ref-type="bibr">16</xref>]
+</td><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+8/9
+</td><td rowspan="1" colspan="1">
+Low-moderate
+</td></tr><tr><td rowspan="1" colspan="1">
+Behrendt et al. 2017 - distal radius [<xref rid="REF17" ref-type="bibr">17</xref>]
+</td><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+7/9
+</td><td rowspan="1" colspan="1">
+Moderate
+</td></tr></tbody></table></table-wrap><table-wrap position="float" id="TAB2"><label>Table 2</label><caption><title>Joanna Briggs Institute (JBI) critical appraisal checklist for case series [<xref rid="REF16" ref-type="bibr">16</xref>]</title></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Domain
+</td><td rowspan="1" colspan="1">
+Assessment
+</td><td rowspan="1" colspan="1">
+Notes
+</td></tr><tr><td rowspan="1" colspan="1">
+Inclusion criteria
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+Clear eligibility (displaced unilateral PHF, &#x02265;18 years, consent).
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Case identification
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+Surgical records, prospective enrolment.
+</td></tr><tr><td rowspan="1" colspan="1">
+Consecutive inclusion
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+All eligible between April 2013 and February 2014 included (except two exclusions).
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Demographics and clinical info
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+Age, sex, fracture classification, and operative details reported.
+</td></tr><tr><td rowspan="1" colspan="1">
+Outcome measurement
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+Functional scores (constant, SST, SSV, and VAS), radiology, complications.
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Follow-up completeness
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+95% follow-up at 12 months.
+</td></tr><tr><td rowspan="1" colspan="1">
+Statistical analysis
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+Appropriate non-parametric tests for small cohort.
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Overall
+</td><td rowspan="1" colspan="1">
+Low risk of bias
+</td><td rowspan="1" colspan="1">
+Well-reported, but small single-center cohort and short (12-month) follow-up limit external validity.
+</td></tr></tbody></table></table-wrap><table-wrap position="float" id="TAB3"><label>Table 3</label><caption><title>Risk of bias assessment for randomized controlled trials utilizing the Cochrane Collaboration's tool</title></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+First author&#x000a0;
+</td><td rowspan="1" colspan="1">
+Bias
+</td><td rowspan="1" colspan="1">
+Authors judgement&#x000a0;
+</td><td rowspan="1" colspan="1">
+Support for judgment
+</td></tr><tr><td rowspan="6" colspan="1">
+Ziegler et al. 2023 [<xref rid="REF18" ref-type="bibr">18</xref>]
+</td><td rowspan="1" colspan="1">
+Random sequence generation (selection bias); allocation concealment
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+A randomization list was generated (Excel random numbers) and results were put into consecutively numbered envelopes opened by the operating surgeon immediately before surgery.
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Selective reporting (reporting bias)
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+Trial was registered, outcomes described in the paper match the reported endpoints and sensitivity analyses are reported.
+</td></tr><tr><td rowspan="1" colspan="1">
+Other bias; other sources of bias&#x000a0;
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td><td rowspan="1" colspan="1">
+No other bias detected.
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Blinding of participants and personnel (performance bias)
+</td><td rowspan="1" colspan="1">
+Unclear
+</td><td rowspan="1" colspan="1">
+Blinding is not clearly stated.
+</td></tr><tr><td rowspan="1" colspan="1">
+Blinding of outcome assessment (detection bias)
+</td><td rowspan="1" colspan="1">
+High risk
+</td><td rowspan="1" colspan="1">
+Primary outcomes are patient-reported functional scores. Assessors/patients were not blinded, increasing risk that subjective measures could be influenced by knowledge of implant type.
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Incomplete outcome data (attrition bias)
+</td><td rowspan="1" colspan="1">
+High risk
+</td><td rowspan="1" colspan="1">
+Substantial attrition by 12 months: of 76 randomized, 54 had one-year data (follow-up rate ~71%); 22 lost/excluded
+</td></tr><tr><td rowspan="6" colspan="1">
+Perugia et al. 2017 [<xref rid="REF19" ref-type="bibr">19</xref>]
+</td><td rowspan="1" colspan="1">
+Random sequence generation (selection bias); allocation concealment
+</td><td rowspan="1" colspan="1">
+Unclear
+</td><td rowspan="1" colspan="1">
+Sequence generation was computer-generated. Allocation concealment details are not reported, so we cannot be confident concealment was secure.
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Selective reporting (reporting bias)
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+Prespecified outcomes are reported.
+</td></tr><tr><td rowspan="1" colspan="1">
+Other bias; other sources of bias&#x000a0;
+</td><td rowspan="1" colspan="1">
+&#x000a0;
+</td><td rowspan="1" colspan="1">
+No other bias detected.
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Blinding of participants and personnel (performance bias)
+</td><td rowspan="1" colspan="1">
+Unclear
+</td><td rowspan="1" colspan="1">
+Blinding is not clearly stated.
+</td></tr><tr><td rowspan="1" colspan="1">
+Blinding of outcome assessment (detection bias)
+</td><td rowspan="1" colspan="1">
+Unclear
+</td><td rowspan="1" colspan="1">
+Blinding is not clearly stated.
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Incomplete outcome data (attrition bias)
+</td><td rowspan="1" colspan="1">
+Low risk
+</td><td rowspan="1" colspan="1">
+The paper reports no losses to follow-up at the reported timepoints.
+</td></tr></tbody></table></table-wrap><p>Data Synthesis</p><p>Due to high heterogeneity in study designs, outcome measures, and reporting formats, a meta-analysis was not performed. Instead, a narrative synthesis of the findings was conducted. Data were summarized descriptively, highlighting key characteristics, outcomes, and complication rates for both CFR-PEEK and titanium plate groups. Comparisons were made qualitatively, focusing on trends and significant differences reported by individual studies.</p><p>Results</p><p>Included Studies</p><p>The systematic search and screening process identified five studies that met the inclusion criteria: Schliemann et al. [<xref rid="REF15" ref-type="bibr">15</xref>], Katthagen et al. [<xref rid="REF16" ref-type="bibr">16</xref>], Behrendt et al. [<xref rid="REF17" ref-type="bibr">17</xref>], Ziegler et al. [<xref rid="REF18" ref-type="bibr">18</xref>], and Perugia et al. [<xref rid="REF19" ref-type="bibr">19</xref>].</p><p>Patient Demographics and Study Characteristics</p><p>Three studies (Schliemann et al. [<xref rid="REF15" ref-type="bibr">15</xref>]; Katthagen et al. [<xref rid="REF16" ref-type="bibr">16</xref>]; Ziegler et al. [<xref rid="REF18" ref-type="bibr">18</xref>]) evaluated PHFs, while two (Behrendt et al. [<xref rid="REF17" ref-type="bibr">17</xref>]; Perugia et al. [<xref rid="REF19" ref-type="bibr">19</xref>]) investigated DRFs. Across all studies, 108 patients were treated with CFR-PEEK plates and 102 with titanium plates. Mean ages ranged from 56.8 to 66.8 years in the CFR-PEEK groups and 52.6 to 67.4 years in the titanium groups, representing a predominantly older population. Follow-up periods ranged from 12 to 24 months (Table&#x000a0;<xref rid="TAB4" ref-type="table">4</xref>).</p><table-wrap position="float" id="TAB4"><label>Table 4</label><caption><title>Demographics and study characteristics</title><p>CFR-PEEK, carbon-fiber-reinforced polyetheretherketone; DR, distal radius; PH, proximal humerus; RCT, randomized controlled trial; Ti, titanium</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Serial Number
+</td><td rowspan="1" colspan="1">
+Author
+</td><td rowspan="1" colspan="1">
+Year
+</td><td rowspan="1" colspan="1">
+Country
+</td><td rowspan="1" colspan="1">
+Design
+</td><td rowspan="1" colspan="1">
+Fracture
+</td><td rowspan="1" colspan="1">
+Patients CFR-PEEK (n)
+</td><td rowspan="1" colspan="1">
+Patients Ti (n)
+</td><td rowspan="1" colspan="1">
+Age CFR-PEEK
+</td><td rowspan="1" colspan="1">
+Age Ti
+</td><td rowspan="1" colspan="1">
+% Female CFR-PEEK
+</td><td rowspan="1" colspan="1">
+% Female Ti
+</td><td rowspan="1" colspan="1">
+Follow-up in months
+</td></tr><tr><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+Schliemann et al. [<xref rid="REF15" ref-type="bibr">15</xref>]
+</td><td rowspan="1" colspan="1">
+2015
+</td><td rowspan="1" colspan="1">
+Germany
+</td><td rowspan="1" colspan="1">
+Prospective cohort
+</td><td rowspan="1" colspan="1">
+PH
+</td><td rowspan="1" colspan="1">
+29
+</td><td rowspan="1" colspan="1">
+29
+</td><td rowspan="1" colspan="1">
+66.4
+</td><td rowspan="1" colspan="1">
+66.4
+</td><td rowspan="1" colspan="1">
+NR
+</td><td rowspan="1" colspan="1">
+NR
+</td><td rowspan="1" colspan="1">
+24
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+Katthagen et al. [<xref rid="REF16" ref-type="bibr">16</xref>]
+</td><td rowspan="1" colspan="1">
+2017
+</td><td rowspan="1" colspan="1">
+Germany
+</td><td rowspan="1" colspan="1">
+Case series
+</td><td rowspan="1" colspan="1">
+PH
+</td><td rowspan="1" colspan="1">
+21
+</td><td rowspan="1" colspan="1">
+21
+</td><td rowspan="1" colspan="1">
+66.8
+</td><td rowspan="1" colspan="1">
+67.4
+</td><td rowspan="1" colspan="1">
+66.7
+</td><td rowspan="1" colspan="1">
+66.7
+</td><td rowspan="1" colspan="1">
+12
+</td></tr><tr><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+Behrendt et al. [<xref rid="REF17" ref-type="bibr">17</xref>]
+</td><td rowspan="1" colspan="1">
+2017
+</td><td rowspan="1" colspan="1">
+Germany
+</td><td rowspan="1" colspan="1">
+Prospective cohort
+</td><td rowspan="1" colspan="1">
+DR
+</td><td rowspan="1" colspan="1">
+14
+</td><td rowspan="1" colspan="1">
+12
+</td><td rowspan="1" colspan="1">
+57.2
+</td><td rowspan="1" colspan="1">
+61.7
+</td><td rowspan="1" colspan="1">
+80
+</td><td rowspan="1" colspan="1">
+79
+</td><td rowspan="1" colspan="1">
+6-12
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+Ziegler et al. [<xref rid="REF18" ref-type="bibr">18</xref>]
+</td><td rowspan="1" colspan="1">
+2023
+</td><td rowspan="1" colspan="1">
+Germany
+</td><td rowspan="1" colspan="1">
+RCT
+</td><td rowspan="1" colspan="1">
+PH
+</td><td rowspan="1" colspan="1">
+29
+</td><td rowspan="1" colspan="1">
+25
+</td><td rowspan="1" colspan="1">
+62.5
+</td><td rowspan="1" colspan="1">
+62.8
+</td><td rowspan="1" colspan="1">
+82.8
+</td><td rowspan="1" colspan="1">
+84.0
+</td><td rowspan="1" colspan="1">
+12
+</td></tr><tr><td rowspan="1" colspan="1">
+5
+</td><td rowspan="1" colspan="1">
+Perugia et al. [<xref rid="REF19" ref-type="bibr">19</xref>]
+</td><td rowspan="1" colspan="1">
+2017
+</td><td rowspan="1" colspan="1">
+Italy
+</td><td rowspan="1" colspan="1">
+RCT
+</td><td rowspan="1" colspan="1">
+DR
+</td><td rowspan="1" colspan="1">
+15
+</td><td rowspan="1" colspan="1">
+15
+</td><td rowspan="1" colspan="1">
+56.8
+</td><td rowspan="1" colspan="1">
+52.6
+</td><td rowspan="1" colspan="1">
+66.7
+</td><td rowspan="1" colspan="1">
+73.3
+</td><td rowspan="1" colspan="1">
+16.1 average
+</td></tr></tbody></table></table-wrap><p>Functional Outcomes</p><p>Proximal humerus fractures: Schliemann et al. [<xref rid="REF15" ref-type="bibr">15</xref>] conducted a prospective matched cohort study comparing 29 CFR-PEEK and 29 titanium fixations, demonstrating significantly superior outcomes for CFR-PEEK at 24 months. The CMS was higher in the CFR-PEEK group (71.3 vs. 59.2; p = 0.038), as were the OSS (27.4 vs. 21.6; p = 0.029) and Simple Shoulder Test (59% vs. 48%) [<xref rid="REF15" ref-type="bibr">15</xref>]. Katthagen et al. [<xref rid="REF16" ref-type="bibr">16</xref>], in a prospective case-control study (21 CFR-PEEK vs. 21 titanium), found no significant differences between groups at 12 months. Mean Constant Score was 73.8 &#x000b1; 15 (CFR-PEEK) vs. 69.4 &#x000b1; 18.5 (titanium), SST was 9.3 &#x000b1; 2.6 vs. 8.7 &#x000b1; 2.9, and Simple Shoulder Value (SSV) was 74% vs. 72% [<xref rid="REF16" ref-type="bibr">16</xref>]. Similarly, Ziegler et al. reported no significant differences in functional outcomes at 12 months in their prospective RCT (29 CFR-PEEK vs. 25 titanium; p &#x02248; 0.57). DASH scores were 18.6 &#x000b1; 14.7 (CFR-PEEK) vs. 23.9 &#x000b1; 22.0 (titanium), with comparable OSS and SST results [<xref rid="REF18" ref-type="bibr">18</xref>].</p><p>Distal radius fractures: Behrendt et al. (2017) conducted a prospective clinical pilot study (14 CFR-PEEK vs. 12 titanium) that demonstrated comparable clinical and radiographic outcomes between groups. At 12 months, follow-up data were available for five CFR-PEEK patients, showing a mean DASH score of 5.3 &#x000b1; 9.5 and a Mayo Wrist Score of 83.6 &#x000b1; 9.5 [<xref rid="REF17" ref-type="bibr">17</xref>]. The intergroup comparison at six weeks, presented graphically, indicated a mean DASH score of approximately 25 in the CFR-PEEK group vs. 32-33 in the titanium group, suggesting slightly better early functional outcomes with CFR-PEEK fixation, though not statistically significant (p &#x0003e; 0.05). Overall, while long-term titanium data were not reported, early results suggested a trend toward improved range of motion and patient satisfaction in the CFR-PEEK group [<xref rid="REF17" ref-type="bibr">17</xref>]. Similarly, Perugia et al. [<xref rid="REF19" ref-type="bibr">19</xref>], in an RCT (15 CFR-PEEK vs. 15 titanium; mean follow-up 16.1 months), observed no significant intergroup differences. DASH scores were 15.3 (CFR-PEEK) vs. 13.2 (titanium; p &#x0003e; 0.05), with comparable radiographic and VAS outcomes [<xref rid="REF19" ref-type="bibr">19</xref>].</p><p>Complications</p><p>Proximal humerus fractures: Schliemann et al. reported a lower overall complication rate in the CFR-PEEK group (21%) compared to titanium (38%). Varus malunion occurred in 14% (CFR-PEEK) vs. 24% (titanium), while avascular necrosis was observed in 3% vs. 10%, respectively [<xref rid="REF15" ref-type="bibr">15</xref>]. Katthagen et al. [<xref rid="REF18" ref-type="bibr">18</xref>] found significant differences in implant-related complications, with none occurring in the CFR-PEEK group, whereas five cases of screw perforation requiring revision were noted in the titanium group (p = 0.048). Four non-implant-related revisions (19%) occurred in the CFR-PEEK group [<xref rid="REF16" ref-type="bibr">16</xref>]. Ziegler et al. (2023) did not explicitly report complication data [<xref rid="REF18" ref-type="bibr">18</xref>].</p><p>Distal radius fractures: Behrendt et al. [<xref rid="REF17" ref-type="bibr">17</xref>] observed no implant-related complications or failures in the CFR-PEEK group. In contrast, two intraoperative screw head damages occurred in the titanium group, requiring replacement but not classified as implant failures. No non-union, malunion, or infection cases were reported in either group [<xref rid="REF17" ref-type="bibr">17</xref>]. Perugia et al. also reported no implant-related complications in either the CFR-PEEK or titanium cohorts (see Table&#x000a0;<xref rid="TAB5" ref-type="table">5</xref>&#x000a0;for detailed outcomes and complications) [<xref rid="REF19" ref-type="bibr">19</xref>].</p><table-wrap position="float" id="TAB5"><label>Table 5</label><caption><title>Outcomes and complications</title><p>CFR-PEEK, carbon-fiber-reinforced polyetheretherketone; CMS, Constant-Murley Score; DASH, Disabilities of the Arm, Shoulder and Hand; NR, not reported; SST, Simple Shoulder Test; Ti, titanium; VAS, visual analog score</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Study (author, year)</td><td rowspan="1" colspan="1">Functional Score (CFR-PEEK vs. Ti)</td><td rowspan="1" colspan="1">Complications CFR-PEEK</td><td rowspan="1" colspan="1">Complications Ti</td><td rowspan="1" colspan="1">Non-union CFR-PEEK</td><td rowspan="1" colspan="1">Non-union Ti</td><td rowspan="1" colspan="1">Malunion CFR-PEEK (n)&#x000a0;</td><td rowspan="1" colspan="1">Malunion Ti (n)&#x000a0;</td></tr><tr><td rowspan="1" colspan="1">Schliemann et al., 2015 [<xref rid="REF15" ref-type="bibr">15</xref>]</td><td rowspan="1" colspan="1">CMS 71.3 (44-97) vs. 59.2 (28-86); p = 0.038&#x000a0;</td><td rowspan="1" colspan="1">6/29 (21%)</td><td rowspan="1" colspan="1">11/29 (38%)</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">4 (14%)&#x000a0;</td><td rowspan="1" colspan="1">7 (24%)&#x000a0;&#x000a0;&#x000a0;</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Katthagen et al., 2017 [<xref rid="REF16" ref-type="bibr">16</xref>]</td><td rowspan="1" colspan="1">CMS 73.8 &#x000b1; 15 vs. 69.4 &#x000b1; 18.5; p = 0.43</td><td rowspan="1" colspan="1">0/21</td><td rowspan="1" colspan="1">5/21</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">3/5</td></tr><tr><td rowspan="1" colspan="1">Behrendt et al., 2017 [<xref rid="REF17" ref-type="bibr">17</xref>]</td><td rowspan="1" colspan="1">DASH at 6 weeks ~25&#x000a0; vs. ~32-33 (p &#x0003e; 0.05); DASH at 12 months 5.3 &#x000b1; 9.5 vs. no data at 12 months for Ti</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">Ziegler et al., 2023 [<xref rid="REF18" ref-type="bibr">18</xref>]</td><td rowspan="1" colspan="1">DASH 18.6 &#x000b1; 14.7 vs. 23.9 &#x000b1; 22.0; p &#x02248; 0.57</td><td rowspan="1" colspan="1">NR</td><td rowspan="1" colspan="1">NR</td><td rowspan="1" colspan="1">NR</td><td rowspan="1" colspan="1">NR</td><td rowspan="1" colspan="1">NR</td><td rowspan="1" colspan="1">NR</td></tr><tr><td rowspan="1" colspan="1">Perugia et al., 2017 [<xref rid="REF19" ref-type="bibr">19</xref>]</td><td rowspan="1" colspan="1">DASH 15.3 (2.5-58.9) vs. 13.2 (10.6-54.8); p &#x0003e; 0.05</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td></tr></tbody></table></table-wrap><p>Other Outcomes</p><p>Operative time: Behrendt et al. [<xref rid="REF17" ref-type="bibr">17</xref>] reported comparable operative durations between groups, with mean times of 101 &#x000b1; 18.6 minutes for CFR-PEEK and 109.3 &#x000b1; 10.5 minutes for titanium, showing no statistically significant difference. Operative times were not reported in the other included studies.</p><p>Hardware removal and radiolucency: Schliemann et al. [<xref rid="REF15" ref-type="bibr">15</xref>] documented hardware removal in 24% (7/29) of CFR-PEEK patients and 28% (8/29) of titanium patients. Katthagen et al. [<xref rid="REF16" ref-type="bibr">16</xref>] noted four hardware removals in the CFR-PEEK group, all unrelated to implant failure, and five removals in the titanium group, each associated with revision surgery for screw perforation. All included studies highlighted the clinical advantage of CFR-PEEK plates&#x02019; radiolucency, which facilitated improved postoperative imaging and assessment of fracture healing while eliminating the radiographic and MRI artifacts typically associated with metallic implants.</p><p>Discussion</p><p>This systematic review sought to compare the clinical outcomes, complication rates, and functional results of CFR-PEEK plates vs. conventional titanium plates in the fixation of distal radius and PHFs. Across five comparative studies, our findings indicate that CFR-PEEK plates provide outcomes that are at least comparable to titanium plates, with potential advantages in reducing implant-related complications and improving postoperative radiographic assessment.</p><p>One of the most notable findings was the lower incidence of implant-related complications, particularly screw perforations, in the CFR-PEEK groups for PHFs. Katthagen et al. [<xref rid="REF16" ref-type="bibr">16</xref>] demonstrated a significantly higher rate of screw perforations requiring revision in the titanium group compared to the CFR-PEEK group. This aligns with the theoretical biomechanical advantages of CFR-PEEK, whose elastic modulus more closely approximates that of cortical bone. By enabling more physiological load transfer at the bone-implant interface, CFR-PEEK is thought to reduce stress shielding and the risk of screw penetration, particularly in osteoporotic bone, which is common in these patient populations [<xref rid="REF8" ref-type="bibr">8</xref>,<xref rid="REF9" ref-type="bibr">9</xref>]. In contrast, the rigidity of titanium plates, while advantageous for achieving stable fixation, may concentrate stress at the screw tips, predisposing to perforations and other implant-related complications.</p><p>Functional outcomes were largely equivalent between CFR-PEEK and titanium plates. Schliemann et al. reported significantly higher Constant-Murley and OSS at 24 months in the CFR-PEEK group, suggesting potential long-term benefits [<xref rid="REF15" ref-type="bibr">15</xref>]. However, Katthagen et al. and Ziegler et al. observed no significant differences at 12 months, indicating comparable efficacy in the shorter term [<xref rid="REF16" ref-type="bibr">16</xref>,<xref rid="REF18" ref-type="bibr">18</xref>]. For DRFs, Behrendt et al. and Perugia et al. both reported similar clinical and radiological outcomes, with early trends suggesting improved motion and satisfaction with CFR-PEEK [<xref rid="REF17" ref-type="bibr">17</xref>,<xref rid="REF19" ref-type="bibr">19</xref>]. Collectively, these findings suggest that CFR-PEEK is non-inferior to titanium in restoring function and may offer selective benefits in specific contexts or over longer follow-up periods.</p><p>The radiolucency of CFR-PEEK implants emerged as a consistent advantage across all studies [<xref rid="REF15" ref-type="bibr">15</xref>-<xref rid="REF17" ref-type="bibr">17</xref>]. This feature facilitates superior postoperative imaging, enabling clearer visualization of fracture healing and implant positioning, without the artifacts that limit titanium plates on radiographs or MRI. Improved imaging can support earlier detection of complications and enhance clinical decision-making during follow-up. Operative times were reported as similar between groups [<xref rid="REF17" ref-type="bibr">17</xref>], suggesting no added technical burden when using CFR-PEEK. Hardware removal rates were also comparable, though it is noteworthy that removals in the titanium groups were often necessitated by implant-related issues such as screw perforation, whereas removals in the CFR-PEEK groups were generally unrelated to implant failure [<xref rid="REF16" ref-type="bibr">16</xref>].</p><p>Comparison With Existing Literature</p><p>These findings are consistent with the growing body of evidence supporting CFR-PEEK technology in orthopaedic applications. Biomechanical studies have previously highlighted the favourable mechanical properties of CFR-PEEK, particularly its bone-like elasticity, which mitigates stress shielding and reduces implant-bone interface complications [<xref rid="REF8" ref-type="bibr">8</xref>].&#x000a0;</p><p>Implications for Clinical Practice</p><p>The results of this review suggest that CFR-PEEK plates represent a viable, and in some respects advantageous, alternative to titanium plates for fixation of proximal humerus and DRFs. Surgeons may particularly consider CFR-PEEK in patients at high risk of implant-related complications, such as screw perforation, or in situations where high-quality postoperative imaging is essential. Implant choice should, however, remain individualized, accounting for fracture pattern, bone quality, and implant design features, including the availability of polyaxial screw placement in certain systems.</p><p>Limitations</p><p>This review has several limitations. The total number of available comparative studies remains small, and all were conducted in European populations, which may limit generalizability. Although two RCTs were included [<xref rid="REF18" ref-type="bibr">18</xref>,<xref rid="REF19" ref-type="bibr">19</xref>], the remaining studies were observational, and even the RCTs had methodological limitations, including small sample sizes, potential attrition bias, and relatively short follow-up. Heterogeneity in fracture types (proximal humerus vs. distal radius) and outcome measures precluded a formal meta-analysis. Moreover, the maximum follow-up duration across studies was 24 months, which may not fully capture long-term complications, such as late implant failures or degenerative changes. Despite these limitations, this review synthesizes the best available comparative evidence and identifies clear trends favoring CFR-PEEK in certain outcome domains.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>In summary, CFR-PEEK plates appear to be a safe and effective alternative to titanium plates for the fixation of proximal humerus and DRFs. While functional outcomes are generally comparable, CFR-PEEK demonstrates a clear advantage in reducing implant-related complications, particularly screw perforations, and provides superior postoperative radiographic visualization. These findings have practical implications for implant selection, especially in patients with osteoporotic bone or where radiological clarity is critical for follow-up.</p><p>Nonetheless, the evidence base remains limited, and larger, multicenter RCTs with extended follow-up are required to validate these findings, assess cost-effectiveness, and define the specific patient subgroups most likely to benefit. Future research should also explore long-term functional outcomes and implant survivorship, thereby informing evidence-based guidelines for implant choice in upper-limb fracture fixation.</p></sec></body><back><ack><p>Ward Hamsho and Muhammad Yasir Raufi have contributed equally to this article and should be considered co-first authors. Both of them conceived of the presented idea. All authors discussed the results and contributed to the final manuscript, which was mainly written by Ward Hamsho and Muhammad Yasir Raufi.</p></ack><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> All authors have declared that no financial support was received from any organization for the submitted work.</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Muhammad Y. Raufi, Ward Hamsho, Rafya Aurangzeb</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Muhammad Y. Raufi, Ward Hamsho, Mohammad Alnajjar, Mahmoud Rhodes, Usman Hafeez</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Muhammad Y. Raufi, Ward Hamsho, Rafya Aurangzeb</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Muhammad Y. Raufi, Ward Hamsho, Mohammad Alnajjar, Mahmoud Rhodes, Usman Hafeez</p><p><bold>Supervision:</bold>&#x000a0; Muhammad Y. Raufi, Ward Hamsho</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="journal"><article-title>The epidemiology of peripheral fractures</article-title><source>Bone</source><person-group>
+<name><surname>Baron</surname><given-names>JA</given-names></name>
+<name><surname>Barrett</surname><given-names>JA</given-names></name>
+<name><surname>Karagas</surname><given-names>MR</given-names></name>
+</person-group><fpage>3</fpage><volume>18</volume><year>1996</year></element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>Management of proximal humerus fractures in adults&#x02014;a scoping review</article-title><source>J Clin Med</source><person-group>
+<name><surname>Baker</surname><given-names>HP</given-names></name>
+<name><surname>Gutbrod</surname><given-names>J</given-names></name>
+<name><surname>Strelzow</surname><given-names>JA</given-names></name>
+<name><surname>Maassen</surname><given-names>NH</given-names></name>
+<name><surname>Shi</surname><given-names>L</given-names></name>
+</person-group><fpage>4</fpage><volume>11</volume><year>2022</year></element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="journal"><article-title>Treatment of proximal humerus fractures with locking plates: a systematic review</article-title><source>J Shoulder Elbow Surg</source><person-group>
+<name><surname>Thanasas</surname><given-names>C</given-names></name>
+<name><surname>Kontakis</surname><given-names>G</given-names></name>
+<name><surname>Angoules</surname><given-names>A</given-names></name>
+<name><surname>Limb</surname><given-names>D</given-names></name>
+<name><surname>Giannoudis</surname><given-names>P</given-names></name>
+</person-group><fpage>837</fpage><lpage>844</lpage><volume>18</volume><year>2009</year><pub-id pub-id-type="pmid">19748802</pub-id>
+</element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Effect of titanium plate fixation on bone healing</article-title><source>MATEC Web Conf</source><person-group>
+<name><surname>Abdullah</surname><given-names>NB</given-names></name>
+<name><surname>Nakai</surname><given-names>M</given-names></name>
+<name><surname>Kawamura</surname><given-names>Y</given-names></name>
+<name><surname>Yamamoto</surname><given-names>E</given-names></name>
+<name><surname>Niinomi</surname><given-names>M</given-names></name>
+</person-group><fpage>5</fpage><volume>5</volume><year>2020</year></element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>Metal-induced artifacts in computed tomography and magnetic resonance imaging: comparison of a biodegradable magnesium alloy versus titanium and stainless steel controls</article-title><source>Skeletal Radiol</source><person-group>
+<name><surname>Filli</surname><given-names>L</given-names></name>
+<name><surname>Luechinger</surname><given-names>R</given-names></name>
+<name><surname>Frauenfelder</surname><given-names>T</given-names></name>
+<name><surname>Beck</surname><given-names>S</given-names></name>
+<name><surname>Guggenberger</surname><given-names>R</given-names></name>
+<name><surname>Farshad-Amacker</surname><given-names>N</given-names></name>
+<name><surname>Andreisek</surname><given-names>G</given-names></name>
+</person-group><fpage>849</fpage><lpage>856</lpage><volume>44</volume><year>2015</year><pub-id pub-id-type="pmid">25417003</pub-id>
+</element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Long-term functional outcomes (median 10&#x000a0;years) after locked plating for displaced fractures of the proximal humerus</article-title><source>J Shoulder Elbow Surg</source><person-group>
+<name><surname>Ockert</surname><given-names>B</given-names></name>
+<name><surname>Siebenb&#x000fc;rger</surname><given-names>G</given-names></name>
+<name><surname>Kettler</surname><given-names>M</given-names></name>
+<name><surname>Braunstein</surname><given-names>V</given-names></name>
+<name><surname>Mutschler</surname><given-names>W</given-names></name>
+</person-group><fpage>1223</fpage><lpage>1231</lpage><volume>23</volume><year>2014</year><pub-id pub-id-type="pmid">24548438</pub-id>
+</element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>Proximal humeral fractures: how stiff should an implant be? A comparative mechanical study with new implants in human specimens</article-title><source>Arch Orthop Trauma Surg</source><person-group>
+<name><surname>Lill</surname><given-names>H</given-names></name>
+<name><surname>Hepp</surname><given-names>P</given-names></name>
+<name><surname>Korner</surname><given-names>J</given-names></name>
+<name><surname>Kassi</surname><given-names>JP</given-names></name>
+<name><surname>Verheyden</surname><given-names>AP</given-names></name>
+<name><surname>Josten</surname><given-names>C</given-names></name>
+<name><surname>Duda</surname><given-names>GN</given-names></name>
+</person-group><fpage>74</fpage><lpage>81</lpage><volume>123</volume><year>2003</year><pub-id pub-id-type="pmid">12721684</pub-id>
+</element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>Use of carbon-fiber-reinforced composite implants in orthopedic surgery</article-title><source>Orthopedics</source><person-group>
+<name><surname>Hak</surname><given-names>DJ</given-names></name>
+<name><surname>Mauffrey</surname><given-names>C</given-names></name>
+<name><surname>Seligson</surname><given-names>D</given-names></name>
+<name><surname>Lindeque</surname><given-names>B</given-names></name>
+</person-group><fpage>825</fpage><lpage>830</lpage><volume>37</volume><year>2014</year><pub-id pub-id-type="pmid">25437074</pub-id>
+</element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>Polyetheretherketone and its composites for bone replacement and regeneration</article-title><source>Polymers (Basel)</source><person-group>
+<name><surname>Liao</surname><given-names>C</given-names></name>
+<name><surname>Li</surname><given-names>Y</given-names></name>
+<name><surname>Tjong</surname><given-names>SC</given-names></name>
+</person-group><fpage>8</fpage><volume>12</volume><year>2020</year></element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="journal"><article-title>A new volar plate made of carbon-fiber-reinforced polyetheretherketon for distal radius fracture: analysis of 40 cases</article-title><source>J Orthop Traumatol</source><person-group>
+<name><surname>Tarallo</surname><given-names>L</given-names></name>
+<name><surname>Mugnai</surname><given-names>R</given-names></name>
+<name><surname>Adani</surname><given-names>R</given-names></name>
+<name><surname>Zambianchi</surname><given-names>F</given-names></name>
+<name><surname>Catani</surname><given-names>F</given-names></name>
+</person-group><fpage>277</fpage><lpage>283</lpage><volume>15</volume><year>2014</year><pub-id pub-id-type="pmid">25017027</pub-id>
+</element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="journal"><article-title>Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement</article-title><source>PLoS Med</source><person-group>
+<name><surname>Moher</surname><given-names>D</given-names></name>
+<name><surname>Liberati</surname><given-names>A</given-names></name>
+<name><surname>Tetzlaff</surname><given-names>J</given-names></name>
+<name><surname>Altman</surname><given-names>DG</given-names></name>
+</person-group><fpage>0</fpage><volume>6</volume><year>2009</year></element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="webpage"><article-title>The Newcastle-Ottawa Scale (NOS) for assessing the quality of nonrandomised studies in meta-analyses</article-title><date-in-citation content-type="access-date">
+<month>10</month>
+<year>2025</year>
+</date-in-citation><person-group>
+<name><surname>GA</surname><given-names>Wells</given-names></name>
+<name><surname>D</surname><given-names>O'Connell</given-names></name>
+<name><surname>J</surname><given-names>Peterson</given-names></name>
+<etal/>
+</person-group><year>2024</year><uri xlink:href="https://ohri.ca/en/who-we-are/core-facilities-and-platforms/ottawa-methods-centre/newcastle-ottawa-scale">https://ohri.ca/en/who-we-are/core-facilities-and-platforms/ottawa-methods-centre/newcastle-ottawa-scale</uri></element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>Methodological quality of case series studies: an introduction to the JBI critical appraisal tool</article-title><source>JBI Evid Synth</source><person-group>
+<name><surname>Munn</surname><given-names>Z</given-names></name>
+<name><surname>Barker</surname><given-names>TH</given-names></name>
+<name><surname>Moola</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><fpage>2127</fpage><lpage>2133</lpage><volume>18</volume><year>2020</year><pub-id pub-id-type="pmid">33038125</pub-id>
+</element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>The Cochrane Collaboration's tool for assessing risk of bias in randomised trials</article-title><source>BMJ</source><person-group>
+<name><surname>Higgins</surname><given-names>JP</given-names></name>
+<name><surname>Altman</surname><given-names>DG</given-names></name>
+<name><surname>G&#x000f8;tzsche</surname><given-names>PC</given-names></name>
+<etal/>
+</person-group><fpage>0</fpage><volume>343</volume><year>2011</year></element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>Treatment of proximal humerus fractures with a CFR-PEEK plate: 2-year results of a prospective study and comparison to fixation with a conventional locking plate</article-title><source>J Shoulder Elbow Surg</source><person-group>
+<name><surname>Schliemann</surname><given-names>B</given-names></name>
+<name><surname>Hartensuer</surname><given-names>R</given-names></name>
+<name><surname>Koch</surname><given-names>T</given-names></name>
+<name><surname>Theisen</surname><given-names>C</given-names></name>
+<name><surname>Raschke</surname><given-names>MJ</given-names></name>
+<name><surname>K&#x000f6;sters</surname><given-names>C</given-names></name>
+<name><surname>Weimann</surname><given-names>A</given-names></name>
+</person-group><fpage>1282</fpage><lpage>1288</lpage><volume>24</volume><year>2015</year><pub-id pub-id-type="pmid">25704209</pub-id>
+</element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>Outcomes of proximal humeral fracture fixation with locked CFR-PEEK plating</article-title><source>Eur J Orthop Surg Traumatol</source><person-group>
+<name><surname>Katthagen</surname><given-names>JC</given-names></name>
+<name><surname>Ellwein</surname><given-names>A</given-names></name>
+<name><surname>Lutz</surname><given-names>O</given-names></name>
+<name><surname>Voigt</surname><given-names>C</given-names></name>
+<name><surname>Lill</surname><given-names>H</given-names></name>
+</person-group><fpage>351</fpage><lpage>358</lpage><volume>27</volume><year>2017</year><pub-id pub-id-type="pmid">27915444</pub-id>
+</element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>Fixed angle carbon fiber reinforced polymer composite plate for treatment of distal radius fractures : pilot study on clinical applications</article-title><source>Unfallchirurg</source><person-group>
+<name><surname>Behrendt</surname><given-names>P</given-names></name>
+<name><surname>Kruse</surname><given-names>E</given-names></name>
+<name><surname>Kl&#x000fc;ter</surname><given-names>T</given-names></name>
+<etal/>
+</person-group><fpage>139</fpage><lpage>146</lpage><volume>120</volume><year>2017</year><pub-id pub-id-type="pmid">26507986</pub-id>
+</element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>Clinical outcome of carbon fiber reinforced polyetheretherketone plates in patients with proximal humeral fracture: one-year follow-up</article-title><source>J Clin Med</source><person-group>
+<name><surname>Ziegler</surname><given-names>P</given-names></name>
+<name><surname>Maier</surname><given-names>S</given-names></name>
+<name><surname>Stuby</surname><given-names>F</given-names></name>
+<name><surname>Histing</surname><given-names>T</given-names></name>
+<name><surname>Ihle</surname><given-names>C</given-names></name>
+<name><surname>St&#x000f6;ckle</surname><given-names>U</given-names></name>
+<name><surname>G&#x000fc;hring</surname><given-names>M</given-names></name>
+</person-group><fpage>8</fpage><volume>12</volume><year>2023</year></element-citation></ref><ref id="REF19"><label>19</label><element-citation publication-type="journal"><article-title>Comparison between Carbon-Peek volar locking plates and titanium volar locking plates in the treatment of distal radius fractures</article-title><source>Injury</source><person-group>
+<name><surname>Perugia</surname><given-names>D</given-names></name>
+<name><surname>Guzzini</surname><given-names>M</given-names></name>
+<name><surname>Mazza</surname><given-names>D</given-names></name>
+<etal/>
+</person-group><fpage>3</fpage><volume>48</volume><year>2017</year><pub-id pub-id-type="pmid">27887703</pub-id>
+</element-citation></ref></ref-list></back></article>

@@ -1,0 +1,433 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883232</article-id><article-id pub-id-type="doi">10.7759/cureus.101165</article-id><article-categories><subj-group subj-group-type="heading"><subject>Epidemiology/Public Health</subject></subj-group><subj-group><subject>Dermatology</subject></subj-group></article-categories><title-group><article-title>Acquired Alopecias in Mexican Adults: A Clinical and Epidemiological Study of 1,888 Patients</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author"><name><surname>Ram&#x000ed;rez-S&#x000e1;nchez</surname><given-names>Joel Alejandro</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author" corresp="yes"><name><surname>Vazquez-Cantu</surname><given-names>Diana Laura</given-names></name><xref rid="aff-2" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><name><surname>Rodriguez-Castellanos</surname><given-names>Marco Antonio</given-names></name><xref rid="aff-2" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><name><surname>Guevara-Guti&#x000e9;rrez</surname><given-names>Elizabeth</given-names></name><xref rid="aff-3" ref-type="aff">3</xref></contrib><contrib contrib-type="author"><name><surname>Lopez Ya&#x000f1;ez-Blanco</surname><given-names>Arturo</given-names></name><xref rid="aff-4" ref-type="aff">4</xref></contrib><contrib contrib-type="author"><name><surname>S&#x000e1;nchez-Due&#x000f1;as</surname><given-names>Luis Enrique</given-names></name><xref rid="aff-5" ref-type="aff">5</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Department of Dermatologic Surgery, Instituto Dermatol&#x000f3;gico de Jalisco "Dr. Jos&#x000e9; Barba Rubio", Guadalajara, MEX </aff><aff id="aff-2">
+<label>2</label>
+Department of Dermatology, Instituto Dermatol&#x000f3;gico de Jalisco "Dr. Jos&#x000e9; Barba Rubio", Guadalajara, MEX </aff><aff id="aff-3">
+<label>3</label>
+Department of Research, Instituto Dermatol&#x000f3;gico de Jalisco "Dr. Jos&#x000e9; Barba Rubio", Guadalajara, MEX </aff><aff id="aff-4">
+<label>4</label>
+Department of Pediatric Dermatology, Instituto Dermatol&#x000f3;gico de Jalisco "Dr. Jos&#x000e9; Barba Rubio", Guadalajara, MEX </aff><aff id="aff-5">
+<label>5</label>
+Department of Trichology, Instituto Dermatol&#x000f3;gico de Jalisco "Dr. Jos&#x000e9; Barba Rubio", Guadalajara, MEX </aff><author-notes><corresp id="cor1">
+Diana Laura Vazquez-Cantu <email>vazcantu@gmail.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>9</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101165</elocation-id><history><date date-type="accepted"><day>9</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Ram&#x000ed;rez-S&#x000e1;nchez et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Ram&#x000ed;rez-S&#x000e1;nchez et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/381599-acquired-alopecias-in-mexican-adults-a-clinical-and-epidemiological-study-of-1888-patients">This article is available from https://cureus.com/articles/381599-acquired-alopecias-in-mexican-adults-a-clinical-and-epidemiological-study-of-1888-patients</self-uri><abstract><p>Introduction: Hair loss has emerged as one of the most common reasons for dermatological consultations; however, reported epidemiological data remain variable.</p><p>Objective: This study aims to describe the types and clinical-epidemiological characteristics of acquired alopecia in adult patients.</p><p>Materials and methods: A retrospective analysis was conducted on patients diagnosed with acquired alopecia at the Instituto Dermatol&#x000f3;gico de Jalisco "Dr. Jos&#x000e9; Barba Rubio" between January 1, 2018, and December 31, 2022.</p><p>Results: A total of 1,888 cases of acquired alopecia were analyzed, representing the largest case series reported nationally to date. The mean age of the patients was 37.07 years. Female patients accounted for 1,065 cases (56.4%), while male patients represented 823 cases (43.6%). Overall, alopecia areata was the most frequent type, accounting for 871 cases (46.13%), followed by androgenetic alopecia (543 cases, 28.76%) and traction alopecia (127 cases, 6.73%). Non-scarring alopecias comprised 1,661 cases (88.0%) of the studied population, whereas scarring alopecias accounted for 227 cases (12.0%). Among scarring alopecias, cases with neutrophilic or mixed inflammatory infiltrates predominated, accounting for 145 cases (63.98%), with a higher prevalence among male patients. In this study, folliculitis decalvans was identified as a major cause of scarring alopecia in the Mexican population, accounting for 64 cases (3.39%) of all alopecia cases in the cohort.</p><p>Conclusion: Regional studies are essential to better understand alopecia patterns and to guide tailored diagnostic and management strategies for affected patients.</p></abstract><kwd-group kwd-group-type="author"><kwd>acquired alopecia</kwd><kwd>alopecia</kwd><kwd>alopecia areata (aa)</kwd><kwd>androgenetic alopecia</kwd><kwd>epidemiology</kwd><kwd>non-scarring alopecia</kwd><kwd>scarring alopecia</kwd></kwd-group></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p>Alopecias are a group of disorders that cause hair loss in up to 50% of the population at some point in their lives [<xref rid="REF1" ref-type="bibr">1</xref>-<xref rid="REF3" ref-type="bibr">3</xref>]. The primary causes of acquired alopecias are related to genetic predisposition, with onset determined by the interaction of various endogenous and exogenous factors acting as triggers&#x000a0;[<xref rid="REF1" ref-type="bibr">1</xref>,<xref rid="REF3" ref-type="bibr">3</xref>]. According to the American Hair Research Society, alopecias are classified as scarring alopecias (SAs) and non-scarring alopecias (NSAs) [<xref rid="REF1" ref-type="bibr">1</xref>,<xref rid="REF4" ref-type="bibr">4</xref>].</p><p>NSA&#x000a0;results from an inflammatory process affecting the hair follicles; however, once resolved, the follicular integrity is maintained [<xref rid="REF1" ref-type="bibr">1</xref>,<xref rid="REF3" ref-type="bibr">3</xref>]. This group includes androgenetic alopecia (AGA), alopecia areata (AA), telogen effluvium (TE), trichotillomania (TTM), anagen effluvium (AE), and traction alopecia (TA) [<xref rid="REF1" ref-type="bibr">1</xref>,<xref rid="REF3" ref-type="bibr">3</xref>].</p><p>In SA, hair follicles are replaced by fibrotic scar tissue and are classified based on histopathological characteristics and the predominant inflammatory infiltrate, which may be lymphocytic, neutrophilic, or mixed [<xref rid="REF4" ref-type="bibr">4</xref>]. Among the lymphocytic group, the main entities include lichen planopilaris (LPP), frontal fibrosing alopecia (FFA), fibrosing alopecia in a patterned distribution (FAPD), discoid lupus erythematosus (DLE), and central centrifugal cicatricial alopecia (CCCA). In the neutrophilic and mixed groups, conditions such as folliculitis decalvans (FD), dissecting cellulitis (DC), and acne keloidalis nuchae (AKN) are included [<xref rid="REF5" ref-type="bibr">5</xref>].</p><p>Acquired alopecias can also occur secondary to severe inflammatory damage caused by infections, leading to irreversible follicular loss. Among the diverse clinical entities are tinea capitis (TC), secondary syphilis (SS), autoimmune diseases such as dermatomyositis (DM), trauma (TRAU), pressure alopecia (PA), and Graham Little-Piccardi-Lassueur syndrome (GLPLS), among others&#x000a0;[<xref rid="REF1" ref-type="bibr">1</xref>,<xref rid="REF6" ref-type="bibr">6</xref>].</p><p>The epidemiology of acquired alopecias has been difficult to establish due to their clinical variability and the influence of ethnicity on hair characteristics. To date, only two epidemiological studies have been conducted in Mexico, including 111 and 144 patients, respectively [<xref rid="REF7" ref-type="bibr">7</xref>,<xref rid="REF8" ref-type="bibr">8</xref>]. This study aims to describe the types and clinical-epidemiological characteristics of acquired alopecias in adult patients treated at the Instituto Dermatol&#x000f3;gico de Jalisco "Dr. Jos&#x000e9; Barba Rubio," with the objective of generating region-specific epidemiological evidence that may support clinical decision-making and contribute to&#x000a0;public health understanding of alopecia patterns in the Mexican population.</p></sec><sec sec-type="materials|methods"><title>Materials and methods</title><p>Study design and setting</p><p>A retrospective, observational study was conducted&#x000a0;between January 1, 2018, and December 31, 2022, including adult patients aged &#x02265;18 years with a clinical and/or histopathological diagnosis of acquired alopecia. Patients were treated at the Instituto Dermatol&#x000f3;gico de Jalisco "Dr. Jos&#x000e9; Barba Rubio," a tertiary referral dermatology center in Mexico.</p><p>Data source and de-identification</p><p>Electronic medical records were reviewed using the institutional digital database. All data were fully de-identified prior to analysis, and no personally identifiable information (including names, identification numbers, or contact details) was accessed or recorded. Each patient was assigned a unique study code to ensure confidentiality.</p><p>Case identification and diagnostic coding</p><p>Patients were identified through ICD-10 diagnostic codes corresponding to acquired alopecia. The search strategy included the following terms: &#x0201c;AE&#x0201d;, &#x0201c;AGA&#x0201d;,&#x000a0;&#x0201d;AKN&#x0201d;, &#x0201c;AA&#x0201d;, &#x0201c;AA incognita&#x0201d;, &#x0201c;alopecia&#x0201d;, &#x0201c;anagen alopecia&#x0201d;, &#x0201c;CCCA&#x0201d;, &#x0201c;DC&#x0201d;, &#x0201c;diffuse AA&#x0201d;, &#x0201c;diffuse alopecia&#x0201d;, &#x0201c;DLE&#x0201d;, &#x0201c;FD&#x0201d;, &#x0201c;FADP&#x0201d;, &#x0201c;female-pattern AGA&#x0201d;, &#x0201c;FFA&#x0201d;, &#x0201c;LPP&#x0201d;, &#x0201c;male-pattern AGA&#x0201d;, &#x0201c;NSA&#x0201d;, &#x0201c;perifolliculitis capitis abscedens et suffodiens&#x0201d;, &#x0201c;SA&#x0201d;, &#x0201c;SS&#x0201d;, &#x0201c;TA&#x0201d;, &#x0201c;TC&#x0201d;, &#x0201c;TE&#x0201d;, &#x0201c;total AA&#x0201d;, &#x0201c;total alopecia&#x0201d;, &#x0201c;TTM&#x0201d;, &#x0201c;universal AA&#x0201d;, and &#x0201c;unspecified hair pathology&#x0201d;. Patients with one or more diagnostic codes were included in the study.</p><p>Diagnostic consolidation and classification</p><p>To ensure diagnostic consistency and avoid misclassification, related diagnoses were consolidated into diagnostic categories. Terms referring to clinical variants, synonyms, or overlapping entities were grouped together according to established dermatological classification criteria in order to standardize terminology and maintain consistency across the analysis.</p><p>Diagnoses were subsequently categorized according to etiology and classified as either SAs (cicatricial) or NSAs. Histopathological evaluation was performed when clinically indicated and used to support or confirm the clinical diagnosis.</p><p>Variables and data collection</p><p>The following variables were collected: age at diagnosis, sex, type of alopecia, and classification as scarring or non-scarring. In cases of multiple diagnoses, each alopecia subtype was recorded and analyzed.</p><p>Statistical analysis</p><p>Descriptive statistical analyses were performed using standard statistical methods. Continuous variables were summarized as means and ranges, while categorical variables were expressed as absolute frequencies and percentages, reported in N (%) format throughout the Results section. No inferential statistical analyses were performed due to the descriptive nature of the study.</p></sec><sec sec-type="results"><title>Results</title><p>A total of 1,888 electronic medical records met the inclusion criteria out of 2,263 records with a diagnosis of acquired alopecia. Of these, 1,662 cases (88.03%) corresponded to NSA&#x000a0;and 226 cases (11.97%) to SA. The study population consisted of 824 male patients (43.6%) and 1,064 female patients (56.4%), with a mean age of 37 years (range: 18-88).</p><p>Among all cases, AA&#x000a0;was the most frequent diagnosis, followed by AGA&#x000a0;and TA. The distribution of diagnoses by sex, mean age, and frequency is presented in Table <xref rid="TAB1" ref-type="table">1</xref>.</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Clinical and Epidemiological Characteristics of Acquired Alopecias by Type, Sex, and Mean Age</title><p>Abbreviations (in alphabetical order): AA: Alopecia Areata, AGA: Androgenetic Alopecia, AGA + TE: Androgenetic Alopecia and Telogen Effluvium, AKN: Acne Keloidalis Nuchae, DC: Dissecting Cellulitis, DLE: Discoid Lupus Erythematosus, DM: Dermatomyositis, FD: Folliculitis Decalvans, FFA: Frontal Fibrosing Alopecia, GLPLS: Graham Little-Piccardi-Lassueur Syndrome, LPP: Lichen Planopilaris, O: Overall, PA: Pressure Alopecia, PFA: Patterned Fibrosing Alopecia, SS: Syphilitic Alopecia, TA: Traction Alopecia, TC: Tinea Capitis, TE: Telogen Effluvium, TRAU: Traumatic Alopecia, TTM: Trichotillomania.</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Diagnosis
+</td><td rowspan="1" colspan="1">
+n (%)
+</td><td rowspan="1" colspan="1">
+Mean Age (Years)
+</td><td rowspan="1" colspan="1">
+Age Range (Years)
+</td></tr><tr><td rowspan="1" colspan="1">
+AA overall
+</td><td rowspan="1" colspan="1">
+871 (46.13)
+</td><td rowspan="1" colspan="1">
+35
+</td><td rowspan="1" colspan="1">
+18&#x02013;82
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+AA male
+</td><td rowspan="1" colspan="1">
+362 (41.56)
+</td><td rowspan="1" colspan="1">
+32
+</td><td rowspan="1" colspan="1">
+18&#x02013;82
+</td></tr><tr><td rowspan="1" colspan="1">
+AA female
+</td><td rowspan="1" colspan="1">
+509 (58.44)
+</td><td rowspan="1" colspan="1">
+36
+</td><td rowspan="1" colspan="1">
+18&#x02013;74
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+AGA overall
+</td><td rowspan="1" colspan="1">
+543 (28.76)
+</td><td rowspan="1" colspan="1">
+38
+</td><td rowspan="1" colspan="1">
+18&#x02013;85
+</td></tr><tr><td rowspan="1" colspan="1">
+AGA male
+</td><td rowspan="1" colspan="1">
+300 (55.25)
+</td><td rowspan="1" colspan="1">
+33
+</td><td rowspan="1" colspan="1">
+18&#x02013;75
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+AGA female
+</td><td rowspan="1" colspan="1">
+243 (44.75)
+</td><td rowspan="1" colspan="1">
+44
+</td><td rowspan="1" colspan="1">
+18&#x02013;85
+</td></tr><tr><td rowspan="1" colspan="1">
+TA overall
+</td><td rowspan="1" colspan="1">
+127 (6.73)
+</td><td rowspan="1" colspan="1">
+40
+</td><td rowspan="1" colspan="1">
+18&#x02013;70
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+TA male
+</td><td rowspan="1" colspan="1">
+3 (2.36)
+</td><td rowspan="1" colspan="1">
+30
+</td><td rowspan="1" colspan="1">
+21&#x02013;41
+</td></tr><tr><td rowspan="1" colspan="1">
+TA female
+</td><td rowspan="1" colspan="1">
+124 (97.64)
+</td><td rowspan="1" colspan="1">
+40
+</td><td rowspan="1" colspan="1">
+18&#x02013;70
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+TE overall
+</td><td rowspan="1" colspan="1">
+80 (4.24)
+</td><td rowspan="1" colspan="1">
+45
+</td><td rowspan="1" colspan="1">
+19&#x02013;74
+</td></tr><tr><td rowspan="1" colspan="1">
+TE male
+</td><td rowspan="1" colspan="1">
+1 (1.25)
+</td><td rowspan="1" colspan="1">
+32
+</td><td rowspan="1" colspan="1">
+32&#x02013;32
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+TE female
+</td><td rowspan="1" colspan="1">
+79 (98.75)
+</td><td rowspan="1" colspan="1">
+46
+</td><td rowspan="1" colspan="1">
+19&#x02013;74
+</td></tr><tr><td rowspan="1" colspan="1">
+FD overall
+</td><td rowspan="1" colspan="1">
+64 (3.39)
+</td><td rowspan="1" colspan="1">
+36
+</td><td rowspan="1" colspan="1">
+18&#x02013;88
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+FD male
+</td><td rowspan="1" colspan="1">
+54 (84.37)
+</td><td rowspan="1" colspan="1">
+35
+</td><td rowspan="1" colspan="1">
+18&#x02013;88
+</td></tr><tr><td rowspan="1" colspan="1">
+FD female
+</td><td rowspan="1" colspan="1">
+10 (15.63)
+</td><td rowspan="1" colspan="1">
+41
+</td><td rowspan="1" colspan="1">
+19&#x02013;68
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+AKN overall
+</td><td rowspan="1" colspan="1">
+51 (2.70)
+</td><td rowspan="1" colspan="1">
+31
+</td><td rowspan="1" colspan="1">
+18&#x02013;66
+</td></tr><tr><td rowspan="1" colspan="1">
+AKN male
+</td><td rowspan="1" colspan="1">
+50 (98.04)
+</td><td rowspan="1" colspan="1">
+31
+</td><td rowspan="1" colspan="1">
+18&#x02013;66
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+AKN female
+</td><td rowspan="1" colspan="1">
+1 (1.96)
+</td><td rowspan="1" colspan="1">
+20
+</td><td rowspan="1" colspan="1">
+20&#x02013;20
+</td></tr><tr><td rowspan="1" colspan="1">
+DC overall
+</td><td rowspan="1" colspan="1">
+36 (1.91)
+</td><td rowspan="1" colspan="1">
+30
+</td><td rowspan="1" colspan="1">
+18&#x02013;46
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+DC male
+</td><td rowspan="1" colspan="1">
+33 (91.67)
+</td><td rowspan="1" colspan="1">
+29
+</td><td rowspan="1" colspan="1">
+18&#x02013;42
+</td></tr><tr><td rowspan="1" colspan="1">
+DC female
+</td><td rowspan="1" colspan="1">
+3 (8.33)
+</td><td rowspan="1" colspan="1">
+42
+</td><td rowspan="1" colspan="1">
+40&#x02013;46
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+LPP overall
+</td><td rowspan="1" colspan="1">
+32 (1.69)
+</td><td rowspan="1" colspan="1">
+53
+</td><td rowspan="1" colspan="1">
+24&#x02013;81
+</td></tr><tr><td rowspan="1" colspan="1">
+LPP male
+</td><td rowspan="1" colspan="1">
+6 (18.75)
+</td><td rowspan="1" colspan="1">
+50
+</td><td rowspan="1" colspan="1">
+34&#x02013;62
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+LPP female
+</td><td rowspan="1" colspan="1">
+26 (81.25)
+</td><td rowspan="1" colspan="1">
+53
+</td><td rowspan="1" colspan="1">
+24&#x02013;81
+</td></tr><tr><td rowspan="1" colspan="1">
+FFA overall
+</td><td rowspan="1" colspan="1">
+28 (1.48)
+</td><td rowspan="1" colspan="1">
+52
+</td><td rowspan="1" colspan="1">
+29&#x02013;69
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+FFA male
+</td><td rowspan="1" colspan="1">
+1 (3.57)
+</td><td rowspan="1" colspan="1">
+69
+</td><td rowspan="1" colspan="1">
+69&#x02013;69
+</td></tr><tr><td rowspan="1" colspan="1">
+FFA female
+</td><td rowspan="1" colspan="1">
+27 (96.43)
+</td><td rowspan="1" colspan="1">
+52
+</td><td rowspan="1" colspan="1">
+29&#x02013;68
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+TTM overall
+</td><td rowspan="1" colspan="1">
+26 (1.38)
+</td><td rowspan="1" colspan="1">
+39
+</td><td rowspan="1" colspan="1">
+18&#x02013;75
+</td></tr><tr><td rowspan="1" colspan="1">
+TTM male
+</td><td rowspan="1" colspan="1">
+5 (19.23)
+</td><td rowspan="1" colspan="1">
+43
+</td><td rowspan="1" colspan="1">
+20&#x02013;65
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+TTM female
+</td><td rowspan="1" colspan="1">
+21 (80.77)
+</td><td rowspan="1" colspan="1">
+38
+</td><td rowspan="1" colspan="1">
+18&#x02013;75
+</td></tr><tr><td rowspan="1" colspan="1">
+TC overall
+</td><td rowspan="1" colspan="1">
+10 (0.53)
+</td><td rowspan="1" colspan="1">
+34
+</td><td rowspan="1" colspan="1">
+18&#x02013;71
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+TC male
+</td><td rowspan="1" colspan="1">
+4 (40.00)
+</td><td rowspan="1" colspan="1">
+32
+</td><td rowspan="1" colspan="1">
+20&#x02013;45
+</td></tr><tr><td rowspan="1" colspan="1">
+TC female
+</td><td rowspan="1" colspan="1">
+6 (60.00)
+</td><td rowspan="1" colspan="1">
+36
+</td><td rowspan="1" colspan="1">
+18&#x02013;71
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+DLE overall
+</td><td rowspan="1" colspan="1">
+9 (0.48)
+</td><td rowspan="1" colspan="1">
+60
+</td><td rowspan="1" colspan="1">
+34&#x02013;74
+</td></tr><tr><td rowspan="1" colspan="1">
+DLE male
+</td><td rowspan="1" colspan="1">
+1 (11.11)
+</td><td rowspan="1" colspan="1">
+67
+</td><td rowspan="1" colspan="1">
+67&#x02013;67
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+DLE female
+</td><td rowspan="1" colspan="1">
+8 (88.89)
+</td><td rowspan="1" colspan="1">
+59
+</td><td rowspan="1" colspan="1">
+34&#x02013;74
+</td></tr><tr><td rowspan="1" colspan="1">
+SS overall
+</td><td rowspan="1" colspan="1">
+3 (0.16)
+</td><td rowspan="1" colspan="1">
+37
+</td><td rowspan="1" colspan="1">
+25&#x02013;49
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+SS male
+</td><td rowspan="1" colspan="1">
+3 (100.00)
+</td><td rowspan="1" colspan="1">
+37
+</td><td rowspan="1" colspan="1">
+25&#x02013;49
+</td></tr><tr><td rowspan="1" colspan="1">
+SS female
+</td><td rowspan="1" colspan="1">
+0 (0.00)
+</td><td rowspan="1" colspan="1">
+37
+</td><td rowspan="1" colspan="1">
+25&#x02013;49
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Total overall
+</td><td rowspan="1" colspan="1">
+1,888 (100.00)
+</td><td rowspan="1" colspan="1">
+37
+</td><td rowspan="1" colspan="1">
+18&#x02013;88
+</td></tr></tbody></table></table-wrap><p>Of all NSA cases, AA was the most frequent diagnosis, followed by AGA. The third most common diagnosis differed by sex, with TTM more frequent in males and TA predominating among females. The sex-specific distribution of NSA subtypes is shown in Figure <xref rid="FIG1" ref-type="fig">1</xref>.</p><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>Distribution of Non-Scarring Alopecias by Sex</title><p>Abbreviations (in alphabetical order): AA: Alopecia Areata, AGA: Androgenetic Alopecia, AGA + TE: Androgenetic Alopecia and Telogen Effluvium, SS: Syphilitic Alopecia, TA: Traction Alopecia, TE: Telogen Effluvium, TC: Tinea Capitis, TTM: Trichotillomania.</p></caption><graphic xlink:href="cureus-0018-00000101165-i01" position="float"/></fig><p>Among the SA cases, the three most common diagnoses were FD (28.32%), AKN (22.57%), and DC (15.93%). Neutrophilic and mixed SA predominated over lymphocytic forms (67.70% vs. 32.30%). Among male patients, the leading causes of SA were FD, AKN, and DC, whereas among female patients, the most frequent diagnoses were FFA, LPP, and FD (Figure <xref rid="FIG2" ref-type="fig">2</xref>).</p><fig position="anchor" fig-type="figure" id="FIG2"><label>Figure 2</label><caption><title>Distribution of Scarring Alopecias by Sex</title><p>Abbreviations (in alphabetical order): AKN: Acne Keloidalis Nuchae, DC: Dissecting Cellulitis, DLE: Discoid Lupus Erythematosus, DM: Dermatomyositis, FD: Folliculitis Decalvans, FFA: Frontal Fibrosing Alopecia, GLPLS: Graham Little-Piccardi-Lassueur Syndrome, LPP: Lichen Planopilaris, PA: Pressure Alopecia, FAPD: Fibrosing Alopecia in a Pattern Distribution, TRAU: Traumatic Alopecia.</p></caption><graphic xlink:href="cureus-0018-00000101165-i02" position="float"/></fig></sec><sec sec-type="discussion"><title>Discussion</title><p>In line with previously published reports, male patients presented for hair disease consultations at a younger age compared with female patients (mean age: 32.76 vs. 40.40 years), despite females accounting for a greater proportion of consultations [<xref rid="REF8" ref-type="bibr">8</xref>,<xref rid="REF9" ref-type="bibr">9</xref>]. This sex-related difference in age at presentation has been consistently described in the literature and may reflect an earlier onset of certain alopecias in men, as well as greater healthcare-seeking behavior among women.</p><p>NSA accounted for the majority of acquired alopecia cases in our cohort, which is consistent with epidemiological studies reporting NSA frequencies ranging from 75% to 90% of all alopecia cases [<xref rid="REF7" ref-type="bibr">7</xref>,<xref rid="REF10" ref-type="bibr">10</xref>]. In previously published series, AGA has been described as the most frequent diagnosis among NSA [<xref rid="REF7" ref-type="bibr">7</xref>,<xref rid="REF10" ref-type="bibr">10</xref>]. In contrast, AA was the leading cause of acquired alopecia in our study&#x000a0;and showed a female predominance.</p><p>AGA represented the second most frequent diagnosis, predominantly affecting males and presenting at a younger age than reported in some international series. Published studies have described AGA frequencies ranging from 24% to 38%, consistently demonstrating male predominance [<xref rid="REF7" ref-type="bibr">7</xref>,<xref rid="REF10" ref-type="bibr">10</xref>]. The higher relative frequency of AA compared with AGA in our cohort may therefore reflect differences in referral patterns, ethnic background, or healthcare-seeking behavior.</p><p>With regard to SA, 226 cases (11.97%) were identified. Neutrophilic and mixed inflammatory types predominated, accounting for 153 cases (67.70%), and were observed mainly in male patients, whereas lymphocytic SA accounted for 73 cases (32.30%) and showed a female predominance. Although lymphocytic SA is reported as the most frequent subtype in many international series, studies from Latin American populations have described a different distribution, with neutrophilic and mixed SA exceeding lymphocytic forms by nearly 2:1 [<xref rid="REF11" ref-type="bibr">11</xref>-<xref rid="REF13" ref-type="bibr">13</xref>]. Our findings are consistent with this regional pattern.</p><p>In this Mexican cohort, FD was the most frequent cause of SA, accounting for 64 cases (3.39%) of all alopecia diagnoses and 28.32% of SA cases, with a marked male predominance (54 cases; 84.37%), consistent with previous regional reports [<xref rid="REF10" ref-type="bibr">10</xref>,<xref rid="REF11" ref-type="bibr">11</xref>,<xref rid="REF14" ref-type="bibr">14</xref>]. FD was followed by AKN (51 cases; 2.70%) and DC (36 cases; 1.91%), both conditions classically associated with neutrophilic inflammation and predominantly affecting male patients.</p><p>Within lymphocytic SA, published reports have identified FFA and LPP as the most frequently reported diagnoses, with frequencies of 10.8% and 7.6%, respectively [<xref rid="REF10" ref-type="bibr">10</xref>]. In contrast, LPP was the most frequent lymphocytic SA in our cohort (32 cases; 1.69%), followed by FFA (28 cases; 1.48%). Both conditions primarily affected female patients and presented after the age of 50, in agreement with previously published data [<xref rid="REF12" ref-type="bibr">12</xref>,<xref rid="REF15" ref-type="bibr">15</xref>].</p><p>Among secondary acquired alopecias, the most frequent diagnoses were TC with 10 cases (0.53%) and SS with three cases (0.16%), followed by TRAU and PA with one case each (0.05%). These entities are recognized but uncommon causes of alopecia in adult populations and have been reported in epidemiological and clinical series [<xref rid="REF8" ref-type="bibr">8</xref>-<xref rid="REF10" ref-type="bibr">10</xref>].</p><p>Other factors that should be considered when interpreting epidemiological patterns include cultural hairstyling practices, which may contribute to the sex-specific predominance of TA by exerting chronic mechanical tension on the scalp [<xref rid="REF3" ref-type="bibr">3</xref>]. In addition, the broader temporal context of the study period overlaps with the COVID-19 pandemic. SARS-CoV-2 infection and COVID-19 vaccination have been reported as potential triggers of TE, AA, and other hair disorders in clinical and observational studies [<xref rid="REF16" ref-type="bibr">16</xref>,<xref rid="REF17" ref-type="bibr">17</xref>]. Furthermore, GLP-1 receptor agonists have recently been discussed in association with hair changes in emerging literature; however, medication exposure was not systematically documented in our dataset, and the use of these agents was likely limited during much of the study period [<xref rid="REF18" ref-type="bibr">18</xref>]. For these reasons, their contribution could not be assessed in this cohort, although they represent potentially relevant exposures that warrant evaluation in future studies.</p><p>Limitations</p><p>This study is limited by its retrospective design, which depends on the accuracy and completeness of electronic medical records. Not all diagnoses were confirmed histopathologically, and some cases relied exclusively on clinical assessment. The study was conducted at a single tertiary referral center, which may introduce referral bias and limit generalizability to the broader population. In addition, disease severity, treatment outcomes, and longitudinal follow-up could not be evaluated due to the study design.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>This study provides a comprehensive clinical and epidemiological analysis of acquired alopecias in the adult population of western Mexico, based on a large retrospective cohort. NSA was the most prevalent group, with AA as the leading diagnosis, followed by AGA and TA. Among SA, FD was the most frequent subtype and predominantly affected male patients, whereas lymphocytic SA, including LPP and FFA, showed a female predominance.</p><p>These findings contribute to the understanding of alopecia patterns in the Mexican population and highlight the value of region-specific epidemiological data to support diagnostic decision-making and guide management strategies tailored to local population characteristics.</p></sec></body><back><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Human subjects:</bold> Informed consent for treatment and open access publication was obtained or waived by all participants in this study. The Research Ethics Committee of Instituto Dermatol&#x000f3;gico de Jalisco "Dr. Jos&#x000e9; Barba Rubio" issued approval 2023-02-CEIIDJ-05.</p><p><bold>Animal subjects:</bold> All authors have confirmed that this study did not involve animal subjects or tissue.</p><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> All authors have declared that no financial support was received from any organization for the submitted work.</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Diana Laura Vazquez-Cantu, Joel Alejandro Ram&#x000ed;rez-S&#x000e1;nchez, Marco Antonio Rodriguez-Castellanos, Elizabeth Guevara-Guti&#x000e9;rrez, Arturo Lopez Ya&#x000f1;ez-Blanco, Luis Enrique S&#x000e1;nchez-Due&#x000f1;as</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Diana Laura Vazquez-Cantu, Joel Alejandro Ram&#x000ed;rez-S&#x000e1;nchez, Marco Antonio Rodriguez-Castellanos, Elizabeth Guevara-Guti&#x000e9;rrez, Arturo Lopez Ya&#x000f1;ez-Blanco</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Diana Laura Vazquez-Cantu, Joel Alejandro Ram&#x000ed;rez-S&#x000e1;nchez</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Diana Laura Vazquez-Cantu, Joel Alejandro Ram&#x000ed;rez-S&#x000e1;nchez, Marco Antonio Rodriguez-Castellanos, Elizabeth Guevara-Guti&#x000e9;rrez, Arturo Lopez Ya&#x000f1;ez-Blanco, Luis Enrique S&#x000e1;nchez-Due&#x000f1;as</p><p><bold>Supervision:</bold>&#x000a0; Marco Antonio Rodriguez-Castellanos, Elizabeth Guevara-Guti&#x000e9;rrez</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="book"><source>Manual Pr&#x000e1;ctico de Tricolog&#x000ed;a</source><person-group>
+<name><surname>Va&#x000f1;&#x000f3;</surname><given-names>S</given-names></name>
+<name><surname>Ja&#x000e9;n</surname><given-names>P</given-names></name>
+</person-group><publisher-loc>Madrid, Spain</publisher-loc><publisher-name>Aula M&#x000e9;dica</publisher-name><year>2023</year></element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>Diagnosis and treatment of male androgenetic alopecia (Article in Spanish)</article-title><source>Gu&#x000ed;a de Pr&#x000e1;ctica Cl&#x000ed;nica</source><person-group>
+<name><surname>Barrera-P&#x000e9;rez</surname><given-names>M</given-names></name>
+<name><surname>Espinosa-Tavitas</surname><given-names>M</given-names></name>
+<name><surname>Peralta-Pedrero</surname><given-names>ML</given-names></name>
+</person-group><fpage>1</fpage><lpage>51</lpage><year>2010</year><uri xlink:href="https://www.imss.gob.mx/sites/all/statics/guiasclinicas/566GER.pdf">https://www.imss.gob.mx/sites/all/statics/guiasclinicas/566GER.pdf</uri></element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="book"><source>Tricolog&#x000ed;a: enfermedades del fol&#x000ed;culo piloseb&#x000e1;ceo</source><person-group>
+<name><surname>Montagna</surname><given-names>W</given-names></name>
+<name><surname>Camacho Mart&#x000ed;nez</surname><given-names>F</given-names></name>
+<name><surname>Tosti</surname><given-names>A</given-names></name>
+</person-group><publisher-loc>Toledo, Spain</publisher-loc><publisher-name>Aula M&#x000e9;dica</publisher-name><year>2013</year></element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Summary of North American Hair Research Society (NAHRS)-sponsored workshop on cicatricial alopecia, Duke University Medical Center, February 10 and 11, 2001</article-title><source>J Am Acad Dermatol</source><person-group>
+<name><surname>Olsen</surname><given-names>EA</given-names></name>
+<name><surname>Bergfeld</surname><given-names>WF</given-names></name>
+<name><surname>Cotsarelis</surname><given-names>G</given-names></name>
+<etal/>
+</person-group><fpage>103</fpage><lpage>110</lpage><volume>48</volume><year>2003</year><pub-id pub-id-type="pmid">12522378</pub-id>
+</element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>Primary scarring alopecias</article-title><source>Curr Probl Dermatol</source><person-group>
+<name><surname>Rigopoulos</surname><given-names>D</given-names></name>
+<name><surname>Stamatios</surname><given-names>G</given-names></name>
+<name><surname>Ioannides</surname><given-names>D</given-names></name>
+</person-group><fpage>76</fpage><lpage>86</lpage><volume>47</volume><year>2015</year><pub-id pub-id-type="pmid">26370646</pub-id>
+</element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Alopecia as a systemic disease</article-title><source>Clin Dermatol</source><person-group>
+<name><surname>Nanda</surname><given-names>S</given-names></name>
+<name><surname>De Bedout</surname><given-names>V</given-names></name>
+<name><surname>Miteva</surname><given-names>M</given-names></name>
+</person-group><fpage>618</fpage><lpage>628</lpage><volume>37</volume><year>2019</year><pub-id pub-id-type="pmid">31864440</pub-id>
+</element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>Skin diseases are more common than we think: screening results of an unreferred population at the Munich Oktoberfest</article-title><source>J Eur Acad Dermatol Venereol</source><person-group>
+<name><surname>Tizek</surname><given-names>L</given-names></name>
+<name><surname>Schielein</surname><given-names>MC</given-names></name>
+<name><surname>Seifert</surname><given-names>F</given-names></name>
+<name><surname>Biedermann</surname><given-names>T</given-names></name>
+<name><surname>B&#x000f6;hner</surname><given-names>A</given-names></name>
+<name><surname>Zink</surname><given-names>A</given-names></name>
+</person-group><fpage>1421</fpage><lpage>1428</lpage><volume>33</volume><year>2019</year><pub-id pub-id-type="pmid">30891839</pub-id>
+</element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>Frequency of skin diseases in a second level hospital center in Northeastern Mexico (Article in Spanish)</article-title><source>Dermatol Rev Mex</source><person-group>
+<name><surname>Basald&#x000fa;a-Ibarra</surname><given-names>JI</given-names></name>
+<name><surname>Cano-Aguilar</surname><given-names>LE</given-names></name>
+<name><surname>Huerta-Soto</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><fpage>624</fpage><lpage>632</lpage><volume>66</volume><year>2022</year><uri xlink:href="https://www.researchgate.net/publication/369736194_Frequency_of_skin_diseases_in_a_second_level_hospital_center_in_Northeastern_Mexico">https://www.researchgate.net/publication/369736194_Frequency_of_skin_diseases_in_a_second_level_hospital_center_in_Northeastern_Mexico</uri></element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>Frequency of the types of alopecia at twenty-two specialist hair clinics: a multicenter study</article-title><source>Skin Appendage Disord</source><person-group>
+<name><surname>Va&#x000f1;&#x000f3;-Galv&#x000e1;n</surname><given-names>S</given-names></name>
+<name><surname>Saceda-Corralo</surname><given-names>D</given-names></name>
+<name><surname>Blume-Peytavi</surname><given-names>U</given-names></name>
+<etal/>
+</person-group><fpage>309</fpage><lpage>315</lpage><volume>5</volume><year>2019</year><pub-id pub-id-type="pmid">31559256</pub-id>
+</element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="journal"><article-title>Most frequent alopecias in a third-level dermatological center (Article in Spanish)</article-title><source>Dermatol Rev Mex</source><person-group>
+<name><surname>Morales-Miranda</surname><given-names>AY</given-names></name>
+<name><surname>Morales-Trujillo</surname><given-names>ML</given-names></name>
+</person-group><fpage>216</fpage><lpage>220</lpage><volume>62</volume><year>2018</year><uri xlink:href="https://dermatologiarevistamexicana.org.mx/article/alopecias-mas-frecuentes-en-un-centro-dermatologico-de-tercer-nivel/">https://dermatologiarevistamexicana.org.mx/article/alopecias-mas-frecuentes-en-un-centro-dermatologico-de-tercer-nivel/</uri></element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="journal"><article-title>Primary cicatricial alopecias: clinicopathology of 112 cases</article-title><source>J Am Acad Dermatol</source><person-group>
+<name><surname>Tan</surname><given-names>E</given-names></name>
+<name><surname>Martinka</surname><given-names>M</given-names></name>
+<name><surname>Ball</surname><given-names>N</given-names></name>
+<name><surname>Shapiro</surname><given-names>J</given-names></name>
+</person-group><fpage>25</fpage><lpage>32</lpage><volume>50</volume><year>2004</year><pub-id pub-id-type="pmid">14699361</pub-id>
+</element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="journal"><article-title>Scarring alopecia</article-title><source>Dermatol Clin</source><person-group>
+<name><surname>Larrondo</surname><given-names>J</given-names></name>
+<name><surname>McMichael</surname><given-names>AJ</given-names></name>
+</person-group><fpage>519</fpage><lpage>537</lpage><volume>41</volume><year>2023</year><pub-id pub-id-type="pmid">37236719</pub-id>
+</element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>Clinico-epidemiology and histopathologic spectrum of primary scarring alopecia: a cross-sectional study</article-title><source>Indian J Dermatol</source><person-group>
+<name><surname>Sardar</surname><given-names>S</given-names></name>
+<name><surname>Sarkar</surname><given-names>S</given-names></name>
+<name><surname>Podder</surname><given-names>I</given-names></name>
+<name><surname>Banerjee</surname><given-names>G</given-names></name>
+</person-group><fpage>624</fpage><volume>67</volume><year>2022</year></element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Folliculitis decalvans: a multicentre review of 82 patients</article-title><source>J Eur Acad Dermatol Venereol</source><person-group>
+<name><surname>Va&#x000f1;&#x000f3;-Galv&#x000e1;n</surname><given-names>S</given-names></name>
+<name><surname>Molina-Ruiz</surname><given-names>AM</given-names></name>
+<name><surname>Fern&#x000e1;ndez-Crehuet</surname><given-names>P</given-names></name>
+<etal/>
+</person-group><fpage>1750</fpage><lpage>1757</lpage><volume>29</volume><year>2015</year><pub-id pub-id-type="pmid">25682915</pub-id>
+</element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>Lichen planopilaris: a review of evaluation methods</article-title><source>Indian J Dermatol Venereol Leprol</source><person-group>
+<name><surname>Naeini</surname><given-names>FF</given-names></name>
+<name><surname>Saber</surname><given-names>M</given-names></name>
+<name><surname>Faghihi</surname><given-names>G</given-names></name>
+</person-group><fpage>442</fpage><lpage>445</lpage><volume>87</volume><year>2021</year><pub-id pub-id-type="pmid">33871194</pub-id>
+</element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>The correlation between corona virus disease 2019 and alopecia areata: a literature review</article-title><source>Front Immunol</source><person-group>
+<name><surname>Xie</surname><given-names>Y</given-names></name>
+<name><surname>Lv</surname><given-names>S</given-names></name>
+<name><surname>Luo</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><fpage>15</fpage><volume>3</volume><year>2024</year></element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>Alopecia in patients with COVID-19: a&#x000a0;systematic review and meta-analysis</article-title><source>JAAD Int</source><person-group>
+<name><surname>Nguyen</surname><given-names>B</given-names></name>
+<name><surname>Tosti</surname><given-names>A</given-names></name>
+</person-group><fpage>67</fpage><lpage>77</lpage><volume>7</volume><year>2022</year><pub-id pub-id-type="pmid">35224518</pub-id>
+</element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>Hair loss associated with glucagon-like peptide-1 (GLP-1) receptor agonist use: a systematic review</article-title><source>Cureus</source><person-group>
+<name><surname>Alsuwailem</surname><given-names>OA</given-names></name>
+<name><surname>Alanazi</surname><given-names>R</given-names></name>
+<name><surname>Almutairi</surname><given-names>HM</given-names></name>
+<etal/>
+</person-group><fpage>0</fpage><volume>17</volume><year>2025</year></element-citation></ref></ref-list></back></article>

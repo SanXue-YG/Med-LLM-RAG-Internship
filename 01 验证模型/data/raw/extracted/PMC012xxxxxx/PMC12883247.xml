@@ -1,0 +1,624 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883247</article-id><article-id pub-id-type="doi">10.7759/cureus.101035</article-id><article-categories><subj-group subj-group-type="heading"><subject>General Surgery</subject></subj-group><subj-group><subject>Oncology</subject></subj-group></article-categories><title-group><article-title>The Gamboa-Hoil Point for Primary Perineal Closure During Total Pelvic Exenteration</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author" corresp="yes"><name><surname>Gamboa-Hoil</surname><given-names>Sergio Isidro</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Gamboa-Guti&#x000e9;rrez</surname><given-names>Ricardo</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Medina-Campos</surname><given-names>Alejandro</given-names></name><xref rid="aff-2" ref-type="aff">2</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Surgical Oncology, Mexican Social Security Institute, M&#x000e9;rida, MEX </aff><aff id="aff-2">
+<label>2</label>
+Medical Research, Mexican Social Security Institute, M&#x000e9;rida, MEX </aff><author-notes><corresp id="cor1">
+Sergio Isidro Gamboa-Hoil <email>sergio_gamboa@hotmail.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>7</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101035</elocation-id><history><date date-type="accepted"><day>7</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Gamboa-Hoil et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Gamboa-Hoil et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/451081-the-gamboa-hoil-point-for-primary-perineal-closure-during-total-pelvic-exenteration">This article is available from https://cureus.com/articles/451081-the-gamboa-hoil-point-for-primary-perineal-closure-during-total-pelvic-exenteration</self-uri><abstract><p>Introduction</p><p>Total pelvic exenteration (TPE) is a radical procedure for selected patients with advanced pelvic malignancies and is associated with significant perineal morbidity. Despite multiple reconstructive strategies, no consensus exists regarding the optimal strategy for perineal closure. The Gamboa-Hoil point is a standardized primary closure technique proposed by the authors, designed to reinforce perineal wound closure using a simple suture-based approach.</p><p>Methods</p><p>We conducted a single-center, retrospective descriptive study including patients with colorectal cancer (rectal, sigmoid colon, and selected locally advanced or recurrent anal canal tumors) who underwent TPE between January 2021 and December 2024. Primary perineal closure was performed using the Gamboa-Hoil point. The primary outcome was perineal morbidity, including wound dehiscence, surgical site infection, perineal sinus formation, and reintervention.</p><p>Results</p><p>Eleven patients (six men and five women) were included, with a median age of 60 years (range, 40-67). Negative surgical margins (R0) were achieved in all cases. No cases of infected pelvic fluid collections or postoperative intestinal obstruction were observed. A urinary fistula occurred in one patient (9.1%) and required minor reintervention with drain repositioning. Perineal wound dehiscence occurred in one patient (9.1%), and persistent perineal sinus formation was observed in two patients (18.2%). The median length of hospital stay was seven days. During a median follow-up of 20 months, tumor recurrence occurred in two patients (18.2%). Overall survival at study closure was 72.7%.</p><p>Conclusion</p><p>The Gamboa-Hoil point appears to be a feasible and reproducible option for primary perineal closure following TPE, with acceptable perineal morbidity in patients in whom primary closure is feasible.</p></abstract><kwd-group kwd-group-type="author"><kwd>colorectal cancer</kwd><kwd>empty pelvis syndrome</kwd><kwd>perineal closure</kwd><kwd>perineal morbidity</kwd><kwd>postoperative complications</kwd><kwd>surgical technique</kwd><kwd>total pelvic exenteration</kwd></kwd-group></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p>Total pelvic exenteration, originally described by Brunschwig [<xref rid="REF1" ref-type="bibr">1</xref>], is a radical surgical procedure involving en bloc removal of the sigmoid colon, rectum, and anus. In male patients, the operation additionally entails resection of the bladder, seminal vesicles, prostate, and urethra, whereas in female patients it may include en bloc resection of the uterus &#x000b1; adnexa, vagina, bladder, and urethra, depending on oncologic requirements [<xref rid="REF2" ref-type="bibr">2</xref>].</p><p>This procedure is indicated in patients with locally advanced primary or recurrent pelvic malignancies with the aim of achieving complete oncologic resection with negative margins (R0). Although associated with substantial functional impact, total pelvic exenteration has been linked to a modest improvement in overall survival in carefully selected patients [<xref rid="REF2" ref-type="bibr">2</xref>].</p><p>Empty pelvis syndrome (EPS)</p><p>EPS, first described in 1993, refers to a spectrum of postoperative complications after total pelvic exenteration, including pelvic collections, bowel obstruction, perineal sinus formation, and fistula development [<xref rid="REF3" ref-type="bibr">3</xref>]. These events are largely related to the creation of a large pelvic cavity after multivisceral resection. EPS has been reported in 32.1% of patients, with 17.7% diagnosed during the index hospitalization and 14.4% after hospital discharge. Additionally, 5.2% of patients require delayed reintervention (&#x0003e;90 days) due to EPS-related complications [<xref rid="REF4" ref-type="bibr">4</xref>].</p><p>Perineal closure techniques</p><p>Reconstructive strategies aimed at managing the perineal defect and pelvic anatomy following total pelvic exenteration have shown heterogeneous outcomes, with no clear superiority of a single approach [<xref rid="REF3" ref-type="bibr">3</xref>]. Several studies and systematic reviews have reported increased perioperative morbidity associated with more extensive perineal reconstruction, including higher blood loss, prolonged hospitalization, and wound-related complications, without consistent oncologic benefit when compared with primary perineal closure [<xref rid="REF4" ref-type="bibr">4</xref>-<xref rid="REF7" ref-type="bibr">7</xref>].</p><p>In Mexico, early institutional experience reported by Luna-Perez et al. [<xref rid="REF8" ref-type="bibr">8</xref>] in a tertiary referral center described the use of primary perineal closure with simple nylon sutures in selected patients undergoing total pelvic exenteration, in some cases combined with adjunctive measures such as omentoplasty or temporary perineal packing. This experience highlights the historical feasibility of simple suture-based approaches for perineal defect management and provides a conceptual framework for the development of standardized, anatomically guided techniques.</p><p>Rationale for the Gamboa-Hoil point</p><p>Although no definitive technique exists for pelvic reconstruction after total pelvic exenteration, current evidence suggests that perineal closure strategies should be individualized according to patient characteristics, extent of resection, and institutional resources [<xref rid="REF4" ref-type="bibr">4</xref>]. This is particularly relevant in settings with limited access to reconstructive or plastic surgical support, where the oncologic surgeon frequently performs the entire procedure, including perineal closure.</p><p>The surgical technique described in this study is not intended to eliminate the pelvic dead space nor to treat empty pelvis syndrome itself. Instead, the Gamboa-Hoil point is designed to reinforce primary perineal closure, with the specific aim of reducing wound dehiscence and secondary infection, without increasing the incidence of major pelvic complications such as bowel obstruction or deep pelvic collections.</p><p>In this context, the relevance of EPS in the present study lies in demonstrating that the use of a simplified anchoring perineal closure technique does not exacerbate overall pelvic morbidity following total pelvic exenteration. In patients in whom primary closure is feasible, the Gamboa-Hoil point represents a simple and reproducible alternative to flap-based reconstruction, avoiding the need for plastic surgery while maintaining acceptable perineal outcomes.</p><p>Accordingly, the Gamboa-Hoil point may be considered a feasible option for primary perineal closure in patients undergoing total pelvic exenteration. Therefore, the aim of this study was to describe the clinical outcomes and perineal morbidity associated with the use of the Gamboa-Hoil point for primary perineal closure in patients with colorectal cancer, including rectal, sigmoid colon, and selected locally advanced or recurrent anal canal tumors, undergoing total pelvic exenteration.</p></sec><sec sec-type="materials|methods"><title>Materials and methods</title><p>This was a single-center, retrospective descriptive study.</p><p>Study population</p><p>This study was approved by the Ethics and Research Committee of our institution. Due to the retrospective nature of the study, the requirement for written informed consent was waived.</p><p>Between January 2021 and December 2024, a total of 11 patients with colorectal cancer, including rectal cancer, sigmoid colon cancer, and selected locally advanced or recurrent anal canal tumors requiring total pelvic exenteration due to adjacent organ invasion, underwent surgery at our tertiary oncology referral center. All patients who met the predefined inclusion criteria were consecutively enrolled.</p><p>In this series, the Gamboa-Hoil point was systematically used as the primary perineal closure technique in all patients undergoing total pelvic exenteration. The technique is intended for cases in which the perineal defect allows primary closure in a single stage without extensive skin loss, which was the situation in all included patients.</p><p>In all cases, primary perineal closure was performed using the Gamboa-Hoil point as the sole perineal closure technique.</p><p>Exclusion criteria included partial pelvic exenteration, abdominoperineal resection without total pelvic exenteration, the use of flap-based or plastic surgical perineal reconstruction, incomplete clinical records, and insufficient postoperative follow-up to allow adequate assessment of perineal outcomes.</p><p>Surgical technique</p><p>All procedures were performed by a single board-certified surgical oncologist, assisted by a general surgeon and/or general surgery residents.</p><p>During the first operative phase, patients were positioned in the lithotomy position, and a midline supraumbilical and infraumbilical incision was performed. After systematic exploration of the abdominal cavity to exclude distant disease, the mesocolon was incised at its root. The inferior mesenteric artery was ligated at its origin, followed by ligation of the inferior mesenteric vein as indicated.</p><p>Total pelvic exenteration was performed according to oncologic requirements. In male patients, the procedure included en bloc resection of the prostate and seminal vesicles. In female patients, the procedure included en bloc hysterectomy; bilateral salpingo-oophorectomy was not performed in this cohort. In all cases, the urinary bladder was resected as part of the exenterative procedure.</p><p>Both ureters were identified and ligated proximally to the tumor, and pelvic dissection was completed to the pelvic floor with total mesorectal excision when applicable.</p><p>During the second operative phase, a perineal incision was performed using the ischial tuberosities, coccyx, and the midline of the perineum as anatomical landmarks. Complete mobilization of the rectum was then achieved through anterior, posterior, and lateral dissection. Following completion of the resection, primary perineal closure was performed using the Gamboa-Hoil point, a standardized perineal closure technique, which is described in detail below.</p><p>Description of the Gamboa-Hoil point</p><p>Primary perineal closure was performed using a nonabsorbable multifilament polyester suture (Ethibond&#x000ae; EXCEL, size 5 (metric 7.0), 75-cm suture length, taper-cut needle).</p><p>After irrigation of the perineal wound, the Gamboa-Hoil point was applied using three sequential deep suture layers placed in a stepwise manner to reinforce deep perineal anchorage and achieve uniform tension distribution across the perineal closure.</p><p>For each suture layer, the stitch was placed in two sequential steps. The first pass was performed from the left lateral perineum toward the midline (lateral-to-medial), exiting at the perineal midline. The second pass continued from the midline toward the contralateral perineum (medial-to-lateral), completing the anchoring layer with symmetric tissue capture.</p><p>These layers are placed in a graduated fashion, with progressively decreasing depth and lateral distance from the perineal skin edge. The first layer is positioned at a depth and lateral distance greater than 3 cm from the perineal margin, the second at greater than 2 cm, and the third at greater than 1 cm. This configuration provides deep perineal anchorage and progressive tension redistribution, contributing to stabilization of the perineal closure without attempting to obliterate the pelvic cavity.</p><p>These three layers correspond to progressively superficial planes, commonly referred to as a &#x0201c;far-far,&#x0201d; &#x0201c;intermediate-intermediate,&#x0201d; and &#x0201c;near-near&#x0201d; configuration, which allows gradual tension redistribution and secure perineal anchorage. Figure&#x000a0;<xref rid="FIG1" ref-type="fig">1</xref>&#x000a0;illustrates the stepwise placement and depth of each suture layer.</p><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>Schematic Representation of the Gamboa-Hoil Point for Primary Perineal Closure</title><p>The perineal region is located above the horizontal reference line (X), while the pelvic cavity is located below it. The schematic illustrates the placement of three sequential deep anchoring suture layers arranged concentrically to achieve deep perineal fixation and progressive tension redistribution across the perineal closure.</p><p>The suture layers are placed in a graduated fashion, with progressively decreasing depth and lateral distance from the perineal skin edge. The first layer (A) is positioned at a depth and lateral distance greater than 3 cm from the perineal margin (far-far), the second layer (B) at greater than 2 cm (intermediate-intermediate), and the third layer (C) at greater than 1 cm (near-near).</p><p>For each suture layer, the first needle pass is performed from the left lateral perineum toward the midline (lateral-to-medial), exiting at the perineal midline. The second pass then continues from the midline toward the contralateral perineum (medial-to-lateral), completing the anchoring layer with symmetric tissue capture.</p><p>Additional Gamboa-Hoil points are placed at intervals of approximately 1.5-2 cm along the perineal incision to ensure uniform support throughout the closure.</p><p>Green lines represent the Ethibond&#x000ae; sutures used to construct the three-layer Gamboa-Hoil point. Variations in line thickness are intentionally used to differentiate overlapping suture trajectories and depth planes.</p><p>Uppercase letters (A-C) denote the depth of the anchoring suture layers, whereas lowercase letters (a-c) represent the corresponding superficial trajectory of a separate Gamboa-Hoil point depicted within the same schematic.</p><p>Image created by the author.</p></caption><graphic xlink:href="cureus-0018-00000101035-i01" position="float"/></fig><p>Subsequent Gamboa-Hoil points were spaced approximately 1.5-2 cm apart along the perineal incision, providing uniform support across the closure.</p><p>During the third operative phase, an ileal conduit was constructed using a 40-cm segment of ileum located approximately 50 cm proximal to the ileocecal valve. Ureteral stents were placed bilaterally and secured to the ileal conduit, which was then exteriorized through the right hemiabdomen.</p><p>During the fourth operative phase, a pelvic drain was placed, followed by layered closure of the abdominal wall and creation of a terminal colostomy in the left hemiabdomen [<xref rid="REF2" ref-type="bibr">2</xref>].</p><p>Postoperative management</p><p>Routine postoperative admission to the intensive care unit (ICU) was not required. Octreotide was not administered, and nasogastric tube placement was not routinely used. Oral intake was initiated on postoperative day 3.</p><p>A closed-suction drain (Drenovac&#x000ae;) was exteriorized through the right hemiabdomen and directed to the pelvic cavity, where it was maintained for four weeks.</p><p>Outcome variables</p><p>The primary outcome was perineal morbidity related to primary perineal closure following total pelvic exenteration, including wound dehiscence, surgical site infection, perineal sinus formation, and the need for reintervention related to the perineal wound.</p><p>Statistical analysis</p><p>Statistical analyses were performed using IBM SPSS Statistics, Version 25.0 (IBM Corp., Armonk, NY). A descriptive statistical analysis was conducted using measures of central tendency and dispersion. Quantitative variables are presented as mean and standard deviation or as median and interquartile range, depending on data distribution. Categorical variables are reported as absolute frequencies and percentages. Given the descriptive nature of the study, the small sample size, and the absence of a comparison group, no inferential statistical analyses or between-group comparisons were performed.</p></sec><sec sec-type="results"><title>Results</title><p>Between January 2021 and December 2024, a total of 11 patients (six men and five women) underwent total pelvic exenteration at our institution. All procedures were performed by a single board-certified surgical oncologist, with assistance from a general surgeon and/or general surgery residents.</p><p>The median age of the study population was 60 years (range, 40-67 years). Primary rectal cancer was the most frequent indication for surgery, accounting for 81.8% of cases (n = 9). Neoadjuvant chemotherapy and radiotherapy were administered to six patients (54.5%), in accordance with standard oncologic protocols; omission of neoadjuvant treatment was related to locally advanced or recurrent disease with urinary bladder involvement, particularly extension to the vesical trigone, requiring upfront surgical management. Adenocarcinoma was the predominant histological subtype, observed in 10 patients (90.9%). The median tumor size was 5.5 cm (range, 4.0-6.0 cm). Baseline clinical and tumor characteristics are summarized in Table&#x000a0;<xref rid="TAB1" ref-type="table">1</xref>.</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Baseline Clinical and Tumor Characteristics of the Study Population</title><p>Data are presented as number (%) unless otherwise specified. Tumor size is reported as median and interquartile range (IQR). Preoperative organ involvement was determined based on preoperative clinical assessment and imaging findings.</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Characteristics
+</td></tr><tr><td colspan="2" rowspan="1">
+Sex, n (%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Male
+</td><td rowspan="1" colspan="1">
+6 (54.5)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Female
+</td><td rowspan="1" colspan="1">
+5 (45.5)
+</td></tr><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Comorbidities, n (%)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Diabetes mellitus
+</td><td rowspan="1" colspan="1">
+4 (36.4)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Hypertension
+</td><td rowspan="1" colspan="1">
+2 (18.2)
+</td></tr><tr><td colspan="2" rowspan="1">
+Tumor location, n (%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Rectum
+</td><td rowspan="1" colspan="1">
+9 (81.8)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Sigmoid colon
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Anal canal
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr><td colspan="2" rowspan="1">
+Tumor status, n (%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Primary
+</td><td rowspan="1" colspan="1">
+9 (81.8)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Rectum
+</td><td rowspan="1" colspan="1">
+8 (88.9)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Anal canal
+</td><td rowspan="1" colspan="1">
+1 (11.1)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Recurrent
+</td><td rowspan="1" colspan="1">
+2 (18.2)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Rectum
+</td><td rowspan="1" colspan="1">
+1 (50)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Sigmoid colon
+</td><td rowspan="1" colspan="1">
+1 (50)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Neoadjuvant chemotherapy and radiotherapy, n (%)
+</td><td rowspan="1" colspan="1">
+6 (54.5)
+</td></tr><tr><td colspan="2" rowspan="1">
+Histology, n (%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+10 (90.9)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Squamous cell carcinoma
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Preoperative organ involvement, n (%)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003; Rectum, prostate, and bladder
+</td><td rowspan="1" colspan="1">
+5 (45.5)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003; Rectum, vagina, and bladder
+</td><td rowspan="1" colspan="1">
+5 (45.5)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003; Colon, prostate, and bladder
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Tumor size, cm, median (IQR)
+</td><td rowspan="1" colspan="1">
+5.5 (4.0-6.0)
+</td></tr></tbody></table></table-wrap><p>The median intraoperative blood loss was 650 mL (range, 500-700 mL), and the median number of transfused packed red blood cell units was 2 (range, 1-2). A complete pathological response was observed in one patient (9.1%), and negative surgical margins (R0) were achieved in all cases. Surgical and pathological characteristics are summarized in Table&#x000a0;<xref rid="TAB2" ref-type="table">2</xref>.</p><table-wrap position="float" id="TAB2"><label>Table 2</label><caption><title>Surgical, Pathological, and Postoperative Outcomes</title><p>Data are presented as n (%) unless otherwise specified.</p><p>Continuous variables are reported as median (interquartile range) or median (range), as indicated.</p><p>Pathological staging was reported according to the American Joint Committee on Cancer (AJCC)/Union for International Cancer Control (UICC) staging system. The prefix &#x0201c;yp&#x0201d; denotes post-neoadjuvant pathological staging.</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Surgical characteristics
+</td></tr><tr><td rowspan="1" colspan="1">
+Intraoperative blood loss, mL, median (IQR)
+</td><td rowspan="1" colspan="1">
+650 (500-700)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Transfused packed red blood cell units, median (IQR)
+</td><td rowspan="1" colspan="1">
+2 (1-2)
+</td></tr><tr><td colspan="2" rowspan="1">
+Pathological outcomes
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Complete pathological response, n (%)
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr><td rowspan="1" colspan="1">
+Negative surgical margins (R0)
+</td><td rowspan="1" colspan="1">
+11 (100)
+</td></tr><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Pathological T stage, n (%)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;ypT0
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;pT4a
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;pT4b
+</td><td rowspan="1" colspan="1">
+9 (81.8)
+</td></tr><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Pathological N stage, n (%)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;pN0
+</td><td rowspan="1" colspan="1">
+9 (81.8)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;pN1a
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;pN1b
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Pathological M stage, n (%)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;M0
+</td><td rowspan="1" colspan="1">
+10 (90.9)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;M1
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr><td colspan="2" rowspan="1">
+Oncologic category, n (%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;IIc
+</td><td rowspan="1" colspan="1">
+7 (63.6)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;IIIb
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;IVa
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Local recurrence
+</td><td rowspan="1" colspan="1">
+2 (18.2)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Lymphovascular invasion, n (%)
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr><td rowspan="1" colspan="1">
+Perineural invasion, n (%)
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Postoperative complications
+</td></tr><tr><td rowspan="1" colspan="1">
+Infected fluid collections, n (%)
+</td><td rowspan="1" colspan="1">
+0 (0)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Intestinal obstruction, n (%)
+</td><td rowspan="1" colspan="1">
+0 (0)
+</td></tr><tr><td rowspan="1" colspan="1">
+Urinary fistula, n (%)
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Perineal sinus, n (%)
+</td><td rowspan="1" colspan="1">
+2 (18.2)
+</td></tr><tr><td rowspan="1" colspan="1">
+Perineal wound dehiscence, n (%)
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Reintervention, n (%)
+</td><td rowspan="1" colspan="1">
+1 (9.1)
+</td></tr><tr><td colspan="2" rowspan="1">
+Hospital stay
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Length of hospital stay, days, median (range)
+</td><td rowspan="1" colspan="1">
+7 (7-15)
+</td></tr></tbody></table></table-wrap><p>Oncologic treatment strategy</p><p>According to standard oncologic practice, patients with primary rectal cancer are typically treated with neoadjuvant chemoradiotherapy. In this series, patients with primary rectal cancer who presented with locally advanced disease involving adjacent organs, particularly invasion of the urinary bladder with extension to the vesical trigone, were managed with upfront total pelvic exenteration. In these cases, trigonal involvement was associated with recurrent urinary tract infections and urinary obstruction, which precluded the safe administration of neoadjuvant chemotherapy or radiotherapy.</p><p>Patients with recurrent rectal cancer had previously received chemoradiotherapy followed by low anterior resection with colorectal anastomosis. During surveillance, local recurrence with invasion of the urinary bladder, including the vesical trigone, was identified, and these patients were subsequently treated with total pelvic exenteration.</p><p>The patient with sigmoid colon cancer had initially undergone anterior resection followed by adjuvant chemotherapy. During follow-up, local recurrence with bladder invasion extending to the vesical trigone was detected, and total pelvic exenteration was indicated.</p><p>Anal canal cancer is generally treated with definitive chemoradiotherapy. However, in this cohort, one patient presented with a bulky primary disease complicated by a rectovesical fistula and direct invasion of the urinary bladder and trigone, which necessitated primary surgical management with total pelvic exenteration.</p><p>Across these scenarios, invasion of the urinary bladder, particularly involvement of the vesical trigone, and recurrent urinary tract infections were key factors that limited the use of chemoradiotherapy and prompted upfront exenterative surgical management. Individual patient-level clinical, oncologic, and perineal outcomes are summarized in&#x000a0;the Appendices.</p><p>Postoperative complications</p><p>Postoperative morbidity was acceptable. No patients developed infected fluid collections or postoperative intestinal obstruction. A urinary fistula occurred in one patient (9.1%), requiring a minor reintervention consisting solely of drain repositioning. Perineal wound dehiscence was observed in one patient (9.1%), who subsequently developed a perineal sinus. Overall, perineal sinus formation occurred in two patients (18.2%).</p><p>Adjuvant treatment</p><p>Adjuvant systemic therapy was administered to seven patients (63.6%). No patients received adjuvant radiotherapy. Adjuvant treatment characteristics are summarized in Table&#x000a0;<xref rid="TAB3" ref-type="table">3</xref>. Adjuvant systemic therapy was not administered in selected cases due to poor postoperative performance status and delayed postoperative recovery, which precluded the timely initiation of adjuvant therapy.</p><table-wrap position="float" id="TAB3"><label>Table 3</label><caption><title>Adjuvant Treatment After Total Pelvic Exenteration</title><p>Data are presented as n (%).</p><p>Adjuvant treatment decisions were based on postoperative clinical status and multidisciplinary oncologic assessment.</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Treatment
+</td></tr><tr><td colspan="2" rowspan="1">
+Adjuvant chemotherapy, n (%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Yes
+</td><td rowspan="1" colspan="1">
+7 (63.6)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;No
+</td><td rowspan="1" colspan="1">
+4 (36.4)
+</td></tr><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Adjuvant radiotherapy, n (%)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;No
+</td><td rowspan="1" colspan="1">
+11 (100)
+</td></tr></tbody></table></table-wrap><p>Recurrence</p><p>The median follow-up period was 20 months (range, four to 45 months). During follow-up, tumor recurrence was observed in two patients (18.2%), all of whom belonged to the primary tumor group. Tumor recurrence patterns are summarized in Table&#x000a0;<xref rid="TAB4" ref-type="table">4</xref>.</p><table-wrap position="float" id="TAB4"><label>Table 4</label><caption><title>Recurrence and Survival Outcomes</title><p>Data are presented as n (%) unless otherwise specified. Time to recurrence is reported in months.</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Outcomes
+</td></tr><tr><td colspan="2" rowspan="1">
+Tumor recurrence, n (%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Yes
+</td><td rowspan="1" colspan="1">
+2 (18.2)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;No
+</td><td rowspan="1" colspan="1">
+9 (81.8)
+</td></tr><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Recurrence site, n (% of patients with recurrence)
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Local + inguinal
+</td><td rowspan="1" colspan="1">
+2 (100)
+</td></tr><tr style="background-color:#ccc"><td colspan="2" rowspan="1">
+Time to recurrence, months, n
+</td></tr><tr><td rowspan="1" colspan="1">
+&#x02003;&#x02003;6
+</td><td rowspan="1" colspan="1">
+1
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;7
+</td><td rowspan="1" colspan="1">
+1
+</td></tr><tr><td colspan="2" rowspan="1">
+Overall survival at study closure, n (%)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+&#x02003;&#x02003;Alive
+</td><td rowspan="1" colspan="1">
+8 (72.7)
+</td></tr></tbody></table></table-wrap><p>Overall survival</p><p>At the end of the follow-up period, eight patients (72.7%) were alive. No deaths were recorded among patients who developed tumor recurrence.</p></sec><sec sec-type="discussion"><title>Discussion</title><p>The median age of our study population and the predominance of male sex were comparable to those reported by Vigneswaran et al. (median age, 59 years; 53% male) [<xref rid="REF9" ref-type="bibr">9</xref>]. Although the proportion of patients with diabetes mellitus in our cohort was higher than that reported in their series (10.9%), this finding may reflect the high prevalence of metabolic comorbidities in our regional population. Regarding tumor distribution, rectal cancer accounted for 81% of cases, followed by sigmoid colon cancer in 9.1% and anal canal cancer in 9.1%, a pattern consistent with previous reports identifying rectal tumors as the most frequent indication for total pelvic exenteration. In the patient with sigmoid colon cancer, the indication for exenterative surgery was related to locally recurrent disease with deep pelvic extension and invasion of adjacent organs, including the urinary bladder with extension to the vesical trigone, rather than primary tumor location alone.</p><p>Adenocarcinoma was the predominant histological subtype in our cohort, consistent with findings reported in the literature. Direct comparisons, however, are limited, as most published series predominantly include patients with colon and rectal cancers. In our population, 81% of cases presented with locally advanced disease, a proportion comparable to that reported by Katory et al. [<xref rid="REF10" ref-type="bibr">10</xref>] (85.7%), who identified advanced disease as a major indication for exenterative surgery.</p><p>Neoadjuvant combined chemotherapy and radiotherapy were administered to 54.5% of patients in our study, a lower proportion than that reported by Pokharkar et al. [<xref rid="REF11" ref-type="bibr">11</xref>], in whose series all patients received neoadjuvant treatment, likely reflecting differences in institutional protocols and patient selection.</p><p>In a previously published series of total pelvic exenteration, histologically confirmed invasion of adjacent pelvic organs has been reported in approximately 64-66% of cases. In contrast, our cohort demonstrated multivisceral involvement, most commonly affecting the rectum, bladder, prostate, and vagina. These findings underscore the high burden of locally advanced disease in our population and are consistent with the advanced oncologic stage typically required to justify total pelvic exenteration [<xref rid="REF8" ref-type="bibr">8</xref>].</p><p>The median intraoperative blood loss observed in our cohort was 650 mL, which is lower than that reported in several previously published series of total pelvic exenteration for colorectal malignancies. In the literature, reported median or mean blood loss values generally range from approximately 1,000 mL to more than 2,000 mL [<xref rid="REF11" ref-type="bibr">11</xref>-<xref rid="REF15" ref-type="bibr">15</xref>].</p><p>It is noteworthy that one patient (9.1%) achieved a complete pathological response following surgical resection. In our cohort, negative surgical margins (R0) were achieved in 100% of cases, a finding that is consistent with reports in the literature for primary locally advanced rectal cancer [<xref rid="REF11" ref-type="bibr">11</xref>,<xref rid="REF16" ref-type="bibr">16</xref>]. In contrast, series evaluating total pelvic exenteration performed for recurrent pelvic malignancies have reported lower R0 rates, ranging from 57% to 76% [<xref rid="REF14" ref-type="bibr">14</xref>,<xref rid="REF17" ref-type="bibr">17</xref>].</p><p>Overall postoperative morbidity was acceptable. No cases of infected pelvic fluid collections or postoperative intestinal obstruction were observed, findings that may be influenced by perioperative management strategies such as prolonged pelvic drainage and antibiotic coverage rather than the perineal closure technique itself. Urinary fistula occurred in one patient (9.1%), a rate higher than that reported in the literature [<xref rid="REF4" ref-type="bibr">4</xref>]; however, this complication was not directly related to the perineal closure technique. Persistent perineal sinus formation was observed in two patients (18.2%).</p><p>Perineal wound dehiscence occurred in one patient (9.1%), a rate that compares favorably with those reported in the literature, where dehiscence rates of up to 26.7% have been described in patients undergoing complex perineal reconstruction [<xref rid="REF5" ref-type="bibr">5</xref>].</p><p>The median length of hospital stay in our cohort was 7 days, which is shorter than that reported in the literature, where median hospital stays after total pelvic exenteration typically range from 10 to 19 days [<xref rid="REF9" ref-type="bibr">9</xref>-<xref rid="REF11" ref-type="bibr">11</xref>,<xref rid="REF15" ref-type="bibr">15</xref>].</p><p>With a median follow-up of 20 months, the recurrence rate observed in our study was 18.2%, which is higher than that reported by Miri et al. [<xref rid="REF18" ref-type="bibr">18</xref>] (9.1%). In terms of overall survival, 72.7% of patients in our cohort were alive at the end of the study period, a rate comparable to the one-year overall survival of approximately 80% reported by Miri et al. [<xref rid="REF18" ref-type="bibr">18</xref>].</p><p>Total pelvic exenteration is reserved for selected patients with locally advanced or recurrent pelvic malignancies requiring en bloc resection of multiple pelvic organs. In this context, perineal reconstruction aims primarily to prevent small bowel evisceration and perineal wound dehiscence. The Gamboa-Hoil point was developed as a simplified, suture-based primary closure strategy for patients in whom primary closure is feasible, without the need for additional reconstructive procedures.</p><p>Taken together, these findings suggest that the Gamboa-Hoil point represents a feasible and reproducible option for primary perineal closure following total pelvic exenteration, with the potential to reduce perineal wound morbidity in patients in whom primary closure is feasible.</p><p>Limitations</p><p>This study has several limitations that should be acknowledged. First, its retrospective and descriptive design, combined with the small sample size, limits the ability to perform inferential statistical analyses or establish causal relationships. Second, the study was conducted at a single center, and all procedures were performed by a single experienced surgical oncologist, which may limit the generalizability of the results to other institutions with different levels of expertise.</p><p>Third, the absence of a comparison group precludes direct comparison between the Gamboa-Hoil point and other perineal closure techniques, including myocutaneous flaps or mesh-based reconstruction. Therefore, no conclusions can be drawn regarding superiority or equivalence with more complex reconstructive approaches. Additionally, the duration of follow-up was relatively limited for assessing long-term oncologic outcomes, particularly overall survival and late perineal complications.</p><p>Finally, selection bias cannot be excluded, as only cases in which primary perineal closure was feasible were included. All patients underwent total pelvic exenteration and were managed with the same perineal closure technique, which limits the generalizability of the findings to patients requiring extensive perineal skin resection or flap-based reconstruction. Importantly, this study was not designed to evaluate interventions aimed at obliterating pelvic dead space or treating the empty pelvis syndrome. This work is intended as a technical description of a primary perineal closure option rather than a comparative evaluation of reconstructive strategies. Larger, multicenter prospective studies with comparative designs are needed to further evaluate the effectiveness and reproducibility of this perineal closure technique.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>In this retrospective descriptive study, the Gamboa-Hoil point was found to be a feasible and reproducible technique for primary perineal closure following total pelvic exenteration in patients with colorectal cancer. The technique was associated with acceptable perineal morbidity and low rates of wound dehiscence, without an apparent increase in procedure-related complications.</p><p>Although these findings should be interpreted with caution due to the study&#x02019;s limitations, the Gamboa-Hoil point may represent a simple and standardized option for perineal closure, particularly in settings with limited access to complex reconstructive procedures. Further prospective and comparative studies are warranted to validate these results and to better define the role of this technique in broader clinical practice.</p></sec></body><back><ack><p>We sincerely thank Dr. Ra&#x000fa;l Ruiz-Ferr&#x000e1;ez and Dr. Octavio Cigarroa-Galicia from the Department of General Surgery, as well as Dr. Patricia Bolado-Garc&#x000ed;a from the Department of Research, for their valuable collaboration and support throughout this study.</p></ack><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Human subjects:</bold> Informed consent for treatment and open access publication was obtained or waived by all participants in this study. Research Ethics Committee No. 32038 of the Instituto Mexicano del Seguro Social (IMSS) issued approval R-2021-3203-006.</p><p><bold>Animal subjects:</bold> All authors have confirmed that this study did not involve animal subjects or tissue.</p><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> All authors have declared that no financial support was received from any organization for the submitted work.</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Sergio Isidro Gamboa-Hoil, Ricardo Gamboa-Guti&#x000e9;rrez, Alejandro Medina-Campos</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Sergio Isidro Gamboa-Hoil, Ricardo Gamboa-Guti&#x000e9;rrez, Alejandro Medina-Campos</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Sergio Isidro Gamboa-Hoil, Ricardo Gamboa-Guti&#x000e9;rrez, Alejandro Medina-Campos</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Sergio Isidro Gamboa-Hoil, Ricardo Gamboa-Guti&#x000e9;rrez, Alejandro Medina-Campos</p><p><bold>Supervision:</bold>&#x000a0; Sergio Isidro Gamboa-Hoil, Ricardo Gamboa-Guti&#x000e9;rrez, Alejandro Medina-Campos</p></fn></fn-group><app-group><app><title>Appendices</title><table-wrap position="anchor" id="TAB5"><label>Table 5</label><caption><title>Individual Patient Characteristics, Tumor Features, and Perineal Outcomes After Total Pelvic Exenteration</title><p>yp indicates pathological staging after neoadjuvant therapy; pT indicates pathological staging without neoadjuvant treatment.</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Patient number
+</td><td rowspan="1" colspan="1">
+Sex
+</td><td rowspan="1" colspan="1">
+Age
+</td><td rowspan="1" colspan="1">
+Tumor location
+</td><td rowspan="1" colspan="1">
+Primary vs. recurrent
+</td><td rowspan="1" colspan="1">
+Neoadjuvant therapy (yes/no)
+</td><td rowspan="1" colspan="1">
+Histology
+</td><td rowspan="1" colspan="1">
+Pathological stage
+</td><td rowspan="1" colspan="1">
+Perineal wound dehiscence
+</td><td rowspan="1" colspan="1">
+Perineal sinus
+</td></tr><tr><td rowspan="1" colspan="1">
+1
+</td><td rowspan="1" colspan="1">
+M
+</td><td rowspan="1" colspan="1">
+66
+</td><td rowspan="1" colspan="1">
+Rectum
+</td><td rowspan="1" colspan="1">
+Primary
+</td><td rowspan="1" colspan="1">
+Yes
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+ypT0
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+Yes
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+2
+</td><td rowspan="1" colspan="1">
+F
+</td><td rowspan="1" colspan="1">
+69
+</td><td rowspan="1" colspan="1">
+Rectum
+</td><td rowspan="1" colspan="1">
+Recurrent
+</td><td rowspan="1" colspan="1">
+Yes
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+ypT4b
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+No
+</td></tr><tr><td rowspan="1" colspan="1">
+3
+</td><td rowspan="1" colspan="1">
+M
+</td><td rowspan="1" colspan="1">
+75
+</td><td rowspan="1" colspan="1">
+Rectum
+</td><td rowspan="1" colspan="1">
+Primary
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+pT4b
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+No
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+4
+</td><td rowspan="1" colspan="1">
+M
+</td><td rowspan="1" colspan="1">
+40
+</td><td rowspan="1" colspan="1">
+Sigmoid
+</td><td rowspan="1" colspan="1">
+Recurrence
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+pT4b
+</td><td rowspan="1" colspan="1">
+Yes
+</td><td rowspan="1" colspan="1">
+Yes
+</td></tr><tr><td rowspan="1" colspan="1">
+5
+</td><td rowspan="1" colspan="1">
+F
+</td><td rowspan="1" colspan="1">
+35
+</td><td rowspan="1" colspan="1">
+Rectum
+</td><td rowspan="1" colspan="1">
+Primary
+</td><td rowspan="1" colspan="1">
+Yes
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+ypT4b
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+No
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+6
+</td><td rowspan="1" colspan="1">
+M
+</td><td rowspan="1" colspan="1">
+60
+</td><td rowspan="1" colspan="1">
+Rectum
+</td><td rowspan="1" colspan="1">
+Primary
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+pT4b
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+No
+</td></tr><tr><td rowspan="1" colspan="1">
+7
+</td><td rowspan="1" colspan="1">
+F
+</td><td rowspan="1" colspan="1">
+35
+</td><td rowspan="1" colspan="1">
+Anal canal
+</td><td rowspan="1" colspan="1">
+Primary
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+Squamous cell carcinoma
+</td><td rowspan="1" colspan="1">
+pT4
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+No
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+8
+</td><td rowspan="1" colspan="1">
+M
+</td><td rowspan="1" colspan="1">
+65
+</td><td rowspan="1" colspan="1">
+Rectum
+</td><td rowspan="1" colspan="1">
+Primary
+</td><td rowspan="1" colspan="1">
+Yes
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+ypT4b
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+No
+</td></tr><tr><td rowspan="1" colspan="1">
+9
+</td><td rowspan="1" colspan="1">
+F
+</td><td rowspan="1" colspan="1">
+59
+</td><td rowspan="1" colspan="1">
+Rectum
+</td><td rowspan="1" colspan="1">
+Primary
+</td><td rowspan="1" colspan="1">
+Yes
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+ypT4b
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+No
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+10
+</td><td rowspan="1" colspan="1">
+M
+</td><td rowspan="1" colspan="1">
+67
+</td><td rowspan="1" colspan="1">
+Rectum
+</td><td rowspan="1" colspan="1">
+Primary
+</td><td rowspan="1" colspan="1">
+Yes
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+ypT4b
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+No
+</td></tr><tr><td rowspan="1" colspan="1">
+11
+</td><td rowspan="1" colspan="1">
+F
+</td><td rowspan="1" colspan="1">
+40
+</td><td rowspan="1" colspan="1">
+Rectum
+</td><td rowspan="1" colspan="1">
+Primary
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+Adenocarcinoma
+</td><td rowspan="1" colspan="1">
+pT4b
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+No
+</td></tr></tbody></table></table-wrap></app></app-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="journal"><article-title>Complete excision of pelvic viscera for advanced carcinoma; a one-stage abdominoperineal operation with end colostomy and bilateral ureteral implantation into the colon above the colostomy</article-title><source>Cancer</source><person-group>
+<name><surname>Brunschwig</surname><given-names>A</given-names></name>
+</person-group><fpage>177</fpage><lpage>183</lpage><volume>1</volume><year>1948</year><pub-id pub-id-type="pmid">18875031</pub-id>
+</element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="book"><article-title>Pelvic exenteration</article-title><source>StatPearls</source><person-group>
+<name><surname>Grimes</surname><given-names>WR</given-names></name>
+<name><surname>Dunton</surname><given-names>CJ</given-names></name>
+<name><surname>Stratton</surname><given-names>M</given-names></name>
+</person-group><publisher-loc>Treasure Island, FL</publisher-loc><publisher-name>StatPearls Publishing</publisher-name><year>2024</year><uri xlink:href="https://www.ncbi.nlm.nih.gov/books/NBK563269/">https://www.ncbi.nlm.nih.gov/books/NBK563269/</uri></element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="journal"><article-title>The empty pelvis syndrome: a core data set from the PelvEx collaborative</article-title><source>Br J Surg</source><person-group>
+<name><surname>PelvEx</surname><given-names>Collaborative</given-names></name>
+</person-group><fpage>3</fpage><volume>111</volume><year>2024</year></element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Empty pelvis syndrome as a cause of major morbidity after pelvic exenteration: validation of a core data set</article-title><source>Br J Surg</source><person-group>
+<name><surname>West</surname><given-names>CT</given-names></name>
+<name><surname>Tiwari</surname><given-names>A</given-names></name>
+<name><surname>Smith</surname><given-names>J</given-names></name>
+<name><surname>Yano</surname><given-names>H</given-names></name>
+<name><surname>West</surname><given-names>MA</given-names></name>
+<name><surname>Mirnezami</surname><given-names>AH</given-names></name>
+</person-group><fpage>7</fpage><volume>112</volume><year>2025</year></element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>Assessment of morbidity and predictors of wound complications following perineal wound closure after radical anorectal oncologic resection: retrospective cohort study</article-title><source>BJS Open</source><person-group>
+<name><surname>Bercz</surname><given-names>A</given-names></name>
+<name><surname>Alvarez</surname><given-names>J</given-names></name>
+<name><surname>Rosen</surname><given-names>R</given-names></name>
+<etal/>
+</person-group><fpage>5</fpage><volume>9</volume><year>2025</year></element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Empty pelvis syndrome: a systematic review of reconstruction techniques and their associated complications</article-title><source>Colorectal Dis</source><person-group>
+<name><surname>Johnson</surname><given-names>YL</given-names></name>
+<name><surname>West</surname><given-names>MA</given-names></name>
+<name><surname>Gould</surname><given-names>LE</given-names></name>
+<etal/>
+</person-group><fpage>16</fpage><lpage>26</lpage><volume>24</volume><year>2022</year><pub-id pub-id-type="pmid">34653292</pub-id>
+</element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>A comparison of surgical techniques for perineal wound closure following perineal excision: a systematic review and network meta-analysis</article-title><source>Tech Coloproctol</source><person-group>
+<name><surname>Riva</surname><given-names>CG</given-names></name>
+<name><surname>Kelly</surname><given-names>ME</given-names></name>
+<name><surname>Vitellaro</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>1351</fpage><lpage>1366</lpage><volume>27</volume><year>2023</year><pub-id pub-id-type="pmid">37843643</pub-id>
+</element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>Patterns of recurrence following pelvic exenteration and external radiotherapy for locally advanced primary rectal adenocarcinoma</article-title><source>Ann Surg Oncol</source><person-group>
+<name><surname>Luna-Perez</surname><given-names>P</given-names></name>
+<name><surname>Delgado</surname><given-names>S</given-names></name>
+<name><surname>Labastida</surname><given-names>S</given-names></name>
+<name><surname>Ortiz</surname><given-names>N</given-names></name>
+<name><surname>Rodriguez</surname><given-names>D</given-names></name>
+<name><surname>Herrera</surname><given-names>L</given-names></name>
+</person-group><fpage>526</fpage><lpage>533</lpage><volume>3</volume><year>1996</year><pub-id pub-id-type="pmid">8915483</pub-id>
+</element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>Morbidity and mortality of total pelvic exenteration for malignancy in the US</article-title><source>Ann Surg Oncol</source><person-group>
+<name><surname>Vigneswaran</surname><given-names>HT</given-names></name>
+<name><surname>Schwarzman</surname><given-names>LS</given-names></name>
+<name><surname>Madueke</surname><given-names>IC</given-names></name>
+<name><surname>David</surname><given-names>SM</given-names></name>
+<name><surname>Nordenstam</surname><given-names>J</given-names></name>
+<name><surname>Moreira</surname><given-names>D</given-names></name>
+<name><surname>Abern</surname><given-names>MR</given-names></name>
+</person-group><fpage>2790</fpage><lpage>2800</lpage><volume>28</volume><year>2021</year><pub-id pub-id-type="pmid">33105501</pub-id>
+</element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="journal"><article-title>Short- and long-term outcomes following pelvic exenteration for gynae-oncological and colorectal cancers: a 9 year consecutive single-centre cohort study</article-title><source>Int J Surg</source><person-group>
+<name><surname>Katory</surname><given-names>M</given-names></name>
+<name><surname>McLean</surname><given-names>R</given-names></name>
+<name><surname>Paez</surname><given-names>E</given-names></name>
+<name><surname>Kucukmetin</surname><given-names>A</given-names></name>
+<name><surname>Naik</surname><given-names>R</given-names></name>
+</person-group><fpage>38</fpage><lpage>45</lpage><volume>43</volume><year>2017</year><pub-id pub-id-type="pmid">28529192</pub-id>
+</element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="journal"><article-title>Laparoscopic pelvic exenteration for locally advanced rectal cancer, technique and short-term outcomes</article-title><source>J Laparoendosc Adv Surg Tech A</source><person-group>
+<name><surname>Pokharkar</surname><given-names>A</given-names></name>
+<name><surname>Kammar</surname><given-names>P</given-names></name>
+<name><surname>D'souza</surname><given-names>A</given-names></name>
+<name><surname>Bhamre</surname><given-names>R</given-names></name>
+<name><surname>Sugoor</surname><given-names>P</given-names></name>
+<name><surname>Saklani</surname><given-names>A</given-names></name>
+</person-group><fpage>1489</fpage><lpage>1494</lpage><volume>28</volume><year>2018</year><pub-id pub-id-type="pmid">29741977</pub-id>
+</element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="journal"><article-title>Transperineal retropubic approach in total pelvic exenteration for advanced and recurrent colorectal and anal cancer involving the penile base: technique and outcomes</article-title><source>Tech Coloproctol</source><person-group>
+<name><surname>Mehta</surname><given-names>AM</given-names></name>
+<name><surname>Hellawell</surname><given-names>G</given-names></name>
+<name><surname>Burling</surname><given-names>D</given-names></name>
+<name><surname>Littler</surname><given-names>S</given-names></name>
+<name><surname>Antoniou</surname><given-names>A</given-names></name>
+<name><surname>Jenkins</surname><given-names>JT</given-names></name>
+</person-group><fpage>663</fpage><lpage>671</lpage><volume>22</volume><year>2018</year><pub-id pub-id-type="pmid">30306276</pub-id>
+</element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>Outcome of total pelvic exenteration for primary rectal cancer</article-title><source>Dis Colon Rectum</source><person-group>
+<name><surname>Ike</surname><given-names>H</given-names></name>
+<name><surname>Shimada</surname><given-names>H</given-names></name>
+<name><surname>Yamaguchi</surname><given-names>S</given-names></name>
+<name><surname>Ichikawa</surname><given-names>Y</given-names></name>
+<name><surname>Fujii</surname><given-names>S</given-names></name>
+<name><surname>Ohki</surname><given-names>S</given-names></name>
+</person-group><fpage>474</fpage><lpage>480</lpage><volume>46</volume><year>2003</year><pub-id pub-id-type="pmid">12682540</pub-id>
+</element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Pelvic exenterations for specific extraluminal recurrences in the era of total mesorectal excision: is there still a chance for cure?: a single-center review of patients with extraluminal pelvic recurrence for rectal cancer from March 2004 to November 2010</article-title><source>Am J Surg</source><person-group>
+<name><surname>Ghouti</surname><given-names>L</given-names></name>
+<name><surname>Pereira</surname><given-names>P</given-names></name>
+<name><surname>Filleron</surname><given-names>T</given-names></name>
+<name><surname>Humeau</surname><given-names>M</given-names></name>
+<name><surname>Guimbaud</surname><given-names>R</given-names></name>
+<name><surname>Selves</surname><given-names>J</given-names></name>
+<name><surname>Carrere</surname><given-names>N</given-names></name>
+</person-group><fpage>352</fpage><lpage>362</lpage><volume>209</volume><year>2015</year><pub-id pub-id-type="pmid">25524284</pub-id>
+</element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>Total pelvic exenteration with or without sacral resection in patients with recurrent colorectal cancer</article-title><source>South Med J</source><person-group>
+<name><surname>Sardi</surname><given-names>A</given-names></name>
+<name><surname>Bolton</surname><given-names>JS</given-names></name>
+<name><surname>Hicks</surname><given-names>TC</given-names></name>
+<name><surname>Skenderis BS</surname><given-names>2nd</given-names></name>
+</person-group><fpage>363</fpage><lpage>369</lpage><volume>87</volume><year>1994</year><pub-id pub-id-type="pmid">7510906</pub-id>
+</element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>Total pelvic exenteration for primary local advanced colorectal cancer</article-title><source>World J Surg</source><person-group>
+<name><surname>Chen</surname><given-names>HS</given-names></name>
+<name><surname>Sheen-Chen</surname><given-names>SM</given-names></name>
+</person-group><fpage>1546</fpage><lpage>1549</lpage><volume>25</volume><year>2001</year><pub-id pub-id-type="pmid">11775189</pub-id>
+</element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>Does radiotherapy of the primary rectal cancer affect prognosis after pelvic exenteration for recurrent rectal cancer?</article-title><source>Dis Colon Rectum</source><person-group>
+<name><surname>Rombouts</surname><given-names>AJ</given-names></name>
+<name><surname>Koh</surname><given-names>CE</given-names></name>
+<name><surname>Young</surname><given-names>JM</given-names></name>
+<etal/>
+</person-group><fpage>65</fpage><lpage>73</lpage><volume>58</volume><year>2015</year><pub-id pub-id-type="pmid">25489696</pub-id>
+</element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>A systematic review on overall survival and disease-free survival following total pelvic exenteration</article-title><source>Asian Pac J Cancer Prev</source><person-group>
+<name><surname>Miri</surname><given-names>SR</given-names></name>
+<name><surname>Akhavan</surname><given-names>S</given-names></name>
+<name><surname>Mousavi</surname><given-names>AS</given-names></name>
+<etal/>
+</person-group><fpage>1137</fpage><lpage>1145</lpage><volume>23</volume><year>2022</year><pub-id pub-id-type="pmid">35485668</pub-id>
+</element-citation></ref></ref-list></back></article>

@@ -1,0 +1,52 @@
+{
+  "model": "deepseek-r1:7b",
+  "quant": "Q4_K_M",
+  "num_predict": 300,
+  "timeout_s": 300,
+  "results": [
+    {
+      "q": "What are the common symptoms of type 2 diabetes?",
+      "elapsed_s": 33.91,
+      "tokens": 50,
+      "tok_per_s": 1.68,
+      "done_reason": "stop",
+      "hit_num_predict_limit": false,
+      "thinking_chars": 0,
+      "thinking": "",
+      "answer_visible": "Common symptoms of type 2 diabetes include frequent urination, excessive thirst, increased urination even when dry mouthed, fatigue, weight loss, unexplained fatigue, numbness or tingling feet, and in severe cases, ketoacidosis."
+    },
+    {
+      "q": "请简要解释高血压的主要风险因素。",
+      "elapsed_s": 24.66,
+      "tokens": 38,
+      "tok_per_s": 1.74,
+      "done_reason": "stop",
+      "hit_num_predict_limit": false,
+      "thinking_chars": 0,
+      "thinking": "",
+      "answer_visible": "高血压的主要风险因素包括遗传、生活方式（如饮食和运动）、家族史、超重或肥胖以及某些药物或生活习惯的变化，如长时间久坐、情绪紧张等。"
+    },
+    {
+      "q": "Summarize the relationship between chronic inflammation and cardiovascular disease.",
+      "elapsed_s": 43.76,
+      "tokens": 69,
+      "tok_per_s": 1.69,
+      "done_reason": "stop",
+      "hit_num_predict_limit": false,
+      "thinking_chars": 0,
+      "thinking": "",
+      "answer_visible": "Chronic inflammation is a key contributor to cardiovascular disease, as it leads to lipid accumulation in plaques on arterial walls, increases vascular wall thickness, and promotes the formation of atherosclerotic plaques. It also enhances blood viscosity and leukocyte adhesion, further impairing blood flow and increasing the risk of heart attacks and strokes."
+    },
+    {
+      "q": "What is the mechanism of action of metformin?",
+      "elapsed_s": 25.43,
+      "tokens": 39,
+      "tok_per_s": 1.73,
+      "done_reason": "stop",
+      "hit_num_predict_limit": false,
+      "thinking_chars": 0,
+      "thinking": "",
+      "answer_visible": "Metformin is a biguanide medication that works by increasing insulin secretion from the pancreas, improving insulin sensitivity in tissues, and inhibiting gluconeogenesis to manage blood glucose levels."
+    }
+  ]
+}

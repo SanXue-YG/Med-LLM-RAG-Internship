@@ -1,0 +1,229 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" id="ctm270599" xml:lang="en" article-type="letter"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Clin Transl Med</journal-id><journal-id journal-id-type="iso-abbrev">Clin Transl Med</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)2001-1326</journal-id><journal-id journal-id-type="publisher-id">CTM2</journal-id><journal-title-group><journal-title>Clinical and Translational Medicine</journal-title></journal-title-group><issn pub-type="epub">2001-1326</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">41655027</article-id><article-id pub-id-type="pmc">PMC12883034</article-id><article-id pub-id-type="doi">10.1002/ctm2.70599</article-id><article-id pub-id-type="publisher-id">CTM270599</article-id><article-categories><subj-group subj-group-type="overline"><subject>Letter to the Journal</subject></subj-group><subj-group subj-group-type="heading"><subject>Letter to the Journal</subject></subj-group></article-categories><title-group><article-title>Systemic lupus erythematosus extends beyond a type I interferonopathy, as demonstrated by NET&#x02010;activated monocytes</article-title><alt-title alt-title-type="left-running-head">CAO <sc>et&#x000a0;al.</sc>
+</alt-title></title-group><contrib-group><contrib id="ctm270599-cr-0001" contrib-type="author"><name><surname>Cao</surname><given-names>Xiaolin</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-3893-666X</contrib-id><xref rid="ctm270599-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="ctm270599-cr-0002" contrib-type="author"><name><surname>van Heusden</surname><given-names>Niels</given-names></name><xref rid="ctm270599-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="ctm270599-cr-0003" contrib-type="author"><name><surname>Pieren</surname><given-names>Daan K. J.</given-names></name><xref rid="ctm270599-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="ctm270599-cr-0004" contrib-type="author"><name><surname>Geertsema&#x02010;Hoeve</surname><given-names>Bettina C.</given-names></name><xref rid="ctm270599-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="ctm270599-cr-0005" contrib-type="author"><name><surname>Kaan</surname><given-names>Ellen D.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-2087-6208</contrib-id><xref rid="ctm270599-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="ctm270599-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="ctm270599-cr-0006" contrib-type="author"><name><surname>Greve</surname><given-names>Patrick F.</given-names></name><xref rid="ctm270599-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="ctm270599-cr-0007" contrib-type="author"><name><surname>Limper</surname><given-names>Maarten</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-4859-3250</contrib-id><xref rid="ctm270599-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="ctm270599-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="ctm270599-cr-0008" contrib-type="author"><name><surname>Boes</surname><given-names>Marianne</given-names></name><xref rid="ctm270599-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="ctm270599-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib></contrib-group><aff id="ctm270599-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Center for Translational Immunology</named-content>
+<named-content content-type="organisation-division">University Medical Center Utrecht</named-content>
+<institution>Utrecht University</institution>
+<city>Utrecht</city>
+<country country="NL">the Netherlands</country>
+</aff><aff id="ctm270599-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Department of Rheumatology and Clinical Immunology</named-content>
+<named-content content-type="organisation-division">University Medical Center Utrecht</named-content>
+<institution>Utrecht University</institution>
+<city>Utrecht</city>
+<country country="NL">the Netherlands</country>
+</aff><aff id="ctm270599-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Department of Internal Medicine</named-content>
+<institution>Flevo Hospital</institution>
+<city>Almere</city>
+<country country="NL">the Netherlands</country>
+</aff><aff id="ctm270599-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">Department of Pediatrics</named-content>
+<named-content content-type="organisation-division">University Medical Center Utrecht</named-content>
+<institution>Utrecht University</institution>
+<city>Utrecht</city>
+<country country="NL">the Netherlands</country>
+</aff><pub-date pub-type="epub"><day>08</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="collection"><month>2</month><year>2026</year></pub-date><volume>16</volume><issue seq="150">2</issue><issue-id pub-id-type="doi">10.1002/ctm2.v16.2</issue-id><elocation-id>e70599</elocation-id><history>
+<date date-type="rev-recd"><day>06</day><month>1</month><year>2026</year></date>
+<date date-type="received"><day>04</day><month>11</month><year>2025</year></date>
+<date date-type="accepted"><day>12</day><month>1</month><year>2026</year></date>
+</history><permissions><!--&#x000a9; 2026 Clinical and Translational Medicine published by John Wiley & Sons Australia, Ltd on behalf of Shanghai Institute of Clinical Bioinformatics.--><copyright-statement content-type="article-copyright">&#x000a9; 2026 The Author(s). <italic toggle="yes">Clinical and Translational Medicine</italic> published by John Wiley &#x00026; Sons Australia, Ltd on behalf of Shanghai Institute of Clinical Bioinformatics.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:CTM2-16-e70599.pdf"/><counts><fig-count count="4"/><table-count count="0"/><page-count count="7"/><word-count count="2821"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>February 2026</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.8 mode:remove_FC converted:08.02.2026</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="opening-section" id="ctm270599-sec-0010"><label>1</label><p>Dear Editor,</p><p>Type I interferon (IFN) signalling and neutrophil extracellular traps (NETs) formation are the primary contributors to the pathogenesis of systemic lupus erythematosus (SLE).<xref rid="ctm270599-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref>, <xref rid="ctm270599-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> Anifrolumab, a recently approved monoclonal antibody prescribed for moderate to severe SLE,<xref rid="ctm270599-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref> selectively inhibits type I IFN signalling but demonstrates incomplete efficacy in many patients.<xref rid="ctm270599-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref> We found that NET&#x02010;activated monocytes release CCL5 and promote CD4+ T cell proliferation independently of type I IFN signalling, underscoring a distinct, NET&#x02010;driven mechanism in SLE that functions outside canonical type I IFN pathway. Our data highlight the need for complementary therapies targeting NETs in patients unresponsive to anifrolumab treatment.</p><p>The chemokine CCL5 (RANTES), a potential biomarker elevated in SLE patients,<xref rid="ctm270599-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref> may contribute to disease progression by mediating leukocytes chemotaxis<xref rid="ctm270599-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> or potentially exerting a previously unrecognized immunostimulatory function. We confirmed that plasma CCL5 concentrations were notably elevated in seven SLE patients in remission than in healthy donors (HD) (Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1A</xref>). In a 2&#x02010;year longitudinal study, we screened nine active SLE patients, excluding patients who developed antiphospholipid syndrome.<xref rid="ctm270599-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref> CCL5 levels were measured and plotted alongside Systemic Lupus Erythematosus Disease Activity Index (SLEDAI) scores (Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1B</xref>) or flare status (Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1C</xref>) for a representative case (Pt. 06), with same analyses shown for the other included patients (Figures <xref rid="ctm270599-supinfo-0001" ref-type="">S1</xref> and <xref rid="ctm270599-supinfo-0001" ref-type="">S2</xref>). Across the cohort, CCL5 levels normalized to individual baselines were elevated during periods of high SLEDAI (Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1D,E</xref>) and flares (Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1F</xref>), supporting its potential as a dynamic disease activity marker. To further explore the functional axis of CCL5, we assessed the expression of its highest&#x02010;affinity receptor CCR5, on monocytes from SLE patients and healthy controls. Monocyte subsets were identified as shown in Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1G</xref>. While the overall distribution of monocyte subclasses was comparable between HD and SLE groups (Figure <xref rid="ctm270599-supinfo-0001" ref-type="">S3A</xref>), monocytes from SLE patients exhibited a notable reduction in CD16 expression (Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1H</xref>).<xref rid="ctm270599-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref> Monocytes from SLE patients displayed higher surface expression of CCR5 compared to those from healthy donors (Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1I,J</xref>), particularly within the pro&#x02010;inflammatory classical and intermediate subsets (Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1K</xref>). Within individual donors, higher plasma CCL5 levels are associated with increased CCR5 expression on monocytes (Figure&#x000a0;<xref rid="ctm270599-fig-0001" ref-type="fig">1L</xref>).</p><fig position="float" fig-type="FIGURE" id="ctm270599-fig-0001"><label>FIGURE 1</label><caption><p>Plasma CCL5 levels are increased in systemic lupus erythematosus (SLE) patients compared with healthy donors and correlate with disease activity and flare severity. Consistently, monocytes from SLE patients exhibit elevated CCR5 expression relative to healthy donors. (A). CCL5 concentrations in plasma from healthy donors and SLE patients in remission (<italic toggle="yes">n&#x000a0;</italic>=&#x000a0;7 per group, age&#x02010; and gender&#x02010;matched). Wilcoxon test was applied. (B). Grouped plot of CCL5 plasma levels and SLE Disease Activity Index (SLEDAI) scores in a representative patient (Pt. 06). (C). Grouped plot of CCL5 plasma levels and flare status in Pt. 06. (D). Relative plasma CCL5 levels normalized to individual baseline (defined as the average of timepoints with SLEDAI &#x02264; 4 for each patient). Kruskal&#x02013;Wallis test was used to compare relative CCL5 levels across three SLEDAI groups. (E). Correlation between relative CCL5 levels and SLEDAI scores across all patients. For each patient, relative CCL5 levels were averaged across the time points corresponding to each distinct SLEDAI score. Pearson correlation coefficient (r) and P&#x02010;value are shown. (F). Relative plasma CCL5 levels normalized to individual baseline (defined as the average CCL5 level when flare&#x000a0;=&#x000a0;0). Flare scoring: 0&#x000a0;=&#x000a0;no flare; 1&#x000a0;=&#x000a0;mild flare; 2&#x000a0;=&#x000a0;severe flare. A Mann&#x02013;Whitney U test was applied to compare relative CCL5 levels between the no flare (0) and flare (1, 2) groups (A, D and F) Data presented as scatter dot plots with lines at median. (G). Representative flow cytometry plots showing CD14 and CD16 expression on monocytes from healthy donors and SLE patients. Classical monocytes (CM), intermediate monocytes (IM) and non&#x02010;classical monocytes (NCM). (H). CD16 expression on CM, IM and NCM in HD and SLE patients. Wilcoxon test was applied. (I). Representative histogram comparing CCR5 surface expression on monocytes from HD and SLE patients. (J). Quantification of CCR5 surface expression on monocytes in HD and SLE groups. Wilcoxon test was applied. (K). CCR5 expression on monocyte subsets (CM, IM and NCM) from HD and SLE patients. Wilcoxon test was applied. Mean fluorescence intensity (MFI) indicates marker surface expression. Data represent mean&#x000a0;&#x000b1;&#x000a0;SEM from six donors. (L). Correlation between plasma CCL5 levels and monocyte CCR5 expression in six SLE patients in remission and six age&#x02010; and gender&#x02010;matched healthy donors. Pearson correlation coefficient (r) and P&#x02010;value are shown. Each dot represents one donor. Statistical significance was defined as follows: 0.1234 (ns), 0.0332 (*), 0.0021 (**), 0.0002 (***),&#x000a0;&#x0003c;&#x000a0;0.0001 (****). The samples used in panels A and G&#x02010;L were obtained from the INTERFERON cohort (see Table <xref rid="ctm270599-supinfo-0001" ref-type="">S1</xref>), while the samples used in panels B to F were derived from the PROFILE cohort (see Table <xref rid="ctm270599-supinfo-0001" ref-type="">S2</xref>).</p></caption><graphic xlink:href="CTM2-16-e70599-g002" position="anchor" id="jats-graphic-1"/></fig><p>To investigate the mechanisms driving CCL5/CCR5 upregulation in SLE, we mimicked the disease environment in vitro by stimulating monocytes from healthy donors with IFN&#x003b1; and NETs induced by LPS&#x02010;activated platelet.<xref rid="ctm270599-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref>, <xref rid="ctm270599-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref> We found that IFN&#x003b1; and NETs synergistically regulate monocyte responses: CCL5 mRNA expression is upregulated by combined IFN&#x003b1; and NETs stimulation (Figure&#x000a0;<xref rid="ctm270599-fig-0002" ref-type="fig">2B</xref>), while CCL5 protein secretion is primarily induced by NETs in a DNA&#x02010;dependent manner (Figure&#x000a0;<xref rid="ctm270599-fig-0002" ref-type="fig">2C&#x02013;E</xref>). Conversely, CCR5 mRNA is increased by IFN&#x003b1; alone (Figure&#x000a0;<xref rid="ctm270599-fig-0002" ref-type="fig">2F</xref>), but CCR5 surface protein expression on monocytes is maximally enhanced by the combined effect of IFN&#x003b1; and NETs (Figure&#x000a0;<xref rid="ctm270599-fig-0002" ref-type="fig">2G</xref>). Additionally, IFN&#x003b1; stimulation selectively increases CD80 expression on monocytes (Figure <xref rid="ctm270599-supinfo-0001" ref-type="">S4A,B</xref>), suggesting a potential for increased monocyte&#x02010;mediated T cell activation. To test whether CCL5 directly influenced T cell responses, we stimulated purified T cells with recombinant CCL5. Although CCL5 increased CCR5 expression on CD4+ T cells (Figure&#x000a0;<xref rid="ctm270599-fig-0002" ref-type="fig">2I</xref>), it did not promote their proliferation (Figure&#x000a0;<xref rid="ctm270599-fig-0002" ref-type="fig">2J</xref>) or activation markers expression (Figure&#x000a0;<xref rid="ctm270599-fig-0002" ref-type="fig">2K&#x02013;M</xref>), indicating that additional signals are required to elicit functional T cell responses.</p><fig position="float" fig-type="FIGURE" id="ctm270599-fig-0002"><label>FIGURE 2</label><caption><p>Interferon alpha (IFN&#x003b1;) and/or neutrophil extracellular trap (NET) exposure stimulates CCL5 and CCR5 upregulation in healthy monocytes; CCL5 does not directly stimulate CD4+ T cell activation or proliferation. (A). Experimental design: Negatively selected monocytes were cultured for 6&#x000a0;h under four conditions: medium alone (unstimulated), IFN&#x003b1; (100&#x000a0;U/mL), NETs (200&#x000a0;ng/mL), or a combination of IFN&#x003b1; and NETs. Following stimulation, culture supernatants were collected for CCL5 ELISA, and cells were harvested for extracellular staining and analysis by flow cytometry. (B). Relative CCL5 mRNA expression measured by Q&#x02010;PCR (mean&#x000a0;&#x000b1;&#x000a0;SEM, <italic toggle="yes">n</italic>&#x000a0;=&#x000a0;4). (C). CCL5 secretion in monocyte culture supernatants measured by ELISA (median indicated, <italic toggle="yes">n</italic>&#x000a0;=&#x000a0;12). (D). Dose&#x02010;dependent CCL5 secretion in response to increasing concentrations of NETs (median indicated, <italic toggle="yes">n</italic>&#x000a0;=&#x000a0;6). (E). CCL5 secretion after stimulation with DNase&#x02010;digested NETs (deNETs), containing approximately one&#x02010;third of the DNA content of intact NETs (median indicated, <italic toggle="yes">n</italic>&#x000a0;=&#x000a0;6). (F). CCR5 mRNA expression in monocytes (mean&#x000a0;&#x000b1;&#x000a0;SEM, <italic toggle="yes">n</italic>&#x000a0;=&#x000a0;4). (G). Percentage of CCR5&#x02010;positive monocytes among total monocytes analysed by flow cytometry (mean&#x000a0;&#x000b1;&#x000a0;SEM, <italic toggle="yes">n</italic>&#x000a0;=&#x000a0;6). (H). Experimental design: Purified CD3+ T cells were cultured for 72&#x000a0;h with increasing concentrations of recombinant human CCL5 (0, 50, 100, 200 and 400&#x000a0;ng/mL) in the presence of CD3/CD28 activating beads at a ratio of 50&#x000a0;000 beads (1.25&#x000a0;&#x000b5;L) per 1 &#x000d7; 10<sup>6</sup> T cells. (I). CCR5 surface expression on CD4+ T cells after CCL5 stimulation. (J). CD4+ T cell proliferation measured by CellTrace Violet (CTV) dilution after CCL5 treatment. Expression of activation markers CD25 (K), CD69 (L), and HLA&#x02010;DR (M) on CD4+ T cells following CCL5 stimulation. MFI represents mean fluorescence intensity. Data represent mean&#x000a0;&#x000b1;&#x000a0;SEM from six donors. Statistical significance was defined as follows: 0.1234 (ns), 0.0332 (*), 0.0021 (**), 0.0002 (***),&#x000a0;&#x0003c;&#x000a0;0.0001 (****). The Friedman test with Dunn's multiple comparisons test was applied to all comparisons.</p></caption><graphic xlink:href="CTM2-16-e70599-g003" position="anchor" id="jats-graphic-3"/></fig><p>Given that CCL5 alone does not activate T cells, we investigated whether IFN&#x003b1;&#x02010; and/or NET&#x02010;stimulated monocytes could promote CD4+ T cell activation and proliferation. To approximate physiological conditions in PBMCs culture, monocyte&#x02010;derived dendritic cells (moDCs) were generated and stimulated with IFN&#x003b1; and/or NETs (Figure&#x000a0;<xref rid="ctm270599-fig-0003" ref-type="fig">3A</xref>). After 24&#x000a0;h, T cell activation markers were analysed, and proliferation was assessed following 9 days of culture. Our data showed that IFN&#x003b1; exhibited anti&#x02010;proliferative effects on CD4+ T cells,<xref rid="ctm270599-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref> while NETs enhanced proliferation (Figure&#x000a0;<xref rid="ctm270599-fig-0003" ref-type="fig">3B</xref>) and HLA&#x02010;DR expression of CD4+ T cells (Figure <xref rid="ctm270599-supinfo-0001" ref-type="">S5E</xref>). CD25 expression was downregulated by IFN&#x003b1; (Figure&#x000a0;<xref rid="ctm270599-fig-0003" ref-type="fig">3C</xref>) and CD69 was upregulated by both stimuli (Figure&#x000a0;<xref rid="ctm270599-fig-0003" ref-type="fig">3D</xref>). Subsequently, isolated monocytes and autologous CD3+ T cells were co&#x02010;cultured without or with the presence of anifrolumab following monocyte pre&#x02010;stimulation with IFN&#x003b1; and/or NETs. NETs consistently induced CD4+ T cell proliferation, which was not inhibited by anifrolumab (Figure&#x000a0;<xref rid="ctm270599-fig-0003" ref-type="fig">3G</xref>). Anifrolumab enhanced CD25 expression in the presence of IFN&#x003b1; (Figure&#x000a0;<xref rid="ctm270599-fig-0003" ref-type="fig">3H</xref>) and fully abrogated IFN&#x003b1;&#x02010;induced upregulation of CD69 (Figure&#x000a0;<xref rid="ctm270599-fig-0003" ref-type="fig">3I</xref>) and IFNAR1 (Figure&#x000a0;<xref rid="ctm270599-fig-0003" ref-type="fig">3J</xref>). These data support that NET&#x02010;matured monocytes/moDCs enhance CD4+ T cell proliferation and that this NET&#x02010;driven activation is resistant to IFNAR blockade.</p><fig position="float" fig-type="FIGURE" id="ctm270599-fig-0003"><label>FIGURE 3</label><caption><p>Anifrolumab does not inhibit NETs&#x02010;induced CD4+ T cell activation and proliferation (co&#x02010;cultures with moDC/monocytes). (A). Schematic representation of the experimental workflow corresponding to plots B&#x02013;E. Monocytes within PBMCs were differentiated with IL&#x02010;4 and GM&#x02010;CSF for 24&#x000a0;h, then PBMC cultures were stimulated with IFN&#x003b1; and/or NETs for another 24&#x000a0;h. Cells were either analysed for activation markers at 24&#x000a0;h or maintained in IL2, IL7 and IL15 supplemented medium to assess CD4+ T cell proliferation at day 9. (B). CD4+ T cell proliferation after 9 days, assessed by CellTrace Violet (CTV) using flow cytometry. CD25 (C), CD69 (D) and IFNAR1 (E) expression on CD4+ T cells after 24&#x000a0;h of stimulation, measured by flow cytometry. MFI&#x000a0;=&#x000a0;mean fluorescence intensity. Data represent mean&#x000a0;&#x000b1;&#x000a0;SEM from 10 donors. (F). Overview of the experimental workflow for monocyte and T cell co&#x02010;culture corresponding to the results shown in panels G&#x02013;J. Monocytes and autologous CD3+ T cells were isolated from the same donor. Monocytes were pre&#x02010;stimulated with IFN&#x003b1; and/or NETs for 6&#x000a0;h, while CD3+ T cells were stained with CTV and activated using CD3/CD28 activating beads at a ratio of 50&#x000a0;000 beads (1.25&#x000a0;&#x000b5;L) per 1 &#x000d7; 10<sup>6</sup> T cells, in the presence or absence of anifrolumab. The pre&#x02010;stimulated monocytes and activated T cells were then combined and co&#x02010;incubated for 72&#x000a0;h. (G). CD4+ T cell division profiles at 72&#x000a0;h under indicated stimulations. (H). CD25 expression on CD4+ T cells in monocyte&#x02010;T cell coculture after 72&#x000a0;h. (I). CD69 expression on CD4+ T cells in monocyte&#x02010;T cell coculture after 72&#x000a0;h. (J). IFNAR1 expression on CD4+ T cells in monocyte&#x02010;T cell coculture after 72&#x000a0;h. MFI&#x000a0;=&#x000a0;mean fluorescence intensity. Data represent mean&#x000a0;&#x000b1;&#x000a0;SEM from six donors. Statistical significance was defined as follows: 0.1234 (ns), 0.0332 (*), 0.0021 (**), 0.0002 (***),&#x000a0;&#x0003c;&#x000a0;0.0001 (****). Pairwise Wilcoxon tests were performed for each column pair, and P&#x02010;values were adjusted using the Bonferroni method to account for multiple comparisons.</p></caption><graphic xlink:href="CTM2-16-e70599-g004" position="anchor" id="jats-graphic-5"/></fig><p>To examine the direct influences of IFN&#x003b1; and NETs on T cells or monocytes, we stimulated each cell type separately with IFN&#x003b1; and/or NETs, with or without anifrolumab involved (Figure&#x000a0;<xref rid="ctm270599-fig-0004" ref-type="fig">4A</xref>). IFN&#x003b1; exposure attenuated proliferation of CD4+ T cells (Figure&#x000a0;<xref rid="ctm270599-fig-0004" ref-type="fig">4B</xref>)<xref rid="ctm270599-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref> and reduced CD25 expression (Figure&#x000a0;<xref rid="ctm270599-fig-0004" ref-type="fig">4C</xref>), both of which were reversed by anifrolumab presence. IFN&#x003b1; increased CD69 and IFNAR1 surface expression, which was blocked by anifrolumab. These IFN&#x003b1;&#x02010;driven changes corroborate our co&#x02010;culture findings (Figure&#x000a0;<xref rid="ctm270599-fig-0003" ref-type="fig">3G&#x02013;J</xref>). The NET&#x02010;driven enhancement of CD4+ T cell proliferation is mediated indirectly via monocyte activation, substantiating the role of NET&#x02010;induced monocyte phenotypic modulation in facilitating T cell proliferation. To further characterize the direct phenotypic and functional changes of monocytes in prolonged stimulation of IFN&#x003b1; and/or NETs, we cultured monocytes for up to 36&#x000a0;h. IFN&#x003b1; induced upregulation of maturation markers CD80 (Figure&#x000a0;<xref rid="ctm270599-fig-0004" ref-type="fig">4H</xref>), CD86 (Figure&#x000a0;<xref rid="ctm270599-fig-0004" ref-type="fig">4I</xref>), HLA&#x02010;ABC (Figure <xref rid="ctm270599-supinfo-0001" ref-type="">S6A</xref>) and HLA&#x02010;DR (Figure <xref rid="ctm270599-supinfo-0001" ref-type="">S6B</xref>), which were all significantly reduced by anifrolumab treatment. In contrast, NETs did not induce observable changes in these markers, suggesting that NET&#x02010;activated monocytes adopt a distinct activation state. Supporting this, cytokine analysis of monocyte supernatants revealed that NETs selectively increased CCL2 (Figure <xref rid="ctm270599-supinfo-0001" ref-type="">S6C</xref>), IL&#x02010;6 (Figure <xref rid="ctm270599-supinfo-0001" ref-type="">S6D</xref>), and IL&#x02010;1&#x003b2; (Figure <xref rid="ctm270599-supinfo-0001" ref-type="">S6G</xref>). The CCL2 increase was abolished by anifrolumab, while IL&#x02010;6 and IL&#x02010;1&#x003b2; were unaffected, other cytokines, including IFN&#x003b3; (E), TNF&#x003b1; (F), and IL&#x02010;8 (H), were unchanged. These results suggest that NETs activate monocytes differently from IFN&#x003b1;, producing a cytokine profile that may enhance CD4+ T cell proliferation. Besides, NETs robustly triggered CCL5 secretion by monocytes, which was unaffected by IFNAR blockade (Figure&#x000a0;<xref rid="ctm270599-fig-0004" ref-type="fig">4J</xref>).</p><fig position="float" fig-type="FIGURE" id="ctm270599-fig-0004"><label>FIGURE 4</label><caption><p>Anifrolumab pretreatment does inhibit IFN&#x003b1;&#x02010;mediated effects on monocyte and T cell activation, but not NETs&#x02010;mediated CCL5 secretion of monocytes. (A). Schematic of the experimental workflow to plots B&#x02010;E. CD3+ T cells isolated from healthy donors were stained with CellTrace Violet (CTV) and cultured for 72&#x000a0;h with IFN&#x003b1; and/or NETs in the presence of CD3/CD28 activating beads. To assess the role of type I IFN signalling, parallel cultures were treated with the IFNAR1&#x02010;blocking antibody anifrolumab. (B). Percentage of proliferated CD4+ T cells after 72&#x000a0;h of culture with IFN&#x003b1;, NETs, IFN&#x003b1;+ NETs, with or without anifrolumab. (C). CD25 expression on CD4+ T cells at 72&#x000a0;h. (D). CD69 expression on CD4+ T cells at 72&#x000a0;h. (E). IFNAR1 expression on CD4+ T cells at 72&#x000a0;h. MFI&#x000a0;=&#x000a0;mean fluorescence intensity. Data represent mean&#x000a0;&#x000b1;&#x000a0;SEM from six donors. (F). Monocytes were isolated and stimulated with IFN&#x003b1; and/or NETs for 36&#x000a0;h, in the presence or absence of anifrolumab, then analysed by flow cytometry, as shown in plots G&#x02013;I. (G). CCR5 expression on monocytes. (H). CD80 expression on monocytes. (I). CD86 expression on monocytes. MFI&#x000a0;=&#x000a0;mean fluorescence intensity. Data represent mean&#x000a0;&#x000b1;&#x000a0;SEM from six donors. (J). CCL5 secretion by monocytes (as measured by ELISA), scatter dot lined at median (<italic toggle="yes">n</italic>&#x000a0;=&#x000a0;5). Statistical significance was defined as follows: 0.1234 (ns), 0.0332 (*), 0.0021 (**), 0.0002 (***),&#x000a0;&#x0003c;&#x000a0;0.0001 (****). Wilcoxon tests were performed for all column pairs and corrected for multiple comparisons.</p></caption><graphic xlink:href="CTM2-16-e70599-g001" position="anchor" id="jats-graphic-7"/></fig><p>In conclusion, our study identifies that NET&#x02010;activated monocytes promote CCL5 production and CD4+ T cell proliferation in SLE via a pathway independent of type I IFN signalling. While anifrolumab effectively suppresses IFN&#x003b1;&#x02010;mediated monocyte and T cell activation, it does not inhibit NET&#x02010;induced responses. Elevated plasma CCL5 levels correlate with disease activity, suggesting that CCL5 reflects ongoing inflammatory activity within a broader cytokine network driven NET&#x02010;activated monocyte. These findings suggest that persistent activation of monocytes by NETs may contribute to the limited efficacy of anifrolumab in certain SLE patients. By emphasizing the role of type I IFN&#x02010;independent, monocyte&#x02010;driven inflammatory pathways, our study underscores the need for complementary therapeutic strategies targeting both type I IFN signalling and NET&#x02010;activated myeloid responses. These findings also encourage further investigation into the molecular mechanisms underlying NET&#x02010;induced monocyte activation, including in vivo validation and extended functional studies, which may improve outcomes in patients with type I IFN&#x02010;independent or anifrolumab&#x02010;refractory disease.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="ctm270599-supinfo-0001" position="float" content-type="local-data"/><supplementary-material id="ctm270599-supitem-0001" position="float" content-type="local-data"><caption><p>Supporting information</p></caption><media xlink:href="CTM2-16-e70599-s004.ai"/></supplementary-material><supplementary-material id="ctm270599-supitem-0002" position="float" content-type="local-data"><caption><p>Supporting information</p></caption><media xlink:href="CTM2-16-e70599-s006.ai"/></supplementary-material><supplementary-material id="ctm270599-supitem-0003" position="float" content-type="local-data"><caption><p>Supporting information</p></caption><media xlink:href="CTM2-16-e70599-s003.ai"/></supplementary-material><supplementary-material id="ctm270599-supitem-0004" position="float" content-type="local-data"><caption><p>Supporting information</p></caption><media xlink:href="CTM2-16-e70599-s007.ai"/></supplementary-material><supplementary-material id="ctm270599-supitem-0005" position="float" content-type="local-data"><caption><p>Supporting information</p></caption><media xlink:href="CTM2-16-e70599-s008.ai"/></supplementary-material><supplementary-material id="ctm270599-supitem-0006" position="float" content-type="local-data"><caption><p>Supporting information</p></caption><media xlink:href="CTM2-16-e70599-s001.ai"/></supplementary-material><supplementary-material id="ctm270599-supitem-0007" position="float" content-type="local-data"><caption><p>Supporting information</p></caption><media xlink:href="CTM2-16-e70599-s002.odt"/></supplementary-material><supplementary-material id="ctm270599-supitem-0008" position="float" content-type="local-data"><caption><p>Supporting information</p></caption><media xlink:href="CTM2-16-e70599-s005.docx"/></supplementary-material></sec></body><back><ack id="ctm270599-sec-0020"><title>ACKNOWLEDGEMENTS</title><p>We acknowledge the patients and healthy volunteers who contributed samples for this study. We also appreciate the clinical team for their help in participant recruitment and sample collection.</p></ack><ref-list id="ctm270599-bibl-0001"><title>REFERENCES</title><ref id="ctm270599-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="ctm270599-cite-0002">
+<string-name>
+<surname>Lood</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Blanco</surname>
+<given-names>LP</given-names>
+</string-name>, <string-name>
+<surname>Purmalek</surname>
+<given-names>MM</given-names>
+</string-name>, et&#x000a0;al. <article-title>Neutrophil extracellular traps enriched in oxidized mitochondrial DNA are interferogenic and contribute to lupus&#x02010;like disease</article-title>. <source>Nat Med</source>. <year>2016</year>;<volume>22</volume>(<issue>2</issue>):<fpage>146</fpage>&#x02010;<lpage>153</lpage>. doi:<ext-link xlink:href="http://10.1038/nm.4027" ext-link-type="uri">10.1038/nm.4027</ext-link>
+<pub-id pub-id-type="pmid">26779811</pub-id>
+</mixed-citation></ref><ref id="ctm270599-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="ctm270599-cite-0003">
+<string-name>
+<surname>Garcia&#x02010;Romo</surname>
+<given-names>GS</given-names>
+</string-name>, <string-name>
+<surname>Caielli</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Vega</surname>
+<given-names>B</given-names>
+</string-name>, et&#x000a0;al. <article-title>Netting neutrophils are major inducers of type I IFN production in pediatric systemic lupus erythematosus</article-title>. <source>Sci Transl Med</source>. <year>2011</year>;<volume>3</volume>(<issue>73</issue>):<fpage>73ra20</fpage>&#x02010;<lpage>73ra20</lpage>. doi:<ext-link xlink:href="http://10.1126/scitranslmed.3001201" ext-link-type="uri">10.1126/scitranslmed.3001201</ext-link>
+</mixed-citation></ref><ref id="ctm270599-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="ctm270599-cite-0004">
+<string-name>
+<surname>Furie</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Khamashta</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Merrill</surname>
+<given-names>JT</given-names>
+</string-name>, et&#x000a0;al. <article-title>Anifrolumab, an anti&#x02013;interferon&#x02010;&#x003b1; receptor monoclonal antibody, in moderate&#x02010;to&#x02010;severe systemic lupus erythematosus</article-title>. <source>Arthritis Rheumatol</source>. <year>2017</year>;<volume>69</volume>(<issue>2</issue>):<fpage>376</fpage>&#x02010;<lpage>386</lpage>. doi:<ext-link xlink:href="http://10.1002/art.39962" ext-link-type="uri">10.1002/art.39962</ext-link>
+<pub-id pub-id-type="pmid">28130918</pub-id>
+</mixed-citation></ref><ref id="ctm270599-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="ctm270599-cite-0005">
+<string-name>
+<surname>Gatto</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Zen</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Cruciani</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Iaccarino</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Doria</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Navigating the landscape of SLE treatment: an expert viewpoint on the rationality and limitations of early biologic intervention</article-title>. <source>Autoimmun Rev</source>. <year>2024</year>;<volume>23</volume>(<issue>10</issue>):<elocation-id>103612</elocation-id>. doi:<ext-link xlink:href="http://10.1016/j.autrev.2024.103612" ext-link-type="uri">10.1016/j.autrev.2024.103612</ext-link>
+<pub-id pub-id-type="pmid">39218330</pub-id>
+</mixed-citation></ref><ref id="ctm270599-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="ctm270599-cite-0006">
+<string-name>
+<surname>Lit</surname>
+<given-names>LC</given-names>
+</string-name>, <string-name>
+<surname>Wong</surname>
+<given-names>CK</given-names>
+</string-name>, <string-name>
+<surname>Tam</surname>
+<given-names>LS</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>EK</given-names>
+</string-name>, <string-name>
+<surname>Lam</surname>
+<given-names>CW</given-names>
+</string-name>. <article-title>Raised plasma concentration and ex vivo production of inflammatory chemokines in patients with systemic lupus erythematosus</article-title>. <source>Ann Rheum Dis</source>. <year>2006</year>;<volume>65</volume>(<issue>2</issue>):<fpage>209</fpage>&#x02010;<lpage>215</lpage>. doi:<ext-link xlink:href="http://10.1136/ard.2005.038315" ext-link-type="uri">10.1136/ard.2005.038315</ext-link>
+<pub-id pub-id-type="pmid">15975968</pub-id>
+</mixed-citation></ref><ref id="ctm270599-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="ctm270599-cite-0007">
+<string-name>
+<surname>Rawat</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Tewari</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>X</given-names>
+</string-name>, et&#x000a0;al. <article-title>CCL5&#x02010;producing migratory dendritic cells guide CCR5+ monocytes into the draining lymph nodes</article-title>. <source>J Exp Med</source>. <year>2023</year>;<volume>220</volume>(<issue>6</issue>). doi:<ext-link xlink:href="http://10.1084/jem.20222129" ext-link-type="uri">10.1084/jem.20222129</ext-link>
+</mixed-citation></ref><ref id="ctm270599-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="ctm270599-cite-0008">
+<string-name>
+<surname>Patsouras</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name>
+<surname>Sikara</surname>
+<given-names>MP</given-names>
+</string-name>, <string-name>
+<surname>Grika</surname>
+<given-names>EP</given-names>
+</string-name>, <string-name>
+<surname>Moutsopoulos</surname>
+<given-names>HM</given-names>
+</string-name>, <string-name>
+<surname>Tzioufas</surname>
+<given-names>AG</given-names>
+</string-name>, <string-name>
+<surname>Vlachoyiannopoulos</surname>
+<given-names>PG</given-names>
+</string-name>. <article-title>Elevated expression of platelet&#x02010;derived chemokines in patients with antiphospholipid syndrome</article-title>. <source>J Autoimmun</source>. <year>2015</year>;<volume>65</volume>:<fpage>30</fpage>&#x02010;<lpage>37</lpage>. doi:<ext-link xlink:href="http://10.1016/j.jaut.2015.08.001" ext-link-type="uri">10.1016/j.jaut.2015.08.001</ext-link>
+<pub-id pub-id-type="pmid">26283469</pub-id>
+</mixed-citation></ref><ref id="ctm270599-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="ctm270599-cite-0009">
+<string-name>
+<surname>Burbano</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Vasquez</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Rojas</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Modulatory effects of CD14+CD16++ monocytes on CD14++CD16&#x02212; monocytes: a possible explanation of monocyte alterations in systemic lupus erythematosus</article-title>. <source>Arthritis Rheumatol</source>. <year>2014</year>;<volume>66</volume>(<issue>12</issue>):<fpage>3371</fpage>&#x02010;<lpage>3381</lpage>. doi:<ext-link xlink:href="http://10.1002/art.38860" ext-link-type="uri">10.1002/art.38860</ext-link>
+<pub-id pub-id-type="pmid">25168844</pub-id>
+</mixed-citation></ref><ref id="ctm270599-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="ctm270599-cite-0010">
+<string-name>
+<surname>Clark</surname>
+<given-names>SR</given-names>
+</string-name>, <string-name>
+<surname>Ma</surname>
+<given-names>AC</given-names>
+</string-name>, <string-name>
+<surname>Tavener</surname>
+<given-names>SA</given-names>
+</string-name>, et&#x000a0;al. <article-title>Platelet TLR4 activates neutrophil extracellular traps to ensnare bacteria in septic blood</article-title>. <source>Nat Med</source>. <year>2007</year>;<volume>13</volume>(<issue>4</issue>):<fpage>463</fpage>&#x02010;<lpage>469</lpage>. doi:<ext-link xlink:href="http://10.1038/nm1565" ext-link-type="uri">10.1038/nm1565</ext-link>
+<pub-id pub-id-type="pmid">17384648</pub-id>
+</mixed-citation></ref><ref id="ctm270599-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="ctm270599-cite-0011">
+<string-name>
+<surname>Crouse</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Kalinke</surname>
+<given-names>U</given-names>
+</string-name>, <string-name>
+<surname>Oxenius</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Regulation of antiviral T cell responses by type I interferons</article-title>. <source>Nat Rev Immunol</source>. <year>2015</year>;<volume>15</volume>(<issue>4</issue>):<fpage>231</fpage>&#x02010;<lpage>242</lpage>. doi:<ext-link xlink:href="http://10.1038/nri3806" ext-link-type="uri">10.1038/nri3806</ext-link>
+<pub-id pub-id-type="pmid">25790790</pub-id>
+</mixed-citation></ref></ref-list></back></article>

@@ -1,0 +1,409 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="case-report"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="issn">2168-8184</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><publisher><publisher-name>Cureus</publisher-name><publisher-loc>Palo Alto (CA)</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmc">PMC12883233</article-id><article-id pub-id-type="doi">10.7759/cureus.101172</article-id><article-categories><subj-group subj-group-type="heading"><subject>Other</subject></subj-group><subj-group><subject>Neurology</subject></subj-group><subj-group><subject>Genetics</subject></subj-group></article-categories><title-group><article-title>A Case of Familial Paroxysmal Non-kinesigenic Dyskinesia in Mainland China: A Clinical and Genetic Investigation</article-title></title-group><contrib-group><contrib contrib-type="editor"><name><surname>Muacevic</surname><given-names>Alexander</given-names></name></contrib><contrib contrib-type="editor"><name><surname>Adler</surname><given-names>John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author"><name><surname>Zhang</surname><given-names>Wenhan</given-names></name><xref rid="aff-1" ref-type="aff">1</xref><xref rid="aff-2" ref-type="aff">2</xref></contrib><contrib contrib-type="author"><name><surname>Li</surname><given-names>Jingwen</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Xie</surname><given-names>Ruichuan</given-names></name><xref rid="aff-3" ref-type="aff">3</xref></contrib><contrib contrib-type="author"><name><surname>Lu</surname><given-names>Zhongjiao</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Zhao</surname><given-names>Nan</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Wang</surname><given-names>Kan</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Li</surname><given-names>Yansheng</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Li</surname><given-names>Shuang</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name><surname>Wang</surname><given-names>Gang</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author" corresp="yes"><name><surname>Gao</surname><given-names>Li</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Department of Neurology, Renji Hospital, School of Medicine, Shanghai Jiaotong University, Shanghai, CHN </aff><aff id="aff-2">
+<label>2</label>
+Department of Neurology, Huashan Hospital, Shanghai Medical College, National Center for Neurological Disorders, Fudan University, Shanghai, CHN </aff><aff id="aff-3">
+<label>3</label>
+Department of Neurology, Sanya People's Hospital, Sanya, CHN </aff><author-notes><corresp id="cor1">
+Li Gao <email>gaoli246619@126.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>9</day><month>1</month><year>2026</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>1</month><year>2026</year></pub-date><volume>18</volume><issue>1</issue><elocation-id>e101172</elocation-id><history><date date-type="accepted"><day>7</day><month>1</month><year>2026</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2026, Zhang et al.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Zhang et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xlink:href="https://cureus.com/articles/450352-a-case-of-familial-paroxysmal-non-kinesigenic-dyskinesia-in-mainland-china-a-clinical-and-genetic-investigation">This article is available from https://cureus.com/articles/450352-a-case-of-familial-paroxysmal-non-kinesigenic-dyskinesia-in-mainland-china-a-clinical-and-genetic-investigation</self-uri><abstract><p>Paroxysmal non-kinesigenic dyskinesia (PNKD) is an autosomal dominant condition characterized by recurring dystonia or mixed chorea and ballism caused by emotional stress, exhaustion, coffee, alcohol, menstruation, and other factors. Here, we provide a large family PNKD pedigree from mainland China, where the same c.20C4T (p.Ala7Val) mutation in exon 1 of the PNKD gene was genetically confirmed to be present in nine affected individuals. Here,&#x000a0;we report&#x000a0;a rarely described Asian PNKD pedigree and aim to widen the clinical and genetic spectrum of PNKD while also providing fresh diagnostic insights for this rare condition.</p></abstract><kwd-group kwd-group-type="author"><kwd>case report</kwd><kwd>mutation</kwd><kwd>myofibrillogenesis regulator</kwd><kwd>paroxysmal dyskinesias</kwd><kwd>paroxysmal non-kinesigenic dyskinesia</kwd></kwd-group><funding-group><funding-statement>The study was supported by the Fundamental Research Funds for the Central Universities (YG2023QNB10) and the NSFC Promotion Program of Ren Ji Hospital, Shanghai Jiao Tong University School of Medicine (RJTJ22-MS-011)</funding-statement></funding-group></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p>Paroxysmal dyskinesias (PxDs) are a group of movement disorders characterized by recurrent episodes of involuntary movements without loss of consciousness. They are commonly classified into four subtypes, namely, paroxysmal kinesigenic dyskinesia (PKD), paroxysmal non-kinesigenic dyskinesia (PNKD), paroxysmal exertion-induced dyskinesia (PED), and paroxysmal hypnogenic dyskinesia (PHD), according to triggers, attack duration, frequency, and response to pharmacologic therapy. PNKD is the second most frequent subtype after PKD, with an estimated incidence of approximately one in 1,000,000. It typically presents with unilateral or bilateral involuntary movements, most often precipitated by alcohol or caffeine-containing beverages (e.g., coffee or tea). During episodes, patients commonly display dystonia, sometimes accompanied by chorea and/or ballism. Familial cases generally follow an autosomal dominant inheritance pattern with incomplete, age-dependent penetrance [<xref rid="REF1" ref-type="bibr">1</xref>]. Although affected individuals share core clinical features, substantial inter-individual variability is observed. Recent genetic studies have identified pathogenic variants in PNKD1, also known as myofibrillogenesis regulator 1 (MR-1), a gene thought to be involved in cellular stress responses and regulation of neurotransmitter release, located on chromosome 2q35, as a major cause of familial disease. To date, three causative PNKD1 variants have been reported: p.Ala7Val, p.Ala9Val, and p.Ala33Pro.</p><p>Case reports of PNKD have predominantly originated from European populations, with only isolated familial reports from other regions. PNKD research in Asian populations is exceedingly restricted, with only single-family cases documented in Japan, Taiwan, mainland China, and elsewhere [<xref rid="REF1" ref-type="bibr">1</xref>-<xref rid="REF4" ref-type="bibr">4</xref>]. The present study reports a case and its four-generation pedigree, comprising a total of 37 affected individuals, with detailed clinical information collected from nine patients.&#x000a0;Through the investigation of this family and a review of the relevant literature, we aim to broaden the understanding of the clinical spectrum, genetic background, and diagnostic considerations of PNKD in the Asian and also international populations.</p></sec><sec sec-type="cases"><title>Case presentation</title><p>Patient information</p><p>A 52-year-old man presented with an&#x000a0;over 20-year history of recurrent involuntary limb movements. His initial episodes were triggered by alcohol intake or physical exertion, manifesting as spasms and stiffness of the left lower limb with foot extension and external rotation. Each attack lasted several minutes to half an hour, resolved spontaneously, and was&#x000a0;not accompanied by loss of consciousness, incontinence, chest tightness, palpitations, or syncope. Anxiety, persistent discomfort in the left lower limb,&#x000a0;and trouble walking were&#x000a0;noted before attacks. Over the past year, attack frequency increased. Previous treatment with carbamazepine was ineffective.&#x000a0;Past&#x000a0;medical history and results of laboratory test were unremarkable.&#x000a0;The cerebrospinal fluid (CSF) testing revealed no abnormalities. White matter lesions&#x000a0;were identified by brain magnetic resonance imaging (MRI), but no other structural abnormalities were noted (Figure <xref rid="FIG1" ref-type="fig">1</xref>).</p><fig position="anchor" fig-type="figure" id="FIG1"><label>Figure 1</label><caption><title>MRI findings of the patient</title><p>Panels A-C showed&#x000a0;no significant structural abnormalities on T1-weighted, T2-weighted, and DWI sequences, whereas panel D clearly demonstrated&#x000a0;white matter lesions (marked by red arrows).</p><p>MRI:&#x000a0;magnetic resonance imaging;&#x000a0;DWI:&#x000a0;diffusion-weighted imaging</p></caption><graphic xlink:href="cureus-0018-00000101172-i01" position="float"/></fig><p>To validate the diagnosis of PNKD, targeted sequencing revealed a heterozygous c.20C&#x0003e;T (p.Ala7Val) mutation in exon 1 of the PNKD gene (Figure&#x000a0;<xref rid="FIG2" ref-type="fig">2</xref>).</p><fig position="anchor" fig-type="figure" id="FIG2"><label>Figure 2</label><caption><title>All of the documented patients showing c.20C4T (p.Ala7Val) mutation (red arrow) in PNKD/MR-1 gene exon 1</title></caption><graphic xlink:href="cureus-0018-00000101172-i02" position="float"/></fig><p>Pharmacologic treatment involved taking 1 mg of clonazepam twice a day, which produced a significant improvement.&#x000a0;Later, the patient was given a thorough treatment plan that included non-pharmacologic treatments aiming&#x000a0;at avoiding recognized PNKD triggers and changing lifestyles like getting enough sleep, reducing psychological stress, and sticking to a daily schedule.</p><p>Pedigree analysis of the family</p><p>Genetic testing and clinical data were collected from the proband's extended family because PNKD frequently manifested in familial instances. An autosomal dominant inheritance pattern was found in this four-generation Chinese mainland family with 37 afflicted members and nine documented patients, based on pedigree data and disease occurrence (Figure&#x000a0;<xref rid="FIG3" ref-type="fig">3</xref>).</p><fig position="anchor" fig-type="figure" id="FIG3"><label>Figure 3</label><caption><title> A pedigree chart depicting the familial relationships among all reported patients</title></caption><graphic xlink:href="cureus-0018-00000101172-i03" position="float"/></fig><p>The age range of onset was 1-32 years old. Patients with PNKD exhibited distal limb rigidity, impaired activities of daily living (ADL), and involuntary body dystonia. Exposure to cold temperature, emotional stress, insufficient sleep, hunger, and exertion or fatigue were common triggers. Most patients had pharmacological treatment, with some responding to clonazepam. A summary of the comprehensive clinical data was provided in Table <xref rid="TAB1" ref-type="table">1</xref>.</p><table-wrap position="float" id="TAB1"><label>Table 1</label><caption><title>Clinical characteristics of the nine documented patients with PNKD mutations</title><p>PNKD:&#x000a0;paroxysmal non-kinesigenic dyskinesia; y/o: years old; m/o: months old; NA: information not available; A: alcohol; ES: emotional stress; CT: cold temperature; H: hunger; EF: exertion or fatigue; IS: insufficient sleep; T: tea; V: vaccination; UST: unable to stand; FEA: facial expression alteration; SD: dysarthria; DT: dystonia; LOADL: loss of activities of daily living; IE: immobility of the extremities; LC: limb clonus; I: incontinence; BV: blurred vision</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Patients
+</td><td rowspan="1" colspan="1">
+2.5
+</td><td rowspan="1" colspan="1">
+3.3
+</td><td rowspan="1" colspan="1">
+3.8
+</td><td rowspan="1" colspan="1">
+3.10
+</td><td rowspan="1" colspan="1">
+3.11
+</td><td rowspan="1" colspan="1">
+3.18
+</td><td rowspan="1" colspan="1">
+4.5
+</td><td rowspan="1" colspan="1">
+4.34
+</td><td rowspan="1" colspan="1">
+5.6
+</td></tr><tr><td rowspan="1" colspan="1">
+Gender
+</td><td rowspan="1" colspan="1">
+Male
+</td><td rowspan="1" colspan="1">
+Male
+</td><td rowspan="1" colspan="1">
+Female
+</td><td rowspan="1" colspan="1">
+Female
+</td><td rowspan="1" colspan="1">
+Male
+</td><td rowspan="1" colspan="1">
+Male
+</td><td rowspan="1" colspan="1">
+Male
+</td><td rowspan="1" colspan="1">
+Male
+</td><td rowspan="1" colspan="1">
+Female
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Age
+</td><td rowspan="1" colspan="1">
+87&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+74&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+62&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+58&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+64&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+53&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+48&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+34&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+1&#x0202f;y/o
+</td></tr><tr><td rowspan="1" colspan="1">
+Age of onset
+</td><td rowspan="1" colspan="1">
+10&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+Childhood
+</td><td rowspan="1" colspan="1">
+Childhood
+</td><td rowspan="1" colspan="1">
+1&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+1&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+32&#x0202f;y/o
+</td><td rowspan="1" colspan="1">
+Childhood
+</td><td rowspan="1" colspan="1">
+Childhood
+</td><td rowspan="1" colspan="1">
+7&#x0202f;m/o
+</td></tr><tr style="background-color:#ccc"><td colspan="10" rowspan="1">
+Frequency
+</td></tr><tr><td rowspan="1" colspan="1">
+Earlier time
+</td><td rowspan="1" colspan="1">
+2-3&#x0202f;per&#x0202f;month
+</td><td rowspan="1" colspan="1">
+1&#x0202f;per&#x0202f;day
+</td><td rowspan="1" colspan="1">
+1&#x0202f;per&#x0202f;day
+</td><td rowspan="1" colspan="1">
+1&#x0202f;per&#x0202f;3&#x0202f;days
+</td><td rowspan="1" colspan="1">
+1&#x0202f;per&#x0202f;20&#x0202f;days
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+Daily
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+N/A
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Latest 2&#x000a0;years
+</td><td rowspan="1" colspan="1">
+Absent
+</td><td rowspan="1" colspan="1">
+1&#x0202f;per&#x0202f;day
+</td><td rowspan="1" colspan="1">
+1&#x0202f;per&#x0202f;3&#x0202f;days
+</td><td rowspan="1" colspan="1">
+1&#x0202f;per&#x0202f;15&#x0202f;days
+</td><td rowspan="1" colspan="1">
+1&#x0202f;per&#x0202f;3&#x0202f;months
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+Monthly
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+N/A
+</td></tr><tr><td rowspan="1" colspan="1">
+Provoked ictal
+</td><td rowspan="1" colspan="1">
+10/10
+</td><td rowspan="1" colspan="1">
+8/10
+</td><td rowspan="1" colspan="1">
+4/10
+</td><td rowspan="1" colspan="1">
+2/10
+</td><td rowspan="1" colspan="1">
+2/10
+</td><td rowspan="1" colspan="1">
+7/10
+</td><td rowspan="1" colspan="1">
+7/10
+</td><td rowspan="1" colspan="1">
+7/10
+</td><td rowspan="1" colspan="1">
+N/A
+</td></tr><tr style="background-color:#ccc"><td colspan="10" rowspan="1">
+Duration
+</td></tr><tr><td rowspan="1" colspan="1">
+Average
+</td><td rowspan="1" colspan="1">
+3&#x0202f;min
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+30&#x0202f;min
+</td><td rowspan="1" colspan="1">
+30&#x0202f;min
+</td><td rowspan="1" colspan="1">
+30&#x0202f;min
+</td><td rowspan="1" colspan="1">
+30&#x0202f;min
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+N/A
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Max
+</td><td rowspan="1" colspan="1">
+5&#x0202f;min
+</td><td rowspan="1" colspan="1">
+3&#x0202f;h
+</td><td rowspan="1" colspan="1">
+2&#x0202f;h
+</td><td rowspan="1" colspan="1">
+1&#x0202f;h
+</td><td rowspan="1" colspan="1">
+1&#x0202f;h
+</td><td rowspan="1" colspan="1">
+30&#x0202f;min
+</td><td rowspan="1" colspan="1">
+4&#x0202f;h
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+N/A
+</td></tr><tr><td rowspan="1" colspan="1">
+Min
+</td><td rowspan="1" colspan="1">
+3&#x0202f;s
+</td><td rowspan="1" colspan="1">
+1&#x0202f;h
+</td><td rowspan="1" colspan="1">
+30&#x0202f;min
+</td><td rowspan="1" colspan="1">
+30&#x0202f;min
+</td><td rowspan="1" colspan="1">
+30&#x0202f;min
+</td><td rowspan="1" colspan="1">
+mins
+</td><td rowspan="1" colspan="1">
+30&#x0202f;min
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+N/A
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Trigger/precipitants
+</td><td rowspan="1" colspan="1">
+A,&#x0202f;CT,&#x0202f;ES,&#x0202f;H
+</td><td rowspan="1" colspan="1">
+A,&#x0202f;CT,&#x0202f;IS,&#x0202f;ES,&#x0202f;H,&#x0202f;EF
+</td><td rowspan="1" colspan="1">
+CT,&#x0202f;IS,&#x0202f;ES,&#x0202f;H,&#x0202f;EF
+</td><td rowspan="1" colspan="1">
+CT,&#x0202f;ES,&#x0202f;H,&#x0202f;EF
+</td><td rowspan="1" colspan="1">
+CT,&#x0202f;T,&#x0202f;H,&#x0202f;EF
+</td><td rowspan="1" colspan="1">
+A,&#x0202f;EF
+</td><td rowspan="1" colspan="1">
+CT,&#x0202f;IS,&#x0202f;ES,&#x0202f;H,&#x0202f;EF
+</td><td rowspan="1" colspan="1">
+CT,&#x0202f;T,&#x0202f;ES,&#x0202f;H
+</td><td rowspan="1" colspan="1">
+V
+</td></tr><tr><td rowspan="1" colspan="1">
+Attack manifestations
+</td><td rowspan="1" colspan="1">
+Asymptomatic
+</td><td rowspan="1" colspan="1">
+UST,&#x0202f;FEA,&#x0202f;SD,&#x0202f;DT,&#x0202f;LOADL,&#x0202f;IE,&#x0202f;LC&#x0202f;(continuous&#x0202f;tonic&#x0202f;pattern)
+</td><td rowspan="1" colspan="1">
+UST,&#x0202f;SD,&#x0202f;DT,&#x0202f;LOADL,&#x0202f;IE
+</td><td rowspan="1" colspan="1">
+UST,&#x0202f;SD,&#x0202f;DT,&#x0202f;LOADL,&#x0202f;IE
+</td><td rowspan="1" colspan="1">
+UST,&#x0202f;SD,&#x0202f;DT,&#x0202f;LOADL
+</td><td rowspan="1" colspan="1">
+D,&#x0202f;LOADL,&#x0202f;IE
+</td><td rowspan="1" colspan="1">
+BV,&#x0202f;UST,&#x0202f;FEA,&#x0202f;SD,&#x0202f;DT,&#x0202f;LOADL,&#x0202f;IE,&#x0202f;LC&#x0202f;(irregular&#x0202f;twitching)
+</td><td rowspan="1" colspan="1">
+BV,&#x0202f;UST,&#x0202f;FEA,&#x0202f;SD,&#x0202f;DT,&#x0202f;LOADL,&#x0202f;IE,&#x0202f;LC&#x0202f;(irregular&#x0202f;twitching)
+</td><td rowspan="1" colspan="1">
+LC&#x0202f;(continuous&#x0202f;tonic&#x0202f;pattern)
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Treatment
+</td><td rowspan="1" colspan="1">
+No
+</td><td rowspan="1" colspan="1">
+Clonazepam
+</td><td rowspan="1" colspan="1">
+Clonazepam
+</td><td rowspan="1" colspan="1">
+Clonazepam
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+Clonazepam
+</td><td rowspan="1" colspan="1">
+Clonazepam
+</td><td rowspan="1" colspan="1">
+Clonazepam
+</td><td rowspan="1" colspan="1">
+N/A
+</td></tr><tr><td rowspan="1" colspan="1">
+Efficacy
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+Asymptomatic
+</td><td rowspan="1" colspan="1">
+Effective
+</td><td rowspan="1" colspan="1">
+Effective
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+Effective
+</td><td rowspan="1" colspan="1">
+N/A
+</td><td rowspan="1" colspan="1">
+Effective
+</td><td rowspan="1" colspan="1">
+N/A
+</td></tr></tbody></table></table-wrap><p>Case 2.5</p><p>The patient was an 87-year-old man with an onset at age 10. Attacks were triggered by alcohol, cold temperature, starvation, and emotional stress. In the early stage of the disease, attacks presented as somatic dystonia, speech disturbance, inability to stand, and loss of ADL. Attack frequency under identified triggers was 10/10. Initial attack frequency was 2-3 times per month; in the recent two years, attacks were&#x000a0;resolved, and the patient remained asymptomatic.</p><p>Case 3.3</p><p>The patient was a 74-year-old man with a childhood onset. Precipitating factors included alcohol, cold temperature, insufficient sleep, starvation, and exertion or fatigue. Attack frequency under identified triggers was 8/10. Attacks phenomenology was characterized by body dystonia, facial expression alteration, speech disturbance, loss of ADL, occasional incontinence, and clonus of extremities presenting as continuous tonic movements. The attack frequency was once each day,&#x000a0;and the duration ranged from one to three hours.&#x000a0;Under the treatment of clonazepam, the patient is currently asymptomatic.</p><p><italic>Case 3.8</italic>&#x000a0;</p><p>The patient was a 62-year-old woman with a childhood onset. Triggers included cold temperature, insufficient sleep, emotional stress, starvation, and exertion or fatigue. Clinical manifestations during attacks included inability to stand, speech disturbance, body dystonia, loss of ADL, and immobility of extremities. Attack frequency under identified triggers was 4/10.&#x000a0;Initial attack frequency was once daily, later decreasing to once every three days. Duration ranged from 30 minutes to two hours.&#x000a0;The patient was prescribed with&#x000a0;clonazepam, and the&#x000a0;attack frequency reduced greatly.</p><p>Case 3.10</p><p>The patient was a 58-year-old woman with an onset at the age of one, with a medical history of epilepsy. Triggers included cold temperature, emotional stress, starvation, and exertion or fatigue. Attack frequency under identified triggers was only 2/10, with the rest unknown.&#x000a0;Attacks presented with speech disturbance, inability to stand, body dystonia, and loss of ADL. Initial attack frequency was once every three days, later reducing to once every 15 days, with a duration of 30 minutes to one hour.&#x000a0;The patient is currently on clonazepam&#x000a0;treatment&#x000a0;with a moderate effect.</p><p>Case 3.11</p><p>The patient was a 64-year-old man with an onset at the age of one, also with a history of epilepsy. Triggers included cold temperature, tea consumption, starvation, and exertion or fatigue. Attack frequency under identified triggers was also only 2/10, with the rest unknown. Attacks were characterized by body dystonia, speech disturbance, and loss of ADL. Frequency during childhood averaged once every 20 days, decreasing to once every three months in adulthood. Duration averaged 30 minutes, with a maximum of one hour.</p><p>Case 3.18 (Proband)</p><p>The patient was a 53-year-old man who presented with an onset at age 32. Attacks were commonly triggered by alcohol and exertion or fatigue. The patient experienced prodromes as persistent left lower limb discomfort, affected gait, and anxiety. Clinical manifestations during attacks included dystonia and stiffness of the left lower limb. Duration ranged from several minutes to 30 minutes, with spontaneous resolution. Attack frequency increased over the past year. Pharmacologic therapy consisted of clonazepam 1 mg orally twice daily, resulting in a moderate symptomatic response.</p><p>Case 4.5</p><p>The patient was a 48-year-old man with a childhood onset. Triggers included cold temperature, insufficient sleep, starvation, emotional stress, and exertion or fatigue. Attack frequency under identified triggers was 7/10.&#x000a0;Attacks were characterized by body dystonia, loss of ADL, and immobility of the extremities. Early attack frequency was almost daily, decreasing to once per month over the past two years. Duration ranged from 30 minutes to four hours.&#x000a0;Clonazepam treatment was effective in controlling the attacks.</p><p>Case 4.34</p><p>The patient was a 34-year-old man with an onset at the age of three. Trigger factors included cold temperature, tea consumption, emotional stress, and starvation. Clinical manifestations during attacks were&#x000a0;blurred vision, inability to stand, facial expression alteration, speech disturbance, body dystonia, loss of ADL, and immobility of the extremities, accompanied by irregular twitching limbs. Attack frequency under identified triggers was 7/10.&#x000a0;The patient is currently treated with clonazepam.</p><p>Case 5.6</p><p>The patient was a one-year-old female with first episode at seven months following vaccination, presenting with bilateral hand tremor and absent&#x000a0;stare, lasting several minutes and resolving spontaneously. No significant limb rigidity or other symptoms were found.&#x000a0;Electroencephalogram (EEG) and brain MRI were normal.</p><p>Genetic mutation analysis</p><p>Whole-exome sequencing and pedigree analysis were performed in the nine affected members of this family. Eight patients were found to carry a&#x000a0;heterozygous missense&#x000a0;mutation c.20C&#x0003e;T (p.Ala7Val) in exon 1.&#x000a0;No other mutations, including p.Ala9Val or p.Ala33Pro, were identified. Results are shown in Figure&#x000a0;<xref rid="FIG2" ref-type="fig">2</xref>.</p></sec><sec sec-type="discussion"><title>Discussion</title><p>PNKD is a rare disorder with a lower global prevalence. Because of its rarity and clinical overlapping features with other paroxysmal conditions, the diagnosis can be challenging. Here, we reported a case and its four-generation pedigree, containing a total of 37 affected individuals, of whom nine patients carrying the MR-1 (p.Ala7Val) mutation have further clinical characterization. A PNKD family with detailed clinical information and genetic confirmation is unusual in the Asian population, which makes it highly unique. Together with the genetic results, their clinical characteristics were further contrasted with those reported in other pedigrees worldwide.</p><p>The most distinctive features of familial PNKD are the precipitators of attacks. Only a minority experienced spontaneous or even movement-induced attacks. Our study showed that attacks were commonly triggered by cold exposure or fasting in two-thirds of patients with PNKD. In addition, epilepsy coexisted in two of the nine patients, which was seldom reported in previous studies. In a survey of 49 patients with PNKD carrying MR-1 gene mutations, 98% reported tea or alcohol intake as the main trigger [<xref rid="REF5" ref-type="bibr">5</xref>]. In contrast, in our present pedigree, cold exposure (77.8%) was identified as the most common precipitating factor, despite being rarely documented in previous reports, in which temperature changes were predominantly described as heat [<xref rid="REF4" ref-type="bibr">4</xref>-<xref rid="REF6" ref-type="bibr">6</xref>]. Emotional stress (55.6%) was the third most common trigger, whereas tea and coffee, typically regarded as the main precipitants, were reported by fewer than one-third of affected individuals. Notably, hunger (77.8%) was equally common as cold exposure in this cohort, and 66.7% of patients reported exertion or fatigue as a precipitating factor, which showed low prevalence in other previous reports [<xref rid="REF5" ref-type="bibr">5</xref>,<xref rid="REF7" ref-type="bibr">7</xref>]. Interestingly, Bruno et al. reported that exercise- and hunger-induced attacks occurred in 68% and 14% of MR-1-negative patients, respectively, but only in 12% and 6% of MR-1-positive patients [<xref rid="REF5" ref-type="bibr">5</xref>]. The distinctive phenotypic features from patients with different PNKD genotypes, together with information from our cohort, suggest that unidentified potential genetic or epigenetic-environmental factors can modulate the final output of phenotypes. Furthermore, among the nine patients, two reported that only 20% of their attacks were associated with identifiable triggers, while the remaining attacks occurred either spontaneously or without a clearly identifiable cause.</p><p>The age of onset of PNKD ranges from infancy to early adolescence, with familial cases typically presenting early. Furthermore, longer attack durations and primary PNKD appeared to have an earlier age at onset compared with patients experiencing shorter attacks or with secondary PNKD [<xref rid="REF8" ref-type="bibr">8</xref>].&#x000a0;In our pedigree, most of the nine documented patients experienced symptom onset during childhood. The proband, however, presented in early adulthood, while his offspring appeared to develop symptoms at progressively earlier ages, with his granddaughter experiencing attacks within the first year of life. This intra-familial variability may suggest a pattern of genetic anticipation, as has been previously observed in two southern European families [<xref rid="REF9" ref-type="bibr">9</xref>].</p><p>PNKD attacks are typically characterized by dystonia, often accompanied by chorea or ballism. Aura, however, is found before attacks, with prevalence varying from 60% to 80% between families. Reported aura includes abnormal sensation of focal extremity, anxiety, speech disturbance, and weakness [<xref rid="REF4" ref-type="bibr">4</xref>,<xref rid="REF5" ref-type="bibr">5</xref>,<xref rid="REF10" ref-type="bibr">10</xref>]. The proband exhibited prodromal symptoms of left lower limb discomfort and anxiety before attacks, whereas such data were unavailable for other family members. Attacks frequently begin in the perioral region or unilateral limbs, gradually involving the bilateral limbs and face, but without loss of consciousness. Involvement of facial muscles may result in speech impairment in some patients [<xref rid="REF1" ref-type="bibr">1</xref>]. The most common attack manifestations of this family included involuntary body dystonia (77.8%), loss of ADL (77.8%), speech disturbance (66.7%), and inability to stand (55.6%). Approximately half of them exhibited limb rigidity or clonic movements, presenting as continuous rhythmic, irregular jerking, or spasm-like episodes. The attack frequency and duration also vary among PNKD patients. The frequency of attacks ranges from once or twice per day to only once or twice per year, and the duration is generally shorter than that of PKD, typically lasting 10 minutes to one hour, with some up to four hours [<xref rid="REF8" ref-type="bibr">8</xref>,<xref rid="REF11" ref-type="bibr">11</xref>,<xref rid="REF12" ref-type="bibr">12</xref>]. Current evidence suggests that attack frequency generally decreases with age but does not differ between sexes [<xref rid="REF5" ref-type="bibr">5</xref>]. Patients in our pedigree experienced attacks with variable frequency and duration, ranging from once a day to once every 20 days and lasting from a few seconds up to four hours. Most of them have a decrease in attack frequency and duration with age. Notably, the patient in case 2.5 exhibited markedly shorter attacks, lasting only a few seconds to minutes, and had become asymptomatic over time. In contrast, the proband reported a recent increase in both attack frequency and severity. This pattern is reminiscent of that observed in a Polish pedigree, in which all the male patients showed age-related increases in attack frequency and severity [<xref rid="REF13" ref-type="bibr">13</xref>]. In female patients, endocrine appeared to modulate disease pattern, as symptom severity has been reported to fluctuate across ovulation, menstruation, pregnancy, and post-menopause, implicating a potential role for estrogen in attack modulation&#x000a0;[<xref rid="REF2" ref-type="bibr">2</xref>,<xref rid="REF13" ref-type="bibr">13</xref>]. Although relevant data were limited in our cohort, these findings contribute to the heterogeneity of the disease.</p><p>This pedigree carried the p.A7V mutation in exon 1 of the PNKD gene, which was identical to the mutation reported in previous pedigrees from Taiwan and mainland China [<xref rid="REF1" ref-type="bibr">1</xref>,<xref rid="REF4" ref-type="bibr">4</xref>]. The PNKD gene was first mapped to chromosome 2q in 1996 through linkage analysis in 28 affected individuals and subsequently identified at 2q35 in 2004, where it was found to encode at least three isoforms including MR-1L, MR-1S, and MR-1M [<xref rid="REF14" ref-type="bibr">14</xref>,<xref rid="REF15" ref-type="bibr">15</xref>]. Three pathogenic mutations have been identified in PNKD to date including c.20C&#x0003e;T (p.Ala7Val) and c.26C&#x0003e;T (p.Ala9Val) in exon 1 and c.97G&#x0003e;C (p.Ala33Pro) in exon 2. Beyond MR-1, additional pathogenic genes for PNKD, including PNKD2, PRRT2, KCNMA1, and SLC2A1, have been identified. While mutations in these genes often involve ion channels or transporters, the molecular function of MR-1 mutations and the PNKD protein remains unknown. Mitochondrial dysfunction, impaired stress-response signaling, and dysregulated dopamine transmission are considered to be the key contributors [<xref rid="REF15" ref-type="bibr">15</xref>-<xref rid="REF17" ref-type="bibr">17</xref>].&#x000a0;</p><p>Given the diversity of PNKD genotypes and the heterogeneity of clinical phenotypes, correlations between genotype and phenotype have been increasingly recognized. PNKD patients harboring different pathogenic gene mutations exhibit variability in clinical features and comorbidities.&#x000a0;A study summarizing 19 families with MR-1 mutations reported that p.Ala7Val was the most frequently observed, followed by p.Ala9Val, with a single patient harboring p.Ala33Pro [<xref rid="REF4" ref-type="bibr">4</xref>]. Interestingly, most asymptomatic carriers were females with a p.Ala9Val mutation. According to the analysis of multiple pedigrees from Bruno et al., PNKD patients carrying MR-1 mutations exhibited greater clinical homogeneity compared with those without MR-1 mutations, along with distinctive features including earlier age at onset, a higher likelihood of attacks precipitated by alcohol and caffeine, better responsiveness to benzodiazepines, and a presentation more consistent with the classical PNKD phenotype [<xref rid="REF5" ref-type="bibr">5</xref>]. Furthermore, it is found that patients with MR-1 mutations are more frequently associated with migraine but better sleep benefit, whereas patients with KCNMA1 mutations are more often linked with epilepsy [<xref rid="REF2" ref-type="bibr">2</xref>,<xref rid="REF5" ref-type="bibr">5</xref>,<xref rid="REF16" ref-type="bibr">16</xref>]. Notably, two patients in this pedigree had a history of epilepsy, a feature not previously reported in other PNKD cases. In addition, these two individuals experienced only two of the 10 provoked attacks as mentioned above. Dating back, a pedigree harboring a KCNMA1 mutation was reported in 2005 to have autosomal dominant generalized epilepsy combined with PxDs, in which the PxDs were alcohol-induced and described as KCNMA1-related PNKD-like attacks [<xref rid="REF18" ref-type="bibr">18</xref>]. However, current literature generally considers PNKD associated with MR-1 mutations to be free of epilepsy, and to date, there have been no reports of PNKD coexisting with epilepsy [<xref rid="REF16" ref-type="bibr">16</xref>]. All nine genetically tested patients in this pedigree were confirmed to carry MR-1 mutations. The presence of epilepsy in two of these patients is noteworthy and requires further follow-up to clarify the possible correlation between PNKD and epilepsy.</p><p>Most patients received clonazepam in this pedigree, which proved effective in alleviating disease severity including the proband, who had previously been treated with camazepam without improvement. Consistent with previous reports, PNKD patients generally respond well to benzodiazepines, whereas antiepileptic drugs effective for PKD show limited efficacy in PNKD.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>Overall, the clinical features observed in this pedigree were largely consistent with previous reports of familial PNKD, while the distinctive characteristics identified herein further enrich the clinical spectrum of the disorder and provide additional insights into its population heterogeneity. This pedigree also demonstrates that considerable variability exists among PNKD patients and that&#x000a0;genetic factors likely account for only part of this variability. As a relatively typical PNKD pedigree, which remains rarely reported in mainland China, detailed clinical history and genetic findings of this family offer valuable diagnostic and clinical insights for Asian and global PNKD populations and lay the groundwork for future investigations into disease variability and potential modifiers as well.</p></sec></body><back><ack><p>Dr. Wenhan Zhang, Dr. Jingwen Li, and Dr. Ruichuan Xie contributed equally to the work and should be considered co-first authors. Dr. Gang Wang and Dr. Li Gao should both be listed as corresponding authors, as they have made equal and significant contributions to the manuscript's conception, study design, revision, and coordination of the submission process.</p></ack><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Human subjects:</bold> Informed consent for treatment and open access publication was obtained or waived by all participants in this study.</p><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> The study was supported by the Fundamental Research Funds for the Central Universities (YG2023QNB10) and the NSFC Promotion Program of Ren Ji Hospital, Shanghai Jiao Tong University School of Medicine (RJTJ22-MS-011).</p><p><bold>Financial relationships:</bold> All authors declare(s) a grant from NSFC Promotion Program of Ren Ji Hospital, Shanghai Jiao Tong University School of Medicine (RJTJ22-MS-011). All authors declare(s) a grant from The Fundamental Research Funds for the Central Universities (YG2023QNB10).</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>&#x000a0; Jingwen Li, Wenhan Zhang, Ruichuan Xie, Yansheng Li, Gang Wang, Li Gao</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>&#x000a0; Jingwen Li, Wenhan Zhang, Ruichuan Xie, Zhongjiao Lu, Nan Zhao, Kan Wang, Shuang Li, Li Gao</p><p><bold>Drafting of the manuscript:</bold>&#x000a0; Jingwen Li, Wenhan Zhang, Ruichuan Xie, Li Gao</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>&#x000a0; Jingwen Li, Wenhan Zhang, Ruichuan Xie, Zhongjiao Lu, Nan Zhao, Kan Wang, Yansheng Li, Shuang Li, Gang Wang, Li Gao</p><p><bold>Supervision:</bold>&#x000a0; Gang Wang, Li Gao</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="journal"><article-title>A case of familial paroxysmal nonkinesigenic dyskinesia due to mutation of the PNKD gene in Chinese Mainland</article-title><source>Brain Res</source><person-group>
+<name><surname>Liang</surname><given-names>S</given-names></name>
+<name><surname>Yu</surname><given-names>X</given-names></name>
+<name><surname>Zhang</surname><given-names>S</given-names></name>
+<name><surname>Tai</surname><given-names>J</given-names></name>
+</person-group><fpage>120</fpage><lpage>126</lpage><volume>1595</volume><year>2015</year><pub-id pub-id-type="pmid">25107857</pub-id>
+</element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>Familial paroxysmal dystonic choreoathetosis: clinical findings in a large Japanese family and genetic linkage to 2q</article-title><source>Arch Neurol</source><person-group>
+<name><surname>Matsuo</surname><given-names>H</given-names></name>
+<name><surname>Kamakura</surname><given-names>K</given-names></name>
+<name><surname>Saito</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>721</fpage><lpage>726</lpage><volume>56</volume><year>1999</year><pub-id pub-id-type="pmid">10369313</pub-id>
+</element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="journal"><article-title>Myofibrillogenesis regulator 1 gene (MR-1) mutation in an Omani family with paroxysmal nonkinesigenic dyskinesia</article-title><source>Neurosci Lett</source><person-group>
+<name><surname>Hempelmann</surname><given-names>A</given-names></name>
+<name><surname>Kumar</surname><given-names>S</given-names></name>
+<name><surname>Muralitharan</surname><given-names>S</given-names></name>
+<name><surname>Sander</surname><given-names>T</given-names></name>
+</person-group><fpage>118</fpage><lpage>120</lpage><volume>402</volume><year>2006</year><pub-id pub-id-type="pmid">16632198</pub-id>
+</element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Familial paroxysmal nonkinesigenic dyskinesia: clinical and genetic analysis of a Taiwanese family</article-title><source>J Neurol Sci</source><person-group>
+<name><surname>Yeh</surname><given-names>TH</given-names></name>
+<name><surname>Lin</surname><given-names>JJ</given-names></name>
+<name><surname>Lai</surname><given-names>SC</given-names></name>
+<etal/>
+</person-group><fpage>80</fpage><lpage>84</lpage><volume>323</volume><year>2012</year><pub-id pub-id-type="pmid">22967746</pub-id>
+</element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>Genotype-phenotype correlation of paroxysmal nonkinesigenic dyskinesia</article-title><source>Neurology</source><person-group>
+<name><surname>Bruno</surname><given-names>MK</given-names></name>
+<name><surname>Lee</surname><given-names>HY</given-names></name>
+<name><surname>Auburger</surname><given-names>GW</given-names></name>
+<etal/>
+</person-group><fpage>1782</fpage><lpage>1789</lpage><volume>68</volume><year>2007</year><pub-id pub-id-type="pmid">17515540</pub-id>
+</element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>Clinical characteristics of paroxysmal nonkinesigenic dyskinesia in Serbian family with myofibrillogenesis regulator 1 gene mutation</article-title><source>Mov Disord</source><person-group>
+<name><surname>Stefanova</surname><given-names>E</given-names></name>
+<name><surname>Djarmati</surname><given-names>A</given-names></name>
+<name><surname>Momcilovi&#x00107;</surname><given-names>D</given-names></name>
+<name><surname>Dragasevi&#x00107;</surname><given-names>N</given-names></name>
+<name><surname>Svetel</surname><given-names>M</given-names></name>
+<name><surname>Klein</surname><given-names>C</given-names></name>
+<name><surname>Kosti&#x00107;</surname><given-names>VS</given-names></name>
+</person-group><fpage>2010</fpage><lpage>2015</lpage><volume>21</volume><year>2006</year><pub-id pub-id-type="pmid">16972263</pub-id>
+</element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>Presence of alanine-to-valine substitutions in myofibrillogenesis regulator 1 in paroxysmal nonkinesigenic dyskinesia: confirmation in 2 kindreds</article-title><source>Arch Neurol</source><person-group>
+<name><surname>Chen</surname><given-names>DH</given-names></name>
+<name><surname>Matsushita</surname><given-names>M</given-names></name>
+<name><surname>Rainier</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><fpage>597</fpage><lpage>600</lpage><volume>62</volume><year>2005</year><pub-id pub-id-type="pmid">15824259</pub-id>
+</element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>Paroxysmal dyskinesias: clinical features and classification</article-title><source>Ann Neurol</source><person-group>
+<name><surname>Demirkiran</surname><given-names>M</given-names></name>
+<name><surname>Jankovic</surname><given-names>J</given-names></name>
+</person-group><fpage>571</fpage><lpage>579</lpage><volume>38</volume><year>1995</year><pub-id pub-id-type="pmid">7574453</pub-id>
+</element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>Paroxysmal non-kinesigenic dyskinesia due to a PNKD recurrent mutation: report of two Southern European families</article-title><source>Eur J Paediatr Neurol</source><person-group>
+<name><surname>Pons</surname><given-names>R</given-names></name>
+<name><surname>Cuenca-Le&#x000f3;n</surname><given-names>E</given-names></name>
+<name><surname>Miravet</surname><given-names>E</given-names></name>
+<name><surname>Pons</surname><given-names>M</given-names></name>
+<name><surname>Xaidara</surname><given-names>A</given-names></name>
+<name><surname>Youroukos</surname><given-names>S</given-names></name>
+<name><surname>Macaya</surname><given-names>A</given-names></name>
+</person-group><fpage>86</fpage><lpage>89</lpage><volume>16</volume><year>2012</year><pub-id pub-id-type="pmid">21962874</pub-id>
+</element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="journal"><article-title>Paroxysmal dyskinesias revisited: a review of 500 genetically proven cases and a new classification</article-title><source>Mov Disord</source><person-group>
+<name><surname>Erro</surname><given-names>R</given-names></name>
+<name><surname>Sheerin</surname><given-names>UM</given-names></name>
+<name><surname>Bhatia</surname><given-names>KP</given-names></name>
+</person-group><fpage>1108</fpage><lpage>1116</lpage><volume>29</volume><year>2014</year><pub-id pub-id-type="pmid">24963779</pub-id>
+</element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="journal"><article-title>The clinical and genetic heterogeneity of paroxysmal dyskinesias</article-title><source>Brain</source><person-group>
+<name><surname>Gardiner</surname><given-names>AR</given-names></name>
+<name><surname>Jaffer</surname><given-names>F</given-names></name>
+<name><surname>Dale</surname><given-names>RC</given-names></name>
+<etal/>
+</person-group><fpage>3567</fpage><lpage>3580</lpage><volume>138</volume><year>2015</year><pub-id pub-id-type="pmid">26598494</pub-id>
+</element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="journal"><article-title>Phenotypes, genotypes, and the management of paroxysmal movement disorders</article-title><source>Dev Med Child Neurol</source><person-group>
+<name><surname>Silveira-Moriyama</surname><given-names>L</given-names></name>
+<name><surname>Kovac</surname><given-names>S</given-names></name>
+<name><surname>Kurian</surname><given-names>MA</given-names></name>
+<etal/>
+</person-group><fpage>559</fpage><lpage>565</lpage><volume>60</volume><year>2018</year><pub-id pub-id-type="pmid">29600549</pub-id>
+</element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>Paroxysmal non-kinesigenic dyskinesia caused by the mutation of MR-1 in a large Polish kindred</article-title><source>Eur Neurol</source><person-group>
+<name><surname>Friedman</surname><given-names>A</given-names></name>
+<name><surname>Zakrzewska-Pniewska</surname><given-names>B</given-names></name>
+<name><surname>Domitrz</surname><given-names>I</given-names></name>
+<name><surname>Lee</surname><given-names>HY</given-names></name>
+<name><surname>Ptacek</surname><given-names>L</given-names></name>
+<name><surname>Kwiecinski</surname><given-names>H</given-names></name>
+</person-group><fpage>39</fpage><lpage>41</lpage><volume>61</volume><year>2009</year><pub-id pub-id-type="pmid">18948699</pub-id>
+</element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Myofibrillogenesis regulator 1 gene mutations cause paroxysmal dystonic choreoathetosis</article-title><source>Arch Neurol</source><person-group>
+<name><surname>Rainier</surname><given-names>S</given-names></name>
+<name><surname>Thomas</surname><given-names>D</given-names></name>
+<name><surname>Tokarz</surname><given-names>D</given-names></name>
+<etal/>
+</person-group><fpage>1025</fpage><lpage>1029</lpage><volume>61</volume><year>2004</year><pub-id pub-id-type="pmid">15262732</pub-id>
+</element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>The gene for paroxysmal non-kinesigenic dyskinesia encodes an enzyme in a stress response pathway</article-title><source>Hum Mol Genet</source><person-group>
+<name><surname>Lee</surname><given-names>HY</given-names></name>
+<name><surname>Xu</surname><given-names>Y</given-names></name>
+<name><surname>Huang</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group><fpage>3161</fpage><lpage>3170</lpage><volume>13</volume><year>2004</year><pub-id pub-id-type="pmid">15496428</pub-id>
+</element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>The epileptic and nonepileptic spectrum of paroxysmal dyskinesias: channelopathies, synaptopathies, and transportopathies</article-title><source>Mov Disord</source><person-group>
+<name><surname>Erro</surname><given-names>R</given-names></name>
+<name><surname>Bhatia</surname><given-names>KP</given-names></name>
+<name><surname>Espay</surname><given-names>AJ</given-names></name>
+<name><surname>Striano</surname><given-names>P</given-names></name>
+</person-group><fpage>310</fpage><lpage>318</lpage><volume>32</volume><year>2017</year><pub-id pub-id-type="pmid">28090678</pub-id>
+</element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>Dopamine dysregulation in a mouse model of paroxysmal nonkinesigenic dyskinesia</article-title><source>J Clin Invest</source><person-group>
+<name><surname>Lee</surname><given-names>HY</given-names></name>
+<name><surname>Nakayama</surname><given-names>J</given-names></name>
+<name><surname>Xu</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group><fpage>507</fpage><lpage>518</lpage><volume>122</volume><year>2012</year><pub-id pub-id-type="pmid">22214848</pub-id>
+</element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>Calcium-sensitive potassium channelopathy in human epilepsy and paroxysmal movement disorder</article-title><source>Nat Genet</source><person-group>
+<name><surname>Du</surname><given-names>W</given-names></name>
+<name><surname>Bautista</surname><given-names>JF</given-names></name>
+<name><surname>Yang</surname><given-names>H</given-names></name>
+<etal/>
+</person-group><fpage>733</fpage><lpage>738</lpage><volume>37</volume><year>2005</year><pub-id pub-id-type="pmid">15937479</pub-id>
+</element-citation></ref></ref-list></back></article>

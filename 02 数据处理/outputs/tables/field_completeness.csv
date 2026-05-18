@@ -1,0 +1,9 @@
+field,non_null_count,missing_count,missing_rate,fill_rate
+pmcid,100,0,0.0,1.0
+pmid,93,7,0.07,0.93
+title,100,0,0.0,1.0
+abstract,97,3,0.03,0.97
+body,100,0,0.0,1.0
+journal,100,0,0.0,1.0
+pub_year,100,0,0.0,1.0
+pub_date,100,0,0.0,1.0

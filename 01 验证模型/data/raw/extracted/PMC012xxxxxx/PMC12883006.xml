@@ -1,0 +1,361 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" id="nicc70373" xml:lang="en" article-type="methods-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Nurs Crit Care</journal-id><journal-id journal-id-type="iso-abbrev">Nurs Crit Care</journal-id><journal-id journal-id-type="doi">10.1111/(ISSN)1478-5153</journal-id><journal-id journal-id-type="publisher-id">NICC</journal-id><journal-title-group><journal-title>Nursing in Critical Care</journal-title></journal-title-group><issn pub-type="ppub">1362-1017</issn><issn pub-type="epub">1478-5153</issn><publisher><publisher-name>Blackwell Publishing Ltd</publisher-name><publisher-loc>Oxford, UK</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">41654999</article-id><article-id pub-id-type="pmc">PMC12883006</article-id><article-id pub-id-type="doi">10.1111/nicc.70373</article-id><article-id pub-id-type="publisher-id">NICC70373</article-id><article-id pub-id-type="other">7482759</article-id><article-categories><subj-group subj-group-type="overline"><subject>Study Protocols</subject></subj-group><subj-group subj-group-type="heading"><subject>Study Protocols</subject></subj-group></article-categories><title-group><article-title>Methods and Instruments to Measure <styled-content style="fixed-case" toggle="no">ICU</styled-content> Healthcare Professionals' Workload Related to Medical Technology&#x02014;Protocol for a Scoping Review</article-title></title-group><contrib-group><contrib id="nicc70373-cr-0001" contrib-type="author" corresp="yes"><name><surname>van Limpt</surname><given-names>Geertje J. C.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0005-5117-3918</contrib-id><xref rid="nicc70373-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="nicc70373-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>g.j.c.vanlimpt@amsterdamumc.nl</email></address></contrib><contrib id="nicc70373-cr-0002" contrib-type="author"><name><surname>Molenaar</surname><given-names>Manon A.</given-names></name><xref rid="nicc70373-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="nicc70373-cr-0003" contrib-type="author"><name><surname>Jamaludin</surname><given-names>Faridi S.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-1452-1769</contrib-id><xref rid="nicc70373-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="nicc70373-cr-0004" contrib-type="author"><name><surname>van Oostveen</surname><given-names>Catharina J.</given-names></name><xref rid="nicc70373-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="nicc70373-cr-0005" contrib-type="author"><name><surname>Paulus</surname><given-names>Frederique</given-names></name><xref rid="nicc70373-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="nicc70373-cr-0006" contrib-type="author"><name><surname>Schultz</surname><given-names>Marcus J.</given-names></name><xref rid="nicc70373-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="nicc70373-aff-0005" ref-type="aff">
+<sup>5</sup>
+</xref><xref rid="nicc70373-aff-0006" ref-type="aff">
+<sup>6</sup>
+</xref><xref rid="nicc70373-aff-0007" ref-type="aff">
+<sup>7</sup>
+</xref></contrib><contrib id="nicc70373-cr-0007" contrib-type="author"><name><surname>van Vliet</surname><given-names>Peter</given-names></name><xref rid="nicc70373-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="nicc70373-cr-0008" contrib-type="author"><name><surname>Buiteman&#x02010;Kruizinga</surname><given-names>Laura A.</given-names></name><xref rid="nicc70373-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="nicc70373-aff-0008" ref-type="aff">
+<sup>8</sup>
+</xref></contrib></contrib-group><aff id="nicc70373-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Department of Intensive Care</named-content>
+<institution>Amsterdam University Medical Centre</institution>
+<city>Amsterdam</city>
+<country country="NL">the Netherlands</country>
+</aff><aff id="nicc70373-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Department of Intensive Care</named-content>
+<institution>Haaglanden Medical Centre</institution>
+<city>The Hague</city>
+<country country="NL">the Netherlands</country>
+</aff><aff id="nicc70373-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Research Support, Medical Library</named-content>
+<institution>Amsterdam University Medical Centre</institution>
+<city>Amsterdam</city>
+<country country="NL">the Netherlands</country>
+</aff><aff id="nicc70373-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">Health Services Management &#x00026; Organisation, Erasmus School of Health Policy &#x00026; Management</named-content>
+<institution>Erasmus University</institution>
+<city>Rotterdam</city>
+<country country="NL">the Netherlands</country>
+</aff><aff id="nicc70373-aff-0005">
+<label>
+<sup>5</sup>
+</label>
+<named-content content-type="organisation-division">Clinical Department of Cardiothoracic Vascular Surgery Anaesthesia and Intensive Care Medicine</named-content>
+<institution>Medical University Wien</institution>
+<city>Vienna</city>
+<country country="AT">Austria</country>
+</aff><aff id="nicc70373-aff-0006">
+<label>
+<sup>6</sup>
+</label>
+<named-content content-type="organisation-division">Mahidol&#x02013;Oxford Research Unit (MORU), Faculty of Tropical Medicine</named-content>
+<institution>Mahidol University</institution>
+<city>Bangkok</city>
+<country country="TH">Thailand</country>
+</aff><aff id="nicc70373-aff-0007">
+<label>
+<sup>7</sup>
+</label>
+<named-content content-type="organisation-division">Nuffield Department of Medicine</named-content>
+<institution>University of Oxford</institution>
+<city>Oxford</city>
+<country country="GB">UK</country>
+</aff><aff id="nicc70373-aff-0008">
+<label>
+<sup>8</sup>
+</label>
+<named-content content-type="organisation-division">Department of Intensive Care</named-content>
+<institution>Reinier de Graaf Hospital</institution>
+<city>Delft</city>
+<country country="NL">the Netherlands</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence:</bold>
+<break/>
+Geertje J. C. van Limpt (<email>g.j.c.vanlimpt@amsterdamumc.nl</email>)<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>07</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="ppub"><month>3</month><year>2026</year></pub-date><volume>31</volume><issue seq="380">2</issue><issue-id pub-id-type="doi">10.1111/nicc.v31.2</issue-id><elocation-id>e70373</elocation-id><history>
+<date date-type="rev-recd"><day>12</day><month>1</month><year>2026</year></date>
+<date date-type="received"><day>14</day><month>11</month><year>2025</year></date>
+<date date-type="accepted"><day>15</day><month>1</month><year>2026</year></date>
+</history><permissions><!--&#x000a9; 2026 British Association of Critical Care Nurses--><copyright-statement content-type="article-copyright">&#x000a9; 2026 The Author(s). <italic toggle="yes">Nursing in Critical Care</italic> published by John Wiley &#x00026; Sons Ltd on behalf of British Association of Critical Care Nurses.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:NICC-31-0.pdf"/><abstract><title>ABSTRACT</title><sec id="nicc70373-sec-0001"><title>Background</title><p>Healthcare systems increasingly adopt medical technologies in direct patient care, particularly in highly technological environments like intensive care units (ICUs). While these technologies aim to enhance clinical outcomes, they can also introduce complexities that affect healthcare professionals' workload. Measuring workload related to the use of medical technology is crucial to ensure technologies support rather than hinder care delivery. Workload in this context encompasses temporal demands, subtask frequency and cognitive demands&#x02014;distinct from scoring systems determining staffing ratios.</p></sec><sec id="nicc70373-sec-0002"><title>Aim</title><p>To identify methods and instruments to measure ICU healthcare professionals' workload during direct patient care activities involving medical technology.</p></sec><sec id="nicc70373-sec-0003"><title>Study Design</title><p>We will follow the Joanna Briggs Institute framework and Preferred Reporting Items for Systematic reviews and Meta&#x02010;Analyses extension for Scoping Reviews guidelines, using narrative synthesis to summarise findings. Electronic databases MEDLINE, EMBASE, PsycINFO, CINAHL, Cochrane Library, ISI Web of Science, the WHO International Clinical Trials Registry Platform and Google Scholar will be searched for studies published 2010&#x02013;2025 reporting primary data. Exclusion criteria: paediatric population, editorials, letters and patient&#x02010;based scoring systems (e.g., Therapeutic Intervention Scoring System&#x02013;76; Nursing Activities Score). Two reviewers will independently screen records and extract data using standardised forms. Reporting quality will be assessed using a self&#x02010;developed tool. Findings will be presented in a flowchart, tables and figures.</p></sec><sec id="nicc70373-sec-0004"><title>Relevance to Clinical Practice</title><p>This review will provide a comprehensive overview of workload measurement methods during direct patient care activities involving medical technology in ICUs, serving as a practical resource for evaluating the workload impact of existing and emerging technologies.</p></sec><sec id="nicc70373-sec-0005"><title>Review Registration</title><p>Open Science Framework, registered on 26th of September 2024 (registration DOI: <ext-link xlink:href="https://doi.org/10.17605/OSF.IO/2A97J" ext-link-type="uri">10.17605/OSF.IO/2A97J</ext-link>, <ext-link xlink:href="https://osf.io/2a97j/" ext-link-type="uri">https://osf.io/2a97j/</ext-link>)</p></sec></abstract><abstract abstract-type="highlights" id="NICC70373-abs-5001"><title>Impact Statement</title><p>
+<list list-type="bullet" id="nicc70373-list-0001"><list-item id="nicc70373-li-0001"><p>What is known about the topic
+<list list-type="simple" id="nicc70373-list-0002"><list-item id="nicc70373-li-0002"><label>&#x025cb;</label><p>Measuring healthcare professionals' workload related to the use of medical technology in the ICU is crucial to ensure new and evolving technologies support rather than hinder effective care delivery.</p></list-item><list-item id="nicc70373-li-0003"><label>&#x025cb;</label><p>Workload is a multidimensional concept and various workload measurement methods exist.</p></list-item></list>
+</p></list-item><list-item id="nicc70373-li-0004"><p>What this paper adds
+<list list-type="simple" id="nicc70373-list-0003"><list-item id="nicc70373-li-0005"><label>&#x025cb;</label><p>A protocol to identify workload measurement methods and instruments from the ICU healthcare professional's perspective during direct patient care activities involving medical technology.</p></list-item><list-item id="nicc70373-li-0006"><label>&#x025cb;</label><p>A protocol for a categorisation of workload measurement methods structured by workload domain (temporal, subtask frequency, performance&#x02010;, subjective&#x02010; or psychophysiological&#x02010;based), type of task and type of medical technology.</p></list-item></list>
+</p></list-item></list>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="nicc70373-kwd-0001">healthcare professionals</kwd><kwd id="nicc70373-kwd-0002">intensive care unit</kwd><kwd id="nicc70373-kwd-0003">medical technology</kwd><kwd id="nicc70373-kwd-0004">workload</kwd><kwd id="nicc70373-kwd-0005">workload measurement</kwd></kwd-group><counts><fig-count count="0"/><table-count count="1"/><page-count count="6"/><word-count count="3700"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>March 2026</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.8 mode:remove_FC converted:08.02.2026</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="nicc70373-cit-1001">
+<string-name>
+<given-names>G. J. C.</given-names>
+<surname>van Limpt</surname>
+</string-name>, <string-name>
+<given-names>M. A.</given-names>
+<surname>Molenaar</surname>
+</string-name>, <string-name>
+<given-names>F. S.</given-names>
+<surname>Jamaludin</surname>
+</string-name>, et al., &#x0201c;<article-title>Methods and Instruments to Measure <styled-content style="fixed-case" toggle="no">ICU</styled-content> Healthcare Professionals' Workload Related to Medical Technology&#x02014;Protocol for a Scoping Review</article-title>,&#x0201d; <source>Nursing in Critical Care</source>
+<volume>31</volume>, no. <issue>2</issue> (<year>2026</year>): <elocation-id>e70373</elocation-id>, <pub-id pub-id-type="doi">10.1111/nicc.70373</pub-id>.</mixed-citation>
+</p></notes></front><body id="nicc70373-body-0001"><def-list list-content="abbreviations" id="nicc70373-dl-0001"><title>Abbreviations</title><def-item><term id="nicc70373-li-0007">ICU</term><def id="nicc70373-li-0008"><p>intensive care unit</p></def></def-item><def-item><term id="nicc70373-li-0009">JBI</term><def id="nicc70373-li-0010"><p>Joanna Brigs Institute</p></def></def-item><def-item><term id="nicc70373-li-0011">MMAT</term><def id="nicc70373-li-0012"><p>Mixed Methods Appraisal Tool</p></def></def-item><def-item><term id="nicc70373-li-0013">NAS</term><def id="nicc70373-li-0014"><p>Nursing Activities Score</p></def></def-item><def-item><term id="nicc70373-li-0015">OSF</term><def id="nicc70373-li-0016"><p>Open Science Framework</p></def></def-item><def-item><term id="nicc70373-li-0017">PCC</term><def id="nicc70373-li-0018"><p>Population, Concept, Context</p></def></def-item><def-item><term id="nicc70373-li-0019">PRISMA&#x02010;ScR</term><def id="nicc70373-li-0020"><p>Preferred Reporting Items for Systematic reviews and Meta&#x02010;Analyses extension for Scoping Reviews</p></def></def-item><def-item><term id="nicc70373-li-0021">TISS&#x02010;76</term><def id="nicc70373-li-0022"><p>Therapeutic Intervention Scoring System&#x02013;76</p></def></def-item></def-list><sec id="nicc70373-sec-0006"><label>1</label><title>Introduction</title><p>Medical technologies used in direct patient care are rapidly evolving, particularly in highly technological environments such as intensive care units (ICUs) [<xref rid="nicc70373-bib-0001" ref-type="bibr">1</xref>]. These technologies&#x02014;both new and conventional devices for bedside clinical interventions and monitoring, such as mechanical ventilators and patient monitors&#x02014;are becoming increasingly complex with expanding features, capabilities and automation. While they aim to improve clinical outcomes and reduce costs [<xref rid="nicc70373-bib-0002" ref-type="bibr">2</xref>], they can also introduce new operational complexities that affect cognitive demands, temporal requirements and workflow patterns [<xref rid="nicc70373-bib-0003" ref-type="bibr">3</xref>]. Understanding and measuring healthcare professionals' workload related to the use of medical technology is crucial to ensure new and evolving technologies support rather than hinder effective care delivery, particularly amidst current staff shortages and the already high mental workload in the ICU [<xref rid="nicc70373-bib-0004" ref-type="bibr">4</xref>, <xref rid="nicc70373-bib-0005" ref-type="bibr">5</xref>].</p><p>Workload is a multifaceted concept with widely varying definitions in the literature [<xref rid="nicc70373-bib-0006" ref-type="bibr">6</xref>]. In this context workload encompasses three components: temporal demands (time to complete a task), subtask frequency (rate of actions within a task) and cognitive demands (mental workload). Various methods exist to measure workload across multiple dimensions, including observational measurements, subjective assessments, psychophysiological measures and performance metrics [<xref rid="nicc70373-bib-0007" ref-type="bibr">7</xref>, <xref rid="nicc70373-bib-0008" ref-type="bibr">8</xref>]. We specifically focus on workload experienced by healthcare professionals (HCPs) directly involved in patient care, including nurses, physicians, respiratory therapists and other clinical staff who operate medical technologies.</p><p>Scoring systems such as the Therapeutic Intervention Scoring System&#x02013;76 (TISS&#x02013;76) and Nursing Activities Score (NAS) assign fixed scores to standardised patient care activities to determine optimal nurse&#x02010;to&#x02010;patient staffing ratios in the ICU [<xref rid="nicc70373-bib-0009" ref-type="bibr">9</xref>, <xref rid="nicc70373-bib-0010" ref-type="bibr">10</xref>]. While useful for staffing decisions, these scores cannot measure workload variability&#x02014;for instance, how workload differs between ventilator types, provider expertise or training levels and are therefore excluded from this review.</p><p>Given the variety in measurement approaches and the increasing complexity of ICU medical technology, a comprehensive overview of available workload measurement methods for ICU settings is needed to guide future research and implementation.</p><sec id="nicc70373-sec-0007"><label>1.1</label><title>Aim</title><p>The aim of this scoping review is to identify and evaluate methods and instruments to measure ICU healthcare professionals' workload during direct patient care activities involving medical technology.</p></sec></sec><sec id="nicc70373-sec-0008"><label>2</label><title>Design and Methods</title><sec id="nicc70373-sec-0009"><label>2.1</label><title>Design</title><p>We will follow the methodological framework outlined by the Joanna Briggs Institute (JBI) [<xref rid="nicc70373-bib-0011" ref-type="bibr">11</xref>, <xref rid="nicc70373-bib-0012" ref-type="bibr">12</xref>]. The results will be reported according to the Preferred Reporting Items for Systematic reviews and Meta&#x02010;Analyses extension for Scoping Reviews (PRISMA&#x02010;ScR) [<xref rid="nicc70373-bib-0013" ref-type="bibr">13</xref>]. In accordance with the PRISMA&#x02010;ScR guidelines, this scoping review is registered in the Open Science Framework (OSF) on the 26th of September 2024 (Registration DOI: <ext-link xlink:href="https://doi.org/10.17605/OSF.IO/2A97J" ext-link-type="uri">10.17605/OSF.IO/2A97J</ext-link>).</p></sec><sec id="nicc70373-sec-0010"><label>2.2</label><title>Research Questions</title><p>The primary research question is as follows:
+<list list-type="bullet" id="nicc70373-list-0004"><list-item id="nicc70373-li-0023"><p>Which methods and instruments are used to measure ICU healthcare professionals' workload during direct patient care activities, and which have been applied to medical technology&#x02010;related tasks?</p></list-item></list>
+</p><p>The secondary research question is as follows:
+<list list-type="bullet" id="nicc70373-list-0005"><list-item id="nicc70373-li-0024"><p>What is the evidence for the feasibility, validity and reliability of these methods and instruments?</p></list-item></list>
+</p></sec><sec id="nicc70373-sec-0011"><label>2.3</label><title>Eligibility Criteria</title><p>The eligibility criteria for this scoping review are based on the Population, Concept, and Context (PCC) mnemonic [<xref rid="nicc70373-bib-0012" ref-type="bibr">12</xref>], as outlined in Table&#x000a0;<xref rid="nicc70373-tbl-0001" ref-type="table">1</xref>. We focus specifically on workload related to direct patient care activities involving medical technologies in the ICU.</p><table-wrap position="float" id="nicc70373-tbl-0001" content-type="TABLE"><label>TABLE 1</label><caption><p>Eligibility criteria.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="bottom" rowspan="1" colspan="1"/><th align="center" valign="bottom" rowspan="1" colspan="1">Inclusion criteria</th><th align="center" valign="bottom" rowspan="1" colspan="1">Exclusion criteria</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">Population (P)</td><td align="left" valign="top" rowspan="1" colspan="1">Healthcare professionals directly involved in patient care (e.g., nurses, physicians, physician assistants, paramedics, respiratory therapists and ventilation practitioners)</td><td align="left" valign="top" rowspan="1" colspan="1">
+<list list-type="simple" id="nicc70373-list-0006"><list-item id="nicc70373-li-0025"><label>&#x02013;</label><p>Volunteers and informal caregivers</p></list-item><list-item id="nicc70373-li-0026"><label>&#x02013;</label><p>Healthcare professionals not directly involved in patient care (e.g., pharmacists, radiologists, laboratory technicians)</p></list-item></list>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Concept (C)</td><td align="left" valign="top" rowspan="1" colspan="1">Methods and instruments to measure workload during direct patient care generally, and specifically during medical technology&#x02010;related tasks.</td><td align="left" valign="top" rowspan="1" colspan="1">
+<list list-type="simple" id="nicc70373-list-0007"><list-item id="nicc70373-li-0027"><label>&#x02013;</label><p>Patient&#x02010;based scoring systems that determine nurse&#x02010;to&#x02010;patient ratios</p></list-item><list-item id="nicc70373-li-0028"><label>&#x02013;</label><p>Workload exclusively related to electronic health records</p></list-item></list>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Context (C)</td><td align="left" valign="top" rowspan="1" colspan="1">
+<list list-type="simple" id="nicc70373-list-0008"><list-item id="nicc70373-li-0029"><label>&#x02013;</label><p>All types of ICUs, including medical, surgical, neurological, cardiac, respiratory and mixed ICUs</p></list-item><list-item id="nicc70373-li-0030"><label>&#x02013;</label><p>Simulated ICU settings</p></list-item></list>
+</td><td align="left" valign="top" rowspan="1" colspan="1">
+<list list-type="simple" id="nicc70373-list-0009"><list-item id="nicc70373-li-0031"><label>&#x02013;</label><p>Paediatric or Neonatal ICUs</p></list-item><list-item id="nicc70373-li-0032"><label>&#x02013;</label><p>Step&#x02010;down or intermediate care units (e.g., rehabilitation and stroke units)</p></list-item></list>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Study designs</td><td align="left" valign="top" rowspan="1" colspan="1">
+<list list-type="simple" id="nicc70373-list-0010"><list-item id="nicc70373-li-0033"><label>&#x02013;</label><p>Studies with original primary data (including quantitative and qualitative study designs and pilot studies)</p></list-item><list-item id="nicc70373-li-0034"><label>&#x02013;</label><p>Trial registrations</p></list-item><list-item id="nicc70373-li-0035"><label>&#x02013;</label><p>Protocols</p></list-item></list>
+</td><td align="left" valign="top" rowspan="1" colspan="1">
+<list list-type="simple" id="nicc70373-list-0011"><list-item id="nicc70373-li-0036"><label>&#x02013;</label><p>Letters</p></list-item><list-item id="nicc70373-li-0037"><label>&#x02013;</label><p>Guidelines</p></list-item><list-item id="nicc70373-li-0038"><label>&#x02013;</label><p>Commentaries</p></list-item><list-item id="nicc70373-li-0039"><label>&#x02013;</label><p>Posters</p></list-item></list>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Publication period</td><td align="left" valign="top" rowspan="1" colspan="1">2010&#x02013;2025</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Language</td><td align="left" valign="top" rowspan="1" colspan="1">English, Dutch, German</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr></tbody></table></table-wrap><p>Additionally, we will include all types of study designs reporting original primary data, as well as trial registrations and protocols (see Table&#x000a0;<xref rid="nicc70373-tbl-0001" ref-type="table">1</xref> for detailed inclusion and exclusion criteria). We will restrict our search to studies between 2010 and 2025 in order to focus on contemporary ICU technologies, as technological development in critical care has accelerated rapidly in recent decades.</p></sec><sec id="nicc70373-sec-0012"><label>2.4</label><title>Definitions</title><p>Workload in this context is defined as a multidimensional construct [<xref rid="nicc70373-bib-0006" ref-type="bibr">6</xref>] encompassing three components: (1) temporal demand; the time required to complete a task, (2) subtask frequency; the rate of steps or actions within a task (e.g., the frequency of manual ventilator adjustments within the task ventilator management), and (3) cognitive demand; the interaction between the task and the healthcare professionals' cognitive abilities, that is, mental workload. Cognitive demand can be measured through performance&#x02010;based, subjective (self&#x02010;reported) or psychophysiological methods [<xref rid="nicc70373-bib-0007" ref-type="bibr">7</xref>].</p><p>This definition allows us to identify workload measurement instruments and methods that capture not only the cognitive effort but also the objective, practical demands of a specific (technology&#x02010;related) task. Importantly, this perspective differs fundamentally from patient&#x02010;based scoring systems that measure nursing workload in terms of the volume of patient care activities, such as the TISS&#x02013;76 and NAS [<xref rid="nicc70373-bib-0009" ref-type="bibr">9</xref>, <xref rid="nicc70373-bib-0010" ref-type="bibr">10</xref>]. These scoring systems are designed from a patient perspective (&#x02018;how much care does this patient require?&#x02019;), generating a sum score to determine patient&#x02013;nurse ratios. While these systems include technological interventions in their scoring items (e.g., mechanical ventilation, haemodynamic monitoring), they assign fixed, standardised scores to each intervention regardless of the specific technology used, how the task is performed, the providers' expertise or organisational context. While useful for staffing decisions, they cannot isolate the workload of specific tasks or technologies, nor measure workload as defined in this review. Our review instead adopts the individual healthcare professional's perspective, focusing on instruments capable of measuring task&#x02010; and technology&#x02010;specific workload variations (e.g., comparing the workload of different ventilators). Therefore, traditional patient&#x02010;based scoring systems are excluded from this review.</p><p>We define medical technology as any technological innovation, device or system that directly supports bedside clinical interventions and patient monitoring in the ICU. This includes devices primarily operated by healthcare professionals involved in direct patient care, such as mechanical ventilators, infusion pumps, continuous renal replacement therapy (CRRT) devices and patient monitors [<xref rid="nicc70373-bib-0014" ref-type="bibr">14</xref>]. Studies focusing exclusively on electronic health records&#x02010;related activities (e.g., documentation, administration) without direct relation to direct patient care activities or medical technology use are excluded.</p></sec><sec id="nicc70373-sec-0013"><label>2.5</label><title>Search Strategy</title><p>Together with a qualified medical librarian (FJ), the search strategy will be developed using medical subject heading (MeSH) and text words related to our pre&#x02010;specified inclusion and exclusion criteria. We will conduct a search within the following electronic databases: MEDLINE, EMBASE, PsycINFO (all OVID), CINAHL (Ebscohost), Cochrane library (Wiley), ISI Web of Science (Clarivate), the WHO International Clinical Trials Registry Platform search portal (WHO ICTRP) and additionally Google Scholar. We will screen the reference lists of reviews and included studies for additional studies. The full search strategy for MEDLINE (OVID) is provided in Table&#x000a0;<xref rid="nicc70373-supitem-0003" ref-type="supplementary-material">S1</xref>.</p><p>Our search strategy will focus on methods for measuring workload during direct patient care, without initially limiting ourselves to medical technology. This approach allows us to address both components of our primary research question: we will first identify and describe all workload measurement instruments used in direct patient care in the ICU, then analyse which of these have been applied specifically to medical technology&#x02010;related tasks. We chose this strategy for two reasons: first, to provide a comprehensive overview of the broader landscape of workload measurements in ICU patient care; second, because workload measurement instruments used in non&#x02010;technology contexts may also be applicable to technology&#x02010;related tasks, and we aim to identify all such potential instruments. Moreover, adding technology&#x02010;specific terms would risk excluding relevant instruments that measure workload during technology use without explicitly stating &#x02018;technology&#x02019; in searchable fields.</p></sec><sec id="nicc70373-sec-0014"><label>2.6</label><title>Study Selection</title><p>Search results will be imported into EndNote X9.3.3 (Clarivate Analytics, PA, USA) and de&#x02010;duplicated with DedupEndNote&#x000a0;[<xref rid="nicc70373-bib-0015" ref-type="bibr">15</xref>]. Two reviewers (GL and MM) will conduct the selection process according to the PRISMA&#x02010;ScR guidelines, using the Rayyan web application, a recommended screening tool known for its high usability and accuracy [<xref rid="nicc70373-bib-0016" ref-type="bibr">16</xref>]. The reviewers will independently assess titles and abstracts using the eligibility criteria. To ensure consistency, a sample of 30 publications will be evaluated together, and eligibility will be discussed before screening all abstracts.</p><p>Full texts of studies identified as potentially eligible by both reviewers will be independently reviewed to confirm selection. In any case of disagreement, a discussion between the two reviewers GL and MM will be attempted first. If this is inconclusive, LBK will serve as a third reviewer. The selection process (identification, screening and inclusion of articles) will be presented in a flowchart according to the PRISMA&#x02010;ScR checklist, see Figure&#x000a0;<xref rid="nicc70373-supitem-0001" ref-type="supplementary-material">S1</xref>.</p></sec><sec id="nicc70373-sec-0015"><label>2.7</label><title>Data Charting Process</title><p>The research team has developed a data charting form in Microsoft Excel based on the JBI standardised data extraction form to collect the relevant information. The form will be piloted by two reviewers (GL and MM) on five articles to ensure consistency across reviewers and to revise the form if necessary. Each reviewer will extract the data from the included studies independently. Extracted data will include study demographics (author, year of publication, country of origin); study aim; study design; setting; population and sample size; type of task and type of medical technology; and a description of the workload measurement method or instrument. Categories for tasks, medical technologies and measurement methods will be developed inductively during the data synthesis phase, after completing data extraction, to ensure they align with the actual data from included studies.</p><p>We will also extract feasibility data (e.g., required training, frequency and duration of measurements), validity and reliability of the identified measurement methods. Given the variability in workload definitions in literature, we will extract how workload was defined and which domain of workload was investigated. We will categorise the measurement methods into five workload domains as introduced in the definition of workload: temporal, subtask frequency, subjective, psychophysiological or performance&#x02010;based; the latter three representing different measurement approaches for cognitive demand. One reviewer (GL) will be responsible for contacting the corresponding lead author of an included study when clarification or additional data are needed, with a maximum contact limit of three emails.</p></sec><sec id="nicc70373-sec-0016"><label>2.8</label><title>Assessment of Methodological Quality of Individual Studies</title><p>While methodological quality assessment is not mandatory in scoping reviews, we will assess the reporting quality of the identified measurement instruments using a seven&#x02010;item appraisal tool, developed by the research team (GL, CO and FP) based on the Mixed Methods Appraisal Tool (MMAT) [<xref rid="nicc70373-bib-0017" ref-type="bibr">17</xref>], see <xref rid="nicc70373-supitem-0002" ref-type="supplementary-material">File S1</xref>. The checklist will assess reporting on aspects such as feasibility, validity, reliability and contextual application, with detailed criteria and examples of adequate reporting for each item. This assessment will indicate the completeness of reporting and provide insight into the potential usefulness of the identified instruments in the ICU setting. Two authors (GL and MM) will independently assess the reporting quality of the identified instruments and methods.</p></sec><sec id="nicc70373-sec-0017"><label>2.9</label><title>Data Analysis and Presentation</title><p>Study selection will be presented using a PRISMA flowchart&#x000a0;[<xref rid="nicc70373-bib-0013" ref-type="bibr">13</xref>]. Two reviewers (GL and MM) will independently categorise instruments by workload domain, measurement method, type of task and type of medical technology, with disagreements resolved through discussion with a third reviewer (LBK). Workload domains include the following: temporal, subtask frequency, performance&#x02010;, subjective&#x02010; or psychophysiological&#x02010;based.</p><p>We will perform a narrative synthesis by comparing methods within and across categories to identify similarities, differences and gaps in workload measurement approaches. The research team will meet regularly to discuss emerging patterns and reach consensus on categories and interpretation. Descriptive statistics will summarise instrument characteristics (e.g., frequency of use by domain, technology type and geographical distribution). Findings will be presented in tables and figures addressing each research question.</p></sec></sec><sec sec-type="discussion" id="nicc70373-sec-0018"><label>3</label><title>Discussion</title><p>As healthcare increasingly adopts technological advancements, evaluating workload is essential to understand their impact and develop strategies for effective integration into patient care. This scoping review will provide a comprehensive overview of the instruments and methods used to assess the workload of healthcare professionals in ICUs, particularly in the context of direct patient care involving medical technology.</p><p>This review has several strengths. First, we will use a rigorous and systematic search strategy, developed in collaboration with a qualified medical librarian, enhancing the comprehensiveness of our search. Second, we will apply a broader definition of workload encompassing both task load and mental workload in relation to specific tasks, ensuring inclusion of diverse measurement approaches. Third, although quality assessment is not mandatory in scoping reviews, we will assess reporting quality to provide transparency about the extent in which instruments are adequately described in the literature, enabling readers to judge their potential applicability.</p><sec id="nicc70373-sec-0019"><label>3.1</label><title>Limitations</title><p>This review has several limitations. A key challenge is the conceptual heterogeneity surrounding &#x02018;workload&#x02019;. Terms such as task load, mental workload, cognitive load, mental capacity and effort are often used interchangeably in the literature. In most studies, researchers focus on measuring the amount of work, or &#x02018;task load&#x02019;, likely because it is more quantifiable and easier to assess. However, workload also includes cognitive and emotional demands placed on an individual, often referred to as &#x02018;mental workload&#x02019;, which is influenced by task complexity, environment and personal capacity&#x02014;especially in the context of healthcare professionals. These concepts are distinct but often confused or used interchangeably with terms like cognitive load, mental capacity, effort and stress, leading to inconsistencies. This terminological heterogeneity may limit the comprehensiveness of our search, as relevant studies with alternative terminology could be missed despite our broad search strategy. Additionally, our restriction to English, Dutch and German publications may introduce geographic bias by excluding potential relevant studies in other languages. Finally, consistent with scoping review methodology, we will not exclude studies based on study quality, resulting in methodological heterogeneity.</p></sec><sec id="nicc70373-sec-0020"><label>3.2</label><title>Implications for Practice</title><p>This review will serve as a practical resource to guide instrument selection for measuring ICU workload related to existing and emerging technologies. By categorising instruments across workload domains, types of tasks and medical technology and evaluating reporting quality, researchers, nurses and clinicians can identify appropriate measurement approaches for their specific context. This will support evidence&#x02010;informed decisions about technology implementation that balance clinical benefits with healthcare professional wellbeing and sustainable work environments.</p></sec></sec><sec sec-type="conclusions" id="nicc70373-sec-0021"><label>4</label><title>Conclusion</title><p>Multidimensional workload assessment from the healthcare professional's perspective is essential for understanding the impact of medical ICU technologies. This scoping review will probably be the first systematic overview of available measurement instruments and methods, categorised by workload domain and evaluated for reporting quality.</p></sec><sec id="nicc70373-sec-0022"><title>Author Contributions</title><p>The study was conceptualised and designed by G.J.C.v.L., M.A.M., P.v.V., M.J.S., F.P. and L.A.B.&#x02010;K. The search strategy was developed by G.J.C.v.L., M.A.M. and F.S.J. G.J.C.v.L. and M.A.M. initially drafted the protocol, which was later revised by C.J.v.O., F.S.J., P.v.V., M.J.S., F.P. and L.A.B.&#x02010;K. All authors carefully reviewed the final protocol and provided their approval.</p></sec><sec id="nicc70373-sec-0024"><title>Funding</title><p>The authors have nothing to report.</p></sec><sec id="nicc70373-sec-0025"><title>Ethics Statement</title><p>The authors have nothing to report.</p></sec><sec sec-type="conclusions" id="nicc70373-sec-0026"><title>Consent</title><p>The authors have nothing to report.</p></sec><sec sec-type="COI-statement" id="nicc70373-sec-0027"><title>Conflicts of Interest</title><p>The authors declare no conflicts of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="nicc70373-supitem-0001" position="float" content-type="local-data"><caption><p>
+<bold>Figure S1:</bold> PRISMA flowchart.</p></caption><media xlink:href="NICC-31-0-s002.docx"/></supplementary-material><supplementary-material id="nicc70373-supitem-0002" position="float" content-type="local-data"><caption><p>
+<bold>File S1:</bold> Appraisal tool to assess the reporting of workload measurement methods.</p></caption><media xlink:href="NICC-31-0-s001.docx"/></supplementary-material><supplementary-material id="nicc70373-supitem-0003" position="float" content-type="local-data"><caption><p>
+<bold>Table&#x000a0;S1:</bold> Search strategy for MEDLINE (OVID).</p></caption><media xlink:href="NICC-31-0-s003.docx"/></supplementary-material></sec></body><back><ack id="nicc70373-sec-0023"><title>Acknowledgements</title><p>The authors have nothing to report.</p></ack><sec sec-type="data-availability" id="nicc70373-sec-0029"><title>Data Availability Statement</title><p>The data that support the findings of this study are available from the corresponding author upon reasonable request.</p></sec><ref-list content-type="cited-references" id="nicc70373-bibl-0001"><title>References</title><ref id="nicc70373-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="nicc70373-cit-0001">
+<string-name>
+<given-names>S.</given-names>
+<surname>Bayramzadeh</surname>
+</string-name> and <string-name>
+<given-names>P.</given-names>
+<surname>Aghaei</surname>
+</string-name>, &#x0201c;<article-title>Technology Integration in Complex Healthcare Environments: A Systematic Literature Review</article-title>,&#x0201d; <source>Applied Ergonomics</source>
+<volume>92</volume> (<year>2021</year>): <elocation-id>103351</elocation-id>, <pub-id pub-id-type="doi">10.1016/j.apergo.2020.103351</pub-id>.<pub-id pub-id-type="pmid">33412484</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="nicc70373-cit-0002">
+<string-name>
+<given-names>B.</given-names>
+<surname>Vasquez</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Moreno&#x02010;Lacalle</surname>
+</string-name>, <string-name>
+<given-names>G. P.</given-names>
+<surname>Soriano</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Juntasoopeepun</surname>
+</string-name>, <string-name>
+<given-names>R. C.</given-names>
+<surname>Locsin</surname>
+</string-name>, and <string-name>
+<given-names>L. S.</given-names>
+<surname>Evangelista</surname>
+</string-name>, &#x0201c;<article-title>Technological Machines and Artificial Intelligence in Nursing Practice</article-title>,&#x0201d; <source>Nursing &#x00026; Health Sciences</source>
+<volume>25</volume>, no. <issue>3</issue> (<year>2023</year>): <fpage>474</fpage>&#x02013;<lpage>481</lpage>, <pub-id pub-id-type="doi">10.1111/nhs.13029</pub-id>.<pub-id pub-id-type="pmid">37332058</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="nicc70373-cit-0003">
+<string-name>
+<given-names>J. C. F.</given-names>
+<surname>de Winter</surname>
+</string-name> and <string-name>
+<given-names>P. A.</given-names>
+<surname>Hancock</surname>
+</string-name>, &#x0201c;<article-title>Why Human Factors Science Is Demonstrably Necessary: Historical and Evolutionary Foundations</article-title>,&#x0201d; <source>Ergonomics</source>
+<volume>64</volume>, no. <issue>9</issue> (<year>2021</year>): <fpage>1115</fpage>&#x02013;<lpage>1131</lpage>, <pub-id pub-id-type="doi">10.1080/00140139.2021.1905882</pub-id>.<pub-id pub-id-type="pmid">33779512</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="nicc70373-cit-0004">
+<string-name>
+<given-names>J. C.</given-names>
+<surname>Lucena</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Carvalho</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Santos&#x02010;Costa</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Monico</surname>
+</string-name>, and <string-name>
+<given-names>P.</given-names>
+<surname>Parreira</surname>
+</string-name>, &#x0201c;<article-title>Nurses' Strategies to Prevent and/or Decrease Work&#x02010;Related Technostress: A Scoping Review</article-title>,&#x0201d; <source>Computers in Nursing</source>
+<volume>39</volume>, no. <issue>12</issue> (<year>2021</year>): <fpage>916</fpage>&#x02013;<lpage>920</lpage>, <pub-id pub-id-type="doi">10.1097/CIN.0000000000000771</pub-id>.</mixed-citation></ref><ref id="nicc70373-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="nicc70373-cit-0005">
+<string-name>
+<given-names>Y.</given-names>
+<surname>Yan</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Zhao</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Bi</surname>
+</string-name>, <string-name>
+<given-names>C. K.</given-names>
+<surname>Or</surname>
+</string-name>, and <string-name>
+<given-names>X.</given-names>
+<surname>Ye</surname>
+</string-name>, &#x0201c;<article-title>The Mental Workload of ICU Nurses Performing Human&#x02010;Machine Tasks and Associated Factors: A Cross&#x02010;Sectional Questionnaire Survey</article-title>,&#x0201d; <source>Journal of Advanced Nursing</source>
+<volume>81</volume>, no. <issue>1</issue> (<year>2025</year>): <fpage>224</fpage>&#x02013;<lpage>236</lpage>, <pub-id pub-id-type="doi">10.1111/jan.16199</pub-id>.<pub-id pub-id-type="pmid">38687803</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="nicc70373-cit-0006">
+<string-name>
+<given-names>Z.</given-names>
+<surname>Yuan</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Feng</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>The Levels and Related Factors of Mental Workload Among Nurses: A Systematic Review and Meta&#x02010;Analysis</article-title>,&#x0201d; <source>International Journal of Nursing Practice</source>
+<volume>29</volume>, no. <issue>5</issue> (<year>2023</year>): <elocation-id>e13148</elocation-id>, <pub-id pub-id-type="doi">10.1111/ijn.13148</pub-id>.<pub-id pub-id-type="pmid">36950781</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0007"><label>7</label><mixed-citation publication-type="book" id="nicc70373-cit-0007">
+<string-name>
+<given-names>G.</given-names>
+<surname>Matthews</surname>
+</string-name> and <string-name>
+<given-names>L. E.</given-names>
+<surname>Reinerman&#x02010;Jones</surname>
+</string-name>, <source>Workload Assessment: How to Diagnose Workload Issues and Enhance Performance (Users' Guides to Human Factors and Ergonomics Methods)</source>, <edition designator="1">1st ed.</edition> (<publisher-name>Human Factors and Ergonomics Society</publisher-name>, <year>2017</year>).</mixed-citation></ref><ref id="nicc70373-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="nicc70373-cit-0008">
+<string-name>
+<given-names>P.</given-names>
+<surname>Griffiths</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Saville</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Ball</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Nursing Workload, Nurse Staffing Methodologies and Tools: A Systematic Scoping Review and Discussion</article-title>,&#x0201d; <source>International Journal of Nursing Studies</source>
+<volume>103</volume> (<year>2020</year>): <elocation-id>103487</elocation-id>, <pub-id pub-id-type="doi">10.1016/j.ijnurstu.2019.103487</pub-id>.<pub-id pub-id-type="pmid">31884330</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="nicc70373-cit-0009">
+<string-name>
+<given-names>D. R.</given-names>
+<surname>Miranda</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Nap</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>de Rijk</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Schaufeli</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Iapichino</surname>
+</string-name>, and <collab collab-type="authors">T. W. G. T. I. S. System</collab>
+, &#x0201c;<article-title>Nursing Activities Score</article-title>,&#x0201d; <source>Critical Care Medicine</source>
+<volume>31</volume>, no. <issue>2</issue> (<year>2003</year>): <fpage>374</fpage>&#x02013;<lpage>382</lpage>, <pub-id pub-id-type="doi">10.1097/01.CCM.0000045567.78801.CC</pub-id>.<pub-id pub-id-type="pmid">12576939</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="nicc70373-cit-0010">
+<string-name>
+<given-names>A. R.</given-names>
+<surname>Keene</surname>
+</string-name> and <string-name>
+<given-names>D. J.</given-names>
+<surname>Cullen</surname>
+</string-name>, &#x0201c;<article-title>Therapeutic Intervention Scoring System: Update 1983</article-title>,&#x0201d; <source>Critical Care Medicine</source>
+<volume>11</volume>, no. <issue>1</issue> (<year>1983</year>): <fpage>1</fpage>&#x02013;<lpage>3</lpage>, <pub-id pub-id-type="doi">10.1097/00003246-198301000-00001</pub-id>.<pub-id pub-id-type="pmid">6848305</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="nicc70373-cit-0011">
+<string-name>
+<given-names>M. D. J.</given-names>
+<surname>Peters</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Marnie</surname>
+</string-name>, <string-name>
+<given-names>A. C.</given-names>
+<surname>Tricco</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>Updated Methodological Guidance for the Conduct of Scoping Reviews</article-title>,&#x0201d; <source>JBI Evidence Implementation</source>
+<volume>19</volume>, no. <issue>1</issue> (<year>2021</year>): <fpage>3</fpage>&#x02013;<lpage>10</lpage>, <pub-id pub-id-type="doi">10.1097/XEB.0000000000000277</pub-id>.<pub-id pub-id-type="pmid">33570328</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0012"><label>12</label><mixed-citation publication-type="book" id="nicc70373-cit-0012">
+<string-name>
+<given-names>M. D. J.</given-names>
+<surname>Peters</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Godfrey</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>McInerney</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Munn</surname>
+</string-name>, <string-name>
+<given-names>A. C.</given-names>
+<surname>Tricco</surname>
+</string-name>, and <string-name>
+<given-names>H.</given-names>
+<surname>Khalil</surname>
+</string-name>, &#x0201c;<part-title>Chapter&#x000a0;10: Scoping Reviews</part-title>,&#x0201d; in <source>JBI Manual for Evidence Synthesis</source> (<publisher-name>Joanna Briggs Institute</publisher-name>, <year>2024</year>), <pub-id pub-id-type="doi">10.46658/JBIMES-24-09</pub-id>.</mixed-citation></ref><ref id="nicc70373-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="nicc70373-cit-0013">
+<string-name>
+<given-names>A. C.</given-names>
+<surname>Tricco</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Lillie</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Zarin</surname>
+</string-name>, et&#x000a0;al., &#x0201c;<article-title>PRISMA Extension for Scoping Reviews (PRISMA&#x02010;ScR): Checklist and Explanation</article-title>,&#x0201d; <source>Annals of Internal Medicine</source>
+<volume>169</volume>, no. <issue>7</issue> (<year>2018</year>): <fpage>467</fpage>&#x02013;<lpage>473</lpage>, <pub-id pub-id-type="doi">10.7326/M18-0850</pub-id>.<pub-id pub-id-type="pmid">30178033</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="nicc70373-cit-0014">
+<string-name>
+<given-names>D. C.</given-names>
+<surname>Scales</surname>
+</string-name> and <string-name>
+<given-names>W. J.</given-names>
+<surname>Sibbald</surname>
+</string-name>, &#x0201c;<article-title>Medical Technology in the Intensive Care Unit</article-title>,&#x0201d; <source>Current Opinion in Critical Care</source>
+<volume>10</volume>, no. <issue>4</issue> (<year>2004</year>): <fpage>238</fpage>&#x02013;<lpage>245</lpage>, <pub-id pub-id-type="doi">10.1097/01.ccx.0000134334.44403.e3</pub-id>.<pub-id pub-id-type="pmid">15258495</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0015"><label>15</label><mixed-citation publication-type="miscellaneous" id="nicc70373-cit-0015">
+<collab collab-type="authors">DedupEndNote</collab>
+. <year>2023</year>, accessed October 1, 2025, [Online], <ext-link xlink:href="https://github.com/globbestael/DedupEndNote" ext-link-type="uri">https://github.com/globbestael/DedupEndNote</ext-link>.</mixed-citation></ref><ref id="nicc70373-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="nicc70373-cit-0016">
+<string-name>
+<given-names>A. H. S.</given-names>
+<surname>Dos Reis</surname>
+</string-name>, <string-name>
+<given-names>A. L. M.</given-names>
+<surname>de Oliveira</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Fritsch</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Zouch</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Ferreira</surname>
+</string-name>, and <string-name>
+<given-names>J. C.</given-names>
+<surname>Polese</surname>
+</string-name>, &#x0201c;<article-title>Usefulness of Machine Learning Softwares to Screen Titles of Systematic Reviews: A Methodological Study</article-title>,&#x0201d; <source>Systematic Reviews</source>
+<volume>12</volume>, no. <issue>1</issue> (<year>2023</year>): <elocation-id>68</elocation-id>, <pub-id pub-id-type="doi">10.1186/s13643-023-02231-3</pub-id>.<pub-id pub-id-type="pmid">37061711</pub-id>
+</mixed-citation></ref><ref id="nicc70373-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="nicc70373-cit-0017">
+<string-name>
+<given-names>Q. N.</given-names>
+<surname>Hong</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Gonzalez&#x02010;Reyes</surname>
+</string-name>, and <string-name>
+<given-names>P.</given-names>
+<surname>Pluye</surname>
+</string-name>, &#x0201c;<article-title>Improving the Usefulness of a Tool for Appraising the Quality of Qualitative, Quantitative and Mixed Methods Studies, the Mixed Methods Appraisal Tool (MMAT)</article-title>,&#x0201d; <source>Journal of Evaluation in Clinical Practice</source>
+<volume>24</volume>, no. <issue>3</issue> (<year>2018</year>): <fpage>459</fpage>&#x02013;<lpage>467</lpage>, <pub-id pub-id-type="doi">10.1111/jep.12884</pub-id>.<pub-id pub-id-type="pmid">29464873</pub-id>
+</mixed-citation></ref></ref-list></back></article>

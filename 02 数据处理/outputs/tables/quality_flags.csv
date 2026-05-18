@@ -1,0 +1,7 @@
+flag,count,rate
+missing_abstract,3,0.03
+short_abstract,0,0.0
+suspicious_long_title,0,0.0
+short_body,0,0.0
+xml_residue_abstract,0,0.0
+xml_residue_title,0,0.0

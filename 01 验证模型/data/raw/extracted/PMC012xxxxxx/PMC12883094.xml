@@ -1,0 +1,720 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" id="cssc70380" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">ChemSusChem</journal-id><journal-id journal-id-type="iso-abbrev">ChemSusChem</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)1864-564X</journal-id><journal-id journal-id-type="publisher-id">CSSC</journal-id><journal-title-group><journal-title>Chemsuschem</journal-title></journal-title-group><issn pub-type="ppub">1864-5631</issn><issn pub-type="epub">1864-564X</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">41655069</article-id><article-id pub-id-type="pmc">PMC12883094</article-id><article-id pub-id-type="doi">10.1002/cssc.202502493</article-id><article-id pub-id-type="publisher-id">CSSC70380</article-id><article-categories><subj-group subj-group-type="overline"><subject>Research Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>Improving Electrolyte Sustainability for Sodium&#x02010;Ion Capacitors by Combining a Bio&#x02010;Based Solvent With a Low&#x02010;Fluorine Salt</article-title></title-group><contrib-group><contrib id="cssc70380-cr-0001" contrib-type="author"><name><surname>Hainthaler</surname><given-names>Andrea</given-names></name><xref rid="cssc70380-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cssc70380-cr-0002" contrib-type="author"><name><surname>Pinz&#x000f3;n</surname><given-names>Manuel J.</given-names></name><xref rid="cssc70380-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="cssc70380-cr-0003" contrib-type="author"><name><surname>Arnaiz</surname><given-names>Maria</given-names></name><xref rid="cssc70380-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="cssc70380-cr-0004" contrib-type="author"><name><surname>Cid</surname><given-names>Rosal&#x000ed;a</given-names></name><xref rid="cssc70380-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="cssc70380-cr-0005" contrib-type="author"><name><surname>Lu</surname><given-names>Yiyue</given-names></name><xref rid="cssc70380-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cssc70380-cr-0006" contrib-type="author"><name><surname>Ajuria</surname><given-names>Jon</given-names></name><xref rid="cssc70380-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="cssc70380-cr-0007" contrib-type="author" corresp="yes"><name><surname>Balducci</surname><given-names>Andrea</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-2887-8312</contrib-id><xref rid="cssc70380-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><address><email>andrea.balducci@uni-jena.de</email></address></contrib></contrib-group><aff id="cssc70380-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Institute of Technical and Environmental Chemistry</named-content>
+<institution>Friedrich Schiller University Jena and Center for Energy and Environmental Chemistry (CEEC) Jena</institution>
+<city>Jena</city>
+<country country="DE">Germany</country>
+</aff><aff id="cssc70380-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Centre for Cooperative Research on Alternative Energies (CIC energiGUNE)</named-content>
+<institution>Basque Research and Technology Alliance (BRTA)</institution>
+<city>Vitoria&#x02010;Gasteiz</city>
+<country country="ES">Spain</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>Andrea Balducci (<email>andrea.balducci@uni-jena.de</email>)</corresp></author-notes><pub-date pub-type="epub"><day>08</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="ppub"><day>12</day><month>2</month><year>2026</year></pub-date><volume>19</volume><issue seq="90">3</issue><issue-id pub-id-type="doi">10.1002/cssc.v19.3</issue-id><elocation-id>e202502493</elocation-id><history>
+<date date-type="rev-recd"><day>03</day><month>12</month><year>2025</year></date>
+<date date-type="received"><day>01</day><month>11</month><year>2025</year></date>
+<date date-type="accepted"><day>03</day><month>12</month><year>2025</year></date>
+</history><permissions><!--&#x000a9; 2026 Wiley&#x02010;VCH GmbH--><copyright-statement content-type="article-copyright">&#x000a9; 2026 The Author(s). ChemSusChem published by Wiley&#x02010;VCH GmbH</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:CSSC-19-e202502493.pdf"/><abstract><p>This work focuses on improving the sustainability of electrolytes for sodium&#x02010;ion capacitors (SICs). Through the combination of a low&#x02010;fluorinated salt, namely sodium difluoro(oxalato)borate (NaDFOB), and the bio&#x02010;based solvent <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone (GVL), a new electrolyte formulation (1&#x02009;mol&#x02009;L<sup>&#x02212;1</sup> NaDFOB in GVL) is being studied for application in SICs. Remarkably, the performance of the SIC full&#x02010;cells is very comparable to the most commonly used formulation of sodium hexafluorophosphate in ethylene carbonate:propylene carbonate (1&#x02009;mol&#x02009;L<sup>&#x02212;1</sup> NaPF<sub>6</sub> in EC:PC). Furthermore, presodiation strategies were compared for the novel electrolyte system. The in&#x02009;situ oxidation of a sacrificial salt (sodium squarate, Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub>) incorporated into the positive electrode yielded comparable results to the ex&#x02009;situ electrochemical approach. X&#x02010;ray photoelectron spectroscopy studies revealed that depending on the presodiation strategy, the solid&#x02010;electrolyte&#x02010;interphase composition varies significantly.</p></abstract><abstract abstract-type="graphical"><p>This work investigates a novel, sustainable electrolyte for application in sodium&#x02010;ion capacitors by combining a low&#x02010;fluorine salt, sodium difluoro(oxalato)borate (NaDFOB), with a bio&#x02010;based solvent, <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone (GVL). Furthermore, the in&#x02009;situ sacrificial salt (sodium squarate, Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub>) oxidation technique has been studied as a presodiation alternative to reduce the processing steps.<boxed-text position="anchor" content-type="graphic"><graphic xlink:href="CSSC-19-e202502493-g006.jpg" position="anchor" id="jats-graphic-1"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="cssc70380-kwd-0001">
+<italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone</kwd><kwd id="cssc70380-kwd-0002">electrolyte</kwd><kwd id="cssc70380-kwd-0003">presodiation</kwd><kwd id="cssc70380-kwd-0004">sodium&#x02010;ion capacitor</kwd><kwd id="cssc70380-kwd-0005">sustainable chemistry</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>
+<institution-wrap><institution>HORIZON EUROPE Reforming and enhancing the European Research and Innovation system</institution></institution-wrap>
+</funding-source><award-id>101092080</award-id></award-group><award-group id="funding-0002"><funding-source>
+<institution-wrap><institution>Bundesministerium f&#x000fc;r Bildung und Forschung</institution></institution-wrap>
+</funding-source><award-id>03XP0533D</award-id></award-group></funding-group><counts><fig-count count="6"/><table-count count="1"/><equation-count count="0"/><ref-count count="48"/><page-count count="10"/><word-count count="6980"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>12 February 2026</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.8 mode:remove_FC converted:08.02.2026</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="cssc70380-cit-0049">
+<string-name>
+<given-names>Andrea</given-names>
+<surname>Hainthaler</surname>
+</string-name>, <string-name>
+<given-names>Manuel J.</given-names>
+<surname>Pinz&#x000f3;n</surname>
+</string-name>, <string-name>
+<given-names>Maria</given-names>
+<surname>Arnaiz</surname>
+</string-name>, <string-name>
+<given-names>Rosal&#x000ed;a</given-names>
+<surname>Cid</surname>
+</string-name>, <string-name>
+<given-names>Yiyue</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name>
+<given-names>Jon</given-names>
+<surname>Ajuria</surname>
+</string-name>, <string-name>
+<given-names>Andrea</given-names>
+<surname>Balducci</surname>
+</string-name>, <source>ChemSusChem</source>
+<year>2026</year>, <volume>19</volume>, <elocation-id>e202502493</elocation-id>. <pub-id pub-id-type="doi">10.1002/cssc.202502493</pub-id>
+</mixed-citation>
+</p></notes></front><body><sec id="cssc70380-sec-0001"><label>1</label><title>Introduction</title><p>Sodium&#x02010;ion capacitors (SICs) are an emerging energy storage technology that offer power density and cycle life comparable to electrochemical double&#x02010;layer capacitors (EDLCs), but with higher energy density&#x000a0;[<xref rid="cssc70380-bib-0001" ref-type="bibr">1</xref>, <xref rid="cssc70380-bib-0002" ref-type="bibr">2</xref>, <xref rid="cssc70380-bib-0003" ref-type="bibr">3</xref>, <xref rid="cssc70380-bib-0004" ref-type="bibr">4</xref>, <xref rid="cssc70380-bib-0005" ref-type="bibr">5</xref>, <xref rid="cssc70380-bib-0006" ref-type="bibr">6</xref>, <xref rid="cssc70380-bib-0007" ref-type="bibr">7</xref>, <xref rid="cssc70380-bib-0008" ref-type="bibr">8</xref>, <xref rid="cssc70380-bib-0009" ref-type="bibr">9</xref>, <xref rid="cssc70380-bib-0010" ref-type="bibr">10</xref>]. These characteristics are achieved by combining a faradic electrode (battery&#x02010;type) with a capacitive electrode (EDLC&#x02010;type) within the same device. The most commonly employed electrode materials in SICs are Hard Carbon (HC, battery&#x02010;type) as negative and Activated Carbon (AC, capacitive type) as positive electrode&#x000a0;[<xref rid="cssc70380-bib-0001" ref-type="bibr">1</xref>,&#x000a0;<xref rid="cssc70380-bib-0004" ref-type="bibr">4</xref>]. These materials are cost&#x02010;effective, abundant and eco&#x02010;friendly (derived from biowaste)&#x000a0;[<xref rid="cssc70380-bib-0011" ref-type="bibr">11</xref>]. The electrolyte also plays a major role in the sustainability as well as the performance of a device. In sodium&#x02010;ion batteries (SIBs), 1&#x02009;mol&#x02009;L<sup>&#x02212;1</sup> sodium hexafluorophosphate in ethylene carbonate:propylene carbonate (1&#x02009;M NaPF<sub>6</sub> in EC:PC) has been established as a standard electrolyte and is also often employed in SICs&#x000a0;[<xref rid="cssc70380-bib-0010" ref-type="bibr">10</xref>,&#x000a0;<xref rid="cssc70380-bib-0012" ref-type="bibr">12</xref>,&#x000a0;<xref rid="cssc70380-bib-0013" ref-type="bibr">13</xref>].</p><p>When taking a closer look at the electrolyte formulation, it becomes evident that it has a large impact on the environmental footprint of the device. Both EC and PC are solvents based on petro&#x02010;industry, largely originating from fossil fuels&#x000a0;[<xref rid="cssc70380-bib-0014" ref-type="bibr">14</xref>, <xref rid="cssc70380-bib-0015" ref-type="bibr">15</xref>, <xref rid="cssc70380-bib-0016" ref-type="bibr">16</xref>]. Furthermore, the synthesis of NaPF<sub>6</sub> has a significant impact on resource depletion. Also, the high amounts of fluorine in NaPF<sub>6</sub> are being debated as a safety risk (HF formation)&#x000a0;[<xref rid="cssc70380-bib-0017" ref-type="bibr">17</xref>]. For these reasons, the introduction of alternatives for both salts and solvents displaying higher sustainability and lower fluorine content appears to be of great importance for the development of advanced SICs.</p><p>A less fluorinated salt, which could be used as replacement for NaPF<sub>6</sub>, is sodium difluoro(oxalato)borate (NaDFOB). NaDFOB is a very stable salt, generating no toxic or dangerous products when exposed to air or water&#x000a0;[<xref rid="cssc70380-bib-0018" ref-type="bibr">18</xref>]. Precisely, it has been shown that, under the same conditions, NaPF<sub>6</sub> forms HF when in contact with water, while no HF is formed with NaDFOB&#x000a0;[<xref rid="cssc70380-bib-0018" ref-type="bibr">18</xref>]. Furthermore, a 1&#x02009;M solution of the salt in PC proved to be stable &#x0003e;5&#x02009;V versus Na<sup>+</sup>/Na, indicating good oxidative stability&#x000a0;[<xref rid="cssc70380-bib-0018" ref-type="bibr">18</xref>]. When NaDFOB is oxidized, it has been proposed that oligomers and polymers are formed as well as NaF, all of which contribute to the formation of a stabilizing passivation layer&#x000a0;[<xref rid="cssc70380-bib-0019" ref-type="bibr">19</xref>, <xref rid="cssc70380-bib-0020" ref-type="bibr">20</xref>, <xref rid="cssc70380-bib-0021" ref-type="bibr">21</xref>]. NaDFOB has already been used in SIBs before, especially as additive enhancing both their safety and performance&#x000a0;[<xref rid="cssc70380-bib-0022" ref-type="bibr">22</xref>, <xref rid="cssc70380-bib-0023" ref-type="bibr">23</xref>, <xref rid="cssc70380-bib-0024" ref-type="bibr">24</xref>, <xref rid="cssc70380-bib-0025" ref-type="bibr">25</xref>, <xref rid="cssc70380-bib-0026" ref-type="bibr">26</xref>, <xref rid="cssc70380-bib-0027" ref-type="bibr">27</xref>, <xref rid="cssc70380-bib-0028" ref-type="bibr">28</xref>]. Furthermore, it has been employed in sodium&#x02010;metal batteries (SMBs) due to its excellent stabilization of sodium metal&#x000a0;[<xref rid="cssc70380-bib-0027" ref-type="bibr">27</xref>,&#x000a0;<xref rid="cssc70380-bib-0029" ref-type="bibr">29</xref>,&#x000a0;<xref rid="cssc70380-bib-0030" ref-type="bibr">30</xref>].</p><p>As mentioned before, the commonly employed solvents, EC and PC, can be viewed critically from a sustainability perspective. Thus, a bio&#x02010;based solvent will be introduced to the SIC technology: <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone (GVL). This solvent can be produced from biomass via acid&#x02010;catalyzed conversion of sugars and subsequent hydrogenation or directly in a one&#x02010;pot synthesis from fructose&#x000a0;[<xref rid="cssc70380-bib-0031" ref-type="bibr">31</xref>,&#x000a0;<xref rid="cssc70380-bib-0032" ref-type="bibr">32</xref>]. The solvent has also been shown to be biodegradable&#x000a0;[<xref rid="cssc70380-bib-0031" ref-type="bibr">31</xref>]. Furthermore, GVL displays a wide liquid range (&#x02212;31&#x000b0;C&#x02013;207&#x000b0;C), high flash point (96&#x000b0;C), and relatively low density (1.05&#x02009;g&#x02009;mL<sup>&#x02212;1</sup>), making it interesting for electrochemical energy storage devices&#x000a0;[<xref rid="cssc70380-bib-0033" ref-type="bibr">33</xref>]. In the last years, our group investigated the use of this bio&#x02010;based solvent in EDLCs, lithium&#x02010;ion batteries (LIBs) as well as lithium&#x02010;ion capacitors (LICs) showing that its use allows for the realization of high performance devices&#x000a0;[<xref rid="cssc70380-bib-0034" ref-type="bibr">34</xref>, <xref rid="cssc70380-bib-0035" ref-type="bibr">35</xref>, <xref rid="cssc70380-bib-0036" ref-type="bibr">36</xref>, <xref rid="cssc70380-bib-0037" ref-type="bibr">37</xref>]. However, to the best of our knowledge, GVL has not yet been employed in SICs.</p><p>In this work, we aim to develop a novel electrolyte for SICs displaying higher sustainability and lower fluorine content with respect to the state&#x02010;of&#x02010;the&#x02010;art. We therefore consider the combined use of NaDFOB and GVL. Specifically, we investigate the use of an electrolytic solution containing 1&#x02009;M NaDFOB in GVL. Initially, the chemical&#x02010;physical properties of this electrolyte, as well as its application in combination with HC and AC electrodes, are considered in detail. Afterwards, lab&#x02010;scale SICs are assembled and tested to understand the impact of the electrolyte on the performance of these devices. Finally, a comparison of different presodiation strategies is made: The commonly employed ex&#x02009;situ electrochemical approach is compared to an in&#x02009;situ sacrificial salt oxidation (sodium squarate, Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub>). A special focus is laid on the resulting solid&#x02010;electrolyte&#x02010;interphase (SEI) layers varying depending on the choice of presodiation technique.</p></sec><sec id="cssc70380-sec-0002"><label>2</label><title>Experimental Section</title><sec id="cssc70380-sec-0003"><label>2.1</label><title>Electrode Preparation</title><p>Electrodes were prepared following a previously reported procedure&#x000a0;[<xref rid="cssc70380-bib-0038" ref-type="bibr">38</xref>].</p><p>For hard carbon (HC) and activated carbon (AC) electrodes, a mass ratio of 90&#x02009;wt% active material (AM) to 5&#x02009;wt% binder to 5&#x02009;wt% conducting agent was chosen. Independent of the used active material, Na&#x02010;Carboxymethyl cellulose (Na&#x02010;CMC, CRT2000 GA, Walocel) was used as binder and carbon black (C&#x02010;NERGY Super C45, Imerys) as conducting agent. The AC (YP&#x02010;50F) and HC (Biocarbotron&#x02010;5&#x02009;&#x003bc;m) were purchased from Kuraray. All the solids were weighed in and mixed with ca. three parts deionized water. The mixture was processed for 3&#x02009;min at 50 oscillations per second in a ball mill. Using the doctor&#x02010;blade technique, films of 100&#x02009;&#x003bc;m (for HC) and 150&#x02009;&#x003bc;m (for AC) were manufactured onto an Aluminum foil current collector. After drying overnight at room temperature, electrodes with a surface area of 1.13&#x02009;cm<sup>2</sup> were punched. The electrodes were dried at 0.5&#x02009;mbar at 60&#x000b0;C overnight and then inserted into an argon&#x02010;filled glovebox (Mbraun, O<sub>2</sub> and H<sub>2</sub>O&#x02009;&#x0003c;&#x02009;1&#x02009;ppm). The mass loading of the electrodes containing HC was &#x02248;1.9&#x02009;mg&#x02009;cm<sup>&#x02212;2</sup>, while the ones containing AC was &#x02248;2.8&#x02009;mg&#x02009;cm<sup>&#x02212;2</sup>.</p><p>For the sacrificial salt containing AC&#x02010;electrodes (<inline-graphic xlink:href="CSSC-19-e202502493-e005.jpg"/>), the slurry was formulated using a composition of 60&#x02009;wt% AC (YP&#x02010;50F, Kuraray), 30&#x02009;wt% Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub> as sacrificial salt, 5&#x02009;wt% conductive carbon (C&#x02010;NERGY Super C65, Imerys), and 5&#x02009;wt% polyvinylidene fluoride (PVdF) binder in <italic toggle="yes">N</italic>&#x02010;methyl&#x02010;2&#x02010;pyrrolidone (NMP) solvent. A two&#x02010;step mixing protocol was employed: First, Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub> was ball&#x02010;milled together with C65 to ensure carbon coating and particle size reduction. This blend was then dispersed into a previously prepared PVdF solution. Finally, the AC was added, and the mixture was homogenized under high shear. The slurry was then cast onto etched Aluminum current collector within a specific wet thickness in order to obtain &#x02248;3.5&#x02009;mg&#x02009;cm<sup>&#x02212;2</sup> mass loadings.</p><p>When AC electrodes were tested in half&#x02010;cells, oversized AC electrodes were used as the counter electrodes (CEs). A mass ratio of AM 90&#x02009;wt%, conducting agent 5&#x02009;wt%, and binder 5&#x02009;wt% was chosen. 100&#x02009;mg of AC YP&#x02010;50F (Kuraray), 5.6&#x02009;mg of carbon black, and 9.3&#x02009;mg of polytetrafluoroethylene (PTFE, 60&#x02009;wt% in H<sub>2</sub>O, Sigma Aldrich) were weighed in and suspended in ethanol (EtOH). Whilst stirring, EtOH was steadily added to form a viscous material. The slurry was rolled out to a thin film with a glass bar and folded back up again multiple times. When needed to maintain the smoothness of the film, a few drops of EtOH were added. Finally, the mixture was rolled out to a thin film, and electrodes with a diameter of 12&#x02009;mm were punched. The electrodes were dried overnight at 60&#x000b0;C and 0.1&#x02009;mbar. The mass loading of the electrodes was &#x02248;20&#x02009;mg&#x02009;cm<sup>&#x02212;2</sup>.</p></sec><sec id="cssc70380-sec-0004"><label>2.2</label><title>Electrolyte Preparation</title><p>The solvent <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone (GVL), as well as the employed conductive salt sodium difluoro(oxalato)borate (NaDFOB), were both purchased from Sigma Aldrich. The initial water content of GVL was reduced to &#x02264;20&#x02009;ppm by filtering over dried aluminum oxide (90 active basic, Merck) under argon atmosphere. The water content was determined via Karl&#x02010;Fischer titration (C20 Coulometric KF Titrator, METTLER TOLEDO). The electrolyte 1&#x02009;M NaDFOB in GVL was prepared in&#x02010;house in an argon&#x02010;filled glovebox. The electrolyte 1&#x02009;M NaPF<sub>6</sub> in EC:PC (1:1, wt) was provided by E&#x02010;lyte (&#x0003c;10&#x02009;ppm water content) and used without further purification. In the following, these electrolytes will be indicated as NaDFOB in GVL and NaPF<sub>6</sub> in EC:PC.</p></sec><sec id="cssc70380-sec-0005"><label>2.3</label><title>Electrolyte Characterization</title><p>The viscosity was measured in the temperature range between &#x02212;10 and 80&#x000b0;C at an Anton&#x02010;Paar MCR 102 rotational viscometer, applying a shear rate of 1000 s<sup>&#x02212;1</sup>. For conductivity measurements, 0.5&#x02009;mL of electrolyte was added into a sealed glass cell with two parallel platinized platinum electrodes having a known cell constant (ca<italic toggle="yes">.</italic> 1&#x02009;cm<sup>&#x02212;1</sup>, examined with KCl solution). The cell was placed into a climate chamber (BINDER) for electrochemical impedance measurement (amplitude: 5&#x02009;mV, frequency range: 100&#x02009;mHz&#x02013;100&#x02009;MHz) using a ModulabXM ECS potentiostat (Solartron) to obtain the alternating current resistance and calculate the electrolyte conductivity.</p></sec><sec id="cssc70380-sec-0006"><label>2.4</label><title>Assembly of Half&#x02010;Cells: Anodic Stability, HC Half&#x02010;Cells, Al Dissolution, and AC Half&#x02010;Cells</title><p>Swagelok cells were assembled in an argon&#x02010;filled glovebox. As a separator, a glass fiber disk (Whatman GF/D) soaked with 150&#x02009;&#x003bc;L of electrolytic solution was used. For all measurements, either a BioLogic VMP&#x02010;3 or a BioLogic MPG&#x02010;2 potentiostat were utilized.</p><p>For determining the anodic stability of the electrolyte, a platinum disc was employed as working electrode (WE), an oversized AC electrode as CE and sodium metal as reference electrode (RE). A linear sweep measurement at 1&#x02009;mV&#x02009;s<sup>&#x02212;1</sup> was performed, and a threshold of 100&#x02009;&#x000b5;A&#x02009;cm<sup>&#x02212;2</sup> was selected as oxidative stability limit.</p><p>For the investigation of the HC&#x02010;electrodes, metallic sodium (Sigma Aldrich) was used as CE and RE (three&#x02010;electrode set&#x02010;up). In galvanostatic cycling with potential limitations (GCPL)&#x02010;measurements, the performance was tested between 5&#x02009;mV and 2&#x02009;V versus Na<sup>+</sup>/Na. Ten cycles at 50&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> were conducted to get differential capacity plots. For that purpose, the raw data (potential and capacity) was processed to be monotonous. Then, the data was reduced, and the remaining data points were made equidistant. After the ten cycles at 50&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>, cycling tests were performed at 1&#x02009;A&#x02009;g<sup>&#x02212;1</sup>. Separate cells were built to investigate the rate performance. Hereby, the cells were activated by ten cyclic voltammetry (CV) cycles at 0.1&#x02009;mV&#x02009;s<sup>&#x02212;1</sup>, followed by five charge/discharge cycles at 50, 100, 200, 500, 1000, 2000, 3000, and 50&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>.</p><p>The anodic dissolution of the Aluminum current collector was investigated utilizing half&#x02010;cells containing Al as WE and Na as CE and RE. The Al was charged with 0.5&#x02009;mV&#x02009;s<sup>&#x02212;1</sup> up to 4.5&#x02009;V versus Na<sup>+</sup>/Na and the potential was held for 3&#x02009;h. Afterwards, the electrode was discharged to 2&#x02009;V versus Na<sup>+</sup>/Na. The procedure was repeated ten times.</p><p>For the investigations of the AC electrodes, an oversized AC electrode was used as CE and sodium metal as RE. CV measurements to determine the oxidative cut&#x02010;off potential were performed at 1&#x02009;mV&#x02009;s<sup>&#x02212;1</sup>. Five cycles were conducted at each cut&#x02010;off potential (4.0, 4.1, 4.2, 4.3, and 4.4&#x02009;V vs. Na<sup>+</sup>/Na). The Coulombic efficiencies were determined by integrating the oxidative/reductive area beneath the graph and dividing the reductive integration area by the oxidative one. The oxidative stability was also investigated employing GCPL: 50 cycles at each cut&#x02010;off potential (4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, and 4.0&#x02009;V vs. Na<sup>+</sup>/Na) were conducted at 500&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>. The rate&#x02010;capability of AC half&#x02010;cells was tested within a potential range of 2&#x02013;4&#x02009;V versus Na<sup>+</sup>/Na for current rates of 0.1, 0.2, 0.5, 1, 2, 5, 10, and 20&#x02009;A&#x02009;g<sup>&#x02212;1</sup> for ten cycles each. The floating stability was tested at 4.2&#x02009;V for 200&#x02009;h (capacitance determined at 200&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> between 2 and 4&#x02009;V vs. Na<sup>+</sup>/Na).</p></sec><sec id="cssc70380-sec-0007"><label>2.5</label><title>Assembly of Half&#x02010;Cells: Pretreatment Before SIC Assembly</title><p>As presodiation step, a HC electrode was precycled in a separate half&#x02010;cell (three&#x02010;electrode set&#x02010;up, Na as CE and RE), before assembling a SIC.</p><p>The electrode was discharged at 18.8&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> for 3&#x02009;h, followed by a discharge of 37.2&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> until 5&#x02009;mV versus Na<sup>+</sup>/Na were reached. The potential of 5&#x02009;mV versus Na<sup>+</sup>/Na was held for 1&#x02009;h. Subsequently, the HC was charged up to 2.5&#x02009;V versus Na<sup>+</sup>/Na at 37.2&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> and discharged to 5&#x02009;mV versus Na<sup>+</sup>/Na at 9.3&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>. The HC was then charged to 2&#x02009;V versus Na<sup>+</sup>/Na by 37.2&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> and discharged at the same rate. Another five cycles of charge/discharge at 37.2&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> followed. The final potential of 5&#x02009;mV versus Na<sup>+</sup>/Na was held until &#x02264;30% of 37.2&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> of current was flowing, which took around 2&#x02009;h. Normally, the HC potential upon disconnection was between 50 and 150&#x02009;mV versus Na<sup>+</sup>/Na, depending on the IR&#x02010;drop and the timing. The cell was disassembled in the glovebox, and the presodiated HC&#x02010;electrode was inserted into the SIC device.</p></sec><sec id="cssc70380-sec-0008"><label>2.6</label><title>Assembly of SIC Full&#x02010;Cells</title><sec id="cssc70380-sec-0009"><label>2.6.1</label><title>Ex&#x02009;Situ Electrochemical Presodiation</title><p>In a three&#x02010;electrode set&#x02010;up, the presodiated HC was combined with an AC electrode and metallic sodium. Before starting the SIC measurement, the uncycled AC electrode needed to be charged to realize a broad cell voltage window. For that purpose, the AC electrode was in&#x02009;situ connected to the sodium metal as CE/RE. The AC was then brought to 4.0&#x02009;V versus Na<sup>+</sup>/Na, using current densities of 250 or 500&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>. The potential was held for 30&#x02009;min. Then, the AC&#x02010;electrode was connected as WE (positive electrode), the HC&#x02010;electrode as CE (negative electrode), and Na as RE, and the SIC device was tested galvanostatically between 1&#x02009;V&#x02009;&#x0003c;&#x02009;<italic toggle="yes">E</italic>
+<sub>cell</sub>&#x02009;&#x0003c;&#x02009;3.8&#x02009;V. Current densities of 25, 50, 100, 250, 500, 1000, and 25&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> were applied. Note that the current rate was normalized on the sum of both electrodes&#x02019; active material masses. After the rate test, cycling at 200&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> for 150 cycles followed. To further determine the stability, separate cells for float measurements have been evaluated. First, ten activation cycles at 0.1&#x02009;A&#x02009;g<sup>&#x02212;1</sup> were conducted, followed by a resting time of 10&#x02009;h. In a loop five cycles at 0.1&#x02009;A&#x02009;g<sup>&#x02212;1</sup>, 5&#x02009;h of float at <italic toggle="yes">E</italic>
+<sub>cell</sub>&#x02009;=&#x02009;3.8&#x02009;V, and 5&#x02009;h of resting time were applied for 24 times resulting in a total floating time of 120&#x02009;h.</p></sec><sec id="cssc70380-sec-0010"><label>2.6.2</label><title>In&#x02009;Situ Sacrificial Salt Oxidation</title><p>In a three&#x02010;electrode set&#x02010;up, the sacrificial salt containing <mml:math id="jats-math-2" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>AC</mml:mi><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> was combined with a pristine HC as negative electrode and metallic sodium as RE. The cell was cycled galvanostatically between 2&#x02009;V&#x02009;&#x0003c;&#x02009;<italic toggle="yes">E</italic>
+<sub>cell</sub>&#x02009;&#x0003c;&#x02009;4&#x02009;V at a rate of <mml:math id="jats-math-3" display="inline"><mml:mrow><mml:mrow><mml:mn>25</mml:mn><mml:mo>&#x02009;</mml:mo><mml:mi>mA</mml:mi><mml:mo>&#x02009;</mml:mo><mml:msub><mml:msup><mml:mi mathvariant="normal">g</mml:mi><mml:mrow><mml:mo>&#x02212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> (normalized on the mass of sacrificial salt) for 10 cycles. This ensured the complete oxidation of the sacrificial salt&#x02014;responsible for the SEI formation&#x02014;before testing the rate&#x02010;capability. Here, current densities of 25, 50, 100, 250, 500, 1000, and 25 mA g<sup>&#x02212;1</sup> were applied between 1&#x02009;V&#x02009;&#x0003c;&#x02009;<italic toggle="yes">E</italic>
+<sub>cell</sub>&#x02009;&#x0003c;&#x02009;3.8&#x02009;V (current normalized on the sum of both electrodes&#x02019; active material masses). Afterwards, cycling tests were performed at 200&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> for 150 cycles within the same cell voltage range.</p></sec></sec><sec id="cssc70380-sec-0011"><label>2.7</label><title>Surface Chemical Characterization by X&#x02010;Ray Photoelectron Spectroscopy (XPS)</title><p>After presodiation, each type of negative electrode was removed from its respective cell inside a glovebox under inert argon atmosphere and subjected to a washing protocol to eliminate residual salts and separator fragments. The protocol comprised three 1&#x02009;mL applications of <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone (GVL) delivered as moderate&#x02010;velocity jets at 15&#x02009;s intervals. Once the solvent had evaporated, electrodes were transferred directly from the glovebox to the spectrometer load&#x02010;lock using a hermetically sealed transfer tool to preserve the SEI. XPS was conducted on a Phoibos 150 spectrometer (SPECS Surface Nano Analysis) in an ultrahigh&#x02010;vacuum chamber (&#x02248;5&#x02009;&#x000d7;&#x02009;10<sup>&#x02212;10</sup>&#x02009;mbar) equipped with nonmonochromatic Al K<italic toggle="yes">&#x003b1;</italic> (<italic toggle="yes">h</italic>
+<italic toggle="yes">&#x003bd;</italic> &#x02009;=&#x02009;1486.61&#x02009;eV) and Mg K<italic toggle="yes">&#x003b1;</italic> (<italic toggle="yes">h</italic>
+<italic toggle="yes">&#x003bd;</italic>&#x02009;=&#x02009;1253.64&#x02009;eV) sources. Spectra were acquired in fixed analyzer transmission (FAT) mode with a 400&#x02009;&#x000b5;m spot. Survey spectra used a 0.5&#x02009;eV energy step and 90&#x02009;eV pass energy; high&#x02010;resolution spectra used a 0.1&#x02009;eV step and 30&#x02009;eV pass energy. Data was processed with CASA XPS (v2.3.26). The adventitious hydrocarbon C 1<italic toggle="yes">s</italic> peak at 284.8&#x02009;eV was used to calibrate the binding&#x02010;energy scale, with further refinement using additional reference peaks. Spectral envelopes were fitted with Lorentzian&#x02010;asymmetric line shapes and a Shirley background.</p></sec></sec><sec id="cssc70380-sec-0012"><label>3</label><title>Results</title><sec id="cssc70380-sec-0013"><label>3.1</label><title>Physicochemical Properties and Anodic Stability</title><p>To realize high&#x02010;performance SICs, the electrolyte must display suitable transport properties and a large electrochemical stability window. Table&#x000a0;<xref rid="cssc70380-tbl-0001" ref-type="table">1</xref> compares the dynamic viscosity, ionic conductivity, and anodic stability of 1&#x02009;M NaDFOB in GVL with those of the commonly employed 1&#x02009;M NaPF<sub>6</sub> in EC:PC. All the values were recorded at room temperature (20&#x000b0;C). It can be seen that NaPF<sub>6</sub> in EC:PC displays higher conductivity (7.81 vs. 5.12&#x02009;mS&#x02009;cm<sup>&#x02212;1</sup>) and slightly higher anodic stability values than the novel electrolyte (5.0 vs. 4.8&#x02009;V vs. Na<sup>+</sup>/Na). NaDFOB in GVL, however, yielded a lower viscosity (4.68 vs. 5.37&#x02009;mPa&#x02009;s<sup>&#x02212;1</sup>). Considering these values, NaDFOB in GVL certainly appears to have properties suitable for application in SICs.</p><table-wrap position="float" id="cssc70380-tbl-0001" content-type="TABLE"><label>TABLE 1</label><caption><p>Physicochemical properties and anodic stability of NaPF<sub>6</sub> in EC:PC versus NaDFOB in GVL. Dynamic viscosity, ionic conductivity, and anodic stability values recorded at 20&#x000b0;C.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1"/><th align="center" rowspan="1" colspan="1">Dyn. Viscosity, mPa s<sup>&#x02212;1</sup>
+</th><th align="center" rowspan="1" colspan="1">Ionic conductivity, mS cm<sup>&#x02212;1</sup>
+</th><th align="center" rowspan="1" colspan="1">Anodic stability, V vs. Na<sup>+</sup>/Na</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">1M NaPF<sub>6</sub> in EC:PC</td><td align="center" rowspan="1" colspan="1">5.37&#x000a0;[<xref rid="cssc70380-bib-0038" ref-type="bibr">38</xref>]</td><td align="center" rowspan="1" colspan="1">7.81&#x000a0;[<xref rid="cssc70380-bib-0038" ref-type="bibr">38</xref>]</td><td align="center" rowspan="1" colspan="1">5.0</td></tr><tr><td align="left" rowspan="1" colspan="1">1M NaDFOB in GVL</td><td align="center" rowspan="1" colspan="1">4.68</td><td align="center" rowspan="1" colspan="1">5.12</td><td align="center" rowspan="1" colspan="1">4.8</td></tr></tbody></table><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></table-wrap></sec><sec id="cssc70380-sec-0014"><label>3.2</label><title>HC Negative Electrodes</title><p>The novel electrolyte was first tested with the battery&#x02010;type electrode HC within a potential range of 5&#x02009;mV&#x02013;2&#x02009;V versus Na<sup>+</sup>/Na. The differential capacity analysis of the first cycle shows a distinct reduction peak at ca. 1.3&#x02009;V versus Na<sup>+</sup>/Na, which has been ascribed to the decomposition of NaDFOB&#x000a0;[<xref rid="cssc70380-bib-0039" ref-type="bibr">39</xref>] and/or to the reduction of impurities, namely oxalate esters (Figure&#x000a0;<xref rid="cssc70380-fig-0001" ref-type="fig">1a</xref>)&#x000a0;[<xref rid="cssc70380-bib-0040" ref-type="bibr">40</xref>]. At 0.3&#x02009;V versus Na<sup>+</sup>/Na, a broad signal is obtained, probably originating from the GVL decomposition. Both of these peaks disappear or decrease in the following cycles, indicating less decomposition. The initial Coulombic efficiency (ICE) of the electrode was 70%, which is a value comparable to that observed for the conventional electrolyte NaPF<sub>6</sub> in EC:PC. As can be seen in the rate&#x02010;test results (Figure&#x000a0;<xref rid="cssc70380-fig-0001" ref-type="fig">1b</xref>), these first formation cycles are sufficient to form a stable SEI layer enabling capacities of &#x02248;250&#x02009;mA&#x02009;h&#x02009;g<sup>&#x02212;1</sup> at 50&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> and &#x02248;50&#x02009;mA&#x02009;h&#x02009;g<sup>&#x02212;1</sup> at 1&#x02009;A&#x02009;g<sup>&#x02212;1</sup>. The results also show that the capacity values are comparable to the state&#x02010;of&#x02010;the&#x02010;art electrolyte. For SIC application, the longevity of the device is crucial. Thus, the stability of HC electrodes in NaDFOB in GVL was tested, carrying out charge&#x02013;discharge at 1&#x02009;A&#x02009;g<sup>&#x02212;1</sup>. As shown, after more than 600 cycles, the electrodes are able to retain 80% of their maximum capacity, and at the end of the cycling process (1000 cycles), they retained more than 70% of their maximum capacity (Figure&#x000a0;<xref rid="cssc70380-fig-0001" ref-type="fig">1c</xref>). In comparison, the conventional electrolyte, NaPF<sub>6</sub> in EC:PC, displays an increase in capacity within the first 50 cycles. Afterwards, the capacity fades, resulting in &#x02248;80% of the maximum capacity after 1000 cycles.</p><fig position="float" fig-type="FIGURE" id="cssc70380-fig-0001"><label>FIGURE 1</label><caption><p>
+Electrochemical results of HC half&#x02010;cells. (a) Differential capacity with respective electrolyte NaDFOB in GVL, (b) comparison between NaDFOB in GVL and NaPF<sub>6</sub> in EC:PC rate&#x02010;test, and (c) cycling test.</p></caption><graphic xlink:href="CSSC-19-e202502493-g003" position="anchor" id="jats-graphic-3"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>Overall, the novel electrolyte NaDFOB in GVL is compatible with the HC electrode material. Even without the oftentimes employed EC, a stable SEI is formed within the first cycles, allowing for comparable performances to the state&#x02010;of&#x02010;the&#x02010;art (NaPF<sub>6</sub> in EC:PC) electrolyte in terms of capacity.</p></sec><sec id="cssc70380-sec-0015"><label>3.3</label><title>AC Positive Electrode and Aluminum Stability</title><p>Before investigating the positive electrode active material, the anodic stability of the current collector was tested. Therefore, an Aluminum half&#x02010;cell with NaDFOB in GVL was assembled, cycled between 2 and 4.5&#x02009;V (with a potential hold step at 4.5&#x02009;V), and the resulting current was monitored. Figure&#x000a0;<xref rid="cssc70380-fig-0002" ref-type="fig">2a</xref> shows that a clear current peak can be observed in the first cycle, while the following cycles did not yield significant current amounts (&#x0003c;3&#x02009;&#x000b5;A&#x02009;cm<sup>&#x02212;2</sup>). It can thus be concluded that within the first cycle, a passivation layer is formed on top of the Al current collector, protecting the material from further reactions in the subsequent cycles. This is in line with previous reports on NaDFOB being a potent additive for Al passivation&#x000a0;[<xref rid="cssc70380-bib-0020" ref-type="bibr">20</xref>,&#x000a0;<xref rid="cssc70380-bib-0025" ref-type="bibr">25</xref>,&#x000a0;<xref rid="cssc70380-bib-0041" ref-type="bibr">41</xref>,&#x000a0;<xref rid="cssc70380-bib-0042" ref-type="bibr">42</xref>]. As a reference, the same measurement was performed for the conventional NaPF<sub>6</sub> in EC:PC electrolyte, showing similar behavior (Figure&#x000a0;<xref rid="cssc70380-fig-0002" ref-type="fig">2a</xref>).</p><fig position="float" fig-type="FIGURE" id="cssc70380-fig-0002"><label>FIGURE 2</label><caption><p>Electrochemical results of Al and AC half&#x02010;cells. (a) Anodic dissolution test of Al half&#x02010;cell with NaDFOB in GVL versus NaPF<sub>6</sub> in EC:PC at 4.5&#x02009;V versus Na<sup>+</sup>/Na and (b) rate&#x02010;test of AC half&#x02010;cell with NaDFOB in GVL versus NaPF<sub>6</sub> in EC:PC within a potential range of 2&#x02013;4&#x02009;V versus Na<sup>+</sup>/Na.</p></caption><graphic xlink:href="CSSC-19-e202502493-g001" position="anchor" id="jats-graphic-5"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>To find the optimum potential window for the use of AC electrodes in NaDFOB in GVL, CV measurements with increasing upper cut&#x02010;off potential were performed (Figure S1a). For 4&#x02009;V versus Na<sup>+</sup>/Na, a Coulombic efficiency of 98.4% resulted in the 4th cycle. At higher potentials, the Coulombic efficiency decreases significantly. For example, at 4.2&#x02009;V versus Na<sup>+</sup>/Na, only a value of 93.8% could be achieved. It is important to note that above 4.0&#x02009;V versus Na<sup>+</sup>/Na the applied current density affects the Coulombic efficiency of the charge&#x02013;discharge process substantially: When the electrodes are cycled for example at 4.2&#x02009;V versus Na<sup>+</sup>/Na at 500&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>, they display Coulombic efficiencies greater than 98% (Figure S1b). It can thus be concluded that above 4&#x02009;V versus Na<sup>+</sup>/Na Faradic reactions are thermodynamically possible and will occur if a low enough rate is applied, therefore harming the performance of the cell. Hence, a potential window of 2&#x02013;4&#x02009;V versus Na<sup>+</sup>/Na was chosen for further investigations.</p><p>After the optimal potential window was identified, a rate&#x02010;test was conducted cycling the AC electrodes between 2 and 4&#x02009;V versus Na<sup>+</sup>/Na. Under these operating conditions, they deliver 110&#x02009;F&#x02009;g<sup>1</sup> at 1&#x02009;A&#x02009;g<sup>&#x02212;1</sup> and show excellent rate capability up to 5&#x02009;A&#x02009;g<sup>&#x02212;1</sup> (Figure&#x000a0;<xref rid="cssc70380-fig-0002" ref-type="fig">2b</xref>). A comparison with the conventional electrolyte was added as well. The novel electrolyte enables higher capacitance values throughout all applied current densities. The very different electrolyte composition probably leads to a chemically different interphase apparently allowing for better charge transport. For investigating the stability of the AC electrodes with the novel electrolyte, the electrodes were floated at 4.2&#x02009;V versus Na<sup>+</sup>/Na for 200&#x02009;h showing no capacitance loss after that time (Figure S1c).</p><p>All in all, the use of NaDFOB in GVL in combination with AC electrodes appears very promising. Even though the current collector is well protected at very high potentials (minimum of 4.5&#x02009;V versus Na<sup>+</sup>/Na), the maximum stable potential for AC electrodes within this electrolyte seems to be 4 V versus Na<sup>+</sup>/Na. For this work it was therefore decided to stay within this stable region.</p></sec><sec id="cssc70380-sec-0016"><label>3.4</label><title>SIC Full&#x02010;Cells</title><p>SIC full&#x02010;cells were assembled containing an ex&#x02009;situ electrochemically presodiated HC electrode (denoted HC<sub>EEP</sub>, for details see Section&#x000a0;<xref rid="cssc70380-sec-0002" ref-type="sec">2</xref>) and a pristine AC electrode&#x000a0;[<xref rid="cssc70380-bib-0043" ref-type="bibr">43</xref>]. The active mass balancing AC:HC was 1.5:1 (for details about the capacity balancing, cf. Table S1 in the Supporting Information). A rate performance test was conducted to evaluate the functionality and especially the high&#x02010;power capabilities of the device with the novel electrolyte NaDFOB in GVL (Figure&#x000a0;<xref rid="cssc70380-fig-0003" ref-type="fig">3a</xref>). ICEs of 93% and capacity values of &#x02248;40&#x02009;mA&#x02009;h&#x02009;g<sup>&#x02212;1</sup> within the first rate of 25&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> were obtained (capacities and currents are normalized on the sum of both active material masses). The capacity values are decreasing in the first few cycles due to activation processes. At higher rates (1&#x02009;A&#x02009;g<sup>&#x02212;1</sup>), still high values of capacity are retained (&#x02248;20&#x02009;mA&#x02009;h&#x02009;g<sup>&#x02212;1</sup>). In the last five cycles, again at 25&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>, it can be seen that the system has stabilized, yielding a capacity of 35&#x02009;mA&#x02009;h&#x02009;g<sup>&#x02212;1</sup>. In comparison, the conventional electrolyte NaPF<sub>6</sub> in EC:PC, shows lower capacity values as well as lower Coulombic efficiencies throughout all applied rates (Figure&#x000a0;<xref rid="cssc70380-fig-0003" ref-type="fig">3a</xref>).</p><fig position="float" fig-type="FIGURE" id="cssc70380-fig-0003"><label>FIGURE 3</label><caption><p>Electrochemical results for SIC (AC&#x02009;+&#x02009;HC<sub>EEP</sub>) full&#x02010;cells. A pristine AC and an ex&#x02009;situ electrochemically presodiated HC (HC<sub>EEP</sub>) were combined with the investigated electrolyte NaDFOB in GVL, tested within a voltage range of 1&#x02009;V&#x02009;&#x0003c;&#x02009;<italic toggle="yes">E</italic>
+<sub>cell</sub>&#x02009;&#x0003c;&#x02009;3.8&#x02009;V and compared with the state&#x02010;of&#x02010;the&#x02010;art electrolyte NaPF<sub>6</sub> in EC:PC. (a) Rate&#x02010;test, (b) Ragone&#x02010;plot, (c) potential and voltage profiles at 50&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>, and (d) cycling stability at 200&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>.</p></caption><graphic xlink:href="CSSC-19-e202502493-g002" position="anchor" id="jats-graphic-7"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>A comparison of the respective best performing SIC cell containing NaDFOB in GVL versus NaPF<sub>6</sub> in EC:PC is drawn: The energy and power densities of the investigated devices in a Ragone&#x02010;plot reveal enhanced high&#x02010;rate performance for the system employing the novel electrolyte (Figure&#x000a0;<xref rid="cssc70380-fig-0003" ref-type="fig">3b</xref>). For example, at 0.5&#x02009;A&#x02009;g<sup>&#x02212;1</sup> the device containing NaDFOB in GVL displays an energy density of 60&#x02009;W&#x02009;h&#x02009;kg<sup>&#x02212;1</sup>, while that of the device containing the conventional electrolyte is 50&#x02009;W&#x02009;h&#x02009;kg<sup>&#x02212;1</sup>. At a current density of 50&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>, the performance output of the two different electrolytes is very comparable. Figure&#x000a0;<xref rid="cssc70380-fig-0003" ref-type="fig">3c</xref> shows the corresponding potential and voltage profiles displaying slightly higher charge/discharge times for the conventional electrolyte. For both electrolytes, the electrode potentials move within stable regions, i.e., 20&#x02009;mV&#x02009;&#x0003c;&#x02009;<italic toggle="yes">E</italic>
+<sub>HC</sub>&#x02009;&#x0003c;&#x02009;600&#x02009;mV and 1.5&#x02009;V&#x02009;&#x0003c;&#x02009;<italic toggle="yes">E</italic>
+<sub>AC</sub>&#x02009;&#x0003c;&#x02009;3.8&#x02009;V versus Na<sup>+</sup>/Na. It is worth noticing that for the device containing NaDFOB in GVL, the charge/discharge process at 1&#x02009;A&#x02009;g<sup>&#x02212;1</sup> takes &#x02248;1&#x02009;min, and that under these operating conditions it delivers an energy density of &#x0003e;40&#x02009;W&#x02009;h&#x02009;kg<sup>&#x02212;1</sup> and power density of &#x0003e;3500&#x02009;W&#x02009;kg<sup>&#x02212;1</sup> (Figure&#x000a0;<xref rid="cssc70380-fig-0003" ref-type="fig">3b</xref>). These values are very promising when compared to other lab&#x02010;scale devices&#x000a0;[<xref rid="cssc70380-bib-0004" ref-type="bibr">4</xref>].</p><p>For investigating the stability of the NaDFOB in GVL containing full&#x02010;cells, cycling experiments were conducted, yielding &#x0003e;80% capacity retention after 150 cycles at 200&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> (Figure&#x000a0;<xref rid="cssc70380-fig-0003" ref-type="fig">3d</xref>). Except for the very first cycle, Coulombic efficiencies of &#x0003e;99.6% were obtained throughout the experiment. The potential excursion of both electrodes remained stable as well (AC: 2.2&#x02013;3.8&#x02009;V and HC: 1.4&#x02013;0.03&#x02009;V vs. Na<sup>+</sup>/Na, cf. Figure S2a). The conventional electrolyte, NaPF<sub>6</sub> in EC:PC, only retains &#x02248;60% of its initial capacity under the same conditions (Figure&#x000a0;<xref rid="cssc70380-fig-0003" ref-type="fig">3d</xref>). Thus, the novel electrolyte formulation increases the cycle life of SIC full&#x02010;cells.</p><p>To further investigate the system's stability, float tests have been performed at a cell voltage of 3.8&#x02009;V and room temperature (Figure S2b). The SIC containing NaDFOB in GVL retains &#x02248;30% of its initial capacity after 100&#x02009;h of floating, which is slightly worse to the performance of the state&#x02010;of&#x02010;the&#x02010;art electrolyte (&#x02248;40% capacity retention)&#x000a0;[<xref rid="cssc70380-bib-0038" ref-type="bibr">38</xref>].</p></sec><sec id="cssc70380-sec-0017"><label>3.5</label><title>Alternative Presodiation Strategy: In&#x02009;Situ Oxidation of Sacrificial Salt</title><p>So far, an ex&#x02009;situ electrochemical presodiation technique has been applied. To increase the safety, efficiency, and cost&#x02010;effectiveness of the full&#x02010;cell production, an alternative approach has been investigated&#x000a0;[<xref rid="cssc70380-bib-0044" ref-type="bibr">44</xref>]: The in&#x02009;situ oxidation of a sacrificial salt incorporated into the positive electrode, releasing sodium cations upon oxidation&#x000a0;[<xref rid="cssc70380-bib-0043" ref-type="bibr">43</xref>]. The choice was made for sodium squarate (Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub>), whose lithium analog has already been shown to be applicable to LICs&#x000a0;[<xref rid="cssc70380-bib-0045" ref-type="bibr">45</xref>,&#x000a0;<xref rid="cssc70380-bib-0046" ref-type="bibr">46</xref>] and which has been employed for SICs&#x000a0;[<xref rid="cssc70380-bib-0044" ref-type="bibr">44</xref>,&#x000a0;<xref rid="cssc70380-bib-0047" ref-type="bibr">47</xref>]. During its oxidation, Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub> releases sodium ions, CO, CO<sub>2</sub>, and carbon deposits&#x000a0;[<xref rid="cssc70380-bib-0047" ref-type="bibr">47</xref>].</p><p>Electrodes containing 60&#x02009;wt% AC and 30&#x02009;wt% Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub> (furtherly denoted as <mml:math id="jats-math-4" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>AC</mml:mi><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>) were fabricated (all details are reported in Section&#x000a0;<xref rid="cssc70380-sec-0002" ref-type="sec">2</xref>) and investigated for their applicability in the studied system. First, <mml:math id="jats-math-5" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>AC</mml:mi><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> half&#x02010;cells were tested to gain insight into the oxidation of the salt and the associated released capacity. Figure S3 shows the potential profile of the <mml:math id="jats-math-6" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>AC</mml:mi><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> electrodes when cycled at <mml:math id="jats-math-7" display="inline"><mml:mrow><mml:mrow><mml:mn>100</mml:mn><mml:mo>&#x02009;</mml:mo><mml:mi>mA</mml:mi><mml:mo>&#x02009;</mml:mo><mml:msub><mml:msup><mml:mi mathvariant="normal">g</mml:mi><mml:mrow><mml:mo>&#x02212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> (normalized on the mass of sacrificial salt) between 2 and 4.2&#x02009;V versus Na<sup>+</sup>/Na. A clear oxidation plateau at &#x02248;3.4&#x02009;V versus Na<sup>+</sup>/Na is visible in the first cycle. This value is lower than those already reported (&#x02248;3.8 V vs. Na<sup>+</sup>/Na) which could be due to other employed electrolytes or slightly different active materials&#x000a0;[<xref rid="cssc70380-bib-0046" ref-type="bibr">46</xref>]. Most importantly, the oxidation plateau is only prominent in the first cycle. Afterwards, the expected capacitive, triangular potential profiles result. When the capacity of the charge process is plotted (Figure&#x000a0;<xref rid="cssc70380-fig-0004" ref-type="fig">4a</xref>) an irreversible capacity of <mml:math id="jats-math-8" display="inline"><mml:mrow><mml:mrow><mml:mn>290</mml:mn><mml:mo>&#x02009;</mml:mo><mml:mi>mA</mml:mi><mml:mo>&#x02009;</mml:mo><mml:mi mathvariant="normal">h</mml:mi><mml:mo>&#x02009;</mml:mo><mml:msub><mml:msup><mml:mi mathvariant="normal">g</mml:mi><mml:mrow><mml:mo>&#x02212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> is obtained, which is in good practical agreement with the theoretical maximum capacity of <mml:math id="jats-math-9" display="inline"><mml:mrow><mml:mrow><mml:mn>339</mml:mn><mml:mo>&#x02009;</mml:mo><mml:mi>mA</mml:mi><mml:mo>&#x02009;</mml:mo><mml:mi mathvariant="normal">h</mml:mi><mml:mo>&#x02009;</mml:mo><mml:msub><mml:msup><mml:mi mathvariant="normal">g</mml:mi><mml:mrow><mml:mo>&#x02212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>&#x000a0;[<xref rid="cssc70380-bib-0046" ref-type="bibr">46</xref>].</p><fig position="float" fig-type="FIGURE" id="cssc70380-fig-0004"><label>FIGURE 4</label><caption><p>Electrochemical results of AC containing sacrificial salt (<mml:math id="jats-math-10" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>AC</mml:mi><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>) and corresponding SIC with NaDFOB in GVL. (a) <mml:math id="jats-math-11" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>AC</mml:mi><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> half&#x02010;cell capacity with salt oxidation plateau, (b) SIC (<mml:math id="jats-math-12" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>AC</mml:mi><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>&#x02009;+&#x02009;HC) potential and voltage profiles, (c) SIC rate&#x02010;test comparison between different presodiation strategies (AC&#x02009;+&#x02009;HC<sub>EEP</sub> and <mml:math id="jats-math-13" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>AC</mml:mi><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>&#x02009;+&#x02009;HC), and (d) comparison of SIC cycling results at 200&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>.</p></caption><graphic xlink:href="CSSC-19-e202502493-g004" position="anchor" id="jats-graphic-9"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>Subsequently, SICs were built&#x02010;up containing <mml:math id="jats-math-14" display="inline"><mml:mrow><mml:mrow><mml:msub><mml:mi>AC</mml:mi><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> as positive electrode and pristine HC as negative electrode. The active mass balancing between AC:HC was equal to 1.55:1 (which is a value comparable to the previously utilized AC:HC 1.5:1). Ten cycles of <mml:math id="jats-math-15" display="inline"><mml:mrow><mml:mrow><mml:mn>25</mml:mn><mml:mo>&#x02009;</mml:mo><mml:mi>mA</mml:mi><mml:mo>&#x02009;</mml:mo><mml:msub><mml:msup><mml:mi mathvariant="normal">g</mml:mi><mml:mrow><mml:mo>&#x02212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mrow><mml:msub><mml:mi>Na</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">C</mml:mi><mml:mn>4</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="normal">O</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> between 2&#x02009;V&#x02009;&#x0003c;&#x02009;<italic toggle="yes">E</italic>
+<sub>cell</sub>&#x02009;&#x0003c;&#x02009;4&#x02009;V were conducted to ensure the full oxidation of the sacrificial salt. As can be seen from Figure&#x000a0;<xref rid="cssc70380-fig-0004" ref-type="fig">4b</xref>, in the first cycle the AC reaches &#x02248;4&#x02009;V versus Na<sup>+</sup>/Na and the HC reaches a minimum of 4&#x02009;mV versus Na<sup>+</sup>/Na. Thus, a good mass balancing was chosen seeing as the potential of the positive electrode does not exceed the electrolyte stability and on the negative electrode side potentials above 0&#x02009;V versus Na<sup>+</sup>/Na are obtained. In this first cycle low Coulombic efficiencies of &#x02248;25% result due to the irreversible oxidation of the sacrificial salt. Afterwards, the rate&#x02010;capability of the SIC was tested between 1&#x02009;V&#x02009;&#x0003c;&#x02009;<italic toggle="yes">E</italic>
+<sub>cell</sub>&#x02009;&#x0003c;&#x02009;3.8&#x02009;V. Figure&#x000a0;<xref rid="cssc70380-fig-0004" ref-type="fig">4c</xref> compares the performance of the sacrificial salt containing SIC with the previously shown SIC (realized with ex&#x02009;situ electrochemically presodiated HC, denoted as HC<sub>EEP</sub>). Comparable initial capacity values of &#x02248;40&#x02009;mA&#x02009;h&#x02009;g<sup>&#x02212;1</sup> were obtained. At higher rates, the HC<sub>EEP</sub> system performs better both in terms of capacity and Coulombic efficiency. The slow rate at the end of the rate&#x02010;test proves that both systems are stable and can output approximately the same amount of capacity (&#x02248;30 vs. 35&#x02009;mA&#x02009;h&#x02009;g<sup>&#x02212;1</sup> at 25&#x02009;mA&#x02009;g<sup>&#x02212;1</sup>). Afterwards, cycling tests were conducted which yielded again comparable results of &#x02248;80% capacity retention for both presodiation methods after 150 cycles at 200&#x02009;mA&#x02009;g<sup>&#x02212;1</sup> (Figure&#x000a0;<xref rid="cssc70380-fig-0004" ref-type="fig">4d</xref>). Interestingly, the in&#x02009;situ sacrificial salt oxidation presodiation technique leads to slightly higher capacity retention values.</p></sec><sec id="cssc70380-sec-0018"><label>3.6</label><title>XPS Comparison of Different Presodiation Strategies</title><p>The impact of the different presodiation strategies on the surface of the HC electrodes was investigated. Figure&#x000a0;<xref rid="cssc70380-fig-0005" ref-type="fig">5</xref> presents the high&#x02010;resolution XPS spectra of desodiated electrodes after being subjected to each presodiation protocol: ex&#x02009;situ electrochemical presodiation (Figure&#x000a0;<xref rid="cssc70380-fig-0005" ref-type="fig">5a&#x02013;d</xref>), and in&#x02009;situ oxidation of sacrificial salt (Figure&#x000a0;<xref rid="cssc70380-fig-0005" ref-type="fig">5e&#x02013;h</xref>; for comparison to the pristine HC electrode, cf. Figure S4). In both types of negative electrodes, the Na 1<italic toggle="yes">s</italic> peak appears at 1071.6&#x02009;eV and is attributed to the main organic (Na&#x02014;C&#x02014;O, Na&#x02014;C=O) and inorganic (NaF) constituents of the SEI. The C 1<italic toggle="yes">s</italic> region displays the characteristic asymmetric C=C signal from the HC bulk, shifted to lower binding energies (282.9&#x02009;eV) because of the potential gradient induced by SEI formation&#x000a0;[<xref rid="cssc70380-bib-0048" ref-type="bibr">48</xref>]. A distinct peak at 284.8&#x02009;eV corresponds to C&#x02014;C/C&#x02014;H bonding, while additional features at 286.5, 288.3, and 289.4&#x02009;eV are assigned to C&#x02014;O&#x02014;C, O&#x02014;C=O, and &#x02014;(O=C)&#x02014;O&#x02014;(C=O)&#x02014; species, respectively, representing the organic component of the SEI. This interpretation is further supported by the O 1<italic toggle="yes">s</italic> spectra, which exhibit peaks at 532.9&#x02009;eV (O&#x02014;C&#x02014;O) and 531.5&#x02009;eV (O&#x02014;C=O). The F 1<italic toggle="yes">s</italic> region shows two main contributions: a peak at 686.5&#x02009;eV associated with NaDFOB decomposition products and surface residues, and another at 683.8&#x02009;eV corresponding to NaF.</p><fig position="float" fig-type="FIGURE" id="cssc70380-fig-0005"><label>FIGURE 5</label><caption><p>XPS deconvoluted high resolution spectra for desodiated electrodes after presodiation. (a) C 1<italic toggle="yes">s</italic>, (b) O 1<italic toggle="yes">s</italic>, (c) F 1<italic toggle="yes">s</italic>, and (d) Na 1<italic toggle="yes">s</italic> obtained from ex&#x02009;situ electrochemically presodiated electrodes. (e) C 1<italic toggle="yes">s</italic>, (f) O 1<italic toggle="yes">s</italic>, (g) F 1<italic toggle="yes">s</italic>, and (h) Na 1<italic toggle="yes">s</italic> obtained from electrodes presodiated by in&#x02009;situ oxidation of sacrificial salt.</p></caption><graphic xlink:href="CSSC-19-e202502493-g005" position="anchor" id="jats-graphic-11"><permissions><copyright-holder>&#x000a9; 2026 WILEY&#x02010;VCH GmbH</copyright-holder></permissions></graphic></fig><p>The comparison of SEI component ratios across both electrode types indicates that organic species with O&#x02014;C=O and &#x02014;(O=C)&#x02014;O&#x02014;(C=O)&#x02014; motifs, arising from electrolyte decomposition, are present in similar amounts for the two presodiation routes. In contrast, C&#x02014;O&#x02014;C products and the C&#x02014;C bonding signal are more abundant for the in&#x02009;situ sodiated electrode, consistent with effective incorporation of oxidation products from the sacrificial salt and a correspondingly more robust SEI. Furthermore, the NaF signal for in&#x02009;situ sodiation is approximately twice that for ex&#x02009;situ sodiation, supporting a more highly structured SEI in the in&#x02009;situ case and likely underpinning the superior capacity retention.</p></sec></sec><sec id="cssc70380-sec-0019"><label>4</label><title>Conclusion</title><p>An alternative electrolyte for SIC application has been investigated. The combination of a low&#x02010;fluorinated salt sodium difluoro(oxalato)borate in the bio&#x02010;based solvent <italic toggle="yes">&#x003b3;</italic>&#x02010;Valerolactone (1&#x02009;M NaDFOB in GVL) has been shown to be suitable for the state&#x02010;of&#x02010;the&#x02010;art SIC consisting of HC and AC. The novel electrolyte is capable of protecting the Al current collector at high potentials (4.5&#x02009;V versus Na<sup>+</sup>/Na) as well as forming a stable SEI layer on the HC surface. It yields comparable capacity and capacitance, respectively, values to the state&#x02010;of&#x02010;the&#x02010;art electrolyte NaPF<sub>6</sub> in EC:PC for both half&#x02010;cell investigations. The performance of the SIC full&#x02010;cell is very comparable as well, whereby the novel electrolyte even outperforms the conventional electrolyte at high rates. It was thus shown that a simplified (one less component) and greener (less fluorine; solvent production bio&#x02010;based) electrolyte yields comparable performance values to the state&#x02010;of&#x02010;the&#x02010;art electrolyte. To further increase the sustainability of the device, an alternative presodiation strategy has been employed: The use of sodium squarate (Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub>) allowed for one less processing step in the fabrication of a full&#x02010;cell and yielded comparable results to the ex&#x02009;situ electrochemical (conventional) presodiation approach. Additionally, the use of Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub> promotes a more robust, inorganic&#x02010;rich SEI that is less prone to redissolution, thereby improving capacity retention.</p></sec><sec id="cssc70380-sec-0020"><title>Supporting Information</title><p>Additional supporting information can be found online in the Supporting Information section. <bold>Supporting Fig. S1:</bold> Electrochemical results of Activated Carbon (AC) half&#x02010;cells with NaDFOB in GVL. Investigation of the upper cut&#x02010;off potential via CV (a) and via GCPL (b). Floating test at 4.2 V (c). <bold>Supporting Fig. S2:</bold> Electrochemical results for SIC (AC + HC<sub>EEP</sub>) full&#x02010;cells. Potential profiles during long&#x02010;term cycling (a) and float results at E<sub>cell</sub> = 3.8 V compared between NaDFOB in GVL and NaPF<sub>6</sub> in EC:PC (b). <bold>Supporting Fig. S3:</bold> Electrochemical results for AC containing sacrificial salt Na<sub>2</sub>C<sub>4</sub>O<sub>4</sub>. Potential profiles between 2&#x02010;4.2 V vs. Na<sup>+</sup>/Na displaying the salt oxidation plateau at &#x02248;3.4 vs. Na<sup>+</sup>/Na. <bold>Supporting Fig. S4:</bold> XPS deconvoluted high resolution spectra for pristine hard carbon electrode. Na 1s (left), O 1s (center) and C 1s (right). <bold>Supporting Table S1:</bold> Capacity and mass balancing between HC and AC with NaDFOB in GVL for different rates.</p></sec><sec id="cssc70380-sec-0021"><title>Author Contributions</title><p>
+<bold>Andrea Hainthaler:</bold> investigation (lead), writing &#x02013; original draft (lead), writing &#x02013; review &#x00026; editing (supporting). <bold>Manuel J. Pinz&#x000f3;n:</bold> investigation (supporting). <bold>Maria Arnaiz:</bold> investigation (supporting), writing &#x02013; original draft (supporting), writing review &#x00026; editing (supporting). <bold>Rosal&#x000ed;a Cid:</bold> investigation (supporting), writing &#x02013; review &#x00026; editing (supporting). <bold>Yiyue Lu:</bold> investigation (supporting). <bold>Jon Ajuria:</bold> funding acquisition (equal), writing &#x02013; review &#x00026; editing (supporting). <bold>Andrea Balducci:</bold> funding acquisition (lead), writing &#x02013; review &#x00026; editing (lead).</p></sec><sec id="cssc70380-sec-0023"><title>Funding</title><p>This work was supported by HORIZON EUROPE Reforming and enhancing the European Research and Innovation system (101092080), and Bundesministerium f&#x000fc;r Bildung und Forschung (03XP0533D).</p></sec><sec sec-type="COI-statement" id="cssc70380-sec-0024"><title>Conflicts of Interest</title><p>The authors declare no conflicts of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material position="float" content-type="local-data"><caption><p>Supplementary Material</p></caption><media xlink:href="CSSC-19-e202502493-s001.pdf"/></supplementary-material></sec></body><back><ack id="cssc70380-sec-0022"><title>Acknowledgments</title><p>The authors would like to thank the European Union's Horizon Europe research and innovation program (MUSIC 101092080) for financial support. A.B. and Y.L. would like to thank the Bundesministerium f&#x000fc;r Bildung und Forschung for the financial support within the project Transition Transfer (03XP0533D).</p><p>Open Access funding enabled and organized by Projekt DEAL.</p></ack><sec sec-type="data-availability" id="cssc70380-sec-0026"><title>Data Availability Statement</title><p>The data that support the findings of this study are available from the corresponding author upon reasonable request.</p></sec><ref-list id="cssc70380-bibl-0001" content-type="cited-references"><title>References</title><ref id="cssc70380-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="cssc70380-cit-0001">
+<string-name>
+<given-names>P.</given-names>
+<surname>Cai</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Zou</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Deng</surname>
+</string-name>, et al., &#x0201c;<article-title>Comprehensive Understanding of Sodium&#x02010;Ion Capacitors: Definition, Mechanisms, Configurations, Materials, Key Technologies, and Future Developments</article-title>,&#x0201d;&#x000a0;<source>Advanced Energy Materials</source>
+<volume>11</volume> (<year>2021</year>): <fpage>2003804</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="cssc70380-cit-0002">
+<string-name>
+<given-names>J.</given-names>
+<surname>Ding</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Paek</surname>
+</string-name>, and <string-name>
+<given-names>D.</given-names>
+<surname>Mitlin</surname>
+</string-name>, &#x0201c;<article-title>Review of Hybrid Ion Capacitors: From Aqueous to Lithium to Sodium</article-title>,&#x0201d; <source>Chemical Reviews</source>
+<volume>118</volume> (<year>2018</year>): <fpage>6457</fpage>&#x02013;<lpage>6498</lpage>.<pub-id pub-id-type="pmid">29953230</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="cssc70380-cit-0003">
+<string-name>
+<given-names>A. M.</given-names>
+<surname>Glushenkov</surname>
+</string-name> and <string-name>
+<given-names>A. V.</given-names>
+<surname>Ellis</surname>
+</string-name>, &#x0201c;<article-title>Cell Configurations and Electrode Materials for Nonaqueous Sodium&#x02010;Ion Capacitors: The Current State of the Field</article-title>,&#x0201d; <source>Advanced Sustainable Systems</source>
+<volume>2</volume> (<year>2018</year>): <fpage>1800006</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="cssc70380-cit-0004">
+<string-name>
+<given-names>R.</given-names>
+<surname>Jia</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Shen</surname>
+</string-name>, and <string-name>
+<given-names>Chen</given-names>
+<surname>Di</surname>
+</string-name>, &#x0201c;<article-title>Recent Progress and Future Prospects of Sodium&#x02010;ion Capacitors</article-title>,&#x0201d; <source>Science China Materials</source>
+<volume>63</volume> (<year>2020</year>): <fpage>185</fpage>&#x02013;<lpage>206</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="cssc70380-cit-0005">
+<string-name>
+<given-names>K.</given-names>
+<surname>Subramanyan</surname>
+</string-name>, <string-name>
+<given-names>M. L.</given-names>
+<surname>Divya</surname>
+</string-name>, and <string-name>
+<given-names>V.</given-names>
+<surname>Aravindan</surname>
+</string-name>, &#x0201c;<article-title>Dual&#x02010;carbon Na&#x02010;ion Capacitors: Progress and Future Prospects</article-title>,&#x0201d; <source>Journal of Materials Chemistry A</source>
+<volume>9</volume> (<year>2021</year>): <fpage>9431</fpage>&#x02013;<lpage>9450</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="cssc70380-cit-0006">
+<string-name>
+<given-names>B.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Gao</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Xu</surname>
+</string-name>, et al., &#x0201c;<article-title>Advanced Carbon Materials for Sodium&#x02010;Ion Capacitors</article-title>,&#x0201d;&#x000a0;<source>Batteries &#x00026; Supercaps</source>
+<volume>4</volume> (<year>2021</year>): <fpage>538</fpage>&#x02013;<lpage>553</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="cssc70380-cit-0007">
+<string-name>
+<given-names>H.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Hu</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Lv</surname>
+</string-name>, <string-name>
+<given-names>Z.&#x02010;H.</given-names>
+<surname>Huang</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Kang</surname>
+</string-name>, and <string-name>
+<given-names>R.</given-names>
+<surname>Lv</surname>
+</string-name>, &#x0201c;<article-title>Advanced Materials for Sodium&#x02010;Ion Capacitors with Superior Energy&#x02010;Power Properties: Progress and Perspectives</article-title>,&#x0201d; <source>Small</source>
+<volume>16</volume> (<year>2020</year>): <fpage>e1902843</fpage>.<pub-id pub-id-type="pmid">31550082</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="cssc70380-cit-0008">
+<string-name>
+<given-names>Y.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Jiang</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>An</surname>
+</string-name>, et al., &#x0201c;<article-title>Sodium&#x02010;ion Capacitors: Materials, Mechanism, and Challenges</article-title>,&#x0201d; <source>ChemSusChem</source>
+<volume>13</volume> (<year>2020</year>): <fpage>2522</fpage>&#x02013;<lpage>2539</lpage>
+<pub-id pub-id-type="pmid">32045509</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="cssc70380-cit-0009">
+<string-name>
+<given-names>W.</given-names>
+<surname>Zuo</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Zhou</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Xia</surname>
+</string-name>, and <string-name>
+<given-names>J.</given-names>
+<surname>Liu</surname>
+</string-name>, &#x0201c;<article-title>Battery&#x02010;Supercapacitor Hybrid Devices: Recent Progress and Future Prospects</article-title>,&#x0201d; <source>Advanced Science</source>
+<volume>4</volume> (<year>2017</year>): <fpage>1600539</fpage>.<pub-id pub-id-type="pmid">28725528</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="cssc70380-cit-0010">
+<string-name>
+<given-names>R.</given-names>
+<surname>Mysyk</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Carriazo</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Saurel</surname>
+</string-name>, et al., &#x0201c;<article-title>The Value Chain of Sustainable Dual Carbon Sodium Ion Capacitors</article-title>,&#x0201d; <source>Batteries &#x00026; Supercaps</source>
+<volume>8</volume> (<year>2025</year>) <fpage>52</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="cssc70380-cit-0011">
+<string-name>
+<given-names>J.</given-names>
+<surname>Peters</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Buchholz</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Passerini</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Weil</surname>
+</string-name>, &#x0201c;<article-title>Life Cycle Assessment of Sodium&#x02010;ion BCatteries</article-title>,&#x0201d; <source>Energy &#x00026; Environmental Science</source>
+<volume>9</volume> (<year>2016</year>): <fpage>1744</fpage>&#x02013;<lpage>1751</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="cssc70380-cit-0012">
+<string-name>
+<given-names>Y.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Xiang</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Liang</surname>
+</string-name>, and <string-name>
+<given-names>Y.</given-names>
+<surname>Yu</surname>
+</string-name>, &#x0201c;<article-title>Safety of Sodium&#x02010;Ion Batteries: High&#x02010;Safety Nonaqueous Electrolytes and Interphases for Sodium&#x02010;Ion Batteries</article-title>,&#x0201d; <source>Small</source>
+<volume>15</volume> (<year>2019</year>) <fpage>17</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="cssc70380-cit-0013">
+<string-name>
+<given-names>A.</given-names>
+<surname>Ponrouch</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Marchante</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Courty</surname>
+</string-name>, <string-name>
+<given-names>J.&#x02010;M.</given-names>
+<surname>Tarascon</surname>
+</string-name>, and <string-name>
+<given-names>M. R.</given-names>
+<surname>Palac&#x000ed;n</surname>
+</string-name>, &#x0201c;<article-title>In Search of an Optimized Electrolyte for Na&#x02010;ion Batteries</article-title>,&#x0201d; <source>Energy &#x00026; Environmental Science</source>
+<volume>5</volume> (<year>2012</year>): <fpage>8572</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="cssc70380-cit-0014">
+<string-name>
+<given-names>T.</given-names>
+<surname>Ren</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Patel</surname>
+</string-name>, and <string-name>
+<given-names>K.</given-names>
+<surname>Blok</surname>
+</string-name>, &#x0201c;<article-title>Olefins from Conventional and Heavy Feedstocks: Energy use in Steam Cracking and Alternative Processes</article-title>,&#x0201d; <source>Energy</source>
+<volume>31</volume> (<year>2006</year>): <fpage>425</fpage>&#x02013;<lpage>451</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="cssc70380-cit-0015">
+<string-name>
+<given-names>P. P.</given-names>
+<surname>Pescarmona</surname>
+</string-name>, &#x0201c;<article-title>Cyclic Carbonates Synthesised from CO2: Applications, Challenges and Recent Research Trends</article-title>,&#x0201d; <source>Current Opinion in Green and Sustainable Chemistry</source>
+<volume>29</volume> (<year>2021</year>): <fpage>100457</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="cssc70380-cit-0016">
+<string-name>
+<given-names>W. H.</given-names>
+<surname>Faveere</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>van Praet</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Vermeeren</surname>
+</string-name>, et al., &#x0201c;<article-title>Toward Replacing Ethylene Oxide in a Sustainable World: Glycolaldehyde as a Bio&#x02010;Based C2 Platform Molecule</article-title>,&#x0201d; <source>Angewandte Chemie International Edition</source>
+<volume>60</volume> (<year>2021</year>): <fpage>12204</fpage>&#x02013;<lpage>12223</lpage>.<pub-id pub-id-type="pmid">32833281</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="cssc70380-cit-0017">
+<string-name>
+<given-names>P.</given-names>
+<surname>Barnes</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Smith</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Parrish</surname>
+</string-name>, et al., &#x0201c;<article-title>A Non&#x02010;aqueous Sodium Hexafluorophosphate&#x02010;based Electrolyte Degradation Study: Formation and Mitigation of Hydrofluoric Acid</article-title>,&#x0201d; <source>Journal of Power Sources</source>
+<volume>447</volume> (<year>2020</year>): <fpage>227363</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="cssc70380-cit-0018">
+<string-name>
+<given-names>J.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Huang</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Wang</surname>
+</string-name>, et al., &#x0201c;<article-title>Sodium&#x02010;difluoro(oxalato)borate (NaDFOB): a New Electrolyte Salt for Na&#x02010;ion Batteries</article-title>,&#x0201d; <source>ChemComm</source>
+<volume>51</volume> (<year>2015</year>): <fpage>9809</fpage>&#x02013;<lpage>9812</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="cssc70380-cit-0019">
+<string-name>
+<given-names>Q.</given-names>
+<surname>Qiu</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Zheng</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Huang</surname>
+</string-name>, et al., &#x0201c;<article-title>A Small Amount of Sodium Difluoro(oxalate)Borate Additive Induces Anion&#x02010;derived Interphases for Sodium&#x02010;ion Batteries,</article-title>&#x0201d; <source>Energy Storage Materials</source>
+<volume>73</volume> (<year>2024</year>): <fpage>103858</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="cssc70380-cit-0020">
+<string-name>
+<given-names>L.</given-names>
+<surname>Huang</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Qiu</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Yang</surname>
+</string-name>, et al., &#x0201c;<article-title>Achieving the Inhibition of Aluminum Corrosion by Dual&#x02010;Salt Electrolytes for Sodium&#x02010;Ion Batteries</article-title>,&#x0201d; <source>ACS Applied Materials &#x00026; Interfaces</source>
+<volume>16</volume> (<year>2024</year>): <fpage>46392</fpage>&#x02013;<lpage>46400</lpage>.<pub-id pub-id-type="pmid">39172040</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="cssc70380-cit-0021">
+<string-name>
+<given-names>Z.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Fu</surname>
+</string-name>, <string-name>
+<given-names>M. Z.</given-names>
+<surname>Liu</surname>
+</string-name>, et al., &#x0201c;<article-title>A nanoconfined iron( iii ) Fluoride Cathode in a NaDFOB Electrolyte: Towards High&#x02010;performance Sodium&#x02010;ion Batteries</article-title>,&#x0201d; <source>Journal of Materials Chemistry A</source>
+<volume>8</volume> (<year>2020</year>): <fpage>4091</fpage>&#x02013;<lpage>4098</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="cssc70380-cit-0022">
+<string-name>
+<given-names>M.</given-names>
+<surname>Hashimov</surname>
+</string-name> and <string-name>
+<given-names>A.</given-names>
+<surname>Hofmann</surname>
+</string-name>, &#x0201c;<article-title>Deciphering Electrolyte Degradation in Sodium&#x02010;Based Batteries: The Role of Conductive Salt Source, Additives, and Storage Condition</article-title>,&#x0201d; <source>Batteries</source>
+<volume>9</volume> (<year>2023</year>): <fpage>530</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="cssc70380-cit-0023">
+<string-name>
+<given-names>Y.</given-names>
+<surname>Lin</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Jin</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Gao</surname>
+</string-name>, et al., &#x0201c;<article-title>Improved Interface Construction on Anode and Cathode for Na&#x02010;Ion Batteries Using Ultralow&#x02010;Concentration Electrolyte Containing Dual&#x02010;Additives</article-title>,&#x0201d; <source>Chemistry: A European Journal</source>
+<volume>30</volume> (<year>2024</year>): <fpage>e202303741</fpage>.<pub-id pub-id-type="pmid">38206884</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="cssc70380-cit-0024">
+<string-name>
+<given-names>X.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Zhao</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Dong</surname>
+</string-name>, et al., &#x0201c;<article-title>Sodium Difluoro(oxalato)borate Additive&#x02010;Induced Robust SEI and CEI Layers Enable Dendrite&#x02010;Free and Long&#x02010;Cycling Sodium&#x02010;Ion Batteries</article-title>,&#x0201d; <source>Advanced Functional Materials</source>
+<volume>34</volume> (<year>2024</year>) <fpage>10</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="cssc70380-cit-0025">
+<string-name>
+<given-names>Y.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name>
+<given-names>M. N.</given-names>
+<surname>Aslam</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Leibing</surname>
+</string-name>, et al., &#x0201c;<article-title>The Impact of Dual&#x02010;Salt Electrolyte with Low Fluorine Content on the Performance of Layered Transition Metal Oxides for Sodium&#x02010;Ion Batteries</article-title>,&#x0201d; <source>Small</source> (<year>2025</year>): <fpage>e2410704</fpage>.<pub-id pub-id-type="pmid">40341762</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="cssc70380-cit-0026">
+<string-name>
+<given-names>W. W. A.</given-names>
+<surname>van Ekeren</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Dettmann</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Tesfamhret</surname>
+</string-name>, <string-name>
+<given-names>A. J.</given-names>
+<surname>Naylor</surname>
+</string-name>, and <string-name>
+<given-names>R.</given-names>
+<surname>Younesi</surname>
+</string-name>, &#x0201c;<article-title>Investigation of Electrolyte Salts in Non&#x02010;Flammable Triethyl Phosphate for Sodium&#x02010;Ion Batteries</article-title>,&#x0201d; <source>Batteries &#x00026; Supercaps</source>
+<volume>8</volume> (<year>2025</year>) <fpage>11</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="cssc70380-cit-0027">
+<string-name>
+<given-names>Z.</given-names>
+<surname>Wang</surname>
+</string-name> and <string-name>
+<given-names>A.</given-names>
+<surname>Hofmann</surname>
+</string-name>, &#x0201c;<article-title>NaDFOB and FEC as Electrolyte Additives Enabling Improved Cyclability of Sodium Metal Batteries and Sodium Ion Batteries</article-title>,&#x0201d; <source>ChemElectroChem</source>
+<volume>12</volume> (<year>2025</year>) <fpage>11</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="cssc70380-cit-0028">
+<string-name>
+<given-names>M.</given-names>
+<surname>Xia</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Zheng</surname>
+</string-name>, et al., &#x0201c;<article-title>Sodium&#x02010;Difluoro(oxalato)Borate&#x02010;Based Electrolytes for Long&#x02010;Term Cycle Life and Enhanced Low&#x02010;Temperature Sodium&#x02010;Ion Batteries</article-title>,&#x0201d; <source>Advanced Energy Materials</source>
+<volume>15</volume> (<year>2025</year>) <fpage>7</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="cssc70380-cit-0029">
+<string-name>
+<given-names>L.</given-names>
+<surname>Gao</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Yamauchi</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Huang</surname>
+</string-name>, and <string-name>
+<given-names>X.</given-names>
+<surname>Kong</surname>
+</string-name>, &#x0201c;<article-title>Revealing the Chemistry of an Anode&#x02010;passivating Electrolyte Salt for High Rate and Stable Sodium Metal Batteries</article-title>,&#x0201d; <source>Journal of Materials Chemistry A</source>
+<volume>6</volume> (<year>2018</year>): <fpage>12012</fpage>&#x02013;<lpage>12017</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="cssc70380-cit-0030">
+<string-name>
+<given-names>L.</given-names>
+<surname>Gao</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Chen</surname>
+</string-name>, and <string-name>
+<given-names>X.</given-names>
+<surname>Kong</surname>
+</string-name>, &#x0201c;<article-title>The Chemical Evolution of Solid Electrolyte Interface in Sodium Metal Batteries</article-title>,&#x0201d; <source>Science Advances</source>
+<volume>8</volume> (<year>2022</year>): <fpage>eabm4606</fpage>.<pub-id pub-id-type="pmid">35148184</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="cssc70380-cit-0031">
+<string-name>
+<given-names>F.</given-names>
+<surname>Kerkel</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Markiewicz</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Stolte</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>M&#x000fc;ller</surname>
+</string-name>, and <string-name>
+<given-names>W.</given-names>
+<surname>Kunz</surname>
+</string-name>, &#x0201c;<article-title>The Green Platform Molecule Gamma&#x02010;valerolactone &#x02013; ecotoxicity, Biodegradability, Solvent Properties, and Potential Applications</article-title>,&#x0201d; <source>Green Chemistry</source>
+<volume>23</volume> (<year>2021</year>): <fpage>2962</fpage>&#x02013;<lpage>2976</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="cssc70380-cit-0032">
+<string-name>
+<given-names>S.</given-names>
+<surname>Dutta</surname>
+</string-name>, <string-name>
+<given-names>I. K.</given-names>
+<surname>Yu</surname>
+</string-name>, <string-name>
+<given-names>D. C.</given-names>
+<surname>Tsang</surname>
+</string-name>, et al., &#x0201c;<article-title>Green synthesis of Gamma&#x02010;valerolactone (GVL) through Hydrogenation of Biomass&#x02010;derived Levulinic Acid using Non&#x02010;noble Metal Catalysts: A Critical Review</article-title>,&#x0201d; <source>Chemical Engineering Journal</source>
+<volume>372</volume> (<year>2019</year>): <fpage>992</fpage>&#x02013;<lpage>1006</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="cssc70380-cit-0033">
+<string-name>
+<given-names>I. T.</given-names>
+<surname>Horv&#x000e1;th</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Mehdi</surname>
+</string-name>, <string-name>
+<given-names>V.</given-names>
+<surname>F&#x000e1;bos</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Boda</surname>
+</string-name>, and <string-name>
+<given-names>L. T.</given-names>
+<surname>Mika</surname>
+</string-name>, &#x0201c;<article-title>&#x003b3;&#x02010;Valerolactone&#x02014;a Sustainable Liquid for energy and Carbon&#x02010;based Chemicals</article-title>,&#x0201d; <source>Green Chemistry</source>
+<volume>10</volume> (<year>2008</year>): <fpage>238</fpage>&#x02013;<lpage>242</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="cssc70380-cit-0034">
+<string-name>
+<given-names>F. A.</given-names>
+<surname>Kreth</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>K&#x000f6;ps</surname>
+</string-name>, <string-name>
+<given-names>S. W.</given-names>
+<surname>Donne</surname>
+</string-name>, and <string-name>
+<given-names>A.</given-names>
+<surname>Balducci</surname>
+</string-name>, &#x0201c;<article-title>Operando Temperature Dynamic Investigation of Electric Double&#x02010;Layer Capacitors Containing Organic Electrolytes</article-title>,&#x0201d; <source>Batteries &#x00026; Supercaps</source>
+<volume>7</volume> (<year>2024</year>): <fpage>e202300581</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="cssc70380-cit-0035">
+<string-name>
+<given-names>K. S.</given-names>
+<surname>Teoh</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Melchiorre</surname>
+</string-name>, <string-name>
+<given-names>F. A.</given-names>
+<surname>Kreth</surname>
+</string-name>, et al., &#x0201c;<article-title>&#x003b3;&#x02010;Valerolactone as Sustainable and Low&#x02010;Toxic Solvent for Electrical Double Layer Capacitors</article-title>,&#x0201d; <source>ChemSusChem</source>
+<volume>16</volume> (<year>2023</year>): <fpage>e202201845</fpage>.<pub-id pub-id-type="pmid">36378225</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="cssc70380-cit-0036">
+<string-name>
+<given-names>K. S.</given-names>
+<surname>Teoh</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Melchiorre</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Darlami Magar</surname>
+</string-name>, et al., &#x0201c;<article-title>Fluorine&#x02010;Free Lithium&#x02010;Ion Capacitor with Enhanced Sustainability and Safety Based on Bio&#x02010;Based &#x003b3;&#x02010;Valerolactone and Lithium Bis(Oxalato)Borate Electrolyte</article-title>,&#x0201d; <source>Advanced Materials</source>
+<volume>36</volume> (<year>2024</year>): <fpage>e2310056</fpage>.<pub-id pub-id-type="pmid">38252812</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="cssc70380-cit-0037">
+<string-name>
+<given-names>K. S.</given-names>
+<surname>Teoh</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Melchiorre</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Darlami Magar</surname>
+</string-name>, et al., &#x0201c;<article-title>Formulation and Recycling of a Novel Electrolyte Based on Bio&#x02010;Derived &#x003b3;&#x02010;Valerolactone and Lithium Bis(trifluoromethanesulfonyl)imide for Lithium&#x02010;Ion Batteries</article-title>,&#x0201d; <source>Small</source>
+<volume>21</volume> (<year>2025</year>): <fpage>e2407850</fpage>.<pub-id pub-id-type="pmid">39410723</pub-id>
+</mixed-citation></ref><ref id="cssc70380-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="cssc70380-cit-0038">
+<string-name>
+<given-names>A.</given-names>
+<surname>Hainthaler</surname>
+</string-name>, <string-name>
+<given-names>A. S.</given-names>
+<surname>Sidharthan</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Leistenschneider</surname>
+</string-name>, and <string-name>
+<given-names>A.</given-names>
+<surname>Balducci</surname>
+</string-name>, &#x0201c;<article-title>Enhancing the Stability of Sodium&#x02010;ion Capacitors by Introducing Glyoxylic&#x02010;acetal based Electrolyte</article-title>,&#x0201d; <source>Journal of Power Sources Advances</source>
+<volume>30</volume> (<year>2024</year>): <fpage>100158</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="cssc70380-cit-0039">
+<string-name>
+<given-names>D.</given-names>
+<surname>Zhao</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Lu</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>P.</given-names>
+<surname>Wang</surname>
+</string-name>, and <string-name>
+<given-names>X.</given-names>
+<surname>Fan</surname>
+</string-name>, &#x0201c;<article-title>Boosting the Cycling Stability of Hard Carbon with NaODFB&#x02010;based Electrolyte at High Temperature</article-title>,&#x0201d; <source>Materials Today Chemistry</source>
+<volume>24</volume> (<year>2022</year>): <fpage>100866</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="cssc70380-cit-0040">
+<string-name>
+<given-names>K.</given-names>
+<surname>Xu</surname>
+</string-name>, <string-name>
+<given-names>S. S.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>U.</given-names>
+<surname>Lee</surname>
+</string-name>, <string-name>
+<given-names>J. L.</given-names>
+<surname>Allen</surname>
+</string-name>, and <string-name>
+<given-names>T. R.</given-names>
+<surname>Jow</surname>
+</string-name>, &#x0201c;<article-title>LiBOB: Is it an Alternative Salt for Lithium Ion Chemistry?</article-title>,&#x0201d; <source>Journal of Power Sources</source>
+<volume>146</volume> (<year>2005</year>): <fpage>79</fpage>&#x02013;<lpage>85</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="cssc70380-cit-0041">
+<string-name>
+<given-names>W.</given-names>
+<surname>Fan</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Cai</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Wang</surname>
+</string-name>, and <string-name>
+<given-names>J.</given-names>
+<surname>Nan</surname>
+</string-name>, &#x0201c;<article-title>Electrolyte Salts for Large&#x02010;scale Application of Sodium&#x02010;ion Batteries: NaPF6 and Emerging Alternatives</article-title>,&#x0201d; <source>Journal of Power Sources</source>
+<volume>650</volume> (<year>2025</year>): <fpage>237519</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="cssc70380-cit-0042">
+<string-name>
+<given-names>H. M.</given-names>
+<surname>Law</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Yu</surname>
+</string-name>, <string-name>
+<given-names>S. C.</given-names>
+<surname>Kwok</surname>
+</string-name>, et al., &#x0201c;<article-title>A Hybrid Dual&#x02010;salt Polymer Electrolyte for Sodium Metal Batteries with Stable Room Temperature Cycling Performance</article-title>,&#x0201d; <source>Energy Storage Materials</source>
+<volume>46</volume> (<year>2022</year>): <fpage>182</fpage>&#x02013;<lpage>191</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="cssc70380-cit-0043">
+<string-name>
+<given-names>T.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>He</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Jin</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Gong</surname>
+</string-name>, and <string-name>
+<given-names>H.</given-names>
+<surname>Wang</surname>
+</string-name>, &#x0201c;<article-title>Recent Advances on Pre&#x02010;sodiation in Sodium&#x02010;ion Capacitors: A Mini Review</article-title>,&#x0201d; <source>Electrochemistry Communications</source>
+<volume>129</volume> (<year>2021</year>): <fpage>107090</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="cssc70380-cit-0044">
+<string-name>
+<given-names>C.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Zhang</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Li</surname>
+</string-name>, et al., &#x0201c;<article-title>A Safe, Low&#x02010;cost and High&#x02010;efficiency Presodiation Strategy for Pouch&#x02010;type Sodium&#x02010;ion Capacitors with high Energy Density</article-title>,&#x0201d; <source>Journal of Energy Chemistry</source>
+<volume>64</volume> (<year>2022</year>): <fpage>442</fpage>&#x02013;<lpage>450</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="cssc70380-cit-0045">
+<string-name>
+<given-names>M.</given-names>
+<surname>Arnaiz</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Shanmukaraj</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Carriazo</surname>
+</string-name>, et al., &#x0201c;<article-title>A Transversal Low&#x02010;cost Pre&#x02010;metallation Strategy Enabling Iltrafast and Stable Metal ion Capacitor Technologies</article-title>,&#x0201d; <source>Energy &#x00026; Environmental Science</source>
+<volume>13</volume> (<year>2020</year>): <fpage>2441</fpage>&#x02013;<lpage>2449</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="cssc70380-cit-0046">
+<string-name>
+<given-names>M.</given-names>
+<surname>Granados&#x02010;Moreno</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Cid</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Arnaiz</surname>
+</string-name>, et al., &#x0201c;<article-title>Dilithium Squarate: A Game&#x02010;changing Sacrificial Salt for Pre&#x02010;lithiation and Interphase Stabilization in non&#x02010;SEI Forming Electrolytes</article-title>,&#x0201d; <source>Chemical Engineering Journal</source>
+<volume>511</volume> (<year>2025</year>): <fpage>162277</fpage>.</mixed-citation></ref><ref id="cssc70380-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="cssc70380-cit-0047">
+<string-name>
+<given-names>X.</given-names>
+<surname>Pan</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Chojnacka</surname>
+</string-name>, and <string-name>
+<given-names>F.</given-names>
+<surname>B&#x000e9;guin</surname>
+</string-name>, &#x0201c;<article-title>Advantageous Carbon Deposition During the Irreversible Electrochemical Oxidation of Na2C4O4 used as a Presodiation Source for the Anode of Sodium&#x02010;ion Systems</article-title>,&#x0201d; <source>Energy Storage Materials</source>
+<volume>40</volume> (<year>2021</year>): <fpage>22</fpage>&#x02013;<lpage>30</lpage>.</mixed-citation></ref><ref id="cssc70380-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="cssc70380-cit-0048">
+<string-name>
+<given-names>J.</given-names>
+<surname>Maibach</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Lindgren</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Eriksson</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Edstr&#x000f6;m</surname>
+</string-name>, and <string-name>
+<given-names>M.</given-names>
+<surname>Hahlin</surname>
+</string-name>, &#x0201c;<article-title>Electric Potential Gradient at the Buried Interface between Lithium&#x02010;Ion Battery Electrodes and the SEI Observed Using Photoelectron Spectroscopy</article-title>,&#x0201d; <source>The Journal of Physical Chemistry Letters</source>
+<volume>7</volume> (<year>2016</year>): <fpage>1775</fpage>&#x02013;<lpage>1780</lpage>.<pub-id pub-id-type="pmid">27104985</pub-id>
+</mixed-citation></ref></ref-list></back></article>

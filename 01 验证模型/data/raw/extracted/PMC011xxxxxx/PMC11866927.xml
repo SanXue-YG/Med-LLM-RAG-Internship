@@ -1,0 +1,1126 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.3" xml:lang="EN" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Sustain Chem Eng</journal-id><journal-id journal-id-type="iso-abbrev">ACS Sustain Chem Eng</journal-id><journal-id journal-id-type="publisher-id">sc</journal-id><journal-id journal-id-type="coden">ascecg</journal-id><journal-title-group><journal-title>ACS Sustainable Chemistry &#x00026; Engineering</journal-title></journal-title-group><issn pub-type="epub">2168-0485</issn><publisher><publisher-name>American Chemical Society</publisher-name></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">40027997</article-id><article-id pub-id-type="pmc">PMC11866927</article-id><article-id pub-id-type="doi">10.1021/acssuschemeng.4c07901</article-id><article-categories><subj-group><subject>Research Article</subject></subj-group></article-categories><title-group><article-title>Uncovering
+the Techno-Economic and Environmental Implications
+of a Multiproduct Biorefinery from Exhausted Olive Pomace</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name><surname>P&#x000e9;rez-Almada</surname><given-names>Deborah</given-names></name><xref rid="aff1" ref-type="aff">1</xref><xref rid="aff2" ref-type="aff">2</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath2"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-1209-0985</contrib-id><name><surname>Gal&#x000e1;n-Mart&#x000ed;n</surname><given-names>&#x000c1;ngel</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">1</xref><xref rid="aff2" ref-type="aff">2</xref></contrib><contrib contrib-type="author" id="ath3"><name><surname>Contreras</surname><given-names>Mar&#x000ed;a del
+Mar</given-names></name><xref rid="aff1" ref-type="aff">1</xref><xref rid="aff2" ref-type="aff">2</xref></contrib><contrib contrib-type="author" id="ath4"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-3151-3103</contrib-id><name><surname>Romero-Garc&#x000ed;a</surname><given-names>Juan Miguel</given-names></name><xref rid="aff1" ref-type="aff">1</xref><xref rid="aff2" ref-type="aff">2</xref></contrib><contrib contrib-type="author" id="ath5"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0003-1719-6049</contrib-id><name><surname>Castro</surname><given-names>Eulogio</given-names></name><xref rid="aff1" ref-type="aff">1</xref><xref rid="aff2" ref-type="aff">2</xref></contrib><aff id="aff1"><label>1</label>Department
+of Chemical, Environmental and Materials Engineering, <institution>University of Ja&#x000e9;n</institution>, Campus Las Lagunillas s/n, Ja&#x000e9;n 23071, <country>Spain</country></aff><aff id="aff2"><label>2</label>Institute
+of Biorefineries Research (I3B), <institution>University
+of Ja&#x000e9;n</institution>, Ja&#x000e9;n 23071, <country>Spain</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>Email: <email>galan@ujaen.es</email>.</corresp></author-notes><pub-date pub-type="epub"><day>09</day><month>02</month><year>2025</year></pub-date><pub-date pub-type="collection"><day>24</day><month>02</month><year>2025</year></pub-date><pub-date pub-type="pmc-release"><day>09</day><month>02</month><year>2026</year></pub-date><volume>13</volume><issue>7</issue><fpage>2732</fpage><lpage>2745</lpage><history><date date-type="received"><day>25</day><month>09</month><year>2024</year></date><date date-type="accepted"><day>24</day><month>01</month><year>2025</year></date><date date-type="rev-recd"><day>24</day><month>01</month><year>2025</year></date></history><permissions><copyright-statement>&#x000a9; 2025 The Authors. Published by American Chemical Society</copyright-statement><copyright-year>2025</copyright-year><copyright-holder>The Authors</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_0007" id="ab-tgr1"/></p><p>Biorefineries are pivotal in advancing sustainability,
+yet most
+studies remain confined to laboratory scales, lacking comprehensive
+industrial-level analyses. In this work, the laboratory experiments
+are scaled up to design and assess the techno-economic and environmental
+implications of a multiproduct biorefinery system producing antioxidant
+extracts, lignin, and bioethanol from exhausted olive pomace, a residual
+biomass from olive oil extraction. Using process simulation and life
+cycle assessment, five scenarios were evaluated, varying in electricity
+sources (national mix, solar, wind, or olive biomass) and the heat
+and cooling sources (fossil natural gas or synthetic natural gas from
+capture CO<sub>2</sub> and electrolytic hydrogen), with one scenario
+incorporating a carbon capture and storage (CCS) system. The CCS scenario
+showed the highest overall costs, 2.5 times higher than the base scenario
+(27.74 vs 10.99 $/functional unit), primarily due to the additional
+infrastructure and energy-intensive processes associated with CO<sub>2</sub> utilization and storage. Despite higher costs, it achieved
+even a negative carbon footprint (&#x02212;1.05 kg CO<sub>2</sub>eq
+per functional unit cradle-to-gate) and reduced impacts on ecosystem
+quality, resources, and human health. However, specific impacts like
+human noncarcinogenic and carcinogenic effects (40% and 60%) and ecotoxicity
+(up 70%) worsened. Notwithstanding economic barriers and environmental
+challenges, which can be alleviated by selling carbon credits and
+tailored policies and strategic decisions, these findings underscore
+the potential of integrating CCS into biorefinery schemes as a promising
+pathway to enhance environmental sustainability.</p></abstract><abstract abstract-type="short"><p>Scaling up olive pomace biorefineries shows carbon capture
+boosts sustainability for antioxidants and bioethanol production despite
+higher costs</p></abstract><kwd-group><kwd>biorefinery</kwd><kwd>carbon capture storage</kwd><kwd>exhausted
+olive pomace</kwd><kwd>life cycle assessment</kwd><kwd>techno-economic
+and environmental assessment</kwd></kwd-group><funding-group><award-group><funding-source><institution-wrap><institution>Ministerio de Ciencia, Innovaci&#x000c3;&#x000b3;n y Universidades</institution><institution-id institution-id-type="doi">10.13039/100014440</institution-id></institution-wrap></funding-source><award-id>BG20/00074</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>MCIN/AEI/10.13039/501100011033</institution><institution-id institution-id-type="doi">NA</institution-id></institution-wrap></funding-source><award-id>PID2023-151855OA-I00</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>Universidad de Ja&#x000c3;&#x000a9;n</institution><institution-id institution-id-type="doi">10.13039/501100007064</institution-id></institution-wrap></funding-source><award-id>NA</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>European Social Fund Plus</institution><institution-id institution-id-type="doi">10.13039/501100004895</institution-id></institution-wrap></funding-source><award-id>RYC2020-030546-I/AEI/10.13039/501100011033</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>NextGenerationEU</institution><institution-id institution-id-type="doi">10.13039/100031478</institution-id></institution-wrap></funding-source><award-id>TED2021-132614A-I00</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>Ministerio de Ciencia, Innovaci&#x000c3;&#x000b3;n y Universidades</institution><institution-id institution-id-type="doi">10.13039/100014440</institution-id></institution-wrap></funding-source><award-id>PID2023-151855OA-I00</award-id></award-group></funding-group><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>sc4c07901</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>sc4c07901</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><title>Introduction</title><p>Global challenges, such as population
+growth, resource depletion,
+and climate change require a paradigm shift in production and consumption
+patterns.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> Biorefineries are positioned
+to be key drivers in advancing this transition, focusing on processing
+biowaste resources to drive a sustainable economy built on renewable
+bioenergy<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref3">3</xref></sup> and biobased products.<sup><xref ref-type="bibr" rid="ref2">2</xref></sup> Governments worldwide are enacting strategies and policies
+to reduce reliance on fossil feedstocks across all economic sectors
+and activities. Initiatives like the REPowerEU Plan, the EU &#x0201c;Fit
+for 55&#x02033; package,<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> the EU Green Deal,
+the Paris Agreement,<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> and the United Nations
+Sustainable Development Goals<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> underscore
+a collective commitment to progress in the ecological transition.
+In this context, deploying biorefineries stands out as an important
+step in aligning economic activities with sustainability goals, offering
+opportunities in rural areas, and contributing to a resilient, zero-pollution,
+and zero-waste bioeconomy.<sup><xref ref-type="bibr" rid="ref5">5</xref>,<xref ref-type="bibr" rid="ref6">6</xref></sup></p><p>Spain emerges
+as a potential key hub for biorefinery development
+within the EU. With its rich agricultural and forestry landscape,
+Spain holds ample opportunities for biorefinery projects across the
+country to exploit diverse biomass residues for biobased production
+processes.<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> A particularly promising avenue
+lies within the olive oil sector. As the world&#x02019;s largest producer
+of olive oil, Spain generates large amounts of olive-derived byproducts
+and biomass waste that represent valuable resources for extracting
+high-value compounds and clean energy.</p><p>The olive oil industry
+encompasses various stages, from olive cultivation
+to oil production. During the agricultural phase, olive branches and
+leaves are generated from the pruning process every two years. The
+olives are harvested, transported, and processed to obtain olive oil,
+generating olive stones or pits (hard inner seeds found within the
+olive fruit) and the byproduct olive pomace, which contains the olive
+pulp, part of the stones and some olive oil. Olive pomace usually
+undergoes further processing in the extraction industry to extract
+additional oil with chemicals, generating the exhausted olive pomace
+(EOP) as residue. Oil extraction generates wastewater with suspended
+solids, organic matter, and harmful compounds.<sup><xref ref-type="bibr" rid="ref8">8</xref></sup> These olive-based biomasses, generated both during olive cultivation
+and oil manufacturing, represent significant resources that can be
+utilized for various purposes, including bioenergy production or as
+feedstock to produce value-added products like biofuels or biochemicals.<sup><xref ref-type="bibr" rid="ref9">9</xref></sup></p><p>Among the biomasses generated throughout
+the olive oil value chains,
+the EOP stands out as a valuable resource, with Spain alone generating
+approximately 1.2 million tons per campaign.<sup><xref ref-type="bibr" rid="ref10">10</xref></sup> The EOP is particularly appealing because it is currently utilized
+for soil amendment and predominantly for energy or electricity generation;
+thus, its potential for valorization remains largely untapped. Before
+resorting to its combustion, there exists an opportunity to unlock
+additional value from this versatile byproduct. Compounds such as
+antioxidants and sugar derivatives can be derived from EOP, each with
+significant market potential and diverse applications. For example,
+antioxidants can be used in cosmetics and the food and pharmaceutical
+industries due to their health benefits, while sugars can be converted
+into bioethanol for transportation.<sup><xref ref-type="bibr" rid="ref11">11</xref></sup></p><p>Several authors have already explored alternative valorization
+routes for EOP to produce diverse value-added products, finding applications
+across various sectors. Some studies have explored the valorization
+of EOP for biofuel production, emphasizing the necessity of efficient
+pretreatment steps to remove the lignin barrier from the lignocellulosic
+biomass and release the sugars for effective conversion.<sup><xref ref-type="bibr" rid="ref12">12</xref></sup> Extracting and delignifying the material through
+organosolv pretreatment facilitates the extraction of bioactive compounds
+and enhances enzymatic hydrolysis.<sup><xref ref-type="bibr" rid="ref14">14</xref>,<xref ref-type="bibr" rid="ref15">15</xref></sup> These compounds,
+known for their health-promoting effects due to their ability to neutralize
+harmful free radicals, highlight the broader potential of EOP beyond
+its traditional uses.</p><p>In addition to the antioxidant extracts,
+the fermentable sugars
+in the EOP, once released through pretreatment (e.g., hydrolysis),
+can be converted to platform chemicals or biofuels, offering a renewable
+alternative to traditional fossil fuels. This pathway is particularly
+interesting from a macroeconomic perspective as it will play a role
+in greenhouse gas (GHG) mitigation and energy independence.<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> Bioethanol production from EOP has been investigated
+through various pretreatment and fermentation methods. Dilute acid
+hydrolysis followed by enzymatic treatment effectively releases fermentable
+sugars from EOP, though some residue may remain resistant to cellulase
+hydrolysis.<sup><xref ref-type="bibr" rid="ref13">13</xref></sup> Detoxification steps, such
+as overliming or activated charcoal treatment, are often required
+to remove inhibitory compounds before fermenting hemicellulosic sugars.<sup><xref ref-type="bibr" rid="ref14">14</xref></sup> A cascading approach has also been proposed
+to sequentially extract antioxidants, lignin, and sugars, with the
+latter being suitable for conversion into bioethanol.<sup><xref ref-type="bibr" rid="ref15">15</xref></sup></p><p>Additionally, lignin, a high molecular weight aromatic
+polymer
+also abundant in EOP, finds applications in various industries, as
+a precursor for biofuels, materials, and chemicals. This multifaceted
+utilization of EOP underscores its potential to contribute significantly
+to sustainable industrial practices.</p><p>All previous research predominantly
+centered around experimental
+studies, delving into the fundamental aspects of EOP valorization
+at the laboratory scale. While these studies have substantially contributed
+to understanding EOP management and utilization, there remains a critical
+gap in the literature regarding the practical implications of implementing
+such valorization routes on an industrial scale.</p><p>Among the tools
+available, integrating process simulation tools
+with life cycle assessment (LCA) methodologies has emerged as a robust
+approach for comprehensively understanding the technical, economic,
+and environmental implications of biorefining systems on a large scale.<sup><xref ref-type="bibr" rid="ref16">16</xref></sup> Process simulations provide a framework for
+approximating the performance of biorefinery processes at an industrial
+scale based on laboratory data, facilitating the identification of
+scaling challenges. However, such simulations should be complemented
+by rigorous experimental and engineering scaling-up procedures to
+ensure robustness and reliability. Subsequently, the data generated
+from these simulations can be utilized to analyze both the economic
+feasibility and the environmental footprint of the processes. For
+the latter, LCA is a widely used methodology that offers insights
+into the environmental footprint of biorefinery systems across their
+entire life cycle and considers several impact categories.<sup><xref ref-type="bibr" rid="ref17">17</xref></sup> The combined approach of Environmental and Techno-Economic
+Assessment (ETEA) has been applied to explore the valorization of
+olive byproducts<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> such as bioethanol production
+from olive tree pruning (OTP).<sup><xref ref-type="bibr" rid="ref19">19</xref>&#x02212;<xref ref-type="bibr" rid="ref21">21</xref></sup> However, these previous studies
+have predominately centered on olive biomasses other than EOP, with
+some narrowly focusing on the technical and economic aspects while
+neglecting the environmental (and social) dimension, which risks overlooking
+potential undesired side effects.</p><p>To address these gaps, this
+study conducts a comprehensive simulation
+exercise to model an industrial-scale operation, starting from laboratory
+studies on EOP valorization<sup><xref ref-type="bibr" rid="ref15">15</xref></sup> and extending
+to an in-depth examination of the technical feasibility, economic
+viability, and broad environmental implications of a multiproduct
+EOP-based biorefinery.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> An integrated
+ETEA approach was adopted, providing a robust framework for evaluating
+various biorefinery schemes focusing on the sustainable valorization
+of EOP as biomass waste. This approach provides valuable insights
+into integrating diverse renewable energy sources within the biorefinery
+and evaluating pathways involving carbon capture, utilization, and
+storage technologies.</p><p>By examining different biorefining scenarios,
+this study offers
+a comprehensive understanding of how different strategies can be optimized
+for sustainability and economic performance in the biorefinery sector.
+By doing so, the aim is to offer valuable insights and practical guidelines
+for the sustainable management and utilization of EOP, ultimately
+contributing to developing a resilient, zero-waste, and low-carbon
+bioeconomy.</p></sec><sec id="sec2"><title>Experimental Section</title><sec id="sec2.1"><title>Process Description and Simulation</title><p>The simulation design
+of the multiproduct biorefinery plant was carried out using Aspen
+Plus v11.0.<sup><xref ref-type="bibr" rid="ref23">23</xref></sup> The plant has a capacity
+of 100,000 tons/year of EOP (6.5% moisture), chosen based on EOP availability
+in Andalusia, southern Spain. The region produces over one million
+tons of EOP annually, with more than half used for electricity generation.
+Two extraction facilities in Baena and Lucena alone generate approximately
+150,000 tons/year.<sup><xref ref-type="bibr" rid="ref10">10</xref></sup> The selected capacity,
+representing about 8% of regional production, ensures a reliable feedstock
+supply while optimizing operational efficiency and maintaining manageable
+transportation costs.</p><p>The final biobased products of the plant
+include antioxidant extracts, lignin, and bioethanol. Experimental
+data and results from a previous study<sup><xref ref-type="bibr" rid="ref15">15</xref></sup> were used as a starting point and the simulation dry matter composition
+belonged to solid was essentially composed of lignin (38%), xylan
+(16%), cellulose (16%), ash (11%), and protein (11%). The nonrandom
+two-liquid property model was used in the simulations and components
+in the Aspen simulation to model the liquid. At the same time, the
+Hayden-O&#x02019;Conell equation-of-state is ideal for accurately predicting
+complex nonideal systems and phase behavior (usage in high-pressure
+processes). All reactors were conversion reactors (RStoic), modeled
+based on stoichiometric relationships found in the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Tables S2&#x02013;S5</ext-link>). The simulation process is continuous with a
+total of 7620 h/yr, and the use of pseudocomponents where applicable,
+along with their defined properties. All component definitions can
+be found in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Table S1</ext-link>). Further details regarding the
+simulation models, including stream compositions and process flow
+diagram, and mass and energy balances, are reported in section 1 of <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Tables S1&#x02013;S6</ext-link>).</p><p>A schematic representation
+of the multiproduct biorefinery process
+is presented in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>, which is divided into the following subsystems: (S1) Antioxidant
+extraction and recovery, (S2) Lignocellulosic biomass pretreatment,
+(S3) Lignin recovery and purification, (S4) Enzymatic Hydrolysis and
+fermentation, and (S5) Ethanol purification and distillation.</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>Overview of
+the process flowsheet of the multiproduct biorefinery
+converting exhausted olive pomace into antioxidant extracts, lignin,
+and bioethanol.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_0001" id="gr1" position="float"/></fig><p>In S1, according to the laboratory experiments<sup>1,</sup> the
+EOP was subjected to an aqueous extraction at 10% mass concentration
+(w/v) of solids and introduced in a reactor at 85 &#x000b0;C. Then, the
+wet material was filtered and separated into an aqueous and solid
+fraction. The aqueous extraction allowed a recovery efficiency of
+more than 75% of the initial EOP mass, which is mainly composed of
+antioxidants, nonstructural sugars, mannitol, and phenol.</p><p>The
+extract is rich in antioxidants (yield of 5795.49 kg/h) and
+contains around 10% hydroxytyrosol, an important phenolic compound
+due to its chemical properties. Additionally, the extract component
+was rich in bioactive compounds such as tyrosol and mannitol with
+around 10%.<sup><xref ref-type="bibr" rid="ref15">15</xref></sup> After the antioxidant extracts
+were recovered, wastewater was obtained at the bottom of the separator
+block (flash block) and sent to a wastewater system. The solid recovered
+from the water extraction step (around 59% of the original biomass)
+enters S2, where it is pretreated by carrying organosolv pretreatment
+using sulfuric acid at 1% (w/v) and 50% ethanol. The solid fraction
+was introduced in a reactor with a target temperature of 130 &#x000b0;C.
+The pretreated EOP contains antioxidant extracts, lignin, polymers
+of glucose, and xylose. Next, the stream was cooled to around 30 &#x000b0;C,
+and the obtained slurry was vacuum filtered and separated in a pretreatment
+liquor (PL) and pretreated solid (PS). For the lignin recovery (S3),
+the solubilized lignin was precipitated from the PL by adding two
+volumes of acidified water with sulfuric acid. This PL was evaporated
+up to 50% of the volume by using separator equipment. Consequently,
+the resulting fraction was filtered and dried at 50 &#x000b0;C and the
+obtained product was called organosolv lignin (OL) with a yield of
+495.83 kg/h.</p><p>In S4, another method for obtaining lignin involved
+recovering
+the solid fraction from the enzymatic hydrolysis-fermentation stage.
+The main aim of this S4 subsystem is converting pretreatment lignocellulosic
+biomass into fermentable sugars by breaking down complex organic compounds
+through the addition of cellulases (enzymes). In essence, the PS was
+subjected to enzymatic hydrolysis by using an enzyme and performed
+at 50 &#x000b0;C. The reaction products were vacuum filtered and separated
+in hydrolysate and solid fraction. Consequently, the solid fraction
+was named enzymatic hydrolysis lignin (EHL) to be composed mainly
+of lignin. The EHL (yield of 1334.02 kg/h). For the bioethanol conversion,
+the hydrolysate fraction was sent to a fermentation process reactor
+at 30 &#x000b0;C. After finishing the fermentation reactions, the final
+fermented product is ready to be sent to the distillation columns
+for bioethanol production together with the evaporated and bottom
+fraction from the S3. The ethanol purification stage (S5) consists
+of two distillation columns during the separation/purification of
+the ethanol phase to reach a purity level near the azeotropic point.
+In the first distillation column, the ethanol is concentrated to about
+51% (w/w). The top ethanol column goes to the rectification column
+(second column) to reach a value near its azeotropic point (95.3%).
+Then, the resulting bioethanol (yield of 246.38 kg/h) was purified
+to about 99% using molecular sieves, which can be used as biofuel
+for transportation. The bottoms of the columns are collected as stillage
+(mainly composed of water and lignin) and then filtered. The filtered
+stillage can be further processed to extract added value, such as
+through anaerobic digestion to produce biogas, which can subsequently
+be used for power generation. Additionally, treated water can be recovered
+and reused.</p></sec><sec id="sec2.2"><title>Scenario Definition</title><p>Considering the biorefinery plant
+described before, five scenarios are defined, as depicted in <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>. The goal is to
+compare the economic and environmental impacts of the scenarios and
+identify opportunities for improvement. The scenarios vary in the
+electricity source powering the processes (Spanish grid, solar photovoltaic,
+wind power, and bioelectricity from olive tree pruning biomass) and
+heat/cooling source (fossil natural gas or synthetic natural gas generated
+from Sabatier reaction of captured CO<sub>2</sub> and electrolytic
+hydrogen) while one scenario integrates a carbon capture and storage
+(CCS) system to capture the CO<sub>2</sub> emissions both from the
+synthetic natural gas (SNG) combustion and the fermentation unit.
+In the base case scenario, labeled as the business-as-usual scenario
+(S1-BAU), the power is generated from grid electricity while the heat
+needs are covered by steam from fossil natural gas. Two alternative
+scenarios utilize SNG for heating/cooling needs, produced following
+a carbon capture and utilization (CCU) pathway. The SNG is produced
+through the Sabatier reaction of CO<sub>2</sub> from direct air capture
+(DAC) and electrolytic H<sub>2</sub> powered by solar photovoltaic
+or wind (scenarios S2-Solar and S3-Wind, respectively). DAC plants
+are facilities that use chemical solvents and sorbents to extract
+CO<sub>2</sub> directly from the atmosphere. For electricity needs,
+both scenarios (S2&#x02013;S3) utilize these renewable technologies,
+with the grid serving as backup due to their intermittent nature,
+considering average capacity factors (20% for solar and 30% for wind).<sup><xref ref-type="bibr" rid="ref24">24</xref></sup> The fourth scenario considers the cogeneration
+of heat and power from olive tree pruning (S4-OTP). In olive tree
+cultivation, OTP is generated biennially during pruning operations
+after fruit harvesting. Its availability depends on factors such as
+tree age, plantation density, soil and climate conditions, and irrigation
+practices. Note that, within the olive oil production value chain,
+OTP residues represent an abundant and underutilized source of wood
+fuel, holding immense potential to be exploited.<sup><xref ref-type="bibr" rid="ref25">25</xref></sup> Finally, in the fifth scenario (S5-Wind CCS), akin to S3-Wind,
+a CCS system based on monoethanolamine solvent with a 90% capture
+efficiency is integrated into the biorefinery plant. It captures both
+the CO<sub>2</sub> emissions from combusting the SNG and the biogenic
+CO<sub>2</sub> from the fermentation unit, which is then compressed
+and transported via pipeline for injection into geological storage
+sites. This scenario S5-Wind CCS represents a promising long-term
+carbon removal alternative due to its dual approach of removing CO<sub>2</sub> emissions from the atmosphere via DAC technology and biogenic
+sources, thus contributing to climate change carbon reduction goals.</p><fig id="fig2" position="float"><label>Figure 2</label><caption><p>Graphic
+overview of the multibiorefinery system scenarios considered
+in this study. The scenarios are color-coded (as shown in the legend
+on the left) and differ based on their electricity sources and heat/cooling
+utilities.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_0002" id="gr2" position="float"/></fig></sec><sec id="sec2.3"><title>Economic Analysis</title><p>The economic viability of the EOP-based
+multibiorefinery was estimated using the methodology, correlations,
+and factors described in literature references<sup><xref ref-type="bibr" rid="ref20">20</xref>,<xref ref-type="bibr" rid="ref26">26</xref>,<xref ref-type="bibr" rid="ref27">27</xref></sup> and Turton et al. (Chapters 7&#x02013;10).<sup><xref ref-type="bibr" rid="ref28">28</xref></sup> The process simulation in Aspen Plus provides
+the equipment size, material, and energy flows that are essential
+to estimate the revenues, capital (CAPEX), and operational (OPEX)
+expenditures. The economic indicators determined were Net Present
+Value (NPV), Payback Period (PP), and Return of Investment (ROI).
+We assume a lifespan of 25 years with 7920 h per year of operation
+and a 5% interest rate. Revenue streams considered in this assessment
+included the sale of the main biobased products bioethanol, lignin,
+and extractives.</p><p>The cost parameters for the utilities, products,
+and material prices are provided in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material section 4 in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Tables S10&#x02013;S15</ext-link>. The CAPEX parameters were calculated by using
+the bare module cost of each equipment <italic>k (Cbm</italic><sub><italic>k</italic></sub><italic>)</italic> as shown in <xref rid="eq1" ref-type="disp-formula">eq <xref rid="eq1" ref-type="disp-formula">1</xref></xref>. Additionally, in <xref rid="eq1" ref-type="disp-formula">eq <xref rid="eq1" ref-type="disp-formula">1</xref></xref> the Chemical Engineering Plant
+Cost Index (CEPCI), was used in the formula to update the costs from
+2018 to 2022 to calculate the CAPEX. Consequently, the interest rate
+(IR) and year lifetime (years) were needed to calculate the capital
+annualization factor (AF) in <xref rid="eq2" ref-type="disp-formula">eq <xref rid="eq2" ref-type="disp-formula">2</xref></xref>. Finally, the total annualized cost (TAC) was employed by
+using the sum between the OPEX and the annualized capital cost AF,
+and CAPEX as shown in <xref rid="eq3" ref-type="disp-formula">eq <xref rid="eq3" ref-type="disp-formula">3</xref></xref>.<disp-formula id="eq1"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_m001" position="anchor"/><label>1</label></disp-formula><disp-formula id="eq2"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_m002" position="anchor"/><label>2</label></disp-formula><disp-formula id="eq3"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_m003" position="anchor"/><label>3</label></disp-formula></p><p>Regarding the OPEX
+of the multibiorefinery plant, the global average
+costs for the utilities, raw materials, electricity and product prices
+were used. A sensitivity analysis was conducted to account for variability
+and improve the robustness of the assessment. In the <xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref>, the <italic>MB</italic><sup><italic>F</italic></sup> and <italic>MB</italic><sup><italic>W</italic></sup> are the total costs of the feedstock materials and water fed in
+the plant, respectively; <italic>MB</italic><sup><italic>H</italic></sup> is the cost of heating; <italic>MB</italic><sup><italic>E</italic></sup> and <italic>MB</italic><sup><italic>C</italic></sup> are the
+total costs of electricity and cooling, respectively. The OPEX data
+for each scenario was collected from literature data and shown in
+the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material in
+section 4.2 (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Tables S13&#x02013;S15</ext-link>).</p><p>The equation used is <xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref> shown below:<disp-formula id="eq4"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_m004" position="anchor"/><label>4</label></disp-formula></p><p>A complete and detailed
+explanation of the CAPEX and OPEX calculations
+and parameters can be found in sections 4.1 and 4.2 in the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material.</p><p>A sensitivity
+analysis of the economic results was performed across
+the five biorefinery scenarios to evaluate the impact of variations
+in key parameters on economic outcomes. The central scenario represents
+average values, while the pessimistic and optimiztic scenarios account
+for potential negative and positive deviations. These variations in
+cost parameters are defined based on historical data, regional variations,
+and market fluctuations, as described in Section 4.2 of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material. Exploring these
+scenarios provides a clearer understanding of the sensitivity of economic
+indicators to changes in key factors, including material costs, energy
+prices, and operational efficiencies. This sensitivity analysis helps
+to identify the most critical variables influencing the financial
+viability of the biorefinery and provides valuable insights for risk
+management and strategic planning.</p><p>Additionally, a breakeven
+point analysis and pricing strategy for
+carbon removal credits are performed. The breakeven point analysis
+allows us to determine the minimum selling price required for the
+biobased products to be economically viable. This analysis is crucial
+as it reveals the price at which the revenue from selling the biobased
+products from the multibiorefinery scenarios surpasses those produced
+from fossil fuel resources, specifically natural gas as used in the
+S1-BAU scenario. The analysis involved incrementally adjusting both
+the feedstock and selling prices across all five scenarios (S1&#x02013;S5)
+until each scenario achieved an equilibrium NPV, thus revealing the
+price competitiveness required for market parity.</p><p>Finally, a
+complementary analysis was conducted to support the
+S5-Wind CCS scenario, which involved evaluating the impact of premium
+pricing strategies and the potential revenue from carbon credits.
+The incorporation of carbon credit sales for each ton of CO<sub>2</sub> sequestered was analyzed to evaluate how such financial mechanisms
+could enhance the economic attractiveness of the S5-Wind CCS scenario.
+This analysis aimed to explore how leveraging carbon credits and premium
+pricing could offset higher production costs and improve the financial
+feasibility of integrating CCS technologies into the biorefinery.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup></p></sec><sec id="sec2.4"><title>Environmental Assessment</title><p>LCA is a systematic and comprehensive
+method that allows examining the environmental impacts associated
+with the biorefinery system throughout its entire life cycle.<sup><xref ref-type="bibr" rid="ref29">29</xref></sup> The standardized methodological framework procedures
+are provided by ISO 14040<sup><xref ref-type="bibr" rid="ref30">30</xref></sup> and ISO 14044<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> and were followed to assess and compare the
+biorefinery scenarios described previously.</p><p>The first stage
+is the definition of goal and scope. This study aims to examine and
+compare the environmental performance of EOP multibiorefinery in different
+scenarios. The functional unit (FU) selected for this analysis is
+the production of 1 kg of bioethanol, 0.49 kg of antioxidant extracts,
+and 0.98 kg of lignin. This multifunctional FU was chosen to simplify
+the analysis by avoiding complexities associated with economic allocation
+methods or system expansion techniques. The primary focus is not on
+determining the best management of EOP waste but on identifying hotspots
+within a system and providing an unbiased basis for comparing the
+five standalone scenarios.<sup><xref ref-type="bibr" rid="ref32">32</xref></sup></p><p>The
+scope adopted was from cradle-to-gate, namely from the olive
+production and EOP acquisition and processing to the delivery of biobased
+products at the biorefinery gate.</p><p>The second phase is the life
+cycle inventory (LCI), which consists
+of compiling the inputs and output flows connected to the biorefinery
+system (feedstock, products energy, emissions, waste, etc.) across
+its full life cycle.<sup><xref ref-type="bibr" rid="ref29">29</xref></sup> Data for the foreground
+system (mass and energy balances entering and leaving the biorefinery
+plant) were derived from the simulation model built in Aspen Plus
+based on the experimental results. The results of the simulation are
+described in section 2 of the Supporting material. Data from the background
+system (e.g., wind and photovoltaic system power sources) were primarily
+obtained from data sets available in Ecoinvent v3.9.1<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> except for the EOP raw material, OTP feedstock, and the
+SNG.</p><p>The LCI of the EOP was developed by modeling the complete
+olive
+oil production industry based on a previous study<sup><xref ref-type="bibr" rid="ref9">9</xref></sup> and applying economic allocation to the EOP. For the OTP
+feedstock, we performed economic allocation using the Olive fruit
+production &#x02013; ES data set from Ecoinvent v3.9.1,<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> allocating inputs and outputs between olive
+fruit and prunings. Chipping, mulching, and transportation (50 km
+by lorry) were also considered. Impacts from OTP storage at the biorefinery
+were assumed to be negligible. The direct combustion emissions for
+the S4-OTP were sourced from another article.<sup><xref ref-type="bibr" rid="ref25">25</xref></sup> The inventory tables regarding the LCA of olive oil production,
+including economic allocation parameters, can be found in section
+5 in the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Tables S16&#x02013;S17</ext-link>). For the SNG generated
+from the Sabatier reaction of captured CO<sub>2</sub><sup><xref ref-type="bibr" rid="ref34">34</xref></sup> and electrolytic hydrogen,<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> the LCA inventory and the water electrolysis inventory were obtained
+from various literature references.<sup><xref ref-type="bibr" rid="ref36">36</xref>&#x02212;<xref ref-type="bibr" rid="ref38">38</xref></sup> In particular, the LCI
+for the CO<sub>2</sub> from DAC is sourced from Keith et al. (2018)<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> (Supporting <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Table S24</ext-link>), while the postcombustion CCS infrastructure was sourced from the
+study by Volkart et al. (2013) and Terlouw et al. (2021), which include
+the transport, pipeline, and drilling processes.<sup><xref ref-type="bibr" rid="ref40">40</xref>,<xref ref-type="bibr" rid="ref41">41</xref></sup> Regarding the CCS system, a 90% capture efficiency was assumed.</p><p>The third phase is the life cycle impact assessment (LCIA), which
+translates the inventory flows into quantifiable and understandable
+environmental impacts, aiding in the interpretation of the overall
+environmental footprint of the biorefinery. The end point and midpoint
+categories from ReCiPe 2016 methodology were employed (v1.03).<sup><xref ref-type="bibr" rid="ref42">42</xref></sup></p><p>Using the SimaPro software<sup><xref ref-type="bibr" rid="ref43">43</xref></sup> (version
+9.5.0.0), the LCI was built and calculated the environmental impacts
+considering the 18 midpoints and three end point environmental impact
+categories related to human health, ecosystem quality, and resource
+depletion areas. The end point results and their underlying midpoint
+category contributions are presented in the main manuscript (<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>), offering a broader
+perspective on environmental impacts. Detailed midpoint results, capturing
+specific environmental effects, are provided in the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Table S39</ext-link>). This comprehensive approach ensures transparency and
+allows readers to assess the overall environmental performance and
+the specific contributions of individual impact categories, supporting
+a more informed interpretation.<sup><xref ref-type="bibr" rid="ref44">44</xref></sup></p><p>The ReCiPe methodology sets the characterization factor for biogenic
+CO<sub>2</sub> to zero, meaning biomass-derived products do not receive
+credit for CO<sub>2</sub> removed from the atmosphere during photosynthesis.
+To address this issue, biogenic CO<sub>2</sub> uptake in biomass-derived
+products was separately and manually accounted for, as required by
+ISO 14067.<sup><xref ref-type="bibr" rid="ref45">45</xref></sup> Note that a cradle-to-gate
+approach was adopted in this study, which excludes the end-use phase.
+However, the CO<sub>2</sub> embodied in OTP-derived products such
+as bioethanol will likely be released back into the atmosphere during
+the end-use phase, depending on the disposal or utilization pathway.
+To comply with standards, the results for the carbon footprint will
+be provided both with and without accounting for biogenic CO<sub>2</sub>. Specifically, the CO<sub>2</sub> embodied in the EOP is considered
+a negative entry of biogenic CO<sub>2</sub> in the system, estimated
+based on a moisture content<sup><xref ref-type="bibr" rid="ref15">15</xref></sup> of 6.5% and
+carbon content on a dry basis of 45.41%.<sup><xref ref-type="bibr" rid="ref46">46</xref></sup> Additionally, for the CO<sub>2</sub> captured from DAC and used
+as feedstock for SNG production in the S5-Wind CCS scenario, the permanently
+sequestered CO<sub>2</sub> is modeled as a negative entry of fossil
+CO<sub>2</sub>, contributing as a carbon-negative component in the
+overall emissions accounting.</p><p>The fourth and final phase of
+the LCA study is the interpretation.
+A sensitivity analysis was performed to assess the robustness of the
+carbon footprint results and conclusions, considering the uncertainty
+in the LCI data sourced from Ecoinvent v3.9.1.<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> Uncertainties related to the foreground system, such as
+mass and energy balances derived from the process simulation, were
+excluded from this analysis due to the need for additional assumptions
+and the potential for increased computational complexity. The Monte
+Carlo sampling method in Simapro v9.5.0.0 was employed, running 1,000
+scenarios based on the probability functions modeling the LCI elementary
+flows, as defined in Ecoinvent v3.9.1.<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> The uncertainty results were displayed for each scenario using error
+bars spanning the 25th and 75th percentiles (i.e., interquartile range
+representing 50% of the central results).</p></sec></sec><sec id="sec3"><title>Results and Discussion</title><sec id="sec3.1"><title>Economic Results</title><p>The total cost and its detailed breakdown
+per FU (comprising 1 kg of bioethanol, 0.49 kg of antioxidant extracts,
+and 0.98 kg of lignin) are first evaluated across the five biorefinery
+scenarios (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>). Considering the current average prices for raw materials and utilities
+(central values over bars in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>), S1-BAU shows the lowest overall costs at 10.99 $/FU.
+This is primarily due to its reliance on cheaper heating and cooling
+duties derived from imported natural gas, yet it is subject to market
+forces and fluctuating prices.<sup><xref ref-type="bibr" rid="ref47">47</xref>,<xref ref-type="bibr" rid="ref48">48</xref></sup> Even under the pessimistic
+scenario, the S1-BAU still stands up as the most economically appealing
+scenario due to the high upfront costs associated with building the
+infrastructure of the other scenarios.</p><fig id="fig3" position="float"><label>Figure 3</label><caption><p>Cost breakdown of exhausted
+olive pomace multibiorefinery production
+for the different scenarios. The CAPEX of columns, vessels, and pumps
+comprise the &#x0201c;rest of the plant&#x0201d; category. Error bars
+spans the pessimistic and optimistic cost estimates.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_0003" id="gr3" position="float"/></fig><p>However, relying solely on imported fossil fuels
+is risky due to
+the high uncertainty in prices and dependency on abroad, unlike the
+alternative scenarios that leverage domestic resources such as solar,
+wind, or biomass. Noteworthy is the S4-OTP scenario, emerging as a
+compelling alternative in terms of cost efficiency, with total costs
+only 10.55% higher than the baseline, amounting to 12.15 $/FU. Still,
+under the most optimiztic cost estimates, the S4-OTP scenario may
+achieve lower costs compared to S1-BAU scenario (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>). This potential cost advantage
+is attributed to utilizing locally sourced OTP for the heating requirements,
+which reduces transportation and feedstock costs (ranging from 12.33
+to 9.05 $/FU in the S4-OTP scenario).</p><p>Given the potential location
+for the biorefinery in Andalusia,
+where olive grooves dominate the landscape, the required OTP feedstock
+for the S4-OTP scenario would be available nearby. The S4-OPT demands
+approximately 259.35 kg of OTP per hour, totaling 1,976.3 tons/year
+over 7,620 operating hours. With an average OTP yield of 2.7 tons/ha/year,
+an olive groove spanning 730 ha, equivalent to a 1.5 km radius, would
+be sufficient. This proximity minimizes transportation costs, enhancing
+both economic viability and competitiveness.</p><p>Moreover, the high
+efficiency and advanced technology for combustion
+enhance economic viability and lower costs.<sup><xref ref-type="bibr" rid="ref27">27</xref></sup> Furthermore, S4-OTP strategically relies on domestic biomass resource
+residues, thereby mitigating risks associated with external market
+fluctuations and positioning this alternative as an attractive option
+for sustained economic stability.</p><p>Scenarios relying on renewables
+and SNG would substantially escalate
+the costs. The S2-Solar, for instance, has an almost 2-fold increase
+in cost (20.22 $/FU), while the scenario S3-Wind (19.62 $/FU) compared
+to the baseline S1-BAU. The breakdown of costs by feedstocks and utilities
+evidence that the higher costs arise from the expensive heating and
+cooling needs covered with SNG relying on captured CO<sub>2</sub> from
+DAC and electrolytic hydrogen. On one hand, capturing CO<sub>2</sub> from the atmosphere where concentrations are low using DAC technology
+requires a substantial energy input, making this CO<sub>2</sub> raw
+material costly (from 134 to 342 $/t CO<sub>2</sub>).<sup><xref ref-type="bibr" rid="ref49">49</xref></sup> On the other hand, the production of green hydrogen is
+similarly expensive, particularly at 5.66&#x02013;7.55 $/kg and 4.28&#x02013;6.86
+$/kg when produced from solar and wind power, respectively (S2-Solar
+and S3-Wind scenarios). Overall, the costs for heating utilizing SNG
+are 63% and 65% higher than those using fossil natural gas (for the
+S2-Solar and S3-Wind scenarios, respectively).</p><p>The S5-Wind CCS
+scenario emerges as the most expensive option,
+with costs tripling to reach 27.74 $/FU compared to the baseline S1-BAU.
+This increase is primarily attributed to the higher SNG costs as well
+as the extra costs associated with the infrastructure required for
+the CCS system (capturing both the CO<sub>2</sub> from combusting
+the SNG and the biogenic CO<sub>2</sub> from the fermentation unit.
+Notably, beyond the economic barriers and other regulatory and permitting
+obstacles, the successful implementation of this scenario presents
+even greater challenges, requiring the strategic identification of
+sites that offer proximity to the biomass feedstock and suitable geological
+formations for CO<sub>2</sub> storage, ensuring economic viability.</p><p>Hence, Spain&#x02019;s diverse geological context, which includes
+abundant carbonate and mafic-ultramafic rocks, potentially provides
+a high capacity for secure geological CO<sub>2</sub> storage (i.e.,
+14.779 Mt CO<sub>2</sub> together with Portugal).<sup><xref ref-type="bibr" rid="ref50">50</xref>,<xref ref-type="bibr" rid="ref51">51</xref></sup></p><p>Concerning the financial metrics, OPEX outweighs the CAPEX
+in all
+scenarios, accounting for 75% (S1-BAU), 87% (S2-Solar), 88% (S3-Wind),79%
+(S4-OTP) and over 90% (S5-Wind CCS).</p><p>The CAPEX distribution
+comprises between 25 to 13% depending on
+the scenario. The &#x0201c;Rest of the plant&#x0201d; category, which
+includes the pumps, dryers, filters, towers, and other equipment,
+accounts for over 90% of the total CAPEX costs, followed by the heat
+exchangers (4%), while the remaining goes to the reactors.</p><p>In
+terms of the NPV (considering central cost data), only the S1-BAU
+and S4-OTP scenarios are viable, with $54.25 and $46.04 million, respectively.
+In contrast, the other alternative scenarios exhibit negative NPV
+of -$20.97 million for S2-Solar, -$16.12 million for S3-Wind, and
+-$111.64 million for S5-Wind CCS. This negative NPV affects other
+financial metrics, such as the PP and the ROI. For example, the PP
+for both S1-BAU and S4-OTP is approximately 9 years with ROI of around
+11%. Conversely, the S2-Solar, S3-Wind, and S5-Wind CCS scenarios
+present PP ranging from 12 to 13 years and ROIs between 9% and 10%.
+While these scenarios may provide environmental advantages and reduce
+the reliance on fossil fuels, their extended payback periods and relatively
+modest returns make them less attractive from an investment perspective.
+Notably, when considering the most optimiztic parameters for the renewable
+energy and SNG costs, all scenarios achieve positive NPV values except
+the S5-Wind CCS still has a negative NPV equal to -$8.71 million.
+In particular, the NPV for the S2-Solar and S3-Wind improved to reach
+$37.61 million and $38.73 million, respectively. Conversely, under
+the most pessimistic estimates, the NPV for the S2-Solar and S3-Wind
+scenarios deteriorates to approximately -$82.00 million each, while
+the S5-Wind CCS scenario experiences a significant decline to -$193.64
+million. This worsening of NPVs extends the PP to between 12 and 13
+years and reduces the ROI to 8&#x02013;9%. Notably, for the S5-Wind
+CCS scenario, the NPV projections may shift in response to the European
+Commission&#x02019;s 2050 carbon neutrality plan.<sup><xref ref-type="bibr" rid="ref52">52</xref></sup> The rest of the detailed parameters can be found in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material section 6 in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Tables S31&#x02013;S32</ext-link>.</p><p>As a result, the
+cost of carbon capture could potentially decrease
+to around 140 &#x020ac;/ton CO<sub>2,</sub> with future advancements
+and regulatory changes possibly reducing this cost to between 60 and
+140 &#x020ac;/ton CO<sub>2</sub> (lower than optimiztic scenario).
+Therefore, with new regulations, this scenario can become economically
+viable and be used as a competitive advantage.<sup><xref ref-type="bibr" rid="ref52">52</xref></sup> Therefore, evolving policies and technological advancements
+could enhance the economic feasibility of this scenario and support
+its adoption as a viable and competitive solution in the renewable
+energy sector.</p><p>To contextualize our economic assessment, we
+compared our results
+with those reported in the literature. One study<sup><xref ref-type="bibr" rid="ref20">20</xref></sup> highlighted a payback period of 5&#x02013;6 years with a
+net present value (NPV) of $32.1 million, while others<sup><xref ref-type="bibr" rid="ref27">27</xref>,<xref ref-type="bibr" rid="ref53">53</xref></sup> reported bioethanol selling prices ranging from $0.93 to $2.18 per
+kg. In our analysis, the NPV for the base case and biomass scenarios
+(S1-BAU and S4-BAU) ranged from $46 to $54 million, with payback periods
+of 7&#x02013;8 years and bioethanol selling prices between $0.80 and
+$1.41 per kg. These findings align with the methodologies used in
+the referenced studies, underscoring the economic viability of the
+proposed biorefinery configurations.</p><p>Finally, the breakeven
+point analysis is conducted to determine
+the increase in prices of bioproducts across the alternative scenarios
+needed to achieve parity with the S1-BAU baseline scenario (equal
+NPV). The results showed that scenario S4-OTP required only an 8.40%
+increase in product prices to achieve parity with S1-BAU. Conversely,
+scenarios S2-Solar and S3-Wind, relying solely on renewable energy
+without carbon capture, faced more significant challenges, requiring
+76.95% and 71.98% price increases, respectively.</p><p>Lastly, the
+S5-Wind CCS scenario would require more than doubling
+the selling price to reach breakeven with the S1-BAU scenario. However,
+the S5-Wind CCS scenario presents a potential income from selling
+carbon credits, representing a unique opportunity to mitigate initial
+costs and achieve economic viability. In recent years, efforts in
+carbon dioxide removal (CDR) have been increasingly promoted and rewarded
+through various mechanisms, including direct incentives, tax credits,
+and the recent EU carbon removal certification framework,<sup><xref ref-type="bibr" rid="ref52">52</xref></sup> all aimed at incentivizing the sustainable scaling
+of carbon removal activities. Without selling carbon credits, S5-Wind
+CCS required a 139.70% price increase to break even. However, the
+sale of carbon credits at &#x020ac;80 per ton of CO<sub>2</sub> captured
+significantly impacts the economic feasibility of the S5-Wind CCS
+scenario. At this price point, the required increase in selling price
+for biobased products is reduced to approximately 71.98%. This reduction
+is notably lower than the price increase needed for the S2-Solar and
+S3-Wind scenarios. This underscores the potential of carbon credits
+as a strategic tool to improve the economic feasibility and appeal
+of CDR projects. By integrating carbon credits, the S5-Wind CCS scenario
+becomes more economically viable and aligns with broader sustainability
+goals, offering a compelling investment opportunity. Despite its higher
+costs, the S5-Wind CCS scenario can leverage these emerging financial
+mechanisms to generate additional revenue. This includes income from
+the sale of carbon credits and the production of premium bioproducts,
+which are valued higher in the market by environmentally conscious
+consumers. This dual revenue stream not only helps mitigate the additional
+costs but also enhances the scenario&#x02019;s overall attractiveness
+and market competitiveness.</p></sec></sec><sec id="sec4"><title>Environmental Results</title><sec id="sec4.1"><title>Carbon Footprint Assessment</title><p>In comparing the carbon
+footprint of the five scenarios (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>), the analysis revealed that the S1-BAU,
+the baseline scenario, entails the highest carbon footprint equal
+to 500.51 kg CO<sub>2</sub>eq/FU cradle-to-gate (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>).</p><fig id="fig4" position="float"><label>Figure 4</label><caption><p>Carbon footprint impact
+breakdown of the scenarios. Error bars
+over the deterministic values indicate the variation in carbon footprint
+considering the uncertainty associated with the inventory data (see
+details of the sensitivity analysis in the <xref rid="sec2.4" ref-type="other">Environmental
+Assessment</xref> section). The yellow triangle represents the results
+when accounting for the biogenic CO<sub>2</sub> embodied in the EOP
+raw material, while the red triangle represents the results without
+this consideration.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_0004" id="gr4" position="float"/></fig><p>The environmental results are aligned with previous
+studies showing
+that the carbon footprint of bioethanol production ranges between
+28 to 450 kg CO<sub>2</sub>eq per kg of bioethanol, however, note
+that the biorefinery also produces the antioxidants extracts and lignin,
+resulting in at least an increase of around 50% compared to the average
+range.<sup><xref ref-type="bibr" rid="ref54">54</xref>&#x02212;<xref ref-type="bibr" rid="ref56">56</xref></sup></p><p>The scenario S2-Solar, which utilizes solar
+energy to satisfy partly
+the electricity and to produce the electrolytic hydrogen for the SNG
+synthesis, reduces the carbon footprint to 390.36 kg CO<sub>2</sub>eq per FU, primarily due to the renewable nature of the energy source.
+Scenario S3-Wind further decreased the carbon footprint to 261.59
+kg CO<sub>2</sub>eq per FU, benefiting from the high efficiency and
+low carbon intensity of the wind energy (2.31 &#x000d7; 10<sup>&#x02013;4</sup> kg CO<sub>2</sub>eq/kWh). Scenario S4-OTP, which incorporates OTP
+as a biomass feedstock for electricity and heating, achieved a carbon
+footprint of 108.32 kg CO<sub>2</sub>eq per FU. Other references also
+comply with the benefits in this scenario arising from the biogenic
+nature of the CO<sub>2</sub> emissions emitted by combusting the OTP.<sup><xref ref-type="bibr" rid="ref22">22</xref>,<xref ref-type="bibr" rid="ref57">57</xref></sup> Since the CO<sub>2</sub> released during combustion is originally
+captured from the atmosphere during the growth of the olive trees,
+it is considered carbon neutral, thereby contributing to a lower net
+carbon footprint. The reduction in the carbon footprint could be even
+higher if this scenario were coupled with CCS as highlighted by previous
+works focused on OTP-based biorefineries with CCS.<sup><xref ref-type="bibr" rid="ref57">57</xref></sup> Finally, the scenario S5-Wind CCS demonstrated the most
+substantial reduction in carbon footprint, achieving even a negative
+carbon footprint of &#x02212;1.05 kg CO<sub>2</sub>eq per FU. This
+result holds when accounting for the CO<sub>2</sub> embodied in the
+bioproducts as well as the CO<sub>2</sub> geologically sequestered
+that is captured after the combustion of SNG and from the fermentation
+(see markers over bars in <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>). However, the biogenic CO<sub>2</sub> released from
+bioethanol and extractives during their end-use phase contributes
+to emissions back into the atmosphere. Hence, when considering only
+the CO<sub>2</sub> permanently sequestered, the carbon footprint would
+shift to a positive 78.51 kg CO<sub>2</sub>eq per FU, still representing
+a substantial reduction compared to the baseline scenario (i.e., 84.31%
+lower than S1-BAU).</p><p>Overall, this scenario effectively sequestered
+211.33 kg of CO<sub>2</sub> per FU, compensating for other emissions
+associated with
+the biorefinery operations. Note that this amount of CO<sub>2</sub> geologically stored includes both the CO<sub>2</sub> from the fermentation
+unit (1.98 kg of CO<sub>2</sub> per FU) as well as the CO<sub>2</sub> that is captured with DAC to produce SNG is ultimately captured
+and geologically stored when the latter is combusted to generate the
+heating requirements (209.35 kg of CO<sub>2</sub> per FU), ensuring
+it is kept out of the atmosphere permanently. Overall, the annual
+permanent CO<sub>2</sub> removal from the S5-Wind CCS biorefinery
+is equivalent to 0.41 Mt of CO<sub>2,</sub> which represents approximately
+0.14% of the GHG emitted annually by the Spanish economy.<sup><xref ref-type="bibr" rid="ref58">58</xref></sup> For the detailed Carbon Footprint results expressed
+in absolute terms, refer to the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material (section 6 in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Tables S33&#x02013;S38</ext-link>).</p><p>The sensitivity analysis demonstrates the high potential
+variability
+in carbon footprints (illustrated by the error bars in <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>, which depict the uncertainty
+ranges assessed using Monte Carlo sampling; see <xref rid="sec2.4" ref-type="other">Environmental Assessment</xref> section for details). For example,
+scenario S1-BAU shows an uncertainty range for the carbon footprint
+from 359 to 639 kg CO<sub>2</sub>eq/FU, while scenario S2-Solar ranges
+from 249 to 535 kg CO<sub>2</sub>eq/FU. Although scenario S5-Wind
+CCS displays the lowest carbon footprint, the overlap of its uncertainty
+range (ranging from &#x02212;142 to 136 CO<sub>2</sub>eq) with those
+of other scenarios, such as S3-Wind and S4-OTP suggests that the carbon
+footprints of these scenarios may not differ significantly. Notably,
+while some scenarios like S3-Wind offer promising reductions in carbon
+footprint (with a range of 119&#x02013;389 CO<sub>2</sub>eq), the uncertainties
+involved must be carefully managed. Implementing such scenarios could
+yield substantial environmental benefits, but improving data accuracy
+and reducing uncertainty remains essential for more reliable results.</p><p>The breakdown of the carbon footprint in each scenario shown in <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref> illustrates the
+impact of different energy sources and technologies on the overall
+environmental impact, helping to identify primary drivers and pinpoint
+areas for further improvements. The main drivers are heating and cooling
+duties, accounting for around 80&#x02013;90% of the emissions of the
+S1-BAU, S2-Solar, and S3-Wind scenarios. In the baseline scenario
+(S1-BAU), the major contributors are the reliance on nonrenewable
+energy sources and the emissions associated with fossil natural gas
+combustion (90%). For the alternative scenarios S2-Solar and S3-Wind,
+despite the complexity of the SNG production infrastructure involving
+DAC and electrolytic hydrogen, there is a noticeable reduction in
+the contribution of the heating and cooling needs compared to the
+S1-BAU scenarios. In particular, for the S2-Solar, it accounts for
+83.41%, while the S3-Wind accounted for 77.12% of the emissions. However,
+for scenario S4-OTP, the main contributors include the cooling energy
+needs and bioethanol production (58.26%). Finally, the major drivers
+of the carbon footprint in the S5-Wind CCS scenario include bioethanol
+production (64.80 kg CO<sub>2</sub>eq/FU) followed by enzymes (39.63
+kg CO<sub>2</sub>eq/FU). Notably, in this scenario, the heating requirements
+contribute carbon-negative energy intensity (&#x02212;61.90 kg CO<sub>2</sub>eq/MJ) due to the CO<sub>2</sub> released from the combustion
+of SNG (previously captured from the atmosphere with DAC technology)
+is subsequently geologically stored (with MEA-based CCS technology),
+offsetting other emissions and contributing negatively to the overall
+carbon footprint reduction. Hence, 0.41 Mt of CO<sub>2</sub> would
+be permanently annually sequestered (211.33 kg per FU) and can be
+sold as carbon credits.</p><p>The S5-Wind-CCS scenario emerges as
+the most favorable scenario
+in terms of climate change impacts. The substantial reduction in carbon
+footprint is attributed to the use of SNG for heating and the capture
+and storage of CO<sub>2</sub> emitted during its combustion through
+the CCS system. This process results in a net negative carbon footprint
+for the heating requirements, effectively removing more CO<sub>2</sub> from the atmosphere than is emitted (&#x02212;2.46 &#x000d7; 10<sup>&#x02013;2</sup> kg CO<sub>2</sub>eq/MJ). A detailed breakdown of
+the carbon footprint drawdown potential is conducted to gain a comprehensive
+understanding of the carbon footprint for the heating associated with
+the scenario, considering the production of 1.00 MJ of heating.</p><p>The waterfall plot in <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref> illustrates the contribution from the raw materials
+&#x02014;electrolytic H<sub>2</sub> and CO<sub>2</sub> required for
+the SNG production through the Sabatier process, as well as its use
+phase and the CCS infrastructure and operation. Note that this scenario
+assumes that &#x02212;7.70 &#x000d7; 10<sup>&#x02013;2</sup> kg of CO<sub>2</sub>, provided by DAC and modeled as a negative entry of CO<sub>2</sub> in the biorefinery system, reacts with 9.77 &#x000d7; 10<sup>&#x02013;3</sup> kg of H<sub>2</sub> produced through electrolysis
+using wind power to produce the SNG. The SNG is then combusted for
+heating production, and 6.92 &#x000d7; 10<sup>&#x02013;2</sup> kg of CO<sub>2</sub> is captured using the CCS system using MEA at a 90% efficiency,
+transported via pipeline, and geologically stored. This amount of
+CO<sub>2</sub> is physically removed from the atmosphere, compensating
+for all the life cycle emissions and providing a substantial carbon
+drawdown of 7.92 &#x000d7; 10<sup>&#x02013;3</sup> CO<sub>2</sub>eq per
+MJ. Further details on the LCA can be found in section 6 of <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Tables S35&#x02013;S36</ext-link>.</p><fig id="fig5" position="float"><label>Figure 5</label><caption><p>Waterfall diagram illustrating the breakdown
+of carbon footprint
+contributors in heating production from SNG, produced from CO<sub>2</sub> captured and electrolytic H<sub>2</sub> generated from wind
+energy, coupled with carbon capture and storage.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_0005" id="gr5" position="float"/></fig><p>Looking at <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>, the production of H<sub>2</sub> contributes 1.40
+&#x000d7; 10<sup>&#x02013;2</sup> kg CO<sub>2</sub>eq per MJ, primarily
+from the substantial
+amount of wind energy required (9.77 &#x000d7; 10<sup>&#x02013;3</sup> kWh per kg of H<sub>2</sub>) and the electrolyzer production, which
+contributes to 26.35% to the overall footprint of the H<sub>2</sub> feedstock. This highlights the importance of sourcing low-carbon
+electricity for the electrolysis process to minimize the carbon footprint
+associated with H<sub>2</sub> production.</p><p>Regarding the CO<sub>2</sub> feedstock, it contributes with an
+overall carbon footprint of &#x02212;5.80 &#x000d7; 10<sup>&#x02013;2</sup> kg CO<sub>2</sub> eq per kg of CO<sub>2</sub>. This is because the
+CO2 captured from the atmosphere via DAC is modeled as negative, offsetting
+the emission associated with the large heating and electricity requirements
+for the DAC system. By leveraging DAC technology and the CCUS route,
+the scenario not only mitigates emissions but also actively removes
+CO<sub>2</sub> from the atmosphere, offering a dual benefit.</p><p>The Sabatier process, used for producing SNG from captured CO<sub>2</sub> and electrolytic hydrogen, incurs some GHG emissions (+5.08
+&#x000d7; 10<sup>&#x02013;3</sup> kg CO<sub>2</sub>eq per MJ) due to its
+energy requirements and other operational factors (<xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>). Improving the energy efficiency
+of the Sabatier reaction through advanced catalysts, technological
+advancements, and optimization of reaction conditions can help reduce
+the carbon footprint. Moreover, exploring the integration of the Sabatier
+process with renewable systems to satisfy energy requirements can
+further lower GHG emissions.</p><p>Finally, the combustion of the
+produced SNG releases 7.92 &#x000d7;
+10<sup>&#x02013;3</sup> kg CO<sub>2</sub>eq per MJ which corresponds
+to the uncaptured emissions as the remaining 90% emitted CO<sub>2</sub> is subsequently captured, transported, and sequestered, which accounts
+for &#x02212;6.93 &#x000d7; 10<sup>&#x02013;2</sup> kg CO<sub>2</sub>eq
+per MJ. This step ensures that most of the CO<sub>2</sub> is permanently
+removed from the atmosphere, underscoring the effectiveness of CCS
+in achieving negative emissions.</p><p>Despite its environmental benefits,
+the integration of this CCUS
+route into the S5-Wind-CCS scenario not only involves addressing the
+technological and economic challenges associated with H<sub>2</sub> and CO<sub>2</sub> production but also requires overcoming logistical
+barriers. H<sub>2</sub>, being a low-density gas, requires compression
+or liquefaction for efficient storage and transport, which adds to
+the overall energy and infrastructure costs.<sup><xref ref-type="bibr" rid="ref59">59</xref></sup> Similarly, captured CO<sub>2</sub> must be stored under high pressure
+or in a supercritical state to facilitate efficient transport, adding
+another layer of complexity and cost. Although Spain lacks operational
+CCS facilities, studies highlight promising geological storage potential,
+including numerous sites in Andalusia (biorefinery location). This
+analysis assumes a 200 km transport distance and 1000 m storage depth,
+reflecting typical scenarios for emerging CCS infrastructure.<sup><xref ref-type="bibr" rid="ref51">51</xref></sup> Investing in technological advancements and
+strategic planning of robust H<sub>2</sub> and CO<sub>2</sub> networks
+(pipelines or specialized transport vessels) is fundamental to ensure
+the feasibility of the large-scale implementation of the CCUS route
+in the long term.</p></sec><sec id="sec4.2"><title>Occurrence of Burden-Shifting</title><p>The analysis then examines
+the potential occurrence of burden-shifting to identify potential
+trade-offs of the alternative scenarios. <xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref> presents a comparative analysis of the five scenarios across
+the end point categories of the ReCiPe 2016 methodology: damage to
+ecosystems, damage to resource availability, and damage to human health.
+Each scenario is represented with stacked bars that depict the contributions
+of individual environmental impact categories to the overall damage
+considering the FU.</p><fig id="fig6" position="float"><label>Figure 6</label><caption><p>Damage to ecosystems, resource availability, and human
+health of
+the five biorefinery scenarios analyzed. (A) Damage to ecosystems
+expressed in local species loss integrated over time (loss of species
+over the next 100 years). (B) Damage to resource availability expressed
+in dollars (USD2013). (C) Damage to human health expressed in disability-adjusted
+life years (DALYs). Stacked bars present the contributions of individual
+environmental impact categories to the particular ReCiPe 2016 end
+point impacts. The category &#x0201c;Other&#x0201d; includes impacts
+that account for less than 2% of the overall impact.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_0006" id="gr6" position="float"/></fig><p>The damage to ecosystems varies greatly across
+scenarios. The S4-OTP
+shows substantially greater impacts (1.39 &#x000d7; 10<sup>&#x02013;4</sup> species loss) with high contributions from ozone formation (42%)
+and terrestrial acidification (45%), which adversely affects biodiversity
+and habitat integrity. Those impacts are primarily due to the emissions
+associated with the combustion processes involved in biomass utilization
+(shown in section 5 from <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Table S27</ext-link> from
+the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material). Specifically,
+the generation of ozone precursors such as nitrogen oxides (NOx) and
+volatile organic compounds (VOCs) during the combustion of OTP contributes
+to elevated levels of ground-level ozone, which is detrimental to
+both plant and animal life. Furthermore, the release of sulfur dioxide
+(SO<sub>2</sub>) and NOx leads to acid rain, causing terrestrial acidification
+that disrupts soil chemistry, damages forests, and negatively impacts
+aquatic ecosystems by increasing the acidity of water bodies. While
+the use of OTP leads to damage to ecosystems, it is important to note
+that these biomass residues would otherwise be underutilized, for
+example, being burned in the field. This alternative practice not
+only fails to harness the potential of OTP but also results in emissions
+of pollutants, contributing to air quality degradation and additional
+environmental harm. Therefore, the strategic utilization of OTP in
+controlled combustion processes, coupled with advanced emission control
+technologies,<sup><xref ref-type="bibr" rid="ref22">22</xref>,<xref ref-type="bibr" rid="ref60">60</xref>,<xref ref-type="bibr" rid="ref61">61</xref></sup> presents an opportunity to mitigate some of these negative environmental
+side effects while providing a renewable energy source.</p><p>Conversely,
+the BAU scenario and the other alternative scenarios
+demonstrate much lower ecosystem damage and are of a similar order
+of magnitude (2.10 &#x000d7; 10<sup>&#x02013;5</sup> species loss for
+S1-BAU, 3.28 &#x000d7; 10<sup>&#x02013;5</sup> for S2-Solar, 1.98 &#x000d7;
+10<sup>&#x02013;5</sup> for S3-Wind and 1.75 &#x000d7; 10<sup>&#x02013;5</sup> for S5-Wind CCS), yet the contributors vary greatly across them.
+For example, in S1-BAU, 51% of the damage is from Global Warming and
+40% from Marine ecotoxicity, due to emissions from fossil fuel combustion
+and the release of pollutants into the marine environment, which result
+from oil spills, runoff, and other industrial activities associated
+with the BAU scenario. The marine ecotoxicity impact is more relevant
+for the S2-Solar, S3-Wind and S5-Wind CCS scenarios, where it represents
+66%, 64%, and 73% of the total damage to ecosystems, respectively.
+This high contribution may be attributed to the life-cycle impacts
+of these renewable power technologies needed for electrolytic H<sub>2</sub> production. The installation, decommissioning, and production
+of solar and wind technologies can contribute to marine ecotoxicity
+impacts. These effects arise from the extraction and processing of
+materials, as well as the manufacturing, usage, and disposal of components
+that release pollutants that may reach marine environments.<sup><xref ref-type="bibr" rid="ref62">62</xref></sup> The damages to resource availability is a critical
+metric, reflecting the depletion of both mineral and fossil resources.
+The S1-BAU shows the highest damage to resource availability (55.75
+2013 US$) followed by S2-Solar, S5-Wind CCS, S3-Wind and S4-OTP. In
+all scenarios, the most significant impact stems from fossil resource
+scarcity, which underscores the urgent need to reduce fossil fuel
+dependence throughout the life cycle. In the alternative scenarios,
+relying on renewables such as solar and wind power, the contribution
+from mineral resource scarcity is a bit higher (up to 4.50%) due to
+the intensive mining and processing required for photovoltaic panel
+production and the wind turbine, including silicon, silver, copper,
+aluminum and other critical minerals.<sup><xref ref-type="bibr" rid="ref62">62</xref></sup></p><p>Regarding the damage to human health, the S1-BAU shows the
+lowest
+damage, equal to 2.56 &#x000d7; 10<sup>&#x02013;2</sup> DALYs. Notably,
+the damage to human health for the S3-Wind, S4-OTP and S5-Wind CCS
+is 1.51, 1.41, and 1.32 times higher, respectively. This increase
+is likely due to the logistical complexity associated with SNG production
+and biomass supply chain, which further complicates the scenarios
+and adds potential exposure risks. For the S2-Solar, the damage to
+human health is even more pronounced, doubling compared to S1-BAU.
+In the S1-BAU scenario, the main contributors are human noncarcinogenic
+toxicity (59%), global warming, human health (21%) and human carcinogenic
+toxicity (19%). This indicates that the use of traditional fossil
+fuels and industrial processes in the BAU scenario primarily affects
+human health through toxic emissions and greenhouse gases. In contrast,
+for the alternative scenarios relying on SNG and renewable energy
+sources such as solar and wind, the contributions are different. Most
+of the human health impacts in these scenarios come from Human noncarcinogenic
+toxicity (37%&#x02013;68%) and Human carcinogenic toxicity (19%&#x02013;55%),
+while the impact of Global warming on Human health is negligible,
+particularly for the S5-Wind CCS. This shift suggests that while renewable
+technologies reduce GHG, they may still involve harmful pollutants
+during their production and operational phases, such as the manufacturing
+stage demand (photovoltaic panels or turbine installation). In the
+S4-OTP scenario, fine particulate matter formation becomes a primary
+contributor, accounting for 32% of the overall damage to human health
+associated with emissions from the biomass combustion processes which
+can have severe health impacts, including respiratory and cardiovascular
+diseases. All the detailed results can be found in the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Supporting Information</ext-link> Material in section 6
+in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">Table S39</ext-link>.</p></sec></sec><sec id="sec5"><title>Conclusions</title><p>This study investigates the technical,
+economic, and environmental
+implications of five scenarios of an industrial-scale EOP-based biorefinery
+to produce bioethanol, antioxidants, and lignin. The analysis showed
+that alternative scenarios utilizing renewable energy for heat and
+electricity significantly reduce the carbon footprint compared to
+the S1-BAU scenario. Notably, the S5-Wind CCS scenario achieves carbon
+negativity on cradle-to-gate. However, these environmental gains come
+with increased production costs (between 11%&#x02013;100%), highlighting
+the need for technological advancements and scaling-up efforts to
+enhance the economic viability and competitiveness of biorefineries
+compared to fossil fuel alternatives. Government and market support
+are pivotal for the effective implementation of lignocellulosic biorefineries.
+Enhancing market acceptance of biobased products can be achieved through
+a comprehensive policy mix, including eco-labeling, taxes on conventional
+products, and subsidies for sustainable bioproducts.</p><p>Implementing
+premium pricing for these products can accelerate
+their adoption and market penetration by reflecting their environmental
+benefits, such as reduced carbon footprint and support for rural economies.
+Additionally, government financial incentives and CO<sub>2</sub> removal
+credits can help offset the higher production costs of bioproducts.
+Subsidies and funding schemes directed toward research, production,
+distribution, and consumer purchases can help accelerate innovation
+in biorefinery processes, improve the efficiency and scalability of
+production methods, and enhance the distribution networks necessary
+for the widespread adoption of bioproducts.</p><p>On the environmental
+dimension, the comparison of scenarios underscores
+the importance of a holistic approach that considers multiple environmental
+impact categories to avoid burden-shifting. The findings reveal trade-offs
+between the biorefinery scenarios. While alternative scenarios relying
+on renewable energy and resources typically demonstrate reduced climate
+change impacts, they introduce other environmental and health impacts
+that need careful management. For instance, addressing the logistical
+challenges and improving biomass and SNG production supply chains
+can mitigate some associated human health risks. Furthermore, technological
+advancements, strategic planning, and stringent regulations on pollutant
+emissions are crucial for minimizing adverse effects and ensuring
+the sustainable implementation of renewable energy solutions in biorefineries.</p><p>In the long term, transitioning away from fossil resources is unavoidable,
+and biorefineries will play a crucial role in our economy. This work
+underscores the importance of understanding the role of ETEA in supporting
+the development of environmentally responsible and economically viable
+biorefinery systems.</p><p>These insights are valuable for policymakers,
+industry stakeholders,
+and researchers to make informed decisions, implement effective policies,
+and drive innovation toward a resilient and sustainable bioeconomy.</p></sec></body><back><notes id="notes1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information
+is
+available free of charge at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/10.1021/acssuschemeng.4c07901?goto=supporting-info">https://pubs.acs.org/doi/10.1021/acssuschemeng.4c07901</ext-link>.<list list-type="simple"><list-item><p>Methodology, process design reactions and simulation,
+economic and environmental analysis, and results (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acssuschemeng.4c07901/suppl_file/sc4c07901_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sc4c07901_si_001.pdf"><caption><p>sc4c07901_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="COI-statement" id="notes2"><p>The authors
+declare no competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>&#x000c1;.G.-M. acknowledges the project PID2023-151855OA-I00
+funded by MCIN/AEI/10.13039/501100011033 and the financial support
+through the &#x0201c;Beatriz Galindo&#x0201d; Program (BG20/00074).
+&#x000c1;.G.-M. and M.d.M.C. thank the grant TED2021-132614A-I00 by
+the European Union NextGenerationEU/PRTR. . D.P.-A. acknowledges the
+University of Ja&#x000e9;n for the Acci&#x000f3;n 4.a. &#x0201c;Ayudas
+Predoctorales para la Formaci&#x000f3;n de Personal Investigador&#x0201d;.
+M.d.M.C. acknowledges the MCIN and the European Social Fund for the
+Ram&#x000f3;n y Cajal grant (RYC2020-030546-I/AEI/10.13039/501100011033).
+J.M.R.G. acknowledges the University of Ja&#x000e9;n for the Acci&#x000f3;n
+7.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="undeclared" id="cit1"><person-group person-group-type="allauthors"><collab>United Nations</collab></person-group><source>Transforming our World: The 2030 Agenda for Sustainable
+Development</source>; <year>2015</year>.</mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name><surname>Stegmann</surname><given-names>P.</given-names></name>; <name><surname>Londo</surname><given-names>M.</given-names></name>; <name><surname>Junginger</surname><given-names>M.</given-names></name>
+<article-title>The Circular Bioeconomy: Its Elements
+and Role in European Bioeconomy Clusters</article-title>. <source>Resour.,
+Conserv. Recycl.: X</source>
+<year>2020</year>, <volume>6</volume>, <elocation-id>100029</elocation-id><pub-id pub-id-type="doi">10.1016/j.rcrx.2019.100029</pub-id>.</mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="undeclared" id="cit3"><person-group person-group-type="allauthors"><name><surname>Annevelink</surname><given-names>B.</given-names></name>; <name><surname>Garcia Chavez</surname><given-names>L.</given-names></name>; <name><surname>van Ree</surname><given-names>R.</given-names></name>; <name><surname>Vural Gursel</surname><given-names>I.</given-names></name>; <name><surname>Bell</surname><given-names>G.</given-names></name>; <name><surname>Mandl</surname><given-names>M.</given-names></name>; <name><surname>Lindorfer</surname><given-names>J.</given-names></name>; <name><surname>Hesser</surname><given-names>F.</given-names></name>; <name><surname>Hilz</surname><given-names>X.</given-names></name>; <name><surname>Stern</surname><given-names>T.</given-names></name>; <name><surname>Mussatto</surname><given-names>S.</given-names></name>; <name><surname>Stichnothe</surname><given-names>H.</given-names></name>; <name><surname>Leahy</surname><given-names>J.</given-names></name>; <name><surname>De Bari</surname><given-names>I.</given-names></name>; <name><surname>Motola</surname><given-names>V.</given-names></name>; <name><surname>Giuliano</surname><given-names>A.</given-names></name>; <name><surname>de Jong</surname><given-names>E.</given-names></name>; <name><surname>Mossberg</surname><given-names>J.</given-names></name>; <name><surname>Shmorhun</surname><given-names>M.</given-names></name></person-group><source>IEA Bioenergy: Task 42 Biorefining in a Circular Economy
+Published by IEA Bioenergy Global Biorefinery Status Report 2022 With
+Inputs From</source>; <year>2022</year>.</mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Wilson</surname><given-names>A.</given-names></name>
+<article-title>Social Climate
+Fund: Fit for 55 Package</article-title>. <source>Members Res. Serv.
+PE</source>
+<year>2021</year>, <volume>698</volume>, <fpage>777</fpage>.</mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Bringezu</surname><given-names>S.</given-names></name>; <name><surname>Distelkamp</surname><given-names>M.</given-names></name>; <name><surname>Lutz</surname><given-names>C.</given-names></name>; <name><surname>Wimmer</surname><given-names>F.</given-names></name>; <name><surname>Schaldach</surname><given-names>R.</given-names></name>; <name><surname>Hennenberg</surname><given-names>K. J.</given-names></name>; <name><surname>B&#x000f6;ttcher</surname><given-names>H.</given-names></name>; <name><surname>Egenolf</surname><given-names>V.</given-names></name>
+<article-title>Environmental and Socioeconomic
+Footprints of the German Bioeconomy</article-title>. <source>Nat. Sustain.</source>
+<year>2021</year>, <volume>4</volume> (<issue>9</issue>), <fpage>775</fpage>&#x02013;<lpage>783</lpage>. <pub-id pub-id-type="doi">10.1038/s41893-021-00725-3</pub-id>.</mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Meyer</surname><given-names>R.</given-names></name>
+<article-title>Bioeconomy
+Strategies: Contexts, Visions, Guiding Implementation Principles and
+Resulting Debates</article-title>. <source>Sustainability</source>
+<year>2017</year>, <volume>9</volume> (<issue>6</issue>), <fpage>1031</fpage><pub-id pub-id-type="doi">10.3390/su9061031</pub-id>.</mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Orive</surname><given-names>M.</given-names></name>; <name><surname>Cebri&#x000e1;n</surname><given-names>M.</given-names></name>; <name><surname>Amayra</surname><given-names>J.</given-names></name>; <name><surname>Zuf&#x000ed;a</surname><given-names>J.</given-names></name>; <name><surname>Bald</surname><given-names>C.</given-names></name>
+<article-title>Integrated Biorefinery
+Process for Olive Pomace Valorisation</article-title>. <source>Biomass
+Bioenergy.</source>
+<year>2021</year>, <volume>149</volume>, <elocation-id>106079</elocation-id><pub-id pub-id-type="doi">10.1016/j.biombioe.2021.106079</pub-id>.</mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name><surname>Romero-Garc&#x000ed;a</surname><given-names>J. M.</given-names></name>; <name><surname>Ni&#x000f1;o</surname><given-names>L.</given-names></name>; <name><surname>Mart&#x000ed;nez-Pati&#x000f1;o</surname><given-names>C.</given-names></name>; <name><surname>&#x000c1;lvarez</surname><given-names>C.</given-names></name>; <name><surname>Castro</surname><given-names>E.</given-names></name>; <name><surname>Negro</surname><given-names>M. J.</given-names></name>
+<article-title>Biorefinery Based
+on Olive Biomass. State of the Art and Future Trends</article-title>. <source>Bioresour. Technol.</source>
+<year>2014</year>, <volume>159</volume>, <fpage>421</fpage>&#x02013;<lpage>432</lpage>. <pub-id pub-id-type="doi">10.1016/j.biortech.2014.03.062</pub-id>.<pub-id pub-id-type="pmid">24713236</pub-id>
+</mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name><surname>Fern&#x000e1;ndez-Lobato</surname><given-names>L.</given-names></name>; <name><surname>L&#x000f3;pez-S&#x000e1;nchez</surname><given-names>Y.</given-names></name>; <name><surname>Blejman</surname><given-names>G.</given-names></name>; <name><surname>Jurado</surname><given-names>F.</given-names></name>; <name><surname>Moyano-Fuentes</surname><given-names>J.</given-names></name>; <name><surname>Vera</surname><given-names>D.</given-names></name>
+<article-title>Life Cycle Assessment of the Spanish
+Virgin Olive Oil Production: A Case Study for Andalusian Region</article-title>. <source>J. Clean Prod.</source>
+<year>2021</year>, <volume>290</volume>, <elocation-id>125677</elocation-id><pub-id pub-id-type="doi">10.1016/j.jclepro.2020.125677</pub-id>.</mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name><surname>Manzanares</surname><given-names>P.</given-names></name>; <name><surname>Ruiz</surname><given-names>E.</given-names></name>; <name><surname>Ballesteros</surname><given-names>M.</given-names></name>; <name><surname>Negro</surname><given-names>M. J.</given-names></name>; <name><surname>Gallego</surname><given-names>F. J.</given-names></name>; <name><surname>L&#x000f3;pez-Linares</surname><given-names>J. C.</given-names></name>; <name><surname>Castro</surname><given-names>E.</given-names></name>
+<article-title>Residual Biomass Potential
+in Olive Tree Cultivation and Olive Oil Industry in Spain: Valorization
+Proposal in a Biorefinery Context</article-title>. <source>Spanish Journal
+of Agricultural Research.</source>
+<year>2017</year>, <volume>15</volume> (<issue>3</issue>), <elocation-id>e0206</elocation-id><pub-id pub-id-type="doi">10.5424/sjar/2017153-10868</pub-id>.</mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name><surname>Ciriminna</surname><given-names>R.</given-names></name>; <name><surname>Meneguzzo</surname><given-names>F.</given-names></name>; <name><surname>Fidalgo</surname><given-names>A.</given-names></name>; <name><surname>Ilharco</surname><given-names>L. M.</given-names></name>; <name><surname>Pagliaro</surname><given-names>M.</given-names></name>
+<article-title>Extraction,
+Benefits and Valorization of Olive Polyphenols</article-title>. <source>European Journal of Lipid Science and Technology.</source>
+<year>2016</year>, <volume>118</volume> (<issue>4</issue>), <fpage>503</fpage>&#x02013;<lpage>511</lpage>. <pub-id pub-id-type="doi">10.1002/ejlt.201500036</pub-id>.</mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>Miranda</surname><given-names>I.</given-names></name>; <name><surname>Sim&#x000f5;es</surname><given-names>R.</given-names></name>; <name><surname>Medeiros</surname><given-names>B.</given-names></name>; <name><surname>Nampoothiri</surname><given-names>K. M.</given-names></name>; <name><surname>Sukumaran</surname><given-names>R. K.</given-names></name>; <name><surname>Rajan</surname><given-names>D.</given-names></name>; <name><surname>Pereira</surname><given-names>H.</given-names></name>; <name><surname>Ferreira-Dias</surname><given-names>S.</given-names></name>
+<article-title>Valorization
+of Lignocellulosic Residues from the Olive Oil Industry by Production
+of Lignin, Glucose and Functional Sugars</article-title>. <source>Bioresour.
+Technol.</source>
+<year>2019</year>, <volume>292</volume>, <elocation-id>121936</elocation-id><pub-id pub-id-type="doi">10.1016/j.biortech.2019.121936</pub-id>.<pub-id pub-id-type="pmid">31398542</pub-id>
+</mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name><surname>Fernandes</surname><given-names>M. C.</given-names></name>; <name><surname>Torrado</surname><given-names>I.</given-names></name>; <name><surname>Carvalheiro</surname><given-names>F.</given-names></name>; <name><surname>Dores</surname><given-names>V.</given-names></name>; <name><surname>Guerra</surname><given-names>V.</given-names></name>; <name><surname>Louren&#x000e7;o</surname><given-names>P. M. L.</given-names></name>; <name><surname>Duarte</surname><given-names>L. C.</given-names></name>
+<article-title>Bioethanol Production
+from Extracted Olive Pomace: Dilute Acid Hydrolysis</article-title>. <source>Bioethanol</source>
+<year>2016</year>, <volume>2</volume> (<issue>1</issue>), <fpage>103</fpage><pub-id pub-id-type="doi">10.1515/bioeth-2016-0007</pub-id>.</mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name><surname>L&#x000f3;pez-Linares</surname><given-names>J. C.</given-names></name>; <name><surname>G&#x000f3;mez-Cruz</surname><given-names>I.</given-names></name>; <name><surname>Ruiz</surname><given-names>E.</given-names></name>; <name><surname>Romero</surname><given-names>I.</given-names></name>; <name><surname>Castro</surname><given-names>E.</given-names></name>
+<article-title>Production
+of Ethanol from Hemicellulosic Sugars of Exhausted Olive Pomace by
+Escherichia Coli</article-title>. <source>Processes.</source>
+<year>2020</year>, <volume>8</volume> (<issue>5</issue>), <fpage>533</fpage><pub-id pub-id-type="doi">10.3390/pr8050533</pub-id>.</mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name><surname>G&#x000f3;mez-Cruz</surname><given-names>I.</given-names></name>; <name><surname>del Mar Contreras</surname><given-names>M.</given-names></name>; <name><surname>Romero</surname><given-names>I.</given-names></name>; <name><surname>Castro</surname><given-names>E.</given-names></name>
+<article-title>A Biorefinery Approach
+to Obtain Antioxidants, Lignin and Sugars from Exhausted Olive Pomace</article-title>. <source>J. Ind. Eng. Chem.</source>
+<year>2021</year>, <volume>96</volume>, <fpage>356</fpage>&#x02013;<lpage>363</lpage>. <pub-id pub-id-type="doi">10.1016/j.jiec.2021.01.042</pub-id>.</mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>P&#x000e9;rez-Almada</surname><given-names>D.</given-names></name>; <name><surname>Gal&#x000e1;n-Mart&#x000ed;n</surname><given-names>&#x000c1;</given-names></name>; <name><surname>Contreras</surname><given-names>M.d.M.</given-names></name>; <name><surname>Castro</surname><given-names>E.</given-names></name>
+<article-title>Integrated Techno-Economic
+and Environmental Assessment
+of Biorefineries: Review and Future Research Directions</article-title>. <source>Sustain Energy Fuels.</source>
+<year>2023</year>, <volume>7</volume>, <fpage>4031</fpage>&#x02013;<lpage>4050</lpage>. <pub-id pub-id-type="doi">10.1039/D3SE00405H</pub-id>.</mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Morales</surname><given-names>M.</given-names></name>; <name><surname>Quintero</surname><given-names>J.</given-names></name>; <name><surname>Conejeros</surname><given-names>R.</given-names></name>; <name><surname>Aroca</surname><given-names>G.</given-names></name>
+<article-title>Life Cycle Assessment
+of Lignocellulosic Bioethanol: Environmental Impacts and Energy Balance</article-title>. <source>Renew. Sustain. Energy Rev.</source>
+<year>2015</year>, <volume>42</volume>, <fpage>1349</fpage>&#x02013;<lpage>1361</lpage>. <pub-id pub-id-type="doi">10.1016/j.rser.2014.10.097</pub-id>.</mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name><surname>Oliva</surname><given-names>J. M.</given-names></name>; <name><surname>Negro</surname><given-names>J.</given-names></name>; <name><surname>&#x000c1;lvarez</surname><given-names>C.</given-names></name>; <name><surname>Manzanares</surname><given-names>P.</given-names></name>; <name><surname>Moreno</surname><given-names>A. D.</given-names></name>
+<article-title>Fermentation Strategies for the Efficient
+Use of Olive
+Tree Pruning Biomass from a Flexible Biorefinery Approach</article-title>. <source>Fuel.</source>
+<year>2020</year>, <volume>277</volume>, <elocation-id>118171</elocation-id><pub-id pub-id-type="doi">10.1016/j.fuel.2020.118171</pub-id>.</mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name><surname>Servian-Rivas</surname><given-names>L. D.</given-names></name>; <name><surname>Pach&#x000f3;n</surname><given-names>E. R.</given-names></name>; <name><surname>Rodr&#x000ed;guez</surname><given-names>M.</given-names></name>; <name><surname>Gonz&#x000e1;lez-Miquel</surname><given-names>M.</given-names></name>; <name><surname>Gonz&#x000e1;lez</surname><given-names>E. J.</given-names></name>; <name><surname>D&#x000ed;az</surname><given-names>I.</given-names></name>
+<article-title>Techno-Economic and Environmental
+Impact Assessment of an Olive Tree Pruning Waste Multiproduct Biorefinery</article-title>. <source>Food and Bioproducts Processing.</source>
+<year>2022</year>, <volume>134</volume>, <fpage>95</fpage>&#x02013;<lpage>108</lpage>. <pub-id pub-id-type="doi">10.1016/j.fbp.2022.05.003</pub-id>.</mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Susmozas</surname><given-names>A.</given-names></name>; <name><surname>Moreno</surname><given-names>A. D.</given-names></name>; <name><surname>Romero-Garc&#x000ed;a</surname><given-names>J. M.</given-names></name>; <name><surname>Manzanares</surname><given-names>P.</given-names></name>; <name><surname>Ballesteros</surname><given-names>M.</given-names></name>
+<article-title>Designing an Olive Tree Pruning Biorefinery
+for the
+Production of Bioethanol, Xylitol and Antioxidants: A Techno-Economic
+Assessment</article-title>. <source>Holzforschung.</source>
+<year>2018</year>, <volume>73</volume> (<issue>1</issue>), <fpage>15</fpage>&#x02013;<lpage>23</lpage>. <pub-id pub-id-type="doi">10.1515/hf-2018-0099</pub-id>.</mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name><surname>Romero-Garc&#x000ed;a</surname><given-names>J. M.</given-names></name>; <name><surname>Sanchez</surname><given-names>A.</given-names></name>; <name><surname>Rend&#x000f3;n-Acosta</surname><given-names>G.</given-names></name>; <name><surname>Mart&#x000ed;nez-Pati&#x000f1;o</surname><given-names>J. C.</given-names></name>; <name><surname>Ruiz</surname><given-names>E.</given-names></name>; <name><surname>Maga&#x000f1;a</surname><given-names>G.</given-names></name>; <name><surname>Castro</surname><given-names>E.</given-names></name>
+<article-title>An Olive Tree Pruning
+Biorefinery for Co-Producing High Value-Added Bioproducts and Biofuels:
+Economic and Energy Efficiency Analysis</article-title>. <source>Bioenergy
+Res.</source>
+<year>2016</year>, <volume>9</volume> (<issue>4</issue>), <fpage>1070</fpage>&#x02013;<lpage>1086</lpage>. <pub-id pub-id-type="doi">10.1007/s12155-016-9786-3</pub-id>.</mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Fanourakis</surname><given-names>S.</given-names></name>; <name><surname>Romero-Garc&#x000ed;a</surname><given-names>J. M.</given-names></name>; <name><surname>Castro</surname><given-names>E.</given-names></name>; <name><surname>Jim&#x000e9;nez-Esteller</surname><given-names>L.</given-names></name>; <name><surname>Gal&#x000e1;n-Mart&#x000ed;n</surname><given-names>&#x000c1;.</given-names></name>
+<article-title>Economic
+and Environmental Implications
+of Carbon Capture in an Olive Pruning Tree Biomass Biorefinery</article-title>. <source>J. Clean Prod.</source>
+<year>2024</year>, <volume>456</volume>, <elocation-id>142361</elocation-id><pub-id pub-id-type="doi">10.1016/j.jclepro.2024.142361</pub-id>.</mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="book" id="cit23"><person-group person-group-type="allauthors"><name><surname>Al-Malah</surname><given-names>K. I. M.</given-names></name></person-group><source>Aspen plus: Chemical
+Engineering Applications</source>; <publisher-name>Wiley</publisher-name>: <year>2016</year>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="undeclared" id="cit24"><source>Average annual capacity
+factors by technology, 2018</source> &#x02013; Charts &#x02013; Data
+&#x00026; Statistics - IEA. <publisher-name>IEA</publisher-name>. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.iea.org/data-and-statistics/charts/average-annual-capacity-factors-by-technology-2018">https://www.iea.org/data-and-statistics/charts/average-annual-capacity-factors-by-technology-2018</uri> (accessed 2024&#x02013;02&#x02013;20).</mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name><surname>Proto</surname><given-names>A. R.</given-names></name>; <name><surname>Palma</surname><given-names>A.</given-names></name>; <name><surname>Paris</surname><given-names>E.</given-names></name>; <name><surname>Papandrea</surname><given-names>S. F.</given-names></name>; <name><surname>Vincenti</surname><given-names>B.</given-names></name>; <name><surname>Carnevale</surname><given-names>M.</given-names></name>; <name><surname>Guerriero</surname><given-names>E.</given-names></name>; <name><surname>Bonofiglio</surname><given-names>R.</given-names></name>; <name><surname>Gallucci</surname><given-names>F.</given-names></name>
+<article-title>Assessment of Wood Chip Combustion
+and Emission Behavior of Different Agricultural Biomasses</article-title>. <source>Fuel.</source>
+<year>2021</year>, <volume>289</volume>, <elocation-id>119758</elocation-id><pub-id pub-id-type="doi">10.1016/j.fuel.2020.119758</pub-id>.</mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name><surname>Medrano-Garc&#x000ed;a</surname><given-names>J. D.</given-names></name>; <name><surname>Charalambous</surname><given-names>M. A.</given-names></name>; <name><surname>Guill&#x000e9;n-Gos&#x000e1;lbez</surname><given-names>G.</given-names></name>
+<article-title>Economic and
+Environmental Barriers of CO<sub>2</sub>-Based Fischer&#x02013;Tropsch
+Electro-Diesel</article-title>. <source>ACS Sustain Chem. Eng.</source>
+<year>2022</year>, <volume>10</volume> (<issue>36</issue>), <fpage>11751</fpage>&#x02013;<lpage>11759</lpage>. <pub-id pub-id-type="doi">10.1021/acssuschemeng.2c01983</pub-id>.<pub-id pub-id-type="pmid">36118362</pub-id>
+</mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name><surname>Ramos</surname><given-names>J. S.</given-names></name>; <name><surname>Ferreira</surname><given-names>A. F.</given-names></name>
+<article-title>Techno-Economic Analysis and Life Cycle Assessment
+of Olive and Wine Industry Co-Products Valorisation</article-title>. <source>Renew. Sustain. Energy Rev.</source>
+<year>2022</year>, <volume>155</volume>, <elocation-id>111929</elocation-id><pub-id pub-id-type="doi">10.1016/j.rser.2021.111929</pub-id>.</mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="book" id="cit28"><person-group person-group-type="allauthors"><name><surname>Turton</surname><given-names>R.</given-names></name>; <name><surname>Bailie</surname><given-names>R. C.</given-names></name>; <name><surname>Whiting</surname><given-names>W. B.</given-names></name>; <name><surname>Shaeiwitz</surname><given-names>J. A.</given-names></name></person-group><source>Analysis, Synthesis,
+and Design of Chemical</source>, <edition>5</edition><sup>TH</sup> ed; <publisher-name>Pearson</publisher-name>: <year>2018</year>.</mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name><surname>Mahmud</surname><given-names>R.</given-names></name>; <name><surname>Moni</surname><given-names>S. M.</given-names></name>; <name><surname>High</surname><given-names>K.</given-names></name>; <name><surname>Carbajales-Dale</surname><given-names>M.</given-names></name>
+<article-title>Integration
+of Techno-Economic Analysis and Life Cycle Assessment for Sustainable
+Process Design &#x02013; A Review</article-title>. <source>J. Clean Prod.</source>
+<year>2021</year>, <volume>317</volume>, <elocation-id>128247</elocation-id><pub-id pub-id-type="doi">10.1016/j.jclepro.2021.128247</pub-id>.</mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><person-group person-group-type="allauthors"><name><surname>Finkbeiner</surname><given-names>M.</given-names></name></person-group><article-title>The
+International Standards as the Constitution of Life Cycle Assessment:
+The ISO 14040 Series and its Offspring</article-title>. In <source>Background and future prospects in life cycle assessment</source>; <publisher-name>Springer</publisher-name>: <year>2014</year>, <fpage>85</fpage>-<lpage>106</lpage> DOI: <pub-id pub-id-type="doi">10.1007/978-94-017-8697-3_3</pub-id>.</mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="undeclared" id="cit31"><person-group person-group-type="allauthors"><collab>Derek</collab></person-group><source>Environmental Management-Life Cycle Assessment-Requirements
+and Guidelines</source>; <year>2010</year>.</mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name><surname>Ahlgren</surname><given-names>S.</given-names></name>; <name><surname>Bj&#x000f6;rklund</surname><given-names>A.</given-names></name>; <name><surname>Ekman</surname><given-names>A.</given-names></name>; <name><surname>Karlsson</surname><given-names>H.</given-names></name>; <name><surname>Berlin</surname><given-names>J.</given-names></name>; <name><surname>B&#x000f6;rjesson</surname><given-names>P.</given-names></name>; <name><surname>Ekvall</surname><given-names>T.</given-names></name>; <name><surname>Finnveden</surname><given-names>G.</given-names></name>; <name><surname>Janssen</surname><given-names>M.</given-names></name>; <name><surname>Strid</surname><given-names>I.</given-names></name>
+<article-title>Review of Methodological Choices
+in LCA of Biorefinery Systems - Key Issues and Recommendations</article-title>. <source>Biofuels, Bioproducts and Biorefining.</source>
+<year>2015</year>, <volume>9</volume> (<issue>5</issue>), <fpage>606</fpage>&#x02013;<lpage>619</lpage>. <pub-id pub-id-type="doi">10.1002/bbb.1563</pub-id>.</mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name><surname>Wernet</surname><given-names>G.</given-names></name>; <name><surname>Bauer</surname><given-names>C.</given-names></name>; <name><surname>Steubing</surname><given-names>B.</given-names></name>; <name><surname>Reinhard</surname><given-names>J.</given-names></name>; <name><surname>Moreno-Ruiz</surname><given-names>E.</given-names></name>; <name><surname>Weidema</surname><given-names>B.</given-names></name>
+<article-title>The Ecoinvent Database
+Version 3 (Part I): Overview
+and Methodology</article-title>. <source>International Journal of Life
+Cycle Assessment.</source>
+<year>2016</year>, <volume>21</volume> (<issue>9</issue>), <fpage>1218</fpage>&#x02013;<lpage>1230</lpage>. <pub-id pub-id-type="doi">10.1007/s11367-016-1087-8</pub-id>.</mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name><surname>Bargiacchi</surname><given-names>E.</given-names></name>; <name><surname>Candelaresi</surname><given-names>D.</given-names></name>; <name><surname>Valente</surname><given-names>A.</given-names></name>; <name><surname>Spazzafumo</surname><given-names>G.</given-names></name>; <name><surname>Frigo</surname><given-names>S.</given-names></name>
+<article-title>Life Cycle Assessment
+of Substitute Natural Gas Production from Biomass
+and Electrolytic Hydrogen</article-title>. <source>Int. J. Hydrogen
+Energy.</source>
+<year>2021</year>, <volume>46</volume> (<issue>72</issue>), <fpage>35974</fpage>&#x02013;<lpage>35984</lpage>. <pub-id pub-id-type="doi">10.1016/j.ijhydene.2021.01.033</pub-id>.</mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name><surname>Candelaresi</surname><given-names>D.</given-names></name>; <name><surname>Valente</surname><given-names>A.</given-names></name>; <name><surname>Iribarren</surname><given-names>D.</given-names></name>; <name><surname>Dufour</surname><given-names>J.</given-names></name>; <name><surname>Spazzafumo</surname><given-names>G.</given-names></name>
+<article-title>Comparative
+Life Cycle Assessment of Hydrogen-Fuelled Passenger Cars</article-title>. <source>Int. J. Hydrogen Energy.</source>
+<year>2021</year>, <volume>46</volume> (<issue>72</issue>), <fpage>35961</fpage>&#x02013;<lpage>35973</lpage>. <pub-id pub-id-type="doi">10.1016/j.ijhydene.2021.01.034</pub-id>.</mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="undeclared" id="cit36"><person-group person-group-type="allauthors"><collab>International Renewable Energy
+Agency</collab></person-group><source>Renewable Power Generation
+Costs in 2018</source>; <publisher-loc>Abu Dhabi</publisher-loc>, <year>2018</year>.</mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name><surname>Szima</surname><given-names>S.</given-names></name>; <name><surname>Cormos</surname><given-names>C. C.</given-names></name>
+<article-title>CO<sub>2</sub> Utilization
+Technologies: A Techno-Economic
+Analysis for Synthetic Natural Gas Production</article-title>. <source>Energies (Basel).</source>
+<year>2021</year>, <volume>14</volume> (<issue>5</issue>), <fpage>1258</fpage><pub-id pub-id-type="doi">10.3390/en14051258</pub-id>.</mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name><surname>Fasihi</surname><given-names>M.</given-names></name>; <name><surname>Efimova</surname><given-names>O.</given-names></name>; <name><surname>Breyer</surname><given-names>C.</given-names></name>
+<article-title>Techno-Economic Assessment of CO<sub>2</sub> Direct Air Capture Plants</article-title>. <source>J. Clean
+Prod.</source>
+<year>2019</year>, <volume>224</volume>, <fpage>957</fpage>&#x02013;<lpage>980</lpage>. <pub-id pub-id-type="doi">10.1016/j.jclepro.2019.03.086</pub-id>.</mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name><surname>Keith</surname><given-names>D. W.</given-names></name>; <name><surname>Holmes</surname><given-names>G.</given-names></name>; <name><surname>Angelo</surname><given-names>D. S.</given-names></name>; <name><surname>Heidel</surname><given-names>K.</given-names></name>
+<article-title>A Process for Capturing
+CO<sub>2</sub> from the Atmosphere</article-title>. <source>Joule</source>
+<year>2018</year>, <volume>2</volume> (<issue>8</issue>), <fpage>1573</fpage>&#x02013;<lpage>1594</lpage>. <pub-id pub-id-type="doi">10.1016/j.joule.2018.05.006</pub-id>.</mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name><surname>Volkart</surname><given-names>K.</given-names></name>; <name><surname>Bauer</surname><given-names>C.</given-names></name>; <name><surname>Boulet</surname><given-names>C.</given-names></name>
+<article-title>Life Cycle
+Assessment of Carbon Capture
+and Storage in Power Generation and Industry in Europe</article-title>. <source>International Journal of Greenhouse Gas Control.</source>
+<year>2013</year>, <volume>16</volume>, <fpage>91</fpage>&#x02013;<lpage>106</lpage>. <pub-id pub-id-type="doi">10.1016/j.ijggc.2013.03.003</pub-id>.</mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="journal" id="cit41"><name><surname>Terlouw</surname><given-names>T.</given-names></name>; <name><surname>Treyer</surname><given-names>K.</given-names></name>; <name><surname>Bauer</surname><given-names>C.</given-names></name>; <name><surname>Mazzotti</surname><given-names>M.</given-names></name>
+<article-title>Life Cycle Assessment
+of Direct Air Carbon Capture and Storage with Low-Carbon Energy Sources</article-title>. <source>Environ. Sci. Technol.</source>
+<year>2021</year>, <volume>55</volume> (<issue>16</issue>), <fpage>11397</fpage>&#x02013;<lpage>11411</lpage>. <pub-id pub-id-type="doi">10.1021/acs.est.1c03263</pub-id>.<pub-id pub-id-type="pmid">34351133</pub-id>
+</mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name><surname>Huijbregts</surname><given-names>M. A. J.</given-names></name>; <name><surname>Steinmann</surname><given-names>Z. J. N.</given-names></name>; <name><surname>Elshout</surname><given-names>P. M. F.</given-names></name>; et al. <article-title>ReCiPe2016: a harmonised
+life cycle impact assessment method at midpoint
+and endpoint level</article-title>. <source>Int. J. Life Cycle Assess.</source>
+<year>2017</year>, <volume>22</volume>, <fpage>138</fpage>&#x02013;<lpage>147</lpage>. <pub-id pub-id-type="doi">10.1007/s11367-016-1246-y</pub-id>.</mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="undeclared" id="cit43"><person-group person-group-type="allauthors"><name><surname>Goedkoop</surname><given-names>M.</given-names></name>; <name><surname>Oele</surname><given-names>M.</given-names></name>; <name><surname>Leijting</surname><given-names>J.</given-names></name>; <name><surname>Ponsioen</surname><given-names>T.</given-names></name>; <name><surname>Meijer</surname><given-names>E.</given-names></name></person-group><source>Introduction to LCA with SimaPro</source>; <year>2016</year>.</mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name><surname>Zuiderveen</surname><given-names>E. A. R.</given-names></name>; <name><surname>Kuipers</surname><given-names>K. J. J.</given-names></name>; <name><surname>Caldeira</surname><given-names>C.</given-names></name>; <name><surname>Hanssen</surname><given-names>S. V.</given-names></name>; <name><surname>van der Hulst</surname><given-names>M. K.</given-names></name>; <name><surname>de Jonge</surname><given-names>M. M. J.</given-names></name>; <name><surname>Vlysidis</surname><given-names>A.</given-names></name>; <name><surname>van Zelm</surname><given-names>R.</given-names></name>; <name><surname>Sala</surname><given-names>S.</given-names></name>; <name><surname>Huijbregts</surname><given-names>M. A. J.</given-names></name>
+<article-title>The Potential of Emerging Bio-Based
+Products to Reduce Environmental Impacts</article-title>. <source>Nat.
+Commun.</source>
+<year>2023</year>, <volume>14</volume>, <fpage>8521</fpage><pub-id pub-id-type="doi">10.1038/s41467-023-43797-9</pub-id>.<pub-id pub-id-type="pmid">38129383</pub-id>
+</mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name><surname>Wu</surname><given-names>P.</given-names></name>; <name><surname>Xia</surname><given-names>B.</given-names></name>; <name><surname>Wang</surname><given-names>X.</given-names></name>
+<article-title>The Contribution
+of ISO 14067 to the Evolution of Global
+Greenhouse Gas Standards - A Review</article-title>. <source>Renew.
+Sustain. Energy Rev.</source>
+<year>2015</year>, <volume>47</volume>, <fpage>142</fpage>&#x02013;<lpage>150</lpage>. <pub-id pub-id-type="doi">10.1016/j.rser.2015.02.055</pub-id>.</mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="weblink" id="cit46"><person-group person-group-type="allauthors"><name><surname>Soldal</surname><given-names>E.</given-names></name>; <name><surname>Modahl</surname><given-names>I. S.</given-names></name></person-group><source>A Review
+of Standards
+and Frameworks for Reporting of Biogenic CO<sub>2</sub></source><italic>;</italic><publisher-name>NORSUS</publisher-name>: <year>2022</year>, <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://norsus.no/en/publikasjon/a-review-of-standards-and-frameworks-forreporting-of-biogenic-co2-open-version/">https://norsus.no/en/publikasjon/a-review-of-standards-and-frameworks-forreporting-of-biogenic-co2-open-version/</uri> (accessed 2024&#x02013;01&#x02013;25).</mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="undeclared" id="cit47"><source>Levelized cost of heating
+(LCOH) for consumers, for selected space and water heating technologies
+and countries</source> &#x02013; Charts &#x02013; Data &#x00026; Statistics
+- <publisher-name>IEA</publisher-name>. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.iea.org/data-and-statistics/charts/levelized-cost-of-heating-lcoh-for-consumers-for-selected-space-and-water-heating-technologies-and-countries">https://www.iea.org/data-and-statistics/charts/levelized-cost-of-heating-lcoh-for-consumers-for-selected-space-and-water-heating-technologies-and-countries</uri> (accessed 2024&#x02013;01&#x02013;22).</mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="undeclared" id="cit48"><person-group person-group-type="allauthors"><name><surname>Badouard</surname><given-names>T.</given-names></name>; <name><surname>De Oliveira</surname><given-names>D. M.</given-names></name>; <name><surname>Yearwood</surname><given-names>J.</given-names></name>; <name><surname>Torres</surname><given-names>P.</given-names></name></person-group> Rotterdam, 31 July 2020 Client:
+European Commission-DG Energy A4 <source>Final Report-Cost of Energy
+(LCOE) Study on Energy Costs, Taxes and the Impact of Government Interventions
+on Investments in the Energy Sector</source>; <year>2020</year>.</mixed-citation></ref><ref id="ref49"><mixed-citation publication-type="undeclared" id="cit49"><source>Levelised cost
+of CO<sub>2</sub> capture by sector and initial CO<sub>2</sub> concentration</source>, <year>2019</year> &#x02013; Charts &#x02013; Data &#x00026; Statistics
+&#x02013; <publisher-name>IEA</publisher-name>. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.iea.org/data-and-statistics/charts/levelised-cost-of-co2-capture-by-sector-and-initial-co2-concentration-2019">https://www.iea.org/data-and-statistics/charts/levelised-cost-of-co2-capture-by-sector-and-initial-co2-concentration-2019</uri> (accessed 2024&#x02013;01&#x02013;22).</mixed-citation></ref><ref id="ref50"><mixed-citation publication-type="journal" id="cit50"><name><surname>Lux</surname><given-names>B.</given-names></name>; <name><surname>Schneck</surname><given-names>N.</given-names></name>; <name><surname>Pfluger</surname><given-names>B.</given-names></name>; <name><surname>M&#x000e4;nner</surname><given-names>W.</given-names></name>; <name><surname>Sensfu&#x000df;</surname><given-names>F.</given-names></name>
+<article-title>Potentials
+of Direct Air Capture and Storage in a Greenhouse
+Gas-Neutral European Energy System</article-title>. <source>Energy Strategy
+Reviews.</source>
+<year>2023</year>, <volume>45</volume>, <elocation-id>101012</elocation-id><pub-id pub-id-type="doi">10.1016/j.esr.2022.101012</pub-id>.</mixed-citation></ref><ref id="ref51"><mixed-citation publication-type="journal" id="cit51"><name><surname>Bullock</surname><given-names>L. A.</given-names></name>; <name><surname>Alcalde</surname><given-names>J.</given-names></name>; <name><surname>Tornos</surname><given-names>F.</given-names></name>; <name><surname>Fernandez-Turiel</surname><given-names>J.-L.</given-names></name>
+<article-title>Geochemical
+Carbon Dioxide Removal Potential of Spain</article-title>. <source>Sci.
+Total Environ.</source>
+<year>2023</year>, <volume>867</volume>, <elocation-id>161287</elocation-id><pub-id pub-id-type="doi">10.1016/j.scitotenv.2022.161287</pub-id>.<pub-id pub-id-type="pmid">36587666</pub-id>
+</mixed-citation></ref><ref id="ref52"><mixed-citation publication-type="weblink" id="cit52"><person-group person-group-type="allauthors"><collab>European
+Commission</collab></person-group><source>Carbon Removals and Carbon
+Farming - European
+Commission</source>. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://climate.ec.europa.eu/eu-action/carbon-removals-and-carbon-farming_en">https://climate.ec.europa.eu/eu-action/carbon-removals-and-carbon-farming_en</uri> (accessed 2024&#x02013;07&#x02013;25).</mixed-citation></ref><ref id="ref53"><mixed-citation publication-type="journal" id="cit53"><name><surname>Giuliano</surname><given-names>A.</given-names></name>; <name><surname>Barletta</surname><given-names>D.</given-names></name>; <name><surname>De Bari</surname><given-names>I.</given-names></name>; <name><surname>Poletto</surname><given-names>M.</given-names></name>
+<article-title>Techno-Economic Assessment
+of a Lignocellulosic Biorefinery Co-Producing Ethanol and Xylitol
+or Furfural</article-title>. <source>Comput.-Aided Chem. Eng.</source>
+<year>2018</year>, <volume>43</volume>, <fpage>585</fpage>&#x02013;<lpage>590</lpage>. <pub-id pub-id-type="doi">10.1016/B978-0-444-64235-6.50105-4</pub-id>.</mixed-citation></ref><ref id="ref54"><mixed-citation publication-type="journal" id="cit54"><name><surname>Pereira</surname><given-names>L. G.</given-names></name>; <name><surname>Cavalett</surname><given-names>O.</given-names></name>; <name><surname>Bonomi</surname><given-names>A.</given-names></name>; <name><surname>Zhang</surname><given-names>Y.</given-names></name>; <name><surname>Warner</surname><given-names>E.</given-names></name>; <name><surname>Chum</surname><given-names>H. L.</given-names></name>
+<article-title>Comparison of Biofuel
+Life-Cycle GHG Emissions Assessment
+Tools: The Case Studies of Ethanol Produced from Sugarcane, Corn,
+and Wheat</article-title>. <source>Renew. Sustain. Energy Rev.</source>
+<year>2019</year>, <volume>110</volume>, <fpage>1</fpage>&#x02013;<lpage>12</lpage>. <pub-id pub-id-type="doi">10.1016/j.rser.2019.04.043</pub-id>.</mixed-citation></ref><ref id="ref55"><mixed-citation publication-type="journal" id="cit55"><name><surname>Lee</surname><given-names>U.</given-names></name>; <name><surname>Kwon</surname><given-names>H.</given-names></name>; <name><surname>Wu</surname><given-names>M.</given-names></name>; <name><surname>Wang</surname><given-names>M.</given-names></name>
+<article-title>Retrospective Analysis
+of the U.S. Corn Ethanol Industry for 2005&#x02013;2019: Implications
+for Greenhouse Gas Emission Reductions</article-title>. <source>Biofuels,
+Bioproducts and Biorefining.</source>
+<year>2021</year>, <volume>15</volume> (<issue>5</issue>), <fpage>1318</fpage>&#x02013;<lpage>1331</lpage>. <pub-id pub-id-type="doi">10.1002/bbb.2225</pub-id>.</mixed-citation></ref><ref id="ref56"><mixed-citation publication-type="journal" id="cit56"><name><surname>Liu</surname><given-names>X.</given-names></name>; <name><surname>Kwon</surname><given-names>H.</given-names></name>; <name><surname>Wang</surname><given-names>M.</given-names></name>; <name><surname>O&#x02019;Connor</surname><given-names>D.</given-names></name>
+<article-title>Life Cycle
+Greenhouse Gas Emissions of Brazilian Sugar Cane Ethanol Evaluated
+with the GREET Model Using Data Submitted to RenovaBio</article-title>. <source>Environ. Sci. Technol.</source>
+<year>2023</year>, <volume>57</volume> (<issue>32</issue>), <fpage>11814</fpage>&#x02013;<lpage>11822</lpage>. <pub-id pub-id-type="doi">10.1021/acs.est.2c08488</pub-id>.<pub-id pub-id-type="pmid">37527415</pub-id>
+</mixed-citation></ref><ref id="ref57"><mixed-citation publication-type="journal" id="cit57"><name><surname>Gal&#x000e1;n-Mart&#x000ed;n</surname><given-names>&#x000c1;.</given-names></name>; <name><surname>Contreras</surname><given-names>M.d.M.</given-names></name>; <name><surname>Castro</surname><given-names>E.</given-names></name>
+<article-title>Carbon-Negative Products
+to Engage Society in Climate Action: The Life Cycle of Olive Oil</article-title>. <source>Sustain Prod Consum.</source>
+<year>2024</year>, <volume>47</volume>, <fpage>516</fpage>&#x02013;<lpage>527</lpage>. <pub-id pub-id-type="doi">10.1016/j.spc.2024.04.025</pub-id>.</mixed-citation></ref><ref id="ref58"><mixed-citation publication-type="undeclared" id="cit58"><source>GHG Intensity-ES
+GHG
+Intensity-EU GHG per Capita-ES GHG per Capita-EU WAM Projections WEM
+Projections National GHG Target</source>; <year>2022</year>.</mixed-citation></ref><ref id="ref59"><mixed-citation publication-type="journal" id="cit59"><name><surname>Gerloff</surname><given-names>N.</given-names></name>
+<article-title>Comparative
+Life-Cycle-Assessment Analysis of Three Major Water Electrolysis Technologies
+While Applying Various Energy Scenarios for a Greener Hydrogen Production</article-title>. <source>J. Energy Storage.</source>
+<year>2021</year>, <volume>43</volume>, <elocation-id>102759</elocation-id><pub-id pub-id-type="doi">10.1016/j.est.2021.102759</pub-id>.</mixed-citation></ref><ref id="ref60"><mixed-citation publication-type="journal" id="cit60"><name><surname>Bello</surname><given-names>S.</given-names></name>; <name><surname>Gal&#x000e1;n-Mart&#x000ed;n</surname><given-names>&#x000c1;.</given-names></name>; <name><surname>Feijoo</surname><given-names>G.</given-names></name>; <name><surname>Moreira</surname><given-names>M. T.</given-names></name>; <name><surname>Guill&#x000e9;n-Gos&#x000e1;lbez</surname><given-names>G.</given-names></name>
+<article-title>BECCS Based
+on Bioethanol from Wood
+Residues: Potential towards a Carbon-Negative Transport and Side-Effects</article-title>. <source>Appl. Energy.</source>
+<year>2020</year>, <volume>279</volume>, <elocation-id>115884</elocation-id><pub-id pub-id-type="doi">10.1016/j.apenergy.2020.115884</pub-id>.</mixed-citation></ref><ref id="ref61"><mixed-citation publication-type="journal" id="cit61"><name><surname>Kougioumtzis</surname><given-names>M. A.</given-names></name>; <name><surname>Kanaveli</surname><given-names>I. P.</given-names></name>; <name><surname>Karampinis</surname><given-names>E.</given-names></name>; <name><surname>Grammelis</surname><given-names>P.</given-names></name>; <name><surname>Kakaras</surname><given-names>E.</given-names></name>
+<article-title>Combustion of Olive Tree Pruning
+Pellets versus Sunflower
+Husk Pellets at Industrial Boiler. Monitoring of Emissions and Combustion
+Efficiency</article-title>. <source>Renew Energy.</source>
+<year>2021</year>, <volume>171</volume>, <fpage>516</fpage>&#x02013;<lpage>525</lpage>. <pub-id pub-id-type="doi">10.1016/j.renene.2021.02.118</pub-id>.</mixed-citation></ref><ref id="ref62"><mixed-citation publication-type="journal" id="cit62"><name><surname>Li</surname><given-names>C.</given-names></name>; <name><surname>Mogoll&#x000f3;n</surname><given-names>J. M.</given-names></name>; <name><surname>Tukker</surname><given-names>A.</given-names></name>; <name><surname>Steubing</surname><given-names>B.</given-names></name>
+<article-title>Environmental Impacts
+of Global Offshore Wind Energy Development until 2040</article-title>. <source>Environ. Sci. Technol.</source>
+<year>2022</year>, <volume>56</volume> (<issue>16</issue>), <fpage>11567</fpage>&#x02013;<lpage>11577</lpage>. <pub-id pub-id-type="doi">10.1021/acs.est.2c02183</pub-id>.<pub-id pub-id-type="pmid">35901230</pub-id>
+</mixed-citation></ref></ref-list></back></article>

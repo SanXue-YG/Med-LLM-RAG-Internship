@@ -1,0 +1,862 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">EES Batter</journal-id><journal-id journal-id-type="iso-abbrev">EES Batter</journal-id><journal-id journal-id-type="publisher-id">EB</journal-id><journal-id journal-id-type="coden">EBEAA5</journal-id><journal-title-group><journal-title>Ees Batteries</journal-title></journal-title-group><issn pub-type="epub">3033-4071</issn><publisher><publisher-name>RSC</publisher-name></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">41340784</article-id><article-id pub-id-type="pmc">PMC12670375</article-id>
+<article-id pub-id-type="publisher-id">d5eb00184f</article-id><article-id pub-id-type="doi">10.1039/d5eb00184f</article-id><article-categories><subj-group subj-group-type="heading"><subject>Chemistry</subject></subj-group></article-categories><title-group><article-title>Revisiting potassium intercalation in graphite: an <italic toggle="yes">operando</italic> characterisation and computational approach</article-title></title-group><contrib-group><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-8814-7909</contrib-id><name><surname>Guo</surname><given-names>Zhenyu</given-names></name><xref rid="affa" ref-type="aff">a</xref></contrib><contrib contrib-type="author"><name><surname>Wang</surname><given-names>Kang</given-names></name><xref rid="affb" ref-type="aff">b</xref></contrib><contrib contrib-type="author"><name><surname>Zhao</surname><given-names>Yuanzhu</given-names></name><xref rid="affa" ref-type="aff">a</xref></contrib><contrib contrib-type="author"><name><surname>Cheng</surname><given-names>Gang</given-names></name><xref rid="affb" ref-type="aff">b</xref></contrib><contrib contrib-type="author"><name><surname>Huang</surname><given-names>Yichen</given-names></name><xref rid="affa" ref-type="aff">a</xref></contrib><contrib contrib-type="author"><name><surname>Wright</surname><given-names>Connor</given-names></name><xref rid="affb" ref-type="aff">b</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-0538-8409</contrib-id><name><surname>Shen</surname><given-names>Zonghao</given-names></name><xref rid="affb" ref-type="aff">b</xref><xref rid="affc" ref-type="aff">c</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-2572-182X</contrib-id><name><surname>Yadegari</surname><given-names>Hossein</given-names></name><xref rid="affb" ref-type="aff">b</xref></contrib><contrib contrib-type="author"><name><surname>Jiang</surname><given-names>Jinglin</given-names></name><xref rid="affa" ref-type="aff">a</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0009-6282-4295</contrib-id><name><surname>Xie</surname><given-names>Fei</given-names></name><xref rid="affd" ref-type="aff">d</xref></contrib><contrib contrib-type="author"><name><surname>Zheng</surname><given-names>Kaitian</given-names></name><xref rid="affa" ref-type="aff">a</xref><xref rid="affe" ref-type="aff">e</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-0005-0633</contrib-id><name><surname>Mattevi</surname><given-names>Cecilia</given-names></name><xref rid="affb" ref-type="aff">b</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-0402-2376</contrib-id><name><surname>Molteni</surname><given-names>Carla</given-names></name><xref rid="afff" ref-type="aff">f</xref></contrib><contrib contrib-type="author"><name><surname>Haynes</surname><given-names>Peter D.</given-names></name><xref rid="affb" ref-type="aff">b</xref></contrib><contrib contrib-type="author"><name><surname>Ryan</surname><given-names>Mary P.</given-names></name><xref rid="affb" ref-type="aff">b</xref></contrib><contrib contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-0773-2100</contrib-id><contrib-id contrib-id-type="resid" authenticated="false">E-3694-2013</contrib-id><name><surname>Titirici</surname><given-names>Maria-Magdalena</given-names></name><xref rid="affa" ref-type="aff">a</xref><xref rid="affg" ref-type="aff">g</xref></contrib><aff id="affa">
+<label>a</label>
+<institution>Department of Chemical Engineering, Imperial College London</institution>
+<city>London</city>
+<postal-code>SW7 2AZ</postal-code>
+<country>UK</country>
+<email>m.titirici@imperial.ac.uk</email>
+</aff><aff id="affb">
+<label>b</label>
+<institution>Department of Materials, Imperial College London</institution>
+<city>London</city>
+<postal-code>SW7 2AZ</postal-code>
+<country>UK</country>
+</aff><aff id="affc">
+<label>c</label>
+<institution>Imperial Global Singapore (IGS), Imperial College London</institution>
+<city>Singapore</city>
+<postal-code>138602</postal-code>
+<country>Singapore</country>
+</aff><aff id="affd">
+<label>d</label>
+<institution>Key Laboratory for Renewable Energy, Beijing Key Laboratory for New Energy Materials and Devices, Beijing National Laboratory for Condensed Matter Physics, Institute of Physics, Chinese Academy of Sciences</institution>
+<city>Beijing</city>
+<postal-code>100190</postal-code>
+<country>China</country>
+</aff><aff id="affe">
+<label>e</label>
+<institution>Chemical Engineering Research Center, State Key Laboratory of Chemical Engineering, School of Chemical Engineering and Technology, Tianjin University</institution>
+<city>Tianjin 300072</city>
+<country>China</country>
+</aff><aff id="afff">
+<label>f</label>
+<institution>Department of Physics, King's College London</institution>
+<addr-line>Strand</addr-line>
+<city>London</city>
+<postal-code>WC2R 2LS</postal-code>
+<country>UK</country>
+</aff><aff id="affg">
+<label>g</label>
+<institution>Advanced Institute for Materials Research (WPI-AIMR), Tohoku University</institution>
+<addr-line>2-1-1 Katahira</addr-line>
+<addr-line>Aobaku</addr-line>
+<city>Sendai</city>
+<state>Miyagi 980-8577</state>
+<country>Japan</country>
+</aff></contrib-group><pub-date publication-format="electronic" date-type="pub" iso-8601-date="2025-11-27"><day>27</day><month>11</month><year>2025</year></pub-date><pub-date publication-format="electronic" date-type="collection" iso-8601-date="2026-02-09"><day>9</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="pmc-release"><day>27</day><month>11</month><year>2025</year></pub-date><!--PMC Release delay is 0 months and 0 days and was based on the <pub-date pub-type="epub"/>.--><volume>2</volume><issue>1</issue><fpage>163</fpage><lpage>175</lpage><history><date date-type="received" iso-8601-date="2025-09-26"><day>26</day><month>9</month><year>2025</year></date><date date-type="accepted" iso-8601-date="2025-11-26"><day>26</day><month>11</month><year>2025</year></date></history><permissions><copyright-statement>This journal is &#x000a9; The Royal Society of Chemistry</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>RSC</copyright-holder><ali:free_to_read xmlns:ali="http://www.niso.org/schemas/ali/1.0/"/><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense" start_date="2025-11-27">https://creativecommons.org/licenses/by/3.0/</ali:license_ref><license-p>This article is licensed under a <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported Licence</ext-link>. You can use material from this article in other publications without requesting further permissions from the RSC, provided that the correct acknowledgement is given.</license-p></license></permissions><abstract><p>Potassium-ion batteries (KIBs) with graphite anodes are emerging as a highly promising &#x0201c;beyond lithium&#x0201d; technology driven by battery demands, potassium's abundant reserves and the inherent similarities in intercalation chemistry to lithium-ion systems. Despite this potential, a understanding of potassium intercalation into graphite, particularly concerning early intercalation stages and the in-plane ordering of K<sup>+</sup> within graphite intercalation compounds (GICs), lacks sufficient elucidation. Herein, we employed a multi-modal, <italic toggle="yes">operando</italic> characterisation approach to elucidate the correlation of electrochemical potassiation and structural evolution in graphite, hence unravelling the specific mechanisms of K-ion storage. <italic toggle="yes">Operando</italic> electrochemical dilatometry precisely quantifies the macroscopic volume expansion of a graphite electrode during potassiation. Meanwhile, <italic toggle="yes">operando</italic> synchrotron X-ray diffraction (XRD) records ordered phase transitions during early-stage intercalation, detailing the formation of distinct GIC phases. Furthermore, Raman spectroscopy and density-functional theory (DFT) reveal the in-plane ordering of K<sup>+</sup> within the graphite gallery and stacking modes. <italic toggle="yes">Operando</italic> optical microscope and UV-vis spectroscopy together provide insights into the changing optical properties, linking these changes to different GICs and electronic structural changes. This comprehensive study offers fundamental mechanistic insights into K-ion storage in graphite, paving the way for the rational design of high-performance KIB anodes.</p></abstract><abstract abstract-type="toc"><p>A multi-modal, <italic toggle="yes">operando</italic> characterisation approach was used to revisit the correlation of electrochemical potassiation and structural evolution in graphite, hence unravelling the specific mechanisms of K-ion storage.<graphic xlink:href="d5eb00184f-ga.jpg" id="ga" position="float"/></p></abstract><funding-group><award-group><funding-source>
+<institution-wrap><institution>Engineering and Physical Sciences Research Council</institution><institution-id institution-id-type="doi">10.13039/501100000266</institution-id></institution-wrap>
+</funding-source><award-id>EP/R021554/2</award-id><award-id>EP/S018204/2</award-id><award-id>EP/L015579/1</award-id><award-id>EP/3003053/1</award-id><award-id>FIRG0024</award-id><award-id>EP/T022213/1</award-id><award-id>EP/W032260/1</award-id><award-id>EP/ 380 P022472/1</award-id><award-id>EP/P023118/1</award-id><award-id>EP/X035891/1</award-id></award-group><award-group><funding-source>
+<institution-wrap><institution>Science and Technology Facilities Council</institution><institution-id institution-id-type="doi">10.13039/501100000271</institution-id></institution-wrap>
+</funding-source><award-id>ST/R006873/1</award-id></award-group><award-group><funding-source>
+<institution-wrap><institution>H2020 Marie Sk&#x00142;odowska-Curie Actions</institution><institution-id institution-id-type="doi">10.13039/100010665</institution-id></institution-wrap>
+</funding-source><award-id>897014</award-id></award-group><award-group><funding-source>
+<institution-wrap><institution>H2020 European Research Council</institution><institution-id institution-id-type="doi">10.13039/100010663</institution-id></institution-wrap>
+</funding-source><award-id>819069</award-id></award-group><award-group><funding-source>
+<institution-wrap><institution>Royal Society</institution><institution-id institution-id-type="doi">10.13039/501100000288</institution-id></institution-wrap>
+</funding-source><award-id>UF160539</award-id></award-group></funding-group><counts><page-count count="13"/></counts><custom-meta-group><custom-meta><meta-name>pubstatus</meta-name><meta-value>Paginated Article</meta-value></custom-meta></custom-meta-group></article-meta></front><body><boxed-text id="box1" position="float"><sec><title>Broader context</title><p>The global push for sustainable energy solutions and grid-scale storage has underscored the limitations of lithium-ion batteries (LIBs), particularly concerning the cost and geopolitical constraints of related resources. This situation has driven intense research into &#x0201c;beyond lithium&#x0201d; technologies that use more abundant elements. Among these, sodium-ion batteries and potassium-ion batteries (KIBs) have emerged as highly promising and scalable alternatives. KIBs feature a similar intercalation chemistry to LIBs while benefiting from the vast and widely distributed reserves of potassium. A key challenge in the commercialisation of KIBs lies in the development of high-performance and long-lasting electrode materials. Carbonaceous materials, especially graphite, are the main candidates for KIB anodes due to their high gravimetric capacity and industrial maturity. However, the larger ionic radius of potassium leads to different intercalation dynamics compared to lithium, and a comprehensive, in-depth understanding of the real-time structural and electronic changes that occur during potassiation is critically needed to inform the rational design of next-generation KIBs. This work addresses this fundamental knowledge gap by investigating the intercalation mechanisms of potassium in graphite.</p></sec></boxed-text><sec><label>1.</label><title>Introduction</title><p>Lithium-ion batteries (LIBs) significantly mitigate climate change by facilitating the transition from fossil fuels to electric transportation, provided the electricity used is generated from renewable sources. According to the European Commission and World Economic Forum, global battery demand is projected to surge fourteen-fold from 2018 to 2030, with the EU potentially accounting for 17% of that increase.<sup><xref rid="cit1" ref-type="bibr">1</xref></sup> Therefore, the increasing demand for critical metals used in LIBs is forecasted. To solve this dilemma, beyond-lithium technologies are of great significance to meet the rapidly expanding energy storage market.<sup><xref rid="cit2" ref-type="bibr">2&#x02013;5</xref></sup></p><p>Potassium-ion batteries (KIBs) share similar intercalation chemistry to LIBs but with significant advantages.<sup><xref rid="cit6" ref-type="bibr">6,7</xref></sup> Potassium's global abundance (17&#x02009;000 ppm <italic toggle="yes">vs.</italic> 18 ppm for Li),<sup><xref rid="cit8" ref-type="bibr">8</xref></sup> and even distribution directly translates into a substantial cost advantage (Li<sub>2</sub>Co<sub>3</sub>: $97&#x02009;000 per ton, K<sub>2</sub>O: $980 per ton in 2022).<sup><xref rid="cit9" ref-type="bibr">9</xref></sup> Furthermore, the existing manufacturing infrastructure is readily adaptable for KIB production at a low cost, which is a critical factor for large-scale energy storage applications. Electrochemically, potassium exhibits a 0.09 V lower electrochemical potential than Li<sup>+</sup>/Li in a carbonate solvent.<sup><xref rid="cit6" ref-type="bibr">6</xref></sup> Also, K<sup>+</sup> has the highest ion mobility and conductivity because its Stokes&#x02019; radius of 3.6 &#x000c5; in propylene carbonate solvents is smaller than that of both Li<sup>+</sup> (4.8 &#x000c5;) and Na<sup>+</sup> (4.6 &#x000c5;).<sup><xref rid="cit10" ref-type="bibr">10</xref></sup> This smaller solvated size, despite a larger ionic radius (1.38 &#x000c5;), enables faster diffusion of K<sup>+</sup>, allowing increased power density and superior low-temperature performance.<sup><xref rid="cit11" ref-type="bibr">11,12</xref></sup></p><p>Graphite, an outstanding anode material in commercial LIBs, is also a promising candidate for KIBs. The intercalation of K<sup>+</sup> into the graphite lattice is <italic toggle="yes">via</italic> a well-established &#x0201c;staging&#x0201d; mechanism.<sup><xref rid="cit6" ref-type="bibr">6,7,13&#x02013;15</xref></sup> Intercalating K<sup>+</sup> between the layers of graphite results in the formation of different K-GICs with varied chemical, structural and electronic properties.<sup><xref rid="cit16" ref-type="bibr">16</xref></sup> K-GICs are characterised by a specific crystallographic arrangement of K<sup>+</sup> within the van der Waals galleries of the graphite host and a defined number of graphene layers separating adjacent intercalated K<sup>+</sup> layers. The maximum stable stoichiometry of the K-GIC is KC<sub>8</sub> in a voltage window of 0&#x02013;2.5 V <italic toggle="yes">vs.</italic> K<sup>+</sup>/K at room temperature. Hence, it has a high theoretical capacity of 279 mAh g<sup>&#x02212;1</sup>.<sup><xref rid="cit8" ref-type="bibr">8</xref></sup> However, the reliance on mined natural graphite, often concentrated in a few geopolitical regions, presents environmental challenges and supply chain risks. Simultaneously, the production of synthetic graphite, typically derived from petroleum coke and coal tar pitch (by-products of the fossil fuel industry), also carries a substantial environmental footprint due to its energy-intensive graphitisation process (temperatures up to 3000 &#x000b0;C). There are also opportunities to produce graphite more sustainably to fuel the battery revolution, such as carbonisation of biomass in a more innovative method,<sup><xref rid="cit17" ref-type="bibr">17,18</xref></sup> and recycling graphite from the end-of-life batteries.<sup><xref rid="cit19" ref-type="bibr">19,20</xref></sup></p><p>In 2024, a startup GROUP1 launched the world's first K-ion 18&#x02009;650 cylindrical batteries with graphite anode and a cell energy density of 160&#x02013;180 Wh kg<sup>&#x02212;1</sup>, benchmarking the current graphite//LiFPO<sub>4</sub> cells.<sup><xref rid="cit21" ref-type="bibr">21</xref></sup> Despite the promising commercialisation efforts, the large ionic size of K<sup>+</sup> introduces practical obstacles such as large volume changes, low initial coulombic efficiency, and limited cycle life. To overcome these challenges and enable the rational design of KIBs, it is crucial to gain a fundamental, in-depth understanding of the K<sup>+</sup> storage mechanism within the graphite lattice.</p><p>The interaction between potassium or lithium with graphite can be traced back to the 1920s&#x02013;1980s, when solid-state chemical synthesis and the physics of K-GICs and Li-GICs were focused.<sup><xref rid="cit22" ref-type="bibr">22&#x02013;25</xref></sup> Graphite has dominated the anode market for LIBs since Sony commercialised LIBs in the 1990s.<sup><xref rid="cit26" ref-type="bibr">26</xref></sup> The breakthroughs of electrochemical intercalation of K<sup>+</sup> into graphite at room temperature were reported in 2015 by Ji <italic toggle="yes">et al.</italic>, who ignited research interest in graphite anodes for KIBs.<sup><xref rid="cit7" ref-type="bibr">7</xref></sup> Since 2015, a decade has seen significant progress in unveiling the K-GIC staging mechanism. Yet, the precise staging sequence remains a subject of considerable debate in the literature. For example, Komaba <italic toggle="yes">et al.</italic> use <italic toggle="yes">operando</italic> XRD data and DFT calculations together to reveal the staging changes from graphite to stage 1 <italic toggle="yes">via</italic> disorderly high stages, stage 4L, stage 3L, stage 2L, and stage 1.<sup><xref rid="cit15" ref-type="bibr">15</xref></sup> Liu <italic toggle="yes">et al.</italic> use <italic toggle="yes">operando</italic> XRD to report the sequence <italic toggle="yes">via</italic> graphite, stage 5 (KC<sub>60</sub>), stage 4 (KC<sub>48</sub>), stage 3 (KC<sub>36</sub>), stage 2 (KC<sub>24</sub>/KC<sub>16</sub>), and stage 1 (KC<sub>8</sub>).<sup><xref rid="cit14" ref-type="bibr">14</xref></sup> DFT calculations suggest the formation energetics of K<sup>+</sup> intercalation into graphite can be unfavourable at very low K<sup>+</sup> concentrations and vary with the K<sup>+</sup> content. The prevailing view is that the formation of high stages is highly disordered, a hypothesis largely based on the absence of well-resolved XRD peaks in the early intercalation phase.</p><p>This work presents a comprehensive, multi-modal investigation that provides a mechanistic pathway for K<sup>+</sup> intercalation into graphite. We combine <italic toggle="yes">operando</italic> characterisation techniques, including synchrotron XRD and electrochemical dilatometry, with first-principles DFT calculations<sup><xref rid="cit27" ref-type="bibr">27</xref></sup> to precisely correlate structural changes at both the atomic and macroscopic levels (see SI section 1.7). DFT phonon calculations of the layer breathing modes (LBMs) of K-GICs are conducted based on XRD analysis and the low-frequency region from Raman spectra. Our findings not only resolve the conflicting staging sequences reported in the previous literature but also reveal a detailed pathway from liquid-like stages to ordered in-plane stages before reaching the final stage 1 K-GIC. Furthermore, we provide a detailed analysis of the electronic structure changes using an <italic toggle="yes">operando</italic> microscope and UV-Vis spectroscopy. These insights offer fundamental principles for designing high-performance KIB anodes.</p></sec><sec><label>2.</label><title>Results and discussion</title><sec><label>2.1.</label><title>Electrochemistry</title><p>The electrochemical performance of graphite as an anode material for KIBs was characterised in a three-electrode configuration: K metal|1 M KN(SO<sub>2</sub>F)<sub>2</sub> (KFSI) in ethylene carbonate (EC) and diethyl carbonate (DEC) (1&#x02009;:&#x02009;1 in volume) |graphite (<xref rid="fig1" ref-type="fig">Fig. 1a</xref>). Fig. S1 shows the characterisation of the graphite. This electrolyte composition was chosen due to several compelling advantages over alternatives. The 1 M KFSI in EC/DEC electrolyte offers stable electrochemical performance during cycling (Fig. S2 in SI), consistent with reported literature.<sup><xref rid="cit10" ref-type="bibr">10,14,15</xref></sup> Additionally, it was reported that this electrolyte system demonstrates a high initial coulombic efficiency (up to 89%) and higher ionic conductivity (10.7 mS cm<sup>&#x02212;1</sup>).<sup><xref rid="cit28" ref-type="bibr">28</xref></sup> In contrast, the widely adopted slat KPF<sub>6</sub>-based electrolytes show lower initial coulombic efficiencies (50&#x02013;60%) and limited solubility of up to 0.8 M in EC&#x02009;:&#x02009;DEC.<sup><xref rid="cit29" ref-type="bibr">29</xref></sup> A critical consideration for long-term cell stability is the interaction with current collectors. It is worth noting that the use of a pure KFSI electrolyte, free from chloride impurities, is expected to mitigate corrosion of the Al current collector commonly employed on both the anode and cathode sides, thereby ensuring the overall cell lifespan.<sup><xref rid="cit28" ref-type="bibr">28,30</xref></sup></p><fig position="float" id="fig1"><label>Fig. 1</label><caption><title>The electrochemistry of K metal|1 M KN(SO<sub>2</sub>F)<sub>2</sub> in EC and DEC (1&#x02009;:&#x02009;1 in volume)|graphite batteries. (a) The first three galvanostatic discharge&#x02013;charge cycles at 16 mA g<sup>&#x02212;1</sup>; (b) the differential capacity of the first three galvanostatic discharge&#x02013;charge cycles; (c) the first three cyclic voltammetry (CV) profiles at 0.1 mV s<sup>&#x02212;1</sup>.</title></caption><graphic xlink:href="d5eb00184f-f1" position="float"/></fig><p>All discharge (potassiation) and charge (depotassiation) profiles exhibit a sloping region at high potential and a long plateau capacity at low potential. The observed plateau regions are reflected as sharp peaks in the differential capacity plot shown in <xref rid="fig1" ref-type="fig">Fig. 1b</xref>. The electrochemical potentials associated with K<sup>+</sup> intercalation into graphite determine the overall cell voltage and therefore energy density. This differential capacity plot indicates that K<sup>+</sup> intercalation into graphite occurs at <italic toggle="yes">ca.</italic> 0.1&#x02013;0.2 V <italic toggle="yes">vs.</italic> K<sup>+</sup>/K. This value is slightly higher than those observed for the Li case (<italic toggle="yes">ca.</italic> 0.1 V <italic toggle="yes">vs.</italic> Li<sup>+</sup>/Li), which suggests a lower likelihood of K metal plating. Cyclic voltammetry (CV) was conducted at a scan rate of 0.1 mV s<sup>&#x02212;1</sup> (<xref rid="fig1" ref-type="fig">Fig. 1c</xref>) for the first three cycles. The first cycle features an increased CV area attributed to solid electrolyte interphase (SEI) formation, in line with a higher discharge (potassiation) capacity. It is widely accepted that the formation of an SEI is the main reason for the irreversible loss in KIBs, which will be discussed in section 2.5.</p><p>Regarding the notation, the stage index <italic toggle="yes">n</italic> is extensively employed to describe the periodic stacking of K-GIC. The stage index, denoted as <italic toggle="yes">n</italic> (an integer: 1, 2, 3, <italic toggle="yes">etc</italic>.), describes the number of graphite layers between two adjacent intercalated potassium layers. Diffraction patterns play a crucial role in identifying these staged structures. The stage diffraction [00<italic toggle="yes">n</italic>] peak serves as a definitive indicator of staging behaviour in K-GICs, indicating the periodic repetition of intercalant layers along the crystallographic <italic toggle="yes">c</italic>-axis. It is important to clarify the [00<italic toggle="yes">n</italic>] notation: while Miller indices (<italic toggle="yes">hkl</italic>) incorporate the in-plane ordering of the potassium layers, it instead functions as a classification system specifically tailored for describing the characteristic layering patterns observed in GICs. In contrast to the macroscopic <italic toggle="yes">c</italic>-axis staging described by the stage index and [00<italic toggle="yes">n</italic>] stage diffraction, Miller indices (<italic toggle="yes">hkl</italic>) are utilised to consider the in-plane ordering of the potassium layers. This distinction is crucial for a complete structural description. For example, in stage 1 KC<sub>8</sub>, the Miller index (00<italic toggle="yes">l</italic>) quadruples relative to the stage diffraction [001] due to a difference in-plane ordering is considered.</p><p>Furthermore, the in-plane potassium ordering is denoted using the notation <italic toggle="yes">p</italic>(<italic toggle="yes">A</italic> &#x000d7; <italic toggle="yes">B</italic>)<italic toggle="yes">R&#x003c6;</italic>, where <italic toggle="yes">p</italic> stands for primitive, <italic toggle="yes">A</italic> and <italic toggle="yes">B</italic> are the in-plane lattice parameters, and <italic toggle="yes">&#x003c6;</italic> defines the rotational angle between the intercalated lattice and the graphite cell vectors. For example, <italic toggle="yes">p</italic>(2 &#x000d7; 2)<italic toggle="yes">R</italic>0&#x000b0; means this unit cell is twice as long as the graphite unit cell along both of its principal axes in the plane, and the potassium superlattice is perfectly aligned (no rotation) with the underlying graphite lattice. This detailed notation allows for a precise characterisation of the potassiation of graphite.</p></sec><sec><label>2.2.</label><title>Electrode-level changes <italic toggle="yes">via operando</italic> dilatometry</title><p>Understanding the dynamic volume changes of electrode materials during cycling is crucial for designing long-lasting KIBs. <italic toggle="yes">Operando</italic> electrochemical dilatometry, as shown in <xref rid="fig2" ref-type="fig">Fig. 2a</xref>, provides the periodic thickness variations of a graphite electrode in the first five discharge&#x02013;charge cycles at 16 mA g<sup>&#x02212;1</sup>. The pristine graphite electrode measures 61.1 &#x003bc;m in thickness (after calendaring). During the first potassiation cycle, the graphite electrode experienced a significant dilation of 29.7 &#x003bc;m (from 61.1 &#x003bc;m to 90.8 &#x003bc;m), which accounted for 48.6% of the thickness of the pristine graphite, representing the most pronounced expansion observed across all five cycles. This initial expansion is a critical behaviour of the first potassiation process. Following the first de-potassiation cycle, the electrode partially contracts to 67.9 &#x003bc;m, which is still equivalent to 110.3% of the pristine graphite thickness. The initial expansion of 6.8 &#x003bc;m, between OCV (61.1 &#x003bc;m) and 0.58 V (67.9 &#x003bc;m) in the first cycle, is primarily attributed to the formation of the solid electrolyte interphase (SEI) layer and irreversible potassium,<sup><xref rid="cit31" ref-type="bibr">31</xref></sup> which is in line with the CV analysis above. Apart from the SEI formation, the irreversible expansion after the first cycle is mainly attributed to irreversible potassiation,<sup><xref rid="cit6" ref-type="bibr">6,32</xref></sup> which is discussed in the <italic toggle="yes">operando</italic> microscope analysis (in section 2.4). For context, the theoretical <italic toggle="yes">c</italic>-axis expansion from pristine graphite (3.35 &#x000c5;) to fully potassiated graphite KC<sub>8</sub> (5.35 &#x000c5;) is 60%. In comparison, a Li||graphite cell exhibits a much smaller initial thickness dilation. It is reported that a full lithiation causes only <italic toggle="yes">ca.</italic> 8.8% thickness dilation, including an irreversible thickness change of <italic toggle="yes">ca.</italic> 3.5%, while the theoretical <italic toggle="yes">c</italic>-axis expansion is <italic toggle="yes">ca.</italic> 10.4% from 3.35 &#x000c5; (graphite) to <italic toggle="yes">ca.</italic> 3.70 &#x000c5; (stage 1 Li-GICs, LiC<sub>6</sub>).<sup><xref rid="cit33" ref-type="bibr">33</xref></sup> This comparison highlights the significantly larger volume changes by K<sup>+</sup> intercalation compared to lithium.</p><fig position="float" id="fig2"><label>Fig. 2</label><caption><title>
+<italic toggle="yes">Operando</italic> electrochemical dilatometry analysis. (a) For the first five cycles (in blue) at 16 mA g<sup>&#x02212;1</sup>, with the change in thickness (in pink). The thickness of the pristine graphite electrode is 61.1 &#x003bc;m; (b) the change of the electrode thickness and its differential change in the second cycle.</title></caption><graphic xlink:href="d5eb00184f-f2" position="float"/></fig><p>Following each depotassiation, a constant voltage of 2.5 V was applied until the current decreased to 1.6 mA g<sup>&#x02212;1</sup> to remove as much K<sup>+</sup> as possible before a new potassiation cycle. In the first five cycles, a clear trend emerges that the thickness of the graphite electrode at the fully potassiated state gradually decreases, while, conversely, it gradually increases at the fully depotassiated state. In the fifth cycle, the full potassiation only causes an expansion of 18.5 &#x003bc;m from 69.8 &#x003bc;m to 88.3 &#x003bc;m. This suggests that the graphite parties rearrange to maintain a stable structure over cycles.</p><p>
+<xref rid="fig2" ref-type="fig">Fig. 2b</xref> provides a detailed investigation of the thickness change during the 2nd cycle, alongside its time derivative (d&#x00394;<italic toggle="yes">L</italic>/d<italic toggle="yes">t</italic>), which directly represents the rate of thickness change. Analysing d&#x00394;<italic toggle="yes">L</italic>/d<italic toggle="yes">t</italic> reveals two key points where the absolute value of the rate of thickness change reaches a minimum, indicating the slowest rates of dimensional variation. These minima occur around the 46th hour (point A) and the 67th hour (point B). Based on the corresponding electrochemical profiles, these minimal changes occur after the formation of stage 3 KC<sub>24</sub>. We hypothesise that a &#x0201c;liquid-like&#x0201d; stage 2L occurs, leading to the small plateau in the thickness rate between stage 3 KC<sub>24</sub> and stage 2 KC<sub>16</sub>. From the literature, <italic toggle="yes">operando</italic> pressure measurements and electrochemical dilatometry reveal that Li||graphite cells exhibit a small pressure and thickness change during the transition between stage 3 and stage 2.<sup><xref rid="cit31" ref-type="bibr">31,34</xref></sup> This feature of minimal changes observed in our K||graphite system suggests that the stage 2L observed in Li-GICs also occurs in potassium intercalation.</p><p>A more rapid and notably linear correlation between thickness change and capacity is observed at the end of potassiation and the beginning of depotassiation (formation of stage 1 K-GIC), around the 56th hour in <xref rid="fig2" ref-type="fig">Fig. 2b</xref>. This fastest change in electrode thickness is primarily attributed to the dilation/contraction of the <italic toggle="yes">c</italic>-axis of graphite during the phase transition between stage 2 (average <italic toggle="yes">d</italic>-spacing = 4.35 &#x000c5;) and stage 1 (average <italic toggle="yes">d</italic>-spacing = 5.35 &#x000c5;). This stage transition involves a larger change in the average <italic toggle="yes">d</italic>-spacing than any other stage transitions in K-GICs. The observed linear change can be further elucidated by considering an &#x0201c;accordion-like&#x0201d; mechanism of intercalation, where not all K<sup>+</sup> intercalate into each empty graphene interlayer but instead progressively move the graphite layers apart.<sup><xref rid="cit35" ref-type="bibr">35</xref></sup></p></sec><sec><label>2.3.</label><title>Atomic expansion <italic toggle="yes">via</italic> synchrotron X-ray diffraction</title><p>To gain atomic-level insights into the expansion behaviour of the graphite anode during electrochemical potassiation, we conducted <italic toggle="yes">operando</italic> synchrotron X-ray diffraction (XRD) at Diamond beamline I15-1. For these measurements, we used a Diamond Radial <italic toggle="yes">In situ</italic> X-ray (DRIX) cell.<sup><xref rid="cit36" ref-type="bibr">36</xref></sup> The DRIX cell is custom-designed for <italic toggle="yes">in situ</italic> and <italic toggle="yes">operando</italic> experiments. In this experiment, the pristine graphite is potassiated under an extremely low current of 6.5 mA g<sup>&#x02212;1</sup> to ensure the early stages are captured. The potassiation process was stopped until the stage 1 K-GIC is partially formed, evident by the co-existence of characteristic diffraction peaks for both stage 1 KC<sub>8</sub> and stage 2 KC<sub>16</sub>.</p><p>At the very early stages of potassiation, when K<sup>+</sup> concentrations are low, K<sup>+</sup> intercalation into graphite is known to be energetically unfavourable.<sup><xref rid="cit37" ref-type="bibr">37,38</xref></sup> However, with potassiation proceeds, the initial intercalation events induce a crystallographic expansion along the <italic toggle="yes">c</italic>-axis. This expansion can lower the energy barrier for subsequent intercalation.<sup><xref rid="cit39" ref-type="bibr">39</xref></sup><xref rid="fig3" ref-type="fig">Fig. 3a</xref> illustrates this process that the pristine graphite (002) peak initially observed at <italic toggle="yes">Q</italic> = 1.878 &#x000c5;<sup>&#x02212;1</sup> (<italic toggle="yes">d</italic><sub>interlayer</sub> = 3.35 &#x000c5;) and then splits into two new peaks: (1) one located appears in high <italic toggle="yes">Q</italic> region (larger than 1.878 &#x000c5;<sup>&#x02212;1</sup>), which is associated with [00(<italic toggle="yes">n</italic> + 1)] stage diffraction of higher-stage K-GICs; (2) [00<italic toggle="yes">n</italic>] stage diffraction appears in the lower <italic toggle="yes">Q</italic> region (smaller than 1.878 &#x000c5;<sup>&#x02212;1</sup>). Indeed, the intercalation of K<sup>+</sup> opens the <italic toggle="yes">d</italic>-spacing of two graphene layers to <italic toggle="yes">ca.</italic> 5.35 &#x000c5;, clearly confirmed by the appearance of the characteristic KC<sub>8</sub>'s peak at 1.175 &#x000c5;, while the <italic toggle="yes">d</italic>-spacing of the empty graphene layers (those not yet intercalated) largely remains at 3.35 &#x000c5;. This observation aligns well with established literature on K-GICs.<sup><xref rid="cit6" ref-type="bibr">6,7,14,15</xref></sup> Based on these structural observations, the <italic toggle="yes">c</italic>-axis periodicity of the K-GICs can be described mathematically. The total distance along the <italic toggle="yes">c</italic>-axis (<italic toggle="yes">d</italic><sub>c</sub>) of the minimal repeating unit in a stage <italic toggle="yes">n</italic> K-GIC can be calculated as follows:<inline-formula><italic toggle="yes">d</italic><sub>c</sub> = <italic toggle="yes">d</italic><sub>K layer</sub> &#x000d7; (<italic toggle="yes">n</italic> &#x02212; 1) + <italic toggle="yes">d</italic><sub>graphite</sub></inline-formula>where: <italic toggle="yes">d</italic><sub>K layer</sub> is the expanded interlayer by potassium (5.35 &#x000c5;); <italic toggle="yes">n</italic> is the stage number, <italic toggle="yes">d</italic><sub>graphite</sub> is the spacing of pristine graphite layers (3.35 &#x000c5;).</p><fig position="float" id="fig3"><label>Fig. 3</label><caption><title>
+<italic toggle="yes">Operando</italic> synchrotron X-ray diffraction patterns for the first potassiation cycle (a) <italic toggle="yes">Q</italic> range from 1.0&#x02013;2.5 &#x000c5;<sup>&#x02212;1</sup>, the highlighted red patterns are K-GICs stage 2&#x02013;5 and stage 1/stage 2, stage 2L exists between stage 3 and stage 2; (b) <italic toggle="yes">Q</italic> range from 1.85 to 2.2 &#x000c5;<sup>&#x02212;1</sup>; (c) <italic toggle="yes">Q</italic> range from 3.4 to 3.8 &#x000c5;<sup>&#x02212;1</sup>; (d) <italic toggle="yes">Q</italic> range for the formation of [002] and [003] of stage 2 KC<sub>16</sub>.</title></caption><graphic xlink:href="d5eb00184f-f3" position="float"/></fig><p>The average <italic toggle="yes">d</italic>-spacing of the stage <italic toggle="yes">n</italic> is denoted as <italic toggle="yes">d</italic><sub>00<italic toggle="yes">n</italic></sub>, which is calculated as follows:<graphic xlink:href="d5eb00184f-t1.jpg" id="ugt1" position="float"/></p><p>And the relationship between the <italic toggle="yes">d</italic><sub>00<italic toggle="yes">n</italic></sub> and <italic toggle="yes">d</italic><sub>00<italic toggle="yes">n</italic>+1</sub> is as follows:<graphic xlink:href="d5eb00184f-t2.jpg" id="ugt2" position="float"/></p><p>For example, the <italic toggle="yes">d</italic><sub>c</sub>, <italic toggle="yes">d</italic><sub>001</sub>, <italic toggle="yes">d</italic><sub>002</sub> and <italic toggle="yes">d</italic><sub>003</sub> of the stage 1 K-GIC is 5.35 &#x000c5;, 5.35 &#x000c5;, 2.68 &#x000c5; and 1.78 &#x000c5;, respectively. Similarly, the <italic toggle="yes">d</italic><sub>c</sub>, <italic toggle="yes">d</italic><sub>001</sub>, <italic toggle="yes">d</italic><sub>002</sub> and <italic toggle="yes">d</italic><sub>003</sub> of the stage 2 K-GIC is 8.70 &#x000c5;, 8.70 &#x000c5;, 4.35 &#x000c5; and 2.90 &#x000c5;, respectively.</p><p>DFT calculations suggest that significant local curvature in the graphene layers is induced during early intercalation.<sup><xref rid="cit38" ref-type="bibr">38</xref></sup> Localised curvature can disrupt the long-range planar order of graphite, leading to a noticeable decrease in the intensity of the pristine graphite (002) diffraction peak. Furthermore, compared with the rigid R&#x000fc;dorff&#x02013;Hofmann theory for ion intercalation,<sup><xref rid="cit40" ref-type="bibr">40</xref></sup> the Daumas&#x02013;H&#x000e9;rold domain model offers a more nuanced and widely accepted picture for K-GICs.<sup><xref rid="cit15" ref-type="bibr">15</xref></sup> This model suggests that K-GICs can consist of many microscopic, localised domains, even in the same stage, but with the intercalants in different domains occupying different interlayer galleries. Instead of maintaining long-range order, localised structural deformations occur, transitioning to short-range order, as further confirmed by <italic toggle="yes">operando</italic> XRD and <italic toggle="yes">ex situ</italic> transmission electron microscopy (TEM) images (in section 2.5). The structural instability is further exacerbated by the gradual leaching of K<sup>+</sup> from the graphite lattice, which contributes to the observed weakening of the graphite (002) peak's intensity. According to the Scherrer equation, smaller coherent scattering domains lead to broader diffraction peaks, consistent with the observed characteristics. A detailed analysis of these structural transformations, including <italic toggle="yes">c</italic>-axis stacking and <italic toggle="yes">ab</italic>-plane ordering, will be discussed in section 2.5.</p><sec><title>
+<italic toggle="yes">c</italic>-Axis stacking</title><p>The staging behaviour of K-GICs during early intercalation remains a topic of considerable interest. Our synchrotron <italic toggle="yes">operando</italic> XRD reveals an ordered transition from graphite to high-stage K-GICs to low-stage K-GICs (see <xref rid="fig3" ref-type="fig">Fig. 3a</xref>). The <italic toggle="yes">Q</italic> range was selected from 1 to 2.5 &#x000c5;<sup>&#x02212;1</sup>, where all the [00<italic toggle="yes">n</italic>] and [00(<italic toggle="yes">n</italic> + 1)] stage diffractions of stage <italic toggle="yes">n</italic> are concentrated. More importantly, a crucial observation from the data is that the [00(<italic toggle="yes">n</italic> + 1)] diffraction peak of a given stage <italic toggle="yes">n</italic> consistently exhibits higher intensity and is better resolved than its [00<italic toggle="yes">n</italic>] counterpart across all observed stages. This phenomenon agrees well with the theory by Leung <italic toggle="yes">et al.</italic>, which suggests the maximum peak intensity in GICs occurs at [00(<italic toggle="yes">n</italic> + <italic toggle="yes">m</italic>)] peak, where <italic toggle="yes">m</italic> is 0 and 1 for Li-GICs and K-GICs, respectively.<sup><xref rid="cit41" ref-type="bibr">41</xref></sup> These differences result from the size of different intercalated ions and the structure factor of X-rays. Consequently, we have chosen to focus on the well-resolved [00(<italic toggle="yes">n</italic> + 1)] peaks for studying the structural evolution of K-GICs, especially for high stages.</p><p>To our best knowledge, all previous literature using <italic toggle="yes">operando</italic> XRD shows a broader peak with a low intensity for high stages during early intercalation, regardless of whether [00<italic toggle="yes">n</italic>] or [00(<italic toggle="yes">n</italic> + 1)] peaks were studied. This limitation may stem from the long exposure times of lab-based XRD systems, which are not powerful in distinguishing the rapid, dynamic changes occurring in the early stages of intercalation. The inherent advantages of synchrotron XRD, including its high flux, low background noise, and short data acquisition times, are instrumental in effectively capturing the rapid evolution of these early-stage phases in our study. From the XRD pattern in <xref rid="fig3" ref-type="fig">Fig. 3b</xref>, the [00(<italic toggle="yes">n</italic> + 1)] peaks of K-GICs progressively shift to higher <italic toggle="yes">Q</italic> values as more K<sup>+</sup> is intercalated. Within these K-GICs stages, the continuous shift of peaks towards a higher <italic toggle="yes">Q</italic> range means that a single-phase, ordered reaction is predominantly taking place. Notably, the [00(11)] corresponding to stage 10 appears as the first well-resolved phase. The regions between graphite and stage 10 present those stages that have not yet intercalated or are in very dilute stages, maintaining a graphite-like spacing.</p><p>Peak fitting of the XRD patterns was conducted using the Voigt function from stage 10 to stage 5, and their intensity and full width at half maximum (FWHM) are summarised in Fig. S3 (SI). The FWHM of the [00(<italic toggle="yes">n</italic> + 1)] peaks remained consistent, ranging between 0.071 A<sup>&#x02212;1</sup> to 0.084 A<sup>&#x02212;1</sup> from stage 10 to stage 5, importantly, no sudden fluctuations in intensity and FWHM were observed. Instead, in the event that multiple high K-stages were coexisting prominently during the early stages, a massive increase in the FWHM of the peaks would be anticipated. The absence of such a broadening feature further supports a relatively smooth, ordered stage evolution. Additionally, the order transition from graphite's (004) peak to stage diffraction [00(2<italic toggle="yes">n</italic> + 1)] was also identified (<xref rid="fig3" ref-type="fig">Fig. 3c</xref>), complementing the evidence of the smooth phase change in the high stages. However, it must be noted that stage coexistence cannot be entirely avoided due to the relatively low K diffusivity within the solid graphite electrode,<sup><xref rid="cit38" ref-type="bibr">38</xref></sup> particularly in thick samples (&#x0003e;120 &#x003bc;m) where voltage hysteresis is ubiquitous. Our findings, different from all previous literature, suggest a more ordered early-stage intercalation process compared to previously obtained results with lab-based XRD techniques.</p><p>Apart from the early stages, the existence of stage 2L, a proposed partially intercalated variant of stage 2, remains arguable in K-GICs. While Liu <italic toggle="yes">et al.</italic> proved a metastable stage 2L K-GICs using Raman spectroscopy.<sup><xref rid="cit14" ref-type="bibr">14</xref></sup><italic toggle="yes">Operando</italic> microscope analysis (details in section 2.4) is in line with this phenomenon, which visualises the coexistence of phases (<italic toggle="yes">e.g.</italic>, stage 2 (orange) and stage 3 (blue), or stage 2 (orange) and stage 1 (gold)) during these two-phase reactions. In Li-ion cases, Fujimoto <italic toggle="yes">et al.</italic> proved the phases of stage 2 and stage 2L by two different <italic toggle="yes">d</italic>-spacings according to their XRD patterns.<sup><xref rid="cit42" ref-type="bibr">42</xref></sup> In our XRD patterns, due to the inherent wider peaks in K-ion systems, Fig. S4a and <xref rid="fig3" ref-type="fig">Fig. 3a</xref> reveal two continuously shifting and intensifying [002] and [003] peaks of stage 2 from stage 3, suggesting the changes of the <italic toggle="yes">d</italic>-spacing during the formation of stage 2. Together with the <italic toggle="yes">operando</italic> dilatometry discussed above, the electrode thickness evolves nonlinearly during potassiation, suggesting there is a stage 2L phase during potassium intercalation.</p></sec><sec><title>
+<italic toggle="yes">c</italic>-Axis stacking mode</title><p>Regarding the stacking mode during potassiation, the graphite (see its XRD pattern in Fig. S5) features an ABAB stacking sequence, evidenced by the characteristic graphite (101) and (102) peaks. Upon intercalation, forming high-stage GICs, the non-intercalated graphene layers largely maintain their original ABAB stacking sequence, while the regions directly sandwiching the potassium layers may adopt an AA stacking. This transition is quantitatively reflected by the decreasing intensity of the graphite (102) peak in the XRD patterns (<xref rid="fig3" ref-type="fig">Fig. 3c</xref>). As the K<sup>+</sup> concentration increases, the transformation from ABAB to AA stacking within the intercalated regions is progressively completed, with the graphite (102) peak completely disappearing once stage 2 is fully reached. According to the theoretical study, the ABAB stacking mode is beneficial for initial intercalation of K<sup>+</sup> by lowering the intercalation energy.<sup><xref rid="cit38" ref-type="bibr">38</xref></sup> This <italic toggle="yes">c</italic>-axis stacking behaviour, to our best knowledge, is reported for the first time in the K-GICs using experimental methods.</p></sec><sec><title>In-plane ordering of K<sup>+</sup></title><p>The in-plane ordering of K<sup>+</sup> within the graphite matrix is considerably more challenging to detect compared to the <italic toggle="yes">c</italic>-axis stacking, primarily due to the preferred crystallographic orientation of graphite and the inherently low X-ray scattering intensity of potassium. Moreover, temperature is a key factor that influences the in-plane K ordering within the graphite galleries.<sup><xref rid="cit43" ref-type="bibr">43</xref></sup> Literature suggests some possible in-plane arrangements for K-GICs: <italic toggle="yes">p</italic>(2 &#x000d7; 2)<italic toggle="yes">R</italic>0&#x000b0;, <italic toggle="yes">p</italic>(&#x0221a;7 &#x000d7; &#x0221a;7)<italic toggle="yes">R</italic>19.11&#x000b0;, <italic toggle="yes">p</italic>(3 &#x000d7; 3)<italic toggle="yes">R</italic>0&#x000b0;, <italic toggle="yes">etc</italic>.<sup><xref rid="cit15" ref-type="bibr">15</xref></sup></p><p>
+<xref rid="fig3" ref-type="fig">Fig. 3d</xref> shows the formation of an in-plane (<italic toggle="yes">hk</italic>0) peak of K-GICs located at <italic toggle="yes">ca</italic>. 2.55 &#x000c5;<sup>&#x02212;1</sup>. This peak initially appears as a broad feature when stage 2 K-GICs begin to form and becomes more visible and intense with the formation of stage 1 K-GICs (peak located at &#x0223c;2.35 A<sup>&#x02212;1</sup>). This peak is assigned to the (110) in-plane reflection of KC<sub>16</sub> and KC<sub>8</sub>. The presence of this (110) reflection suggests a <italic toggle="yes">p</italic>(2 &#x000d7; 2)<italic toggle="yes">R</italic>0&#x000b0; (as shown in Fig. S6 in SI) in-plane ordering of K<sup>+</sup> within the stage 1 and stage 2 K-GICs. This in-plane ordering is firstly experimentally observed in the K-GICs. Additionally, the <italic toggle="yes">p</italic>(2 &#x000d7; 2)<italic toggle="yes">R</italic>0&#x000b0; in-plane ordering is consistent with the stoichiometry of KC<sub>16</sub> of the stage 2, whereas a <italic toggle="yes">p</italic>(&#x0221a;7 &#x000d7; &#x0221a;7)<italic toggle="yes">R</italic>19.11&#x000b0; ordering would be more indicative of KC<sub>24</sub>. Similarly, the (120) in-plane reflection was identified at <italic toggle="yes">ca.</italic> 3.88 &#x000c5;<sup>&#x02212;1</sup>, in complement to (110) as evidence for in-plane ordering of KC<sub>16</sub> and KC<sub>8</sub> (Fig. S7 in SI). For other stages, however, the in-plane ordering remains unclear from our <italic toggle="yes">operando</italic> XRD patterns as shown in Fig. S3b (SI).</p><p>To further investigate these intricate in-plane changes, pair distribution function (PDF) analysis was employed. As shown in Fig. S8 (SI), peaks in the PDF predominantly arise from the nearest-neighbour distances of carbons within the K-GICs. The intercalation of K<sup>+</sup> induces a slight expansion of the carbon matrix: the 6-membered carbon ring's C&#x02013;C bond distances increase from 1.426 &#x000c5; and 2.460 &#x000c5; to 1.435 &#x000c5; (+0.58%) and 2.469 &#x000c5; (+0.38%), respectively, indicating minimal lattice distortion of the graphene sheets themselves. In contrast, K&#x02013;K correlations exhibit inconsistent behaviour. A broad peak near 5.0 &#x000c5; shifts leftward (from 5.0327 &#x000c5; to 5.0279 &#x000c5;) happens especially at stages 2 and 1, despite carbon matrix expansion, which is intuitively inconsistent with lattice expansion. This shift is in alignment with the <italic toggle="yes">p</italic>(2 &#x000d7; 2)<italic toggle="yes">R</italic>0&#x000b0; in-plane ordering of K<sup>+</sup>, which is predicted to have a nearest K&#x02013;K distance of 4.92 &#x000c5;. These PDF analyses support our XRD findings and are further supported by DFT calculations in section 2.3, which confirm that the <italic toggle="yes">p</italic>(2 &#x000d7; 2)<italic toggle="yes">R</italic>0&#x000b0; in-plane configuration dominates across stages 1&#x02013;3 in K-GICs.</p><p>While specific in-plane ordering has been identified for stage 3, stage 2, and stage 1, it is important to note that if a stage only exhibits ordering along the <italic toggle="yes">c</italic>-axis without well-defined in-plane order, it should be designated as a &#x02018;liquid-like&#x02019; (L) stage. Therefore, the overall potassiation of pristine graphite to form stage-1 KC<sub>8</sub> can be summarised as a sequential process: it proceeds sequentially through liquid-like stages (stage 10L &#x02192; 9L &#x02192; &#x022ef; &#x02192; 4L) followed by stage 3, stage 2L, and stage 2, before reaching the final stage 1.</p></sec></sec><sec><label>2.4.</label><title>
+<italic toggle="yes">Operando</italic> Raman spectroscopy</title><p>Raman spectroscopy is effective in distinguishing between different K-GICs based on their unique electronic structures, which exhibit Raman-active characteristics.<sup><xref rid="cit44" ref-type="bibr">44</xref></sup> Yadegari <italic toggle="yes">et al.</italic> use Raman spectroscopy with DFT calculations to reveal the stacking and in-plane structure of Li-GICs.<sup><xref rid="cit45" ref-type="bibr">45</xref></sup> We further extended the same protocol to KIBs, using high-resolution Raman spectroscopy supported by DFT calculations.</p><p>
+<xref rid="fig4" ref-type="fig">Fig. 4a</xref> and Fig. S9 (in SI) show Raman spectra of the low-frequency region and the G band during the first discharge&#x02013;charge cycle. In graphite, the G band (E<sub>2g2</sub> mode) is one of the most prominent features originating from in-plane sp<sup>2</sup> vibrations in rings or chains. From OCV to <italic toggle="yes">ca.</italic> 0.55 V, the G band remains nearly unchanged due to SEI formation. Followed by the widening of the G band, which suggests the early formation of K-GICs.<sup><xref rid="cit46" ref-type="bibr">46</xref></sup> The lower wavenumber peak (E<sub>2g2</sub><sup>(i)</sup>) at <italic toggle="yes">ca.</italic> 1582 cm<sup>&#x02212;1</sup>, originating from the uncharged graphene intralayer, decreases progressively.<sup><xref rid="cit47" ref-type="bibr">47</xref></sup> Whereas the emerging upper-frequency peak (E<sub>2g2</sub><sup>(b)</sup>) at <italic toggle="yes">ca.</italic> 1598 cm<sup>&#x02212;1</sup>, derived from the charged graphene layers (or boundary layer) adjacent to the K<sup>+</sup> intercalant, grows gradually. The E<sub>2g2</sub><sup>(b)</sup> band blue shifts to a higher frequency due to an increase in the C&#x02013;C bond force constants.<sup><xref rid="cit48" ref-type="bibr">48</xref></sup> The different intensity ratios of E<sub>2g2</sub><sup>(b)</sup> and E<sub>2g2</sub><sup>(i)</sup> bands can be used to determine the staging index of K-GICs.<sup><xref rid="cit49" ref-type="bibr">49</xref></sup> After the peak split, the stage 2 GIC forms as evident by the E<sub>2g2</sub><sup>(b)</sup> band reaching its highest intensity without the presence of the E<sub>2g2</sub><sup>(i)</sup> band.<sup><xref rid="cit45" ref-type="bibr">45</xref></sup> During the stage transition from stage 2 to stage 1, the E<sub>2g2</sub><sup>(b)</sup> band slowly diminishes as a result of the formation of superconductive stage 1 KC<sub>8</sub>, which reduces the optical skin depth and Raman scattering intensity.<sup><xref rid="cit50" ref-type="bibr">50</xref></sup></p><fig position="float" id="fig4"><label>Fig. 4</label><caption><title>(a) <italic toggle="yes">Operando</italic> Raman spectra coloured according to their intensity with the first discharge&#x02013;charge profile at a constant current of 16 mA g<sup>&#x02212;1</sup>; (b) the experimental and simulated data of the low-frequency regions for different K-GICs; (c) the corresponding displacement patterns for the Raman-active modes.</title></caption><graphic xlink:href="d5eb00184f-f4" position="float"/></fig><p>The low-frequency region (<xref rid="fig4" ref-type="fig">Fig. 4a, b</xref>) observed during the charge&#x02013;discharge cycles arises from in-plane displacements (shear mode) and out-of-plane displacements (layer breathing modes) along the <italic toggle="yes">c</italic>-axis.<sup><xref rid="cit45" ref-type="bibr">45</xref></sup> The layer breathing modes (LBMs) are highly sensitive to both weaker van der Waals interactions, and the expansion of graphite interlayers is induced by intercalated species. This can be attributed to the appearance of a low-frequency region as the result of local strain-induced disorder, displacement, shear modes, and inner stress within the graphite lattice.<sup><xref rid="cit51" ref-type="bibr">51,52</xref></sup> Typically, the signal of the low-frequency region is weak or negligible from pristine graphite electrodes. However, after K<sup>+</sup> intercalation, its intensity becomes comparable with that of the G and 2D bands, which is attributed to the greater interlayer separation. Previous Raman analysis of K-GICs focused on in-plane vibrational modes (G and 2D bands), and to the best of our knowledge, our research is the first to report on the low-frequency region in KIBs. Fig. S10 and Fig. S11 (SI) show the second and third cycles with <italic toggle="yes">operando</italic> Raman spectra, supporting the reproducibility and analysis discussed above.</p><p>DFT calculations were carried out to understand the K<sup>+</sup> intercalation chemistry based on the low-frequency Raman spectra. There are more than ten Raman active modes in the high-frequency range of 1200&#x02013;1650 cm<sup>&#x02212;1</sup>. These modes are, in general, vibrations of in-plane C atoms with K<sup>+</sup> remaining stationary. Due to large anharmonic effects, standard DFT calculations cannot offer accurate phonon frequencies for high-frequency Raman vibrational modes.<sup><xref rid="cit53" ref-type="bibr">53&#x02013;55</xref></sup> Previous DFT work calculated the energy surface of 30 structures for various stages to find the most stable structures.<sup><xref rid="cit7" ref-type="bibr">7,15</xref></sup> Based on those structures, our DFT calculations show that K-GICs exhibit Raman-active modes in the low-frequency region. We calculated the phonon spectrum for relaxed cells of various stages to find mechanically stable stacking sequences. Our phonon calculations predicted that the stable sequences are A&#x003b1;A&#x003b2;A&#x003b3;A&#x003b4; stacking for stage 1, AA&#x003b1; stacking for stage 2, and ABA&#x003b1; stacking for stage 3. Here, A and B represent graphite layers, while &#x003b1;, &#x003b2;, &#x003b3; and &#x003b4; represent the potassium layer, as shown in Fig. S12 in SI. The vibrational modes, accounting for this low-frequency Raman shift, are shown in <xref rid="fig4" ref-type="fig">Fig. 4c, d, e</xref>. The Daumas&#x02013;Herold defects disappear by the complete filling of K<sup>+</sup> and the formation of a single phase of 3D-ordered stage 1 KC<sub>8</sub> at the end of the intercalation process. The stage 3 structure is calculated based on both AAA| and ABA| stackings. There is an imaginary mode in the AAA| stacking (Fig. S13, SI), and the eigenvector indicates that the ABA| stacking is indeed a stable structure based on the phonon calculations, in line with the <italic toggle="yes">operando</italic> XRD analysis above. The calculated phonon modes of the ABA| stacking show a low-frequency Raman active mode at a wavenumber of 126 cm<sup>&#x02212;1</sup>. For the stage 2 structure, these layered materials slide easily, which means it costs very little energy to move in the <italic toggle="yes">ab</italic>-plane. The energy surface of the configurations (AA or AB stacking) is relatively flat. The calculated A&#x003b1;AA&#x003b1;A and A&#x003b1;AB&#x003b1;B stacking sequences are both stable, but the A&#x003b1;AA&#x003b1;A stacking sequence has lower total energy, which is consistent with previous work.<sup><xref rid="cit15" ref-type="bibr">15</xref></sup> The transformation from AB stacking in graphite and stage 3 to AA stacking in stage 2 and stage 1 shows that a high concentration of K<sup>+</sup> acts to stabilise the graphite layers. The final frequency for stage 1 is 148 cm<sup>&#x02212;1</sup>, for stage 2 is 138 cm<sup>&#x02212;1</sup>, and for stage 3 is 126 cm<sup>&#x02212;1</sup>. The frequency for stage 1 is the highest, and stage 3 is the lowest since higher K<sup>+</sup> concentration results in higher vibrational energy for graphene layers in the <italic toggle="yes">c</italic>-direction. These values are consistent with the experimental data that the low-frequency signal broadened with increased intensity, which indicated the stage 1 formation (see <xref rid="fig4" ref-type="fig">Fig. 4b</xref>). It is worth noting that even at the end of discharge, the low-frequency signal is quite broad, and not only stages 1 but also stage 2 and stage 3 <italic toggle="yes">co-exist</italic>. It is reasonable that some empty interlayers allow the signal from stage 2 and stage 3 to appear, matching that observed for Li-ion intercalation into graphite in the literature.<sup><xref rid="cit45" ref-type="bibr">45</xref></sup> This phenomenon also agrees with what was observed from the <italic toggle="yes">operando</italic> X-ray and PDF analysis.</p><p>Here, we define <italic toggle="yes">d</italic><sub>1</sub> as the interlayer distance of graphene layers sandwiching K<sup>+</sup> and <italic toggle="yes">d</italic><sub>0</sub> as the intralayer distance without K<sup>+</sup> in between (Fig. S12 in SI). For stages 1&#x02013;3, the value of <italic toggle="yes">d</italic><sub>1</sub> is very close, and <italic toggle="yes">d</italic><sub>0</sub> is exclusively determined by the stacking, <italic toggle="yes">e.g.</italic>, AA or AB. This means the sandwich (A&#x003b1;A or B&#x003b1;B) is mostly independent of the other layers. The relative positions of K<sup>+</sup> (noted as &#x003b1;, &#x003b2;, &#x003b3;, or &#x003b4;) within graphene layers have a minor effect on the frequency of this Raman active mode. This is due to graphene layers vibrating in opposite directions along the <italic toggle="yes">c</italic>-axis with K<sup>+</sup> remaining stationary. This indicates the frequency of the mode is dominated by two factors, which are <italic toggle="yes">d</italic><sub>0</sub> and <italic toggle="yes">d</italic><sub>1</sub>. For example, in stage 3 with stacking sequence A&#x003b1;ABA&#x003b1;AB (Fig. S14 in SI), the A layers vibrate but the B layers remain stationary since only layers sandwiching K<sup>+</sup> vibrate. The frequency of the low-frequency Raman active mode is therefore only influenced by <italic toggle="yes">d</italic><sub>1</sub> (5.35 &#x000c5;, A layer distance), and the effect of <italic toggle="yes">d</italic><sub>0</sub> (3.35 &#x000c5;, AB layer distance) is trivial. For stage 2 with AA&#x003b1;AA&#x003b1; stacking sequence, all the A layers vibrate and both <italic toggle="yes">d</italic><sub>0</sub> and <italic toggle="yes">d</italic><sub>1</sub> influence the frequencies. It has been tested that even an increase of 0.1 &#x000c5; in <italic toggle="yes">d</italic><sub>0</sub> results in a decrease of 10 cm<sup>&#x02212;1</sup> in the frequency. For stage 1, since the K<sup>+</sup> are fully intercalated, all the interlayer distances are defined as <italic toggle="yes">d</italic><sub>1</sub>, which dominates the frequency of the mode.</p></sec><sec><label>2.5.</label><title>Electronic changes</title><p>To investigate the electronic structure evolution across stages 3 to 1 K-GICs, DFT simulations were performed using structural parameters derived from XRD and Raman spectroscopy. The changes in electronic structure from stage 3 to stage 1, a DFT simulation on charge difference was performed, based on the structural information provided by XRD and Raman analysis. <xref rid="fig5" ref-type="fig">Fig. 5a</xref> and Fig. S15 (SI) visualise the charge density difference for three K-GIC stages, where electron accumulation (red isosurfaces) and depletion (blue isosurfaces) are calculated relative to noninteracting K atoms and pristine graphite. The simulations reveal that potassium intercalation progressively enriches the &#x003c0; orbitals of adjacent carbon rings with electrons. Notably, higher potassium concentrations (<italic toggle="yes">e.g.</italic>, stage 1 KC<sub>8</sub>) correlate with greater electron density in the &#x003c0; system, while unoccupied interlayers exhibit minimal charge redistribution.</p><fig position="float" id="fig5"><label>Fig. 5</label><caption><title>(a) Charge density difference isosurfaces for stage 3, stage 2, and stage 1 compared with the sum of non-interacting pure C and isolated K systems. The isosurfaces are plotted at 0.0012 electrons &#x000c5;<sup>&#x02212;3</sup>, with red positive and blue negative; (b) the UV-visible spectrum (visible range of 400 nm to 750 nm) of uncycled graphite, high stages, K<sub>24</sub> (stage 3), K<sub>16</sub> (stage 2) and KC<sub>8</sub> (stage 1); (c) the changes in energy gap (eV) of a graphite electrode during the first potassiation and depotassiation; the A&#x02013;H are summarised in (d) <italic toggle="yes">operando</italic> microscopy study.</title></caption><graphic xlink:href="d5eb00184f-f5" position="float"/></fig><p>Experimental validation is achieved using <italic toggle="yes">operando</italic> UV-Vis differential reflectance spectroscopy (DRS), a technique sensitive to electronic band structure changes. As shown in <xref rid="fig5" ref-type="fig">Fig. 5b</xref>, the optical response evolves dynamically during cycling: stage-3 KC<sub>24</sub> absorbs visible light (500&#x02013;750 nm), appearing dark blue, and stage-2 KC<sub>16</sub> shows increased reflectance (650&#x02013;750 nm), appearing orange, while stage-1 KC<sub>8</sub> exhibits increased reflectance (400&#x02013;750 nm), corresponding to green, yellow, and red wavelengths. Kubelka&#x02013;Munk analysis<sup><xref rid="cit56" ref-type="bibr">56,57</xref></sup> of the <italic toggle="yes">operando</italic> UV-Vis spectra (Fig. S15) quantifies the energy gap during potassiation/depotassiation (<xref rid="fig5" ref-type="fig">Fig. 5c</xref>). The energy gap increases from near 0 eV (pristine graphite) to 2.4 eV (fully intercalated KC<sub>8</sub>) and subsequently decreases during deintercalation. This trend aligns with Fermi level upshifting, which suppresses interband transitions, and only photons exceeding the energy gap are absorbed, while lower-energy light is reflected, explaining the observed colour changes.</p><p>In K-GICs, increased potassium concentration delocalises electrons from graphite into the &#x003c0; conduction band (Fig. S16), enhancing metallic behaviour and electronic conductivity,<sup><xref rid="cit58" ref-type="bibr">58</xref></sup> The same applies to the Li-ion case.<sup><xref rid="cit59" ref-type="bibr">59</xref></sup> The observed colour evolution of the graphite electrode in <xref rid="fig5" ref-type="fig">Fig. 5d</xref> and the Video in SI further corroborates the electronic structure model, as the energy gap modulation directly governs optical properties. This optical behaviour aligns with <italic toggle="yes">operando</italic> UV-Vis DRS and Kubelka&#x02013;Munk-derived energy gap trends (<xref rid="fig5" ref-type="fig">Fig. 5b and c</xref>). The correlation between colour shifts and electronic transitions suggests that simple visible-light monitoring could serve as a cost-effective method to track the status of charge of the graphite anodes in KIBs and beyond. It is noted that some particles can be identified as potassiated (golden colour) while the whole electrode was fully depotassiated, meaning they lose electrical contact with the rest particles or the current collector, leading to a reduction in active material utilisation and also an irreversible expansion of the electrode shown in <xref rid="fig2" ref-type="fig">Fig. 2a</xref>.</p></sec><sec><label>2.6.</label><title>Surface chemistry</title><p>Apart from the structural and electronic changes of graphite, the surface chemistry can also be tuned by forming a passivation layer, the solid electrolyte interphase (SEI) formed on electrode surfaces from the decomposition products of electrolytes.<sup><xref rid="cit60" ref-type="bibr">60</xref></sup> The degradation of a graphite electrode, caused by large volume change, can lead to particle fracture and loss of network connection,<sup><xref rid="cit61" ref-type="bibr">61</xref></sup> which can further result in electrode delamination, exfoliation, and vulnerable SEI cracking. Each of these steps contributes to capacity loss by depleting the active potassium inventory of the cell.<sup><xref rid="cit34" ref-type="bibr">34</xref></sup> XRD and dilatometry analysis both indicate large volumetric variations in both atomic and electrode-level scales. The continuous &#x0201c;breathing&#x0201d; of the graphite particles can cause the SEI layer to crack and rupture, exposing fresh graphite surfaces to the electrolyte. This triggers further electrolyte decomposition and SEI reformation, consuming active potassium and electrolyte, and leading to increased impedance.<sup><xref rid="cit10" ref-type="bibr">10</xref></sup> Therefore, a robust SEI layer is essential to ensure stable cycling and alleviate battery degradation. The formation of a passivating SEI layer protects the graphite lattice physically, suppresses further decomposition of the electrolyte,<sup><xref rid="cit62" ref-type="bibr">62</xref></sup> and facilitates the diffusion of ions.<sup><xref rid="cit63" ref-type="bibr">63</xref></sup> To characterise this layer from a cycled graphite electrode, <italic toggle="yes">ex situ</italic> time-of-flight secondary ion mass spectrometry (ToF-SIMS) was employed.</p><p>It is documented that the SEI derived from the most common KPF<sub>6</sub> electrolyte is the decomposition of solvents, resulting in an organic-rich SEI layer; while the SEI on the graphite electrode with KFSI-based electrolyte is predominantly composed of inorganic compounds, originating from the decomposition of KFSI salt.<sup><xref rid="cit13" ref-type="bibr">13</xref></sup> Given the increased use of KFSI-based electrolytes in the battery community,<sup><xref rid="cit32" ref-type="bibr">32</xref></sup> this salt has received more research interest due to its stable SEI and improved cycling performance.</p><p>According to ToF-SIMS data (<xref rid="fig6" ref-type="fig">Fig. 6a, b</xref>, and Fig. S17 in SI), the depth profiles of different species were revealed for both C-containing, O-containing, and S-containing species, and F-containing species. As the SEI layer was thin (with a thickness of 2.0 nm&#x02013;3.0 nm from <xref rid="fig6" ref-type="fig">Fig. 6c</xref>), only a Bi<sup>+</sup> analysis beam was used to observe the subtle change in the SEI layer. <xref rid="fig6" ref-type="fig">Fig. 6b</xref> shows the depth profiles of the SEI layer, focusing on various F-containing species (such as KF<sup>&#x02212;</sup>, SF<sup>&#x02212;</sup>, and CF<sup>&#x02212;</sup>) across the surface, from the surface to the inner SEI layer to the bulk graphite. The analysis revealed a decreasing trend in F-containing species from the surface to the inner phase of the SEI until it reaches a plateau. While it is true that F contaminations are prevalent in most ToF-SIMS analyses conducted in negative mode due to their ubiquity and high electron affinity, we took extra care in our experimental procedures to minimise this effect. Thus, it is unlikely that the high F<sup>&#x02212;</sup> signal only results from surface contamination. Instead, it is plausible to deduce that F plays a significant role in the SEI. Moreover, other F-containing species like KF<sub>2</sub><sup>&#x02212;</sup>, SF<sup>&#x02212;</sup>, and CF<sup>&#x02212;</sup> provide complementary evidence that a higher concentration of these species is present in the outer SEI compared to the inner layers. These reduction products of the KN(SO<sub>2</sub>F)<sub>2</sub> salt would be a key factor to demonstrate stable SEIs on the graphite surface.<sup><xref rid="cit6" ref-type="bibr">6</xref></sup> On the other hand, <xref rid="fig6" ref-type="fig">Fig. 6a</xref> shows the depth profiles of the C-containing species such as CO<sup>&#x02212;</sup>, C<sub>2</sub>H<sup>&#x02212;</sup> and CO<sub>3</sub><sup>&#x02212;</sup> across the graphite surface. According to the analysis, C-containing species were concentrated in the inner layer of the SEI. In addition, <xref rid="fig6" ref-type="fig">Fig. 6a</xref> shows the depth profile of S-containing species. It is reported that, in KIBs, sulfites could easily accept electrons from the solvents and prevent solvents and K<sup>+</sup> co-intercalation into the electrode material, in comparison to the oxygen-containing species.<sup><xref rid="cit64" ref-type="bibr">64</xref></sup> An increase in the concentration of C-containing species and S-containing species can be observed from the surface towards the inner layer until it reaches a plateau where the SEI is sputtered.</p><fig position="float" id="fig6"><label>Fig. 6</label><caption><title>
+<italic toggle="yes">Ex situ</italic> ToF-SIMS depth profiling (using Bi<sup>+</sup> primary ion beam only) in the graphite electrode (a) for C-containing, O-containing, and S-containing species, and (b) for F-containing species. All the data are point-to-point normalised to total counts; (c) the schematic diagram of the KFSI-derived thin SEI layer on graphite; (d) an <italic toggle="yes">ex situ</italic> TEM image of the cycled graphite after the first cycle.</title></caption><graphic xlink:href="d5eb00184f-f6" position="float"/></fig><p>It is well-documented that the N(SO<sub>2</sub>F)<sub>2</sub><sup>&#x02212;</sup> anion can result in a robust<sup><xref rid="cit65" ref-type="bibr">65</xref></sup> but thin SEI layer (less than 10 nm) with an F-containing, specifically KF-rich<sup><xref rid="cit66" ref-type="bibr">66</xref></sup> protective inorganic layer because of N(SO<sub>2</sub>F)<sub>2</sub><sup>&#x02212;</sup> decomposition<sup><xref rid="cit67" ref-type="bibr">67,68</xref></sup> It is reported that KF<sup>&#x02212;</sup> components can effectively prevent the co-intercalation of solvated K-ions, enabling stable cycling.<sup><xref rid="cit69" ref-type="bibr">69</xref></sup> In the KFSI in EC/DEC system, it is more likely that the organic phase within SEI is formed by the reduction of the solvent molecules, while S-containing species and F-containing species were formed from anions (N(SO<sub>2</sub>F)<sub>2</sub><sup>&#x02212;</sup>). It was hypothesised that the inorganic and organic components represent the flexibility of the SEI layer, while the inorganic elements represent its rigidity.<sup><xref rid="cit70" ref-type="bibr">70,71</xref></sup><xref rid="fig6" ref-type="fig">Fig. 6c</xref> schematically shows the SEI on a graphite anode according to ToF-SIMS analysis, and the structure of the SEI layer is also in good agreement with previous findings.<sup><xref rid="cit72" ref-type="bibr">72</xref></sup> Especially in KIBs, these flexible organic SEI components can be useful in accommodating the large volume expansion during cycling.<sup><xref rid="cit72" ref-type="bibr">72</xref></sup> Hence, an organic inner layer with an F-concentrated protective passivated surface could be beneficial to enhance the surface stability for long cycling by preventing excessive depletion of the potassium inventory in the system.</p><p>To visualise both the thickness of SEI and the <italic toggle="yes">d</italic>-spacing of the cycled graphite, <italic toggle="yes">ex situ</italic> TEM was also carried out. <xref rid="fig6" ref-type="fig">Fig. 6d</xref> shows that the thickness of the as-formed SEI ranges from 2.0 to 3.0 nm after the first cycle compared with the TEM image of pristine graphite (Fig. S18 in SI). The crystallinity of the cycled graphite is inferior to pristine graphite; these findings confirm that K<sup>+</sup> intercalation disrupts long-range graphite order, favouring disordered lattice rearrangement.</p></sec></sec><sec><label>3.</label><title>Conclusion</title><p>A series of <italic toggle="yes">operando</italic> characterisation methods was used to elucidate the structural, electronic, and chemical changes induced by electrochemical potassiation/depotassiation in graphite. <italic toggle="yes">Operando</italic> synchrotron XRD and electrochemical dilatometry confirmed the theoretical <italic toggle="yes">c</italic>-axis expansion of 60% at full potassiation from graphite compared to a 49% expansion at the electrode level. Synchrotron XRD and Raman spectroscopy together with DFT calculations provide stacking information as follows: from pristine graphite to stage 1 KC<sub>8</sub> through liquid-like stages (stage 10L &#x02192; 9L &#x02192; &#x022ef; &#x02192; 4L) followed by in plane ordered (<italic toggle="yes">p</italic>(2 &#x000d7; 2)<italic toggle="yes">R</italic>0&#x000b0;) stages (KC<sub>24</sub> stage 3 ABA&#x003b1;, KC<sub>16</sub> stage 2 AA&#x003b1;) before reaching the final stage 1 KC<sub>8</sub> (A&#x003b1;A&#x003b2;A&#x003b3;A&#x003b4;). We also identify the existence of stage 2L between stage 3 and stage 2. UV-vis spectroscopy and optical measurement revealed that the intercalation of potassium leads to an upshifted Fermi level of graphite, as more electrons flow into &#x003c0; orbitals. This change leads to the optical properties, with stage 1 gold KC<sub>8</sub>, orange stage 2 KC<sub>16</sub> and blue stage 3 KC<sub>24</sub>. <italic toggle="yes">Ex situ</italic> ToF-SIMS explained the superior surface chemistry of the SEI structure, that the outer SEI layer is rich in F-containing species, while the inner SEI layer is more organic. Our results provide a comprehensive fundamental understanding of K<sup>+</sup> intercalation, revealing the K<sup>+</sup> storage mechanism in graphite and opening the paths towards further investigation of the K-GICs chemistry.</p></sec><sec><title>Author contributions</title><p>Conceptualisation: MT and ZG; supervision: MT; formal analysis: ZG, MT, KW, YZ, C. Molteni, PDH, and FX; funding acquisition: MT; investigation: ZG, YZ, GC, YH, CW, ZS, JJ; methodology: ZG, MT; software (DFT simulation): KW, C. Molteni, and PDH; visualisation: ZG and KZ; writing &#x02013; original draft: ZG, KW and YZ; writing &#x02013; review &#x00026; editing: all authors.</p></sec><sec sec-type="COI-statement"><title>Conflicts of interest</title><p>The authors declare that they have no competing interests.</p></sec><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material id="EB-002-D5EB00184F-s001" position="float" content-type="local-data"><label>EB-002-D5EB00184F-s001</label><media xlink:href="EB-002-D5EB00184F-s001.pdf" id="d67e1988" position="anchor"/></supplementary-material><supplementary-material id="EB-002-D5EB00184F-s002" position="float" content-type="local-data"><label>EB-002-D5EB00184F-s002</label><media xlink:href="EB-002-D5EB00184F-s002.mp4" id="d67e1991" position="anchor" mimetype="video" mime-subtype="mp4"/></supplementary-material></sec></body><back><ack><p>This work is supported by grants from the UK Engineering and Physical Sciences Research Council (EPSRC) (EP/R021554/2, EP/S018204/2), a RAEng Chair in Emerging Technologies, as well as the Science and Technology Facilities Council (STFC) Batteries Network (ST/R006873/1). The synchrotron experiment was carried out with the support of Diamond Light Source (UK), instrument I15-1 (proposal CY36797-1), and we appreciate the help from beamline scientists Dr Philip Chater and Dr Anna Herlihy. K. W. acknowledges support from the EPSRC Centre for Doctoral Training in Theory &#x00026; Simulation of Materials (EP/L015579/1). H. Y. acknowledges Marie Sk&#x00142;odowska-Curie Fellowship H2020-MSCA-IF-2019 (Grant 897014). Z. S. and M. P. R. acknowledge funding from the Faraday Institution (EP/3003053/1 through grant FIRG0024) and M. P. R acknowledges funding from the Armourers and Brasiers&#x02019; Company. Calculations were performed at the UK Materials and Molecular Modelling Hub (which is partially funded by EPSRC grants EP/T022213/1 and EP/W032260/1) and at the ARCHER2 High Performance Computing system through the UK Car&#x02212;Parrinello consortium (supported by EPSRC grants EP/380 P022472/1, EP/P023118/1 and EP/X035891/1). C. M. would like to acknowledge the award of funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (Grant Agreement No. 819069) and the award of a Royal Society University Research Fellowship (UF160539) by the Royal Society UK.</p></ack><sec sec-type="data-availability"><title>Data availability</title><p>The authors confirm that the data supporting the findings of this study are available within the article and its supplementary information (SI). The SI incorporates experimental details, graphite characterisation, operando spectra (XRD, Raman, and UV-vis), and simulated K-GIC structures. See DOI: <uri xlink:href="https://doi.org/10.1039/d5eb00184f">https://doi.org/10.1039/d5eb00184f</uri>.</p></sec><ref-list><ref id="cit1"><mixed-citation publication-type="other">
+<person-group person-group-type="author">
+<name><surname>EU Batteries</surname></name>
+</person-group>, <uri xlink:href="https://environment.ec.europa.eu/topics/waste-and-recycling/batteries_en">https://environment.ec.europa.eu/topics/waste-and-recycling/batteries_en</uri>)</mixed-citation></ref><ref id="cit2"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Au</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Crespo-Ribadeneyra</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Titirici</surname><given-names>M. M.</given-names></name>
+</person-group><source>One Earth</source><year>2022</year><volume>5</volume><fpage>207</fpage><lpage>211</lpage><pub-id pub-id-type="doi">10.1016/j.oneear.2022.02.014</pub-id></element-citation></ref><ref id="cit3"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Xie</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Niu</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Guo</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hu</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhou</surname><given-names>Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xu</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yan</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lu</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Titirici</surname><given-names>M. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hu</surname><given-names>Y. S.</given-names></name>
+</person-group><source>Angew. Chem., Int. Ed.</source><year>2022</year><volume>61</volume><fpage>e202116394</fpage><pub-id pub-id-type="doi">10.1002/anie.202116394</pub-id><pub-id pub-id-type="pmid">34994496</pub-id>
+</element-citation></ref><ref id="cit4"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhao</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wozny</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lu</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Du</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kang</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tavajohi</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>B.</given-names></name>
+</person-group><source>Nat. Rev. Mater.</source><year>2023</year><volume>8</volume><fpage>623</fpage><lpage>634</lpage><pub-id pub-id-type="doi">10.1038/s41578-023-00574-w</pub-id></element-citation></ref><ref id="cit5"><mixed-citation publication-type="book">
+<article-title>World Economic Forum and Global Battery Aliance</article-title>, <source>A Vision for a Sustainable Battery Value Chain in 2030: Unlocking the Full Potential to Power Sustainable Development and Climate Change Mitigation</source>, <year>2019</year></mixed-citation></ref><ref id="cit6"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hosaka</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kubota</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hameed</surname><given-names>A. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Komaba</surname><given-names>S.</given-names></name>
+</person-group><source>Chem. Rev.</source><year>2020</year><volume>120</volume><fpage>6358</fpage><lpage>6466</lpage><pub-id pub-id-type="doi">10.1021/acs.chemrev.9b00463</pub-id><pub-id pub-id-type="pmid">31939297</pub-id>
+</element-citation></ref><ref id="cit7"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Jian</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Luo</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ji</surname><given-names>X.</given-names></name>
+</person-group><source>J. Am. Chem. Soc.</source><year>2015</year><volume>137</volume><fpage>11566</fpage><lpage>11569</lpage><pub-id pub-id-type="doi">10.1021/jacs.5b06809</pub-id><pub-id pub-id-type="pmid">26333059</pub-id>
+</element-citation></ref><ref id="cit8"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wu</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xing</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lam</surname><given-names>C. W. K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Pang</surname><given-names>S. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ju</surname><given-names>Z.</given-names></name>
+</person-group><source>Adv. Energy Mater.</source><year>2019</year><volume>9</volume><fpage>1900343</fpage><pub-id pub-id-type="doi">10.1002/aenm.201900343</pub-id></element-citation></ref><ref id="cit9"><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>Survey</surname><given-names>U. S. G.</given-names></name>
+</person-group>, <source>Mineral commodity summaries 2023: U.S. Geological Survey</source>, <publisher-name>U.S. Geological Survey</publisher-name>, <year>2023</year></mixed-citation></ref><ref id="cit10"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>W. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>Y. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Guo</surname><given-names>Z. P.</given-names></name>
+</person-group><source>Sci. Adv.</source><year>2019</year><volume>5</volume><fpage>eaav7412</fpage><pub-id pub-id-type="doi">10.1126/sciadv.aav7412</pub-id><pub-id pub-id-type="pmid">31093528</pub-id>
+</element-citation></ref><ref id="cit11"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shi</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Gao</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shi</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ding</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Feng</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>He</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Sha</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhou</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lu</surname><given-names>B.</given-names></name>
+</person-group><source>Angew. Chem.</source><year>2023</year><volume>135</volume><fpage>e202300016</fpage><pub-id pub-id-type="doi">10.1002/ange.202300016</pub-id></element-citation></ref><ref id="cit12"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Min</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xiao</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fang</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>W. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhao</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Abdelkader</surname><given-names>A. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xi</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kumar</surname><given-names>R. V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Huang</surname><given-names>Z.</given-names></name>
+</person-group><source>Energy Environ. Sci.</source><year>2021</year><volume>14</volume><fpage>2186</fpage><lpage>2243</lpage><pub-id pub-id-type="doi">10.1039/D0EE02917C</pub-id></element-citation></ref><ref id="cit13"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fan</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ma</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Jia</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lu</surname><given-names>B.</given-names></name>
+</person-group><source>Angew. Chem., Int. Ed.</source><year>2019</year><volume>58</volume><fpage>10500</fpage><lpage>10505</lpage><pub-id pub-id-type="doi">10.1002/anie.201904258</pub-id><pub-id pub-id-type="pmid">31162778</pub-id>
+</element-citation></ref><ref id="cit14"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yin</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tian</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Qian</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Liang</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yan</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fan</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lin</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Huang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Loh</surname><given-names>K. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shen</surname><given-names>Z. X.</given-names></name>
+</person-group><source>Adv. Energy Mater.</source><year>2019</year><volume>9</volume><fpage>1900579</fpage><pub-id pub-id-type="doi">10.1002/aenm.201900579</pub-id></element-citation></ref><ref id="cit15"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Onuma</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kubota</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Muratsubaki</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ota</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shishkin</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Sato</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yamashita</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yasuno</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Komaba</surname><given-names>S.</given-names></name>
+</person-group><source>J. Mater. Chem. A</source><year>2021</year><volume>9</volume><fpage>11187</fpage><lpage>11200</lpage><pub-id pub-id-type="doi">10.1039/D0TA12607A</pub-id></element-citation></ref><ref id="cit16"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Luo</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wan</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ozdemir</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Bao</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Dai</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lin</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xu</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Gu</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Barone</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hu</surname><given-names>L.</given-names></name>
+</person-group><source>Nano Lett.</source><year>2015</year><volume>15</volume><fpage>7671</fpage><lpage>7677</lpage><pub-id pub-id-type="doi">10.1021/acs.nanolett.5b03667</pub-id><pub-id pub-id-type="pmid">26509225</pub-id>
+</element-citation></ref><ref id="cit17"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Guo</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Song</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zheng</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cheng</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mattevi</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hong</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Titirici</surname><given-names>M.-M.</given-names></name>
+</person-group><source>Chem. Eng. J.</source><year>2023</year><fpage>461</fpage></element-citation></ref><ref id="cit18"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Shi</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Jin</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhao</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yang</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cui</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Svanberg</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tang</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Jiang</surname><given-names>J.</given-names></name>
+</person-group><source>SusMat</source><year>2023</year><volume>3</volume><fpage>402</fpage><lpage>415</lpage><pub-id pub-id-type="doi">10.1002/sus2.139</pub-id></element-citation></ref><ref id="cit19"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wei</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Guo</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhao</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Sun</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hankin</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Titirici</surname><given-names>M.</given-names></name>
+</person-group><source>RSC Sustainability</source><year>2025</year><volume>3</volume><fpage>264</fpage><lpage>274</lpage><pub-id pub-id-type="doi">10.1039/D4SU00427B</pub-id></element-citation></ref><ref id="cit20"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Abdollahifar</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Doose</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cavers</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kwade</surname><given-names>A.</given-names></name>
+</person-group><source>Adv. Mater. Technol.</source><year>2023</year><volume>8</volume><fpage>2200368</fpage><pub-id pub-id-type="doi">10.1002/admt.202200368</pub-id></element-citation></ref><ref id="cit21"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zarrabeitia</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Carretero-Gonz&#x000e1;lez</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Leskes</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Adenusi</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Iliev</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Schubert</surname><given-names>T. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Passerini</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Castillo-Martinez</surname><given-names>E.</given-names></name>
+</person-group><source>Energy Mater.</source><year>2023</year><volume>3</volume><fpage>300046</fpage><pub-id pub-id-type="doi">10.20517/energymater.2023.41</pub-id></element-citation></ref><ref id="cit22"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Guerard</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Herold</surname><given-names>A.</given-names></name>
+</person-group><source>Carbon</source><year>1975</year><volume>13</volume><fpage>337</fpage><lpage>345</lpage><pub-id pub-id-type="doi">10.1016/0008-6223(75)90040-8</pub-id></element-citation></ref><ref id="cit23"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yazami</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Touzain</surname><given-names>P.</given-names></name>
+</person-group><source>J. Power Sources</source><year>1983</year><volume>9</volume><fpage>365</fpage><lpage>371</lpage><pub-id pub-id-type="doi">10.1016/0378-7753(83)87040-2</pub-id></element-citation></ref><ref id="cit24"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fredenhagen</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cadenbach</surname><given-names>G.</given-names></name>
+</person-group><source>Z. Anorg. Allg. Chem.</source><year>1926</year><volume>158</volume><fpage>249</fpage><pub-id pub-id-type="doi">10.1002/zaac.19261580122</pub-id></element-citation></ref><ref id="cit25"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>R&#x000fc;dorff</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Schulze</surname><given-names>E.</given-names></name>
+</person-group><source>Z. Anorg. Allg. Chem.</source><year>1954</year><volume>277</volume><fpage>156</fpage><pub-id pub-id-type="doi">10.1002/zaac.19542770307</pub-id></element-citation></ref><ref id="cit26"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nishi</surname><given-names>Y.</given-names></name>
+</person-group><source>Chem. Rec.</source><year>2001</year><volume>1</volume><fpage>406</fpage><lpage>413</lpage><pub-id pub-id-type="doi">10.1002/tcr.1024</pub-id><pub-id pub-id-type="pmid">11933247</pub-id>
+</element-citation></ref><ref id="cit27"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Clark</surname><given-names>S. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Segall</surname><given-names>M. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Pickard</surname><given-names>C. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hasnip</surname><given-names>P. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Probert</surname><given-names>M. I.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Refson</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Payne</surname><given-names>M. C.</given-names></name>
+</person-group><source>Z. Kristallogr. &#x02013; Cryst. Mater.</source><year>2005</year><volume>220</volume><fpage>567</fpage><lpage>570</lpage><pub-id pub-id-type="doi">10.1524/zkri.220.5.567.65075</pub-id></element-citation></ref><ref id="cit28"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Komaba</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hasegawa</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Dahbi</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kubota</surname><given-names>K.</given-names></name>
+</person-group><source>Electrochem. Commun.</source><year>2015</year><volume>60</volume><fpage>172</fpage><lpage>175</lpage><pub-id pub-id-type="doi">10.1016/j.elecom.2015.09.002</pub-id></element-citation></ref><ref id="cit29"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Teck</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Guo</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xu</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Titirici</surname><given-names>M.-M.</given-names></name>
+</person-group><source>Batteries Supercaps</source><year>2021</year><volume>4</volume><fpage>663</fpage><lpage>670</lpage><pub-id pub-id-type="doi">10.1002/batt.202000306</pub-id></element-citation></ref><ref id="cit30"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Han</surname><given-names>H.-B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhou</surname><given-names>S.-S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>D.-J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Feng</surname><given-names>S.-W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>L.-F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Feng</surname><given-names>W.-F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Nie</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Huang</surname><given-names>X.-J.</given-names></name>
+</person-group><source>J. Power Sources</source><year>2011</year><volume>196</volume><fpage>3623</fpage><lpage>3632</lpage><pub-id pub-id-type="doi">10.1016/j.jpowsour.2010.12.040</pub-id></element-citation></ref><ref id="cit31"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Michael</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Iacoviello</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Heenan</surname><given-names>T. M. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Llewellyn</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Weaving</surname><given-names>J. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Jervis</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Brett</surname><given-names>D. J. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shearing</surname><given-names>P. R.</given-names></name>
+</person-group><source>J. Electrochem. Soc.</source><year>2021</year><volume>168</volume><fpage>010507</fpage><pub-id pub-id-type="doi">10.1149/1945-7111/abd648</pub-id></element-citation></ref><ref id="cit32"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhai</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kang</surname><given-names>F.</given-names></name>
+</person-group><source>Energy Environ. Sci.</source><year>2020</year><volume>13</volume><fpage>4583</fpage><lpage>4608</lpage><pub-id pub-id-type="doi">10.1039/D0EE01638A</pub-id></element-citation></ref><ref id="cit33"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hahn</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Buqa</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ruch</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Goers</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Spahr</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ufheil</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Nov&#x000e1;k</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>K&#x000f6;tz</surname><given-names>R.</given-names></name>
+</person-group><source>Electrochem. Solid-State Lett.</source><year>2008</year><volume>11</volume><fpage>A151</fpage><pub-id pub-id-type="doi">10.1149/1.2940573</pub-id></element-citation></ref><ref id="cit34"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Louli</surname><given-names>A. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ellis</surname><given-names>L. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Dahn</surname><given-names>J. R.</given-names></name>
+</person-group><source>Joule</source><year>2019</year><volume>3</volume><fpage>745</fpage><lpage>761</lpage><pub-id pub-id-type="doi">10.1016/j.joule.2018.12.009</pub-id></element-citation></ref><ref id="cit35"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ziambaras</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kleis</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Schr&#x000f6;der</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hyldgaard</surname><given-names>P.</given-names></name>
+</person-group><source>Phys. Rev. B:Condens. Matter Mater. Phys.</source><year>2007</year><volume>76</volume><fpage>155425</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.76.155425</pub-id></element-citation></ref><ref id="cit36"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Diaz-Lopez</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cutts</surname><given-names>G. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Allan</surname><given-names>P. K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Keeble</surname><given-names>D. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ross</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Pralong</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Spiekermann</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chater</surname><given-names>P. A.</given-names></name>
+</person-group><source>J. Synchrotron Radiat.</source><year>2020</year><volume>27</volume><fpage>1190</fpage><lpage>1199</lpage><pub-id pub-id-type="doi">10.1107/S160057752000747X</pub-id><pub-id pub-id-type="pmid">32876593</pub-id>
+</element-citation></ref><ref id="cit37"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Olsson</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cottom</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Au</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Guo</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Jensen</surname><given-names>A. C. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Alptekin</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Drew</surname><given-names>A. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Titirici</surname><given-names>M.-M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cai</surname><given-names>Q.</given-names></name>
+</person-group><source>Adv. Funct. Mater.</source><year>2020</year><volume>30</volume><fpage>1908209</fpage><pub-id pub-id-type="doi">10.1002/adfm.201908209</pub-id></element-citation></ref><ref id="cit38"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Azizi</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Gross</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Euchner</surname><given-names>H.</given-names></name>
+</person-group><source>ACS Appl. Mater. Interfaces</source><year>2025</year><volume>17</volume><fpage>33965</fpage><lpage>33974</lpage><pub-id pub-id-type="doi">10.1021/acsami.5c04287</pub-id><pub-id pub-id-type="pmid">40434112</pub-id>
+</element-citation></ref><ref id="cit39"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yazami</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Reynier</surname><given-names>Y.</given-names></name>
+</person-group><source>J. Power Sources</source><year>2006</year><volume>153</volume><fpage>312</fpage><lpage>318</lpage><pub-id pub-id-type="doi">10.1016/j.jpowsour.2005.05.087</pub-id></element-citation></ref><ref id="cit40"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Andersen</surname><given-names>H. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Djuandhi</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mittal</surname><given-names>U.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Sharma</surname><given-names>N.</given-names></name>
+</person-group><source>Adv. Energy Mater.</source><year>2021</year><volume>11</volume><fpage>2102693</fpage><pub-id pub-id-type="doi">10.1002/aenm.202102693</pub-id></element-citation></ref><ref id="cit41"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Leung</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Dresselhaus</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Underhill</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Krapchev</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Dresselhaus</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wuensch</surname><given-names>B.</given-names></name>
+</person-group><source>Phys. Rev. B:Condens. Matter Mater. Phys.</source><year>1981</year><volume>24</volume><fpage>3505</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.24.3505</pub-id></element-citation></ref><ref id="cit42"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fujimoto</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kiuchi</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Takagi</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shimoda</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Okazaki</surname><given-names>K.-I.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ogumi</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Abe</surname><given-names>T.</given-names></name>
+</person-group><source>J. Electrochem. Soc.</source><year>2021</year><volume>168</volume><fpage>080508</fpage><pub-id pub-id-type="doi">10.1149/1945-7111/ac18e4</pub-id></element-citation></ref><ref id="cit43"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zabel</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Moss</surname><given-names>S. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Caswell</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Solin</surname><given-names>S. A.</given-names></name>
+</person-group><source>Phys. Rev. Lett.</source><year>1979</year><volume>43</volume><fpage>2022</fpage><lpage>2025</lpage><pub-id pub-id-type="doi">10.1103/PhysRevLett.43.2022</pub-id></element-citation></ref><ref id="cit44"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Puech</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Gerber</surname><given-names>I.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>P&#x000e9;nicaud</surname><given-names>A.</given-names></name>
+</person-group><source>J. Raman Spectrosc.</source><year>2014</year><volume>45</volume><fpage>219</fpage><lpage>223</lpage><pub-id pub-id-type="doi">10.1002/jrs.4445</pub-id></element-citation></ref><ref id="cit45"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yadegari</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Koronfel</surname><given-names>M. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Thornton</surname><given-names>D. B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Stephens</surname><given-names>I. E. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Molteni</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Haynes</surname><given-names>P. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ryan</surname><given-names>M. P.</given-names></name>
+</person-group><source>ACS Energy Lett.</source><year>2021</year><volume>6</volume><fpage>1633</fpage><lpage>1638</lpage><pub-id pub-id-type="doi">10.1021/acsenergylett.1c00494</pub-id></element-citation></ref><ref id="cit46"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Baddour-Hadjean</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Pereira-Ramos</surname><given-names>J. P.</given-names></name>
+</person-group><source>Chem. Rev.</source><year>2010</year><volume>110</volume><fpage>1278</fpage><lpage>1319</lpage><pub-id pub-id-type="doi">10.1021/cr800344k</pub-id><pub-id pub-id-type="pmid">19921829</pub-id>
+</element-citation></ref><ref id="cit47"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Panitz</surname><given-names>J.-C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Joho</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Novak</surname><given-names>P.</given-names></name>
+</person-group><source>Appl. Spectrosc.</source><year>1999</year><volume>53</volume><fpage>1188</fpage><pub-id pub-id-type="doi">10.1366/0003702991945650</pub-id></element-citation></ref><ref id="cit48"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sole</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Drewett</surname><given-names>N. E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hardwick</surname><given-names>L. J.</given-names></name>
+</person-group><source>Faraday Discuss.</source><year>2014</year><volume>172</volume><fpage>223</fpage><lpage>237</lpage><pub-id pub-id-type="doi">10.1039/C4FD00079J</pub-id><pub-id pub-id-type="pmid">25427224</pub-id>
+</element-citation></ref><ref id="cit49"><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>Zabel</surname><given-names>H.</given-names></name>
+</person-group> and <person-group person-group-type="author"><name><surname>Solin</surname><given-names>S. A.</given-names></name></person-group>, <source>Graphite intercalation compounds I: Structure and dynamics</source>, <publisher-name>Springer Berlin</publisher-name>, <publisher-loc>Heidelberg</publisher-loc>, <year>1990</year></mixed-citation></ref><ref id="cit50"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Inaba</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yoshida</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ogumi</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Abe</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mizutani</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Asano</surname><given-names>M.</given-names></name>
+</person-group><source>J. Electrochem. Soc.</source><year>1995</year><volume>142</volume><fpage>20</fpage><pub-id pub-id-type="doi">10.1149/1.2043869</pub-id></element-citation></ref><ref id="cit51"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lui</surname><given-names>C. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Heinz</surname><given-names>T. F.</given-names></name>
+</person-group><source>Phys. Rev. B:Condens. Matter Mater. Phys.</source><year>2013</year><volume>87</volume><fpage>121404</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.87.121404</pub-id></element-citation></ref><ref id="cit52"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ferrari</surname><given-names>A. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Basko</surname><given-names>D. M.</given-names></name>
+</person-group><source>Nat. Nanotechnol.</source><year>2013</year><volume>8</volume><fpage>235</fpage><lpage>246</lpage><pub-id pub-id-type="doi">10.1038/nnano.2013.46</pub-id><pub-id pub-id-type="pmid">23552117</pub-id>
+</element-citation></ref><ref id="cit53"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Giura</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Bonini</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Creff</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Brubach</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Roy</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lazzeri</surname><given-names>M.</given-names></name>
+</person-group><source>Phys. Rev. B:Condens. Matter Mater. Phys.</source><year>2012</year><volume>86</volume><fpage>121404</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.86.121404</pub-id></element-citation></ref><ref id="cit54"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bonini</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Rao</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Rao</surname><given-names>A. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Marzari</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Men&#x000e9;ndez</surname><given-names>J.</given-names></name>
+</person-group><source>Phys. Status Solidi B</source><year>2008</year><volume>245</volume><fpage>2149</fpage><lpage>2154</lpage><pub-id pub-id-type="doi">10.1002/pssb.200879659</pub-id></element-citation></ref><ref id="cit55"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bonini</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lazzeri</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Marzari</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mauri</surname><given-names>F.</given-names></name>
+</person-group><source>Phys. Rev. Lett.</source><year>2007</year><volume>99</volume><fpage>176802</fpage><pub-id pub-id-type="doi">10.1103/PhysRevLett.99.176802</pub-id><pub-id pub-id-type="pmid">17995357</pub-id>
+</element-citation></ref><ref id="cit56"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Landi Jr</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Segundo</surname><given-names>I. R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Freitas</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Vasilevskiy</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Carneiro</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tavares</surname><given-names>C. J.</given-names></name>
+</person-group><source>Solid State Commun.</source><year>2022</year><volume>341</volume><fpage>114573</fpage><pub-id pub-id-type="doi">10.1016/j.ssc.2021.114573</pub-id></element-citation></ref><ref id="cit57"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kubelka</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Munk</surname><given-names>F.</given-names></name>
+</person-group><source>Zeit. Fer Tekn. Phys.</source><year>1931</year><volume>12</volume><fpage>593</fpage></element-citation></ref><ref id="cit58"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kang</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yeom</surname><given-names>S. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>H. W.</given-names></name>
+</person-group><source>ChemSusChem</source><year>2020</year><volume>13</volume><fpage>1480</fpage><lpage>1484</lpage><pub-id pub-id-type="doi">10.1002/cssc.201903289</pub-id><pub-id pub-id-type="pmid">31985864</pub-id>
+</element-citation></ref><ref id="cit59"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Holzwarth</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Rabii</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Girifalco</surname><given-names>L.</given-names></name>
+</person-group><source>Phys. Rev. B:Condens. Matter Mater. Phys.</source><year>1978</year><volume>18</volume><fpage>5190</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.18.5190</pub-id></element-citation></ref><ref id="cit60"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>A. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kadam</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shi</surname><given-names>S. Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Qi</surname><given-names>Y.</given-names></name>
+</person-group><source>npj Comput. Mater.</source><year>2018</year><volume>4</volume><fpage>15</fpage><pub-id pub-id-type="doi">10.1038/s41524-018-0064-0</pub-id></element-citation></ref><ref id="cit61"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gu</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Sun</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wei</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Dai</surname><given-names>H.</given-names></name>
+</person-group><source>Electrochim. Acta</source><year>2014</year><volume>133</volume><fpage>107</fpage><lpage>116</lpage><pub-id pub-id-type="doi">10.1016/j.electacta.2014.03.186</pub-id></element-citation></ref><ref id="cit62"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sonoki</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Matsui</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Imanishi</surname><given-names>N.</given-names></name>
+</person-group><source>J. Electrochem. Soc.</source><year>2019</year><volume>166</volume><fpage>A3593</fpage><pub-id pub-id-type="doi">10.1149/2.0191915jes</pub-id></element-citation></ref><ref id="cit63"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Soto</surname><given-names>F. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Marzouk</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>El-Mellouhi</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Balbuena</surname><given-names>P. B.</given-names></name>
+</person-group><source>Chem. Mater.</source><year>2018</year><volume>30</volume><fpage>3315</fpage><lpage>3322</lpage><pub-id pub-id-type="doi">10.1021/acs.chemmater.8b00635</pub-id></element-citation></ref><ref id="cit64"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wu</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Guan</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Qiu</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wu</surname><given-names>S.</given-names></name>
+</person-group><source>J. Power Sources</source><year>2007</year><volume>172</volume><fpage>395</fpage><lpage>403</lpage><pub-id pub-id-type="doi">10.1016/j.jpowsour.2007.05.078</pub-id></element-citation></ref><ref id="cit65"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ma</surname><given-names>Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fang</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ma</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hu</surname><given-names>Y.-S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhou</surname><given-names>Z.-B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Huang</surname><given-names>X.-J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>L.-Q.</given-names></name>
+</person-group><source>Chin. Phys. B</source><year>2016</year><volume>25</volume><fpage>078203</fpage><pub-id pub-id-type="doi">10.1088/1674-1056/25/7/078203</pub-id></element-citation></ref><ref id="cit66"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Deng</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Feng</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Niu</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tan</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhu</surname><given-names>Y.</given-names></name>
+</person-group><source>ACS Appl. Mater. Interfaces</source><year>2019</year><volume>11</volume><fpage>22449</fpage><lpage>22456</lpage><pub-id pub-id-type="doi">10.1021/acsami.9b06156</pub-id><pub-id pub-id-type="pmid">31150200</pub-id>
+</element-citation></ref><ref id="cit67"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Aurbach</surname><given-names>D.</given-names></name>
+</person-group><source>J. Power Sources</source><year>2000</year><volume>89</volume><fpage>206</fpage><lpage>218</lpage><pub-id pub-id-type="doi">10.1016/S0378-7753(00)00431-6</pub-id></element-citation></ref><ref id="cit68"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Howlett</surname><given-names>P. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Brack</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hollenkamp</surname><given-names>A. F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Forsyth</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Macfarlane</surname><given-names>D. R.</given-names></name>
+</person-group><source>J. Electrochem. Soc.</source><year>2006</year><volume>153</volume><fpage>A595</fpage><pub-id pub-id-type="doi">10.1149/1.2164726</pub-id></element-citation></ref><ref id="cit69"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Qin</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xiao</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zheng</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lei</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhai</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wu</surname><given-names>Y.</given-names></name>
+</person-group><source>Adv. Energy Mater.</source><year>2019</year><volume>9</volume><fpage>1902618</fpage><pub-id pub-id-type="doi">10.1002/aenm.201902618</pub-id></element-citation></ref><ref id="cit70"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>Q.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yang</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Huang</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhai</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tang</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>You</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shi</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Dai</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zheng</surname><given-names>W.</given-names></name>
+</person-group><source>Adv. Energy Mater.</source><year>2022</year><volume>12</volume><fpage>2103972</fpage><pub-id pub-id-type="doi">10.1002/aenm.202103972</pub-id></element-citation></ref><ref id="cit71"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Xia</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lin</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cheng</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Jiao</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fu</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zheng</surname><given-names>J.</given-names></name>
+</person-group><source>J. Chem. Eng.</source><year>2022</year><volume>442</volume><fpage>136351</fpage><pub-id pub-id-type="doi">10.1016/j.cej.2022.136351</pub-id></element-citation></ref><ref id="cit72"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yang</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Gao</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fan</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Huang</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lin</surname><given-names>J.</given-names></name>
+</person-group><source>ACS Appl. Energy Mater.</source><year>2019</year><volume>2</volume><fpage>7942</fpage><lpage>7951</lpage><pub-id pub-id-type="doi">10.1021/acsaem.9b01428</pub-id></element-citation></ref></ref-list></back></article>

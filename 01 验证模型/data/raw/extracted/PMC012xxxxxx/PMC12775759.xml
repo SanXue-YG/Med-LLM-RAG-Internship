@@ -1,0 +1,594 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Catal Sci Technol</journal-id><journal-id journal-id-type="iso-abbrev">Catal Sci Technol</journal-id><journal-id journal-id-type="publisher-id">CY</journal-id><journal-id journal-id-type="coden">CSTAGD</journal-id><journal-title-group><journal-title>Catalysis Science &#x00026; Technology</journal-title></journal-title-group><issn pub-type="ppub">2044-4753</issn><issn pub-type="epub">2044-4761</issn><publisher><publisher-name>The Royal Society of Chemistry</publisher-name></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">41509058</article-id><article-id pub-id-type="pmc">PMC12775759</article-id>
+<article-id pub-id-type="publisher-id">d5cy01223f</article-id><article-id pub-id-type="doi">10.1039/d5cy01223f</article-id><article-categories><subj-group subj-group-type="heading"><subject>Chemistry</subject></subj-group></article-categories><title-group><article-title>Single-enzyme redox-neutral oxidation of alcohols to carboxylic acids using alcohol dehydrogenases</article-title></title-group><contrib-group><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0006-9135-5916</contrib-id><name><surname>Damian</surname><given-names>Matteo</given-names></name><xref rid="affa" ref-type="aff">a</xref><xref rid="fn1" ref-type="author-notes">&#x02020;</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-3143-4720</contrib-id><name><surname>Wei</surname><given-names>Zheng</given-names></name><xref rid="affa" ref-type="aff">a</xref><xref rid="fn1" ref-type="author-notes">&#x02020;</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-5923-9735</contrib-id><name><surname>Tseliou</surname><given-names>Vasilis</given-names></name><xref rid="affa" ref-type="aff">a</xref></contrib><contrib contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-6771-5102</contrib-id><name><surname>Mutti</surname><given-names>Francesco G.</given-names></name><xref rid="affa" ref-type="aff">a</xref></contrib><aff id="affa">
+<label>a</label>
+<institution>Van't Hoff Institute for Molecular Sciences, HIMS-Biocat, University of Amsterdam</institution>
+<addr-line>Science Park 904</addr-line>
+<postal-code>1098 XH</postal-code>
+<country>The Netherlands</country>
+<email>f.mutti@uva.nl</email>
+</aff></contrib-group><author-notes><fn id="fn1"><label>&#x02020;</label><p>These authors contributed equally to this work.</p></fn></author-notes><pub-date publication-format="electronic" date-type="pub" iso-8601-date="2025-12-10"><day>10</day><month>12</month><year>2025</year></pub-date><pub-date publication-format="electronic" date-type="collection" iso-8601-date="2026-02-09"><day>9</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="pmc-release"><day>10</day><month>12</month><year>2025</year></pub-date><!--PMC Release delay is 0 months and 0 days and was based on the <pub-date pub-type="epub"/>.--><volume>16</volume><issue>3</issue><fpage>876</fpage><lpage>883</lpage><history><date date-type="received" iso-8601-date="2025-10-13"><day>13</day><month>10</month><year>2025</year></date><date date-type="accepted" iso-8601-date="2025-12-07"><day>7</day><month>12</month><year>2025</year></date></history><permissions><copyright-statement>This journal is &#x000a9; The Royal Society of Chemistry</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>The Royal Society of Chemistry</copyright-holder><ali:free_to_read xmlns:ali="http://www.niso.org/schemas/ali/1.0/"/><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense" start_date="2025-12-10">https://creativecommons.org/licenses/by/3.0/</ali:license_ref><license-p>This article is licensed under a <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported Licence</ext-link>. You can use material from this article in other publications without requesting further permissions from the RSC, provided that the correct acknowledgement is given.</license-p></license></permissions><abstract><p>Oxidation of primary alcohols to carboxylic acids is a fundamental reaction in organic chemistry, traditionally dependent on toxic oxidants and often limited by poor selectivity. In this study, we demonstrate the multifunctional capability of some alcohol dehydrogenases (ADHs) to catalyze both alcohol and aldehyde oxidation while regenerating their NAD<sup>+</sup> cofactor through concomitant reduction of acetone. Screening of a panel of ADHs revealed that the enzymes from <italic toggle="yes">Paracoccus pantotrophus</italic> (<italic toggle="yes">Pp</italic>-ADH) and <italic toggle="yes">Aromatoleum aromaticum</italic> (<italic toggle="yes">Aa</italic>-ADH) have strong overoxidation activity to carboxylic acids. The biocatalytic method was assessed for the efficient oxidation of a panel of 27 structurally diverse primary alcohols into carboxylic acids using a single enzyme, with minimal workup and without the need for further purification. The biotransformation was also scaled up using cell-free extracts, while maintaining high yields. <italic toggle="yes">In silico</italic> studies provided insights into substrate tolerance, highlighting the structural features that govern enzyme activity. This biocatalytic method provides a scalable, selective, and environmentally friendly alternative to conventional oxidation strategies for primary alcohols to carboxylic acids.</p></abstract><abstract abstract-type="toc"><p>This work uncovers alcohol dehydrogenases that enable green, efficient, and selective single-enzyme oxidation of alcohols to carboxylic acids using acetone.<graphic xlink:href="d5cy01223f-ga.jpg" id="ga" position="float"/></p></abstract><funding-group><award-group><funding-source>
+<institution-wrap><institution>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</institution><institution-id institution-id-type="doi">10.13039/501100003246</institution-id></institution-wrap>
+</funding-source><award-id>OCENW.XS24.3.183</award-id><award-id>VI.Veni.232.268</award-id></award-group><award-group><funding-source>
+<institution-wrap><institution>H2020 Marie Sk&#x00142;odowska-Curie Actions</institution><institution-id institution-id-type="doi">10.13039/100010665</institution-id></institution-wrap>
+</funding-source><award-id>101153173</award-id><award-id>101208425</award-id></award-group></funding-group><counts><page-count count="8"/></counts><custom-meta-group><custom-meta><meta-name>pubstatus</meta-name><meta-value>Paginated Article</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec><title>Introduction</title><p>Carboxylic acids have important biological functions and, therefore, have relevant applications in medicine, food, and cosmetics.<sup><xref rid="cit1" ref-type="bibr">1&#x02013;3</xref></sup> They also find applications as insecticides, dye intermediates, coatings, plasticizers, monomers and solvents.<sup><xref rid="cit4" ref-type="bibr">4</xref></sup> Carboxylic acids have crucial importance as intermediates in various areas of catalysis.<sup><xref rid="cit5" ref-type="bibr">5&#x02013;7</xref></sup> Traditionally, the transformation of alcohols into carboxylic acids relies on stoichiometric amounts of environmentally unfriendly oxidants,<sup><xref rid="cit8" ref-type="bibr">8</xref></sup> such as permanganate,<sup><xref rid="cit9" ref-type="bibr">9</xref></sup> Cr(<sc>vi</sc>) reagents,<sup><xref rid="cit10" ref-type="bibr">10</xref></sup> pyridinium dichromate,<sup><xref rid="cit11" ref-type="bibr">11</xref></sup> ruthenium tetraoxide and other ruthenium compounds,<sup><xref rid="cit12" ref-type="bibr">12</xref></sup> chlorite or hypochlorite,<sup><xref rid="cit8" ref-type="bibr">8</xref></sup> and TEMPO-mediated oxidations.<sup><xref rid="cit13" ref-type="bibr">13</xref></sup> Other examples in the literature have shown the possibility of producing carboxylic acids from aldehydes using metal catalysts and air as the oxidant.<sup><xref rid="cit13" ref-type="bibr">13&#x02013;15</xref></sup> One other limitation of these chemical methods is the imperfect selectivity when different oxidizable functional groups are present within the same molecule. Aiming at improving the greenness and the selectivity of the catalytic oxidation of primary alcohols to carboxylic acids, alternative approaches based on transition metals, organocatalysts, nanocatalysts, and electrochemical methods have been developed.<sup><xref rid="cit4" ref-type="bibr">4</xref></sup> However, these approaches frequently suffer from other practical limitations, including the requirement for high-boiling solvents, elevated catalyst loadings, or scalability issues.</p><p>Biocatalysis offers a promising alternative thanks to its high selectivity, mild reaction conditions, and compatibility with green chemistry principles.<sup><xref rid="cit16" ref-type="bibr">16</xref></sup> In this context, enzymatic oxidation of aldehydes to carboxylic acids has been demonstrated using flavin- or metal-dependent oxidases (<xref rid="sch1" ref-type="fig">Scheme 1a, path i</xref>)<sup><xref rid="cit17" ref-type="bibr">17,18</xref></sup> or whole cells of <italic toggle="yes">Comamonas testosteroni</italic> SC1588.<sup><xref rid="cit19" ref-type="bibr">19</xref></sup> Unfortunately, these systems are typically substrate-specific for 5-hydroxymethylfurfural, limiting their application in organic synthesis. A more general approach was achieved using aldehyde dehydrogenases (AldDHs) coupled with a nicotinamide adenine dinucleotide (NADH) oxidase (NOx) for NAD<sup>+</sup> regeneration (<xref rid="sch1" ref-type="fig">Scheme 1a, path ii</xref>), as reported by our group and others in the last decade.<sup><xref rid="cit20" ref-type="bibr">20&#x02013;28</xref></sup> Recently, Han <italic toggle="yes">et al.</italic> reported a whole-cell approach using the recently discovered succinic semialdehyde dehydrogenase from <italic toggle="yes">Klebsiella pneumoniae</italic> (<italic toggle="yes">Kp</italic>SSADH) for converting various heteroatom-containing cyclic aldehydes into the corresponding carboxylic acids without the need for any additional enzyme for recycling the cofactor.<sup><xref rid="cit29" ref-type="bibr">29</xref></sup> Additionally, alcohol dehydrogenases (ADHs) have been combined with NADH oxidase (NOx) for oxidative dynamic kinetic resolution of profens,<sup><xref rid="cit30" ref-type="bibr">30</xref></sup> and later for the oxidation of aldehydes to carboxylic acids <italic toggle="yes">via</italic> the hydrate of the aldehyde intermediate (<xref rid="sch1" ref-type="fig">Scheme 1a, path iii</xref>).<sup><xref rid="cit31" ref-type="bibr">31,32</xref></sup></p><fig position="float" id="sch1" fig-type="scheme"><label>Scheme 1</label><caption><title>Reported methodologies for the biocatalytic synthesis of carboxylic acids. a) Oxidation of aldehydes using metal-dependent or flavin-dependent aldehyde oxidases (AldOx), or aldehyde dehydrogenases (AldDH), or alcohol dehydrogenases (ADH). b) Oxidation of alcohols to carboxylic acids using alcohol oxidase (AOx) and aldehyde oxidase (AldOx, method 1), laccases with TEMPO as mediator and xanthine dehydrogenase (XDH, method 2), and alcohol dehydrogenase (ADH) mediated overoxidation of alcohols to carboxylic acids using a fed-batch addition of a nicotinamide adenine dinucleotide oxidase (NOx, method 3). c) Oxidation of benzylic alcohols to benzoic acids catalyzed by a galactose oxidase variant (GOx, method 1), and oxidation of cinnamic alcohols to cinnamic acids catalyzed by unspecific peroxygenases (UPO). d) This work: a one-enzyme redox-neutral system for the oxidation of alcohols to carboxylic acids using acetone as a sacrificial cosubstrate to recycle the NAD<sup>+</sup> cofactor.</title></caption><graphic xlink:href="d5cy01223f-s1" position="float"/></fig><p>While these processes efficiently oxidize aldehydes, the direct oxidation of alcohols to carboxylic acids remains a challenge. One approach employed a tandem system combining an engineered <italic toggle="yes">Fusarium graminearum</italic> galactose oxidase (GOase) with the aldehyde oxidase PaoABC, while requiring a catalase enzyme for H<sub>2</sub>O<sub>2</sub> removal (<xref rid="sch1" ref-type="fig">Scheme 1b, method 1</xref>).<sup><xref rid="cit33" ref-type="bibr">33</xref></sup> This multi-enzymatic system suffered from low performance at high alcohol concentrations, requiring a large amount of catalyst loading. As an alternative (<xref rid="sch1" ref-type="fig">Scheme 1b, method 2</xref>), the oxidation of alcohols to aldehydes, catalyzed by laccases in combination with TEMPO as a mediator,<sup><xref rid="cit34" ref-type="bibr">34</xref></sup> was combined with the further oxidation of aldehydes to carboxylic acids using a xanthine dehydrogenase (XDH).<sup><xref rid="cit35" ref-type="bibr">35</xref></sup> In another study, an alcohol dehydrogenase (ADH) from <italic toggle="yes">Halomonas elongata</italic> was found to be capable of catalyzing both alcohol and aldehyde oxidation. To achieve full oxidation to carboxylic acids, the enzyme was used in tandem with NADH oxidase (NOx). However, despite the dual activity of the ADH, the use of a second enzyme remained necessary, and the low stability of NOx required a fed-batch addition strategy to sustain activity throughout the reaction (<xref rid="sch1" ref-type="fig">Scheme 1b, method 3</xref>).<sup><xref rid="cit36" ref-type="bibr">36</xref></sup></p><p>Another interesting approach involves the use of an alcohol oxidase (AOx), in particular galactose oxidase (GOx), which yielded carboxylic acids starting directly from the alcohol, with a single enzyme (<xref rid="sch1" ref-type="fig">Scheme 1c, method 1</xref>). However, this approach is basically limited to benzyl alcohols.<sup><xref rid="cit37" ref-type="bibr">37,38</xref></sup> Notably, all these methods based on oxidases or NOx for cofactor recycling require only dioxygen from air as environmentally benign oxidant. When an H<sub>2</sub>O<sub>2</sub>-forming NOx is employed, the addition of catalase is necessary to prevent enzyme deactivation. In our group, we normally use water-forming NOx, such as the enzyme described in Higuchi <italic toggle="yes">et al.</italic><sup><xref rid="cit39" ref-type="bibr">39</xref></sup></p><p>Similar to oxidases, unspecific peroxygenases (UPOs) have been employed for the oxidation of alcohols to carboxylic acids, but their application is likewise restricted by a narrow substrate scope (<xref rid="sch1" ref-type="fig">Scheme 1c, method 2</xref>).<sup><xref rid="cit40" ref-type="bibr">40&#x02013;42</xref></sup></p><p>In this study, we harness the multiple functionality of alcohol dehydrogenases (ADHs) to catalyze both the oxidation of alcohol to aldehyde and the subsequent further oxidation of aldehyde to carboxylic acid, while simultaneously combining the reduction of acetone, as a sacrificial cosubstrate, to isopropanol for NAD<sup>+</sup> cofactor regeneration (<xref rid="sch1" ref-type="fig">Scheme 1d</xref>). This single-enzyme redox-neutral system eliminates the need for an additional enzyme for cofactor recycling, thereby simplifying the process, improving the overall efficiency of the process, and reducing costs. Although the use of isopropanol or acetone as sacrificial cosubstrates for cofactor recycling in ADH-catalyzed carbonyl reduction and alcohol oxidation is both established and advantageous, only a subset of ADHs can accept these cosubstrates or remain stable in their presence.<sup><xref rid="cit43" ref-type="bibr">43&#x02013;45</xref></sup></p></sec><sec><title>Results and discussion</title><p>To establish the biocatalytic oxidation system, we initially tested hexanol (1b, 5 mM) as a model substrate in the presence of NOx (10 &#x003bc;M) and NAD<sup>+</sup> (0.5 mM), together with a panel of ten ADHs (10 &#x003bc;M). Among these, four enzymes namely from <italic toggle="yes">Pichia finlandica</italic> (<italic toggle="yes">Pf</italic>-ADH),<sup><xref rid="cit46" ref-type="bibr">46,47</xref></sup><italic toggle="yes">Paracoccus pantotrophus</italic> (<italic toggle="yes">Pp</italic>-ADH),<sup><xref rid="cit48" ref-type="bibr">48,49</xref></sup><italic toggle="yes">Aromatoleum aromaticum</italic> (<italic toggle="yes">Aa</italic>-ADH),<sup><xref rid="cit49" ref-type="bibr">49&#x02013;55</xref></sup> and <italic toggle="yes">Bacillus stearothermophilus Ht</italic>-ADH,<sup><xref rid="cit51" ref-type="bibr">51,56</xref></sup> successfully catalyzed the conversion of 1b to the corresponding hexanoic acid 4b (SI, Table S1 and Fig. S2).</p><p>We then focused on optimizing the reaction conditions. We screened three buffer systems (KPi, Tris, and HCO<sub>3</sub><sup>&#x02212;</sup>, 50 mM) at different pH values (7&#x02013;10). Significant variations in enzyme performance were observed based on the buffer composition and pH. The bicarbonate buffer (HCO<sub>3</sub><sup>&#x02212;</sup>) at pH 8&#x02013;9 yielded the highest formation of 4b using <italic toggle="yes">Pf</italic>-ADH, <italic toggle="yes">Pp</italic>-ADH, and <italic toggle="yes">Aa</italic>-ADH, making it the most suitable choice for the development of this biotransformation (SI, Fig. S3). However, KPi buffer performed somewhat equally well with <italic toggle="yes">Pf</italic>-ADH at the same pH values. Building on these results, we increased the concentration of 1b to 10 mM, while keeping the ADH concentration at 10 &#x003bc;M. While <italic toggle="yes">Ht</italic>-ADH showed reduced carboxylic acid yields at this concentration, <italic toggle="yes">Pf</italic>-ADH, <italic toggle="yes">Pp</italic>-ADH, and <italic toggle="yes">Aa</italic>-ADH retained strong aldehyde oxidation activity, achieving conversions into 4b of up to 96% (SI, Fig. S4).</p><p>A known challenge in these biocatalytic oxidation processes is the low stability of NOx under the required reaction conditions.<sup><xref rid="cit36" ref-type="bibr">36</xref></sup> To address this issue, we explored an alternative NAD<sup>+</sup> regeneration strategy that uses acetone as a sacrificial reductant (<italic toggle="yes">i.e.</italic>, the so-called coupled-substrate approach). Acetone was tested at varying concentrations (10, 20, 50, 70, and 100 eq.). The use of acetone for NAD<sup>+</sup> recycling significantly reduced the conversion of 1b to carboxylic acid 4b for <italic toggle="yes">Pf</italic>-ADH and <italic toggle="yes">Ht</italic>-ADH. In contrast, <italic toggle="yes">Pp</italic>-ADH and <italic toggle="yes">Aa</italic>-ADH maintained high performance, demonstrating comparable efficiency with both acetone- and NOx-mediated cofactor recycling. The best results for <italic toggle="yes">Pp</italic>-ADH and <italic toggle="yes">Aa</italic>-ADH were achieved with 20 equivalents of acetone (<xref rid="fig1" ref-type="fig">Fig. 1</xref> and SI, S5 and S6). Increasing the enzyme and cofactor concentrations also improved the conversion of 1b to the carboxylic acid 4b (SI, Fig. S7).</p><fig position="float" id="fig1"><label>Fig. 1</label><caption><title>Conversion of alcohol 1b to the carboxylic acid 4b catalyzed by ADHs in the presence of an NAD<sup>+</sup> cofactor recycling system <italic toggle="yes">via</italic>: a second enzyme (NOx; coupled-enzyme approach, green columns) or acetone (coupled-substrate approach, purple columns).</title></caption><graphic xlink:href="d5cy01223f-f1" position="float"/></fig><p>To explore the scalability and enhance the practical applicability of the single-enzyme biotransformation, we transitioned from using purified enzymes to cell-free extracts (CFEs, also called crude lysate, 10 mg mL<sup>&#x02212;1</sup>). Biotransformations at 10 mM concentration of 1b with 10 mg mL<sup>&#x02212;1</sup> of CFE resulted in quantitative conversion (SI, Fig. S8). Furthermore, we applied a higher substrate concentration (20 mM) while maintaining the same amount of acetone (10 eq.) for NAD<sup>+</sup> recycling (SI, Fig. S9). Under such conditions, <italic toggle="yes">Pp</italic>-ADH and <italic toggle="yes">Aa</italic>-ADH retained their oxidation activity from alcohol to carboxylic acid, achieving high yields comparable to those observed with purified enzymes. For example, we obtained 98% conversion of 1b to 4b for <italic toggle="yes">Pp</italic>-ADH and 62% for <italic toggle="yes">Aa</italic>-ADH at 1 mL scale in HCO<sub>3</sub><sup>&#x02212;</sup> buffer (50 mM pH 8) with 20 mM of 1b, 10 mg of CFE of ADH and 10 eq. of acetone.</p><p>Optimization experiments assessing the influence of temperature on conversion (SI, Fig. S10) and reaction time (SI, Fig. S11) revealed that 30 &#x000b0;C and overnight incubation are the optimal conditions.</p><p>To assess the scope of the biotransformation, we screened a panel of 27 structurally diverse alcohols (SI, Fig. S1) using 20 mM of substrate, ADH (CFE, 10 mg mL<sup>&#x02212;1</sup>), acetone (10 eq., 200 mM) and NAD<sup>+</sup> (0.5 mM) at 2.5 mL volume scale. A basic workup followed by an extraction step in acidic conditions, ensured the selective recovery of the carboxylic acid products in all cases without the need for any further purification. The analytical (NMR) yield of the reactions was calculated by adding dioxane as an internal standard equimolar to the substrate. Results are summarized in <xref rid="fig2" ref-type="fig">Fig. 2</xref>.</p><fig position="float" id="fig2"><label>Fig. 2</label><caption><title>Biocatalytic reactions for the synthesis of carboxylic acids. a) General scheme of the one-enzyme redox-neutral system for the oxidation of alcohols using either <italic toggle="yes">Pp</italic>-ADH or <italic toggle="yes">Aa</italic>-ADH. b) Investigation of the carboxyl acids 4a&#x02013;aa that can be obtained with the reported protocol: reactions performed using <italic toggle="yes">Pp</italic>-ADH (4 mg mL<sup>&#x02212;1</sup>) on a 50 &#x003bc;mol scale of substrate 1 (20 mM) in 2.5 mL bicarbonate buffer 50 mM at pH 8.0 containing 2% DMSO. The reactions were run for 16 hours at 30 &#x000b0;C in an incubator equipped with temperature control. Yields are given below each entry as analytical yields (measured by NMR analysis using dioxane as the internal standard). Yields in brackets for products 4b and 4h were obtained from a scale-up using 500 mg of starting material.</title></caption><graphic xlink:href="d5cy01223f-f2" position="float"/></fig><p>Notably, the two ADHs displayed complementary substrate preferences. <italic toggle="yes">Pp</italic>-ADH exhibited the highest efficiency with linear aliphatic alcohols, while aromatic substrates were generally preferred by <italic toggle="yes">Aa</italic>-ADH. The most well accepted substrate for <italic toggle="yes">Pp</italic>-ADH was found to be hexanol (1b, 98% yield) while alcohols with longer alkyl chains such as 1c and 1d were gradually less reactive. <italic toggle="yes">Pp</italic>-ADH is also a suitable catalyst for branched aliphatic substrates 1e&#x02013;g, although the carboxylic acid products were obtained in moderate yields (5&#x02013;44%). For substrates with aromatic substituents like benzyl alcohol 1h, <italic toggle="yes">Pp</italic>-ADH showed good yields (60%), but substitutions on the aromatic ring, particularly at the meta position (<italic toggle="yes">e.g.</italic>1j, 1o), significantly diminished the activity. Alkyl-aromatic substrates 1r&#x02013;t reacted smoothly (26&#x02013;62% yields), whereas bicyclic compounds (1v&#x02013;z) proved far more challenging for <italic toggle="yes">Pp</italic>-ADH, leading only to traces of the corresponding carboxylic acid products.</p><p>As mentioned before, <italic toggle="yes">Aa</italic>-ADH demonstrated complementary catalytic activity towards aromatic substrates and, in general, a broader substrate acceptance. While its performance with aliphatic alcohols was moderate (17&#x02013;62% yield), it consistently outperformed <italic toggle="yes">Pp</italic>-ADH on aromatic and alkyl-aromatic substrates, achieving yields of up to 96% (4h). Notably, in contrast to <italic toggle="yes">Pp</italic>-ADH, <italic toggle="yes">Aa</italic>-ADH retained activity on more sterically demanding bicyclic substrates (1v&#x02013;z), producing the corresponding products with yields of up to 31%. Interestingly, for the naphthalene derivative substrates (1v and 1w), the position of the substituent influenced the catalytic activity of the enzyme which afforded 4v in 31% yield, while 4w was obtained in a much lower yield of 8%.</p><p>A particularly intriguing aspect of the <italic toggle="yes">Aa</italic>-ADH substrate scope was its different catalytic activity toward structurally related alcohols. Despite exhibiting high activity toward benzyl alcohol (1h), achieving a 96% yield of the corresponding carboxylic acid (4h), and efficiently oxidizing the bulkier substrates 3-phenyl-1-propanol (1s) and 4-phenyl-1-butanol (1t) with good yields (60% and 65%, respectively), its activity toward 2-phenylethanol (1r) was significantly lower, leading to only 15% yield. The reaction was also tested on the bio-derived substrate hydroxymethylfurfural (1aa), affording product 4aa with an 18% yield. Interestingly, the aldehyde moiety is oxidized more rapidly than the alcohol moiety. Moreover, once the carboxylic acid is formed, the alcohol moiety remains untouched, preventing the formation of dicarboxylic acids.</p><p>Finally, we performed two scale-up reactions using 1b and 1h as substrates (500 mg, each) with <italic toggle="yes">Pp</italic>-ADH and <italic toggle="yes">Aa</italic>-ADH as biocatalysts, respectively. The yields obtained in the scale-up reactions&#x02014;86% and 95%, respectively&#x02014;were consistent with the conversions at analytical scale&#x02014;98% and 96%, respectively&#x02014;demonstrating the scalability of the process. The calculated TONs for the scale-up reactions were 366 and 275, respectively. Our approach achieved a space&#x02013;time yield (STY) of 0.135 g L<sup>&#x02212;1</sup> h<sup>&#x02212;1</sup>, which was three to five times higher than other methods reported in the literature for the same biotransformation (see SI, section 8.4).</p><p>To rationalize our findings, we conducted molecular docking studies using the crystal structure of <italic toggle="yes">Aa</italic>-ADH with NAD<sup>+</sup> (PDB 2EWM) as the receptor and substrates 1h, 1t, and 1r (Fig. S12). As the oxidation reaction proceeds through an aldehyde intermediate, which is present in equilibrium with the reactive geminal diol (aldehyde hydrate form), we also performed docking studies using the geminal diols 3h, 3t, and 3r (<xref rid="fig3" ref-type="fig">Fig. 3</xref>). These species are widely accepted as mechanistic intermediates, formed by nucleophilic attack of water on the carbon atom of the aldehyde moiety, a step necessary for the subsequent oxidation to carboxylic acid.<sup><xref rid="cit32" ref-type="bibr">32,36,57</xref></sup> Notably, this mechanism is also supported by our recent publication, in which the same ADHs were used for the synthesis of amides, thioacids and thioesters <italic toggle="yes">via</italic> hemiaminal or hemithioacetal intermediates, employing amines, hydrogen sulfide, and thiols as nucleophiles.<sup><xref rid="cit58" ref-type="bibr">58</xref></sup></p><fig position="float" id="fig3"><label>Fig. 3</label><caption><title>Binding poses of geminal diols as reaction intermediates in the active site of <italic toggle="yes">Aa</italic>-ADH (PDB 2EWM) identified by molecular docking: (a) phenylmethanediol (3h) with binding energy of 4.3 kcal mol<sup>&#x02212;1</sup> and a near-attack angle of 137&#x000b0;; (b) 4-phenylbutane-1,1-diol (3t) with binding energy of 4.7 kcal mol<sup>&#x02212;1</sup> and a near-attack angle of 93.5&#x000b0;; and (c and d) 2-phenylethane-1,1-diol (3r) with binding energies of 5.1 kcal mol<sup>&#x02212;1</sup> and a near-attack angle of 59.7&#x000b0; (c), as well as 4.9 kcal mol<sup>&#x02212;1</sup> and a near-attack angle of 68.6&#x000b0; (d). The NAD coenzyme in its oxidized form (NAD<sup>+</sup>) is shown in orange, while the substrates are depicted in light blue. Tyrosine 93 (Y93) is highlighted with an arrow due to the steric constraints it imposes on substrate binding. In each binding pose, the dashed blue line indicates the distance between the accepting carbon atom of NAD<sup>+</sup> and the departing hydrogen atom of the geminal diol intermediate. Docking was performed with YASARA structure; UCSF Chimera software was used for visualization.</title></caption><graphic xlink:href="d5cy01223f-f3" position="float"/></fig><p>We specifically analyzed the hydride-transfer distance between the C4 atom of the nicotinamide ring of NAD<sup>+</sup> and the hydrogen atom attached to the substrate's alcohol-bearing carbon (indicated by the dashed blue line in <xref rid="fig3" ref-type="fig">Fig. 3</xref> and Fig. S12), as well as the corresponding donor&#x02013;hydride&#x02013;acceptor angle (C&#x003b1;<sub>substrate</sub>&#x02013;H<sub>substrate</sub>&#x02013;C4<sub>NAD</sub>; Table S2). These two geometric parameters define the near-attack conformation (NAC) that governs productive catalysis. In alcohol dehydrogenases, optimal NAC geometries typically feature distances of 3.0&#x02013;3.5 &#x000c5; and angles of 105&#x02013;115&#x000b0;, which ensure efficient overlap of molecular orbitals.<sup><xref rid="cit59" ref-type="bibr">59</xref></sup></p><p>Both 3h and 3t were docked in productive binding poses with catalytically favorable orientations at distances of 2.7 &#x000c5; and 3.4 &#x000c5;, respectively. In contrast, 3r was found to dock in two binding poses with distances of 5.6 &#x000c5; and 6.3 &#x000c5;, correlating with the poor experimental conversion observed for the oxidation of 2-phenylethanol. We also performed docking of the corresponding alcohol substrates (1h, 1t, 1r, Fig. S12), which showed a similar trend, although the distance for 1h was higher than for 1t. (3.6 &#x000c5; <italic toggle="yes">vs.</italic> 2.5 &#x000c5;). However, the docking of the geminal diol intermediates provided a more mechanistically meaningful insight into the substrate's reactivity. Collectively, the docking studies confirm that high conversion in the oxidation of alcohols to carboxylic acids is achieved for substrates capable of adopting a favorable orientation in which the hydride donor is within an optimal distance from the acceptor carbon of the cofactor. This analysis offers a structural explanation for the reduced catalytic activity of <italic toggle="yes">Aa</italic>-ADH toward 2-phenylethanol (1r).</p><p>Notably, alcohols 1h and 1r as well as the corresponding diol intermediates 3h and 3r, were able to adopt multiple binding poses within the active site, indicating a degree of flexibility in substrate accommodation. In particular, 3h showed an alternative binding orientation, with a slightly longer distance of 3.7 &#x000c5;, yet still within a tolerable range for effective hydride transfer (see Fig. S13). In contrast, the bulkier substrate 1t and its corresponding diol 3t were consistently observed in a single binding orientation. This restriction is most likely due to steric hindrance imposed by residue Y93, which constrains the available conformational space. Consequently, 1t or 3t can only bind in a fixed geometry that avoids steric clashes with Y93. While this enforced orientation still allows for productive binding, the lack of conformational freedom may limit catalytic efficiency compared to the smaller substrate 1h, which can sample multiple favorable poses.</p><p>In addition to the hydride-transfer distance, analysis of the donor&#x02013;hydride&#x02013;acceptor angles further supports these trends (Table S2). For 3h, despite a wider angle (137&#x000b0;), the short transfer distance enables efficient orbital overlap, consistent with its high conversion. 3t, with a near-optimal angle (94&#x000b0;), shows moderate activity, whereas 3r, characterized by both an elongated distance (&#x0003e;5.5 &#x000c5;) and a severely distorted angle (&#x0223c;60&#x000b0;), adopts a non-productive orientation. These geometric differences highlight that both the distance and the NAC angle jointly determine catalytic efficiency, explaining the poor catalytic activity of <italic toggle="yes">Aa</italic>-ADH toward 2-phenylethanol (1r).</p><p>Finally, to evaluate the sustainability of our methodology from a green chemistry perspective, we compared the energy consumption required for NAD<sup>+</sup> recycling using NOx cell-free extracts (CFEs) <italic toggle="yes">versus</italic> acetone (SI, section 8). The energy demand was normalized for the quantitative oxidation of 1 mmol of alcohol substrate in our biotransformation. Considering the energy required for <italic toggle="yes">E. coli</italic> cell growth, cell disruption by sonication, and CFE lyophilization, the NAD<sup>+</sup> recycling system <italic toggle="yes">via</italic> NOx CFE requires approximately 30 kJ per mmol of alcohol oxidized. Accounting for the energy required for acetone production <italic toggle="yes">via</italic> the cumene process and subsequent distillation, as well as its recycling through fractionation from isopropanol and extraction solvent at the end of the biotransformation, the NAD<sup>+</sup> recycling system <italic toggle="yes">via</italic> acetone requires 5.6 kJ per mmol of alcohol oxidized. Therefore, NAD<sup>+</sup> recycling using NOx CFE requires more than five times the energy of recycling using acetone. This comparison demonstrates the better efficiency of employing acetone as an oxidizing agent, offering a low-energy alternative to enzymatic NAD<sup>+</sup> recycling. By eliminating the need for coupled-enzyme regeneration systems, this strategy better aligns with green chemistry principles and enhances the practicality of biocatalytic carboxylic acid synthesis using alcohol dehydrogenases.</p></sec><sec><title>Conclusions</title><p>In this study, we developed a single-enzyme redox-neutral biocatalytic system for the oxidation of primary alcohols to carboxylic acids by harnessing the dual functionality of alcohol dehydrogenases (ADHs). By coupling alcohol and aldehyde oxidation with <italic toggle="yes">in situ</italic> NAD<sup>+</sup> regeneration <italic toggle="yes">via</italic> acetone reduction, we eliminated the need for additional oxidases, significantly simplifying the reaction setup while enhancing the process's sustainability. Screening of a panel of ADHs identified two enzymes, <italic toggle="yes">Pp</italic>-ADH and <italic toggle="yes">Aa</italic>-ADH, with strong promiscuous aldehyde oxidation activity, each exhibiting distinct substrate preferences. <italic toggle="yes">Pp</italic>-ADH demonstrated superior activity with linear aliphatic alcohols, while <italic toggle="yes">Aa</italic>-ADH showed broader substrate acceptance, particularly for aromatic and alkyl-aromatic alcohols. Our findings also demonstrated the practical applicability of the process, as the use of cell-free extracts (CFEs) maintained the high conversion rates observed with purified enzymes. Moreover, the broad substrate scope, with 27 alcohols tested, confirmed the versatility of the biotransformation. Importantly, this system requires minimal workup and does not require additional purification steps, which could simplify downstream processing and reduce costs. Collectively, these features of our biocatalytic system highlight the feasibility of translating it to larger-scale applications.</p><p>From a more fundamental perspective, molecular docking studies provided insights into the substrate binding preferences of <italic toggle="yes">Aa</italic>-ADH, allowing us to rationalize its different catalytic activity with aromatic alcohols and suggesting potential directions for enhancing catalytic activities and broadening substrate scope <italic toggle="yes">via</italic> protein engineering.</p><p>Looking ahead, process intensification could enable higher efficiencies and productivities. Immobilization of the ADHs could enhance enzyme stability, allow for reuse, and improve operational robustness. Likewise, implementing the system in fed-batch or continuous-flow reactors could lead to higher space&#x02013;time yields and improved cofactor turnover, ultimately enabling scalable and economically attractive biotransformations. In conclusion, this study presents a scalable, efficient, and environmentally friendly approach for the selective oxidation of alcohols to carboxylic acids, offering a competitive alternative to chemical oxidation methods.</p></sec><sec><title>Experimental</title><sec><title>General</title><p>Materials and methods are reported in the SI, section S2. The SI also includes a list of abbreviations (section S1); materials and methods (section S2); procedures for enzyme expression and purification (section S3); details on the optimization of reaction conditions (section S4); procedures for carboxylic acid derivatization and investigation of the substrate scope (sections S5 and S6); the procedure for docking studies (section S7); greenness evaluations (section S8); and NMR spectra (section S9).</p></sec><sec><title>Optimized procedure for the single-enzyme ADH-catalyzed oxidation of alcohols to carboxylic acids at 2.5 mL scale</title><p>In a 5 mL Eppendorf tube, NAD<sup>+</sup> (0.5 mM) and ADH (10 mg, lyophilized cell lysate) were added to a bicarbonate buffer solution (50 mM, pH 8) to a final volume of 2.5 mL. Acetone (10 eq.) was added for NAD<sup>+</sup> cofactor recycling. The alcohol substrate was added last from a 1 M stock solution in DMSO, resulting in a final substrate concentration of 20 mM. The reaction mixture was incubated at 30 &#x000b0;C and agitated at 170 rpm on an orbital shaker for 24 hours. After incubation, the aqueous phase was basified and extracted with EtOAc (3 &#x000d7; 1 mL) to remove unreacted starting material and any possible aldehyde by-product. The aqueous phase was then acidified to pH 2 using 2 M HCl and extracted again with EtOAc (3 &#x000d7; 1.5 mL). The combined organic layers were dried over anhydrous MgSO<sub>4</sub> and analyzed by <sup>1</sup>H NMR using 1,4-dioxane as an internal standard to determine the yield.</p></sec><sec><title>Preparative-scale single-enzyme ADH-catalyzed oxidation of alcohols to carboxylic acids</title><p>In an Erlenmeyer flask (500 mL), NAD<sup>+</sup> (0.5 mM), ADH (10 mg mL<sup>&#x02212;1</sup> cell-free extract), and acetone (200 mM) were added to a bicarbonate buffer solution (50 mM, pH 8) to a final volume of 245 mL or 230 mL for scale-up reactions with substrates 1b and 1h, respectively. The substrate (500 mg, 20 mM) was added from a DMSO stock solution, resulting in a final DMSO concentration of 1% (v/v) in the reaction mixture. The reaction was incubated at 30 &#x000b0;C and agitated at 170 rpm for 24 h on an orbital shaker. Upon completion, the reaction mixture was basified with 2 M NaOH and extracted with ethyl acetate (3 &#x000d7; 100 mL). The aqueous phase was then acidified to pH 2 with 4 M HCl and extracted again with ethyl acetate (3 &#x000d7; 100 mL). The combined organic layers were dried over anhydrous MgSO<sub>4</sub>, concentrated under reduced pressure, and analyzed by <sup>1</sup>H NMR. The carboxylic acid products 4b and 4h were obtained in chemically pure form with isolated yields of 86% and 95%, respectively.</p></sec></sec><sec><title>Author contributions</title><p>F. G. M. and M. D. conceived the project. M. D. and Z. W. performed the wet lab experiments and analyzed the data. V. T. performed the computational studies. F. G. M. acquired the funding and supervised project. The manuscript was written through contribution of all the authors and final version was approved by all the authors.</p></sec><sec sec-type="COI-statement"><title>Conflicts of interest</title><p>The authors declare to have no competing interests, or other interests that might be perceived to influence the results and/or discussion reported in this article.</p></sec><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material id="CY-016-D5CY01223F-s001" position="float" content-type="local-data"><label>CY-016-D5CY01223F-s001</label><media xlink:href="CY-016-D5CY01223F-s001.pdf" id="d67e770" position="anchor"/></supplementary-material></sec></body><back><ack><p>F. G. M. and Z. W. thank the Dutch Research Council (NWO) for an NWO XS grant (No: OCENW.XS24.3.183). F. G. M. thanks the EU Horizon Europe Marie Sk&#x00142;odowska-Curie Actions (MSCA) for the YcascadE (No: 101153173) and SuBStrAte (No: 101208425) grants. V. T. thanks the Dutch Research Council (NWO) for Veni grant VI.Veni.232.268.</p></ack><sec sec-type="data-availability"><title>Data availability</title><p>Supplementary information is available. See DOI: <uri xlink:href="https://doi.org/10.1039/d5cy01223f">https://doi.org/10.1039/d5cy01223f</uri>.</p></sec><ref-list><title>Notes and references</title><ref id="cit1"><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>S&#x000e1;enz-Galindo</surname><given-names>A.</given-names></name>
+</person-group>, <person-group person-group-type="author"><name><surname>L&#x000f3;pez-L&#x000f3;pez</surname><given-names>L.</given-names></name></person-group>, <person-group person-group-type="author"><name><surname>Fabiola</surname><given-names>N.</given-names></name></person-group>, <person-group person-group-type="author"><name><surname>Casta&#x000f1;eda-Facio</surname><given-names>A.</given-names></name></person-group>, <person-group person-group-type="author"><name><surname>R&#x000e1;mirez-Mendoza</surname><given-names>L.</given-names></name></person-group>, <person-group person-group-type="author"><name><surname>C&#x000f3;rdova-Cisneros</surname><given-names>K.</given-names></name></person-group>, <person-group person-group-type="author"><name><surname>de Loera-Carrera</surname><given-names>D.</given-names></name></person-group>, <person-group person-group-type="author"><name><surname>Badea</surname><given-names>G.</given-names></name></person-group> and <person-group person-group-type="author"><name><surname>Radu</surname><given-names>G.</given-names></name></person-group>, <source>Carboxylic acid: Key role in life sciences</source>, <publisher-name>IntechOpen</publisher-name>, <year>2018</year></mixed-citation></ref><ref id="cit2"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yu</surname><given-names>R. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Van Scott</surname><given-names>E. J.</given-names></name>
+</person-group><source>J. Cosmet. Dermatol.</source><year>2004</year><volume>3</volume><fpage>76</fpage><lpage>87</lpage><pub-id pub-id-type="doi">10.1111/j.1473-2130.2004.00059.x</pub-id><pub-id pub-id-type="pmid">17147560</pub-id>
+</element-citation></ref><ref id="cit3"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhou</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xiong</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zou</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhong</surname><given-names>J.</given-names></name>
+</person-group><source>Food Chem.</source><year>2016</year><volume>199</volume><fpage>439</fpage><lpage>446</lpage><pub-id pub-id-type="doi">10.1016/j.foodchem.2015.12.034</pub-id><pub-id pub-id-type="pmid">26775993</pub-id>
+</element-citation></ref><ref id="cit4"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sharma</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Banerjee</surname><given-names>S.</given-names></name>
+</person-group><source>Curr. Org. Chem.</source><year>2025</year><volume>29</volume><fpage>759</fpage><lpage>793</lpage><pub-id pub-id-type="doi">10.2174/0113852728336586240910065821</pub-id></element-citation></ref><ref id="cit5"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Goossen</surname><given-names>L. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Rodriguez</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Goossen</surname><given-names>K.</given-names></name>
+</person-group><source>Angew. Chem., Int. Ed.</source><year>2008</year><volume>47</volume><fpage>3100</fpage><lpage>3120</lpage><pub-id pub-id-type="doi">10.1002/anie.200704782</pub-id><pub-id pub-id-type="pmid">18357604</pub-id>
+</element-citation></ref><ref id="cit6"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Font</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Quibell</surname><given-names>J. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Perry</surname><given-names>G. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Larrosa</surname><given-names>I.</given-names></name>
+</person-group><source>Chem. Commun.</source><year>2017</year><volume>53</volume><fpage>5584</fpage><lpage>5597</lpage><pub-id pub-id-type="doi">10.1039/C7CC01755C</pub-id><pub-id pub-id-type="pmid">28492623</pub-id>
+</element-citation></ref><ref id="cit7"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tseliou</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kqiku</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Berger</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Schiel</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhou</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Poelarends</surname><given-names>G. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Melchiorre</surname><given-names>P.</given-names></name>
+</person-group><source>Nature</source><year>2024</year><volume>634</volume><fpage>848</fpage><lpage>854</lpage><pub-id pub-id-type="doi">10.1038/s41586-024-08004-9</pub-id><pub-id pub-id-type="pmid">39255850</pub-id>
+</element-citation></ref><ref id="cit8"><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>Tojo</surname><given-names>G.</given-names></name>
+</person-group> and <person-group person-group-type="author"><name><surname>Fern&#x000e1;ndez</surname><given-names>M.</given-names></name></person-group>, <source>Oxidation of primary alcohols to carboxylic acids: A Guide to Current Common Practice</source>, <publisher-name>Springer Science+Business Media, LLC</publisher-name>, <publisher-loc>New York, NY 10013, USA</publisher-loc>, <year>2007</year></mixed-citation></ref><ref id="cit9"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sedelmeier</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ley</surname><given-names>S. V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Baxendale</surname><given-names>I. R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Baumann</surname><given-names>M.</given-names></name>
+</person-group><source>Org. Lett.</source><year>2010</year><volume>12</volume><fpage>3618</fpage><lpage>3621</lpage><pub-id pub-id-type="doi">10.1021/ol101345z</pub-id><pub-id pub-id-type="pmid">20704404</pub-id>
+</element-citation></ref><ref id="cit10"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhao</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Song</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Desmond</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tschaen</surname><given-names>D. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Grabowski</surname><given-names>E. J. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Reider</surname><given-names>P. J.</given-names></name>
+</person-group><source>Tetrahedron Lett.</source><year>1998</year><volume>39</volume><fpage>5323</fpage><lpage>5326</lpage><pub-id pub-id-type="doi">10.1016/S0040-4039(98)00987-3</pub-id></element-citation></ref><ref id="cit11"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hunsen</surname><given-names>M.</given-names></name>
+</person-group><source>Synthesis</source><year>2005</year><volume>2005</volume><fpage>2487</fpage><lpage>2490</lpage><pub-id pub-id-type="doi">10.1055/s-2005-872085</pub-id></element-citation></ref><ref id="cit12"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Webster</surname><given-names>F. X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Rivas-Enterrios</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Silverstein</surname><given-names>R. M.</given-names></name>
+</person-group><source>J. Org. Chem.</source><year>1987</year><volume>52</volume><fpage>689</fpage><lpage>691</lpage><pub-id pub-id-type="doi">10.1021/jo00380a040</pub-id></element-citation></ref><ref id="cit13"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Jiang</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ma</surname><given-names>S.</given-names></name>
+</person-group><source>J. Am. Chem. Soc.</source><year>2016</year><volume>138</volume><fpage>8344</fpage><lpage>8347</lpage><pub-id pub-id-type="doi">10.1021/jacs.6b03948</pub-id><pub-id pub-id-type="pmid">27304226</pub-id>
+</element-citation></ref><ref id="cit14"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Larkin</surname><given-names>D. R.</given-names></name>
+</person-group><source>J. Org. Chem.</source><year>1990</year><volume>55</volume><fpage>1563</fpage><lpage>1568</lpage><pub-id pub-id-type="doi">10.1021/jo00292a035</pub-id></element-citation></ref><ref id="cit15"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>K.-J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fu</surname><given-names>Y.-L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xie</surname><given-names>L.-Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wu</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>He</surname><given-names>W.-B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Peng</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Bao</surname><given-names>W.-H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cao</surname><given-names>Z.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xu</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>He</surname><given-names>W.-M.</given-names></name>
+</person-group><source>ACS Sustainable Chem. Eng.</source><year>2018</year><volume>6</volume><fpage>4916</fpage><lpage>4921</lpage><pub-id pub-id-type="doi">10.1021/acssuschemeng.7b04400</pub-id></element-citation></ref><ref id="cit16"><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>Vilim</surname><given-names>J.</given-names></name>
+</person-group>, <person-group person-group-type="author"><name><surname>Knaus</surname><given-names>T.</given-names></name></person-group> and <person-group person-group-type="author"><name><surname>Mutti</surname><given-names>F. G.</given-names></name></person-group>, <source>Bio-catalyzed Aerobic Oxidation Reactions in Catalytic Aerobic Oxidations</source>, ed. <person-group person-group-type="editor"><string-name>E. Mej&#x000ed;a</string-name></person-group>, <publisher-name>The Royal Society of Chemistry</publisher-name>, <year>2020</year>, <volume>vol. 39</volume>, pp. 131&#x02013;180</mixed-citation></ref><ref id="cit17"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dijkman</surname><given-names>W. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Binda</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fraaije</surname><given-names>M. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mattevi</surname><given-names>A.</given-names></name>
+</person-group><source>ACS Catal.</source><year>2015</year><volume>5</volume><fpage>1833</fpage><lpage>1839</lpage><pub-id pub-id-type="doi">10.1021/acscatal.5b00031</pub-id></element-citation></ref><ref id="cit18"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Martin</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Trajkovic</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fraaije</surname><given-names>M. W.</given-names></name>
+</person-group><source>Angew. Chem., Int. Ed.</source><year>2020</year><volume>59</volume><fpage>4869</fpage><lpage>4872</lpage><pub-id pub-id-type="doi">10.1002/anie.201914877</pub-id><pub-id pub-id-type="pmid">31912947</pub-id>
+</element-citation></ref><ref id="cit19"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>X.-Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zong</surname><given-names>M.-H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>N.</given-names></name>
+</person-group><source>Green Chem.</source><year>2017</year><volume>19</volume><fpage>4544</fpage><lpage>4551</lpage><pub-id pub-id-type="doi">10.1039/C7GC01751K</pub-id></element-citation></ref><ref id="cit20"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Knaus</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tseliou</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Humphreys</surname><given-names>L. D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Scrutton</surname><given-names>N. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mutti</surname><given-names>F. G.</given-names></name>
+</person-group><source>Green Chem.</source><year>2018</year><volume>20</volume><fpage>3931</fpage><lpage>3943</lpage><pub-id pub-id-type="doi">10.1039/C8GC01381K</pub-id><pub-id pub-id-type="pmid">33568964</pub-id>
+</element-citation></ref><ref id="cit21"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhou</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Gu</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ni</surname><given-names>Y.</given-names></name>
+</person-group><source>Org. Biomol. Chem.</source><year>2024</year><volume>22</volume><fpage>1269</fpage><lpage>1278</lpage><pub-id pub-id-type="doi">10.1039/D3OB01937C</pub-id><pub-id pub-id-type="pmid">38258380</pub-id>
+</element-citation></ref><ref id="cit22"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Adachi</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Miyata</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Makino</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tanaka</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Namba</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kano</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Sowa</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kitazumi</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shirai</surname><given-names>O.</given-names></name>
+</person-group><source>ACS Catal.</source><year>2023</year><volume>13</volume><fpage>7955</fpage><lpage>7965</lpage><pub-id pub-id-type="doi">10.1021/acscatal.3c01962</pub-id></element-citation></ref><ref id="cit23"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chang</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Xu</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ge</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yun</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>He</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Pan</surname><given-names>X.</given-names></name>
+</person-group><source>Mol. Catal.</source><year>2023</year><volume>538</volume><fpage>112966</fpage></element-citation></ref><ref id="cit24"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nakahara</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Sriwong</surname><given-names>K. T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hawari</surname><given-names>M. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tanaka</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Matsuda</surname><given-names>T.</given-names></name>
+</person-group><article-title>React</article-title><source>Chem. Eng.</source><year>2023</year><volume>8</volume><fpage>543</fpage><lpage>547</lpage></element-citation></ref><ref id="cit25"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Si</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kim</surname><given-names>H. Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Oh</surname><given-names>K.</given-names></name>
+</person-group><source>Chem. &#x02013; Eur. J.</source><year>2021</year><volume>27</volume><fpage>18150</fpage><lpage>18155</lpage><pub-id pub-id-type="doi">10.1002/chem.202103450</pub-id><pub-id pub-id-type="pmid">34755925</pub-id>
+</element-citation></ref><ref id="cit26"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hoshino</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yamabe</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hawari</surname><given-names>M. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tamura</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kanamaru</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yoshida</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Koesoema</surname><given-names>A. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Matsuda</surname><given-names>T.</given-names></name>
+</person-group><source>Tetrahedron</source><year>2020</year><volume>76</volume><fpage>131387</fpage><pub-id pub-id-type="doi">10.1016/j.tet.2020.131387</pub-id></element-citation></ref><ref id="cit27"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>X. Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>N. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Guo</surname><given-names>Z. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zong</surname><given-names>M. H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>N.</given-names></name>
+</person-group><source>ChemCatChem</source><year>2020</year><volume>12</volume><fpage>3257</fpage><lpage>3264</lpage><pub-id pub-id-type="doi">10.1002/cctc.202000259</pub-id></element-citation></ref><ref id="cit28"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cheng</surname><given-names>A.-D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shi</surname><given-names>S.-S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zong</surname><given-names>M.-H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>N.</given-names></name>
+</person-group><source>ACS Sustainable Chem. Eng.</source><year>2019</year><volume>8</volume><fpage>1437</fpage><lpage>1444</lpage><pub-id pub-id-type="doi">10.1021/acssuschemeng.9b05621</pub-id></element-citation></ref><ref id="cit29"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Han</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Geng</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Sha</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>You</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shi</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Wu</surname><given-names>X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>W.</given-names></name>
+</person-group><source>Adv. Synth. Catal.</source><year>2025</year><volume>367</volume><fpage>e202500027</fpage></element-citation></ref><ref id="cit30"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Konst</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Merkens</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kara</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kochius</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Vogel</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zuhse</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Holtmann</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Arends</surname><given-names>I. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hollmann</surname><given-names>F.</given-names></name>
+</person-group><source>Angew. Chem., Int. Ed.</source><year>2012</year><volume>51</volume><fpage>9914</fpage><lpage>9917</lpage><pub-id pub-id-type="doi">10.1002/anie.201203219</pub-id><pub-id pub-id-type="pmid">22936647</pub-id>
+</element-citation></ref><ref id="cit31"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wuensch</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lechner</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Glueck</surname><given-names>S. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zangger</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hall</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Faber</surname><given-names>K.</given-names></name>
+</person-group><source>ChemCatChem</source><year>2013</year><volume>5</volume><fpage>1744</fpage><lpage>1748</lpage><pub-id pub-id-type="doi">10.1002/cctc.201300028</pub-id></element-citation></ref><ref id="cit32"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tassano</surname><given-names>E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Faber</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hall</surname><given-names>M.</given-names></name>
+</person-group><source>Adv. Synth. Catal.</source><year>2018</year><volume>360</volume><fpage>2742</fpage><lpage>2751</lpage><pub-id pub-id-type="doi">10.1002/adsc.201800541</pub-id><pub-id pub-id-type="pmid">30147639</pub-id>
+</element-citation></ref><ref id="cit33"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>McKenna</surname><given-names>S. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Leimk&#x000fc;hler</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Herter</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Turner</surname><given-names>N. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Carnell</surname><given-names>A. J.</given-names></name>
+</person-group><source>Green Chem.</source><year>2015</year><volume>17</volume><fpage>3271</fpage><lpage>3275</lpage><pub-id pub-id-type="doi">10.1039/C5GC00707K</pub-id></element-citation></ref><ref id="cit34"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Arends</surname><given-names>I. W. C. E.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>Y.-X.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Ausan</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Sheldon</surname><given-names>R. A.</given-names></name>
+</person-group><source>Tetrahedron</source><year>2006</year><volume>62</volume><fpage>6659</fpage><lpage>6665</lpage><pub-id pub-id-type="doi">10.1016/j.tet.2005.12.076</pub-id></element-citation></ref><ref id="cit35"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bechi</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Herter</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>McKenna</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Riley</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Leimk&#x000fc;hler</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Turner</surname><given-names>N. J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Carnell</surname><given-names>A. J.</given-names></name>
+</person-group><source>Green Chem.</source><year>2014</year><volume>16</volume><fpage>4524</fpage><lpage>4529</lpage><pub-id pub-id-type="doi">10.1039/C4GC01321B</pub-id></element-citation></ref><ref id="cit36"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Contente</surname><given-names>M. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fiore</surname><given-names>N.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cannazza</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Roura Padrosa</surname><given-names>D.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Molinari</surname><given-names>F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Gourlay</surname><given-names>L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Paradisi</surname><given-names>F.</given-names></name>
+</person-group><source>ChemCatChem</source><year>2020</year><volume>12</volume><fpage>5679</fpage><lpage>5685</lpage><pub-id pub-id-type="doi">10.1002/cctc.202001112</pub-id></element-citation></ref><ref id="cit37"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Birmingham</surname><given-names>W. R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Turner</surname><given-names>N. J.</given-names></name>
+</person-group><source>ACS Catal.</source><year>2018</year><volume>8</volume><fpage>4025</fpage><lpage>4032</lpage><pub-id pub-id-type="doi">10.1021/acscatal.8b00043</pub-id></element-citation></ref><ref id="cit38"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pickl</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Winkler</surname><given-names>C. K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Glueck</surname><given-names>S. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Fraaije</surname><given-names>M. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Faber</surname><given-names>K.</given-names></name>
+</person-group><source>Molecules</source><year>2017</year><volume>22</volume><fpage>2205</fpage><pub-id pub-id-type="doi">10.3390/molecules22122205</pub-id><pub-id pub-id-type="pmid">29231859</pub-id>
+</element-citation></ref><ref id="cit39"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Higuchi</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Shimada</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Yamamoto</surname><given-names>Y.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hayashi</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Koga</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kamio</surname><given-names>Y.</given-names></name>
+</person-group><source>J. Gen. Microbiol.</source><year>1993</year><volume>139</volume><fpage>2343</fpage><lpage>2351</lpage><pub-id pub-id-type="doi">10.1099/00221287-139-10-2343</pub-id><pub-id pub-id-type="pmid">8254304</pub-id>
+</element-citation></ref><ref id="cit40"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Duran</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Pogranyi</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cornish</surname><given-names>K. A. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cartwright</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Osuna</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Unsworth</surname><given-names>W. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Grogan</surname><given-names>G.</given-names></name>
+</person-group><source>Angew. Chem., Int. Ed.</source><year>2025</year><volume>64</volume><fpage>e202422241</fpage><pub-id pub-id-type="doi">10.1002/anie.202422241</pub-id><pub-id pub-id-type="pmid">39655807</pub-id>
+</element-citation></ref><ref id="cit41"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pogr&#x000e1;nyi</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mielke</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Cartwright</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Unsworth</surname><given-names>W. P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Grogan</surname><given-names>G.</given-names></name>
+</person-group><source>ChemCatChem</source><year>2024</year><volume>16</volume><fpage>e202400702</fpage><pub-id pub-id-type="doi">10.1002/cctc.202400702</pub-id></element-citation></ref><ref id="cit42"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Olmedo</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Aranda</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Del Rio</surname><given-names>J. C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kiebist</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Scheibner</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Martinez</surname><given-names>A. T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Gutierrez</surname><given-names>A.</given-names></name>
+</person-group><source>Angew. Chem., Int. Ed.</source><year>2016</year><volume>55</volume><fpage>12248</fpage><lpage>12251</lpage><pub-id pub-id-type="doi">10.1002/anie.201605430</pub-id><pub-id pub-id-type="pmid">27573441</pub-id>
+</element-citation></ref><ref id="cit43"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chadha</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Padhi</surname><given-names>S. K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Stella</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Venkataraman</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Saravanan</surname><given-names>T.</given-names></name>
+</person-group><source>Org. Biomol. Chem.</source><year>2024</year><volume>22</volume><fpage>228</fpage><lpage>251</lpage><pub-id pub-id-type="pmid">38050738</pub-id>
+</element-citation></ref><ref id="cit44"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Milagre</surname><given-names>C. D. F.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Milagre</surname><given-names>H. M. S.</given-names></name>
+</person-group><source>Curr. Opin. Green Sustainable Chem.</source><year>2022</year><volume>38</volume><fpage>100694</fpage></element-citation></ref><ref id="cit45"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Shanbhag</surname><given-names>A. P.</given-names></name>
+</person-group><source>ChemBioChem</source><year>2023</year><volume>24</volume><fpage>e202200687</fpage><pub-id pub-id-type="doi">10.1002/cbic.202200687</pub-id><pub-id pub-id-type="pmid">36640298</pub-id>
+</element-citation></ref><ref id="cit46"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Damian</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mutti</surname><given-names>F. G.</given-names></name>
+</person-group><source>Eur. J. Org. Chem.</source><year>2023</year><volume>26</volume><fpage>e202300734</fpage><pub-id pub-id-type="doi">10.1002/ejoc.202300734</pub-id></element-citation></ref><ref id="cit47"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yamamoto</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kudoh</surname><given-names>M.</given-names></name>
+</person-group><source>Appl. Microbiol. Biotechnol.</source><year>2013</year><volume>97</volume><fpage>8087</fpage><lpage>8096</lpage><pub-id pub-id-type="doi">10.1007/s00253-012-4643-6</pub-id><pub-id pub-id-type="pmid">23274959</pub-id>
+</element-citation></ref><ref id="cit48"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lavandera</surname><given-names>I.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kern</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Schaffenberger</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Gross</surname><given-names>J.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Glieder</surname><given-names>A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>de Wildeman</surname><given-names>S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Kroutil</surname><given-names>W.</given-names></name>
+</person-group><source>ChemSusChem</source><year>2008</year><volume>1</volume><fpage>431</fpage><lpage>436</lpage><pub-id pub-id-type="doi">10.1002/cssc.200800032</pub-id><pub-id pub-id-type="pmid">18702138</pub-id>
+</element-citation></ref><ref id="cit49"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Corrado</surname><given-names>M. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Knaus</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mutti</surname><given-names>F. G.</given-names></name>
+</person-group><source>Green Chem.</source><year>2019</year><volume>21</volume><fpage>6246</fpage><lpage>6251</lpage><pub-id pub-id-type="pmid">33628112</pub-id>
+</element-citation></ref><ref id="cit50"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hoffken</surname><given-names>H. W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Duong</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Friedrich</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Breuer</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hauer</surname><given-names>B.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Reinhardt</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Rabus</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Heider</surname><given-names>J.</given-names></name>
+</person-group><source>Biochemistry</source><year>2006</year><volume>45</volume><fpage>82</fpage><lpage>93</lpage><pub-id pub-id-type="doi">10.1021/bi051596b</pub-id><pub-id pub-id-type="pmid">16388583</pub-id>
+</element-citation></ref><ref id="cit51"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Mutti</surname><given-names>F. G.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Knaus</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Scrutton</surname><given-names>N. S.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Breuer</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Turner</surname><given-names>N. J.</given-names></name>
+</person-group><source>Science</source><year>2015</year><volume>349</volume><fpage>1525</fpage><lpage>1529</lpage><pub-id pub-id-type="doi">10.1126/science.aac9283</pub-id><pub-id pub-id-type="pmid">26404833</pub-id>
+</element-citation></ref><ref id="cit52"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>B&#x000f6;hmer</surname><given-names>W.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Knaus</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mutti</surname><given-names>F. G.</given-names></name>
+</person-group><source>ChemCatChem</source><year>2018</year><volume>10</volume><fpage>731</fpage><lpage>735</lpage><pub-id pub-id-type="doi">10.1002/cctc.201701366</pub-id><pub-id pub-id-type="pmid">29515675</pub-id>
+</element-citation></ref><ref id="cit53"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Houwman</surname><given-names>J. A.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Knaus</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Costa</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mutti</surname><given-names>F. G.</given-names></name>
+</person-group><source>Green Chem.</source><year>2019</year><volume>21</volume><fpage>3846</fpage><lpage>3857</lpage><pub-id pub-id-type="doi">10.1039/C9GC01059A</pub-id><pub-id pub-id-type="pmid">33628111</pub-id>
+</element-citation></ref><ref id="cit54"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Corrado</surname><given-names>M. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Knaus</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mutti</surname><given-names>F. G.</given-names></name>
+</person-group><source>ChemBioChem</source><year>2021</year><volume>22</volume><fpage>2345</fpage><lpage>2350</lpage><pub-id pub-id-type="doi">10.1002/cbic.202100123</pub-id><pub-id pub-id-type="pmid">33880862</pub-id>
+</element-citation></ref><ref id="cit55"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Corrado</surname><given-names>M. L.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Knaus</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Schwaneberg</surname><given-names>U.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mutti</surname><given-names>F. G.</given-names></name>
+</person-group><source>Org. Process Res. Dev.</source><year>2022</year><volume>26</volume><fpage>2085</fpage><lpage>2095</lpage><pub-id pub-id-type="doi">10.1021/acs.oprd.1c00490</pub-id><pub-id pub-id-type="pmid">35873603</pub-id>
+</element-citation></ref><ref id="cit56"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cannio</surname><given-names>R.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Rossi</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Bartolucci</surname><given-names>S.</given-names></name>
+</person-group><source>Eur. J. Biochem.</source><year>1994</year><volume>222</volume><fpage>345</fpage><lpage>352</lpage><pub-id pub-id-type="doi">10.1111/j.1432-1033.1994.tb18873.x</pub-id><pub-id pub-id-type="pmid">8020473</pub-id>
+</element-citation></ref><ref id="cit57"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wuensch</surname><given-names>C.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Lechner</surname><given-names>H.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Glueck</surname><given-names>S. M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Zangger</surname><given-names>K.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Hall</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Faber</surname><given-names>K.</given-names></name>
+</person-group><source>ChemCatChem</source><year>2013</year><volume>5</volume><fpage>1744</fpage><lpage>1748</lpage></element-citation></ref><ref id="cit58"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Damian</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Tseliou</surname><given-names>V.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Peters</surname><given-names>P.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Knaus</surname><given-names>T.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Mutti</surname><given-names>F. G.</given-names></name>
+</person-group><source>Angew. Chem., Int. Ed.</source><year>2026</year><volume>65</volume><fpage>e202515469</fpage><pub-id pub-id-type="doi">10.1002/anie.202515469</pub-id><pub-id pub-id-type="pmid">41025170</pub-id>
+</element-citation></ref><ref id="cit59"><element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ruszkowski</surname><given-names>M.</given-names></name>
+</person-group><person-group person-group-type="author">
+<name><surname>Dauter</surname><given-names>Z.</given-names></name>
+</person-group><source>Sci. Rep.</source><year>2017</year><volume>7</volume><fpage>10476</fpage><pub-id pub-id-type="doi">10.1038/s41598-017-10859-0</pub-id><pub-id pub-id-type="pmid">28874718</pub-id>
+</element-citation></ref></ref-list></back></article>
