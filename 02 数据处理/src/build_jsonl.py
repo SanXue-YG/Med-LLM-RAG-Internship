@@ -9,7 +9,13 @@ from pathlib import Path
 
 from tqdm import tqdm
 
-from parse_pmc import JSONL_FIELDS, parse_pmc_xml
+from parse_pmc import (
+    JSONL_FIELDS,
+    JSONL_FIELDS_SLIM,
+    has_abstract,
+    parse_pmc_xml,
+    record_for_jsonl,
+)
 
 
 def resolve_xml_root(project_dir: str, xml_root: str | None = None) -> str:
@@ -57,45 +63,68 @@ def build_jsonl(
     *,
     limit: int | None = None,
     pmcid_filter: set[str] | None = None,
+    slim: bool = False,
+    skip_no_abstract: bool = False,
+    skipped_log_path: str | None = None,
 ) -> dict[str, int]:
     """
     扫描 xml_root 下 XML，写入 JSONL。
 
     pmcid_filter: 若提供，仅保留这些 pmcid（用于对齐既有 100 篇样本）。
+    slim: 不写 body 正文，保留 n_chars_body（全量期省空间）。
+    skip_no_abstract: 解析阶段丢弃无 abstract 记录（全量期默认开启）。
+    skipped_log_path: 若提供，将丢弃的 pmcid 追加写入该文件（每行一个 id）。
     """
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
 
-    stats = {"ok": 0, "skipped": 0, "failed": 0}
+    stats = {
+        "ok": 0,
+        "skipped": 0,
+        "failed": 0,
+        "dropped_no_abstract": 0,
+    }
     files = iter_xml_files(xml_root, limit=None if pmcid_filter else limit)
 
-    with open(output_path, "w", encoding="utf-8") as fout:
-        for xml_path in tqdm(files, desc="parse_xml"):
-            try:
-                rec = parse_pmc_xml(xml_path)
-            except Exception:
-                stats["failed"] += 1
-                continue
+    skipped_fout = None
+    if skipped_log_path:
+        os.makedirs(os.path.dirname(os.path.abspath(skipped_log_path)), exist_ok=True)
+        skipped_fout = open(skipped_log_path, "w", encoding="utf-8")
 
-            pmcid = (rec.get("pmcid") or "").strip()
-            if not pmcid:
-                stats["skipped"] += 1
-                continue
-            if pmcid_filter and pmcid not in pmcid_filter:
-                continue
+    try:
+        with open(output_path, "w", encoding="utf-8") as fout:
+            for xml_path in tqdm(files, desc="parse_xml"):
+                try:
+                    rec = parse_pmc_xml(xml_path)
+                except Exception:
+                    stats["failed"] += 1
+                    continue
 
-            fout.write(
-                json.dumps(
-                    {k: rec[k] for k in JSONL_FIELDS},
-                    ensure_ascii=False,
+                pmcid = (rec.get("pmcid") or "").strip()
+                if not pmcid:
+                    stats["skipped"] += 1
+                    continue
+                if pmcid_filter and pmcid not in pmcid_filter:
+                    continue
+
+                if skip_no_abstract and not has_abstract(rec):
+                    stats["dropped_no_abstract"] += 1
+                    if skipped_fout:
+                        skipped_fout.write(pmcid + "\n")
+                    continue
+
+                line_rec = record_for_jsonl(rec, slim=slim)
+                fout.write(
+                    json.dumps(line_rec, ensure_ascii=False) + "\n"
                 )
-                + "\n"
-            )
-            stats["ok"] += 1
+                stats["ok"] += 1
 
-            if pmcid_filter and stats["ok"] >= len(pmcid_filter):
-                break
-            if limit and not pmcid_filter and stats["ok"] >= limit:
-                break
+                if pmcid_filter and stats["ok"] >= len(pmcid_filter):
+                    break
+                if limit and not pmcid_filter and stats["ok"] >= limit:
+                    break
+    finally:
+        if skipped_fout:
+            skipped_fout.close()
 
     return stats
 
@@ -138,6 +167,21 @@ def main() -> None:
         help="从已有 jsonl 读取 pmcid 列表，仅重解析这些篇（用于对齐样本）",
     )
     parser.add_argument(
+        "--slim",
+        action="store_true",
+        help="不写 body 正文，仅保留 n_chars_body 等元数据（全量期推荐）",
+    )
+    parser.add_argument(
+        "--skip-no-abstract",
+        action="store_true",
+        help="丢弃无 abstract 的记录（全量期推荐；验证期 100 篇可不传以保持与 §3 一致）",
+    )
+    parser.add_argument(
+        "--skipped-log",
+        default=None,
+        help="无 abstract 被丢弃的 pmcid 列表输出路径（每行一个）",
+    )
+    parser.add_argument(
         "--project-dir",
         default=None,
         help="02 数据处理工程根目录（默认向上找 任务.txt）",
@@ -161,6 +205,10 @@ def main() -> None:
     if not os.path.isabs(output):
         output = os.path.join(project_dir, output)
 
+    skipped_log = args.skipped_log
+    if skipped_log and not os.path.isabs(skipped_log):
+        skipped_log = os.path.join(project_dir, skipped_log)
+
     pmcid_filter = None
     if args.pmcids_from:
         pmcid_path = args.pmcids_from
@@ -170,6 +218,9 @@ def main() -> None:
 
     print(f"XML root : {xml_root}")
     print(f"Output   : {output}")
+    print(f"Mode     : {'slim (no body text)' if args.slim else 'full (with body)'}")
+    if args.skip_no_abstract:
+        print("Filter   : skip records without abstract")
     if pmcid_filter:
         print(f"PMCIDs   : {len(pmcid_filter)} from {args.pmcids_from}")
     elif args.limit:
@@ -180,8 +231,14 @@ def main() -> None:
         output,
         limit=args.limit,
         pmcid_filter=pmcid_filter,
+        slim=args.slim,
+        skip_no_abstract=args.skip_no_abstract,
+        skipped_log_path=skipped_log,
     )
-    print(f"Done: ok={stats['ok']} skipped={stats['skipped']} failed={stats['failed']}")
+    print(
+        "Done: ok={ok} skipped={skipped} failed={failed} "
+        "dropped_no_abstract={dropped_no_abstract}".format(**stats)
+    )
 
 
 if __name__ == "__main__":

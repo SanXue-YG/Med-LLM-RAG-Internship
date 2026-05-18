@@ -12,7 +12,7 @@ from datasets import Dataset, load_dataset
 
 # --- 阶段 0：字段与口径（与 schedule.md 0.2 / 0.3 对齐）---
 
-EXPECTED_COLUMNS = [
+EXPECTED_COLUMNS_FULL = [
     "pmcid",
     "pmid",
     "title",
@@ -24,6 +24,18 @@ EXPECTED_COLUMNS = [
     "n_chars_abstract",
     "n_chars_body",
 ]
+EXPECTED_COLUMNS_SLIM = [
+    "pmcid",
+    "pmid",
+    "title",
+    "abstract",
+    "journal",
+    "pub_year",
+    "pub_date",
+    "n_chars_abstract",
+    "n_chars_body",
+]
+EXPECTED_COLUMNS = EXPECTED_COLUMNS_FULL  # 验证期默认
 
 # 任务书字段 → jsonl 列名（parse_pmc.py 已对齐）
 FIELD_MAP = {
@@ -91,13 +103,35 @@ def setup_paths(project_dir: str) -> dict[str, str]:
     }
     paths["hf_cache"] = os.path.join(paths["caches_dir"], "huggingface")
     paths["sample_jsonl"] = os.path.join(paths["data_processed"], "sample.jsonl")
+    paths["full_slim_jsonl"] = os.path.join(
+        paths["data_processed"], "oa_comm_slim.jsonl"
+    )
+    paths["pmcid_index"] = os.path.join(paths["data_processed"], "pmcid_index.jsonl")
+    paths["skipped_no_abstract"] = os.path.join(
+        paths["data_processed"], "skipped_no_abstract.txt"
+    )
 
     data_root = os.environ.get("MED_RAG_DATA_ROOT")
     if data_root:
         paths["data_root"] = data_root
-        paths["sample_jsonl"] = os.path.join(data_root, "processed", "sample.jsonl")
+        proc = os.path.join(data_root, "processed")
+        paths["sample_jsonl"] = os.environ.get(
+            "MED_RAG_JSONL",
+            os.path.join(proc, "oa_comm_slim.jsonl"),
+        )
+        if not os.path.isfile(paths["sample_jsonl"]):
+            paths["sample_jsonl"] = os.path.join(proc, "sample.jsonl")
+        paths["full_slim_jsonl"] = os.path.join(proc, "oa_comm_slim.jsonl")
+        paths["pmcid_index"] = os.path.join(proc, "pmcid_index.jsonl")
+        paths["skipped_no_abstract"] = os.path.join(
+            proc, "skipped_no_abstract.txt"
+        )
     else:
         paths["data_root"] = paths["data_dir"]
+
+    jsonl_override = os.environ.get("MED_RAG_JSONL")
+    if jsonl_override:
+        paths["sample_jsonl"] = jsonl_override
 
     for key in (
         "data_raw",
@@ -116,18 +150,30 @@ def setup_paths(project_dir: str) -> dict[str, str]:
     return paths
 
 
+def infer_jsonl_mode(columns: list[str] | set[str]) -> Literal["full", "slim"]:
+    """根据列判断 jsonl 形态：slim 无 body 列，用 n_chars_body 推断正文规模。"""
+    return "full" if "body" in columns else "slim"
+
+
 def _derive_row(row: dict[str, Any]) -> dict[str, Any]:
     title = (row.get("title") or "").strip()
     abstract = (row.get("abstract") or "").strip()
     body = (row.get("body") or "").strip()
+    n_chars_body = int(row.get("n_chars_body") or 0)
+    if body:
+        body_char_len = len(body)
+        has_body = True
+    else:
+        body_char_len = n_chars_body
+        has_body = n_chars_body > 0
     retrieval = f"{title}\n{abstract}".strip() if (title or abstract) else ""
 
     return {
         "has_abstract": bool(abstract),
-        "has_body": bool(body),
+        "has_body": has_body,
         "title_char_len": len(title),
         "abstract_char_len": len(abstract),
-        "body_char_len": len(body),
+        "body_char_len": body_char_len,
         "retrieval_text": retrieval,
         "is_short_abstract": bool(abstract)
         and len(abstract) < SHORT_ABSTRACT_CHAR_THRESHOLD,
@@ -168,8 +214,10 @@ def load_pmc_jsonl(
 def validate_schema(ds: Dataset) -> dict[str, Any]:
     """列名、主键唯一性、缺失列检查。"""
     cols = set(ds.column_names)
-    missing = [c for c in EXPECTED_COLUMNS if c not in cols]
-    extra = sorted(cols - set(EXPECTED_COLUMNS) - {
+    mode = infer_jsonl_mode(cols)
+    expected = EXPECTED_COLUMNS_FULL if mode == "full" else EXPECTED_COLUMNS_SLIM
+    missing = [c for c in expected if c not in cols]
+    extra = sorted(cols - set(expected) - {
         "has_abstract",
         "has_body",
         "title_char_len",
@@ -184,6 +232,7 @@ def validate_schema(ds: Dataset) -> dict[str, Any]:
 
     return {
         "n_rows": len(ds),
+        "jsonl_mode": mode,
         "columns": ds.column_names,
         "missing_expected": missing,
         "extra_columns": extra,
@@ -351,6 +400,9 @@ __all__ = [
     "BODY_MIN_CHAR_THRESHOLD",
     "COMPLETENESS_FIELDS",
     "EXPECTED_COLUMNS",
+    "EXPECTED_COLUMNS_FULL",
+    "EXPECTED_COLUMNS_SLIM",
+    "infer_jsonl_mode",
     "FIELD_MAP",
     "RETRIEVAL_FIELDS",
     "SHORT_ABSTRACT_CHAR_THRESHOLD",

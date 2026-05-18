@@ -4,11 +4,15 @@
 
 ## 1. 概述与数据范围
 
+- **验证期（A）**：`sample.jsonl` 含 `body` 全文，便于 notebook 本地分析；无 abstract 的 3 篇在 §3 丢弃后另有 `sample_clean.jsonl`（97 篇）。
+- **全量期（B）**：`oa_comm_slim.jsonl`（无 `body` 列，保留 `n_chars_body`）；解析阶段 `--skip-no-abstract`，不生成第二份 clean 副本；正文以 `extracted/**/*.xml` 为准，按需经 `pmcid` + `pmcid_index.jsonl` 回查。
+
 ## 2. 数据集事实
 
 - 验证样本：100 篇（`sample.jsonl`，02 `parse_pmc` 自 XML 生成）
-- 清洗后：97 篇（`sample_clean.jsonl`，丢弃 3 篇无 abstract）
-- 字段：pmcid, pmid, title, abstract, body, journal, pub_year, pub_date, n_chars_*
+- 清洗后：97 篇（`sample_clean.jsonl`，丢弃 3 篇无 abstract；**仅验证期**）
+- 验证期字段：pmcid, pmid, title, abstract, body, journal, pub_year, pub_date, n_chars_*
+- 全量期字段（计划）：同上但 **不含 body 字符串**；见 `schedule.md` 阶段 B
 - title 长度：02 parser 修复后正常（无 >500 字符异常）
 - abstract 缺失率：3%（> 任务书 1% 阈值）
 

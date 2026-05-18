@@ -91,14 +91,16 @@ pip install -r "02 数据处理/requirements.txt"
 | **`01 验证模型/ollama_models/`** | 工程内模型存储目录 | 01 | 由 `ollama pull` 写入；`.gitignore` 已忽略 |
 | **`01 验证模型/chroma_db/`** | Chroma 持久化向量库 | 01 | 运行 01 notebook **§6** 可重新生成；`.gitignore` 已忽略 |
 | **Sentence-Transformers 权重** `all-MiniLM-L6-v2` | 02 token 长度统计（512 上限参照） | 02 | 首次在 §4/§5 调用 `AutoTokenizer.from_pretrained(...)` 或 `sentence-transformers` 时从 HuggingFace 自动下载；需网络。也可预先：`python -c "from transformers import AutoTokenizer; AutoTokenizer.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')"` |
-| **PMC 全量原始包（~100GB+）** | 02 全量评估 | 02（未来） | 外接硬盘 + `build_jsonl.sh`；见 `02 数据处理/schedule.md` 阶段 B |
+| **PMC 全量原始包（~100GB+）** | 02 全量评估 | 02（未来） | 外接硬盘 + `build_full_slim.sh` / `build_pmcid_index.sh`；见 `02 数据处理/schedule.md` 阶段 B |
 
 ### 3. 已随仓库提供或可由脚本生成的数据
 
 | 数据 | 位置 | 说明 |
 |------|------|------|
 | 100 篇结构化样本 | `02 数据处理/data/processed/sample.jsonl` | 02 标准分析输入（由 `parse_pmc.py` 生成） |
-| 清洗后 97 篇 | `02 数据处理/data/processed/sample_clean.jsonl` | 丢弃无 abstract 后 |
+| 清洗后 97 篇 | `02 数据处理/data/processed/sample_clean.jsonl` | 验证期丢弃无 abstract；全量期在 parse 阶段跳过，不另存 clean 副本 |
+| 全量 slim 表（计划） | `<外接盘>/med-rag-pmc/processed/oa_comm_slim.jsonl` | 无 body 列；含 `n_chars_body` |
+| pmcid 索引（计划） | `.../processed/pmcid_index.jsonl` | 回查 XML 用 |
 | 01 验证期 XML（284 篇） | `01 验证模型/data/raw/extracted/` | 若仓库内已包含，可直接用于 `build_jsonl.sh` 重跑；若未上传则见下 |
 | 01 旧版 jsonl 备份 | `02 数据处理/data/processed/sample.jsonl.bak01` | 01 解析器生成的历史样本，仅作对比 |
 
@@ -165,7 +167,8 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store
 
 ### 02 数据处理（进行中）
 
-- 数据 pipeline：`src/parse_pmc.py`、`src/build_jsonl.py`、`src/load_pipeline.py`
+- 数据 pipeline：`src/parse_pmc.py`、`src/build_jsonl.py`、`src/pmc_index.py`、`src/load_pipeline.py`
+- 全量脚本（待外接盘）：`scripts/build_full_slim.sh`、`scripts/build_pmcid_index.sh`
 - 分析 notebook：`notebooks/med-data-EDA.ipynb`（§3 已完成）
 - 正式文档（撰写中）：`docs/RAG数据分析与设计说明.md`
 - 分析表：`outputs/tables/*.csv`
@@ -185,3 +188,11 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store
 | 2026-05-15 | 初版 readme；02 阶段完成至 schedule 阶段 3；补充 02 `requirements.txt` |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
+
+github上传(自用)：
+
+cd "/Users/sanxue/Desktop/work/实习/谷歌"
+git add -A
+git status                    # 确认改动
+git commit -m "简述本次更新（如：完成阶段4领域分析）"
+git push

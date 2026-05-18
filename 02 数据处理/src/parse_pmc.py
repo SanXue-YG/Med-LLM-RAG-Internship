@@ -8,8 +8,8 @@ from typing import Any
 
 from lxml import etree
 
-# jsonl 输出列顺序
-JSONL_FIELDS = (
+# jsonl 输出列顺序（验证期默认：含 body 全文）
+JSONL_FIELDS_FULL = (
     "pmcid",
     "pmid",
     "title",
@@ -21,6 +21,60 @@ JSONL_FIELDS = (
     "n_chars_abstract",
     "n_chars_body",
 )
+JSONL_FIELDS = JSONL_FIELDS_FULL  # 向后兼容
+
+# 全量期 slim：不写 body 正文，保留 n_chars_body 供 §1 统计
+JSONL_FIELDS_SLIM = (
+    "pmcid",
+    "pmid",
+    "title",
+    "abstract",
+    "journal",
+    "pub_year",
+    "pub_date",
+    "n_chars_abstract",
+    "n_chars_body",
+)
+
+
+def pmcid_numeric(pmcid: str) -> int:
+    """从 PMC8774754 等形式提取数字部分。"""
+    m = re.search(r"(\d+)", pmcid or "")
+    if not m:
+        raise ValueError(f"无法解析 pmcid: {pmcid!r}")
+    return int(m.group(1))
+
+
+def pmcid_bucket_dir(pmcid: str) -> str:
+    """PMC 解压目录名，如 PMC8774754 → PMC008xxxxxx。"""
+    return f"PMC{pmcid_numeric(pmcid) // 1_000_000:03d}xxxxxx"
+
+
+def normalize_pmcid(pmcid: str) -> str:
+    pmcid = (pmcid or "").strip()
+    if not pmcid:
+        return ""
+    return pmcid if pmcid.upper().startswith("PMC") else f"PMC{pmcid}"
+
+
+def resolve_pmc_xml_path(pmcid: str, xml_root: str | Path) -> Path:
+    """由 pmcid 推算 XML 路径（无需 glob）。目录规则与 NCBI oa_comm 解压一致。"""
+    pid = normalize_pmcid(pmcid)
+    return Path(xml_root) / pmcid_bucket_dir(pid) / f"{pid}.xml"
+
+
+def record_for_jsonl(
+    rec: dict[str, Any],
+    *,
+    slim: bool = False,
+) -> dict[str, Any]:
+    """按 full / slim 列集裁剪记录（slim 不含 body 字符串）。"""
+    fields = JSONL_FIELDS_SLIM if slim else JSONL_FIELDS_FULL
+    return {k: rec.get(k, "") for k in fields}
+
+
+def has_abstract(rec: dict[str, Any]) -> bool:
+    return bool((rec.get("abstract") or "").strip())
 
 
 def _node_text(node: etree._Element, sep: str = " ") -> str:
