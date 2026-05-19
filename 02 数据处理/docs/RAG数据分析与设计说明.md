@@ -1,6 +1,6 @@
 # RAG 数据分析与设计说明
 
-> 状态：撰写中。验证期 **§1~§5** 已定稿（100 篇 / 清洗后 97 篇）；**§6 分割策略** 待阶段 6 补全；全量结论待外接硬盘后补充。
+> 状态：撰写中。验证期 **§1~§6** 已定稿；阶段 7 交付整理待做；全量结论待外接硬盘后补充 ingest 验证。
 
 ## 1. 概述与数据范围
 
@@ -94,17 +94,41 @@
 
 - `outputs/figures/token_dist_abstract.png`：abstract 与 title+abstract 的 **ECDF** + 512 竖线。
 
-## 6. 分割策略及原因
+## 6. 分割策略及原因（定稿）
 
-> **待阶段 6 定稿**。以下为与阶段 5 数据对齐的**初稿决策表**（验证期 97 篇；检索单元 = **title+abstract**）。
+> 验证期 97 篇；检索单元 **title+abstract**；实现 **`src/chunk_strategy.py`** + notebook **§6**。全量 ingest 时复用 `outputs/tables/chunk_strategy_config.json`。
 
-| 条件 | 策略 | 工具/参数（建议） |
-|---|---|---|
-| 约 85% 篇 title+abstract ≤512（P50≈374） | 主体：单 chunk 整块嵌入 | 与 `all-MiniLM-L6-v2` max 512 对齐 |
-| ~14% 篇 >512（P95≈617，P99≈1009） | 长尾：截断或重叠滑动窗口 | `RecursiveCharacterTextSplitter`；`chunk_size=300~500`，`overlap=50~100` |
-| 摘要少显式章节标题（见 §4.2） | 优先滑动窗口；按章节切分作备选 | 见阶段 6 notebook demo |
+### 6.1 决策总表
 
-**正文 body**：本批 **100%** 超 512，P95 约 2×10⁴ tokens → **必须**与摘要分开做 **滑动窗口 chunk**；具体 `chunk_size`/`overlap` 可引用 body 分位数在阶段 6 写死。
+| 对象 | 条件 | 策略 | 工具 / 参数 |
+|---|---|---|---|
+| **检索单元** title+abstract | token ≤ **512**（约 **83/97** 单块） | **不分割**，1 Document / 1 embedding | 与 `all-MiniLM-L6-v2` max 对齐 |
+| 同上 | token **> 512**（约 **14/97** 多块） | **重叠滑动窗口** | `RecursiveCharacterTextSplitter`；`chunk_size=400`，`overlap=80`；`length_function`=同款 tokenizer |
+| **正文 body** | 一律远超 512（阶段 5：100% 超） | **单独** sliding window | `chunk_size=512`，`overlap=80`；**首轮 RAG 可不索引**，二期全文检索启用 |
+| 显式 IMRaD 小标题 | 极少（§4.2 ~4%） | **备选**按章节 | 有 `METHODS:`/`RESULTS:` 等时再考虑；本批 **不默认** |
+| **无 abstract** | 缺失 | **丢弃**，记录 pmcid | 验证期 3/100；全量 `--skip-no-abstract` |
+| **低质量 flag** | short_abstract 等（§3.2） | **标记**；验证期 0 篇 | 全量复核后再定是否排除 |
+
+### 6.2 理由（与阶段 5 数据对齐）
+
+- P50(retrieval)≈374、P95≈617 → **主体可整块**，**长尾需窗口**；非「全体滑动窗口」。
+- 入库时用 **确定性 pipeline**（短→单块，长→splitter），**不在查询时**再数 token。
+- body 与摘要 **分 pipeline**；避免把万级 token 正文与摘要混为同一 chunk 规则。
+
+### 6.3 验证期 demo 结果（notebook §6 已跑通）
+
+- `chunk_strategy_summary.csv`：**single=83，multi=14**（97 篇）；总 retrieval chunk 数 **123**（与 §5「>512 约 14.4%」一致）。
+- 长尾示例：`PMC12869397` → **4 chunks**（sliding_window）；`PMC12295483` → 3 chunks。
+- body 示例：`PMC8774754` → **8 chunks**（512/80；首轮 RAG 可不索引 body）。
+- 参数快照：`outputs/tables/chunk_strategy_config.json`（全量 ingest 直接引用，**勿改参数除非全量分布显著偏离**）。
+
+### 6.4 全量期验证（备忘）
+
+**数据根（外接盘）**：`/Volumes/Lexar/med-llm-rag-datasets`（`MED_RAG_DATA_ROOT`）；明日 `source 02 数据处理/scripts/setup_full_data_env.sh`。
+
+1. `MED_RAG_DATA_ROOT` + slim jsonl；无 abstract 解析阶段跳过。  
+2. ingest 脚本调用 `chunk_retrieval_row` / `chunk_body_text`（或读 config json）。  
+3. 抽样对比 chunk 数分布是否与验证期同量级；再批量 embedding 入库。
 
 ## 7. 元数据过滤可行性
 

@@ -25,7 +25,7 @@
 | 阶段 | 目录 | 状态 | 任务书 | 计划 | 运行入口（Jupyter） | 依赖 |
 |------|------|------|--------|------|---------------------|------|
 | **01** 验证模型 | `01 验证模型/` | ✅ 已完成 | [`任务.txt`](01%20验证模型/任务.txt) | [`schedule.md`](01%20验证模型/schedule.md) | [`med-LLM-RAG.ipynb`](01%20验证模型/med-LLM-RAG.ipynb) | [`requirements.txt`](01%20验证模型/requirements.txt) |
-| **02** 数据处理 | `02 数据处理/` | 🔄 进行中（**阶段 5 已收尾**，阶段 6 分割策略） | [`任务.txt`](02%20数据处理/任务.txt) | [`schedule.md`](02%20数据处理/schedule.md) | [`notebooks/med-data-EDA.ipynb`](02%20数据处理/notebooks/med-data-EDA.ipynb) | [`requirements.txt`](02%20数据处理/requirements.txt)（在 01 环境上增补） |
+| **02** 数据处理 | `02 数据处理/` | 🔄 进行中（**阶段 6 已完成**，阶段 7 交付整理） | [`任务.txt`](02%20数据处理/任务.txt) | [`schedule.md`](02%20数据处理/schedule.md) | [`notebooks/med-data-EDA.ipynb`](02%20数据处理/notebooks/med-data-EDA.ipynb) | [`requirements.txt`](02%20数据处理/requirements.txt)（在 01 环境上增补） |
 | **03** LangChain RAG | `** LangChain_RAG/` | ⏸ 暂缓 | — | [`schedule.md`](**%20LangChain_RAG/schedule.md) | *待定* | *待定* |
 
 **说明**
@@ -99,7 +99,7 @@ pip install -r "02 数据处理/requirements.txt"
 |------|------|------|
 | 100 篇结构化样本 | `02 数据处理/data/processed/sample.jsonl` | 02 标准分析输入（由 `parse_pmc.py` 生成） |
 | 清洗后 97 篇 | `02 数据处理/data/processed/sample_clean.jsonl` | 验证期丢弃无 abstract；全量期在 parse 阶段跳过，不另存 clean 副本 |
-| 全量 slim 表（计划） | `<外接盘>/med-rag-pmc/processed/oa_comm_slim.jsonl` | 无 body 列；含 `n_chars_body` |
+| 全量 slim 表（计划） | `/Volumes/Lexar/med-llm-rag-datasets/processed/oa_comm_slim.jsonl` | 无 body 列；含 `n_chars_body`；`source 02 数据处理/scripts/setup_full_data_env.sh` |
 | pmcid 索引（计划） | `.../processed/pmcid_index.jsonl` | 回查 XML 用 |
 | 01 验证期 XML（284 篇） | `01 验证模型/data/raw/extracted/` | 若仓库内已包含，可直接用于 `build_jsonl.sh` 重跑；若未上传则见下 |
 | 01 旧版 jsonl 备份 | `02 数据处理/data/processed/sample.jsonl.bak01` | 01 解析器生成的历史样本，仅作对比 |
@@ -167,10 +167,10 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store
 
 ### 02 数据处理（进行中）
 
-- 数据 pipeline：`src/parse_pmc.py`、`src/build_jsonl.py`、`src/pmc_index.py`、`src/load_pipeline.py`、`src/domain_analysis.py`、`src/token_stats.py`
-- 全量脚本（待外接盘）：`scripts/build_full_slim.sh`、`scripts/build_pmcid_index.sh`
-- 分析 notebook：`notebooks/med-data-EDA.ipynb`（**§1~§5** 已跑通；§6 分割策略待补）
-- 正式文档：`docs/RAG数据分析与设计说明.md`（§5 token 与 512 对照已定稿；§6 待写）
+- 数据 pipeline：`src/parse_pmc.py`、`src/build_jsonl.py`、`src/pmc_index.py`、`src/load_pipeline.py`、`src/domain_analysis.py`、`src/token_stats.py`、`src/chunk_strategy.py`
+- 全量脚本（外接盘已就绪）：`scripts/build_full_slim.sh`、`scripts/build_pmcid_index.sh`；环境 `scripts/setup_full_data_env.sh`
+- 分析 notebook：`notebooks/med-data-EDA.ipynb`（**§1~§6** 已跑通；阶段 7 交付整理）
+- 正式文档：`docs/RAG数据分析与设计说明.md`（§1~§6 定稿）
 - 分析表与图：`outputs/tables/*.csv`、`outputs/figures/token_dist_abstract.png`、`outputs/samples/stratified_*.md`
 
 ---

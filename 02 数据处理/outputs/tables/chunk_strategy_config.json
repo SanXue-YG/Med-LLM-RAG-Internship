@@ -1,0 +1,17 @@
+{
+  "retrieval_unit": "title+abstract",
+  "retrieval_token_limit": 512,
+  "retrieval_chunk_size": 400,
+  "retrieval_chunk_overlap": 80,
+  "body_chunk_size": 512,
+  "body_chunk_overlap": 80,
+  "drop_missing_abstract": true,
+  "drop_short_abstract": false,
+  "short_abstract_char_threshold": 50,
+  "notes": [
+    "主体 ~85% title+abstract ≤512：单 chunk",
+    "长尾 ~14% >512：RecursiveCharacterTextSplitter",
+    "body 一律 sliding_window，与摘要分开",
+    "无 abstract：丢弃并记录 pmcid"
+  ]
+}
