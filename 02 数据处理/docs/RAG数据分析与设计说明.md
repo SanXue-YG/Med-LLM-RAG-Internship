@@ -41,6 +41,36 @@
 
 ## 4. 领域语言特性
 
+> 验证期 97 篇（`df_clean`）；tokenizer：`sentence-transformers/all-MiniLM-L6-v2`。样例见 `outputs/samples/stratified_*.md`。
+
+### 4.1 摘要长度分层（token）
+
+| 桶 | 划分（abstract tokens） | 篇数（97 篇中） |
+|---|---|---|
+| short | ≤ P33（≈309） | 32 |
+| medium | P33–P66（≈309–399） | 32 |
+| long | > P66（≈399） | 33 |
+
+每桶随机抽 5 篇导出 Markdown，供人工阅读。
+
+### 4.2 结构与术语（自动统计）
+
+| 指标 | 结果 |
+|---|---|
+| IMRaD 关键词出现率 | Background 8.3% · Methods 20.6% · **Results 54.6%** · Conclusion 11.3% |
+| 四段标题关键词全齐 | 4.1%（多数摘要无显式小节标题） |
+| 缩写密度（均值） | 约 **3.8** 次 / 百词 |
+| 高频词 Top-5 | patients, study, using, analysis, risk |
+
+表：`outputs/tables/imrad_keyword_rate.csv`、`abbrev_density.csv`、`abstract_top_terms.csv`。
+
+### 4.3 语言风格与 RAG 启示（心理基线）
+
+- **风格**：正式学术英语，信息密度高；常在一段内交代背景、方法、结果。
+- **结构**：不宜默认摘要含 `METHODS:` / `RESULTS:` 标题；检索与评估应用自然语言问法。
+- **术语**：存在医学缩写（如 EGFR、PCI）；同一概念可能有全称/缩写并存——**同义表述样例待读 stratified 样例后补 1–2 条**。
+- **对 prompt/评估**：测试集应覆盖短/中/长摘要；问题宜具体、可核对；评估时允许合理同义改写。
+
 ## 5. 文本长度分布
 
 ## 6. 分割策略及原因
