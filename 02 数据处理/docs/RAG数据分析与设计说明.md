@@ -1,6 +1,6 @@
 # RAG 数据分析与设计说明
 
-> 状态：骨架（阶段 7 定稿）。验证期基于 100 篇；全量结论待外接硬盘跑完后补充。
+> 状态：撰写中。验证期 **§1~§5** 已定稿（100 篇 / 清洗后 97 篇）；**§6 分割策略** 待阶段 6 补全；全量结论待外接硬盘后补充。
 
 ## 1. 概述与数据范围
 
@@ -73,7 +73,38 @@
 
 ## 5. 文本长度分布
 
+> 验证期 97 篇；tokenizer：`sentence-transformers/all-MiniLM-L6-v2`（max 512）。实现：`src/token_stats.py`，notebook **§5**。
+
+### 5.1 分位数表
+
+验证期 **97 篇**（`df_clean`），详见 `outputs/tables/token_percentiles.csv`。摘要字段 token 分布见下（与 §5.2 对照）。
+
+| 字段 | P95 (tokens) | P99 (tokens) | max (tokens) |
+|---|---|---|---|
+| title | ≈36 | ≈49 | 51 |
+| abstract | ≈587 | ≈977 | 986 |
+| title+abstract | ≈617 | ≈1009 | 1009 |
+| body | ≈20574 | ≈26213 | 54542 |
+
+### 5.2 与 512 上限对照（定稿）
+
+验证期 97 篇、tokenizer 为 `sentence-transformers/all-MiniLM-L6-v2`（统计口径）：**abstract** 的 token 长度为 **P95≈587、P99≈977**；**title+abstract**（拟检索单元）为 **P95≈617、P99≈1009**；**body** 为 **P95≈2.06×10⁴、P99≈2.62×10⁴、max≈5.45×10⁴**（与 `token_percentiles.csv` 一致）。以 **512 tokens** 为单次嵌入上限衡量时，**abstract** 超过 512 的约占 **13.4%**（13/97），**title+abstract** 超过 512 的约占 **14.4%**（14/97），**body** **100%**（97/97）超过该上限。因此：**摘要/检索单元**可采取「多数整块嵌入、约一成余长摘要截断或滑动窗口」；**正文**必须 **chunk** 且与摘要策略分开；本工程与 `load_pipeline.retrieval_text` 一致，**检索文本单元采用 title+abstract**（相对仅用 abstract，>512 占比约升 1 个百分点，标题带来的边际 token 很小）。
+
+### 5.3 图
+
+- `outputs/figures/token_dist_abstract.png`：abstract 与 title+abstract 的 **ECDF** + 512 竖线。
+
 ## 6. 分割策略及原因
+
+> **待阶段 6 定稿**。以下为与阶段 5 数据对齐的**初稿决策表**（验证期 97 篇；检索单元 = **title+abstract**）。
+
+| 条件 | 策略 | 工具/参数（建议） |
+|---|---|---|
+| 约 85% 篇 title+abstract ≤512（P50≈374） | 主体：单 chunk 整块嵌入 | 与 `all-MiniLM-L6-v2` max 512 对齐 |
+| ~14% 篇 >512（P95≈617，P99≈1009） | 长尾：截断或重叠滑动窗口 | `RecursiveCharacterTextSplitter`；`chunk_size=300~500`，`overlap=50~100` |
+| 摘要少显式章节标题（见 §4.2） | 优先滑动窗口；按章节切分作备选 | 见阶段 6 notebook demo |
+
+**正文 body**：本批 **100%** 超 512，P95 约 2×10⁴ tokens → **必须**与摘要分开做 **滑动窗口 chunk**；具体 `chunk_size`/`overlap` 可引用 body 分位数在阶段 6 写死。
 
 ## 7. 元数据过滤可行性
 

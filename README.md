@@ -13,7 +13,7 @@
 ├── readme.md                 # 本文件（项目总说明）
 ├── .gitignore                # Git 忽略规则（见下文「未上传内容」）
 ├── 01 验证模型/              # 阶段 1：本地 LLM + PMC 数据源验证（已完成）
-├── 02 数据处理/              # 阶段 2：数据加载与评估（进行中）
+├── 02 数据处理/              # 阶段 2：数据加载与评估（阶段 5 已完成，阶段 6 进行中）
 ├── ** LangChain_RAG/         # 阶段 3（暂缓）：LangChain RAG 系统
 └── 笔记/                     # 个人学习笔记
 ```
@@ -25,7 +25,7 @@
 | 阶段 | 目录 | 状态 | 任务书 | 计划 | 运行入口（Jupyter） | 依赖 |
 |------|------|------|--------|------|---------------------|------|
 | **01** 验证模型 | `01 验证模型/` | ✅ 已完成 | [`任务.txt`](01%20验证模型/任务.txt) | [`schedule.md`](01%20验证模型/schedule.md) | [`med-LLM-RAG.ipynb`](01%20验证模型/med-LLM-RAG.ipynb) | [`requirements.txt`](01%20验证模型/requirements.txt) |
-| **02** 数据处理 | `02 数据处理/` | 🔄 进行中（至阶段 3） | [`任务.txt`](02%20数据处理/任务.txt) | [`schedule.md`](02%20数据处理/schedule.md) | [`notebooks/med-data-EDA.ipynb`](02%20数据处理/notebooks/med-data-EDA.ipynb) | [`requirements.txt`](02%20数据处理/requirements.txt)（在 01 环境上增补） |
+| **02** 数据处理 | `02 数据处理/` | 🔄 进行中（**阶段 5 已收尾**，阶段 6 分割策略） | [`任务.txt`](02%20数据处理/任务.txt) | [`schedule.md`](02%20数据处理/schedule.md) | [`notebooks/med-data-EDA.ipynb`](02%20数据处理/notebooks/med-data-EDA.ipynb) | [`requirements.txt`](02%20数据处理/requirements.txt)（在 01 环境上增补） |
 | **03** LangChain RAG | `** LangChain_RAG/` | ⏸ 暂缓 | — | [`schedule.md`](**%20LangChain_RAG/schedule.md) | *待定* | *待定* |
 
 **说明**
@@ -167,11 +167,11 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store
 
 ### 02 数据处理（进行中）
 
-- 数据 pipeline：`src/parse_pmc.py`、`src/build_jsonl.py`、`src/pmc_index.py`、`src/load_pipeline.py`
+- 数据 pipeline：`src/parse_pmc.py`、`src/build_jsonl.py`、`src/pmc_index.py`、`src/load_pipeline.py`、`src/domain_analysis.py`、`src/token_stats.py`
 - 全量脚本（待外接盘）：`scripts/build_full_slim.sh`、`scripts/build_pmcid_index.sh`
-- 分析 notebook：`notebooks/med-data-EDA.ipynb`（§3 已完成）
-- 正式文档（撰写中）：`docs/RAG数据分析与设计说明.md`
-- 分析表：`outputs/tables/*.csv`
+- 分析 notebook：`notebooks/med-data-EDA.ipynb`（**§1~§5** 已跑通；§6 分割策略待补）
+- 正式文档：`docs/RAG数据分析与设计说明.md`（§5 token 与 512 对照已定稿；§6 待写）
+- 分析表与图：`outputs/tables/*.csv`、`outputs/figures/token_dist_abstract.png`、`outputs/samples/stratified_*.md`
 
 ---
 
@@ -186,13 +186,6 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store
 | 日期 | 说明 |
 |------|------|
 | 2026-05-15 | 初版 readme；02 阶段完成至 schedule 阶段 3；补充 02 `requirements.txt` |
+| 2026-05-19 | 02 阶段 5 收尾：token 分位数、ECDF、说明文档 §5 定稿；准备阶段 6 |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
-
-github上传(自用)：
-
-cd "/Users/sanxue/Desktop/work/实习/谷歌"
-git add -A
-git status                    # 确认改动
-git commit -m "简述本次更新（如：完成阶段4领域分析）"
-git push
