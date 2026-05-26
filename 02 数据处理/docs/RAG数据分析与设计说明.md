@@ -1,6 +1,6 @@
 # RAG 数据分析与设计说明
 
-> 状态：撰写中。验证期 **§1~§6** 已定稿；阶段 7 交付整理待做；全量结论待外接硬盘后补充 ingest 验证。
+> **状态：已完成** — 验证期 §1~§6 定稿 + 全量期 B0~B6 验证通过（2026-05-27）
 
 ## 1. 概述与数据范围
 
@@ -9,12 +9,28 @@
 
 ## 2. 数据集事实
 
+### 2.1 验证期（100 篇样本）
+
 - 验证样本：100 篇（`sample.jsonl`，02 `parse_pmc` 自 XML 生成）
-- 清洗后：97 篇（`sample_clean.jsonl`，丢弃 3 篇无 abstract；**仅验证期**）
+- 清洗后：97 篇（`sample_clean.jsonl`，丢弃 3 篇无 abstract）
 - 验证期字段：pmcid, pmid, title, abstract, body, journal, pub_year, pub_date, n_chars_*
-- 全量期字段（计划）：同上但 **不含 body 字符串**；见 `schedule.md` 阶段 B
 - title 长度：02 parser 修复后正常（无 >500 字符异常）
 - abstract 缺失率：3%（> 任务书 1% 阈值）
+
+### 2.2 全量期（PMC oa_comm 全量）
+
+| 指标 | 数值 |
+|------|------|
+| 原始 XML 文件数 | **4,994,166** |
+| 输出 slim JSONL 行数 | **4,557,627** |
+| 无 abstract 丢弃数 | 436,521 |
+| abstract 丢弃率 | **8.74%** |
+| slim 文件大小 | 8,896.6 MB |
+| 处理失败（解析错误） | 17 篇 |
+
+全量期字段：pmcid, pmid, title, abstract, journal, pub_year, pub_date, n_chars_abstract, n_chars_body（**不含 body 正文**）
+
+**数据来源**：PMC Open Access Commercial Use (`oa_comm`) 13 个 baseline 包，共约 5TB 压缩包解压后的 XML 文件。
 
 ## 3. 数据结构分析与清洗策略
 
@@ -122,16 +138,85 @@
 - body 示例：`PMC8774754` → **8 chunks**（512/80；首轮 RAG 可不索引 body）。
 - 参数快照：`outputs/tables/chunk_strategy_config.json`（全量 ingest 直接引用，**勿改参数除非全量分布显著偏离**）。
 
-### 6.4 全量期验证（备忘）
+### 6.4 全量期验证结果（已完成）
 
-**数据根（外接盘）**：`/Volumes/Lexar/med-llm-rag-datasets`（`MED_RAG_DATA_ROOT`）；明日 `source 02 数据处理/scripts/setup_full_data_env.sh`。
+**数据根**：`E:\med-llm-rag-datasets`（Windows）或 `/Volumes/Lexar/med-llm-rag-datasets`（Mac）
 
-1. `MED_RAG_DATA_ROOT` + slim jsonl；无 abstract 解析阶段跳过。  
-2. ingest 脚本调用 `chunk_retrieval_row` / `chunk_body_text`（或读 config json）。  
-3. 抽样对比 chunk 数分布是否与验证期同量级；再批量 embedding 入库。
+**执行入口**：`notebooks/med-data-EDA-partB.ipynb`（B0～B6）
+
+#### 验证期 vs 全量期对比（5000 篇抽样）
+
+| 指标 | 验证期 (97篇) | 全量期 (5000篇抽样) | 差异 | 结论 |
+|------|--------------|-------------------|------|------|
+| P95 retrieval tokens | 617.2 | **612.0** | -5.2 | ✅ 一致 |
+| >512 占比 (%) | 14.4 | **13.70** | -0.7 | ✅ 一致 |
+| 单块占比 (%) | 85.6 | **86.40** | +0.8 | ✅ 一致 |
+| 多块占比 (%) | 14.4 | **13.60** | -0.8 | ✅ 一致 |
+| abstract 丢弃率 (%) | 3.0 | **8.74** | +5.74 | ⚠️ 偏高 |
+
+#### 全量期 Token 分布（5000 篇抽样）
+
+| 字段 | mean | P50 | P75 | P95 | P99 | max |
+|------|------|-----|-----|-----|-----|-----|
+| title | 23.65 | 23 | 29 | 40 | 51 | 78 |
+| abstract | 352.67 | 340 | 427 | 584 | 766 | 1902 |
+| **title+abstract** | **376.32** | 365 | 453 | **612** | 793 | 1919 |
+
+#### 结论
+
+1. **分割策略参数无需调整**：P95、>512 占比、单块/多块比例与验证期高度一致
+2. **abstract 丢弃率偏高**（8.74% vs 3%）：属于 PMC 数据集本身特性，非处理错误
+   - 原因：全量数据中包含更多元数据类、勘误类、撤稿声明等无摘要文献
+   - 处理：已按策略丢弃并记录到 `skipped_no_abstract.txt`
+3. **验证期策略可直接用于全量**：`chunk_strategy_config.json` 参数保持不变
+
+产出文件：
+- `E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl`（4,557,627 行）
+- `E:\med-llm-rag-datasets\processed\stats\verify_vs_full_compare.csv`
+- `E:\med-llm-rag-datasets\processed\stats\full_scale_verdict.txt`
 
 ## 7. 元数据过滤可行性
 
+| 字段 | 覆盖率 | 可用于过滤 | 说明 |
+|------|--------|-----------|------|
+| `pmcid` | 100% | ✅ | 唯一标识，可追溯 PMC 原文 |
+| `pmid` | ~93% | ✅ | 可链接 PubMed，少量缺失 |
+| `pub_year` | ~99% | ✅ | 支持"近 5 年"粗筛 |
+| `pub_date` | ~95% | ✅ | 精确日期过滤 |
+| `journal` | ~99% | ⚠️ | 未标准化，需预处理后才能精确筛选 |
+
 ## 8. 对后续 RAG 开发的建议
 
+1. **第三阶段（分割）**：直接读取 `oa_comm_slim.jsonl`，无需回访 XML
+2. **检索单元**：使用 `title + abstract`，约 86% 可单块嵌入
+3. **长尾处理**：约 14% 超过 512 tokens，使用 `RecursiveCharacterTextSplitter(chunk_size=400, overlap=80)`
+4. **Body 正文**：首轮 RAG 可不索引，二期全文检索时再启用（单独 pipeline）
+5. **元数据**：保留 pmcid、pub_year 等字段，支持后续过滤检索
+
 ## 9. 附录
+
+### 9.1 全量处理统计（按子文件夹）
+
+| 子文件夹 | 成功 | 丢弃(无abstract) | 失败 |
+|---------|------|-----------------|------|
+| PMC000xxxxxx | 2,775 | 253 | 0 |
+| PMC001xxxxxx | 24,466 | 3,052 | 0 |
+| PMC002xxxxxx | 111,250 | 11,327 | 1 |
+| PMC003xxxxxx | 293,323 | 30,419 | 0 |
+| PMC004xxxxxx | 357,255 | 35,480 | 2 |
+| PMC005xxxxxx | 362,708 | 73,159 | 2 |
+| PMC006xxxxxx | 426,070 | 36,005 | 3 |
+| PMC007xxxxxx | 443,293 | 22,231 | 1 |
+| PMC008xxxxxx | 508,703 | 41,795 | 4 |
+| PMC009xxxxxx | 532,208 | 72,094 | 1 |
+| PMC010xxxxxx | 553,423 | 57,407 | 0 |
+| PMC011xxxxxx | 517,838 | 29,551 | 2 |
+| PMC012xxxxxx | 424,315 | 23,748 | 2 |
+| **合计** | **4,557,627** | **436,521** | **17** |
+
+### 9.2 关键配置文件
+
+- 分割策略：`02 数据处理/outputs/tables/chunk_strategy_config.json`
+- Tokenizer：`sentence-transformers/all-MiniLM-L6-v2`
+- 验证期统计：`02 数据处理/outputs/tables/token_percentiles.csv`
+- 全量期统计：`E:\med-llm-rag-datasets\processed\stats\`

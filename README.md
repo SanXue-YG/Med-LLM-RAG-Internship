@@ -2,19 +2,21 @@
 
 基于 PMC 开放获取文献（`oa_comm`）的本地 LLM + RAG 可行性验证与数据评估项目。工程按阶段拆分目录，每阶段有独立任务书、计划、依赖与 Jupyter 入口。
 
-> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见 02 阶段 `docs/RAG数据分析与设计说明.md`（随阶段推进更新）。
+> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见 02 阶段 `docs/RAG数据分析与设计说明.md`。
 
 ---
 
 ## 目录结构
 
 ```text
-实习/谷歌/
-├── readme.md                 # 本文件（项目总说明）
-├── .gitignore                # Git 忽略规则（见下文「未上传内容」）
+谷歌/
+├── README.md                 # 本文件（项目总说明）
+├── .gitignore                # Git 忽略规则
+├── setup_windows_env.ps1     # Windows 环境一键配置脚本
 ├── 01 验证模型/              # 阶段 1：本地 LLM + PMC 数据源验证（已完成）
-├── 02 数据处理/              # 阶段 2：数据加载与评估（阶段 5 已完成，阶段 6 进行中）
-├── ** LangChain_RAG/         # 阶段 3（暂缓）：LangChain RAG 系统
+├── 02 数据处理/              # 阶段 2：数据加载与评估（已完成）
+├── 03 文档解析与分割/        # 阶段 3：文本分割（进行中）
+├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
 
@@ -24,15 +26,40 @@
 
 | 阶段 | 目录 | 状态 | 任务书 | 计划 | 运行入口（Jupyter） | 依赖 |
 |------|------|------|--------|------|---------------------|------|
-| **01** 验证模型 | `01 验证模型/` | ✅ 已完成 | [`任务.txt`](01%20验证模型/任务.txt) | [`schedule.md`](01%20验证模型/schedule.md) | [`med-LLM-RAG.ipynb`](01%20验证模型/med-LLM-RAG.ipynb) | [`requirements.txt`](01%20验证模型/requirements.txt) |
-| **02** 数据处理 | `02 数据处理/` | 🔄 进行中（**阶段 6 已完成**，阶段 7 交付整理） | [`任务.txt`](02%20数据处理/任务.txt) | [`schedule.md`](02%20数据处理/schedule.md) | [`notebooks/med-data-EDA.ipynb`](02%20数据处理/notebooks/med-data-EDA.ipynb) | [`requirements.txt`](02%20数据处理/requirements.txt)（在 01 环境上增补） |
-| **03** LangChain RAG | `** LangChain_RAG/` | ⏸ 暂缓 | — | [`schedule.md`](**%20LangChain_RAG/schedule.md) | *待定* | *待定* |
+| **01** 验证模型 | `01 验证模型/` | ✅ 已完成 | `任务.txt` | `schedule.md` | `med-LLM-RAG.ipynb` | `requirements.txt` |
+| **02** 数据处理 | `02 数据处理/` | ✅ **已完成** | `任务.txt` | `schedule.md` | `notebooks/med-data-EDA-partA.ipynb`（验证期）· `partB.ipynb`（全量） | `requirements.txt` |
+| **03** 文档解析与分割 | `03 文档解析与分割/` | 🔄 进行中 | `任务.txt` | `schedule.md` | *待创建* | *共用 02 环境* |
 
 **说明**
 
 - 各阶段**具体要求与交付标准**以对应目录内 **`任务.txt`** 为准（老师下发原文）。
-- 各阶段**整体运行入口**在对应 **Jupyter Notebook** 中；按 notebook 内章节顺序执行 cell。02 阶段每次打开 notebook 需先运行 **【前置 1/2】【前置 2/2】**（见 notebook 顶部说明）。
-- 02 阶段另有命令行数据构建：`scripts/build_jsonl.sh`（XML → jsonl，不经过 notebook 也可跑）。
+- 各阶段**整体运行入口**在对应 **Jupyter Notebook** 中；按 notebook 内章节顺序执行 cell。
+- 02 阶段每次打开 notebook 需先运行 **【前置】**（见 notebook 顶部说明）。
+
+---
+
+## 第二阶段完成总结（2026-05-27）
+
+### 核心数据
+
+| 指标 | 验证期 (97篇) | 全量期 (4,557,627篇) | 结论 |
+|------|--------------|---------------------|------|
+| P95 retrieval tokens | 617 | 612 | ✅ 一致 |
+| >512 占比 | 14.4% | 13.7% | ✅ 一致 |
+| 单块占比 | 85.6% | 86.4% | ✅ 一致 |
+| abstract 丢弃率 | 3% | 8.74% | ⚠️ 偏高但合理 |
+
+### 主要产出
+
+| 产出 | 路径 | 说明 |
+|------|------|------|
+| **slim JSONL** | `E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl` | 4,557,627 篇，8.9 GB |
+| **分析报告** | `02 数据处理/docs/RAG数据分析与设计说明.md` | 正式交付文档 |
+| **分割策略** | `02 数据处理/outputs/tables/chunk_strategy_config.json` | 供第三阶段使用 |
+
+### 结论
+
+验证期制定的分割策略（chunk_size=400, overlap=80）经全量验证**无需调整**，可直接用于第三阶段。
 
 ---
 
@@ -40,17 +67,25 @@
 
 ### 推荐环境
 
-- **Conda 环境名**：`med-rag-verify`（01、02 共用）
+- **Conda 环境名**：`med-rag-verify`（01、02、03 共用）
 - **Python**：3.11.x
+- **支持平台**：Windows / macOS
 
-### 安装顺序
+### Windows 安装（推荐）
+
+```powershell
+# 运行一键配置脚本
+.\setup_windows_env.ps1
+```
+
+### 手动安装
 
 ```bash
-# 1. 创建并激活环境（若尚未创建）
+# 1. 创建并激活环境
 conda create -n med-rag-verify python=3.11 -y
 conda activate med-rag-verify
 
-# 2. 安装阶段 01 完整依赖（134 行锁定版本）
+# 2. 安装阶段 01 完整依赖
 pip install -r "01 验证模型/requirements.txt"
 
 # 3. 安装阶段 02 增补依赖
@@ -61,87 +96,63 @@ pip install -r "02 数据处理/requirements.txt"
 
 | 文件 | 内容 |
 |------|------|
-| `01 验证模型/requirements.txt` | **全量锁定**：Jupyter、`pandas`、`datasets`、`lxml`、`chromadb`、LangChain 相关等；跑 01 notebook 以此为准。 |
-| `02 数据处理/requirements.txt` | **在 01 基础上的增补**：`matplotlib`、`seaborn`、`sentence-transformers` 等；用于 token 统计与可视化（§4~§5）。02 **不单独维护一份完整 pip freeze**，避免与 01 重复。 |
-
-仅跑 **02 数据处理**（不用 Ollama / Chroma）时，仍建议先装 01 的 `requirements.txt`，因环境已按该方式验证；若需极简环境，至少保证：`pandas`、`datasets`、`lxml`、`tqdm`、`ipykernel`，以及 02 增补文件中的分析包。
+| `01 验证模型/requirements.txt` | 全量锁定：Jupyter、pandas、datasets、lxml、chromadb、LangChain 等 |
+| `02 数据处理/requirements.txt` | 在 01 基础上增补：matplotlib、seaborn、sentence-transformers 等 |
 
 ---
 
 ## 本地部署指南
 
-克隆仓库后，除 `pip install` 外，可能需要自行准备以下内容。
-
-### 1. 无需额外操作（被 Git 忽略、运行时可自动生成）
+### 1. 无需额外操作（运行时自动生成）
 
 | 路径 / 类型 | 说明 |
 |-------------|------|
-| `**/caches/` | HuggingFace / datasets 缓存；首次加载 tokenizer 或 `load_dataset` 时自动下载到工程内或用户缓存目录。 |
-| `**/.ipynb_checkpoints/` | Jupyter 自动检查点。 |
-| `__pycache__/` | Python 字节码缓存。 |
-| `.DS_Store` | macOS 目录元数据。 |
+| `**/caches/` | HuggingFace / datasets 缓存 |
+| `**/.ipynb_checkpoints/` | Jupyter 自动检查点 |
+| `__pycache__/` | Python 字节码缓存 |
+| `.DS_Store` / `._*` | macOS 目录元数据（已在 .gitignore 中忽略） |
 
-02 notebook 前置 cell 会将 `HF_HOME` 指向 `02 数据处理/caches/huggingface`（若已运行前置）；删除后**重新运行 notebook 即可重建**，不影响逻辑。
+### 2. 体积过大、未纳入 Git
 
-### 2. 体积过大、未纳入 Git — 需本地自行准备
+| 资源 | 用途 | 阶段 | 获取方式 |
+|------|------|------|----------|
+| Ollama 模型 `deepseek-r1:7b` | 本地 LLM 推理 | 01 | `ollama pull deepseek-r1:7b` |
+| `ollama_models/` | 模型存储 | 01 | 由 Ollama 自动创建 |
+| `chroma_db/` | 向量库持久化 | 01 | 运行 notebook §6 生成 |
+| **PMC 全量数据** (~5TB 解压后) | 全量数据处理 | 02 | 外接硬盘 + `med-data-EDA-partB.ipynb` |
+| **slim JSONL** (8.9 GB) | 第三阶段输入 | 02/03 | 第二阶段生成 |
 
-| 资源 | 用途 | 阶段 | 本地获取方式 |
-|------|------|------|----------------|
-| **Ollama 模型** `deepseek-r1:7b`（Q4_K_M，约 4.4 GB） | 01 本地 LLM 推理 | 01 | 见下方「Ollama 模型」 |
-| **`01 验证模型/ollama_models/`** | 工程内模型存储目录 | 01 | 由 `ollama pull` 写入；`.gitignore` 已忽略 |
-| **`01 验证模型/chroma_db/`** | Chroma 持久化向量库 | 01 | 运行 01 notebook **§6** 可重新生成；`.gitignore` 已忽略 |
-| **Sentence-Transformers 权重** `all-MiniLM-L6-v2` | 02 token 长度统计（512 上限参照） | 02 | 首次在 §4/§5 调用 `AutoTokenizer.from_pretrained(...)` 或 `sentence-transformers` 时从 HuggingFace 自动下载；需网络。也可预先：`python -c "from transformers import AutoTokenizer; AutoTokenizer.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')"` |
-| **PMC 全量原始包（~100GB+）** | 02 全量评估 | 02（未来） | 外接硬盘 + `build_full_slim.sh` / `build_pmcid_index.sh`；见 `02 数据处理/schedule.md` 阶段 B |
-
-### 3. 已随仓库提供或可由脚本生成的数据
+### 3. 已随仓库提供的数据
 
 | 数据 | 位置 | 说明 |
 |------|------|------|
-| 100 篇结构化样本 | `02 数据处理/data/processed/sample.jsonl` | 02 标准分析输入（由 `parse_pmc.py` 生成） |
-| 清洗后 97 篇 | `02 数据处理/data/processed/sample_clean.jsonl` | 验证期丢弃无 abstract；全量期在 parse 阶段跳过，不另存 clean 副本 |
-| 全量 slim 表（计划） | `/Volumes/Lexar/med-llm-rag-datasets/processed/oa_comm_slim.jsonl` | 无 body 列；含 `n_chars_body`；`source 02 数据处理/scripts/setup_full_data_env.sh` |
-| pmcid 索引（计划） | `.../processed/pmcid_index.jsonl` | 回查 XML 用 |
-| 01 验证期 XML（284 篇） | `01 验证模型/data/raw/extracted/` | 若仓库内已包含，可直接用于 `build_jsonl.sh` 重跑；若未上传则见下 |
-| 01 旧版 jsonl 备份 | `02 数据处理/data/processed/sample.jsonl.bak01` | 01 解析器生成的历史样本，仅作对比 |
-
-**若仓库未包含 XML 解压目录**：在 01 目录按 [`med-LLM-RAG.ipynb`](01%20验证模型/med-LLM-RAG.ipynb) **§5** 下载并解压 PMC `oa_comm` 样本包，或在 02 执行：
-
-```bash
-cd "02 数据处理"
-./scripts/build_jsonl.sh --pmcids-from data/processed/sample.jsonl.bak01
-# 自动探测 01/data/raw/extracted 或设置 PMC_XML_ROOT
-```
+| 验证期样本 (100篇) | `02 数据处理/data/processed/sample.jsonl` | 标准分析输入 |
+| 清洗后 (97篇) | `02 数据处理/data/processed/sample_clean.jsonl` | 丢弃无 abstract |
+| 01 验证期 XML | `01 验证模型/data/raw/extracted/` | 284 篇 PMC XML |
 
 ### Ollama 模型（阶段 01）
 
-1. 安装 [Ollama](https://ollama.com/)（Mac 版）。
-2. 在 **`01 验证模型/`** 目录：
-
 ```bash
-export OLLAMA_MODELS="$(pwd)/ollama_models"   # 模型存工程内，与 start_ollama.sh 一致
+# 安装 Ollama 后
+cd "01 验证模型"
+export OLLAMA_MODELS="$(pwd)/ollama_models"
 ollama pull deepseek-r1:7b
-./start_ollama.sh    # 启动服务；另开终端跑 notebook
+./start_ollama.sh
 ```
 
-3. 模型拉取与验证步骤详见 **`01 验证模型/med-LLM-RAG.ipynb`** 章节 2~4（含 `ollama pull deepseek-r1:7b`、API `think=False` 等说明）。
+### 02/03 阶段运行方式
 
-**阶段 02 不需要启动 Ollama**（纯数据处理与 tokenizer 统计）。
-
-### 02 阶段运行方式（VS Code）
-
-1. **File → Open Folder** → 选择 `02 数据处理/`  
-2. Jupyter 内核选择 **`med-rag-verify`**  
-3. 打开 `notebooks/med-data-EDA.ipynb`，先运行 **【前置 1/2】【前置 2/2】**，再跑各 § 章节  
+1. **File → Open Folder** → 选择对应阶段目录
+2. Jupyter 内核选择 **`med-rag-verify`**
+3. 按 notebook 章节顺序执行
 
 ---
 
 ## Git 未上传内容（`.gitignore` 摘要）
 
-以下内容**故意不提交**到 GitHub，克隆后按上节「本地部署」处理即可。
-
 ```text
 # 缓存与临时
-__pycache__/、.ipynb_checkpoints/、.DS_Store
+__pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 
 # 密钥
 .env、secrets/
@@ -149,35 +160,47 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store
 # 体积大、可本地重建
 **/caches/              # HF / datasets 缓存
 **/chroma_db/           # 向量库持久化
-**/ollama_models/       # Ollama 模型权重（~4GB+）
-**/*.bin、data_level0.bin
+**/ollama_models/       # Ollama 模型权重
+**/*.bin
 ```
-
-**仍会提交的内容（便于审阅）**：notebook、Python 源码、`sample.jsonl`（约 4.5MB）、分析表格 CSV、计划与说明文档等。若后续单文件超过 GitHub 100MB 限制，需改用 Git LFS 或外置存储。
 
 ---
 
 ## 各阶段交付物速查
 
-### 01 验证模型（已完成）
+### 01 验证模型（✅ 已完成）
 
 - 本地 LLM 推理验证：`outputs/model_test_results.json`
-- PMC 100 篇样本（01 版解析）：`data/processed/sample.jsonl`
+- PMC 100 篇样本：`data/processed/sample.jsonl`
 - Chroma smoke test：见 `med-LLM-RAG.ipynb` §6
 
-### 02 数据处理（进行中）
+### 02 数据处理（✅ 已完成）
 
-- 数据 pipeline：`src/parse_pmc.py`、`src/build_jsonl.py`、`src/pmc_index.py`、`src/load_pipeline.py`、`src/domain_analysis.py`、`src/token_stats.py`、`src/chunk_strategy.py`
-- 全量脚本（外接盘已就绪）：`scripts/build_full_slim.sh`、`scripts/build_pmcid_index.sh`；环境 `scripts/setup_full_data_env.sh`
-- 分析 notebook：`notebooks/med-data-EDA.ipynb`（**§1~§6** 已跑通；阶段 7 交付整理）
-- 正式文档：`docs/RAG数据分析与设计说明.md`（§1~§6 定稿）
-- 分析表与图：`outputs/tables/*.csv`、`outputs/figures/token_dist_abstract.png`、`outputs/samples/stratified_*.md`
+- **正式文档**：`docs/RAG数据分析与设计说明.md`
+- **全量数据**：`E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl`（4,557,627 篇）
+- **分割策略**：`outputs/tables/chunk_strategy_config.json`
+- 数据 pipeline：`src/parse_pmc.py`、`src/build_jsonl.py`、`src/full_scale_pipeline.py`
+- 分析 notebook：`med-data-EDA-partA.ipynb`（验证期）· `med-data-EDA-partB.ipynb`（全量）
+- 统计表与图：`outputs/tables/*.csv`、`outputs/figures/`
+
+### 03 文档解析与分割（🔄 进行中）
+
+- 输入：02 阶段的 `oa_comm_slim.jsonl`
+- 目标：按分割策略生成 chunks 数据集
+- 详见：`03 文档解析与分割/schedule.md`
 
 ---
 
 ## 笔记目录
 
-`笔记/` 下为**个人学习 Q&A**（如 `01笔记.ipynb`、`02笔记.ipynb`），记录概念与踩坑，**不属于正式上交交付物**，供自行复习。
+`笔记/` 下为**个人学习 Q&A**，记录概念与踩坑，**不属于正式交付物**。
+
+| 文件 | 内容 |
+|------|------|
+| `01笔记.ipynb` | 量化机制、Ollama 存储原理 |
+| `01笔记附chroma.ipynb` | Chroma 工作机制 |
+| `02笔记.ipynb` | 数据质量问题诊断与修复 |
+| `03笔记.md` | 第三阶段任务理解 Q&A |
 
 ---
 
@@ -185,7 +208,10 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store
 
 | 日期 | 说明 |
 |------|------|
-| 2026-05-15 | 初版 readme；02 阶段完成至 schedule 阶段 3；补充 02 `requirements.txt` |
-| 2026-05-19 | 02 阶段 5 收尾：token 分位数、ECDF、说明文档 §5 定稿；准备阶段 6 |
+| 2026-05-11 ~ 13 | 01 阶段完成：本地 LLM + PMC 数据源验证 |
+| 2026-05-15 | 02 阶段启动：目录骨架、数据 pipeline |
+| 2026-05-19 | 02 阶段验证期完成：§1~§6 定稿 |
+| 2026-05-24 | 02 阶段全量期启动：Mac→Windows 迁移、外接盘配置 |
+| **2026-05-27** | **02 阶段全部完成**：4,557,627 篇处理完成，策略验证通过 |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*

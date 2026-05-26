@@ -102,6 +102,7 @@ def setup_paths(project_dir: str) -> dict[str, str]:
         "caches_dir": os.path.join(project_dir, "caches"),
     }
     paths["hf_cache"] = os.path.join(paths["caches_dir"], "huggingface")
+    # 验证期默认：工程内 100 篇 sample.jsonl（不受外接盘环境变量影响）
     paths["sample_jsonl"] = os.path.join(paths["data_processed"], "sample.jsonl")
     paths["full_slim_jsonl"] = os.path.join(
         paths["data_processed"], "oa_comm_slim.jsonl"
@@ -115,12 +116,6 @@ def setup_paths(project_dir: str) -> dict[str, str]:
     if data_root:
         paths["data_root"] = data_root
         proc = os.path.join(data_root, "processed")
-        paths["sample_jsonl"] = os.environ.get(
-            "MED_RAG_JSONL",
-            os.path.join(proc, "oa_comm_slim.jsonl"),
-        )
-        if not os.path.isfile(paths["sample_jsonl"]):
-            paths["sample_jsonl"] = os.path.join(proc, "sample.jsonl")
         paths["full_slim_jsonl"] = os.path.join(proc, "oa_comm_slim.jsonl")
         paths["pmcid_index"] = os.path.join(proc, "pmcid_index.jsonl")
         paths["skipped_no_abstract"] = os.path.join(
@@ -129,9 +124,17 @@ def setup_paths(project_dir: str) -> dict[str, str]:
     else:
         paths["data_root"] = paths["data_dir"]
 
+    # 仅当全量 slim 已存在，或显式指定且文件存在时，才覆盖 sample_jsonl
     jsonl_override = os.environ.get("MED_RAG_JSONL")
-    if jsonl_override:
+    if jsonl_override and os.path.isfile(jsonl_override):
         paths["sample_jsonl"] = jsonl_override
+    elif os.path.isfile(paths["full_slim_jsonl"]):
+        if os.environ.get("MED_RAG_USE_FULL_JSONL", "").lower() in (
+            "1",
+            "true",
+            "yes",
+        ):
+            paths["sample_jsonl"] = paths["full_slim_jsonl"]
 
     for key in (
         "data_raw",
