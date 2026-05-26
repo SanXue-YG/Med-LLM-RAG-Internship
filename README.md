@@ -119,7 +119,7 @@ pip install -r "02 数据处理/requirements.txt"
 | Ollama 模型 `deepseek-r1:7b` | 本地 LLM 推理 | 01 | `ollama pull deepseek-r1:7b` |
 | `ollama_models/` | 模型存储 | 01 | 由 Ollama 自动创建 |
 | `chroma_db/` | 向量库持久化 | 01 | 运行 notebook §6 生成 |
-| **PMC 全量数据** (~5TB 解压后) | 全量数据处理 | 02 | 外接硬盘 + `med-data-EDA-partB.ipynb` |
+| **PMC 全量数据** (~100GB 压缩包，解压后 ~466GB) | 全量数据处理 | 02 | 外接硬盘 + `med-data-EDA-partB.ipynb` |
 | **slim JSONL** (8.9 GB) | 第三阶段输入 | 02/03 | 第二阶段生成 |
 
 ### 3. 已随仓库提供的数据

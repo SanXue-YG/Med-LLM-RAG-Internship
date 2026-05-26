@@ -30,7 +30,7 @@
 
 全量期字段：pmcid, pmid, title, abstract, journal, pub_year, pub_date, n_chars_abstract, n_chars_body（**不含 body 正文**）
 
-**数据来源**：PMC Open Access Commercial Use (`oa_comm`) 13 个 baseline 包，共约 5TB 压缩包解压后的 XML 文件。
+**数据来源**：PMC Open Access Commercial Use (`oa_comm`) 13 个 baseline 包，压缩包约 100GB，解压后约 466GB 的 XML 文件。
 
 ## 3. 数据结构分析与清洗策略
 
@@ -213,6 +213,8 @@
 | PMC011xxxxxx | 517,838 | 29,551 | 2 |
 | PMC012xxxxxx | 424,315 | 23,748 | 2 |
 | **合计** | **4,557,627** | **436,521** | **17** |
+
+> **失败原因说明**：17 篇 XML 解析失败（占比 0.0003%），原因包括 XML 格式损坏/不完整、编码异常、缺少必需元数据节点（如 `<article-meta>`）。对数据集整体质量无影响。
 
 ### 9.2 关键配置文件
 
