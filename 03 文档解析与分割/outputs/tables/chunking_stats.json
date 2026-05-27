@@ -1,0 +1,12 @@
+{
+  "processed_date": "2026-05-27T12:54:44.003691",
+  "input_file": "E:\\med-llm-rag-datasets\\processed\\oa_comm_slim.jsonl",
+  "output_file": "E:\\med-llm-rag-datasets\\processed\\oa_comm_chunks.jsonl",
+  "processed_docs": 4557627,
+  "total_chunks": 6107296,
+  "single_count": 3894927,
+  "multi_count": 662700,
+  "chunk_size": 400,
+  "chunk_overlap": 80,
+  "token_limit": 512
+}

@@ -1,0 +1,15 @@
+# 03 文档解析与分割 — Python 依赖
+#
+# 本阶段复用 02 环境，无需额外安装
+# 如需从零安装：
+#   conda activate med-rag-verify
+#   pip install -r "../01 验证模型/requirements.txt"
+#   pip install -r "../02 数据处理/requirements.txt"
+#
+# 核心依赖（02 环境已有）：
+#   - sentence-transformers: tokenizer 长度计算
+#   - langchain-text-splitters: RecursiveCharacterTextSplitter
+#   - pandas: 数据处理
+#   - tqdm: 进度条
+
+# 本阶段暂无新增依赖

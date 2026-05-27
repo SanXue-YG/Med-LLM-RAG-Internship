@@ -1,0 +1,12 @@
+{
+  "processed_date": "2026-05-27T13:06:42.280890",
+  "data_type": "验证样本（1000篇）",
+  "input_file": "..\\data\\processed\\chunks_sample.jsonl",
+  "processed_docs": 1000,
+  "total_chunks": 1267,
+  "single_count": 888,
+  "multi_count": 112,
+  "chunk_size": 400,
+  "chunk_overlap": 80,
+  "token_limit": 512
+}

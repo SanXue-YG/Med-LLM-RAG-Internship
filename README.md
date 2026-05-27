@@ -27,8 +27,8 @@
 | 阶段 | 目录 | 状态 | 任务书 | 计划 | 运行入口（Jupyter） | 依赖 |
 |------|------|------|--------|------|---------------------|------|
 | **01** 验证模型 | `01 验证模型/` | ✅ 已完成 | `任务.txt` | `schedule.md` | `med-LLM-RAG.ipynb` | `requirements.txt` |
-| **02** 数据处理 | `02 数据处理/` | ✅ **已完成** | `任务.txt` | `schedule.md` | `notebooks/med-data-EDA-partA.ipynb`（验证期）· `partB.ipynb`（全量） | `requirements.txt` |
-| **03** 文档解析与分割 | `03 文档解析与分割/` | 🔄 进行中 | `任务.txt` | `schedule.md` | *待创建* | *共用 02 环境* |
+| **02** 数据处理 | `02 数据处理/` | ✅ 已完成 | `任务.txt` | `schedule.md` | `notebooks/med-data-EDA-partA.ipynb`（验证期）· `partB.ipynb`（全量） | `requirements.txt` |
+| **03** 文档解析与分割 | `03 文档解析与分割/` | ✅ **已完成** | `任务.txt` | `schedule.md` | `notebooks/doc-chunking.ipynb`（验证）· `doc-chunking-full.ipynb`（全量） | *共用 02 环境* |
 
 **说明**
 
@@ -60,6 +60,32 @@
 ### 结论
 
 验证期制定的分割策略（chunk_size=400, overlap=80）经全量验证**无需调整**，可直接用于第三阶段。
+
+---
+
+## 第三阶段完成总结（2026-05-27）
+
+### 核心数据
+
+| 指标 | 验证样本 (1000篇) | 全量 (4,557,627篇) | 结论 |
+|------|------------------|-------------------|------|
+| 输出 chunks | 1,267 | **6,107,296** | - |
+| 单块比例 | 88.8% | 85.5% | ✅ 一致 |
+| 多块比例 | 11.2% | 14.5% | ✅ 一致 |
+| Token 超限 | 0 | 0 | ✅ 通过 |
+| Token P95 | 472 | 472 | ✅ 一致 |
+
+### 主要产出
+
+| 产出 | 路径 | 说明 |
+|------|------|------|
+| **全量 chunks** | `E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl` | 6,107,296 chunks |
+| **处理报告** | `03 文档解析与分割/docs/文档分割处理报告.md` | 正式交付文档 |
+| **验证样本** | `03 文档解析与分割/data/processed/chunks_sample.jsonl` | 1,267 chunks |
+
+### 结论
+
+第二阶段策略在全量分割中完全验证通过，6,107,296 个 chunk 已准备好供后续向量化使用。
 
 ---
 
@@ -121,6 +147,7 @@ pip install -r "02 数据处理/requirements.txt"
 | `chroma_db/` | 向量库持久化 | 01 | 运行 notebook §6 生成 |
 | **PMC 全量数据** (~100GB 压缩包，解压后 ~466GB) | 全量数据处理 | 02 | 外接硬盘 + `med-data-EDA-partB.ipynb` |
 | **slim JSONL** (8.9 GB) | 第三阶段输入 | 02/03 | 第二阶段生成 |
+| **chunks JSONL** (~12 GB) | 向量化输入 | 03 | 第三阶段生成 |
 
 ### 3. 已随仓库提供的数据
 
@@ -183,11 +210,14 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - 分析 notebook：`med-data-EDA-partA.ipynb`（验证期）· `med-data-EDA-partB.ipynb`（全量）
 - 统计表与图：`outputs/tables/*.csv`、`outputs/figures/`
 
-### 03 文档解析与分割（🔄 进行中）
+### 03 文档解析与分割（✅ 已完成）
 
-- 输入：02 阶段的 `oa_comm_slim.jsonl`
-- 目标：按分割策略生成 chunks 数据集
-- 详见：`03 文档解析与分割/schedule.md`
+- **正式文档**：`docs/文档分割处理报告.md`
+- **全量数据**：`E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl`（6,107,296 chunks）
+- **验证样本**：`data/processed/chunks_sample.jsonl`（1,267 chunks）
+- 分割模块：`src/chunker.py`
+- 分析 notebook：`doc-chunking.ipynb`（验证）· `doc-chunking-full.ipynb`（全量）
+- 统计报告：`outputs/tables/chunking_stats.json`、`outputs/samples/`
 
 ---
 
@@ -212,6 +242,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | 2026-05-15 | 02 阶段启动：目录骨架、数据 pipeline |
 | 2026-05-19 | 02 阶段验证期完成：§1~§6 定稿 |
 | 2026-05-24 | 02 阶段全量期启动：Mac→Windows 迁移、外接盘配置 |
-| **2026-05-27** | **02 阶段全部完成**：4,557,627 篇处理完成，策略验证通过 |
+| 2026-05-27 | 02 阶段全部完成：4,557,627 篇处理完成，策略验证通过 |
+| **2026-05-27** | **03 阶段全部完成**：6,107,296 chunks 生成完成，质量验证通过 |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
