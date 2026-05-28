@@ -26,9 +26,9 @@
 
 | 阶段 | 目录 | 状态 | 任务书 | 计划 | 运行入口（Jupyter） | 依赖 |
 |------|------|------|--------|------|---------------------|------|
-| **01** 验证模型 | `01 验证模型/` | ✅ 已完成 | `任务.txt` | `schedule.md` | `med-LLM-RAG.ipynb` | `requirements.txt` |
-| **02** 数据处理 | `02 数据处理/` | ✅ 已完成 | `任务.txt` | `schedule.md` | `notebooks/med-data-EDA-partA.ipynb`（验证期）· `partB.ipynb`（全量） | `requirements.txt` |
-| **03** 文档解析与分割 | `03 文档解析与分割/` | ✅ **已完成** | `任务.txt` | `schedule.md` | `notebooks/doc-chunking.ipynb`（验证）· `doc-chunking-full.ipynb`（全量） | *共用 02 环境* |
+| **01** 验证模型 | [`01 验证模型/`](01%20验证模型/) | ✅ 已完成 | [`任务.txt`](01%20验证模型/任务.txt) | [`schedule.md`](01%20验证模型/schedule.md) | [`med-LLM-RAG.ipynb`](01%20验证模型/med-LLM-RAG.ipynb) | [`requirements.txt`](01%20验证模型/requirements.txt) |
+| **02** 数据处理 | [`02 数据处理/`](02%20数据处理/) | ✅ 已完成 | [`任务.txt`](02%20数据处理/任务.txt) | [`schedule.md`](02%20数据处理/schedule.md) | [`partA.ipynb`](02%20数据处理/notebooks/med-data-EDA-partA.ipynb)（验证）· [`partB.ipynb`](02%20数据处理/notebooks/med-data-EDA-partB.ipynb)（全量） | [`requirements.txt`](02%20数据处理/requirements.txt) |
+| **03** 文档解析与分割 | [`03 文档解析与分割/`](03%20文档解析与分割/) | ✅ **已完成** | [`任务.txt`](03%20文档解析与分割/任务.txt) | [`schedule.md`](03%20文档解析与分割/schedule.md) | [`doc-chunking.ipynb`](03%20文档解析与分割/notebooks/doc-chunking.ipynb)（验证）· [`full.ipynb`](03%20文档解析与分割/notebooks/doc-chunking-full.ipynb)（全量） | *共用 02 环境* |
 
 **说明**
 
