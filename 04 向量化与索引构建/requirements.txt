@@ -1,0 +1,28 @@
+# 04 向量化与索引构建 — Python 依赖
+#
+# 本阶段复用 02/03 环境（med-rag-verify），核心依赖通常已具备：
+#   - chromadb            （向量数据库，已验证 1.5.9）
+#   - sentence-transformers（BGE 嵌入模型，已验证 5.5.1）
+#   - torch               （嵌入计算后端）
+#
+# 如需从零安装：
+#   conda activate med-rag-verify
+#   pip install -r "../01 验证模型/requirements.txt"
+#   pip install -r "../02 数据处理/requirements.txt"
+#   pip install chromadb sentence-transformers
+#
+# ============================================================
+# ⚠️ GPU 说明（重要）
+# ============================================================
+# 若需 GPU 加速嵌入（全量 610 万 chunks 强烈建议），需安装 CUDA 版 PyTorch。
+# 当前环境检测到的是 CPU 版（torch x.y.z+cpu），cuda_available=False。
+#
+# 安装 CUDA 版（以 CUDA 12.1 为例，按本机驱动调整）：
+#   pip uninstall torch -y
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#
+# 抽样验证（1,267 chunks）用 CPU 即可，无需 GPU。
+
+# --- 本阶段核心 ---
+chromadb>=1.5.0
+sentence-transformers>=5.0.0

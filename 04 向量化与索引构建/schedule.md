@@ -73,27 +73,41 @@
 
 ## 执行步骤
 
-### 阶段 0：环境与配置
+### 阶段 0：环境与配置 ✅ 已完成（2026-06-01）
 
-- [ ] 创建目录结构：`data/processed/`、`src/`、`notebooks/`、`outputs/`
-- [ ] **复制阶段 3 样本数据**：
-  `03 .../data/processed/chunks_sample.jsonl` → `04 .../data/processed/chunks_sample.jsonl`
-- [ ] 复用 `med-rag-verify` 环境，确认/安装依赖：
-  - `chromadb`（向量库）
-  - `sentence-transformers` 或 `FlagEmbedding`（BGE 模型）
-- [ ] **notebook 入口检测并记录运行环境**（作为背景信息，便于日后对齐）：
-  - GPU 是否可用（`torch.cuda.is_available()`）、设备名、显存
-  - PyTorch / CUDA 版本、嵌入实际使用的 device（cuda / cpu）
-- [ ] 定义路径常量与向量库持久化目录
-  - 向量库输出：`E:\med-llm-rag-datasets\chroma_db\`（体积大，放外接盘）
-- [ ] 首次下载 BGE 模型权重（联网）
+- [x] 创建目录结构：`data/processed/`、`src/`、`notebooks/`、`outputs/`、`docs/`
+- [x] **复制阶段 3 样本数据**：`chunks_sample.jsonl`（1,267 chunks）已复制到 `04 .../data/processed/`
+- [x] 复用 `med-rag-verify` 环境，依赖确认：
+  - `chromadb` 1.5.9 ✅
+  - `sentence-transformers` 5.5.1 ✅
+- [x] **环境检测**（已写入 notebook C0 单元格）
+- [x] 定义路径常量与向量库持久化目录
+  - **验证期**：`04 .../data/chroma_db/`（工程内）
+  - **全量期**：`E:\med-llm-rag-datasets\chroma_db\`（外接盘）
+- [ ] 首次下载 BGE 模型权重（首次运行 notebook C1 时自动联网下载，约 130MB）
+
+**已创建文件：**
+
+| 文件 | 说明 |
+|------|------|
+| `src/embedder.py` | BGE 封装（`encode_documents` 不加指令 / `encode_queries` 加指令） |
+| `src/index_builder.py` | ChromaDB 构建（余弦）+ 分批入库 + 断点续传 + 查询 |
+| `src/__init__.py` | 模块导出 |
+| `notebooks/vectorize-index.ipynb` | 抽样验证入口（C0~C5，向量库在工程内） |
+| `notebooks/vectorize-index-full.ipynb` | 全量入口（向量库在外接盘） |
+| `requirements.txt` | 依赖说明（含 GPU 安装指引） |
+| `data/processed/chunks_sample.jsonl` | 复用阶段 3 样本（1,267 chunks） |
+
+> ⚠️ **环境检测结果（重要）**：当前 PyTorch 为 **CPU 版**（`torch 2.11.0+cpu`，`cuda_available=False`），
+> 暂时**用不了 GPU**。抽样验证（1,267 chunks）用 CPU 即可；**全量前需安装 CUDA 版 PyTorch**：
+> `pip uninstall torch -y && pip install torch --index-url https://download.pytorch.org/whl/cu121`
 
 ### 阶段 1：嵌入模型选择与加载（任务§1）
 
-- [ ] 初始化嵌入模型 `bge-small-en-v1.5`（384 维），自动选 GPU（可用时）
-- [ ] 封装 `encode_documents(texts)`：文档端，**不加**指令前缀（建库用）
-- [ ] 封装 `encode_queries(texts)`：查询端，**自动加** BGE 指令前缀（检索用）
-- [ ] 在验证样本（1,267 chunks）上测试模型加载与编码、确认输出维度 = 384
+- [x] 初始化嵌入模型 `bge-small-en-v1.5`（384 维），自动选 device（cuda 可用时）
+- [x] 封装 `encode_documents(texts)`：文档端，**不加**指令前缀（建库用）
+- [x] 封装 `encode_queries(texts)`：查询端，**自动加** BGE 指令前缀（检索用）
+- [ ] 在验证样本上运行 notebook，确认模型加载与输出维度 = 384（**待执行**）
 
 ### 阶段 2：向量数据库配置与索引构建（任务§2）
 
@@ -140,8 +154,9 @@ stats = {
 ├── schedule.md                  # 本文件
 ├── requirements.txt             # 依赖说明（复用 02 环境 + chromadb）
 ├── data/
-│   └── processed/
-│       └── chunks_sample.jsonl  # 复制自阶段 3（1,267 chunks，本阶段输入）
+│   ├── processed/
+│   │   └── chunks_sample.jsonl  # 复制自阶段 3
+│   └── chroma_db/               # 验证期向量库（工程内，.gitignore 忽略）
 ├── docs/
 │   └── 向量化与索引报告.md       # 正式交付报告（完成后）
 ├── src/
@@ -166,7 +181,8 @@ stats = {
 
 | 产物 | 格式 | 路径 | Git |
 |------|------|------|-----|
-| 向量数据库文件 | ChromaDB | `E:\med-llm-rag-datasets\chroma_db\` | ❌ 外接硬盘 |
+| 向量数据库（验证） | ChromaDB | `04 .../data/chroma_db/` | ❌ 工程内（.gitignore，可重建） |
+| 向量数据库（全量） | ChromaDB | `E:\med-llm-rag-datasets\chroma_db\` | ❌ 外接硬盘 |
 | 索引统计 | JSON | `outputs/tables/index_stats.json` | ✅ |
 | 查询验证结果 | JSON | `outputs/tables/query_validation.json` | ✅ |
 | 验证样本索引统计 | JSON | `outputs/samples/index_stats_sample.json` | ✅ |
@@ -253,3 +269,4 @@ stats = {
 |------|------|
 | 2026-06-01 | 阅读任务书，制定第四阶段执行计划 |
 | 2026-06-01 | 确定三项决策：bge-small-en-v1.5 + GPU 环境 + 先抽样验证（复用阶段 3 样本） |
+| 2026-06-01 | 阶段 0 完成：搭建目录/代码框架/入口 notebook；环境检测发现 torch 为 CPU 版（全量前需装 CUDA 版） |

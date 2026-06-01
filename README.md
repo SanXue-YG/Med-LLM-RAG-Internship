@@ -16,7 +16,7 @@
 ├── 01 验证模型/              # 阶段 1：本地 LLM + PMC 数据源验证（已完成）
 ├── 02 数据处理/              # 阶段 2：数据加载与评估（已完成）
 ├── 03 文档解析与分割/        # 阶段 3：文本分割（已完成）
-├── 04 向量化与索引构建/      # 阶段 4：嵌入 + ChromaDB 索引（规划中）
+├── 04 向量化与索引构建/      # 阶段 4：嵌入 + ChromaDB 索引（抽样验证完成，全量待运行）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -30,7 +30,7 @@
 | **01** 验证模型 | [`01 验证模型/`](01%20验证模型/) | ✅ 已完成 | [`任务.txt`](01%20验证模型/任务.txt) | [`schedule.md`](01%20验证模型/schedule.md) | [`med-LLM-RAG.ipynb`](01%20验证模型/med-LLM-RAG.ipynb) | [`requirements.txt`](01%20验证模型/requirements.txt) |
 | **02** 数据处理 | [`02 数据处理/`](02%20数据处理/) | ✅ 已完成 | [`任务.txt`](02%20数据处理/任务.txt) | [`schedule.md`](02%20数据处理/schedule.md) | [`partA.ipynb`](02%20数据处理/notebooks/med-data-EDA-partA.ipynb)（验证）· [`partB.ipynb`](02%20数据处理/notebooks/med-data-EDA-partB.ipynb)（全量） | [`requirements.txt`](02%20数据处理/requirements.txt) |
 | **03** 文档解析与分割 | [`03 文档解析与分割/`](03%20文档解析与分割/) | ✅ 已完成 | [`任务.txt`](03%20文档解析与分割/任务.txt) | [`schedule.md`](03%20文档解析与分割/schedule.md) | [`doc-chunking.ipynb`](03%20文档解析与分割/notebooks/doc-chunking.ipynb)（验证）· [`full.ipynb`](03%20文档解析与分割/notebooks/doc-chunking-full.ipynb)（全量） | *共用 02 环境* |
-| **04** 向量化与索引构建 | [`04 向量化与索引构建/`](04%20向量化与索引构建/) | 📋 **规划中** | [`任务.txt`](04%20向量化与索引构建/任务.txt) | [`schedule.md`](04%20向量化与索引构建/schedule.md) | *待搭建* | *共用 02 环境 + chromadb* |
+| **04** 向量化与索引构建 | [`04 向量化与索引构建/`](04%20向量化与索引构建/) | 🔄 **抽样验证完成** | [`任务.txt`](04%20向量化与索引构建/任务.txt) | [`schedule.md`](04%20向量化与索引构建/schedule.md) | [`vectorize-index.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index.ipynb)（验证）· [`full.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index-full.ipynb)（全量） | [`requirements.txt`](04%20向量化与索引构建/requirements.txt) |
 
 **说明**
 
@@ -91,22 +91,43 @@
 
 ---
 
-## 第四阶段规划（2026-06-01，进行中）
+## 第四阶段进度（2026-06-01）
 
-> 目标：将第三阶段的文本块向量化，构建 ChromaDB 持久化向量索引，支持语义检索与元数据过滤。
+> 目标：将文本块向量化，构建 ChromaDB 持久化索引，支持语义检索与元数据过滤。
 
 ### 已确认决策
 
 | 决策项 | 结论 |
 |--------|------|
-| 嵌入模型 | `BAAI/bge-small-en-v1.5`（384 维，效果优于 01 阶段 all-MiniLM） |
-| 运行环境 | Windows + GPU（notebook 入口检测并记录设备信息） |
-| 数据范围 | **先抽样验证**：复用阶段 3 的 `chunks_sample.jsonl`（1,267 chunks），跑通后再议全量 |
-| 向量库 | ChromaDB，余弦相似度，持久化到外接盘 `E:\...\chroma_db\` |
+| 嵌入模型 | `BAAI/bge-small-en-v1.5`（384 维） |
+| 相似度 | ChromaDB 余弦（`hnsw:space=cosine`） |
+| 验证期向量库 | 工程内 `04 .../data/chroma_db/` |
+| 全量向量库 | 外接盘 `E:\...\chroma_db\` |
 
-### 当前进度
+### 抽样验证结果（1,267 chunks）✅
 
-计划表已定稿（见 [`04 向量化与索引构建/schedule.md`](04%20向量化与索引构建/schedule.md)），目录结构与代码框架待搭建。
+| 指标 | 结果 | 状态 |
+|------|------|------|
+| 入库数量 | 1,267 = 输入一致 | ✅ |
+| 嵌入维度 | 384 | ✅ |
+| 自相似性检索 | Top-1 命中自身 | ✅ |
+| 语义检索 | 疟疾/象保护/果蝇节律均命中相关文献 | ✅ |
+| 元数据过滤 | `strategy=sliding_window` 过滤生效 | ✅ |
+
+### 主要产出（验证期）
+
+| 产出 | 路径 | Git |
+|------|------|-----|
+| 验证样本输入 | `04 .../data/processed/chunks_sample.jsonl` | ✅ |
+| 索引统计 | `04 .../outputs/samples/index_stats_sample.json` | ✅ |
+| 查询验证报告 | `04 .../outputs/samples/query_validation_sample.json` | ✅ |
+| 向量库（验证） | `04 .../data/chroma_db/` | ❌ 可本地重建 |
+
+### 下一步（全量）
+
+- 输入：`E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl`（6,107,296 chunks，约 9.1 GB）
+- 入口：`vectorize-index-full.ipynb`
+- **建议**：全量前安装 CUDA 版 PyTorch（当前环境为 `torch+cpu`，全量用 CPU 极慢）
 
 ---
 
@@ -167,11 +188,11 @@ pip install -r "02 数据处理/requirements.txt"
 |------|------|------|----------|
 | Ollama 模型 `deepseek-r1:7b` | 本地 LLM 推理 | 01 | `ollama pull deepseek-r1:7b` |
 | `ollama_models/` | 模型存储 | 01 | 由 Ollama 自动创建 |
-| `chroma_db/` | 向量库持久化 | 01 | 运行 notebook §6 生成 |
+| `chroma_db/` | 向量库持久化 | 01/04 | 01 smoke test；04 验证期在工程内、全量在外接盘 |
 | **PMC 全量数据** (~100GB 压缩包，解压后 ~466GB) | 全量数据处理 | 02 | 外接硬盘 + `med-data-EDA-partB.ipynb` |
-| **slim JSONL** (8.9 GB) | 第三阶段输入 | 02/03 | 第二阶段生成 |
-| **chunks JSONL** (~12 GB) | 向量化输入 | 03 | 第三阶段生成 |
-| **ChromaDB 向量库** (~15-20 GB) | 语义检索索引 | 04 | 第四阶段生成（外接盘） |
+| **slim JSONL** (8.9 GB) | 分割输入 | 02/03 | 第二阶段生成 |
+| **chunks JSONL** (~9.1 GB) | 向量化输入 | 03/04 | 第三阶段生成（全量 6,107,296 chunks） |
+| **ChromaDB 全量向量库** (~15-20 GB) | 语义检索索引 | 04 | `vectorize-index-full.ipynb`（外接盘） |
 
 ### 3. 已随仓库提供的数据
 
@@ -185,6 +206,9 @@ pip install -r "02 数据处理/requirements.txt"
 | 03 验证样本质量报告 | `03 文档解析与分割/outputs/samples/quality_report_sample.json` | 验证样本质量检查结果 |
 | 03 全量统计 | `03 文档解析与分割/outputs/tables/chunking_stats.json` | 全量处理统计（6,107,296 chunks） |
 | 03 全量质量报告 | `03 文档解析与分割/outputs/tables/quality_report.json` | 全量抽样质量检查结果 |
+| **04 验证样本 chunks** | `04 向量化与索引构建/data/processed/chunks_sample.jsonl` | 复制自阶段 3（1,267 chunks） |
+| 04 验证索引统计 | `04 向量化与索引构建/outputs/samples/index_stats_sample.json` | BGE + ChromaDB 建库统计 |
+| 04 验证查询报告 | `04 向量化与索引构建/outputs/samples/query_validation_sample.json` | 检索与元数据过滤验证 |
 
 ### Ollama 模型（阶段 01）
 
@@ -196,11 +220,11 @@ ollama pull deepseek-r1:7b
 ./start_ollama.sh
 ```
 
-### 02/03 阶段运行方式
+### 02/03/04 阶段运行方式
 
 1. **File → Open Folder** → 选择对应阶段目录
 2. Jupyter 内核选择 **`med-rag-verify`**
-3. 按 notebook 章节顺序执行
+3. 按 notebook 章节顺序执行（04 验证期：`vectorize-index.ipynb` C0→C5）
 
 ---
 
@@ -248,6 +272,15 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - 分析 notebook：`doc-chunking.ipynb`（验证）· `doc-chunking-full.ipynb`（全量）
 - 统计报告：`outputs/tables/chunking_stats.json`、`outputs/samples/`
 
+### 04 向量化与索引构建（🔄 抽样验证完成，全量待运行）
+
+- **嵌入模型**：`BAAI/bge-small-en-v1.5`（384 维，余弦相似度）
+- **验证样本**：`data/processed/chunks_sample.jsonl`（1,267 chunks）
+- 核心模块：`src/embedder.py`、`src/index_builder.py`
+- 验证 notebook：`vectorize-index.ipynb`（向量库在 `data/chroma_db/`）
+- 全量 notebook：`vectorize-index-full.ipynb`（向量库在外接盘）
+- 验证报告：`outputs/samples/index_stats_sample.json`、`query_validation_sample.json`
+
 ---
 
 ## 笔记目录
@@ -274,6 +307,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | 2026-05-24 | 02 阶段全量期启动：Mac→Windows 迁移、外接盘配置 |
 | 2026-05-27 | 02 阶段全部完成：4,557,627 篇处理完成，策略验证通过 |
 | 2026-05-27 | 03 阶段全部完成：6,107,296 chunks 生成完成，质量验证通过 |
-| **2026-06-01** | **04 阶段启动**：制定计划、确定决策（bge-small + GPU + 先抽样验证） |
+| **2026-06-01** | **04 阶段启动**：制定计划、确定 bge-small + 先抽样验证 |
+| **2026-06-01** | **04 抽样验证完成**：1,267 chunks 建库与检索验证通过；全量待运行（建议先装 CUDA 版 PyTorch） |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
