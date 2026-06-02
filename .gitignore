@@ -23,6 +23,8 @@ secrets/
 # 本地大缓存 / 模型 / 向量库（体积大、可重建）
 **/caches/
 **/chroma_db/
+**/chroma_db_full/
+**/chroma_repair_test/
 **/chroma.sqlite3
 **/ollama_models/
 **/*.bin

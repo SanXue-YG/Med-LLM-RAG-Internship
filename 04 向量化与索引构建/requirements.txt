@@ -17,9 +17,12 @@
 # 若需 GPU 加速嵌入（全量 610 万 chunks 强烈建议），需安装 CUDA 版 PyTorch。
 # 当前环境检测到的是 CPU 版（torch x.y.z+cpu），cuda_available=False。
 #
-# 安装 CUDA 版（以 CUDA 12.1 为例，按本机驱动调整）：
+# 安装 CUDA 版（以 CUDA 12.4 为例，按本机驱动调整；勿写进通用 requirements）：
 #   pip uninstall torch -y
-#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# 或运行项目根目录：.\setup_stage04_gpu.ps1
+#
+# 当前本机实测（2026-06-01）：torch 2.6.0+cu124，RTX 4080，cuda_available=True
 #
 # 抽样验证（1,267 chunks）用 CPU 即可，无需 GPU。
 

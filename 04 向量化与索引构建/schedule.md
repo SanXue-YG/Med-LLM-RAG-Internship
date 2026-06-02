@@ -1,8 +1,10 @@
 # 04 向量化与索引构建 — 执行计划
 
-> **状态：📋 决策已定，待搭建**（2026-06-01）
+> **状态：✅ 全量建库 + C3–C5 验证 + E: 备份已完成**（2026-06-02）
 >
-> **本阶段策略：先抽样验证**（复用阶段 3 的 1,267 chunks），跑通"嵌入 → 建库 → 检索"全流程后，再视情况扩展到全量。
+> **本阶段策略**：抽样验证（1,267 chunks）已跑通；**全量 6,107,296 chunks** 已在 D: `data/chroma_db_full/` 建库并完成质量验证。E: 权威备份已手动完成；**RAG 阶段挂载 D: 上暂留的 `chroma_db_full/`**（见文末「阶段收尾」与根目录 `README.md`）。
+>
+> **GitHub**：代码、notebook、验证 JSON 可上传；向量库目录已在 `.gitignore` 中排除，克隆后需本地保留或从 E: 恢复。
 
 ---
 
@@ -13,7 +15,8 @@
 | **嵌入模型** | `BAAI/bge-small-en-v1.5`（384 维） |
 | **运行环境** | Windows + GPU（notebook 入口检测并记录设备信息，便于日后对齐） |
 | **数据范围** | **先抽样验证**：直接复用阶段 3 的 `chunks_sample.jsonl`（1,267 chunks），复制到本阶段 `data/processed/` |
-| **后续全量** | 抽样流程跑通后再扩展到 610 万全量 |
+| **后续全量** | ✅ 已完成（6,107,296 chunks → `data/chroma_db_full/`） |
+| **RAG 挂载** | ✅ D: `data/chroma_db_full/`（E: 为备份；见「阶段收尾 §5」） |
 
 ---
 
@@ -82,8 +85,8 @@
   - `sentence-transformers` 5.5.1 ✅
 - [x] **环境检测**（已写入 notebook C0 单元格）
 - [x] 定义路径常量与向量库持久化目录
-  - **验证期**：`04 .../data/chroma_db/`（工程内）
-  - **全量期**：`E:\med-llm-rag-datasets\chroma_db\`（外接盘）
+  - **验证期**：`04 .../data/chroma_db/`（工程内；**需重跑 notebook 重建** `pmc_oa_comm_sample`，当前目录可能已被全量半成品占用）
+  - **全量期（当前）**：`04 .../data/chroma_db_full/`（D:）；归档见文末 **「阶段收尾」**
 - [ ] 首次下载 BGE 模型权重（首次运行 notebook C1 时自动联网下载，约 130MB）
 
 **已创建文件：**
@@ -107,18 +110,19 @@
 - [x] 初始化嵌入模型 `bge-small-en-v1.5`（384 维），自动选 device（cuda 可用时）
 - [x] 封装 `encode_documents(texts)`：文档端，**不加**指令前缀（建库用）
 - [x] 封装 `encode_queries(texts)`：查询端，**自动加** BGE 指令前缀（检索用）
-- [ ] 在验证样本上运行 notebook，确认模型加载与输出维度 = 384（**待执行**）
+- [x] 在验证样本上运行 notebook，确认模型加载与输出维度 = 384
+- [x] 全量 notebook C1 通过（`transformers` 直载，见问题排查 §2）
 
 ### 阶段 2：向量数据库配置与索引构建（任务§2）
 
-- [ ] 创建 ChromaDB 持久化 collection（**余弦相似度** `hnsw:space=cosine`）
-- [ ] 构建元数据：`doc_id, chunk_index, total_chunks, source_title, token_count, strategy`
-- [ ] 生成唯一 id：`doc_id + "_" + chunk_index`（任务书要求；与 chunk_id 一致）
-- [ ] **分批入库 + 断点续传**（复用 02/03 阶段模式，应对 610 万规模）
+- [x] 创建 ChromaDB 持久化 collection（**余弦相似度** `hnsw:space=cosine`）
+- [x] 构建元数据：`doc_id, chunk_index, total_chunks, source_title, token_count, strategy`
+- [x] 生成唯一 id：`doc_id + "_" + chunk_index`（任务书要求；与 chunk_id 一致）
+- [x] **分批入库 + 断点续传**（复用 02/03 阶段模式，应对 610 万规模）
   - 按批次（如 5,000 chunks/批）编码并 `add`
   - 进度保存到 `progress.json`，支持中断续传
-- [ ] 验证索引大小（`collection.count()` 与输入一致）
-- [ ] 保存统计信息 `index_stats.json`：
+- [x] 验证索引大小（全量用 `count_embeddings_sqlite()`，见 §9）
+- [x] 保存统计信息 `index_stats.json`：
 
 ```python
 stats = {
@@ -132,17 +136,18 @@ stats = {
 }
 ```
 
-- [ ] 实现 `query()` 查询接口：
+- [x] 实现 `query()` 查询接口：
   - 参数：`query_text`、`n_results`、`where_filter`（元数据过滤）
   - 返回：相关文档片段 + 元数据 + 距离
+  - 全量 metadata 过滤见 §11 post-filter 降级
 
 ### 阶段 3：质量验证（任务§3）
 
-- [ ] **基础统计验证**：向量数量与输入一致、样本元数据完整
-- [ ] **相似性检索验证**：从索引中取文本作查询，测试自相似性（应命中自身）
-- [ ] **边界情况验证**：空查询、超长查询的健壮性
-- [ ] **元数据过滤验证**：按 `pub_year` / `strategy` 等过滤检索正常工作
-- [ ] 导出验证报告 `query_validation.json`
+- [x] **基础统计验证**：向量数量与输入一致、样本元数据完整（全量 **6,107,296** → `index_stats.json`）
+- [x] **相似性检索验证**：自相似 + 语义检索（C4）
+- [x] **边界情况验证**：空查询、超长查询（C5）
+- [x] **元数据过滤验证**：`strategy=sliding_window`（C5，见 §11 post-filter 降级）
+- [x] 导出验证报告 `outputs/tables/query_validation.json`
 
 ---
 
@@ -155,13 +160,15 @@ stats = {
 ├── requirements.txt             # 依赖说明（复用 02 环境 + chromadb）
 ├── data/
 │   ├── processed/
-│   │   └── chunks_sample.jsonl  # 复制自阶段 3
-│   └── chroma_db/               # 验证期向量库（工程内，.gitignore 忽略）
+│   │   ├── chunks_sample.jsonl  # 复制自阶段 3
+│   │   └── oa_comm_chunks.jsonl # 全量输入（可选本地保留，~9 GB）
+│   ├── chroma_db/               # 验证期 / 可重建（.gitignore）
+│   └── chroma_db_full/          # 全量正式库（RAG 用，~71 GB，.gitignore）
 ├── docs/
 │   └── 向量化与索引报告.md       # 正式交付报告（完成后）
 ├── src/
 │   ├── __init__.py
-│   ├── embedder.py              # 嵌入模型封装（BGE，含 encode_documents/encode_queries）
+│   ├── embedder.py              # 嵌入模型封装（BGE；transformers 直载，encode_documents/encode_queries）
 │   └── index_builder.py         # ChromaDB 索引构建 + 查询
 ├── notebooks/
 │   ├── vectorize-index.ipynb    # 验证样本（小规模，先做）
@@ -182,7 +189,7 @@ stats = {
 | 产物 | 格式 | 路径 | Git |
 |------|------|------|-----|
 | 向量数据库（验证） | ChromaDB | `04 .../data/chroma_db/` | ❌ 工程内（.gitignore，可重建） |
-| 向量数据库（全量） | ChromaDB | `E:\med-llm-rag-datasets\chroma_db\` | ❌ 外接硬盘 |
+| 向量数据库（全量） | ChromaDB | `04 .../data/chroma_db_full/`（工程内 D:；可拷回 E: 存档） | ❌ `.gitignore` |
 | 索引统计 | JSON | `outputs/tables/index_stats.json` | ✅ |
 | 查询验证结果 | JSON | `outputs/tables/query_validation.json` | ✅ |
 | 验证样本索引统计 | JSON | `outputs/samples/index_stats_sample.json` | ✅ |
@@ -248,18 +255,20 @@ stats = {
   - `encode_documents(texts)` —— 不加指令（建库用）
   - `encode_queries(texts)` —— 自动加指令（查询用）
 - 从源头避免"查询端漏加指令"的静默劣化。
+- **实现**：使用 `transformers.AutoModel` + mean pooling（不经 `sentence_transformers`），避免 Windows Jupyter 内核崩溃（见「问题排查记录 §2」）。
 
 ---
 
 ## 待确认事项
 
-> 三项核心决策均已确定（见文首「已确认决策」），无待确认项。后续若抽样验证通过，再确认是否扩展到全量。
+> 本阶段核心决策与全量扩展均已落地，无待确认项。
 
 | 原待确认项 | 结论 |
 |-----------|------|
 | 嵌入模型 | ✅ `bge-small-en-v1.5`（384 维） |
-| 是否使用 GPU | ✅ Windows + GPU，入口检测并记录设备信息 |
-| 全量 vs 抽样 | ✅ 先抽样（复用阶段 3 的 1,267 chunks） |
+| 是否使用 GPU | ✅ Windows + GPU（`torch 2.6.0+cu124`，RTX 4080） |
+| 全量 vs 抽样 | ✅ 抽样已验证 → **全量 6,107,296 条已完成** |
+| RAG 向量库位置 | ✅ 日常开发用 D: `data/chroma_db_full/`；E: 为权威备份 |
 
 ---
 
@@ -270,3 +279,249 @@ stats = {
 | 2026-06-01 | 阅读任务书，制定第四阶段执行计划 |
 | 2026-06-01 | 确定三项决策：bge-small-en-v1.5 + GPU 环境 + 先抽样验证（复用阶段 3 样本） |
 | 2026-06-01 | 阶段 0 完成：搭建目录/代码框架/入口 notebook；环境检测发现 torch 为 CPU 版（全量前需装 CUDA 版） |
+| 2026-06-01 | 抽样验证完成（1,267 chunks）：BGE + ChromaDB 建库与检索通过 |
+| 2026-06-02 | GPU 环境就绪：`torch 2.6.0+cu124`（RTX 4080）；新增 `setup_stage04_gpu.ps1` |
+| 2026-06-02 | **全量 C1 内核崩溃已修复**：`embedder.py` 改为 `transformers` 直载（见下方「问题排查」）；C1 通过 |
+| 2026-06-02 | 修复 `vectorize-index-full.ipynb` C2 参数 cell 字面量 `\n` 导致的 SyntaxError |
+| 2026-06-02 | 新增 **C2.5**：E: → 工程内 D: 迁移续跑；笔记 Q13 记录 Chroma 占盘结构 |
+| 2026-06-02 | C2.5 全量跑通中：HNSW 修复 + D: `chroma_db_full`；Q14 记录 E: 占用误判与续跑机制 |
+| 2026-06-02 | **全量建库完成**：6,107,296 条；`progress.json` 与 sqlite 一致 |
+| 2026-06-02 | **C3–C5 验证通过**：`index_stats.json` + `query_validation.json` 已导出；见 §9–§11 与笔记 **Q17** |
+| 2026-06-02 | 阶段收尾说明：D:→E: 归档与 `chroma_db` / `chroma_repair_test` 清理 → 见 **「阶段收尾」** |
+| 2026-06-02 | **E: 备份已完成**（手动）；RAG 阶段采用 D: 暂留 `chroma_db_full/`；计划表与根目录 README 已更新供 GitHub 上传 |
+
+### 全量验证通过后的代码 / notebook 修改（回顾用）
+
+| 修改 | 文件 | 目的 |
+|------|------|------|
+| `count_embeddings_sqlite()` | `index_builder.py` | 610 万库避免 `collection.count()` native 崩溃 |
+| `get_stats(total_chunks=...)` | `index_builder.py` | C3 写统计时不重复 count |
+| `repair_chroma_hnsw` 清理 stale `index_metadata.pickle` | `index_builder.py` | 修复「仅 pickle、无 bin」导致的 hnsw 加载失败 |
+| `query()` post-filter 降级 | `index_builder.py` | C5 `where=` 报 `Error finding id` 时 over-fetch + Python 过滤 |
+| C3 去掉 `pandas`，用 progress/sqlite 条数 | `vectorize-index-full.ipynb` | 避免 Jupyter 内核崩溃 |
+| C2.5a `REPAIR_HNSW=False`（建库完成后）+ count 自动重试 | notebook | 勿误删完好 HNSW；hnsw 错时自动清理 pickle |
+| builder 初始化用 sqlite 计数 | notebook | 重启后只 attach 库，不重跑 C2.5b |
+| 改 `index_builder.py` 后 `importlib.reload` | 操作说明 | 方式 B：不重开 Kernel 加载新 query 逻辑 |
+
+### 全量完成后推荐执行顺序（验证 / 重启后）
+
+```
+C0 → C1 → C2.5a（COPY_FROM_E=False, REPAIR_HNSW=False）
+  → builder 初始化 cell（勿跑 C2.5b 全量建库）
+  → C3 → C4 → C5
+```
+
+> C2.5a 之后**勿再跑 C0**（会把路径改回 E:）。修改 `index_builder.py` 后需 **Kernel Restart** 或对 `index_builder` 做 `importlib.reload` 再重建 `builder`（已集成入builder 初始化 cell）
+---
+
+## 问题排查记录
+
+### 1. 全量前：PyTorch 为 CPU 版（Q11，见笔记）
+
+| 现象 | `cuda_available=False`，`torch x.y.z+cpu` |
+| 原因 | 01 `requirements.txt` 只锁 `torch==2.11.0`；Windows 默认 pip 装 CPU wheel |
+| 处理 | 运行 `setup_stage04_gpu.ps1` 或手动从 PyTorch 官方 index 安装 CUDA 版 |
+
+### 2. 全量 C1：Jupyter 内核崩溃（`The Kernel crashed`）
+
+| 现象 | C1 打印 `device_info` 后，访问 `embedder.dimension` 加载模型时内核直接退出，无 Python traceback |
+| 分析 | ① CLI 中同代码可跑通 → 非 CUDA/模型本身问题；② faulthandler 显示崩溃点在 `import sentence_transformers` 的依赖链（`pyarrow` / `datasets` / `sklearn`）；③ Windows + VS Code/Cursor Jupyter 对该 native 导入链更敏感；④ 仅 `pip install --force-reinstall pyarrow` 对本机仍可能复发 |
+| 处理（最终方案） | **`src/embedder.py` 不再使用 `sentence_transformers`**，改为 `transformers.AutoModel` + mean pooling + L2 归一化；API 不变（`encode_documents` / `encode_queries`） |
+| 操作 | Kernel → Restart → 从 C0 重跑；C1 `batch_size` 建议 128（12GB 显存笔记本） |
+| 备注 | 02 环境仍可能装有 `sentence-transformers`，但 04 建库不再经其加载模型 |
+
+### 3. 全量 C2：SyntaxError（字面量 `\n`）
+
+| 现象 | `BATCH_SIZE = 512\nRESUME = True\n...` → `unexpected character after line continuation character` |
+| 原因 | notebook 生成时误将换行写成 JSON 字符串内的 `\n` 字面量，整段变成一行非法 Python |
+| 处理 | 改为三行独立赋值；并修正 C3 / 文末 markdown cell 中同类问题 |
+
+### 4. 外接盘 I/O 瓶颈 → C2.5 工程内加速
+
+| 现象 | ~4h 仅 ~15.7 万条；任务管理器磁盘 100%、GPU ~30% |
+| 原因 | 全量 JSONL + `chroma_db` 均在 E:（My Passport USB HDD） |
+| 处理 | notebook **【C2.5】**：复制到 `data/processed/` + `data/chroma_db_full/`，覆盖 `INPUT_JSONL` / `PERSIST_DIR`，`RESUME=True` 续跑 |
+| 操作 | 跑通 C0→C1 后**跳过 C2**，直接 C2.5；首次 `COPY_FROM_E=True`，复制完改 `False` |
+| 存档 | 全量完成后将 `data/chroma_db_full/` 拷回 `E:\med-llm-rag-datasets\chroma_db\` |
+| 笔记 | Chroma 目录结构与占盘见 `笔记/04笔记.md` **Q13**；E: 占用与续跑见 **Q14** |
+
+### 5. C2.5：`Error loading hnsw index`
+
+| 项 | 说明 |
+|----|------|
+| 现象 | `collection.count()` → `InternalError: Error loading hnsw index` |
+| 原因 | C2 手动中断导致 HNSW 文件不完整；或复制进已有抽样 `chroma_db/` 混入 orphan 目录 |
+| 数据 | sqlite 中 embeddings 通常仍在（本机 157,696 条未丢） |
+| 处理 | C2.5a `REPAIR_HNSW=True` → `repair_chroma_hnsw()`；全量目录改用 `data/chroma_db_full/` |
+| 续跑 | `RESUME=True`；HNSW 在后续 `add` 时自动重建 |
+| ⚠️ 建库完成后 | **`REPAIR_HNSW=False`**；误开 repair 可能删 HNSW 二进制并留下 stale pickle（见 §9） |
+
+### 6. C2.5：E: 仍显示读 JSONL / 中断后续跑
+
+| 项 | 说明 |
+|----|------|
+| 现象 | 资源监视器见 E: 读 `oa_comm_chunks.jsonl`；但 `print(INPUT_JSONL)` 显示 D: 路径 |
+| 原因（本次） | **Agent 排查脚本**（Chroma 检测、hash 等）后台未退出，占 E: 或文件句柄；**重启 Cursor 后 E: 释放** |
+| 真实半解耦风险 | **C2.5a 后又跑 C0** 或 **跳过 C2.5a** → `INPUT_JSONL` 仍指 E: |
+| 判断方法 | ① 打印 `INPUT_JSONL` / `PERSIST_DIR`；② 资源监视器看 **python.exe** 打开的完整路径 |
+| 中断后续跑成功 | `progress.json` + sqlite 保留进度；C2.5a `REPAIR_HNSW` + `RESUME=True`；详见笔记 **Q14.4** |
+| 操作纪律 | **C0→C1→C2.5a→C2.5b**；C2.5a 后**勿再跑 C0**；全量期间避免并行 Chroma 检测脚本 |
+
+### 7. 嵌入模型：small vs base（RAG 效果）
+
+| 项 | 说明 |
+|----|------|
+| 现象 | 全量跑时 GPU 显存仅用 ~1/3，疑是否应换 `bge-base-en-v1.5` |
+| 速度/磁盘 | 见 Q14 讨论；base 约 2× 向量与索引体积 |
+| **RAG 效果** | base 主要改善 **Recall@K 边界**；相对 MiniLM→small **非跃升**；医学领域未微调时增益有限 |
+| 任务书顺序 | 检索差时先查 chunk、查询指令，**再**试不同模型 |
+| 结论 | **当前全量继续 small**；全量后可对固定医学问句做 small/base **子集 A/B**；仍不足优先 rerank |
+| 笔记 | 多角度分析见 `笔记/04笔记.md` **Q15** |
+
+### 8. ClinicalBERT / 医学 embedding / 领域微调（扩展阅读）
+
+| 项 | 说明 |
+|----|------|
+| 任务书 | `clinicalBERT（需自行微调）` — 非开箱检索模型 |
+| 与 PMC | oa_comm 更贴 **PubMedBERT / MedCPT**；ClinicalBERT 偏 MIMIC 病历 |
+| 微调要点 | query–passage 数据 → 对比学习 → 全量重嵌入 → Recall@K |
+| 当前项目 | **不执行**；继续 BGE-small 全量；详见 `笔记/04笔记.md` **Q16** |
+
+### 9. 全量建库完成后 C2.5a：`Error loading hnsw index`（stale pickle）
+
+| 项 | 说明 |
+|----|------|
+| 现象 | 全量已完成后重启，C2.5a 末尾 `collection.count()` 报 `Error loading hnsw index` |
+| 原因 | ① 建库完成后仍设 `REPAIR_HNSW=True`，删掉 HNSW 二进制；② Chroma 1.5.9 留下仅含 **`index_metadata.pickle`**（~261MB）、无 `data_level0.bin` 的目录；③ **sqlite 中 610 万 embedding 仍在** |
+| 处理 | 删除 stale pickle（`repair_chroma_hnsw` 已增强自动清理）；`count()` 恢复 |
+| 纪律 | 建库完成后 C2.5a 用 **`REPAIR_HNSW=False`**，只确认 D: 路径 |
+| 笔记 | **Q17.2**；概念与 RAG 影响见 **Q18** |
+
+### 10. C3：`The Kernel crashed` / 统计写入失败
+
+| 项 | 说明 |
+|----|------|
+| 现象 | C3 无 Python traceback，Jupyter 日志 `ExitCode: 3221225477` |
+| 原因 | ① `get_stats()` 内再次 `collection.count()`；② 原 C3 `import pandas` 在 Jupyter 下不稳定 |
+| 处理 | C3 用 **`progress.json` / `count_embeddings_sqlite()`**；去掉 pandas |
+| 操作 | 重启后 **C2.5a → builder 初始化 → C3**，勿重跑 C2.5b |
+| 笔记 | **Q17.3** |
+
+### 11. C5 元数据过滤：`Error finding id`
+
+| 项 | 说明 |
+|----|------|
+| 现象 | `query(..., where_filter={"strategy": "sliding_window"})` → `Error finding id` |
+| 原因 | Chroma 1.5.x 全库 metadata/HNSW 不同步（GitHub #7032）；无 `where` 的 query 正常 |
+| 处理 | `query()` **over-fetch + Python 过滤**；`query_validation.json` 中 `元数据过滤生效: true` |
+| 操作 | 改 `index_builder.py` 后 **`importlib.reload(index_builder)`** 再重建 `builder` |
+| 笔记 | **Q17.4** |
+
+---
+
+## 阶段收尾：D: → E: 归档与本地清理
+
+> **目的**：全量验证已通过，在 E: 保留权威备份；RAG 阶段挂载 **D: 暂留的 `chroma_db_full/`**。  
+> **当前状态（2026-06-02）**：E: 备份已手动完成；D: **`chroma_db_full/` 保留供 RAG**；可选清理见 §4。  
+> **执行前（已完成）**：`index_stats.json` 中 `total_chunks = 6107296`，C3–C5 验证通过。
+
+### 1. 当前 `data/` 目录含义（实测 2026-06-02）
+
+| 路径 | 体积（约） | collection | 条数 | 性质 |
+|------|------------|------------|------|------|
+| **`chroma_db_full/`** | **~71 GB** | `pmc_oa_comm_full` | **6,107,296** | ✅ **全量正式库**（RAG 用） |
+| `chroma_db/` | ~1.8 GB | `pmc_oa_comm_full` | ~157,696 | ❌ C2 外接盘/迁移 **半成品**，已被全量库取代 |
+| `chroma_repair_test/` | ~1.8 GB | `pmc_oa_comm_full` | ~158,216 | ❌ HNSW 修复 **测试残留**，与上表同类 |
+| `processed/chunks_sample.jsonl` | 小 | — | 1,267 | ✅ 抽样验证输入（保留） |
+| `processed/oa_comm_chunks.jsonl` | ~9 GB | — | 610 万行 | 全量 JSONL（E: 通常已有副本） |
+
+**重要**：`chroma_db` 与 `chroma_repair_test` **不是**抽样验证库（不是 `pmc_oa_comm_sample` / 1,267 条）。抽样验证结果在 **`outputs/samples/`** 的 JSON 里；原样本 collection 曾在迁移/混放时被 **全量半成品覆盖**。
+
+### 2. `chroma_db` vs `chroma_repair_test`：是否合并？要不要改 notebook？
+
+| 问题 | 结论 |
+|------|------|
+| 两者是否相同性质？ | **是**，均为 **过时全量半成品**（~15.7 万条），互为冗余，**都不是** 1,267 样本库 |
+| 是否只保留 `chroma_repair_test`？ | **不建议**。保留任一都会误导；且 **`vectorize-index.ipynb` 期望 `pmc_oa_comm_sample`**，与目录内数据不符 |
+| 是否改 `vectorize-index.ipynb` 路径到 `chroma_repair_test`？ | **不需要、也不应**只改路径而不重建——改路径后仍打开错误的 `pmc_oa_comm_full` |
+| 推荐做法 | **两个目录都可删除**；日后若需重跑抽样验证，仍用 notebook 默认 **`data/chroma_db/`**，**重新建库**（约数分钟，1,267 条） |
+
+### 3. 移至 E:（备份，必做）
+
+在资源管理器或 `robocopy` **复制整个文件夹**（不要只拷 `chroma.sqlite3`）：
+
+| 源（D: 工程内） | 建议目标（E:） | 说明 |
+|-----------------|----------------|------|
+| `04...\data\chroma_db_full\` | `E:\med-llm-rag-datasets\chroma_db_full\` | **推荐单独目录名**，避免与 E: 上旧半成品 `chroma_db` 混淆 |
+| 或同上 | `E:\med-llm-rag-datasets\chroma_db\` | 若确认 E: 旧 `chroma_db` 可覆盖（见下「删除」） |
+
+**可选同步**（若 E: 尚无或需更新）：
+
+| 源 | 目标 |
+|----|------|
+| `data\processed\oa_comm_chunks.jsonl` | `E:\med-llm-rag-datasets\processed\` |
+| `outputs\tables\index_stats.json` | `E:\med-llm-rag-datasets\reports\` 或工程内已 git 跟踪则不必重复 |
+| `outputs\tables\query_validation.json` | 同上 |
+
+**复制后验证**（在 E: 路径执行一次 Python 或 notebook attach）：
+
+```python
+# 快速验证：条数应为 6107296
+from pathlib import Path
+import sys
+sys.path.insert(0, r"D:\谷歌\04 向量化与索引构建\src")
+from index_builder import count_embeddings_sqlite
+print(count_embeddings_sqlite(r"E:\med-llm-rag-datasets\chroma_db_full"))
+```
+
+### 4. 可在 D: 删除（确认 E: 备份无误后）
+
+| 删除对象 | 约释放 | 前提 |
+|----------|--------|------|
+| **`data\chroma_db_full\`** | **~71 GB** | E: 副本已验证 `6107296` 条 |
+| **`data\chroma_db\`** | ~1.8 GB | 全量已完整；非样本库 |
+| **`data\chroma_repair_test\`** | ~1.8 GB | 仅为修复测试残留 |
+| **`data\processed\oa_comm_chunks.jsonl`** | ~9 GB | **可选**；E: 已有权威副本且短期内不在 D: 建库 |
+| E: 上 **旧** `chroma_db\`（~15.7 万条半成品） | ~2 GB | 已被 `chroma_db_full` 取代 |
+
+**勿删**：
+
+| 保留 | 原因 |
+|------|------|
+| `data\processed\chunks_sample.jsonl` | 抽样 notebook 输入 |
+| `outputs\` 下已生成的 JSON | 任务交付、可 git |
+| E: 上新的 **`chroma_db_full\`** | 全量 RAG 权威备份 |
+
+### 5. RAG 阶段挂载（已确定）
+
+| 场景 | `PERSIST_DIR` | 状态 |
+|------|----------------|------|
+| **RAG 日常开发（当前方案）** | `D:\谷歌\04 向量化与索引构建\data\chroma_db_full\` | ✅ D: 暂留 |
+| D: 已删库、从 E: 读 | `E:\med-llm-rag-datasets\chroma_db_full\` | ✅ E: 备份可用 |
+| 仅用抽样做联调 | 重跑 `vectorize-index.ipynb` → `data\chroma_db\` + `pmc_oa_comm_sample` | 按需 |
+
+统一通过 **`ChromaIndexBuilder` / `PersistentClient`** 打开，**不要**手动读 HNSW bin（见笔记 Q18）。  
+调用示例与字段说明见根目录 **`README.md` →「第四阶段完成总结 → RAG 调用向量库」**。
+
+### 6. 收尾 checklist
+
+- [x] E: `chroma_db_full` 复制完成（手动备份，2026-06-02）
+- [x] 全量验证 JSON 已生成（`outputs/tables/index_stats.json`、`query_validation.json`，可 git）
+- [x] **RAG 挂载路径确定**：D: `data/chroma_db_full/` 暂留
+- [ ] （可选）E: JSONL 副本确认 / 验证 JSON 额外存档
+- [ ] D: 删除 `chroma_db` + `chroma_repair_test`（~3.6 GB 冗余半成品，不影响 RAG）
+- [ ] （可选）D: 删除 `processed/oa_comm_chunks.jsonl`（~9 GB，E: 已有权威副本）
+- [ ] （可选）E: 删除旧半成品 `chroma_db`
+- [ ] （可选）撰写 `docs/向量化与索引报告.md`
+
+> **说明**：因 RAG 阶段使用 D: 全量库，**勿删除 D: `chroma_db_full/`**，除非已改从 E: 挂载并验证 query 正常。
+
+### 7. GitHub 上传说明
+
+| 纳入 Git | 不纳入 Git（`.gitignore`） |
+|----------|---------------------------|
+| `src/`、`notebooks/`、`requirements.txt`、`schedule.md` | `data/chroma_db_full/`（~71 GB） |
+| `outputs/tables/*.json`、`outputs/samples/*.json` | `data/chroma_db/`、`chroma_repair_test/` |
+| `data/processed/chunks_sample.jsonl` | `data/processed/oa_comm_chunks.jsonl`（~9 GB，可选本地保留） |
+
+克隆仓库后，RAG 阶段需在本机保留 **`D:\谷歌\04 向量化与索引构建\data\chroma_db_full\`**，或从 E: 备份复制到该路径（或修改 `PERSIST_DIR` 指向 E:）。
