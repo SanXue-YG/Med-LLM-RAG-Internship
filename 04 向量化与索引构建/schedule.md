@@ -289,6 +289,7 @@ stats = {
 | 2026-06-02 | **C3–C5 验证通过**：`index_stats.json` + `query_validation.json` 已导出；见 §9–§11 与笔记 **Q17** |
 | 2026-06-02 | 阶段收尾说明：D:→E: 归档与 `chroma_db` / `chroma_repair_test` 清理 → 见 **「阶段收尾」** |
 | 2026-06-02 | **E: 备份已完成**（手动）；RAG 阶段采用 D: 暂留 `chroma_db_full/`；计划表与根目录 README 已更新供 GitHub 上传 |
+| 2026-06-03 | **正式报告**：`docs/向量化与索引报告.md`（嵌入模型 `BAAI/bge-small-en-v1.5` 已标注） |
 
 ### 全量验证通过后的代码 / notebook 修改（回顾用）
 
@@ -512,7 +513,7 @@ print(count_embeddings_sqlite(r"E:\med-llm-rag-datasets\chroma_db_full"))
 - [ ] D: 删除 `chroma_db` + `chroma_repair_test`（~3.6 GB 冗余半成品，不影响 RAG）
 - [ ] （可选）D: 删除 `processed/oa_comm_chunks.jsonl`（~9 GB，E: 已有权威副本）
 - [ ] （可选）E: 删除旧半成品 `chroma_db`
-- [ ] （可选）撰写 `docs/向量化与索引报告.md`
+- [x] 撰写 `docs/向量化与索引报告.md`（2026-06-02）
 
 > **说明**：因 RAG 阶段使用 D: 全量库，**勿删除 D: `chroma_db_full/`**，除非已改从 E: 挂载并验证 query 正常。
 

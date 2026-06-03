@@ -1,6 +1,9 @@
 """
 04 向量化与索引构建 — ChromaDB 索引构建与查询
 
+当前索引与 query() 检索结果均对应嵌入模型 BAAI/bge-small-en-v1.5（384 维），
+由传入的 DocumentEmbedder 决定；更换模型须全库重建。详见 docs/向量化与索引报告.md。
+
 实现要点：
 - 持久化 collection，余弦相似度（hnsw:space=cosine）
 - 唯一 id = chunk_id（即 doc_id + chunk_index，阶段 3 已生成）

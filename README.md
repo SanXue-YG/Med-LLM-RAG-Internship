@@ -2,7 +2,7 @@
 
 基于 PMC 开放获取文献（`oa_comm`）的本地 LLM + RAG 可行性验证与数据评估项目。工程按阶段拆分目录，每阶段有独立任务书、计划、依赖与 Jupyter 入口。
 
-> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见 02 阶段 `docs/RAG数据分析与设计说明.md`。
+> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`）。
 
 ---
 
@@ -135,6 +135,7 @@
 | 全量查询验证 | `04 .../outputs/tables/query_validation.json` | ✅ |
 | 验证样本输入 | `04 .../data/processed/chunks_sample.jsonl` | ✅ |
 | 验证期统计/报告 | `04 .../outputs/samples/index_stats_sample.json` 等 | ✅ |
+| **正式报告** | `04 .../docs/向量化与索引报告.md` | ✅ |
 | 核心代码 | `src/embedder.py`、`src/index_builder.py` | ✅ |
 | 全量 notebook | `notebooks/vectorize-index-full.ipynb` | ✅ |
 
@@ -396,6 +397,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 
 ### 04 向量化与索引构建（✅ 已完成）
 
+- **正式文档**：`docs/向量化与索引报告.md`
 - **嵌入模型**：`BAAI/bge-small-en-v1.5`（384 维，余弦相似度）
 - **全量向量库（RAG）**：`D:\谷歌\04 向量化与索引构建\data\chroma_db_full\`（collection: `pmc_oa_comm_full`，6,107,296 条）
 - **E: 备份**：`E:\med-llm-rag-datasets\chroma_db_full\`（手动完成）
@@ -437,5 +439,6 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-02** | **04 GPU 环境就绪**：`torch 2.6.0+cu124`（RTX 4080）；`setup_stage04_gpu.ps1` |
 | **2026-06-02** | **04 全量完成**：6,107,296 chunks 建库；C3–C5 验证通过；E: 备份完成 |
 | **2026-06-02** | **04 收尾文档**：schedule + README 更新；RAG 挂载 D: `chroma_db_full/` |
+| **2026-06-03** | **04: 新增向量化与索引正式报告（BAAI/bge-small-en-v1.5**） |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
