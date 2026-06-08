@@ -1,0 +1,88 @@
+{
+  "smoke_query": "metformin cardiovascular effects",
+  "sample": {
+    "persist_dir": "D:\\谷歌\\04 向量化与索引构建\\data\\chroma_db",
+    "collection": "pmc_oa_comm_sample",
+    "chunks": 1267,
+    "hnsw": {
+      "persist_dir": "D:\\谷歌\\04 向量化与索引构建\\data\\chroma_db",
+      "segments": [
+        {
+          "segment_id": "c1010323-f7f1-42db-ac41-e02aa3400d7d",
+          "dir_exists": true,
+          "bins": {
+            "data_level0.bin": true,
+            "link_lists.bin": true,
+            "length.bin": true
+          },
+          "complete_hnsw": true,
+          "bin_bytes": 168000
+        }
+      ],
+      "any_complete_hnsw": true
+    },
+    "timing": {
+      "query": "metformin cardiovascular effects",
+      "n_results": 5,
+      "where_filter": {
+        "strategy": "sliding_window"
+      },
+      "repeats": 3,
+      "times_sec": [
+        0.0131,
+        0.0118,
+        0.0114
+      ],
+      "mean_sec": 0.0121,
+      "top_ids": [
+        "PMC523838_chunk2",
+        "PMC524363_chunk1",
+        "PMC523838_chunk4",
+        "PMC523838_chunk1",
+        "PMC523838_chunk3"
+      ]
+    }
+  },
+  "full": {
+    "persist_dir": "D:\\谷歌\\04 向量化与索引构建\\data\\chroma_db_full",
+    "collection": "pmc_oa_comm_full",
+    "chunks": 6107296,
+    "hnsw": {
+      "persist_dir": "D:\\谷歌\\04 向量化与索引构建\\data\\chroma_db_full",
+      "segments": [
+        {
+          "segment_id": "5552215e-9070-40de-a5f0-521c25331367",
+          "dir_exists": true,
+          "bins": {
+            "data_level0.bin": false,
+            "link_lists.bin": false,
+            "length.bin": false
+          },
+          "complete_hnsw": false,
+          "bin_bytes": 0
+        }
+      ],
+      "any_complete_hnsw": false
+    },
+    "timing": {
+      "query": "metformin cardiovascular effects",
+      "n_results": 5,
+      "where_filter": null,
+      "repeats": 3,
+      "times_sec": [
+        0.0174,
+        0.0154,
+        0.0157
+      ],
+      "mean_sec": 0.0162,
+      "top_ids": [
+        "PMC12822947_chunk1",
+        "PMC12822947_chunk0",
+        "PMC12823101",
+        "PMC12822947_chunk2",
+        "PMC12823010_chunk1"
+      ]
+    }
+  },
+  "note": "样本库与全量库条数不同，耗时仅供 HNSW/bin 状态与规模粗对比，非严格对照实验。"
+}

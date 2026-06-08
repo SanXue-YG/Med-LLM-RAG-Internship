@@ -1,0 +1,26 @@
+{
+  "abbreviations": {
+    "mi": ["myocardial infarction", "heart attack"],
+    "hf": ["heart failure"],
+    "dm": ["diabetes mellitus"],
+    "t2dm": ["type 2 diabetes", "diabetes mellitus"],
+    "cad": ["coronary artery disease"],
+    "htn": ["hypertension"],
+    "copd": ["chronic obstructive pulmonary disease"],
+    "ckd": ["chronic kidney disease"],
+    "af": ["atrial fibrillation"],
+    "dvt": ["deep vein thrombosis"]
+  },
+  "terms": {
+    "metformin": ["metformin", "biguanide antidiabetic"],
+    "aspirin": ["aspirin", "acetylsalicylic acid"],
+    "insulin": ["insulin"],
+    "atorvastatin": ["atorvastatin", "statin"],
+    "warfarin": ["warfarin", "anticoagulant"],
+    "cardiovascular": ["cardiovascular", "heart disease"],
+    "hypertension": ["hypertension", "high blood pressure"],
+    "diabetes": ["diabetes", "diabetes mellitus"],
+    "malaria": ["malaria", "plasmodium"],
+    "metformin cardiovascular": ["metformin cardiovascular effects", "cardiovascular outcomes metformin"]
+  }
+}

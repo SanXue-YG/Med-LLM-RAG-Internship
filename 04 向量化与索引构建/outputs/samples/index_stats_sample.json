@@ -3,7 +3,7 @@
   "total_chunks": 1267,
   "embedding_model": "BAAI/bge-small-en-v1.5",
   "embedding_dimension": 384,
-  "index_built_at": "2026-06-01T15:09:40.056128",
+  "index_built_at": "2026-06-08T13:49:00.481232",
   "distance": "cosine",
   "chunk_size_stats": {
     "mean": 263.22,
@@ -20,8 +20,11 @@
   ],
   "data_type": "验证样本（1,267 chunks）",
   "env_info": {
-    "torch_version": "2.11.0+cpu",
-    "cuda_available": false,
-    "device": "cpu"
-  }
+    "torch_version": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "gpu_mem_GB": 12.9
+  },
+  "persist_dir": "D:\\谷歌\\04 向量化与索引构建\\data\\chroma_db"
 }

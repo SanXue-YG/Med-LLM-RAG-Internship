@@ -18,6 +18,7 @@
 ├── 02 数据处理/              # 阶段 2：数据加载与评估（已完成）
 ├── 03 文档解析与分割/        # 阶段 3：文本分割（已完成）
 ├── 04 向量化与索引构建/      # 阶段 4：嵌入 + ChromaDB 索引（✅ 全量完成）
+├── 05 检索系统开发第一部分/  # 阶段 5：查询理解与增强（✅ 已完成）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -32,12 +33,47 @@
 | **02** 数据处理 | [`02 数据处理/`](02%20数据处理/) | ✅ 已完成 | [`任务.txt`](02%20数据处理/任务.txt) | [`schedule.md`](02%20数据处理/schedule.md) | [`partA.ipynb`](02%20数据处理/notebooks/med-data-EDA-partA.ipynb)（验证）· [`partB.ipynb`](02%20数据处理/notebooks/med-data-EDA-partB.ipynb)（全量） | [`requirements.txt`](02%20数据处理/requirements.txt) |
 | **03** 文档解析与分割 | [`03 文档解析与分割/`](03%20文档解析与分割/) | ✅ 已完成 | [`任务.txt`](03%20文档解析与分割/任务.txt) | [`schedule.md`](03%20文档解析与分割/schedule.md) | [`doc-chunking.ipynb`](03%20文档解析与分割/notebooks/doc-chunking.ipynb)（验证）· [`full.ipynb`](03%20文档解析与分割/notebooks/doc-chunking-full.ipynb)（全量） | *共用 02 环境* |
 | **04** 向量化与索引构建 | [`04 向量化与索引构建/`](04%20向量化与索引构建/) | ✅ **已完成** | [`任务.txt`](04%20向量化与索引构建/任务.txt) | [`schedule.md`](04%20向量化与索引构建/schedule.md) | [`vectorize-index.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index.ipynb)（验证）· [`full.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index-full.ipynb)（全量） | [`requirements.txt`](04%20向量化与索引构建/requirements.txt) |
+| **05** 检索系统开发第一部分 | [`05 检索系统开发第一部分/`](05%20检索系统开发第一部分/) | ✅ **已完成** | [`任务.txt`](05%20检索系统开发第一部分/任务.txt) | [`schedule.md`](05%20检索系统开发第一部分/schedule.md) | [`query-enhancement.ipynb`](05%20检索系统开发第一部分/notebooks/query-enhancement.ipynb) | [`requirements.txt`](05%20检索系统开发第一部分/requirements.txt) |
 
 **说明**
 
 - 各阶段**具体要求与交付标准**以对应目录内 **`任务.txt`** 为准（老师下发原文）。
 - 各阶段**整体运行入口**在对应 **Jupyter Notebook** 中；按 notebook 内章节顺序执行 cell。
 - 02 阶段每次打开 notebook 需先运行 **【前置】**（见 notebook 顶部说明）。
+
+---
+
+## 第五阶段完成总结（2026-06-08）
+
+> 目标：对用户自然语言查询做**查询理解与增强**，产出可供后续检索使用的结构化对象；**不包含**混合检索、LLM 生成答案。
+
+### 已确认决策
+
+| 决策项 | 结论 |
+|--------|------|
+| 查询语言 | **英文优先**（老师确认）；中文后续视时间添加 |
+| 嵌入模型 | 与 04 一致：`BAAI/bge-small-en-v1.5` |
+| 时间 filter | **解析但不重建索引**；`year_*` 标 `executable=false` |
+| 向量库 | 复用 04 `chroma_db`（样本）/ `chroma_db_full`（全量） |
+
+### 主要产出
+
+| 产出 | 路径 | Git |
+|------|------|-----|
+| 查询增强模块 | `05 .../src/query_enhancer.py` 等 | ✅ |
+| 静态同义词表 | `05 .../data/medical_synonyms.json` | ✅ |
+| 演示 notebook | `05 .../notebooks/query-enhancement.ipynb` | ✅ |
+| 增强样例 | `05 .../outputs/samples/enhancement_examples.json` | ✅ |
+| 双库 smoke 对比 | `05 .../outputs/samples/chroma_smoke_compare.json` | ✅ |
+
+### 双库 smoke test（`metformin cardiovascular effects`，Top-5）
+
+| 库 | 条数 | HNSW bin | 平均 query |
+|----|------|----------|------------|
+| 样本 `chroma_db` | 1,267 | ✅ 完整 | ~12 ms |
+| 全量 `chroma_db_full` | 6,107,296 | ❌ 无 bin | ~16 ms |
+
+05→04 检索路径已打通；详见 [`05 .../schedule.md`](05%20检索系统开发第一部分/schedule.md) 与 [`笔记/05笔记·.md`](笔记/05笔记·.md) Q11。
 
 ---
 
@@ -408,6 +444,15 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - 验证报告（样本）：`outputs/samples/index_stats_sample.json`、`query_validation_sample.json`
 - **RAG 调用说明**：见上文「第四阶段完成总结 → RAG 调用向量库」
 
+### 05 检索系统开发第一部分（✅ 已完成）
+
+- **任务范围**：查询理解与增强（任务书本周产出 = 代码模块）
+- **核心模块**：`MedicalQueryEnhancer` → `EnhancedQuery`（vector/keyword query + filters）
+- **嵌入模型**：`BAAI/bge-small-en-v1.5`（与 04 一致；BGE 指令由 `DocumentEmbedder.encode_queries()` 添加）
+- **演示入口**：`notebooks/query-enhancement.ipynb`（C0–C5）
+- **样例输出**：`outputs/samples/enhancement_examples.json`、`chroma_smoke_compare.json`
+- **联调脚本**：`scripts/run_dual_smoke.py`
+
 ---
 
 ## 笔记目录
@@ -421,6 +466,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | `02笔记.ipynb` | 数据质量问题诊断与修复 |
 | `03笔记.md` | 第三阶段任务理解 Q&A |
 | `04笔记.md` | 嵌入模型、维数、token、ChromaDB、BGE 查询指令 Q&A |
+| `05笔记·.md` | 05 阶段共识、filter 决策、双库 smoke、notebook 实测 Q&A |
 
 ---
 
@@ -439,6 +485,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-02** | **04 GPU 环境就绪**：`torch 2.6.0+cu124`（RTX 4080）；`setup_stage04_gpu.ps1` |
 | **2026-06-02** | **04 全量完成**：6,107,296 chunks 建库；C3–C5 验证通过；E: 备份完成 |
 | **2026-06-02** | **04 收尾文档**：schedule + README 更新；RAG 挂载 D: `chroma_db_full/` |
-| **2026-06-03** | **04: 新增向量化与索引正式报告（BAAI/bge-small-en-v1.5**） |
+| **2026-06-03** | **04: 新增向量化与索引正式报告**（`BAAI/bge-small-en-v1.5`） |
+| **2026-06-08** | **05 阶段完成**：查询理解与增强模块 + 双库 Chroma smoke test |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*

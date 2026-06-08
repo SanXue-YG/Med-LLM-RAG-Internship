@@ -1,0 +1,101 @@
+[
+  {
+    "original": "What is the treatment for MI?",
+    "cleaned": "What is the treatment for MI?",
+    "entities": [],
+    "expanded_terms": [
+      "myocardial infarction",
+      "heart attack"
+    ],
+    "vector_query": "What is the treatment for MI?",
+    "keyword_query": "treatment mi myocardial infarction heart attack",
+    "filters": [],
+    "metadata": {
+      "embedding_model": "BAAI/bge-small-en-v1.5",
+      "language": "en"
+    }
+  },
+  {
+    "original": "metformin cardiovascular effects",
+    "cleaned": "metformin cardiovascular effects",
+    "entities": [
+      {
+        "type": "drug",
+        "text": "metformin",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "type": "disease",
+        "text": "cardiovascular",
+        "start": 10,
+        "end": 24
+      }
+    ],
+    "expanded_terms": [
+      "metformin",
+      "biguanide antidiabetic",
+      "cardiovascular",
+      "heart disease",
+      "metformin cardiovascular effects",
+      "cardiovascular outcomes metformin"
+    ],
+    "vector_query": "metformin cardiovascular effects",
+    "keyword_query": "metformin cardiovascular effects biguanide antidiabetic heart disease metformin cardiovascular effects cardiovascular outcomes metformin",
+    "filters": [],
+    "metadata": {
+      "embedding_model": "BAAI/bge-small-en-v1.5",
+      "language": "en"
+    }
+  },
+  {
+    "original": "papers on malaria after 2015",
+    "cleaned": "papers on malaria after 2015",
+    "entities": [
+      {
+        "type": "disease",
+        "text": "malaria",
+        "start": 10,
+        "end": 17
+      }
+    ],
+    "expanded_terms": [
+      "malaria",
+      "plasmodium"
+    ],
+    "vector_query": "papers on malaria after 2015",
+    "keyword_query": "papers malaria after 2015 plasmodium",
+    "filters": [
+      {
+        "key": "year_gte",
+        "value": 2015,
+        "executable": false,
+        "note": "索引无 pub_year；RAG 阶段检索后过滤"
+      }
+    ],
+    "metadata": {
+      "embedding_model": "BAAI/bge-small-en-v1.5",
+      "language": "en"
+    }
+  },
+  {
+    "original": "circadian rhythm in sliding window chunks",
+    "cleaned": "circadian rhythm in sliding window chunks",
+    "entities": [],
+    "expanded_terms": [],
+    "vector_query": "circadian rhythm in sliding window chunks",
+    "keyword_query": "circadian rhythm sliding window chunks",
+    "filters": [
+      {
+        "key": "strategy",
+        "value": "sliding_window",
+        "executable": true,
+        "note": "Chroma metadata 支持"
+      }
+    ],
+    "metadata": {
+      "embedding_model": "BAAI/bge-small-en-v1.5",
+      "language": "en"
+    }
+  }
+]

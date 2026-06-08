@@ -1,0 +1,5 @@
+# 05 检索系统开发第一部分 — 复用 med-rag-verify（与 02/04 相同）
+#
+# conda activate med-rag-verify
+# 本阶段主要新增逻辑在 src/；检索 smoke test 依赖 04 阶段：
+#   chromadb, torch, transformers（见 04 向量化与索引构建/requirements.txt）
