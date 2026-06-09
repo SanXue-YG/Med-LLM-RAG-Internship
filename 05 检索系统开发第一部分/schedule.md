@@ -196,6 +196,7 @@ class MedicalQueryEnhancer:
 - [x] 更新根目录 `README.md` 阶段 05 条目
 - [x] 本 `schedule.md` 进度与验证结果
 - [x] `笔记/05笔记·.md` 补充 notebook 实测（Q11）
+- [x] `docs/查询理解与增强报告.md`（正式交付文档，提交老师）
 
 ---
 
@@ -223,6 +224,7 @@ class MedicalQueryEnhancer:
 | 增强样例输出 | JSON | `outputs/samples/enhancement_examples.json` | ✅ |
 | 双库 smoke 对比 | JSON | `outputs/samples/chroma_smoke_compare.json` | ✅ |
 | Chroma 联调脚本 | Python | `scripts/run_dual_smoke.py` | ✅ |
+| **正式报告** | Markdown | `docs/查询理解与增强报告.md` | ✅ |
 | 向量库 | ChromaDB | 04 阶段已有 | ❌ |
 
 ---

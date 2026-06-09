@@ -2,7 +2,7 @@
 
 基于 PMC 开放获取文献（`oa_comm`）的本地 LLM + RAG 可行性验证与数据评估项目。工程按阶段拆分目录，每阶段有独立任务书、计划、依赖与 Jupyter 入口。
 
-> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`）。
+> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`）。
 
 ---
 
@@ -65,6 +65,7 @@
 | 演示 notebook | `05 .../notebooks/query-enhancement.ipynb` | ✅ |
 | 增强样例 | `05 .../outputs/samples/enhancement_examples.json` | ✅ |
 | 双库 smoke 对比 | `05 .../outputs/samples/chroma_smoke_compare.json` | ✅ |
+| **正式报告** | `05 .../docs/查询理解与增强报告.md` | ✅ |
 
 ### 双库 smoke test（`metformin cardiovascular effects`，Top-5）
 
@@ -452,6 +453,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - **演示入口**：`notebooks/query-enhancement.ipynb`（C0–C5）
 - **样例输出**：`outputs/samples/enhancement_examples.json`、`chroma_smoke_compare.json`
 - **联调脚本**：`scripts/run_dual_smoke.py`
+- **正式文档**：`docs/查询理解与增强报告.md`
 
 ---
 
@@ -487,5 +489,6 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-02** | **04 收尾文档**：schedule + README 更新；RAG 挂载 D: `chroma_db_full/` |
 | **2026-06-03** | **04: 新增向量化与索引正式报告**（`BAAI/bge-small-en-v1.5`） |
 | **2026-06-08** | **05 阶段完成**：查询理解与增强模块 + 双库 Chroma smoke test |
+| **2026-06-08** | **05: 新增查询理解与增强正式报告** |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
