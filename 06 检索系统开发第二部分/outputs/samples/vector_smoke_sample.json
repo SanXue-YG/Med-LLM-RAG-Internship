@@ -1,0 +1,320 @@
+{
+  "mode": "sample",
+  "chroma_dir": "D:\\谷歌\\04 向量化与索引构建\\data\\chroma_db",
+  "collection": "pmc_oa_comm_sample",
+  "top_k": 10,
+  "queries": [
+    {
+      "original": "metformin cardiovascular effects",
+      "vector_query": "metformin cardiovascular effects",
+      "chroma_where": null,
+      "hits": [
+        {
+          "chunk_id": "PMC523838_chunk2",
+          "doc_id": "PMC523838",
+          "source_title": "Nevirapine and Efavirenz Elicit Different Changes in Lipid Profiles in Antiretroviral- Therapy-Naive Patients Infected with HIV-1",
+          "strategy": "sliding_window",
+          "text": "Prospective analysis of lipids and lipoproteins was performed in patients enrolled in the NVP and EFV treatment groups of the 2NN study who remained on allocated treatment during 48 wk of follow-up. Patients were allocated to NVP ( n = 417), or EFV ( n = 289) in combination with stavudine and lamivudine. The primary endpoint was percentage change over 48 wk in high-density lipoprotein cholesterol (HDL-c), total cholesterol (TC), TC:HDL-c ratio, non-HDL-c, low-density lipoprotein cholesterol, and triglycerides. The increase of HDL-c was significantly larger for patients receiving NVP (42.5%) than for patients receiving EFV (33.7%; p = 0.036), while the increase in TC was lower (26.9% and 31.1%, respectively; p = 0.073), resulting in a decrease of the TC:HDL-c ratio for patients receiving NVP (−4.1%) and an increase for patients receiving EFV (+5.9%; p < 0.001). The increase of non-HDL-c was smaller for patients receiving NVP (24.7%) than for patients receiving EFV (33.6%; p = 0.007), as were the increases of triglycerides (20.1% and 49.0%, respectively; p < 0.001) and low-density lipoprotein cholesterol (35.0% and 40.0%, respectively; p = 0.378)",
+          "source": "vector",
+          "score": 0.6290829181671143,
+          "distance": 0.37091708183288574,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC524031",
+          "doc_id": "PMC524031",
+          "source_title": "Metabolic response of people with type 2 diabetes to a high protein diet",
+          "strategy": "single",
+          "text": "Metabolic response of people with type 2 diabetes to a high protein diet\n\nOne of the major interests in our laboratory has been to develop a scientific framework for dietary advice for patients with diabetes. Knowledge regarding the metabolic consequences and potential effects on health of protein in people with type 2 diabetes has been a particular interest.\nWe recently have completed a study in which dietary protein was increased from 15% to 30% of total food energy. The carbohydrate content was decreased from 55% to 40%, i.e. dietary protein replaced part of the carbohydrate. This resulted in a significant decrease in total glycohemoglobin, a decrease in postprandial glucose concentrations and a modest increase in insulin concentration. Renal function was unchanged.\nCurrently we also are determining the metabolic response to a diet in which the carbohydrate content is further decreased to 20% of total food energy. The %tGHb decrease was even more dramatic than with the 40% carbohydrate diet.\nFrom these data we conclude that increasing the protein content of the diet at the expense of carbohydrate can reduce the 24-hour integrated plasma glucose concentration, at least over a 5-week period of time. The reduction was similar to that of oral agents. Renal function was not affected significantly. Thus, increasing the protein content of the diet with a corresponding decrease in the carbohydrate content potentially is a patient empowering way of reducing the hyperglycemia present with type 2 diabetes mellitus, independent of the use of pharmaceutical agents.",
+          "source": "vector",
+          "score": 0.6138721704483032,
+          "distance": 0.3861278295516968,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC524175",
+          "doc_id": "PMC524175",
+          "source_title": "Single nucleotide polymorphisms in the apolipoprotein B and low density lipoprotein receptor genes affect response to antihypertensive treatment",
+          "strategy": "single",
+          "text": "Single nucleotide polymorphisms in the apolipoprotein B and low density lipoprotein receptor genes affect response to antihypertensive treatment\n\nDyslipidemia has been associated with hypertension. The present study explored if polymorphisms in genes encoding proteins in lipid metabolism could be used as predictors for the individual response to antihypertensive treatment.\nTen single nucleotide polymorphisms (SNP) in genes related to lipid metabolism were analysed by a microarray based minisequencing system in DNA samples from ninety-seven hypertensive subjects randomised to treatment with either 150 mg of the angiotensin II type 1 receptor blocker irbesartan or 50 mg of the β 1 -adrenergic receptor blocker atenolol for twelve weeks.\nThe reduction in blood pressure was similar in both treatment groups. The SNP C711T in the apolipoprotein B gene was associated with the blood pressure response to irbesartan with an average reduction of 19 mmHg in the individuals carrying the C-allele, but not to atenolol. The C16730T polymorphism in the low density lipoprotein receptor gene predicted the change in systolic blood pressure in the atenolol group with an average reduction of 14 mmHg in the individuals carrying the C-allele.\nPolymorphisms in genes encoding proteins in the lipid metabolism are associated with the response to antihypertensive treatment in a drug specific pattern. These results highlight the potential use of pharmacogenetics as a guide for individualised antihypertensive treatment, and also the role of lipids in blood pressure control.",
+          "source": "vector",
+          "score": 0.60209059715271,
+          "distance": 0.39790940284729004,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC524029",
+          "doc_id": "PMC524029",
+          "source_title": "β3-adrenoceptor agonist prevents alterations of muscle diacylglycerol and adipose tissue phospholipids induced by a cafeteria diet",
+          "strategy": "single",
+          "text": "β3-adrenoceptor agonist prevents alterations of muscle diacylglycerol and adipose tissue phospholipids induced by a cafeteria diet\n\nInsulin resistance induced by a high fat diet has been associated with alterations in lipid content and composition in skeletal muscle and adipose tissue. Administration of β3-adrenoceptor (β3-AR) agonists was recently reported to prevent insulin resistance induced by a high fat diet, such as the cafeteria diet. The objective of the present study was to determine whether a selective β3-AR agonist (ZD7114) could prevent alterations of the lipid profile of skeletal muscle and adipose tissue lipids induced by a cafeteria diet.\nMale Sprague-Dawley rats fed a cafeteria diet were treated orally with either the β3-AR agonist ZD7114 (1 mg/kg per day) or the vehicle for 60 days. Rats fed a chow diet were used as a reference group. In addition to the determination of body weight and insulin plasma level, lipid content and fatty acid composition in gastronemius and in epididymal adipose tissue were measured by gas-liquid chromatography, at the end of the study.\nIn addition to higher body weights and plasma insulin concentrations, rats fed a cafeteria diet had greater triacylglycerol (TAG) and diacylglycerol (DAG) accumulation in skeletal muscle, contrary to animals fed a chow diet. As expected, ZD7114 treatment prevented the excessive weight gain and hyperinsulinemia induced by the cafeteria diet. Furthermore, in ZD7114 treated rats, intramyocellular DAG levels were lower and the proportion of polyunsaturated fatty acids, particularly arachidonic acid, in adipose tissue phospholipids was higher than in animals fed a cafeteria diet.\nThese results show that activation of the β3-AR was able to prevent lipid alterations in muscle and adipose tissue associated with insulin resistance induced by the cafeteria diet. These changes in intramyocellular DAG levels and adipose tissue PL composition may contribute to the improved insulin sensitivity associated with β3-AR activation.",
+          "source": "vector",
+          "score": 0.5961399078369141,
+          "distance": 0.40386009216308594,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC524503",
+          "doc_id": "PMC524503",
+          "source_title": "Association of changes in health-related quality of life in coronary heart disease with coronary procedures and sociodemographic characteristics",
+          "strategy": "single",
+          "text": "Association of changes in health-related quality of life in coronary heart disease with coronary procedures and sociodemographic characteristics\n\nFew studies have focused on the association between the sociodemographic characteristics of a patient with the change in health-related quality of life (HRQOL) following invasive coronary procedures, and the results remain inconclusive. The objective of the present study was to measure the temporal changes in HRQOL of patients with coronary heart disease, and assess how these changes are associated with invasive coronary procedures and sociodemographic characteristics.\nThis was a prospective study of 254 patients with angina pectoris and 90 patients with acute coronary syndrome. HRQOL was assessed with the multi-item scales and summary components of the SF-36, both 6 weeks and 2 years after baseline hospitalization in 1998. Paired t -tests and multiple regression analyses were used to assess temporal changes in HRQOL and to identify the associated factors.\nPhysical components of HRQOL had improved most during the 2 years following invasive coronary procedures. Our findings indicated that patients with angina pectoris who were younger, male, and more educated were most likely to increase their HRQOL following invasive coronary procedures. When adjusting for baseline HRQOL scores, invasive coronary procedures and sociodemographic characteristics did not explain temporal changes in patients with acute coronary syndrome, possibly due to higher comorbidity.\nSociodemographic characteristics should be taken into account when comparing and interpreting changes in HRQOL scores in patients with and without invasive coronary procedures.",
+          "source": "vector",
+          "score": 0.5887308120727539,
+          "distance": 0.4112691879272461,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "original": "papers on malaria after 2015",
+      "vector_query": "papers on malaria after 2015",
+      "chroma_where": null,
+      "hits": [
+        {
+          "chunk_id": "PMC523837",
+          "doc_id": "PMC523837",
+          "source_title": "Assessment of Volume Depletion in Children with Malaria",
+          "strategy": "single",
+          "text": "Assessment of Volume Depletion in Children with Malaria\n\nThe degree of volume depletion in severe malaria is currently unknown, although knowledge of fluid compartment volumes can guide therapy. To assist management of severely ill children, and to test the hypothesis that volume changes in fluid compartments reflect disease severity, we measured body compartment volumes in Gabonese children with malaria.\nTotal body water volume (TBW) and extracellular water volume (ECW) were estimated in children with severe or moderate malaria and in convalescence by tracer dilution with heavy water and bromide, respectively. Intracellular water volume (ICW) was derived from these parameters. Bioelectrical impedance analysis estimates of TBW and ECW were calibrated against dilution methods, and bioelectrical impedance analysis measurements were taken daily until discharge. Sixteen children had severe and 19 moderate malaria. Severe childhood malaria was associated with depletion of TBW (mean [SD] of 37 [ 33 ] ml/kg, or 6.7% [6.0%]) relative to measurement at discharge. This is defined as mild dehydration in other conditions. ECW measurements were normal on admission in children with severe malaria and did not rise in the first few days of admission. Volumes in different compartments (TBW, ECW, and ICW) were not related to hyperlactataemia or other clinical and laboratory markers of disease severity. Moderate malaria was not associated with a depletion of TBW.\nSignificant hypovolaemia does not exacerbate complications of severe or moderate malaria. As rapid rehydration of children with malaria may have risks, we suggest that fluid replacement regimens should aim to correct fluid losses over 12–24 h.\nSome investigators have suggested that children with malaria need a lot of fluids. But this paper casts doubt on this assumption, and assesses a novel way to assess fluid balance",
+          "source": "vector",
+          "score": 0.6315687894821167,
+          "distance": 0.3684312105178833,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC522803",
+          "doc_id": "PMC522803",
+          "source_title": "Exposure to malaria affects the regression of hepatosplenomegaly after treatment for Schistosoma mansoni infection in Kenyan children",
+          "strategy": "single",
+          "text": "Exposure to malaria affects the regression of hepatosplenomegaly after treatment for Schistosoma mansoni infection in Kenyan children\n\nSchistosoma mansoni and malaria infections are often endemic in the same communities in sub-Saharan Africa, and both have pathological effects on the liver and the spleen. Hepatosplenomegaly associated with S. mansoni is exacerbated in children with relatively high exposure to malaria. Treatment with praziquantel reduces the degree of hepatosplenomegaly, but the condition does not completely resolve in some cases. The present analysis focused on the possibility that exposure to malaria infection may have limited the resolution of hepatosplenomegaly in a cohort of Kenyan schoolchildren.\nNinety-six children aged 6–16, from one community in Makueni district, Kenya, were treated with praziquantel. At baseline, all children had hepatomegaly and most had splenomegaly. The source of S. mansoni infection, a river, was molluscicided regularly over the following three years to limit S. mansoni re-infection, whereas malaria exposure was uninterrupted. Hepatic and splenic enlargement was assessed annually outside the malaria transmission season.\nChildren living in an area of relatively high exposure to both infections presented with the largest spleens before treatment and at each follow-up. Spleens of firm consistency were associated with proximity to the river. The regression of hepatomegaly was also affected by location, being minimal in an area with relatively low S. mansoni exposure but high exposure to malaria, and maximal in an area with relatively low exposure to both infections.\nThe outcome of treating cases of hepatosplenomegaly with praziquantel in this cohort of Kenyan children depended strongly on their level of exposure to malaria infection. Furthermore, a residual burden of hepatosplenic morbidity was observed, which was possibly attributable to the level of exposure to malaria. The results suggest that exposure to malaria infection may be a significant factor affecting the outcome of praziquantel treatment to reduce the level of hepatosplenic morbidity.",
+          "source": "vector",
+          "score": 0.622757077217102,
+          "distance": 0.37724292278289795,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC524252",
+          "doc_id": "PMC524252",
+          "source_title": "The Risk of a Mosquito-Borne Infectionin a Heterogeneous Environment",
+          "strategy": "single",
+          "text": "The Risk of a Mosquito-Borne Infectionin a Heterogeneous Environment\n\nA common assumption about malaria, dengue, and other mosquito-borne infections is that the two main components of the risk of human infection—the rate at which people are bitten (human biting rate) and the proportion of mosquitoes that are infectious—are positively correlated. In fact, these two risk factors are generated by different processes and may be negatively correlated across space and time in heterogeneous environments. Uneven distribution of blood-meal hosts and larval habitat creates a spatial mosaic of demograPhic sources and sinks. Moreover, mosquito populations fluctuate temporally, forced by environmental variables such as rainfall, temperature, and humidity. These sources of spatial and temporal heterogeneity in the distribution of mosquito populations generate variability in the human biting rate, in the proportion of mosquitoes that are infectious, and in the risk of human infection. To understand how heterogeneity affects the epidemiology of mosquito-borne infections, we developed a set of simple models that incorporate heterogeneity in a stepwise fashion. These models predict that the human biting rate is highest shortly after the mosquito densities peak, near breeding sites where adult mosquitoes emerge, and around the edges of areas where humans are aggregated. In contrast, the proportion of mosquitoes that are infectious reflects the age structure of mosquito populations; it peaks where old mosquitoes are found, far from mosquito breeding habitat, and when mosquito population density is declining. Finally, we show that estimates for the average risk of infection that are based on the average entomological inoculation rate are strongly biased in heterogeneous environments.\nA modeling approach reveals that incorporating the demography and behavior of mosquitoes can substantially change estimates of the risk of infection from diseases such as malaria",
+          "source": "vector",
+          "score": 0.5991202592849731,
+          "distance": 0.40087974071502686,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC524359",
+          "doc_id": "PMC524359",
+          "source_title": "Under-representation of developing countries in the research literature: ethical issues arising from a survey of five leading medical journals",
+          "strategy": "single",
+          "text": "Under-representation of developing countries in the research literature: ethical issues arising from a survey of five leading medical journals\n\nIt is widely acknowledged that there is a global divide on health care and health research known as the 10/90 divide.\nA retrospective survey of articles published in the BMJ, Lancet, NEJM, Annals of Internal Medicine & JAMA in a calendar year to examine the contribution of the developing world to medical literature. We categorized countries into four regions: UK, USA, Other Euro-American countries (OEAC) and (RoW). OEAC were European countries other than the UK but including Australia, New Zealand and Canada. RoW comprised all other countries.\nThe average contribution of the RoW to the research literature in the five journals was 6.5%. In the two British journals 7.6% of the articles were from the RoW; in the three American journals 4.8% of articles were from RoW. The highest proportion of papers from the RoW was in the Lancet (12%). An analysis of the authorship of 151 articles from RoW showed that 104 (68.9%) involved authorship with developed countries in Europe or North America. There were 15 original papers in these journals with data from RoW but without any authors from RoW.\nThere is a marked under-representation of countries in high-impact general medical journals. The ethical implications of this inequity and ways of reducing it are discussed.",
+          "source": "vector",
+          "score": 0.5887877345085144,
+          "distance": 0.4112122654914856,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC524376_chunk0",
+          "doc_id": "PMC524376",
+          "source_title": "A Randomised, Double-Blind, Controlled Vaccine Efficacy Trial of DNA/MVA ME-TRAP Against Malaria Infection in Gambian Adults",
+          "strategy": "sliding_window",
+          "text": "A Randomised, Double-Blind, Controlled Vaccine Efficacy Trial of DNA/MVA ME-TRAP Against Malaria Infection in Gambian Adults",
+          "source": "vector",
+          "score": 0.5865622758865356,
+          "distance": 0.41343772411346436,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "original": "MI treatment guideline",
+      "vector_query": "MI treatment guideline",
+      "chroma_where": null,
+      "hits": [
+        {
+          "chunk_id": "PMC522817",
+          "doc_id": "PMC522817",
+          "source_title": "Neoadjuvant or adjuvant therapy for resectable esophageal cancer: a clinical practice guideline",
+          "strategy": "single",
+          "text": "Neoadjuvant or adjuvant therapy for resectable esophageal cancer: a clinical practice guideline\n\nCarcinoma of the esophagus is an aggressive malignancy with an increasing incidence. Its virulence, in terms of symptoms and mortality, justifies a continued search for optimal therapy. A clinical practice guideline was developed based on a systematic review investigating neoadjuvant or adjuvant therapy on resectable thoracic esophageal cancer.\nA systematic review with meta-analysis was developed and clinical recommendations were drafted. External review of the practice guideline report by practitioners in Ontario, Canada was obtained through a mailed survey, and incorporated. Final approval of the practice guideline was obtained from the Practice Guidelines Coordinating Committee.\nThe systematic review was developed and recommendations were drafted, and the report was mailed to Ontario practitioners for external review. Ninety percent of respondents agreed with both the evidence summary and the draft recommendations, while only 69% approved of the draft recommendations as a practice guideline. Based on the external review, a revised document was created. The revised practice guideline was submitted to the Practice Guidelines Coordinating Committee for review. All 11 members of the PGCC returned ballots. Eight PGCC members approved the practice guideline report as written and three members approved the guideline conditional on specific concerns being addressed. After these recommended changes were made, the final practice guideline report was approved.\nIn consideration of the systematic review, external review, and subsequent Practice Guidelines Coordinating Committee revision suggestions, and final approval, the Gastrointestinal Cancer Disease Site Group recommends the following:\nFor adult patients with resectable thoracic esophageal cancer for whom surgery is considered appropriate, surgery alone (i.e., without neoadjuvant or adjuvant therapy) is recommended as the standard practice.",
+          "source": "vector",
+          "score": 0.63712477684021,
+          "distance": 0.36287522315979004,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC524480",
+          "doc_id": "PMC524480",
+          "source_title": "Tools for loading MEDLINE into a local relational database",
+          "strategy": "single",
+          "text": "Tools for loading MEDLINE into a local relational database\n\nResearchers who use MEDLINE for text mining, information extraction, or natural language processing may benefit from having a copy of MEDLINE that they can manage locally. The National Library of Medicine (NLM) distributes MEDLINE in eXtensible Markup Language (XML)-formatted text files, but it is difficult to query MEDLINE in that format. We have developed software tools to parse the MEDLINE data files and load their contents into a relational database. Although the task is conceptually straightforward, the size and scope of MEDLINE make the task nontrivial. Given the increasing importance of text analysis in biology and medicine, we believe a local installation of MEDLINE will provide helpful computing infrastructure for researchers.\nWe developed three software packages that parse and load MEDLINE, and ran each package to install separate instances of the MEDLINE database. For each installation, we collected data on loading time and disk-space utilization to provide examples of the process in different settings. Settings differed in terms of commercial database-management system (IBM DB2 or Oracle 9i), processor (Intel or Sun), programming language of installation software (Java or Perl), and methods employed in different versions of the software. The loading times for the three installations were 76 hours, 196 hours, and 132 hours, and disk-space utilization was 46.3 GB, 37.7 GB, and 31.6 GB, respectively. Loading times varied due to a variety of differences among the systems. Loading time also depended on whether data were written to intermediate files or not, and on whether input files were processed in sequence or in parallel. Disk-space utilization depended on the number of MEDLINE files processed, amount of indexing, and whether abstracts were stored as character large objects or truncated.\nRelational database (RDBMS) technology supports indexing and querying of very large datasets, and can accommodate a locally stored version of MEDLINE. RDBMS systems support a wide range of queries and facilitate certain tasks that are not directly supported by the application programming interface to PubMed. Because there is variation in hardware, software, and network infrastructures across sites, we cannot predict the exact time required for a user to load MEDLINE, but our results suggest that performance of the software is reasonable. Our database schemas and conversion software are publicly available at .",
+          "source": "vector",
+          "score": 0.5567415952682495,
+          "distance": 0.4432584047317505,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC524495",
+          "doc_id": "PMC524495",
+          "source_title": "The validity of the SF-36 in an Australian National Household Survey: demonstrating the applicability of the Household Income and Labour Dynamics in Australia (HILDA) Survey to examination of health inequalities",
+          "strategy": "single",
+          "text": "The validity of the SF-36 in an Australian National Household Survey: demonstrating the applicability of the Household Income and Labour Dynamics in Australia (HILDA) Survey to examination of health inequalities\n\nThe SF-36 is one of the most widely used self-completion measures of health status. The inclusion of the SF-36 in the first Australian national household panel survey, the Household, Income and Labour Dynamics in Australia (HILDA) Survey, provides an opportunity to investigate health inequalities. In this analysis we establish the psychometric properties and criterion validity of the SF-36 HILDA Survey data and examine scale profiles across a range of measures of socio-economic circumstance.\nData from 13,055 respondents who completed the first wave of the HILDA Survey were analysed to determine the psychometric properties of the SF-36 and the relationship of the SF-36 scales to other measures of health, disability, social functioning and demographic characteristics.\nResults of principle components analysis were similar to previous Australian and international reports. Survey scales demonstrated convergent and divergent validity, and different markers of social status demonstrated unique patterns of outcomes across the scales.\nResults demonstrated the validity of the SF-36 data collected during the first wave of the HILDA Survey and support its use in research examining health inequalities and population health characteristics in Australia.",
+          "source": "vector",
+          "score": 0.5520431995391846,
+          "distance": 0.44795680046081543,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC524494_chunk1",
+          "doc_id": "PMC524494",
+          "source_title": "Efficacy of two once-daily methylphenidate formulations compared across dose levels at different times of the day: Preliminary indications from a secondary analysis of the COMACS study data",
+          "strategy": "sliding_window",
+          "text": "Methylphenidate (MPH) is commonly prescribed in the treatment of Attention-Deficit/Hyperactivity Disorder or ADHD. Concerta and Metadate CD are once-daily formulations of MPH using different delivery mechanisms resulting in different pharmacokinetic profiles. A recent study (COMACS) showed that for near-milligram (mg) equivalent daily doses, Metadate CD provides greater symptom control in the morning (1.5 through 4.5 hours post-dose), while Concerta provides greater control in the early evening (12 hours post-dose). Non-inferential comparison of effects for different dose levels of the two formulations suggested that equivalent levels of morning symptom control could be obtained with lower daily doses of Metadate CD than Concerta; the situation being reversed in the evening. The current paper presents a secondary analysis that provides a statistical test of these observations.\nThe COMACS study was a multi-center, double-blind crossover study of Metadate CD, Concerta and placebo with each treatment administered for 1 week. Children were assigned on the basis of their pre-trial dosage to either high (Metadate CD 60 mg; Concerta 54 mg), medium (Metadate CD 40 mg; Concerta 36 mg) or low doses (Metadate CD 20 mg; Concerta 18 mg) of MPH, and attended a laboratory school on the 7th day for assessment at 7 sessions across the day. For the post-hoc comparisons across dose levels presented here, total SKAMP scores with the active treatments (adjusted for placebo response) were analyzed using an analysis of covariance, with a combined measure modeling placebo response across all time period as the covariate.",
+          "source": "vector",
+          "score": 0.5409707427024841,
+          "distance": 0.45902925729751587,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC522820",
+          "doc_id": "PMC522820",
+          "source_title": "Radiation enteropathy and leucocyte-endothelial cell reactions in a refined small bowel model",
+          "strategy": "single",
+          "text": "Radiation enteropathy and leucocyte-endothelial cell reactions in a refined small bowel model\n\nLeucocyte recruitment and inflammation are key features of high dose radiation-induced tissue injury. The inflammatory response in the gut may be more pronounced following radiotherapy due to its high bacterial load in comparison to the response in other organs. We designed a model to enable us to study the effects of radiation on leucocyte-endothelium interactions and on intestinal microflora in the murine ileum. This model enables us to study specifically the local effects of radiation therapy.\nA midline laparotomy was performed in male C57/Bl6 mice and a five-centimetre segment of ileum is irradiated using the chamber. Leucocyte responses (rolling and adhesion) were then analysed in ileal venules 2 – 48 hours after high dose irradiation, made possible by an inverted approach using intravital fluorescence microscopy. Furthermore, intestinal microflora, myeloperoxidase (MPO) and cell histology were analysed.\nThe highest and most reproducible increase in leucocyte rolling was exhibited 2 hours after high dose irradiation whereas leucocyte adhesion was greatest after 16 hours. Radiation reduced the intestinal microflora count compared to sham animals with a significant decrease in the aerobic count after 2 hours of radiation. Further, the total aerobic counts, Enterobacteriaceae and Lactobacillus decreased significantly after 16 hours. In the radiation groups, the bacterial count showed a progressive increase from 2 to 24 hours after radiation.\nThis study presents a refinement of a previous method of examining mechanisms of radiation enteropathy, and a new approach at investigating radiation induced leucocyte responses in the ileal microcirculation. Radiation induced maximum leucocyte rolling at 2 hours and adhesion peaked at 16 hours. It also reduces the microflora count, which then starts to increase steadily afterwards. This model may be instrumental in developing strategies against pathological recruitment of leucocytes and changes in intestinal microflora in the small bowel after radiotherapy.",
+          "source": "vector",
+          "score": 0.5321916341781616,
+          "distance": 0.4678083658218384,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "original": "circadian rhythm sliding window chunks",
+      "vector_query": "circadian rhythm sliding window chunks",
+      "chroma_where": {
+        "strategy": "sliding_window"
+      },
+      "hits": [
+        {
+          "chunk_id": "PMC524494_chunk0",
+          "doc_id": "PMC524494",
+          "source_title": "Efficacy of two once-daily methylphenidate formulations compared across dose levels at different times of the day: Preliminary indications from a secondary analysis of the COMACS study data",
+          "strategy": "sliding_window",
+          "text": "Efficacy of two once-daily methylphenidate formulations compared across dose levels at different times of the day: Preliminary indications from a secondary analysis of the COMACS study data",
+          "source": "vector",
+          "score": 0.5150313973426819,
+          "distance": 0.4849686026573181,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC524494_chunk1",
+          "doc_id": "PMC524494",
+          "source_title": "Efficacy of two once-daily methylphenidate formulations compared across dose levels at different times of the day: Preliminary indications from a secondary analysis of the COMACS study data",
+          "strategy": "sliding_window",
+          "text": "Methylphenidate (MPH) is commonly prescribed in the treatment of Attention-Deficit/Hyperactivity Disorder or ADHD. Concerta and Metadate CD are once-daily formulations of MPH using different delivery mechanisms resulting in different pharmacokinetic profiles. A recent study (COMACS) showed that for near-milligram (mg) equivalent daily doses, Metadate CD provides greater symptom control in the morning (1.5 through 4.5 hours post-dose), while Concerta provides greater control in the early evening (12 hours post-dose). Non-inferential comparison of effects for different dose levels of the two formulations suggested that equivalent levels of morning symptom control could be obtained with lower daily doses of Metadate CD than Concerta; the situation being reversed in the evening. The current paper presents a secondary analysis that provides a statistical test of these observations.\nThe COMACS study was a multi-center, double-blind crossover study of Metadate CD, Concerta and placebo with each treatment administered for 1 week. Children were assigned on the basis of their pre-trial dosage to either high (Metadate CD 60 mg; Concerta 54 mg), medium (Metadate CD 40 mg; Concerta 36 mg) or low doses (Metadate CD 20 mg; Concerta 18 mg) of MPH, and attended a laboratory school on the 7th day for assessment at 7 sessions across the day. For the post-hoc comparisons across dose levels presented here, total SKAMP scores with the active treatments (adjusted for placebo response) were analyzed using an analysis of covariance, with a combined measure modeling placebo response across all time period as the covariate.",
+          "source": "vector",
+          "score": 0.5133563280105591,
+          "distance": 0.4866436719894409,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC523855_chunk2",
+          "doc_id": "PMC523855",
+          "source_title": "Gene family evolution: an in-depth theoretical and simulation analysis of non-linear birth-death-innovation models",
+          "strategy": "sliding_window",
+          "text": "In this work, we extend our previous analysis of stochastic BDIMs.\nIn addition to the previously examined rational BDIMs, we introduce potentially more realistic logistic BDIMs, in which birth/death rates are limited for the largest families, and show that their properties are similar to those of models that include no such limitation. We show that the mean time required for the formation of the largest gene families detected in eukaryotic genomes is limited by the mean number of duplications per gene and does not increase indefinitely with the model degree. Instead, this time reaches a minimum value, which corresponds to a non-linear rational BDIM with the degree of approximately 2.7. Even for this BDIM, the mean time of the largest family formation is orders of magnitude greater than any realistic estimates based on the timescale of life's evolution. We employed the embedding chains technique to estimate the expected number of elementary evolutionary events (gene duplications and deletions) preceding the formation of gene families of the observed size and found that the mean number of events exceeds the family size by orders of magnitude, suggesting a highly dynamic process of genome evolution. The variance of the time required for the formation of the largest families was found to be extremely large, with the coefficient of variation >> 1. This indicates that some gene families might grow much faster than the mean rate such that the minimal time required for family formation is more relevant for a realistic representation of genome evolution than the mean time. We determined this minimal time using Monte Carlo simulations of family growth from an ensemble of simultaneously evolving singletons. In these simulations, the time elapsed before the formation of the largest family was much shorter than the estimated mean time and was compatible with the timescale of evolution of eukaryotes.",
+          "source": "vector",
+          "score": 0.4996145963668823,
+          "distance": 0.5003854036331177,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC523855_chunk3",
+          "doc_id": "PMC523855",
+          "source_title": "Gene family evolution: an in-depth theoretical and simulation analysis of non-linear birth-death-innovation models",
+          "strategy": "sliding_window",
+          "text": "The analysis of stochastic BDIMs presented here shows that non-linear versions of such models can well approximate not only the size distribution of gene families but also the dynamics of their formation during genome evolution. The fact that only higher degree BDIMs are compatible with the observed characteristics of genome evolution suggests that the growth of gene families is self-accelerating, which might reflect differential selective pressure acting on different genes.",
+          "source": "vector",
+          "score": 0.4932733178138733,
+          "distance": 0.5067266821861267,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC524168_chunk0",
+          "doc_id": "PMC524168",
+          "source_title": "Regulation of signaling genes by TGFβ during entry into dauer diapause in C. elegans",
+          "strategy": "sliding_window",
+          "text": "Regulation of signaling genes by TGFβ during entry into dauer diapause in C. elegans",
+          "source": "vector",
+          "score": 0.478509783744812,
+          "distance": 0.521490216255188,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "original": "warfarin atrial fibrillation elderly",
+      "vector_query": "warfarin atrial fibrillation elderly",
+      "chroma_where": null,
+      "hits": [
+        {
+          "chunk_id": "PMC523851",
+          "doc_id": "PMC523851",
+          "source_title": "Aging is associated with increased collagen type IV accumulation in the basal lamina of human cerebral microvessels",
+          "strategy": "single",
+          "text": "Aging is associated with increased collagen type IV accumulation in the basal lamina of human cerebral microvessels\n\nMicrovascular alterations contribute to the development of stroke and vascular dementia. The goal of this study was to evaluate age and hypertension related changes of the basal lamina in cerebral microvessels of individuals, who died from non-cerebral causes.\nWe examined 27 human brains: 11 young and 16 old patients. Old patients were divided into two subgroups, those with hypertension (n = 8) and those without hypertension (n = 8). Basal lamina changes of the cerebral microvessels were determined in the putamen using antibodies against collagen type IV and by quantitative analysis of vessel number, total stained area of collagen, thickness of the vessel wall and lumen, and relative staining intensity using immunofluorescence. The total number of collagen positive vessels per microscopic field was reduced in old compared to young subjects (12.0+/-0.6 vs. 15.1+/-1.2, p = 0.02). The relative collagen content per vessel (1.01+/-0.06 vs. 0.76+/-0.05, p = 0.01) and the relative collagen intensity (233.1+/-4.5 vs. 167.8+/-10.6, p < 0.0001) shown by immunofluorescence were higher in the older compared to the younger patients with a consecutive reduction of the lumen / wall ratio (1.29+/-0.05 vs. 3.29+/-0.15, p < 0.0001). No differences were observed for these parameters between old hypertensive and non-hypertensive patients.\nThe present data show age-related changes of the cerebral microvessels in sections of human putamen for the first time. Due to the accumulation of collagen, microvessels thicken and show a reduction in their lumen. Besides this, the number of vessels decreases. These findings might represent a precondition for the development of vascular cognitive impairment. However, hypertension was not proven to modulate these changes.",
+          "source": "vector",
+          "score": 0.6022896766662598,
+          "distance": 0.39771032333374023,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC523838_chunk2",
+          "doc_id": "PMC523838",
+          "source_title": "Nevirapine and Efavirenz Elicit Different Changes in Lipid Profiles in Antiretroviral- Therapy-Naive Patients Infected with HIV-1",
+          "strategy": "sliding_window",
+          "text": "Prospective analysis of lipids and lipoproteins was performed in patients enrolled in the NVP and EFV treatment groups of the 2NN study who remained on allocated treatment during 48 wk of follow-up. Patients were allocated to NVP ( n = 417), or EFV ( n = 289) in combination with stavudine and lamivudine. The primary endpoint was percentage change over 48 wk in high-density lipoprotein cholesterol (HDL-c), total cholesterol (TC), TC:HDL-c ratio, non-HDL-c, low-density lipoprotein cholesterol, and triglycerides. The increase of HDL-c was significantly larger for patients receiving NVP (42.5%) than for patients receiving EFV (33.7%; p = 0.036), while the increase in TC was lower (26.9% and 31.1%, respectively; p = 0.073), resulting in a decrease of the TC:HDL-c ratio for patients receiving NVP (−4.1%) and an increase for patients receiving EFV (+5.9%; p < 0.001). The increase of non-HDL-c was smaller for patients receiving NVP (24.7%) than for patients receiving EFV (33.6%; p = 0.007), as were the increases of triglycerides (20.1% and 49.0%, respectively; p < 0.001) and low-density lipoprotein cholesterol (35.0% and 40.0%, respectively; p = 0.378)",
+          "source": "vector",
+          "score": 0.5760326385498047,
+          "distance": 0.4239673614501953,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC524503",
+          "doc_id": "PMC524503",
+          "source_title": "Association of changes in health-related quality of life in coronary heart disease with coronary procedures and sociodemographic characteristics",
+          "strategy": "single",
+          "text": "Association of changes in health-related quality of life in coronary heart disease with coronary procedures and sociodemographic characteristics\n\nFew studies have focused on the association between the sociodemographic characteristics of a patient with the change in health-related quality of life (HRQOL) following invasive coronary procedures, and the results remain inconclusive. The objective of the present study was to measure the temporal changes in HRQOL of patients with coronary heart disease, and assess how these changes are associated with invasive coronary procedures and sociodemographic characteristics.\nThis was a prospective study of 254 patients with angina pectoris and 90 patients with acute coronary syndrome. HRQOL was assessed with the multi-item scales and summary components of the SF-36, both 6 weeks and 2 years after baseline hospitalization in 1998. Paired t -tests and multiple regression analyses were used to assess temporal changes in HRQOL and to identify the associated factors.\nPhysical components of HRQOL had improved most during the 2 years following invasive coronary procedures. Our findings indicated that patients with angina pectoris who were younger, male, and more educated were most likely to increase their HRQOL following invasive coronary procedures. When adjusting for baseline HRQOL scores, invasive coronary procedures and sociodemographic characteristics did not explain temporal changes in patients with acute coronary syndrome, possibly due to higher comorbidity.\nSociodemographic characteristics should be taken into account when comparing and interpreting changes in HRQOL scores in patients with and without invasive coronary procedures.",
+          "source": "vector",
+          "score": 0.5731785297393799,
+          "distance": 0.4268214702606201,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC524363_chunk1",
+          "doc_id": "PMC524363",
+          "source_title": "Relationship between CRP and hypofibrinolysis: Is this a possible mechanism to explain the association between CRP and outcome in critically ill patients?",
+          "strategy": "sliding_window",
+          "text": "Endothelial cell dysfunction may be implicated in the development of multiple organ failure (MOF) by a number of mechanisms. Among these, altered fibrinolysis promotes fibrin deposition, which may create microvascular alterations during inflammation. Elevated concentrations of C-reactive protein (CRP), especially when these persist over time, are correlated with an increased risk of MOF and death. CRP may inhibit fibrinolysis by inducing plasminogen activator inhibitor-1 (PAI-1) release from human aortic endothelial cells. Moreover, the administration of recombinant CRP in volunteers may increase circulating PAI-1 levels.\nIn this study, we tested the hypothesis that CRP is associated with hypofibrinolysis in intensive care patients with and without sepsis.\nWe studied the association of inflammation and abnormal fibrinolysis in intensive care unit (ICU) patients with (n = 11) and without (n = 21) sepsis. The inflammatory response was assessed by serum concentration of C-reactive protein (CRP), a marker of the acute phase reaction, which increase rapidly in the inflammatory response, and the plasma fibrinolytic capacity was evaluated by the Euglobulin Clot Lysis Time (ECLT), determined by a new semi-automatic method.",
+          "source": "vector",
+          "score": 0.5497812032699585,
+          "distance": 0.4502187967300415,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC523848",
+          "doc_id": "PMC523848",
+          "source_title": "Fever, Headache, and Visual Blurring in a 17-Year-Old Woman",
+          "strategy": "single",
+          "text": "Fever, Headache, and Visual Blurring in a 17-Year-Old Woman\n\nA fascinating case, with much to learn about diagnosis and treatment of patients with abnormal CSF results. After learning from the case, take our online quiz",
+          "source": "vector",
+          "score": 0.5480652451515198,
+          "distance": 0.4519347548484802,
+          "rank": 5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "query": "metformin cardiovascular effects",
+  "vector_query": "metformin cardiovascular effects",
+  "keyword_query": "metformin cardiovascular effects biguanide antidiabetic heart disease metformin cardiovascular effects cardiovascular outcomes metformin",
+  "vector_top5": [
+    "PMC523838_chunk2",
+    "PMC524031",
+    "PMC524175",
+    "PMC524029",
+    "PMC524503"
+  ],
+  "bm25_top5": [
+    "PMC521687",
+    "PMC521493",
+    "PMC520826",
+    "PMC523844",
+    "PMC518966"
+  ],
+  "overlap_chunk_ids": [],
+  "overlap_count": 0,
+      "note": "原始双路对比（未融合）；融合结果见 C6/C7"
+}

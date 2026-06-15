@@ -1,0 +1,491 @@
+{
+  "mode": "sample",
+  "chunks_path": "D:\\谷歌\\03 文档解析与分割\\data\\processed\\chunks_sample.jsonl",
+  "chunks_indexed": 1267,
+  "top_k": 5,
+  "queries": [
+    {
+      "original": "metformin cardiovascular effects",
+      "keyword_query": "metformin cardiovascular effects biguanide antidiabetic heart disease metformin cardiovascular effects cardiovascular outcomes metformin",
+      "enhanced": {
+        "original": "metformin cardiovascular effects",
+        "cleaned": "metformin cardiovascular effects",
+        "entities": [
+          {
+            "type": "drug",
+            "text": "metformin",
+            "start": 0,
+            "end": 9
+          },
+          {
+            "type": "disease",
+            "text": "cardiovascular",
+            "start": 10,
+            "end": 24
+          }
+        ],
+        "expanded_terms": [
+          "metformin",
+          "biguanide antidiabetic",
+          "cardiovascular",
+          "heart disease",
+          "metformin cardiovascular effects",
+          "cardiovascular outcomes metformin"
+        ],
+        "vector_query": "metformin cardiovascular effects",
+        "keyword_query": "metformin cardiovascular effects biguanide antidiabetic heart disease metformin cardiovascular effects cardiovascular outcomes metformin",
+        "filters": [],
+        "metadata": {
+          "embedding_model": "BAAI/bge-small-en-v1.5",
+          "language": "en"
+        }
+      },
+      "hits": [
+        {
+          "chunk_id": "PMC521687",
+          "doc_id": "PMC521687",
+          "source_title": "Factors influencing preoperative stress response in coronary artery bypass graft patients",
+          "text": "Factors influencing preoperative stress response in coronary artery bypass graft patients\n\nIn many studies investigating measures to attenuate the hemodynamic and humoral stress response during induction of anaesthesia, primary attention was paid to the period of endotracheal intubation since it has been shown that even short-lasting sympathetic cardiovascular stimulation may have detrimental effects on patients with coronary artery disease. The aim of this analysis was, however, to identify the influencing factors on high catecholamine levels before induction of anaesthesia.\nVarious potential risk factors that could impact the humoral stress response before induction of anaesthesia were recorded in 84 males undergoing coronary aortic bypass surgery, and were entered into a stepwise linear regression analysis. The plasma level of norepinephrine measured immediately after radial artery canulation was chosen as a surrogate marker for the humoral stress response, and it was used as the dependent variable in the regression model. Accordingly, the mean arterial blood pressure, heart rate and the calculated pressure-rate product were taken as parameters of the hemodynamic situation.\nStepwise regression analysis revealed that the oral administration of low-dose clonidine (mean dose 1.75 μg·kg -1 ) on the morning of surgery was the only significant predictor (p = 0.004) of the high variation in preoperative norepinephrine plasma levels. This intervention decreased norepinephrine levels by more than 40% compared to no clonidine administration, from 1.26 to 0.75 nmol·l -1 . There was no evidence for dose-responsiveness of clonidine. All other potential predictors were removed from the model as insignificant (p > 0.05). The use of beta-blocker, ace-inhibitors, ejection fraction, and body mass index were significant determinants for the hemodynamic situation (heart rate, mean arterial pressure, pressure rate product) of the patient during the pre-induction period.\nThe oral administration of clonidine is the only significant predictor for the observed variation of norepinephrine levels during the preoperative period. Lack of significant dose responsiveness suggests that even a low dose of the drug can attenuate the preoperative stress response and thus is recommended in cardiovascular high risk patients.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 478,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 26.892987831119974,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC521493",
+          "doc_id": "PMC521493",
+          "source_title": "Lycopene from two food sources does not affect antioxidant or cholesterol status of middle-aged adults",
+          "text": "Lycopene from two food sources does not affect antioxidant or cholesterol status of middle-aged adults\n\nEpidemiological studies have reported associations between reduced cardiovascular disease and diets rich in tomato and/or lycopene. Intervention studies have shown that lycopene-containing foods may reduce cholesterol levels and lipid peroxidation, factors implicated in the initiation of cardiovascular disease. The objective of this study was to determine whether consumption of lycopene rich foods conferred cardiovascular protection to middle-aged adults as indicated by plasma lipid concentrations and measures of ex vivo antioxidants.\nTen healthy men and women consumed a low lycopene diet with no added lycopene (control treatment) or supplemented with watermelon or tomato juice each containing 20 mg lycopene. Subjects consumed each treatment for three weeks in a crossover design. Plasma, collected weekly was analyzed for total cholesterol, high density lipoprotein cholesterol (HDL-C) and triglyceride concentrations and for the antioxidant biomarkers of malondialdehyde formation products (MDA), plasma glutathione peroxidase (GPX) and ferric reducing ability of plasma (FRAP). Data were analyzed using Proc Mixed Procedure and associations between antioxidant and lipid measures were identified by Pearson's product moment correlation analysis.\nCompared to the control diet, the lycopene-containing foods did not affect plasma lipid concentrations or antioxidant biomarkers. Women had higher total cholesterol, HDL-C and triglyceride concentrations than did the men. Total cholesterol was positively correlated to MDA and FRAP while HDL-C was positively correlated to MDA and GPX. GPX was negatively correlated to triglyceride concentration.\nThe inclusion of watermelon or tomato juice containing 20 mg lycopene did not affect plasma lipid concentrations or antioxidant status of healthy subjects. However, plasma cholesterol levels impacted the results of MDA and FRAP antioxidant tests.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 443,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 25.250784804365683,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC520826",
+          "doc_id": "PMC520826",
+          "source_title": "Daily rhythms in plasma levels of homocysteine",
+          "text": "Daily rhythms in plasma levels of homocysteine\n\nThere is accumulated evidence that plasma concentration of the sulfur-containing amino-acid homocysteine (Hcy) is a prognostic marker for cardiovascular morbidity and mortality. Both fasting levels of Hcy and post methionine loading levels are used as prognostic markers. The aim of the present study was to investigate the existence of a daily rhythm in plasma Hcy under strictly controlled nutritional and sleep-wake conditions. We also investigated if the time during which methionine loading is performed, i.e., morning or evening, had a different effect on the resultant plasma Hcy concentration.\nSix healthy men aged 23–26 years participated in 4 experiments. In the first and second experiments, the daily rhythm in Hcy as well as in other amino acids was investigated under a normal or an inverse sleep-wake cycle. In the third and fourth, Hcy concentrations were investigated after a morning and evening methionine loading. To standardize food consumption in the first two experiments, subjects received every 3 hours 150 ml of specially designed low-protein liquid food (Ensure ® formula).\nIn both the first and second experiments there was a significant daily rhythm in Hcy concentrations with a mid-day nadir and a nocturnal peak. Strikingly different 24-h patterns were observed in methionine, leucine, isoleucine and tyrosine. In all, the 24-h curves revealed a strong influence of both the sleep-wake cycle and the feeding schedule. Methionine loading resulted in increased plasma Hcy levels during both morning and evening experiments, which were not significantly different from each other.\nThere is a daily rhythm in plasma concentration of the amino acid Hcy, and this rhythm is independent of sleep-wake and food consumption. In view of the fact that increased Hcy concentrations may be associated with increased cardiovascular risks, these findings may have clinical implications for the health of rotating shift workers.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 405,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 18.943475827376233,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC523844",
+          "doc_id": "PMC523844",
+          "source_title": "Distribution of Major Health Risks: Findings from the Global Burden of Disease Study",
+          "text": "Distribution of Major Health Risks: Findings from the Global Burden of Disease Study\n\nMost analyses of risks to health focus on the total burden of their aggregate effects. The distribution of risk-factor-attributable disease burden, for example by age or exposure level, can inform the selection and targeting of specific interventions and programs, and increase cost-effectiveness.\nFor 26 selected risk factors, expert working groups conducted comprehensive reviews of data on risk-factor exposure and hazard for 14 epidemiological subregions of the world, by age and sex. Age-sex-subregion-population attributable fractions were estimated and applied to the mortality and burden of disease estimates from the World Health Organization Global Burden of Disease database. Where possible, exposure levels were assessed as continuous measures, or as multiple categories. The proportion of risk-factor-attributable burden in different population subgroups, defined by age, sex, and exposure level, was estimated. For major cardiovascular risk factors (blood pressure, cholesterol, tobacco use, fruit and vegetable intake, body mass index, and physical inactivity) 43%–61% of attributable disease burden occurred between the ages of 15 and 59 y, and 87% of alcohol-attributable burden occurred in this age group. Most of the disease burden for continuous risks occurred in those with only moderately raised levels, not among those with levels above commonly used cut-points, such as those with hypertension or obesity. Of all disease burden attributable to being underweight during childhood, 55% occurred among children 1–3 standard deviations below the reference population median, and the remainder occurred among severely malnourished children, who were three or more standard deviations below median.\nMany major global risks are widely spread in a population, rather than restricted to a minority. Population-based strategies that seek to shift the whole distribution of risk factors often have the potential to produce substantial reductions in disease burden.\nAnalysis of 26 major global health risk factors by age, sex, exposure level, and epidemiological subregion reveals that many of them are widely spread in a population rather than restricted to a minority",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 440,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 18.274487529369054,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC518966",
+          "doc_id": "PMC518966",
+          "source_title": "What is the impact of the ACE gene insertion/deletion (I/D) polymorphism on the clinical effectiveness and adverse events of ACE inhibitors? – Protocol of a systematic review",
+          "text": "What is the impact of the ACE gene insertion/deletion (I/D) polymorphism on the clinical effectiveness and adverse events of ACE inhibitors? – Protocol of a systematic review\n\nThe Angiotensin Converting Enzyme (ACE) insertion/deletion (I/D) polymorphism has received much attention in pharmacogenetic research because observed variations in response to ACE inhibitors might be associated with this polymorphism. Pharmacogenetic testing raises the hope to individualise ACE inhibitor therapy in order to optimise its effectiveness and to reduce adverse effects for genetically different subgroups. However, the extent of its effect modification in patients treated with ACE inhibitors remains inconclusive. Therefore our objective is to quantify the effect modification of the insertion/deletion polymorphism of the angiotensin converting enzyme gene on any surrogate and clinically relevant parameters in patients with cardiovascular diseases, diabetes, renal transplantation and/or renal failure.\nSystematic Review. We will perform literature searches in six electronic databases to identify randomised controlled trials comparing the effectiveness and occurrence of adverse events of ACE inhibitor therapy against placebo or any active treatment stratified by the I/D gene polymorphism. In addition, authors of trials, experts in pharmacogenetics and pharmaceutical companies will be contacted for further published or unpublished data. Hand searching will be accomplished by reviewing the reference lists of all included studies. The methodological quality of included papers will be assessed. Data analyses will be performed in clinically and methodologically cogent subgroups. The results of the quantitative assessment will be pooled statistically where appropriate to produce an estimate of the differences in the effect of ACE inhibitors observed between the three ACE genotypes.\nThis protocol describes a strategy to quantify the effect modification of the ACE polymorphism on ACE inhibitors in relevant clinical domains using meta-epidemiological research methods. The results may provide evidence for the usefulness of pharmacogenetic testing for individualised ACE inhibitor therapy.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 405,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 16.049698081871774,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "original": "papers on malaria after 2015",
+      "keyword_query": "papers malaria after 2015 plasmodium",
+      "enhanced": {
+        "original": "papers on malaria after 2015",
+        "cleaned": "papers on malaria after 2015",
+        "entities": [
+          {
+            "type": "disease",
+            "text": "malaria",
+            "start": 10,
+            "end": 17
+          }
+        ],
+        "expanded_terms": [
+          "malaria",
+          "plasmodium"
+        ],
+        "vector_query": "papers on malaria after 2015",
+        "keyword_query": "papers malaria after 2015 plasmodium",
+        "filters": [
+          {
+            "key": "year_gte",
+            "value": 2015,
+            "executable": false,
+            "note": "索引无 pub_year；RAG 阶段检索后过滤"
+          }
+        ],
+        "metadata": {
+          "embedding_model": "BAAI/bge-small-en-v1.5",
+          "language": "en"
+        }
+      },
+      "hits": [
+        {
+          "chunk_id": "PMC514496",
+          "doc_id": "PMC514496",
+          "source_title": "Malaria morbidity and immunity among residents of villages with different Plasmodium falciparum transmission intensity in North-Eastern Tanzania",
+          "text": "Malaria morbidity and immunity among residents of villages with different Plasmodium falciparum transmission intensity in North-Eastern Tanzania\n\nThe relationship between the burden of uncomplicated malaria and transmission intensity is unclear and a better understanding of this relationship is important for the implementation of intervention programmes.\nA 6-month longitudinal study monitoring risk factors for anaemia and febrile malaria episodes was conducted among individuals aged below 20 years, residing in three villages of different altitude in areas of high, moderate and low malaria transmission intensity in North-Eastern Tanzania.\nThe burden of anaemia and malarial fever fell mainly on the youngest children and was highest in the village with high transmission intensity. Although a considerable percentage of individuals in all villages carried intestinal worms, logistic regression models indicated that Plasmodium falciparum was the only significant parasitic determinant of anaemia. Interestingly, children who carried low-density parasitaemia at the start of the study had a lower risk of contracting a febrile malaria episode but a higher risk of anaemia during the study period, than children who were slide negative at this point in time.\nYoung children living in the high transmission village carried a very high anaemia burden, which could be attributed to malaria. The overall incidence of febrile malaria was also highest in the high transmission village particularly among those under five years of age. These data suggest that in rolling back malaria, available resources in prevention programmes should primarily be focussed on young children, particularly those residing in areas of high malaria transmission.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 314,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 15.107197279283309,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC517943",
+          "doc_id": "PMC517943",
+          "source_title": "Antibodies from malaria-exposed pregnant women recognize trypsin resistant epitopes on the surface of Plasmodium falciparum -infected erythrocytes selected for adhesion to chondroitin sulphate A",
+          "text": "Antibodies from malaria-exposed pregnant women recognize trypsin resistant epitopes on the surface of Plasmodium falciparum -infected erythrocytes selected for adhesion to chondroitin sulphate A\n\nThe ability of Plasmodium falciparum -infected erythrocytes to adhere to the microvasculature endothelium is thought to play a causal role in malaria pathogenesis. Cytoadhesion to endothelial receptors is generally found to be highly sensitive to trypsinization of the infected erythrocyte surface. However, several studies have found that parasite adhesion to placental receptors can be markedly less sensitive to trypsin. This study investigates whether chondroitin sulphate A (CSA) binding parasites express trypsin-resistant variant surface antigens (VSA) that bind female-specific antibodies induced as a result of pregnancy associated malaria (PAM).\nFluorescence activated cell sorting (FACS) was used to measure the levels of adult Scottish and Ghanaian male, and Ghanaian pregnant female plasma immunoglobulin G (IgG) that bind to the surface of infected erythrocytes. P. falciparum clone FCR3 cultures were used to assay surface IgG binding before and after selection of the parasite for adhesion to CSA. The effect of proteolytic digestion of parasite erythrocyte surface antigens on surface IgG binding and adhesion to CSA and hyaluronic acid (HA) was also studied.\nP. falciparum infected erythrocytes selected for adhesion to CSA were found to express trypsin-resistant VSA that are the target of naturally acquired antibodies from pregnant women living in a malaria endemic region of Ghana. However in vitro adhesion to CSA and HA was relatively trypsin sensitive. An improved labelling technique for the detection of VSA expressed by CSA binding isolates has also been described.\nThe VSA expressed by CSA binding P. falciparum isolates are currently considered potential targets for a vaccine against PAM. This study identifies discordance between the trypsin sensitivity of CSA binding and surface recognition of CSA selected parasites by serum IgG from malaria exposed pregnant women. Thus, the complete molecular definition of an antigenic P. falciparum erythrocyte surface protein that can be used as a malaria in pregnancy vaccine has not yet been achieved.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 503,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 14.49093327577378,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC517944",
+          "doc_id": "PMC517944",
+          "source_title": "Competitive release of drug resistance following drug treatment of mixed Plasmodium chabaudi infections",
+          "text": "Competitive release of drug resistance following drug treatment of mixed Plasmodium chabaudi infections\n\nMalaria infections are often genetically diverse, potentially leading to competition between co-infecting strains. Such competition is of key importance in the spread of drug resistance.\nThe effects of drug treatment on within-host competition were studied using the rodent malaria Plasmodium chabaudi . Mice were infected simultaneously with a drug-resistant and a drug-sensitive clone and were then either drug-treated or left untreated. Transmission was assessed by feeding mice to Anopheles stephensi mosquitoes.\nIn the absence of drugs, the sensitive clone competitively suppressed the resistant clone; this resulted in lower asexual parasite densities and also reduced transmission to the mosquito vector. Drug treatment, however, allowed the resistant clone to fill the ecological space emptied by the removal of the sensitive clone, allowing it to transmit as well as it would have done in the absence of competition.\nThese results show that under drug pressure, resistant strains can have two advantages: (1) they survive better than sensitive strains and (2) they can exploit the opportunities presented by the removal of their competitors. When mixed infections are common, such effects could increase the spread of drug resistance.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 251,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 12.705423802426708,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC176545",
+          "doc_id": "PMC176545",
+          "source_title": "The Transcriptome of the Intraerythrocytic Developmental Cycle of Plasmodium falciparum",
+          "text": "The Transcriptome of the Intraerythrocytic Developmental Cycle of Plasmodium falciparum\n\nPlasmodium falciparum is the causative agent of the most burdensome form of human malaria, affecting 200–300 million individuals per year worldwide. The recently sequenced genome of P. falciparum revealed over 5,400 genes, of which 60% encode proteins of unknown function. Insights into the biochemical function and regulation of these genes will provide the foundation for future drug and vaccine development efforts toward eradication of this disease. By analyzing the complete asexual intraerythrocytic developmental cycle (IDC) transcriptome of the HB3 strain of P. falciparum , we demonstrate that at least 60% of the genome is transcriptionally active during this stage. Our data demonstrate that this parasite has evolved an extremely specialized mode of transcriptional regulation that produces a continuous cascade of gene expression, beginning with genes corresponding to general cellular processes, such as protein synthesis, and ending with Plasmodium -specific functionalities, such as genes involved in erythrocyte invasion. The data reveal that genes contiguous along the chromosomes are rarely coregulated, while transcription from the plastid genome is highly coregulated and likely polycistronic. Comparative genomic hybridization between HB3 and the reference genome strain (3D7) was used to distinguish between genes not expressed during the IDC and genes not detected because of possible sequence variations. Genomic differences between these strains were found almost exclusively in the highly antigenic subtelomeric regions of chromosomes. The simple cascade of gene regulation that directs the asexual development of P. falciparum is unprecedented in eukaryotic biology. The transcriptome of the IDC resembles a “just-in-time” manufacturing process whereby induction of any given gene occurs once per cycle and only at a time when it is required. These data provide to our knowledge the first comprehensive view of the timing of transcription throughout the intraerythrocytic development of P. falciparum and provide a resource for the identification of new chemotherapeutic and vaccine candidates.\nA tight cascade of gene regulation during the lifecycle of the malaria parasite in human blood cells suggests new functions for many Plasmodium genes",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 480,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 12.444884100843145,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC434153",
+          "doc_id": "PMC434153",
+          "source_title": "Immunity Promotes Virulence Evolution in a Malaria Model",
+          "text": "Immunity Promotes Virulence Evolution in a Malaria Model\n\nEvolutionary models predict that host immunity will shape the evolution of parasite virulence. While some assumptions of these models have been tested, the actual evolutionary outcome of immune selection on virulence has not. Using the mouse malaria model, Plasmodium chabaudi, we experimentally tested whether immune pressure promotes the evolution of more virulent pathogens by evolving parasite lines in immunized and nonimmunized (“naïve”) mice using serial passage. We found that parasite lines evolved in immunized mice became more virulent to both naïve and immune mice than lines evolved in naïve mice. When these evolved lines were transmitted through mosquitoes, there was a general reduction in virulence across all lines. However, the immune-selected lines remained more virulent to naïve mice than the naïve-selected lines, though not to immunized mice. Thus, immune selection accelerated the rate of virulence evolution, rendering parasites more dangerous to naïve hosts. These results argue for further consideration of the evolutionary consequences for pathogen virulence of vaccination.\nImmunisation against malaria can promote the evolution of more virulent pathogens in mice, making non-immunised mice more vulnerable -- a result with important implications for the development of malaria vaccines",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 268,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 12.282015425002413,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "original": "MI treatment guideline",
+      "keyword_query": "mi treatment guideline myocardial infarction heart attack",
+      "enhanced": {
+        "original": "MI treatment guideline",
+        "cleaned": "MI treatment guideline",
+        "entities": [],
+        "expanded_terms": [
+          "myocardial infarction",
+          "heart attack"
+        ],
+        "vector_query": "MI treatment guideline",
+        "keyword_query": "mi treatment guideline myocardial infarction heart attack",
+        "filters": [],
+        "metadata": {
+          "embedding_model": "BAAI/bge-small-en-v1.5",
+          "language": "en"
+        }
+      },
+      "hits": [
+        {
+          "chunk_id": "PMC512285",
+          "doc_id": "PMC512285",
+          "source_title": "Outcome after acute myocardial infarction: a comparison of patients seen by cardiologists and general physicians",
+          "text": "Outcome after acute myocardial infarction: a comparison of patients seen by cardiologists and general physicians\n\nThe management of acute myocardial infarction (AMI) has improved over the last 50 years with the more frequent use of effective medicines and procedures. The clinical benefit of the speciality of the attending physician is less clear. The United Kingdom National Service Framework for coronary heart disease (CHD) suggested that patients with CHD are likely to benefit from cardiological supervision. We set out to assess the effect of access to cardiologists on survival among AMI patients admitted in two UK hospitals.\nThe study was conducted in a university hospital and a district general hospital in England. Information was obtained on age, sex, ethnicity, Carstairs socioeconomic deprivation category derived from postcode of residence, comorbidity, distance from hospital and medication from all patients admitted with acute myocardial infarction in two acute trusts between July 1999 and June 2000. Record linkage to subsequent Hospital Episode Statistics and Registrar General's death records provided follow up information on procedures and mortality up to eighteen months after admission. Cox proportional hazard models were used to investigate the main hypothesis controlling for confounding. The main outcome measure was 18-month survival after myocardial infarction.\nAccess to a cardiologist was univariately associated with improved survival (hazard ratio 0.16, 95% CI 0.10 to 0.25). This effect remained after controlling for the effect of patient characteristics (hazard ratio 0.22, 95% CI 0.14 to 0.25). The effect disappeared after controlling for access to effective medication (hazard ratio 0.70, 95% CI 0.33 to 1.46).\nAccess to a cardiologist is associated with better survival compared to no access to a cardiologist among a cohort of patients already admitted with AMI. This effect is mainly due to the more frequent use of effective medicines by the group referred to cardiologists. Hospitals may improve survival by improving access to effective medicines and by coordinating care between cardiologists and general physicians.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 433,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 19.281081260033087,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC406391_chunk2",
+          "doc_id": "PMC406391",
+          "source_title": "Early Myocardial Function Affects Endocardial Cushion Development in Zebrafish",
+          "text": ". We show that in yeast this mutation negatively affects actin polymerization. Because the lack of cushion formation in sih- and cfk- mutant embryos could be due to reduced myocardial function and/or lack of blood flow, we approached this question pharmacologically and provide evidence that reduction in myocardial function is primarily responsible for the defect in cushion development. Our data demonstrate that early myocardial function is required for later steps of organogenesis and suggest that myocardial function, not endothelial shear stress, is the major epigenetic factor controlling late heart development. Based on these observations, we postulate that defects in cardiac morphogenesis may be secondary to mutations affecting early myocardial function, and that, in humans, mutations affecting embryonic myocardial function may be responsible for structural congenital heart disease.",
+          "chunk_index": 2,
+          "total_chunks": 4,
+          "token_count": 174,
+          "strategy": "sliding_window",
+          "source": "bm25",
+          "score": 16.33405643243968,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC524185",
+          "doc_id": "PMC524185",
+          "source_title": "Intravascular ultrasound to guide the management of intracoronary thrombus: a Case Report",
+          "text": "Intravascular ultrasound to guide the management of intracoronary thrombus: a Case Report\n\nPercutaneous coronary intervention can be associated with distal embolization of thrombotic material causing myocardial necrosis and infarction.\nWe discuss the role of intravascular imaging to guide the use of a distal protection device by describing the outcome of a young woman presenting with non-ST elevation myocardial infarction. Coronary angiography demonstrated an isolated minor stenosis in the proximal left anterior descending coronary artery with slight haziness beyond the lesion. Intravascular ultrasound confirmed an extensive thrombus overlying a bulky atherosclerotic plaque. A distal filter wire was therefore successfully used to reduce the risk of distal embolization.\nThe use of intravascular ultrasound in patients presenting with acute coronary syndrome may reveal large thrombi that are difficult to image using conventional angiographic techniques. Intravascular ultrasound can therefore be used as a tool to select lesions requiring distal protection.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 212,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 15.8991954352589,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC406391_chunk1",
+          "doc_id": "PMC406391",
+          "source_title": "Early Myocardial Function Affects Endocardial Cushion Development in Zebrafish",
+          "text": "Function of the heart begins long before its formation is complete. Analyses in mouse and zebrafish have shown that myocardial function is not required for early steps of organogenesis, such as formation of the heart tube or chamber specification. However, whether myocardial function is required for later steps of cardiac development, such as endocardial cushion (EC) formation, has not been established. Recent technical advances and approaches have provided novel inroads toward the study of organogenesis, allowing us to examine the effects of both genetic and pharmacological perturbations of myocardial function on EC formation in zebrafish. To address whether myocardial function is required for EC formation, we examined s ilent heart (sih −/− ) embryos, which lack a heartbeat due to mutation of cardiac troponin T ( tnnt2 ), and observed that atrioventricular (AV) ECs do not form. Likewise, we determined that cushion formation is blocked in cardiofunk (cfk −/− ) embryos, which exhibit cardiac dilation and no early blood flow. In order to further analyze the heart defects in cfk −/− embryos, we positionally cloned cfk and show that it encodes a novel sarcomeric actin expressed in the embryonic myocardium. The Cfk s11 variant exhibits a change in a universally conserved residue (R177H). We show that in yeast this mutation negatively affects actin polymerization. Because the lack of cushion formation in sih- and cfk- mutant embryos could be due to reduced myocardial function and/or lack of blood flow, we approached this question pharmacologically and provide evidence that reduction in myocardial function is primarily responsible for the defect in cushion development",
+          "chunk_index": 1,
+          "total_chunks": 4,
+          "token_count": 373,
+          "strategy": "sliding_window",
+          "source": "bm25",
+          "score": 15.865286463168685,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC516786",
+          "doc_id": "PMC516786",
+          "source_title": "Combination of contrast with stress echocardiography: A practical guide to methods and interpretation",
+          "text": "Combination of contrast with stress echocardiography: A practical guide to methods and interpretation\n\nContrast echocardiography has an established role for enhancement of the right heart Doppler signals, the detection of intra-cardiac shunts, and most recently for left ventricular cavity opacification (LVO). The use of intravenously administered micro-bubbles to traverse the myocardial microcirculation in order to outline myocardial viability and perfusion has been the source of research studies for a number of years. Despite the enthusiasm of investigators, myocardial contrast echocardiography (MCE) has not attained routine clinical use and LV opacification during stress has been less widely adopted than the data would support. The purpose of this review is to facilitate an understanding of the involved imaging technologies that have made this technique more feasible for clinical practice, and to guide its introduction into the practice of the non-expert user.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 189,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 13.18333777064499,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "original": "circadian rhythm sliding window chunks",
+      "keyword_query": "circadian rhythm sliding window chunks",
+      "enhanced": {
+        "original": "circadian rhythm sliding window chunks",
+        "cleaned": "circadian rhythm sliding window chunks",
+        "entities": [],
+        "expanded_terms": [],
+        "vector_query": "circadian rhythm sliding window chunks",
+        "keyword_query": "circadian rhythm sliding window chunks",
+        "filters": [
+          {
+            "key": "strategy",
+            "value": "sliding_window",
+            "executable": true,
+            "note": "Chroma metadata 支持"
+          }
+        ],
+        "metadata": {
+          "embedding_model": "BAAI/bge-small-en-v1.5",
+          "language": "en"
+        }
+      },
+      "hits": [
+        {
+          "chunk_id": "PMC517509",
+          "doc_id": "PMC517509",
+          "source_title": "Diurnal difference in CAR mRNA expression",
+          "text": "Diurnal difference in CAR mRNA expression\n\nThe constitutive androstane receptor (CAR, NR1I3) plays a key role in the transcriptional activation of genes that encode xenobiotic/steroid and drug metabolizing enzymes.\nThe expression of CAR mRNA throughout the circadian rhythm is reported for the first time in phase with the clock gene Bmal1 and in antiphase with the clock-controlled gene Rev-erbα mRNAs, with a peak at Zeitgeber time (ZT) 20 and a trough at ZT8, and a peak/trough ratio of 2.0. The diurnal difference in CAR mRNA expression might underlie the 1.7-fold difference in the magnitude of the PB-dependent induction of CYP2B1/2 mRNA.\nThe circadian oscillation of xenosensor gene CAR mRNA expression is partially responsible for chronopharmacokinetics and chronopharmacology in disease.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 206,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 15.960620659909033,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC193604_chunk1",
+          "doc_id": "PMC193604",
+          "source_title": "Drosophila Free-Running Rhythms Require Intercellular Communication",
+          "text": "Robust self-sustained oscillations are a ubiquitous characteristic of circadian rhythms. These include Drosophila locomotor activity rhythms, which persist for weeks in constant darkness (DD). Yet the molecular oscillations that underlie circadian rhythms damp rapidly in many Drosophila tissues. Although much progress has been made in understanding the biochemical and cellular basis of circadian rhythms, the mechanisms that underlie the differences between damped and self-sustaining oscillations remain largely unknown. A small cluster of neurons in adult Drosophila brain, the ventral lateral neurons (LN v s), is essential for self-sustained behavioral rhythms and has been proposed to be the primary pacemaker for locomotor activity rhythms. With an LN v -specific driver, we restricted functional clocks to these neurons and showed that they are not sufficient to drive circadian locomotor activity rhythms. Also contrary to expectation, we found that all brain clock neurons manifest robust circadian oscillations of timeless and cryptochrome RNA for many days in DD. This persistent molecular rhythm requires pigment-dispersing factor (PDF), an LN v -specific neuropeptide, because the molecular oscillations are gradually lost when Pdf 01 mutant flies are exposed to free-running conditions. This observation precisely parallels the previously reported effect on behavioral rhythms of the Pdf 01 mutant. PDF is likely to affect some clock neurons directly, since the peptide appears to bind to the surface of many clock neurons, including the LN v s themselves. We showed that the brain circadian clock in Drosophila is clearly distinguishable from the eyes and other rapidly damping peripheral tissues, as it sustains robust molecular oscillations in DD. At the same time, different clock neurons are likely to work cooperatively within the brain, because the LN v s alone are insufficient to support the circadian program",
+          "chunk_index": 1,
+          "total_chunks": 4,
+          "token_count": 389,
+          "strategy": "sliding_window",
+          "source": "bm25",
+          "score": 15.078384534618465,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC522748",
+          "doc_id": "PMC522748",
+          "source_title": "Allermatch™, a webtool for the prediction of potential allergenicity according to current FAO/WHO Codex alimentarius guidelines",
+          "text": "Allermatch™, a webtool for the prediction of potential allergenicity according to current FAO/WHO Codex alimentarius guidelines\n\nNovel proteins entering the food chain, for example by genetic modification of plants, have to be tested for allergenicity. Allermatch™ is a webtool for the efficient and standardized prediction of potential allergenicity of proteins and peptides according to the current recommendations of the FAO/WHO Expert Consultation, as outlined in the Codex alimentarius.\nA query amino acid sequence is compared with all known allergenic proteins retrieved from the protein databases using a sliding window approach. This identifies stretches of 80 amino acids with more than 35% similarity or small identical stretches of at least six amino acids. The outcome of the analysis is presented in a concise format. The predictive performance of the FAO/WHO criteria is evaluated by screening sets of allergens and non-allergens against the Allermatch databases. Besides correct predictions, both methods are shown to generate false positive and false negative hits and the outcomes should therefore be combined with other methods of allergenicity assessment, as advised by the FAO/WHO.\nAllermatch™ provides an accessible, efficient, and useful webtool for analysis of potential allergenicity of proteins introduced in genetically modified food prior to market release that complies with current FAO/WHO guidelines.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 293,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 11.01585145830536,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC193604_chunk2",
+          "doc_id": "PMC193604",
+          "source_title": "Drosophila Free-Running Rhythms Require Intercellular Communication",
+          "text": ". We showed that the brain circadian clock in Drosophila is clearly distinguishable from the eyes and other rapidly damping peripheral tissues, as it sustains robust molecular oscillations in DD. At the same time, different clock neurons are likely to work cooperatively within the brain, because the LN v s alone are insufficient to support the circadian program. Based on the damping results with Pdf 01 mutant flies, we propose that LN v s, and specifically the PDF neuropeptide that it synthesizes, are important in coordinating a circadian cellular network within the brain. The cooperative function of this network appears to be necessary for maintaining robust molecular oscillations in DD and is the basis of sustained circadian locomotor activity rhythms.",
+          "chunk_index": 2,
+          "total_chunks": 4,
+          "token_count": 157,
+          "strategy": "sliding_window",
+          "source": "bm25",
+          "score": 10.72005427412926,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC520826",
+          "doc_id": "PMC520826",
+          "source_title": "Daily rhythms in plasma levels of homocysteine",
+          "text": "Daily rhythms in plasma levels of homocysteine\n\nThere is accumulated evidence that plasma concentration of the sulfur-containing amino-acid homocysteine (Hcy) is a prognostic marker for cardiovascular morbidity and mortality. Both fasting levels of Hcy and post methionine loading levels are used as prognostic markers. The aim of the present study was to investigate the existence of a daily rhythm in plasma Hcy under strictly controlled nutritional and sleep-wake conditions. We also investigated if the time during which methionine loading is performed, i.e., morning or evening, had a different effect on the resultant plasma Hcy concentration.\nSix healthy men aged 23–26 years participated in 4 experiments. In the first and second experiments, the daily rhythm in Hcy as well as in other amino acids was investigated under a normal or an inverse sleep-wake cycle. In the third and fourth, Hcy concentrations were investigated after a morning and evening methionine loading. To standardize food consumption in the first two experiments, subjects received every 3 hours 150 ml of specially designed low-protein liquid food (Ensure ® formula).\nIn both the first and second experiments there was a significant daily rhythm in Hcy concentrations with a mid-day nadir and a nocturnal peak. Strikingly different 24-h patterns were observed in methionine, leucine, isoleucine and tyrosine. In all, the 24-h curves revealed a strong influence of both the sleep-wake cycle and the feeding schedule. Methionine loading resulted in increased plasma Hcy levels during both morning and evening experiments, which were not significantly different from each other.\nThere is a daily rhythm in plasma concentration of the amino acid Hcy, and this rhythm is independent of sleep-wake and food consumption. In view of the fact that increased Hcy concentrations may be associated with increased cardiovascular risks, these findings may have clinical implications for the health of rotating shift workers.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 405,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 10.265671407007012,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "original": "warfarin atrial fibrillation elderly",
+      "keyword_query": "warfarin atrial fibrillation elderly atrial fibrillation anticoagulant",
+      "enhanced": {
+        "original": "warfarin atrial fibrillation elderly",
+        "cleaned": "warfarin atrial fibrillation elderly",
+        "entities": [
+          {
+            "type": "drug",
+            "text": "warfarin",
+            "start": 0,
+            "end": 8
+          },
+          {
+            "type": "disease",
+            "text": "atrial fibrillation",
+            "start": 9,
+            "end": 28
+          }
+        ],
+        "expanded_terms": [
+          "warfarin",
+          "anticoagulant"
+        ],
+        "vector_query": "warfarin atrial fibrillation elderly",
+        "keyword_query": "warfarin atrial fibrillation elderly atrial fibrillation anticoagulant",
+        "filters": [],
+        "metadata": {
+          "embedding_model": "BAAI/bge-small-en-v1.5",
+          "language": "en"
+        }
+      },
+      "hits": [
+        {
+          "chunk_id": "PMC514544",
+          "doc_id": "PMC514544",
+          "source_title": "Arrhythmia-provoking factors and symptoms at the onset of paroxysmal atrial fibrillation: A study based on interviews with 100 patients seeking hospital assistance",
+          "text": "Arrhythmia-provoking factors and symptoms at the onset of paroxysmal atrial fibrillation: A study based on interviews with 100 patients seeking hospital assistance\n\nSurprisingly little information on symptoms of paroxysmal atrial fibrillation is available in scientific literature. Using questionnaires, we have analyzed the symptoms associated with arrhythmia attacks.\nOne hundred randomly-selected patients with idiopathic paroxysmal atrial fibrillation filled in a structured questionnaire.\nPsychic stress was the most common factor triggering arrhythmia (54%), followed by physical exertion (42%), tiredness (41%) coffee (25%) and infections (22%). Thirty-four patients cited alcohol, 26 in the form of red wine, 16 as white wine and 26 as spirits. Among these 34, red wine and spirits produced significantly more episodes of arrhythmia than white wine (p = 0.01 and 0.005 respectively).\nSymptoms during arrhythmia were palpitations while exerting (88%), reduced physical ability (87%), palpitations at rest (86%), shortage of breath during exertion (70%) and anxiety (59%). Significant differences between sexes were noted regarding swollen legs (women 21%, men 6%, p = 0.027), nausea (women 36%, men 13%, p = 0.012) and anxiety (females 79%, males 51%, p = 0.014).\nPsychic stress was the commonest triggering factor in hospitalized patients with paroxysmal atrial fibrillation. Red wine and spirits were more proarrhythmic than white wine. Symptoms in women in connection with attacks of arrhythmia vary somewhat from those in men.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 384,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 40.4652639606271,
+          "rank": 1
+        },
+        {
+          "chunk_id": "PMC509245",
+          "doc_id": "PMC509245",
+          "source_title": "A randomised controlled trial and cost effectiveness study of systematic screening (targeted and total population screening) versus routine practice for the detection of atrial fibrillation in the over 65s: (SAFE) [ISRCTN19633732]",
+          "text": "A randomised controlled trial and cost effectiveness study of systematic screening (targeted and total population screening) versus routine practice for the detection of atrial fibrillation in the over 65s: (SAFE) [ISRCTN19633732]\n\nAtrial fibrillation (AF) has been recognised as an important independent risk factor for thromboembolic disease, particularly stroke for which it provides a five-fold increase in risk. This study aimed to determine the baseline prevalence and the incidence of AF based on a variety of screening strategies and in doing so to evaluate the incremental cost-effectiveness of different screening strategies, including targeted or whole population screening, compared with routine clinical practice, for detection of AF in people aged 65 and over. The value of clinical assessment and echocardiography as additional methods of risk stratification for thromboembolic disease in patients with AF were also evaluated.\nThe study design was a multi-centre randomised controlled trial with a study population of patients aged 65 and over from 50 General Practices in the West Midlands. These purposefully selected general practices were randomly allocated to 25 intervention practices and 25 control practices. GPs and practice nurses within the intervention practices received education on the importance of AF detection and ECG interpretation. Patients in the intervention practices were randomly allocated to systematic (n = 5000) or opportunistic screening (n = 5000). Prospective identification of pre-existing risk factors for AF within the screened population enabled comparison between high risk targeted screening and total population screening. AF detection rates in systematically screened and opportunistically screened populations in the intervention practices were compared to AF detection rate in 5,000 patients in the control practices.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 341,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 30.386701469648926,
+          "rank": 2
+        },
+        {
+          "chunk_id": "PMC497050",
+          "doc_id": "PMC497050",
+          "source_title": "Echocardiographic assessment and percutaneous closure of multiple atrial septal defects",
+          "text": "Echocardiographic assessment and percutaneous closure of multiple atrial septal defects\n\nAtrial septal defect closure is now routinely performed using a percutaneous approach under echocardiographic guidance. Centrally located, secundum defects are ideal for device closure but there is considerable morphological variation in size and location of the defects. A small proportion of atrial septal defects may have multiple fenestrations and these are often considered unsuitable for device closure. We report three cases of multiple atrial septal defects successfully closed with two Amplatzer septal occluders.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 116,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 23.00567726756056,
+          "rank": 3
+        },
+        {
+          "chunk_id": "PMC514718",
+          "doc_id": "PMC514718",
+          "source_title": "Atypical vessels as an early sign of intracardiac myxoma?",
+          "text": "Atypical vessels as an early sign of intracardiac myxoma?\n\nWe report on a woman with previously unknown left atrial myxoma, who underwent percutaneous coronary intervention. 45 months after the initial coronary angiography, echocardiography demonstrated a large atrial myxoma, which was not seen echocardiographically before. The retrospective analysis of the pre-intervention coronary angiography revealed atypical vessels in the atrial septum, which are interpreted as early signs of myxoma.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 108,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 22.373472023637145,
+          "rank": 4
+        },
+        {
+          "chunk_id": "PMC509246",
+          "doc_id": "PMC509246",
+          "source_title": "Patients' perspectives on taking warfarin: qualitative study in family practice",
+          "text": "Patients' perspectives on taking warfarin: qualitative study in family practice\n\nDespite the well-documented benefits of using warfarin to prevent stroke, physicians remain reluctant to initiate therapy, and especially so with the elderly owing to the higher risk of hemorrhage. Prior research suggests that patients are more accepting of the risk of bleeding than are physicians, although there have been few qualitative studies. The aim of this study was to employ qualitative methods to investigate the experience and perspective of individuals taking warfarin.\nWe conducted face-to-face interviews with 21 older patients (12 male, 9 female) who had been taking warfarin for a minimum of six months. Participants were patients at a family practice clinic situated in a large, tertiary care teaching hospital. We used a semistructured interview guide with four main thematic areas: decision-making, knowledge/education, impact, and satisfaction. Data were analysed according to the principles of content analysis.\nParticipants tended to have minimal input into the decision to initiate warfarin therapy, instead relying in great part on physicians' expertise. There appeared to be low retention of information received regarding the therapy; half the patients in our sample possessed only a superficial level of understanding of the risks and benefits. This notwithstanding, participants reported a high level of satisfaction with the care provided and a low level of impact on their day-to-day lives.\nMinimal patient involvement in the initial decision and modest knowledge did not appear to diminish satisfaction with warfarin management. At the same time, care providers exert a tremendous influence on the initiation of warfarin therapy and should strive to incorporate patient preferences and expectations into the decision-making process.",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 345,
+          "strategy": "single",
+          "source": "bm25",
+          "score": 17.42652312159842,
+          "rank": 5
+        }
+      ]
+    }
+  ]
+}
