@@ -29,6 +29,7 @@ secrets/
 **/ollama_models/
 **/*.bin
 **/data_level0.bin
+**/oa_comm_slim.jsonl
 
 # macOS
 .DS_Store

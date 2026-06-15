@@ -19,6 +19,7 @@
 ├── 03 文档解析与分割/        # 阶段 3：文本分割（已完成）
 ├── 04 向量化与索引构建/      # 阶段 4：嵌入 + ChromaDB 索引（✅ 全量完成）
 ├── 05 检索系统开发第一部分/  # 阶段 5：查询理解与增强（✅ 已完成）
+├── 06 检索系统开发第二部分/  # 阶段 6：多路检索 + 融合 + 重排序（🔄 进行中）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -34,6 +35,7 @@
 | **03** 文档解析与分割 | [`03 文档解析与分割/`](03%20文档解析与分割/) | ✅ 已完成 | [`任务.txt`](03%20文档解析与分割/任务.txt) | [`schedule.md`](03%20文档解析与分割/schedule.md) | [`doc-chunking.ipynb`](03%20文档解析与分割/notebooks/doc-chunking.ipynb)（验证）· [`full.ipynb`](03%20文档解析与分割/notebooks/doc-chunking-full.ipynb)（全量） | *共用 02 环境* |
 | **04** 向量化与索引构建 | [`04 向量化与索引构建/`](04%20向量化与索引构建/) | ✅ **已完成** | [`任务.txt`](04%20向量化与索引构建/任务.txt) | [`schedule.md`](04%20向量化与索引构建/schedule.md) | [`vectorize-index.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index.ipynb)（验证）· [`full.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index-full.ipynb)（全量） | [`requirements.txt`](04%20向量化与索引构建/requirements.txt) |
 | **05** 检索系统开发第一部分 | [`05 检索系统开发第一部分/`](05%20检索系统开发第一部分/) | ✅ **已完成** | [`任务.txt`](05%20检索系统开发第一部分/任务.txt) | [`schedule.md`](05%20检索系统开发第一部分/schedule.md) | [`query-enhancement.ipynb`](05%20检索系统开发第一部分/notebooks/query-enhancement.ipynb) | [`requirements.txt`](05%20检索系统开发第一部分/requirements.txt) |
+| **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | 🔄 **进行中** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | `retrieval-pipeline.ipynb`（待建） | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
 
 **说明**
 
@@ -43,40 +45,7 @@
 
 ---
 
-## 第五阶段完成总结（2026-06-08）
 
-> 目标：对用户自然语言查询做**查询理解与增强**，产出可供后续检索使用的结构化对象；**不包含**混合检索、LLM 生成答案。
-
-### 已确认决策
-
-| 决策项 | 结论 |
-|--------|------|
-| 查询语言 | **英文优先**（老师确认）；中文后续视时间添加 |
-| 嵌入模型 | 与 04 一致：`BAAI/bge-small-en-v1.5` |
-| 时间 filter | **解析但不重建索引**；`year_*` 标 `executable=false` |
-| 向量库 | 复用 04 `chroma_db`（样本）/ `chroma_db_full`（全量） |
-
-### 主要产出
-
-| 产出 | 路径 | Git |
-|------|------|-----|
-| 查询增强模块 | `05 .../src/query_enhancer.py` 等 | ✅ |
-| 静态同义词表 | `05 .../data/medical_synonyms.json` | ✅ |
-| 演示 notebook | `05 .../notebooks/query-enhancement.ipynb` | ✅ |
-| 增强样例 | `05 .../outputs/samples/enhancement_examples.json` | ✅ |
-| 双库 smoke 对比 | `05 .../outputs/samples/chroma_smoke_compare.json` | ✅ |
-| **正式报告** | `05 .../docs/查询理解与增强报告.md` | ✅ |
-
-### 双库 smoke test（`metformin cardiovascular effects`，Top-5）
-
-| 库 | 条数 | HNSW bin | 平均 query |
-|----|------|----------|------------|
-| 样本 `chroma_db` | 1,267 | ✅ 完整 | ~12 ms |
-| 全量 `chroma_db_full` | 6,107,296 | ❌ 无 bin | ~16 ms |
-
-05→04 检索路径已打通；详见 [`05 .../schedule.md`](05%20检索系统开发第一部分/schedule.md) 与 [`笔记/05笔记·.md`](笔记/05笔记·.md) Q11。
-
----
 
 ## 第二阶段完成总结（2026-05-27）
 
@@ -233,6 +202,41 @@ results = builder.query(
 
 ---
 
+## 第五阶段完成总结（2026-06-08）
+
+> 目标：对用户自然语言查询做**查询理解与增强**，产出可供后续检索使用的结构化对象；**不包含**混合检索、LLM 生成答案。
+
+### 已确认决策
+
+| 决策项 | 结论 |
+|--------|------|
+| 查询语言 | **英文优先**（老师确认）；中文后续视时间添加 |
+| 嵌入模型 | 与 04 一致：`BAAI/bge-small-en-v1.5` |
+| 时间 filter | **解析但不重建索引**；`year_*` 标 `executable=false` |
+| 向量库 | 复用 04 `chroma_db`（样本）/ `chroma_db_full`（全量） |
+
+### 主要产出
+
+| 产出 | 路径 | Git |
+|------|------|-----|
+| 查询增强模块 | `05 .../src/query_enhancer.py` 等 | ✅ |
+| 静态同义词表 | `05 .../data/medical_synonyms.json` | ✅ |
+| 演示 notebook | `05 .../notebooks/query-enhancement.ipynb` | ✅ |
+| 增强样例 | `05 .../outputs/samples/enhancement_examples.json` | ✅ |
+| 双库 smoke 对比 | `05 .../outputs/samples/chroma_smoke_compare.json` | ✅ |
+| **正式报告** | `05 .../docs/查询理解与增强报告.md` | ✅ |
+
+### 双库 smoke test（`metformin cardiovascular effects`，Top-5）
+
+| 库 | 条数 | HNSW bin | 平均 query |
+|----|------|----------|------------|
+| 样本 `chroma_db` | 1,267 | ✅ 完整 | ~12 ms |
+| 全量 `chroma_db_full` | 6,107,296 | ❌ 无 bin | ~16 ms |
+
+05→04 检索路径已打通；详见 [`05 .../schedule.md`](05%20检索系统开发第一部分/schedule.md) 与 [`笔记/05笔记·.md`](笔记/05笔记·.md) Q11。
+
+---
+
 ## Python 环境与依赖
 
 ### 推荐环境
@@ -346,7 +350,8 @@ print(torch.cuda.get_device_name(0))
 | `ollama_models/` | 模型存储 | 01 | 由 Ollama 自动创建 |
 | `chroma_db/` | 向量库（验证期 / 过时半成品） | 01/04 | 01 smoke test；04 样本需重跑 notebook 重建 |
 | **PMC 全量数据** (~100GB 压缩包，解压后 ~466GB) | 全量数据处理 | 02 | 外接硬盘 + `med-data-EDA-partB.ipynb` |
-| **slim JSONL** (8.9 GB) | 分割输入 | 02/03 | 第二阶段生成 |
+| **slim JSONL** (8.9 GB) | 分割输入 / 06 重排回查 | 02/03/06 | 第二阶段生成；**06 本地副本**见下表 |
+| **06 slim 本地副本** (~8.9 GB) | recency/authority 回查（`doc_id`→`pub_year`/`journal`） | 06 | 自 `E:\...\oa_comm_slim.jsonl` 复制至 `06 .../data/`；`.gitignore` |
 | **chunks JSONL** (~9.1 GB) | 向量化输入 / 重建索引 | 03/04 | 第三阶段生成；E: 备份 |
 | **ChromaDB 全量向量库** | 语义检索索引（~71 GB） | 04 / RAG | `04 .../data/chroma_db_full/`（D: 暂留；E: 备份；`.gitignore`） |
 
@@ -455,6 +460,16 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - **联调脚本**：`scripts/run_dual_smoke.py`
 - **正式文档**：`docs/查询理解与增强报告.md`
 
+### 06 检索系统开发第二部分（🔄 进行中）
+
+- **任务范围**：多路检索（向量 + BM25）→ 融合 → 重排序；与 05 查询增强打通为完整检索流水线
+- **核心模块（规划）**：`bm25_index.py`、`multipath_retriever.py`、`fusion.py`、`reranker.py`、`pipeline.py`
+- **配置入口**：`src/config.py`（`resolve_slim_path()` / `resolve_chunks_path()` / `resolve_chroma()`）
+- **slim 回查（RAG 活跃）**：`06 检索系统开发第二部分/data/oa_comm_slim.jsonl`（4,557,627 篇，~8.9 GB；自 E: 复制，不随 Git 上传）
+- **slim 权威源（备份）**：`E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl`
+- **嵌入 / 重排模型**：`BAAI/bge-small-en-v1.5`（与 04/05 一致）、`BAAI/bge-reranker-base`
+- **计划与进度**：[`06 .../schedule.md`](06%20检索系统开发第二部分/schedule.md)
+
 ---
 
 ## 笔记目录
@@ -469,6 +484,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | `03笔记.md` | 第三阶段任务理解 Q&A |
 | `04笔记.md` | 嵌入模型、维数、token、ChromaDB、BGE 查询指令 Q&A |
 | `05笔记·.md` | 05 阶段共识、filter 决策、双库 smoke、notebook 实测 Q&A |
+| `06笔记.md` | 06 阶段 RAG 位置、多路检索/融合/rerank 概念 Q&A |
 
 ---
 
@@ -490,5 +506,6 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-03** | **04: 新增向量化与索引正式报告**（`BAAI/bge-small-en-v1.5`） |
 | **2026-06-08** | **05 阶段完成**：查询理解与增强模块 + 双库 Chroma smoke test |
 | **2026-06-08** | **05: 新增查询理解与增强正式报告** |
+| **2026-06-15** | **06 阶段启动**：环境与骨架；`oa_comm_slim.jsonl` 本地化至 `06 .../data/` |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*

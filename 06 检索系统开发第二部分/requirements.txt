@@ -1,0 +1,21 @@
+# 06 检索系统开发第二部分 — 复用 med-rag-verify（与 02/04/05 相同）
+#
+# conda activate med-rag-verify
+#
+# 上游依赖（通常已安装，见各阶段 requirements）：
+#   04: chromadb, torch, transformers, sentence-transformers
+#   05: 查询增强模块（同环境）
+#
+# 从零安装建议顺序：
+#   pip install -r "../01 验证模型/requirements.txt"
+#   pip install -r "../02 数据处理/requirements.txt"
+#   pip install -r "../04 向量化与索引构建/requirements.txt"
+#   pip install -r "requirements.txt"
+
+# --- 本阶段新增 ---
+rank-bm25>=0.2.2
+
+# --- 复用（reranker / 向量检索；若环境已装可跳过）---
+transformers>=4.40.0
+torch>=2.0.0
+chromadb>=1.5.0
