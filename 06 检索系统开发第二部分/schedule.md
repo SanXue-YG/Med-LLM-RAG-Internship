@@ -1,6 +1,6 @@
 # 06 检索系统开发第二部分 — 执行计划
 
-> **状态：🔄 进行中（阶段 0–2 已完成；notebook C0–C8 样本库验证通过）**
+> **状态：🔄 进行中（阶段 0–3 已完成；notebook C0–C9）**
 >
 > **本阶段范围（任务书）**：实现多路检索（向量 + BM25）→ 融合 → 重排序，并与 05 查询增强模块打通为完整检索流水线。
 >
@@ -139,26 +139,26 @@ class Reranker:
   - [x] `weighted`：向量分更高权重
 - [x] 输出融合后候选（含分路得分与最终分）
 
-### 阶段 3：重排序器 ☐
+### 阶段 3：重排序器 ✅
 
-- [ ] 接入 `BAAI/bge-reranker-base`（或同级可用模型）
-- [ ] query-doc 对打分（tokenize → 推理 → 概率/分数）
-- [ ] 多准则重排（可配置）：
-  - [ ] relevance（reranker score）
-  - [ ] recency（按 `pub_year` 线性衰减，来自 02 slim 回查）
-  - [ ] authority（期刊权重，先做规则表）
-- [ ] 产出 top_k 最终列表 + 解释字段
+- [x] 接入 `BAAI/bge-reranker-base`（或同级可用模型）
+- [x] query-doc 对打分（tokenize → 推理 → 概率/分数）
+- [x] 多准则重排（可配置）：
+  - [x] relevance（reranker score）
+  - [x] recency（按 `pub_year` 线性衰减，来自 slim 回查）
+  - [x] authority（期刊权重，规则表）
+- [x] 产出 top_k 最终列表 + 解释字段
 
 ### 阶段 4：完整流水线联调 ☐
 
 - [ ] 串联：`enhancer -> multipath retrieve -> fusion -> rerank`
-- [ ] notebook 演示 C0–C8（至少 4 条英文医学 query）✅ 样本库已跑通
+- [ ] notebook 演示 C0–C9（至少 4 条英文医学 query）✅ 样本库已跑通（含 C8 重排）
 - [ ] CLI `run_retrieval_eval.py` 批量评估并导出 JSON
 
 ### 阶段 5：测试与交付 ☐
 
-- [ ] 单元测试：BM25 / fusion / reranker / pipeline（BM25、fusion、multipath ✅）
-- [ ] 样例输出：`retrieval_compare.json`、`rerank_examples.json`（前者 ✅，后者待阶段 3）
+- [ ] 样例输出：`retrieval_compare.json`、`rerank_examples.json`（前者 ✅，后者待 notebook C9 导出）
+- [ ] 单元测试：BM25 / fusion / reranker / pipeline（BM25、fusion、multipath、rerank ✅）
 - [x] 更新根目录 `README.md` 阶段 06 条目
 - [ ] 补充阶段报告（是否单独 docs，按老师口径）
 
@@ -173,23 +173,41 @@ class Reranker:
 | 双路诊断（C5） | `metformin cardiovascular effects`：向量 Top-5 与 BM25 Top-5 **零重叠** → 融合有必要 |
 | RRF 融合（C6） | 5 条 schedule query 均返回融合候选；含 `vector_rank` / `bm25_rank` / `fusion_score` |
 | 三策略对比（C7） | 同 query 下 `simple`≈纯向量序；`rrf`/`weighted` 引入 BM25 独有候选（如 `PMC521687`） |
-| 默认策略 | **`rrf`**（schedule 共识）；`weighted` Top-5 与 rrf 高度相近 |
+| 默认策略 | **确认 `rrf`**（见下方「融合策略取舍」）；`weighted` 为备选 |
 
-### 验证 query 抽查（RRF Top-1）
+### 融合策略取舍（C7 实测，`metformin cardiovascular effects`）
+
+| 策略 | Top-5 特征 | 结论 |
+|------|-----------|------|
+| **simple** | 与向量路 5/5 相同 | 双路零重叠时 **无法** 纳入 BM25 结果 → **不作默认** |
+| **rrf** | 保留向量 #1，插入 BM25 独有 `PMC521687`、`PMC521493` | **作 pipeline 默认**；不依赖分数尺度 |
+| **weighted** | Top-5 集合与 rrf **4/5 相同**，仅次序略异 | 保留为可调备选（`vector_weight=0.6`） |
+
+**决策**：维持 `DEFAULT_FUSION_STRATEGY="rrf"`；三种策略均保留在代码与 C7 对比，非淘汰赛。
+
+### C8 重排摘要（样本库）
+
+| Query | 关注点 | 实测 |
+|-------|--------|------|
+| metformin… | 融合+重排 | RRF 纳入 BM25 候选；rerank 顶位为心血管相关但无 metformin 字面 |
+| malaria after 2015 | recency | `year_hint=2015` 已生效，但样本库 Top 均为 2004 年文献，时效验证不足 |
+
+### 验证 query 抽查（RRF 融合 Top-1）
 
 | Query | RRF Top-1 | 简要结论 |
 |-------|-----------|----------|
 | `metformin cardiovascular effects` | `PMC523838_chunk2`（心血管 lipid） | 向量主导；RRF 第 2 位起纳入 BM25 候选 |
-| `papers on malaria after 2015` | `PMC522803`（malaria 相关） | 双路均命中疟疾语料；年份 filter 待阶段 3 rerank |
+| `papers on malaria after 2015` | `PMC522803`（malaria 相关） | 融合命中；C8 recency 链路通但样本均为 2004 年 |
 | `MI treatment guideline` | `PMC522817`（clinical practice guideline） | 关键词 guideline 生效；第 2 位 `PMC512285` 为 MI 结局 |
 | `circadian rhythm sliding window chunks` | `PMC524494_chunk0` | strategy filter 下向量路偏短 chunk；第 2 位 `PMC517509` 含 circadian |
 | `warfarin atrial fibrillation elderly` | （见 `fusion_examples.json`） | 双路医学术语召回正常 |
 
-### 已知现象（不阻塞阶段 3）
+### 已知现象（样本库局限，不阻塞阶段 4）
 
 1. 带 `strategy=sliding_window` 的 query 在 Chroma 样本库走 **post-filter 降级**（与 05 一致）。
-2. 样本库仅 1,267 chunks，metformin 等 query 的向量 Top 结果未必含药名字面匹配——全量库联调后质量会提升。
-3. `year_*` filter 已解析但 **未在融合层执行**；recency 留给阶段 3 `rerank_features.py`。
+2. 样本库仅 1,267 chunks，metformin 等 query 难命中药名字面；**全量库**联调后质量会提升。
+3. `year_*` 在重排层通过 `year_hint` 降权旧文献，但样本库缺少 2015+ 疟疾篇，时效效果不明显。
+4. C8 首次运行需下载 reranker（~1.1GB），后续 cached 约 1–3 分钟/5 query。
 
 ---
 
@@ -230,7 +248,7 @@ class Reranker:
 | 融合样例输出 | JSON | `outputs/samples/fusion_examples.json` | ✅ |
 | BM25 样例输出 | JSON | `outputs/samples/bm25_examples.json` | ✅ |
 | 向量 smoke 输出 | JSON | `outputs/samples/vector_smoke_sample.json` | ✅ |
-| 重排样例输出 | JSON | `outputs/samples/rerank_examples.json` | ✅ |
+| 重排样例输出 | JSON | `outputs/samples/rerank_examples.json` | ✅（C9 导出） |
 | 向量库 | ChromaDB | 04 阶段已有 | ❌ |
 
 ---
@@ -264,4 +282,6 @@ class Reranker:
 | 2026-06-15 | **阶段 1 完成**：`src/bm25_index.py` + `tests/test_bm25.py`（样本库 1,267 条验证通过） |
 | 2026-06-15 | **阶段 2 完成**：`multipath_retriever.py` + `fusion.py`；notebook C6–C7 融合对比 |
 | 2026-06-15 | **notebook C0–C8 样本验证通过**；导出 `fusion_examples.json` 等 4 份样例 |
+| 2026-06-17 | **阶段 3 完成**：`reranker.py` + `rerank_features.py`；notebook C8–C9 |
+| 2026-06-17 | **融合策略确认**：C7 对比后维持 **RRF 默认**（simple 不适用零重叠；weighted 与 rrf 高度一致） |
 

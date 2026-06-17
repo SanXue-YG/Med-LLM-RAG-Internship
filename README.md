@@ -460,23 +460,25 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - **联调脚本**：`scripts/run_dual_smoke.py`
 - **正式文档**：`docs/查询理解与增强报告.md`
 
-### 06 检索系统开发第二部分（🔄 进行中，阶段 0–2 已完成）
+### 06 检索系统开发第二部分（🔄 进行中，阶段 0–3 已完成）
 
 - **任务范围**：多路检索（向量 + BM25）→ 融合 → 重排序；与 05 查询增强打通为完整检索流水线
-- **已完成模块**：`bm25_index.py`、`multipath_retriever.py`、`fusion.py`（simple / rrf / weighted）
-- **待完成**：`reranker.py`、`rerank_features.py`、`pipeline.py`
+- **已完成模块**：`bm25_index.py`、`multipath_retriever.py`、`fusion.py`、`reranker.py`、`rerank_features.py`
+- **融合默认策略**：**`rrf`**（C7 实测：simple 在双路零重叠时等同纯向量；weighted 与 rrf Top-5 高度一致，rrf 更稳）
+- **待完成**：`pipeline.py`（阶段 4 端到端串联）
 - **配置入口**：`src/config.py`（`resolve_slim_path()` / `resolve_chunks_path()` / `resolve_chroma()`）
 - **slim 回查（RAG 活跃）**：`06 检索系统开发第二部分/data/oa_comm_slim.jsonl`（4,557,627 篇，~8.9 GB；自 E: 复制，不随 Git 上传）
 - **嵌入 / 重排模型**：`BAAI/bge-small-en-v1.5`（与 04/05 一致）、`BAAI/bge-reranker-base`（阶段 3）
-- **演示入口**：[`notebooks/retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb)（**C0–C8**，样本库已验证）
+- **演示入口**：[`notebooks/retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb)（**C0–C9**，含重排）
 - **样例输出**（`outputs/samples/`）：
   - `fusion_examples.json` — 5 条 query 的 RRF 融合结果 + 三策略对比
+  - `rerank_examples.json` — 多准则重排结果（C8 导出）
   - `retrieval_compare.json` — 向量 vs BM25 双路诊断（metformin query）
   - `bm25_examples.json`、`vector_smoke_sample.json`
 - **Notebook 验证要点**（样本库 1,267 chunks）：
-  - 双路 Top-5 可零重叠 → 多路融合有价值
-  - 默认 `rrf` 能在保留向量头部候选的同时纳入 BM25 独有结果
-  - `year_*` / recency 待阶段 3 重排；全量库联调待 BM25/Chroma full 模式
+  - 双路 Top-5 可零重叠 → 多路融合有价值；**simple 无法补 BM25，默认用 rrf**
+  - rrf 与 weighted Top-5 集合 ~80% 一致；rrf 不依赖分数归一化
+  - C8 重排：`year_hint` 已接入；样本库文献偏旧，时效 query 效果待全量验证
 - **计划与进度**：[`06 .../schedule.md`](06%20检索系统开发第二部分/schedule.md)
 
 ---
@@ -514,7 +516,8 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-02** | **04 收尾文档**：schedule + README 更新；RAG 挂载 D: `chroma_db_full/` |
 | **2026-06-03** | **04: 新增向量化与索引正式报告**（`BAAI/bge-small-en-v1.5`） |
 | **2026-06-08** | **05 阶段完成**：查询理解与增强模块 + 双库 Chroma smoke test |
-| **2026-06-08** | **05: 新增查询理解与增强正式报告** |
+| **2026-06-10** | **05: 新增查询理解与增强正式报告** |
 | **2026-06-15** | **06 阶段 2 完成**：多路召回 + 三种融合；notebook C0–C8 样本验证；导出 fusion 样例 |
+| **2026-06-17** | **06 阶段 3 完成**：BGE reranker + recency/authority；C7 确认 **RRF 为默认融合策略** |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
