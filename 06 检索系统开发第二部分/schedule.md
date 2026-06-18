@@ -1,6 +1,6 @@
 # 06 检索系统开发第二部分 — 执行计划
 
-> **状态：🔄 进行中（阶段 0–3 已完成；notebook C0–C9）**
+> **状态：✅ 已完成（阶段 0–5；notebook C0–C12）**
 >
 > **本阶段范围（任务书）**：实现多路检索（向量 + BM25）→ 融合 → 重排序，并与 05 查询增强模块打通为完整检索流水线。
 >
@@ -9,6 +9,27 @@
 > - 04：`DocumentEmbedder` / `ChromaIndexBuilder` + Chroma 库
 > - 03：`oa_comm_chunks.jsonl`（BM25 语料来源，title+abstract chunk）
 > - 02：`oa_comm_slim.jsonl`（重排 recency/authority 回查，`doc_id` → `pub_year` / `journal`）
+
+---
+
+## ⚠️ 验证范围说明（必读）
+
+**本阶段全部 notebook 跑通、单元测试、`pipeline_eval.json` 等样例输出，均在「样本库」上完成，不是全量 PMC 语料。**
+
+| 维度 | 本阶段实际使用（`mode="sample"`，默认） | 后续 LangChain RAG 生产应切换（`mode="full"`） |
+|------|----------------------------------------|-----------------------------------------------|
+| 向量库 | `04 .../data/chroma_db` · `pmc_oa_comm_sample` | **`04 .../data/chroma_db_full` · `pmc_oa_comm_full`**（6,107,296 条；D: 或 E: 备份） |
+| BM25 语料 | `03 .../chunks_sample.jsonl`（**1,267** chunks） | **`E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl`**（**6,107,296** chunks） |
+| slim 元数据 | `06 .../data/oa_comm_slim.jsonl`（已本地化，4,557,627 篇） | 同上或 E: 权威源（recency/authority 已覆盖全库） |
+| 代码入口 | `MODE = "sample"`（notebook C0）· `from_mode("sample")` | **`from_mode("full")`** · CLI `--mode full` |
+
+**为何样本库结果不能代表最终 RAG 质量**：1,267 条仅为 03/04 验证子集，药名、年份、长尾 query 在样本中常缺失或偏旧（如 malaria after 2015 无 2015+ 篇）。链路正确性已在样本库证明；**检索召回与排序质量须在全量库上复评**。
+
+**构建最终 RAG 系统时务必**：
+
+1. 确认 D: `chroma_db_full` 或 E: `chroma_db_full` 可访问（04 阶段已建库）。
+2. 确认 E: `oa_comm_chunks.jsonl` 可访问（BM25 全量建索引；首次 build 耗时长、内存需规划）。
+3. 将 `RetrievalPipeline.from_mode("full")` / CLI `--mode full` 作为生产默认；样本模式仅用于开发调试。
 
 ---
 
@@ -34,7 +55,8 @@
 | BGE 前缀 | 继续由 04 `encode_queries()` 统一添加 | 06 不重复拼接 |
 | 年份/期刊信号 | **检索后特征重排**，不重建 04 索引 | 04 metadata 无 `pub_year/journal` |
 | slim 回查路径 | **本阶段 `data/oa_comm_slim.jsonl`（优先）** | 自 E: 复制至本地，避免开发时依赖外接盘 |
-| 语料来源 | BM25 首版用 `03 .../chunks_sample.jsonl` 验证，再切全量 | 降低首轮开发风险 |
+| 语料来源 | BM25 首版用 `03 .../chunks_sample.jsonl` 验证，再切全量 | 降低首轮开发风险；**RAG 上线前必须切全量** |
+| **本阶段验证规模** | **样本库 only**（1,267 chunks） | 见上文「验证范围说明」；非生产数据 |
 | 融合默认策略 | `rrf`（主）+ `weighted`（备） | 学术检索场景稳定 |
 
 ---
@@ -149,18 +171,30 @@ class Reranker:
   - [x] authority（期刊权重，规则表）
 - [x] 产出 top_k 最终列表 + 解释字段
 
-### 阶段 4：完整流水线联调 ☐
+### 阶段 4：完整流水线联调 ✅
 
-- [ ] 串联：`enhancer -> multipath retrieve -> fusion -> rerank`
-- [ ] notebook 演示 C0–C9（至少 4 条英文医学 query）✅ 样本库已跑通（含 C8 重排）
-- [ ] CLI `run_retrieval_eval.py` 批量评估并导出 JSON
+- [x] 串联：`enhancer -> multipath retrieve -> fusion -> rerank` → `src/pipeline.py`
+- [x] notebook 演示 C10–C11（`RetrievalPipeline.run` + 导出 `pipeline_eval.json`）
+- [x] CLI `run_retrieval_eval.py` 批量评估并导出 JSON（支持 `--skip-rerank` / `--check-only`）
+- [x] 单元测试 `tests/test_pipeline.py`
 
-### 阶段 5：测试与交付 ☐
+```
+# 环境检查
+python scripts/run_retrieval_eval.py --check-only
 
-- [ ] 样例输出：`retrieval_compare.json`、`rerank_examples.json`（前者 ✅，后者待 notebook C9 导出）
-- [ ] 单元测试：BM25 / fusion / reranker / pipeline（BM25、fusion、multipath、rerank ✅）
+# 快速评测（跳过重排，约 1 分钟）
+python scripts/run_retrieval_eval.py --skip-rerank --top-k-fused 5 --top-k-final 3
+
+# 完整评测（含 reranker，首次需下载模型）
+python scripts/run_retrieval_eval.py --output outputs/samples/pipeline_eval.json
+```
+
+### 阶段 5：测试与交付 ✅
+
+- [x] 样例输出：`retrieval_compare.json`、`rerank_examples.json`、`pipeline_eval.json` 等 7 份
+- [x] 单元测试：BM25 / fusion / reranker / pipeline（7 文件全部通过，2026-06-17）
 - [x] 更新根目录 `README.md` 阶段 06 条目
-- [ ] 补充阶段报告（是否单独 docs，按老师口径）
+- [x] 阶段报告：`docs/检索流水线报告.md`
 
 ---
 
@@ -209,6 +243,38 @@ class Reranker:
 3. `year_*` 在重排层通过 `year_hint` 降权旧文献，但样本库缺少 2015+ 疟疾篇，时效效果不明显。
 4. C8 首次运行需下载 reranker（~1.1GB），后续 cached 约 1–3 分钟/5 query。
 
+### C10–C11 端到端 pipeline 验证（`pipeline_eval.json`，2026-06-17）
+
+| 项 | 结果 |
+|----|------|
+| 链路 | enhance → RRF 融合（top_k=10）→ rerank（top_k_final=5）一次 `pipeline.run()` 完成 |
+| 时延 | p50 **86 ms**（模型已缓存）；p95 **3919 ms**（首条含 reranker 冷启动） |
+| 5/5 query | 均返回非空 `reranked`；MI / warfarin / circadian 与 C6 预期一致 |
+
+| Query | Pipeline Top-1 | 说明 |
+|-------|----------------|------|
+| metformin cardiovascular effects | `PMC520826` | 心血管 biomarker 文献（BM25 路）；与 C8 顶位不同因融合池更大 |
+| papers on malaria after 2015 | `PMC523837` | 疟疾相关；样本库仍无 2015+ 篇 |
+| MI treatment guideline | `PMC522817` | 指南类，与 C6/C8 一致 |
+| circadian rhythm sliding window chunks | `PMC524494_chunk1` | sliding_window chunk |
+| warfarin atrial fibrillation elderly | `PMC509245` | 房颤抗凝 RCT |
+
+### C12 全量盘联调（`pipeline_eval_full.json`，2026-06-18）
+
+| 项 | 结果 |
+|----|------|
+| 挂载 | `chroma_db_full`（6,107,296）+ E: `oa_comm_chunks.jsonl`；BM25 **探测** 前 100,000 条（31.5s），非 610 万全库 BM25 |
+| 时延 | total p50 **34.1 s** / p95 **35.2 s**；`retrieve_ms` 140–1704 ms；**瓶颈在 rerank_ms≈33–34 s/条** |
+| 样本 vs 全量 Top-1 | **3/3 不一致**（预期：样本库仅为 1,267 条子集） |
+
+| Query | 样本 Top-1 | 全量 Top-1 | 全量解读 |
+|-------|-----------|-----------|----------|
+| metformin cardiovascular effects | `PMC520826` | **`PMC2566605_chunk2`** | ✅ 真正 metformin T1DM RCT；`relevance=0.93`，样本库无法命中 |
+| MI treatment guideline | `PMC522817` | `PMC2637970` | 心梗修复（MI 主题）；非 guideline 字面，但比样本更贴 MI |
+| papers on malaria after 2015 | `PMC523837` | `PMC12822982` | ⚠️ `pub_year=2026` 满足 recency，但内容为 cocaine 监测，**非疟疾**；recency 权重需与 relevance 联调 |
+
+**结论**：全量 Chroma + 探测 BM25 + rerank 链路已打通；metformin 等 query 在全量下质量显著优于样本库。malaria 时效 query 暴露 recency 单独抬升非相关新文献的风险——RAG 生产建议增大 `top_k_fused`、全量 BM25 离线建索引、并监控 rerank 分项。
+
 ---
 
 ## 验证用例（首批）
@@ -249,6 +315,9 @@ class Reranker:
 | BM25 样例输出 | JSON | `outputs/samples/bm25_examples.json` | ✅ |
 | 向量 smoke 输出 | JSON | `outputs/samples/vector_smoke_sample.json` | ✅ |
 | 重排样例输出 | JSON | `outputs/samples/rerank_examples.json` | ✅（C9 导出） |
+| Pipeline 评测输出 | JSON | `outputs/samples/pipeline_eval.json` | ✅（C11 / CLI） |
+| 全量联调输出 | JSON | `outputs/samples/pipeline_eval_full.json` | ✅（C12，可选） |
+| 阶段报告 | Markdown | `docs/检索流水线报告.md` | ✅ |
 | 向量库 | ChromaDB | 04 阶段已有 | ❌ |
 
 ---
@@ -283,5 +352,7 @@ class Reranker:
 | 2026-06-15 | **阶段 2 完成**：`multipath_retriever.py` + `fusion.py`；notebook C6–C7 融合对比 |
 | 2026-06-15 | **notebook C0–C8 样本验证通过**；导出 `fusion_examples.json` 等 4 份样例 |
 | 2026-06-17 | **阶段 3 完成**：`reranker.py` + `rerank_features.py`；notebook C8–C9 |
-| 2026-06-17 | **融合策略确认**：C7 对比后维持 **RRF 默认**（simple 不适用零重叠；weighted 与 rrf 高度一致） |
+| 2026-06-18 | **阶段 4 完成**：`pipeline.py` + CLI 评测 + notebook C10–C11；导出 `pipeline_eval.json` |
+| 2026-06-18 | **阶段 5 完成**：全测试通过 + 阶段报告 `docs/检索流水线报告.md` |
+| 2026-06-18 | **C12 全量联调**：`pipeline_eval_full.json`；3 query 样本 vs 全量 Top-1 全不同；metformin 全量命中真实 RCT |
 

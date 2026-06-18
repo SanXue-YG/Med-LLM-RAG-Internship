@@ -19,7 +19,7 @@
 ├── 03 文档解析与分割/        # 阶段 3：文本分割（已完成）
 ├── 04 向量化与索引构建/      # 阶段 4：嵌入 + ChromaDB 索引（✅ 全量完成）
 ├── 05 检索系统开发第一部分/  # 阶段 5：查询理解与增强（✅ 已完成）
-├── 06 检索系统开发第二部分/  # 阶段 6：多路检索 + 融合 + 重排序（🔄 进行中）
+├── 06 检索系统开发第二部分/  # 阶段 6：多路检索 + 融合 + 重排序（✅ 已完成）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -35,7 +35,7 @@
 | **03** 文档解析与分割 | [`03 文档解析与分割/`](03%20文档解析与分割/) | ✅ 已完成 | [`任务.txt`](03%20文档解析与分割/任务.txt) | [`schedule.md`](03%20文档解析与分割/schedule.md) | [`doc-chunking.ipynb`](03%20文档解析与分割/notebooks/doc-chunking.ipynb)（验证）· [`full.ipynb`](03%20文档解析与分割/notebooks/doc-chunking-full.ipynb)（全量） | *共用 02 环境* |
 | **04** 向量化与索引构建 | [`04 向量化与索引构建/`](04%20向量化与索引构建/) | ✅ **已完成** | [`任务.txt`](04%20向量化与索引构建/任务.txt) | [`schedule.md`](04%20向量化与索引构建/schedule.md) | [`vectorize-index.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index.ipynb)（验证）· [`full.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index-full.ipynb)（全量） | [`requirements.txt`](04%20向量化与索引构建/requirements.txt) |
 | **05** 检索系统开发第一部分 | [`05 检索系统开发第一部分/`](05%20检索系统开发第一部分/) | ✅ **已完成** | [`任务.txt`](05%20检索系统开发第一部分/任务.txt) | [`schedule.md`](05%20检索系统开发第一部分/schedule.md) | [`query-enhancement.ipynb`](05%20检索系统开发第一部分/notebooks/query-enhancement.ipynb) | [`requirements.txt`](05%20检索系统开发第一部分/requirements.txt) |
-| **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | 🔄 **进行中** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | [`retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb) | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
+| **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | ✅ **已完成** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | [`retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb) | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
 
 **说明**
 
@@ -460,26 +460,30 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - **联调脚本**：`scripts/run_dual_smoke.py`
 - **正式文档**：`docs/查询理解与增强报告.md`
 
-### 06 检索系统开发第二部分（🔄 进行中，阶段 0–3 已完成）
+### 06 检索系统开发第二部分（✅ 已完成）
+
+> **⚠️ 验证范围**：本阶段 notebook、CLI、`pipeline_eval.json` 等均在 **样本库（1,267 chunks）** 上完成，**不是** 610 万全量语料。构建最终 LangChain RAG 时须切换 `mode="full"`，挂载 04 全量 Chroma + E: 全量 BM25 语料（见下表）。
+
+| 用途 | 本阶段验证用（sample） | **RAG 生产应使用（full）** |
+|------|----------------------|---------------------------|
+| 向量检索 | `04 .../chroma_db` · `pmc_oa_comm_sample`（1,267） | **`04 .../chroma_db_full` · `pmc_oa_comm_full`（6,107,296）** |
+| BM25 | `03 .../chunks_sample.jsonl`（1,267） | **`E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl`** |
+| slim 元数据 | `06 .../data/oa_comm_slim.jsonl`（全库 455 万篇，已本地化） | 同上 |
+| 代码 | `from_mode("sample")` · CLI 默认 `--mode sample` | **`from_mode("full")` · `run_retrieval_eval.py --mode full`** |
 
 - **任务范围**：多路检索（向量 + BM25）→ 融合 → 重排序；与 05 查询增强打通为完整检索流水线
-- **已完成模块**：`bm25_index.py`、`multipath_retriever.py`、`fusion.py`、`reranker.py`、`rerank_features.py`
-- **融合默认策略**：**`rrf`**（C7 实测：simple 在双路零重叠时等同纯向量；weighted 与 rrf Top-5 高度一致，rrf 更稳）
-- **待完成**：`pipeline.py`（阶段 4 端到端串联）
-- **配置入口**：`src/config.py`（`resolve_slim_path()` / `resolve_chunks_path()` / `resolve_chroma()`）
-- **slim 回查（RAG 活跃）**：`06 检索系统开发第二部分/data/oa_comm_slim.jsonl`（4,557,627 篇，~8.9 GB；自 E: 复制，不随 Git 上传）
-- **嵌入 / 重排模型**：`BAAI/bge-small-en-v1.5`（与 04/05 一致）、`BAAI/bge-reranker-base`（阶段 3）
-- **演示入口**：[`notebooks/retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb)（**C0–C9**，含重排）
-- **样例输出**（`outputs/samples/`）：
-  - `fusion_examples.json` — 5 条 query 的 RRF 融合结果 + 三策略对比
-  - `rerank_examples.json` — 多准则重排结果（C8 导出）
-  - `retrieval_compare.json` — 向量 vs BM25 双路诊断（metformin query）
-  - `bm25_examples.json`、`vector_smoke_sample.json`
-- **Notebook 验证要点**（样本库 1,267 chunks）：
-  - 双路 Top-5 可零重叠 → 多路融合有价值；**simple 无法补 BM25，默认用 rrf**
-  - rrf 与 weighted Top-5 集合 ~80% 一致；rrf 不依赖分数归一化
-  - C8 重排：`year_hint` 已接入；样本库文献偏旧，时效 query 效果待全量验证
-- **计划与进度**：[`06 .../schedule.md`](06%20检索系统开发第二部分/schedule.md)
+- **核心模块**：`bm25_index.py`、`multipath_retriever.py`、`fusion.py`、`reranker.py`、`rerank_features.py`、`pipeline.py`
+- **融合默认策略**：**`rrf`**
+- **端到端入口（开发）**：`RetrievalPipeline.from_mode("sample").run(query)`；**生产**：`.from_mode("full")`
+- **配置入口**：`src/config.py`（`resolve_chunks_path()` / `resolve_chroma()` / `resolve_slim_path()`）
+- **slim 回查**：`data/oa_comm_slim.jsonl`（~8.9 GB，本地副本，不随 Git）
+- **模型**：`BAAI/bge-small-en-v1.5` + `BAAI/bge-reranker-base`
+- **演示**：notebook **C0–C12**（C12 全量盘可选）；正式报告 [`docs/检索流水线报告.md`](06%20检索系统开发第二部分/docs/检索流水线报告.md)
+- **端到端验证**：
+  - 样本库（`pipeline_eval.json`，1,267 chunks）：5/5 链路通
+  - **全量盘（`pipeline_eval_full.json`，C12）**：Chroma 610 万 + BM25 探测 10 万条；metformin 命中真实 RCT（`PMC2566605`），3/3 query 与样本 Top-1 均不同
+- **样例输出**（`outputs/samples/`）：8 份 JSON（含 `pipeline_eval.json`、`pipeline_eval_full.json`）
+- **计划与进度**：[`schedule.md`](06%20检索系统开发第二部分/schedule.md)
 
 ---
 
@@ -519,5 +523,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-10** | **05: 新增查询理解与增强正式报告** |
 | **2026-06-15** | **06 阶段 2 完成**：多路召回 + 三种融合；notebook C0–C8 样本验证；导出 fusion 样例 |
 | **2026-06-17** | **06 阶段 3 完成**：BGE reranker + recency/authority；C7 确认 **RRF 为默认融合策略** |
+| **2026-06-18** | **06 阶段 4 完成**：`pipeline.py` 端到端串联；CLI 评测；notebook C10–C11 |
+| **2026-06-18** | **06 C12 全量联调**：`pipeline_eval_full.json`；全量 Chroma 610 万 + BM25 探测；metformin 命中真实 RCT |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*

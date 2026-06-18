@@ -14,6 +14,7 @@ try:
     )
     from .fusion import fuse
     from .multipath_retriever import MultiPathRetriever, chroma_results_to_hits
+    from .pipeline import DEFAULT_DEMO_QUERIES, RetrievalPipeline, build_eval_report
     from .reranker import Reranker, DEFAULT_CRITERIA_WEIGHTS
     from .rerank_features import SlimMetadataLookup
 except ImportError:
@@ -32,13 +33,17 @@ except ImportError:
     )
     from fusion import fuse  # type: ignore[no-redef]
     from multipath_retriever import MultiPathRetriever, chroma_results_to_hits  # type: ignore[no-redef]
+    from pipeline import DEFAULT_DEMO_QUERIES, RetrievalPipeline, build_eval_report  # type: ignore[no-redef]
     from reranker import Reranker, DEFAULT_CRITERIA_WEIGHTS  # type: ignore[no-redef]
     from rerank_features import SlimMetadataLookup  # type: ignore[no-redef]
 
 __all__ = [
     "BM25Index",
     "DEFAULT_CRITERIA_WEIGHTS",
+    "DEFAULT_DEMO_QUERIES",
     "MultiPathRetriever",
+    "RetrievalPipeline",
+    "build_eval_report",
     "Reranker",
     "SlimMetadataLookup",
     "chroma_results_to_hits",
