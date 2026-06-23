@@ -1,0 +1,169 @@
+{
+  "question": "metformin cardiovascular effects",
+  "input_source": "D:\\谷歌\\06 检索系统开发第二部分\\outputs\\samples\\pipeline_eval.json",
+  "input_candidate_count": 5,
+  "assembled": {
+    "context_text": "Daily rhythms in plasma levels of homocysteine\n\nThere is accumulated evidence that plasma concentration of the sulfur-containing amino-acid homocysteine (Hcy) is a prognostic marker for cardiovascular morbidity and mortality. Both fasting levels of Hcy and post methionine loading levels are used as prognostic markers. The aim of the present study was to investigate the existence of a daily rhythm in plasma Hcy under strictly controlled nutritional and sleep-wake conditions. We also investigated if the time during which methionine loading is performed, i.e., morning or evening, had a different effect on the resultant plasma Hcy concentration.\nSix healthy men aged 23–26 years participated in 4 experiments. In the first and second experiments, the daily rhythm in Hcy as well as in other amino acids was investigated under a normal or an inverse sleep-wake cycle. In the third and fourth, Hcy concentrations were investigated after a morning and evening methionine loading. To standardize food consumption in the first two experiments, subjects received every 3 hours 150 ml of specially designed low-protein liquid food (Ensure ® formula).\nIn both the first and second experiments there was a significant daily rhythm in Hcy concentrations with a mid-day nadir and a nocturnal peak. Strikingly different 24-h patterns were observed in methionine, leucine, isoleucine and tyrosine. In all, the 24-h curves revealed a strong influence of both the sleep-wake cycle and the feeding schedule. Methionine loading resulted in increased plasma Hcy levels during both morning and evening experiments, which were not significantly different from each other.\nThere is a daily rhythm in plasma concentration of the amino acid Hcy, and this rhythm is independent of sleep-wake and food consumption. In view of the fact that increased Hcy concentrations may be associated with increased cardiovascular risks, these findings may have clinical implications for the health of rotating shift workers.\n\nFactors influencing preoperative stress response in coronary artery bypass graft patients\n\nIn many studies investigating measures to attenuate the hemodynamic and humoral stress response during induction of anaesthesia, primary attention was paid to the period of endotracheal intubation since it has been shown that even short-lasting sympathetic cardiovascular stimulation may have detrimental effects on patients with coronary artery disease. The aim of this analysis was, however, to identify the influencing factors on high catecholamine levels before induction of anaesthesia.\nVarious potential risk factors that could impact the humoral stress response before induction of anaesthesia were recorded in 84 males undergoing coronary aortic bypass surgery, and were entered into a stepwise linear regression analysis. The plasma level of norepinephrine measured immediately after radial artery canulation was chosen as a surrogate marker for the humoral stress response, and it was used as the dependent variable in the regression model. Accordingly, the mean arterial blood pressure, heart rate and the calculated pressure-rate product were taken as parameters of the hemodynamic situation.\nStepwise regression analysis revealed that the oral administration of low-dose clonidine (mean dose 1.75 μg·kg -1 ) on the morning of surgery was the only significant predictor (p = 0.004) of the high variation in preoperative norepinephrine plasma levels. This intervention decreased norepinephrine levels by more than 40% compared to no clonidine administration, from 1.26 to 0.75 nmol·l -1 . There was no evidence for dose-responsiveness of clonidine. All other potential predictors were removed from the model as insignificant (p > 0.05). The use of beta-blocker, ace-inhibitors, ejection fraction, and body mass index were significant determinants for the hemodynamic situation (heart rate, mean arterial pressure, pressure rate product) of the patient during the pre-induction period.\nThe oral administration of clonidine is the only significant predictor for the observed variation of norepinephrine levels during the preoperative period. Lack of significant dose responsiveness suggests that even a low dose of the drug can attenuate the preoperative stress response and thus is recommended in cardiovascular high risk patients.\n\nDistribution of Major Health Risks: Findings from the Global Burden of Disease Study\n\nMost analyses of risks to health focus on the total burden of their aggregate effects. The distribution of risk-factor-attributable disease burden, for example by age or exposure level, can inform the selection and targeting of specific interventions and programs, and increase cost-effectiveness.\nFor 26 selected risk factors, expert working groups conducted comprehensive reviews of data",
+    "metadata": {
+      "total_chunks_retrieved": 5,
+      "unique_chunks_after_dedup": 5,
+      "chunks_selected": 3,
+      "estimated_tokens": 1200,
+      "chunk_sources": {
+        "counts": {
+          "PMC520826": 1,
+          "PMC521687": 1,
+          "PMC523844": 1
+        },
+        "unique_sources": 3
+      },
+      "skipped_invalid": 0
+    },
+    "selected_chunks": [
+      {
+        "text": "Daily rhythms in plasma levels of homocysteine\n\nThere is accumulated evidence that plasma concentration of the sulfur-containing amino-acid homocysteine (Hcy) is a prognostic marker for cardiovascular morbidity and mortality. Both fasting levels of Hcy and post methionine loading levels are used as prognostic markers. The aim of the present study was to investigate the existence of a daily rhythm in plasma Hcy under strictly controlled nutritional and sleep-wake conditions. We also investigated if the time during which methionine loading is performed, i.e., morning or evening, had a different effect on the resultant plasma Hcy concentration.\nSix healthy men aged 23–26 years participated in 4 experiments. In the first and second experiments, the daily rhythm in Hcy as well as in other amino acids was investigated under a normal or an inverse sleep-wake cycle. In the third and fourth, Hcy concentrations were investigated after a morning and evening methionine loading. To standardize food consumption in the first two experiments, subjects received every 3 hours 150 ml of specially designed low-protein liquid food (Ensure ® formula).\nIn both the first and second experiments there was a significant daily rhythm in Hcy concentrations with a mid-day nadir and a nocturnal peak. Strikingly different 24-h patterns were observed in methionine, leucine, isoleucine and tyrosine. In all, the 24-h curves revealed a strong influence of both the sleep-wake cycle and the feeding schedule. Methionine loading resulted in increased plasma Hcy levels during both morning and evening experiments, which were not significantly different from each other.\nThere is a daily rhythm in plasma concentration of the amino acid Hcy, and this rhythm is independent of sleep-wake and food consumption. In view of the fact that increased Hcy concentrations may be associated with increased cardiovascular risks, these findings may have clinical implications for the health of rotating shift workers.",
+        "metadata": {
+          "doc_id": "PMC520826",
+          "source_title": "Daily rhythms in plasma levels of homocysteine",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 405,
+          "strategy": "single",
+          "chunk_id": "PMC520826",
+          "source": "fused",
+          "fusion_strategy": "rrf",
+          "fusion_score": 0.015873015873015872,
+          "vector_score": null,
+          "bm25_score": 18.943475827376233,
+          "vector_rank": null,
+          "bm25_rank": 3,
+          "rank": 1,
+          "relevance_score": 0.210615,
+          "recency_score": 0.388889,
+          "authority_score": 0.5,
+          "final_score": 0.298591,
+          "pub_year": 2004,
+          "journal": "Journal of Circadian Rhythms",
+          "criteria_weights": {
+            "relevance": 0.6,
+            "recency": 0.25,
+            "authority": 0.15
+          },
+          "rerank_explain": {
+            "relevance": 0.2106148898601532,
+            "recency": 0.3888888888888889,
+            "authority": 0.5,
+            "year_hint": null,
+            "weighted_sum": 0.29859115613831416
+          }
+        },
+        "relevance_score": 0.298591,
+        "source": "Daily rhythms in plasma levels of homocysteine",
+        "chunk_id": "PMC520826"
+      },
+      {
+        "text": "Factors influencing preoperative stress response in coronary artery bypass graft patients\n\nIn many studies investigating measures to attenuate the hemodynamic and humoral stress response during induction of anaesthesia, primary attention was paid to the period of endotracheal intubation since it has been shown that even short-lasting sympathetic cardiovascular stimulation may have detrimental effects on patients with coronary artery disease. The aim of this analysis was, however, to identify the influencing factors on high catecholamine levels before induction of anaesthesia.\nVarious potential risk factors that could impact the humoral stress response before induction of anaesthesia were recorded in 84 males undergoing coronary aortic bypass surgery, and were entered into a stepwise linear regression analysis. The plasma level of norepinephrine measured immediately after radial artery canulation was chosen as a surrogate marker for the humoral stress response, and it was used as the dependent variable in the regression model. Accordingly, the mean arterial blood pressure, heart rate and the calculated pressure-rate product were taken as parameters of the hemodynamic situation.\nStepwise regression analysis revealed that the oral administration of low-dose clonidine (mean dose 1.75 μg·kg -1 ) on the morning of surgery was the only significant predictor (p = 0.004) of the high variation in preoperative norepinephrine plasma levels. This intervention decreased norepinephrine levels by more than 40% compared to no clonidine administration, from 1.26 to 0.75 nmol·l -1 . There was no evidence for dose-responsiveness of clonidine. All other potential predictors were removed from the model as insignificant (p > 0.05). The use of beta-blocker, ace-inhibitors, ejection fraction, and body mass index were significant determinants for the hemodynamic situation (heart rate, mean arterial pressure, pressure rate product) of the patient during the pre-induction period.\nThe oral administration of clonidine is the only significant predictor for the observed variation of norepinephrine levels during the preoperative period. Lack of significant dose responsiveness suggests that even a low dose of the drug can attenuate the preoperative stress response and thus is recommended in cardiovascular high risk patients.",
+        "metadata": {
+          "doc_id": "PMC521687",
+          "source_title": "Factors influencing preoperative stress response in coronary artery bypass graft patients",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 478,
+          "strategy": "single",
+          "chunk_id": "PMC521687",
+          "source": "fused",
+          "fusion_strategy": "rrf",
+          "fusion_score": 0.01639344262295082,
+          "vector_score": null,
+          "bm25_score": 26.892987831119974,
+          "vector_rank": null,
+          "bm25_rank": 1,
+          "rank": 2,
+          "relevance_score": 0.180285,
+          "recency_score": 0.388889,
+          "authority_score": 0.5,
+          "final_score": 0.280393,
+          "pub_year": 2004,
+          "journal": "BMC Anesthesiology",
+          "criteria_weights": {
+            "relevance": 0.6,
+            "recency": 0.25,
+            "authority": 0.15
+          },
+          "rerank_explain": {
+            "relevance": 0.18028457462787628,
+            "recency": 0.3888888888888889,
+            "authority": 0.5,
+            "year_hint": null,
+            "weighted_sum": 0.280392966998948
+          }
+        },
+        "relevance_score": 0.280393,
+        "source": "Factors influencing preoperative stress response in coronary artery bypass graft patients",
+        "chunk_id": "PMC521687"
+      },
+      {
+        "text": "Distribution of Major Health Risks: Findings from the Global Burden of Disease Study\n\nMost analyses of risks to health focus on the total burden of their aggregate effects. The distribution of risk-factor-attributable disease burden, for example by age or exposure level, can inform the selection and targeting of specific interventions and programs, and increase cost-effectiveness.\nFor 26 selected risk factors, expert working groups conducted comprehensive reviews of data on risk-factor exposure and hazard for 14 epidemiological subregions of the world, by age and sex. Age-sex-subregion-population attributable fractions were estimated and applied to the mortality and burden of disease estimates from the World Health Organization Global Burden of Disease database. Where possible, exposure levels were assessed as continuous measures, or as multiple categories. The proportion of risk-factor-attributable burden in different population subgroups, defined by age, sex, and exposure level, was estimated. For major cardiovascular risk factors (blood pressure, cholesterol, tobacco use, fruit and vegetable intake, body mass index, and physical inactivity) 43%–61% of attributable disease burden occurred between the ages of 15 and 59 y, and 87% of alcohol-attributable burden occurred in this age group. Most of the disease burden for continuous risks occurred in those with only moderately raised levels, not among those with levels above commonly used cut-points, such as those with hypertension or obesity. Of all disease burden attributable to being underweight during childhood, 55% occurred among children 1–3 standard deviations below the reference population median, and the remainder occurred among severely malnourished children, who were three or more standard deviations below median.\nMany major global risks are widely spread in a population, rather than restricted to a minority. Population-based strategies that seek to shift the whole distribution of risk factors often have the potential to produce substantial reductions in disease burden.\nAnalysis of 26 major global health risk factors by age, sex, exposure level, and epidemiological subregion reveals that many of them are widely spread in a population rather than restricted to a minority",
+        "metadata": {
+          "doc_id": "PMC523844",
+          "source_title": "Distribution of Major Health Risks: Findings from the Global Burden of Disease Study",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "token_count": 440,
+          "strategy": "single",
+          "chunk_id": "PMC523844",
+          "source": "fused",
+          "fusion_strategy": "rrf",
+          "fusion_score": 0.015625,
+          "vector_score": null,
+          "bm25_score": 18.274487529369054,
+          "vector_rank": null,
+          "bm25_rank": 4,
+          "rank": 3,
+          "relevance_score": 0.07162,
+          "recency_score": 0.388889,
+          "authority_score": 0.85,
+          "final_score": 0.267694,
+          "pub_year": 2004,
+          "journal": "PLoS Medicine",
+          "criteria_weights": {
+            "relevance": 0.6,
+            "recency": 0.25,
+            "authority": 0.15
+          },
+          "rerank_explain": {
+            "relevance": 0.07161988317966461,
+            "recency": 0.3888888888888889,
+            "authority": 0.85,
+            "year_hint": null,
+            "weighted_sum": 0.267694152130021
+          }
+        },
+        "relevance_score": 0.267694,
+        "source": "Distribution of Major Health Risks: Findings from the Global Burden of Disease Study",
+        "chunk_id": "PMC523844"
+      }
+    ]
+  },
+  "context_preview": "Daily rhythms in plasma levels of homocysteine\n\nThere is accumulated evidence that plasma concentration of the sulfur-containing amino-acid homocysteine (Hcy) is a prognostic marker for cardiovascular morbidity and mortality. Both fasting levels of Hcy and post methionine loading levels are used as prognostic markers. The aim of the present study was to investigate the existence of a daily rhythm in plasma Hcy under strictly controlled nutritional and sleep-wake conditions. We also investigated if the time during which methionine loading is performed, i.e., morning or evening, had a different effect on the resultant plasma Hcy concentration.\nSix healthy men aged 23–26 years participated in 4 experiments. In the first and second experiments, the daily rhythm in Hcy as well as in other amino acids was investigated under a normal or an inverse sleep-wake cycle. In the third and fourth, Hcy concentrations were investigated after a morning and evening methionine loading. To standardize food consumption in the first two experiments, subjects received every 3 hours 150 ml of specially designed low-protein liquid food (Ensure ® formula).\nIn both the first and second experiments there was a",
+  "selected_chunk_brief": [
+    {
+      "chunk_id": "PMC520826",
+      "source": "Daily rhythms in plasma levels of homocysteine",
+      "relevance_score": 0.298591,
+      "doc_id": "PMC520826"
+    },
+    {
+      "chunk_id": "PMC521687",
+      "source": "Factors influencing preoperative stress response in coronary artery bypass graft patients",
+      "relevance_score": 0.280393,
+      "doc_id": "PMC521687"
+    },
+    {
+      "chunk_id": "PMC523844",
+      "source": "Distribution of Major Health Risks: Findings from the Global Burden of Disease Study",
+      "relevance_score": 0.267694,
+      "doc_id": "PMC523844"
+    }
+  ]
+}

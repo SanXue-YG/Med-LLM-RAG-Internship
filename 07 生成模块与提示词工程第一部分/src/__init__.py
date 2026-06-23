@@ -24,6 +24,13 @@ try:
         coerce_to_document_chunks,
         document_chunk_from_candidate,
     )
+    from .prompts import (
+        PROMPT_PLACEHOLDERS,
+        PROMPT_STAGES,
+        PromptStage,
+        render_prompt_stage,
+        validate_prompt_stage,
+    )
 except ImportError:
     from context_assembler import (  # type: ignore[no-redef]
         DEFAULT_DEDUP_THRESHOLD,
@@ -39,6 +46,13 @@ except ImportError:
         coerce_to_document_chunks,
         document_chunk_from_candidate,
     )
+    from prompts import (  # type: ignore[no-redef]
+        PROMPT_PLACEHOLDERS,
+        PROMPT_STAGES,
+        PromptStage,
+        render_prompt_stage,
+        validate_prompt_stage,
+    )
 
 __all__ = [
     "AssembledContext",
@@ -49,6 +63,11 @@ __all__ = [
     "DEFAULT_SOURCE_PENALTY",
     "DEFAULT_TOKENIZER_NAME",
     "DocumentChunk",
+    "PROMPT_PLACEHOLDERS",
+    "PROMPT_STAGES",
+    "PromptStage",
     "coerce_to_document_chunks",
     "document_chunk_from_candidate",
+    "render_prompt_stage",
+    "validate_prompt_stage",
 ]

@@ -37,7 +37,7 @@
 | **04** 向量化与索引构建 | [`04 向量化与索引构建/`](04%20向量化与索引构建/) | ✅ **已完成** | [`任务.txt`](04%20向量化与索引构建/任务.txt) | [`schedule.md`](04%20向量化与索引构建/schedule.md) | [`vectorize-index.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index.ipynb)（验证）· [`full.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index-full.ipynb)（全量） | [`requirements.txt`](04%20向量化与索引构建/requirements.txt) |
 | **05** 检索系统开发第一部分 | [`05 检索系统开发第一部分/`](05%20检索系统开发第一部分/) | ✅ **已完成** | [`任务.txt`](05%20检索系统开发第一部分/任务.txt) | [`schedule.md`](05%20检索系统开发第一部分/schedule.md) | [`query-enhancement.ipynb`](05%20检索系统开发第一部分/notebooks/query-enhancement.ipynb) | [`requirements.txt`](05%20检索系统开发第一部分/requirements.txt) |
 | **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | ✅ **已完成** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | [`retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb) | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
-| **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | 🔄 **进行中**（0–2 ✅） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | *`generation-prompting.ipynb`（待建）* | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
+| **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | 🔄 **进行中**（0–4 ✅） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | [`generation-prompting.ipynb`](07%20生成模块与提示词工程第一部分/notebooks/generation-prompting.ipynb) | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
 
 **说明**
 
@@ -317,8 +317,8 @@ top_chunks = result["reranked"]  # → 供 07 ContextAssembler 消费
 | 0 环境与骨架 | ✅ | 目录骨架、`requirements.txt`、[`输入候选格式约定.md`](07%20生成模块与提示词工程第一部分/输入候选格式约定.md) |
 | 1 数据结构 | ✅ | `DocumentChunk` / `AssembledContext` / 06 候选转换 |
 | 2 上下文组装器 | ✅ | Jaccard 去重、多样化、token 控长、句号截断 |
-| 3 Prompt 模板 | ☐ | 四阶段 `PromptStage` |
-| 4 Notebook 演示 | ☐ | `generation-prompting.ipynb` + 样例 JSON 导出 |
+| 3 Prompt 模板 | ✅ | 四阶段 `PromptStage` + 统一占位符渲染与校验 |
+| 4 Notebook 演示 | ✅ | `generation-prompting.ipynb`（C0–C5）+ 样例 JSON 导出 |
 | 5 测试与收尾 | ☐ | `tests/` + README 定稿 |
 
 ### 已确认决策
@@ -338,6 +338,9 @@ top_chunks = result["reranked"]  # → 供 07 ContextAssembler 消费
 |------|------|-----|
 | 数据结构与转换 | `07 .../src/models.py` | ✅ |
 | 上下文组装器 | `07 .../src/context_assembler.py` | ✅ |
+| 提示模板 | `07 .../src/prompts.py` | ✅ |
+| 演示 notebook | `07 .../notebooks/generation-prompting.ipynb` | ✅ |
+| 样例输出 | `07 .../outputs/samples/assembled_context_examples.json`、`prompt_examples.json` | ✅ |
 | 输入契约 | `07 .../输入候选格式约定.md` | ✅ |
 | 执行计划 | `07 .../schedule.md` | ✅ |
 | 学习笔记 | [`笔记/07 笔记.md`](笔记/07%20笔记.md) | ✅ |
@@ -618,12 +621,13 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - **样例输出**（`outputs/samples/`）：8 份 JSON（含 `pipeline_eval.json`、`pipeline_eval_full.json`）
 - **计划与进度**：[`schedule.md`](06%20检索系统开发第二部分/schedule.md)
 
-### 07 生成模块与提示词工程第一部分（🔄 进行中，阶段 0–2 ✅）
+### 07 生成模块与提示词工程第一部分（🔄 进行中，阶段 0–4 ✅）
 
 - **任务范围**：上下文组装（去重 / 多样化 / 控长）+ 医学四阶段 Prompt 模板；**不调用 LLM**
 - **上游输入**：06 `result["reranked"]`（首选）或 `result["retrieval"]["fused"]`；契约见 [`输入候选格式约定.md`](07%20生成模块与提示词工程第一部分/输入候选格式约定.md)
-- **已完成模块**：`src/models.py`（`DocumentChunk`、`AssembledContext`）、`src/context_assembler.py`（`ContextAssembler`）
-- **待完成**：`src/prompts.py`、`notebooks/generation-prompting.ipynb`、`tests/`、样例 JSON 导出
+- **已完成模块**：`src/models.py`、`src/context_assembler.py`、`src/prompts.py`
+- **已完成演示与样例**：`notebooks/generation-prompting.ipynb`、`outputs/samples/assembled_context_examples.json`、`outputs/samples/prompt_examples.json`
+- **待完成**：`tests/`（`test_dedup.py` / `test_truncate.py` / `test_prompts.py`）与阶段收尾说明
 - **计划与进度**：[`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md)
 - **学习笔记**：[`笔记/07 笔记.md`](笔记/07%20笔记.md)
 
@@ -671,5 +675,6 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-18** | **06 阶段完成**：正式报告 `docs/检索流水线报告.md`；README 补第六阶段完成总结 |
 | **2026-06-22** | **07 阶段启动**：目录骨架、`schedule.md`、`输入候选格式约定.md` |
 | **2026-06-23** | **07 阶段 1–2 完成**：`models.py` + `ContextAssembler`；README 补第七阶段进行中说明 |
+| **2026-06-23** | **07 阶段 3–4 完成**：`prompts.py` + `generation-prompting.ipynb`（C0–C5）+ 导出两份样例 JSON |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*

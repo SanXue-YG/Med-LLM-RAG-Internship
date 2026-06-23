@@ -143,33 +143,62 @@
 
 **阶段 2 冒烟测试**（`tokenizer_name=None` 启发式 token）：`pipeline_eval.json` → `metformin cardiovascular effects` 的 5 条 `reranked`，`max_context_tokens=800` → 入选 2 块、约 796 tokens、2 个不同 `doc_id`；另验证 Jaccard 去重与句号截断。
 
-### 阶段 3：医学提示工程模板（PromptStage） ☐
+### 阶段 3：医学提示工程模板（PromptStage） ✅
 
-- [ ] `@dataclass PromptStage`
-  - [ ] `name: str`
-  - [ ] `system_prompt: str`
-  - [ ] `user_prompt_template: str`
-  - [ ] `temperature: float`
-  - [ ] `max_tokens: int`
-- [ ] `PROMPT_STAGES` 四阶段模板（任务书建议结构）
-  - [ ] `evidence_evaluator`：证据质量/一致性检查
-  - [ ] `answer_generator`：基于上下文回答（引用证据点）
-  - [ ] `critical_reviewer`：挑错与风险声明（医学安全）
-  - [ ] `final_assembler`：合并为最终输出格式
-- [ ] 模板占位符统一（建议）：`{question}`、`{context}`、`{constraints}`、`{output_format}`
+- [x] `@dataclass PromptStage`
+  - [x] `name: str`
+  - [x] `system_prompt: str`
+  - [x] `user_prompt_template: str`
+  - [x] `temperature: float`
+  - [x] `max_tokens: int`
+- [x] `PROMPT_STAGES` 四阶段模板（任务书建议结构）
+  - [x] `evidence_evaluator`：证据质量/一致性检查
+  - [x] `answer_generator`：基于上下文回答（引用证据点）
+  - [x] `critical_reviewer`：挑错与风险声明（医学安全）
+  - [x] `final_assembler`：合并为最终输出格式
+- [x] 模板占位符统一：`{question}`、`{context}`、`{constraints}`、`{output_format}`
 
-### 阶段 4：Notebook 演示与样例导出 ☐
+#### 阶段 3 交付回顾（2026-06-23）
 
-- [ ] `notebooks/generation-prompting.ipynb`
-  - [ ] C0：从 06 pipeline 取候选（样本模式即可）
-  - [ ] C1：ContextAssembler 组装 + metadata 展示
-  - [ ] C2：去重/多样化前后对比
-  - [ ] C3：截断策略演示（token 限制 + 句号截断）
-  - [ ] C4：四阶段 prompt 渲染示例（不一定真实调用 LLM）
-  - [ ] C5：导出样例 JSON
-- [ ] 输出：
-  - [ ] `outputs/samples/assembled_context_examples.json`
-  - [ ] `outputs/samples/prompt_examples.json`
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| 提示阶段数据类 | `src/prompts.py` → `PromptStage` | 定义 `name/system_prompt/user_prompt_template/temperature/max_tokens` |
+| 四阶段模板 | `src/prompts.py` → `PROMPT_STAGES` | `evidence_evaluator`、`answer_generator`、`critical_reviewer`、`final_assembler` |
+| 渲染接口 | `render_user_prompt()` / `to_payload()` / `render_prompt_stage()` | 统一填充占位符并输出可直接调用 LLM 的 payload |
+| 占位符校验 | `validate_prompt_stage()` | 检查模板是否包含四个统一占位符 |
+| 包导出 | `src/__init__.py` | 导出 `PromptStage`、`PROMPT_STAGES`、`PROMPT_PLACEHOLDERS` 等 |
+
+**阶段 3 冒烟测试**：验证 4 个 stage key 完整、每个模板占位符齐全，并可用同一组 `{question, context, constraints, output_format}` 成功渲染。
+
+### 阶段 4：Notebook 演示与样例导出 ✅
+
+- [x] `notebooks/generation-prompting.ipynb`
+  - [x] C0：从 06 pipeline 取候选（样本模式即可）
+  - [x] C1：ContextAssembler 组装 + metadata 展示
+  - [x] C2：去重/多样化前后对比
+  - [x] C3：截断策略演示（token 限制 + 句号截断）
+  - [x] C4：四阶段 prompt 渲染示例（不一定真实调用 LLM）
+  - [x] C5：导出样例 JSON
+- [x] 输出：
+  - [x] `outputs/samples/assembled_context_examples.json`
+  - [x] `outputs/samples/prompt_examples.json`
+
+#### 阶段 4 交付回顾（2026-06-23）
+
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| 演示 notebook | `notebooks/generation-prompting.ipynb` | 按 C0–C5 组织，包含通俗说明与可执行代码 |
+| C0 数据加载 | notebook C0 | 加载 06 离线样例 `pipeline_eval.json` 与 07 模块 |
+| C1 组装演示 | notebook C1 | 展示 `ContextAssembler.assemble()` 输出与 metadata |
+| C2 策略对比 | notebook C2 | 对比 raw / dedup / diversity 顺序变化 |
+| C3 截断演示 | notebook C3 | 不同 `max_context_tokens` 下长度与尾部边界表现 |
+| C4 Prompt 渲染 | notebook C4 | 四阶段模板校验与 payload 渲染（不调 LLM） |
+| C5 样例导出 | notebook C5 | 导出组装样例与 prompt 样例 JSON |
+
+**阶段 4 运行结果（本次已生成）**：
+
+- `outputs/samples/assembled_context_examples.json`
+- `outputs/samples/prompt_examples.json`
 
 ### 阶段 5：测试与交付 ☐
 
@@ -224,4 +253,6 @@
 | 2026-06-22 | **阶段 0 完成**：搭建 `src/`/`notebooks/`/`tests/`/`outputs/samples/` 骨架；`requirements.txt` 复用 `med-rag-verify` 无强制新增；新增 `输入候选格式约定.md`（06 reranked/fused → `DocumentChunk` 映射） |
 | 2026-06-23 | **阶段 1 完成**：`src/models.py` — `DocumentChunk`、`ContextMetadata`、`AssembledContext`；`document_chunk_from_candidate` / `coerce_to_document_chunks` 对接 06 候选 |
 | 2026-06-23 | **阶段 2 完成**：`src/context_assembler.py` — `ContextAssembler`（Jaccard 去重、多样化、token 控长、句号截断）；样本 query 冒烟通过 |
+| 2026-06-23 | **阶段 3 完成**：`src/prompts.py` — `PromptStage` + 四阶段 `PROMPT_STAGES` + 统一占位符渲染与校验；模板冒烟通过 |
+| 2026-06-23 | **阶段 4 完成**：`generation-prompting.ipynb`（C0–C5 详解）+ 导出 `assembled_context_examples.json`、`prompt_examples.json` |
 
