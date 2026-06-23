@@ -1,0 +1,22 @@
+# 07 生成模块与提示词工程第一部分 — 复用 med-rag-verify（与 02/04/05/06 相同）
+#
+# conda activate med-rag-verify
+#
+# 上游依赖（通常已安装，见各阶段 requirements）：
+#   04: chromadb, torch, transformers, sentence-transformers
+#   05: 查询增强模块（同环境）
+#   06: rank-bm25（多路检索 / 融合 / 重排）
+#
+# 从零安装建议顺序：
+#   pip install -r "../01 验证模型/requirements.txt"
+#   pip install -r "../02 数据处理/requirements.txt"
+#   pip install -r "../04 向量化与索引构建/requirements.txt"
+#   pip install -r "../06 检索系统开发第二部分/requirements.txt"
+#   pip install -r "requirements.txt"
+
+# --- 本阶段新增（尽量少）---
+# 上下文组装 / prompt 模板为纯 Python；token 估算优先用 transformers 已装的 tokenizer。
+# 无强制新增依赖；下列均为“可选精估”用途，环境已装即可跳过。
+
+# --- 复用（token 精估，可选）---
+transformers>=4.40.0
