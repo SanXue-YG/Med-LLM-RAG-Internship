@@ -1,6 +1,6 @@
 # 07 生成模块与提示词工程第一部分 — 执行计划
 
-> **状态：🔄 待启动**
+> **状态：🔄 进行中（阶段 0–2 ✅；阶段 3–5 待做）**
 >
 > **本阶段范围（任务书）**：完成「上下文组装器（Context Assembler）」与「医学提示工程模板（Prompt Stages）」两部分代码，为后续 RAG 答案生成链路做准备。
 >
@@ -75,37 +75,73 @@
 - [x] `requirements.txt`：复用 `med-rag-verify`（02/04/05/06 同环境）；本阶段**无强制新增依赖**（组装/模板为纯 Python，token 估算复用已装 `transformers` tokenizer）
 - [x] 约定输入候选格式：见 [`输入候选格式约定.md`](输入候选格式约定.md)（06 `result["reranked"]` / 退化 `["retrieval"]["fused"]` 的候选 dict → `DocumentChunk` 映射）
 
-### 阶段 1：数据结构定义（DocumentChunk / 汇总 metadata） ☐
+### 阶段 1：数据结构定义（DocumentChunk / 汇总 metadata） ✅
 
-- [ ] `@dataclass DocumentChunk`（按任务书字段）
-  - [ ] `text: str`
-  - [ ] `metadata: Dict[str, Any]`
-  - [ ] `relevance_score: float`
-  - [ ] `source: str`
-  - [ ] `chunk_id: str`
-- [ ] 定义组装结果结构（建议）
-  - [ ] `context_text: str`
-  - [ ] `metadata: dict`
-  - [ ] `selected_chunks: list[DocumentChunk]`
+- [x] `@dataclass DocumentChunk`（按任务书字段）
+  - [x] `text: str`
+  - [x] `metadata: Dict[str, Any]`
+  - [x] `relevance_score: float`
+  - [x] `source: str`
+  - [x] `chunk_id: str`
+- [x] 定义组装结果结构（`AssembledContext` + `ContextMetadata`）
+  - [x] `context_text: str`
+  - [x] `metadata: dict`（`ContextMetadata.to_dict()`）
+  - [x] `selected_chunks: list[DocumentChunk]`
+- [x] 06 候选转换：`document_chunk_from_candidate()` / `coerce_to_document_chunks()`（见 `src/models.py`，映射规则同 `输入候选格式约定.md` §3）
 
-### 阶段 2：上下文组装器（ContextAssembler） ☐
+#### 阶段 1 交付回顾（2026-06-23）
 
-- [ ] tokenizer 加载（可配置 `tokenizer_name`；默认与现有环境兼容）
-- [ ] `estimate_tokens(text)`：估算 token 数
-- [ ] 输入转换：将 06 候选 dict 转为 `DocumentChunk`
-- [ ] 去重：Jaccard 相似度
-  - [ ] 可配置：`dedup_threshold`（如 0.85）
-  - [ ] 输出：`unique_chunks_after_dedup`
-- [ ] 排序：按 `relevance_score`（或多字段）
-- [ ] 多样化：同一来源（如 `doc_id` / `source_title`）超过阈值时降优先级
-- [ ] 截断：不超过 `max_context_tokens`
-  - [ ] “末 10% 句号截断”策略落地
-- [ ] 产出 metadata：
-  - [ ] `total_chunks_retrieved`
-  - [ ] `unique_chunks_after_dedup`
-  - [ ] `chunks_selected`
-  - [ ] `estimated_tokens`
-  - [ ] `chunk_sources`（来源分布统计）
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| 文档块数据类 | `src/models.py` → `DocumentChunk` | 任务书 5 字段：`text` / `metadata` / `relevance_score` / `source` / `chunk_id`；含 `to_dict()` |
+| 组装统计结构 | `src/models.py` → `ContextMetadata` | 对应任务书 `context_metadata`；额外 `skipped_invalid` 记录转换跳过数 |
+| 组装结果结构 | `src/models.py` → `AssembledContext` | `context_text` + `metadata` + `selected_chunks`；供阶段 2 `assemble()` 返回；含 `to_dict()` |
+| 单条转换 | `document_chunk_from_candidate(dict)` | 06 候选 dict → `DocumentChunk`；`text` 无效返回 `None` |
+| 批量转换 | `coerce_to_document_chunks(list)` | 兼容 `dict` / `DocumentChunk` 混合输入；返回 `(chunks, skipped_count)` |
+| 包导出 | `src/__init__.py` | 上述符号均已 `__all__` 导出 |
+
+**映射规则摘要**（详见 [`输入候选格式约定.md`](输入候选格式约定.md) §3）：
+
+| `DocumentChunk` 字段 | 取值 |
+|---------------------|------|
+| `chunk_id` | `chunk_id` → `doc_id` → `unknown_{index}` |
+| `relevance_score` | `final_score` → `fusion_score` → `relevance_score` → `score` → `0.0` |
+| `source` | `source_title` → `doc_id` → `source`（召回通道名） |
+| `metadata` | 候选 dict 中除 `text` 外全部字段原样收纳 |
+
+**阶段 1 冒烟测试**（开发期快速验证，非正式 `tests/`）：用 06 离线样例 `outputs/samples/pipeline_eval.json` 中 `metformin cardiovascular effects` 的 `reranked`（5 条）与 `fused`（前 3 条）验证转换与回退规则；详见 [`笔记/07 笔记.md`](../笔记/07%20笔记.md) Q8。
+
+### 阶段 2：上下文组装器（ContextAssembler） ✅
+
+- [x] tokenizer 加载（可配置 `tokenizer_name`；默认 `gpt2`；`None` 时退化为字符启发式 `len//4`）
+- [x] `estimate_tokens(text)`：估算 token 数
+- [x] 输入转换：将 06 候选 dict 转为 `DocumentChunk`（复用 `coerce_to_document_chunks`）
+- [x] 去重：Jaccard 相似度
+  - [x] 可配置：`dedup_threshold`（默认 `0.85`）
+  - [x] 输出：`unique_chunks_after_dedup`
+- [x] 排序：按 `relevance_score` 降序
+- [x] 多样化：同一 `doc_id` / `source_title` 超过 `max_per_source`（默认 2）时按 `source_penalty` 降权
+- [x] 截断：不超过 `max_context_tokens`
+  - [x] “末 10% 句号截断”策略落地（该区间无句号则硬截断）
+- [x] 产出 metadata：
+  - [x] `total_chunks_retrieved`
+  - [x] `unique_chunks_after_dedup`
+  - [x] `chunks_selected`
+  - [x] `estimated_tokens`
+  - [x] `chunk_sources`（来源分布统计）
+
+#### 阶段 2 交付回顾（2026-06-23）
+
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| 上下文组装器 | `src/context_assembler.py` → `ContextAssembler` | `assemble()` → `AssembledContext`；`assemble_dict()` 对齐任务书 dict 返回 |
+| 去重 | `dedup_by_jaccard()` | 英文轻量分词 + Jaccard；保留 `relevance_score` 更高者 |
+| 多样化 | `_order_with_diversity()` | 同源超过 `max_per_source` 条时递减有效分 |
+| 控长拼接 | `_build_context()` + `_truncate_to_tokens()` | 按块拼接 `chunk_separator`（默认 `\n\n`）；末块可部分截断 |
+| 句号边界 | `_truncate_at_sentence_boundary()` | 在截断后文本**末 10%** 内找 `.` `!` `?` |
+| 默认参数 | 模块常量 | `DEFAULT_TOKENIZER_NAME=gpt2`，`dedup_threshold=0.85`，`max_per_source=2`，`source_penalty=0.15` |
+
+**阶段 2 冒烟测试**（`tokenizer_name=None` 启发式 token）：`pipeline_eval.json` → `metformin cardiovascular effects` 的 5 条 `reranked`，`max_context_tokens=800` → 入选 2 块、约 796 tokens、2 个不同 `doc_id`；另验证 Jaccard 去重与句号截断。
 
 ### 阶段 3：医学提示工程模板（PromptStage） ☐
 
@@ -186,4 +222,6 @@
 |------|------|
 | 2026-06-22 | 创建阶段 07 `schedule.md`（对齐任务书要求，待启动实施） |
 | 2026-06-22 | **阶段 0 完成**：搭建 `src/`/`notebooks/`/`tests/`/`outputs/samples/` 骨架；`requirements.txt` 复用 `med-rag-verify` 无强制新增；新增 `输入候选格式约定.md`（06 reranked/fused → `DocumentChunk` 映射） |
+| 2026-06-23 | **阶段 1 完成**：`src/models.py` — `DocumentChunk`、`ContextMetadata`、`AssembledContext`；`document_chunk_from_candidate` / `coerce_to_document_chunks` 对接 06 候选 |
+| 2026-06-23 | **阶段 2 完成**：`src/context_assembler.py` — `ContextAssembler`（Jaccard 去重、多样化、token 控长、句号截断）；样本 query 冒烟通过 |
 

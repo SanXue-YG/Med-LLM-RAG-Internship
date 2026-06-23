@@ -2,7 +2,7 @@
 
 基于 PMC 开放获取文献（`oa_comm`）的本地 LLM + RAG 可行性验证与数据评估项目。工程按阶段拆分目录，每阶段有独立任务书、计划、依赖与 Jupyter 入口。
 
-> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`）。
+> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`；06：`检索流水线报告.md`）。
 
 ---
 
@@ -20,6 +20,7 @@
 ├── 04 向量化与索引构建/      # 阶段 4：嵌入 + ChromaDB 索引（✅ 全量完成）
 ├── 05 检索系统开发第一部分/  # 阶段 5：查询理解与增强（✅ 已完成）
 ├── 06 检索系统开发第二部分/  # 阶段 6：多路检索 + 融合 + 重排序（✅ 已完成）
+├── 07 生成模块与提示词工程第一部分/  # 阶段 7：上下文组装 + Prompt 模板（🔄 进行中）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -36,6 +37,7 @@
 | **04** 向量化与索引构建 | [`04 向量化与索引构建/`](04%20向量化与索引构建/) | ✅ **已完成** | [`任务.txt`](04%20向量化与索引构建/任务.txt) | [`schedule.md`](04%20向量化与索引构建/schedule.md) | [`vectorize-index.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index.ipynb)（验证）· [`full.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index-full.ipynb)（全量） | [`requirements.txt`](04%20向量化与索引构建/requirements.txt) |
 | **05** 检索系统开发第一部分 | [`05 检索系统开发第一部分/`](05%20检索系统开发第一部分/) | ✅ **已完成** | [`任务.txt`](05%20检索系统开发第一部分/任务.txt) | [`schedule.md`](05%20检索系统开发第一部分/schedule.md) | [`query-enhancement.ipynb`](05%20检索系统开发第一部分/notebooks/query-enhancement.ipynb) | [`requirements.txt`](05%20检索系统开发第一部分/requirements.txt) |
 | **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | ✅ **已完成** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | [`retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb) | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
+| **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | 🔄 **进行中**（0–2 ✅） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | *`generation-prompting.ipynb`（待建）* | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
 
 **说明**
 
@@ -237,6 +239,134 @@ results = builder.query(
 
 ---
 
+## 第六阶段完成总结（2026-06-18）
+
+> 目标：在 05 查询增强与 04 向量库之上，实现**多路检索（向量 + BM25）→ 融合 → 重排序**，打通端到端检索流水线；**不包含** LLM 生成答案。
+
+### 已确认决策
+
+| 决策项 | 结论 |
+|--------|------|
+| 融合默认策略 | **`rrf`**（另支持 `weighted` / `simple`） |
+| 向量模型 | 与 04 一致：`BAAI/bge-small-en-v1.5` |
+| 重排模型 | `BAAI/bge-reranker-base`（cross-encoder） |
+| 多准则权重 | relevance `0.6` + recency `0.25` + authority `0.15` |
+| 年份/期刊 | 检索后按 `doc_id` 回查 slim，**不重建** 04 索引 |
+| slim 本地副本 | `06 .../data/oa_comm_slim.jsonl`（~8.9 GB，`.gitignore`） |
+| **验证规模** | notebook / CLI / `pipeline_eval.json` 默认 **样本库**（1,267 chunks）；C12 可选全量联调 |
+
+### 样本库端到端（`pipeline_eval.json`，5 query）
+
+| 指标 | 结果 |
+|------|------|
+| 链路 | enhance → vector + BM25 → RRF 融合 → rerank | ✅ |
+| 查询数 | 5/5 跑通 | ✅ |
+| 默认 Top-K | `top_k_final=5`（评测配置） | — |
+
+### 全量联调（C12，`pipeline_eval_full.json`，可选）
+
+| 指标 | 结果 |
+|------|------|
+| Chroma | `chroma_db_full` · 6,107,296 条 | ✅ |
+| BM25 | 全量语料探测（首 10 万条建索引验证） | ✅ |
+| metformin query | Top-1 命中真实 RCT（`PMC2566605`） | ✅ |
+| 与样本 Top-1 | 3/3 测试 query 与样本库 Top-1 **均不同**（符合预期） | ✅ |
+
+### 主要产出
+
+| 产出 | 路径 | Git |
+|------|------|-----|
+| 多路检索 | `06 .../src/multipath_retriever.py`、`bm25_index.py` | ✅ |
+| 融合 / 重排 | `06 .../src/fusion.py`、`reranker.py`、`rerank_features.py` | ✅ |
+| 端到端流水线 | `06 .../src/pipeline.py`、`config.py` | ✅ |
+| 演示 notebook | `06 .../notebooks/retrieval-pipeline.ipynb`（C0–C12） | ✅ |
+| 样例 JSON | `06 .../outputs/samples/`（8 份，含 `pipeline_eval.json` / `pipeline_eval_full.json`） | ✅ |
+| CLI 评测 | `06 .../scripts/run_retrieval_eval.py` | ✅ |
+| **正式报告** | `06 .../docs/检索流水线报告.md`（及 `.docx`） | ✅ |
+
+### RAG 生产切换提醒
+
+开发默认 `RetrievalPipeline.from_mode("sample")`；**生产 RAG** 须 `from_mode("full")`，挂载 04 全量 Chroma + E: 全量 BM25 语料。详见上文「各阶段交付物速查 → 06」与 [`06 .../schedule.md`](06%20检索系统开发第二部分/schedule.md)「验证范围说明」。
+
+**Python 端到端示例**：
+
+```python
+import sys
+from pathlib import Path
+
+STAGE06 = Path(r"D:\谷歌\06 检索系统开发第二部分")
+sys.path.insert(0, str(STAGE06 / "src"))
+
+from pipeline import RetrievalPipeline
+
+pipe = RetrievalPipeline.from_mode("sample")  # 生产： "full"
+result = pipe.run("metformin cardiovascular effects")
+top_chunks = result["reranked"]  # → 供 07 ContextAssembler 消费
+```
+
+---
+
+## 第七阶段进行中（2026-06-23 更新）
+
+> 目标：完成**上下文组装器（ContextAssembler）**与**医学提示工程模板（PromptStage）**，将 06 检索候选整理为 LLM 可用的 `context_text` + Prompt；**本周不调用 LLM**。
+
+### 进度
+
+| 子阶段 | 状态 | 说明 |
+|--------|------|------|
+| 0 环境与骨架 | ✅ | 目录骨架、`requirements.txt`、[`输入候选格式约定.md`](07%20生成模块与提示词工程第一部分/输入候选格式约定.md) |
+| 1 数据结构 | ✅ | `DocumentChunk` / `AssembledContext` / 06 候选转换 |
+| 2 上下文组装器 | ✅ | Jaccard 去重、多样化、token 控长、句号截断 |
+| 3 Prompt 模板 | ☐ | 四阶段 `PromptStage` |
+| 4 Notebook 演示 | ☐ | `generation-prompting.ipynb` + 样例 JSON 导出 |
+| 5 测试与收尾 | ☐ | `tests/` + README 定稿 |
+
+### 已确认决策
+
+| 决策项 | 结论 |
+|--------|------|
+| 输入 | 首选 06 `result["reranked"]`；退化 `result["retrieval"]["fused"]` |
+| token 估算 | 默认 `gpt2` tokenizer；可传 `None` 用 `len//4` 启发式 |
+| 去重 | Jaccard（阈值默认 `0.85`） |
+| 多样化 | 同源（`doc_id`）超过 2 条时降权 |
+| 截断 | 末 10% 文本内找句号；无句号则硬截断 |
+| 环境 | 复用 `med-rag-verify`（与 02–06 相同） |
+
+### 当前产出
+
+| 产出 | 路径 | Git |
+|------|------|-----|
+| 数据结构与转换 | `07 .../src/models.py` | ✅ |
+| 上下文组装器 | `07 .../src/context_assembler.py` | ✅ |
+| 输入契约 | `07 .../输入候选格式约定.md` | ✅ |
+| 执行计划 | `07 .../schedule.md` | ✅ |
+| 学习笔记 | [`笔记/07 笔记.md`](笔记/07%20笔记.md) | ✅ |
+
+**组装示例**（消费 06 输出）：
+
+```python
+import sys
+from pathlib import Path
+
+STAGE06 = Path(r"D:\谷歌\06 检索系统开发第二部分")
+STAGE07 = Path(r"D:\谷歌\07 生成模块与提示词工程第一部分")
+sys.path.insert(0, str(STAGE06 / "src"))
+sys.path.insert(0, str(STAGE07 / "src"))
+
+from pipeline import RetrievalPipeline
+from context_assembler import ContextAssembler
+
+pipe = RetrievalPipeline.from_mode("sample")
+result = pipe.run("metformin cardiovascular effects")
+
+asm = ContextAssembler(tokenizer_name=None)  # 或 "gpt2" 精估 token
+assembled = asm.assemble(result["reranked"], max_context_tokens=2048)
+# assembled.context_text  →  Prompt 的 {context}
+# assembled.selected_chunks → 可追溯证据列表
+```
+
+---
+
 ## Python 环境与依赖
 
 ### 推荐环境
@@ -328,6 +458,9 @@ print(torch.cuda.get_device_name(0))
 | `02 数据处理/requirements.txt` | 在 01 基础上增补：matplotlib、seaborn、sentence-transformers 等 |
 | `03 文档解析与分割/requirements.txt` | 复用 02 环境（langchain-text-splitters、sentence-transformers） |
 | `04 向量化与索引构建/requirements.txt` | 复用 02 环境 + chromadb、BGE 嵌入模型 |
+| `05 检索系统开发第一部分/requirements.txt` | 复用 04 环境 + 查询增强依赖 |
+| `06 检索系统开发第二部分/requirements.txt` | 复用 05 环境 + `rank-bm25` |
+| `07 生成模块与提示词工程第一部分/requirements.txt` | 复用 06 环境；本阶段无强制新增（可选 `transformers` tokenizer） |
 
 ---
 
@@ -485,6 +618,15 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - **样例输出**（`outputs/samples/`）：8 份 JSON（含 `pipeline_eval.json`、`pipeline_eval_full.json`）
 - **计划与进度**：[`schedule.md`](06%20检索系统开发第二部分/schedule.md)
 
+### 07 生成模块与提示词工程第一部分（🔄 进行中，阶段 0–2 ✅）
+
+- **任务范围**：上下文组装（去重 / 多样化 / 控长）+ 医学四阶段 Prompt 模板；**不调用 LLM**
+- **上游输入**：06 `result["reranked"]`（首选）或 `result["retrieval"]["fused"]`；契约见 [`输入候选格式约定.md`](07%20生成模块与提示词工程第一部分/输入候选格式约定.md)
+- **已完成模块**：`src/models.py`（`DocumentChunk`、`AssembledContext`）、`src/context_assembler.py`（`ContextAssembler`）
+- **待完成**：`src/prompts.py`、`notebooks/generation-prompting.ipynb`、`tests/`、样例 JSON 导出
+- **计划与进度**：[`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md)
+- **学习笔记**：[`笔记/07 笔记.md`](笔记/07%20笔记.md)
+
 ---
 
 ## 笔记目录
@@ -500,6 +642,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | `04笔记.md` | 嵌入模型、维数、token、ChromaDB、BGE 查询指令 Q&A |
 | `05笔记·.md` | 05 阶段共识、filter 决策、双库 smoke、notebook 实测 Q&A |
 | `06笔记.md` | 06 阶段 RAG 位置、多路检索/融合/rerank 概念 Q&A |
+| `07 笔记.md` | 07 阶段 RAG 位置、输入契约、冒烟测试 Q&A |
 
 ---
 
@@ -525,5 +668,8 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-17** | **06 阶段 3 完成**：BGE reranker + recency/authority；C7 确认 **RRF 为默认融合策略** |
 | **2026-06-18** | **06 阶段 4 完成**：`pipeline.py` 端到端串联；CLI 评测；notebook C10–C11 |
 | **2026-06-18** | **06 C12 全量联调**：`pipeline_eval_full.json`；全量 Chroma 610 万 + BM25 探测；metformin 命中真实 RCT |
+| **2026-06-18** | **06 阶段完成**：正式报告 `docs/检索流水线报告.md`；README 补第六阶段完成总结 |
+| **2026-06-22** | **07 阶段启动**：目录骨架、`schedule.md`、`输入候选格式约定.md` |
+| **2026-06-23** | **07 阶段 1–2 完成**：`models.py` + `ContextAssembler`；README 补第七阶段进行中说明 |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
