@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-06-24T06:51:02.020590+00:00",
+  "pytest_exit_code": 0,
+  "summary": {
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "pass_rate": 100.0
+  },
+  "by_module": [
+    {
+      "module": "test_dedup",
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "module": "test_prompts",
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "module": "test_truncate",
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    }
+  ],
+  "cases": [
+    {
+      "module": "test_dedup",
+      "test_name": "test_dedup_keeps_higher_relevance_chunk",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_dedup",
+      "test_name": "test_dedup_respects_threshold_boundary",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_dedup",
+      "test_name": "test_dedup_keeps_both_when_dissimilar",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_dedup",
+      "test_name": "test_dedup_empty_list",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_dedup",
+      "test_name": "test_coerce_skips_invalid_text",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_dedup",
+      "test_name": "test_diversity_penalizes_same_doc_id",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_prompts",
+      "test_name": "test_prompt_stages_keys_complete",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_prompts",
+      "test_name": "test_prompt_stage_fields_present",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_prompts",
+      "test_name": "test_all_placeholders_in_templates",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_prompts",
+      "test_name": "test_render_prompt_stage_fills_values",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_prompts",
+      "test_name": "test_render_unknown_stage_raises",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_truncate",
+      "test_name": "test_estimate_tokens_heuristic",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_truncate",
+      "test_name": "test_truncate_at_sentence_boundary_in_last_ten_percent",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_truncate",
+      "test_name": "test_truncate_to_tokens_respects_limit",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_truncate",
+      "test_name": "test_assemble_respects_max_context_tokens",
+      "status": "PASSED",
+      "passed": true
+    },
+    {
+      "module": "test_truncate",
+      "test_name": "test_assemble_metadata_fields",
+      "status": "PASSED",
+      "passed": true
+    }
+  ],
+  "artifacts": {
+    "stdout": "D:\\谷歌\\07 生成模块与提示词工程第一部分\\outputs\\samples\\test_report_stdout.txt",
+    "summary_chart": "D:\\谷歌\\07 生成模块与提示词工程第一部分\\outputs\\samples\\test_summary_charts.png",
+    "scenario_chart": "D:\\谷歌\\07 生成模块与提示词工程第一部分\\outputs\\samples\\test_scenario_charts.png"
+  },
+  "notes": "与 tests/test_dedup.py、test_truncate.py、test_prompts.py 对应；写正式报告时可引用 summary_chart / scenario_chart 与 cases 列表。"
+}

@@ -1,6 +1,6 @@
 # 07 生成模块与提示词工程第一部分 — 执行计划
 
-> **状态：🔄 进行中（阶段 0–2 ✅；阶段 3–5 待做）**
+> **状态：✅ 已完成（阶段 0–5）**
 >
 > **本阶段范围（任务书）**：完成「上下文组装器（Context Assembler）」与「医学提示工程模板（Prompt Stages）」两部分代码，为后续 RAG 答案生成链路做准备。
 >
@@ -54,7 +54,7 @@
 │   ├── prompts.py                   # PromptStage + 模板集合
 │   └── pipeline.py                  # （可选）retrieve→assemble→prompt 的轻量粘合层
 ├── notebooks/
-│   └── generation-prompting.ipynb   # C0–C6：组装与 prompt 演示
+│   └── generation-prompting.ipynb   # C0–C7：组装、prompt 演示与测试可视化
 ├── tests/
 │   ├── test_dedup.py
 │   ├── test_truncate.py
@@ -200,13 +200,31 @@
 - `outputs/samples/assembled_context_examples.json`
 - `outputs/samples/prompt_examples.json`
 
-### 阶段 5：测试与交付 ☐
+### 阶段 5：测试与交付 ✅
 
-- [ ] `test_dedup.py`：Jaccard 去重正确性与边界
-- [ ] `test_truncate.py`：截断不破坏段落；末 10% 句号策略生效
-- [ ] `test_prompts.py`：四阶段模板字段齐全、占位符可渲染
-- [ ] 更新根目录 `README.md`：阶段 07 条目（完成后）
-- [ ] （可选）阶段报告（若老师需要 docs，参照 04/05 写法）
+- [x] `test_dedup.py`：Jaccard 去重正确性与边界
+- [x] `test_truncate.py`：截断不破坏段落；末 10% 句号策略生效
+- [x] `test_prompts.py`：四阶段模板字段齐全、占位符可渲染
+- [x] 更新根目录 `README.md`：阶段 07 条目（完成后）
+- [x] 阶段报告：[`docs/上下文组装与提示工程报告.md`](docs/上下文组装与提示工程报告.md)
+
+#### 阶段 5 交付回顾（2026-06-24）
+
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| 去重与多样化测试 | `tests/test_dedup.py` | 6 项：保留高分、阈值边界、空列表、无效候选跳过、同源降权 |
+| 截断与组装测试 | `tests/test_truncate.py` | 5 项：token 启发式、句号截断、`max_context_tokens`、metadata |
+| Prompt 模板测试 | `tests/test_prompts.py` | 5 项：四阶段 key、字段齐全、占位符校验、渲染 payload、未知 stage 报错 |
+| 正式报告 | `docs/上下文组装与提示工程报告.md` | 任务书对照、模块设计、样本验证、测试结论 |
+
+**阶段 5 运行结果**：
+
+```powershell
+conda activate med-rag-verify
+cd "07 生成模块与提示词工程第一部分"
+pytest tests/ -v
+# 16 passed
+```
 
 ---
 
@@ -231,6 +249,9 @@
 | 演示 notebook | `.ipynb` | `notebooks/generation-prompting.ipynb` | ✅ |
 | 组装样例输出 | JSON | `outputs/samples/assembled_context_examples.json` | ✅ |
 | prompt 渲染样例 | JSON | `outputs/samples/prompt_examples.json` | ✅ |
+| 单元测试 | Python | `tests/test_dedup.py`、`test_truncate.py`、`test_prompts.py` | ✅ |
+| 测试报告与图表 | JSON/PNG | `outputs/samples/test_report.json`、`test_*_charts.png` | ✅ |
+| **正式报告** | Markdown | `docs/上下文组装与提示工程报告.md` | ✅ |
 
 ---
 
@@ -255,4 +276,7 @@
 | 2026-06-23 | **阶段 2 完成**：`src/context_assembler.py` — `ContextAssembler`（Jaccard 去重、多样化、token 控长、句号截断）；样本 query 冒烟通过 |
 | 2026-06-23 | **阶段 3 完成**：`src/prompts.py` — `PromptStage` + 四阶段 `PROMPT_STAGES` + 统一占位符渲染与校验；模板冒烟通过 |
 | 2026-06-23 | **阶段 4 完成**：`generation-prompting.ipynb`（C0–C5 详解）+ 导出 `assembled_context_examples.json`、`prompt_examples.json` |
+| 2026-06-24 | **阶段 5 完成**：`tests/` 三文件 16 项 pytest 全绿；根目录 `README.md` 第七阶段定稿 |
+| 2026-06-24 | **notebook C7**：`generation-prompting.ipynb` 内运行 pytest + 图表可视化 + 导出 `test_report.json` |
+| 2026-06-24 | **正式报告**：`docs/上下文组装与提示工程报告.md`；GitHub 上传准备完成 |
 

@@ -2,7 +2,7 @@
 
 基于 PMC 开放获取文献（`oa_comm`）的本地 LLM + RAG 可行性验证与数据评估项目。工程按阶段拆分目录，每阶段有独立任务书、计划、依赖与 Jupyter 入口。
 
-> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`；06：`检索流水线报告.md`）。
+> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`；06：`检索流水线报告.md`；07：`上下文组装与提示工程报告.md`）。
 
 ---
 
@@ -20,7 +20,7 @@
 ├── 04 向量化与索引构建/      # 阶段 4：嵌入 + ChromaDB 索引（✅ 全量完成）
 ├── 05 检索系统开发第一部分/  # 阶段 5：查询理解与增强（✅ 已完成）
 ├── 06 检索系统开发第二部分/  # 阶段 6：多路检索 + 融合 + 重排序（✅ 已完成）
-├── 07 生成模块与提示词工程第一部分/  # 阶段 7：上下文组装 + Prompt 模板（🔄 进行中）
+├── 07 生成模块与提示词工程第一部分/  # 阶段 7：上下文组装 + Prompt 模板（✅ 已完成）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -37,7 +37,7 @@
 | **04** 向量化与索引构建 | [`04 向量化与索引构建/`](04%20向量化与索引构建/) | ✅ **已完成** | [`任务.txt`](04%20向量化与索引构建/任务.txt) | [`schedule.md`](04%20向量化与索引构建/schedule.md) | [`vectorize-index.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index.ipynb)（验证）· [`full.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index-full.ipynb)（全量） | [`requirements.txt`](04%20向量化与索引构建/requirements.txt) |
 | **05** 检索系统开发第一部分 | [`05 检索系统开发第一部分/`](05%20检索系统开发第一部分/) | ✅ **已完成** | [`任务.txt`](05%20检索系统开发第一部分/任务.txt) | [`schedule.md`](05%20检索系统开发第一部分/schedule.md) | [`query-enhancement.ipynb`](05%20检索系统开发第一部分/notebooks/query-enhancement.ipynb) | [`requirements.txt`](05%20检索系统开发第一部分/requirements.txt) |
 | **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | ✅ **已完成** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | [`retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb) | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
-| **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | 🔄 **进行中**（0–4 ✅） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | [`generation-prompting.ipynb`](07%20生成模块与提示词工程第一部分/notebooks/generation-prompting.ipynb) | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
+| **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | ✅ **已完成**（0–5） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | [`generation-prompting.ipynb`](07%20生成模块与提示词工程第一部分/notebooks/generation-prompting.ipynb) | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
 
 **说明**
 
@@ -306,9 +306,9 @@ top_chunks = result["reranked"]  # → 供 07 ContextAssembler 消费
 
 ---
 
-## 第七阶段进行中（2026-06-23 更新）
+## 第七阶段完成总结（2026-06-24 更新）
 
-> 目标：完成**上下文组装器（ContextAssembler）**与**医学提示工程模板（PromptStage）**，将 06 检索候选整理为 LLM 可用的 `context_text` + Prompt；**本周不调用 LLM**。
+> 目标：完成**上下文组装器（ContextAssembler）**与**医学提示工程模板（PromptStage）**，将 06 检索候选整理为 LLM 可用的 `context_text` + Prompt；**本阶段不调用 LLM**（仅渲染 Prompt payload）。
 
 ### 进度
 
@@ -318,8 +318,8 @@ top_chunks = result["reranked"]  # → 供 07 ContextAssembler 消费
 | 1 数据结构 | ✅ | `DocumentChunk` / `AssembledContext` / 06 候选转换 |
 | 2 上下文组装器 | ✅ | Jaccard 去重、多样化、token 控长、句号截断 |
 | 3 Prompt 模板 | ✅ | 四阶段 `PromptStage` + 统一占位符渲染与校验 |
-| 4 Notebook 演示 | ✅ | `generation-prompting.ipynb`（C0–C5）+ 样例 JSON 导出 |
-| 5 测试与收尾 | ☐ | `tests/` + README 定稿 |
+| 4 Notebook 演示 | ✅ | `generation-prompting.ipynb`（C0–C7）+ 样例 JSON 导出 |
+| 5 测试与收尾 | ✅ | `tests/` 16 项 pytest + README 定稿 |
 
 ### 已确认决策
 
@@ -341,6 +341,8 @@ top_chunks = result["reranked"]  # → 供 07 ContextAssembler 消费
 | 提示模板 | `07 .../src/prompts.py` | ✅ |
 | 演示 notebook | `07 .../notebooks/generation-prompting.ipynb` | ✅ |
 | 样例输出 | `07 .../outputs/samples/assembled_context_examples.json`、`prompt_examples.json` | ✅ |
+| 单元测试 | `07 .../tests/test_dedup.py`、`test_truncate.py`、`test_prompts.py` | ✅ |
+| **正式报告** | `07 .../docs/上下文组装与提示工程报告.md` | ✅ |
 | 输入契约 | `07 .../输入候选格式约定.md` | ✅ |
 | 执行计划 | `07 .../schedule.md` | ✅ |
 | 学习笔记 | [`笔记/07 笔记.md`](笔记/07%20笔记.md) | ✅ |
@@ -366,6 +368,14 @@ asm = ContextAssembler(tokenizer_name=None)  # 或 "gpt2" 精估 token
 assembled = asm.assemble(result["reranked"], max_context_tokens=2048)
 # assembled.context_text  →  Prompt 的 {context}
 # assembled.selected_chunks → 可追溯证据列表
+```
+
+**运行测试**：
+
+```powershell
+conda activate med-rag-verify
+cd "07 生成模块与提示词工程第一部分"
+pytest tests/ -v
 ```
 
 ---
@@ -621,13 +631,14 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 - **样例输出**（`outputs/samples/`）：8 份 JSON（含 `pipeline_eval.json`、`pipeline_eval_full.json`）
 - **计划与进度**：[`schedule.md`](06%20检索系统开发第二部分/schedule.md)
 
-### 07 生成模块与提示词工程第一部分（🔄 进行中，阶段 0–4 ✅）
+### 07 生成模块与提示词工程第一部分（✅ 已完成，阶段 0–5）
 
 - **任务范围**：上下文组装（去重 / 多样化 / 控长）+ 医学四阶段 Prompt 模板；**不调用 LLM**
 - **上游输入**：06 `result["reranked"]`（首选）或 `result["retrieval"]["fused"]`；契约见 [`输入候选格式约定.md`](07%20生成模块与提示词工程第一部分/输入候选格式约定.md)
-- **已完成模块**：`src/models.py`、`src/context_assembler.py`、`src/prompts.py`
-- **已完成演示与样例**：`notebooks/generation-prompting.ipynb`、`outputs/samples/assembled_context_examples.json`、`outputs/samples/prompt_examples.json`
-- **待完成**：`tests/`（`test_dedup.py` / `test_truncate.py` / `test_prompts.py`）与阶段收尾说明
+- **核心模块**：`src/models.py`、`src/context_assembler.py`、`src/prompts.py`
+- **演示与样例**：`notebooks/generation-prompting.ipynb`（C0–C7）、`outputs/samples/`（组装/prompt/测试报告 JSON 与图表）
+- **测试**：`tests/` 三文件 **16 项 pytest 全绿**（`pytest tests/ -v`）；notebook **C7** 可视化 + `test_report.json`
+- **正式报告**：[`docs/上下文组装与提示工程报告.md`](07%20生成模块与提示词工程第一部分/docs/上下文组装与提示工程报告.md)
 - **计划与进度**：[`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md)
 - **学习笔记**：[`笔记/07 笔记.md`](笔记/07%20笔记.md)
 
@@ -676,5 +687,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-22** | **07 阶段启动**：目录骨架、`schedule.md`、`输入候选格式约定.md` |
 | **2026-06-23** | **07 阶段 1–2 完成**：`models.py` + `ContextAssembler`；README 补第七阶段进行中说明 |
 | **2026-06-23** | **07 阶段 3–4 完成**：`prompts.py` + `generation-prompting.ipynb`（C0–C5）+ 导出两份样例 JSON |
+| **2026-06-24** | **07 阶段完成**：`tests/` 16 项 pytest；README 第七阶段定稿；schedule 阶段 0–5 收尾 |
+| **2026-06-24** | **07: 新增上下文组装与提示工程正式报告**；notebook C7 测试可视化 |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*

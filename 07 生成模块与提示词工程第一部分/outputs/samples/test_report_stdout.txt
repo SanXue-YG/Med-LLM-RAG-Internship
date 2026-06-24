@@ -1,0 +1,26 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- c:\Users\10138\miniconda3\envs\med-rag-verify\python.exe
+cachedir: .pytest_cache
+rootdir: D:\谷歌\07 生成模块与提示词工程第一部分
+plugins: anyio-4.13.0, langsmith-0.8.3
+collecting ... collected 16 items
+
+tests/test_dedup.py::test_dedup_keeps_higher_relevance_chunk PASSED      [  6%]
+tests/test_dedup.py::test_dedup_respects_threshold_boundary PASSED       [ 12%]
+tests/test_dedup.py::test_dedup_keeps_both_when_dissimilar PASSED        [ 18%]
+tests/test_dedup.py::test_dedup_empty_list PASSED                        [ 25%]
+tests/test_dedup.py::test_coerce_skips_invalid_text PASSED               [ 31%]
+tests/test_dedup.py::test_diversity_penalizes_same_doc_id PASSED         [ 37%]
+tests/test_prompts.py::test_prompt_stages_keys_complete PASSED           [ 43%]
+tests/test_prompts.py::test_prompt_stage_fields_present PASSED           [ 50%]
+tests/test_prompts.py::test_all_placeholders_in_templates PASSED         [ 56%]
+tests/test_prompts.py::test_render_prompt_stage_fills_values PASSED      [ 62%]
+tests/test_prompts.py::test_render_unknown_stage_raises PASSED           [ 68%]
+tests/test_truncate.py::test_estimate_tokens_heuristic PASSED            [ 75%]
+tests/test_truncate.py::test_truncate_at_sentence_boundary_in_last_ten_percent PASSED [ 81%]
+tests/test_truncate.py::test_truncate_to_tokens_respects_limit PASSED    [ 87%]
+tests/test_truncate.py::test_assemble_respects_max_context_tokens PASSED [ 93%]
+tests/test_truncate.py::test_assemble_metadata_fields PASSED             [100%]
+
+============================= 16 passed in 0.02s ==============================
+
