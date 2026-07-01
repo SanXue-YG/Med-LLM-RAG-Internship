@@ -1,0 +1,4 @@
+# 08 阶段：在 med-rag-verify（02–07 共用）基础上增补
+# 安装：conda activate med-rag-verify && pip install -r requirements.txt
+
+httpx>=0.27.0

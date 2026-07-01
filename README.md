@@ -2,7 +2,7 @@
 
 基于 PMC 开放获取文献（`oa_comm`）的本地 LLM + RAG 可行性验证与数据评估项目。工程按阶段拆分目录，每阶段有独立任务书、计划、依赖与 Jupyter 入口。
 
-> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`；06：`检索流水线报告.md`；07：`上下文组装与提示工程报告.md`）。
+> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`；06：`检索流水线报告.md`；07：`上下文组装与提示工程报告.md`；08：`医学生成流水线报告.md`（进行中））。
 
 ---
 
@@ -21,6 +21,7 @@
 ├── 05 检索系统开发第一部分/  # 阶段 5：查询理解与增强（✅ 已完成）
 ├── 06 检索系统开发第二部分/  # 阶段 6：多路检索 + 融合 + 重排序（✅ 已完成）
 ├── 07 生成模块与提示词工程第一部分/  # 阶段 7：上下文组装 + Prompt 模板（✅ 已完成）
+├── 08 生成模块与提示词工程第二部分/  # 阶段 8：Ollama 生成 + 端到端流水线（🔄 进行中）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -38,6 +39,7 @@
 | **05** 检索系统开发第一部分 | [`05 检索系统开发第一部分/`](05%20检索系统开发第一部分/) | ✅ **已完成** | [`任务.txt`](05%20检索系统开发第一部分/任务.txt) | [`schedule.md`](05%20检索系统开发第一部分/schedule.md) | [`query-enhancement.ipynb`](05%20检索系统开发第一部分/notebooks/query-enhancement.ipynb) | [`requirements.txt`](05%20检索系统开发第一部分/requirements.txt) |
 | **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | ✅ **已完成** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | [`retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb) | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
 | **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | ✅ **已完成**（0–5） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | [`generation-prompting.ipynb`](07%20生成模块与提示词工程第一部分/notebooks/generation-prompting.ipynb) | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
+| **08** 生成模块与提示词工程第二部分 | [`08 生成模块与提示词工程第二部分/`](08%20生成模块与提示词工程第二部分/) | 🔄 **进行中**（阶段 2） | [`任务.txt`](08%20生成模块与提示词工程第二部分/任务.txt) | [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) | [`medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) | [`requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) |
 
 **说明**
 
@@ -474,6 +476,7 @@ print(torch.cuda.get_device_name(0))
 | `05 检索系统开发第一部分/requirements.txt` | 复用 04 环境 + 查询增强依赖 |
 | `06 检索系统开发第二部分/requirements.txt` | 复用 05 环境 + `rank-bm25` |
 | `07 生成模块与提示词工程第一部分/requirements.txt` | 复用 06 环境；本阶段无强制新增（可选 `transformers` tokenizer） |
+| `08 生成模块与提示词工程第二部分/requirements.txt` | 复用 07 环境 + `httpx`（Ollama HTTP 客户端） |
 
 ---
 
@@ -644,6 +647,55 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 
 ---
 
+## 第八阶段进行中说明（2026-06-29 更新）
+
+> 目标：完成 **本地 LLM 集成（Ollama）** 与 **医学生成流水线（MedicalGenerationPipeline）**，串联 05→06→07 产出端到端 RAG 答案；**不包含** LangChain 封装与生产部署。
+
+### 进度
+
+| 子阶段 | 状态 | 说明 |
+|--------|------|------|
+| 0 环境与骨架 | ✅ | `bootstrap.py`、C0 |
+| 1 LLMGenerator | ✅ | `llm_generator.py` · `/api/chat` · `think=False` · C1 · pytest 4 项 |
+| 2 JSON 工具 | 🔄 | `extract_json` / `repair_json` |
+| 3 生成流水线 | ☐ | `MedicalGenerationPipeline` |
+| 4 后处理 | ☐ | 引用、`sources`、免责声明 |
+| 5 CLI 评测 | ☐ | `run_generation_eval.py` + C7 |
+| 6 测试与交付 | ☐ | pytest + `docs/医学生成流水线报告.md` |
+
+### 阶段 0–1 产出
+
+| 产物 | 路径 |
+|------|------|
+| 路径引导 | `08 .../src/bootstrap.py` |
+| LLM 生成器 | `08 .../src/llm_generator.py` |
+| JSON 基础 | `08 .../src/json_utils.py`（`extract_json`，阶段 2 扩展 repair） |
+| 单测 | `08 .../tests/test_llm_generator.py` |
+| 演示 notebook | `08 .../notebooks/medical-generation.ipynb`（C0–C1） |
+| 依赖 | `08 .../requirements.txt`（`httpx`） |
+
+**deepseek-r1 提示**：HTTP 调用设 `think=False`，且 `max_tokens` 不宜过小（建议 ≥512），否则预算可能耗在 thinking 链上。
+
+### 开发方式
+
+- **单一 notebook 观测**：[`notebooks/medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) 随阶段增量追加 C0→C7，不等到后期再写演示。
+- **阶段收尾**：每完成一阶段 → 更新 [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) + 本 README → git 提交备份。
+
+### 上游依赖（已就绪）
+
+| 阶段 | 消费内容 |
+|------|----------|
+| 06 | `RetrievalPipeline.from_mode("sample")` → `reranked` |
+| 07 | `ContextAssembler`、`PROMPT_STAGES` / `render_prompt_stage` |
+| 01 | Ollama `deepseek-r1:7b` @ `127.0.0.1:11434` |
+
+### 计划与笔记
+
+- **执行计划**：[`08 .../schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md)
+- **学习笔记**：[`笔记/08笔记.md`](笔记/08笔记.md)
+
+---
+
 ## 笔记目录
 
 `笔记/` 下为**个人学习 Q&A**，记录概念与踩坑，**不属于正式交付物**。
@@ -658,6 +710,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | `05笔记·.md` | 05 阶段共识、filter 决策、双库 smoke、notebook 实测 Q&A |
 | `06笔记.md` | 06 阶段 RAG 位置、多路检索/融合/rerank 概念 Q&A |
 | `07 笔记.md` | 07 阶段 RAG 位置、输入契约、冒烟测试 Q&A |
+| `08笔记.md` | 08 阶段 RAG 位置、schedule 审阅、与 07 衔接 Q&A |
 
 ---
 
@@ -689,5 +742,8 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-23** | **07 阶段 3–4 完成**：`prompts.py` + `generation-prompting.ipynb`（C0–C5）+ 导出两份样例 JSON |
 | **2026-06-24** | **07 阶段完成**：`tests/` 16 项 pytest；README 第七阶段定稿；schedule 阶段 0–5 收尾 |
 | **2026-06-24** | **07: 新增上下文组装与提示工程正式报告**；notebook C7 测试可视化 |
+| **2026-06-29** | **08 阶段启动**：notebook 贯穿式开发；`schedule.md` 工作流调整；`medical-generation.ipynb` C0 骨架 |
+| **2026-06-29** | **08 阶段 0 完成**：`bootstrap.py`、目录骨架、C0 smoke；进入阶段 1 |
+| **2026-06-29** | **08 阶段 1 完成**：`LLMGenerator` + C1 + pytest 4 项 |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
