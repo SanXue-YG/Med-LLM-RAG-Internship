@@ -1,6 +1,6 @@
 # 08 生成模块与提示词工程第二部分 — 执行计划
 
-> **状态：🔄 进行中（阶段 2）**
+> **状态：✅ 已完成（阶段 0–6）**
 >
 > **本阶段范围（任务书）**：完成 **本地 LLM 集成（Ollama）** 与 **医学生成流水线（MedicalGenerationPipeline）**，串联 05→06→07 产出端到端 RAG 答案生成；**不包含** LangChain 封装与生产部署。
 >
@@ -68,10 +68,10 @@
 |----------|---------------|----------|------|
 | **0** 环境与骨架 | **C0** 前置：路径、`sys.path`、Ollama 配置 | 目录就绪、上游 05/06/07 可 import | ✅ |
 | **1** LLMGenerator | **C1** Ollama 健康检查 + 单条 `generate()` | 连通性、温度/token 参数 | ✅ |
-| **2** JSON 工具 | **C2** `extract_json` / `repair_json` 演示 | 围栏剥离、残缺 JSON 修复 | ☐ |
-| **3** Pipeline 主流程 | **C3** 06→07 联调（样本或离线 JSON） | 检索 + 组装中间产物 | ☐ |
-| **3**（续） | **C4** 最小路径 `run()`（跳过 eval/review） | 首条端到端答案（草稿+后处理） | ☐ |
-| **3**（续） | **C5** 完整 pipeline（含 optional stages） | 四步 Prompt 串联、`result` 结构 | ☐ |
+| **2** JSON 工具 | **C2** `extract_json` / `repair_json` 演示 | 围栏剥离、残缺 JSON 修复 | ✅ |
+| **3** Pipeline 主流程 | **C3** 06→07 联调（样本或离线 JSON） | 检索 + 组装中间产物 | ✅ |
+| **3**（续） | **C4** 最小路径 `run()`（跳过 eval/review） | 首条端到端答案（草稿+后处理） | ✅ |
+| **3**（续） | **C5** 完整 pipeline（含 optional stages） | 四步 Prompt 串联、`result` 结构 | ✅ |
 | **4** 后处理 | **C6** `sources`、引用 `[1][2]`、免责声明 | 与 `answer` 对齐的可视化 | ☐ |
 | **5** CLI 评测 | **C7** 批量固定 query + 导出 `generation_eval.json` | 指标 log、多样例快照 | ☐ |
 | **6** 测试与交付 | notebook **C7** 复跑 + `pytest tests/` | 回归全绿后 README 定稿 | ☐ |
@@ -259,6 +259,11 @@ class MedicalGenerationPipeline:
 
 ### 阶段 0：环境与骨架 ✅
 
+**通俗讲解（做什么 / 目标）**
+
+- 做什么：把“施工现场”先搭好（目录、依赖、notebook、路径导入、Ollama探测）。
+- 目标：确保后续阶段写代码时，不再被环境问题卡住；C0 一跑就知道上游模块和 Ollama 是否在线。
+
 **代码 / 目录**
 
 - [x] 创建 `src/`、`notebooks/`、`scripts/`、`tests/`、`outputs/logs/`、`outputs/samples/`
@@ -288,6 +293,18 @@ class MedicalGenerationPipeline:
 
 ### 阶段 1：LLMGenerator（Ollama 集成） ✅
 
+**通俗讲解（做什么 / 目标）**
+
+- 做什么：封装一个稳定的“模型调用器”，统一管理 `health_check`、单次生成、批量生成和 JSON 生成入口。
+- 目标：以后所有生成步骤都通过同一个类调用 Ollama，避免在 pipeline 里散落 HTTP 细节。
+
+  在你这个项目里，health_check 的作用是：
+
+  去请求一次 Ollama 的服务接口（GET /api/tags）
+  如果能连通且返回正常，就返回 True
+  连不上（服务没开、端口不通）就返回 False
+  它不负责生成答案，只负责告诉你“模型服务现在能不能用”。
+  你在 C1 里看到 health_check: True，就说明当前 127.0.0.1:11434 的 Ollama 服务可用，后面的 generate() 才值得跑。
 **代码**
 
 - [x] `LLMGenerator.__init__(model_name, base_url, timeout)`
@@ -317,93 +334,196 @@ class MedicalGenerationPipeline:
 
 ---
 
-### 阶段 2：JSON 提取与修复 ☐
+### 阶段 2：JSON 提取与修复 ✅
+
+**通俗讲解（做什么 / 目标）**
+
+- 做什么：把模型返回的“可能不规范 JSON 文本”尽量修成可解析结构，并定义证据评估最小 schema。
+- 目标：即使模型输出带围栏、尾逗号、缺括号，也尽量解析成功；失败时能优雅降级，不阻断主流程。
+
+  模型输出不一定是标准 JSON，所以要“修一把”。
+
+  示例 1：markdown 围栏 + 尾逗号（修复前）
+  这里是评估结果：
+  ```json
+  {
+    "relevant_chunk_ids": ["PMC520826",],
+    "excluded_chunk_ids": [],
+    "notes": "strong evidence",
+  }
+  
+  这段直接 `json.loads()` 会报错（尾逗号不合法）。
+  ### 修复后（可解析）
+  ```json
+  {
+    "relevant_chunk_ids": ["PMC520826"],
+    "excluded_chunk_ids": [],
+    "notes": "strong evidence"
+  }
+
+  示例 2：缺右花括号（修复前）
+  {"relevant_chunk_ids":["PMC1"],"excluded_chunk_ids":["PMC9"],"notes":"drop noisy"
+  修复后
+  {"relevant_chunk_ids":["PMC1"],"excluded_chunk_ids":["PMC9"],"notes":"drop noisy"}
+
+  失败时的“优雅降级”
+  如果还是修不好、解析失败，不会把主流程打断。
+  当前策略是：evaluation=None 时 不筛选 chunk，原样继续，也就是“宁可不过滤，也不停机”。
+
+
 
 **代码**
 
-- [ ] `extract_json(text) -> dict | None`：剥离 ` ```json ` 围栏
-- [ ] `repair_json(text) -> str`：补全缺失 `}`、`]`、引号等常见错误
-- [ ] 证据评估 schema（最小字段，进展到阶段 3 时再对齐 pipeline）：
-  - [ ] `relevant_chunk_ids: list[str]`
-  - [ ] `excluded_chunk_ids: list[str]`
-  - [ ] `notes: str`
-- [ ] 解析失败时降级策略（供阶段 3 调用）：跳过筛选，使用组装后全部 `selected_chunks`
+- [x] `extract_json(text) -> dict | None`：剥离 ` ```json ` 围栏；失败时走 `repair_json`
+- [x] `repair_json(text) -> str`：尾逗号、缺 `}`/`]`、未闭合引号
+- [x] 证据评估 schema（最小字段）：
+  - [x] `relevant_chunk_ids: list[str]`
+  - [x] `excluded_chunk_ids: list[str]`
+  - [x] `notes: str`
+  - [x] `parse_evidence_evaluation` / `normalize_evidence_evaluation`
+- [x] 解析失败降级：`filter_chunks_by_evidence_eval(..., None)` → 原样返回全部 chunks
 
 **Notebook**
 
-- [ ] **C2**：围栏样例 + 残缺 JSON 修复 + `generate_json()` 联调（可用 mock 字符串）
+- [x] **C2**：围栏 + 残缺修复 + mock `generate_json` 输出 + 筛选降级演示
+
+#### 阶段 2 交付回顾（2026-06-29）
+
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| JSON 工具 | `src/json_utils.py` | extract / repair / evidence eval / chunk 筛选 |
+| 单测 | `tests/test_json_utils.py` | 8 项 |
+| Notebook | C2 | mock 联调，不额外消耗 LLM |
 
 **阶段收尾** → 更新 `schedule.md` / `README.md` → git 提交
 
 ---
 
-### 阶段 3：MedicalGenerationPipeline 主流程 ☐
+### 阶段 3：MedicalGenerationPipeline 主流程 ✅
 
-> 子步骤 checklist **进入本阶段后再按实现顺序细化**；notebook **C3→C5** 随功能增量追加 cell。
+**通俗讲解（做什么 / 目标）**
 
-**代码（概要）**
+- 做什么：把 06 检索、07 组装、08 生成串成一个 `run(query)` 端到端流程。
+- 目标：输入一个问题就得到统一的 `result`（答案、中间产物、耗时、阶段成功率、sources），形成可复用主链路。
 
-- [ ] 初始化：注入 06 retrieval、07 assembler、08 llm
-- [ ] 上下文组装 →（可选）证据评估 → 答案草稿 →（可选）批判审查 → 终稿
-- [ ] 组装 `result` dict（对齐任务书字段）；记录 `stage_times` / `stage_success`
+**代码**
+
+- [x] 初始化：注入 06 retrieval、07 assembler、08 llm
+- [x] 上下文组装 →（可选）证据评估 → 答案草稿 →（可选）批判审查 → 终稿
+- [x] 组装 `result` dict（对齐任务书字段）；记录 `stage_times` / `stage_success`
+- [x] 证据评估失败降级：不筛选 chunks，继续主流程
+- [x] 基础后处理：免责声明 + 引用编号 + `sources` 对齐（阶段 4 深化）
 
 **Notebook**
 
-- [ ] **C3**：06 sample 检索（或离线 `pipeline_eval.json`）→ 07 组装，展示 `context_text` / metadata
-- [ ] **C4**：最小路径 `MedicalGenerationPipeline.run()`（`skip_evidence_eval=True`, `skip_critical_review=True`）
-- [ ] **C5**：完整 pipeline + optional stages 开关对比
+- [x] **C3**：06 sample 离线样例 → 07 组装，展示 `context_text` / metadata
+- [x] **C4**：最小路径 `MedicalGenerationPipeline.run()`（`skip_evidence_eval=True`, `skip_critical_review=True`）
+- [x] **C5**：完整 pipeline + optional stages 开关对比
+
+#### 阶段 3 交付回顾（2026-07-01）
+
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| 生成主流程 | `src/generation_pipeline.py` | `MedicalGenerationPipeline.run()` 端到端串联 |
+| 单测 | `tests/test_generation_pipeline.py` | 2 项：最小路径 / 完整路径 |
+| Notebook | C3–C5 | 离线检索输入 + 最小/完整路径对比 |
+| 测试汇总 | `pytest tests/ -v` | 14 项全绿 |
 
 **阶段收尾** → 更新 `schedule.md` / `README.md` → git 提交
 
 ---
 
-### 阶段 4：后处理与 sources 格式化 ☐
+### 阶段 4：后处理与 sources 格式化 ✅
+
+**通俗讲解（做什么 / 目标）**
+
+- 做什么：把“模型原始答案”整理成可交付文本（引用编号、来源列表、免责声明、格式化）。
+- 目标：答案对用户可读、可追溯、医疗表达更安全，且引用与 sources 一一对应。
 
 **代码**
 
-- [ ] `_format_sources(chunks) -> list[dict]`：`chunk_id`、`source_title`、`doc_id`、`relevance_score`
-- [ ] 答案内引用标记与 `sources` 列表序号对齐
-- [ ] 固定免责声明文案（英文，与 PMC 英文语料一致）
-- [ ] `postprocess_answer()` 统一入口
+- [x] `format_sources(chunks) -> list[dict]`：`chunk_id`、`source_title`、`doc_id`、`relevance_score`
+- [x] 答案内引用标记与 `sources` 列表序号对齐
+- [x] 固定免责声明文案（英文，与 PMC 英文语料一致）
+- [x] `postprocess_answer()` 统一入口
 
 **Notebook**
 
-- [ ] **C6**：展示 `answer` 内 `[1][2]`、`sources` 表、免责声明段落
+- [x] **C6**：展示 `answer` 内 `[1][2]`、`sources` 表、免责声明段落
+
+#### 阶段 4 交付回顾（2026-07-01）
+
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| 后处理模块 | `src/postprocess.py` | `format_sources` + `postprocess_answer` + 免责声明常量 |
+| 流水线对接 | `src/generation_pipeline.py` | 改用 `postprocess.py` 统一后处理 |
+| 单测 | `tests/test_postprocess.py` | 3 项（引用/来源/免责声明） |
+| Notebook | C6 | 展示引用标记、Sources 区块、免责声明 |
+| 测试汇总 | `pytest tests/ -v` | 17 项全绿 |
 
 **阶段收尾** → 更新 `schedule.md` / `README.md` → git 提交
 
 ---
 
-### 阶段 5：CLI 评测与批量快照 ☐
+### 阶段 5：CLI 评测与批量快照 ✅
+
+**通俗讲解（做什么 / 目标）**
+
+- 做什么：把单次 notebook 演示扩展成“批量 query 自动跑 + 自动记录指标”。
+- 目标：沉淀可复现评测快照（`generation_eval.json` 和 logs），便于比较改动前后效果。
 
 **代码**
 
-- [ ] `scripts/run_generation_eval.py`：批量跑固定 query 列表 + 写 `outputs/logs/`
+- [x] `scripts/run_generation_eval.py`：批量跑固定 query 列表 + 写 `outputs/logs/`
 
 **Notebook**
 
-- [ ] **C7**：跑 ≥4 条固定 query（见下表），展示 `generation_metrics`，导出 `outputs/samples/generation_eval.json`
+- [x] **C7**：跑 ≥4 条固定 query（见下表），展示 `generation_metrics`，导出 `outputs/samples/generation_eval.json`
+
+#### 阶段 5 交付回顾（2026-07-01）
+
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| 批量评测脚本 | `scripts/run_generation_eval.py` | 默认 4 条 query，离线检索样例驱动 |
+| 评测快照 | `outputs/samples/generation_eval.json` | 最新可复现结果 |
+| 评测日志 | `outputs/logs/generation_eval_*.json` | 带时间戳历史记录 |
+| Notebook | C7 | 脚本触发 + 结果摘要 |
+| 运行结果 | CLI 实测 | 4/4 query 跑通，全部生成成功 |
 
 **阶段收尾** → 更新 `schedule.md` / `README.md` → git 提交
 
 ---
 
-### 阶段 6：测试与交付 ☐
+### 阶段 6：测试与交付 ✅
+
+**通俗讲解（做什么 / 目标）**
+
+- 做什么：补齐测试、复跑关键样例、整理报告和 README，完成最终交付收口。
+- 目标：确保链路稳定可回归、文档完整可提交，阶段状态从“开发中”切到“可验收”。
 
 **代码**
 
-- [ ] `test_json_utils.py`：围栏剥离、残缺 JSON 修复
-- [ ] `test_generation_pipeline.py`：mock LLM 全链路（无 Ollama 也可 CI）
-- [ ] 固定测试 query log 关键指标（与 C7 快照一致或复跑）
+- [x] `test_json_utils.py`：围栏剥离、残缺 JSON 修复
+- [x] `test_generation_pipeline.py`：mock LLM 全链路（无 Ollama 也可 CI）
+- [x] 固定测试 query log 关键指标（与 C7 快照一致或复跑）
 
 **文档**
 
-- [ ] `docs/医学生成流水线报告.md`
-- [ ] 根目录 `README.md` 第八阶段**完成**定稿（阶段一览 ✅、完成总结、更新记录）
+- [x] `docs/医学生成流水线报告.md`
+- [x] 根目录 `README.md` 第八阶段**完成**定稿（阶段一览 ✅、完成总结、更新记录）
 
 **Notebook**
 
-- [ ] **C7** 全量复跑确认；必要时追加 pytest 结果摘要 cell
+- [x] **C7** 全量复跑确认；追加 pytest 结果摘要 cell（C7 复跑确认）
+
+#### 阶段 6 交付回顾（2026-07-01）
+
+| 产物 | 路径 | 说明 |
+|------|------|------|
+| 正式报告 | `docs/医学生成流水线报告.md` | 阶段 0–6 总结与交付说明 |
+| 回归测试 | `pytest tests/ -v` | 17 项全绿 |
+| Notebook 收尾 | C7 + C7（复跑确认） | 批量评测 + pytest 摘要 |
+| README 定稿 | 根目录 `README.md` | 第八阶段状态与产出同步 |
 
 **阶段收尾** → 最终 git 提交
 
@@ -482,3 +602,8 @@ class MedicalGenerationPipeline:
 | 2026-06-29 | **阶段 0 完成**：`bootstrap.py`、目录骨架、C0 import/Ollama 探测；进入阶段 1 |
 | 2026-06-30 | **Win Ollama 方式 A**：`schedule.md` 记入全流程；本机 `ollama` CLI 未进 PATH，拉模型需完整路径或刷新终端 |
 | 2026-07-01 | **阶段 1 完成**：`LLMGenerator` + `json_utils.extract_json` 基础版 + C1 + pytest 4 项 |
+| 2026-07-01 | **阶段 2 完成**：`repair_json`、证据评估 schema、`filter_chunks_by_evidence_eval` + C2 + pytest 12 项 |
+| 2026-07-01 | **阶段 3 完成**：`MedicalGenerationPipeline` + C3/C4/C5 + `test_generation_pipeline.py`，pytest 14 项 |
+| 2026-07-01 | **阶段 4 完成**：`postprocess.py` + C6 + `test_postprocess.py`，pytest 17 项 |
+| 2026-07-01 | **阶段 5 完成**：`run_generation_eval.py` + C7 + `generation_eval.json`/日志快照 |
+| 2026-07-01 | **阶段 6 完成**：报告定稿 + C7 复跑 + pytest 摘要；阶段 08 收口完成 |

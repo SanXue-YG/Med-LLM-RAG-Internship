@@ -8,7 +8,6 @@ import httpx
 
 from bootstrap import OLLAMA_BASE_URL, OLLAMA_MODEL
 from json_utils import extract_json
-
 _JSON_SUFFIX = (
     "\n\nRespond with a single valid JSON object only. "
     "No markdown fences or extra commentary."
@@ -127,7 +126,6 @@ class LLMGenerator:
             think=think,
         )
         return extract_json(raw)
-
     def generate_batch(self, requests: list[dict[str, Any]]) -> list[str]:
         """顺序批量生成；每项为 ``generate()`` 关键字参数字典（须含 ``prompt``）。"""
         outputs: list[str] = []

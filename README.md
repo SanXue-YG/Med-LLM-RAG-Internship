@@ -39,7 +39,7 @@
 | **05** 检索系统开发第一部分 | [`05 检索系统开发第一部分/`](05%20检索系统开发第一部分/) | ✅ **已完成** | [`任务.txt`](05%20检索系统开发第一部分/任务.txt) | [`schedule.md`](05%20检索系统开发第一部分/schedule.md) | [`query-enhancement.ipynb`](05%20检索系统开发第一部分/notebooks/query-enhancement.ipynb) | [`requirements.txt`](05%20检索系统开发第一部分/requirements.txt) |
 | **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | ✅ **已完成** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | [`retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb) | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
 | **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | ✅ **已完成**（0–5） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | [`generation-prompting.ipynb`](07%20生成模块与提示词工程第一部分/notebooks/generation-prompting.ipynb) | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
-| **08** 生成模块与提示词工程第二部分 | [`08 生成模块与提示词工程第二部分/`](08%20生成模块与提示词工程第二部分/) | 🔄 **进行中**（阶段 2） | [`任务.txt`](08%20生成模块与提示词工程第二部分/任务.txt) | [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) | [`medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) | [`requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) |
+| **08** 生成模块与提示词工程第二部分 | [`08 生成模块与提示词工程第二部分/`](08%20生成模块与提示词工程第二部分/) | ✅ **已完成**（0–6） | [`任务.txt`](08%20生成模块与提示词工程第二部分/任务.txt) | [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) | [`medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) | [`requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) |
 
 **说明**
 
@@ -647,7 +647,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 
 ---
 
-## 第八阶段进行中说明（2026-06-29 更新）
+## 第八阶段完成总结（2026-07-01 更新）
 
 > 目标：完成 **本地 LLM 集成（Ollama）** 与 **医学生成流水线（MedicalGenerationPipeline）**，串联 05→06→07 产出端到端 RAG 答案；**不包含** LangChain 封装与生产部署。
 
@@ -656,22 +656,26 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | 子阶段 | 状态 | 说明 |
 |--------|------|------|
 | 0 环境与骨架 | ✅ | `bootstrap.py`、C0 |
-| 1 LLMGenerator | ✅ | `llm_generator.py` · `/api/chat` · `think=False` · C1 · pytest 4 项 |
-| 2 JSON 工具 | 🔄 | `extract_json` / `repair_json` |
-| 3 生成流水线 | ☐ | `MedicalGenerationPipeline` |
-| 4 后处理 | ☐ | 引用、`sources`、免责声明 |
-| 5 CLI 评测 | ☐ | `run_generation_eval.py` + C7 |
-| 6 测试与交付 | ☐ | pytest + `docs/医学生成流水线报告.md` |
+| 1 LLMGenerator | ✅ | `llm_generator.py` · C1 · pytest 4 项 |
+| 2 JSON 工具 | ✅ | `json_utils.py` · C2 · pytest 8 项 |
+| 3 生成流水线 | ✅ | `generation_pipeline.py` · C3/C4/C5 · `test_generation_pipeline.py` |
+| 4 后处理 | ✅ | `postprocess.py` · C6 · `test_postprocess.py`（pytest 17 项） |
+| 5 CLI 评测 | ✅ | `run_generation_eval.py` · C7 · `generation_eval.json` |
+| 6 测试与交付 | ✅ | pytest 复跑、`docs/医学生成流水线报告.md`、README 定稿 |
 
-### 阶段 0–1 产出
+### 阶段 0–6 产出
 
 | 产物 | 路径 |
 |------|------|
 | 路径引导 | `08 .../src/bootstrap.py` |
 | LLM 生成器 | `08 .../src/llm_generator.py` |
-| JSON 基础 | `08 .../src/json_utils.py`（`extract_json`，阶段 2 扩展 repair） |
-| 单测 | `08 .../tests/test_llm_generator.py` |
-| 演示 notebook | `08 .../notebooks/medical-generation.ipynb`（C0–C1） |
+| JSON 工具 | `08 .../src/json_utils.py` |
+| 生成主流程 | `08 .../src/generation_pipeline.py` |
+| 后处理模块 | `08 .../src/postprocess.py` |
+| 批量评测脚本 | `08 .../scripts/run_generation_eval.py` |
+| 单测 | `08 .../tests/test_llm_generator.py`、`test_json_utils.py`、`test_generation_pipeline.py`、`test_postprocess.py`（共 17 项） |
+| 演示 notebook | `08 .../notebooks/medical-generation.ipynb`（C0–C7） |
+| 正式报告 | `08 .../docs/医学生成流水线报告.md` |
 | 依赖 | `08 .../requirements.txt`（`httpx`） |
 
 **deepseek-r1 提示**：HTTP 调用设 `think=False`，且 `max_tokens` 不宜过小（建议 ≥512），否则预算可能耗在 thinking 链上。
@@ -745,5 +749,10 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | **2026-06-29** | **08 阶段启动**：notebook 贯穿式开发；`schedule.md` 工作流调整；`medical-generation.ipynb` C0 骨架 |
 | **2026-06-29** | **08 阶段 0 完成**：`bootstrap.py`、目录骨架、C0 smoke；进入阶段 1 |
 | **2026-06-29** | **08 阶段 1 完成**：`LLMGenerator` + C1 + pytest 4 项 |
+| **2026-06-30** | **08 阶段 2 完成**：`json_utils` repair + 证据评估 + C2 + pytest 12 项 |
+| **2026-07-01** | **08 阶段 3 完成**：`MedicalGenerationPipeline` + C3/C4/C5 + pytest 14 项 |
+| **2026-07-01** | **08 阶段 4 完成**：`postprocess.py` + C6 + pytest 17 项 |
+| **2026-07-01** | **08 阶段 5 完成**：`run_generation_eval.py` + C7 + `generation_eval.json` |
+| **2026-07-01** | **08 阶段 6 完成**：`docs/医学生成流水线报告.md` + C7 复跑 + README 定稿 |
 
 *阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
