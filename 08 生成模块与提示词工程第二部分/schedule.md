@@ -72,9 +72,9 @@
 | **3** Pipeline 主流程 | **C3** 06→07 联调（样本或离线 JSON） | 检索 + 组装中间产物 | ✅ |
 | **3**（续） | **C4** 最小路径 `run()`（跳过 eval/review） | 首条端到端答案（草稿+后处理） | ✅ |
 | **3**（续） | **C5** 完整 pipeline（含 optional stages） | 四步 Prompt 串联、`result` 结构 | ✅ |
-| **4** 后处理 | **C6** `sources`、引用 `[1][2]`、免责声明 | 与 `answer` 对齐的可视化 | ☐ |
-| **5** CLI 评测 | **C7** 批量固定 query + 导出 `generation_eval.json` | 指标 log、多样例快照 | ☐ |
-| **6** 测试与交付 | notebook **C7** 复跑 + `pytest tests/` | 回归全绿后 README 定稿 | ☐ |
+| **4** 后处理 | **C6** `sources`、引用 `[1][2]`、免责声明 | 与 `answer` 对齐的可视化 | ✅ |
+| **5** CLI 评测 | **C7** 批量固定 query + 导出 `generation_eval.json` | 指标 log、多样例快照 | ✅ |
+| **6** 测试与交付 | notebook **C7** 复跑 + `pytest tests/` | 回归全绿后 README 定稿 | ✅ |
 
 > 阶段 3 子步骤（证据评估筛选、审查串联等）**进展到该步时再在 C4/C5 与 checklist 中细化**，启动前不展开。
 
@@ -607,3 +607,4 @@ class MedicalGenerationPipeline:
 | 2026-07-01 | **阶段 4 完成**：`postprocess.py` + C6 + `test_postprocess.py`，pytest 17 项 |
 | 2026-07-01 | **阶段 5 完成**：`run_generation_eval.py` + C7 + `generation_eval.json`/日志快照 |
 | 2026-07-01 | **阶段 6 完成**：报告定稿 + C7 复跑 + pytest 摘要；阶段 08 收口完成 |
+| 2026-07-02 | **阶段 6 文档完善**：补充 C0–C7 实测数据与任务书逐条验证；pytest 复跑仍为 17 passed |
