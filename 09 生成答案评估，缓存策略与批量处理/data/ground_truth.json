@@ -1,0 +1,57 @@
+{
+  "version": "stage09-v1",
+  "language": "en",
+  "notes": "Stage 09 baseline ground truth aligned with stage08 default queries. For evaluation use only.",
+  "queries": [
+    {
+      "query": "What is the treatment for MI?",
+      "reference_answer": "Myocardial infarction treatment usually includes rapid reperfusion, dual antiplatelet therapy, anticoagulation when indicated, statins, beta blockers, and ACE inhibitor or ARB according to patient status.",
+      "key_phrases": [
+        "reperfusion",
+        "dual antiplatelet therapy",
+        "anticoagulation",
+        "statin",
+        "beta blocker",
+        "ACE inhibitor",
+        "ARB"
+      ]
+    },
+    {
+      "query": "metformin cardiovascular effects",
+      "reference_answer": "Metformin is associated with cardiovascular benefit in many patients with type 2 diabetes, including lower major adverse cardiovascular event risk in some studies, while effect size depends on population and study design.",
+      "key_phrases": [
+        "type 2 diabetes",
+        "cardiovascular benefit",
+        "major adverse cardiovascular event",
+        "risk reduction",
+        "population",
+        "study design"
+      ]
+    },
+    {
+      "query": "papers on malaria after 2015",
+      "reference_answer": "Relevant evidence should prioritize malaria studies published after 2015 and summarize intervention type, outcomes, and safety findings.",
+      "key_phrases": [
+        "malaria",
+        "after 2015",
+        "published",
+        "intervention",
+        "outcomes",
+        "safety"
+      ]
+    },
+    {
+      "query": "warfarin atrial fibrillation elderly",
+      "reference_answer": "In elderly patients with atrial fibrillation, warfarin can reduce stroke risk but requires careful INR monitoring and bleeding risk assessment with individualized decision making.",
+      "key_phrases": [
+        "elderly",
+        "atrial fibrillation",
+        "warfarin",
+        "stroke risk",
+        "INR monitoring",
+        "bleeding risk",
+        "individualized decision"
+      ]
+    }
+  ]
+}
