@@ -75,6 +75,17 @@
 - [x] `requirements.txt`：复用 `med-rag-verify`（02/04/05/06 同环境）；本阶段**无强制新增依赖**（组装/模板为纯 Python，token 估算复用已装 `transformers` tokenizer）
 - [x] 约定输入候选格式：见 [`输入候选格式约定.md`](输入候选格式约定.md)（06 `result["reranked"]` / 退化 `["retrieval"]["fused"]` 的候选 dict → `DocumentChunk` 映射）
 
+**阶段 0 完成说明**
+
+- 本阶段搭好「生成前准备」工程骨架：目录、依赖、与 06 候选格式的约定文档。
+- 07 不做 LLM 调用，只负责把检索结果整理成可喂给模型的上下文与 prompt 模板。
+
+**阶段 0 实现说明（代码路径 / 函数 / 方法）**
+
+- `输入候选格式约定.md`：06 `reranked`/`fused` dict → `DocumentChunk` 字段映射规则。
+- `requirements.txt`：复用 `med-rag-verify`，无强制新增包。
+- 目录：`src/`、`notebooks/`、`tests/`、`outputs/samples/`。
+
 ### 阶段 1：数据结构定义（DocumentChunk / 汇总 metadata） ✅
 
 - [x] `@dataclass DocumentChunk`（按任务书字段）
@@ -88,6 +99,13 @@
   - [x] `metadata: dict`（`ContextMetadata.to_dict()`）
   - [x] `selected_chunks: list[DocumentChunk]`
 - [x] 06 候选转换：`document_chunk_from_candidate()` / `coerce_to_document_chunks()`（见 `src/models.py`，映射规则同 `输入候选格式约定.md` §3）
+
+**阶段 1 完成说明**
+
+- 本阶段定义「文档块」和「组装结果」两类数据结构，把 06 检索输出的杂乱 dict 统一成强类型对象。
+- 后续 `ContextAssembler` 和 08 pipeline 都只认 `DocumentChunk`，避免字段名不一致踩坑。
+
+**阶段 1 实现说明（代码路径 / 函数 / 方法）**
 
 #### 阶段 1 交付回顾（2026-06-23）
 
@@ -130,6 +148,13 @@
   - [x] `estimated_tokens`
   - [x] `chunk_sources`（来源分布统计）
 
+**阶段 2 完成说明**
+
+- 本阶段核心是 `ContextAssembler`：去重 → 按分排序 → 同源限流 → 控 token 拼接上下文。
+- 解决检索常返回重复/同源过多 chunk 的问题，让 prompt 在 token 预算内尽量信息密集。
+
+**阶段 2 实现说明（代码路径 / 函数 / 方法）**
+
 #### 阶段 2 交付回顾（2026-06-23）
 
 | 产物 | 路径 | 说明 |
@@ -158,6 +183,13 @@
   - [x] `final_assembler`：合并为最终输出格式
 - [x] 模板占位符统一：`{question}`、`{context}`、`{constraints}`、`{output_format}`
 
+**阶段 3 完成说明**
+
+- 本阶段把医学生成拆成四段 prompt（证据评估→草稿→批判→终稿），每段有独立 system/user 模板。
+- 08 的 `MedicalGenerationPipeline` 按 stage 名依次调用；本阶段只渲染模板，不调 LLM。
+
+**阶段 3 实现说明（代码路径 / 函数 / 方法）**
+
 #### 阶段 3 交付回顾（2026-06-23）
 
 | 产物 | 路径 | 说明 |
@@ -183,6 +215,13 @@
   - [x] `outputs/samples/assembled_context_examples.json`
   - [x] `outputs/samples/prompt_examples.json`
 
+**阶段 4 完成说明**
+
+- 本阶段用 notebook 把 06→07 链路跑通并导出 JSON 样例，供 08/老师验收时直接查看。
+- C4 只渲染 prompt、不调用 LLM，降低环境依赖。
+
+**阶段 4 实现说明（代码路径 / 函数 / 方法）**
+
 #### 阶段 4 交付回顾（2026-06-23）
 
 | 产物 | 路径 | 说明 |
@@ -207,6 +246,13 @@
 - [x] `test_prompts.py`：四阶段模板字段齐全、占位符可渲染
 - [x] 更新根目录 `README.md`：阶段 07 条目（完成后）
 - [x] 阶段报告：[`docs/上下文组装与提示工程报告.md`](docs/上下文组装与提示工程报告.md)
+
+**阶段 5 完成说明**
+
+- 本阶段补齐 pytest（16 passed）、正式报告与 README，07 从「能跑 notebook」变为「可回归交付」。
+- 测试覆盖去重、截断、四阶段 prompt 占位符等核心逻辑。
+
+**阶段 5 实现说明（代码路径 / 函数 / 方法）**
 
 #### 阶段 5 交付回顾（2026-06-24）
 

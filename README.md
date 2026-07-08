@@ -2,27 +2,48 @@
 
 基于 PMC 开放获取文献（`oa_comm`）的本地 LLM + RAG 可行性验证与数据评估项目。工程按阶段拆分目录，每阶段有独立任务书、计划、依赖与 Jupyter 入口。
 
-> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`；06：`检索流水线报告.md`；07：`上下文组装与提示工程报告.md`；08：`医学生成流水线报告.md`）。
+> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`；06：`检索流水线报告.md`；07：`上下文组装与提示工程报告.md`；08：`医学生成流水线报告.md`；09：`答案评估与缓存报告.md`）。
 
 ---
 
-## 目录结构
+## README 结构说明
+
+> 本表供快速定位与后续维护 README 时使用；**新增阶段请按相同板块更新对应章节**。
+
+| 章节 | 作用 | 更新时机 |
+|------|------|----------|
+| **文件目录结构** | 仓库顶层目录树与各阶段文件夹 | 新增/重命名阶段目录时 |
+| **阶段一览** | 各阶段状态、任务书、计划、notebook、依赖的一览表 | 每阶段启动或收尾时 |
+| **各阶段完成总结** | 各阶段任务、项目位置、关键结果、产出索引（**不写冗长实现细节**） | 阶段收尾时追加/修订对应小节 |
+| **Python 环境与依赖** | Conda 环境、分阶段 `requirements.txt`、根目录一键依赖 | 某阶段引入新包时 |
+| **本地部署指南** | 从 GitHub 克隆后的搭建步骤；`.gitignore` 与未上传大文件说明 | 数据路径或 ignore 规则变化时 |
+| **各阶段交付物速查** | 精炼成果、⚠️ 边界、API、**schedule 后续开发注意** | 阶段收尾；schedule 有新增注意事项时 |
+| **笔记目录** | 个人学习 Q&A（非正式交付） | 写新笔记时 |
+| **更新记录** | 按时间线的变更日志；**当前阶段条目加粗**，阶段结束后整合为普通条目 | 阶段进行中实时更新 |
+
+**阅读顺序建议**：新人 → 阶段一览 → 本地部署指南 → 当前阶段交付物速查 → 对应 `schedule.md`。
+
+---
+
+## 文件目录结构
 
 ```text
 谷歌/
 ├── README.md                 # 本文件（项目总说明）
+├── requirements.txt          # 依赖安装清单（说明）；一键安装见 install_all_requirements.ps1
+├── install_all_requirements.ps1  # 按阶段顺序 pip install（推荐）
 ├── .gitignore                # Git 忽略规则
 ├── setup_windows_env.ps1     # Windows 环境一键配置脚本
 ├── setup_stage04_gpu.ps1     # 04 全量向量化：CUDA 版 PyTorch 补充安装
-├── 01 验证模型/              # 阶段 1：本地 LLM + PMC 数据源验证（已完成）
-├── 02 数据处理/              # 阶段 2：数据加载与评估（已完成）
-├── 03 文档解析与分割/        # 阶段 3：文本分割（已完成）
+├── 01 验证模型/              # 阶段 1：本地 LLM + PMC 数据源验证（✅）
+├── 02 数据处理/              # 阶段 2：数据加载与评估（✅）
+├── 03 文档解析与分割/        # 阶段 3：文本分割（✅）
 ├── 04 向量化与索引构建/      # 阶段 4：嵌入 + ChromaDB 索引（✅ 全量完成）
-├── 05 检索系统开发第一部分/  # 阶段 5：查询理解与增强（✅ 已完成）
-├── 06 检索系统开发第二部分/  # 阶段 6：多路检索 + 融合 + 重排序（✅ 已完成）
-├── 07 生成模块与提示词工程第一部分/  # 阶段 7：上下文组装 + Prompt 模板（✅ 已完成）
-├── 08 生成模块与提示词工程第二部分/  # 阶段 8：Ollama 生成 + 端到端流水线（✅ 已完成）
-├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量（🔄 进行中）
+├── 05 检索系统开发第一部分/  # 阶段 5：查询理解与增强（✅）
+├── 06 检索系统开发第二部分/  # 阶段 6：多路检索 + 融合 + 重排序（✅）
+├── 07 生成模块与提示词工程第一部分/  # 阶段 7：上下文组装 + Prompt 模板（✅）
+├── 08 生成模块与提示词工程第二部分/  # 阶段 8：Ollama 生成 + 端到端流水线（✅）
+├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量（✅）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -35,352 +56,96 @@
 |------|------|------|--------|------|---------------------|------|
 | **01** 验证模型 | [`01 验证模型/`](01%20验证模型/) | ✅ 已完成 | [`任务.txt`](01%20验证模型/任务.txt) | [`schedule.md`](01%20验证模型/schedule.md) | [`med-LLM-RAG.ipynb`](01%20验证模型/med-LLM-RAG.ipynb) | [`requirements.txt`](01%20验证模型/requirements.txt) |
 | **02** 数据处理 | [`02 数据处理/`](02%20数据处理/) | ✅ 已完成 | [`任务.txt`](02%20数据处理/任务.txt) | [`schedule.md`](02%20数据处理/schedule.md) | [`partA.ipynb`](02%20数据处理/notebooks/med-data-EDA-partA.ipynb)（验证）· [`partB.ipynb`](02%20数据处理/notebooks/med-data-EDA-partB.ipynb)（全量） | [`requirements.txt`](02%20数据处理/requirements.txt) |
-| **03** 文档解析与分割 | [`03 文档解析与分割/`](03%20文档解析与分割/) | ✅ 已完成 | [`任务.txt`](03%20文档解析与分割/任务.txt) | [`schedule.md`](03%20文档解析与分割/schedule.md) | [`doc-chunking.ipynb`](03%20文档解析与分割/notebooks/doc-chunking.ipynb)（验证）· [`full.ipynb`](03%20文档解析与分割/notebooks/doc-chunking-full.ipynb)（全量） | *共用 02 环境* |
+| **03** 文档解析与分割 | [`03 文档解析与分割/`](03%20文档解析与分割/) | ✅ 已完成 | [`任务.txt`](03%20文档解析与分割/任务.txt) | [`schedule.md`](03%20文档解析与分割/schedule.md) | [`doc-chunking.ipynb`](03%20文档解析与分割/notebooks/doc-chunking.ipynb)（验证）· [`full.ipynb`](03%20文档解析与分割/notebooks/doc-chunking-full.ipynb)（全量） | *复用 02* · [`requirements.txt`](03%20文档解析与分割/requirements.txt)（说明） |
 | **04** 向量化与索引构建 | [`04 向量化与索引构建/`](04%20向量化与索引构建/) | ✅ **已完成** | [`任务.txt`](04%20向量化与索引构建/任务.txt) | [`schedule.md`](04%20向量化与索引构建/schedule.md) | [`vectorize-index.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index.ipynb)（验证）· [`full.ipynb`](04%20向量化与索引构建/notebooks/vectorize-index-full.ipynb)（全量） | [`requirements.txt`](04%20向量化与索引构建/requirements.txt) |
 | **05** 检索系统开发第一部分 | [`05 检索系统开发第一部分/`](05%20检索系统开发第一部分/) | ✅ **已完成** | [`任务.txt`](05%20检索系统开发第一部分/任务.txt) | [`schedule.md`](05%20检索系统开发第一部分/schedule.md) | [`query-enhancement.ipynb`](05%20检索系统开发第一部分/notebooks/query-enhancement.ipynb) | [`requirements.txt`](05%20检索系统开发第一部分/requirements.txt) |
 | **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | ✅ **已完成** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | [`retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb) | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
 | **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | ✅ **已完成**（0–5） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | [`generation-prompting.ipynb`](07%20生成模块与提示词工程第一部分/notebooks/generation-prompting.ipynb) | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
 | **08** 生成模块与提示词工程第二部分 | [`08 生成模块与提示词工程第二部分/`](08%20生成模块与提示词工程第二部分/) | ✅ **已完成**（0–6） | [`任务.txt`](08%20生成模块与提示词工程第二部分/任务.txt) | [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) | [`medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) | [`requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) |
-| **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | 🔄 **进行中**（0–4 已完成） | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb) | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
+| **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | ✅ **已完成**（0–6） | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb) | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
 
 **说明**
 
-- 各阶段**具体要求与交付标准**以对应目录内 **`任务.txt`** 为准（老师下发原文）。
+- 各阶段**具体要求与交付标准**以对应目录内 **`任务.txt`** 为准。
 - 各阶段**整体运行入口**在对应 **Jupyter Notebook** 中；按 notebook 内章节顺序执行 cell。
-- 02 阶段每次打开 notebook 需先运行 **【前置】**（见 notebook 顶部说明）。
 
 ---
 
+## 各阶段完成总结
 
+> 格式统一：**定位 → 任务 → 关键结果 → 产出索引**。实现细节、参数表、踩坑记录见各阶段 `schedule.md` 与 `docs/` 正式报告。
 
-## 第二阶段完成总结（2026-05-27）
+### 01 验证模型（2026-05-13）
 
-### 核心数据
+- **定位**：工程起点；验证「本地 Ollama + PMC 样本文献 + 向量库 smoke test」是否可行。
+- **主要任务**：拉取/解析 PMC XML 样本、本地 `deepseek-r1:7b` 推理、Chroma 最小检索实验。
+- **关键结果**：本地 LLM 与样本文献链路跑通；为 02 全量数据处理提供环境与经验。
+- **主要产出**：`med-LLM-RAG.ipynb`、`outputs/model_test_results.json`、验证期 XML 样本。
+- **详情**：[`01 验证模型/schedule.md`](01%20验证模型/schedule.md)
 
-| 指标 | 验证期 (97篇) | 全量期 (4,557,627篇) | 结论 |
-|------|--------------|---------------------|------|
-| P95 retrieval tokens | 617 | 612 | ✅ 一致 |
-| >512 占比 | 14.4% | 13.7% | ✅ 一致 |
-| 单块占比 | 85.6% | 86.4% | ✅ 一致 |
-| abstract 丢弃率 | 3% | 8.74% | ⚠️ 偏高但合理 |
+### 02 数据处理（2026-05-27）
 
-### 主要产出
+- **定位**：确定全库分割策略与 slim 语料；为 03 分割与 06 元数据回查提供基础数据。
+- **主要任务**：验证期 97 篇 + 全量 4,557,627 篇 EDA；输出 `chunk_strategy_config.json`。
+- **关键结果**：验证期与全量 P95 token、单块占比一致；策略 `chunk_size=400, overlap=80` **无需调整**。
+- **主要产出**：`E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl`（8.9 GB）；[`docs/RAG数据分析与设计说明.md`](02%20数据处理/docs/RAG数据分析与设计说明.md)。
+- **详情**：[`02 数据处理/schedule.md`](02%20数据处理/schedule.md)
 
-| 产出 | 路径 | 说明 |
-|------|------|------|
-| **slim JSONL** | `E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl` | 4,557,627 篇，8.9 GB |
-| **分析报告** | `02 数据处理/docs/RAG数据分析与设计说明.md` | 正式交付文档 |
-| **分割策略** | `02 数据处理/outputs/tables/chunk_strategy_config.json` | 供第三阶段使用 |
+### 03 文档解析与分割（2026-05-27）
 
-### 结论
+- **定位**：将 slim 转为可检索 chunk；产出样本库（开发）与全量库（生产）。
+- **主要任务**：按 02 策略全量分割；验证样本 1,000 篇 → 1,267 chunks。
+- **关键结果**：全量 **6,107,296** chunks；token 超限 0；单块比例与验证期一致。
+- **主要产出**：`E:\...\oa_comm_chunks.jsonl`；[`chunks_sample.jsonl`](03%20文档解析与分割/data/processed/chunks_sample.jsonl)；[`docs/文档分割处理报告.md`](03%20文档解析与分割/docs/文档分割处理报告.md)。
+- **详情**：[`03 文档解析与分割/schedule.md`](03%20文档解析与分割/schedule.md)
 
-验证期制定的分割策略（chunk_size=400, overlap=80）经全量验证**无需调整**，可直接用于第三阶段。
+### 04 向量化与索引构建（2026-06-03）
 
----
+- **定位**：语义检索底座；BGE 嵌入 + Chroma 持久化索引。
+- **主要任务**：样本 1,267 条验证 + 全量 610 万条建库（GPU）。
+- **关键结果**：`pmc_oa_comm_full` 入库 6,107,296 条；384 维 cosine；C3–C5 检索与元数据过滤通过。
+- **主要产出**：`04 .../data/chroma_db_full/`（~71 GB，**.gitignore**）；[`docs/向量化与索引报告.md`](04%20向量化与索引构建/docs/向量化与索引报告.md)；`embedder.py` / `index_builder.py`。
+- **详情**：[`04 向量化与索引构建/schedule.md`](04%20向量化与索引构建/schedule.md)
 
-## 第三阶段完成总结（2026-05-27）
+### 05 检索系统开发第一部分（2026-06-10）
 
-### 核心数据
+- **定位**：查询理解层；把自然语言 query 结构化为向量/BM25 查询与 filters。
+- **主要任务**：`MedicalQueryEnhancer`、同义词表、双库 smoke（样本 vs 全量 Chroma）。
+- **关键结果**：样本库 query ~12 ms、全量 ~16 ms；05→04 检索路径打通。
+- **主要产出**：`query_enhancer.py`、`medical_synonyms.json`；[`docs/查询理解与增强报告.md`](05%20检索系统开发第一部分/docs/查询理解与增强报告.md)。
+- **详情**：[`05 检索系统开发第一部分/schedule.md`](05%20检索系统开发第一部分/schedule.md)
 
-| 指标 | 验证样本 (1000篇) | 全量 (4,557,627篇) | 结论 |
-|------|------------------|-------------------|------|
-| 输出 chunks | 1,267 | **6,107,296** | - |
-| 单块比例 | 88.8% | 85.5% | ✅ 一致 |
-| 多块比例 | 11.2% | 14.5% | ✅ 一致 |
-| Token 超限 | 0 | 0 | ✅ 通过 |
-| Token P95 | 472 | 472 | ✅ 一致 |
+### 06 检索系统开发第二部分（2026-06-18）
 
-### 主要产出
+- **定位**：检索执行层；向量 + BM25 → RRF 融合 → cross-encoder 重排。
+- **主要任务**：`RetrievalPipeline` 端到端；样本库 5 query 评测 + C12 可选全量联调。
+- **关键结果**：样本库 5/5 链路通；全量 metformin query 命中真实 RCT（`PMC2566605`）。**⚠️ 日常 notebook/CLI 默认样本库（1,267 chunks），非 610 万全量。**
+- **主要产出**：`pipeline.py`、`pipeline_eval.json`；[`docs/检索流水线报告.md`](06%20检索系统开发第二部分/docs/检索流水线报告.md)。
+- **详情**：[`06 检索系统开发第二部分/schedule.md`](06%20检索系统开发第二部分/schedule.md) §「验证范围说明」
 
-| 产出 | 路径 | 说明 |
-|------|------|------|
-| **全量 chunks** | `E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl` | 6,107,296 chunks |
-| **处理报告** | `03 文档解析与分割/docs/文档分割处理报告.md` | 正式交付文档 |
-| **验证样本** | `03 文档解析与分割/data/processed/chunks_sample.jsonl` | 1,267 chunks |
+### 07 生成模块与提示词工程第一部分（2026-06-24）
 
-### 结论
+- **定位**：生成准备层；把 06 `reranked` 整理为 LLM 可用的 `context_text` 与四阶段 Prompt。
+- **主要任务**：`ContextAssembler`（去重/多样化/控长）+ `PromptStage` 模板；**本阶段不调用 LLM**。
+- **关键结果**：pytest **16 passed**；notebook C0–C7 样例 JSON 导出。
+- **主要产出**：`context_assembler.py`、`prompts.py`；[`docs/上下文组装与提示工程报告.md`](07%20生成模块与提示词工程第一部分/docs/上下文组装与提示工程报告.md)。
+- **详情**：[`07 生成模块与提示词工程第一部分/schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md)
 
-第二阶段策略在全量分割中完全验证通过，6,107,296 个 chunk 已准备好供后续向量化使用。
+### 08 生成模块与提示词工程第二部分（2026-07-02）
 
----
+- **定位**：生成执行层；Ollama 多步生成 + 后处理，串联 05→06→07 产出 `answer` + `sources`。
+- **主要任务**：`LLMGenerator`、`MedicalGenerationPipeline`、引用后处理；批量评测 `generation_eval.json`。
+- **关键结果**：pytest **17 passed**；4 条基准 query 快照（基于 **06 样本库** `pipeline_eval.json` + 本机 Ollama）。
+- **主要产出**：`generation_pipeline.py`、`run_generation_eval.py`；[`docs/医学生成流水线报告.md`](08%20生成模块与提示词工程第二部分/docs/医学生成流水线报告.md)。
+- **详情**：[`08 生成模块与提示词工程第二部分/schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md)
 
-## 第四阶段完成总结（2026-06-02）
+### 09 生成答案评估，缓存策略与批量处理（2026-07-08）
 
-> 目标：将文本块向量化，构建 ChromaDB 持久化索引，支持语义检索与元数据过滤。**全量 6,107,296 chunks 已建库并通过 C3–C5 验证。**
-
-### 已确认决策
-
-| 决策项 | 结论 |
-|--------|------|
-| 嵌入模型 | `BAAI/bge-small-en-v1.5`（384 维） |
-| 相似度 | ChromaDB 余弦（`hnsw:space=cosine`） |
-| 验证期向量库 | 工程内 `04 .../data/chroma_db/`（需重跑 notebook 重建样本 collection） |
-| **全量向量库（RAG 用）** | **`D:\谷歌\04 向量化与索引构建\data\chroma_db_full\`** |
-| E: 权威备份 | 手动完成（建议 `E:\med-llm-rag-datasets\chroma_db_full\`） |
-
-### 全量结果（6,107,296 chunks）✅
-
-| 指标 | 结果 | 状态 |
-|------|------|------|
-| 入库数量 | 6,107,296 = 输入一致 | ✅ |
-| 嵌入维度 | 384 | ✅ |
-| collection | `pmc_oa_comm_full` | ✅ |
-| 语义检索 | C4 通过 | ✅ |
-| 元数据过滤 | `strategy=sliding_window`（post-filter 降级） | ✅ |
-| 索引统计 | `outputs/tables/index_stats.json` | ✅ |
-| 验证报告 | `outputs/tables/query_validation.json` | ✅ |
-
-### 抽样验证（1,267 chunks）✅
-
-| 指标 | 结果 | 状态 |
-|------|------|------|
-| 入库数量 | 1,267 = 输入一致 | ✅ |
-| 自相似性检索 | Top-1 命中自身 | ✅ |
-| 语义检索 | 疟疾/象保护/果蝇节律均命中相关文献 | ✅ |
-
-### 主要产出
-
-| 产出 | 路径 | Git |
-|------|------|-----|
-| **全量向量库** | `04 .../data/chroma_db_full/` | ❌ `.gitignore`（~71 GB，本地/E: 保留） |
-| 全量索引统计 | `04 .../outputs/tables/index_stats.json` | ✅ |
-| 全量查询验证 | `04 .../outputs/tables/query_validation.json` | ✅ |
-| 验证样本输入 | `04 .../data/processed/chunks_sample.jsonl` | ✅ |
-| 验证期统计/报告 | `04 .../outputs/samples/index_stats_sample.json` 等 | ✅ |
-| **正式报告** | `04 .../docs/向量化与索引报告.md` | ✅ |
-| 核心代码 | `src/embedder.py`、`src/index_builder.py` | ✅ |
-| 全量 notebook | `notebooks/vectorize-index-full.ipynb` | ✅ |
-
-### RAG 调用向量库
-
-> **日常 RAG 开发**：挂载本机 D: 上暂留的全量库即可；**无需**读取 E: 上 XML 或 `oa_comm_chunks.jsonl`（chunk 文本已写入 Chroma `documents` 字段，内容为 title + abstract）。E: JSONL 仅作**重建索引**保险。
-
-| 项 | 值 |
-|----|-----|
-| **路径（RAG 活跃）** | `D:\谷歌\04 向量化与索引构建\data\chroma_db_full\` |
-| **E: 备份（可选恢复源）** | `E:\med-llm-rag-datasets\chroma_db_full\`（手动备份已完成） |
-| **collection 名称** | `pmc_oa_comm_full` |
-| **条数** | 6,107,296 |
-| **嵌入模型** | `BAAI/bge-small-en-v1.5`（384 维，cosine） |
-| **索引统计** | `04 向量化与索引构建/outputs/tables/index_stats.json` |
-| **Git** | 向量库目录在 `.gitignore` 中（`**/chroma_db_full/`），**不会**随仓库上传 |
-
-**Python 挂载示例**（与 04 阶段 `index_builder` 一致）：
-
-```python
-import sys
-from pathlib import Path
-
-STAGE04 = Path(r"D:\谷歌\04 向量化与索引构建")
-sys.path.insert(0, str(STAGE04 / "src"))
-
-from embedder import DocumentEmbedder
-from index_builder import ChromaIndexBuilder
-
-PERSIST_DIR = STAGE04 / "data" / "chroma_db_full"
-COLLECTION = "pmc_oa_comm_full"
-
-embedder = DocumentEmbedder(model_name="BAAI/bge-small-en-v1.5")
-builder = ChromaIndexBuilder(
-    persist_dir=str(PERSIST_DIR),
-    collection_name=COLLECTION,
-    embedder=embedder,
-)
-
-# 语义检索（查询端自动加 BGE 指令前缀）
-results = builder.query("malaria vaccine efficacy", n_results=5)
-
-# 元数据过滤（全库规模下可能走 post-filter 降级，见 schedule §11）
-results = builder.query(
-    "gene expression",
-    n_results=5,
-    where_filter={"strategy": "sliding_window"},
-)
-```
-
-**metadata 字段**：`doc_id`, `chunk_index`, `total_chunks`, `source_title`, `token_count`, `strategy`
-
-**注意**：
-
-1. 查询嵌入须用 `encode_queries()`（或 `ChromaIndexBuilder.query()`），勿对查询文本用 `encode_documents()`。
-2. 若 D: 库已删，将 `PERSIST_DIR` 改为 E: 备份路径，或整目录复制回 D: 原路径。
-3. 可清理 D: 冗余目录 `data/chroma_db/`、`data/chroma_repair_test/`（~15.7 万条过时半成品，非 RAG 所需）。
-
----
-
-## 第五阶段完成总结（2026-06-08）
-
-> 目标：对用户自然语言查询做**查询理解与增强**，产出可供后续检索使用的结构化对象；**不包含**混合检索、LLM 生成答案。
-
-### 已确认决策
-
-| 决策项 | 结论 |
-|--------|------|
-| 查询语言 | **英文优先**（老师确认）；中文后续视时间添加 |
-| 嵌入模型 | 与 04 一致：`BAAI/bge-small-en-v1.5` |
-| 时间 filter | **解析但不重建索引**；`year_*` 标 `executable=false` |
-| 向量库 | 复用 04 `chroma_db`（样本）/ `chroma_db_full`（全量） |
-
-### 主要产出
-
-| 产出 | 路径 | Git |
-|------|------|-----|
-| 查询增强模块 | `05 .../src/query_enhancer.py` 等 | ✅ |
-| 静态同义词表 | `05 .../data/medical_synonyms.json` | ✅ |
-| 演示 notebook | `05 .../notebooks/query-enhancement.ipynb` | ✅ |
-| 增强样例 | `05 .../outputs/samples/enhancement_examples.json` | ✅ |
-| 双库 smoke 对比 | `05 .../outputs/samples/chroma_smoke_compare.json` | ✅ |
-| **正式报告** | `05 .../docs/查询理解与增强报告.md` | ✅ |
-
-### 双库 smoke test（`metformin cardiovascular effects`，Top-5）
-
-| 库 | 条数 | HNSW bin | 平均 query |
-|----|------|----------|------------|
-| 样本 `chroma_db` | 1,267 | ✅ 完整 | ~12 ms |
-| 全量 `chroma_db_full` | 6,107,296 | ❌ 无 bin | ~16 ms |
-
-05→04 检索路径已打通；详见 [`05 .../schedule.md`](05%20检索系统开发第一部分/schedule.md) 与 [`笔记/05笔记·.md`](笔记/05笔记·.md) Q11。
-
----
-
-## 第六阶段完成总结（2026-06-18）
-
-> 目标：在 05 查询增强与 04 向量库之上，实现**多路检索（向量 + BM25）→ 融合 → 重排序**，打通端到端检索流水线；**不包含** LLM 生成答案。
-
-### 已确认决策
-
-| 决策项 | 结论 |
-|--------|------|
-| 融合默认策略 | **`rrf`**（另支持 `weighted` / `simple`） |
-| 向量模型 | 与 04 一致：`BAAI/bge-small-en-v1.5` |
-| 重排模型 | `BAAI/bge-reranker-base`（cross-encoder） |
-| 多准则权重 | relevance `0.6` + recency `0.25` + authority `0.15` |
-| 年份/期刊 | 检索后按 `doc_id` 回查 slim，**不重建** 04 索引 |
-| slim 本地副本 | `06 .../data/oa_comm_slim.jsonl`（~8.9 GB，`.gitignore`） |
-| **验证规模** | notebook / CLI / `pipeline_eval.json` 默认 **样本库**（1,267 chunks）；C12 可选全量联调 |
-
-### 样本库端到端（`pipeline_eval.json`，5 query）
-
-| 指标 | 结果 |
-|------|------|
-| 链路 | enhance → vector + BM25 → RRF 融合 → rerank | ✅ |
-| 查询数 | 5/5 跑通 | ✅ |
-| 默认 Top-K | `top_k_final=5`（评测配置） | — |
-
-### 全量联调（C12，`pipeline_eval_full.json`，可选）
-
-| 指标 | 结果 |
-|------|------|
-| Chroma | `chroma_db_full` · 6,107,296 条 | ✅ |
-| BM25 | 全量语料探测（首 10 万条建索引验证） | ✅ |
-| metformin query | Top-1 命中真实 RCT（`PMC2566605`） | ✅ |
-| 与样本 Top-1 | 3/3 测试 query 与样本库 Top-1 **均不同**（符合预期） | ✅ |
-
-### 主要产出
-
-| 产出 | 路径 | Git |
-|------|------|-----|
-| 多路检索 | `06 .../src/multipath_retriever.py`、`bm25_index.py` | ✅ |
-| 融合 / 重排 | `06 .../src/fusion.py`、`reranker.py`、`rerank_features.py` | ✅ |
-| 端到端流水线 | `06 .../src/pipeline.py`、`config.py` | ✅ |
-| 演示 notebook | `06 .../notebooks/retrieval-pipeline.ipynb`（C0–C12） | ✅ |
-| 样例 JSON | `06 .../outputs/samples/`（8 份，含 `pipeline_eval.json` / `pipeline_eval_full.json`） | ✅ |
-| CLI 评测 | `06 .../scripts/run_retrieval_eval.py` | ✅ |
-| **正式报告** | `06 .../docs/检索流水线报告.md`（及 `.docx`） | ✅ |
-
-### RAG 生产切换提醒
-
-开发默认 `RetrievalPipeline.from_mode("sample")`；**生产 RAG** 须 `from_mode("full")`，挂载 04 全量 Chroma + E: 全量 BM25 语料。详见上文「各阶段交付物速查 → 06」与 [`06 .../schedule.md`](06%20检索系统开发第二部分/schedule.md)「验证范围说明」。
-
-**Python 端到端示例**：
-
-```python
-import sys
-from pathlib import Path
-
-STAGE06 = Path(r"D:\谷歌\06 检索系统开发第二部分")
-sys.path.insert(0, str(STAGE06 / "src"))
-
-from pipeline import RetrievalPipeline
-
-pipe = RetrievalPipeline.from_mode("sample")  # 生产： "full"
-result = pipe.run("metformin cardiovascular effects")
-top_chunks = result["reranked"]  # → 供 07 ContextAssembler 消费
-```
-
----
-
-## 第七阶段完成总结（2026-06-24 更新）
-
-> 目标：完成**上下文组装器（ContextAssembler）**与**医学提示工程模板（PromptStage）**，将 06 检索候选整理为 LLM 可用的 `context_text` + Prompt；**本阶段不调用 LLM**（仅渲染 Prompt payload）。
-
-### 进度
-
-| 子阶段 | 状态 | 说明 |
-|--------|------|------|
-| 0 环境与骨架 | ✅ | 目录骨架、`requirements.txt`、[`输入候选格式约定.md`](07%20生成模块与提示词工程第一部分/输入候选格式约定.md) |
-| 1 数据结构 | ✅ | `DocumentChunk` / `AssembledContext` / 06 候选转换 |
-| 2 上下文组装器 | ✅ | Jaccard 去重、多样化、token 控长、句号截断 |
-| 3 Prompt 模板 | ✅ | 四阶段 `PromptStage` + 统一占位符渲染与校验 |
-| 4 Notebook 演示 | ✅ | `generation-prompting.ipynb`（C0–C7）+ 样例 JSON 导出 |
-| 5 测试与收尾 | ✅ | `tests/` 16 项 pytest + README 定稿 |
-
-### 已确认决策
-
-| 决策项 | 结论 |
-|--------|------|
-| 输入 | 首选 06 `result["reranked"]`；退化 `result["retrieval"]["fused"]` |
-| token 估算 | 默认 `gpt2` tokenizer；可传 `None` 用 `len//4` 启发式 |
-| 去重 | Jaccard（阈值默认 `0.85`） |
-| 多样化 | 同源（`doc_id`）超过 2 条时降权 |
-| 截断 | 末 10% 文本内找句号；无句号则硬截断 |
-| 环境 | 复用 `med-rag-verify`（与 02–06 相同） |
-
-### 当前产出
-
-| 产出 | 路径 | Git |
-|------|------|-----|
-| 数据结构与转换 | `07 .../src/models.py` | ✅ |
-| 上下文组装器 | `07 .../src/context_assembler.py` | ✅ |
-| 提示模板 | `07 .../src/prompts.py` | ✅ |
-| 演示 notebook | `07 .../notebooks/generation-prompting.ipynb` | ✅ |
-| 样例输出 | `07 .../outputs/samples/assembled_context_examples.json`、`prompt_examples.json` | ✅ |
-| 单元测试 | `07 .../tests/test_dedup.py`、`test_truncate.py`、`test_prompts.py` | ✅ |
-| **正式报告** | `07 .../docs/上下文组装与提示工程报告.md` | ✅ |
-| 输入契约 | `07 .../输入候选格式约定.md` | ✅ |
-| 执行计划 | `07 .../schedule.md` | ✅ |
-| 学习笔记 | [`笔记/07 笔记.md`](笔记/07%20笔记.md) | ✅ |
-
-**组装示例**（消费 06 输出）：
-
-```python
-import sys
-from pathlib import Path
-
-STAGE06 = Path(r"D:\谷歌\06 检索系统开发第二部分")
-STAGE07 = Path(r"D:\谷歌\07 生成模块与提示词工程第一部分")
-sys.path.insert(0, str(STAGE06 / "src"))
-sys.path.insert(0, str(STAGE07 / "src"))
-
-from pipeline import RetrievalPipeline
-from context_assembler import ContextAssembler
-
-pipe = RetrievalPipeline.from_mode("sample")
-result = pipe.run("metformin cardiovascular effects")
-
-asm = ContextAssembler(tokenizer_name=None)  # 或 "gpt2" 精估 token
-assembled = asm.assemble(result["reranked"], max_context_tokens=2048)
-# assembled.context_text  →  Prompt 的 {context}
-# assembled.selected_chunks → 可追溯证据列表
-```
-
-**运行测试**：
-
-```powershell
-conda activate med-rag-verify
-cd "07 生成模块与提示词工程第一部分"
-pytest tests/ -v
-```
+- **定位**：质量与工程优化横切层；在 08 外侧做评估、缓存、批量调度，不改变 08 生成内核。
+- **主要任务**：`AnswerEvaluator`（ROUGE/recall/幻觉风险/可读性）、`GenerationCache`、`BatchRunner`、`PipelineWithEval`。
+- **关键结果**：pytest **18 passed**；offline 第二轮缓存命中率 **1.0**；rouge1_avg=0.0768、key_info_recall_avg=0.2321（**样本库链路**，见报告 §1.2）。
+- **主要产出**：`pipeline_with_eval.py`、`eval_cache_batch_report.json`；[`docs/答案评估与缓存报告.md`](09%20生成答案评估，缓存策略与批量处理/docs/答案评估与缓存报告.md)。
+- **详情**：[`09 .../schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md)（含全量复评占位）
 
 ---
 
@@ -388,359 +153,253 @@ pytest tests/ -v
 
 ### 推荐环境
 
-- **Conda 环境名**：`med-rag-verify`（01、02、03、04 共用）
-- **Python**：3.11.x
-- **支持平台**：Windows / macOS
+| 项 | 值 |
+|----|-----|
+| Conda 环境名 | `med-rag-verify`（01–09 共用） |
+| Python | 3.11.x |
+| 平台 | Windows / macOS |
 
-### Windows 安装（推荐）
+### 一键安装（推荐）
 
 ```powershell
-# 运行一键配置脚本
+# Windows：创建环境 + 01/02 基础依赖
 .\setup_windows_env.ps1
+
+# 安装 01→09 全部 Python 依赖（含 04–09）
+.\install_all_requirements.ps1
+
+# 或手动逐阶段（03 无新增，可跳过）：
+# pip install -r "01 验证模型/requirements.txt"
+# pip install -r "02 数据处理/requirements.txt"
+# ... 见 requirements.txt 清单
 ```
 
-### 手动安装
+根目录 [`requirements.txt`](requirements.txt) 记录安装顺序；因目录名含空格，请用 [`install_all_requirements.ps1`](install_all_requirements.ps1) 而非 `pip install -r requirements.txt`。
 
-```bash
-# 1. 创建并激活环境
-conda create -n med-rag-verify python=3.11 -y
-conda activate med-rag-verify
+### 分阶段新增依赖一览
 
-# 2. 安装阶段 01 完整依赖
-pip install -r "01 验证模型/requirements.txt"
+| 阶段 | `requirements.txt` | 相对上一阶段新增 / 说明 |
+|------|-------------------|-------------------------|
+| 01 | [`01 .../requirements.txt`](01%20验证模型/requirements.txt) | Jupyter、pandas、datasets、lxml、chromadb、LangChain、torch（CPU 默认）等全量锁定 |
+| 02 | [`02 .../requirements.txt`](02%20数据处理/requirements.txt) | matplotlib、seaborn、sentence-transformers 等 |
+| 03 | [`03 .../requirements.txt`](03%20文档解析与分割/requirements.txt) | **无新增**（文档说明；复用 02：langchain-text-splitters 等） |
+| 04 | [`04 .../requirements.txt`](04%20向量化与索引构建/requirements.txt) | chromadb、BGE 相关（复用 02 的 sentence-transformers；`embedder.py` 直载 transformers） |
+| 05 | [`05 .../requirements.txt`](05%20检索系统开发第一部分/requirements.txt) | 查询增强相关（基本复用 04） |
+| 06 | [`06 .../requirements.txt`](06%20检索系统开发第二部分/requirements.txt) | **`rank-bm25`** |
+| 07 | [`07 .../requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) | **无强制新增**（可选 gpt2 tokenizer） |
+| 08 | [`08 .../requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) | **`httpx`**（Ollama HTTP） |
+| 09 | [`09 .../requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) | **`rouge-score`**、`pytest`（httpx 与 08 重叠） |
 
-# 3. 安装阶段 02 增补依赖
-pip install -r "02 数据处理/requirements.txt"
-```
+### 04 全量 GPU 补充（可选）
 
-### 04 全量运行环境（GPU，Windows）
-
-> **备忘**：01 阶段 `requirements.txt` 仅锁定 `torch==2.11.0`，未区分 CPU/CUDA。`setup_windows_env.ps1` 从默认 PyPI 安装时，Windows 会得到 **CPU 版**（`+cpu`）。阶段 01–03 不依赖 GPU，问题直到 04 全量嵌入才暴露。
-
-**何时需要**：运行 `vectorize-index-full.ipynb` 对 610 万 chunks 建库前（抽样验证 1,267 条用 CPU 即可）。
-
-**一键安装（推荐）**：
+> 01 默认 PyPI 的 torch 常为 **CPU 版**。01–03 不依赖 GPU；**04 全量 610 万嵌入**前需 CUDA 版 torch。
 
 ```powershell
-cd "D:\谷歌"
 .\setup_stage04_gpu.ps1
+# 或：pip uninstall torch -y && pip install torch --index-url https://download.pytorch.org/whl/cu124
 ```
 
-**手动安装**：
-
-```powershell
-conda activate med-rag-verify
-pip uninstall torch -y
-pip install torch --index-url https://download.pytorch.org/whl/cu124
-pip install -r "04 向量化与索引构建/requirements.txt"
-```
-
-**验证**（本机 2026-06-01 实测）：
-
-| 项 | 结果 |
-|----|------|
-| 显卡 | NVIDIA GeForce RTX 4080 Laptop GPU |
-| 驱动 | 610.47（`nvidia-smi` 可用） |
-| torch | `2.6.0+cu124`（自 CPU 版 `2.11.0+cpu` 升级） |
-| `cuda_available` | `True` |
-| BGE 嵌入 smoke test | 384 维，`device=cuda` ✅ |
-
-```python
-import torch
-print(torch.__version__)          # 应含 cu124 等，而非 +cpu
-print(torch.cuda.is_available())  # True
-print(torch.cuda.get_device_name(0))
-```
-
-> **说明**：CUDA 版 torch 需从 PyTorch 官方 index 安装，版本号可能与 01 requirements 中的 `2.11.0` 不同（如 `2.6.0+cu124`），属正常现象；勿用 `pip install -r 01.../requirements.txt` 覆盖，否则会重新装回 CPU 版。
-
-**若 C1 加载模型时 Jupyter 内核崩溃**（`The Kernel crashed`）：
-
-| 步骤 | 操作 |
-|------|------|
-| 1 | 确认已使用最新 `04 .../src/embedder.py`（**transformers 直载**，不经 `sentence_transformers`） |
-| 2 | **Kernel → Restart**，从 C0 重新运行（避免旧模块缓存） |
-| 3 | C1 通过后再跑 C2；`batch_size` 建议 128（12GB 显存） |
-| 4 | 若仍崩溃，可额外执行 `pip install --force-reinstall pyarrow` 与 `pip install ipywidgets` |
-
-**原因简述**：Windows Jupyter 下 `import sentence_transformers` 会经 `pyarrow`/`datasets` 等 native 依赖链，易触发内核级崩溃；CLI 同代码可能正常。本工程已在 `embedder.py` 侧规避。详情见 `笔记/04笔记.md` Q12、`04 .../schedule.md`「问题排查记录」。
-
-**若 C2 出现 SyntaxError（`\n` 字面量）**：参数 cell 应为三行独立赋值（`BATCH_SIZE` / `RESUME` / `RESET`），勿写成一行带 `\n` 的字符串。
-
-### 各阶段 `requirements.txt` 说明
-
-| 文件 | 内容 |
-|------|------|
-| `01 验证模型/requirements.txt` | 全量锁定：Jupyter、pandas、datasets、lxml、chromadb、LangChain 等 |
-| `02 数据处理/requirements.txt` | 在 01 基础上增补：matplotlib、seaborn、sentence-transformers 等 |
-| `03 文档解析与分割/requirements.txt` | 复用 02 环境（langchain-text-splitters、sentence-transformers） |
-| `04 向量化与索引构建/requirements.txt` | 复用 02 环境 + chromadb、BGE 嵌入模型 |
-| `05 检索系统开发第一部分/requirements.txt` | 复用 04 环境 + 查询增强依赖 |
-| `06 检索系统开发第二部分/requirements.txt` | 复用 05 环境 + `rank-bm25` |
-| `07 生成模块与提示词工程第一部分/requirements.txt` | 复用 06 环境；本阶段无强制新增（可选 `transformers` tokenizer） |
-| `08 生成模块与提示词工程第二部分/requirements.txt` | 复用 07 环境 + `httpx`（Ollama HTTP 客户端） |
+验证：`torch.cuda.is_available()` 为 `True`。勿在 GPU 配置后用 `pip install -r 01.../requirements.txt` 覆盖回 CPU 版。详见原 04 notebook 踩坑：`笔记/04笔记.md` Q12。
 
 ---
 
 ## 本地部署指南
 
-### 1. 无需额外操作（运行时自动生成）
+> 从 GitHub 克隆后的搭建顺序：**环境 → 大文件/模型 → 按阶段 notebook 或 CLI 运行**。
 
-| 路径 / 类型 | 说明 |
-|-------------|------|
-| `**/caches/` | HuggingFace / datasets 缓存 |
-| `**/.ipynb_checkpoints/` | Jupyter 自动检查点 |
-| `__pycache__/` | Python 字节码缓存 |
-| `.DS_Store` / `._*` | macOS 目录元数据（已在 .gitignore 中忽略） |
+### 1. 克隆与 Python 环境
 
-### 2. 体积过大、未纳入 Git
+```powershell
+git clone <repo-url> "D:\谷歌"
+cd "D:\谷歌"
+.\setup_windows_env.ps1
+.\install_all_requirements.ps1
+```
 
-| 资源 | 用途 | 阶段 | 获取方式 |
-|------|------|------|----------|
-| Ollama 模型 `deepseek-r1:7b` | 本地 LLM 推理 | 01 | `ollama pull deepseek-r1:7b` |
-| `ollama_models/` | 模型存储 | 01 | 由 Ollama 自动创建 |
-| `chroma_db/` | 向量库（验证期 / 过时半成品） | 01/04 | 01 smoke test；04 样本需重跑 notebook 重建 |
-| **PMC 全量数据** (~100GB 压缩包，解压后 ~466GB) | 全量数据处理 | 02 | 外接硬盘 + `med-data-EDA-partB.ipynb` |
-| **slim JSONL** (8.9 GB) | 分割输入 / 06 重排回查 | 02/03/06 | 第二阶段生成；**06 本地副本**见下表 |
-| **06 slim 本地副本** (~8.9 GB) | recency/authority 回查（`doc_id`→`pub_year`/`journal`） | 06 | 自 `E:\...\oa_comm_slim.jsonl` 复制至 `06 .../data/`；`.gitignore` |
-| **chunks JSONL** (~9.1 GB) | 向量化输入 / 重建索引 | 03/04 | 第三阶段生成；E: 备份 |
-| **ChromaDB 全量向量库** | 语义检索索引（~71 GB） | 04 / RAG | `04 .../data/chroma_db_full/`（D: 暂留；E: 备份；`.gitignore`） |
+### 2. `.gitignore` 与未上传内容
 
-### 3. 已随仓库提供的数据
+以下**不会**随仓库提供，需在本地准备或运行后生成：
+
+| 类型 | 路径 / 模式 | 说明 | 获取方式 |
+|------|-------------|------|----------|
+| 缓存 | `**/caches/`、`__pycache__/`、`.ipynb_checkpoints/` | HF/datasets 缓存、运行时生成 | 首次运行自动创建 |
+| 密钥 | `.env`、`secrets/` | 勿提交 | 本地自建（若需要） |
+| Ollama 模型 | `**/ollama_models/`、`deepseek-r1:7b` | 01/08 LLM | `ollama pull deepseek-r1:7b` |
+| 验证期向量库 | `**/chroma_db/` | 04 样本库（可 notebook 重建） | 跑 `vectorize-index.ipynb` |
+| **全量向量库** | `**/chroma_db_full/`（~71 GB） | 04 生产检索 | D: 本地保留或 E: 备份；整目录复制 |
+| **slim JSONL** | `**/oa_comm_slim.jsonl`（~8.9 GB） | 02/03/06 元数据回查 | 02 全量生成；复制到 `06 .../data/` |
+| **全量 chunks** | `E:\...\oa_comm_chunks.jsonl`（~9.1 GB） | 03/04 全量 BM25/重建索引 | 03 全量分割产出 |
+| PMC 原始压缩包 | 外接盘 ~100 GB+ | 02 全量解析 | 按 02 notebook partB 说明 |
+
+**已随仓库提供（可直接用）**：01 验证 XML、02/03 样本 JSONL、04 样本 chunks 与统计 JSON、05–09 代码与样例输出 JSON 等（见下表）。
 
 | 数据 | 位置 | 说明 |
 |------|------|------|
-| 01 验证期 XML | `01 验证模型/data/raw/extracted/` | 284 篇 PMC XML |
-| 02 验证期样本 (100篇) | `02 数据处理/data/processed/sample.jsonl` | 02 阶段标准分析输入 |
-| 02清洗后 (97篇) | `02 数据处理/data/processed/sample_clean.jsonl` | 丢弃无 abstract |
-| **03 验证样本 chunks** | `03 文档解析与分割/data/processed/chunks_sample.jsonl` | 1000 篇分割后的 1267 chunks |
-| 03 验证样本统计 | `03 文档解析与分割/outputs/samples/chunking_stats_sample.json` | 验证样本处理统计 |
-| 03 验证样本质量报告 | `03 文档解析与分割/outputs/samples/quality_report_sample.json` | 验证样本质量检查结果 |
-| 03 全量统计 | `03 文档解析与分割/outputs/tables/chunking_stats.json` | 全量处理统计（6,107,296 chunks） |
-| 03 全量质量报告 | `03 文档解析与分割/outputs/tables/quality_report.json` | 全量抽样质量检查结果 |
-| **04 验证样本 chunks** | `04 向量化与索引构建/data/processed/chunks_sample.jsonl` | 复制自阶段 3（1,267 chunks） |
-| **04 全量索引统计** | `04 向量化与索引构建/outputs/tables/index_stats.json` | 6,107,296 chunks 建库统计 |
-| **04 全量查询验证** | `04 向量化与索引构建/outputs/tables/query_validation.json` | C3–C5 验证报告 |
-| 04 验证索引统计 | `04 向量化与索引构建/outputs/samples/index_stats_sample.json` | BGE + ChromaDB 建库统计 |
-| 04 验证查询报告 | `04 向量化与索引构建/outputs/samples/query_validation_sample.json` | 检索与元数据过滤验证 |
+| 01 验证期 XML | `01 验证模型/data/raw/extracted/` | 284 篇 |
+| 02 验证样本 | `02 数据处理/data/processed/sample*.jsonl` | 100→97 篇清洗后 |
+| 03 验证 chunks | `03 .../data/processed/chunks_sample.jsonl` | **1,267**（开发默认语料） |
+| 04 验证 chunks | `04 .../data/processed/chunks_sample.jsonl` | 复制自 03 |
+| 04 全量统计 JSON | `04 .../outputs/tables/index_stats.json` 等 | 建库验证报告（库本体在本地 D:/E:） |
 
-### Ollama 模型（阶段 01）
+### 3. Ollama（阶段 01 / 08）
 
 ```bash
-# 安装 Ollama 后
 cd "01 验证模型"
-export OLLAMA_MODELS="$(pwd)/ollama_models"
+export OLLAMA_MODELS="$(pwd)/ollama_models"   # Windows 见 notebook 说明
 ollama pull deepseek-r1:7b
-./start_ollama.sh
 ```
 
-### 02/03/04 阶段运行方式
+确保 `http://127.0.0.1:11434` 可访问后再跑 08/09 `--mode live`。
 
-1. **File → Open Folder** → 选择对应阶段目录
-2. Jupyter 内核选择 **`med-rag-verify`**
-3. 按 notebook 章节顺序执行（04 全量验证/attach：`vectorize-index-full.ipynb` C0→C2.5a→C3–C5）
+### 4. 按阶段运行
 
----
+1. **File → Open Folder** → 选择对应阶段目录  
+2. Jupyter 内核：**`med-rag-verify`**  
+3. 按 notebook 章节顺序执行（04 全量：`vectorize-index-full.ipynb` C0→C5）  
+4. CLI 示例见「各阶段交付物速查」
 
-## Git 未上传内容（`.gitignore` 摘要）
+### 5. 生产 RAG 数据切换提醒
 
-```text
-# 缓存与临时
-__pycache__/、.ipynb_checkpoints/、.DS_Store、._*
+开发阶段 06–09 默认 **样本库（1,267 chunks）**；上线 LangChain RAG 须切换 **全量**：
 
-# 密钥
-.env、secrets/
-
-# 体积大、可本地重建
-**/caches/              # HF / datasets 缓存
-**/chroma_db/           # 验证期向量库 / 过时半成品
-**/chroma_db_full/      # 全量向量库（~71 GB，本地或 E: 保留）
-**/chroma_repair_test/  # HNSW 修复测试残留
-**/ollama_models/       # Ollama 模型权重
-**/*.bin
-```
+- Chroma：`04 .../chroma_db_full` · `pmc_oa_comm_full`
+- BM25：`E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl`
+- 代码：`RetrievalPipeline.from_mode("full")`
 
 ---
 
 ## 各阶段交付物速查
 
-### 01 验证模型（✅ 已完成）
+> 面向**后续开发**：路径、⚠️ 边界、可调用接口、**schedule 实现注意事项**（精炼）。完整踩坑见各阶段 `schedule.md`。
 
-- 本地 LLM 推理验证：`outputs/model_test_results.json`
-- PMC 100 篇样本：`data/processed/sample.jsonl`
-- Chroma smoke test：见 `med-LLM-RAG.ipynb` §6
+### 01 验证模型（✅）
 
-### 02 数据处理（✅ 已完成）
+- **产出**：`outputs/model_test_results.json`；`data/processed/sample.jsonl`
+- **入口**：`med-LLM-RAG.ipynb`
+- **接口**：Ollama 本地服务 + Chroma smoke（见 notebook §6）
+- **后续开发注意**（[`schedule.md`](01%20验证模型/schedule.md)「关键发现」）：
+  - Ollama **`think=False`**，否则 deepseek-r1 思考链占满 token、易超时（08+ 沿用）。
+  - 纯 LLM 无文献时医学准确性不足——RAG 价值实证。
+- **详情**：[`schedule.md`](01%20验证模型/schedule.md)
 
-- **正式文档**：`docs/RAG数据分析与设计说明.md`
-- **全量数据**：`E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl`（4,557,627 篇）
-- **分割策略**：`outputs/tables/chunk_strategy_config.json`
-- 数据 pipeline：`src/parse_pmc.py`、`src/build_jsonl.py`、`src/full_scale_pipeline.py`
-- 分析 notebook：`med-data-EDA-partA.ipynb`（验证期）· `med-data-EDA-partB.ipynb`（全量）
-- 统计表与图：`outputs/tables/*.csv`、`outputs/figures/`
+### 02 数据处理（✅）
 
-### 03 文档解析与分割（✅ 已完成）
+- **产出**：[`docs/RAG数据分析与设计说明.md`](02%20数据处理/docs/RAG数据分析与设计说明.md)；`outputs/tables/chunk_strategy_config.json`
+- **全量数据**：`E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl`（**不在 Git**）
+- **接口**：`src/parse_pmc.py`、`build_jsonl.py`、`full_scale_pipeline.py`
+- **后续开发注意**（[`schedule.md`](02%20数据处理/schedule.md)）：
+  - 本阶段不做向量入库与 LLM；slim 为 03 分割与 06 元数据回查上游。
+  - 策略 `chunk_size=400, overlap=80` 已全量验证，报告 §8 含数据侧 RAG 建议。
+- **详情**：[`schedule.md`](02%20数据处理/schedule.md)
 
-- **正式文档**：`docs/文档分割处理报告.md`
-- **全量数据**：`E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl`（6,107,296 chunks）
-- **验证样本**：`data/processed/chunks_sample.jsonl`（1,267 chunks）
-- 分割模块：`src/chunker.py`
-- 分析 notebook：`doc-chunking.ipynb`（验证）· `doc-chunking-full.ipynb`（全量）
-- 统计报告：`outputs/tables/chunking_stats.json`、`outputs/samples/`
+### 03 文档解析与分割（✅）
 
-### 04 向量化与索引构建（✅ 已完成）
+- **产出**：[`docs/文档分割处理报告.md`](03%20文档解析与分割/docs/文档分割处理报告.md)；[`chunks_sample.jsonl`](03%20文档解析与分割/data/processed/chunks_sample.jsonl)（1,267）
+- **全量**：`E:\...\oa_comm_chunks.jsonl`（6,107,296，**不在 Git**）
+- **接口**：`src/chunker.py`
+- **后续开发注意**（[`03/04 schedule.md`](03%20文档解析与分割/schedule.md)）：
+  - 样本为前 1,000 篇完整文献，供 04–09 开发；**生产 BM25 须全量 chunks**。
+  - chunk metadata **无 pub_year**（年份在 06 检索后回查 slim）。
+- **详情**：[`schedule.md`](03%20文档解析与分割/schedule.md)
 
-- **正式文档**：`docs/向量化与索引报告.md`
-- **嵌入模型**：`BAAI/bge-small-en-v1.5`（384 维，余弦相似度）
-- **全量向量库（RAG）**：`D:\谷歌\04 向量化与索引构建\data\chroma_db_full\`（collection: `pmc_oa_comm_full`，6,107,296 条）
-- **E: 备份**：`E:\med-llm-rag-datasets\chroma_db_full\`（手动完成）
-- **全量统计/验证**：`outputs/tables/index_stats.json`、`query_validation.json`
-- **验证样本**：`data/processed/chunks_sample.jsonl`（1,267 chunks）
-- 核心模块：`src/embedder.py`、`src/index_builder.py`
-- 验证 notebook：`vectorize-index.ipynb` · 全量 notebook：`vectorize-index-full.ipynb`
-- 验证报告（样本）：`outputs/samples/index_stats_sample.json`、`query_validation_sample.json`
-- **RAG 调用说明**：见上文「第四阶段完成总结 → RAG 调用向量库」
+### 04 向量化与索引构建（✅）
 
-### 05 检索系统开发第一部分（✅ 已完成）
+- **产出**：[`docs/向量化与索引报告.md`](04%20向量化与索引构建/docs/向量化与索引报告.md)；`src/embedder.py`、`index_builder.py`
+- **全量库**：`04 .../data/chroma_db_full/` · `pmc_oa_comm_full`（**不在 Git**，~71 GB）
+- **接口**：`encode_queries()` / `encode_documents()`；`ChromaIndexBuilder.query()`
+- **后续开发注意**（[`schedule.md`](04%20向量化与索引构建/schedule.md) §「**实现注意事项**」）：
+  - **建库不加指令、查询必须加** BGE 前缀；漏加静默降准确率，查询用 `encode_queries()`。
+  - 建库与查询同一模型 `bge-small-en-v1.5`（384 维），见 `index_stats.json`。
+  - **勿用** `chroma_db/`、`chroma_repair_test/`（半成品）；RAG 用 **`chroma_db_full`**。
+  - 全量前需 CUDA torch；Jupyter 避免 `sentence_transformers` 崩内核（已改 transformers 直载）。
+- **详情**：[`schedule.md`](04%20向量化与索引构建/schedule.md) §「实现注意事项」「阶段收尾」
 
-- **任务范围**：查询理解与增强（任务书本周产出 = 代码模块）
-- **核心模块**：`MedicalQueryEnhancer` → `EnhancedQuery`（vector/keyword query + filters）
-- **嵌入模型**：`BAAI/bge-small-en-v1.5`（与 04 一致；BGE 指令由 `DocumentEmbedder.encode_queries()` 添加）
-- **演示入口**：`notebooks/query-enhancement.ipynb`（C0–C5）
-- **样例输出**：`outputs/samples/enhancement_examples.json`、`chroma_smoke_compare.json`
-- **联调脚本**：`scripts/run_dual_smoke.py`
-- **正式文档**：`docs/查询理解与增强报告.md`
+### 05 检索系统开发第一部分（✅）
 
-### 06 检索系统开发第二部分（✅ 已完成）
+- **产出**：`MedicalQueryEnhancer` → `EnhancedQuery`；[`docs/查询理解与增强报告.md`](05%20检索系统开发第一部分/docs/查询理解与增强报告.md)
+- **样例**：`outputs/samples/enhancement_examples.json`
+- **接口**：`query_enhancer.enhance(query)` → `vector_query` / `keyword_query` / `filters`
+- **后续开发注意**（[`schedule.md`](05%20检索系统开发第一部分/schedule.md) §「**已知约束**」）：
+  - BGE 查询 instruction **须与 04 一致**，勿自改措辞。
+  - `filters` 可解析年份，但 Chroma **无 pub_year metadata**（06 后过滤补偿）。
+  - 静态同义词 JSON；开发联调用样本库 1,267 条。
+- **详情**：[`schedule.md`](05%20检索系统开发第一部分/schedule.md)
 
-> **⚠️ 验证范围**：本阶段 notebook、CLI、`pipeline_eval.json` 等均在 **样本库（1,267 chunks）** 上完成，**不是** 610 万全量语料。构建最终 LangChain RAG 时须切换 `mode="full"`，挂载 04 全量 Chroma + E: 全量 BM25 语料（见下表）。
+### 06 检索系统开发第二部分（✅）
 
-| 用途 | 本阶段验证用（sample） | **RAG 生产应使用（full）** |
-|------|----------------------|---------------------------|
-| 向量检索 | `04 .../chroma_db` · `pmc_oa_comm_sample`（1,267） | **`04 .../chroma_db_full` · `pmc_oa_comm_full`（6,107,296）** |
-| BM25 | `03 .../chunks_sample.jsonl`（1,267） | **`E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl`** |
-| slim 元数据 | `06 .../data/oa_comm_slim.jsonl`（全库 455 万篇，已本地化） | 同上 |
-| 代码 | `from_mode("sample")` · CLI 默认 `--mode sample` | **`from_mode("full")` · `run_retrieval_eval.py --mode full`** |
+> **⚠️ 验证范围**：notebook、CLI、`pipeline_eval.json` 均在 **样本库（1,267 chunks）** 完成，**不是** 610 万全量。生产须 `from_mode("full")`。
 
-- **任务范围**：多路检索（向量 + BM25）→ 融合 → 重排序；与 05 查询增强打通为完整检索流水线
-- **核心模块**：`bm25_index.py`、`multipath_retriever.py`、`fusion.py`、`reranker.py`、`rerank_features.py`、`pipeline.py`
-- **融合默认策略**：**`rrf`**
-- **端到端入口（开发）**：`RetrievalPipeline.from_mode("sample").run(query)`；**生产**：`.from_mode("full")`
-- **配置入口**：`src/config.py`（`resolve_chunks_path()` / `resolve_chroma()` / `resolve_slim_path()`）
-- **slim 回查**：`data/oa_comm_slim.jsonl`（~8.9 GB，本地副本，不随 Git）
-- **模型**：`BAAI/bge-small-en-v1.5` + `BAAI/bge-reranker-base`
-- **演示**：notebook **C0–C12**（C12 全量盘可选）；正式报告 [`docs/检索流水线报告.md`](06%20检索系统开发第二部分/docs/检索流水线报告.md)
-- **端到端验证**：
-  - 样本库（`pipeline_eval.json`，1,267 chunks）：5/5 链路通
-  - **全量盘（`pipeline_eval_full.json`，C12）**：Chroma 610 万 + BM25 探测 10 万条；metformin 命中真实 RCT（`PMC2566605`），3/3 query 与样本 Top-1 均不同
-- **样例输出**（`outputs/samples/`）：8 份 JSON（含 `pipeline_eval.json`、`pipeline_eval_full.json`）
-- **计划与进度**：[`schedule.md`](06%20检索系统开发第二部分/schedule.md)
+| 用途 | 开发（sample） | 生产（full） |
+|------|----------------|--------------|
+| 向量 | `04 .../chroma_db` · `pmc_oa_comm_sample` | `chroma_db_full` · `pmc_oa_comm_full` |
+| BM25 | `03 .../chunks_sample.jsonl` | `E:\...\oa_comm_chunks.jsonl` |
+| 代码 | `RetrievalPipeline.from_mode("sample")` | **`from_mode("full")`** |
 
-### 07 生成模块与提示词工程第一部分（✅ 已完成，阶段 0–5）
+- **产出**：[`docs/检索流水线报告.md`](06%20检索系统开发第二部分/docs/检索流水线报告.md)；`outputs/samples/pipeline_eval.json`
+- **接口**：`RetrievalPipeline.run(query)` → `reranked`；`config.resolve_chroma()` / `resolve_chunks_path()` / `resolve_slim_path()`
+- **后续开发注意**（[`schedule.md`](06%20检索系统开发第二部分/schedule.md) §「**验证范围说明**」）：
+  - 样本库长尾 query 常缺失；**链路正确 ≠ 生产召回质量**，须全量复评。
+  - 融合默认 **`rrf`**；recency/authority 靠 slim 回查，不重建 04 索引。
+  - `data/oa_comm_slim.jsonl`（~8.9 GB）**不在 Git**；08/09 默认仍消费样本 `pipeline_eval.json`。
+- **详情**：[`schedule.md`](06%20检索系统开发第二部分/schedule.md)
 
-- **任务范围**：上下文组装（去重 / 多样化 / 控长）+ 医学四阶段 Prompt 模板；**不调用 LLM**
-- **上游输入**：06 `result["reranked"]`（首选）或 `result["retrieval"]["fused"]`；契约见 [`输入候选格式约定.md`](07%20生成模块与提示词工程第一部分/输入候选格式约定.md)
-- **核心模块**：`src/models.py`、`src/context_assembler.py`、`src/prompts.py`
-- **演示与样例**：`notebooks/generation-prompting.ipynb`（C0–C7）、`outputs/samples/`（组装/prompt/测试报告 JSON 与图表）
-- **测试**：`tests/` 三文件 **16 项 pytest 全绿**（`pytest tests/ -v`）；notebook **C7** 可视化 + `test_report.json`
-- **正式报告**：[`docs/上下文组装与提示工程报告.md`](07%20生成模块与提示词工程第一部分/docs/上下文组装与提示工程报告.md)
-- **计划与进度**：[`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md)
-- **学习笔记**：[`笔记/07 笔记.md`](笔记/07%20笔记.md)
+```python
+from pipeline import RetrievalPipeline
+result = RetrievalPipeline.from_mode("sample").run("metformin cardiovascular effects")
+top_chunks = result["reranked"]
+```
 
----
+### 07 生成模块与提示词工程第一部分（✅）
 
-## 第八阶段完成总结（2026-07-02 更新）
+- **范围**：组装 + Prompt；**不调用 LLM**
+- **契约**：[`输入候选格式约定.md`](07%20生成模块与提示词工程第一部分/输入候选格式约定.md)
+- **接口**：`ContextAssembler.assemble(reranked, ...)` → `context_text`；`PROMPT_STAGES` / `render_prompt_stage(...)`
+- **后续开发注意**（[`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) §「风险与应对」）：
+  - 输入首选 06 `reranked`；token 估算与 Ollama 实际 tokenizer 可能偏差。
+  - 去重 Jaccard 0.85、同源降权可调；截断在句号边界。
+- **详情**：[`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md)
 
-> 目标：完成 **本地 LLM 集成（Ollama）** 与 **医学生成流水线（MedicalGenerationPipeline）**，串联 05→06→07 产出端到端 RAG 答案；**不包含** LangChain 封装与生产部署。
+### 08 生成模块与提示词工程第二部分（✅）
 
-### 进度
+> **⚠️ 验证范围**：`generation_eval.json`（`offline_sample_pipeline_eval`）基于 **06 样本库** + Ollama。
 
-| 子阶段 | 状态 | 说明 |
-|--------|------|------|
-| 0 环境与骨架 | ✅ | `bootstrap.py`、C0 |
-| 1 LLMGenerator | ✅ | `llm_generator.py` · C1 · pytest 4 项 |
-| 2 JSON 工具 | ✅ | `json_utils.py` · C2 · pytest 8 项 |
-| 3 生成流水线 | ✅ | `generation_pipeline.py` · C3/C4/C5 · `test_generation_pipeline.py` |
-| 4 后处理 | ✅ | `postprocess.py` · C6 · `test_postprocess.py`（pytest 17 项） |
-| 5 CLI 评测 | ✅ | `run_generation_eval.py` · C7 · `generation_eval.json` |
-| 6 测试与交付 | ✅ | pytest 复跑、`docs/医学生成流水线报告.md`、README 定稿 |
+- **产出**：[`docs/医学生成流水线报告.md`](08%20生成模块与提示词工程第二部分/docs/医学生成流水线报告.md)；`outputs/samples/generation_eval.json`
+- **接口**：`MedicalGenerationPipeline.run(query)` → `answer` / `sources` / `generation_metrics`
+- **CLI**：`scripts/run_generation_eval.py`（读 06 `pipeline_eval.json`）
+- **后续开发注意**（[`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md)）：
+  - **`think=False`**、`max_tokens`≥512；JSON 用 `extract_json`/`repair_json`。
+  - 证据评估解析失败**不删 chunk**；调试可 `skip_critical_review=True`。
+  - 全量切换：06 `from_mode("full")` 后重跑 `run_generation_eval.py` → 供 09 新快照。
+- **详情**：[`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md)
 
-### 阶段 0–6 产出
+### 09 生成答案评估，缓存策略与批量处理（✅）
 
-| 产物 | 路径 |
-|------|------|
-| 路径引导 | `08 .../src/bootstrap.py` |
-| LLM 生成器 | `08 .../src/llm_generator.py` |
-| JSON 工具 | `08 .../src/json_utils.py` |
-| 生成主流程 | `08 .../src/generation_pipeline.py` |
-| 后处理模块 | `08 .../src/postprocess.py` |
-| 批量评测脚本 | `08 .../scripts/run_generation_eval.py` |
-| 单测 | `08 .../tests/test_llm_generator.py`、`test_json_utils.py`、`test_generation_pipeline.py`、`test_postprocess.py`（共 17 项） |
-| 演示 notebook | `08 .../notebooks/medical-generation.ipynb`（C0–C7） |
-| 正式报告 | `08 .../docs/医学生成流水线报告.md` |
-| 依赖 | `08 .../requirements.txt`（`httpx`） |
+> **⚠️ 验证范围**：offline 指标反映**样本库链路**；不能外推全量 RAG 质量。
 
-**deepseek-r1 提示**：HTTP 调用设 `think=False`，且 `max_tokens` 不宜过小（建议 ≥512），否则预算可能耗在 thinking 链上。
+- **产出**：[`docs/答案评估与缓存报告.md`](09%20生成答案评估，缓存策略与批量处理/docs/答案评估与缓存报告.md)；`eval_cache_batch_report.json`；`ground_truth.json`
+- **接口**：`PipelineWithEval.run_with_cache_and_eval(...)` → `generation` / `evaluation` / `cache`
+- **CLI**：`scripts/run_eval_cache_batch.py --mode offline|mock|live`；**`pytest` 18 项**
+- **后续开发注意**（[`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) §「全量语料复评」、报告 §1.2）：
+  - ROUGE（质量）与缓存命中（性能）无关；幻觉分为风险信号；`ground_truth` 与样本检索证据基础不同。
+  - **`--mode live` 仍用样本 `pipeline_eval.json`**；全量复评：06 full → 08 重跑 → 09 live（待实施）。
+  - 跨阶段 `config` 同名时 09 用 `importlib` 加载本地 config。
+- **详情**：[`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md)；报告 §5.7
 
-### 开发方式
+```python
+result = pipe.run_with_cache_and_eval(query, ground_truth_entry=gt, temperature=0.2)
+```
 
-- **单一 notebook 观测**：[`notebooks/medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) 随阶段增量追加 C0→C7，不等到后期再写演示。
-- **阶段收尾**：每完成一阶段 → 更新 [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) + 本 README → git 提交备份。
+### 跨阶段：样本库 → 全量生产（LangChain_RAG 前必读）
 
-### 上游依赖（已就绪）
+| 环节 | 开发默认 | 生产应切换 |
+|------|----------|------------|
+| 向量检索 | `chroma_db` / 1,267 | `chroma_db_full` / 610 万 |
+| BM25 | `chunks_sample.jsonl` | `oa_comm_chunks.jsonl` |
+| 检索 | `from_mode("sample")` | **`from_mode("full")`** |
+| 生成评测 | 08 样本 `pipeline_eval.json` | 全量 reranked 后重跑 `generation_eval` |
+| 答案评估 | 09 offline 快照指标 | 全量链路复评（09 占位） |
 
-| 阶段 | 消费内容 |
-|------|----------|
-| 06 | `RetrievalPipeline.from_mode("sample")` → `reranked` |
-| 07 | `ContextAssembler`、`PROMPT_STAGES` / `render_prompt_stage` |
-| 01 | Ollama `deepseek-r1:7b` @ `127.0.0.1:11434` |
-
-### 计划与笔记
-
-- **执行计划**：[`08 .../schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md)
-- **学习笔记**：[`笔记/08笔记.md`](笔记/08笔记.md)
-
----
-
-## 第九阶段进展总结（2026-07-07 更新）
-
-> 目标：在 08 已有端到端生成能力上，实现**答案评估（质量刻度）**、**生成缓存（减少重复调用）**、**批量并行（提高复跑效率）**；并保持对未来多模型接入的兼容性。
-
-### 当前进度
-
-| 子阶段 | 状态 | 说明 |
-|--------|------|------|
-| 0 环境与骨架 | ✅ | 目录结构、`requirements.txt`、`bootstrap.py`、`config.py`、`ground_truth.json`、notebook C0 |
-| 1 评估器 | ✅ | `AnswerEvaluator`（ROUGE / key_info_recall / 幻觉信号 / 可读性）+ pytest |
-| 2 缓存 | ✅ | `GenerationCache`（LRU + TTL + 温度门控 + 统计）+ pytest + C2/C3 |
-| 3 批量处理 | ✅ | `BatchRunner`（并行、失败隔离、顺序对齐、统计）+ pytest + C4 |
-| 4 流水线粘合 | ✅ | `PipelineWithEval`（generation + evaluation + cache 统一输出）+ C5 |
-| 5 Notebook 导出与 CLI 对齐 | ☐ | 待完成 |
-| 6 测试与交付 | ☐ | 待完成 |
-
-### 当前产出（0–4）
-
-| 产物 | 路径 |
-|------|------|
-| 评估器 | `09 .../src/answer_evaluator.py`、`src/patterns.py` |
-| 缓存模块 | `09 .../src/generation_cache.py` |
-| 批量模块 | `09 .../src/batch_runner.py` |
-| 模型适配层 | `09 .../src/model_adapter.py` |
-| 粘合流水线 | `09 .../src/pipeline_with_eval.py` |
-| 单测 | `09 .../tests/test_answer_evaluator.py`、`test_generation_cache.py`、`test_batch_runner.py`、`test_pipeline_with_eval.py` |
-| 演示 notebook | `09 .../notebooks/answer-eval-cache-batch.ipynb`（C0–C5） |
-| 基准答案 | `09 .../data/ground_truth.json`（对齐 08 四条默认 query） |
-
-### 阶段定位（与 08 的关系）
-
-- 08 负责“生成答案”；09 负责“评答案 + 减少重复生成 + 批量更高效”。
-- 09 在工程上是横切层：不重写 06/07/08 主链路，而是在外侧统一补质量、缓存与调度能力。
-- 为后续接入其它模型，已预留 `ModelAdapter` 统一接口，当前仍可无缝复用 08 流水线。
-
-### 计划与笔记
-
-- **执行计划**：[`09 .../schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md)
-- **学习笔记**：[`笔记/09笔记.md`](笔记/09笔记.md)
+出处：[`06 schedule`](06%20检索系统开发第二部分/schedule.md) §验证范围、[`04 schedule`](04%20向量化与索引构建/schedule.md) §实现注意事项。
 
 ---
 
@@ -759,7 +418,7 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | `06笔记.md` | 06 阶段 RAG 位置、多路检索/融合/rerank 概念 Q&A |
 | `07 笔记.md` | 07 阶段 RAG 位置、输入契约、冒烟测试 Q&A |
 | `08笔记.md` | 08 阶段 RAG 位置、schedule 审阅、与 07 衔接 Q&A |
-| `09笔记.md` | 09 阶段任务定位、评估/缓存/批量设计与问答 |
+| `09笔记.md` | 09 阶段任务定位、评估/缓存/批量设计与 Q4 问答 |
 
 ---
 
@@ -768,13 +427,16 @@ __pycache__/、.ipynb_checkpoints/、.DS_Store、._*
 | 日期 | 说明 |
 |------|------|
 | 2026-05-11 ~ 13 | 01 阶段完成：本地 LLM + PMC 数据源验证 |
-| 2026-05-15 ~ 2026-05-27 | 02 阶段启动到完成：目录骨架、数据 pipeline、验证期与全量期收尾（4,557,627 篇，策略验证通过） |
-| 2026-05-27 | 03 阶段完成：6,107,296 chunks 生成完成，质量验证通过 |
-| 2026-06-01 ~ 2026-06-03 | 04 阶段启动到完成：抽样验证、GPU 环境切换、全量建库（610 万）、报告补齐 |
-| 2026-06-08 ~ 2026-06-10 | 05 阶段完成并补正式报告：查询理解与增强 + 双库 smoke |
-| 2026-06-15 ~ 2026-06-18 | 06 阶段完成：多路检索/融合/rerank、端到端串联、全量联调与报告 |
-| 2026-06-22 ~ 2026-06-24 | 07 阶段完成：上下文组装 + Prompt 模板 + 16 项测试 + 正式报告 |
-| 2026-06-29 ~ 2026-07-02 | 08 阶段完成：Ollama 生成流水线（C0–C7）、17 项测试、评测脚本与报告 |
-| **2026-07-07** | **09 当前阶段进展（进行中）**：阶段 0–4 已完成（评估器、缓存、批量、粘合流水线），阶段 5–6 待收尾交付 |
+| 2026-05-15 ~ 27 | 02 阶段完成：全量 slim 4,557,627 篇，分割策略验证通过 |
+| 2026-05-27 | 03 阶段完成：6,107,296 chunks |
+| 2026-06-01 ~ 03 | 04 阶段完成：全量 Chroma 建库 + GPU 环境 |
+| 2026-06-08 ~ 10 | 05 阶段完成：查询理解与增强 |
+| 2026-06-15 ~ 18 | 06 阶段完成：检索流水线 + 样本/全量联调 |
+| 2026-06-22 ~ 24 | 07 阶段完成：上下文组装 + Prompt 模板 |
+| 2026-06-29 ~ 07-02 | 08 阶段完成：Ollama 生成流水线 + `generation_eval.json` |
+| **2026-07-07** | **09 阶段启动**：评估器 / 缓存 / 批量计划与骨架 |
+| **2026-07-08** | **09 阶段完成**：pytest 18 passed；正式报告；明确样本库验证边界与全量复评占位 |
+| **2026-07-08** | **README 结构重组**：各阶段完成总结归并、`install_all_requirements.ps1`、部署指南对齐 |
+| **2026-07-08** | **README 交付物速查补充**：各阶段 `schedule` 实现注意事项 + 跨阶段样本/全量对照表 |
 
-*阶段进度细节以各目录 `schedule.md` 内「进度记录」为准。*
+*阶段进度细节以各目录 `schedule.md`「进度记录」为准。*

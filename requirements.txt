@@ -1,0 +1,19 @@
+# 医学 RAG 实习工程 — 依赖安装清单（按阶段顺序）
+#
+# ⚠️ 各阶段目录名含空格，pip 无法直接解析本文件中的 -r 引用。
+# 请使用根目录安装脚本（推荐）：
+#
+#   .\install_all_requirements.ps1
+#
+# 或手动逐阶段安装：
+#   pip install -r "01 验证模型/requirements.txt"
+#   pip install -r "02 数据处理/requirements.txt"
+#   pip install -r "04 向量化与索引构建/requirements.txt"
+#   pip install -r "05 检索系统开发第一部分/requirements.txt"
+#   pip install -r "06 检索系统开发第二部分/requirements.txt"
+#   pip install -r "07 生成模块与提示词工程第一部分/requirements.txt"
+#   pip install -r "08 生成模块与提示词工程第二部分/requirements.txt"
+#   pip install -r "09 生成答案评估，缓存策略与批量处理/requirements.txt"
+#
+# 03 无新增依赖（见 03/requirements.txt 说明，复用 02）
+# 04 全量 GPU：安装后运行 setup_stage04_gpu.ps1

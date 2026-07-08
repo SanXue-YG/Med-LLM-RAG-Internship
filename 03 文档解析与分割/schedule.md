@@ -43,11 +43,31 @@
 | `src/chunker.py` | 核心分割模块 |
 | `requirements.txt` | 依赖说明 |
 
+**阶段 0 完成说明**
+
+- 本阶段搭好文档分割工程骨架，直接复用 02 的 slim JSONL 与 `chunk_strategy_config.json`。
+- 双 notebook：样本快速验证 + 全量 450 万篇流式处理，为 04 向量化提供 `chunks.jsonl`。
+
+**阶段 0 实现说明（代码路径 / 函数 / 方法）**
+
+- `notebooks/doc-chunking.ipynb` **C0**：读配置、建目录、挂 `src`。
+- `02 数据处理/outputs/tables/chunk_strategy_config.json`：`chunk_size=400`、`overlap=80` 等参数来源。
+
 ### 阶段 1：数据加载（任务§1）✅
 
 - [x] 从 slim JSONL 流式读取
 - [x] 字段映射：`pmcid` → `doc_id`，`title` → `source_title`
 - [x] 拼接检索文本：`title + "\n\n" + abstract`
+
+**阶段 1 完成说明**
+
+- 本阶段把 PMC 文献变成可分割的「文档对象」：每篇一条 `doc_id` + 拼接后的正文。
+- 流式读取避免 450 万篇一次性载入内存。
+
+**阶段 1 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/chunker.py` → `DocumentChunker.chunk_document(doc)` 内联拼接 `title + "\n\n" + abstract`；字段 `pmcid`→`doc_id`。
+- 输入：`E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl`（02 产出）；notebook 流式 `json.loads` 逐行读取。
 
 ### 阶段 2：实施分割策略（任务§2）✅
 
@@ -56,22 +76,65 @@
 - [x] 实现智能分割：≤512 单块，>512 滑动窗口
 - [x] 生成 chunk_id：单块用 pmcid，多块用 `pmcid_chunk{i}`
 
+**阶段 2 完成说明**
+
+- 本阶段核心：按 token 数决定「整篇一块」还是「滑动窗口多块」，保证每块 ≤512 token（BGE/检索友好）。
+- 85.5% 文档只需单块，14.5% 长摘要才切块。
+
+**阶段 2 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/chunker.py`
+  - `DocumentChunker.chunk_document(doc)`：≤512 token 单块（`strategy=single`）；>512 调 `RecursiveCharacterTextSplitter`（`strategy=sliding_window`）。
+  - `chunk_id`：单块 `pmcid`；多块 `pmcid_chunk0`、`pmcid_chunk1`…
+- Tokenizer：`all-MiniLM-L6-v2`（与 02 策略配置一致）。
+
 ### 阶段 3：分批处理与保存（任务§3）✅
 
 - [x] 流式处理 450 万文档
 - [x] 断点续传支持（progress.json）
 - [x] 输出到 JSONL 格式
 
+**阶段 3 完成说明**
+
+- 本阶段跑完全量：**6,107,296 chunks**，写入外接盘 `oa_comm_chunks.jsonl`。
+- `progress.json` 支持中断续跑，与 02/04 同一套分批模式。
+
+**阶段 3 实现说明（代码路径 / 函数 / 方法）**
+
+- `notebooks/doc-chunking-full.ipynb`：全量主入口；`progress.json` 记录已处理 doc 数。
+- 输出：`E:\...\oa_comm_chunks.jsonl`；样本：`data/processed/chunks_sample.jsonl`（1,267 chunks）。
+
 ### 阶段 4：预览与统计（任务§4）✅
 
 - [x] 抽样预览 chunk 结构
 - [x] 统计报告：总 chunk 数、平均 chunk/doc、token 分布
+
+**阶段 4 完成说明**
+
+- 本阶段产出可读的统计与样例，证明分割比例、token 分布符合预期（均值 ~285，P95 ~472）。
+- 样本与全量各一份 stats JSON，便于 04 notebook 直接引用样本。
+
+**阶段 4 实现说明（代码路径 / 函数 / 方法）**
+
+- `outputs/tables/chunking_stats.json`：全量统计。
+- `outputs/samples/chunking_stats_sample.json`：验证样本统计。
+- `notebooks/doc-chunking.ipynb`：预览单元格展示 chunk 字段结构。
 
 ### 阶段 5：质量验证（任务§5）✅
 
 - [x] Token 超限检查：0 个超限
 - [x] 空文本/极短文本检查：通过
 - [x] 多块分割重叠检查：正确
+
+**阶段 5 完成说明**
+
+- 本阶段做交付前质检：无 token>512、几乎无空块、多块 overlap 正确。
+- 通过后 `chunks.jsonl` 才可交给 04 建向量索引。
+
+**阶段 5 实现说明（代码路径 / 函数 / 方法）**
+
+- `outputs/tables/quality_report.json` / `outputs/samples/quality_report_sample.json`：质检结果。
+- `docs/文档分割处理报告.md`：正式交付报告（老师提交用）。
 
 ---
 

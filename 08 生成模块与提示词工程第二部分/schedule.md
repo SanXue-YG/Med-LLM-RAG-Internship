@@ -259,7 +259,7 @@ class MedicalGenerationPipeline:
 
 ### 阶段 0：环境与骨架 ✅
 
-**通俗讲解（做什么 / 目标）**
+**阶段 0 完成说明**
 
 - 做什么：把“施工现场”先搭好（目录、依赖、notebook、路径导入、Ollama探测）。
 - 目标：确保后续阶段写代码时，不再被环境问题卡住；C0 一跑就知道上游模块和 Ollama 是否在线。
@@ -276,7 +276,7 @@ class MedicalGenerationPipeline:
 - [x] 创建 `notebooks/medical-generation.ipynb`
 - [x] **C0**：前置说明 + 路径解析 + 上游模块 import smoke + Ollama 配置常量 + `/api/tags` 探测
 
-#### 阶段 0 交付回顾（2026-06-29）
+**阶段 0 实现说明（代码路径 / 函数 / 方法）**
 
 | 产物 | 路径 | 说明 |
 |------|------|------|
@@ -293,18 +293,11 @@ class MedicalGenerationPipeline:
 
 ### 阶段 1：LLMGenerator（Ollama 集成） ✅
 
-**通俗讲解（做什么 / 目标）**
+**阶段 1 完成说明**
 
 - 做什么：封装一个稳定的“模型调用器”，统一管理 `health_check`、单次生成、批量生成和 JSON 生成入口。
 - 目标：以后所有生成步骤都通过同一个类调用 Ollama，避免在 pipeline 里散落 HTTP 细节。
-
-  在你这个项目里，health_check 的作用是：
-
-  去请求一次 Ollama 的服务接口（GET /api/tags）
-  如果能连通且返回正常，就返回 True
-  连不上（服务没开、端口不通）就返回 False
-  它不负责生成答案，只负责告诉你“模型服务现在能不能用”。
-  你在 C1 里看到 health_check: True，就说明当前 127.0.0.1:11434 的 Ollama 服务可用，后面的 generate() 才值得跑。
+- `health_check` 只探测 `GET /api/tags` 是否连通，不生成答案；C1 显示 True 才值得跑 `generate()`。
 **代码**
 
 - [x] `LLMGenerator.__init__(model_name, base_url, timeout)`
@@ -321,7 +314,7 @@ class MedicalGenerationPipeline:
 
 - [x] **C1**：`health_check()` + 单条 `generate()` smoke
 
-#### 阶段 1 交付回顾（2026-06-29）
+**阶段 1 实现说明（代码路径 / 函数 / 方法）**
 
 | 产物 | 路径 | 说明 |
 |------|------|------|
@@ -336,42 +329,10 @@ class MedicalGenerationPipeline:
 
 ### 阶段 2：JSON 提取与修复 ✅
 
-**通俗讲解（做什么 / 目标）**
+**阶段 2 完成说明**
 
 - 做什么：把模型返回的“可能不规范 JSON 文本”尽量修成可解析结构，并定义证据评估最小 schema。
-- 目标：即使模型输出带围栏、尾逗号、缺括号，也尽量解析成功；失败时能优雅降级，不阻断主流程。
-
-  模型输出不一定是标准 JSON，所以要“修一把”。
-
-  示例 1：markdown 围栏 + 尾逗号（修复前）
-  这里是评估结果：
-  ```json
-  {
-    "relevant_chunk_ids": ["PMC520826",],
-    "excluded_chunk_ids": [],
-    "notes": "strong evidence",
-  }
-  
-  这段直接 `json.loads()` 会报错（尾逗号不合法）。
-  ### 修复后（可解析）
-  ```json
-  {
-    "relevant_chunk_ids": ["PMC520826"],
-    "excluded_chunk_ids": [],
-    "notes": "strong evidence"
-  }
-
-  示例 2：缺右花括号（修复前）
-  {"relevant_chunk_ids":["PMC1"],"excluded_chunk_ids":["PMC9"],"notes":"drop noisy"
-  修复后
-  {"relevant_chunk_ids":["PMC1"],"excluded_chunk_ids":["PMC9"],"notes":"drop noisy"}
-
-  失败时的“优雅降级”
-  如果还是修不好、解析失败，不会把主流程打断。
-  当前策略是：evaluation=None 时 不筛选 chunk，原样继续，也就是“宁可不过滤，也不停机”。
-
-
-
+- 目标：即使模型输出带围栏、尾逗号、缺括号，也尽量解析成功；失败时 `evaluation=None` 不筛选 chunk，主流程继续。
 **代码**
 
 - [x] `extract_json(text) -> dict | None`：剥离 ` ```json ` 围栏；失败时走 `repair_json`
@@ -387,7 +348,7 @@ class MedicalGenerationPipeline:
 
 - [x] **C2**：围栏 + 残缺修复 + mock `generate_json` 输出 + 筛选降级演示
 
-#### 阶段 2 交付回顾（2026-06-29）
+**阶段 2 实现说明（代码路径 / 函数 / 方法）**
 
 | 产物 | 路径 | 说明 |
 |------|------|------|
@@ -401,10 +362,10 @@ class MedicalGenerationPipeline:
 
 ### 阶段 3：MedicalGenerationPipeline 主流程 ✅
 
-**通俗讲解（做什么 / 目标）**
+**阶段 3 完成说明**
 
 - 做什么：把 06 检索、07 组装、08 生成串成一个 `run(query)` 端到端流程。
-- 目标：输入一个问题就得到统一的 `result`（答案、中间产物、耗时、阶段成功率、sources），形成可复用主链路。
+- 目标：输入一个问题就得到统一的 `result`（答案、中间产物、耗时、阶段成功率、sources）。
 
 **代码**
 
@@ -420,7 +381,7 @@ class MedicalGenerationPipeline:
 - [x] **C4**：最小路径 `MedicalGenerationPipeline.run()`（`skip_evidence_eval=True`, `skip_critical_review=True`）
 - [x] **C5**：完整 pipeline + optional stages 开关对比
 
-#### 阶段 3 交付回顾（2026-07-01）
+**阶段 3 实现说明（代码路径 / 函数 / 方法）**
 
 | 产物 | 路径 | 说明 |
 |------|------|------|
@@ -435,10 +396,10 @@ class MedicalGenerationPipeline:
 
 ### 阶段 4：后处理与 sources 格式化 ✅
 
-**通俗讲解（做什么 / 目标）**
+**阶段 4 完成说明**
 
-- 做什么：把“模型原始答案”整理成可交付文本（引用编号、来源列表、免责声明、格式化）。
-- 目标：答案对用户可读、可追溯、医疗表达更安全，且引用与 sources 一一对应。
+- 做什么：把“模型原始答案”整理成可交付文本（引用编号、来源列表、免责声明）。
+- 目标：答案对用户可读、可追溯，引用 `[1][2]` 与 `sources` 列表一一对应。
 
 **代码**
 
@@ -451,7 +412,7 @@ class MedicalGenerationPipeline:
 
 - [x] **C6**：展示 `answer` 内 `[1][2]`、`sources` 表、免责声明段落
 
-#### 阶段 4 交付回顾（2026-07-01）
+**阶段 4 实现说明（代码路径 / 函数 / 方法）**
 
 | 产物 | 路径 | 说明 |
 |------|------|------|
@@ -467,10 +428,10 @@ class MedicalGenerationPipeline:
 
 ### 阶段 5：CLI 评测与批量快照 ✅
 
-**通俗讲解（做什么 / 目标）**
+**阶段 5 完成说明**
 
 - 做什么：把单次 notebook 演示扩展成“批量 query 自动跑 + 自动记录指标”。
-- 目标：沉淀可复现评测快照（`generation_eval.json` 和 logs），便于比较改动前后效果。
+- 目标：沉淀 `generation_eval.json` 快照，供 09 评估与跨阶段对比；默认走 06 样本库离线检索。
 
 **代码**
 
@@ -480,7 +441,7 @@ class MedicalGenerationPipeline:
 
 - [x] **C7**：跑 ≥4 条固定 query（见下表），展示 `generation_metrics`，导出 `outputs/samples/generation_eval.json`
 
-#### 阶段 5 交付回顾（2026-07-01）
+**阶段 5 实现说明（代码路径 / 函数 / 方法）**
 
 | 产物 | 路径 | 说明 |
 |------|------|------|
@@ -496,10 +457,10 @@ class MedicalGenerationPipeline:
 
 ### 阶段 6：测试与交付 ✅
 
-**通俗讲解（做什么 / 目标）**
+**阶段 6 完成说明**
 
 - 做什么：补齐测试、复跑关键样例、整理报告和 README，完成最终交付收口。
-- 目标：确保链路稳定可回归、文档完整可提交，阶段状态从“开发中”切到“可验收”。
+- 目标：链路稳定可回归（pytest 17 passed），文档可验收；`generation_eval.json` 成为 09 上游。
 
 **代码**
 
@@ -516,7 +477,7 @@ class MedicalGenerationPipeline:
 
 - [x] **C7** 全量复跑确认；追加 pytest 结果摘要 cell（C7 复跑确认）
 
-#### 阶段 6 交付回顾（2026-07-01）
+**阶段 6 实现说明（代码路径 / 函数 / 方法）**
 
 | 产物 | 路径 | 说明 |
 |------|------|------|

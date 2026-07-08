@@ -105,6 +105,18 @@
 > 暂时**用不了 GPU**。抽样验证（1,267 chunks）用 CPU 即可；**全量前需安装 CUDA 版 PyTorch**：
 > `pip uninstall torch -y && pip install torch --index-url https://download.pytorch.org/whl/cu121`
 
+**阶段 0 完成说明**
+
+- 本阶段搭好向量化工程骨架：BGE embedder、Chroma index builder、样本/全量双 notebook 入口。
+- 核心决策落地：**建库不加指令、查询加指令**（见 §实现注意事项）；样本先跑通再全量 610 万。
+- 检测到默认 CPU 版 torch，全量前须 `setup_stage04_gpu.ps1`。
+
+**阶段 0 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/embedder.py`：`DocumentEmbedder` 骨架（阶段 1 充实 `encode_documents`/`encode_queries`）。
+- `src/index_builder.py`：`ChromaIndexBuilder` 骨架；余弦 `hnsw:space=cosine`。
+- `notebooks/vectorize-index.ipynb` **C0**：环境检测与路径常量。
+
 ### 阶段 1：嵌入模型选择与加载（任务§1）
 
 - [x] 初始化嵌入模型 `bge-small-en-v1.5`（384 维），自动选 device（cuda 可用时）
@@ -112,6 +124,18 @@
 - [x] 封装 `encode_queries(texts)`：查询端，**自动加** BGE 指令前缀（检索用）
 - [x] 在验证样本上运行 notebook，确认模型加载与输出维度 = 384
 - [x] 全量 notebook C1 通过（`transformers` 直载，见问题排查 §2）
+
+**阶段 1 完成说明**
+
+- 本阶段把 BGE 嵌入「用对」：建库与查询不对称是 BGE 官方要求，漏加查询指令会**静默降检索质量**。
+- 改用 `transformers` 直载，规避 Windows Jupyter 下 `sentence_transformers` 内核崩溃。
+
+**阶段 1 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/embedder.py`
+  - `DocumentEmbedder.encode_documents(texts)`：chunk 文本直接嵌入（建库）。
+  - `DocumentEmbedder.encode_queries(texts)`：自动前缀 `Represent this sentence for searching relevant passages:`。
+- `notebooks/vectorize-index.ipynb` **C1**：384 维 smoke；`vectorize-index-full.ipynb` **C1** 全量复用。
 
 ### 阶段 2：向量数据库配置与索引构建（任务§2）
 
@@ -141,6 +165,21 @@ stats = {
   - 返回：相关文档片段 + 元数据 + 距离
   - 全量 metadata 过滤见 §11 post-filter 降级
 
+**阶段 2 完成说明**
+
+- 本阶段把 610 万（或样本 1,267）chunk **写入 Chroma 持久化库**，支持中断续跑。
+- 全量产物 `chroma_db_full`（~71 GB）是后续 RAG 语义检索底座；**勿与** `chroma_db` 半成品目录混淆（见「阶段收尾」）。
+- `index_stats.json` 记录模型名与维度，供 05/06 对齐。
+
+**阶段 2 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/index_builder.py`
+  - `ChromaIndexBuilder.add_chunks_batch(...)`：分批 embed + 入库。
+  - `ChromaIndexBuilder.query(...)`：内部调 `encode_queries`；支持 `where_filter`（大规模 post-filter 降级）。
+  - `count_embeddings_sqlite()` / `repair_chroma_hnsw()`：全量条数校验与 HNSW 修复。
+- `outputs/tables/index_stats.json`：全量 6,107,296 条统计。
+- `notebooks/vectorize-index-full.ipynb` **C2/C2.5**：全量建库与 D: 迁移续跑。
+
 ### 阶段 3：质量验证（任务§3）
 
 - [x] **基础统计验证**：向量数量与输入一致、样本元数据完整（全量 **6,107,296** → `index_stats.json`）
@@ -148,6 +187,17 @@ stats = {
 - [x] **边界情况验证**：空查询、超长查询（C5）
 - [x] **元数据过滤验证**：`strategy=sliding_window`（C5，见 §11 post-filter 降级）
 - [x] 导出验证报告 `outputs/tables/query_validation.json`
+
+**阶段 3 完成说明**
+
+- 本阶段证明「库建对了、查得到」：条数一致、语义 query 命中相关文献、边界 query 不崩溃。
+- 全量库 metadata 过滤可能走 post-filter 降级——与 05/06 行为一致，已在验证报告记录。
+
+**阶段 3 实现说明（代码路径 / 函数 / 方法）**
+
+- `outputs/tables/query_validation.json`：C3–C5 验证结果汇总。
+- `outputs/samples/query_validation_sample.json`：样本库验证报告。
+- `docs/向量化与索引报告.md`：正式交付；§实现注意事项供后续 RAG 回顾。
 
 ---
 

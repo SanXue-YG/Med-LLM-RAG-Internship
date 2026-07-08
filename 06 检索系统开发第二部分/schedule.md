@@ -144,12 +144,42 @@ class Reranker:
 - [x] `requirements.txt` 增补：`rank-bm25`、`transformers`（复用）等
 - [x] 明确数据路径（样本 / 全量）与默认 collection 名 → `src/config.py`
 
+**阶段 0 完成说明**
+
+- 本阶段先把「检索施工场地」搭好：目录、依赖、双库路径（样本 vs 全量）、slim 本地副本约定。
+- 目标是不再在写 BM25/融合代码时被路径和环境问题卡住；`config.py` 成为后续所有模块找数据的统一入口。
+- slim 复制到 `data/oa_comm_slim.jsonl` 后，重排的 recency/authority 不再依赖外接盘在线。
+
+**阶段 0 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/config.py`
+  - `resolve_chunks_path(mode)`：样本 → `03 .../chunks_sample.jsonl`；全量 → E: `oa_comm_chunks.jsonl`。
+  - `resolve_chroma(mode)`：样本 `chroma_db`/`pmc_oa_comm_sample`；全量 `chroma_db_full`/`pmc_oa_comm_full`。
+  - `resolve_slim_path()`：优先 `06 .../data/oa_comm_slim.jsonl`，缺失时回退 E: 权威源。
+- `requirements.txt`：新增 **`rank-bm25`**（BM25 索引）。
+- `notebooks/retrieval-pipeline.ipynb` **C0**：`MODE=sample` 与环境探测。
+
 ### 阶段 1：BM25 关键词检索 ✅
 
 - [x] 从 03 chunks 读取 `chunk_id/text/doc_id/source_title/...`
 - [x] 英文分词（小写、去停用词、保留数字医学术语）
 - [x] 构建 BM25 索引并支持 `top_k`
 - [x] 输出统一候选格式（含 `source`, `score`, `rank`, `chunk_id`）
+
+**阶段 1 完成说明**
+
+- 本阶段补上「关键词这一路」：向量检索擅长语义，BM25 擅长药名、年份、guideline 等字面匹配。
+- 样本库 1,267 条上建索引约 0.1s，为后续「双路召回 + 融合」打基础。
+- 输出候选 dict 格式与向量路对齐，方便 `fusion.py` 直接合并。
+
+**阶段 1 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/bm25_index.py`
+  - `tokenize(text)`：英文分词；保留 `2015`、`plasmodium` 等数字/医学 token。
+  - `BM25Index.build_from_jsonl(path)`：从 chunks JSONL 建索引。
+  - `BM25Index.search(query, top_k)`：返回带 `source=bm25`、`score`、`rank` 的候选列表。
+- `tests/test_bm25.py`：样本库建索引与 top_k 检索。
+- `outputs/samples/bm25_examples.json`：notebook 导出样例。
 
 ### 阶段 2：多路召回与融合 ✅
 
@@ -161,6 +191,22 @@ class Reranker:
   - [x] `weighted`：向量分更高权重
 - [x] 输出融合后候选（含分路得分与最终分）
 
+**阶段 2 完成说明**
+
+- 本阶段把 05 增强 query 真正接到 04 向量 + 本阶段 BM25 两路上，并回答「两路结果怎么合在一起」。
+- C5/C7 实测：metformin 等 query **向量 Top-5 与 BM25 Top-5 可零重叠**，因此不能只用 simple 合并；**默认策略定为 `rrf`**。
+- 融合后每条候选带 `vector_rank`/`bm25_rank`/`fusion_score`，便于 notebook 对比与后续重排。
+
+**阶段 2 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/multipath_retriever.py`
+  - `MultiPathRetriever.retrieve(query_info, ...)`：并行取向量路与 BM25 路，返回两路 hits。
+  - `chroma_results_to_hits()`：04 Chroma 结果 → 统一候选 dict。
+- `src/fusion.py`
+  - `fuse_simple()` / `fuse_rrf()` / `fuse_weighted()` / `fuse(strategy=...)`：三种融合策略；pipeline 默认 **`rrf`**。
+- `tests/test_fusion.py`：RRF 与 weighted 行为。
+- `notebooks/retrieval-pipeline.ipynb` **C6–C7**：五 query 融合对比；`fusion_examples.json`。
+
 ### 阶段 3：重排序器 ✅
 
 - [x] 接入 `BAAI/bge-reranker-base`（或同级可用模型）
@@ -171,6 +217,22 @@ class Reranker:
   - [x] authority（期刊权重，规则表）
 - [x] 产出 top_k 最终列表 + 解释字段
 
+**阶段 3 完成说明**
+
+- 本阶段在「召回一堆候选」之后做精排：cross-encoder 看 query–段落相关性，再叠加发表年份与期刊权威度。
+- 年份/期刊不进 Chroma metadata，而是检索后按 `doc_id` **回查 slim**——与 04 不重建索引的决策一致。
+- 样本库上 malaria after 2015 等 query 暴露时效验证不足（库内缺 2015+ 篇），但 recency 链路已通。
+
+**阶段 3 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/reranker.py`
+  - `Reranker.rerank(query, candidates, top_k, criteria_weights)`：BGE reranker 打分 + 多准则加权。
+- `src/rerank_features.py`
+  - `SlimMetadataLookup`：按 `doc_id` 读 `pub_year`/`journal`。
+  - `recency_score()` / `authority_score()` / `extract_year_hint()` / `combine_criteria_scores()`。
+- `tests/test_reranker.py`：relevance-only 与多准则组合。
+- `notebooks/retrieval-pipeline.ipynb` **C8–C9**：重排演示；`rerank_examples.json`。
+
 ### 阶段 4：完整流水线联调 ✅
 
 - [x] 串联：`enhancer -> multipath retrieve -> fusion -> rerank` → `src/pipeline.py`
@@ -178,14 +240,30 @@ class Reranker:
 - [x] CLI `run_retrieval_eval.py` 批量评估并导出 JSON（支持 `--skip-rerank` / `--check-only`）
 - [x] 单元测试 `tests/test_pipeline.py`
 
-```
+**阶段 4 完成说明**
+
+- 本阶段把前面四块拼成 **一条 `pipeline.run(query)`**：输入自然语言，输出带 `enhanced`/`retrieval`/`reranked` 的完整 dict。
+- 样本库 5 条 query 端到端跑通；`pipeline_eval.json` 成为 08 离线检索适配器的标准输入。
+- CLI 支持跳过重排加速调试；`--check-only` 做环境自检。
+
+**阶段 4 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/pipeline.py`
+  - `RetrievalPipeline.from_mode("sample"|"full")`：按模式挂载 Chroma/BM25/slim 路径。
+  - `RetrievalPipeline.run(query)`：enhance → retrieve → fuse → rerank 一站式。
+  - `build_eval_report()`：批量评测汇总 latency 分位数。
+- `scripts/run_retrieval_eval.py`：CLI 批量评测；默认写出 `pipeline_eval.json`。
+- `tests/test_pipeline.py`：mock 双路 + 端到端结构。
+- `outputs/samples/pipeline_eval.json`：5 条 query 快照（08/09 上游）。
+
+```bash
 # 环境检查
 python scripts/run_retrieval_eval.py --check-only
 
-# 快速评测（跳过重排，约 1 分钟）
+# 快速评测（跳过重排）
 python scripts/run_retrieval_eval.py --skip-rerank --top-k-fused 5 --top-k-final 3
 
-# 完整评测（含 reranker，首次需下载模型）
+# 完整评测（含 reranker）
 python scripts/run_retrieval_eval.py --output outputs/samples/pipeline_eval.json
 ```
 
@@ -195,6 +273,19 @@ python scripts/run_retrieval_eval.py --output outputs/samples/pipeline_eval.json
 - [x] 单元测试：BM25 / fusion / reranker / pipeline（7 文件全部通过，2026-06-17）
 - [x] 更新根目录 `README.md` 阶段 06 条目
 - [x] 阶段报告：`docs/检索流水线报告.md`
+
+**阶段 5 完成说明**
+
+- 本阶段完成收口：单测全绿、正式报告、README 与 C12 可选全量联调结论写入 schedule。
+- **样本库验证链路正确**；全量 C12 证明 metformin 等 query 在全量 Chroma 下质量显著优于样本，但 BM25 全量索引与 rerank 时延仍需生产优化。
+- 后续 07 消费 `reranked`；LangChain_RAG 生产须 `from_mode("full")`（见 §验证范围说明）。
+
+**阶段 5 实现说明（代码路径 / 函数 / 方法）**
+
+- `tests/`：7 个测试文件覆盖 BM25、fusion、reranker、pipeline。
+- `docs/检索流水线报告.md`：任务书对照、模块说明、样本/全量验证摘要。
+- `outputs/samples/pipeline_eval_full.json`：C12 全量联调（可选）；3/3 query 样本 vs 全量 Top-1 均不同。
+- 根目录 `README.md`：06 交付物速查 + **样本库 vs 全量**切换表。
 
 ---
 

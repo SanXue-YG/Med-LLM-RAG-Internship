@@ -1,6 +1,6 @@
 # 09 生成答案评估，缓存策略与批量处理 — 执行计划
 
-> **状态：🔄 待启动**
+> **状态：✅ 已完成（阶段 0–6）**
 >
 > **本阶段范围（任务书）**：实现 **多维度答案评估器**、**生成结果缓存**、**批量并行处理（optional）**；并用 08 阶段固定测试 query 复跑，验证评估 / 缓存 / 批量功能。
 >
@@ -69,31 +69,39 @@ list[query] → BatchRunner.run_batch()
 
 ## 模块设计
 
-### 目录结构（规划）
+### 目录结构（规划 → 实际）✅
 
 ```text
 09 生成答案评估，缓存策略与批量处理/
 ├── 任务.txt
-├── schedule.md                      # 本文件
-├── requirements.txt                 # rouge-score 等
+├── schedule.md
+├── requirements.txt                 # rouge-score + httpx + pytest
 ├── data/
-│   └── ground_truth.json            # 4 条 query 的参考答案要点（可 git）
+│   └── ground_truth.json
+├── docs/
+│   └── 答案评估与缓存报告.md        # 阶段 6 正式报告
 ├── src/
 │   ├── __init__.py
-│   ├── bootstrap.py                 # sys.path 引用 05–08
-│   ├── patterns.py                  # 关键信息 / 幻觉信号正则
-│   ├── answer_evaluator.py          # AnswerEvaluator
-│   ├── generation_cache.py          # GenerationCache
-│   ├── batch_runner.py              # BatchRunner（optional）
-│   └── pipeline_with_eval.py        # 粘合：cache + 08 pipeline + evaluate
+│   ├── bootstrap.py
+│   ├── config.py                    # 统一默认参数 + 扩展占位键
+│   ├── patterns.py
+│   ├── answer_evaluator.py
+│   ├── generation_cache.py
+│   ├── batch_runner.py
+│   ├── model_adapter.py             # ModelAdapter / Pipeline / Snapshot
+│   ├── pipeline_with_eval.py
+│   └── report_builder.py            # 阶段 5 报告汇总
 ├── notebooks/
-│   └── answer-eval-cache-batch.ipynb  # C0–C8
+│   └── answer-eval-cache-batch.ipynb  # C0–C6（含 C0.5 依赖自检）
 ├── scripts/
-│   └── run_eval_cache_batch.py      # CLI：复跑 08 四条 + 导出报告
+│   └── run_eval_cache_batch.py
 ├── tests/
 │   ├── test_answer_evaluator.py
 │   ├── test_generation_cache.py
-│   └── test_batch_runner.py
+│   ├── test_batch_runner.py
+│   ├── test_pipeline_with_eval.py
+│   ├── test_report_builder.py
+│   └── test_stage06_acceptance.py   # 阶段 6 验收
 └── outputs/
     ├── samples/
     │   └── eval_cache_batch_report.json
@@ -189,29 +197,65 @@ class BatchRunner:
 
 ## 分阶段执行
 
-### Notebook 贯穿策略（新增）
+### Notebook 贯穿策略 ✅
 
-- [ ] 采用**单一 notebook 贯穿式开发**：`notebooks/answer-eval-cache-batch.ipynb`
-- [ ] 每完成一个阶段，立即补齐对应 C* 单元并保存输出，不等到最后统一补
-- [ ] 阶段与单元映射：阶段 0→C0，阶段 1→C1，阶段 2→C2/C3，阶段 3→C4，阶段 4→C5，阶段 5→C6
+- [x] 采用**单一 notebook 贯穿式开发**：`notebooks/answer-eval-cache-batch.ipynb`
+- [x] 每完成一个阶段，立即补齐对应 C* 单元并保存输出，不等到最后统一补
+- [x] 阶段与单元映射：阶段 0→C0/C0.5，阶段 1→C1，阶段 2→C2/C3，阶段 3→C4，阶段 4→C5，阶段 5→C6
 
-### 固定实现路径（本周统一口径）
+### 固定实现路径（本周统一口径）✅
 
-- [ ] 质量评估固定路径：`AnswerEvaluator.evaluate()` = `ROUGE + key_info_recall + hallucination_risk + readability`
-- [ ] 缓存固定路径：`GenerationCache`（进程内 LRU + TTL + 低温门控）  
+- [x] 质量评估固定路径：`AnswerEvaluator.evaluate()` = `ROUGE + key_info_recall + hallucination_risk + readability`
+- [x] 缓存固定路径：`GenerationCache`（进程内 LRU + TTL + 低温门控）  
       `key = hash(query + context_text + model + temperature)`
-- [ ] 批量固定路径：`BatchRunner.run_batch()`（多 query 并行；单 query 内部仍串行）
-- [ ] 粘合固定路径：`pipeline_with_eval.run_with_cache_and_eval()` 统一输出  
+- [x] 批量固定路径：`BatchRunner.run_batch()`（多 query 并行；单 query 内部仍串行）
+- [x] 粘合固定路径：`pipeline_with_eval.run_with_cache_and_eval()` 统一输出  
       `{ generation, evaluation, cache }`
-- [ ] 验证固定路径：以 08 `DEFAULT_QUERIES` 四条为最小验收集，notebook 与 CLI 双入口一致
+- [x] 验证固定路径：以 08 `DEFAULT_QUERIES` 四条为最小验收集，notebook 与 CLI 双入口一致
 
 ### 暂不实施项（占位符与扩展抓手）
 
-- [ ] 占位符：`persistent_cache_backend`（默认 `memory`；后续实际部署时可考虑`sqlite`/`redis`）
-- [ ] 占位符：`evidence_linked_hallucination_scoring`（当前按预定规则划分风险；后续根据需要加“有引用降权（论文明确说明的内容降低风险评级）”）
-- [ ] 占位符：`semantic_key_info_match`（当前短语/正则重叠；后续可考虑语义匹配）
-- [ ] 占位符：`adaptive_ttl_policy`（当前固定时效 TTL；后续按 query 类型动态 TTL）
-- [ ] 占位符：`auto_tune_max_workers`（当前静态并发；后续按失败率/延迟动态调整）
+> 以下条目本阶段**未完整实现**；括号内为扩展方向。每条按「当前代码 → 实测结果 → 扩展落点 → 预留扩展原因」书写，供交接对照。
+
+- [ ] **持久化缓存后端**（`config.cache_backend`，默认 `memory`；后续可考虑 `sqlite`/`redis`）  
+  - **当前代码**：`GenerationCache` 以进程内 `OrderedDict`（`_index`）承载 LRU/TTL；`make_key()` 对 `query + context_text + model + temperature_bucket(保留 2 位)` 做 `sha256`；`set()` 受 `max_temperature=0.3` 门控，TTL 取 `config.ttl_seconds=86400`（24h）。`BaseCacheBackend` / `MemoryCacheBackend` 已定义，但 **`config.cache_backend` 未被读取**，实际读写均走 `_index`（`delete()` 才会调用 backend）。  
+  - **实测结果**（`outputs/samples/eval_cache_batch_report.json`，offline）：首轮 `hit_rate=0.0`（4 miss），第二轮 `hit_rate=1.0`（4 hit）；进程重启后缓存清空。`pipeline_with_eval.run_with_cache_and_eval(force_refresh=True)` 可绕过命中（`test_pipeline_with_eval.py` 已覆盖）。  
+  - **扩展落点**：在 `GenerationCache.__init__` 按 `cache_backend` 选择后端，将 `get/set` 读写路径从 `_index` 下沉到 backend；持久化方案优先考虑 `sqlite`（单机）或 `redis`（多实例共享）。  
+  - **预留扩展原因**（对应笔记 Q4-1、Q4-4）：缓存命中判断的是「输入场景是否相同」（query + context + model + temperature），与 ROUGE 等输出质量指标无关——两者并列，一个管性能、一个管质量。本周 MVP 用进程内 LRU+TTL 已验证重复调用收益；进程退出即失效在开发期可接受。上线或多实例部署、需跨重启复用时再升级持久化（SQLite/Redis）；TTL 开发期取 24h，稳定后可配 24h~7d，医学内容宜保守并保留 `force_refresh`。
+
+- [ ] **引用联动幻觉降权**（`evidence_linked_hallucination_scoring`；当前按 `patterns.py` 规则计分，后续加「有引用降权」）  
+  - **当前代码**：`detect_hallucination_signals()` 匹配 4 类正则（`studies show`、`has been proven`、`100%`、绝对安全/有效表述），权重写死在 `HALLUCINATION_SIGNAL_PATTERNS`；`evaluate()` 已将 `generation.sources` 传入 `link_signals_with_sources()`，但该函数**当前透传**（`sources` 未参与计算）。`config.hallucination_weight_profile` 已声明，**未被读取**。模块 docstring 明确：幻觉分为风险信号，非真伪裁定。  
+  - **实测结果**（offline 四条快照）：`hallucination_risk_avg=0.0`，`hallucination_signals` 均为 `[]`——快照答案未触发上述规则，**尚无法从产出验证降权逻辑**；单测 `test_detect_hallucination_signals` 对含 `100%` 样例可检出信号。  
+  - **扩展落点**：在 `link_signals_with_sources()` 实现「有 `sources` 时按 `hallucination_weight_profile` 降权」；权重配置从 `patterns.py` 迁移到 `config` 或 profile 文件。  
+  - **预留扩展原因**（对应笔记 Q4-3）：绝对化表述规则定位为**风险筛查**（`risk signal`），不是真伪终审。若原论文本身表述绝对、模型如实复述，规则仍可能标高风险——这是「宁可保守提醒」的可预期误报。降误报需联合 08 `sources`：有明确引用时降低严重等级（绝对词+无引用权重高，有来源权重低），而非直接判错。首版先跑通规则计分与 `sources` 传参链路，降权逻辑留作下一步。
+
+- [ ] **语义级关键信息匹配**（`semantic_key_info_match`；当前 `key_phrases` 子串匹配，后续可考虑 embedding 语义匹配）  
+  - **当前代码**：`key_info_recall()` 对 `ground_truth.json` 的 `key_phrases` 做规范化（小写、压缩空白）后做**子串包含**判断，`recall = matched / len(gt_phrases)`；`extract_key_info()`（正则+关键词）已实现但 **未参与 recall 计算**。ROUGE 由 `rouge_score.RougeScorer` 独立输出，与 recall 无耦合。  
+  - **实测结果**（offline 首轮，4 条）：`rouge1_avg=0.0768`，`key_info_recall_avg=0.2321`。逐条 recall：MI=**0.0**（7 个短语全漏，如 `reperfusion`、`statin`；生成答案自述"context does not provide specific treatment"）、metformin=0.0、malaria=**0.5**（命中 `malaria`/`after 2015`/`intervention`）、warfarin=**0.4286**（命中 `warfarin`/`atrial fibrillation`/`elderly`）。同义改写或词形变化（如 `statins` vs `statin`）当前**不会**计为命中。  
+  - **扩展落点**：新增 `semantic_recall` 字段（embedding 相似度阈值），与现有子串 recall 并列输出，不替换现有指标。  
+  - **预留扩展原因**（对应笔记 Q4-2）：任务书 `recall = overlap / gt_matches` 的工程落地是「`key_phrases` 短语重叠」，能判断标准答案关键点是否被覆盖，**不能**证明模型从正确证据链推导。09 评估是自动近似，非医学事实终审；更稳妥应联合 08 `sources`、key_info_recall、幻觉风险及人工 spot check。ROUGE 对结构化答案可能偏低，故与 recall 并列展示。子串匹配实现简单、可复现，但同义改写易漏检——语义匹配作为补充而非替代。
+
+- [ ] **自适应 TTL 策略**（`config.ttl_policy`，当前 `"fixed"`；后续按 query 类型动态 TTL）  
+  - **当前代码**：`GenerationCache.set()` 统一使用 `self.ttl_seconds`（来自 `config.ttl_seconds`，默认 86400）；**`config.ttl_policy` 未被读取**。强制刷新由 `pipeline_with_eval.run_with_cache_and_eval(force_refresh=True)` 实现，跳过 `get` 直接重算。  
+  - **实测结果**：单测 `test_ttl_expiration_returns_none` 验证过期后 `get` 返回 `None`；CLI/notebook 默认两轮同参复跑，第二轮全命中，**未覆盖**按 query 类型差异化 TTL 的场景。  
+  - **扩展落点**：在 `set()` 入口根据 `ttl_policy` 与 query 元数据（如 `ground_truth.json` 标签或 query 分类）选择 TTL；医学场景建议默认偏短，保留 `force_refresh`。  
+  - **预留扩展原因**（对应笔记 Q4-4）：固定 TTL 满足 MVP「可控时效 + 可复现实验」；不同 query 时效敏感度不同（治疗指南 vs 文献检索），动态策略可在复用收益与知识过时风险间折中。医学内容建议偏保守（宁可短一些），并始终保留 `force_refresh=True` 强制重算入口，避免错误结论被长期复用。
+
+- [ ] **自适应并发调参**（`auto_tune_max_workers`；当前静态 `max_workers`，后续按失败率/延迟动态调整）  
+  - **当前代码**：`BatchRunner.__init__` 取 `min(config.max_workers, min(4, os.cpu_count() or 1))`，默认上限 4；`run_batch()` 用 `ThreadPoolExecutor` 并行多 query，单任务内 `try/except` 隔离失败；`summarize()` 输出 `avg_latency_seconds`、`error_rate`，**但不回写** `max_workers`。并行边界见 `batch_runner.py` 模块注释：多 query 并行，单 query 内部 08 阶段仍串行。  
+  - **实测结果**（`eval_cache_batch_report.json`）：`max_workers=2`，`batch_stats.error_rate=0.0`，`avg_latency_seconds=0.0041`（offline 快照，无真实 LLM 等待）；live 模式下 Q1 `generation_metrics.total_time_seconds≈33.4`，瓶颈在推理而非 CPU。  
+  - **扩展落点**：在 CLI 或 `BatchRunner` 外层增加「上一轮 `summarize()` → 调整下一轮 `max_workers`」闭环（如 `error_rate > 0` 或 P95 延迟超阈值则降并发）。  
+  - **预留扩展原因**（对应笔记 Q4-5）：并行发生在**多 query 批处理层**，单 query 内 08 四阶段仍串行——不是「每个 stage 并行再跑一次 LLM」。`max_workers = min(4, cpu_count)` 是保守起点；真实瓶颈常在 Ollama 推理与 I/O，非纯 CPU。Ollama 排队/超时时宜降至 2，稳定可试 3~4；需结合实测延迟与失败率动态调，而非静态拍脑袋。
+
+### 全量语料复评（未实施）
+
+> 对齐 06 `schedule.md` §「验证范围说明」：本阶段 ROUGE/recall 在**样本库**（1,267 chunks）链路上测得，不能代表全量 PMC 质量。
+
+- [ ] **全量检索 + live 评估复跑**（`full_corpus_eval_validation`）  
+  - **当前代码**：`run_eval_cache_batch.py --mode offline` 读 08 `generation_eval.json`（其 `mode=offline_sample_pipeline_eval`，源于 06 样本 `pipeline_eval.json`）；`--mode live` 仍用样本 `pipeline_eval.json`，未接 `RetrievalPipeline.from_mode("full")`。  
+  - **实测结果**：§4 全部指标来自样本库链路；Q1 因 `pipeline_eval` 无精确 query 走 fallback，recall=0 可预期。  
+  - **扩展落点**：06 全量检索 → 08 重跑 `generation_eval` → 09 `--mode live` + `--retrieval-mode full`（或等价参数）；`ground_truth` 可按分集维护。  
+  - **预留扩展原因**：样本库证明 09 评估/缓存/批量链路正确；检索覆盖与指标绝对值须在全量库（Chroma `pmc_oa_comm_full` + 610 万 BM25 chunks）上复评后再解读（见 06 schedule「样本库结果不能代表最终 RAG 质量」）。
 
 ### 阶段 0：环境与骨架 ✅
 
@@ -220,8 +264,22 @@ class BatchRunner:
 - [x] `src/bootstrap.py`：引用 05–08 模块路径
 - [x] 准备 `data/ground_truth.json`（4 条，对齐 08 `DEFAULT_QUERIES`）
 - [x] Notebook C0：环境初始化 + `ground_truth.json` 加载与字段校验
+- [x] Notebook C0.5：依赖自检（`rouge-score` 缺失时自动安装）
 - [x] 固定口径写入配置：`src/config.py`（新增）统一存放 `ttl_seconds`、`max_entries`、`max_temperature`、`max_workers`
 - [x] 预留扩展配置键：`cache_backend`、`ttl_policy`、`hallucination_weight_profile`（先不启用）
+
+**阶段 0 完成说明**
+
+- 本阶段搭好 09 工程骨架：评估/缓存/批量三条线的目录、依赖、`bootstrap` 挂 05–08 模块。
+- 准备 `ground_truth.json`（4 条对齐 08 默认 query），并统一 TTL、并发等配置到 `config.py`。
+
+**阶段 0 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/bootstrap.py` → `bootstrap_paths()`：按 08>06>07 优先级挂载上游 `src`。
+- `src/config.py`：`ttl_seconds`、`max_entries`、`max_workers` 等运行常量；`cache_backend` 等键预留未读。
+- `data/ground_truth.json`：4 条参考答案短语，供 `AnswerEvaluator` 离线打分。
+- `notebooks/eval-cache-batch.ipynb` **C0/C0.5**：环境初始化、`rouge-score` 依赖自检。
+- `requirements.txt`：`rouge-score` + 复用 08 `httpx`。
 
 ### 阶段 1：评估器（AnswerEvaluator） ✅
 
@@ -376,109 +434,153 @@ class BatchRunner:
 - `notebooks/answer-eval-cache-batch.ipynb`
   - C5 演示统一输出结构与二次调用命中缓存。
 
-### 阶段 5：Notebook 汇总导出与 CLI 对齐 ☐
+### 阶段 5：Notebook 汇总导出与 CLI 对齐 ✅
 
-- [ ] Notebook C6：导出 `eval_cache_batch_report.json` + 关键指标结论区
-- [ ] Notebook 全量复核：检查 C0–C6 是否与各阶段代码一致
-- [ ] `scripts/run_eval_cache_batch.py`：CLI 等价入口（参数与 notebook 对齐）
-- [ ] 报告素材打包：导出“命中率、平均耗时、评估分数分布、失败样本”四类图表/表格
+- [x] Notebook C6：导出 `eval_cache_batch_report.json` + 关键指标结论区
+- [x] Notebook 全量复核：检查 C0–C6 是否与各阶段代码一致
+- [x] `scripts/run_eval_cache_batch.py`：CLI 等价入口（参数与 notebook 对齐）
+- [x] 报告素材打包：导出“命中率、平均耗时、评估分数分布、失败样本”四类图表/表格
 
-**阶段 5 完成说明（待填写）**
+**阶段 5 完成说明**
 
-### 阶段 6：测试与交付 ☐
+- 本阶段把前 4 个子模块真正“打包可交付”：notebook 与 CLI 都能一键导出统一报告。
+- 报告里可直接看到四类核心结论：缓存命中率、平均耗时、评估分数分布、失败样本列表。
+- CLI 默认 `offline` 模式复用 08 `generation_eval.json` 快照，不依赖 Ollama；也预留 `mock/live` 模式便于后续切换。
+- 第二次批量跑同一批 query 时缓存命中率可达到 100%（本机 offline 实测：first=0.0，second=1.0）。
 
-- [ ] `pytest tests/` 全绿（evaluator / cache / batch 可 mock Ollama）
-- [ ] 用 08 固定 query 跑通：评估指标有值、第二次命中缓存、批量 4/4 返回
-- [ ] 更新根目录 `README.md` 阶段 09 条目（完成后）
-- [ ] （可选）`docs/答案评估与缓存报告.md`
+**阶段 5 实现说明（代码路径 / 函数 / 方法）**
 
-**阶段 6 完成说明（待填写）**
+- `src/report_builder.py`
+  - `build_eval_cache_batch_report(...)`：汇总 first/second pass，输出标准报告结构。
+  - `summarize_evaluation_distribution(...)`：计算 rouge1 / key_info_recall / hallucination 均值。
+  - `summarize_cache_metrics(...)`：计算 hits/misses/hit_rate。
+  - `collect_failures(...)`：收集 error 或空答案样本。
+- `scripts/run_eval_cache_batch.py`
+  - 支持 `--mode offline|mock|live`，与 notebook C6 参数口径对齐。
+  - 默认两轮执行（first pass + second pass）用于展示缓存收益。
+  - 输出 `outputs/samples/eval_cache_batch_report.json` 与 `outputs/logs/eval_cache_batch_*.json`。
+- `src/model_adapter.py`
+  - 新增 `SnapshotModelAdapter`：离线快照答案适配，便于无 Ollama 环境复跑。
+- `notebooks/answer-eval-cache-batch.ipynb`
+  - C6 单元完成报告导出与关键指标结论展示。
+- `tests/test_report_builder.py`
+  - 覆盖报告汇总结构与缓存统计逻辑。
 
----
+### 阶段 6：测试与交付 ✅
 
-## 验证用例（与 08 对齐）
+- [x] `pytest tests/` 全绿（evaluator / cache / batch 可 mock Ollama）
+- [x] 用 08 固定 query 跑通：评估指标有值、第二次命中缓存、批量 4/4 返回
+- [x] 更新根目录 `README.md` 阶段 09 条目（完成后）
+- [x] 结合`09 生成答案评估，缓存策略与批量处理\任务.txt`要求完成`docs/答案评估与缓存报告.md`
 
-| # | query | 验证点 |
-|---|-------|--------|
-| 1 | `What is the treatment for MI?` | ROUGE vs gt；关键信息 recall；幻觉信号 |
-| 2 | `metformin cardiovascular effects` | 剂量/机制类短语提取 |
-| 3 | `papers on malaria after 2015` | 时间范围正则；年份相关 gt |
-| 4 | `warfarin atrial fibrillation elderly` | 安全信息（bleeding risk）信号 |
+**阶段 6 完成说明**
 
-**缓存验证**：
+- 本阶段完成最终验收与交付收口：单测、验收测试、正式报告、README 定稿全部完成。
+- 验收测试覆盖任务书核心要求：四条 query 有评估指标、第二轮缓存全命中、批量 4/4 顺序返回。
+- 当前阶段可作为 GitHub 提交版本：代码、notebook、CLI、报告、样例 JSON 均已齐备。
 
-| 场景 | 期望 |
-|------|------|
-| 同 query + 同 context + 低温 | 第二次 `cache.hit == True` |
-| 提高 temperature | 不写入缓存或新 key |
-| 等待 TTL 过期 | `get` 返回 `None`，重新生成 |
-| 填满 `max_entries` | 最久未用条目被淘汰 |
+**阶段 6 实现说明（代码路径 / 函数 / 方法）**
 
-**批量验证**：
-
-| 场景 | 期望 |
-|------|------|
-| 4 条正常 query | 返回 4 条，顺序一致 |
-| 注入 1 条非法/超时 query | 该条 `error`，其余成功 |
-
----
-
-## 交付产物清单（预填）
-
-| 产物 | 格式 | 路径 | Git |
-|------|------|------|-----|
-| 参考答案 | JSON | `data/ground_truth.json` | ✅ |
-| 答案评估器 | Python | `src/answer_evaluator.py` | ✅ |
-| 正则模式库 | Python | `src/patterns.py` | ✅ |
-| 生成缓存 | Python | `src/generation_cache.py` | ✅ |
-| 批量运行器 | Python | `src/batch_runner.py` | ✅ |
-| 粘合流水线 | Python | `src/pipeline_with_eval.py` | ✅ |
-| 演示 notebook | `.ipynb` | `notebooks/answer-eval-cache-batch.ipynb` | ✅ |
-| CLI 脚本 | Python | `scripts/run_eval_cache_batch.py` | ✅ |
-| 评测报告样例 | JSON | `outputs/samples/eval_cache_batch_report.json` | ✅ |
-| 运行 log | JSON | `outputs/logs/eval_cache_batch_*.json` | ✅ |
+- `tests/test_stage06_acceptance.py`
+  - `test_stage06_baseline_queries_have_evaluation_metrics`：验证 08 四条 query 评估指标完整。
+  - `test_stage06_second_pass_cache_hit_for_all_queries`：验证第二轮缓存命中率 100%。
+  - `test_stage06_batch_returns_four_in_order`：验证批量 4/4 且顺序一致。
+- `docs/答案评估与缓存报告.md`
+  - 任务书逐条对照、模块说明、offline 验证结果、复现命令。
+- 根目录 `README.md`
+  - 第九阶段完成总结、阶段一览、交付物速查、更新记录已同步。
 
 ---
 
-## 风险与应对
+## 验证用例（与 08 对齐）✅
 
-| 风险 | 影响 | 应对 |
+| # | query | 验证点 | 实测结果（offline） |
+|---|-------|--------|---------------------|
+| 1 | `What is the treatment for MI?` | ROUGE vs gt；关键信息 recall；幻觉信号 | rouge1=0.072，recall=0.0，risk=0.0 |
+| 2 | `metformin cardiovascular effects` | 剂量/机制类短语提取 | rouge1=0.124，recall=0.0，risk=0.0 |
+| 3 | `papers on malaria after 2015` | 时间范围正则；年份相关 gt | rouge1=0.041，recall=0.5（命中 malaria/after 2015/intervention） |
+| 4 | `warfarin atrial fibrillation elderly` | 安全信息（bleeding risk）信号 | rouge1=0.070，recall=0.429（命中 warfarin/AF/elderly） |
+
+**缓存验证** ✅：
+
+| 场景 | 期望 | 实测 |
 |------|------|------|
-| 无高质量 ground truth | ROUGE / recall 无意义 | 先为 4 条手写 `reference_answer` + `key_phrases` |
-| Ollama 并发过高 | 超时或排队 | `max_workers` 限制为 2–4；批量可串行模式开关 |
-| 缓存含过时医学结论 | 错误答案被复用 | TTL + 低温门控；`force_refresh=True` 绕过 |
-| 幻觉规则误报 | 分数偏高 | 规则可配权重；与 critical_reviewer 输出交叉参考 |
-| ROUGE 对结构化答案偏低 | 指标不好看 | 报告同时展示 key_info_recall 与幻觉分 |
+| 同 query + 同 context + 低温 | 第二次 `cache.hit == True` | 第二轮 hit_rate=1.0（4/4） |
+| 提高 temperature | 不写入缓存或新 key | `test_generation_cache.py::test_high_temperature_is_not_cached` 通过 |
+| 等待 TTL 过期 | `get` 返回 `None`，重新生成 | `test_generation_cache.py::test_ttl_expiration_returns_none` 通过 |
+| 填满 `max_entries` | 最久未用条目被淘汰 | `test_generation_cache.py::test_lru_eviction_happens_when_full` 通过 |
+
+**批量验证** ✅：
+
+| 场景 | 期望 | 实测 |
+|------|------|------|
+| 4 条正常 query | 返回 4 条，顺序一致 | `test_stage06_acceptance.py` + `batch_stats.total=4` |
+| 注入 1 条非法/超时 query | 该条 `error`，其余成功 | `test_batch_runner.py::test_run_batch_isolates_failures` 通过 |
 
 ---
 
-## 本周执行顺序（建议）
+## 交付产物清单 ✅
 
-1. **`ground_truth.json` + AnswerEvaluator（含单元测试）**  
-2. **GenerationCache（miss/hit/TTL/温度门控）**  
-3. **`pipeline_with_eval` 单条端到端**  
-4. **BatchRunner + 复跑 08 四条 query**  
-5. **阶段收尾：Notebook C6 导出 + CLI 对齐 + README / 报告**
+| 产物 | 格式 | 路径 | Git | 状态 |
+|------|------|------|-----|------|
+| 参考答案 | JSON | `data/ground_truth.json` | ✅ | 已交付 |
+| 运行配置 | Python | `src/config.py` | ✅ | 已交付 |
+| 答案评估器 | Python | `src/answer_evaluator.py` | ✅ | 已交付 |
+| 正则模式库 | Python | `src/patterns.py` | ✅ | 已交付 |
+| 生成缓存 | Python | `src/generation_cache.py` | ✅ | 已交付 |
+| 批量运行器 | Python | `src/batch_runner.py` | ✅ | 已交付 |
+| 模型适配层 | Python | `src/model_adapter.py` | ✅ | 已交付 |
+| 粘合流水线 | Python | `src/pipeline_with_eval.py` | ✅ | 已交付 |
+| 报告构建器 | Python | `src/report_builder.py` | ✅ | 已交付 |
+| 演示 notebook | `.ipynb` | `notebooks/answer-eval-cache-batch.ipynb` | ✅ | 已交付（C0–C6） |
+| CLI 脚本 | Python | `scripts/run_eval_cache_batch.py` | ✅ | 已交付 |
+| 单测套件 | Python | `tests/`（18 项） | ✅ | 已交付 |
+| 评测报告样例 | JSON | `outputs/samples/eval_cache_batch_report.json` | ✅ | 已交付 |
+| 运行 log | JSON | `outputs/logs/eval_cache_batch_*.json` | ✅ | 已交付 |
+| **正式报告** | Markdown | `docs/答案评估与缓存报告.md` | ✅ | 已交付 |
 
 ---
 
-## 报告撰写映射（实现后直接套用）
+## 风险与应对（阶段收尾状态）
+
+| 风险 | 影响 | 应对 | 当前状态 |
+|------|------|------|----------|
+| 无高质量 ground truth | ROUGE / recall 无意义 | 4 条手写 `reference_answer` + `key_phrases` | ✅ 已落地 |
+| Ollama 并发过高 | 超时或排队 | `max_workers` 限制为 2–4；CLI 支持 offline/mock | ✅ 已落地 |
+| 缓存含过时医学结论 | 错误答案被复用 | TTL + 低温门控；`force_refresh=True` | ✅ 已落地 |
+| 幻觉规则误报 | 分数偏高 | 规则分定义为风险信号；预留 `link_signals_with_sources` | ⚠️ 规则可用，降权待扩展 |
+| ROUGE 对结构化答案偏低 | 指标不好看 | 报告并列展示 key_info_recall 与幻觉分 | ✅ 已在报告 §4 说明 |
+| 跨阶段 `config` 同名冲突 | notebook 导入失败 | `generation_cache.py` / `batch_runner.py` 强制加载本地 `config.py` | ✅ 已修复 |
+
+---
+
+## 本周执行顺序（建议）✅ 已全部完成
+
+1. ✅ **`ground_truth.json` + AnswerEvaluator（含单元测试）**  
+2. ✅ **GenerationCache（miss/hit/TTL/温度门控）**  
+3. ✅ **`pipeline_with_eval` 单条端到端**  
+4. ✅ **BatchRunner + 复跑 08 四条 query**  
+5. ✅ **阶段收尾：Notebook C6 导出 + CLI 对齐 + README / 报告**
+
+---
+
+## 报告撰写映射（已实现）✅
 
 > 目标：写报告时“设计思路 ↔ 代码实现 ↔ 验证结果”一一对应，避免空泛描述。
 
-| 报告章节建议 | 设计思路（本计划） | 代码落点（实现后填写） | 证据材料（notebook/outputs） |
-|-------------|--------------------|------------------------|------------------------------|
-| 评估器设计 | ROUGE + key_info_recall + 幻觉风险 + 可读性四维联合 | `src/answer_evaluator.py`、`src/patterns.py` | C1、`eval_cache_batch_report.json` |
-| 缓存策略设计 | query+context 哈希；LRU+TTL+低温门控；时效优先 | `src/generation_cache.py` | C2/C3、缓存统计字段 |
-| 批量处理设计 | 多 query 并行、单 query 串行、失败隔离、顺序对齐 | `src/batch_runner.py` | C4、批量结果对照表 |
-| 粘合流水线设计 | 统一输出 `generation/evaluation/cache` | `src/pipeline_with_eval.py` | C5、端到端汇总 |
-| 工程边界与扩展 | 本周采用内存缓存与规则分；预留持久化/语义匹配扩展 | `src/config.py`、占位接口 | C6、风险与后续计划 |
+| 报告章节建议 | 设计思路（本计划） | 代码落点（已实现） | 证据材料（notebook/outputs） |
+|-------------|--------------------|--------------------|------------------------------|
+| 评估器设计 | ROUGE + key_info_recall + 幻觉风险 + 可读性四维联合 | `src/answer_evaluator.py`、`src/patterns.py` | C1、`eval_cache_batch_report.json` §4.3 |
+| 缓存策略设计 | query+context 哈希；LRU+TTL+低温门控；时效优先 | `src/generation_cache.py` | C2/C3、报告 §4.2/§4.4 |
+| 批量处理设计 | 多 query 并行、单 query 串行、失败隔离、顺序对齐 | `src/batch_runner.py` | C4、报告 §4.5 |
+| 粘合流水线设计 | 统一输出 `generation/evaluation/cache` | `src/pipeline_with_eval.py`、`src/model_adapter.py` | C5、报告 §4.4 |
+| 工程边界与扩展 | 内存缓存与规则分；预留持久化/语义匹配扩展 | `src/config.py`、占位接口 | 报告 §5 + schedule「暂不实施项」 |
 
-**报告写作硬规则（建议固定）：**
+**报告写作硬规则（已执行）**：
 
-- [ ] 每节至少包含：设计目的、实现方法、关键参数、结果截图/表格、局限与下一步
-- [ ] 所有“后续扩展”必须对应到本计划占位符（避免写成无落点愿景）
-- [ ] 所有结论尽量给出可复现实验入口（notebook cell 或 CLI 命令）
+- [x] 每节至少包含：设计目的、实现方法、关键参数、结果截图/表格、局限与下一步
+- [x] 所有“后续扩展”均对应到占位符（`link_signals_with_sources`、`BaseCacheBackend` 等）
+- [x] 所有结论给出可复现实验入口（`pytest tests/ -v`、`run_eval_cache_batch.py --mode offline`、notebook C0–C6）
 
 ---
 
@@ -492,3 +594,7 @@ class BatchRunner:
 | 2026-07-07 | 阶段 2 完成：`generation_cache.py`（LRU+TTL+温度门控+统计+后端占位）+ `tests/test_generation_cache.py`（4 passed）+ notebook C2/C3 |
 | 2026-07-07 | 阶段 3 完成：`batch_runner.py`（并行+失败隔离+顺序对齐+统计）+ `tests/test_batch_runner.py`（3 passed）+ notebook C4 |
 | 2026-07-07 | 阶段 4 完成：`pipeline_with_eval.py`（generation+cache+evaluation 统一接口）+ `model_adapter.py` 适配层 + `tests/test_pipeline_with_eval.py`（2 passed）+ notebook C5 |
+| 2026-07-08 | 阶段 5 完成：`report_builder.py` + `scripts/run_eval_cache_batch.py` + notebook C6 + `eval_cache_batch_report.json`（pytest 15 passed） |
+| 2026-07-08 | 阶段 6 完成：`test_stage06_acceptance.py` + `docs/答案评估与缓存报告.md` + README 定稿（pytest 18 passed） |
+| 2026-07-08 | schedule 全量勾选与收尾：验证用例实测列、交付清单、风险状态、报告映射、扩展占位说明 |
+| 2026-07-08 | 明确样本库验证边界；报告 §1.2/§4.3/§5.7 与 schedule「全量语料复评」对齐 06 验证范围说明 |

@@ -169,11 +169,32 @@ class MedicalQueryEnhancer:
 - [x] 路径：`PERSIST_SAMPLE` / `PERSIST_FULL`（notebook C0）
 - [x] 引用 04 `DocumentEmbedder` / `ChromaIndexBuilder`（`sys.path`）
 
+**阶段 0 完成说明**
+
+- 本阶段搭好查询增强模块的目录与 04 向量库联调入口；不复制 embedder，避免双份 BGE 逻辑分叉。
+- 明确样本库与全量库两套 Chroma 路径，开发期优先样本库秒级联调。
+
+**阶段 0 实现说明（代码路径 / 函数 / 方法）**
+
+- `notebooks/query-enhancement.ipynb` **C0**：`sys.path` 挂 04 `src`；`PERSIST_SAMPLE` / `PERSIST_FULL` 常量。
+- `requirements.txt`：基本复用 04 环境，本阶段新增极少。
+
 ### 阶段 1：静态资源与实体识别 ✅
 
 - [x] `data/medical_synonyms.json`
 - [x] `medical_patterns.py` + `extract_entities()`
 - [x] `tests/test_query_enhancer.py`
+
+**阶段 1 完成说明**
+
+- 本阶段准备「医学缩写/同义词词典」和基础实体识别（drug、disease、abbrev），为 query 扩展打素材。
+- 缩写采用白名单策略，避免误扩展（如单独 `in` 被当成疾病）。
+
+**阶段 1 实现说明（代码路径 / 函数 / 方法）**
+
+- `data/medical_synonyms.json`：静态同义词表（如 `mi` → myocardial infarction）。
+- `src/medical_patterns.py` → `extract_entities(text)`：正则识别实体类型与 span。
+- `tests/test_query_enhancer.py`：实体与边界用例。
 
 ### 阶段 2：查询增强核心 ✅
 
@@ -184,6 +205,18 @@ class MedicalQueryEnhancer:
   - [x] `filters` 提取（strategy 可执行；year/journal 解析 + `executable=false`）
 - [x] 嵌入模型标注：`BAAI/bge-small-en-v1.5`（`metadata` + 模块注释）
 
+**阶段 2 完成说明**
+
+- 本阶段核心是 `MedicalQueryEnhancer`：把用户一句话变成「向量检索用 query + BM25 用 query + 可选 filters」。
+- `vector_query` 只传 raw 文本，**BGE 指令前缀统一在 04 `encode_queries()` 加**，本阶段不重复拼接。
+- 年份 filter 可解析但 `executable=false`（Chroma 无 pub_year metadata），留给 06 重排层处理。
+
+**阶段 2 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/models.py`：`EnhancedQuery`（`vector_query`、`keyword_query`、`filters`、`expanded_terms` 等）。
+- `src/query_enhancer.py` → `MedicalQueryEnhancer.process(query)`：清洗 → 实体 → 同义词 → 双 query + filters。
+- `tests/test_query_enhancer.py`：MI 扩展、年份 filter、malaria 2015 等固定用例。
+
 ### 阶段 3：演示与双库联调 ✅
 
 - [x] `notebooks/query-enhancement.ipynb`（C0–C5，2026-06-08 跑通）
@@ -191,12 +224,33 @@ class MedicalQueryEnhancer:
 - [x] `outputs/samples/chroma_smoke_compare.json`（样本库 + 全量库对比）
 - [x] `scripts/run_dual_smoke.py`（CLI 等价脚本）
 
+**阶段 3 完成说明**
+
+- 本阶段验证 05→04 路径打通：增强后的 `vector_query` 能命中 Chroma 样本库与全量库。
+- 双库 smoke：同 query 样本库 ~12ms、全量 ~16ms；证明联调可行，全量无 HNSW bin 仍可 query。
+
+**阶段 3 实现说明（代码路径 / 函数 / 方法）**
+
+- `src/chroma_smoke.py` → `timed_queries()` / `detect_hnsw_bins()`：双库计时与 bin 探测。
+- `scripts/run_dual_smoke.py`：CLI 复现 notebook C5。
+- `outputs/samples/enhancement_examples.json`、`chroma_smoke_compare.json`。
+
 ### 阶段 4：文档与交付 ✅
 
 - [x] 更新根目录 `README.md` 阶段 05 条目
 - [x] 本 `schedule.md` 进度与验证结果
 - [x] `笔记/05笔记·.md` 补充 notebook 实测（Q11）
 - [x] `docs/查询理解与增强报告.md`（正式交付文档，提交老师）
+
+**阶段 4 完成说明**
+
+- 本阶段收口：正式报告、README、笔记 Q11 记录双库 smoke 实测结论。
+- 交付物是「增强后的 query 对象」本身，**不含**检索融合与答案生成（属 06/08）。
+
+**阶段 4 实现说明（代码路径 / 函数 / 方法）**
+
+- `docs/查询理解与增强报告.md`：任务书对照、filter 决策、双库对比表。
+- 根目录 `README.md` 第五阶段条目与联调脚本说明。
 
 ---
 
