@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import json
+import pickle
 import re
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -134,3 +136,83 @@ class BM25Index:
                 }
             )
         return results
+
+    def save(self, directory: str | Path) -> Path:
+        """将内存索引落盘（供全量离线复用）。"""
+        if self._bm25 is None:
+            raise RuntimeError("BM25 index not built; nothing to save")
+
+        out_dir = Path(directory)
+        out_dir.mkdir(parents=True, exist_ok=True)
+        payload_path = out_dir / "bm25_index.pkl"
+        manifest_path = out_dir / "manifest.json"
+
+        source = self._source_path or Path("unknown")
+        manifest = {
+            "format": "bm25_index_v1",
+            "built_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "chunk_count": len(self._chunks),
+            "source_jsonl": str(source),
+            "source_exists": source.is_file(),
+            "source_size_bytes": source.stat().st_size if source.is_file() else None,
+            "source_mtime": source.stat().st_mtime if source.is_file() else None,
+            "payload_file": payload_path.name,
+        }
+        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+
+        with open(payload_path, "wb") as f:
+            pickle.dump(
+                {
+                    "chunks": self._chunks,
+                    "corpus_tokens": self._corpus_tokens,
+                    "bm25": self._bm25,
+                    "source_path": str(source),
+                },
+                f,
+                protocol=pickle.HIGHEST_PROTOCOL,
+            )
+        return out_dir
+
+    @classmethod
+    def load(cls, directory: str | Path, *, validate_source: bool = True) -> BM25Index:
+        """从离线目录加载索引；可选校验源 JSONL 未变更。"""
+        in_dir = Path(directory)
+        manifest_path = in_dir / "manifest.json"
+        payload_path = in_dir / "bm25_index.pkl"
+        if not manifest_path.is_file() or not payload_path.is_file():
+            raise FileNotFoundError(f"BM25 cache incomplete under {in_dir}")
+
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        source = Path(str(manifest.get("source_jsonl", "")))
+        if validate_source and source.is_file():
+            recorded_size = manifest.get("source_size_bytes")
+            recorded_mtime = manifest.get("source_mtime")
+            if recorded_size is not None and source.stat().st_size != recorded_size:
+                raise ValueError(
+                    f"source JSONL size changed since cache build: {source} "
+                    f"(cached={recorded_size}, current={source.stat().st_size})"
+                )
+            if recorded_mtime is not None and source.stat().st_mtime != recorded_mtime:
+                raise ValueError(f"source JSONL mtime changed since cache build: {source}")
+
+        with open(payload_path, "rb") as f:
+            payload = pickle.load(f)
+
+        index = cls()
+        index._chunks = payload["chunks"]
+        index._corpus_tokens = payload["corpus_tokens"]
+        index._bm25 = payload["bm25"]
+        index._source_path = Path(payload.get("source_path") or source)
+        if manifest.get("chunk_count") != len(index._chunks):
+            raise ValueError(
+                f"manifest chunk_count={manifest.get('chunk_count')} "
+                f"!= loaded {len(index._chunks)}"
+            )
+        return index
+
+    @classmethod
+    def try_load(cls, directory: str | Path, *, validate_source: bool = True) -> BM25Index | None:
+        try:
+            return cls.load(directory, validate_source=validate_source)
+        except (FileNotFoundError, ValueError):
+            return None

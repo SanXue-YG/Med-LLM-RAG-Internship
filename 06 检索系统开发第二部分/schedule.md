@@ -1,6 +1,6 @@
 # 06 检索系统开发第二部分 — 执行计划
 
-> **状态：✅ 已完成（阶段 0–5；notebook C0–C12）**
+> **状态：✅ 已完成（阶段 0–5；notebook C0–C12）；09 阶段联动扩展 BM25 全量分片索引 ✅**
 >
 > **本阶段范围（任务书）**：实现多路检索（向量 + BM25）→ 融合 → 重排序，并与 05 查询增强模块打通为完整检索流水线。
 >
@@ -19,7 +19,8 @@
 | 维度 | 本阶段实际使用（`mode="sample"`，默认） | 后续 LangChain RAG 生产应切换（`mode="full"`） |
 |------|----------------------------------------|-----------------------------------------------|
 | 向量库 | `04 .../data/chroma_db` · `pmc_oa_comm_sample` | **`04 .../data/chroma_db_full` · `pmc_oa_comm_full`**（6,107,296 条；D: 或 E: 备份） |
-| BM25 语料 | `03 .../chunks_sample.jsonl`（**1,267** chunks） | **`E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl`**（**6,107,296** chunks） |
+| BM25 语料 | `03 .../chunks_sample.jsonl`（**1,267** chunks） | **`09 .../data/oa_comm_chunks.jsonl`**（**6,107,296** chunks；本地 D:；E: 手动备份） |
+| BM25 离线索引 | —（样本库现场 `build()`） | **`09 .../data/bm25_full/`**（分片 `bm25_sharded_v1`，09 阶段构建） |
 | slim 元数据 | `06 .../data/oa_comm_slim.jsonl`（已本地化，4,557,627 篇） | 同上或 E: 权威源（recency/authority 已覆盖全库） |
 | 代码入口 | `MODE = "sample"`（notebook C0）· `from_mode("sample")` | **`from_mode("full")`** · CLI `--mode full` |
 
@@ -68,7 +69,8 @@
 | **slim 回查（RAG 活跃）** | `06 .../data/oa_comm_slim.jsonl` | 4,557,627 篇，~8.9 GB | ❌ | 自 E: 复制；`resolve_slim_path()` 优先读此路径 |
 | slim 权威源（备份） | `E:\med-llm-rag-datasets\processed\oa_comm_slim.jsonl` | 同上 | ❌ | 本地缺失时回退 |
 | BM25 样本语料 | `03 .../data/processed/chunks_sample.jsonl` | 1,267 chunks | ✅ | 首轮开发 |
-| BM25 全量语料 | `E:\...\oa_comm_chunks.jsonl` | 6,107,296 chunks | ❌ | 全量 BM25 时再挂载 |
+| BM25 全量语料 | `09 .../data/oa_comm_chunks.jsonl` | 6,107,296 chunks | ✅ | 09 阶段迁入 D: |
+| BM25 全量离线索引 | `09 .../data/bm25_full/`（分片 62 片） | 6,107,296 chunks | ✅ | 09 阶段 7 构建 |
 | Chroma 样本库 | `04 .../data/chroma_db` | 1,267 | ❌ | collection: `pmc_oa_comm_sample` |
 | Chroma 全量库 | `04 .../data/chroma_db_full` | 6,107,296 | ❌ | collection: `pmc_oa_comm_full` |
 
@@ -446,4 +448,58 @@ python scripts/run_retrieval_eval.py --output outputs/samples/pipeline_eval.json
 | 2026-06-18 | **阶段 4 完成**：`pipeline.py` + CLI 评测 + notebook C10–C11；导出 `pipeline_eval.json` |
 | 2026-06-18 | **阶段 5 完成**：全测试通过 + 阶段报告 `docs/检索流水线报告.md` |
 | 2026-06-18 | **C12 全量联调**：`pipeline_eval_full.json`；3 query 样本 vs 全量 Top-1 全不同；metformin 全量命中真实 RCT |
+| 2026-07-08 | **09 阶段联动**：全量 BM25 分片离线索引（见下节「09 联动扩展」）；`from_mode("full")` 优先加载 `09/data/bm25_full` |
 
+---
+
+## 09 阶段联动扩展：全量 BM25 分片离线索引（2026-07-08）✅
+
+> **背景**：06 阶段 C12 全量联调时 BM25 仅探测前 10 万条（31.5s），未建 610 万全库索引。09 阶段 7 在全量 live 评估前补齐 BM25 离线索引；因单体 `BM25Okapi` 构建会卡死机器，在 06 侧新增**分片方案**，由 09 负责构建与落盘。
+
+### 动机与策略
+
+| 问题 | 方案 |
+|------|------|
+| 610 万文档单体 `BM25Okapi` 内存爆掉 | 流式分片：每片 ~10 万 chunk 建索引、落盘、释放 |
+| E: 读取慢 | 语料与索引默认 **`09/data/`**（D: 本地）；E: 仅手动备份 |
+| 查询时内存峰值 | `ShardedBM25Index` 逐片加载评分，合并全局 top_k |
+| 分片 IDF 近似 | 同语料对照 top-10 重叠 **0.95**（09 C4.5 实测）；用于召回候选，融合+rerank 可接受 |
+
+### 06 侧代码变更（由 09 阶段 7 引入）
+
+| 文件 | 变更 |
+|------|------|
+| **`src/bm25_sharded.py`**（新增） | `build_sharded_bm25()`：分片构建、断点续建、`progress.json` 进度输出；`ShardedBM25Index.search()`：逐片查询，接口兼容 `BM25Index` |
+| **`src/bm25_index.py`**（扩展） | `save()` / `load()` / `try_load()`：单体索引落盘（样本/smoke）；全量生产路径以分片为主 |
+| **`src/config.py`**（扩展） | 新增 `STAGE09`、`CHUNKS_FULL_STAGE09`、`BM25_FULL_CACHE`；`resolve_chunks_path("full")` 优先 `09/data/oa_comm_chunks.jsonl`；`resolve_bm25_cache_dir("full")` 识别 `format=bm25_sharded_v1` |
+| **`src/multipath_retriever.py`**（扩展） | `from_mode("full")`：先 `resolve_bm25_cache_dir()` → `ShardedBM25Index` 或 `BM25Index.load()`；缺失时回退现场 `build()` |
+
+### 构建与加载入口
+
+- **构建**（09 负责）：`09/scripts/build_bm25_full_index.py` 或 notebook C2.5 `build_sharded_full_bm25()`
+- **落盘**：`09 .../data/bm25_full/manifest.json` + `shard_*.pkl`（**2026-07-08 实测**：62 片 · 6,107,296 chunks · ~700.7s · `shard_size=100000`）
+- **加载**（06 自动）：`RetrievalPipeline.from_mode("full")` → `MultiPathRetriever` → `ShardedBM25Index(cache_dir)`
+
+### 对 06 原有行为的影响
+
+- **`mode="sample"`**：不变，仍用 `chunks_sample.jsonl` + 现场 `BM25Index.build()`。
+- **`mode="full"`**：若 `09/data/bm25_full` 存在且 `manifest.status=completed`，**不再**每次现场构建 BM25（避免卡死）；缺失时仍回退现场 build（不推荐）。
+- **C12 结论仍成立**：全量 Chroma 检索质量优于样本；现 BM25 全库索引已补齐，与 C12 时「探测 10 万条」不同。
+
+### 09 侧配套（非 06 交付，但依赖 06 模块）
+
+- `09/src/bm25_store.py`：构建/状态查询封装
+- `09/src/full_eval.py`：全量 live 评估时正确加载 06 模块（处理 `bootstrap`/`config`/`models` 同名冲突）
+- `09/notebooks/answer-eval-cache-batch-full.ipynb`：C2.5 构建、C4.5 BM25 重叠率对照
+
+**09 联动完成说明**
+
+- 06 的 `from_mode("full")` 从「每次可能现场建 610 万 BM25」变为「优先加载 09 预建分片索引」，全量 live 评估与后续 RAG 工程可稳定复用。
+- 分片查询比单体慢（逐片加载），但可接受；生产可进一步优化（索引常驻、检索缓存）。
+
+**09 联动实现说明（06 模块落点）**
+
+- `bm25_sharded.build_sharded_bm25(jsonl, out_dir, shard_size, resume)` → 写出 `manifest.json` / `progress.json` / `shard_NNNNN.pkl`
+- `ShardedBM25Index.is_sharded(dir)` / `ShardedBM25Index(dir).search(query, top_k)` → 与 `BM25Index.search()` 返回格式一致（`chunk_id`、`score`、`source=bm25`）
+- `config.resolve_bm25_cache_dir("full")` → 返回 `09/data/bm25_full` 或 `None`
+- `multipath_retriever.MultiPathRetriever.from_mode("full")` → 自动选择 `ShardedBM25Index` / `BM25Index.load` / 现场 build

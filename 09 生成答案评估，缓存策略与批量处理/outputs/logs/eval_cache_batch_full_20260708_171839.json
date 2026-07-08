@@ -1,0 +1,1066 @@
+{
+  "generated_at": "2026-07-08 17:18:39",
+  "mode": "live",
+  "query_count": 4,
+  "config": {
+    "queries": [
+      "What is the treatment for MI?",
+      "metformin cardiovascular effects",
+      "papers on malaria after 2015",
+      "warfarin atrial fibrillation elderly"
+    ],
+    "temperature": 0.2,
+    "max_workers": 2,
+    "model_name": "deepseek-r1:7b",
+    "skip_evidence_eval": true,
+    "skip_critical_review": true,
+    "skip_rerank": false
+  },
+  "summary": {
+    "cache_first_pass": {
+      "hits": 0,
+      "misses": 4,
+      "hit_rate": 0.0
+    },
+    "cache_second_pass": {
+      "hits": 4,
+      "misses": 0,
+      "hit_rate": 1.0
+    },
+    "avg_latency_seconds": 204.6916,
+    "evaluation_first_pass": {
+      "rouge1_avg": 0.0782,
+      "key_info_recall_avg": 0.2738,
+      "hallucination_risk_avg": 0.0,
+      "sample_count": 4.0
+    },
+    "evaluation_second_pass": {
+      "rouge1_avg": 0.0782,
+      "key_info_recall_avg": 0.2738,
+      "hallucination_risk_avg": 0.0,
+      "sample_count": 4.0
+    },
+    "failures_first_pass": [],
+    "failures_second_pass": []
+  },
+  "batch_stats": {
+    "total": 4,
+    "succeeded": 4,
+    "failed": 0,
+    "avg_latency_seconds": 204.6916,
+    "error_rate": 0.0
+  },
+  "first_pass": [
+    {
+      "_index": 0,
+      "query": "What is the treatment for MI?",
+      "status": "ok",
+      "latency_seconds": 507.3032,
+      "generation": {
+        "query": "What is the treatment for MI?",
+        "answer": "**Answer:**\n\nThe treatment options for Myocardial Infarction (MI) include:\n\n1. **Herbal Remedies:** \n   - Plants from the Fabaceae and Asteraceae families, such as those containing flavonoids and alkaloids, show promise in treating MI. These remedies are noted for their safety and accessibility.\n\n2. **Platelet-Rich Plasma (PRP) Therapy:**\n   - PRP therapy is explored as a potential method to aid heart cell regeneration post-MI by promoting processes like angiogenesis and reducing the infarct size, which may improve recovery outcomes.\n\n3. **Nanoparticles:**\n   - Nanoparticles are considered a novel strategy for both preventing and treating MI, potentially enhancing drug delivery or targeting ischemic regions.\n\n**Evidence:**\n- Herbs from Fabaceae (11%) and Asteraceae (9%) families show effectiveness with components like flavonoids.\n- PRP therapy supports heart regeneration by improving biological processes such as angiogenesis.\n- Selected genes, including IL1R1, may serve as diagnostic markers for MI progression.\n\n**Uncertainty:** Limited direct evidence comparing these treatments to conventional methods in terms of effectiveness and safety.\n\n**Note:** Consult a healthcare professional before starting any treatment, especially if considering alternative or complementary therapies.\n\nEvidence refs: [1] [2] [3] [4]\n\nSources:\n[1] Medicinal Plants in the Treatment of Myocardial Infarction Disease: A Systematic Review (doc_id=PMC11327834, chunk_id=PMC11327834, score=0.6802)\n[2] Platelet-Rich Plasma for Heart Cell Regeneration Post-myocardial Infarction: A Propitious Therapeutic Approach (doc_id=PMC10852202, chunk_id=PMC10852202, score=0.5875)\n[3] Identification of Post-myocardial Infarction Blood Expression Signatures Using Multiple Feature Selection Strategies (doc_id=PMC7287215, chunk_id=PMC7287215, score=0.4178)\n[4] Advances in Nanoparticles in the Prevention and Treatment of Myocardial Infarction (doc_id=PMC11173599, chunk_id=PMC11173599, score=0.4114)\n\nMedical disclaimer: This response is for informational purposes only and is not a substitute for professional medical advice.",
+        "context_metadata": {
+          "total_chunks_retrieved": 10,
+          "unique_chunks_after_dedup": 10,
+          "chunks_selected": 4,
+          "estimated_tokens": 1200,
+          "chunk_sources": {
+            "counts": {
+              "PMC11327834": 1,
+              "PMC10852202": 1,
+              "PMC7287215": 1,
+              "PMC11173599": 1
+            },
+            "unique_sources": 4
+          },
+          "skipped_invalid": 0
+        },
+        "generation_metrics": {
+          "total_time_seconds": 229.68,
+          "stage_times": {
+            "assemble": 197.987,
+            "evidence_eval": 0.0,
+            "draft": 13.453,
+            "review": 0.0,
+            "final": 18.24,
+            "postprocess": 0.0
+          },
+          "token_counts": {
+            "context_estimated": 1200,
+            "draft_estimated": 307
+          },
+          "stage_success": {
+            "assemble": true,
+            "evidence_eval": true,
+            "draft": true,
+            "review": true,
+            "final": true,
+            "postprocess": true
+          }
+        },
+        "intermediate_results": {
+          "evidence_evaluation": null,
+          "draft_answer": "**Answer:**\n\nThe treatment options for Myocardial Infarction (MI) include both traditional herbal remedies and innovative approaches such as platelet-rich plasma (PRP) therapy and nanoparticles.\n\n1. **Herbal Remedies:** Studies suggest that medicinal plants, particularly those from the Fabaceae and Asteraceae families, contain effective components like flavonoids and alkaloids for MI treatment. These are noted for their safety and accessibility.\n\n2. **Platelet-Rich Plasma (PRP) Therapy:** This method involves using PRP to aid in heart cell regeneration post-MI by promoting processes such as angiogenesis and reducing infarct size, potentially improving recovery outcomes.\n\n3. **Nanoparticles:** Nanoparticles are explored as a novel strategy for both prevention and treatment of MI, with potential benefits in targeting ischemic regions or enhancing drug delivery.\n\n**Evidence:**\n- Herbs from Fabaceae and Asteraceae families (11% and 9%) show promise.\n- PRP therapy affects key biological processes aiding heart regeneration.\n- Selected genes like IL1R1 may serve as diagnostic markers for MI progression.\n\n**Uncertainty:** Limited evidence on the comparative effectiveness of these treatments versus conventional methods.",
+          "review_feedback": ""
+        },
+        "sources": [
+          {
+            "index": 1,
+            "chunk_id": "PMC11327834",
+            "source_title": "Medicinal Plants in the Treatment of Myocardial Infarction Disease: A Systematic Review",
+            "doc_id": "PMC11327834",
+            "relevance_score": 0.680202
+          },
+          {
+            "index": 2,
+            "chunk_id": "PMC10852202",
+            "source_title": "Platelet-Rich Plasma for Heart Cell Regeneration Post-myocardial Infarction: A Propitious Therapeutic Approach",
+            "doc_id": "PMC10852202",
+            "relevance_score": 0.587549
+          },
+          {
+            "index": 3,
+            "chunk_id": "PMC7287215",
+            "source_title": "Identification of Post-myocardial Infarction Blood Expression Signatures Using Multiple Feature Selection Strategies",
+            "doc_id": "PMC7287215",
+            "relevance_score": 0.417785
+          },
+          {
+            "index": 4,
+            "chunk_id": "PMC11173599",
+            "source_title": "Advances in Nanoparticles in the Prevention and Treatment of Myocardial Infarction",
+            "doc_id": "PMC11173599",
+            "relevance_score": 0.411449
+          }
+        ],
+        "timestamp": "2026-07-08 17:03:26",
+        "model_name": "deepseek-r1:7b",
+        "provider": "stage09_live_full"
+      },
+      "evaluation": {
+        "rouge": {
+          "rouge1": 0.0518,
+          "rouge2": 0.0065,
+          "rougeL": 0.0453
+        },
+        "key_info_recall": 0.0,
+        "key_info_matched": [],
+        "key_info_missing": [
+          "reperfusion",
+          "dual antiplatelet therapy",
+          "anticoagulation",
+          "statin",
+          "beta blocker",
+          "ace inhibitor",
+          "arb"
+        ],
+        "hallucination_risk": 0.0,
+        "hallucination_signals": [],
+        "readability": {
+          "num_sentences": 17.0,
+          "num_words": 276.0,
+          "avg_sentence_len_words": 16.2353,
+          "avg_word_len_chars": 6.1558
+        }
+      },
+      "cache": {
+        "hit": false,
+        "key": "1195b52cb4ca398da61ecc2aa1696889d4a8739bd43e47def23eff68b55afa5a",
+        "stats": {
+          "hits": 0,
+          "misses": 2,
+          "evictions": 0,
+          "size": 1
+        },
+        "use_cache": true,
+        "force_refresh": false
+      },
+      "extensions": {
+        "context_chars": 4801,
+        "retrieval_mode": "full"
+      }
+    },
+    {
+      "_index": 1,
+      "query": "metformin cardiovascular effects",
+      "status": "ok",
+      "latency_seconds": 516.9437,
+      "generation": {
+        "query": "metformin cardiovascular effects",
+        "answer": "**Answer:**\n\nMetformin exhibits varying cardiovascular effects depending on its application context:\n\n1. **In Type 2 Diabetes Mellitus (T2DM) Patients:**\n   - **Positive Effects:** Metformin enhances myocardial energy metabolism, reduces fibrosis, limits advanced glycation end-products (AGEs), and inhibits apoptosis. These improvements enhance both systolic and diastolic heart function.\n\n2. **In Heart Failure Patients:**\n   - Metformin is considered safe and beneficial for improving cardiac function by enhancing energy metabolism and reducing fibrosis.\n\n3. **In Patients with Chronic Obstructive Pulmonary Disease (COPD) and T2DM:**\n   - Studies indicate that metformin use is associated with lower risks of cardiovascular events, particularly CVD. Longer duration of use further reduces these risks.\n\n**Uncertainty:** The evidence from various studies shows mixed results—benefits in some contexts but limited impact or no additional benefit when combined with other therapies like SGLT2 inhibitors. For instance, in high-risk, treatment-naïve diabetic patients initiating SGLT2i therapy alone or with metformin did not show significant differences in MACEs.\n\n**Evidence Summary:**\n- Positive cardiovascular benefits observed in T2DM without comorbidities.\n- No significant benefit when used alongside SGLT2 inhibitors in high-risk, treatment-naïve patients.\n- Reduced CVD risks noted in COPD and T2DM patients with longer metformin use.\n\n**Recommendation:**\nMedical decision-making regarding metformin use should be context-specific. Consulting a healthcare professional is advised to tailor treatment plans effectively.\n\nEvidence refs: [1] [2] [3] [4]\n\nSources:\n[1] Metabolic Effects of Metformin in the Failing Heart (doc_id=PMC6213955, chunk_id=PMC6213955, score=0.9355)\n[2] Effects of SGLT2 Inhibitors with and without Metformin in High-Risk, Treatment-Naïve Patients with Diabetes (doc_id=PMC10932445, chunk_id=PMC10932445, score=0.9082)\n[3] Cardiovascular outcomes of metformin use in patients with type 2 diabetes and chronic obstructive pulmonary disease (doc_id=PMC9441545, chunk_id=PMC9441545, score=0.8963)\n[4] Metformin: A Narrative Review of Its Potential Benefits for Cardiovascular Disease, Cancer and Dementia (doc_id=PMC8951049, chunk_id=PMC8951049, score=0.8948)\n\nMedical disclaimer: This response is for informational purposes only and is not a substitute for professional medical advice.",
+        "context_metadata": {
+          "total_chunks_retrieved": 10,
+          "unique_chunks_after_dedup": 10,
+          "chunks_selected": 4,
+          "estimated_tokens": 1200,
+          "chunk_sources": {
+            "counts": {
+              "PMC6213955": 1,
+              "PMC10932445": 1,
+              "PMC9441545": 1,
+              "PMC8951049": 1
+            },
+            "unique_sources": 4
+          },
+          "skipped_invalid": 0
+        },
+        "generation_metrics": {
+          "total_time_seconds": 223.057,
+          "stage_times": {
+            "assemble": 194.614,
+            "evidence_eval": 0.0,
+            "draft": 9.918,
+            "review": 0.0,
+            "final": 18.524,
+            "postprocess": 0.0
+          },
+          "token_counts": {
+            "context_estimated": 1200,
+            "draft_estimated": 353
+          },
+          "stage_success": {
+            "assemble": true,
+            "evidence_eval": true,
+            "draft": true,
+            "review": true,
+            "final": true,
+            "postprocess": true
+          }
+        },
+        "intermediate_results": {
+          "evidence_evaluation": null,
+          "draft_answer": "**Answer:**\n\nMetformin exhibits various cardiovascular effects depending on the context of its use:\n\n1. **In Type 2 Diabetes Mellitus (T2DM) Patients:**\n   - **Positive Effects:** Metformin improves myocardial energy metabolism by activating AMPK, enhancing lipid and glucose regulation, reducing fibrosis, limiting AGE deposition, and inhibiting apoptosis. These effects improve cardiac function, systolic and diastolic performance.\n   - **Potential Limitations:** When combined with SGLT2 inhibitors in high-risk, treatment-naïve patients, metformin does not show significant reductions in major adverse cardiovascular events (MACEs). However, in these same groups, it reduces CVD risks.\n\n2. **In Heart Failure Patients:**\n   - Metformin is considered safe and beneficial for improving heart function by enhancing energy metabolism and reducing fibrosis.\n\n3. **In Patients with Chronic Obstructive Pulmonary Disease (COPD) and T2DM:**\n   - Studies indicate that metformin use is associated with lower risks of cardiovascular events, particularly CVD, when used alone. Longer duration of use further reduces these risks.\n\n**Uncertainty:** The evidence suggests mixed results—benefits in some contexts but limited impact or even no additional benefit when combined with other therapies like SGLT2i. Further prospective studies are needed to confirm these findings across diverse populations and treatment settings.",
+          "review_feedback": ""
+        },
+        "sources": [
+          {
+            "index": 1,
+            "chunk_id": "PMC6213955",
+            "source_title": "Metabolic Effects of Metformin in the Failing Heart",
+            "doc_id": "PMC6213955",
+            "relevance_score": 0.935538
+          },
+          {
+            "index": 2,
+            "chunk_id": "PMC10932445",
+            "source_title": "Effects of SGLT2 Inhibitors with and without Metformin in High-Risk, Treatment-Naïve Patients with Diabetes",
+            "doc_id": "PMC10932445",
+            "relevance_score": 0.908211
+          },
+          {
+            "index": 3,
+            "chunk_id": "PMC9441545",
+            "source_title": "Cardiovascular outcomes of metformin use in patients with type 2 diabetes and chronic obstructive pulmonary disease",
+            "doc_id": "PMC9441545",
+            "relevance_score": 0.896337
+          },
+          {
+            "index": 4,
+            "chunk_id": "PMC8951049",
+            "source_title": "Metformin: A Narrative Review of Its Potential Benefits for Cardiovascular Disease, Cancer and Dementia",
+            "doc_id": "PMC8951049",
+            "relevance_score": 0.894773
+          }
+        ],
+        "timestamp": "2026-07-08 17:03:36",
+        "model_name": "deepseek-r1:7b",
+        "provider": "stage09_live_full"
+      },
+      "evaluation": {
+        "rouge": {
+          "rouge1": 0.1311,
+          "rouge2": 0.0659,
+          "rougeL": 0.0765
+        },
+        "key_info_recall": 0.3333,
+        "key_info_matched": [
+          "type 2 diabetes",
+          "cardiovascular benefit"
+        ],
+        "key_info_missing": [
+          "major adverse cardiovascular event",
+          "risk reduction",
+          "population",
+          "study design"
+        ],
+        "hallucination_risk": 0.0,
+        "hallucination_signals": [],
+        "readability": {
+          "num_sentences": 20.0,
+          "num_words": 323.0,
+          "avg_sentence_len_words": 16.15,
+          "avg_word_len_chars": 6.0495
+        }
+      },
+      "cache": {
+        "hit": false,
+        "key": "a09484b8359c8783dcec8d2cdd713361171d4c28160462ed53ac723bc1e8159b",
+        "stats": {
+          "hits": 0,
+          "misses": 2,
+          "evictions": 0,
+          "size": 2
+        },
+        "use_cache": true,
+        "force_refresh": false
+      },
+      "extensions": {
+        "context_chars": 4801,
+        "retrieval_mode": "full"
+      }
+    },
+    {
+      "_index": 2,
+      "query": "papers on malaria after 2015",
+      "status": "ok",
+      "latency_seconds": 487.5676,
+      "generation": {
+        "query": "papers on malaria after 2015",
+        "answer": "**Answer:**\n\nNo specific studies or papers related to malaria after 2015 are mentioned in the provided context.\n\n**Evidence:**\n- Surgical site infection rates post-cefarane delivery (2024): No mention of malaria. [1]\n- Wastewater-based epidemiology study on cocaine use (2021): Irrelevant to malaria. [2]\n- Community-level externalities in child health (2023): Focuses on child health factors but not malaria. [3]\n\n**Uncertainty:**\nThe context does not provide any papers or studies after 2015 that specifically address malaria.\n\nFootnotes:\n[1] Context from surgical site infection study.\n[2] Context from cocaine use study.\n[3] Context from child health externalities study.\n\n**Recommendation:**\nGiven the absence of relevant studies post-2015, it is advisable to consult with a healthcare professional for any medical concerns related to malaria or other health issues.\n\nSources:\n[1] Predictors of surgical site infections following cesarean delivery in public hospitals of West Ethiopia: A cohort study (doc_id=PMC12822956, chunk_id=PMC12822956_chunk1, score=0.3556)\n[2] Comparison of self-reported survey and wastewater-based epidemiology measures of cocaine use on a college campus (doc_id=PMC12822982, chunk_id=PMC12822982, score=0.3556)\n[3] Community-level externalities in child health: Evidence from Sub-Saharan Africa (doc_id=PMC12822979, chunk_id=PMC12822979, score=0.3553)\n\nMedical disclaimer: This response is for informational purposes only and is not a substitute for professional medical advice.",
+        "context_metadata": {
+          "total_chunks_retrieved": 10,
+          "unique_chunks_after_dedup": 10,
+          "chunks_selected": 3,
+          "estimated_tokens": 1194,
+          "chunk_sources": {
+            "counts": {
+              "PMC12822956": 1,
+              "PMC12822982": 1,
+              "PMC12822979": 1
+            },
+            "unique_sources": 3
+          },
+          "skipped_invalid": 0
+        },
+        "generation_metrics": {
+          "total_time_seconds": 221.209,
+          "stage_times": {
+            "assemble": 193.785,
+            "evidence_eval": 0.0,
+            "draft": 8.09,
+            "review": 0.0,
+            "final": 19.333,
+            "postprocess": 0.0
+          },
+          "token_counts": {
+            "context_estimated": 1194,
+            "draft_estimated": 166
+          },
+          "stage_success": {
+            "assemble": true,
+            "evidence_eval": true,
+            "draft": true,
+            "review": true,
+            "final": true,
+            "postprocess": true
+          }
+        },
+        "intermediate_results": {
+          "evidence_evaluation": null,
+          "draft_answer": "**Answer:**\n\nNo specific papers related to malaria after 2015 are mentioned in the provided context.\n\n**Evidence:**\n- Surgical site infection rates post-cefarane delivery (2024): No mention of malaria. [1]\n- Wastewater-based epidemiology study on cocaine use (2021): Irrelevant to malaria. [2]\n- Community-level externalities in child health (2023): Focuses on child health factors but not malaria. [3]\n\n**Uncertainty:**\nThe context does not provide any papers or studies after 2015 that specifically address malaria.\n\nFootnotes:\n[1] Context from surgical site infection study.\n[2] Context from cocaine use study.\n[3] Context from child health externalities study.",
+          "review_feedback": ""
+        },
+        "sources": [
+          {
+            "index": 1,
+            "chunk_id": "PMC12822956_chunk1",
+            "source_title": "Predictors of surgical site infections following cesarean delivery in public hospitals of West Ethiopia: A cohort study",
+            "doc_id": "PMC12822956",
+            "relevance_score": 0.355584
+          },
+          {
+            "index": 2,
+            "chunk_id": "PMC12822982",
+            "source_title": "Comparison of self-reported survey and wastewater-based epidemiology measures of cocaine use on a college campus",
+            "doc_id": "PMC12822982",
+            "relevance_score": 0.355551
+          },
+          {
+            "index": 3,
+            "chunk_id": "PMC12822979",
+            "source_title": "Community-level externalities in child health: Evidence from Sub-Saharan Africa",
+            "doc_id": "PMC12822979",
+            "relevance_score": 0.355346
+          }
+        ],
+        "timestamp": "2026-07-08 17:11:33",
+        "model_name": "deepseek-r1:7b",
+        "provider": "stage09_live_full"
+      },
+      "evaluation": {
+        "rouge": {
+          "rouge1": 0.0675,
+          "rouge2": 0.0085,
+          "rougeL": 0.0591
+        },
+        "key_info_recall": 0.3333,
+        "key_info_matched": [
+          "malaria",
+          "after 2015"
+        ],
+        "key_info_missing": [
+          "published",
+          "intervention",
+          "outcomes",
+          "safety"
+        ],
+        "hallucination_risk": 0.0,
+        "hallucination_signals": [],
+        "readability": {
+          "num_sentences": 13.0,
+          "num_words": 213.0,
+          "avg_sentence_len_words": 16.3846,
+          "avg_word_len_chars": 5.6854
+        }
+      },
+      "cache": {
+        "hit": false,
+        "key": "3484e60043fa21f2404242301534b47dd45ef489a1c629bf1447de2f7fd9d848",
+        "stats": {
+          "hits": 0,
+          "misses": 4,
+          "evictions": 0,
+          "size": 3
+        },
+        "use_cache": true,
+        "force_refresh": false
+      },
+      "extensions": {
+        "context_chars": 4776,
+        "retrieval_mode": "full"
+      }
+    },
+    {
+      "_index": 3,
+      "query": "warfarin atrial fibrillation elderly",
+      "status": "ok",
+      "latency_seconds": 491.3035,
+      "generation": {
+        "query": "warfarin atrial fibrillation elderly",
+        "answer": "**Answer:**\n\nWarfarin remains a valid treatment for atrial fibrillation (AF) in elderly patients, though its efficacy may be suboptimal compared to newer non-vitamin K oral anticoagulants (NOACs) such as Rivaroxaban and Dabigatran. The study highlights that Warfarin's total effective rate (84.21%) is significantly lower than that of Rivaroxaban (98.36%) and Dabigatran (96.77%), with no significant difference in safety profiles across the three drugs.\n\nHowever, concerns arise regarding the clinical efficacy and safety of Warfarin in diabetic patients with AF. Glycocontrol variability can impact Warfarin's pharmacokinetics, potentially compromising its effectiveness. Additionally, Warfarin may increase the risk of osteoporotic bone fracture due to its inhibition of vitamin K-dependent protein carboxylations, which could exacerbate morbidity in this population.\n\nIn a study examining atrial fibrillation prevalence and management among elderly Chinese, AF was reported at low rates (2-1.6%) with only one case using Warfarin out of 104 prevalent or incident cases. This patient had higher risks for all-cause, cardiovascular, and stroke mortality compared to patients with sinus rhythm.\n\n**Evidence:**\n\n- **Warfarin efficacy in elderly AF:** \"The total effective rate in the Warfarin group (84.21%) was significantly lower than in the Rivaroxaban (98.36%) and Dabigatran (96.77%) groups (p < 0.05).\" [1]\n- **Warfarin safety:** \"No significant differences were found in the effects of the three drugs on coagulation function, liver function, or the incidence of bleeding (p = 0.052).\" [1]\n- **Diabetic patients and Warfarin:** \"Variability of glycemic control could affect the pharmacokinetics and anticoagulant activity of warfarin, therefore, the risk–benefit balance of warfarin is prone to be compromised in diabetic patients with AF.\" [2]\n- **Osteoporotic risks of Warfarin:** \"Warfarin may increase the risk of osteoporotic bone fracture...\" [2]\n- **Atrial fibrillation prevalence in Chinese elderly:** \"The baseline prevalence of atrial fibrillation was 2.0% (n = 34) in men and 1.6% (n = 36) in women.\" [3]\n\n**Uncertainty Note:**\nThe evidence from the studies is limited to specific populations, and the small sample sizes may not fully represent generalizability across diverse patient cohorts. Additionally, individual variability in factors such as glycemic control or bone health could influence outcomes beyond what is captured in these\n\nSources:\n[1] Application Value and Safety Analysis of Warfarin, Rivaroxaban, and Dabigatran Ester in Elderly Patients With Atrial Fibrillation (doc_id=PMC11381953, chunk_id=PMC11381953, score=0.9063)\n[2] Concerns about clinical efficacy and safety of warfarin in diabetic patients with atrial fibrillation (doc_id=PMC6348611, chunk_id=PMC6348611, score=0.8636)\n[3] The prevalence, incidence, management and risks of atrial fibrillation in an elderly Chinese population: a prospective study (doc_id=PMC4427946, chunk_id=PMC4427946, score=0.8431)\n\nMedical disclaimer: This response is for informational purposes only and is not a substitute for professional medical advice.",
+        "context_metadata": {
+          "total_chunks_retrieved": 10,
+          "unique_chunks_after_dedup": 10,
+          "chunks_selected": 3,
+          "estimated_tokens": 1170,
+          "chunk_sources": {
+            "counts": {
+              "PMC11381953": 1,
+              "PMC6348611": 1,
+              "PMC4427946": 1
+            },
+            "unique_sources": 3
+          },
+          "skipped_invalid": 0
+        },
+        "generation_metrics": {
+          "total_time_seconds": 222.737,
+          "stage_times": {
+            "assemble": 189.89,
+            "evidence_eval": 0.0,
+            "draft": 11.9,
+            "review": 0.0,
+            "final": 20.947,
+            "postprocess": 0.0
+          },
+          "token_counts": {
+            "context_estimated": 1170,
+            "draft_estimated": 529
+          },
+          "stage_success": {
+            "assemble": true,
+            "evidence_eval": true,
+            "draft": true,
+            "review": true,
+            "final": true,
+            "postprocess": true
+          }
+        },
+        "intermediate_results": {
+          "evidence_evaluation": null,
+          "draft_answer": "**Answer:**\n\nWarfarin remains a valid treatment for atrial fibrillation (AF) in elderly patients, though its efficacy may be suboptimal compared to newer non-vitamin K oral anticoagulants (NOACs) like Rivaroxaban and Dabigatran. The study highlights that Warfarin's total effective rate (84.21%) is significantly lower than that of Rivaroxaban (98.36%) and Dabigatran (96.77%), with no significant difference in safety profiles across the three drugs.\n\nHowever, concerns arise regarding the clinical efficacy and safety of Warfarin in diabetic patients with AF. Glycocontrol variability can impact Warfarin's pharmacokinetics, potentially compromising its effectiveness. Additionally, Warfarin may increase the risk of osteoporotic bone fracture due to its inhibition of vitamin K-dependent protein carboxylations, which could exacerbate morbidity in this population.\n\nIn a study examining atrial fibrillation prevalence and management among elderly Chinese, AF was reported at low rates (2-1.6%) with only one case using Warfarin out of 104 prevalent or incident cases. This patient had higher risks for all-cause, cardiovascular, and stroke mortality compared to patients with sinus rhythm.\n\n**Evidence:**\n\n- **Warfarin efficacy in elderly AF:** \"The total effective rate in the Warfarin group (84.21%) was significantly lower than in the Rivaroxaban (98.36%) and Dabigatran (96.77%) groups (p < 0.05).\" [1]\n- **Warfarin safety:** \"No significant differences were found in the effects of the three drugs on coagulation function, liver function, or the incidence of bleeding (p = 0.052).\" [1]\n- **Diabetic patients and Warfarin:** \"Variability of glycemic control could affect the pharmacokinetics and anticoagulant activity of warfarin, therefore, the risk–benefit balance of warfarin is prone to be compromised in diabetic patients with AF.\" [2]\n- **Osteoporotic risks of Warfarin:** \"Warfarin may increase the risk of osteoporotic bone fracture...\" [2]\n- **Atrial fibrillation prevalence in Chinese elderly:** \"The baseline prevalence of atrial fibrillation was 2.0% (n = 34) in men and 1.6% (n = 36) in women.\" [3]",
+          "review_feedback": ""
+        },
+        "sources": [
+          {
+            "index": 1,
+            "chunk_id": "PMC11381953",
+            "source_title": "Application Value and Safety Analysis of Warfarin, Rivaroxaban, and Dabigatran Ester in Elderly Patients With Atrial Fibrillation",
+            "doc_id": "PMC11381953",
+            "relevance_score": 0.906299
+          },
+          {
+            "index": 2,
+            "chunk_id": "PMC6348611",
+            "source_title": "Concerns about clinical efficacy and safety of warfarin in diabetic patients with atrial fibrillation",
+            "doc_id": "PMC6348611",
+            "relevance_score": 0.863616
+          },
+          {
+            "index": 3,
+            "chunk_id": "PMC4427946",
+            "source_title": "The prevalence, incidence, management and risks of atrial fibrillation in an elderly Chinese population: a prospective study",
+            "doc_id": "PMC4427946",
+            "relevance_score": 0.843068
+          }
+        ],
+        "timestamp": "2026-07-08 17:11:47",
+        "model_name": "deepseek-r1:7b",
+        "provider": "stage09_live_full"
+      },
+      "evaluation": {
+        "rouge": {
+          "rouge1": 0.0625,
+          "rouge2": 0.0209,
+          "rougeL": 0.0542
+        },
+        "key_info_recall": 0.4286,
+        "key_info_matched": [
+          "elderly",
+          "atrial fibrillation",
+          "warfarin"
+        ],
+        "key_info_missing": [
+          "stroke risk",
+          "inr monitoring",
+          "bleeding risk",
+          "individualized decision"
+        ],
+        "hallucination_risk": 0.0,
+        "hallucination_signals": [],
+        "readability": {
+          "num_sentences": 28.0,
+          "num_words": 450.0,
+          "avg_sentence_len_words": 16.0714,
+          "avg_word_len_chars": 5.5644
+        }
+      },
+      "cache": {
+        "hit": false,
+        "key": "049d35538b540060021530b532c29ec8404b7de56fd68d8c401dc2325f46ece3",
+        "stats": {
+          "hits": 0,
+          "misses": 4,
+          "evictions": 0,
+          "size": 4
+        },
+        "use_cache": true,
+        "force_refresh": false
+      },
+      "extensions": {
+        "context_chars": 4683,
+        "retrieval_mode": "full"
+      }
+    }
+  ],
+  "second_pass": [
+    {
+      "_index": 0,
+      "query": "What is the treatment for MI?",
+      "status": "ok",
+      "latency_seconds": 207.76,
+      "generation": {
+        "query": "What is the treatment for MI?",
+        "answer": "**Answer:**\n\nThe treatment options for Myocardial Infarction (MI) include:\n\n1. **Herbal Remedies:** \n   - Plants from the Fabaceae and Asteraceae families, such as those containing flavonoids and alkaloids, show promise in treating MI. These remedies are noted for their safety and accessibility.\n\n2. **Platelet-Rich Plasma (PRP) Therapy:**\n   - PRP therapy is explored as a potential method to aid heart cell regeneration post-MI by promoting processes like angiogenesis and reducing the infarct size, which may improve recovery outcomes.\n\n3. **Nanoparticles:**\n   - Nanoparticles are considered a novel strategy for both preventing and treating MI, potentially enhancing drug delivery or targeting ischemic regions.\n\n**Evidence:**\n- Herbs from Fabaceae (11%) and Asteraceae (9%) families show effectiveness with components like flavonoids.\n- PRP therapy supports heart regeneration by improving biological processes such as angiogenesis.\n- Selected genes, including IL1R1, may serve as diagnostic markers for MI progression.\n\n**Uncertainty:** Limited direct evidence comparing these treatments to conventional methods in terms of effectiveness and safety.\n\n**Note:** Consult a healthcare professional before starting any treatment, especially if considering alternative or complementary therapies.\n\nEvidence refs: [1] [2] [3] [4]\n\nSources:\n[1] Medicinal Plants in the Treatment of Myocardial Infarction Disease: A Systematic Review (doc_id=PMC11327834, chunk_id=PMC11327834, score=0.6802)\n[2] Platelet-Rich Plasma for Heart Cell Regeneration Post-myocardial Infarction: A Propitious Therapeutic Approach (doc_id=PMC10852202, chunk_id=PMC10852202, score=0.5875)\n[3] Identification of Post-myocardial Infarction Blood Expression Signatures Using Multiple Feature Selection Strategies (doc_id=PMC7287215, chunk_id=PMC7287215, score=0.4178)\n[4] Advances in Nanoparticles in the Prevention and Treatment of Myocardial Infarction (doc_id=PMC11173599, chunk_id=PMC11173599, score=0.4114)\n\nMedical disclaimer: This response is for informational purposes only and is not a substitute for professional medical advice.",
+        "context_metadata": {
+          "total_chunks_retrieved": 10,
+          "unique_chunks_after_dedup": 10,
+          "chunks_selected": 4,
+          "estimated_tokens": 1200,
+          "chunk_sources": {
+            "counts": {
+              "PMC11327834": 1,
+              "PMC10852202": 1,
+              "PMC7287215": 1,
+              "PMC11173599": 1
+            },
+            "unique_sources": 4
+          },
+          "skipped_invalid": 0
+        },
+        "generation_metrics": {
+          "total_time_seconds": 229.68,
+          "stage_times": {
+            "assemble": 197.987,
+            "evidence_eval": 0.0,
+            "draft": 13.453,
+            "review": 0.0,
+            "final": 18.24,
+            "postprocess": 0.0
+          },
+          "token_counts": {
+            "context_estimated": 1200,
+            "draft_estimated": 307
+          },
+          "stage_success": {
+            "assemble": true,
+            "evidence_eval": true,
+            "draft": true,
+            "review": true,
+            "final": true,
+            "postprocess": true
+          }
+        },
+        "intermediate_results": {
+          "evidence_evaluation": null,
+          "draft_answer": "**Answer:**\n\nThe treatment options for Myocardial Infarction (MI) include both traditional herbal remedies and innovative approaches such as platelet-rich plasma (PRP) therapy and nanoparticles.\n\n1. **Herbal Remedies:** Studies suggest that medicinal plants, particularly those from the Fabaceae and Asteraceae families, contain effective components like flavonoids and alkaloids for MI treatment. These are noted for their safety and accessibility.\n\n2. **Platelet-Rich Plasma (PRP) Therapy:** This method involves using PRP to aid in heart cell regeneration post-MI by promoting processes such as angiogenesis and reducing infarct size, potentially improving recovery outcomes.\n\n3. **Nanoparticles:** Nanoparticles are explored as a novel strategy for both prevention and treatment of MI, with potential benefits in targeting ischemic regions or enhancing drug delivery.\n\n**Evidence:**\n- Herbs from Fabaceae and Asteraceae families (11% and 9%) show promise.\n- PRP therapy affects key biological processes aiding heart regeneration.\n- Selected genes like IL1R1 may serve as diagnostic markers for MI progression.\n\n**Uncertainty:** Limited evidence on the comparative effectiveness of these treatments versus conventional methods.",
+          "review_feedback": ""
+        },
+        "sources": [
+          {
+            "index": 1,
+            "chunk_id": "PMC11327834",
+            "source_title": "Medicinal Plants in the Treatment of Myocardial Infarction Disease: A Systematic Review",
+            "doc_id": "PMC11327834",
+            "relevance_score": 0.680202
+          },
+          {
+            "index": 2,
+            "chunk_id": "PMC10852202",
+            "source_title": "Platelet-Rich Plasma for Heart Cell Regeneration Post-myocardial Infarction: A Propitious Therapeutic Approach",
+            "doc_id": "PMC10852202",
+            "relevance_score": 0.587549
+          },
+          {
+            "index": 3,
+            "chunk_id": "PMC7287215",
+            "source_title": "Identification of Post-myocardial Infarction Blood Expression Signatures Using Multiple Feature Selection Strategies",
+            "doc_id": "PMC7287215",
+            "relevance_score": 0.417785
+          },
+          {
+            "index": 4,
+            "chunk_id": "PMC11173599",
+            "source_title": "Advances in Nanoparticles in the Prevention and Treatment of Myocardial Infarction",
+            "doc_id": "PMC11173599",
+            "relevance_score": 0.411449
+          }
+        ],
+        "timestamp": "2026-07-08 17:03:26",
+        "model_name": "deepseek-r1:7b",
+        "provider": "stage09_live_full"
+      },
+      "evaluation": {
+        "rouge": {
+          "rouge1": 0.0518,
+          "rouge2": 0.0065,
+          "rougeL": 0.0453
+        },
+        "key_info_recall": 0.0,
+        "key_info_matched": [],
+        "key_info_missing": [
+          "reperfusion",
+          "dual antiplatelet therapy",
+          "anticoagulation",
+          "statin",
+          "beta blocker",
+          "ace inhibitor",
+          "arb"
+        ],
+        "hallucination_risk": 0.0,
+        "hallucination_signals": [],
+        "readability": {
+          "num_sentences": 17.0,
+          "num_words": 276.0,
+          "avg_sentence_len_words": 16.2353,
+          "avg_word_len_chars": 6.1558
+        }
+      },
+      "cache": {
+        "hit": true,
+        "key": "1195b52cb4ca398da61ecc2aa1696889d4a8739bd43e47def23eff68b55afa5a",
+        "stats": {
+          "hits": 1,
+          "misses": 4,
+          "evictions": 0,
+          "size": 4
+        },
+        "use_cache": true,
+        "force_refresh": false
+      },
+      "extensions": {
+        "context_chars": 4801,
+        "retrieval_mode": "full"
+      }
+    },
+    {
+      "_index": 1,
+      "query": "metformin cardiovascular effects",
+      "status": "ok",
+      "latency_seconds": 218.1905,
+      "generation": {
+        "query": "metformin cardiovascular effects",
+        "answer": "**Answer:**\n\nMetformin exhibits varying cardiovascular effects depending on its application context:\n\n1. **In Type 2 Diabetes Mellitus (T2DM) Patients:**\n   - **Positive Effects:** Metformin enhances myocardial energy metabolism, reduces fibrosis, limits advanced glycation end-products (AGEs), and inhibits apoptosis. These improvements enhance both systolic and diastolic heart function.\n\n2. **In Heart Failure Patients:**\n   - Metformin is considered safe and beneficial for improving cardiac function by enhancing energy metabolism and reducing fibrosis.\n\n3. **In Patients with Chronic Obstructive Pulmonary Disease (COPD) and T2DM:**\n   - Studies indicate that metformin use is associated with lower risks of cardiovascular events, particularly CVD. Longer duration of use further reduces these risks.\n\n**Uncertainty:** The evidence from various studies shows mixed results—benefits in some contexts but limited impact or no additional benefit when combined with other therapies like SGLT2 inhibitors. For instance, in high-risk, treatment-naïve diabetic patients initiating SGLT2i therapy alone or with metformin did not show significant differences in MACEs.\n\n**Evidence Summary:**\n- Positive cardiovascular benefits observed in T2DM without comorbidities.\n- No significant benefit when used alongside SGLT2 inhibitors in high-risk, treatment-naïve patients.\n- Reduced CVD risks noted in COPD and T2DM patients with longer metformin use.\n\n**Recommendation:**\nMedical decision-making regarding metformin use should be context-specific. Consulting a healthcare professional is advised to tailor treatment plans effectively.\n\nEvidence refs: [1] [2] [3] [4]\n\nSources:\n[1] Metabolic Effects of Metformin in the Failing Heart (doc_id=PMC6213955, chunk_id=PMC6213955, score=0.9355)\n[2] Effects of SGLT2 Inhibitors with and without Metformin in High-Risk, Treatment-Naïve Patients with Diabetes (doc_id=PMC10932445, chunk_id=PMC10932445, score=0.9082)\n[3] Cardiovascular outcomes of metformin use in patients with type 2 diabetes and chronic obstructive pulmonary disease (doc_id=PMC9441545, chunk_id=PMC9441545, score=0.8963)\n[4] Metformin: A Narrative Review of Its Potential Benefits for Cardiovascular Disease, Cancer and Dementia (doc_id=PMC8951049, chunk_id=PMC8951049, score=0.8948)\n\nMedical disclaimer: This response is for informational purposes only and is not a substitute for professional medical advice.",
+        "context_metadata": {
+          "total_chunks_retrieved": 10,
+          "unique_chunks_after_dedup": 10,
+          "chunks_selected": 4,
+          "estimated_tokens": 1200,
+          "chunk_sources": {
+            "counts": {
+              "PMC6213955": 1,
+              "PMC10932445": 1,
+              "PMC9441545": 1,
+              "PMC8951049": 1
+            },
+            "unique_sources": 4
+          },
+          "skipped_invalid": 0
+        },
+        "generation_metrics": {
+          "total_time_seconds": 223.057,
+          "stage_times": {
+            "assemble": 194.614,
+            "evidence_eval": 0.0,
+            "draft": 9.918,
+            "review": 0.0,
+            "final": 18.524,
+            "postprocess": 0.0
+          },
+          "token_counts": {
+            "context_estimated": 1200,
+            "draft_estimated": 353
+          },
+          "stage_success": {
+            "assemble": true,
+            "evidence_eval": true,
+            "draft": true,
+            "review": true,
+            "final": true,
+            "postprocess": true
+          }
+        },
+        "intermediate_results": {
+          "evidence_evaluation": null,
+          "draft_answer": "**Answer:**\n\nMetformin exhibits various cardiovascular effects depending on the context of its use:\n\n1. **In Type 2 Diabetes Mellitus (T2DM) Patients:**\n   - **Positive Effects:** Metformin improves myocardial energy metabolism by activating AMPK, enhancing lipid and glucose regulation, reducing fibrosis, limiting AGE deposition, and inhibiting apoptosis. These effects improve cardiac function, systolic and diastolic performance.\n   - **Potential Limitations:** When combined with SGLT2 inhibitors in high-risk, treatment-naïve patients, metformin does not show significant reductions in major adverse cardiovascular events (MACEs). However, in these same groups, it reduces CVD risks.\n\n2. **In Heart Failure Patients:**\n   - Metformin is considered safe and beneficial for improving heart function by enhancing energy metabolism and reducing fibrosis.\n\n3. **In Patients with Chronic Obstructive Pulmonary Disease (COPD) and T2DM:**\n   - Studies indicate that metformin use is associated with lower risks of cardiovascular events, particularly CVD, when used alone. Longer duration of use further reduces these risks.\n\n**Uncertainty:** The evidence suggests mixed results—benefits in some contexts but limited impact or even no additional benefit when combined with other therapies like SGLT2i. Further prospective studies are needed to confirm these findings across diverse populations and treatment settings.",
+          "review_feedback": ""
+        },
+        "sources": [
+          {
+            "index": 1,
+            "chunk_id": "PMC6213955",
+            "source_title": "Metabolic Effects of Metformin in the Failing Heart",
+            "doc_id": "PMC6213955",
+            "relevance_score": 0.935538
+          },
+          {
+            "index": 2,
+            "chunk_id": "PMC10932445",
+            "source_title": "Effects of SGLT2 Inhibitors with and without Metformin in High-Risk, Treatment-Naïve Patients with Diabetes",
+            "doc_id": "PMC10932445",
+            "relevance_score": 0.908211
+          },
+          {
+            "index": 3,
+            "chunk_id": "PMC9441545",
+            "source_title": "Cardiovascular outcomes of metformin use in patients with type 2 diabetes and chronic obstructive pulmonary disease",
+            "doc_id": "PMC9441545",
+            "relevance_score": 0.896337
+          },
+          {
+            "index": 4,
+            "chunk_id": "PMC8951049",
+            "source_title": "Metformin: A Narrative Review of Its Potential Benefits for Cardiovascular Disease, Cancer and Dementia",
+            "doc_id": "PMC8951049",
+            "relevance_score": 0.894773
+          }
+        ],
+        "timestamp": "2026-07-08 17:03:36",
+        "model_name": "deepseek-r1:7b",
+        "provider": "stage09_live_full"
+      },
+      "evaluation": {
+        "rouge": {
+          "rouge1": 0.1311,
+          "rouge2": 0.0659,
+          "rougeL": 0.0765
+        },
+        "key_info_recall": 0.3333,
+        "key_info_matched": [
+          "type 2 diabetes",
+          "cardiovascular benefit"
+        ],
+        "key_info_missing": [
+          "major adverse cardiovascular event",
+          "risk reduction",
+          "population",
+          "study design"
+        ],
+        "hallucination_risk": 0.0,
+        "hallucination_signals": [],
+        "readability": {
+          "num_sentences": 20.0,
+          "num_words": 323.0,
+          "avg_sentence_len_words": 16.15,
+          "avg_word_len_chars": 6.0495
+        }
+      },
+      "cache": {
+        "hit": true,
+        "key": "a09484b8359c8783dcec8d2cdd713361171d4c28160462ed53ac723bc1e8159b",
+        "stats": {
+          "hits": 2,
+          "misses": 4,
+          "evictions": 0,
+          "size": 4
+        },
+        "use_cache": true,
+        "force_refresh": false
+      },
+      "extensions": {
+        "context_chars": 4801,
+        "retrieval_mode": "full"
+      }
+    },
+    {
+      "_index": 2,
+      "query": "papers on malaria after 2015",
+      "status": "ok",
+      "latency_seconds": 199.214,
+      "generation": {
+        "query": "papers on malaria after 2015",
+        "answer": "**Answer:**\n\nNo specific studies or papers related to malaria after 2015 are mentioned in the provided context.\n\n**Evidence:**\n- Surgical site infection rates post-cefarane delivery (2024): No mention of malaria. [1]\n- Wastewater-based epidemiology study on cocaine use (2021): Irrelevant to malaria. [2]\n- Community-level externalities in child health (2023): Focuses on child health factors but not malaria. [3]\n\n**Uncertainty:**\nThe context does not provide any papers or studies after 2015 that specifically address malaria.\n\nFootnotes:\n[1] Context from surgical site infection study.\n[2] Context from cocaine use study.\n[3] Context from child health externalities study.\n\n**Recommendation:**\nGiven the absence of relevant studies post-2015, it is advisable to consult with a healthcare professional for any medical concerns related to malaria or other health issues.\n\nSources:\n[1] Predictors of surgical site infections following cesarean delivery in public hospitals of West Ethiopia: A cohort study (doc_id=PMC12822956, chunk_id=PMC12822956_chunk1, score=0.3556)\n[2] Comparison of self-reported survey and wastewater-based epidemiology measures of cocaine use on a college campus (doc_id=PMC12822982, chunk_id=PMC12822982, score=0.3556)\n[3] Community-level externalities in child health: Evidence from Sub-Saharan Africa (doc_id=PMC12822979, chunk_id=PMC12822979, score=0.3553)\n\nMedical disclaimer: This response is for informational purposes only and is not a substitute for professional medical advice.",
+        "context_metadata": {
+          "total_chunks_retrieved": 10,
+          "unique_chunks_after_dedup": 10,
+          "chunks_selected": 3,
+          "estimated_tokens": 1194,
+          "chunk_sources": {
+            "counts": {
+              "PMC12822956": 1,
+              "PMC12822982": 1,
+              "PMC12822979": 1
+            },
+            "unique_sources": 3
+          },
+          "skipped_invalid": 0
+        },
+        "generation_metrics": {
+          "total_time_seconds": 221.209,
+          "stage_times": {
+            "assemble": 193.785,
+            "evidence_eval": 0.0,
+            "draft": 8.09,
+            "review": 0.0,
+            "final": 19.333,
+            "postprocess": 0.0
+          },
+          "token_counts": {
+            "context_estimated": 1194,
+            "draft_estimated": 166
+          },
+          "stage_success": {
+            "assemble": true,
+            "evidence_eval": true,
+            "draft": true,
+            "review": true,
+            "final": true,
+            "postprocess": true
+          }
+        },
+        "intermediate_results": {
+          "evidence_evaluation": null,
+          "draft_answer": "**Answer:**\n\nNo specific papers related to malaria after 2015 are mentioned in the provided context.\n\n**Evidence:**\n- Surgical site infection rates post-cefarane delivery (2024): No mention of malaria. [1]\n- Wastewater-based epidemiology study on cocaine use (2021): Irrelevant to malaria. [2]\n- Community-level externalities in child health (2023): Focuses on child health factors but not malaria. [3]\n\n**Uncertainty:**\nThe context does not provide any papers or studies after 2015 that specifically address malaria.\n\nFootnotes:\n[1] Context from surgical site infection study.\n[2] Context from cocaine use study.\n[3] Context from child health externalities study.",
+          "review_feedback": ""
+        },
+        "sources": [
+          {
+            "index": 1,
+            "chunk_id": "PMC12822956_chunk1",
+            "source_title": "Predictors of surgical site infections following cesarean delivery in public hospitals of West Ethiopia: A cohort study",
+            "doc_id": "PMC12822956",
+            "relevance_score": 0.355584
+          },
+          {
+            "index": 2,
+            "chunk_id": "PMC12822982",
+            "source_title": "Comparison of self-reported survey and wastewater-based epidemiology measures of cocaine use on a college campus",
+            "doc_id": "PMC12822982",
+            "relevance_score": 0.355551
+          },
+          {
+            "index": 3,
+            "chunk_id": "PMC12822979",
+            "source_title": "Community-level externalities in child health: Evidence from Sub-Saharan Africa",
+            "doc_id": "PMC12822979",
+            "relevance_score": 0.355346
+          }
+        ],
+        "timestamp": "2026-07-08 17:11:33",
+        "model_name": "deepseek-r1:7b",
+        "provider": "stage09_live_full"
+      },
+      "evaluation": {
+        "rouge": {
+          "rouge1": 0.0675,
+          "rouge2": 0.0085,
+          "rougeL": 0.0591
+        },
+        "key_info_recall": 0.3333,
+        "key_info_matched": [
+          "malaria",
+          "after 2015"
+        ],
+        "key_info_missing": [
+          "published",
+          "intervention",
+          "outcomes",
+          "safety"
+        ],
+        "hallucination_risk": 0.0,
+        "hallucination_signals": [],
+        "readability": {
+          "num_sentences": 13.0,
+          "num_words": 213.0,
+          "avg_sentence_len_words": 16.3846,
+          "avg_word_len_chars": 5.6854
+        }
+      },
+      "cache": {
+        "hit": true,
+        "key": "3484e60043fa21f2404242301534b47dd45ef489a1c629bf1447de2f7fd9d848",
+        "stats": {
+          "hits": 3,
+          "misses": 4,
+          "evictions": 0,
+          "size": 4
+        },
+        "use_cache": true,
+        "force_refresh": false
+      },
+      "extensions": {
+        "context_chars": 4776,
+        "retrieval_mode": "full"
+      }
+    },
+    {
+      "_index": 3,
+      "query": "warfarin atrial fibrillation elderly",
+      "status": "ok",
+      "latency_seconds": 193.6021,
+      "generation": {
+        "query": "warfarin atrial fibrillation elderly",
+        "answer": "**Answer:**\n\nWarfarin remains a valid treatment for atrial fibrillation (AF) in elderly patients, though its efficacy may be suboptimal compared to newer non-vitamin K oral anticoagulants (NOACs) such as Rivaroxaban and Dabigatran. The study highlights that Warfarin's total effective rate (84.21%) is significantly lower than that of Rivaroxaban (98.36%) and Dabigatran (96.77%), with no significant difference in safety profiles across the three drugs.\n\nHowever, concerns arise regarding the clinical efficacy and safety of Warfarin in diabetic patients with AF. Glycocontrol variability can impact Warfarin's pharmacokinetics, potentially compromising its effectiveness. Additionally, Warfarin may increase the risk of osteoporotic bone fracture due to its inhibition of vitamin K-dependent protein carboxylations, which could exacerbate morbidity in this population.\n\nIn a study examining atrial fibrillation prevalence and management among elderly Chinese, AF was reported at low rates (2-1.6%) with only one case using Warfarin out of 104 prevalent or incident cases. This patient had higher risks for all-cause, cardiovascular, and stroke mortality compared to patients with sinus rhythm.\n\n**Evidence:**\n\n- **Warfarin efficacy in elderly AF:** \"The total effective rate in the Warfarin group (84.21%) was significantly lower than in the Rivaroxaban (98.36%) and Dabigatran (96.77%) groups (p < 0.05).\" [1]\n- **Warfarin safety:** \"No significant differences were found in the effects of the three drugs on coagulation function, liver function, or the incidence of bleeding (p = 0.052).\" [1]\n- **Diabetic patients and Warfarin:** \"Variability of glycemic control could affect the pharmacokinetics and anticoagulant activity of warfarin, therefore, the risk–benefit balance of warfarin is prone to be compromised in diabetic patients with AF.\" [2]\n- **Osteoporotic risks of Warfarin:** \"Warfarin may increase the risk of osteoporotic bone fracture...\" [2]\n- **Atrial fibrillation prevalence in Chinese elderly:** \"The baseline prevalence of atrial fibrillation was 2.0% (n = 34) in men and 1.6% (n = 36) in women.\" [3]\n\n**Uncertainty Note:**\nThe evidence from the studies is limited to specific populations, and the small sample sizes may not fully represent generalizability across diverse patient cohorts. Additionally, individual variability in factors such as glycemic control or bone health could influence outcomes beyond what is captured in these\n\nSources:\n[1] Application Value and Safety Analysis of Warfarin, Rivaroxaban, and Dabigatran Ester in Elderly Patients With Atrial Fibrillation (doc_id=PMC11381953, chunk_id=PMC11381953, score=0.9063)\n[2] Concerns about clinical efficacy and safety of warfarin in diabetic patients with atrial fibrillation (doc_id=PMC6348611, chunk_id=PMC6348611, score=0.8636)\n[3] The prevalence, incidence, management and risks of atrial fibrillation in an elderly Chinese population: a prospective study (doc_id=PMC4427946, chunk_id=PMC4427946, score=0.8431)\n\nMedical disclaimer: This response is for informational purposes only and is not a substitute for professional medical advice.",
+        "context_metadata": {
+          "total_chunks_retrieved": 10,
+          "unique_chunks_after_dedup": 10,
+          "chunks_selected": 3,
+          "estimated_tokens": 1170,
+          "chunk_sources": {
+            "counts": {
+              "PMC11381953": 1,
+              "PMC6348611": 1,
+              "PMC4427946": 1
+            },
+            "unique_sources": 3
+          },
+          "skipped_invalid": 0
+        },
+        "generation_metrics": {
+          "total_time_seconds": 222.737,
+          "stage_times": {
+            "assemble": 189.89,
+            "evidence_eval": 0.0,
+            "draft": 11.9,
+            "review": 0.0,
+            "final": 20.947,
+            "postprocess": 0.0
+          },
+          "token_counts": {
+            "context_estimated": 1170,
+            "draft_estimated": 529
+          },
+          "stage_success": {
+            "assemble": true,
+            "evidence_eval": true,
+            "draft": true,
+            "review": true,
+            "final": true,
+            "postprocess": true
+          }
+        },
+        "intermediate_results": {
+          "evidence_evaluation": null,
+          "draft_answer": "**Answer:**\n\nWarfarin remains a valid treatment for atrial fibrillation (AF) in elderly patients, though its efficacy may be suboptimal compared to newer non-vitamin K oral anticoagulants (NOACs) like Rivaroxaban and Dabigatran. The study highlights that Warfarin's total effective rate (84.21%) is significantly lower than that of Rivaroxaban (98.36%) and Dabigatran (96.77%), with no significant difference in safety profiles across the three drugs.\n\nHowever, concerns arise regarding the clinical efficacy and safety of Warfarin in diabetic patients with AF. Glycocontrol variability can impact Warfarin's pharmacokinetics, potentially compromising its effectiveness. Additionally, Warfarin may increase the risk of osteoporotic bone fracture due to its inhibition of vitamin K-dependent protein carboxylations, which could exacerbate morbidity in this population.\n\nIn a study examining atrial fibrillation prevalence and management among elderly Chinese, AF was reported at low rates (2-1.6%) with only one case using Warfarin out of 104 prevalent or incident cases. This patient had higher risks for all-cause, cardiovascular, and stroke mortality compared to patients with sinus rhythm.\n\n**Evidence:**\n\n- **Warfarin efficacy in elderly AF:** \"The total effective rate in the Warfarin group (84.21%) was significantly lower than in the Rivaroxaban (98.36%) and Dabigatran (96.77%) groups (p < 0.05).\" [1]\n- **Warfarin safety:** \"No significant differences were found in the effects of the three drugs on coagulation function, liver function, or the incidence of bleeding (p = 0.052).\" [1]\n- **Diabetic patients and Warfarin:** \"Variability of glycemic control could affect the pharmacokinetics and anticoagulant activity of warfarin, therefore, the risk–benefit balance of warfarin is prone to be compromised in diabetic patients with AF.\" [2]\n- **Osteoporotic risks of Warfarin:** \"Warfarin may increase the risk of osteoporotic bone fracture...\" [2]\n- **Atrial fibrillation prevalence in Chinese elderly:** \"The baseline prevalence of atrial fibrillation was 2.0% (n = 34) in men and 1.6% (n = 36) in women.\" [3]",
+          "review_feedback": ""
+        },
+        "sources": [
+          {
+            "index": 1,
+            "chunk_id": "PMC11381953",
+            "source_title": "Application Value and Safety Analysis of Warfarin, Rivaroxaban, and Dabigatran Ester in Elderly Patients With Atrial Fibrillation",
+            "doc_id": "PMC11381953",
+            "relevance_score": 0.906299
+          },
+          {
+            "index": 2,
+            "chunk_id": "PMC6348611",
+            "source_title": "Concerns about clinical efficacy and safety of warfarin in diabetic patients with atrial fibrillation",
+            "doc_id": "PMC6348611",
+            "relevance_score": 0.863616
+          },
+          {
+            "index": 3,
+            "chunk_id": "PMC4427946",
+            "source_title": "The prevalence, incidence, management and risks of atrial fibrillation in an elderly Chinese population: a prospective study",
+            "doc_id": "PMC4427946",
+            "relevance_score": 0.843068
+          }
+        ],
+        "timestamp": "2026-07-08 17:11:47",
+        "model_name": "deepseek-r1:7b",
+        "provider": "stage09_live_full"
+      },
+      "evaluation": {
+        "rouge": {
+          "rouge1": 0.0625,
+          "rouge2": 0.0209,
+          "rougeL": 0.0542
+        },
+        "key_info_recall": 0.4286,
+        "key_info_matched": [
+          "elderly",
+          "atrial fibrillation",
+          "warfarin"
+        ],
+        "key_info_missing": [
+          "stroke risk",
+          "inr monitoring",
+          "bleeding risk",
+          "individualized decision"
+        ],
+        "hallucination_risk": 0.0,
+        "hallucination_signals": [],
+        "readability": {
+          "num_sentences": 28.0,
+          "num_words": 450.0,
+          "avg_sentence_len_words": 16.0714,
+          "avg_word_len_chars": 5.5644
+        }
+      },
+      "cache": {
+        "hit": true,
+        "key": "049d35538b540060021530b532c29ec8404b7de56fd68d8c401dc2325f46ece3",
+        "stats": {
+          "hits": 4,
+          "misses": 4,
+          "evictions": 0,
+          "size": 4
+        },
+        "use_cache": true,
+        "force_refresh": false
+      },
+      "extensions": {
+        "context_chars": 4683,
+        "retrieval_mode": "full"
+      }
+    }
+  ],
+  "extensions": {
+    "notebook": "answer-eval-cache-batch-full.ipynb",
+    "stage": "stage09_phase7"
+  },
+  "retrieval_mode": "full",
+  "eval_subset": "full_corpus",
+  "corpus_size_hint": 6107296
+}

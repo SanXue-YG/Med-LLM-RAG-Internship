@@ -1,8 +1,15 @@
-"""Stage 5: batch eval + cache + report export CLI.
+"""Stage 5/7: batch eval + cache + report export CLI.
 
-Outputs:
-- outputs/samples/eval_cache_batch_report.json (latest snapshot)
-- outputs/logs/eval_cache_batch_YYYYmmdd_HHMMSS.json (history log)
+Outputs (default):
+- sample/offline: outputs/samples/eval_cache_batch_report.json
+- live + --retrieval-mode full: outputs/samples/eval_cache_batch_report_full.json
+- logs: outputs/logs/eval_cache_batch[_full]_YYYYmmdd_HHMMSS.json
+
+Examples:
+    python scripts/run_eval_cache_batch.py --mode offline
+    python scripts/run_eval_cache_batch.py --mode live
+    python scripts/run_eval_cache_batch.py --mode live --retrieval-mode full --max-workers 2
+    python scripts/run_eval_cache_batch.py --mode live --retrieval-mode full --check-only
 """
 
 from __future__ import annotations
@@ -11,8 +18,9 @@ import argparse
 import json
 import sys
 import time
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 DEFAULT_QUERIES = [
     "What is the treatment for MI?",
@@ -22,6 +30,15 @@ DEFAULT_QUERIES = [
 ]
 
 
+@dataclass
+class Runtime:
+    pipe_eval: Any
+    generation_pipeline: Any | None
+    mode: str
+    model_name: str
+    retrieval_mode: str
+
+
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run stage09 eval/cache/batch report.")
     parser.add_argument(
@@ -29,6 +46,12 @@ def _parse_args() -> argparse.Namespace:
         choices=("offline", "mock", "live"),
         default="offline",
         help="offline=08 generation_eval snapshots; mock=fake adapter; live=Ollama pipeline",
+    )
+    parser.add_argument(
+        "--retrieval-mode",
+        choices=("sample", "full"),
+        default="sample",
+        help="live only: sample=06 pipeline_eval.json offline reranked; full=610万 RetrievalPipeline",
     )
     parser.add_argument("--queries", nargs="*", default=DEFAULT_QUERIES, help="Queries to evaluate")
     parser.add_argument("--max-workers", type=int, default=None, help="BatchRunner workers")
@@ -42,8 +65,23 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--max-context-tokens", type=int, default=1200, help="Live mode only")
     parser.add_argument("--skip-evidence-eval", action="store_true", help="Live mode only")
     parser.add_argument("--skip-critical-review", action="store_true", help="Live mode only")
+    parser.add_argument("--skip-rerank", action="store_true", help="Live full mode: skip reranker")
     parser.add_argument("--timeout", type=float, default=180.0, help="Live mode only")
-    return parser.parse_args()
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="Report JSON path (default: sample or full report filename)",
+    )
+    parser.add_argument(
+        "--check-only",
+        action="store_true",
+        help="With --mode live --retrieval-mode full: only check full corpus resources",
+    )
+    args = parser.parse_args()
+    if args.retrieval_mode == "full" and args.mode != "live":
+        parser.error("--retrieval-mode full requires --mode live")
+    return args
 
 
 def _load_ground_truth(stage09: Path) -> dict[str, dict[str, Any]]:
@@ -55,10 +93,10 @@ def _context_for_query(query: str) -> str:
     return f"ctx::{query}"
 
 
-def _build_pipeline(args: argparse.Namespace, paths: dict[str, Path]) -> tuple[Any, str, str]:
+def _build_runtime(args: argparse.Namespace, paths: dict[str, Path]) -> Runtime:
     from answer_evaluator import AnswerEvaluator
     from generation_cache import GenerationCache
-    from model_adapter import GenerationRequest, GenerationResponse, PipelineModelAdapter, SnapshotModelAdapter
+    from model_adapter import GenerationRequest, GenerationResponse, SnapshotModelAdapter
     from pipeline_with_eval import PipelineWithEval
 
     evaluator = AnswerEvaluator()
@@ -85,7 +123,7 @@ def _build_pipeline(args: argparse.Namespace, paths: dict[str, Path]) -> tuple[A
             provider="mock",
             default_model_name="mock-model",
         )
-        return pipe, "mock", "mock-model"
+        return Runtime(pipe, None, "mock", "mock-model", "sample")
 
     if args.mode == "offline":
         snapshot_path = paths["stage08"] / "outputs" / "samples" / "generation_eval.json"
@@ -104,9 +142,23 @@ def _build_pipeline(args: argparse.Namespace, paths: dict[str, Path]) -> tuple[A
             provider="stage08_snapshot",
             default_model_name=model_name,
         )
-        return pipe, "offline", model_name
+        return Runtime(pipe, None, "offline", model_name, "sample")
 
-    # live mode
+    if args.retrieval_mode == "full":
+        from full_eval import build_pipeline_with_eval_live_full
+
+        pipe_eval, generation_pipe, model_name = build_pipeline_with_eval_live_full(
+            paths["stage06"],
+            paths["stage07"],
+            paths["stage08"],
+            skip_evidence_eval=args.skip_evidence_eval,
+            skip_critical_review=args.skip_critical_review,
+            max_context_tokens=args.max_context_tokens,
+            timeout=args.timeout,
+            skip_rerank=args.skip_rerank,
+        )
+        return Runtime(pipe_eval, generation_pipe, "live", model_name, "full")
+
     sys.path.insert(0, str(paths["stage08"] / "src"))
     sys.path.insert(0, str(paths["stage07"] / "src"))
 
@@ -151,21 +203,39 @@ def _build_pipeline(args: argparse.Namespace, paths: dict[str, Path]) -> tuple[A
         provider="stage08_live",
         model_name=OLLAMA_MODEL,
     )
-    return pipe, "live", OLLAMA_MODEL
+    return Runtime(pipe, None, "live", OLLAMA_MODEL, "sample")
 
 
-def _run_pass(
-    pipe: Any,
-    queries: list[str],
+def _make_task_fn(
+    runtime: Runtime,
     gt_by_query: dict[str, dict[str, Any]],
     *,
     use_cache: bool,
     force_refresh: bool,
     temperature: float,
-    max_workers: int | None,
     model_name: str,
-) -> tuple[list[dict[str, Any]], dict[str, Any] | None]:
-    from batch_runner import BatchRunner
+) -> Callable[[str], dict[str, Any]]:
+    if runtime.mode == "live" and runtime.retrieval_mode == "full":
+        from full_eval import run_live_full_eval_task
+
+        def task_fn(query: str) -> dict[str, Any]:
+            gt = gt_by_query.get(query)
+            if gt is None:
+                raise KeyError(f"ground truth missing for query: {query}")
+            return run_live_full_eval_task(
+                runtime.pipe_eval,
+                runtime.generation_pipeline,
+                query,
+                gt,
+                use_cache=use_cache,
+                force_refresh=force_refresh,
+                temperature=temperature,
+                model_name=model_name,
+            )
+
+        return task_fn
+
+    pipe = runtime.pipe_eval
 
     def task_fn(query: str) -> dict[str, Any]:
         gt = gt_by_query.get(query)
@@ -185,10 +255,46 @@ def _run_pass(
         result["status"] = "ok"
         return result
 
+    return task_fn
+
+
+def _run_pass(
+    runtime: Runtime,
+    queries: list[str],
+    gt_by_query: dict[str, dict[str, Any]],
+    *,
+    use_cache: bool,
+    force_refresh: bool,
+    temperature: float,
+    max_workers: int | None,
+    model_name: str,
+) -> tuple[list[dict[str, Any]], dict[str, Any] | None]:
+    from batch_runner import BatchRunner
+
+    task_fn = _make_task_fn(
+        runtime,
+        gt_by_query,
+        use_cache=use_cache,
+        force_refresh=force_refresh,
+        temperature=temperature,
+        model_name=model_name,
+    )
     runner = BatchRunner(max_workers=max_workers)
     results = runner.run_batch(queries, task_fn, max_workers=max_workers)
     stats = runner.summarize(results).to_dict()
     return results, stats
+
+
+def _resolve_output_paths(stage09: Path, args: argparse.Namespace) -> tuple[Path, str]:
+    is_full = args.mode == "live" and args.retrieval_mode == "full"
+    if args.output is not None:
+        out_samples = args.output
+    elif is_full:
+        out_samples = stage09 / "outputs" / "samples" / "eval_cache_batch_report_full.json"
+    else:
+        out_samples = stage09 / "outputs" / "samples" / "eval_cache_batch_report.json"
+    log_prefix = "eval_cache_batch_full" if is_full else "eval_cache_batch"
+    return out_samples, log_prefix
 
 
 def main() -> None:
@@ -207,63 +313,105 @@ def main() -> None:
 
     sys.path.insert(0, str(stage09 / "src"))
 
-    from report_builder import build_eval_cache_batch_report
+    if args.check_only:
+        if args.mode != "live" or args.retrieval_mode != "full":
+            raise SystemExit("--check-only requires --mode live --retrieval-mode full")
+        from full_eval import check_full_corpus_resources
+
+        info = check_full_corpus_resources(paths["stage06"])
+        print(json.dumps(info, ensure_ascii=False, indent=2))
+        return
+
+    if args.mode == "live" and args.retrieval_mode == "full":
+        from full_eval import check_full_corpus_resources
+
+        resource_check = check_full_corpus_resources(paths["stage06"])
+        if not resource_check.get("ready"):
+            raise SystemExit(
+                f"Full corpus resources not ready: {json.dumps(resource_check, ensure_ascii=False)}"
+            )
 
     gt_by_query = _load_ground_truth(stage09)
-    pipe, mode, model_name = _build_pipeline(args, paths)
+    runtime = _build_runtime(args, paths)
 
     use_cache = not args.no_cache
     first_pass, first_batch_stats = _run_pass(
-        pipe,
+        runtime,
         list(args.queries),
         gt_by_query,
         use_cache=use_cache,
         force_refresh=False,
         temperature=args.temperature,
         max_workers=args.max_workers,
-        model_name=model_name,
+        model_name=runtime.model_name,
     )
 
     second_pass: list[dict[str, Any]] = []
     second_batch_stats: dict[str, Any] | None = None
     if use_cache and not args.skip_second_pass:
         second_pass, second_batch_stats = _run_pass(
-            pipe,
+            runtime,
             list(args.queries),
             gt_by_query,
             use_cache=True,
             force_refresh=False,
             temperature=args.temperature,
             max_workers=args.max_workers,
-            model_name=model_name,
+            model_name=runtime.model_name,
         )
 
-    report = build_eval_cache_batch_report(
-        mode=mode,
-        config={
-            "queries": list(args.queries),
-            "temperature": args.temperature,
-            "use_cache": use_cache,
-            "max_workers": args.max_workers,
-            "model_name": model_name,
-        },
-        first_pass=first_pass,
-        second_pass=second_pass,
-        batch_stats=second_batch_stats or first_batch_stats,
-    )
+    config = {
+        "queries": list(args.queries),
+        "temperature": args.temperature,
+        "use_cache": use_cache,
+        "max_workers": args.max_workers,
+        "model_name": runtime.model_name,
+        "retrieval_mode": runtime.retrieval_mode,
+        "skip_evidence_eval": args.skip_evidence_eval,
+        "skip_critical_review": args.skip_critical_review,
+        "skip_rerank": args.skip_rerank,
+    }
 
-    out_samples = stage09 / "outputs" / "samples" / "eval_cache_batch_report.json"
+    if runtime.mode == "live" and runtime.retrieval_mode == "full":
+        from full_eval import build_full_eval_report
+
+        report = build_full_eval_report(
+            mode="live",
+            config=config,
+            first_pass=first_pass,
+            second_pass=second_pass,
+            batch_stats=second_batch_stats or first_batch_stats,
+            retrieval_mode="full",
+            eval_subset="full_corpus",
+        )
+        report["extensions"]["cli"] = "run_eval_cache_batch.py --mode live --retrieval-mode full"
+    else:
+        from report_builder import build_eval_cache_batch_report
+
+        report = build_eval_cache_batch_report(
+            mode=runtime.mode,
+            config=config,
+            first_pass=first_pass,
+            second_pass=second_pass,
+            batch_stats=second_batch_stats or first_batch_stats,
+        )
+
+    out_samples, log_prefix = _resolve_output_paths(stage09, args)
     out_logs_dir = stage09 / "outputs" / "logs"
     out_logs_dir.mkdir(parents=True, exist_ok=True)
+    out_samples.parent.mkdir(parents=True, exist_ok=True)
     stamp = time.strftime("%Y%m%d_%H%M%S")
-    out_log = out_logs_dir / f"eval_cache_batch_{stamp}.json"
+    out_log = out_logs_dir / f"{log_prefix}_{stamp}.json"
 
     payload = json.dumps(report, ensure_ascii=False, indent=2)
     out_samples.write_text(payload, encoding="utf-8")
     out_log.write_text(payload, encoding="utf-8")
 
     summary = report["summary"]
-    print(f"[OK] mode={mode} queries={len(first_pass)}")
+    print(
+        f"[OK] mode={runtime.mode} retrieval_mode={runtime.retrieval_mode} "
+        f"queries={len(first_pass)}"
+    )
     print(
         f"cache first_pass hit_rate={summary['cache_first_pass']['hit_rate']} | "
         f"second_pass hit_rate={summary['cache_second_pass'].get('hit_rate', 0.0)}"

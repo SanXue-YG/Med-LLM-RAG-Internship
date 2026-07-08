@@ -43,7 +43,7 @@
 ├── 06 检索系统开发第二部分/  # 阶段 6：多路检索 + 融合 + 重排序（✅）
 ├── 07 生成模块与提示词工程第一部分/  # 阶段 7：上下文组装 + Prompt 模板（✅）
 ├── 08 生成模块与提示词工程第二部分/  # 阶段 8：Ollama 生成 + 端到端流水线（✅）
-├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量（✅）
+├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量 + 全量 live 复评（✅ 0–7）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -62,7 +62,7 @@
 | **06** 检索系统开发第二部分 | [`06 检索系统开发第二部分/`](06%20检索系统开发第二部分/) | ✅ **已完成** | [`任务.txt`](06%20检索系统开发第二部分/任务.txt) | [`schedule.md`](06%20检索系统开发第二部分/schedule.md) | [`retrieval-pipeline.ipynb`](06%20检索系统开发第二部分/notebooks/retrieval-pipeline.ipynb) | [`requirements.txt`](06%20检索系统开发第二部分/requirements.txt) |
 | **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | ✅ **已完成**（0–5） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | [`generation-prompting.ipynb`](07%20生成模块与提示词工程第一部分/notebooks/generation-prompting.ipynb) | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
 | **08** 生成模块与提示词工程第二部分 | [`08 生成模块与提示词工程第二部分/`](08%20生成模块与提示词工程第二部分/) | ✅ **已完成**（0–6） | [`任务.txt`](08%20生成模块与提示词工程第二部分/任务.txt) | [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) | [`medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) | [`requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) |
-| **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | ✅ **已完成**（0–6） | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb) | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
+| **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | ✅ **已完成**（0–7） | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb)（样本 0–6）· [`answer-eval-cache-batch-full.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch-full.ipynb)（全量 7） | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
 
 **说明**
 
@@ -115,13 +115,13 @@
 - **主要产出**：`query_enhancer.py`、`medical_synonyms.json`；[`docs/查询理解与增强报告.md`](05%20检索系统开发第一部分/docs/查询理解与增强报告.md)。
 - **详情**：[`05 检索系统开发第一部分/schedule.md`](05%20检索系统开发第一部分/schedule.md)
 
-### 06 检索系统开发第二部分（2026-06-18）
+### 06 检索系统开发第二部分（2026-06-18；09 联动 2026-07-08）
 
 - **定位**：检索执行层；向量 + BM25 → RRF 融合 → cross-encoder 重排。
-- **主要任务**：`RetrievalPipeline` 端到端；样本库 5 query 评测 + C12 可选全量联调。
-- **关键结果**：样本库 5/5 链路通；全量 metformin query 命中真实 RCT（`PMC2566605`）。**⚠️ 日常 notebook/CLI 默认样本库（1,267 chunks），非 610 万全量。**
+- **主要任务**：`RetrievalPipeline` 端到端；样本库 5 query 评测 + C12 可选全量联调；**09 阶段 7** 扩展分片 BM25 离线索引。
+- **关键结果**：样本库 5/5 链路通；全量 metformin query 命中真实 RCT（`PMC2566605`）。**09 联动**：`bm25_sharded.py` + `09/data/bm25_full`（62 片 · 610 万）供 `from_mode("full")` 自动加载。
 - **主要产出**：`pipeline.py`、`pipeline_eval.json`；[`docs/检索流水线报告.md`](06%20检索系统开发第二部分/docs/检索流水线报告.md)。
-- **详情**：[`06 检索系统开发第二部分/schedule.md`](06%20检索系统开发第二部分/schedule.md) §「验证范围说明」
+- **详情**：[`06 检索系统开发第二部分/schedule.md`](06%20检索系统开发第二部分/schedule.md) §「验证范围说明」「09 阶段联动扩展」
 
 ### 07 生成模块与提示词工程第一部分（2026-06-24）
 
@@ -142,10 +142,15 @@
 ### 09 生成答案评估，缓存策略与批量处理（2026-07-08）
 
 - **定位**：质量与工程优化横切层；在 08 外侧做评估、缓存、批量调度，不改变 08 生成内核。
-- **主要任务**：`AnswerEvaluator`（ROUGE/recall/幻觉风险/可读性）、`GenerationCache`、`BatchRunner`、`PipelineWithEval`。
-- **关键结果**：pytest **18 passed**；offline 第二轮缓存命中率 **1.0**；rouge1_avg=0.0768、key_info_recall_avg=0.2321（**样本库链路**，见报告 §1.2）。
-- **主要产出**：`pipeline_with_eval.py`、`eval_cache_batch_report.json`；[`docs/答案评估与缓存报告.md`](09%20生成答案评估，缓存策略与批量处理/docs/答案评估与缓存报告.md)。
-- **详情**：[`09 .../schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md)（含全量复评占位）
+- **主要任务**：阶段 0–6 样本库验证（`AnswerEvaluator` / `GenerationCache` / `BatchRunner` / `PipelineWithEval`）；**阶段 7** 全量 live 复评 + 分片 BM25 离线索引。
+- **关键结果**：
+  - 样本 offline：pytest **18 passed**；缓存二轮命中率 **1.0**；rouge1_avg=0.0768、key_info_recall_avg=0.2321。
+  - **全量 live**（610 万检索 + Ollama）：4/4 跑通；recall_avg **0.2738**（+0.042 vs 样本）；分片 BM25 同语料 top-10 重叠 **0.95**。
+- **主要产出**：
+  - 样本：`eval_cache_batch_report.json`、`answer-eval-cache-batch.ipynb`
+  - 全量：`eval_cache_batch_report_full.json`、`09/data/bm25_full/`、`answer-eval-cache-batch-full.ipynb`、`full_eval.py`
+  - 报告：[`docs/答案评估与缓存报告.md`](09%20生成答案评估，缓存策略与批量处理/docs/答案评估与缓存报告.md)（§4 样本 · §6 全量）
+- **详情**：[`09 .../schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) 阶段 0–7
 
 ---
 
@@ -228,7 +233,8 @@ cd "D:\谷歌"
 | 验证期向量库 | `**/chroma_db/` | 04 样本库（可 notebook 重建） | 跑 `vectorize-index.ipynb` |
 | **全量向量库** | `**/chroma_db_full/`（~71 GB） | 04 生产检索 | D: 本地保留或 E: 备份；整目录复制 |
 | **slim JSONL** | `**/oa_comm_slim.jsonl`（~8.9 GB） | 02/03/06 元数据回查 | 02 全量生成；复制到 `06 .../data/` |
-| **全量 chunks** | `E:\...\oa_comm_chunks.jsonl`（~9.1 GB） | 03/04 全量 BM25/重建索引 | 03 全量分割产出 |
+| **全量 chunks** | `**/oa_comm_chunks.jsonl`（~9.1 GB） | 03/04/09 全量 BM25 语料 | 03 全量分割产出；**推荐** `09 .../data/`（本地 D:） |
+| **全量 BM25 索引** | `**/data/bm25_full/` | 09 分片离线索引（62 片） | `09/scripts/build_bm25_full_index.py`；E: 仅手动备份 |
 | PMC 原始压缩包 | 外接盘 ~100 GB+ | 02 全量解析 | 按 02 notebook partB 说明 |
 
 **已随仓库提供（可直接用）**：01 验证 XML、02/03 样本 JSONL、04 样本 chunks 与统计 JSON、05–09 代码与样例输出 JSON 等（见下表）。
@@ -260,11 +266,13 @@ ollama pull deepseek-r1:7b
 
 ### 5. 生产 RAG 数据切换提醒
 
-开发阶段 06–09 默认 **样本库（1,267 chunks）**；上线 LangChain RAG 须切换 **全量**：
+开发阶段 06–09 **样本验证**默认 **样本库（1,267 chunks）**；**全量生产**（阶段 7 已打通）：
 
 - Chroma：`04 .../chroma_db_full` · `pmc_oa_comm_full`
-- BM25：`E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl`
+- BM25 语料：**`09 .../data/oa_comm_chunks.jsonl`**（或 E: 备份）
+- BM25 索引：**`09 .../data/bm25_full/`**（分片 `bm25_sharded_v1`；`build_bm25_full_index.py` 构建）
 - 代码：`RetrievalPipeline.from_mode("full")`
+- 全量 live 评估：`run_eval_cache_batch.py --mode live --retrieval-mode full`
 
 ---
 
@@ -327,20 +335,21 @@ ollama pull deepseek-r1:7b
 
 ### 06 检索系统开发第二部分（✅）
 
-> **⚠️ 验证范围**：notebook、CLI、`pipeline_eval.json` 均在 **样本库（1,267 chunks）** 完成，**不是** 610 万全量。生产须 `from_mode("full")`。
+> **验证范围**：日常 notebook/CLI 默认 **样本库（1,267 chunks）**；`from_mode("full")` + `09/data/bm25_full` 用于全量生产（09 阶段 7 已构建分片索引）。
 
 | 用途 | 开发（sample） | 生产（full） |
 |------|----------------|--------------|
 | 向量 | `04 .../chroma_db` · `pmc_oa_comm_sample` | `chroma_db_full` · `pmc_oa_comm_full` |
-| BM25 | `03 .../chunks_sample.jsonl` | `E:\...\oa_comm_chunks.jsonl` |
+| BM25 语料 | `03 .../chunks_sample.jsonl` | **`09 .../data/oa_comm_chunks.jsonl`** |
+| BM25 索引 | 现场 `build()` | **`09 .../data/bm25_full/`**（分片离线索引） |
 | 代码 | `RetrievalPipeline.from_mode("sample")` | **`from_mode("full")`** |
 
-- **产出**：[`docs/检索流水线报告.md`](06%20检索系统开发第二部分/docs/检索流水线报告.md)；`outputs/samples/pipeline_eval.json`
-- **接口**：`RetrievalPipeline.run(query)` → `reranked`；`config.resolve_chroma()` / `resolve_chunks_path()` / `resolve_slim_path()`
-- **后续开发注意**（[`schedule.md`](06%20检索系统开发第二部分/schedule.md) §「**验证范围说明**」）：
-  - 样本库长尾 query 常缺失；**链路正确 ≠ 生产召回质量**，须全量复评。
-  - 融合默认 **`rrf`**；recency/authority 靠 slim 回查，不重建 04 索引。
-  - `data/oa_comm_slim.jsonl`（~8.9 GB）**不在 Git**；08/09 默认仍消费样本 `pipeline_eval.json`。
+- **产出**：[`docs/检索流水线报告.md`](06%20检索系统开发第二部分/docs/检索流水线报告.md)；`pipeline_eval.json` · `pipeline_eval_full.json`
+- **接口**：`RetrievalPipeline.run(query)` → `reranked`；`config.resolve_chroma()` / `resolve_chunks_path()` / `resolve_bm25_cache_dir()`
+- **09 联动**（[`schedule.md`](06%20检索系统开发第二部分/schedule.md)「09 阶段联动扩展」）：`bm25_sharded.py`、`ShardedBM25Index`；`MultiPathRetriever.from_mode("full")` 优先加载分片缓存
+- **后续开发注意**：
+  - 融合默认 **`rrf`**；recency/authority 靠 slim 回查。
+  - 分片 BM25 查询逐片加载，比单体慢；可预热/常驻优化。
 - **详情**：[`schedule.md`](06%20检索系统开发第二部分/schedule.md)
 
 ```python
@@ -372,34 +381,44 @@ top_chunks = result["reranked"]
   - 全量切换：06 `from_mode("full")` 后重跑 `run_generation_eval.py` → 供 09 新快照。
 - **详情**：[`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md)
 
-### 09 生成答案评估，缓存策略与批量处理（✅）
+### 09 生成答案评估，缓存策略与批量处理（✅ 0–7）
 
-> **⚠️ 验证范围**：offline 指标反映**样本库链路**；不能外推全量 RAG 质量。
+| 验证 | 语料 / 模式 | 入口 | 报告 |
+|------|-------------|------|------|
+| 样本 0–6 | 1,267 chunks · offline/live(sample) | `answer-eval-cache-batch.ipynb` | `eval_cache_batch_report.json` · 报告 §4 |
+| **全量 7** | **610 万 · live(full)** | `answer-eval-cache-batch-full.ipynb` 或 CLI | `eval_cache_batch_report_full.json` · 报告 §6 |
 
-- **产出**：[`docs/答案评估与缓存报告.md`](09%20生成答案评估，缓存策略与批量处理/docs/答案评估与缓存报告.md)；`eval_cache_batch_report.json`；`ground_truth.json`
-- **接口**：`PipelineWithEval.run_with_cache_and_eval(...)` → `generation` / `evaluation` / `cache`
-- **CLI**：`scripts/run_eval_cache_batch.py --mode offline|mock|live`；**`pytest` 18 项**
-- **后续开发注意**（[`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) §「全量语料复评」、报告 §1.2）：
-  - ROUGE（质量）与缓存命中（性能）无关；幻觉分为风险信号；`ground_truth` 与样本检索证据基础不同。
-  - **`--mode live` 仍用样本 `pipeline_eval.json`**；全量复评：06 full → 08 重跑 → 09 live（待实施）。
-  - 跨阶段 `config` 同名时 09 用 `importlib` 加载本地 config。
-- **详情**：[`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md)；报告 §5.7
-
-```python
-result = pipe.run_with_cache_and_eval(query, ground_truth_entry=gt, temperature=0.2)
-```
+- **产出**：[`docs/答案评估与缓存报告.md`](09%20生成答案评估，缓存策略与批量处理/docs/答案评估与缓存报告.md)；`ground_truth.json`；`eval_sample_vs_full.json`；`bm25_sharded_vs_mono_overlap.json`
+- **接口**：`PipelineWithEval.run_with_cache_and_eval(...)` → `generation` / `evaluation` / `cache`；`full_eval.build_pipeline_with_eval_live_full()`（全量 live）
+- **CLI**：
+  ```powershell
+  # 样本 offline（默认）
+  python scripts/run_eval_cache_batch.py --mode offline
+  # 全量 live（等价 notebook C5；耗时长）
+  python scripts/run_eval_cache_batch.py --mode live --retrieval-mode full --check-only
+  python scripts/run_eval_cache_batch.py --mode live --retrieval-mode full --max-workers 2
+  # BM25 分片索引构建
+  python scripts/build_bm25_full_index.py --shard-size 100000
+  ```
+- **后续开发注意**（[`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) 阶段 7）：
+  - 样本 §4 指标**不能外推**全量质量；全量对照见报告 §6。
+  - 生成缓存命中**不跳过检索**（`resolve_context_text` 先跑）；检索是 live 第二大瓶颈。
+  - 大文件 `09/data/oa_comm_chunks.jsonl`、`09/data/bm25_full/` **不进 Git**；E: 作手动备份。
+  - 跨阶段 `bootstrap`/`config`/`models` 同名冲突由 `full_eval.py` 处理。
+- **详情**：[`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md)；[`09笔记.md`](笔记/09笔记.md) Q5/Q6（耗时与分片 BM25）
 
 ### 跨阶段：样本库 → 全量生产（LangChain_RAG 前必读）
 
-| 环节 | 开发默认 | 生产应切换 |
-|------|----------|------------|
+| 环节 | 开发默认 | 生产（阶段 7 已打通） |
+|------|----------|----------------------|
 | 向量检索 | `chroma_db` / 1,267 | `chroma_db_full` / 610 万 |
-| BM25 | `chunks_sample.jsonl` | `oa_comm_chunks.jsonl` |
+| BM25 语料 | `chunks_sample.jsonl` | `09/data/oa_comm_chunks.jsonl` |
+| BM25 索引 | 现场 build | `09/data/bm25_full/`（分片） |
 | 检索 | `from_mode("sample")` | **`from_mode("full")`** |
-| 生成评测 | 08 样本 `pipeline_eval.json` | 全量 reranked 后重跑 `generation_eval` |
-| 答案评估 | 09 offline 快照指标 | 全量链路复评（09 占位） |
+| 生成评测 | 08 样本 `pipeline_eval.json` | live 全量 pipeline（可选 08 重跑快照） |
+| 答案评估 | 09 offline 样本指标（§4） | **09 live full**（§6 / `--retrieval-mode full`） |
 
-出处：[`06 schedule`](06%20检索系统开发第二部分/schedule.md) §验证范围、[`04 schedule`](04%20向量化与索引构建/schedule.md) §实现注意事项。
+出处：[`06 schedule`](06%20检索系统开发第二部分/schedule.md)、[`09 schedule`](09%20生成答案评估，缓存策略与批量处理/schedule.md) 阶段 7、报告 §6。
 
 ---
 
@@ -418,7 +437,7 @@ result = pipe.run_with_cache_and_eval(query, ground_truth_entry=gt, temperature=
 | `06笔记.md` | 06 阶段 RAG 位置、多路检索/融合/rerank 概念 Q&A |
 | `07 笔记.md` | 07 阶段 RAG 位置、输入契约、冒烟测试 Q&A |
 | `08笔记.md` | 08 阶段 RAG 位置、schedule 审阅、与 07 衔接 Q&A |
-| `09笔记.md` | 09 阶段任务定位、评估/缓存/批量设计与 Q4 问答 |
+| `09笔记.md` | 09 阶段任务定位、评估/缓存/批量设计、全量耗时与分片 BM25（Q5/Q6） |
 
 ---
 
@@ -435,8 +454,12 @@ result = pipe.run_with_cache_and_eval(query, ground_truth_entry=gt, temperature=
 | 2026-06-22 ~ 24 | 07 阶段完成：上下文组装 + Prompt 模板 |
 | 2026-06-29 ~ 07-02 | 08 阶段完成：Ollama 生成流水线 + `generation_eval.json` |
 | **2026-07-07** | **09 阶段启动**：评估器 / 缓存 / 批量计划与骨架 |
-| **2026-07-08** | **09 阶段完成**：pytest 18 passed；正式报告；明确样本库验证边界与全量复评占位 |
+| **2026-07-08** | **09 阶段完成（0–6）**：pytest 18 passed；正式报告 §4；样本库验证边界 |
+| **2026-07-08** | **09 阶段 7 完成**：分片 BM25（62 片）· 全量 live 评估 · `answer-eval-cache-batch-full.ipynb` · 报告 §6 |
+| **2026-07-08** | **09 CLI**：`run_eval_cache_batch.py --retrieval-mode full`；`build_bm25_full_index.py` |
+| **2026-07-08** | **06 联动**：`bm25_sharded.py`；`from_mode("full")` 加载 `09/data/bm25_full` |
 | **2026-07-08** | **README 结构重组**：各阶段完成总结归并、`install_all_requirements.ps1`、部署指南对齐 |
 | **2026-07-08** | **README 交付物速查补充**：各阶段 `schedule` 实现注意事项 + 跨阶段样本/全量对照表 |
+| **2026-07-08** | **README 阶段 7 收尾**：09 全量路径、BM25 分片、CLI 复现命令、跨阶段表更新 |
 
 *阶段进度细节以各目录 `schedule.md`「进度记录」为准。*

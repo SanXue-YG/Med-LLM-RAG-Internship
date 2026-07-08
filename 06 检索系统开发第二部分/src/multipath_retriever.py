@@ -6,11 +6,25 @@ from typing import Any
 
 try:
     from .bm25_index import BM25Index
-    from .config import DEFAULT_FUSION_STRATEGY, EMBED_MODEL, Mode, resolve_chroma, stage04_src
+    from .config import (
+        DEFAULT_FUSION_STRATEGY,
+        EMBED_MODEL,
+        Mode,
+        resolve_bm25_cache_dir,
+        resolve_chroma,
+        stage04_src,
+    )
     from .fusion import FusionStrategy, fuse
 except ImportError:
     from bm25_index import BM25Index  # type: ignore[no-redef]
-    from config import DEFAULT_FUSION_STRATEGY, EMBED_MODEL, Mode, resolve_chroma, stage04_src  # type: ignore[no-redef]
+    from config import (  # type: ignore[no-redef]
+        DEFAULT_FUSION_STRATEGY,
+        EMBED_MODEL,
+        Mode,
+        resolve_bm25_cache_dir,
+        resolve_chroma,
+        stage04_src,
+    )
     from fusion import FusionStrategy, fuse  # type: ignore[no-redef]
 
 
@@ -70,8 +84,19 @@ class MultiPathRetriever:
 
         embedder = DocumentEmbedder(model_name=EMBED_MODEL)
         builder = ChromaIndexBuilder(str(chroma_dir), collection, embedder)
-        bm25 = BM25Index()
-        bm25.build(mode=mode)
+        cache_dir = resolve_bm25_cache_dir(mode)
+        if cache_dir is not None:
+            try:
+                from .bm25_sharded import ShardedBM25Index
+            except ImportError:
+                from bm25_sharded import ShardedBM25Index  # type: ignore[no-redef]
+            if ShardedBM25Index.is_sharded(cache_dir):
+                bm25 = ShardedBM25Index(cache_dir)
+            else:
+                bm25 = BM25Index.load(cache_dir)
+        else:
+            bm25 = BM25Index()
+            bm25.build(mode=mode)
         return cls(builder, bm25, mode=mode)
 
     def retrieve_vector(self, query_info: Any, top_k: int = 20) -> list[dict[str, Any]]:

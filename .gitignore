@@ -24,12 +24,14 @@ secrets/
 **/caches/
 **/chroma_db/
 **/chroma_db_full/
+**/data/bm25_full/
 **/chroma_repair_test/
 **/chroma.sqlite3
 **/ollama_models/
 **/*.bin
 **/data_level0.bin
 **/oa_comm_slim.jsonl
+**/oa_comm_chunks.jsonl
 
 # macOS
 .DS_Store

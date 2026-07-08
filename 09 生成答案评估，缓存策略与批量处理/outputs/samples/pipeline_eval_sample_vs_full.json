@@ -1,0 +1,36 @@
+{
+  "queries": [
+    {
+      "query": "What is the treatment for MI?",
+      "sample_top_doc_id": null,
+      "full_top_doc_id": null,
+      "top_doc_changed": false,
+      "sample_reranked_count": 0,
+      "full_reranked_count": 0
+    },
+    {
+      "query": "metformin cardiovascular effects",
+      "sample_top_doc_id": "PMC520826",
+      "full_top_doc_id": "PMC2566605",
+      "top_doc_changed": true,
+      "sample_reranked_count": 5,
+      "full_reranked_count": 5
+    },
+    {
+      "query": "papers on malaria after 2015",
+      "sample_top_doc_id": "PMC523837",
+      "full_top_doc_id": "PMC12822982",
+      "top_doc_changed": true,
+      "sample_reranked_count": 5,
+      "full_reranked_count": 5
+    },
+    {
+      "query": "warfarin atrial fibrillation elderly",
+      "sample_top_doc_id": "PMC509245",
+      "full_top_doc_id": null,
+      "top_doc_changed": true,
+      "sample_reranked_count": 5,
+      "full_reranked_count": 0
+    }
+  ]
+}

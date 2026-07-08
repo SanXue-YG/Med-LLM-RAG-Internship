@@ -1,6 +1,6 @@
 # 09 生成答案评估，缓存策略与批量处理 — 执行计划
 
-> **状态：✅ 已完成（阶段 0–6）**
+> **状态：✅ 已完成（阶段 0–7）**
 >
 > **本阶段范围（任务书）**：实现 **多维度答案评估器**、**生成结果缓存**、**批量并行处理（optional）**；并用 08 阶段固定测试 query 复跑，验证评估 / 缓存 / 批量功能。
 >
@@ -247,15 +247,11 @@ class BatchRunner:
   - **扩展落点**：在 CLI 或 `BatchRunner` 外层增加「上一轮 `summarize()` → 调整下一轮 `max_workers`」闭环（如 `error_rate > 0` 或 P95 延迟超阈值则降并发）。  
   - **预留扩展原因**（对应笔记 Q4-5）：并行发生在**多 query 批处理层**，单 query 内 08 四阶段仍串行——不是「每个 stage 并行再跑一次 LLM」。`max_workers = min(4, cpu_count)` 是保守起点；真实瓶颈常在 Ollama 推理与 I/O，非纯 CPU。Ollama 排队/超时时宜降至 2，稳定可试 3~4；需结合实测延迟与失败率动态调，而非静态拍脑袋。
 
-### 全量语料复评（未实施）
+### 全量语料复评 → 见 **阶段 7**
 
-> 对齐 06 `schedule.md` §「验证范围说明」：本阶段 ROUGE/recall 在**样本库**（1,267 chunks）链路上测得，不能代表全量 PMC 质量。
+> 对齐 06 `schedule.md` §「验证范围说明」：阶段 0–6 的 ROUGE/recall 在**样本库**（1,267 chunks）链路上测得，不能代表全量 PMC 质量。全量复评已单列为 **阶段 7**，不再放在「暂不实施项」占位。
 
-- [ ] **全量检索 + live 评估复跑**（`full_corpus_eval_validation`）  
-  - **当前代码**：`run_eval_cache_batch.py --mode offline` 读 08 `generation_eval.json`（其 `mode=offline_sample_pipeline_eval`，源于 06 样本 `pipeline_eval.json`）；`--mode live` 仍用样本 `pipeline_eval.json`，未接 `RetrievalPipeline.from_mode("full")`。  
-  - **实测结果**：§4 全部指标来自样本库链路；Q1 因 `pipeline_eval` 无精确 query 走 fallback，recall=0 可预期。  
-  - **扩展落点**：06 全量检索 → 08 重跑 `generation_eval` → 09 `--mode live` + `--retrieval-mode full`（或等价参数）；`ground_truth` 可按分集维护。  
-  - **预留扩展原因**：样本库证明 09 评估/缓存/批量链路正确；检索覆盖与指标绝对值须在全量库（Chroma `pmc_oa_comm_full` + 610 万 BM25 chunks）上复评后再解读（见 06 schedule「样本库结果不能代表最终 RAG 质量」）。
+- [ ] **全量检索 + live 评估复跑**（`full_corpus_eval_validation`）→ **阶段 7 ✅ 已完成**
 
 ### 阶段 0：环境与骨架 ✅
 
@@ -456,9 +452,9 @@ class BatchRunner:
   - `summarize_cache_metrics(...)`：计算 hits/misses/hit_rate。
   - `collect_failures(...)`：收集 error 或空答案样本。
 - `scripts/run_eval_cache_batch.py`
-  - 支持 `--mode offline|mock|live`，与 notebook C6 参数口径对齐。
+  - 支持 `--mode offline|mock|live`、`--retrieval-mode sample|full`（全量见阶段 7）、`--check-only`。
   - 默认两轮执行（first pass + second pass）用于展示缓存收益。
-  - 输出 `outputs/samples/eval_cache_batch_report.json` 与 `outputs/logs/eval_cache_batch_*.json`。
+  - 样本/offline 输出 `eval_cache_batch_report.json`；全量 live 输出 `eval_cache_batch_report_full.json`。
 - `src/model_adapter.py`
   - 新增 `SnapshotModelAdapter`：离线快照答案适配，便于无 Ollama 环境复跑。
 - `notebooks/answer-eval-cache-batch.ipynb`
@@ -490,6 +486,152 @@ class BatchRunner:
 - 根目录 `README.md`
   - 第九阶段完成总结、阶段一览、交付物速查、更新记录已同步。
 
+### 阶段 7：全量语料 live 评估复跑 ✅
+
+> **目标**：在 **610 万 chunks 全量检索链路**上，用 Ollama **live** 重跑 08 四条基准 query，产出可对比的评估报告，回答「样本库指标能否外推为生产 RAG 质量」。
+>
+> **结论摘要（2026-07-08 notebook 全量跑通）**：
+> - 全量 live 4/4 跑通；生成缓存二轮命中率 **100%**（4/4）。
+> - 全量 `key_info_recall_avg`（0.274）略高于样本 offline（0.232，Δ+0.042）；`rouge1_avg` 基本持平（0.078 vs 0.077）。
+> - 分片 BM25 同语料对照 top-10 重叠率 **0.95**，分片近似对 keyword 召回影响可忽略。
+> - 单条 live 首轮约 **8 分钟**（含全量检索+r1 生成）；C5 两轮共约 **23 分钟**（评估跑法，非生产单问耗时）。
+
+#### 7.0 环境与冒烟（前置）✅
+
+- [x] 确认 D: `chroma_db_full` / **`09 .../data/oa_comm_chunks.jsonl`** 可读（C1 `check_full_corpus_resources` ≡ `--check-only --mode full`）
+- [x] Ollama 服务在线；C2 `Probe OK`（`deepseek-r1:7b`）
+- [x] live 全量首轮 `max_workers=2`（C5 实测，避免 Ollama 排队）
+- [x] 全量 run 日志：`outputs/logs/eval_cache_batch_full_20260708_171839.json`
+
+#### 7.0b 全量 BM25 离线索引（09 落盘 → `data/bm25_full`，**分片构建**）✅
+
+> **语料**：`09 .../data/oa_comm_chunks.jsonl`（~9.1 GB，本地 D:；**不进 Git**）
+>
+> **动机**：单体一次性构建 610 万 `BM25Okapi` 内存峰值极高，实测会卡死；改为流式分片构建 + 断点续建。
+
+- [x] `06/src/bm25_sharded.py`：`build_sharded_bm25()` / `ShardedBM25Index` / `cache_progress()`
+- [x] `06/src/bm25_index.py`：`save()` / `load()` / `try_load()`（单体索引，样本/smoke 用）
+- [x] `06/src/config.py`：`resolve_chunks_path("full")` 优先 `09/data`；`resolve_bm25_cache_dir("full")` 识别分片 manifest
+- [x] `09/src/bm25_store.py`：`build_sharded_full_bm25()` / `sharded_status()`
+- [x] `09/scripts/build_bm25_full_index.py`：`--shard-size` / `--no-resume` / `--status`
+- [x] `06 MultiPathRetriever.from_mode("full")`：优先加载分片离线索引，缺失时回退现场 `build()`
+- [x] **全量构建完成**（C2.5，`shard_size=100000`）：**62 片 · 6,107,296 chunks · 约 700.7s**；`manifest.status=completed`
+- [ ] （可选）手动备份 `09/data/bm25_full/` → `E:\med-llm-rag-datasets\bm25_full\`
+
+**落盘布局**：`manifest.json` + `progress.json` + `shard_00000.pkl`…（每片 `{bm25, chunks}`）。
+
+```powershell
+cd "09 生成答案评估，缓存策略与批量处理"
+python scripts/build_bm25_full_index.py --status
+python scripts/build_bm25_full_index.py --shard-size 100000
+```
+
+#### 7.1 上游：06 全量检索快照 ✅
+
+> `pipeline_eval_full.json` 由 **06** `run_retrieval_eval.py` 产出；notebook **C3** 仅触发 CLI 或检查已有文件。
+
+- [x] `06/outputs/samples/pipeline_eval_full.json` 已存在（06 C12 历史产出；本次 C3 `RUN_RETRIEVAL_EVAL=False` 未重跑）
+- [x] C4 样本 vs 全量 Top-1 对比 → `outputs/samples/pipeline_eval_sample_vs_full.json`
+- [x] Top-1 变化：Q2 metformin `PMC520826`→`PMC2566605`；Q3 malaria `PMC523837`→`PMC12822982`；Q4 warfarin 样本 `PMC509245` / 全量快照无 reranked
+
+#### 7.2 上游：08 全量生成快照（可选，未做）
+
+- [ ] 08 `generation_eval_full.json`（读 `pipeline_eval_full.json` 的 offline 路径）— 阶段 7 以 **09 notebook live 全量**为主路径，此项保留为可选中间产物
+
+#### 7.3 09 代码：接入全量检索 + 真实 context ✅（notebook 路径）
+
+- [x] `src/full_eval.py`：`check_full_corpus_resources()`、`probe_ollama()`、`build_pipeline_with_eval_live_full()`、`resolve_context_text()`、`run_live_full_eval_task()`、`compare_eval_reports()`、`compare_bm25_sharded_vs_mono()`
+- [x] live + full：`RetrievalPipeline.from_mode("full")` + 真实 `context_text`（非 `ctx::query` 占位）
+- [x] 报告 JSON 含 `retrieval_mode: full`、`eval_subset: full_corpus`（`build_full_eval_report()`）
+- [x] C4.5 分片 vs 单体 BM25 keyword top-10 重叠率 → `outputs/samples/bm25_sharded_vs_mono_overlap.json`
+- [x] `scripts/run_eval_cache_batch.py`：`--retrieval-mode full`（CLI 等价 notebook C5；`--check-only` 资源检查；默认输出 `eval_cache_batch_report_full.json`）
+
+#### 7.4 执行：全量 live 评估（两轮缓存）✅
+
+- [x] C5 / CLI 首轮（cache miss）：4/4 成功 → `outputs/samples/eval_cache_batch_report_full.json`
+- [x] C5 / CLI 二轮（cache hit）：`hit_rate=1.0`（4/4）；生成跳过，检索仍执行
+- [x] 实测汇总（首轮）：
+
+| 指标 | 全量 live | 样本 offline（对照） |
+|------|-----------|---------------------|
+| rouge1_avg | **0.0782** | 0.0768 |
+| key_info_recall_avg | **0.2738** | 0.2321 |
+| hallucination_risk_avg | 0.0 | 0.0 |
+| cache 二轮命中率 | **1.0** | 1.0 |
+| 单条 latency（首轮） | **487–517 s** | ~0.003 s（跳检索） |
+| C5 总墙钟（两轮） | **~23 min** | — |
+
+#### 7.5 对比分析与 ground_truth 修订 ✅（对照表已产出）
+
+- [x] `outputs/samples/eval_sample_vs_full.json`（C6）
+- [x] `outputs/samples/bm25_sharded_vs_mono_overlap.json`（C4.5；同语料 avg_overlap **0.95**）
+- [ ] `ground_truth.json` 增补 `key_phrases` / 分集 `ground_truth_full.json`（按需；当前全量 recall 略升，未强制修订）
+
+#### 7.6 Notebook 与文档交付 ✅（核心产物已交付）
+
+- [x] `notebooks/answer-eval-cache-batch-full.ipynb`：**C0–C7 全部跑通**（含 C2.5 BM25 构建、C4.5 BM25 对比）
+- [x] `src/full_eval.py`、`src/bm25_store.py`、`scripts/build_bm25_full_index.py`
+- [x] `笔记/09笔记.md` **Q5/Q6**：全量耗时解读、分片 BM25 影响量化
+- [x] `docs/答案评估与缓存报告.md` §6 全量复评结果（2026-07-08）
+- [x] 根目录 `README.md` 阶段 7 状态、全量 CLI/BM25 路径、跨阶段对照表（2026-07-08）
+
+**阶段 7 完成说明**
+
+- 本阶段在 **610 万 chunks 全量检索 + Ollama live 生成**链路上，复跑了 08 四条基准 query，回答了「样本库指标能否外推」：**代码链路正确（0–6）+ 全量指标可解释（阶段 7）**。
+- **BM25 分片离线索引**已在 `09/data/bm25_full` 落盘（62 片），解决了单体构建卡死问题；`MultiPathRetriever.from_mode("full")` 自动加载，后续工程可直接复用。
+- **评估指标**：全量 `key_info_recall` 略高于样本（+0.042），`rouge1` 基本持平；Q1 MI 全量答案偏向 herbal/PRP 等检索命中主题，与手写 `ground_truth`（再灌注/他汀等）字面差异大，**recall=0 不代表检索失败**，须结合 `sources` 解读。
+- **缓存**：生成缓存二轮 100% 命中；当前实现 cache hit 仍执行全量检索（~3.5 min/条），检索是 live 第二大瓶颈（详见 `笔记/09笔记.md` Q5）。
+- **分片 BM25**：同语料 top-10 重叠 0.95，证实分片近似对 keyword 召回影响极小；全量 vs 样本重叠 0 是语料规模差异的预期现象。
+
+**阶段 7 实现说明（代码路径 / 函数 / 方法）**
+
+- **06 全量 BM25（09 阶段扩展，见 06 schedule「09 联动」）**
+  - `06/src/bm25_sharded.py` → `build_sharded_bm25()`：流式分片构建、断点续建、`progress.json` 进度
+  - `ShardedBM25Index.search()`：逐片加载评分、合并全局 top_k（接口兼容 `BM25Index.search()`）
+  - `06/src/config.py` → `resolve_bm25_cache_dir("full")`：识别 `format=bm25_sharded_v1`
+  - `06/src/multipath_retriever.py` → `from_mode("full")`：优先 `ShardedBM25Index`，回退单体/现场 build
+- **09 全量评估 notebook**
+  - `notebooks/answer-eval-cache-batch-full.ipynb`
+    - **C1** `check_full_corpus_resources()`：全量资源检查
+    - **C2.5** `build_sharded_full_bm25()`：BM25 分片构建（`RUN_BM25_BUILD`）
+    - **C3** 检查/触发 `pipeline_eval_full.json`（`RUN_RETRIEVAL_EVAL`）
+    - **C4** `compare_pipeline_eval_snapshots()`：检索 Top-1 样本 vs 全量
+    - **C4.5** `compare_bm25_sharded_vs_mono()`：keyword top-10 重叠率
+    - **C5** `build_pipeline_with_eval_live_full()` + `run_live_full_eval_task()`：live 两轮评估
+    - **C6** `compare_eval_reports()`：评估指标样本 vs 全量
+    - **C7** 逐条结果速览
+  - `src/full_eval.py`：阶段 7 核心辅助（import 上下文修复、live pipeline 组装、报告与对照）
+  - `src/bm25_store.py`：BM25 构建/状态查询封装
+  - `scripts/run_eval_cache_batch.py`：`--mode live --retrieval-mode full`（CLI 全量 live，等价 C5）
+  - `scripts/build_bm25_full_index.py`：CLI 分片构建入口
+- **产出 JSON**
+  - `data/bm25_full/manifest.json`：62 片 · 6,107,296 chunks
+  - `outputs/samples/eval_cache_batch_report_full.json`：全量 live 评估报告
+  - `outputs/samples/eval_sample_vs_full.json`：样本/全量指标对照
+  - `outputs/samples/pipeline_eval_sample_vs_full.json`：检索 Top-1 对照
+  - `outputs/samples/bm25_sharded_vs_mono_overlap.json`：分片 BM25 重叠率
+  - `outputs/logs/eval_cache_batch_full_*.json`：运行日志
+
+**阶段 7 建议复现顺序**
+
+1. C0 路径 + ground truth → C1 资源检查 → C2 Ollama 探测
+2. C2.5 BM25 分片构建（或 CLI `build_bm25_full_index.py`）
+3. C3 确认 `pipeline_eval_full.json` → C4/C4.5 检索与 BM25 对照
+4. C5 live 全量评估（`RUN_LIVE_EVAL=True`，`max_workers=2`）
+5. C6/C7 指标对照与逐条速览
+
+```powershell
+# CLI 等价（BM25 构建）
+cd "09 生成答案评估，缓存策略与批量处理"
+python scripts/build_bm25_full_index.py --status
+python scripts/build_bm25_full_index.py --shard-size 100000
+
+# CLI 全量 live 评估（等价 notebook C5；耗时长，建议 max-workers 2）
+python scripts/run_eval_cache_batch.py --mode live --retrieval-mode full --check-only
+python scripts/run_eval_cache_batch.py --mode live --retrieval-mode full --max-workers 2
+# 或 notebook: answer-eval-cache-batch-full.ipynb C0–C7
+```
+
 ---
 
 ## 验证用例（与 08 对齐）✅
@@ -517,6 +659,23 @@ class BatchRunner:
 | 4 条正常 query | 返回 4 条，顺序一致 | `test_stage06_acceptance.py` + `batch_stats.total=4` |
 | 注入 1 条非法/超时 query | 该条 `error`，其余成功 | `test_batch_runner.py::test_run_batch_isolates_failures` 通过 |
 
+**阶段 7 全量 live 验证** ✅（`answer-eval-cache-batch-full.ipynb`）：
+
+| # | query | 全量 live rouge1 | key_info_recall | 样本 offline rouge1（对照） | 备注 |
+|---|-------|------------------|-----------------|----------------------------|------|
+| 1 | MI treatment | 0.0518 | 0.0 | 0.072 | 全量命中 herbal/PRP 主题，与 gt 字面差异大 |
+| 2 | metformin cardiovascular | 0.1311 | 0.333 | 0.124 | recall 提升（命中 cardiovascular 相关短语） |
+| 3 | malaria after 2015 | 0.0675 | 0.333 | 0.041 | rouge/recall 均略升 |
+| 4 | warfarin AF elderly | 0.0625 | 0.429 | 0.070 | recall 与样本持平 |
+
+| 场景 | 期望 | 实测 |
+|------|------|------|
+| 全量 BM25 分片构建 | 6,107,296 chunks 落盘 | 62 片 · ~700.7s · `manifest.status=completed` |
+| live 4/4 跑通 | `evaluation` 非空 | 4/4 ok |
+| 生成缓存二轮 | hit_rate=1.0 | 4/4 |
+| 分片 vs 单体 BM25（同语料） | avg_overlap ≥ 0.9 | **0.95**（C4.5） |
+| C5 总墙钟（两轮） | 可完成 | ~23 min（首轮 ~17 min + 二轮 ~7 min） |
+
 ---
 
 ## 交付产物清单 ✅
@@ -538,6 +697,13 @@ class BatchRunner:
 | 评测报告样例 | JSON | `outputs/samples/eval_cache_batch_report.json` | ✅ | 已交付 |
 | 运行 log | JSON | `outputs/logs/eval_cache_batch_*.json` | ✅ | 已交付 |
 | **正式报告** | Markdown | `docs/答案评估与缓存报告.md` | ✅ | 已交付 |
+| 全量评测报告 | JSON | `outputs/samples/eval_cache_batch_report_full.json` | ✅ | 阶段 7 |
+| 样本/全量对照 | JSON | `outputs/samples/eval_sample_vs_full.json` | ✅ | 阶段 7 |
+| 检索 Top-1 对照 | JSON | `outputs/samples/pipeline_eval_sample_vs_full.json` | ✅ | 阶段 7 |
+| BM25 重叠率对照 | JSON | `outputs/samples/bm25_sharded_vs_mono_overlap.json` | ✅ | 阶段 7 |
+| 全量 BM25 分片索引 | 目录 | `09/data/bm25_full/`（62 片，不进 Git） | ✅ | 阶段 7 |
+| 全量 live notebook | `.ipynb` | `notebooks/answer-eval-cache-batch-full.ipynb` | ✅ | 阶段 7（C0–C7） |
+| 06 全量检索快照 | JSON | `06 .../outputs/samples/pipeline_eval_full.json` | ✅ | 06 C12 历史产出 |
 
 ---
 
@@ -554,13 +720,14 @@ class BatchRunner:
 
 ---
 
-## 本周执行顺序（建议）✅ 已全部完成
+## 本周执行顺序（建议）✅ 阶段 0–7 已全部完成
 
 1. ✅ **`ground_truth.json` + AnswerEvaluator（含单元测试）**  
 2. ✅ **GenerationCache（miss/hit/TTL/温度门控）**  
 3. ✅ **`pipeline_with_eval` 单条端到端**  
 4. ✅ **BatchRunner + 复跑 08 四条 query**  
-5. ✅ **阶段收尾：Notebook C6 导出 + CLI 对齐 + README / 报告**
+5. ✅ **阶段 5–6 收尾：Notebook C6 导出 + CLI + README / 报告**  
+6. ✅ **阶段 7：全量 BM25 分片索引 + `answer-eval-cache-batch-full.ipynb` C0–C7**
 
 ---
 
@@ -580,7 +747,7 @@ class BatchRunner:
 
 - [x] 每节至少包含：设计目的、实现方法、关键参数、结果截图/表格、局限与下一步
 - [x] 所有“后续扩展”均对应到占位符（`link_signals_with_sources`、`BaseCacheBackend` 等）
-- [x] 所有结论给出可复现实验入口（`pytest tests/ -v`、`run_eval_cache_batch.py --mode offline`、notebook C0–C6）
+- [x] 所有结论给出可复现实验入口（`pytest tests/ -v`、`run_eval_cache_batch.py --mode offline`、notebook C0–C6；全量：`--mode live --retrieval-mode full` 或 `answer-eval-cache-batch-full.ipynb`）
 
 ---
 
@@ -598,3 +765,9 @@ class BatchRunner:
 | 2026-07-08 | 阶段 6 完成：`test_stage06_acceptance.py` + `docs/答案评估与缓存报告.md` + README 定稿（pytest 18 passed） |
 | 2026-07-08 | schedule 全量勾选与收尾：验证用例实测列、交付清单、风险状态、报告映射、扩展占位说明 |
 | 2026-07-08 | 明确样本库验证边界；报告 §1.2/§4.3/§5.7 与 schedule「全量语料复评」对齐 06 验证范围说明 |
+| 2026-07-08 | 新增 **阶段 7**：全量语料 live 评估复跑（`full_corpus_eval_validation`）；原「全量语料复评」并入阶段 7 执行计划 |
+| 2026-07-08 | 阶段 7 启动：`answer-eval-cache-batch-full.ipynb` + `src/full_eval.py`（C0–C7 全量 notebook，原样本 notebook 保持不变） |
+| 2026-07-08 | **阶段 7 完成**：分片 BM25 62 片落盘；notebook C0–C7 全量跑通；`eval_cache_batch_report_full.json` + 样本/全量/BM25 对照 JSON；`笔记/09笔记.md` Q5/Q6 |
+| 2026-07-08 | `docs/答案评估与缓存报告.md` §6 全量 live 复评实测表定稿 |
+| 2026-07-08 | `run_eval_cache_batch.py` 增加 `--retrieval-mode full` / `--check-only`；CLI 等价 notebook C5 全量 live |
+| 2026-07-08 | 根目录 `README.md` 同步阶段 7：全量路径、BM25 分片、CLI 复现、跨阶段表 |

@@ -1,0 +1,444 @@
+{
+  "top_k": 10,
+  "controlled_same_corpus": {
+    "summary": {
+      "corpus": "sample",
+      "corpus_chunks": 1267,
+      "sample_shard_size": 400,
+      "avg_overlap_rate": 0.95,
+      "avg_jaccard": 0.9167
+    },
+    "per_query": [
+      {
+        "query": "What is the treatment for MI?",
+        "keyword_query": "treatment mi myocardial infarction heart attack",
+        "mono_top_k": [
+          "PMC512285",
+          "PMC406391_chunk2",
+          "PMC524185",
+          "PMC406391_chunk1",
+          "PMC516786",
+          "PMC521694",
+          "PMC514499",
+          "PMC512290",
+          "PMC406391_chunk0",
+          "PMC521693"
+        ],
+        "sharded_top_k": [
+          "PMC512285",
+          "PMC406391_chunk2",
+          "PMC406391_chunk1",
+          "PMC524185",
+          "PMC516786",
+          "PMC521694",
+          "PMC514499",
+          "PMC406391_chunk0",
+          "PMC521693",
+          "PMC512290"
+        ],
+        "top_k": 10,
+        "overlap_count": 10,
+        "overlap_rate": 1.0,
+        "jaccard": 1.0,
+        "only_in_a": [],
+        "only_in_b": [],
+        "shared": [
+          "PMC406391_chunk0",
+          "PMC406391_chunk1",
+          "PMC406391_chunk2",
+          "PMC512285",
+          "PMC512290",
+          "PMC514499",
+          "PMC516786",
+          "PMC521693",
+          "PMC521694",
+          "PMC524185"
+        ]
+      },
+      {
+        "query": "metformin cardiovascular effects",
+        "keyword_query": "metformin cardiovascular effects biguanide antidiabetic heart disease metformin cardiovascular effects cardiovascular outcomes metformin",
+        "mono_top_k": [
+          "PMC521687",
+          "PMC521493",
+          "PMC520826",
+          "PMC523844",
+          "PMC518966",
+          "PMC503398",
+          "PMC519027",
+          "PMC518976",
+          "PMC493273_chunk3",
+          "PMC406391_chunk1"
+        ],
+        "sharded_top_k": [
+          "PMC521687",
+          "PMC521493",
+          "PMC523844",
+          "PMC520826",
+          "PMC518966",
+          "PMC519027",
+          "PMC503398",
+          "PMC518976",
+          "PMC493273_chunk3",
+          "PMC406391_chunk1"
+        ],
+        "top_k": 10,
+        "overlap_count": 10,
+        "overlap_rate": 1.0,
+        "jaccard": 1.0,
+        "only_in_a": [],
+        "only_in_b": [],
+        "shared": [
+          "PMC406391_chunk1",
+          "PMC493273_chunk3",
+          "PMC503398",
+          "PMC518966",
+          "PMC518976",
+          "PMC519027",
+          "PMC520826",
+          "PMC521493",
+          "PMC521687",
+          "PMC523844"
+        ]
+      },
+      {
+        "query": "papers on malaria after 2015",
+        "keyword_query": "papers malaria after 2015 plasmodium",
+        "mono_top_k": [
+          "PMC514496",
+          "PMC517943",
+          "PMC517944",
+          "PMC176545",
+          "PMC434153",
+          "PMC314464",
+          "PMC524376_chunk1",
+          "PMC522803",
+          "PMC512294",
+          "PMC523837"
+        ],
+        "sharded_top_k": [
+          "PMC514496",
+          "PMC517943",
+          "PMC517944",
+          "PMC434153",
+          "PMC176545",
+          "PMC314464",
+          "PMC512294",
+          "PMC522803",
+          "PMC514497",
+          "PMC516443"
+        ],
+        "top_k": 10,
+        "overlap_count": 8,
+        "overlap_rate": 0.8,
+        "jaccard": 0.6667,
+        "only_in_a": [
+          "PMC523837",
+          "PMC524376_chunk1"
+        ],
+        "only_in_b": [
+          "PMC514497",
+          "PMC516443"
+        ],
+        "shared": [
+          "PMC176545",
+          "PMC314464",
+          "PMC434153",
+          "PMC512294",
+          "PMC514496",
+          "PMC517943",
+          "PMC517944",
+          "PMC522803"
+        ]
+      },
+      {
+        "query": "warfarin atrial fibrillation elderly",
+        "keyword_query": "warfarin atrial fibrillation elderly atrial fibrillation anticoagulant",
+        "mono_top_k": [
+          "PMC514544",
+          "PMC509245",
+          "PMC497050",
+          "PMC514718",
+          "PMC509246",
+          "PMC466999",
+          "PMC512286",
+          "PMC524506",
+          "PMC524186",
+          "PMC514709_chunk2"
+        ],
+        "sharded_top_k": [
+          "PMC514544",
+          "PMC509245",
+          "PMC497050",
+          "PMC514718",
+          "PMC509246",
+          "PMC512286",
+          "PMC466999",
+          "PMC524186",
+          "PMC524506",
+          "PMC514709_chunk2"
+        ],
+        "top_k": 10,
+        "overlap_count": 10,
+        "overlap_rate": 1.0,
+        "jaccard": 1.0,
+        "only_in_a": [],
+        "only_in_b": [],
+        "shared": [
+          "PMC466999",
+          "PMC497050",
+          "PMC509245",
+          "PMC509246",
+          "PMC512286",
+          "PMC514544",
+          "PMC514709_chunk2",
+          "PMC514718",
+          "PMC524186",
+          "PMC524506"
+        ]
+      }
+    ]
+  },
+  "full_sharded_vs_sample_mono": {
+    "summary": {
+      "ready": true,
+      "corpus": "full_sharded_vs_sample_mono",
+      "full_chunks": 6107296,
+      "full_num_shards": 62,
+      "cache_dir": "D:\\谷歌\\09 生成答案评估，缓存策略与批量处理\\data\\bm25_full",
+      "avg_overlap_rate": 0.0,
+      "avg_jaccard": 0.0,
+      "note": "语料规模不同，重叠率低是预期现象，不代表分片近似失效"
+    },
+    "per_query": [
+      {
+        "query": "What is the treatment for MI?",
+        "keyword_query": "treatment mi myocardial infarction heart attack",
+        "sample_mono_top_k": [
+          "PMC512285",
+          "PMC406391_chunk2",
+          "PMC524185",
+          "PMC406391_chunk1",
+          "PMC516786",
+          "PMC521694",
+          "PMC514499",
+          "PMC512290",
+          "PMC406391_chunk0",
+          "PMC521693"
+        ],
+        "full_sharded_top_k": [
+          "PMC12429806",
+          "PMC10526096",
+          "PMC10868847_chunk5",
+          "PMC6399323",
+          "PMC10122825",
+          "PMC10242647",
+          "PMC11329297",
+          "PMC11737239_chunk3",
+          "PMC7287215",
+          "PMC11327834"
+        ],
+        "top_k": 10,
+        "overlap_count": 0,
+        "overlap_rate": 0.0,
+        "jaccard": 0.0,
+        "only_in_a": [
+          "PMC406391_chunk0",
+          "PMC406391_chunk1",
+          "PMC406391_chunk2",
+          "PMC512285",
+          "PMC512290",
+          "PMC514499",
+          "PMC516786",
+          "PMC521693",
+          "PMC521694",
+          "PMC524185"
+        ],
+        "only_in_b": [
+          "PMC10122825",
+          "PMC10242647",
+          "PMC10526096",
+          "PMC10868847_chunk5",
+          "PMC11327834",
+          "PMC11329297",
+          "PMC11737239_chunk3",
+          "PMC12429806",
+          "PMC6399323",
+          "PMC7287215"
+        ],
+        "shared": []
+      },
+      {
+        "query": "metformin cardiovascular effects",
+        "keyword_query": "metformin cardiovascular effects biguanide antidiabetic heart disease metformin cardiovascular effects cardiovascular outcomes metformin",
+        "sample_mono_top_k": [
+          "PMC521687",
+          "PMC521493",
+          "PMC520826",
+          "PMC523844",
+          "PMC518966",
+          "PMC503398",
+          "PMC519027",
+          "PMC518976",
+          "PMC493273_chunk3",
+          "PMC406391_chunk1"
+        ],
+        "full_sharded_top_k": [
+          "PMC7700183",
+          "PMC3132893",
+          "PMC4990713_chunk1",
+          "PMC9464374_chunk1",
+          "PMC8490502",
+          "PMC4948032_chunk2",
+          "PMC8951049",
+          "PMC6213955",
+          "PMC10932445",
+          "PMC3607889"
+        ],
+        "top_k": 10,
+        "overlap_count": 0,
+        "overlap_rate": 0.0,
+        "jaccard": 0.0,
+        "only_in_a": [
+          "PMC406391_chunk1",
+          "PMC493273_chunk3",
+          "PMC503398",
+          "PMC518966",
+          "PMC518976",
+          "PMC519027",
+          "PMC520826",
+          "PMC521493",
+          "PMC521687",
+          "PMC523844"
+        ],
+        "only_in_b": [
+          "PMC10932445",
+          "PMC3132893",
+          "PMC3607889",
+          "PMC4948032_chunk2",
+          "PMC4990713_chunk1",
+          "PMC6213955",
+          "PMC7700183",
+          "PMC8490502",
+          "PMC8951049",
+          "PMC9464374_chunk1"
+        ],
+        "shared": []
+      },
+      {
+        "query": "papers on malaria after 2015",
+        "keyword_query": "papers malaria after 2015 plasmodium",
+        "sample_mono_top_k": [
+          "PMC514496",
+          "PMC517943",
+          "PMC517944",
+          "PMC176545",
+          "PMC434153",
+          "PMC314464",
+          "PMC524376_chunk1",
+          "PMC522803",
+          "PMC512294",
+          "PMC523837"
+        ],
+        "full_sharded_top_k": [
+          "PMC7768742",
+          "PMC11598795",
+          "PMC11722198",
+          "PMC9843100_chunk0",
+          "PMC10397454",
+          "PMC12741995",
+          "PMC9996564_chunk1",
+          "PMC6781347_chunk1",
+          "PMC12590998",
+          "PMC9568357"
+        ],
+        "top_k": 10,
+        "overlap_count": 0,
+        "overlap_rate": 0.0,
+        "jaccard": 0.0,
+        "only_in_a": [
+          "PMC176545",
+          "PMC314464",
+          "PMC434153",
+          "PMC512294",
+          "PMC514496",
+          "PMC517943",
+          "PMC517944",
+          "PMC522803",
+          "PMC523837",
+          "PMC524376_chunk1"
+        ],
+        "only_in_b": [
+          "PMC10397454",
+          "PMC11598795",
+          "PMC11722198",
+          "PMC12590998",
+          "PMC12741995",
+          "PMC6781347_chunk1",
+          "PMC7768742",
+          "PMC9568357",
+          "PMC9843100_chunk0",
+          "PMC9996564_chunk1"
+        ],
+        "shared": []
+      },
+      {
+        "query": "warfarin atrial fibrillation elderly",
+        "keyword_query": "warfarin atrial fibrillation elderly atrial fibrillation anticoagulant",
+        "sample_mono_top_k": [
+          "PMC514544",
+          "PMC509245",
+          "PMC497050",
+          "PMC514718",
+          "PMC509246",
+          "PMC466999",
+          "PMC512286",
+          "PMC524506",
+          "PMC524186",
+          "PMC514709_chunk2"
+        ],
+        "full_sharded_top_k": [
+          "PMC5385244",
+          "PMC526776",
+          "PMC4427946",
+          "PMC7396601",
+          "PMC6348611",
+          "PMC2453106",
+          "PMC7785493_chunk3",
+          "PMC7265096_chunk1",
+          "PMC3751624",
+          "PMC4560912_chunk1"
+        ],
+        "top_k": 10,
+        "overlap_count": 0,
+        "overlap_rate": 0.0,
+        "jaccard": 0.0,
+        "only_in_a": [
+          "PMC466999",
+          "PMC497050",
+          "PMC509245",
+          "PMC509246",
+          "PMC512286",
+          "PMC514544",
+          "PMC514709_chunk2",
+          "PMC514718",
+          "PMC524186",
+          "PMC524506"
+        ],
+        "only_in_b": [
+          "PMC2453106",
+          "PMC3751624",
+          "PMC4427946",
+          "PMC4560912_chunk1",
+          "PMC526776",
+          "PMC5385244",
+          "PMC6348611",
+          "PMC7265096_chunk1",
+          "PMC7396601",
+          "PMC7785493_chunk3"
+        ],
+        "shared": []
+      }
+    ]
+  }
+}

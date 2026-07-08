@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-07-08 17:18:49",
+  "sample_report": "D:\\谷歌\\09 生成答案评估，缓存策略与批量处理\\outputs\\samples\\eval_cache_batch_report.json",
+  "full_report": "D:\\谷歌\\09 生成答案评估，缓存策略与批量处理\\outputs\\samples\\eval_cache_batch_report_full.json",
+  "summary": {
+    "sample": {
+      "rouge1_avg": 0.0768,
+      "key_info_recall_avg": 0.2321,
+      "hallucination_risk_avg": 0.0,
+      "sample_count": 4.0
+    },
+    "full": {
+      "rouge1_avg": 0.0782,
+      "key_info_recall_avg": 0.2738,
+      "hallucination_risk_avg": 0.0,
+      "sample_count": 4.0
+    },
+    "delta": {
+      "rouge1_avg": 0.0014,
+      "key_info_recall_avg": 0.0417
+    }
+  },
+  "per_query": [
+    {
+      "query": "What is the treatment for MI?",
+      "sample_rouge1": 0.072,
+      "full_rouge1": 0.0518,
+      "sample_key_info_recall": 0.0,
+      "full_key_info_recall": 0.0,
+      "sample_hallucination_risk": 0.0,
+      "full_hallucination_risk": 0.0,
+      "sample_latency_seconds": 0.0032,
+      "full_latency_seconds": 507.3032
+    },
+    {
+      "query": "metformin cardiovascular effects",
+      "sample_rouge1": 0.124,
+      "full_rouge1": 0.1311,
+      "sample_key_info_recall": 0.0,
+      "full_key_info_recall": 0.3333,
+      "sample_hallucination_risk": 0.0,
+      "full_hallucination_risk": 0.0,
+      "sample_latency_seconds": 0.0034,
+      "full_latency_seconds": 516.9437
+    },
+    {
+      "query": "papers on malaria after 2015",
+      "sample_rouge1": 0.0407,
+      "full_rouge1": 0.0675,
+      "sample_key_info_recall": 0.5,
+      "full_key_info_recall": 0.3333,
+      "sample_hallucination_risk": 0.0,
+      "full_hallucination_risk": 0.0,
+      "sample_latency_seconds": 0.0051,
+      "full_latency_seconds": 487.5676
+    },
+    {
+      "query": "warfarin atrial fibrillation elderly",
+      "sample_rouge1": 0.0704,
+      "full_rouge1": 0.0625,
+      "sample_key_info_recall": 0.4286,
+      "full_key_info_recall": 0.4286,
+      "sample_hallucination_risk": 0.0,
+      "full_hallucination_risk": 0.0,
+      "sample_latency_seconds": 0.0037,
+      "full_latency_seconds": 491.3035
+    }
+  ]
+}
