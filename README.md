@@ -2,7 +2,7 @@
 
 基于 PMC 开放获取文献（`oa_comm`）的本地 LLM + RAG 可行性验证与数据评估项目。工程按阶段拆分目录，每阶段有独立任务书、计划、依赖与 Jupyter 入口。
 
-> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`；06：`检索流水线报告.md`；07：`上下文组装与提示工程报告.md`；08：`医学生成流水线报告.md`；09：`答案评估与缓存报告.md`）。
+> **给老师 / 审阅者**：各阶段**任务原文**见各目录下 `任务.txt`；**执行计划与进度**见各目录 `schedule.md`；**正式分析结论**见各阶段 `docs/`（02：`RAG数据分析与设计说明.md`；03：`文档分割处理报告.md`；04：`向量化与索引报告.md`；05：`查询理解与增强报告.md`；06：`检索流水线报告.md`；07：`上下文组装与提示工程报告.md`；08：`医学生成流水线报告.md`；09：`答案评估与缓存报告.md`）。**当前阶段 10**（强约束与幻觉抑制）计划见 [`10 .../schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md)，正式报告待实施后补充。
 
 ---
 
@@ -44,6 +44,7 @@
 ├── 07 生成模块与提示词工程第一部分/  # 阶段 7：上下文组装 + Prompt 模板（✅）
 ├── 08 生成模块与提示词工程第二部分/  # 阶段 8：Ollama 生成 + 端到端流水线（✅）
 ├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量 + 全量 live 复评（✅ 0–7）
+├── 10 强约束规则开发与幻觉抑制/  # 阶段 10：强约束提示 + 引用/格式校验 + 对抗评测（🔄 计划就绪，待实施）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -63,6 +64,7 @@
 | **07** 生成模块与提示词工程第一部分 | [`07 生成模块与提示词工程第一部分/`](07%20生成模块与提示词工程第一部分/) | ✅ **已完成**（0–5） | [`任务.txt`](07%20生成模块与提示词工程第一部分/任务.txt) | [`schedule.md`](07%20生成模块与提示词工程第一部分/schedule.md) | [`generation-prompting.ipynb`](07%20生成模块与提示词工程第一部分/notebooks/generation-prompting.ipynb) | [`requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) |
 | **08** 生成模块与提示词工程第二部分 | [`08 生成模块与提示词工程第二部分/`](08%20生成模块与提示词工程第二部分/) | ✅ **已完成**（0–6） | [`任务.txt`](08%20生成模块与提示词工程第二部分/任务.txt) | [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) | [`medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) | [`requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) |
 | **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | ✅ **已完成**（0–7） | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb)（样本 0–6）· [`answer-eval-cache-batch-full.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch-full.ipynb)（全量 7） | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
+| **10** 强约束规则开发与幻觉抑制 | [`10 强约束规则开发与幻觉抑制/`](10%20强约束规则开发与幻觉抑制/) | 🔄 **计划就绪，待实施** | [`任务.txt`](10%20强约束规则开发与幻觉抑制/任务.txt) | [`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) | `constraint-hallucination.ipynb`（规划中，贯穿 C0–C6） | *复用 01–09*（暂无强制新依赖） |
 
 **说明**
 
@@ -152,6 +154,15 @@
   - 报告：[`docs/答案评估与缓存报告.md`](09%20生成答案评估，缓存策略与批量处理/docs/答案评估与缓存报告.md)（§4 样本 · §6 全量）
 - **详情**：[`09 .../schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) 阶段 0–7
 
+### 10 强约束规则开发与幻觉抑制（🔄 2026-07-13 计划就绪）
+
+- **定位**：安全约束与幻觉抑制层；在 08 生成链路上叠加硬纪律（拒答 / 合法引用 / 禁编造 / 格式），生成后校验并可重试；用对抗用例验收。
+- **主要任务（计划）**：`ConstraintPromptBundle`、`CitationGuard`、`FormatChecker`、`ConstrainedGenerationPipeline`、对抗评测与指标报告。
+- **关键设计（启动前已定）**：默认 **`from_mode("full")` 全量 live**（跳过样本 offline 主轨）；notebook 贯穿各小阶段；格式别名兼容 08；`boundary_hit` 豁免三节；journal/year 默认 relaxed；约束 **`append_to`** 不替换 07 system。
+- **关键结果**：实施尚未开始；计划与路径核验见 schedule。
+- **主要产出（已有）**：[`任务.txt`](10%20强约束规则开发与幻觉抑制/任务.txt)、[`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md)；笔记 [`10笔记.md`](笔记/10笔记.md)。
+- **详情**：[`10 .../schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md)
+
 ---
 
 ## Python 环境与依赖
@@ -160,7 +171,7 @@
 
 | 项 | 值 |
 |----|-----|
-| Conda 环境名 | `med-rag-verify`（01–09 共用） |
+| Conda 环境名 | `med-rag-verify`（01–10 共用） |
 | Python | 3.11.x |
 | 平台 | Windows / macOS |
 
@@ -194,6 +205,7 @@
 | 07 | [`07 .../requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) | **无强制新增**（可选 gpt2 tokenizer） |
 | 08 | [`08 .../requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) | **`httpx`**（Ollama HTTP） |
 | 09 | [`09 .../requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) | **`rouge-score`**、`pytest`（httpx 与 08 重叠） |
+| 10 | *待创建* `10 .../requirements.txt` | **暂无强制新依赖**（规划复用 `med-rag-verify`；阶段 0 落地时补文件） |
 
 ### 04 全量 GPU 补充（可选）
 
@@ -266,13 +278,14 @@ ollama pull deepseek-r1:7b
 
 ### 5. 生产 RAG 数据切换提醒
 
-开发阶段 06–09 **样本验证**默认 **样本库（1,267 chunks）**；**全量生产**（阶段 7 已打通）：
+开发阶段 06–09 **样本验证**默认 **样本库（1,267 chunks）**；**全量生产**（09 阶段 7 已打通）。**阶段 10 默认直接全量**（`from_mode("full")`），不再以样本 offline 作主验证轨：
 
 - Chroma：`04 .../chroma_db_full` · `pmc_oa_comm_full`
 - BM25 语料：**`09 .../data/oa_comm_chunks.jsonl`**（或 E: 备份）
 - BM25 索引：**`09 .../data/bm25_full/`**（分片 `bm25_sharded_v1`；`build_bm25_full_index.py` 构建）
 - 代码：`RetrievalPipeline.from_mode("full")`
 - 全量 live 评估：`run_eval_cache_batch.py --mode live --retrieval-mode full`
+- **10 约束流水线（规划）**：同上 full 路径；对抗陷阱用 `fixture_context`，详见 [`10/schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md)
 
 ---
 
@@ -417,8 +430,29 @@ top_chunks = result["reranked"]
 | 检索 | `from_mode("sample")` | **`from_mode("full")`** |
 | 生成评测 | 08 样本 `pipeline_eval.json` | live 全量 pipeline（可选 08 重跑快照） |
 | 答案评估 | 09 offline 样本指标（§4） | **09 live full**（§6 / `--retrieval-mode full`） |
+| **10 强约束（规划）** | 单元/陷阱用 fixture | **默认 full live** + 对抗报告 `_full` |
 
 出处：[`06 schedule`](06%20检索系统开发第二部分/schedule.md)、[`09 schedule`](09%20生成答案评估，缓存策略与批量处理/schedule.md) 阶段 7、报告 §6。
+
+### 10 强约束规则开发与幻觉抑制（🔄 计划就绪）
+
+> **当前**：任务书 + `schedule.md` + 笔记已齐；**代码 / notebook 尚未实施**。以下为计划口径，供开工与审阅。
+
+- **范围**：强约束 system（边界/引用/禁编造/格式）+ `CitationGuard` + `FormatChecker` + 对抗评测（幻觉率、引用准确率、格式合规率、拒答命中率）
+- **上游**：08 `MedicalGenerationPipeline`；07 组装/Prompt；09 幻觉软分仅作可选对照
+- **验证策略**：**默认全量** `RetrievalPipeline.from_mode("full")`；单元/陷阱用 fixture，不每次冷启 610 万
+- **D: 全量路径（已核验）**：
+  - Chroma：`04 .../data/chroma_db_full` · `pmc_oa_comm_full`
+  - chunks：`09 .../data/oa_comm_chunks.jsonl`
+  - BM25：`09 .../data/bm25_full/`（62 片 · completed）
+  - slim：`06 .../data/oa_comm_slim.jsonl`（FormatChecker `strict` 可选）
+- **后续开发注意**（[`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md)）：
+  - 约束注入用 **`append_to`**，勿替换 07 各步 system
+  - 07 `context_text` 无编号 → 10 `assign_labels` 后补 `[n]`，对齐 `format_sources`
+  - 格式章节 **别名兼容** 08（`Answer`/`Sources`）；**拒答豁免**三节硬约束
+  - journal/year 默认 **relaxed**；开发 `max_retries=1`
+  - notebook **贯穿** C0–C6；阶段 6 仅交付收尾
+- **详情**：[`10 .../schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md)；[`10笔记.md`](笔记/10笔记.md)
 
 ---
 
@@ -438,6 +472,7 @@ top_chunks = result["reranked"]
 | `07 笔记.md` | 07 阶段 RAG 位置、输入契约、冒烟测试 Q&A |
 | `08笔记.md` | 08 阶段 RAG 位置、schedule 审阅、与 07 衔接 Q&A |
 | `09笔记.md` | 09 阶段任务定位、评估/缓存/批量设计、全量耗时与分片 BM25（Q5/Q6） |
+| `10笔记.md` | 10 阶段定位（08/09/10 对照）、schedule 审阅、全量优先路径、`max_retries` 备忘 |
 
 ---
 
@@ -453,13 +488,10 @@ top_chunks = result["reranked"]
 | 2026-06-15 ~ 18 | 06 阶段完成：检索流水线 + 样本/全量联调 |
 | 2026-06-22 ~ 24 | 07 阶段完成：上下文组装 + Prompt 模板 |
 | 2026-06-29 ~ 07-02 | 08 阶段完成：Ollama 生成流水线 + `generation_eval.json` |
-| **2026-07-07** | **09 阶段启动**：评估器 / 缓存 / 批量计划与骨架 |
-| **2026-07-08** | **09 阶段完成（0–6）**：pytest 18 passed；正式报告 §4；样本库验证边界 |
-| **2026-07-08** | **09 阶段 7 完成**：分片 BM25（62 片）· 全量 live 评估 · `answer-eval-cache-batch-full.ipynb` · 报告 §6 |
-| **2026-07-08** | **09 CLI**：`run_eval_cache_batch.py --retrieval-mode full`；`build_bm25_full_index.py` |
-| **2026-07-08** | **06 联动**：`bm25_sharded.py`；`from_mode("full")` 加载 `09/data/bm25_full` |
-| **2026-07-08** | **README 结构重组**：各阶段完成总结归并、`install_all_requirements.ps1`、部署指南对齐 |
-| **2026-07-08** | **README 交付物速查补充**：各阶段 `schedule` 实现注意事项 + 跨阶段样本/全量对照表 |
-| **2026-07-08** | **README 阶段 7 收尾**：09 全量路径、BM25 分片、CLI 复现命令、跨阶段表更新 |
+| 2026-07-07 ~ 08 | 09 阶段完成（0–7）：评估/缓存/批量；分片 BM25；全量 live；06 联动 |
+| 2026-07-08 | README 结构重组与阶段 7 交付物速查对齐 |
+| **2026-07-13** | **10 阶段启动（计划）**：任务书 + `schedule.md`（notebook 贯穿、内容层修订、全量优先路径） |
+| **2026-07-13** | **10 笔记**：`笔记/10笔记.md`（定位、09 样例对照、schedule 审阅、`max_retries`） |
+| **2026-07-13** | **README**：目录/阶段一览/完成总结占位/交付物速查/笔记/更新记录对齐 10 |
 
 *阶段进度细节以各目录 `schedule.md`「进度记录」为准。*
