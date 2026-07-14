@@ -1,0 +1,12 @@
+# Stage 10 — strong constraints & hallucination suppression
+# Reuses conda env med-rag-verify (stages 01–09). No forced new packages.
+#
+# Upstream already provides:
+#   httpx      (08 Ollama HTTP)
+#   pytest     (09)
+#   rouge-score (09, optional soft-hallucination对照)
+#
+# Install only if missing in the current env, e.g.:
+#   pip install httpx pytest
+pytest
+httpx
