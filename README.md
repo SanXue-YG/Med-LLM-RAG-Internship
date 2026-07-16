@@ -29,11 +29,15 @@
 ```text
 谷歌/
 ├── README.md                 # 本文件（项目总说明）
+├── dataset_paths.py          # 统一 Dataset 路径常量（新代码优先 import）
+├── 缓存记录.md               # 模型/缓存/大数据清理与迁移对照
+├── Dataset/                  # 跨项目共用大数据（不进 Git；见 Dataset/README.md）
 ├── requirements.txt          # 依赖安装清单（说明）；一键安装见 install_all_requirements.ps1
 ├── install_all_requirements.ps1  # 按阶段顺序 pip install（推荐）
 ├── .gitignore                # Git 忽略规则
 ├── setup_windows_env.ps1     # Windows 环境一键配置脚本
 ├── setup_stage04_gpu.ps1     # 04 全量向量化：CUDA 版 PyTorch 补充安装
+├── scripts/                  # 仓库级脚本（如 chroma 实体化迁移）
 ├── 01 验证模型/              # 阶段 1：本地 LLM + PMC 数据源验证（✅）
 ├── 02 数据处理/              # 阶段 2：数据加载与评估（✅）
 ├── 03 文档解析与分割/        # 阶段 3：文本分割（✅）
@@ -105,7 +109,7 @@
 - **定位**：语义检索底座；BGE 嵌入 + Chroma 持久化索引。
 - **主要任务**：样本 1,267 条验证 + 全量 610 万条建库（GPU）。
 - **关键结果**：`pmc_oa_comm_full` 入库 6,107,296 条；384 维 cosine；C3–C5 检索与元数据过滤通过。
-- **主要产出**：`04 .../data/chroma_db_full/`（~71 GB，**.gitignore**）；[`docs/向量化与索引报告.md`](04%20向量化与索引构建/docs/向量化与索引报告.md)；`embedder.py` / `index_builder.py`。
+- **主要产出**：现迁入 [`Dataset/chroma/chroma_db_full/`](Dataset/)（~71 GB，**.gitignore**）；[`docs/向量化与索引报告.md`](04%20向量化与索引构建/docs/向量化与索引报告.md)；`embedder.py` / `index_builder.py`。
 - **详情**：[`04 向量化与索引构建/schedule.md`](04%20向量化与索引构建/schedule.md)
 
 ### 05 检索系统开发第一部分（2026-06-10）
@@ -120,7 +124,7 @@
 
 - **定位**：检索执行层；向量 + BM25 → RRF 融合 → cross-encoder 重排。
 - **主要任务**：`RetrievalPipeline` 端到端；样本库 5 query 评测 + C12 可选全量联调；**09 阶段 7** 扩展分片 BM25 离线索引。
-- **关键结果**：样本库 5/5 链路通；全量 metformin query 命中真实 RCT（`PMC2566605`）。**09 联动**：`bm25_sharded.py` + `09/data/bm25_full`（62 片 · 610 万）供 `from_mode("full")` 自动加载。
+- **关键结果**：样本库 5/5 链路通；全量 metformin query 命中真实 RCT（`PMC2566605`）。**09 联动**：`bm25_sharded.py` + `Dataset/bm25/bm25_full`（62 片 · 610 万）供 `from_mode("full")` 自动加载。
 - **主要产出**：`pipeline.py`、`pipeline_eval.json`；[`docs/检索流水线报告.md`](06%20检索系统开发第二部分/docs/检索流水线报告.md)。
 - **详情**：[`06 检索系统开发第二部分/schedule.md`](06%20检索系统开发第二部分/schedule.md) §「验证范围说明」「09 阶段联动扩展」
 
@@ -149,7 +153,7 @@
   - **全量 live**（610 万检索 + Ollama）：4/4 跑通；recall_avg **0.2738**（+0.042 vs 样本）；分片 BM25 同语料 top-10 重叠 **0.95**。
 - **主要产出**：
   - 样本：`eval_cache_batch_report.json`、`answer-eval-cache-batch.ipynb`
-  - 全量：`eval_cache_batch_report_full.json`、`09/data/bm25_full/`、`answer-eval-cache-batch-full.ipynb`、`full_eval.py`
+  - 全量：`eval_cache_batch_report_full.json`、`Dataset/bm25/bm25_full/`、`answer-eval-cache-batch-full.ipynb`、`full_eval.py`
   - 报告：[`docs/答案评估与缓存报告.md`](09%20生成答案评估，缓存策略与批量处理/docs/答案评估与缓存报告.md)（§4 样本 · §6 全量）
 - **详情**：[`09 .../schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) 阶段 0–7
 
@@ -166,7 +170,7 @@
 - **主要产出**：
   - 代码：`src/constraint_prompts.py` / `citation_guard.py` / `format_checker.py` / `constrained_pipeline.py` / `adversarial_eval.py`
   - 数据：`medical_abbrev.json`、`adversarial_cases.json`
-  - notebook：[`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb)
+  - notebook：[`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb)（规则/mock）；[`constraint-mvp-observe.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-mvp-observe.ipynb)（真模型完整答案 MVP）
   - CLI：`scripts/run_adversarial_eval.py`；报告：`outputs/samples/adversarial_eval_report_full.json`
   - 报告：[`docs/强约束与幻觉抑制报告.md`](10%20强约束规则开发与幻觉抑制/docs/强约束与幻觉抑制报告.md)
 - **详情**：[`10 .../schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) 阶段 0–6
@@ -250,11 +254,12 @@ cd "D:\谷歌"
 | 缓存 | `**/caches/`、`__pycache__/`、`.ipynb_checkpoints/` | HF/datasets 缓存、运行时生成 | 首次运行自动创建 |
 | 密钥 | `.env`、`secrets/` | 勿提交 | 本地自建（若需要） |
 | Ollama 模型 | `**/ollama_models/`、`deepseek-r1:7b` | 01/08 LLM | `ollama pull deepseek-r1:7b` |
-| 验证期向量库 | `**/chroma_db/` | 04 样本库（可 notebook 重建） | 跑 `vectorize-index.ipynb` |
-| **全量向量库** | `**/chroma_db_full/`（~71 GB） | 04 生产检索 | D: 本地保留或 E: 备份；整目录复制 |
-| **slim JSONL** | `**/oa_comm_slim.jsonl`（~8.9 GB） | 02/03/06 元数据回查 | 02 全量生成；复制到 `06 .../data/` |
-| **全量 chunks** | `**/oa_comm_chunks.jsonl`（~9.1 GB） | 03/04/09 全量 BM25 语料 | 03 全量分割产出；**推荐** `09 .../data/`（本地 D:） |
-| **全量 BM25 索引** | `**/data/bm25_full/` | 09 分片离线索引（62 片） | `09/scripts/build_bm25_full_index.py`；E: 仅手动备份 |
+| **统一 Dataset** | [`Dataset/`](Dataset/)（整目录 ignore，保留 README） | Chroma / BM25 / chunks / slim **现行主路径** | 见下节；清理对照 [`缓存记录.md`](缓存记录.md) |
+| 验证期向量库 | `Dataset/chroma/chroma_db/` | 样本库（旧 `04/.../chroma_db` 已联接） | 可 notebook 重建 |
+| **全量向量库** | `Dataset/chroma/chroma_db_full/`（~71 GB） | 生产检索 | 自 04 迁入；E: 可作备份 |
+| **slim JSONL** | `Dataset/processed/oa_comm_slim.jsonl`（~8.9 GB） | 元数据回查 | 自 06 迁入 |
+| **全量 chunks** | `Dataset/processed/oa_comm_chunks.jsonl`（~9.1 GB） | BM25 语料 | 自 09 迁入 |
+| **全量 BM25 索引** | `Dataset/bm25/bm25_full/` | 分片离线索引（62 片） | 自 09 迁入；构建脚本默认写入此处 |
 | PMC 原始压缩包 | 外接盘 ~100 GB+ | 02 全量解析 | 按 02 notebook partB 说明 |
 
 **已随仓库提供（可直接用）**：01 验证 XML、02/03 样本 JSONL、04 样本 chunks 与统计 JSON、05–09 代码与样例输出 JSON 等（见下表）。
@@ -284,16 +289,44 @@ ollama pull deepseek-r1:7b
 3. 按 notebook 章节顺序执行（04 全量：`vectorize-index-full.ipynb` C0→C5）  
 4. CLI 示例见「各阶段交付物速查」
 
-### 5. 生产 RAG 数据切换提醒
+### 5. 统一 Dataset（新代码默认读取这里）
 
-开发阶段 06–09 **样本验证**默认 **样本库（1,267 chunks）**；**全量生产**（09 阶段 7 已打通）。**阶段 10 默认直接全量**（`from_mode("full")`），不再以样本 offline 作主验证轨：
+大数据已迁入 [`Dataset/`](Dataset/)（说明见 [`Dataset/README.md`](Dataset/README.md)）。**新项目 / 新脚本请直接使用根目录 [`dataset_paths.py`](dataset_paths.py)**，不要再写死各阶段 `data/`：
 
-- Chroma：`04 .../chroma_db_full` · `pmc_oa_comm_full`
-- BM25 语料：**`09 .../data/oa_comm_chunks.jsonl`**（或 E: 备份）
-- BM25 索引：**`09 .../data/bm25_full/`**（分片 `bm25_sharded_v1`；`build_bm25_full_index.py` 构建）
+```python
+from dataset_paths import (
+    DATASET_ROOT,
+    CHROMA_FULL_DIR,
+    CHROMA_SAMPLE_DIR,
+    CHUNKS_FULL_JSONL,
+    SLIM_JSONL,
+    BM25_FULL_DIR,
+)
+```
+
+既有 06–10 代码经 `06/src/config.py` 的 `resolve_*`：**优先 Dataset** → 旧阶段路径 / 硬链接·联接 → `E:\med-llm-rag-datasets`。
+
+| 资源 | Dataset 路径 | collection / 说明 |
+|------|--------------|-------------------|
+| 全量 Chroma | `Dataset/chroma/chroma_db_full/` | `pmc_oa_comm_full` |
+| 样本 Chroma | `Dataset/chroma/chroma_db/` | `pmc_oa_comm_sample` |
+| chunks | `Dataset/processed/oa_comm_chunks.jsonl` | BM25 语料 |
+| slim | `Dataset/processed/oa_comm_slim.jsonl` | 年份/期刊回查 |
+| BM25 | `Dataset/bm25/bm25_full/` | `bm25_sharded_v1` · 62 片 |
+
+可选环境变量：`MED_RAG_DATASET_ROOT`（覆盖 Dataset 根）、`STAGE09_BM25_FULL_DIR`（仅 BM25）。
+
+> **说明**：若某次 live 运行仍占用 `chroma.sqlite3`，全量 Chroma 可能暂时以「Dataset → 04 legacy」目录联接存在；关闭 Jupyter/Python 后执行  
+> `powershell -File scripts/materialize_chroma_to_dataset.ps1` 即可改为实体目录（legacy 再联接回 Dataset）。详见 [`缓存记录.md`](缓存记录.md)。
+
+### 6. 生产 RAG 运行提醒
+
+开发阶段 06–09 **样本验证**默认 **样本库（1,267 chunks）**；**全量生产**（09 阶段 7 已打通）。**阶段 10 默认直接全量**（`from_mode("full")`）：
+
+- 数据：上表 Dataset 路径（`resolve_*("full")`）
 - 代码：`RetrievalPipeline.from_mode("full")`
 - 全量 live 评估：`run_eval_cache_batch.py --mode live --retrieval-mode full`
-- **10 约束流水线**：同上 full 路径；对抗陷阱用 `fixture_chunks`；CLI `run_adversarial_eval.py --mock` / live，详见 [`10/schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md)
+- **10 约束流水线**：同上；对抗陷阱用 `fixture_chunks`；CLI `run_adversarial_eval.py --mock` / live，详见 [`10/schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md)
 
 ---
 
@@ -334,7 +367,7 @@ ollama pull deepseek-r1:7b
 ### 04 向量化与索引构建（✅）
 
 - **产出**：[`docs/向量化与索引报告.md`](04%20向量化与索引构建/docs/向量化与索引报告.md)；`src/embedder.py`、`index_builder.py`
-- **全量库**：`04 .../data/chroma_db_full/` · `pmc_oa_comm_full`（**不在 Git**，~71 GB）
+- **全量库**：`Dataset/chroma/chroma_db_full/` · `pmc_oa_comm_full`（**不在 Git**，~71 GB）
 - **接口**：`encode_queries()` / `encode_documents()`；`ChromaIndexBuilder.query()`
 - **后续开发注意**（[`schedule.md`](04%20向量化与索引构建/schedule.md) §「**实现注意事项**」）：
   - **建库不加指令、查询必须加** BGE 前缀；漏加静默降准确率，查询用 `encode_queries()`。
@@ -356,13 +389,13 @@ ollama pull deepseek-r1:7b
 
 ### 06 检索系统开发第二部分（✅）
 
-> **验证范围**：日常 notebook/CLI 默认 **样本库（1,267 chunks）**；`from_mode("full")` + `09/data/bm25_full` 用于全量生产（09 阶段 7 已构建分片索引）。
+> **验证范围**：日常 notebook/CLI 默认 **样本库（1,267 chunks）**；`from_mode("full")` + `Dataset/bm25/bm25_full` 用于全量生产（09 阶段 7 已构建分片索引）。
 
 | 用途 | 开发（sample） | 生产（full） |
 |------|----------------|--------------|
-| 向量 | `04 .../chroma_db` · `pmc_oa_comm_sample` | `chroma_db_full` · `pmc_oa_comm_full` |
-| BM25 语料 | `03 .../chunks_sample.jsonl` | **`09 .../data/oa_comm_chunks.jsonl`** |
-| BM25 索引 | 现场 `build()` | **`09 .../data/bm25_full/`**（分片离线索引） |
+| 向量 | `Dataset/chroma/chroma_db` · `pmc_oa_comm_sample` | `Dataset/chroma/chroma_db_full` · `pmc_oa_comm_full` |
+| BM25 语料 | `03 .../chunks_sample.jsonl` | **`Dataset/processed/oa_comm_chunks.jsonl`** |
+| BM25 索引 | 现场 `build()` | **`Dataset/bm25/bm25_full/`**（分片离线索引） |
 | 代码 | `RetrievalPipeline.from_mode("sample")` | **`from_mode("full")`** |
 
 - **产出**：[`docs/检索流水线报告.md`](06%20检索系统开发第二部分/docs/检索流水线报告.md)；`pipeline_eval.json` · `pipeline_eval_full.json`
@@ -424,7 +457,7 @@ top_chunks = result["reranked"]
 - **后续开发注意**（[`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) 阶段 7）：
   - 样本 §4 指标**不能外推**全量质量；全量对照见报告 §6。
   - 生成缓存命中**不跳过检索**（`resolve_context_text` 先跑）；检索是 live 第二大瓶颈。
-  - 大文件 `09/data/oa_comm_chunks.jsonl`、`09/data/bm25_full/` **不进 Git**；E: 作手动备份。
+  - 大文件现位于 `Dataset/processed/`、`Dataset/bm25/` **不进 Git**；E: 作手动备份。
   - 跨阶段 `bootstrap`/`config`/`models` 同名冲突由 `full_eval.py` 处理。
 - **详情**：[`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md)；[`09笔记.md`](笔记/09笔记.md) Q5/Q6（耗时与分片 BM25）
 
@@ -432,9 +465,9 @@ top_chunks = result["reranked"]
 
 | 环节 | 开发默认 | 生产（阶段 7 已打通） |
 |------|----------|----------------------|
-| 向量检索 | `chroma_db` / 1,267 | `chroma_db_full` / 610 万 |
-| BM25 语料 | `chunks_sample.jsonl` | `09/data/oa_comm_chunks.jsonl` |
-| BM25 索引 | 现场 build | `09/data/bm25_full/`（分片） |
+| 向量检索 | `Dataset/chroma/chroma_db` / 1,267 | `Dataset/chroma/chroma_db_full` / 610 万 |
+| BM25 语料 | `chunks_sample.jsonl` | `Dataset/processed/oa_comm_chunks.jsonl` |
+| BM25 索引 | 现场 build | `Dataset/bm25/bm25_full/`（分片） |
 | 检索 | `from_mode("sample")` | **`from_mode("full")`** |
 | 生成评测 | 08 样本 `pipeline_eval.json` | live 全量 pipeline（可选 08 重跑快照） |
 | 答案评估 | 09 offline 样本指标（§4） | **09 live full**（§6 / `--retrieval-mode full`） |
@@ -449,7 +482,7 @@ top_chunks = result["reranked"]
 | 项 | 路径 / 命令 |
 |----|-------------|
 | 计划 | [`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) 阶段 0–6 |
-| Notebook | [`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb) |
+| Notebook | [`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb)（规则/mock）· [`constraint-mvp-observe.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-mvp-observe.ipynb)（真模型输出 MVP） |
 | CLI mock | `python scripts/run_adversarial_eval.py --mock` |
 | CLI live | `python scripts/run_adversarial_eval.py --mode live --retrieval-mode full --fixture-only` |
 | 样例报告 | [`adversarial_eval_report_full.json`](10%20强约束规则开发与幻觉抑制/outputs/samples/adversarial_eval_report_full.json) |

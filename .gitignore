@@ -32,6 +32,9 @@ secrets/
 **/data_level0.bin
 **/oa_comm_slim.jsonl
 **/oa_comm_chunks.jsonl
+# 跨项目统一数据集目录（见根目录 缓存记录.md / Dataset/README.md）
+/Dataset/**
+!/Dataset/README.md
 
 # macOS
 .DS_Store

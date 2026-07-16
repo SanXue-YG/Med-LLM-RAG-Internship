@@ -1,0 +1,93 @@
+{
+  "mvp_meta": {
+    "mode": "live",
+    "pipeline_kind": "live",
+    "elapsed_seconds": 236.86,
+    "preset": null,
+    "used_fixture_chunks": false,
+    "is_real_model": true
+  },
+  "query": "metformin cardiovascular effects",
+  "answer": "**Core Answer:**\n\nMetformin has demonstrated various cardiovascular benefits, including enhanced myocardial energy metabolism and reduced risks of cardiovascular events such as stroke, coronary artery disease (CAD), and heart failure. Its effectiveness may vary depending on the patient's condition.\n\n**Evidence Summary:**\n\n1. **[1]** Metformin enhances myocardial energy metabolism by activating AMPK and regulating lipid and glucose metabolism, leading to improved nitric oxide (NO) bioavailability, reduced interstitial fibrosis, decreased deposition of advanced glycation end-products (AGEs), and inhibition of myocardial cell apoptosis. These mechanisms contribute to reducing cardiac remodeling and hypertrophy, thereby improving left ventricular systolic and diastolic function.\n\n2. **[2]** A study comparing metformin with sodium-glucose co-transporter-2 inhibitors (SGLT2i) in high-risk, treatment-naïve diabetic patients found no significant difference in major adverse cardiovascular events (MACEs) between the two treatment groups. This suggests that metformin may not add additional cardiovascular benefits beyond SGLT2i therapy.\n\n3. **[3]** In a retrospective cohort study of patients with type 2 diabetes mellitus and chronic obstructive pulmonary disease (COPD), metformin use was associated with significantly lower risks of cardiovascular events, particularly when the duration of use was prolonged. This indicates that in specific patient populations, such as those with both T2DM and COPD, metformin may offer significant cardiovascular protection.\n\n4. **[4]** While metformin is primarily recognized for its role in diabetes management, it also exhibits potential anticancer and neuroprotective effects. However, the evidence on its direct cardiovascular benefits beyond general protective mechanisms is limited to its overall cardioprotective properties observed in various studies.\n\n**Uncertainty Note:**\n\nThe findings suggest that metformin can be beneficial for cardiovascular health, particularly in diabetic patients with COPD. However, the study combining metformin with SGLT2 inhibitors did not show additional benefits, indicating potential patient-specific responses or interactions between drugs. Further research is needed to confirm these findings across diverse populations and clinical settings.\n\n**Recommendation:**\n\nGiven the current evidence, healthcare providers should consider individual patient factors when making treatment decisions regarding cardiovascular outcomes. Professional medical consultation is recommended for personalized advice tailored to specific clinical scenarios.\n\nSources:\n[1] Metabolic Effects of Metformin in the Failing Heart (doc_id=PMC6213955, chunk_id=PMC6213955, score=0.9355)\n[2] Effects of SGLT2 Inhibitors with and without Metformin in High-Risk, Treatment-Naïve Patients with Diabetes (doc_id=PMC10932445, chunk_id=PMC10932445, score=0.9082)\n[3] Cardiovascular outcomes of metformin use in patients with type 2 diabetes and chronic obstructive pulmonary disease (doc_id=PMC9441545, chunk_id=PMC9441545, score=0.8963)\n[4] Metformin: A Narrative Review of Its Potential Benefits for Cardiovascular Disease, Cancer and Dementia (doc_id=PMC8951049, chunk_id=PMC8951049, score=0.8948)\n\nMedical disclaimer: This response is for informational purposes only and is not a substitute for professional medical advice.",
+  "sources": [
+    {
+      "index": 1,
+      "chunk_id": "PMC6213955",
+      "source_title": "Metabolic Effects of Metformin in the Failing Heart",
+      "doc_id": "PMC6213955",
+      "relevance_score": 0.935538
+    },
+    {
+      "index": 2,
+      "chunk_id": "PMC10932445",
+      "source_title": "Effects of SGLT2 Inhibitors with and without Metformin in High-Risk, Treatment-Naïve Patients with Diabetes",
+      "doc_id": "PMC10932445",
+      "relevance_score": 0.908211
+    },
+    {
+      "index": 3,
+      "chunk_id": "PMC9441545",
+      "source_title": "Cardiovascular outcomes of metformin use in patients with type 2 diabetes and chronic obstructive pulmonary disease",
+      "doc_id": "PMC9441545",
+      "relevance_score": 0.896337
+    },
+    {
+      "index": 4,
+      "chunk_id": "PMC8951049",
+      "source_title": "Metformin: A Narrative Review of Its Potential Benefits for Cardiovascular Disease, Cancer and Dementia",
+      "doc_id": "PMC8951049",
+      "relevance_score": 0.894773
+    }
+  ],
+  "constraint_checks": {
+    "citation": {
+      "ok": true,
+      "extracted": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "valid_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "invalid": [],
+      "warnings": [],
+      "issues": []
+    },
+    "format": {
+      "ok": true,
+      "issues": [],
+      "warnings": [
+        "Source [1] missing journal.",
+        "Source [1] missing year.",
+        "Source [2] missing journal.",
+        "Source [2] missing year.",
+        "Source [3] missing journal.",
+        "Source [3] missing year.",
+        "Source [4] missing journal.",
+        "Source [4] missing year."
+      ],
+      "score": 0.85,
+      "boundary_hit": false,
+      "sections_found": {
+        "core_answer": true,
+        "evidence_summary": true,
+        "references": true
+      },
+      "abbrev_issues": []
+    },
+    "boundary_hit": false
+  },
+  "retry_count": 0,
+  "repaired": false,
+  "optional_evaluation": {
+    "hallucination_risk": 0.0,
+    "hallucination_signals": []
+  },
+  "labeled_context_preview": "[1] Metabolic Effects of Metformin in the Failing Heart\n\nAccumulating evidence shows that metformin is an insulin-sensitizing antidiabetic drug widely used in the treatment of type 2 diabetes mellitus (T2DM), which can exert favorable effects on cardiovascular risk and may be safely used in patients with heart failure (HF), and even able to reduce the incidence of HF and to reduce HF mortality. In\n...[truncated]",
+  "timestamp": "2026-07-16 09:00:46"
+}

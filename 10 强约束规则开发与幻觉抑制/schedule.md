@@ -590,6 +590,7 @@ class ConstrainedGenerationPipeline:
 | 缩写表 | JSON | `data/medical_abbrev.json` | ✅ |
 | 对抗用例 | JSON | `data/adversarial_cases.json` | ✅ |
 | 演示 notebook | `.ipynb` | `notebooks/constraint-hallucination.ipynb` | ✅ |
+| MVP 观察 notebook | `.ipynb` | `notebooks/constraint-mvp-observe.ipynb`（真模型完整答案） | ✅ |
 | CLI | Python | `scripts/run_adversarial_eval.py` | ✅ |
 | 评测报告样例 | JSON | `outputs/samples/adversarial_eval_report_full.json` | ✅ |
 | 正式报告 | Markdown | `docs/强约束与幻觉抑制报告.md` | ✅ |

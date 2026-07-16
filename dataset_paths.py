@@ -1,0 +1,34 @@
+"""Canonical large-asset paths under ``<repo>/Dataset/``.
+
+New code should import from here (or from stage-06 ``config.resolve_*``, which
+prefers these paths) instead of hardcoding stage ``data/`` directories.
+
+Environment override: ``MED_RAG_DATASET_ROOT`` → alternate Dataset root.
+"""
+
+from __future__ import annotations
+
+import os
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent
+
+
+def dataset_root() -> Path:
+    override = os.getenv("MED_RAG_DATASET_ROOT", "").strip()
+    if override:
+        return Path(override)
+    return REPO_ROOT / "Dataset"
+
+
+DATASET_ROOT = dataset_root()
+
+# Layout (see Dataset/README.md)
+CHROMA_FULL_DIR = DATASET_ROOT / "chroma" / "chroma_db_full"
+CHROMA_SAMPLE_DIR = DATASET_ROOT / "chroma" / "chroma_db"
+BM25_FULL_DIR = DATASET_ROOT / "bm25" / "bm25_full"
+CHUNKS_FULL_JSONL = DATASET_ROOT / "processed" / "oa_comm_chunks.jsonl"
+SLIM_JSONL = DATASET_ROOT / "processed" / "oa_comm_slim.jsonl"
+
+COLLECTION_SAMPLE = "pmc_oa_comm_sample"
+COLLECTION_FULL = "pmc_oa_comm_full"

@@ -23,6 +23,11 @@ class StagePaths(TypedDict):
 
 STAGE10_DIR_NAME = "10 强约束规则开发与幻觉抑制"
 
+# Re-export for upstream modules (08 llm_generator imports ``from bootstrap``).
+# Stage-10 ``src`` is first on sys.path after bootstrap_paths(), so these must exist here.
+OLLAMA_BASE_URL = "http://127.0.0.1:11434"
+OLLAMA_MODEL = "deepseek-r1:7b"
+
 
 def project_root(start: Path | None = None) -> Path:
     """Resolve repository root ``谷歌/`` from common execution locations."""

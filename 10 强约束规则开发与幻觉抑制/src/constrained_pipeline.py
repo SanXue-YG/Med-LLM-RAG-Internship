@@ -138,23 +138,105 @@ class ConstrainedGenerationPipeline:
         run_optional_eval: bool = False,
         llm_timeout: float = 300.0,
     ) -> ConstrainedGenerationPipeline:
-        """Bootstrap upstream 06/07/08 and return a full-corpus pipeline."""
+        """Bootstrap upstream 06/07/08 and return a full-corpus pipeline.
+
+        Import order mirrors 09 ``full_eval.build_live_full_generation_pipeline``:
+        stage-10 ``config`` must not shadow stage-06 ``config`` while loading
+        ``RetrievalPipeline``.
+        """
+        import importlib.util
+        import sys
+        from pathlib import Path
+
         try:
-            from bootstrap import OLLAMA_BASE_URL, OLLAMA_MODEL
+            from bootstrap import OLLAMA_BASE_URL, OLLAMA_MODEL, bootstrap_paths
         except ImportError:
-            from bootstrap import OLLAMA_BASE_URL, OLLAMA_MODEL  # type: ignore[no-redef]
+            from bootstrap import bootstrap_paths  # type: ignore[no-redef]
+
+            OLLAMA_BASE_URL = "http://127.0.0.1:11434"
+            OLLAMA_MODEL = "deepseek-r1:7b"
+
+        paths = bootstrap_paths()
+        stage05 = Path(paths["stage05"])
+        stage06 = Path(paths["stage06"])
+        stage07 = Path(paths["stage07"])
+        stage08 = Path(paths["stage08"])
+        stage10 = Path(paths["stage10"])
+
+        saved_config = sys.modules.get("config")
+        saved_bootstrap = sys.modules.get("bootstrap")
+
+        def _front(stage: Path) -> None:
+            sp = str((stage / "src").resolve())
+            if not Path(sp).is_dir():
+                return
+            while sp in sys.path:
+                sys.path.remove(sp)
+            sys.path.insert(0, sp)
+
+        def _load_py(module_name: str, file_path: Path) -> Any:
+            spec = importlib.util.spec_from_file_location(module_name, file_path)
+            if spec is None or spec.loader is None:
+                raise ImportError(f"cannot load {file_path}")
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            return mod
+
+        # 1) Prefer 06/07/08 on path; inject 06 config + 08 bootstrap for upstream imports.
+        for stage in (stage06, stage07, stage08):
+            _front(stage)
+        sys.modules["config"] = _load_py("stage06_config", stage06 / "src" / "config.py")
+        boot08 = _load_py("stage08_bootstrap", stage08 / "src" / "bootstrap.py")
+        sys.modules["bootstrap"] = boot08
+        ollama_url = getattr(boot08, "OLLAMA_BASE_URL", OLLAMA_BASE_URL)
+        ollama_model = getattr(boot08, "OLLAMA_MODEL", OLLAMA_MODEL)
+
+        for name in (
+            "llm_generator",
+            "context_assembler",
+            "json_utils",
+            "postprocess",
+            "prompts",
+            "models",
+            "pipeline",
+            "fusion",
+            "multipath_retriever",
+            "reranker",
+            "rerank_features",
+        ):
+            sys.modules.pop(name, None)
 
         from context_assembler import ContextAssembler
         from llm_generator import LLMGenerator
+
+        assembler = ContextAssembler(tokenizer_name=None)
+        llm = LLMGenerator(
+            model_name=ollama_model,
+            base_url=ollama_url,
+            timeout=llm_timeout,
+        )
+
+        # 2) Stage-05 ``models`` before 06 pipeline (05/07 both expose ``models``).
+        _front(stage05)
+        for name in ("models", "medical_patterns", "query_enhancer", "pipeline"):
+            sys.modules.pop(name, None)
+        # Keep stage-06 config while importing RetrievalPipeline.
+        sys.modules["config"] = _load_py("stage06_config", stage06 / "src" / "config.py")
+        _front(stage06)
+
         from pipeline import RetrievalPipeline
 
         retrieval = RetrievalPipeline.from_mode(mode)
-        assembler = ContextAssembler(tokenizer_name=None)
-        llm = LLMGenerator(
-            model_name=OLLAMA_MODEL,
-            base_url=OLLAMA_BASE_URL,
-            timeout=llm_timeout,
-        )
+
+        # 3) Restore stage-10 priority so later ``from config import Stage10Config`` still works.
+        if saved_config is not None:
+            sys.modules["config"] = saved_config
+        else:
+            sys.modules["config"] = _load_py("stage10_config", stage10 / "src" / "config.py")
+        if saved_bootstrap is not None:
+            sys.modules["bootstrap"] = saved_bootstrap
+        bootstrap_paths(stage10)
+
         return cls(
             retrieval_pipeline=retrieval,
             context_assembler=assembler,

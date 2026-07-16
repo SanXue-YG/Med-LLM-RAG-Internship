@@ -12,21 +12,28 @@ from typing import Any
 CORPUS_SIZE_HINT = 6_107_296
 
 STAGE09_ROOT = Path(__file__).resolve().parents[1]
-BM25_FULL_CACHE_DIR = STAGE09_ROOT / "data" / "bm25_full"
-CHUNKS_FULL_JSONL = STAGE09_ROOT / "data" / "oa_comm_chunks.jsonl"
+PROJECT_ROOT = STAGE09_ROOT.parent
+# 默认写入统一 Dataset；legacy 09/data 仅兼容旧环境
+BM25_FULL_CACHE_DIR = PROJECT_ROOT / "Dataset" / "bm25" / "bm25_full"
+BM25_FULL_CACHE_LEGACY = STAGE09_ROOT / "data" / "bm25_full"
+CHUNKS_FULL_JSONL = PROJECT_ROOT / "Dataset" / "processed" / "oa_comm_chunks.jsonl"
+CHUNKS_FULL_JSONL_LEGACY = STAGE09_ROOT / "data" / "oa_comm_chunks.jsonl"
 BM25_FULL_BACKUP_E = Path(r"E:\med-llm-rag-datasets\bm25_full")  # 手动备份目标，不参与自动读取
 CHUNKS_FULL_BACKUP_E = Path(r"E:\med-llm-rag-datasets\processed\oa_comm_chunks.jsonl")  # 手动备份，不参与自动读取
 
 
 def resolve_bm25_full_cache_dir() -> Path:
-    """默认落盘/读取路径：09 工程内 data（本地 D: 快路径）。"""
+    """默认落盘/读取路径：``Dataset/bm25/bm25_full``（可用环境变量覆盖）。"""
     import os
 
     override = os.getenv("STAGE09_BM25_FULL_DIR", "").strip()
     if override:
         return Path(override)
+    if BM25_FULL_CACHE_DIR.is_dir():
+        return BM25_FULL_CACHE_DIR
+    if BM25_FULL_CACHE_LEGACY.is_dir():
+        return BM25_FULL_CACHE_LEGACY
     return BM25_FULL_CACHE_DIR
-
 
 def _load_stage06_config(stage06: Path) -> Any:
     import importlib.util
