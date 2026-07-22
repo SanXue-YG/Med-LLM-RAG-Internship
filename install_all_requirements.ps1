@@ -16,10 +16,12 @@ $Stages = @(
     "06 检索系统开发第二部分\requirements.txt",
     "07 生成模块与提示词工程第一部分\requirements.txt",
     "08 生成模块与提示词工程第二部分\requirements.txt",
-    "09 生成答案评估，缓存策略与批量处理\requirements.txt"
+    "09 生成答案评估，缓存策略与批量处理\requirements.txt",
+    "10 强约束规则开发与幻觉抑制\requirements.txt"
+    # 11：待阶段 0 创建 requirements.txt（fastapi/uvicorn）后再加入
 )
 
-Write-Host "安装医学 RAG 工程依赖（01→09，跳过 03 无新增）..." -ForegroundColor Cyan
+Write-Host "安装医学 RAG 工程依赖（01→10，跳过 03 无新增）..." -ForegroundColor Cyan
 
 foreach ($rel in $Stages) {
     $path = Join-Path $Root $rel

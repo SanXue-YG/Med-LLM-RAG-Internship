@@ -48,6 +48,7 @@
 ├── 08 生成模块与提示词工程第二部分/  # 阶段 8：Ollama 生成 + 端到端流水线（✅）
 ├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量 + 全量 live 复评（✅ 0–7）
 ├── 10 强约束规则开发与幻觉抑制/  # 阶段 10：强约束提示 + 引用/格式校验 + 对抗评测（✅ 0–6）
+├── 11 服务化与接口开发第一部分/  # 阶段 11：FastAPI 骨架 + 同步/流式问答（🔄 待启动）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -68,6 +69,7 @@
 | **08** 生成模块与提示词工程第二部分 | [`08 生成模块与提示词工程第二部分/`](08%20生成模块与提示词工程第二部分/) | ✅ **已完成** | [`任务.txt`](08%20生成模块与提示词工程第二部分/任务.txt) | [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) | [`medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) | [`requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) |
 | **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | ✅ **已完成** | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb)（样本 0–6）· [`answer-eval-cache-batch-full.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch-full.ipynb)（全量 7） | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
 | **10** 强约束规则开发与幻觉抑制 | [`10 强约束规则开发与幻觉抑制/`](10%20强约束规则开发与幻觉抑制/) | ✅ **已完成** | [`任务.txt`](10%20强约束规则开发与幻觉抑制/任务.txt) | [`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) | [`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb)（C0–C6） | [`requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt) |
+| **11** 服务化与接口开发第一部分 | [`11 服务化与接口开发第一部分/`](11%20服务化与接口开发第一部分/) | 🔄 **待启动** | [`任务.txt`](11%20服务化与接口开发第一部分/任务.txt) | [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md) | `notebooks/api-smoke.ipynb`（规划 C0–C4） | *待创建* `requirements.txt`（规划 fastapi / uvicorn） |
 
 **说明**
 
@@ -183,7 +185,7 @@
 
 | 项 | 值 |
 |----|-----|
-| Conda 环境名 | `med-rag-verify`（01–10 共用） |
+| Conda 环境名 | `med-rag-verify`（01–11 共用） |
 | Python | 3.11.x |
 | 平台 | Windows / macOS |
 
@@ -193,7 +195,7 @@
 # Windows：创建环境 + 01/02 基础依赖
 .\setup_windows_env.ps1
 
-# 安装 01→09 全部 Python 依赖（含 04–09）
+# 安装 01→10 全部 Python 依赖（含 04–10；11 待阶段 0 补 requirements 后再纳入脚本）
 .\install_all_requirements.ps1
 
 # 或手动逐阶段（03 无新增，可跳过）：
@@ -217,7 +219,8 @@
 | 07 | [`07 .../requirements.txt`](07%20生成模块与提示词工程第一部分/requirements.txt) | **无强制新增**（可选 gpt2 tokenizer） |
 | 08 | [`08 .../requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) | **`httpx`**（Ollama HTTP） |
 | 09 | [`09 .../requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) | **`rouge-score`**、`pytest`（httpx 与 08 重叠） |
-| 10 | *待创建* `10 .../requirements.txt` | **暂无强制新依赖**（规划复用 `med-rag-verify`；阶段 0 落地时补文件） |
+| 10 | [`10 .../requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt) | **无强制新包**；清单复列 `pytest`、`httpx`（与 08/09 重叠，便于缺包时补装） |
+| 11 | *待创建* `11 .../requirements.txt` | 规划新增 **`fastapi`**、**`uvicorn[standard]`**（阶段 0 落地时补文件并纳入安装脚本） |
 
 ### 04 全量 GPU 补充（可选）
 
@@ -444,6 +447,18 @@ top_chunks = result["reranked"]
 
 - **产出**：[`docs/答案评估与缓存报告.md`](09%20生成答案评估，缓存策略与批量处理/docs/答案评估与缓存报告.md)；`ground_truth.json`；`eval_sample_vs_full.json`；`bm25_sharded_vs_mono_overlap.json`
 - **接口**：`PipelineWithEval.run_with_cache_and_eval(...)` → `generation` / `evaluation` / `cache`；`full_eval.build_pipeline_with_eval_live_full()`（全量 live）
+- **预留接口（供 11+ 复用 / 借鉴，本阶段未全部接线）**：
+
+  | 预留 | 路径 | 用途 | 现状 |
+  |------|------|------|------|
+  | `ModelAdapter` / `GenerationRequest` / `GenerationResponse` | [`src/model_adapter.py`](09%20生成答案评估，缓存策略与批量处理/src/model_adapter.py) | 多模型统一 `generate(request)`；`PipelineModelAdapter` 包装 `pipeline.run` | ✅ 已实现轻量适配；批量主路径仍可直接 callable |
+  | `SnapshotModelAdapter` | 同上 | offline 用 08 `generation_eval` 快照冒充生成 | ✅ 可用 |
+  | `BaseCacheBackend` / `MemoryCacheBackend` | [`src/generation_cache.py`](09%20生成答案评估，缓存策略与批量处理/src/generation_cache.py) | 答案缓存后端；未来 sqlite/redis | 接口已留；**持久化未接入**；主路径仍进程内 `_index` |
+  | `config.cache_backend` 等 | [`src/config.py`](09%20生成答案评估，缓存策略与批量处理/src/config.py) | `memory` → 可扩 `sqlite`/`redis`；另有 `ttl_policy` 等键 | 键已预留，**默认未读** |
+  | `link_signals_with_sources` | `answer_evaluator.py` | 幻觉软信号联合引用降权 | 占位透传 |
+  | `extensions` 字段 | `PipelineWithEval` 结果 | 挂持久化元数据 / 附加分 | 预留 |
+
+  > **注意**：`ModelAdapter` 解决的是「怎么统一调用生成」，`BaseCacheBackend` 解决的是「答案缓存以后怎么落盘」——**都不是**会话 `session_id` 历史库。11 会话持久化应自建 SessionStore 后端；可抄分层模式。详见 [`笔记/11笔记.md`](笔记/11笔记.md) Q5。
 - **CLI**：
   ```powershell
   # 样本 offline（默认）
@@ -491,6 +506,18 @@ top_chunks = result["reranked"]
 
 - **mock 指标（2026-07-14 notebook / CLI）**：幻觉率 0.0 · 拒答命中 1.0 · 引用/格式/术语合规 1.0  
 - **设计要点**：`append_to` · `assign_labels` · 格式别名 · `boundary_hit` 豁免 · journal/year `relaxed` · `max_retries=1`
+- **依赖**：[`requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt)（复用环境；列 `pytest` / `httpx`）
+- **主接口（供 11 挂载）**：`ConstrainedGenerationPipeline.from_mode("sample"|"full").run(query)` → `answer` / `sources` / `constraint_checks` / `retry_count` / `repaired`
+
+### 11 服务化与接口开发第一部分（🔄 待启动）
+
+> **计划已齐**：任务书 + [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md)（notebook 贯穿、内容层：伪流式 / 会话 Store / sample 默认）。实施自阶段 0 起。
+
+| 项 | 说明 |
+|----|------|
+| 范围 | FastAPI 骨架（统一响应、错误码、异常、日志、`/health`）+ 同步 `/api/v1/qa` + SSE `/qa/stream`（MVP **伪流式**） |
+| 默认内核 | 10 `ConstrainedGenerationPipeline`；开发 `retrieval_mode=sample`；全量抽检见 [`笔记/11笔记.md`](笔记/11笔记.md) Q3 |
+| 笔记 | [`11笔记.md`](笔记/11笔记.md)（定位、schedule 审阅、流式释义、09 预留复用说明） |
 
 ---
 
@@ -511,6 +538,7 @@ top_chunks = result["reranked"]
 | `08笔记.md` | 08 阶段 RAG 位置、schedule 审阅、与 07 衔接 Q&A |
 | `09笔记.md` | 09 阶段任务定位、评估/缓存/批量设计、全量耗时与分片 BM25（Q5/Q6） |
 | `10笔记.md` | 10 阶段定位（08/09/10 对照）、schedule 审阅、全量优先、`max_retries`、临时编号回查（Q4） |
+| `11笔记.md` | 11 阶段定位、schedule 习惯/内容审阅、全量抽检 Dataset（Q3）、伪/真流式（Q4）、09 预留与会话持久化（Q5） |
 
 ---
 
@@ -528,10 +556,10 @@ top_chunks = result["reranked"]
 | 2026-06-29 ~ 07-02 | 08 阶段完成：Ollama 生成流水线 + `generation_eval.json` |
 | 2026-07-07 ~ 08 | 09 阶段完成（0–7）：评估/缓存/批量；分片 BM25；全量 live；06 联动 |
 | 2026-07-08 | README 结构重组与阶段 7 交付物速查对齐 |
-| **2026-07-13** | **10 阶段启动（计划）**：任务书 + `schedule.md`（notebook 贯穿、内容层修订、全量优先路径） |
-| **2026-07-13** | **10 笔记**：`笔记/10笔记.md`（定位、09 样例对照、schedule 审阅、`max_retries`） |
-| **2026-07-13** | **README**：目录/阶段一览/完成总结占位/交付物速查/笔记/更新记录对齐 10 |
-| **2026-07-14** | **10 阶段 0–5 实施**：约束层 + CitationGuard + FormatChecker + 流水线粘合 + 对抗评测；pytest 43；notebook C0–C6 |
-| **2026-07-15** | **10 阶段 6 交付收尾**：正式报告 + README 对齐；fixture/mock 实测指标写入报告 |
+| 2026-07-13 | 10 阶段启动（计划）：任务书 + `schedule.md`（notebook 贯穿、内容层修订、全量优先路径） |
+| 2026-07-13 | 10 笔记 + README 对齐 10 启动态 |
+| 2026-07-14 | 10 阶段 0–5 实施：约束层 + CitationGuard + FormatChecker + 流水线粘合 + 对抗评测；pytest 43；notebook C0–C6 |
+| 2026-07-15 | 10 阶段 6 交付收尾：正式报告 + README 对齐；fixture/mock 实测指标写入报告 |
+| **2026-07-23** | **11 启动规划**：任务书 + `schedule.md` + [`11笔记.md`](笔记/11笔记.md)；README 补 10 `requirements.txt`、09 预留接口表、11 目录/一览/交付物占位；安装脚本纳入 10 |
 
 *阶段进度细节以各目录 `schedule.md`「进度记录」为准。*
