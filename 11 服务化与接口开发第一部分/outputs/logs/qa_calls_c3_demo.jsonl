@@ -1,0 +1,2 @@
+{"ts": "2026-07-24T23:10:49Z", "request_id": "4edd862f-2347-4635-9e2a-931a8e236f73", "session_id": "acf62a47-d6c8-44fe-9c1a-5f63860bdcde", "status": "ok", "code": 0, "latency_ms": 0.1, "query_preview": "metformin effects", "query_chars": 17, "top_k": 5, "n_sources": 1, "session_created": true}
+{"ts": "2026-07-24T23:10:49Z", "request_id": "49c3517d-6560-4981-ae15-43526ebd1fe1", "session_id": "acf62a47-d6c8-44fe-9c1a-5f63860bdcde", "status": "ok", "code": 0, "latency_ms": 0.0, "query_preview": "follow up", "query_chars": 9, "top_k": 3, "n_sources": 1, "session_created": false}

@@ -15,7 +15,7 @@
 #   pip install -r "08 生成模块与提示词工程第二部分/requirements.txt"
 #   pip install -r "09 生成答案评估，缓存策略与批量处理/requirements.txt"
 #   pip install -r "10 强约束规则开发与幻觉抑制/requirements.txt"
-#   # 11：待创建 fastapi/uvicorn 清单后再装
+#   pip install -r "11 服务化与接口开发第一部分/requirements.txt"
 #
 # 03 无新增依赖（见 03/requirements.txt 说明，复用 02）
 # 04 全量 GPU：安装后运行 setup_stage04_gpu.ps1

@@ -1,0 +1,11 @@
+# Stage 11 — FastAPI service shell (part 1)
+# Reuses conda env med-rag-verify (stages 01–10).
+#
+# New for this stage:
+fastapi
+uvicorn[standard]
+pydantic
+httpx
+#
+# Already common upstream (re-listed for convenience):
+pytest

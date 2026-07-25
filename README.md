@@ -20,7 +20,7 @@
 | **笔记目录** | 个人学习 Q&A（非正式交付） | 写新笔记时 |
 | **更新记录** | 按时间线的变更日志；**当前阶段条目加粗**，阶段结束后整合为普通条目 | 阶段进行中实时更新 |
 
-**阅读顺序建议**：新人 → 阶段一览 → 本地部署指南 → 当前阶段交付物速查 → 对应 `schedule.md`。
+**阅读顺序建议**：新人 → 阶段一览 → 本地部署指南 → 各阶段交付物速查（**11** 为当前 API 入口）→ 对应 `schedule.md` / `docs/`。
 
 ---
 
@@ -48,7 +48,7 @@
 ├── 08 生成模块与提示词工程第二部分/  # 阶段 8：Ollama 生成 + 端到端流水线（✅）
 ├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量 + 全量 live 复评（✅ 0–7）
 ├── 10 强约束规则开发与幻觉抑制/  # 阶段 10：强约束提示 + 引用/格式校验 + 对抗评测（✅ 0–6）
-├── 11 服务化与接口开发第一部分/  # 阶段 11：FastAPI 骨架 + 同步/流式问答（🔄 待启动）
+├── 11 服务化与接口开发第一部分/  # 阶段 11：FastAPI + 同步/伪流式问答（✅ 已完成）
 ├── ** LangChain_RAG/         # RAG 系统开发（待定）
 └── 笔记/                     # 个人学习笔记
 ```
@@ -69,12 +69,12 @@
 | **08** 生成模块与提示词工程第二部分 | [`08 生成模块与提示词工程第二部分/`](08%20生成模块与提示词工程第二部分/) | ✅ **已完成** | [`任务.txt`](08%20生成模块与提示词工程第二部分/任务.txt) | [`schedule.md`](08%20生成模块与提示词工程第二部分/schedule.md) | [`medical-generation.ipynb`](08%20生成模块与提示词工程第二部分/notebooks/medical-generation.ipynb) | [`requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) |
 | **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | ✅ **已完成** | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb)（样本 0–6）· [`answer-eval-cache-batch-full.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch-full.ipynb)（全量 7） | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
 | **10** 强约束规则开发与幻觉抑制 | [`10 强约束规则开发与幻觉抑制/`](10%20强约束规则开发与幻觉抑制/) | ✅ **已完成** | [`任务.txt`](10%20强约束规则开发与幻觉抑制/任务.txt) | [`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) | [`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb)（C0–C6） | [`requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt) |
-| **11** 服务化与接口开发第一部分 | [`11 服务化与接口开发第一部分/`](11%20服务化与接口开发第一部分/) | 🔄 **待启动** | [`任务.txt`](11%20服务化与接口开发第一部分/任务.txt) | [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md) | `notebooks/api-smoke.ipynb`（规划 C0–C4） | *待创建* `requirements.txt`（规划 fastapi / uvicorn） |
+| **11** 服务化与接口开发第一部分 | [`11 服务化与接口开发第一部分/`](11%20服务化与接口开发第一部分/) | ✅ **已完成** | [`任务.txt`](11%20服务化与接口开发第一部分/任务.txt) | [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md) · [`服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md) | [`api-smoke.ipynb`](11%20服务化与接口开发第一部分/notebooks/api-smoke.ipynb)（C0–C4.5） | [`requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt) |
 
 **说明**
 
 - 各阶段**具体要求与交付标准**以对应目录内 **`任务.txt`** 为准。
-- 各阶段**整体运行入口**在对应 **Jupyter Notebook** 中；按 notebook 内章节顺序执行 cell。
+- 01–10 主入口多为 **Jupyter Notebook**；**11** 另提供 HTTP 服务：`python scripts/run_api.py` → `/docs`（契约见报告 §3）。
 
 ---
 
@@ -177,6 +177,22 @@
   - 报告：[`docs/强约束与幻觉抑制报告.md`](10%20强约束规则开发与幻觉抑制/docs/强约束与幻觉抑制报告.md)
 - **详情**：[`10 .../schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) 阶段 0–6
 
+### 11 服务化与接口开发第一部分（✅ 2026-07-25 完成）
+
+- **定位**：RAG **服务接入层**——把 10 约束流水线封成可对外调用的 HTTP API（非产品前端；`/` 返回 JSON）。
+- **主要任务**：FastAPI 骨架（`ResponseModel` / 错误码 / 全局异常 / 日志 / `/health`·`/ready`）；同步 `POST /api/v1/qa` + 伪流式 `POST /api/v1/qa/stream`；内存会话 + 调用 JSONL；集成 10 `ConstrainedGenerationPipeline`。
+- **关键设计**：开发默认 `retrieval_mode=sample`；流式 MVP = **`stream_mode=pseudo`**（非整段 Ollama token 真流）；校验失败统一 **HTTP 400 + code=1001**；全量连通抽检见阶段 4.5。
+- **关键结果**：
+  - pytest **41 passed**；notebook C0–C4.5
+  - full + Ollama 最新抽检：sync ≈ **180 s**，citation/format ok，sources 为全量 PMC id
+  - 热身后 HTTP `POST /qa` → 200 / `code=0`
+- **主要产出**：
+  - 代码：`app/`（api · core · schemas · services）· `scripts/run_api.py` · `scripts/run_full_api_smoke.py`
+  - notebook：[`api-smoke.ipynb`](11%20服务化与接口开发第一部分/notebooks/api-smoke.ipynb)
+  - 抽检：`outputs/reports/full_api_smoke*`（JSON / PNG）
+  - 报告：[`docs/服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md)（含前端接入契约 §3）
+- **详情**：[`11 .../schedule.md`](11%20服务化与接口开发第一部分/schedule.md) 阶段 0–5
+
 ---
 
 ## Python 环境与依赖
@@ -195,7 +211,7 @@
 # Windows：创建环境 + 01/02 基础依赖
 .\setup_windows_env.ps1
 
-# 安装 01→10 全部 Python 依赖（含 04–10；11 待阶段 0 补 requirements 后再纳入脚本）
+# 安装 01→11 全部 Python 依赖（含 04–11；03 无新增可跳过）
 .\install_all_requirements.ps1
 
 # 或手动逐阶段（03 无新增，可跳过）：
@@ -220,7 +236,7 @@
 | 08 | [`08 .../requirements.txt`](08%20生成模块与提示词工程第二部分/requirements.txt) | **`httpx`**（Ollama HTTP） |
 | 09 | [`09 .../requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) | **`rouge-score`**、`pytest`（httpx 与 08 重叠） |
 | 10 | [`10 .../requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt) | **无强制新包**；清单复列 `pytest`、`httpx`（与 08/09 重叠，便于缺包时补装） |
-| 11 | *待创建* `11 .../requirements.txt` | 规划新增 **`fastapi`**、**`uvicorn[standard]`**（阶段 0 落地时补文件并纳入安装脚本） |
+| 11 | [`11 .../requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt) | 新增 **`fastapi`**、**`uvicorn[standard]`**（另列 pydantic/httpx/pytest） |
 
 ### 04 全量 GPU 补充（可选）
 
@@ -283,14 +299,15 @@ export OLLAMA_MODELS="$(pwd)/ollama_models"   # Windows 见 notebook 说明
 ollama pull deepseek-r1:7b
 ```
 
-确保 `http://127.0.0.1:11434` 可访问后再跑 08/09 `--mode live`。
+确保 `http://127.0.0.1:11434` 可访问后再跑 08/09 `--mode live`，以及 11 的 live / full 抽检。
 
 ### 4. 按阶段运行
 
 1. **File → Open Folder** → 选择对应阶段目录  
 2. Jupyter 内核：**`med-rag-verify`**  
 3. 按 notebook 章节顺序执行（04 全量：`vectorize-index-full.ipynb` C0→C5）  
-4. CLI 示例见「各阶段交付物速查」
+4. CLI / API 示例见「各阶段交付物速查」  
+5. **阶段 11（HTTP）**：`cd "11 服务化与接口开发第一部分"` → `python scripts/run_api.py` → 浏览器打开 `http://127.0.0.1:8000/docs`（根路径 `/` 为 JSON 元信息，不是网页 UI）
 
 ### 5. 统一 Dataset（新代码默认读取这里）
 
@@ -487,8 +504,9 @@ top_chunks = result["reranked"]
 | 生成评测 | 08 样本 `pipeline_eval.json` | live 全量 pipeline（可选 08 重跑快照） |
 | 答案评估 | 09 offline 样本指标（§4） | **09 live full**（§6 / `--retrieval-mode full`） |
 | **10 强约束** | 单元/陷阱用 fixture · mock 报告 | **默认 full 路径** + `adversarial_eval_report_full.json` |
+| **11 HTTP API** | 进程默认 `sample` · mock 契约 | 显式 `MED_RAG_RETRIEVAL_MODE=full` + `run_full_api_smoke.py` |
 
-出处：[`06 schedule`](06%20检索系统开发第二部分/schedule.md)、[`09 schedule`](09%20生成答案评估，缓存策略与批量处理/schedule.md) 阶段 7、报告 §6。
+出处：[`06 schedule`](06%20检索系统开发第二部分/schedule.md)、[`09 schedule`](09%20生成答案评估，缓存策略与批量处理/schedule.md) 阶段 7、报告 §6、[`Dataset/README.md`](Dataset/README.md)、[`11 报告`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md) §4。
 
 ### 10 强约束规则开发与幻觉抑制（✅ 已完成）
 
@@ -509,15 +527,25 @@ top_chunks = result["reranked"]
 - **依赖**：[`requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt)（复用环境；列 `pytest` / `httpx`）
 - **主接口（供 11 挂载）**：`ConstrainedGenerationPipeline.from_mode("sample"|"full").run(query)` → `answer` / `sources` / `constraint_checks` / `retry_count` / `repaired`
 
-### 11 服务化与接口开发第一部分（🔄 待启动）
+### 11 服务化与接口开发第一部分（✅ 已完成 · 2026-07-25）
 
-> **计划已齐**：任务书 + [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md)（notebook 贯穿、内容层：伪流式 / 会话 Store / sample 默认）。实施自阶段 0 起。
+> **交付物速查**：FastAPI API 后端（非产品前端）+ notebook C0–C4.5 + full 抽检图文 + 正式报告（含前端接入契约）已齐。
 
-| 项 | 说明 |
-|----|------|
-| 范围 | FastAPI 骨架（统一响应、错误码、异常、日志、`/health`）+ 同步 `/api/v1/qa` + SSE `/qa/stream`（MVP **伪流式**） |
-| 默认内核 | 10 `ConstrainedGenerationPipeline`；开发 `retrieval_mode=sample`；全量抽检见 [`笔记/11笔记.md`](笔记/11笔记.md) Q3 |
-| 笔记 | [`11笔记.md`](笔记/11笔记.md)（定位、schedule 审阅、流式释义、09 预留复用说明） |
+| 项 | 路径 / 命令 |
+|----|-------------|
+| 计划 | [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md) 阶段 0–5（含 4.5 全量抽检） |
+| 启动 API | `cd "11 服务化与接口开发第一部分"` → `python scripts/run_api.py` → [`/docs`](http://127.0.0.1:8000/docs) · `/health` · `/ready` |
+| 主接口 | `POST /api/v1/qa` · `POST /api/v1/qa/stream`（`stream_mode=pseudo`）· `GET /api/v1/sessions/{id}` |
+| Notebook | [`api-smoke.ipynb`](11%20服务化与接口开发第一部分/notebooks/api-smoke.ipynb)（C0–C4.5） |
+| 全量抽检 | `python scripts/run_full_api_smoke.py` → [`outputs/reports/`](11%20服务化与接口开发第一部分/outputs/reports/) |
+| 正式报告 | [`docs/服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md)（§3 API 契约 · §4 full live） |
+| 笔记 | [`11笔记.md`](笔记/11笔记.md)（Q4 伪/真流式 · Q6 任务书对照 · Q7 为何 `/` 空白） |
+| Dataset | 只读 [`Dataset/`](Dataset/README.md)；模式见 `MED_RAG_RETRIEVAL_MODE` |
+
+- **验证**：pytest **41 passed**；full live sync ≈ **180 s** · citation/format ok · HTTP 热身探针 200/`code=0`
+- **⚠️ 边界**：无产品 Web UI、无鉴权、无会话持久化 DB、非 Ollama 真 token 流；浏览器打开 `/` 得 JSON 属预期
+- **依赖**：[`requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt)（`fastapi` · `uvicorn[standard]`）
+- **后续注意**：前端按报告 §3 接线；CORS/鉴权待补；真流式需动 08 + 理顺 10 重试（见笔记 Q4）
 
 ---
 
@@ -538,7 +566,7 @@ top_chunks = result["reranked"]
 | `08笔记.md` | 08 阶段 RAG 位置、schedule 审阅、与 07 衔接 Q&A |
 | `09笔记.md` | 09 阶段任务定位、评估/缓存/批量设计、全量耗时与分片 BM25（Q5/Q6） |
 | `10笔记.md` | 10 阶段定位（08/09/10 对照）、schedule 审阅、全量优先、`max_retries`、临时编号回查（Q4） |
-| `11笔记.md` | 11 阶段定位、schedule 习惯/内容审阅、全量抽检 Dataset（Q3）、伪/真流式（Q4）、09 预留与会话持久化（Q5） |
+| `11笔记.md` | 11 定位、全量 Dataset（Q3）、伪/真流式（Q4）、会话持久化（Q5）、任务书对照（Q6）、API 非前端（Q7） |
 
 ---
 
@@ -556,10 +584,11 @@ top_chunks = result["reranked"]
 | 2026-06-29 ~ 07-02 | 08 阶段完成：Ollama 生成流水线 + `generation_eval.json` |
 | 2026-07-07 ~ 08 | 09 阶段完成（0–7）：评估/缓存/批量；分片 BM25；全量 live；06 联动 |
 | 2026-07-08 | README 结构重组与阶段 7 交付物速查对齐 |
-| 2026-07-13 | 10 阶段启动（计划）：任务书 + `schedule.md`（notebook 贯穿、内容层修订、全量优先路径） |
-| 2026-07-13 | 10 笔记 + README 对齐 10 启动态 |
-| 2026-07-14 | 10 阶段 0–5 实施：约束层 + CitationGuard + FormatChecker + 流水线粘合 + 对抗评测；pytest 43；notebook C0–C6 |
-| 2026-07-15 | 10 阶段 6 交付收尾：正式报告 + README 对齐；fixture/mock 实测指标写入报告 |
-| **2026-07-23** | **11 启动规划**：任务书 + `schedule.md` + [`11笔记.md`](笔记/11笔记.md)；README 补 10 `requirements.txt`、09 预留接口表、11 目录/一览/交付物占位；安装脚本纳入 10 |
+| 2026-07-13 | 10 阶段启动（计划）：任务书 + `schedule.md` |
+| 2026-07-14 ~ 15 | 10 阶段 0–6：约束层 + 对抗评测 + 正式报告；pytest 43 |
+| 2026-07-16 | Dataset 统一迁入；见 [`Dataset/README.md`](Dataset/README.md) |
+| 2026-07-23 | 11 启动规划：任务书 + `schedule.md` + [`11笔记.md`](笔记/11笔记.md) |
+| 2026-07-24 | 11 阶段 0–3：骨架 · 契约 · RagService/会话 · 同步 `/qa`；pytest 递增至 35 |
+| 2026-07-25 | 11 阶段 4–5 完成：伪 SSE · full live 抽检 · [`服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md)；pytest **41**；Dataset README / 根 README 对齐结案 |
 
 *阶段进度细节以各目录 `schedule.md`「进度记录」为准。*
