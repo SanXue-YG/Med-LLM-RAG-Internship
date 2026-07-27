@@ -29,6 +29,7 @@ try:
         CHROMA_FULL_DIR as DATASET_CHROMA_FULL,
         CHROMA_SAMPLE_DIR as DATASET_CHROMA_SAMPLE,
         CHUNKS_FULL_JSONL as DATASET_CHUNKS_FULL,
+        CHUNKS_SAMPLE_JSONL as DATASET_CHUNKS_SAMPLE,
         DATASET_ROOT,
         SLIM_JSONL as DATASET_SLIM,
     )
@@ -39,9 +40,11 @@ except ImportError:  # pragma: no cover - flat copy without repo root
     DATASET_CHROMA_SAMPLE = DATASET_ROOT / "chroma" / "chroma_db"
     DATASET_BM25_FULL = DATASET_ROOT / "bm25" / "bm25_full"
     DATASET_CHUNKS_FULL = DATASET_ROOT / "processed" / "oa_comm_chunks.jsonl"
+    DATASET_CHUNKS_SAMPLE = DATASET_ROOT / "processed" / "chunks_sample.jsonl"
     DATASET_SLIM = DATASET_ROOT / "processed" / "oa_comm_slim.jsonl"
 
 # --- BM25 语料（chunks JSONL）---
+CHUNKS_SAMPLE_DATASET = DATASET_CHUNKS_SAMPLE
 CHUNKS_SAMPLE = STAGE03 / "data" / "processed" / "chunks_sample.jsonl"
 CHUNKS_SAMPLE_04 = STAGE04 / "data" / "processed" / "chunks_sample.jsonl"
 CHUNKS_FULL_DATASET = DATASET_CHUNKS_FULL
@@ -103,8 +106,8 @@ def resolve_chunks_path(mode: Mode = "sample") -> Path:
             CHUNKS_FULL_BACKUP,
         )
         return found if found is not None else CHUNKS_FULL_DATASET
-    found = _first_existing_file(CHUNKS_SAMPLE, CHUNKS_SAMPLE_04)
-    return found if found is not None else CHUNKS_SAMPLE
+    found = _first_existing_file(CHUNKS_SAMPLE_DATASET, CHUNKS_SAMPLE, CHUNKS_SAMPLE_04)
+    return found if found is not None else CHUNKS_SAMPLE_DATASET
 
 
 def resolve_chroma(mode: Mode = "sample") -> tuple[Path, str]:

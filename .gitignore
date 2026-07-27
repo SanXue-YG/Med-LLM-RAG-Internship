@@ -35,6 +35,9 @@ secrets/
 # 跨项目统一数据集目录（见根目录 缓存记录.md / Dataset/README.md）
 /Dataset/**
 !/Dataset/README.md
+!/Dataset/打包资产清单.md
+!/Dataset/documents/
+!/Dataset/documents/README.md
 
 # macOS
 .DS_Store

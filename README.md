@@ -20,7 +20,7 @@
 | **笔记目录** | 个人学习 Q&A（非正式交付） | 写新笔记时 |
 | **更新记录** | 按时间线的变更日志；**当前阶段条目加粗**，阶段结束后整合为普通条目 | 阶段进行中实时更新 |
 
-**阅读顺序建议**：新人 → 阶段一览 → 本地部署指南 → 各阶段交付物速查（**11** 为当前 API 入口）→ 对应 `schedule.md` / `docs/`。
+**阅读顺序建议**：新人 → 阶段一览 → 本地部署指南 → 各阶段交付物速查（**11** 为当前 API 入口；**12** 规划中）→ Dataset [`打包资产清单`](Dataset/打包资产清单.md) → 对应 `schedule.md`。
 
 ---
 
@@ -49,7 +49,9 @@
 ├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量 + 全量 live 复评（✅ 0–7）
 ├── 10 强约束规则开发与幻觉抑制/  # 阶段 10：强约束提示 + 引用/格式校验 + 对抗评测（✅ 0–6）
 ├── 11 服务化与接口开发第一部分/  # 阶段 11：FastAPI + 同步/伪流式问答（✅ 已完成）
-├── ** LangChain_RAG/         # RAG 系统开发（待定）
+├── 12 服务化与接口开发第二部分/  # 阶段 12：会话/统计/文档 API + 全库文档索引（🔄 规划中）
+├── （打包）LangChain_RAG/        # 产品打包（见 02schedule；01schedule 为旧草案）
+├── （未来优化）打包后数据更新/    # 语料增补补丁 / 重建 runbook
 └── 笔记/                     # 个人学习笔记
 ```
 
@@ -70,6 +72,9 @@
 | **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | ✅ **已完成** | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb)（样本 0–6）· [`answer-eval-cache-batch-full.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch-full.ipynb)（全量 7） | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
 | **10** 强约束规则开发与幻觉抑制 | [`10 强约束规则开发与幻觉抑制/`](10%20强约束规则开发与幻觉抑制/) | ✅ **已完成** | [`任务.txt`](10%20强约束规则开发与幻觉抑制/任务.txt) | [`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) | [`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb)（C0–C6） | [`requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt) |
 | **11** 服务化与接口开发第一部分 | [`11 服务化与接口开发第一部分/`](11%20服务化与接口开发第一部分/) | ✅ **已完成** | [`任务.txt`](11%20服务化与接口开发第一部分/任务.txt) | [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md) · [`服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md) | [`api-smoke.ipynb`](11%20服务化与接口开发第一部分/notebooks/api-smoke.ipynb)（C0–C4.5） | [`requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt) |
+| **12** 服务化与接口开发第二部分 | [`12 服务化与接口开发第二部分/`](12%20服务化与接口开发第二部分/) | 🔄 **规划中** | [`任务.txt`](12%20服务化与接口开发第二部分/任务.txt) | [`schedule.md`](12%20服务化与接口开发第二部分/schedule.md) | 规划：`api-ops-smoke` / `api-ops-full` | 待建 |
+| **打包** | [`（打包）LangChain_RAG/`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/) | 📋 规划 | — | [`02schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)（[`01schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/01schedule.md) 旧草案） | — | — |
+| **未来优化·数据更新** | [`（未来优化）打包后数据更新/`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/) | 📋 规划 | — | [`schedule.md`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/schedule.md) | — | — |
 
 **说明**
 
@@ -567,6 +572,7 @@ top_chunks = result["reranked"]
 | `09笔记.md` | 09 阶段任务定位、评估/缓存/批量设计、全量耗时与分片 BM25（Q5/Q6） |
 | `10笔记.md` | 10 阶段定位（08/09/10 对照）、schedule 审阅、全量优先、`max_retries`、临时编号回查（Q4） |
 | `11笔记.md` | 11 定位、全量 Dataset（Q3）、伪/真流式（Q4）、会话持久化（Q5）、任务书对照（Q6）、API 非前端（Q7） |
+| `12笔记.md` | 12 定位、计划审阅、全库文档索引与打包规划（Q5–Q10） |
 
 ---
 
@@ -590,5 +596,8 @@ top_chunks = result["reranked"]
 | 2026-07-23 | 11 启动规划：任务书 + `schedule.md` + [`11笔记.md`](笔记/11笔记.md) |
 | 2026-07-24 | 11 阶段 0–3：骨架 · 契约 · RagService/会话 · 同步 `/qa`；pytest 递增至 35 |
 | 2026-07-25 | 11 阶段 4–5 完成：伪 SSE · full live 抽检 · [`服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md)；pytest **41**；Dataset README / 根 README 对齐结案 |
+| **2026-07-27** | **12 规划定稿**：全库文档索引（`Dataset/documents`）；`chunks_sample` 复制进 Dataset；[`打包资产清单`](Dataset/打包资产清单.md)；[`（打包）02schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)；[`（未来优化）数据更新`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/schedule.md)；[`12笔记`](笔记/12笔记.md) Q8 |
+| **2026-07-27** | 文档索引构建改为 **逻辑分片**（批 upsert + `progress.json` 断点，对标 BM25 resume、非多物理库）；更新 [`documents/README`](Dataset/documents/README.md)、12 schedule、未来优化 schedule、[`12笔记`](笔记/12笔记.md) Q9 |
+| **2026-07-27** | 建库节奏：smoke **C0.5**=样本索引；api-ops-full **F0**=全量建库可视化（可与 1–4 并行）；阶段 5 等 full 完成；[`12笔记`](笔记/12笔记.md) Q10 |
 
 *阶段进度细节以各目录 `schedule.md`「进度记录」为准。*
