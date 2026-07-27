@@ -10,18 +10,32 @@
 
 ---
 
-## 计划落盘文件
+## 目录布局（sample / full 分开放）
 
-| 文件 | 用途 | 状态 |
+```text
+Dataset/documents/
+├── README.md                 # 本说明
+├── sample/                   # 样本索引（阶段 0–4）
+│   ├── documents_sample.sqlite   # ✅ 1000 篇
+│   ├── manifest_sample.json
+│   └── progress_sample.json
+└── full/                     # 全库索引（阶段 5 + 打包）
+    ├── documents_full.sqlite     # ✅ 4,557,627 篇 · ~11.5 GB（2026-07-27）
+    ├── manifest_full.json        # status=completed
+    └── progress_full.json
+```
+
+| 路径 | 用途 | 状态 |
 |------|------|------|
-| `documents_full.sqlite` | 全库篇级索引（~455 万篇）；**运行时单库** | ⏳ 12 阶段前期构建 |
-| `documents_sample.sqlite` | 样本篇级索引（与 `chunks_sample` 文献对齐） | ⏳ 12 与全量脚本同批生成，供阶段 5 前快速验 API |
-| `manifest.json` | 构建来源、schema 版本、行数、耗时、`batch_size` | 随构建写入 |
-| `progress.json` | **断点续建**：已处理 slim 行号 / 已写入篇数 | 构建中写入；完成可保留或归档 |
-| `README.md` | 本说明 | ✅ |
+| `sample/documents_sample.sqlite` | 与 `chunks_sample` pmcid 对齐 | ✅ 1000 篇 |
+| `sample/manifest_sample.json` | sample 构建元数据 | ✅ |
+| `full/documents_full.sqlite` | 全库篇级索引；**运行时单库** | ✅ **4,557,627** 篇 |
+| `full/progress_full.json` | 全量断点续建记录 | ✅（构建期写入） |
+| `full/manifest_full.json` | 全量完成标志 `status=completed` | ✅ |
 
-> 过渡期也可用 `documents_sample.json`；**目标形态为 SQLite**，与打包友好口径一致。  
-> 构建期可另有临时 WAL/`*.sqlite.tmp`；**不**把「多物理分库」作为运行时默认形态（见下节）。
+> **落盘形态说明**：与 BM25 的 `shard_*.pkl` 不同，文档索引采用 **逻辑分片**（按批 COMMIT + progress 断点），完成后目录里只有 **一个** sqlite + manifest/progress，**不会**出现多个物理分块文件。
+
+代码常量：`dataset_paths.DOCUMENTS_SAMPLE_DIR` / `DOCUMENTS_FULL_DIR` / `DOCUMENTS_*_SQLITE`。
 
 ---
 
@@ -32,36 +46,36 @@
 | | BM25（`bm25_sharded_v1`） | 文档索引（本目录） |
 |--|--------------------------|-------------------|
 | 为何分片 | 单体 `BM25Okapi` 内存峰值极高；**查询也要逐片加载** | 全量 ~455 万篇写 sqlite **内存通常不是瓶颈**；墙钟长（0.5–2h+）→ 怕中断 |
-| 分片形态 | 物理：`shard_00000.pkl` … + `progress.json` | **逻辑**：单库 + **按批 COMMIT** + `progress.json` |
-| 运行时产物 | 多文件目录 | **`documents_*.sqlite` 单文件**（打包友好） |
+| 分片形态 | 物理：`shard_00000.pkl` … + `progress.json` | **逻辑**：单库 + **按批 COMMIT** + `progress_*.json` |
+| 运行时产物 | 多文件目录 | **各 mode 目录下单个 sqlite**（打包友好） |
 | 断点续建 | 跳过已完成 shard / `processed_lines` | 跳过已处理 slim **行号**，继续 `INSERT OR REPLACE` |
-| 新文献补充 | 分片 BM25 增量难，多定期全量 | **天然友好**：增量 slim → upsert 同一库（见未来优化补丁） |
+| 新文献补充 | 分片 BM25 增量难，多定期全量 | **天然友好**：增量 slim → upsert 同一库 |
 
 → **要学 BM25 的是「流式批处理 + progress 断点 + manifest 校验」**，不是把篇级元数据拆成几十个 sqlite 再合并查询。  
-物理多分库（`documents_full/shard_*.sqlite`）仅在「多进程并行建库再 merge」时可选；**12 `/documents` 与 06 回查默认仍读合并后的单库**。
+**sample 与 full 用子目录隔离**，避免产物混放。
 
 ### 推荐构建算法（`build_documents_index.py`）
 
 ```text
-1. 打开/创建 documents_{mode}.sqlite，建表 + PRIMARY KEY(pmcid)
-2. 若 resume 且 progress.json 与 source_slim 路径/mtime、batch_size、schema_version 兼容：
+1. 打开/创建 {sample|full}/documents_{mode}.sqlite，建表 + PRIMARY KEY(pmcid)
+2. 若 resume 且 progress_{mode}.json 与 source_slim 路径/mtime、batch_size、schema_version 兼容：
      skip_lines = progress.processed_lines
    否则从 0 开始（或 --no-resume 删 progress 重建）
 3. 流式读 oa_comm_slim.jsonl：
      每 batch_size 行（建议默认 50_000～100_000）：
        BEGIN; 批量 INSERT OR REPLACE; COMMIT
-       写 progress.json：processed_lines / valid_rows / last_pmcid / updated_at
-4. 完成后写 manifest.json：status=completed、row_count、source_*、batch_size、schema_version
-5. CLI：--mode sample|full · --batch-size · --resume/--no-resume · --status · --limit（smoke）
+       写 {mode}/progress_{mode}.json
+4. 完成后写 {mode}/manifest_{mode}.json：status=completed、…
+5. CLI：--mode sample|full · --batch-size · --resume/--no-resume · --status · --limit
 ```
 
-样本模式：可只写入 `chunks_sample` 涉及的 pmcid（或小集合），同样走批提交（样本体量小，断点非必须但接口一致）。
+样本模式：只写入 `chunks_sample` 涉及的 pmcid。
 
 ### 与增量补丁的衔接
 
 - **断点续建** = 同一次全量构建中途恢复（按 slim **行偏移**）。  
-- **补丁增补** = 另一次任务：读 **增量 slim/jsonl**（或「不在库中的 pmcid」），仍 `INSERT OR REPLACE`，更新 `manifest.row_count` / `updated_at` / `patch_manifest`。  
-二者共用同一 upsert 内核，避免两套写入逻辑。详见 [`（未来优化）打包后数据更新/schedule.md`](../（未来优化）打包后数据更新/schedule.md)。
+- **补丁增补** = 读增量 slim → upsert 进 `full/documents_full.sqlite`。  
+详见 [`（未来优化）打包后数据更新/schedule.md`](../（未来优化）打包后数据更新/schedule.md)。
 
 ---
 
@@ -73,11 +87,8 @@
 
 | 读出的字段 | 用途 |
 |------------|------|
-| `pub_year` | `recency_score`：越新分越高；可配合 query 的 `year_gte` 降权过旧文献 |
-| `journal` | `authority_score`：按期刊名规则表打权威分（Nature/Lancet/…） |
-
-二者与向量相关分加权，影响 **重排序最终顺序**。  
-chunk 元数据里 **没有**可靠的 `pub_year`，所以必须有篇级源（现为 slim；打包后改为本索引）。
+| `pub_year` | `recency_score` |
+| `journal` | `authority_score` |
 
 ### 12 `/documents` 要什么
 
@@ -90,15 +101,13 @@ chunk 元数据里 **没有**可靠的 `pub_year`，所以必须有篇级源（�
 | `pmcid` | `pmcid` | ✅ 键 | ✅ = `doc_id` | **PRIMARY KEY** |
 | `pmid` | `pmid` | | 可选 | |
 | `title` | `title` | | ✅ | |
-| `abstract` | `abstract` | | ✅（列表可截断） | 体积大；可另表或压缩策略 |
+| `abstract` | `abstract` | | ✅ | |
 | `journal` | `journal` | ✅ | ✅ | |
 | `pub_year` | `pub_year` | ✅ | 可选 | INTEGER |
-| `pub_date` | `pub_date` | | ✅ | 文本 ISO/原文 |
-| `n_chars_abstract` | 同名 | | 可选 | 调试 |
-| `schema_version` | 构建写入 | | | 便于补丁升级 |
-| `updated_at` | 构建/补丁写入 | | | 增量用 |
-
-`manifest.json` 另记：`source_slim_path`、`source_mtime`、`row_count`、`built_at`、`builder`、`schema_version`。
+| `pub_date` | `pub_date` | | ✅ | |
+| `n_chars_abstract` | 同名 | | 可选 | |
+| `schema_version` | 构建写入 | | | |
+| `updated_at` | 构建/补丁写入 | | | |
 
 ---
 
@@ -106,37 +115,32 @@ chunk 元数据里 **没有**可靠的 `pub_year`，所以必须有篇级源（�
 
 | | 样本 | 全量 |
 |--|------|------|
+| 目录 | `documents/sample/` | `documents/full/` |
 | 库文件 | `documents_sample.sqlite` | `documents_full.sqlite` |
-| 文献范围 | `chunks_sample` 涉及的 pmcid ∪ 小集合 | slim 全表 ~455 万 |
-| 谁用 | 12 阶段 **0–4** 契约（smoke C0.5 产出） | 12 **阶段 5** + 打包；可与 1–4 **并行建库** |
-| Notebook | `api-ops-smoke.ipynb` **C0.5** | `api-ops-full.ipynb` **F0**（进度可视化）或 CLI 后台 |
+| 文献范围 | `chunks_sample` 的 pmcid（1000） | slim 全表 ~455 万 |
+| 谁用 | 12 阶段 **0–4** | 12 **阶段 5** + 打包 |
+| Notebook | `api-ops-smoke` C0.5（默认只验收） | `api-ops-full` **F0** ✅ 已跑通 |
+| 实测 | 1000 篇 | **4,557,627** 篇 · ≈134 s · ≈11.5 GB |
 
-构建脚本：`12 .../scripts/build_documents_index.py` → `dataset_paths`。  
-**节奏**：先 C0.5 建 sample → 立刻开写阶段 1–4；F0/CLI 建 full（可过夜/后台）；full 完成后再开阶段 5 全量仿真。
 ---
 
 ## 重建（本机）
 
 ```text
-# 1）确认 slim 存在
-Dataset/processed/oa_comm_slim.jsonl
-
-# 2）样本（阶段 0 · smoke C0.5；进 1–4 前必做）
+# 样本（一般已建好；仅需重建时）
 cd "12 服务化与接口开发第二部分"
-python scripts/build_documents_index.py --mode sample
+python scripts/build_documents_index.py --mode sample --no-resume
 
-# 3）全量（api-ops-full F0 可视化，或终端后台；与 1–4 并行）
+# 全量（写入 documents/full/；可断点）
 python scripts/build_documents_index.py --mode full --batch-size 50000
-# 中断后续跑同一命令即可续建；查看进度：
 python scripts/build_documents_index.py --mode full --status
-# 强制从头：
-python scripts/build_documents_index.py --mode full --no-resume
 ```
 
-增量补丁 / 全量重建策略见仓库 [`（未来优化）打包后数据更新/schedule.md`](../（未来优化）打包后数据更新/schedule.md)。
+或打开 `notebooks/api-ops-full.ipynb`，将 `RUN_FULL_BUILD = True` 后跑 F0。
+
 ---
 
 ## 与打包的关系
 
-运行时推荐携带：`documents_full.sqlite`（+ manifest），**不必**再为回查携带整份 slim JSONL。  
-slim / chunks JSONL 可作为 **重建原料** 外置。详见 [`../打包资产清单.md`](../打包资产清单.md)。
+运行时推荐携带：`documents/full/documents_full.sqlite`（+ manifest），**不必**再为回查携带整份 slim JSONL。  
+详见 [`../打包资产清单.md`](../打包资产清单.md)。

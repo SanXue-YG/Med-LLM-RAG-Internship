@@ -16,6 +16,8 @@
 #   pip install -r "09 生成答案评估，缓存策略与批量处理/requirements.txt"
 #   pip install -r "10 强约束规则开发与幻觉抑制/requirements.txt"
 #   pip install -r "11 服务化与接口开发第一部分/requirements.txt"
+#   pip install -r "12 服务化与接口开发第二部分/requirements.txt"
 #
 # 03 无新增依赖（见 03/requirements.txt 说明，复用 02）
 # 04 全量 GPU：安装后运行 setup_stage04_gpu.ps1
+# 12 相对 11 主要新增 python-dotenv；其余为复列（fastapi / uvicorn 等）

@@ -17,11 +17,9 @@ Dataset/
 ├── bm25/
 │   └── bm25_full/            # 全量 BM25 分片（62 片 · ~6.1M chunks）
 ├── documents/
-│   ├── README.md             # 字段 + 逻辑分片（批提交/断点）说明
-│   ├── progress.json         # ⏳ 全量构建断点
-│   ├── manifest.json         # ⏳ 构建元数据
-│   ├── documents_sample.sqlite   # ⏳ 12 构建
-│   └── documents_full.sqlite     # ⏳ 12 构建（运行时单库；打包推荐）
+│   ├── README.md
+│   ├── sample/                   # ✅ documents_sample.sqlite（1000）
+│   └── full/                     # ✅ documents_full.sqlite（4,557,627 · ~11.5 GB）
 └── processed/
     ├── oa_comm_chunks.jsonl  # 全量 chunks（~9.1 GB）— 建 Chroma/BM25 原料
     ├── oa_comm_slim.jsonl    # slim（~8.3 GB）— 建 documents 索引 / 旧版 06 回查
@@ -58,7 +56,9 @@ from dataset_paths import (
     CHUNKS_SAMPLE_JSONL,
     SLIM_JSONL,
     BM25_FULL_DIR,
+    DOCUMENTS_FULL_DIR,
     DOCUMENTS_FULL_SQLITE,
+    DOCUMENTS_SAMPLE_DIR,
     DOCUMENTS_SAMPLE_SQLITE,
     COLLECTION_FULL,
     COLLECTION_SAMPLE,
@@ -77,12 +77,12 @@ from dataset_paths import (
 1. `chroma/chroma_db_full` 可读（`pmc_oa_comm_full`）  
 2. `bm25/bm25_full/manifest.json` → `bm25_sharded_v1` + `completed`  
 3. （建议）`processed/oa_comm_chunks.jsonl` 存在  
-4. （12 完成后）`documents/documents_full.sqlite` + `manifest.status=completed`（构建支持 `progress.json` 断点续跑）  
+4. ✅ `documents/full/documents_full.sqlite` + `manifest_full.status=completed`（4,557,627 篇）  
 5. Ollama 可用  
 
 ## 篇级索引构建（documents）
 
-对标 BM25 分片的 **resume**，但为 **逻辑分片**（单 sqlite + 批 upsert）。说明与 CLI 约定见 [`documents/README.md`](documents/README.md)。增量补丁见 [`（未来优化）打包后数据更新`](../（未来优化）打包后数据更新/schedule.md)。
+产物分目录：`documents/sample/` 与 `documents/full/`。说明见 [`documents/README.md`](documents/README.md)。增量补丁见 [`（未来优化）打包后数据更新`](../（未来优化）打包后数据更新/schedule.md)。
 
 ## 迁移状态
 
@@ -90,7 +90,7 @@ from dataset_paths import (
 |------|------|
 | chroma / bm25 / slim / chunks 全量 | ✅ 已在 Dataset（2026-07-16） |
 | `chunks_sample.jsonl` | ✅ **2026-07-27 复制**自 03；03/04 原文件保留 |
-| `documents_*.sqlite` | ⏳ 12 构建 |
+| `documents_*.sqlite` | ✅ sample（1000）+ ✅ full（4,557,627 · 2026-07-27） |
 | 11 full live | ✅ 已抽检 |
 
 ## 勿提交

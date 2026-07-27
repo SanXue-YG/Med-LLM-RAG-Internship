@@ -1,0 +1,4 @@
+2026-07-27 15:54:51 | INFO | med_rag_api.middleware | request method=GET path=/ status=200 request_id=25ed97d3-b9a1-4164-af7f-5b2323748ff6 elapsed_ms=4.6
+2026-07-27 15:54:51 | INFO | med_rag_api.middleware | request method=GET path=/health status=200 request_id=9391ca97-5cfb-41f1-af6b-95c84296ff6b elapsed_ms=1.1
+2026-07-27 16:05:39 | INFO | med_rag_api.middleware | request method=GET path=/ status=200 request_id=5d80f3b1-4ca5-4fc2-b63a-de85d192749f elapsed_ms=4.9
+2026-07-27 16:05:39 | INFO | med_rag_api.middleware | request method=GET path=/health status=200 request_id=fa8c5270-b274-4b55-b446-e96468effc57 elapsed_ms=1.1

@@ -18,11 +18,11 @@
 | 能力 | 阶段 | 打包时怎么用 |
 |------|------|--------------|
 | 全量向量库 | 04 | 挂载 `Dataset/chroma/chroma_db_full` |
-| 查询增强 + 多路检索 + 重排 | 05–06 | 进程内 pipeline；回查改为读 **documents sqlite**（12 建成后） |
+| 查询增强 + 多路检索 + 重排 | 05–06 | 进程内 pipeline；回查可改读 **`documents/full/*.sqlite`**（索引 ✅ 已建；代码切换待打包 P0） |
 | 组装 / 生成 / 约束 | 07–08–10 | `ConstrainedGenerationPipeline` |
 | 评估/缓存/BM25 分片 | 09 | BM25 挂载 `bm25_full`；缓存可选 |
 | HTTP 问答 | 11 | `/qa` · `/qa/stream` · health/ready |
-| 会话 / 统计 / 文档 API | 12（进行中） | 同进程挂载；文档读 `documents_full.sqlite` |
+| 会话 / 统计 / 文档 API | 12（进行中 · 阶段 0 完成） | 文档读 `documents/full/documents_full.sqlite`（✅ 4,557,627 篇） |
 
 [`01schedule.md`](01schedule.md) 中「Chunking / Embedding / Chroma / Retriever / Prompt」等 **已由 03–10 落地**；打包阶段 **默认不重做**，除非明确要 LangChain 换皮。
 
@@ -36,11 +36,11 @@
 
 1. `chroma_db_full`  
 2. `bm25_full`  
-3. `documents_full.sqlite`（12 产出；兼 06 回查 + `/documents`；**单库**，构建期支持 progress 断点）  
+3. ✅ `documents/full/documents_full.sqlite`（4,557,627 篇 · ~11.5 GB；逻辑分片单库 + progress 断点）  
 4. Ollama 模型或远端 LLM 配置  
 5. 应用代码（11+12）+ `.env`
 
-**可外置**：`oa_comm_slim.jsonl`、`oa_comm_chunks.jsonl`（重建用；documents 全量重建可 overnight + resume）。
+**可外置**：`oa_comm_slim.jsonl`、`oa_comm_chunks.jsonl`（重建用；documents 全量写入 `documents/full/`，可 overnight + resume）。
 
 语料增补 / schema 升级：[`（未来优化）打包后数据更新/schedule.md`](../（未来优化）打包后数据更新/schedule.md)（文档侧：upsert 补丁；勿与 BM25 物理分片混为一谈）。
 
@@ -50,7 +50,7 @@
 
 ### P0：资产齐套与路径 ☐
 
-- [ ] 确认 Dataset 全量 Chroma / BM25 / documents_full 存在且 count 合理  
+- [x] 确认 Dataset 全量 Chroma / BM25 / **documents_full** 存在且 count 合理（documents：**4,557,627** · manifest completed）  
 - [ ] `dataset_paths` + 环境变量文档化  
 - [ ] 06 回查切换到 documents sqlite（或双读：sqlite 优先，slim 回退）
 
@@ -92,3 +92,4 @@
 |------|------|
 | 2026-07-27 | 创建 02schedule：从「重做 RAG」改为「基于 01–12 打包」；对齐全库文档索引与数据清单 |
 | 2026-07-27 | 对齐 documents **逻辑分片**建库（断点续建）；运行时仍挂载单库 sqlite |
+| 2026-07-27 | **documents/full 已建成**：4,557,627 篇 · ~11.5 GB · manifest completed；P0 资产自检可勾 documents |

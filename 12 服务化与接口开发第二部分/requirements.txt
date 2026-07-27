@@ -1,0 +1,18 @@
+# Stage 12 — FastAPI ops layer (sessions / stats / documents) on stage 11
+# Reuses conda env med-rag-verify (stages 01–11).
+#
+# New / emphasized for this stage:
+python-dotenv
+#
+# Already required by stage 11 (re-listed for convenience / missing-env repair):
+fastapi
+uvicorn[standard]
+pydantic
+httpx
+#
+# Already common upstream:
+pytest
+#
+# Notebooks (api-ops-smoke / api-ops-full) need Jupyter kernel on this env;
+# ipykernel is typically already in med-rag-verify from stage 01.
+# ipykernel

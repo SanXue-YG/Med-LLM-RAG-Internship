@@ -12,7 +12,7 @@
 | 层 | 内容 | 更新频率 |
 |----|------|----------|
 | 检索索引 | Chroma / BM25 | 新文献入库时 |
-| 篇级索引 | `documents_*.sqlite` | 新文献或元数据修订时 |
+| 篇级索引 | `documents/{sample,full}/documents_*.sqlite` | 新文献或元数据修订时（full ✅ 基线 4,557,627 篇 · 2026-07-27） |
 | 原料 | slim / chunks JSONL | 上游解析流水线产出时 |
 | 应用 | 11/12 FastAPI、10 约束管线 | 发版 |
 
@@ -29,7 +29,7 @@
 ```text
 1. 得到增量 slim 行（或全 slim 中「未在 sqlite 出现的 pmcid」）
 2. documents：与全量构建同一 upsert 内核，按批 INSERT OR REPLACE
-     → documents_full.sqlite；更新 manifest.row_count / updated_at
+     → `documents/full/documents_full.sqlite`；更新 manifest_full.row_count / updated_at
      → 另写 patch_manifest.json（pmcids 数、时间、schema_version、source）
 3. chunks：仅对新文献跑 03 策略 → 增量 chunks
 4. Chroma：add 新 chunk 向量（勿盲目全库重建）
@@ -46,9 +46,9 @@
 
 ```text
 1. 备份旧 Dataset（或 E:）
-2. 用现行脚本重跑：slim→chunks→Chroma→BM25→documents_full.sqlite
+2. 用现行脚本重跑：slim→chunks→Chroma→BM25→`documents/full/documents_full.sqlite`
    documents：build_documents_index --mode full（默认 resume；必要时 --no-resume）
-3. 校验 count：chunks≈6.1M+Δ；documents≈slim 篇数；chroma count 对齐
+3. 校验 count：chunks≈6.1M+Δ；documents≈slim 篇数（基线 **4,557,627**）；chroma count 对齐
 4. 切换挂载路径 / 重启服务（MED_RAG_RETRIEVAL_MODE=full）
 ```
 
@@ -85,3 +85,4 @@
 |------|------|
 | 2026-07-27 | 创建规划；与 12 决定建全库文档索引、打包清单对齐 |
 | 2026-07-27 | 文档索引采用「逻辑分片」：批提交 + progress 断点；补丁与全量共用 upsert |
+| 2026-07-27 | 基线 full 索引已落盘：4,557,627 篇 · ~11.5 GB；后续增补优先 upsert 补丁，勿与 BM25 物理分片混淆 |

@@ -49,7 +49,7 @@
 ├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量 + 全量 live 复评（✅ 0–7）
 ├── 10 强约束规则开发与幻觉抑制/  # 阶段 10：强约束提示 + 引用/格式校验 + 对抗评测（✅ 0–6）
 ├── 11 服务化与接口开发第一部分/  # 阶段 11：FastAPI + 同步/伪流式问答（✅ 已完成）
-├── 12 服务化与接口开发第二部分/  # 阶段 12：会话/统计/文档 API + 全库文档索引（🔄 规划中）
+├── 12 服务化与接口开发第二部分/  # 阶段 12：会话/统计/文档 API + 全库文档索引（🔄 阶段 0 完成）
 ├── （打包）LangChain_RAG/        # 产品打包（见 02schedule；01schedule 为旧草案）
 ├── （未来优化）打包后数据更新/    # 语料增补补丁 / 重建 runbook
 └── 笔记/                     # 个人学习笔记
@@ -72,14 +72,14 @@
 | **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | ✅ **已完成** | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb)（样本 0–6）· [`answer-eval-cache-batch-full.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch-full.ipynb)（全量 7） | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
 | **10** 强约束规则开发与幻觉抑制 | [`10 强约束规则开发与幻觉抑制/`](10%20强约束规则开发与幻觉抑制/) | ✅ **已完成** | [`任务.txt`](10%20强约束规则开发与幻觉抑制/任务.txt) | [`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) | [`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb)（C0–C6） | [`requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt) |
 | **11** 服务化与接口开发第一部分 | [`11 服务化与接口开发第一部分/`](11%20服务化与接口开发第一部分/) | ✅ **已完成** | [`任务.txt`](11%20服务化与接口开发第一部分/任务.txt) | [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md) · [`服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md) | [`api-smoke.ipynb`](11%20服务化与接口开发第一部分/notebooks/api-smoke.ipynb)（C0–C4.5） | [`requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt) |
-| **12** 服务化与接口开发第二部分 | [`12 服务化与接口开发第二部分/`](12%20服务化与接口开发第二部分/) | 🔄 **规划中** | [`任务.txt`](12%20服务化与接口开发第二部分/任务.txt) | [`schedule.md`](12%20服务化与接口开发第二部分/schedule.md) | 规划：`api-ops-smoke` / `api-ops-full` | 待建 |
+| **12** 服务化与接口开发第二部分 | [`12 服务化与接口开发第二部分/`](12%20服务化与接口开发第二部分/) | 🔄 **阶段 0 完成** | [`任务.txt`](12%20服务化与接口开发第二部分/任务.txt) | [`schedule.md`](12%20服务化与接口开发第二部分/schedule.md) | [`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb) · [`api-ops-full.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-full.ipynb)（F0） | [`requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt) |
 | **打包** | [`（打包）LangChain_RAG/`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/) | 📋 规划 | — | [`02schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)（[`01schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/01schedule.md) 旧草案） | — | — |
 | **未来优化·数据更新** | [`（未来优化）打包后数据更新/`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/) | 📋 规划 | — | [`schedule.md`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/schedule.md) | — | — |
 
 **说明**
 
 - 各阶段**具体要求与交付标准**以对应目录内 **`任务.txt`** 为准。
-- 01–10 主入口多为 **Jupyter Notebook**；**11** 另提供 HTTP 服务：`python scripts/run_api.py` → `/docs`（契约见报告 §3）。
+- 01–10 主入口多为 **Jupyter Notebook**；**11–12** 另提供 HTTP 服务：`python scripts/run_api.py` → `/docs`。
 
 ---
 
@@ -206,7 +206,7 @@
 
 | 项 | 值 |
 |----|-----|
-| Conda 环境名 | `med-rag-verify`（01–11 共用） |
+| Conda 环境名 | `med-rag-verify`（01–12 共用） |
 | Python | 3.11.x |
 | 平台 | Windows / macOS |
 
@@ -216,13 +216,11 @@
 # Windows：创建环境 + 01/02 基础依赖
 .\setup_windows_env.ps1
 
-# 安装 01→11 全部 Python 依赖（含 04–11；03 无新增可跳过）
+# 安装 01→12 全部 Python 依赖（含 04–12；03 无新增可跳过）
 .\install_all_requirements.ps1
 
-# 或手动逐阶段（03 无新增，可跳过）：
-# pip install -r "01 验证模型/requirements.txt"
-# pip install -r "02 数据处理/requirements.txt"
-# ... 见 requirements.txt 清单
+# 或仅补装阶段 12（若 01–11 已齐）：
+# pip install -r "12 服务化与接口开发第二部分/requirements.txt"
 ```
 
 根目录 [`requirements.txt`](requirements.txt) 记录安装顺序；因目录名含空格，请用 [`install_all_requirements.ps1`](install_all_requirements.ps1) 而非 `pip install -r requirements.txt`。
@@ -242,6 +240,7 @@
 | 09 | [`09 .../requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) | **`rouge-score`**、`pytest`（httpx 与 08 重叠） |
 | 10 | [`10 .../requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt) | **无强制新包**；清单复列 `pytest`、`httpx`（与 08/09 重叠，便于缺包时补装） |
 | 11 | [`11 .../requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt) | 新增 **`fastapi`**、**`uvicorn[standard]`**（另列 pydantic/httpx/pytest） |
+| 12 | [`12 .../requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt) | 新增 **`python-dotenv`**；复列 fastapi/uvicorn/pydantic/httpx/pytest（文档索引用标准库 `sqlite3`） |
 
 ### 04 全量 GPU 补充（可选）
 
@@ -312,7 +311,8 @@ ollama pull deepseek-r1:7b
 2. Jupyter 内核：**`med-rag-verify`**  
 3. 按 notebook 章节顺序执行（04 全量：`vectorize-index-full.ipynb` C0→C5）  
 4. CLI / API 示例见「各阶段交付物速查」  
-5. **阶段 11（HTTP）**：`cd "11 服务化与接口开发第一部分"` → `python scripts/run_api.py` → 浏览器打开 `http://127.0.0.1:8000/docs`（根路径 `/` 为 JSON 元信息，不是网页 UI）
+5. **阶段 11（HTTP）**：`cd "11 服务化与接口开发第一部分"` → `python scripts/run_api.py` → `http://127.0.0.1:8000/docs`  
+6. **阶段 12（ops / 文档索引）**：内核 **`med-rag-verify`**；`pip install -r "12 .../requirements.txt"`（主要补 `python-dotenv`）→ API：`cd "12 服务化与接口开发第二部分"` → `python scripts/run_api.py`；文档索引 **sample/full 均已落盘**（见 [`Dataset/documents/`](Dataset/documents/README.md)）
 
 ### 5. 统一 Dataset（新代码默认读取这里）
 
@@ -552,6 +552,24 @@ top_chunks = result["reranked"]
 - **依赖**：[`requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt)（`fastapi` · `uvicorn[standard]`）
 - **后续注意**：前端按报告 §3 接线；CORS/鉴权待补；真流式需动 08 + 理顺 10 重试（见笔记 Q4）
 
+### 12 服务化与接口开发第二部分（🔄 阶段 0 完成 · 2026-07-27）
+
+> **当前**：骨架 + 挂载 11 health/qa；样本文档索引已建；全量索引用 `api-ops-full` F0 / CLI（`med-rag-verify`）。
+
+| 项 | 路径 / 命令 |
+|----|-------------|
+| 计划 | [`schedule.md`](12%20服务化与接口开发第二部分/schedule.md) |
+| 依赖 | [`requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt)（相对 11 新增 **`python-dotenv`**） |
+| 环境 | Conda **`med-rag-verify`**（与 01–11 相同）；Jupyter 选此内核 |
+| 启动 API | `cd "12 服务化与接口开发第二部分"` → `python scripts/run_api.py` |
+| 样本 notebook | [`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb)（C0/C0.5；默认不重建索引） |
+| 全量索引 F0 | [`api-ops-full.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-full.ipynb) 或 `python scripts/build_documents_index.py --mode full` |
+| 文档索引 | [`Dataset/documents/`](Dataset/documents/README.md)（`sample/` ✅ 1000 · `full/` ✅ **4,557,627**） |
+| 笔记 | [`12笔记.md`](笔记/12笔记.md) |
+
+- **F0 环境结论**：`api-ops-full` **可用 `med-rag-verify` 直接开跑**；F0 已完成（≈134 s · 逻辑分片单库，非物理多 shard）。
+- **进行中**：阶段 1–4 会话/统计/文档 API；阶段 5 全量仿真（检索 full + 已有 documents_full + Ollama）。
+
 ---
 
 ## 笔记目录
@@ -572,7 +590,8 @@ top_chunks = result["reranked"]
 | `09笔记.md` | 09 阶段任务定位、评估/缓存/批量设计、全量耗时与分片 BM25（Q5/Q6） |
 | `10笔记.md` | 10 阶段定位（08/09/10 对照）、schedule 审阅、全量优先、`max_retries`、临时编号回查（Q4） |
 | `11笔记.md` | 11 定位、全量 Dataset（Q3）、伪/真流式（Q4）、会话持久化（Q5）、任务书对照（Q6）、API 非前端（Q7） |
-| `12笔记.md` | 12 定位、计划审阅、全库文档索引与打包规划（Q5–Q10） |
+| `12笔记.md` | 12 定位、计划审阅、全库文档索引与打包规划（Q5–Q11） |
+
 
 ---
 
@@ -598,6 +617,8 @@ top_chunks = result["reranked"]
 | 2026-07-25 | 11 阶段 4–5 完成：伪 SSE · full live 抽检 · [`服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md)；pytest **41**；Dataset README / 根 README 对齐结案 |
 | **2026-07-27** | **12 规划定稿**：全库文档索引（`Dataset/documents`）；`chunks_sample` 复制进 Dataset；[`打包资产清单`](Dataset/打包资产清单.md)；[`（打包）02schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)；[`（未来优化）数据更新`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/schedule.md)；[`12笔记`](笔记/12笔记.md) Q8 |
 | **2026-07-27** | 文档索引构建改为 **逻辑分片**（批 upsert + `progress.json` 断点，对标 BM25 resume、非多物理库）；更新 [`documents/README`](Dataset/documents/README.md)、12 schedule、未来优化 schedule、[`12笔记`](笔记/12笔记.md) Q9 |
-| **2026-07-27** | 建库节奏：smoke **C0.5**=样本索引；api-ops-full **F0**=全量建库可视化（可与 1–4 并行）；阶段 5 等 full 完成；[`12笔记`](笔记/12笔记.md) Q10 |
+| **2026-07-27** | **阶段 12·0 完成**：骨架 + `bridge11`；`documents/sample`（1000）；smoke/full notebook；分目录 |
+| **2026-07-27** | 阶段 12 [`requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt) 对齐 11 风格；`install_all_requirements.ps1` 含 12；确认 **med-rag-verify** 可跑 `api-ops-full` F0 |
+| **2026-07-27** | **documents/full 建成**：4,557,627 篇 · ~11.5 GB · `manifest_full.completed`；更新打包清单 / 02schedule / 未来优化 / 12 schedule |
 
 *阶段进度细节以各目录 `schedule.md`「进度记录」为准。*

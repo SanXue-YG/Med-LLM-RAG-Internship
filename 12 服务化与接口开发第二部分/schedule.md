@@ -54,12 +54,12 @@
 
 | 产物 | 路径 | 何时用 |
 |------|------|--------|
-| 样本索引 | `documents/documents_sample.sqlite` | 阶段 0–4 契约 |
-| 全库索引 | `documents/documents_full.sqlite` | 阶段 5 + 打包（**运行时单库**） |
-| 断点进度 | `documents/progress.json` | 全量构建中途可续跑 |
+| 样本索引 | `documents/sample/documents_sample.sqlite` | 阶段 0–4 契约 |
+| 全库索引 | `documents/full/documents_full.sqlite` | 阶段 5 + 打包（**运行时单库**） |
+| 断点进度 | `documents/full/progress_full.json` | 全量构建中途可续跑 |
 | 字段 | pmcid, title, abstract, journal, pub_year, pub_date, … | 见 documents README |
 
-> **构建**：对标 BM25 的「流式 + 断点」，但用 **逻辑分片**（按批 `INSERT OR REPLACE` + `progress.json`），**不**默认多物理 sqlite 分库。详见 [`Dataset/documents/README.md`](../Dataset/documents/README.md)。
+> **构建**：对标 BM25 的「流式 + 断点」，但用 **逻辑分片**（按批 upsert + 各 mode 目录下 `progress_*.json`），**sample/full 分目录**。详见 [`Dataset/documents/README.md`](../Dataset/documents/README.md)。
 
 补丁：[`（未来优化）打包后数据更新/schedule.md`](../（未来优化）打包后数据更新/schedule.md)。
 
@@ -70,17 +70,17 @@
 | 资产 | 状态 | Dataset 路径 |
 |------|------|--------------|
 | `chunks_sample.jsonl` | ✅ **2026-07-27 已复制**（源 03；原文件保留） | `processed/chunks_sample.jsonl` |
-| documents sample/full sqlite | ⏳ 阶段 0 脚本构建 | `documents/documents_{sample,full}.sqlite` |
+| documents sample/full sqlite | ✅ **sample 1000**；✅ **full 4,557,627**（2026-07-27） | `documents/{sample,full}/documents_*.sqlite` |
 | 样本 Chroma / 全量检索资产 | ✅ 已在 | 见 Dataset README |
 
-**阶段 0 剩余**
+**阶段 0 状态（✅ 出门标准已满足）**
 
 1. ✅ `dataset_paths`：`CHUNKS_SAMPLE_JSONL` / `DOCUMENTS_*_SQLITE`  
 2. ✅ `06 resolve_chunks_path("sample")` 优先 Dataset  
-3. [ ] `scripts/build_documents_index.py --mode sample|full`（批提交 + `--resume` / `--status` / `--batch-size`）  
-4. [ ] **smoke C0.5** 跑通 **documents_sample**（进 1–4 的硬门槛）  
-5. [ ] **full F0 / CLI** 启动 documents_full（可与 1–4 并行；阶段 5 前完成）  
-6. DocumentStore 默认读 sample sqlite（full 由模式/路径切换）  
+3. ✅ `scripts/build_documents_index.py --mode sample|full`  
+4. ✅ **smoke C0.5** → `documents_sample.sqlite`（1000 篇）  
+5. ✅ **full F0** → `documents/full` 已完成（4,557,627 篇；逻辑分片单库，非物理多 shard）  
+6. DocumentStore 读 sample sqlite → 阶段 3；full 路径已可用  
 
 
 
@@ -286,62 +286,62 @@ class ComponentHealth(BaseModel):
 
 > **工作流（对齐 09 / 11）**  
 > - **样本主轨**：`api-ops-smoke.ipynb`（**C0 → C4**）贯穿阶段 0–4；**阶段 0 必须在 smoke 里建好 `documents_sample.sqlite`**，供阶段 1–4 文档 API / 契约验证。  
-> - **全量索引构建入口**：`api-ops-full.ipynb` **F0**（可视化进度：读 `progress.json` / 批次数 / ETA）；也可 CLI 后台跑同一 `build_documents_index.py --mode full`。  
+> - **全量索引构建入口**：`api-ops-full.ipynb` **F0**（可视化进度：读 `documents/full/progress_full.json`）；也可 CLI 后台跑同一 `build_documents_index.py --mode full`。  
 > - **并行节奏**：**不必等 full 建完再写 1–4**——sample 就绪即可进会话/统计/文档代码；full 可过夜或后台续跑。  
-> - **阶段 5 门槛**：`documents_full` 的 `manifest.status=completed` + 检索 full 资产齐 → 再跑全量仿真（sessions/qa/stats/documents_full）。  
+> - **阶段 5 门槛**：检索 full 资产齐 + **documents/full 已 completed**（✅ 2026-07-27）→ 再跑全量仿真。  
 > - **阶段 6** = 交付收尾。  
 > 每完成一小阶段：**勾选 checklist → 填写完成说明 / 实现说明 → 补齐对应 notebook → 再进下一阶段**。
 
 ```text
-0 骨架+.env → smoke C0/C0.5（建 documents_sample）→ 可另开 full F0 建库（后台亦可）
+0 骨架+.env → smoke C0/C0.5（sample ✅）→ full F0 ✅（documents/full 已齐）
 1 会话 → C1 · 2 统计 → C2 · 3 文档(sample) → C3 · 4 测试/文档 → C4
-   └─ 其间：documents_full 可并行构建 / 断点续跑
-5 等 full 索引完成 → api-ops-full 全量仿真（Chroma/BM25/documents_full + Ollama）
+5 api-ops-full 全量仿真（Chroma/BM25/documents_full + Ollama）
 6 交付收尾
 ```
 
-### 阶段 0：环境与骨架 + Dataset 样本复制 + 文档索引构建 ☐
+### 阶段 0：环境与骨架 + Dataset 样本复制 + 文档索引构建 ✅
 
-- [ ] 创建目录结构（`app/`、`scripts/`、`tests/`、`notebooks/`、`outputs/`、`postman/`、`docs/`）
-- [ ] `requirements.txt`（复用 11 + `python-dotenv` 如需）
-- [ ] `.env.example`（兼容 11：`MED_RAG_RETRIEVAL_MODE`、`STAGE11_HOST`/`PORT`/`LOG_DIR`/`SESSION_*` 等；可加 `STAGE12_*` 别名）+ dotenv 加载
-- [ ] `bootstrap`：挂 11 目录使 `import app` 指向 **11 的 app 包**（或明确包别名策略）；注意与上游 `src/config` 撞名
-- [ ] `main.py`：创建 FastAPI；**include 11 的 health/qa router**；预留 sessions/stats/documents tags
-- [ ] **单例策略写清**：`get_session_store` / `get_qa_logger` / `get_rag_service` 必须与 `/qa` 同一进程实例
+- [x] 创建目录结构（`app/`、`scripts/`、`tests/`、`notebooks/`、`outputs/`、`postman/`、`docs/`）
+- [x] `requirements.txt`（复用 11 + `python-dotenv`）
+- [x] `.env.example`（兼容 11 + `STAGE12_*` 别名）+ dotenv 加载
+- [x] `bootstrap`：stage12 为 `app`；经 `bridge11` 挂载 11 的 health/qa 与 deps 单例
+- [x] `main.py`：FastAPI；include 11 health/qa；预留 sessions/stats/documents OpenAPI tags
+- [x] **单例策略**：`app.deps` → `bridge11.load_stage11()["deps"]`（与 `/qa` 同一 Store / Logger）
 - [x] **样本复制**：`chunks_sample.jsonl` → `Dataset/processed/`（2026-07-27；03 原文件保留）
-- [x] `dataset_paths`：`CHUNKS_SAMPLE_JSONL` / `DOCUMENTS_SAMPLE_SQLITE` / `DOCUMENTS_FULL_SQLITE`
+- [x] `dataset_paths`：`CHUNKS_SAMPLE_JSONL` / `DOCUMENTS_*_SQLITE`
 - [x] `06 resolve_chunks_path("sample")` 优先 Dataset
-- [ ] `scripts/build_documents_index.py --mode sample|full`（批提交 + `progress` 断点；`--batch-size` / `--resume` / `--status`）
-- [ ] 确认 `Dataset/documents/README.md` / 打包清单已对齐字段与逻辑分片策略
-- [ ] `scripts/run_api.py` 可启动
-- [ ] Notebook **C0**：环境初始化、目录与依赖自检、`TestClient` 打 `/` 或 `/health`
-- [ ] Notebook **C0.5**：**构建并验收 `documents_sample.sqlite`**（调用同一 build 脚本或薄封装）；确认路径可读；可 import 11 `ResponseModel` / `MemorySessionStore` / `RagService` / `QACallLogger`
-- [ ] （可选并行）打开 **`api-ops-full.ipynb` · F0**：启动 / 续跑 **documents_full**，单元格轮询 `progress.json` 观察进度；或终端后台跑 CLI（不阻塞进阶段 1）
-- [ ] （阶段 5 前硬门槛）`documents_full` → `manifest.status=completed`（可本阶段过夜完成，或 1–4 期间后台完成）
+- [x] `scripts/build_documents_index.py --mode sample|full`（批提交 + `progress_{mode}` 断点）
+- [x] `Dataset/documents/README.md` 对齐逻辑分片与 `manifest_{mode}` 命名
+- [x] `scripts/run_api.py` 可启动
+- [x] Notebook **C0**（`api-ops-smoke.ipynb`）
+- [x] Notebook **C0.5**：已构建 **`documents_sample.sqlite`（1000 篇）**
+- [x] **`api-ops-full.ipynb` · F0**：全量建库完成 → `documents/full/manifest_full.status=completed`（**4,557,627** 篇 · ≈11.5 GB · ≈134 s）
+- [x] （原阶段 5 前硬门槛）`documents/full` → `manifest_full.status=completed` ✅ **2026-07-27**
 
-> **阶段 0 出门标准（进 1–4）**：骨架可起 + **sample 索引已落盘**。  
-> **全量索引**：推荐尽早在 F0/CLI 启动，**不**作为进阶段 1 的阻塞项。
+> **阶段 0 出门标准（进 1–4）**：✅ 骨架可起 + **sample 索引已落盘**。  
+> **全量索引**：✅ 已完成；阶段 5 仿真可直接挂 `documents/full`（阶段 1–4 仍用 sample）。
 
 **阶段 0 完成说明**
 
-> （预留）搭好骨架；bootstrap 挂 11；chunks_sample 已复制；**smoke C0.5 产出 documents_sample**；full 已启动或已完成（可断点）；C0/C0.5。
+> 搭好 12 骨架：`bootstrap` + `bridge11` 复用 11 的 `/health` `/qa` 与 deps 单例；`.env.example` + dotenv；`run_api` 可起。  
+> **C0.5** 产出 `Dataset/documents/sample/documents_sample.sqlite`（1000 篇）及同目录 `manifest_sample.json`。  
+> **F0** 已完成：`Dataset/documents/full/documents_full.sqlite`（**4,557,627** 篇）+ `manifest_full.json`（`status=completed`）。形态为 **逻辑分片单库**（批 upsert + `progress_full.json` 断点），**无** BM25 式多物理 shard 文件。`tests/test_stage0_skeleton.py` 3 passed。
 
 **阶段 0 实现说明（代码路径 / 函数 / 方法）**
 
-> （预留 · 完成后按 09/11 写法回填：路径 / 函数 / 思路·输入·输出）
->
-> - `app/bootstrap.py` → …
-> - `app/config.py` → …
-> - `app/main.py` → …
-> - 根 `dataset_paths.py` 新增常量 → …
-> - `06/.../config.py`：`resolve_chunks_path` 优先 Dataset → …
-> - `scripts/build_documents_index.py` → 流式批 upsert、`progress.json` / `manifest.json` → …
-> - `nnotebooks/api-ops-smoke.ipynb` **C0 / C0.5**（**C0.5 = 建 sample 索引**）→ …
-> - `notebooks/api-ops-full.ipynb` **F0**（全量建库 + 进度可视化；可与 1–4 并行）→ …
-> - `Dataset/documents/documents_{sample,full}.sqlite` → …
-> - `Dataset/README.md` → …
-> - `.env.example` → …
-> - `scripts/run_api.py` → …
+> - `app/bootstrap.py` → `bootstrap_paths()`：stage12 优先；挂 05–10 `src`
+> - `app/bridge11.py` → `load_stage11()` / `wire_stage11(app)`：临时路径切换加载 11 routers+deps；对齐 `STAGE11_LOG_DIR` 等 env
+> - `app/config.py` → `Stage12Config` + `load_dotenv`；兼容 `STAGE12_*` / `STAGE11_*` / `MED_RAG_*`
+> - `app/deps.py` → `get_session_store` / `get_qa_logger` / `get_rag_service` 转调 11 单例
+> - `app/main.py` → FastAPI `stage=12-0`；挂 health/qa；OpenAPI 预留 sessions/stats/documents
+> - `app/documents_index.py` → `build_documents_index(mode)` 批 upsert + `progress_{mode}.json` / `manifest_{mode}.json`
+> - `scripts/build_documents_index.py` → CLI（`--status` / `--resume` / `--batch-size`）
+> - `scripts/run_api.py` → uvicorn `app.main:app`
+> - `notebooks/api-ops-smoke.ipynb` **C0 / C0.5**
+> - `notebooks/api-ops-full.ipynb` **F0**
+> - 根 `dataset_paths.py` / `06/.../config.py`（此前已就绪）
+> - `.env.example` · `requirements.txt` · `docs/部署与API调用说明.md`（骨架）
+> - `tests/test_stage0_skeleton.py`
 
 ### 阶段 1：会话管理 API ☐
 
@@ -467,8 +467,7 @@ class ComponentHealth(BaseModel):
 
 ### 阶段 5：全量 Dataset 仿真（原 4.5 升级）☐
 
-> **时机**：阶段 4 + smoke C0–C4 完成，且 **`documents_full` 构建完成**（`manifest.status=completed`）。  
-> 若 full 仍在跑：继续后台 / F0 续跑；**不要**提前做本阶段 live full 验收。  
+> **时机**：阶段 4 + smoke C0–C4 完成之后（**`documents/full` 索引已齐**，2026-07-27）。  
 > **独立 notebook**：`api-ops-full.ipynb` = **F0 建库（可提前开）** + **F1+ 全量仿真（本阶段）**。  
 > **目标**：尽可能模拟打包运行——`retrieval_mode=full`、真 Ollama、会话/统计/问答 + **documents_full**；**不改 API 能力**；**不是** 09 质量复评。  
 > 须**重启**进程切 full（禁止每请求换库）。
@@ -573,7 +572,7 @@ class ComponentHealth(BaseModel):
 |------|------|------|-----|
 | 会话 / 统计 / 文档 API | Python | app/api/*.py（+ 必要时扩展 11 Store） | ✅ |
 | DocumentIn 等模型 | Python | app/schemas/ | ✅ |
-| 文档索引 sample/full | sqlite | **Dataset/documents/documents_*.sqlite** | ❌（README 写重建） |
+| 文档索引 sample/full | sqlite | **Dataset/documents/{sample,full}/** | ❌（README 写重建） |
 | 样本 chunks（从 03 **复制**） | JSONL | **Dataset/processed/chunks_sample.jsonl** | ❌（README 写来源） |
 | dataset_paths 扩展 | Python | 根 dataset_paths.py | ✅ |
 | .env.example | env | .env.example | ✅ |
@@ -614,11 +613,10 @@ class ComponentHealth(BaseModel):
 
 > 每完成一小阶段：**勾选 checklist → 填写完成/实现说明 → 补齐对应 notebook → 再进下一阶段**。
 
-1. **阶段 0** 骨架 + .env + smoke **C0 / C0.5（建 documents_sample）**；可选同步开 **api-ops-full F0** 或 CLI 后台建 full  
-2. **阶段 1–4** 用 **sample 索引** 写会话/统计/文档/测试（**不等待** full 完成）+ smoke C1–C4  
-3. （并行）documents_full 续跑至 `manifest.status=completed`  
-4. **阶段 5** full 索引已齐 → `api-ops-full` F1+ 全量仿真（检索 full + documents_full + Ollama）  
-5. **阶段 6** 交付收尾
+1. **阶段 0** ✅ 骨架 + sample 索引 + **full 索引已落盘**  
+2. **阶段 1–4** 用 **sample** 写会话/统计/文档/测试 + smoke C1–C4  
+3. **阶段 5** `api-ops-full` F1+ 全量仿真（检索 full + **已有** documents_full + Ollama）  
+4. **阶段 6** 交付收尾
 
 ---
 
@@ -635,3 +633,6 @@ class ComponentHealth(BaseModel):
 | 2026-07-27 | **定稿做全库文档索引**：`Dataset/documents`；阶段 0 建 sample+full；阶段 5 完整接入；打包/补丁计划见（打包）02schedule 与（未来优化） |
 | 2026-07-27 | **资产**：`chunks_sample.jsonl` 已复制进 Dataset；更新 `dataset_paths` / Dataset README / 缓存记录 / 根 README |
 | 2026-07-27 | **建库节奏**：smoke C0.5=样本索引（进 1–4 门槛）；api-ops-full **F0**=全量建库可视化（可与 1–4 并行/后台）；阶段 5 等 full completed 再仿真 |
+| 2026-07-27 | **阶段 0 实施完成**：骨架+bridge11；documents_sample 1000 篇；smoke C0/C0.5；full F0 入口就绪 |
+| 2026-07-27 | documents 改为 `sample/` 与 `full/` 分目录；smoke C0.5 默认不重建；F0 对准新路径 |
+| 2026-07-27 | **F0 全量文档索引完成**：`documents/full` · 4,557,627 篇 · manifest completed · 逻辑分片单库（非物理多 shard） |
