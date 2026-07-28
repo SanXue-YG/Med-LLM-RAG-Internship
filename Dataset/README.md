@@ -33,7 +33,7 @@ Dataset/
 | 04–06 | 建库 / 检索；06 现回查 **slim**（打包后改 documents sqlite） | sample 或 full |
 | 08–10 | 生成 / 约束 `from_mode("sample"\|"full")` | 开发 sample；抽检 full |
 | 11 | FastAPI `/qa` | 默认 sample；full 抽检 |
-| **12** | 会话/统计/**文档 API**；构建 documents sqlite | sample 契约 → 阶段 5 full |
+| **12** | 会话/统计/**文档 API**（0–4 ✅）；阶段 5 全量仿真待做 | sample 契约 → 阶段 5 full |
 
 ## 样本重建（chunks_sample）
 

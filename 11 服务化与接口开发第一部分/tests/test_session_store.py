@@ -56,6 +56,16 @@ def test_append_missing_raises_3002():
     assert ei.value.code == ErrorCode.SESSION_NOT_FOUND
 
 
+def test_delete_and_missing_3002():
+    store = MemorySessionStore(Stage11Config(session_ttl_seconds=3600, session_max_turns=10))
+    rec = store.create()
+    store.delete(rec.session_id)
+    assert store.get(rec.session_id) is None
+    with pytest.raises(AppException) as ei:
+        store.delete(rec.session_id)
+    assert ei.value.code == ErrorCode.SESSION_NOT_FOUND
+
+
 def test_format_session_prefix():
     turns = [
         SessionTurn(query="What is MI?", answer="Myocardial infarction ..."),

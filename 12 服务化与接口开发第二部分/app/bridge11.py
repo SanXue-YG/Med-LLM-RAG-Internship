@@ -74,9 +74,11 @@ def load_stage11(start: Path | None = None) -> dict[str, Any]:
     from app.api.qa import router as qa_router  # noqa: E402
     from app import config as s11_config  # noqa: E402
     from app import deps as s11_deps  # noqa: E402
-    from app.core.exceptions import register_exception_handlers  # noqa: E402
+    from app.core.error_codes import ErrorCode  # noqa: E402
+    from app.core.exceptions import AppException, register_exception_handlers  # noqa: E402
     from app.core.middleware import RequestContextMiddleware  # noqa: E402
-    from app.schemas.response import success_response  # noqa: E402
+    from app.probe import probe_full_dataset, probe_ollama  # noqa: E402
+    from app.schemas.response import PageModel, success_response  # noqa: E402
 
     _CACHE = {
         "deps": s11_deps,
@@ -86,6 +88,11 @@ def load_stage11(start: Path | None = None) -> dict[str, Any]:
         "register_exception_handlers": register_exception_handlers,
         "RequestContextMiddleware": RequestContextMiddleware,
         "success_response": success_response,
+        "PageModel": PageModel,
+        "AppException": AppException,
+        "ErrorCode": ErrorCode,
+        "probe_ollama": probe_ollama,
+        "probe_full_dataset": probe_full_dataset,
         "stage11": s11,
         "stage12": s12,
     }
@@ -109,11 +116,30 @@ def reset_stage11_cache() -> None:
     _CACHE = None
 
 
-def wire_stage11(app: Any) -> dict[str, Any]:
-    """Attach stage-11 middleware, exception handlers, health/qa routers."""
+def wire_stage11(app: Any, *, drop_session_get: bool = True) -> dict[str, Any]:
+    """Attach stage-11 middleware, exception handlers, health/qa routers.
+
+    When ``drop_session_get`` is True (stage-12 default), remove stage-11's
+    ``GET /api/v1/sessions/{id}`` summary so stage-12 can mount full SessionDetail.
+    """
+    from fastapi.routing import APIRoute
+
     s11 = load_stage11()
     app.add_middleware(s11["RequestContextMiddleware"])
     s11["register_exception_handlers"](app)
+
+    qa_router = s11["qa_router"]
+    if drop_session_get:
+        qa_router.routes = [
+            r
+            for r in qa_router.routes
+            if not (
+                isinstance(r, APIRoute)
+                and r.path == "/api/v1/sessions/{session_id}"
+                and "GET" in (r.methods or set())
+            )
+        ]
+
     app.include_router(s11["health_router"])
-    app.include_router(s11["qa_router"])
+    app.include_router(qa_router)
     return s11

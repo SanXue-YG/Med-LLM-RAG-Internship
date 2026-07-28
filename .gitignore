@@ -41,6 +41,13 @@ secrets/
 !/Dataset/documents/
 !/Dataset/documents/README.md
 
+# 运行时日志 / notebook 临时 fixture（勿提交）
+**/outputs/logs/*.log
+**/outputs/logs/*.jsonl
+!**/outputs/logs/.gitkeep
+**/notebooks/_c2_fixture_logs/
+**/notebooks/_c*_fixture_logs/
+
 # macOS
 .DS_Store
 ._*

@@ -78,7 +78,9 @@ def register_exception_handlers(app: FastAPI) -> None:
     ) -> JSONResponse:
         code = ErrorCode.INTERNAL_ERROR
         if exc.status_code == 404:
-            code = ErrorCode.DOC_NOT_FOUND
+            # Route miss / generic HTTP 404 — do NOT use DOC_NOT_FOUND (3001);
+            # 3001 is reserved for explicit document-missing AppException.
+            code = ErrorCode.PARAM_ERROR
         elif exc.status_code == 401:
             code = ErrorCode.AUTH_FAILED
         elif 400 <= exc.status_code < 500:

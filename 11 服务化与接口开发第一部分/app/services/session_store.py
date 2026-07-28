@@ -55,6 +55,8 @@ class SessionStore(Protocol):
 
     def append(self, session_id: str, turn: SessionTurn) -> SessionRecord: ...
 
+    def delete(self, session_id: str) -> None: ...
+
 
 class MemorySessionStore:
     """Process-local dict store with TTL + max_turns.
@@ -107,6 +109,18 @@ class MemorySessionStore:
                 rec.turns = rec.turns[-max_turns:]
             rec.updated_at = time.time()
             return rec
+
+    def delete(self, session_id: str) -> None:
+        """Remove a live session. Missing/expired → ``SESSION_NOT_FOUND`` (3002)."""
+        with self._lock:
+            rec = self._get_alive_unlocked(session_id)
+            if rec is None:
+                raise AppException(
+                    ErrorCode.SESSION_NOT_FOUND,
+                    message="session not found or expired",
+                    detail={"session_id": session_id},
+                )
+            self._sessions.pop(session_id, None)
 
     def _get_alive_unlocked(self, session_id: str) -> SessionRecord | None:
         rec = self._sessions.get(session_id)

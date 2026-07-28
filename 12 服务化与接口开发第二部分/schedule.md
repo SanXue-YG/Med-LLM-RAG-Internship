@@ -1,6 +1,6 @@
 # 12 服务化与接口开发第二部分 — 执行计划
 
-> **状态：🔄 待启动**
+> **状态：🔄 阶段 0–4 完成**（样本契约齐；**待阶段 5** 全量仿真 / 阶段 6 收尾）
 >
 > **本阶段范围（任务书）**：在 11 FastAPI 骨架之上，补齐 **会话管理 API**、**运营统计 API**、**文档管理 API**；完成 **测试 / OpenAPI / `.env` / 部署与调用示例**。
 >
@@ -343,127 +343,133 @@ class ComponentHealth(BaseModel):
 > - `.env.example` · `requirements.txt` · `docs/部署与API调用说明.md`（骨架）
 > - `tests/test_stage0_skeleton.py`
 
-### 阶段 1：会话管理 API ☐
+### 阶段 1：会话管理 API ✅
 
-- [ ] 扩展 Store：`delete(session_id)`（+ Protocol）；**不**新建第二套 dict
-- [ ] `POST /api/v1/sessions` → `store.create` → 返回 `session_id`
-- [ ] `GET /api/v1/sessions/{session_id}` → `require`；返回 `SessionDetail`（完整 `turns`，可替代/增强 11 摘要版）；过期/不存在 → **3002**
-- [ ] `DELETE /api/v1/sessions/{session_id}` → `delete`；幂等策略写清（推荐：不存在仍 **3002**，与 GET 一致）
-- [ ] 与 `/qa` 联调：同一 `session_id` 两轮后 `turn_count=2`（**一轮 = 一条 SessionTurn**，非 user/assistant 各一条）
-- [ ] 文档写清：QA 路径对无效 id **自动新建** ≠ GET/DELETE 的 3002
-- [ ] 单元测试：create / get / delete / TTL；与 mock `/qa` 联调 append
-- [ ] Notebook **C1**：创建会话 →（mock）`/qa` 两轮 → GET 见 2 turns → DELETE → 再 GET 见 `3002`
+- [x] 扩展 Store：`delete(session_id)`（+ Protocol）；**不**新建第二套 dict
+- [x] `POST /api/v1/sessions` → `store.create` → 返回 `session_id`
+- [x] `GET /api/v1/sessions/{session_id}` → `require`；返回 `SessionDetail`（完整 `turns`）；过期/不存在 → **3002**
+- [x] `DELETE /api/v1/sessions/{session_id}` → `delete`；不存在仍 **3002**（与 GET 一致）
+- [x] 与 `/qa` 联调：同一 `session_id` 两轮后 `turn_count=2`（一轮 = 一条 SessionTurn）
+- [x] 文档写清：QA 路径对无效 id **自动新建** ≠ GET/DELETE 的 3002
+- [x] 单元测试：create / get / delete；与 mock `/qa` 联调 append；`tests/test_sessions.py`
+- [x] Notebook **C1**（`api-ops-smoke.ipynb`）
 
 **阶段 1 完成说明**
 
-> （预留）通俗说明：会话从「带个 session_id」升级为可 **开桌 / 查历史 / 撤桌**；`/qa` 自动 `append` 一轮 turn；多轮上下文延续 11 MVP（Store + query 前缀）。
+> 会话从「带个 session_id」升级为可 **开桌 / 查完整历史 / 撤桌**。  
+> `/qa` 仍自动 `append` 一轮 turn，并与 sessions **共用** 11 `MemorySessionStore` 单例。  
+> GET 返回完整 `answer`（替代 11 的 `answer_preview` 摘要）；挂载前从 11 `qa_router` 去掉旧 GET，避免 `_IncludedRouter` 抢路由。
 
 **阶段 1 实现说明（代码路径 / 函数 / 方法）**
 
-> （预留）
->
-> - 11 `session_store.py`：`MemorySessionStore.delete` / Protocol 扩展 → …
-> - `app/api/sessions.py`（或 12 路由包装 11 store）→ …
-> - `app/schemas/session.py`：`SessionDetail` / `SessionTurnOut` → …
-> - 与 `/qa` 共用 `deps.get_session_store()` → …
-> - `tests/test_sessions.py` → …
-> - `nnotebooks/api-ops-smoke.ipynb` **C1** → …
+> - 11 `app/services/session_store.py`：`SessionStore.delete` / `MemorySessionStore.delete` → 缺失/过期抛 `3002`
+> - `app/schemas/session.py`：`SessionCreateResponse` / `SessionTurnOut` / `SessionDetail` / `SessionDeleteResponse`
+> - `app/services/session_service.py`：`epoch_to_iso` / `record_to_detail`
+> - `app/api/sessions.py`：`POST/GET/DELETE /api/v1/sessions…`；`Depends(get_session_store)`
+> - `app/bridge11.py`：`wire_stage11(..., drop_session_get=True)` 去掉 11 摘要 GET
+> - `app/main.py`：`include_router(sessions_router)`；`stage=12-1`
+> - `tests/test_sessions.py`；11 `tests/test_session_store.py` 增补 delete
+> - `notebooks/api-ops-smoke.ipynb` **C1**
+> - `docs/部署与API调用说明.md` 会话表
 
-### 阶段 2：运营统计 API ☐
+### 阶段 2：运营统计 API ✅
 
-- [ ] `stats_service`：解析 **与问答相同路径** 的 `qa_calls.jsonl`（允许注入 path 便于单测 fixture）
-- [ ] `GET /api/v1/stats/qa`：次数 / 平均耗时（ms→秒）/ 成功率
-- [ ] `GET /api/v1/stats/index`：
-  - [ ] `chunk_count`：Chroma collection count（随 `retrieval_mode` sample/full）
-  - [ ] `index_size_bytes`：persist 目录大小
-  - [ ] `document_count`：当前模式 documents sqlite 的 `COUNT(*)`（sample 或 full；**勿填 chunk 数**）
-  - [ ] （可选）BM25 片数
-  - [ ] `incremental_update_count=0` + `note`
-- [ ] `GET /api/v1/stats/health`：
-  - [ ] LLM：复用 `probe_ollama`
-  - [ ] 向量库：persist 可访问 + count / `probe_full_dataset` 轻量子集
-  - [ ] 数据库：固定 `skipped` + 说明（JSONL 日志非 DB）
-  - [ ] API：自身 ok
-- [ ] 单元测试：fixture JSONL 聚合；空文件边界
-- [ ] Notebook **C2**：fixture 或实写若干 JSONL → 展示三个 stats 返回结构
+- [x] `stats_service`：解析 **与问答相同路径** 的 `qa_calls.jsonl`（允许注入 path 便于单测 fixture）
+- [x] `GET /api/v1/stats/qa`：次数 / 平均耗时（ms→秒）/ 成功率
+- [x] `GET /api/v1/stats/index`：
+  - [x] `chunk_count`：Chroma collection count（随 `retrieval_mode` sample/full）
+  - [x] `index_size_bytes`：persist 目录大小
+  - [x] `document_count`：当前模式 documents sqlite 的 `COUNT(*)`（sample 或 full；**勿填 chunk 数**）
+  - [x] （可选）BM25 片数（full `manifest.num_shards`）
+  - [x] `incremental_update_count=0` + `note`
+- [x] `GET /api/v1/stats/health`：
+  - [x] LLM：复用 `probe_ollama`
+  - [x] 向量库：persist 可访问 + count；full 时附 `probe_full_dataset` 子集
+  - [x] 数据库：固定 `skipped` + 说明（JSONL 日志非 DB）
+  - [x] API：自身 ok
+- [x] 单元测试：fixture JSONL 聚合；空文件边界
+- [x] Notebook **C2**：fixture JSONL → 展示三个 stats 返回结构
 
 **阶段 2 完成说明**
 
-> （预留）通俗说明：把 11 的调用流水与探针「接口化」；无独立 DB 时健康项明确 `skipped`；索引指标区分 chunk vs 文档篇数。
+> 把 11 的 `qa_calls.jsonl` 与 `probe_ollama`「接口化」为三个只读 stats 端点。  
+> 无独立 DB → `database=skipped`；`document_count`（篇）与 `chunk_count`（块）严格分开。  
+> `/stats/qa` 读与 `/qa` 相同的 logger 路径；单测 / C2 可注入 fixture path。
 
 **阶段 2 实现说明（代码路径 / 函数 / 方法）**
 
-> （预留）
->
-> - `app/api/stats.py` → …
-> - `app/schemas/stats.py` → …
+> - `app/schemas/stats.py`：`QAStats` / `IndexStats` / `ComponentHealth` / `HealthStats`
 > - `app/services/stats_service.py`
->   - `aggregate_qa_stats(path) -> QAStats`：思路 / 输入 / 输出 …
->   - `collect_index_stats(mode) -> IndexStats` → …
->   - `collect_component_health() -> list[ComponentHealth]` → …
-> - 复用 11 `probe_ollama` /（可选）`probe_full_dataset` → …
-> - `tests/test_stats.py` → …
-> - `nnotebooks/api-ops-smoke.ipynb` **C2** → …
+>   - `aggregate_qa_stats(path) -> QAStats`：按行解析 JSONL；`status==ok` 计成功；`latency_ms/1000`→秒；空/缺文件全 0
+>   - `collect_index_stats(mode) -> IndexStats`：Chroma count + persist 目录大小 + `documents_index.status` 行数；full 可选 `bm25_num_shards`
+>   - `collect_component_health() -> HealthStats`：llm / vector_db / database(skipped) / api
+> - `app/api/stats.py`：`GET /api/v1/stats/{qa,index,health}`；`Depends(get_qa_logger)` 共享路径
+> - `app/bridge11.py`：缓存导出 `probe_ollama` / `probe_full_dataset`
+> - `app/main.py`：`include_router(stats_router)`；`stage=12-2`；`stats=qa+index+health`
+> - `tests/test_stats.py`：fixture 聚合 + 空文件 + 三端点
+> - `notebooks/api-ops-smoke.ipynb` **C2**
+> - `docs/部署与API调用说明.md` 统计表
 
-### 阶段 3：文档管理 API ☐
+### 阶段 3：文档管理 API ✅
 
-- [ ] `DocumentIn` / 响应模型；**`doc_id` = `pmcid`**
-- [ ] `DocumentStore`：读 **`DOCUMENTS_SAMPLE_SQLITE`**（开发）/ 可配置 full；按 pmcid 查询与分页
-- [ ] `GET /api/v1/documents`：分页（`PageModel`）；可选 `q` 标题关键词
-- [ ] `GET /api/v1/documents/{doc_id}`：命中返回；未命中 **`AppException(3001)`**（非裸 HTTP 404）
-- [ ] 收紧 11 通用 HTTP 404→3001 映射（路由未命中改用中性码或原样 message，避免污染文档语义）
-- [ ] 单元测试：列表分页、按 id、不存在 → 3001
-- [ ] Notebook **C3**：分页列表 → 已知 pmcid → 未知 id 得 `3001`
+- [x] `DocumentIn` / 响应模型；**`doc_id` = `pmcid`**
+- [x] `DocumentStore`：读 **`DOCUMENTS_SAMPLE_SQLITE`**（开发）/ 可配置 full；按 pmcid 查询与分页
+- [x] `GET /api/v1/documents`：分页（`PageModel`）；可选 `q` 标题关键词
+- [x] `GET /api/v1/documents/{doc_id}`：命中返回；未命中 **`AppException(3001)`**（非裸 HTTP 404）
+- [x] 收紧 11 通用 HTTP 404→3001 映射（路由未命中改用 **1001** + 原样 message，避免污染文档语义）
+- [x] 单元测试：列表分页、按 id、不存在 → 3001
+- [x] Notebook **C3**：分页列表 → 已知 pmcid → 未知 id 得 `3001`
 
 **阶段 3 完成说明**
 
-> （预留）通俗说明：文献元数据**只读菜单册**；MVP 样本索引；`3001` 真正用于「文档不存在」。
+> 文献元数据做成**只读菜单册**：sample sqlite 开发默认，full 由 `STAGE12_DOCUMENTS_MODE` 切换。  
+> `doc_id` 即 `pmcid`；缺失文档显式抛 **3001**。  
+> 11 通用 HTTP 404 不再映射 3001（改 1001），避免「路由不存在」污染「文档不存在」。
 
 **阶段 3 实现说明（代码路径 / 函数 / 方法）**
 
-> （预留）
->
-> - `app/api/documents.py` → …
-> - `app/schemas/document.py` → …
-> - `app/services/document_store.py`
->   - `list_documents(page, page_size, q=None)` → …
->   - `get_document(doc_id)` → …
-> - `DocumentStore` + `DOCUMENTS_SAMPLE_SQLITE` / `DOCUMENTS_FULL_SQLITE` → …
-> - 异常 handler 修订（11 或 12 覆盖）→ …
-> - `tests/test_documents.py` → …
-> - `nnotebooks/api-ops-smoke.ipynb` **C3** → …
+> - `app/schemas/document.py`：`DocumentIn`（`doc_id`/`title`/`abstract`/`journal`/`pub_date`/`pmid`/`pub_year`）
+> - `app/services/document_store.py`：`DocumentStore.get_document` / `list_documents`（只读 sqlite + LIKE 标题）
+> - `app/api/documents.py`：`GET /api/v1/documents`（`PageModel`）· `GET /api/v1/documents/{doc_id}` → 缺失 `AppException(DOC_NOT_FOUND)`
+> - `app/deps.py`：`get_document_store()`（按 `documents_mode`）
+> - `app/bridge11.py`：导出 `AppException` / `ErrorCode` / `PageModel`
+> - 11 `app/core/exceptions.py`：HTTP 404 → `PARAM_ERROR(1001)`（不再 `DOC_NOT_FOUND`）
+> - `app/main.py`：`include_router(documents_router)`；`stage=12-3`
+> - `tests/test_documents.py`；`notebooks/api-ops-smoke.ipynb` **C3**
+> - `docs/部署与API调用说明.md` 文档表
 
-### 阶段 4：测试、OpenAPI、部署文档 ☐
+### 阶段 4：测试、OpenAPI、部署文档 ✅
 
 > `.env.example` 与基础加载已在阶段 0；本阶段做 **变量清单文档化**、契约补强与集成验收。  
 > Notebook **C4**（`api-ops-smoke.ipynb`）= **样本**全链路冒烟。  
 > **本阶段结束后**再进入阶段 5 全量仿真（独立 `api-ops-full.ipynb`）。
 
-- [ ] 单元测试覆盖新端点；集成测试用 `TestClient` 串会话→问答→统计→文档
-- [ ] Postman Collection：导入可跑通主要端点（含环境变量）
-- [ ] OpenAPI：补充 summary/description/example；确认 `/docs`、`/redoc` 可用；tags 分组齐全
-- [ ] 环境变量：核对 `.env.example` 与加载逻辑；部署文档列出全部变量
-- [ ] `docs/部署与API调用说明.md`：
-  - [ ] 本地启动步骤（conda、Ollama、`run_api.py`）
-  - [ ] curl / httpx 调用示例
-  - [ ] Postman 使用说明
-  - [ ] 与 11 差异 / 升级说明
-  - [ ] 说明：日常 sample；全量见阶段 5 / `api-ops-full.ipynb`
-- [ ] Notebook **C4**：端到端联调（**sample**；创建会话 → `/qa` → 查历史 → stats → documents）+ `/docs` 分组目视确认
+- [x] 单元测试覆盖新端点；集成测试用 `TestClient` 串会话→问答→统计→文档
+- [x] Postman Collection：导入可跑通主要端点（含环境变量）
+- [x] OpenAPI：补充 summary/description/example；确认 `/docs`、`/redoc` 可用；tags 分组齐全
+- [x] 环境变量：核对 `.env.example` 与加载逻辑；部署文档列出全部变量
+- [x] `docs/部署与API调用说明.md`：
+  - [x] 本地启动步骤（conda、Ollama、`run_api.py`）
+  - [x] curl / httpx 调用示例
+  - [x] Postman 使用说明
+  - [x] 与 11 差异 / 升级说明
+  - [x] 说明：日常 sample；全量见阶段 5 / `api-ops-full.ipynb`
+- [x] Notebook **C4**：端到端联调（**sample**；创建会话 → `/qa` → 查历史 → stats → documents）+ `/docs` 分组目视确认
 
 **阶段 4 完成说明**
 
-> （预留）通俗说明：样本路径上验收与对接配套齐；C4 证明新 API 与 11 问答能串在一条链上。全量仿真留给阶段 5。
+> 样本路径上验收与对接配套齐：集成测试串通会话→问答→统计→文档；Postman / `/docs` / 部署说明可直接给对接方。  
+> C4 证明 12 新 API 与 11 问答能串在一条链上。全量仿真留给阶段 5。
 
 **阶段 4 实现说明（代码路径 / 函数 / 方法）**
 
-> （预留）
->
-> - `tests/test_integration_api.py` → …
-> - `postman/MedRAG_API.postman_collection.json` → …
-> - `docs/部署与API调用说明.md` → …
-> - OpenAPI 注解落点 → …
-> - `nnotebooks/api-ops-smoke.ipynb` **C4** → …
+> - `tests/test_integration_api.py`：mock `/qa` 全链路 + OpenAPI tags/`/docs`/`/redoc`
+> - `postman/MedRAG_API.postman_collection.json`：`baseUrl` / `sessionId` / `docId`
+> - `docs/部署与API调用说明.md`：启动、变量表、curl/httpx、Postman、与 11 差异、full 预告
+> - OpenAPI：`app/main.py` description + tags；`sessions`/`stats`/`documents` summary/responses
+> - `.env.example`：补全注释与变量清单
+> - `app/main.py`：`stage=12-4`
+> - `notebooks/api-ops-smoke.ipynb` **C4**
 
 ### 阶段 5：全量 Dataset 仿真（原 4.5 升级）☐
 
@@ -636,3 +642,4 @@ class ComponentHealth(BaseModel):
 | 2026-07-27 | **阶段 0 实施完成**：骨架+bridge11；documents_sample 1000 篇；smoke C0/C0.5；full F0 入口就绪 |
 | 2026-07-27 | documents 改为 `sample/` 与 `full/` 分目录；smoke C0.5 默认不重建；F0 对准新路径 |
 | 2026-07-27 | **F0 全量文档索引完成**：`documents/full` · 4,557,627 篇 · manifest completed · 逻辑分片单库（非物理多 shard） |
+| 2026-07-28 | **阶段 1 实施完成**：sessions CRUD + Store.delete；smoke C1；与 /qa 同单例 |

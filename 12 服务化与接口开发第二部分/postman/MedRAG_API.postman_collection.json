@@ -1,0 +1,162 @@
+{
+  "info": {
+    "name": "Medical RAG API (Stage 12 Ops)",
+    "description": "Sessions / stats / documents + stage-11 QA & health.\n\nImport into Postman → set `baseUrl` (default http://127.0.0.1:8000).\nRun **Create session** before QA requests that need `sessionId`.\n\nBusiness codes: 3001=doc missing, 3002=session missing; QA auto-creates on bad id.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://127.0.0.1:8000" },
+    { "key": "sessionId", "value": "" },
+    { "key": "docId", "value": "PMC176545" }
+  ],
+  "item": [
+    {
+      "name": "meta",
+      "item": [
+        {
+          "name": "GET /",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/"
+          }
+        },
+        {
+          "name": "GET /health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/health"
+          }
+        },
+        {
+          "name": "GET /docs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/docs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "sessions",
+      "item": [
+        {
+          "name": "POST /api/v1/sessions",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const j = pm.response.json();",
+                  "if (j.data && j.data.session_id) {",
+                  "  pm.collectionVariables.set('sessionId', j.data.session_id);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/sessions"
+          }
+        },
+        {
+          "name": "GET /api/v1/sessions/{sessionId}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/sessions/{{sessionId}}"
+          }
+        },
+        {
+          "name": "DELETE /api/v1/sessions/{sessionId}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/sessions/{{sessionId}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "qa",
+      "item": [
+        {
+          "name": "POST /api/v1/qa",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"What is the role of Plasmodium falciparum transcriptome?\",\n  \"session_id\": \"{{sessionId}}\"\n}"
+            },
+            "url": "{{baseUrl}}/api/v1/qa"
+          }
+        }
+      ]
+    },
+    {
+      "name": "stats",
+      "item": [
+        {
+          "name": "GET /api/v1/stats/qa",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/stats/qa"
+          }
+        },
+        {
+          "name": "GET /api/v1/stats/index",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/stats/index"
+          }
+        },
+        {
+          "name": "GET /api/v1/stats/health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/stats/health"
+          }
+        }
+      ]
+    },
+    {
+      "name": "documents",
+      "item": [
+        {
+          "name": "GET /api/v1/documents",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/documents?page=1&page_size=5&q=",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "documents"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "page_size", "value": "5" },
+                { "key": "q", "value": "", "description": "optional title keyword" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /api/v1/documents/{docId}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/v1/documents/{{docId}}"
+          }
+        }
+      ]
+    }
+  ]
+}
