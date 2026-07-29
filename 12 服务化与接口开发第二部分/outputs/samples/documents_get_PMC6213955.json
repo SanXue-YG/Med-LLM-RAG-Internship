@@ -1,0 +1,13 @@
+{
+  "source": "full_ops_smoke.json documents.get.hit",
+  "endpoint": "GET /api/v1/documents/{doc_id}",
+  "data": {
+    "doc_id": "PMC6213955",
+    "title": "Metabolic Effects of Metformin in the Failing Heart",
+    "abstract": "Accumulating evidence shows that metformin is an insulin-sensitizing antidiabetic drug widely used in the treatment of type 2 diabetes mellitus (T2DM), which can exert favorable effects on cardiovascular risk and may be safely used in patients with heart failure (HF), and even able to reduce the incidence of HF and to reduce HF mortality. In failing hearts, metformin improves myocardial energy metabolic status through the activation of AMP (adenosine monophosphate)-activated protein kinase (AMPK) and the regulation of lipid and glucose metabolism. By increasing nitric oxide (NO) bioavailability, limiting interstitial fibrosis, reducing the deposition of advanced glycation end-products (AGEs), and inhibiting myocardial cell apoptosis metformin reduces cardiac remodeling and hypertrophy, and thereby preserves left ventricular systolic and diastolic functions. While a lot of preclinical and clinical studies showed the cardiovascular safety of metformin therapy in diabetic patients and HF, to confirm observed benefits, the specific large-scale trials configured for HF development in diabetic patients as a primary endpoints are necessary.",
+    "journal": "International Journal of Molecular Sciences",
+    "pub_date": "2018-09-21",
+    "pmid": "30248910",
+    "pub_year": 2018
+  }
+}

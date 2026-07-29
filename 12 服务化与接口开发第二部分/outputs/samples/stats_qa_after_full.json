@@ -1,0 +1,12 @@
+{
+  "source": "full_ops_smoke.json stats_qa_after (2026-07-29 live)",
+  "endpoint": "GET /api/v1/stats/qa",
+  "note": "after 2 sync QA + 1 pseudo-stream on same session",
+  "data": {
+    "total_calls": 3,
+    "success_count": 3,
+    "failure_count": 0,
+    "success_rate": 1.0,
+    "avg_latency_seconds": 211.972233
+  }
+}

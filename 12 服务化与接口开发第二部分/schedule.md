@@ -1,6 +1,6 @@
 # 12 服务化与接口开发第二部分 — 执行计划
 
-> **状态：🔄 阶段 0–4 完成**（样本契约齐；**待阶段 5** 全量仿真 / 阶段 6 收尾）
+> **状态：✅ 阶段 0–6 全部完成**（样本契约 + 全量仿真 + 交付收尾 · 2026-07-29）
 >
 > **本阶段范围（任务书）**：在 11 FastAPI 骨架之上，补齐 **会话管理 API**、**运营统计 API**、**文档管理 API**；完成 **测试 / OpenAPI / `.env` / 部署与调用示例**。
 >
@@ -471,7 +471,7 @@ class ComponentHealth(BaseModel):
 > - `app/main.py`：`stage=12-4`
 > - `notebooks/api-ops-smoke.ipynb` **C4**
 
-### 阶段 5：全量 Dataset 仿真（原 4.5 升级）☐
+### 阶段 5：全量 Dataset 仿真（原 4.5 升级）✅
 
 > **时机**：阶段 4 + smoke C0–C4 完成之后（**`documents/full` 索引已齐**，2026-07-27）。  
 > **独立 notebook**：`api-ops-full.ipynb` = **F0 建库（可提前开）** + **F1+ 全量仿真（本阶段）**。  
@@ -502,53 +502,56 @@ class ComponentHealth(BaseModel):
 | `/documents` | **走 documents_full**：list 分页；对 `/qa` 返回 pmcid **get 应 200** |
 | 耗时 / 日志 | 记录墙钟；专用 JSONL（如 `qa_calls_full_ops.jsonl`），避免与开发 sample 日志混淆 |
 
-- [ ] `api-ops-full.ipynb` **F0**（若阶段 0 未做完）：建库 / `--status` / 进度可视化；确认 `manifest.status=completed`
-- [ ] 同本 **F1+**：就绪自检 → 切 full/预热 → stats → sessions+qa 两轮 → stream → documents 对照 → 汇总导出
-- [ ] CLI `scripts/run_full_ops_smoke.py`（可被 notebook 调用或独立长跑）
-- [ ] 资源自检：复用/扩展 11 `probe_full_dataset` + documents_full manifest
-- [ ] 进程 `retrieval_mode=full`；预热 pipeline（Windows 路径/线程池坑 → 优先主线程，对齐 11）
-- [ ] `GET /stats/index|health|qa` 全量口径验收
-- [ ] 会话 + `POST /qa` **至少 1–2 条**熟悉 query + 同 session 第二轮
-- [ ] （建议）伪 SSE 一轮；确认 `/stats/qa` 计入
-- [ ] documents：**documents_full** list + qa pmcid get=200
-- [ ] 导出 `outputs/reports/full_ops_smoke*`（JSON / 可选图）
-- [ ] 部署文档补充「如何切换 full / 跑 api-ops-full（含 F0 建库）」
+- [x] `api-ops-full.ipynb` **F0**（若阶段 0 未做完）：建库 / `--status` / 进度可视化；确认 `manifest.status=completed`
+- [x] 同本 **F1+**：就绪自检 → 切 full/预热 → stats → sessions+qa 两轮 → stream → documents 对照 → 汇总导出
+- [x] CLI `scripts/run_full_ops_smoke.py`（可被 notebook 调用或独立长跑）
+- [x] 资源自检：复用/扩展 11 `probe_full_dataset` + documents_full manifest
+- [x] 进程 `retrieval_mode=full`；预热 pipeline（Windows 路径/线程池坑 → 优先主线程，对齐 11）
+- [x] `GET /stats/index|health|qa` 全量口径验收
+- [x] 会话 + `POST /qa` **至少 1–2 条**熟悉 query + 同 session 第二轮
+- [x] （建议）伪 SSE 一轮；确认 `/stats/qa` 计入
+- [x] documents：**documents_full** list + qa pmcid get=200
+- [x] 导出 `outputs/reports/full_ops_smoke*`（JSON / 可选图）
+- [x] 部署文档补充「如何切换 full / 跑 api-ops-full（含 F0 建库）」
 
 **阶段 5 完成说明**
 
-> （预留）大白话：用全库 + 真模型把 12 的会话/统计/问答（及文档对照）按接近上线的方式跑通；样本契约仍由 smoke 负责；full 本负责建库观察（F0）+ 生产路径仿真（F1+）。
+> 用全库 + 真模型把 12 的会话/统计/问答（及文档对照）按接近上线的方式跑通。  
+> 样本契约仍由 `api-ops-smoke` 负责；本阶段 = F0 建库观察（已齐）+ F1+ 生产路径仿真（`run_full_ops_smoke`）。  
+> 专用日志：`outputs/reports/qa_calls_full_ops.jsonl`（与 sample `outputs/logs` 隔离）。
 
 **阶段 5 实现说明（代码路径 / 函数 / 方法）**
 
-> （预留）
->
-> - `notebooks/api-ops-full.ipynb` **F0 / F1+** → …
-> - `scripts/build_documents_index.py --mode full`（F0 调用）→ …
-> - `scripts/run_full_ops_smoke.py` → …
-> - （可选）`app/full_ops_smoke.py` → …
-> - 产物：`outputs/reports/full_ops_smoke*` → …
+> - `app/full_ops_smoke.py`：`apply_full_env` / `probe_full_ops_environment` / `run_full_ops_smoke` / `render_report_figures`
+> - `scripts/run_full_ops_smoke.py`：`--check-only` · live CLI（须 `med-rag-verify`）
+> - `notebooks/api-ops-full.ipynb`：**F0**（已有）+ **F1-A/B/C**
+> - `scripts/build_documents_index.py --mode full`（F0）
+> - 产物：`outputs/reports/full_ops_smoke.json` · `full_ops_smoke_*.png` · `qa_calls_full_ops.jsonl`
+> - `app/main.py`：`stage=12-5`；`docs/部署与API调用说明.md` §9
 
-### 阶段 6：交付收尾 ☐
+### 阶段 6：交付收尾 ✅
 
 > 样本演示在 `api-ops-smoke`（C0–C4）；全量仿真在 `api-ops-full`（阶段 5）。本阶段做**打包与文档对齐**。
 
-- [ ] 复核 smoke C0–C4 与 `api-ops-full` 与代码一致；必要时重跑保存输出
-- [ ] 导出一份 stats 样例到 `outputs/samples/`（可选）
-- [ ] 更新根目录 `README.md` 阶段 12 条目；确认 Dataset README 已含样本复制/重建说明
-- [ ] （可选）正式报告 `docs/服务化接口第二部分报告.md`（引用阶段 5 全量素材）
+- [x] 复核 smoke C0–C4 与 `api-ops-full` 与代码一致；必要时重跑保存输出
+- [x] 导出一份 stats 样例到 `outputs/samples/`（可选）
+- [x] 更新根目录 `README.md` 阶段 12 条目；确认 Dataset README 已含样本复制/重建说明
+- [x] 正式报告 `docs/服务化接口第二部分报告.md`（引用阶段 5 全量素材）
 
 **阶段 6 完成说明**
 
-> （预留）交付包对齐：README ✅、可选报告、样例输出、双 notebook 复核。
+> 2026-07-29：对照 `full_ops_smoke.json`（`ok: true`）完成交付收尾。  
+> 根 README / Dataset README 对齐；stats/documents 样例落 `outputs/samples/`；正式报告引用 qa1≈181s / qa2≈225s、documents get `PMC6213955`、`chunk_count=6107296`。  
+> `stage=12-6`。
 
 **阶段 6 实现说明（代码路径 / 函数 / 方法）**
 
-> （预留）
->
-> - 根目录 `README.md` 阶段 12 条目 → …
-> - `docs/服务化接口第二部分报告.md`（若写）→ …
-> - `outputs/samples/`（若导出）→ …
-> - `api-ops-smoke.ipynb` + `api-ops-full.ipynb` 运行记录复核 → …
+> - 根目录 `README.md` 阶段 12 条目 → ✅ 完成
+> - `docs/服务化接口第二部分报告.md` → 任务书对照 · API 一览 · §4 全量仿真数字
+> - `outputs/samples/` → `stats_{index,health,qa}_*.json` · `documents_get_PMC6213955.json` · README
+> - `api-ops-smoke.ipynb` + `api-ops-full.ipynb` → 与 `stage=12-6` / 报告引用一致
+> - `app/main.py`：`stage=12-6` · `delivery=complete`
+> - Dataset：[`documents/README.md`](../Dataset/documents/README.md) · [`Dataset/README.md`](../Dataset/README.md)（样本复制 / 重建说明已齐）
 
 ---
 
@@ -588,7 +591,8 @@ class ComponentHealth(BaseModel):
 | 样本 smoke notebook（C0–C4；C0.5 建 sample 索引） | .ipynb | notebooks/api-ops-smoke.ipynb | ✅ |
 | 全量 notebook（F0 建库可视化 + 阶段 5 仿真） | .ipynb | notebooks/api-ops-full.ipynb | ✅ |
 | 全量抽检素材 | JSON/图 | outputs/reports/full_ops_smoke* | ✅（小文件） |
-| OpenAPI | 自动 | /docs | — |
+| 正式报告 | Markdown | docs/服务化接口第二部分报告.md | ✅ |
+| stats 样例（full） | JSON | outputs/samples/ | ✅ |
 
 ---
 
@@ -622,7 +626,7 @@ class ComponentHealth(BaseModel):
 1. **阶段 0** ✅ 骨架 + sample 索引 + **full 索引已落盘**  
 2. **阶段 1–4** 用 **sample** 写会话/统计/文档/测试 + smoke C1–C4  
 3. **阶段 5** `api-ops-full` F1+ 全量仿真（检索 full + **已有** documents_full + Ollama）  
-4. **阶段 6** 交付收尾
+4. **阶段 6** ✅ 交付收尾（报告 + samples + README）
 
 ---
 
@@ -643,3 +647,6 @@ class ComponentHealth(BaseModel):
 | 2026-07-27 | documents 改为 `sample/` 与 `full/` 分目录；smoke C0.5 默认不重建；F0 对准新路径 |
 | 2026-07-27 | **F0 全量文档索引完成**：`documents/full` · 4,557,627 篇 · manifest completed · 逻辑分片单库（非物理多 shard） |
 | 2026-07-28 | **阶段 1 实施完成**：sessions CRUD + Store.delete；smoke C1；与 /qa 同单例 |
+| 2026-07-28 | **阶段 2–4 实施完成**：stats / documents API；集成测试 + Postman + 部署说明；smoke C2–C4；pytest 18 |
+| 2026-07-29 | **阶段 5 实施完成**：`run_full_ops_smoke` live full（`ok: true`；qa1≈181s / qa2≈225s；get `PMC6213955`） |
+| 2026-07-29 | **阶段 6 交付收尾**：`docs/服务化接口第二部分报告.md`；`outputs/samples/`；根 README 对齐；`stage=12-6` |

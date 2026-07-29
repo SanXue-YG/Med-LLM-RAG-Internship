@@ -22,7 +22,7 @@
 | 组装 / 生成 / 约束 | 07–08–10 | `ConstrainedGenerationPipeline` |
 | 评估/缓存/BM25 分片 | 09 | BM25 挂载 `bm25_full`；缓存可选 |
 | HTTP 问答 | 11 | `/qa` · `/qa/stream` · health/ready |
-| 会话 / 统计 / 文档 API | 12（🔄 0–4 完成 · 待阶段 5） | 文档读 `documents/full/documents_full.sqlite`（✅ 4,557,627 篇）；日常 API 入口为 12 |
+| 会话 / 统计 / 文档 API | 12（✅ 0–5 · 待阶段 6） | 文档读 `documents/full/documents_full.sqlite`；日常 API 入口为 12；全量仿真见 `run_full_ops_smoke` |
 
 [`01schedule.md`](01schedule.md) 中「Chunking / Embedding / Chroma / Retriever / Prompt」等 **已由 03–10 落地**；打包阶段 **默认不重做**，除非明确要 LangChain 换皮。
 

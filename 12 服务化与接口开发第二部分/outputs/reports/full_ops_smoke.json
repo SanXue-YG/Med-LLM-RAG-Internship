@@ -1,0 +1,328 @@
+{
+  "date": "2026-07-29",
+  "ts_utc": "2026-07-29T09:53:12Z",
+  "stage": "12-5-full-ops",
+  "query": "metformin cardiovascular effects",
+  "follow_up": "follow-up: what is the evidence strength?",
+  "top_k": 5,
+  "retrieval_mode": "full",
+  "documents_mode": "full",
+  "readiness": {
+    "ready": true,
+    "dataset_root": "D:\\谷歌\\Dataset",
+    "chroma_full_dir": "D:\\谷歌\\Dataset\\chroma\\chroma_db_full",
+    "chroma_full_exists": true,
+    "collection_expected": "pmc_oa_comm_full",
+    "collection_ok": null,
+    "collection_detail": null,
+    "bm25_full_dir": "D:\\谷歌\\Dataset\\bm25\\bm25_full",
+    "bm25_manifest_ok": true,
+    "bm25_num_shards": 62,
+    "bm25_total_chunks": 6107296,
+    "bm25_status": "completed",
+    "chunks_jsonl_exists": true,
+    "chunks_jsonl": "D:\\谷歌\\Dataset\\processed\\oa_comm_chunks.jsonl",
+    "slim_jsonl_exists": true,
+    "ollama": {
+      "ok": true,
+      "base_url": "http://127.0.0.1:11434",
+      "model_configured": "deepseek-r1:7b",
+      "model_present": true,
+      "models_sample": [
+        "deepseek-r1:7b"
+      ]
+    },
+    "hints": [
+      "Set RUN_LIVE_FULL=True only after ready=True",
+      "Expect multi-minute cold start (Chroma+BM25+reranker+Ollama)",
+      "Keep a single RagService singleton — do not from_mode(full) per request",
+      "Require documents/full manifest status=completed",
+      "Set MED_RAG_RETRIEVAL_MODE=full and STAGE12_DOCUMENTS_MODE=full then restart"
+    ],
+    "documents_full": {
+      "mode": "full",
+      "sqlite": "D:\\谷歌\\Dataset\\documents\\full\\documents_full.sqlite",
+      "sqlite_exists": true,
+      "row_count": 4557627,
+      "progress": {
+        "format": "documents_index_v1",
+        "mode": "full",
+        "schema_version": 1,
+        "batch_size": 50000,
+        "processed_lines": 4557627,
+        "valid_rows": 4557627,
+        "last_pmcid": "PMC12823268",
+        "matched_sample": null,
+        "sample_target": null,
+        "updated_at": "2026-07-27T08:16:08Z",
+        "source_path": "D:\\谷歌\\Dataset\\processed\\oa_comm_slim.jsonl",
+        "source_exists": true,
+        "source_size_bytes": 8896642264,
+        "source_mtime": 1779813364.2908616,
+        "phase": "completed",
+        "status": "completed",
+        "row_count": 4557627
+      },
+      "manifest": {
+        "format": "documents_index_v1",
+        "status": "completed",
+        "mode": "full",
+        "schema_version": 1,
+        "batch_size": 50000,
+        "row_count": 4557627,
+        "valid_rows_written": 4557627,
+        "processed_lines": 4557627,
+        "elapsed_sec": 133.589,
+        "built_at": "2026-07-27T08:16:08Z",
+        "builder": "app.documents_index.build_documents_index",
+        "sample_pmcid_target": null,
+        "source_path": "D:\\谷歌\\Dataset\\processed\\oa_comm_slim.jsonl",
+        "source_exists": true,
+        "source_size_bytes": 8896642264,
+        "source_mtime": 1779813364.2908616
+      },
+      "completed": true
+    },
+    "documents_full_ok": true
+  },
+  "warmup_sec": 1.79,
+  "stats": {
+    "ok": true,
+    "index": {
+      "document_count": 4557627,
+      "chunk_count": 6107296,
+      "index_size_bytes": 70816167211,
+      "incremental_update_count": 0,
+      "note": "incremental_update_count is MVP placeholder (always 0); document_count = documents sqlite rows; chunk_count = Chroma collection",
+      "retrieval_mode": "full",
+      "documents_mode": "full",
+      "bm25_num_shards": 62
+    },
+    "health_statuses": {
+      "llm": "ok",
+      "vector_db": "ok",
+      "database": "skipped",
+      "api": "ok"
+    },
+    "qa_before_lines": 0
+  },
+  "session_id": "ba460d53-5c7b-429c-89a9-3af957288068",
+  "qa_turn1": {
+    "path": "main_thread_rag_service",
+    "http_code": 0,
+    "wall_clock_sec": 181.26,
+    "session_id": "ba460d53-5c7b-429c-89a9-3af957288068",
+    "n_sources": 5,
+    "source_ids": [
+      "PMC6213955",
+      "PMC10932445",
+      "PMC9441545",
+      "PMC8951049",
+      "PMC9464374_chunk1"
+    ],
+    "pmcids": [
+      "PMC6213955",
+      "PMC10932445",
+      "PMC9441545",
+      "PMC8951049",
+      "PMC9464374"
+    ],
+    "citation_ok": true,
+    "format_ok": true,
+    "constraint_boundary_hit": false,
+    "pipeline_total_time_seconds": 181.26,
+    "stage_times": {
+      "assemble": 148.454,
+      "evidence_eval": 0.0,
+      "draft": 18.016,
+      "review": 0.0,
+      "final": 14.79,
+      "postprocess": 0.0
+    },
+    "retry_count": 0,
+    "repaired": false,
+    "answer_preview": "### Core Answer  \nMetformin has demonstrated potential cardiovascular benefits, particularly in reducing heart remodeling and hypertrophy. However, its effectiveness may vary depending on the patient's comorbidities and adherence to treatment.\n\n### Evidence Summary  \n1. **[1]** Metformin improves myocardial energy metabolism by activating AMPK and regulating lipid and glucose metabolism. It enhanc",
+    "answer_chars": 4003
+  },
+  "qa_turn2": {
+    "path": "main_thread_rag_service",
+    "http_code": 0,
+    "wall_clock_sec": 224.9,
+    "session_id": "ba460d53-5c7b-429c-89a9-3af957288068",
+    "n_sources": 5,
+    "source_ids": [
+      "PMC6400884",
+      "PMC6213955",
+      "PMC9549498",
+      "PMC8951049",
+      "PMC7687769"
+    ],
+    "pmcids": [
+      "PMC6400884",
+      "PMC6213955",
+      "PMC9549498",
+      "PMC8951049",
+      "PMC7687769"
+    ],
+    "citation_ok": true,
+    "format_ok": true,
+    "constraint_boundary_hit": false,
+    "pipeline_total_time_seconds": 224.898,
+    "stage_times": {
+      "assemble": 183.187,
+      "evidence_eval": 0.0,
+      "draft": 15.118,
+      "review": 0.0,
+      "final": 26.592,
+      "postprocess": 0.0
+    },
+    "retry_count": 1,
+    "repaired": true,
+    "answer_preview": "### 核心答案  \nMetformin在心血管疾病中的保护作用有较多的证据支持，尤其是其通过激活AMPK机制改善心肌能量代谢的能力。然而，关于其对特定类型的心房颤动（AF）和心室颤动（VF）的影响存在争议，并且临床试验结果并不一致。\n\n### 据实总结  \n1. **保护作用**  \n   - 文献[1]指出Metformin通过抑制Forkhead box O1 (FoxO1)路径减少心肌坏死和重构，具有潜在的保护机制。  \n   - 文献[2]强调Metformin改善心肌能量代谢，并通过激活AMPK、调节脂质和葡萄糖代谢增强心血管安全性。  \n   - 文献[3]总结了Metformin在多种心血管疾病中的临床证据，并强调其通过激活AMPK的保护机制。  \n\n2. **对心房颤动和心室颤动的影响**  \n   - 文献[5]详细描述了Metformin通过减少氧化应激、激活AMPK",
+    "answer_chars": 2126
+  },
+  "session_detail": {
+    "turn_count": 3,
+    "ok": true,
+    "path": "http_get_sessions"
+  },
+  "stream": {
+    "path": "main_thread_rag_service",
+    "http_code": 0,
+    "wall_clock_sec": 229.75,
+    "session_id": "ba460d53-5c7b-429c-89a9-3af957288068",
+    "n_sources": 3,
+    "source_ids": [
+      "PMC12822947_chunk2",
+      "PMC12822947_chunk0",
+      "PMC12822971"
+    ],
+    "pmcids": [
+      "PMC12822947",
+      "PMC12822947",
+      "PMC12822971"
+    ],
+    "citation_ok": true,
+    "format_ok": true,
+    "constraint_boundary_hit": false,
+    "pipeline_total_time_seconds": 229.748,
+    "stage_times": {
+      "assemble": 209.824,
+      "evidence_eval": 0.0,
+      "draft": 8.91,
+      "review": 0.0,
+      "final": 11.015,
+      "postprocess": 0.0
+    },
+    "retry_count": 0,
+    "repaired": false,
+    "answer_preview": "### 核心答案  \n基于提供的上下文内容，以下是对问题的回答：  \n\n1. **限制**：仅限于所提的上下文内容，不能添加外部知识或推测治疗建议。  \n2. **不支持结论**：如果证据不足，需明确指出不确定性。  \n3. **引用**：每个论点应引用相应的上下文段落。  \n\n### 证据总结  \n1. [1] 柠檬-甘草提取物通过改善心肌能量代谢和减少氧化应激，具有保护心血管的作用。  \n2. [2] Psidium guajava - citrus limon叶提取物通过调节代谢和抗氧化应激，减轻了葡萄糖诱导的心脏损伤。  \n3. [3] 脑微血点（CMB）与 dementia 的关联研究显示，CMB的存在、数量和位置与发病风险呈显著相关性。  \n\n### 参考文献  \n1. [文献1] 柠檬-甘草提取物对葡萄糖诱导心脏保护作用的研究。  \n2. [文献2] Psidium guaj",
+    "answer_chars": 1436,
+    "stream_mode": "pseudo",
+    "event_names": [
+      "meta",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "token",
+      "done"
+    ],
+    "n_token_events": 45,
+    "tokens_chars": 1436,
+    "has_meta": true,
+    "has_done": true,
+    "ok": true,
+    "note": "pseudo-SSE reconstructed on main thread after full answer (HTTP SSE skipped on WinError risk)"
+  },
+  "documents": {
+    "list_ok": true,
+    "list_total": 4557627,
+    "get_ok": true,
+    "get": {
+      "tried": [
+        "PMC6213955",
+        "PMC10932445",
+        "PMC9441545"
+      ],
+      "hit": {
+        "doc_id": "PMC6213955",
+        "title": "Metabolic Effects of Metformin in the Failing Heart",
+        "abstract": "Accumulating evidence shows that metformin is an insulin-sensitizing antidiabetic drug widely used in the treatment of type 2 diabetes mellitus (T2DM), which can exert favorable effects on cardiovascular risk and may be safely used in patients with heart failure (HF), and even able to reduce the incidence of HF and to reduce HF mortality. In failing hearts, metformin improves myocardial energy metabolic status through the activation of AMP (adenosine monophosphate)-activated protein kinase (AMPK) and the regulation of lipid and glucose metabolism. By increasing nitric oxide (NO) bioavailability, limiting interstitial fibrosis, reducing the deposition of advanced glycation end-products (AGEs), and inhibiting myocardial cell apoptosis metformin reduces cardiac remodeling and hypertrophy, and thereby preserves left ventricular systolic and diastolic functions. While a lot of preclinical and clinical studies showed the cardiovascular safety of metformin therapy in diabetic patients and HF, to confirm observed benefits, the specific large-scale trials configured for HF development in diabetic patients as a primary endpoints are necessary.",
+        "journal": "International Journal of Molecular Sciences",
+        "pub_date": "2018-09-21",
+        "pmid": "30248910",
+        "pub_year": 2018
+      }
+    },
+    "ok": true
+  },
+  "stats_qa_after": {
+    "total_calls": 3,
+    "success_count": 3,
+    "failure_count": 0,
+    "success_rate": 1.0,
+    "avg_latency_seconds": 211.972233
+  },
+  "ok": true,
+  "checks": {
+    "qa_two_turns": true,
+    "session_id_stable": true,
+    "stream_pseudo": true,
+    "stats_full_scale": true,
+    "turn_count_2": true,
+    "documents_full": true,
+    "stats_qa_grew": true
+  },
+  "error": null,
+  "artifacts": {
+    "json": "D:\\谷歌\\12 服务化与接口开发第二部分\\outputs\\reports\\full_ops_smoke.json",
+    "qa_log": "D:\\谷歌\\12 服务化与接口开发第二部分\\outputs\\reports\\qa_calls_full_ops.jsonl",
+    "stage_times_png": "D:\\谷歌\\12 服务化与接口开发第二部分\\outputs\\reports\\full_ops_smoke_stage_times.png",
+    "overview_png": "D:\\谷歌\\12 服务化与接口开发第二部分\\outputs\\reports\\full_ops_smoke_overview.png",
+    "constraints_png": "D:\\谷歌\\12 服务化与接口开发第二部分\\outputs\\reports\\full_ops_smoke_constraints.png",
+    "sse_timeline_png": "D:\\谷歌\\12 服务化与接口开发第二部分\\outputs\\reports\\full_ops_smoke_sse_timeline.png"
+  },
+  "windows_note": "Live /qa runs on main-thread RagService BEFORE any TestClient call. On Chinese/cloud Windows paths, opening TestClient first can poison subsequent transformers/pathlib loads (WinError 6714). Prefer notebook F1-B subprocess CLI if in-kernel still fails.",
+  "qa_log_lines": 3
+}

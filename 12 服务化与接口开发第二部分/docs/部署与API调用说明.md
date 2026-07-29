@@ -1,4 +1,4 @@
-# 部署与 API 调用说明（阶段 0–4）
+# 部署与 API 调用说明（阶段 0–5）
 
 > 日常开发走 **sample**。全量仿真见阶段 5 / [`api-ops-full.ipynb`](../notebooks/api-ops-full.ipynb)。
 
@@ -22,7 +22,7 @@ copy .env.example .env   # 按需改端口 / 模式
 python scripts/run_api.py --no-reload
 ```
 
-- 根：`GET http://127.0.0.1:8000/` → `stage=12-4`
+- 根：`GET http://127.0.0.1:8000/` → `stage=12-6`（含 `full_ops=smoke` · `delivery=complete`）
 - Swagger：`/docs` · ReDoc：`/redoc`
 - 健康：`GET /health`（阶段 11）
 
@@ -142,11 +142,49 @@ python scripts/build_documents_index.py --mode full --status
 - 样本：`Dataset/documents/sample/documents_sample.sqlite`（✅ 1000）
 - 全量：`Dataset/documents/full/documents_full.sqlite`（✅ 4,557,627）
 
-## 9. 切换 full（预告 · 阶段 5）
+## 9. 切换 full / 全量仿真（阶段 5）
+
+> 模式为**进程级**：改 env 后必须**重启** API；禁止在单次请求里切换库。
+
+### 9.1 环境变量
 
 ```powershell
-# .env
-MED_RAG_RETRIEVAL_MODE=full
-STAGE12_DOCUMENTS_MODE=full
-# 然后重启 API；用 api-ops-full.ipynb 做全量仿真（勿在每请求中途换库）
+conda activate med-rag-verify
+cd "12 服务化与接口开发第二部分"
+
+# 持久化：写入 .env
+# MED_RAG_RETRIEVAL_MODE=full
+# STAGE12_DOCUMENTS_MODE=full
+# STAGE12_LOG_DIR=...\outputs\reports   # 可选：与 sample 的 qa_calls 隔离
+
+# 或仅当前会话：
+$env:MED_RAG_RETRIEVAL_MODE = "full"
+$env:STAGE12_DOCUMENTS_MODE = "full"
 ```
+
+启动服务（全量建议关 reload）：
+
+```powershell
+python scripts/run_api.py --no-reload
+```
+
+### 9.2 文档索引 F0（若尚未建成）
+
+```powershell
+python scripts/build_documents_index.py --mode full --status
+# 未 completed 时：
+python scripts/build_documents_index.py --mode full --batch-size 50000
+```
+
+Notebook：[`api-ops-full.ipynb`](../notebooks/api-ops-full.ipynb) **F0**（进度可视化）。当前全库已 ✅ `4,557,627` 篇。
+
+### 9.3 全量 ops 仿真 F1+
+
+```powershell
+python scripts/run_full_ops_smoke.py --check-only   # 资源自检
+python scripts/run_full_ops_smoke.py                # live：会话两轮 /qa + stats + documents + 伪 SSE
+```
+
+产物：`outputs/reports/full_ops_smoke.json`、`full_ops_smoke_*.png`、`qa_calls_full_ops.jsonl`。
+
+Notebook：同文件 **F1-A/B/C**（`RUN_LIVE_FULL=True` 后跑 live）。

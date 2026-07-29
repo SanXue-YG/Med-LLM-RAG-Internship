@@ -45,7 +45,7 @@ def test_root_and_health(boot):
     assert resp.status_code == 200
     body = resp.json()
     assert body["code"] == 0
-    assert body["data"]["stage"] == "12-4"
+    assert body["data"]["stage"] == "12-6"
     assert body["data"]["singletons"] == "stage11-deps"
     assert body["data"]["sessions"] == "crud"
     assert body["data"]["stats"] == "qa+index+health"

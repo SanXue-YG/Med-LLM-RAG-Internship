@@ -1,0 +1,15 @@
+{
+  "source": "full_ops_smoke.json /stats.index (2026-07-29 live)",
+  "endpoint": "GET /api/v1/stats/index",
+  "mode": "full",
+  "data": {
+    "document_count": 4557627,
+    "chunk_count": 6107296,
+    "index_size_bytes": 70816167211,
+    "incremental_update_count": 0,
+    "note": "incremental_update_count is MVP placeholder (always 0); document_count = documents sqlite rows; chunk_count = Chroma collection",
+    "retrieval_mode": "full",
+    "documents_mode": "full",
+    "bm25_num_shards": 62
+  }
+}

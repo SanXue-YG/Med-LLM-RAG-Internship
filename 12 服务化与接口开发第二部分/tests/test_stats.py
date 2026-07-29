@@ -147,7 +147,7 @@ def test_stats_endpoints(boot, monkeypatch):
     assert comps["vector_db"]["status"] in {"ok", "degraded", "down"}
 
     root = client.get("/")
-    assert root.json()["data"]["stage"] == "12-4"
+    assert root.json()["data"]["stage"] == "12-6"
     assert root.json()["data"]["stats"] == "qa+index+health"
     assert root.json()["data"]["documents"] == "catalog"
 

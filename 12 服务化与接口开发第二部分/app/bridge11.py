@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 from typing import Any, Callable
 
-from app.bootstrap import bootstrap_paths, stage11_dir, stage12_dir
+from app.bootstrap import bootstrap_paths, safe_path, stage11_dir, stage12_dir
 
 _CACHE: dict[str, Any] | None = None
 
@@ -54,7 +54,7 @@ def load_stage11(start: Path | None = None) -> dict[str, Any]:
     for name in ("config", "bootstrap", "resources"):
         sys.modules.pop(name, None)
 
-    s11_root = str(s11.resolve())
+    s11_root = str(safe_path(s11))
     while s11_root in sys.path:
         sys.path.remove(s11_root)
     sys.path.insert(0, s11_root)
@@ -100,7 +100,7 @@ def load_stage11(start: Path | None = None) -> dict[str, Any]:
     _purge_app_modules()
     sys.modules.update(saved_s12)
 
-    s12_root = str(s12.resolve())
+    s12_root = str(safe_path(s12))
     while s12_root in sys.path:
         sys.path.remove(s12_root)
     sys.path.insert(0, s12_root)

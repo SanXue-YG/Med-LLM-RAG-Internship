@@ -49,7 +49,7 @@
 ├── 09 生成答案评估，缓存策略与批量处理/  # 阶段 9：评估 + 缓存 + 批量 + 全量 live 复评（✅ 0–7）
 ├── 10 强约束规则开发与幻觉抑制/  # 阶段 10：强约束提示 + 引用/格式校验 + 对抗评测（✅ 0–6）
 ├── 11 服务化与接口开发第一部分/  # 阶段 11：FastAPI + 同步/伪流式问答（✅ 已完成）
-├── 12 服务化与接口开发第二部分/  # 阶段 12：会话/统计/文档 API + 文档索引（🔄 0–4 完成 · 待阶段 5 全量仿真）
+├── 12 服务化与接口开发第二部分/  # 阶段 12：会话/统计/文档 API + 文档索引（✅ 0–6 完成）
 ├── （打包）LangChain_RAG/        # 产品打包（见 02schedule；01schedule 为旧草案）
 ├── （未来优化）打包后数据更新/    # 语料增补补丁 / 重建 runbook
 └── 笔记/                     # 个人学习笔记
@@ -72,7 +72,7 @@
 | **09** 生成答案评估，缓存策略与批量处理 | [`09 生成答案评估，缓存策略与批量处理/`](09%20生成答案评估，缓存策略与批量处理/) | ✅ **已完成** | [`任务.txt`](09%20生成答案评估，缓存策略与批量处理/任务.txt) | [`schedule.md`](09%20生成答案评估，缓存策略与批量处理/schedule.md) | [`answer-eval-cache-batch.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch.ipynb)（样本 0–6）· [`answer-eval-cache-batch-full.ipynb`](09%20生成答案评估，缓存策略与批量处理/notebooks/answer-eval-cache-batch-full.ipynb)（全量 7） | [`requirements.txt`](09%20生成答案评估，缓存策略与批量处理/requirements.txt) |
 | **10** 强约束规则开发与幻觉抑制 | [`10 强约束规则开发与幻觉抑制/`](10%20强约束规则开发与幻觉抑制/) | ✅ **已完成** | [`任务.txt`](10%20强约束规则开发与幻觉抑制/任务.txt) | [`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) | [`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb)（C0–C6） | [`requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt) |
 | **11** 服务化与接口开发第一部分 | [`11 服务化与接口开发第一部分/`](11%20服务化与接口开发第一部分/) | ✅ **已完成** | [`任务.txt`](11%20服务化与接口开发第一部分/任务.txt) | [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md) · [`服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md) | [`api-smoke.ipynb`](11%20服务化与接口开发第一部分/notebooks/api-smoke.ipynb)（C0–C4.5） | [`requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt) |
-| **12** 服务化与接口开发第二部分 | [`12 服务化与接口开发第二部分/`](12%20服务化与接口开发第二部分/) | 🔄 **0–4 完成**（待阶段 5） | [`任务.txt`](12%20服务化与接口开发第二部分/任务.txt) | [`schedule.md`](12%20服务化与接口开发第二部分/schedule.md) · [`部署说明`](12%20服务化与接口开发第二部分/docs/部署与API调用说明.md) | [`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb)（C0–C4）· [`api-ops-full.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-full.ipynb)（F0 ✅ · F1+ 待） | [`requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt) |
+| **12** 服务化与接口开发第二部分 | [`12 服务化与接口开发第二部分/`](12%20服务化与接口开发第二部分/) | ✅ **0–6 完成** | [`任务.txt`](12%20服务化与接口开发第二部分/任务.txt) | [`schedule.md`](12%20服务化与接口开发第二部分/schedule.md) · [`部署说明`](12%20服务化与接口开发第二部分/docs/部署与API调用说明.md) · [`报告`](12%20服务化与接口开发第二部分/docs/服务化接口第二部分报告.md) | [`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb)（C0–C4）· [`api-ops-full.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-full.ipynb)（F0+F1） | [`requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt) |
 | **打包** | [`（打包）LangChain_RAG/`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/) | 📋 规划 | — | [`02schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)（[`01schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/01schedule.md) 旧草案） | — | — |
 | **未来优化·数据更新** | [`（未来优化）打包后数据更新/`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/) | 📋 规划 | — | [`schedule.md`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/schedule.md) | — | — |
 
@@ -198,7 +198,7 @@
   - 报告：[`docs/服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md)（含前端接入契约 §3）
 - **详情**：[`11 .../schedule.md`](11%20服务化与接口开发第一部分/schedule.md) 阶段 0–5
 
-### 12 服务化与接口开发第二部分（🔄 0–4 完成 · 2026-07-28；待阶段 5）
+### 12 服务化与接口开发第二部分（✅ 0–6 完成 · 2026-07-29）
 
 - **定位**：在 11 之上补 **运营层 API**（会话 CRUD / 统计 / 文档菜单册），并建设篇级 `documents` 索引；与 `/qa` **共用** SessionStore 与 `qa_calls.jsonl`。
 - **主要任务**：
@@ -207,13 +207,16 @@
   - 阶段 2：`/stats/qa|index|health`（chunk ≠ document；`database=skipped`）
   - 阶段 3：`/documents` 分页与按 pmcid；缺失 → **3001**；收紧通用 404→1001
   - 阶段 4：集成测试 · Postman · OpenAPI · 部署文档 · smoke C4
-- **关键设计**：`wire_stage11` 挂载 11 health/qa；Depends 双端 override 防 Store 分裂；`doc_id`=`pmcid`。
-- **关键结果**：pytest **18 passed**（含集成链）；smoke **C0–C4**；`stage=12-4`。
+  - 阶段 5：全量仿真 `run_full_ops_smoke`（sessions/stats/documents + live full QA）
+  - 阶段 6：交付报告 · `outputs/samples/` · README 对齐
+- **关键设计**：`wire_stage11` 挂载 11 health/qa；Depends 双端 override 防 Store 分裂；`doc_id`=`pmcid`；Windows live QA 主线程（对齐 11）。
+- **关键结果**：pytest **18 passed**（sample）；smoke **C0–C4**；full live **ok**（qa1≈181s / qa2≈225s；documents get `PMC6213955`；`chunk_count=6,107,296`）；`stage=12-6`。
 - **主要产出**：
-  - 代码：`app/api/{sessions,stats,documents}.py` · `services/` · `bridge11.py`
+  - 代码：`app/api/{sessions,stats,documents}.py` · `services/` · `bridge11.py` · `full_ops_smoke.py`
   - 部署：[`docs/部署与API调用说明.md`](12%20服务化与接口开发第二部分/docs/部署与API调用说明.md) · [`.env.example`](12%20服务化与接口开发第二部分/.env.example) · [`postman/MedRAG_API.postman_collection.json`](12%20服务化与接口开发第二部分/postman/MedRAG_API.postman_collection.json)
-  - notebook：[`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb) · [`api-ops-full.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-full.ipynb)（F0 建库已完成）
-- **待办**：阶段 5 全量仿真（`retrieval_mode=full` + documents_full + Ollama）；阶段 6 交付收尾。
+  - 报告：[`docs/服务化接口第二部分报告.md`](12%20服务化与接口开发第二部分/docs/服务化接口第二部分报告.md)
+  - notebook：[`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb) · [`api-ops-full.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-full.ipynb)（F0+F1）
+  - 全量报告：`outputs/reports/full_ops_smoke.json` · `full_ops_smoke_*.png` · [`outputs/samples/`](12%20服务化与接口开发第二部分/outputs/samples/)
 - **详情**：[`12 .../schedule.md`](12%20服务化与接口开发第二部分/schedule.md)
 
 ---
@@ -574,26 +577,30 @@ top_chunks = result["reranked"]
 - **依赖**：[`requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt)（`fastapi` · `uvicorn[standard]`）
 - **后续注意**：前端按报告 §3 接线；CORS/鉴权待补；真流式需动 08 + 理顺 10 重试（见笔记 Q4）
 
-### 12 服务化与接口开发第二部分（🔄 0–4 完成 · 待阶段 5 · 2026-07-28）
+### 12 服务化与接口开发第二部分（✅ 0–6 完成 · 2026-07-29）
 
-> **交付物速查**：会话/统计/文档 API + 部署文档 + Postman + smoke C0–C4 已齐；全量仿真留给阶段 5。
+> **交付物速查**：会话/统计/文档 API + 部署文档 + Postman + smoke C0–C4 + **全量仿真 F1+** + **正式报告** 已齐。
 
 | 项 | 路径 / 命令 |
 |----|-------------|
-| 计划 | [`schedule.md`](12%20服务化与接口开发第二部分/schedule.md) 阶段 0–4 ✅ · 5–6 待 |
+| 计划 | [`schedule.md`](12%20服务化与接口开发第二部分/schedule.md) 阶段 0–6 ✅ |
 | 启动 API | `cd "12 服务化与接口开发第二部分"` → `copy .env.example .env` → `python scripts/run_api.py --no-reload` → [`/docs`](http://127.0.0.1:8000/docs) |
 | 主接口 | `POST/GET/DELETE /api/v1/sessions` · `GET /api/v1/stats/{qa,index,health}` · `GET /api/v1/documents` · `GET /api/v1/documents/{pmcid}` ·（经 bridge）`POST /api/v1/qa` |
-| Notebook | [`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb)（C0–C4）· [`api-ops-full.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-full.ipynb)（F0 ✅） |
+| Notebook | [`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb)（C0–C4）· [`api-ops-full.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-full.ipynb)（F0+F1） |
+| 全量仿真 CLI | `conda run -n med-rag-verify python scripts/run_full_ops_smoke.py`（先 `--check-only`） |
+| 全量报告 | [`outputs/reports/full_ops_smoke.json`](12%20服务化与接口开发第二部分/outputs/reports/) · `full_ops_smoke_*.png` |
+| stats 样例 | [`outputs/samples/`](12%20服务化与接口开发第二部分/outputs/samples/) |
+| 正式报告 | [`docs/服务化接口第二部分报告.md`](12%20服务化与接口开发第二部分/docs/服务化接口第二部分报告.md) |
 | Postman | [`postman/MedRAG_API.postman_collection.json`](12%20服务化与接口开发第二部分/postman/MedRAG_API.postman_collection.json) |
-| 部署说明 | [`docs/部署与API调用说明.md`](12%20服务化与接口开发第二部分/docs/部署与API调用说明.md) |
+| 部署说明 | [`docs/部署与API调用说明.md`](12%20服务化与接口开发第二部分/docs/部署与API调用说明.md) §9 full |
 | 文档索引 | [`Dataset/documents/`](Dataset/documents/README.md)（sample ✅ 1000 · full ✅ **4,557,627**） |
-| 测试 | `pytest`（12 目录）**18 passed** |
+| 测试 | `pytest`（12 目录）**18 passed**（sample）；全量以 CLI/notebook 验收 |
 | 笔记 | [`12笔记.md`](笔记/12笔记.md) |
 
 - **错误码要点**：会话缺失 **3002**；文档缺失 **3001**；路由未命中 **1001**；`POST /qa` 无效 session **自动新建**
-- **⚠️ 边界**：尚无阶段 5 全量 live 仿真；无鉴权 / 无产品前端；Dataset sqlite **不进 Git**
+- **⚠️ 边界**：Windows 中文路径下 live `/qa` 走主线程 RagService（对齐 11）；无鉴权 / 无产品前端；Dataset sqlite **不进 Git**
 - **依赖**：[`requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt)（相对 11 新增 **`python-dotenv`**）
-- **后续**：阶段 5 `api-ops-full` F1+；打包见 [`（打包）02schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)
+- **后续**：打包见 [`（打包）02schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)
 
 ---
 
@@ -647,5 +654,7 @@ top_chunks = result["reranked"]
 | **2026-07-27** | **documents/full 建成**：4,557,627 篇 · ~11.5 GB · `manifest_full.completed`；更新打包清单 / 02schedule / 未来优化 / 12 schedule |
 | **2026-07-28** | **阶段 12·1–4 完成**：sessions / stats / documents API；集成测试 + Postman + 部署说明；smoke C0–C4；`stage=12-4`；pytest **18**；待阶段 5 全量仿真 |
 | 2026-07-28 | 根 README 对齐 12·0–4；`.gitignore` 忽略运行日志与 notebook fixture；上传 GitHub 前文档自检 |
+| **2026-07-29** | **阶段 12·5 完成**：`run_full_ops_smoke` live full（qa1≈181s / qa2≈225s）；documents get `PMC6213955`；报告 `full_ops_smoke*`；`stage=12-5` |
+| **2026-07-29** | **阶段 12·6 完成**：[`服务化接口第二部分报告.md`](12%20服务化与接口开发第二部分/docs/服务化接口第二部分报告.md)；`outputs/samples/`；根 README 对齐；`stage=12-6` |
 
 *阶段进度细节以各目录 `schedule.md`「进度记录」为准。*

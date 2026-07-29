@@ -44,7 +44,7 @@ Copy-Item "03 文档解析与分割\data\processed\chunks_sample.jsonl" `
 ```
 
 来源：`03 .../chunks_sample.jsonl`（04 目录有同内容副本）。  
-篇级样本/全量索引构建命令见 [`documents/README.md`](documents/README.md)（12 脚本落地后补全）。
+篇级样本/全量索引构建命令见 [`documents/README.md`](documents/README.md)（`12 .../scripts/build_documents_index.py`）。
 
 ## 代码怎么引用
 

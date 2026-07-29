@@ -29,7 +29,8 @@ app = FastAPI(
         "- `GET /documents/{id}` missing → **3001**\n"
         "- Unmatched route HTTP 404 → business code **1001** (not 3001)\n\n"
         "Daily path uses **sample** retrieval + documents. "
-        "Full-dataset simulation: stage 5 / `api-ops-full.ipynb`."
+        "Full-dataset simulation: `scripts/run_full_ops_smoke.py` / "
+        "`api-ops-full.ipynb` F1+ (stage 5). Delivery: stage 6 report."
     ),
     openapi_tags=[
         {"name": "health", "description": "Liveness / readiness (stage 11)"},
@@ -57,14 +58,14 @@ app.include_router(documents_router)
 
 @app.get("/", tags=["health"], summary="Service root / capability banner")
 def root(request: Request):
-    """Return stage banner (`stage=12-4`) and capability flags."""
+    """Return stage banner (`stage=12-6`) and capability flags."""
     s11_cfg = _S11["config"].DEFAULT_CONFIG
     request_id = getattr(getattr(request, "state", None), "request_id", None)
     return _S11["success_response"](
         {
             "service": "medical-rag-api",
             "version": __version__,
-            "stage": "12-4",
+            "stage": "12-6",
             "retrieval_mode": s11_cfg.retrieval_mode,
             "pipeline_backend": s11_cfg.pipeline_backend,
             "documents_mode": DEFAULT_CONFIG.documents_mode,
@@ -72,6 +73,8 @@ def root(request: Request):
             "sessions": "crud",
             "stats": "qa+index+health",
             "documents": "catalog",
+            "full_ops": "smoke",
+            "delivery": "complete",
         },
         request_id=request_id,
     )

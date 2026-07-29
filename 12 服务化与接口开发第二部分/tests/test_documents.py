@@ -84,7 +84,7 @@ def test_route_miss_not_3001(client):
 
 def test_root_stage(client):
     r = client.get("/")
-    assert r.json()["data"]["stage"] == "12-4"
+    assert r.json()["data"]["stage"] == "12-6"
     assert r.json()["data"]["documents"] == "catalog"
 
 

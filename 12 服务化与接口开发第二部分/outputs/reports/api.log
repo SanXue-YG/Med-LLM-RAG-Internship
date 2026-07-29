@@ -1,0 +1,101 @@
+2026-07-29 16:20:55 | ERROR | med_rag_api.rag_service | pipeline_load_failed
+Traceback (most recent call last):
+  File "D:\谷歌\06 检索系统开发第二部分\src\pipeline.py", line 10, in <module>
+    from .config import (
+    ...<4 lines>...
+    )
+ImportError: attempted relative import with no known parent package
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\谷歌\06 检索系统开发第二部分\src\multipath_retriever.py", line 8, in <module>
+    from .bm25_index import BM25Index
+ImportError: attempted relative import with no known parent package
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\谷歌\11 服务化与接口开发第一部分\app\services\rag_service.py", line 60, in ensure_pipeline
+    self._pipeline = self._default_factory()
+                     ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\谷歌\11 服务化与接口开发第一部分\app\services\rag_service.py", line 157, in _default_factory
+    return ConstrainedGenerationPipeline.from_mode(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        mode,
+        ^^^^^
+        skip_evidence_eval=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        skip_critical_review=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\谷歌\10 强约束规则开发与幻觉抑制\src\constrained_pipeline.py", line 227, in from_mode
+    from pipeline import RetrievalPipeline
+  File "D:\谷歌\06 检索系统开发第二部分\src\pipeline.py", line 28, in <module>
+    from multipath_retriever import MultiPathRetriever  # type: ignore[no-redef]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\谷歌\06 检索系统开发第二部分\src\multipath_retriever.py", line 19, in <module>
+    from bm25_index import BM25Index  # type: ignore[no-redef]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\谷歌\06 检索系统开发第二部分\src\bm25_index.py", line 12, in <module>
+    from rank_bm25 import BM25Okapi
+ModuleNotFoundError: No module named 'rank_bm25'
+2026-07-29 17:08:01 | INFO | med_rag_api.rag_service | pipeline_loaded backend=constrained10 mode=full
+2026-07-29 17:08:13 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/index status=200 request_id=eb56ccd0-c919-455b-8172-83595e3b829e elapsed_ms=11247.4
+2026-07-29 17:08:13 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/health status=200 request_id=ce93dd18-dc62-43a0-a77f-07ae29abc8ab elapsed_ms=495.8
+2026-07-29 17:08:13 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/qa status=200 request_id=4f2054e1-f286-4170-b9f6-62eeef4a91cf elapsed_ms=1.3
+2026-07-29 17:08:13 | INFO | med_rag_api.middleware | request method=POST path=/api/v1/sessions status=200 request_id=20a52285-6968-464f-bbc9-f85eab7fa3c6 elapsed_ms=1.5
+2026-07-29 17:08:18 | WARNING | med_rag_api.qa_logger | qa_log_write_failed path=D:\谷歌\12 服务化与接口开发第二部分\outputs\reports\qa_calls_full_ops.jsonl err=[WinError 6714] 与线程关联的当前事务上下文对于事务对象不是有效的句柄。: 'D:\\谷歌\\12 服务化与接口开发第二部分\\outputs\\reports' record={"ts": "2026-07-29T09:08:18Z", "request_id": "257ee8d1-7235-4a7d-b06f-7f4378b432e4", "session_id": "67c54c57-2b11-44d8-a6a7-1bb8fdc68d6e", "status": "error", "code": 4002, "latency_ms": 4505.4, "query_preview": "metformin cardiovascular effects", "query_chars": 32, "top_k": 5, "n_sources": null, "er
+2026-07-29 17:08:18 | INFO | med_rag_api.qa_logger | qa_call status=error code=4002 request_id=257ee8d1-7235-4a7d-b06f-7f4378b432e4 latency_ms=4505.4
+2026-07-29 17:08:18 | WARNING | med_rag_api.app.core.exceptions | app_exception code=4002 status=502 path=/api/v1/qa detail=OSError: [WinError 6714] 与线程关联的当前事务上下文对于事务对象不是有效的句柄。: 'D:\\谷歌\\10 强约束规则开发与幻觉抑制\\src'
+2026-07-29 17:08:18 | INFO | med_rag_api.middleware | request method=POST path=/api/v1/qa status=502 request_id=257ee8d1-7235-4a7d-b06f-7f4378b432e4 elapsed_ms=4509.3
+2026-07-29 17:11:39 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=0f6666ba-0aa9-4deb-a2f5-aadef0ec0985 latency_ms=200976.7
+2026-07-29 17:11:39 | INFO | med_rag_api.middleware | request method=POST path=/api/v1/qa status=200 request_id=0f6666ba-0aa9-4deb-a2f5-aadef0ec0985 elapsed_ms=200979.6
+2026-07-29 17:11:39 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/sessions/67c54c57-2b11-44d8-a6a7-1bb8fdc68d6e status=200 request_id=9cb0c79a-359e-4ff8-b2df-0d044904d5e2 elapsed_ms=1.5
+2026-07-29 17:11:39 | INFO | med_rag_api.middleware | request method=POST path=/api/v1/qa/stream status=200 request_id=76177c14-c035-4e9b-b18e-03ae74c190aa elapsed_ms=3.4
+2026-07-29 17:14:38 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=76177c14-c035-4e9b-b18e-03ae74c190aa latency_ms=179011.5
+2026-07-29 17:14:38 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/documents status=200 request_id=362a6987-92c7-4f14-8073-a6448cf62fd9 elapsed_ms=46.3
+2026-07-29 17:14:38 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/documents/PMC176545 status=200 request_id=e4bedb6f-3e10-44d0-a71f-a6755588ed9e elapsed_ms=3.0
+2026-07-29 17:14:38 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/qa status=200 request_id=67d55c81-08cb-4b2b-8fc8-e52b58799c7a elapsed_ms=1.0
+2026-07-29 17:16:31 | INFO | med_rag_api.rag_service | pipeline_loaded backend=constrained10 mode=full
+2026-07-29 17:16:32 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/index status=200 request_id=44d81d0e-27e1-4acc-ab86-243ea56ad2cf elapsed_ms=505.3
+2026-07-29 17:16:32 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/health status=200 request_id=211b9af0-3cb5-431b-821c-405363d02eb9 elapsed_ms=500.6
+2026-07-29 17:16:32 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/qa status=200 request_id=d66e8c1b-f082-48ae-9740-320cc8e87210 elapsed_ms=1.3
+2026-07-29 17:16:32 | INFO | med_rag_api.middleware | request method=POST path=/api/v1/sessions status=200 request_id=ec285c25-b9a4-4b1c-86a5-f58fe41fe52f elapsed_ms=1.2
+2026-07-29 17:18:14 | INFO | med_rag_api.rag_service | pipeline_loaded backend=constrained10 mode=full
+2026-07-29 17:18:15 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/index status=200 request_id=825e0a21-0798-42dc-ac64-ca48d8b140e0 elapsed_ms=500.3
+2026-07-29 17:18:15 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/health status=200 request_id=6c5759a0-b966-4e70-bce1-de3e0c3bb341 elapsed_ms=503.1
+2026-07-29 17:18:15 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/qa status=200 request_id=994627ef-89bf-4d74-8ceb-3cc6976f16e3 elapsed_ms=1.3
+2026-07-29 17:18:15 | INFO | med_rag_api.middleware | request method=POST path=/api/v1/sessions status=200 request_id=eb781283-0a7e-4b47-a842-45ec81370ff3 elapsed_ms=1.2
+2026-07-29 17:20:45 | INFO | med_rag_api.rag_service | pipeline_loaded backend=constrained10 mode=full
+2026-07-29 17:20:45 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/index status=200 request_id=06778fda-71e5-4829-a3e5-309f75ee7209 elapsed_ms=521.9
+2026-07-29 17:20:46 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/health status=200 request_id=6cc6d51e-0cdb-4741-a42d-3d0805aeea7b elapsed_ms=514.5
+2026-07-29 17:20:46 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/qa status=200 request_id=75f0efb8-9ff1-4da1-81c3-ad860c4ca31d elapsed_ms=1.4
+2026-07-29 17:20:46 | INFO | med_rag_api.middleware | request method=POST path=/api/v1/sessions status=200 request_id=572bf18c-7ce5-498d-8e63-6c440e309edd elapsed_ms=1.2
+2026-07-29 17:21:15 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=13975ea9-1569-4485-a50f-401751127aaa latency_ms=179102.9
+2026-07-29 17:23:34 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=b5d4a9c2-32ad-4159-878f-1ed32093df95 latency_ms=168397.8
+2026-07-29 17:24:28 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=960a0ea9-4e72-47be-89ba-8172a93483d4 latency_ms=193390.5
+2026-07-29 17:24:28 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/sessions/f5625f34-4e8c-44fd-b2cf-c43e609d9daa status=200 request_id=5c65f0a2-87ca-4878-a564-f3fbd542f931 elapsed_ms=2.3
+2026-07-29 17:27:08 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=550f3374-f586-49d1-9e4e-69aa41557c6f latency_ms=213453.5
+2026-07-29 17:27:08 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/sessions/2bd54874-0dca-4e62-aea2-5feca4dc4efe status=200 request_id=dd2e0df1-52d0-4d50-9960-1ab392f1b085 elapsed_ms=2.1
+2026-07-29 17:28:29 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=8cbc89d2-48eb-48e0-8879-f3c6604baec5 latency_ms=240922.3
+2026-07-29 17:31:07 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=95f29775-bc27-4cbd-aa57-3e38b23e0e41 latency_ms=239379.0
+2026-07-29 17:31:07 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/documents status=200 request_id=946e8fce-4cbf-430b-ba94-05ec60d9f374 elapsed_ms=45.2
+2026-07-29 17:31:07 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/documents/PMC6213955 status=200 request_id=238dd5ae-7420-449d-81c9-6a4762363c9f elapsed_ms=4.0
+2026-07-29 17:31:07 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/qa status=200 request_id=e2d0f104-6c11-486a-a2de-6bfd4807389f elapsed_ms=1.5
+2026-07-29 17:38:23 | INFO | med_rag_api.rag_service | pipeline_loaded backend=constrained10 mode=full
+2026-07-29 17:38:24 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/index status=200 request_id=33c8b57a-91cf-416c-a672-cfb9b8144ec2 elapsed_ms=510.3
+2026-07-29 17:38:24 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/health status=200 request_id=8a811c21-f0bb-4d15-8ec6-306f523774f6 elapsed_ms=484.2
+2026-07-29 17:38:24 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/qa status=200 request_id=39790e9e-77c1-4c3e-872d-0ec81876e5ad elapsed_ms=1.2
+2026-07-29 17:38:24 | INFO | med_rag_api.middleware | request method=POST path=/api/v1/sessions status=200 request_id=65e943a2-d34c-4817-a8fa-d73c22ac2c28 elapsed_ms=2.3
+2026-07-29 17:53:13 | INFO | med_rag_api.rag_service | pipeline_loaded backend=constrained10 mode=full
+2026-07-29 17:56:15 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=e4ca96ca-7199-42c1-b9be-5cd3d7df4e61 latency_ms=181261.9
+2026-07-29 18:00:00 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=fc5c3151-f3eb-4b1a-9553-f282ec7ac68c latency_ms=224901.6
+2026-07-29 18:03:49 | INFO | med_rag_api.qa_logger | qa_call status=ok code=0 request_id=6087fc62-9bf4-42ee-8c0f-13206326e7b3 latency_ms=229753.2
+2026-07-29 18:03:50 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/index status=200 request_id=022e0f01-764b-4799-b7ff-b0ff3b953c39 elapsed_ms=506.9
+2026-07-29 18:03:50 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/health status=200 request_id=d42cfc56-e84f-4dd3-a5ae-20b4b99806ba elapsed_ms=500.6
+2026-07-29 18:03:50 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/sessions/ba460d53-5c7b-429c-89a9-3af957288068 status=200 request_id=a26b83d2-4144-47a7-b433-ddfde6742bc8 elapsed_ms=3.2
+2026-07-29 18:03:50 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/documents status=200 request_id=d13248ae-1509-44f6-b385-8b5dbd5ed4d8 elapsed_ms=42.7
+2026-07-29 18:03:50 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/documents/PMC6213955 status=200 request_id=f5a46da7-0fe8-420b-a4e4-1cccc7330002 elapsed_ms=2.1
+2026-07-29 18:03:50 | INFO | med_rag_api.middleware | request method=GET path=/api/v1/stats/qa status=200 request_id=b4819b36-7ae2-4528-9b18-b58d3ec061df elapsed_ms=1.5

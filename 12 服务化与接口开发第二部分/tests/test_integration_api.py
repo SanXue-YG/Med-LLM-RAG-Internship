@@ -81,7 +81,7 @@ def test_chain_session_qa_stats_documents(client):
     c, pipe, qlog = client
 
     root = c.get("/").json()["data"]
-    assert root["stage"] == "12-4"
+    assert root["stage"] == "12-6"
     assert root["documents"] == "catalog"
 
     sid = c.post("/api/v1/sessions").json()["data"]["session_id"]

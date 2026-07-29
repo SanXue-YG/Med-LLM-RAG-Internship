@@ -1,0 +1,12 @@
+{
+  "source": "full_ops_smoke.json /stats.health (2026-07-29 live)",
+  "endpoint": "GET /api/v1/stats/health",
+  "data": {
+    "components": {
+      "llm": "ok",
+      "vector_db": "ok",
+      "database": "skipped",
+      "api": "ok"
+    }
+  }
+}
