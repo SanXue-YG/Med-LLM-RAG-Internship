@@ -1,0 +1,20 @@
+# Med-RAG backend (unified FastAPI + RAG pipeline + ingest)
+# Reuses conda env med-rag-verify when available.
+
+fastapi
+uvicorn[standard]
+pydantic
+httpx
+python-dotenv
+python-multipart
+
+# Upstream RAG / ingest (re-listed for convenience)
+chromadb
+sentence-transformers
+transformers
+torch
+rank-bm25
+langchain-text-splitters
+lxml
+tqdm
+pytest

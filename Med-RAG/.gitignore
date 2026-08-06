@@ -1,0 +1,26 @@
+# Med-RAG local ignores
+.env
+**/__pycache__/
+**/.pytest_cache/
+**/.ipynb_checkpoints/
+*.pyc
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Runtime data (keep structure via README / .gitkeep)
+data/chroma/
+data/bm25/
+data/documents/**/*.sqlite
+data/processed/*.jsonl
+data/raw_uploads/**
+data/chat/**
+data/logs/**
+!data/**/.gitkeep
+!data/**/README.md
+!data/lexicons/**
+
+# Release artifacts
+dist/
+*.zip
