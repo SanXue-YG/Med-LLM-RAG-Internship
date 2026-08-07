@@ -1,6 +1,6 @@
 # （打包）LangChain_RAG · 02 打包计划（基于 01–12 已完成成果）
 
-> **状态**：📋 规划（12 服务化完成后启动）  
+> **状态**：📋 规划归档（产品包已落地，见 [`final-schedule.md`](final-schedule.md) · [`../Med-RAG/`](../Med-RAG/)）
 > **日期**：2026-07-27  
 > **前身**：[`01schedule.md`](01schedule.md) 为早期 LangChain 从零搭建草案，**多数能力已由阶段 01–11 以非 LangChain 主路径交付**；本文件改为 **产品打包 / 运行时组装** 计划。  
 > **上游**：11 HTTP API · 12 会话/统计/文档 · Dataset 全量索引 · [`Dataset/打包资产清单.md`](../Dataset/打包资产清单.md)

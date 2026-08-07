@@ -5,6 +5,14 @@
 
 规划类说明（可进 Git）：本 README · [`打包资产清单.md`](打包资产清单.md) · [`documents/README.md`](documents/README.md)。
 
+## 共享备份（Google Drive）
+
+大数据不进 Git。约定对外共享 / 备份位置（与本目录内容对齐；完整上传可能仍在进行）：
+
+**[Google-Med-RAG — Dataset](https://drive.google.com/drive/folders/1uK-2nbpOAWH61pWWrArpR8fdUzUihZ7H?usp=sharing)**
+
+迁入 Med-RAG Demo 的步骤见 [`../Med-RAG/docs/数据存储与导入参考.md`](../Med-RAG/docs/数据存储与导入参考.md) §6。
+
 ## 布局
 
 ```text
@@ -33,7 +41,8 @@ Dataset/
 | 04–06 | 建库 / 检索；06 现回查 **slim**（打包后改 documents sqlite） | sample 或 full |
 | 08–10 | 生成 / 约束 `from_mode("sample"\|"full")` | 开发 sample；抽检 full |
 | 11 | FastAPI `/qa` | 默认 sample；full 抽检 |
-| **12** | 会话/统计/**文档 API**（0–4 ✅）；阶段 5 全量仿真待做 | sample 契约 → 阶段 5 full |
+| **12** | 会话/统计/**文档 API**（0–6 ✅） | sample 契约 → full 仿真已验收 |
+| **Med-RAG** | 产品 Demo：自包含 API + React；数据落 `Med-RAG/data/` | 默认 sample；full 迁入后只读问答 |
 
 ## 样本重建（chunks_sample）
 

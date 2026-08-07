@@ -25,12 +25,12 @@
 |----|------|
 | 落点目录 | 仓库根 `Med-RAG/` |
 | 代码策略 | **自包含拷贝**核心链路（05–12 运行时 + 02–04 入库工具子集），非跨目录 import |
-| Demo 默认模式 | `sample`（小语料可空启动提示；有样本索引则直接问答） |
-| 全量 | 可选：将资产放入 `Med-RAG/data/` 后改 env 为 `full` |
+| Demo 默认模式 | `sample`：接近用户本机交互（可空启动 + 回形针增量）；上传**始终写 sample** |
+| 全量 | 预建资产迁入 `Med-RAG/data/` 后改 env 为 `full` 只读问答；一期 Demo **不能**上传更新全库 |
 | 会话/聊天记录 | 落盘 `Med-RAG/data/chat/`（替换/扩展现有内存 `MemorySessionStore`） |
 | 前端 | React + Vite；布局参考 [`前端参考/QA.webp`](前端参考/QA.webp) |
 | 初始区卡片 | 示例问答 / API 说明 / 代码原理 / 流程图（链到 docs 或站内页） |
-| 回形针按钮 | 打开「语料更新」面板（上传 → 调用包内处理管线） |
+| 回形针按钮 | 打开语料更新面板 → 包内 ingest；**与检索模式解耦，固定更新 sample** |
 | 打包形态 | zip + Git 文件夹；Docker/compose 二期评估 |
 | LLM | 继续本机 **Ollama**（`deepseek-r1:7b`），与现 11/12 一致 |
 
@@ -57,6 +57,7 @@ Med-RAG/
 ├── docs/
 │   ├── 代码说明文档.md
 │   ├── 部署文档.md
+│   ├── 数据存储与导入参考.md
 │   └── 流程图.md（或 assets）
 └── scripts/                  # 打包 zip、空库检查、样本数据引导
 ```
@@ -171,3 +172,5 @@ flowchart LR
 |------|------|
 | 2026-08-06 | 定稿 final-schedule；开始在 Med-RAG/ 落地 P0–P4 |
 | 2026-08-06 | **P0–P4 落地**：自包含 backend（11+12 合一 + vendor 04–10）· FileSessionStore · CORS · ingest API · React Demo · 代码/部署/流程图文档 · release zip 脚本；Docker 一期不阻塞（见 `scripts/docker/README.md`） |
+| 2026-08-08 | 文档对齐：sample≈用户交互态 / full≈预建导入；上传固定写 sample；见 `Med-RAG/docs/数据存储与导入参考.md` §0 |
+| 2026-08-08 | 根 README / Dataset 清单 / 02schedule 状态对齐；准备 GitHub 提交 |

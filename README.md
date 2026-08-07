@@ -20,7 +20,7 @@
 | **笔记目录** | 个人学习 Q&A（非正式交付） | 写新笔记时 |
 | **更新记录** | 按时间线的变更日志；**当前阶段条目加粗**，阶段结束后整合为普通条目 | 阶段进行中实时更新 |
 
-**阅读顺序建议**：新人 → 阶段一览 → 本地部署指南 → 各阶段交付物速查（**12** 为当前 ops API 入口，含会话/统计/文档；**11** 为问答底座）→ Dataset [`打包资产清单`](Dataset/打包资产清单.md) → 对应 `schedule.md`。
+**阅读顺序建议**：新人 → 阶段一览 → 本地部署指南 → 各阶段交付物速查（**产品 Demo** 见 [`Med-RAG/`](Med-RAG/)；分阶段开发 API 仍以 **12** 为 ops 入口、**11** 为问答底座）→ Dataset [`打包资产清单`](Dataset/打包资产清单.md) · [Google Drive 共享](https://drive.google.com/drive/folders/1uK-2nbpOAWH61pWWrArpR8fdUzUihZ7H?usp=sharing) → 对应 `schedule.md` / `Med-RAG/docs/`。
 
 ---
 
@@ -50,7 +50,8 @@
 ├── 10 强约束规则开发与幻觉抑制/  # 阶段 10：强约束提示 + 引用/格式校验 + 对抗评测（✅ 0–6）
 ├── 11 服务化与接口开发第一部分/  # 阶段 11：FastAPI + 同步/伪流式问答（✅ 已完成）
 ├── 12 服务化与接口开发第二部分/  # 阶段 12：会话/统计/文档 API + 文档索引（✅ 0–6 完成）
-├── （打包）LangChain_RAG/        # 产品打包（见 02schedule；01schedule 为旧草案）
+├── Med-RAG/                      # 产品打包交付：自包含 FastAPI + React Demo（✅）
+├── （打包）LangChain_RAG/        # 打包规划与计划（final-schedule；02schedule 为资产编排草案）
 ├── （未来优化）打包后数据更新/    # 语料增补补丁 / 重建 runbook
 └── 笔记/                     # 个人学习笔记
 ```
@@ -73,13 +74,15 @@
 | **10** 强约束规则开发与幻觉抑制 | [`10 强约束规则开发与幻觉抑制/`](10%20强约束规则开发与幻觉抑制/) | ✅ **已完成** | [`任务.txt`](10%20强约束规则开发与幻觉抑制/任务.txt) | [`schedule.md`](10%20强约束规则开发与幻觉抑制/schedule.md) | [`constraint-hallucination.ipynb`](10%20强约束规则开发与幻觉抑制/notebooks/constraint-hallucination.ipynb)（C0–C6） | [`requirements.txt`](10%20强约束规则开发与幻觉抑制/requirements.txt) |
 | **11** 服务化与接口开发第一部分 | [`11 服务化与接口开发第一部分/`](11%20服务化与接口开发第一部分/) | ✅ **已完成** | [`任务.txt`](11%20服务化与接口开发第一部分/任务.txt) | [`schedule.md`](11%20服务化与接口开发第一部分/schedule.md) · [`服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md) | [`api-smoke.ipynb`](11%20服务化与接口开发第一部分/notebooks/api-smoke.ipynb)（C0–C4.5） | [`requirements.txt`](11%20服务化与接口开发第一部分/requirements.txt) |
 | **12** 服务化与接口开发第二部分 | [`12 服务化与接口开发第二部分/`](12%20服务化与接口开发第二部分/) | ✅ **0–6 完成** | [`任务.txt`](12%20服务化与接口开发第二部分/任务.txt) | [`schedule.md`](12%20服务化与接口开发第二部分/schedule.md) · [`部署说明`](12%20服务化与接口开发第二部分/docs/部署与API调用说明.md) · [`报告`](12%20服务化与接口开发第二部分/docs/服务化接口第二部分报告.md) | [`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb)（C0–C4）· [`api-ops-full.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-full.ipynb)（F0+F1） | [`requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt) |
-| **打包** | [`（打包）LangChain_RAG/`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/) | 📋 规划 | — | [`02schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)（[`01schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/01schedule.md) 旧草案） | — | — |
+| **打包 · Med-RAG** | [`Med-RAG/`](Med-RAG/) | ✅ **Demo 已落地** | [`（打包）任务.txt`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/%E4%BB%BB%E5%8A%A1.txt) | [`final-schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/final-schedule.md) · [`Med-RAG/README`](Med-RAG/README.md) | API：`backend/scripts/run_api.py` · UI：`frontend`（`npm run dev`） | [`Med-RAG/requirements.txt`](Med-RAG/requirements.txt) |
+| **打包 · 规划目录** | [`（打包）LangChain_RAG/`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/) | 📋 计划归档 | 同上 | [`final-schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/final-schedule.md)（[`02schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md) 资产草案 · [`01schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/01schedule.md) 旧草案） | — | — |
 | **未来优化·数据更新** | [`（未来优化）打包后数据更新/`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/) | 📋 规划 | — | [`schedule.md`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/schedule.md) | — | — |
 
 **说明**
 
 - 各阶段**具体要求与交付标准**以对应目录内 **`任务.txt`** 为准。
-- 01–10 主入口多为 **Jupyter Notebook**；**11–12** 另提供 HTTP 服务：日常开发推荐 **`12 .../scripts/run_api.py`**（含 11 的 `/qa` + 12 会话/统计/文档）→ `/docs`。
+- 01–10 主入口多为 **Jupyter Notebook**；**11–12** 另提供 HTTP 服务：分阶段开发推荐 **`12 .../scripts/run_api.py`**（含 11 的 `/qa` + 12 会话/统计/文档）→ `/docs`。
+- **产品演示 / 对外打包**：优先 [`Med-RAG/`](Med-RAG/)（自包含后端 + React UI）；计划与任务原文见 [`（打包）LangChain_RAG/`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/)。
 
 ---
 
@@ -219,6 +222,18 @@
   - 全量报告：`outputs/reports/full_ops_smoke.json` · `full_ops_smoke_*.png` · [`outputs/samples/`](12%20服务化与接口开发第二部分/outputs/samples/)
 - **详情**：[`12 .../schedule.md`](12%20服务化与接口开发第二部分/schedule.md)
 
+### 打包 · Med-RAG（✅ Demo 已落地 · 2026-08）
+
+- **定位**：把 01–12 已验证能力收成**可独立运行**的产品 Demo 目录（不依赖兄弟阶段路径）；含 FastAPI（问答/会话/统计/文档/上传）+ React 双栏聊天 UI。
+- **主要任务**：代码自包含迁移；`data/chat` 会话落盘；CORS；sample 空库/回形针 ingest；Markdown 渲染与文档站内查看；部署 / 代码 / 数据导入说明；zip 发布脚本。
+- **关键结果**：默认 `MED_RAG_RETRIEVAL_MODE=sample` 可问答；切换 full 仅需迁入资产 + 改 `.env` + 重启（一期上传固定写 sample，不更新全库）。
+- **主要产出**：
+  - 包入口：[`Med-RAG/README.md`](Med-RAG/README.md)
+  - 文档：[`部署`](Med-RAG/docs/%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3.md) · [`代码说明`](Med-RAG/docs/%E4%BB%A3%E7%A0%81%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md) · [`数据存储与导入`](Med-RAG/docs/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%AF%BC%E5%85%A5%E5%8F%82%E8%80%83.md) · [`流程图`](Med-RAG/docs/%E6%B5%81%E7%A8%8B%E5%9B%BE.md)
+  - 计划：[`final-schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/final-schedule.md)
+  - 大数据共享：[Google Drive Dataset](https://drive.google.com/drive/folders/1uK-2nbpOAWH61pWWrArpR8fdUzUihZ7H?usp=sharing)（上传可能仍在进行）
+- **详情**：[`Med-RAG/docs/`](Med-RAG/docs/) · Dataset [`README`](Dataset/README.md) / [`打包资产清单`](Dataset/打包资产清单.md)
+
 ---
 
 ## Python 环境与依赖
@@ -335,7 +350,32 @@ ollama pull deepseek-r1:7b
 3. 按 notebook 章节顺序执行（04 全量：`vectorize-index-full.ipynb` C0→C5）  
 4. CLI / API 示例见「各阶段交付物速查」  
 5. **阶段 11（HTTP 底座）**：`cd "11 服务化与接口开发第一部分"` → `python scripts/run_api.py` → `http://127.0.0.1:8000/docs`  
-6. **阶段 12（推荐日常 API）**：内核 **`med-rag-verify`**；`copy .env.example .env` → `cd "12 服务化与接口开发第二部分"` → `python scripts/run_api.py --no-reload` → `/docs`（含 sessions/stats/documents + 11 的 `/qa`）；冒烟 [`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb) C0–C4；文档索引见 [`Dataset/documents/`](Dataset/documents/README.md)；部署说明见 [`12 .../docs/部署与API调用说明.md`](12%20服务化与接口开发第二部分/docs/部署与API调用说明.md)
+6. **阶段 12（分阶段日常 API）**：内核 **`med-rag-verify`**；`copy .env.example .env` → `cd "12 服务化与接口开发第二部分"` → `python scripts/run_api.py --no-reload` → `/docs`（含 sessions/stats/documents + 11 的 `/qa`）；冒烟 [`api-ops-smoke.ipynb`](12%20服务化与接口开发第二部分/notebooks/api-ops-smoke.ipynb) C0–C4；文档索引见 [`Dataset/documents/`](Dataset/documents/README.md)；部署说明见 [`12 .../docs/部署与API调用说明.md`](12%20服务化与接口开发第二部分/docs/部署与API调用说明.md)
+7. **产品 Demo（Med-RAG，推荐演示入口）**：见下节；详 [`Med-RAG/README.md`](Med-RAG/README.md) · [`Med-RAG/docs/部署文档.md`](Med-RAG/docs/%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3.md)
+
+### 4.1 产品 Demo：Med-RAG（自包含）
+
+不依赖兄弟阶段路径；运行时只用 `Med-RAG/data/`。
+
+```powershell
+conda activate med-rag-verify
+cd Med-RAG
+pip install -r requirements.txt
+copy .env.example .env
+python backend/scripts/run_api.py --no-reload   # http://127.0.0.1:8000/docs
+
+# 另开终端
+cd Med-RAG\frontend
+npm install
+npm run dev                                     # http://127.0.0.1:5173
+```
+
+| 模式 | 说明 |
+|------|------|
+| `sample`（默认） | 可空启动；回形针上传固定写入 sample 索引 |
+| `full` | 迁入全量资产后改 `.env` 的 `MED_RAG_RETRIEVAL_MODE=full` 并重启；一期 Demo **不能**用上传更新全库 |
+
+大数据可从本地 [`Dataset/`](Dataset/) 或 [Google Drive 共享](https://drive.google.com/drive/folders/1uK-2nbpOAWH61pWWrArpR8fdUzUihZ7H?usp=sharing) 迁入 `Med-RAG/data/`（步骤见 [`数据存储与导入参考`](Med-RAG/docs/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%AF%BC%E5%85%A5%E5%8F%82%E8%80%83.md)）。
 
 ### 5. 统一 Dataset（新代码默认读取这里）
 
@@ -600,7 +640,25 @@ top_chunks = result["reranked"]
 - **错误码要点**：会话缺失 **3002**；文档缺失 **3001**；路由未命中 **1001**；`POST /qa` 无效 session **自动新建**
 - **⚠️ 边界**：Windows 中文路径下 live `/qa` 走主线程 RagService（对齐 11）；无鉴权 / 无产品前端；Dataset sqlite **不进 Git**
 - **依赖**：[`requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt)（相对 11 新增 **`python-dotenv`**）
-- **后续**：打包见 [`（打包）02schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)
+- **后续**：产品打包交付见 [`Med-RAG/`](Med-RAG/) · 计划 [`final-schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/final-schedule.md)
+
+### 打包 · Med-RAG（✅ Demo 已落地 · 2026-08）
+
+> **交付物速查**：自包含 FastAPI + React 双栏聊天 + 会话落盘 + sample 上传 ingest + 四份 docs + zip 脚本已齐。
+
+| 项 | 路径 / 命令 |
+|----|-------------|
+| 计划 | [`final-schedule.md`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/final-schedule.md)（P0–P4 ✅） |
+| 包入口 | [`Med-RAG/README.md`](Med-RAG/README.md) |
+| 启动 API | `cd Med-RAG` → `copy .env.example .env` → `python backend/scripts/run_api.py --no-reload` → `/docs` |
+| 启动 UI | `cd Med-RAG/frontend` → `npm install` → `npm run dev` → `http://127.0.0.1:5173` |
+| 主接口 | `/api/v1/qa` · `/sessions` · `/stats/*` · `/documents` · 上传 ingest · 站内 `/docs/{slug}` |
+| 文档 | [`部署`](Med-RAG/docs/%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3.md) · [`代码说明`](Med-RAG/docs/%E4%BB%A3%E7%A0%81%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md) · [`数据导入`](Med-RAG/docs/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%AF%BC%E5%85%A5%E5%8F%82%E8%80%83.md) · [`流程图`](Med-RAG/docs/%E6%B5%81%E7%A8%8B%E5%9B%BE.md) |
+| 数据 | `Med-RAG/data/`（大文件 gitignore）；迁入说明见数据导入文档；共享盘 [Drive](https://drive.google.com/drive/folders/1uK-2nbpOAWH61pWWrArpR8fdUzUihZ7H?usp=sharing) |
+| 依赖 | [`Med-RAG/requirements.txt`](Med-RAG/requirements.txt) + Node（frontend） |
+
+- **⚠️ 边界**：一期上传**只写 sample**；full 为预建资产只读问答；无 Docker（二期可选）；运行时不依赖 `../11` 等兄弟目录
+- **后续**：Compose / 真流式 / 鉴权等见 [`（未来优化）`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/) 与 final-schedule 二期项
 
 ---
 
@@ -647,14 +705,13 @@ top_chunks = result["reranked"]
 | 2026-07-23 | 11 启动规划：任务书 + `schedule.md` + [`11笔记.md`](笔记/11笔记.md) |
 | 2026-07-24 | 11 阶段 0–3：骨架 · 契约 · RagService/会话 · 同步 `/qa`；pytest 递增至 35 |
 | 2026-07-25 | 11 阶段 4–5 完成：伪 SSE · full live 抽检 · [`服务化接口报告.md`](11%20服务化与接口开发第一部分/docs/服务化接口报告.md)；pytest **41**；Dataset README / 根 README 对齐结案 |
-| **2026-07-27** | **12 规划定稿**：全库文档索引（`Dataset/documents`）；`chunks_sample` 复制进 Dataset；[`打包资产清单`](Dataset/打包资产清单.md)；[`（打包）02schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)；[`（未来优化）数据更新`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/schedule.md)；[`12笔记`](笔记/12笔记.md) Q8 |
-| **2026-07-27** | 文档索引构建改为 **逻辑分片**（批 upsert + `progress.json` 断点，对标 BM25 resume、非多物理库）；更新 [`documents/README`](Dataset/documents/README.md)、12 schedule、未来优化 schedule、[`12笔记`](笔记/12笔记.md) Q9 |
-| **2026-07-27** | **阶段 12·0 完成**：骨架 + `bridge11`；`documents/sample`（1000）；smoke/full notebook；分目录 |
-| **2026-07-27** | 阶段 12 [`requirements.txt`](12%20服务化与接口开发第二部分/requirements.txt) 对齐 11 风格；`install_all_requirements.ps1` 含 12；确认 **med-rag-verify** 可跑 `api-ops-full` F0 |
-| **2026-07-27** | **documents/full 建成**：4,557,627 篇 · ~11.5 GB · `manifest_full.completed`；更新打包清单 / 02schedule / 未来优化 / 12 schedule |
-| **2026-07-28** | **阶段 12·1–4 完成**：sessions / stats / documents API；集成测试 + Postman + 部署说明；smoke C0–C4；`stage=12-4`；pytest **18**；待阶段 5 全量仿真 |
-| 2026-07-28 | 根 README 对齐 12·0–4；`.gitignore` 忽略运行日志与 notebook fixture；上传 GitHub 前文档自检 |
-| **2026-07-29** | **阶段 12·5 完成**：`run_full_ops_smoke` live full（qa1≈181s / qa2≈225s）；documents get `PMC6213955`；报告 `full_ops_smoke*`；`stage=12-5` |
-| **2026-07-29** | **阶段 12·6 完成**：[`服务化接口第二部分报告.md`](12%20服务化与接口开发第二部分/docs/服务化接口第二部分报告.md)；`outputs/samples/`；根 README 对齐；`stage=12-6` |
+| 2026-07-27 | 12 规划定稿：全库文档索引（`Dataset/documents`）；`chunks_sample` 复制进 Dataset；[`打包资产清单`](Dataset/打包资产清单.md)；[`（打包）02schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/02schedule.md)；[`（未来优化）数据更新`](%EF%BC%88%E6%9C%AA%E6%9D%A5%E4%BC%98%E5%8C%96%EF%BC%89%E6%89%93%E5%8C%85%E5%90%8E%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0/schedule.md)；[`12笔记`](笔记/12笔记.md) Q8 |
+| 2026-07-27 | 文档索引构建改为逻辑分片（批 upsert + `progress.json` 断点）；更新 documents README、12 / 未来优化 schedule、[`12笔记`](笔记/12笔记.md) Q9 |
+| 2026-07-27 | 阶段 12·0 完成：骨架 + `bridge11`；`documents/sample`（1000）；smoke/full notebook |
+| 2026-07-27 | 阶段 12 requirements 对齐；`install_all_requirements.ps1` 含 12；documents/full 建成（4,557,627 · ~11.5 GB） |
+| 2026-07-28 | 阶段 12·1–4 完成：sessions / stats / documents API；Postman + 部署说明；smoke C0–C4；pytest 18 |
+| 2026-07-28 | 根 README 对齐 12·0–4；`.gitignore` 忽略运行日志与 notebook fixture |
+| 2026-07-29 | 阶段 12·5–6 完成：full ops smoke + [`服务化接口第二部分报告`](12%20服务化与接口开发第二部分/docs/服务化接口第二部分报告.md)；`stage=12-6` |
+| **2026-08-06** | **Med-RAG 产品打包落地**：[`Med-RAG/`](Med-RAG/)（FastAPI + React Demo）；[`final-schedule`](%EF%BC%88%E6%89%93%E5%8C%85%EF%BC%89LangChain_RAG/final-schedule.md) P0–P4；sample/full 角色与上传写 sample；[Drive Dataset](https://drive.google.com/drive/folders/1uK-2nbpOAWH61pWWrArpR8fdUzUihZ7H?usp=sharing)；根 README / Dataset 清单对齐 GitHub 提交准备 |
 
-*阶段进度细节以各目录 `schedule.md`「进度记录」为准。*
+*阶段进度细节以各目录 `schedule.md` / `Med-RAG` docs「进度记录」为准。*

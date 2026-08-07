@@ -18,6 +18,7 @@ _DOC_FILES: dict[str, str] = {
     "code": "代码说明文档.md",
     "flow": "流程图.md",
     "deploy": "部署文档.md",
+    "data": "数据存储与导入参考.md",
 }
 
 
